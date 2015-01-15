@@ -1,0 +1,28 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY offlineDialog.title "Nastavitve za stanje brez povezave">
+
+<!ENTITY textStartUp "Ob zagonu:">
+<!ENTITY radioRememberPrevState.label "si zapomni prejšnje stanje povezave">
+<!ENTITY radioRememberPrevState.accesskey "s">
+<!ENTITY radioAskMe.label "me vprašaj za stanje povezave">
+<!ENTITY radioAskMe.accesskey "m">
+<!ENTITY radioAlwaysOnline.label "vedno začni s povezavo">
+<!ENTITY radioAlwaysOnline.accesskey "v">
+
+<!ENTITY textGoingOnline "Ali naj se neposlana sporočila pošljejo ob začetku povezave?">
+<!ENTITY radioAutoSend.label "Da">
+<!ENTITY radioAutoSend.accesskey "D">
+<!ENTITY radioNotSend.label "Ne">
+<!ENTITY radioNotSend.accesskey "N">
+<!ENTITY radioAskUnsent.label "Vprašaj me">
+<!ENTITY radioAskUnsent.accesskey "r">
+<!ENTITY textGoingOffline "Ali naj se sporočila za delo brez povezave prenesejo pred prekinitvijo povezave?">
+<!ENTITY radioAutoDownload.label "Da">
+<!ENTITY radioAutoDownload.accesskey "a">
+<!ENTITY radioNotDownload.label "Ne">
+<!ENTITY radioNotDownload.accesskey "e">
+<!ENTITY radioAskDownload.label "Vprašaj me">
+<!ENTITY radioAskDownload.accesskey "a">

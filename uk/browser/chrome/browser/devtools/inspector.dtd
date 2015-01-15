@@ -1,0 +1,24 @@
+<!ENTITY inspectorHTMLEdit.label       "Редагувати як HTML">
+<!ENTITY inspectorHTMLEdit.accesskey   "Р">
+
+<!ENTITY inspectorHTMLCopyInner.label       "Скопіювати внутрішній HTML">
+<!ENTITY inspectorHTMLCopyInner.accesskey   "н">
+
+<!ENTITY inspectorHTMLCopyOuter.label       "Скопіювати зовнішній HTML">
+<!ENTITY inspectorHTMLCopyOuter.accesskey   "з">
+
+<!ENTITY inspectorCopyUniqueSelector.label       "Скопіювати унікальний вибір">
+<!ENTITY inspectorCopyUniqueSelector.accesskey   "у">
+
+<!ENTITY inspectorHTMLPasteOuter.label      "Paste Outer HTML">
+<!ENTITY inspectorHTMLPasteOuter.accesskey  "P">
+
+<!ENTITY inspectorHTMLDelete.label          "Вилучити вузол">
+<!ENTITY inspectorHTMLDelete.accesskey      "В">
+
+<!ENTITY inspector.selectButton.tooltip     "Вибрати елемент мишею">
+
+<!ENTITY inspectorSearchHTML.label          "Пошук HTML">
+<!ENTITY inspectorSearchHTML.key            "ш">
+
+<!ENTITY inspectorCopyImageDataUri.label       "Копіювати Data-URL малюнка">

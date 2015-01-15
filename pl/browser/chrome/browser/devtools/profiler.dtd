@@ -1,0 +1,19 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY profilerUI.emptyNotice1 "Kliknij przycisk">
+<!ENTITY profilerUI.emptyNotice2 ", aby rozpocząć rejestrowanie wywołań funkcji JavaScript.">
+<!ENTITY profilerUI.stopNotice1 "Kliknij ponownie przycisk">
+<!ENTITY profilerUI.stopNotice2 ", aby zatrzymać profilowanie.">
+<!ENTITY profilerUI.loadingNotice "Wczytywanie…">
+<!ENTITY profilerUI.recordButton.tooltip "Rejestrowanie wywołań funkcji JavaScript">
+<!ENTITY profilerUI.importButton "Importuj…">
+<!ENTITY profilerUI.clearButton "Wyczyść">
+<!ENTITY profilerUI.table.totalDuration "Całkowity czas (ms)">
+<!ENTITY profilerUI.table.selfDuration "Własny czas (ms)">
+<!ENTITY profilerUI.table.totalPercentage "Całkowity koszt">
+<!ENTITY profilerUI.table.selfPercentage "Własny koszt">
+<!ENTITY profilerUI.table.samples "Próbki">
+<!ENTITY profilerUI.table.function "Funkcja">
+<!ENTITY profilerUI.newtab.tooltiptext "Dodaj nową kartę z zaznaczeniem">

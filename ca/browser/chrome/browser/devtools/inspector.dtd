@@ -1,0 +1,26 @@
+<!ENTITY inspectorHTMLEdit.label       "Edita com a HTML">
+<!ENTITY inspectorHTMLEdit.accesskey   "E">
+
+<!ENTITY inspectorHTMLCopyInner.label       "Copia l'HTML interior">
+<!ENTITY inspectorHTMLCopyInner.accesskey   "i">
+
+<!ENTITY inspectorHTMLCopyOuter.label       "Copia l'HTML exterior">
+<!ENTITY inspectorHTMLCopyOuter.accesskey   "C">
+
+<!ENTITY inspectorCopyUniqueSelector.label       "Copia selector únic">
+<!ENTITY inspectorCopyUniqueSelector.accesskey   "n">
+
+<!ENTITY inspectorHTMLPasteOuter.label      "Enganxa l'HTML exterior">
+<!ENTITY inspectorHTMLPasteOuter.accesskey  "x">
+
+<!ENTITY inspectorHTMLDelete.label          "Suprimeix el node">
+<!ENTITY inspectorHTMLDelete.accesskey      "d">
+
+<!ENTITY inspector.selectButton.tooltip     "Selecciona l'element amb el ratolí">
+
+<!ENTITY inspectorSearchHTML.label          "Cerca HTML">
+<!ENTITY inspectorSearchHTML.key            "F">
+
+<!ENTITY inspectorCopyImageDataUri.label       "Copia la Data-URL de la imatge">
+
+<!ENTITY inspectorShowDOMProperties.label       "Mostra les propietats del DOM">

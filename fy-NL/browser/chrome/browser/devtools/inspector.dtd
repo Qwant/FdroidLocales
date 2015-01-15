@@ -1,0 +1,29 @@
+<!ENTITY inspectorHTMLEdit.label       "As HTML bewurkje">
+<!ENTITY inspectorHTMLEdit.accesskey   "H">
+
+<!ENTITY inspectorHTMLCopyInner.label       "Binnenste HTML kopiearje">
+<!ENTITY inspectorHTMLCopyInner.accesskey   "B">
+
+<!ENTITY inspectorHTMLCopyOuter.label       "Bûtenste HTML kopiearje">
+<!ENTITY inspectorHTMLCopyOuter.accesskey   "k">
+
+<!ENTITY inspectorCopyUniqueSelector.label       "Unike selektor kopiearje">
+<!ENTITY inspectorCopyUniqueSelector.accesskey   "U">
+
+<!ENTITY inspectorHTMLPasteOuter.label      "Bûtenste HTML plakke">
+<!ENTITY inspectorHTMLPasteOuter.accesskey  "p">
+
+<!ENTITY inspectorHTMLDelete.label          "Noade fuortsmite">
+<!ENTITY inspectorHTMLDelete.accesskey      "N">
+
+<!ENTITY inspector.selectButton.tooltip     "Elemint mei mûs selektearje">
+
+<!ENTITY inspectorSearchHTML.label          "HTML sykje">
+<!ENTITY inspectorSearchHTML.key            "F">
+
+<!ENTITY inspectorSearchHTML.label          "HTML sykje">
+<!ENTITY inspectorSearchHTML.key            "F">
+
+<!ENTITY inspectorCopyImageDataUri.label       "Ofbyldingsgegevens-URL kopiearje">
+
+<!ENTITY inspectorShowDOMProperties.label       "DOM-eigenskippen toane">

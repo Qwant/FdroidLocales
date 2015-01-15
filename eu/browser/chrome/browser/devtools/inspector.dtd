@@ -1,0 +1,26 @@
+<!ENTITY inspectorHTMLEdit.label       "Editatu HTML gisa">
+<!ENTITY inspectorHTMLEdit.accesskey   "E">
+
+<!ENTITY inspectorHTMLCopyInner.label       "Kopiatu barruko HTMLa">
+<!ENTITY inspectorHTMLCopyInner.accesskey   "b">
+
+<!ENTITY inspectorHTMLCopyOuter.label       "Kopiatu kanpoko HTMLa">
+<!ENTITY inspectorHTMLCopyOuter.accesskey   "K">
+
+<!ENTITY inspectorCopyUniqueSelector.label       "Kopiatu hautatzaile esklusiboa">
+<!ENTITY inspectorCopyUniqueSelector.accesskey   "h">
+
+<!ENTITY inspectorHTMLPasteOuter.label      "Itsatsi kanpoko HTMLa">
+<!ENTITY inspectorHTMLPasteOuter.accesskey  "I">
+
+<!ENTITY inspectorHTMLDelete.label          "Ezabatu nodoa">
+<!ENTITY inspectorHTMLDelete.accesskey      "E">
+
+<!ENTITY inspector.selectButton.tooltip     "Hautatu elementua saguarekin">
+
+<!ENTITY inspectorSearchHTML.label          "Bilatu HTMLa">
+<!ENTITY inspectorSearchHTML.key            "F">
+
+<!ENTITY inspectorCopyImageDataUri.label       "Kopiatu irudiaren datu-URLa">
+
+<!ENTITY inspectorShowDOMProperties.label       "Erakutsi DOM propietateak">

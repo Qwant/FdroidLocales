@@ -1,0 +1,26 @@
+<!ENTITY inspectorHTMLEdit.label       "Edit sebagai Kode HTML">
+<!ENTITY inspectorHTMLEdit.accesskey   "E">
+
+<!ENTITY inspectorHTMLCopyInner.label       "Salin Kode HTML di Sisi Dalam">
+<!ENTITY inspectorHTMLCopyInner.accesskey   "M">
+
+<!ENTITY inspectorHTMLCopyOuter.label       "Salin Kode HTML di Sisi Luar">
+<!ENTITY inspectorHTMLCopyOuter.accesskey   "L">
+
+<!ENTITY inspectorCopyUniqueSelector.label       "Salin Selektor Unik">
+<!ENTITY inspectorCopyUniqueSelector.accesskey   "U">
+
+<!ENTITY inspectorHTMLPasteOuter.label      "Tempel Kode HTML di Sisi Luar">
+<!ENTITY inspectorHTMLPasteOuter.accesskey  "P">
+
+<!ENTITY inspectorHTMLDelete.label          "Hapus Simpul">
+<!ENTITY inspectorHTMLDelete.accesskey      "H">
+
+<!ENTITY inspector.selectButton.tooltip     "Pilih elemen dengan mouse">
+
+<!ENTITY inspectorSearchHTML.label          "Cari HTML">
+<!ENTITY inspectorSearchHTML.key            "F">
+
+<!ENTITY inspectorCopyImageDataUri.label       "Salin Data-URL Gambar">
+
+<!ENTITY inspectorShowDOMProperties.label       "Tampilkan Properti DOM">

@@ -1,0 +1,26 @@
+<!ENTITY inspectorHTMLEdit.label       "Bewerken als HTML">
+<!ENTITY inspectorHTMLEdit.accesskey   "B">
+
+<!ENTITY inspectorHTMLCopyInner.label       "Binnenste HTML kopiëren">
+<!ENTITY inspectorHTMLCopyInner.accesskey   "i">
+
+<!ENTITY inspectorHTMLCopyOuter.label       "Buitenste HTML kopiëren">
+<!ENTITY inspectorHTMLCopyOuter.accesskey   "u">
+
+<!ENTITY inspectorCopyUniqueSelector.label       "Unieke selector kopiëren">
+<!ENTITY inspectorCopyUniqueSelector.accesskey   "s">
+
+<!ENTITY inspectorHTMLPasteOuter.label      "Buitenste HTML plakken">
+<!ENTITY inspectorHTMLPasteOuter.accesskey  "a">
+
+<!ENTITY inspectorHTMLDelete.label          "Node verwijderen">
+<!ENTITY inspectorHTMLDelete.accesskey      "v">
+
+<!ENTITY inspector.selectButton.tooltip     "Element met muis selecteren">
+
+<!ENTITY inspectorSearchHTML.label          "HTML doorzoeken">
+<!ENTITY inspectorSearchHTML.key            "F">
+
+<!ENTITY inspectorCopyImageDataUri.label       "Afbeeldingsgegevens-URL kopiëren">
+
+<!ENTITY inspectorShowDOMProperties.label       "DOM-eigenschappen tonen">

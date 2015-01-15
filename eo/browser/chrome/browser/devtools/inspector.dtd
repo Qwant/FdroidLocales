@@ -1,0 +1,26 @@
+<!ENTITY inspectorHTMLEdit.label       "Redakti kiel HTML">
+<!ENTITY inspectorHTMLEdit.accesskey   "R">
+
+<!ENTITY inspectorHTMLCopyInner.label       "Kopii enan HTML">
+<!ENTITY inspectorHTMLCopyInner.accesskey   "e">
+
+<!ENTITY inspectorHTMLCopyOuter.label       "Kopii eksteran HTML">
+<!ENTITY inspectorHTMLCopyOuter.accesskey   "k">
+
+<!ENTITY inspectorCopyUniqueSelector.label       "Kopii unikan elektilon">
+<!ENTITY inspectorCopyUniqueSelector.accesskey   "u">
+
+<!ENTITY inspectorHTMLPasteOuter.label      "Alglui eksteran HTML">
+<!ENTITY inspectorHTMLPasteOuter.accesskey  "e">
+
+<!ENTITY inspectorHTMLDelete.label          "Forigi nodon">
+<!ENTITY inspectorHTMLDelete.accesskey      "F">
+
+<!ENTITY inspector.selectButton.tooltip     "Elekti elementon per muso">
+
+<!ENTITY inspectorSearchHTML.label          "Serĉi HTML">
+<!ENTITY inspectorSearchHTML.key            "S">
+
+<!ENTITY inspectorCopyImageDataUri.label       "Kopii datuman URL de bildo">
+
+<!ENTITY inspectorShowDOMProperties.label       "Montri atributojn de DOM">

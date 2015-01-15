@@ -1,0 +1,51 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!-- LOCALIZATION NOTE : FILE This file contains the Profiler strings -->
+<!-- LOCALIZATION NOTE : FILE Do not translate commandkey -->
+
+<!-- LOCALIZATION NOTE : FILE The correct localization of this file might be to
+  - keep it in English, or another language commonly spoken among web developers.
+  - You want to make that choice consistent across the developer tools.
+  - A good criteria is the language in which you'd find the best
+  - documentation on web development on the web. -->
+
+<!-- LOCALIZATION NOTE (profilerUI.emptyNotice1/2): This is the label shown
+  -  in the call list view when empty. -->
+<!ENTITY profilerUI.emptyNotice1    "JavaScript 함수 호출을 기록하려면">
+<!ENTITY profilerUI.emptyNotice2    "단추를 누르십시오.">
+
+<!-- LOCALIZATION NOTE (profilerUI.stopNotice1/2): This is the label shown
+  -  in the call list view while recording a profile. -->
+<!ENTITY profilerUI.stopNotice1    "프로파일링을 그만하시려면">
+<!ENTITY profilerUI.stopNotice2    "단추를 한번 더 누르십시오.">
+
+<!-- LOCALIZATION NOTE (profilerUI.loadingNotice): This is the label shown
+  -  in the call list view while loading a profile. -->
+<!ENTITY profilerUI.loadingNotice "읽어들이는 중…">
+
+<!-- LOCALIZATION NOTE (profilerUI.recordButton): This string is displayed
+  -  on a button that starts a new profile. -->
+<!ENTITY profilerUI.recordButton.tooltip "JavaScript 함수 호출을 기록합니다.">
+
+<!-- LOCALIZATION NOTE (profilerUI.importButton): This string is displayed
+  -  on a button that opens a dialog to import a saved profile data file. -->
+<!ENTITY profilerUI.importButton "가져오기…">
+
+<!-- LOCALIZATION NOTE (profilerUI.clearButton): This string is displayed
+  -  on a button that remvoes all the recordings. -->
+<!ENTITY profilerUI.clearButton "모두 지우기">
+
+<!-- LOCALIZATION NOTE (profilerUI.table.*): These strings are displayed
+  -  in the call tree headers for a recording. -->
+<!ENTITY profilerUI.table.totalDuration   "전체 시간 (ms)">
+<!ENTITY profilerUI.table.selfDuration    "차지하는 시간 (ms)">
+<!ENTITY profilerUI.table.totalPercentage "전체 비용">
+<!ENTITY profilerUI.table.selfPercentage  "차지하는 비용">
+<!ENTITY profilerUI.table.samples         "샘플 수">
+<!ENTITY profilerUI.table.function        "함수">
+
+<!-- LOCALIZATION NOTE (profilerUI.newtab.tooltiptext): The tooltiptext shown
+  -  on the "+" (new tab) button for a profile when a selection is available. -->
+<!ENTITY profilerUI.newtab.tooltiptext "선택 영역을 새 탭으로 만들어 보이기">

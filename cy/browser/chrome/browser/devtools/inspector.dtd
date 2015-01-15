@@ -1,0 +1,26 @@
+<!ENTITY inspectorHTMLEdit.label       "Golygu fel HTML">
+<!ENTITY inspectorHTMLEdit.accesskey   "G">
+
+<!ENTITY inspectorHTMLCopyInner.label       "Copïo HTML Mewnol">
+<!ENTITY inspectorHTMLCopyInner.accesskey   "M">
+
+<!ENTITY inspectorHTMLCopyOuter.label       "Copïo HTML Allannol">
+<!ENTITY inspectorHTMLCopyOuter.accesskey   "A">
+
+<!ENTITY inspectorCopyUniqueSelector.label       "Copïo'r Dewisydd Unigryw">
+<!ENTITY inspectorCopyUniqueSelector.accesskey   "D">
+
+<!ENTITY inspectorHTMLPasteOuter.label      "Gludo HTML Allanol">
+<!ENTITY inspectorHTMLPasteOuter.accesskey  "G">
+
+<!ENTITY inspectorHTMLDelete.label          "Dileu Nod">
+<!ENTITY inspectorHTMLDelete.accesskey      "D">
+
+<!ENTITY inspector.selectButton.tooltip     "Dewis elfen gyda llygoden">
+
+<!ENTITY inspectorSearchHTML.label          "Chwilio HTML">
+<!ENTITY inspectorSearchHTML.key            "F">
+
+<!ENTITY inspectorCopyImageDataUri.label       "Copïo Data Delwedd-URL">
+
+<!ENTITY inspectorShowDOMProperties.label       "Dangos Priodoleddau DOM">

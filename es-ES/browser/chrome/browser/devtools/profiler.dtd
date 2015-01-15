@@ -1,0 +1,19 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY profilerUI.emptyNotice1 "Pulse en el botón">
+<!ENTITY profilerUI.emptyNotice2 "para comenzar a grabar llamadas a funciones JavaScript.">
+<!ENTITY profilerUI.stopNotice1 "Pulse en el botón">
+<!ENTITY profilerUI.stopNotice2 "de nuevo para dejar de analizar.">
+<!ENTITY profilerUI.loadingNotice "Cargando…">
+<!ENTITY profilerUI.recordButton.tooltip "Grabar llamadas a funciones JavaScript.">
+<!ENTITY profilerUI.importButton "Importar…">
+<!ENTITY profilerUI.clearButton "Limpiar">
+<!ENTITY profilerUI.table.totalDuration "Tiempo total (ms)">
+<!ENTITY profilerUI.table.selfDuration "Tiempo propio (ms)">
+<!ENTITY profilerUI.table.totalPercentage "Coste total">
+<!ENTITY profilerUI.table.selfPercentage "Coste propio">
+<!ENTITY profilerUI.table.samples "Ejemplos">
+<!ENTITY profilerUI.table.function "Función">
+<!ENTITY profilerUI.newtab.tooltiptext "Añadir nueva pestaña a partir de la selección">

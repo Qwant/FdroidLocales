@@ -1,0 +1,26 @@
+<!ENTITY inspectorHTMLEdit.label       "Redaguoti HTML kodą">
+<!ENTITY inspectorHTMLEdit.accesskey   "R">
+
+<!ENTITY inspectorHTMLCopyInner.label       "Kopijuoti vidinį HTML kodą">
+<!ENTITY inspectorHTMLCopyInner.accesskey   "v">
+
+<!ENTITY inspectorHTMLCopyOuter.label       "Kopijuoti išorinį HTML kodą">
+<!ENTITY inspectorHTMLCopyOuter.accesskey   "i">
+
+<!ENTITY inspectorCopyUniqueSelector.label       "Kopijuoti unikalų selektorių">
+<!ENTITY inspectorCopyUniqueSelector.accesskey   "u">
+
+<!ENTITY inspectorHTMLPasteOuter.label      "Analizuoti išorinį HTML kodą">
+<!ENTITY inspectorHTMLPasteOuter.accesskey  "A">
+
+<!ENTITY inspectorHTMLDelete.label          "Šalinti elementą">
+<!ENTITY inspectorHTMLDelete.accesskey      "Š">
+
+<!ENTITY inspector.selectButton.tooltip     "Rinktis elementą pele">
+
+<!ENTITY inspectorSearchHTML.label          "Ieškoti HTML kode">
+<!ENTITY inspectorSearchHTML.key            "F">
+
+<!ENTITY inspectorCopyImageDataUri.label       "Kopijuoti paveikslo data-URI">
+
+<!ENTITY inspectorShowDOMProperties.label       "Rodyti DOM savybes">
