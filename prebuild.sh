@@ -27,3 +27,4 @@ echo "mk_add_options 'export MOZ_CHROME_MULTILOCALE=$(tr '\n' ' ' <  $REPO/used-
 echo "mk_add_options 'export L10NBASEDIR=$REPO'" >> .mozconfig
 echo "ac_add_options --with-l10n-base=$REPO" >> .mozconfig
 
+mkdir fdroid
