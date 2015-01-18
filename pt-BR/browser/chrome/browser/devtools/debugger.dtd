@@ -45,7 +45,6 @@
 
 <!ENTITY debuggerUI.autoPrettyPrint     "Autoformatar código-fonte minimizado">
 <!ENTITY debuggerUI.autoPrettyPrint.accesskey "A">
-
 <!-- LOCALIZATION NOTE (debuggerUI.sources.toggleBreakpoints): This is the tooltip for the
   -  button that toggles all breakpoints for all sources. -->
 
@@ -67,7 +66,6 @@
 
 <!ENTITY debuggerUI.pauseExceptions           "Pausa em exceções">
 <!ENTITY debuggerUI.pauseExceptions.accesskey "P">
-
 <!-- LOCALIZATION NOTE (debuggerUI.ignoreCaughtExceptions): This is the label for the
   -  checkbox that toggles ignoring caught exceptions. -->
 
@@ -83,7 +81,6 @@
 
 <!ENTITY debuggerUI.showVarsFilter           "Exibir campo de filtro de variáveis">
 <!ENTITY debuggerUI.showVarsFilter.accesskey "v">
-
 <!-- LOCALIZATION NOTE (debuggerUI.showOnlyEnum): This is the label for the
   -  checkbox that toggles visibility of hidden (non-enumerable) variables and
   -  properties in stack views. The "enumerable" flag is a state of a property
@@ -103,7 +100,6 @@
 
 <!ENTITY debuggerUI.autoBlackBox           "Ativar automaticamente modo caixa-preta em códigos-fonte minificados">
 <!ENTITY debuggerUI.autoBlackBox.accesskey "A">
-
 <!-- LOCALIZATION NOTE (debuggerUI.searchPanelOperators): This is the text that
   -  appears in the filter panel popup as a header for the operators part. -->
 

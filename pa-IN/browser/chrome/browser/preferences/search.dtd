@@ -4,15 +4,15 @@
 
 <!ENTITY defaultSearchEngine.label             "ਮੂਲ ਖੋਜ ਇੰਜਣ">
 
-<!ENTITY chooseYourDefaultSearchEngine.label   "ਆਪਣਾ ਮੂਲ ਖੋਜ ਇੰਜਣ ਚੁਣੋ। &brandShortName; ਇਸ ਨੂੰ ਟਿਕਾਣਾ ਪੱਟੀ, ਖੋਜ ਪੱਟੀ ਤੇ ਸ਼ੁਰੂ ਸਫ਼ੇ ਵਿੱਚ ਵਰਤਦਾ ਹੈ।">
+<!ENTITY chooseYourDefaultSearchEngine.label   "ਆਪਣਾ ਮੂਲ ਖੋਜ ਇੰਜਣ ਚੁਣੋ। &brandShortName; ਨੂੰ ਟਿਕਾਣਾ ਪੱਟੀ, ਖੋਜ ਪੱਟੀ ਅਤੇ ਸ਼ੁਰੂਆਤ ਸਫ਼ੇ ਵਿੱਚ ਵਰਤਦਾ ਹੈ।">
 
-<!ENTITY provideSearchSuggestions.label        "ਖੋਜ ਸੁਝਾਅ ਦਿਉ">
+<!ENTITY provideSearchSuggestions.label        "ਖੋਜ ਸੁਝਾਅ ਦਿੰਦਾ ਹੈ">
 <!ENTITY provideSearchSuggestions.accesskey    "s">
 
 
 <!ENTITY oneClickSearchEngines.label           "ਇੱਕ-ਕਲਿੱਕ ਖੋਜ ਇੰਜਣ">
 
-<!ENTITY chooseWhichOneToDisplay.label         "ਖੋਜ ਪੱਟੀ ਤੁਹਾਨੂੰ ਬਦਲਵੇਂ ਖੋਜ ਇੰਜਣ ਵਿੱਚ ਸਿੱਧਾ ਲੱਭਣ ਦਿੰਦੀ ਹੈ। ਚੋਣ ਕਰੋ ਕਿ ਕਿਹੜਾ ਵਿਖਾਉਣਾ ਹੈ।">
+<!ENTITY chooseWhichOneToDisplay.label         "ਖੋਜ ਪੱਟੀ ਤੁਹਾਨੂੰ ਬਦਲਵੇਂ ਖੋਜ ਇੰਜਣ ਨਾਲ ਸਿੱਧੀ ਖੋਜ ਕਰਨ ਦਿੰਦੀ ਹੈ। ਚੋਣ ਕਰੋ ਕਿ ਕਿਹੜੇ ਵਿਖਾਉਣੇ ਹਨ।">
 
 <!ENTITY engineNameColumn.label                "ਖੋਜ ਇੰਜਣ">
 <!ENTITY engineKeywordColumn.label             "ਸ਼ਬਦ">
@@ -23,4 +23,4 @@
 <!ENTITY removeEngine.label                    "ਹਟਾਓ">
 <!ENTITY removeEngine.accesskey                "r">
 
-<!ENTITY addMoreSearchEngines.label            "…ਹੋਰ ਖੋਜ ਇੰਜਣ ਜੋੜੋ">
+<!ENTITY addMoreSearchEngines.label            "ਹੋਰ ਖੋਜ ਇੰਜਣ ਜੋੜੋ…">

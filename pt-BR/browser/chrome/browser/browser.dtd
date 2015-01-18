@@ -70,7 +70,6 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printPreviewCmd.accesskey "z">
 <!ENTITY printCmd.label "Imprimir…">
 <!ENTITY printCmd.accesskey "I">
-
 <!ENTITY printCmd.commandkey "p">
 
 <!ENTITY goOfflineCmd.label "Modo offline">
@@ -151,10 +150,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (shareLink.accesskey): must be different than the following share access keys -->
 <!ENTITY shareLink.label "Compartilhar este link">
 <!ENTITY shareLink.accesskey "h">
-
-
 <!ENTITY shareImage.label "Compartilhar esta imagem">
-<!ENTITY shareImage.accesskey "r">
+<!ENTITY shareImage.accesskey "h">
 <!ENTITY shareSelect.label "Compartilhar seleção">
 <!ENTITY shareSelect.accesskey "h">
 <!ENTITY shareVideo.label "Compartilhar este vídeo">
@@ -205,7 +202,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksWinCmd.commandkey "I">
 
 <!ENTITY historyButton.label            "Histórico">
-
 <!ENTITY historySidebarCmd.commandKey   "h">
 
 <!ENTITY toolsMenu.label              "Ferramentas">
@@ -271,6 +267,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY browserToolboxMenu.label     "Browser Toolbox">
 <!ENTITY browserToolboxMenu.accesskey "T">
+<!-- LOCALIZATION NOTE (browserContentToolboxMenu.label): This is the label for the
+  -  application menu item that opens the browser content toolbox UI in the Tools menu.
+  -  This toolbox allows to debug the chrome of the content process in multiprocess builds.  -->
+
+<!ENTITY browserContentToolboxMenu.label     "Caixa de ferramentas de conteúdo do navegador">
 
 <!ENTITY devToolbarCloseButton.tooltiptext "Ocultar barra do desenvolvedor">
 <!ENTITY devToolbarMenu.label              "Barra do desenvolvedor">
@@ -319,7 +320,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY pasteCmd.key           "v">  
 <!ENTITY pasteCmd.accesskey         "o"> 
 <!ENTITY deleteCmd.label          "Excluir">  
-
 <!ENTITY deleteCmd.key            "D">  
 <!ENTITY deleteCmd.accesskey        "x"> 
 <!ENTITY selectAllCmd.label         "Selecionar tudo">  
@@ -414,6 +414,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY searchFocus.commandkey       "K">
 <!ENTITY searchFocus.commandkey2      "E">
 <!ENTITY searchFocusUnix.commandkey   "J">
+<!-- LOCALIZATION NOTE (searchFor.label, searchWith.label):
+     These two strings are used to build the header above the list of one-click
+     search providers:  "Search for <used typed keywords> with:" -->
+
+<!ENTITY searchFor.label              "Pesquisar por ">
+<!ENTITY searchWith.label             " com:">
+<!ENTITY changeSearchSettings.button  "Alterar configurações de pesquisa">
 
 <!ENTITY tabView.commandkey           "E">
 
@@ -431,7 +438,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY openFrameCmd.accesskey       "A">
 <!ENTITY showOnlyThisFrameCmd.label     "Exibir somente este frame">
 <!ENTITY showOnlyThisFrameCmd.accesskey "x">
-
 <!ENTITY reloadCmd.commandkey         "r">
 <!ENTITY reloadFrameCmd.label         "Recarregar">
 <!ENTITY reloadFrameCmd.accesskey     "R">
@@ -668,12 +674,10 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      https://support.mozilla.org/kb/how-do-i-tell-if-my-connection-is-secure -->
 
 <!ENTITY identity.help.tooltip "Como saber se minha conexão com um site é segura?">
-
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
 
 <!ENTITY tabsToolbar.label "Abas do navegador">
-
 <!-- LOCALIZATION NOTE (syncTabsMenu2.label): This appears in the history menu -->
 
 <!ENTITY syncTabsMenu2.label     "Abas de outros dispositivos">
@@ -728,7 +732,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "G">
 <!ENTITY customizeMode.lwthemes.menuGetMore "Adicionar temas">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "A">
-<!ENTITY customizeMode.deveditionTheme.label "Use o tema &brandShortName;">
+<!ENTITY customizeMode.deveditionTheme.label2 "Usar o tema Developer Edition">
 
 <!ENTITY social.chatBar.commandkey "C">
 <!ENTITY social.chatBar.label "Focar bate-papos">
@@ -754,10 +758,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY mixedContentBlocked2.options "Opções">
 <!ENTITY mixedContentBlocked2.unblock.label "Desativar proteção por enquanto">
 <!ENTITY mixedContentBlocked2.unblock.accesskey "D">
-
-
-<!ENTITY mixedContentBlocked2.block.label "Enable protection">
-<!ENTITY mixedContentBlocked2.block.accesskey "E">
+<!ENTITY mixedContentBlocked2.block.label "Ativar proteção">
+<!ENTITY mixedContentBlocked2.block.accesskey "A">
 <!ENTITY mixedContentBlocked2.disabled.message "A proteção está desativada">
 
 <!ENTITY trackingContentBlocked.message "Rastreamento">
@@ -766,10 +768,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY trackingContentBlocked.options "Opções">
 <!ENTITY trackingContentBlocked.unblock2.label "Desativar proteção para este site">
 <!ENTITY trackingContentBlocked.unblock2.accesskey "D">
-
-
-<!ENTITY trackingContentBlocked.block.label "Enable protection">
-<!ENTITY trackingContentBlocked.block.accesskey "E">
+<!ENTITY trackingContentBlocked.block.label "Ativar proteção">
+<!ENTITY trackingContentBlocked.block.accesskey "A">
 <!ENTITY trackingContentBlocked.disabled.message "A proteção antirrastreamento está desativada">
 
 <!ENTITY pointerLock.notification.message "Tecle ESC quando quiser exibi-lo.">

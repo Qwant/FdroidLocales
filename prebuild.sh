@@ -64,12 +64,9 @@ sed -i -e '/test\//d' content/html/content/moz.build
 sed -i -e '/xpcshell.ini/d' content/moz.build
 sed -i -e '/MOCHITEST/d' layout/generic/moz.build
 sed -i -e '/reftests\//d'  -e '/crashtest\//d' layout/moz.build
-#sed -i -e '/crashtest/d' layout/tools/reftest/Makefile.in
 sed -i -e '/xpcshell.ini/d' toolkit/components/search/moz.build
 sed -i -e '/tests\//d' toolkit/modules/moz.build
 sed -i -e '/tests/d' toolkit/mozapps/update/moz.build
-#sed -i -e '/crashtests.list/,+4d' testing/testsuite-targets.mk
-#sed -i -e 's/test crashtest/test/g' -e '/  crashtest/d' testing/testsuite-targets.mk
 
 sed -i -e 's/android:debuggable="true"//g' mobile/android/base/AndroidManifest.xml.in 
 sed -i -e '/MOZ_ANDROID_GOOGLE_PLAY_SERVICES/d' configure.in

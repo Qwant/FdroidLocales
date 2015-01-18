@@ -172,10 +172,8 @@
 <!ENTITY pref_cookies_not_accept_foreign "Påslått, med unntak for tredjeparts">
 <!ENTITY pref_cookies_disabled "Avslått">
 
-<!ENTITY pref_donottrack_menu "Sporing">
-<!ENTITY pref_donottrack_disallow_tracking "Fortell nettsted at jeg ikke ønsker å spores">
-<!ENTITY pref_donottrack_allow_tracking "Fortell nettsted at jeg ønsker å spores">
-<!ENTITY pref_donottrack_no_pref "Ikke fortell nettsted noe om mine sporingsvalg">
+<!ENTITY pref_donottrack_title "Ikke spor">
+<!ENTITY pref_donottrack_summary "&brandShortName; vil fortelle nettsted at du ikke ønsker å spores">
 
 <!ENTITY pref_char_encoding "Tegnkoding">
 <!ENTITY pref_char_encoding_on "Vis meny">
@@ -210,6 +208,9 @@ size. -->
 <!-- Localization note (pref_font_size_preview_text): This paragraph is used as an example to
     demonstrate the font size setting.  It is meant to be whimsical and fun. -->
 <!ENTITY pref_font_size_preview_text "The quick orange fox jumps over your expectations with more speed, more flexibility and more security. As a non-profit, we\'re free to innovate on your behalf without any pressure to compromise. That means a better experience for you and a brighter future for the Web.">
+
+<!ENTITY pref_media_autoplay_enabled "Tillat autoavspilling">
+<!ENTITY pref_media_autoplay_enabled_summary "Velg om nettsider kan automatisk spille av videoer og annet medieinnhold">
 
 <!ENTITY pref_use_master_password "Bruk et hovedpassord">
 <!ENTITY pref_sync "Sync">
@@ -361,8 +362,13 @@ size. -->
 <!ENTITY site_settings_no_settings  "Ingen innstillinger å fjerne.">
 
 <!ENTITY reading_list_added "Siden er lagt til i leselisten">
-<!ENTITY reading_list_failed "Klarte ikke legge til siden i leselisten">
 <!ENTITY reading_list_duplicate "Siden er allerede i leselisten">
+
+<!-- Localization note (reading_list_time_minutes2) : This string is used in the "Reading List"
+     panel on the home page to give the user an estimate of how many minutes it will take to
+     read an article. The word "minute" should be abbreviated if possible. -->
+<!ENTITY reading_list_time_minutes2 "&formatD; min">
+<!ENTITY reading_list_time_over_an_hour "Over en time">
 
 <!-- Localization note : These strings are used as alternate text for accessibility.
      They are not visible in the UI. -->
@@ -386,6 +392,9 @@ size. -->
      text underneath empty thumbnails in the Top Sites page on about:home. -->
 <!ENTITY home_top_sites_add "Legg til nettsted">
 
+<!-- Localization note (home_title): This string should be kept in sync
+     with the page title defined in aboutHome.dtd -->
+<!ENTITY home_title "&brandShortName; Hjem">
 <!ENTITY home_history_title "Historikk">
 <!ENTITY home_clear_history_button "Slett nettleserhistorikk">
 <!ENTITY home_clear_history_confirm "Er du sikker på at du vil slette historikken?">
@@ -395,6 +404,9 @@ size. -->
 <!ENTITY home_last_tabs_empty "Nylig brukte faner vises her.">
 <!ENTITY home_open_all "Åpne alle">
 <!ENTITY home_most_recent_empty "Nettsted som du sist besøkte visese her.">
+<!-- Localization note (home_most_recent_emptyhint2): "Psst" is a sound that might be used to attract someone's attention unobtrusively, and intended to hint at Private Browsing to the user.
+     The placeholders &formatS1; and &formatS2; are used to mark the location of text underlining. -->
+<!ENTITY home_most_recent_emptyhint2 "Psst: hvis du bruker &formatS1;Ny privat fane&formatS2; vil historikk ikke lagres.">
 <!ENTITY home_reading_list_empty "Artikler du lagrer for senere vises her.">
 <!-- Localization note (home_reading_list_hint): The "TIP" string is synonymous to "hint", "clue", etc. This string is displayed
      as an advisory message on how to add content to the reading list when the reading list empty.
@@ -462,11 +474,21 @@ substitution variables.  If it is difficult to translate the sense of the string
 with that structure, consider a translation which ignores the preceding domain and
 just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY identity_run_by "som drives av">
+<!ENTITY identity_no_info "Dette nettstedet tilbyr ikke identitetsinformasjon.">
+<!ENTITY identity_not_encrypted "Tilkoblingen til dette nettstedet er ikke kryptert.">
 
 <!-- Mixed content notifications in site identity popup -->
 <!ENTITY loaded_mixed_content_message "Denne siden viser innhold som ikke er sikret.">
 <!ENTITY blocked_mixed_content_message_top "&brandShortName; har blokkert innhold som ikke er sikret.">
 <!ENTITY blocked_mixed_content_message_bottom "De fleste nettsted vil fortsatt virke selv om dette innholdet blokkeres.">
+
+<!-- Tracking content notifications in site identity popup -->
+<!ENTITY loaded_tracking_content_message_top "Sporingsbeskyttelse er avslått.">
+<!ENTITY loaded_tracking_content_message_bottom "Deler av denne siden kan spore aktiviteten din på nettet.">
+<!ENTITY blocked_tracking_content_message_top2 "Sporingsbeskyttelse påslått.">
+<!ENTITY blocked_tracking_content_message_bottom2 "Deler av denne nettsiden som sporer nettaktiviteten din ble blokkert.">
+
+<!-- Common mixed and tracking content strings in site identity popup -->
 <!ENTITY learn_more "Les mer">
 <!ENTITY enable_protection "Slå på beskyttelse">
 <!ENTITY disable_protection "Slå av beskyttelse">
@@ -494,8 +516,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY webapp_generic_name "App">
 
 <!ENTITY searchable_description "Bokmerker og historikk">
-
-<!ENTITY devtools_remote_debugging_forward "Ikke glem å konfigurere port-forwarding!">
 
 <!-- Updater notifications -->
 <!ENTITY updater_start_title2 "Oppdateringer er tilgjengelige for &brandShortName;">
@@ -548,3 +568,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "Last synced" is one of the user's other Sync clients, typically Firefox on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "Sist synkronisert: &formatS;">
+
+<!-- Find-In-Page strings -->
+<!-- LOCALIZATION NOTE (find_matchcase): This is meant to appear as an icon that changes color
+     if match-case is activated. i.e. No more than two letters, one uppercase, one lowercase. -->
+<!ENTITY find_matchcase "Aa">

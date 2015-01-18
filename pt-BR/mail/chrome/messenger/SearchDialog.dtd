@@ -13,8 +13,8 @@
 <!ENTITY resetButton.accesskey       "L">
 <!ENTITY openButton.label            "Abrir">
 <!ENTITY openButton.accesskey        "A">
-<!ENTITY deleteButton.label          "Excluir">
-<!ENTITY deleteButton.accesskey      "E">
+
+
 <!ENTITY searchDialogTitle.label     "Pesquisar mensagens">
 <!ENTITY results.label               "Resultados">
 <!ENTITY moveButton.label            "Mover para">

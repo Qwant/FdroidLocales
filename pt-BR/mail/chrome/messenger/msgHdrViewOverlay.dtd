@@ -6,7 +6,7 @@
 <!ENTITY fromField4.label "De">
 <!ENTITY senderField4.label "Remetente">
 <!ENTITY organizationField4.label "Empresa">
-<!ENTITY replyToField4.label "Resposta para">
+<!ENTITY replyToField4.label "Responder para">
 
 <!ENTITY subjectField4.label "Assunto">
 <!ENTITY ccField4.label "Cc">
@@ -49,7 +49,8 @@
 <!ENTITY hdrViewToolbarAlwaysReplySender.label "Sempre exibir o “Responder a”">
 <!ENTITY hdrViewToolbarAlwaysReplySender.accesskey "S">
 
-<!ENTITY otherActionsButton1.label "Mais ações">
+<!ENTITY otherActionsButton2.label "Mais">
+<!ENTITY otherActionsButton.tooltip "Mais ações">
 <!ENTITY otherActionsOpenConversation1.label "Abrir como conversa">
 <!ENTITY otherActionsOpenConversation1.accesskey "r">
 <!ENTITY otherActionsOpenInNewWindow1.label "Abrir em nova janela">

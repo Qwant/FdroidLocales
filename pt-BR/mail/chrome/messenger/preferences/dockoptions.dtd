@@ -12,6 +12,4 @@
 <!ENTITY showAllUnreadMessagesCount.label      "Contagem de mensagens não lidas">
 <!ENTITY showAllUnreadMessagesCount.accesskey  "t">
 <!ENTITY dockIconBadge.label                   "Badge do ícone">
-<!ENTITY dockIconShow.label                    "Criar badge do ícone com:">
-
-
+<!ENTITY dockIconShow.label                    "Badge do ícone com:">
