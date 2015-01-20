@@ -1,0 +1,71 @@
+# HG changeset patch
+# User Brad Lassey <blassey@mozilla.com>
+# Date 1420592316 18000
+#      Tue Jan 06 19:58:36 2015 -0500
+# Node ID cd5fba7cec99bebd6b16baa87be66b63950141b2
+# Parent  2345f99492af07c58db8ecff71be2dff0ca1a336
+bug 1083116 - build fails: malloc_decls.h conflicting types for 'malloc_usable_size' r=glandium
+
+diff --git a/configure.in b/configure.in
+--- a/configure.in
++++ b/configure.in
+@@ -3405,16 +3405,29 @@ for file in $MALLOC_HEADERS; do
+     AC_DEFINE_UNQUOTED(MALLOC_H, <$MALLOC_H>)
+     break
+   fi
+ done
+ 
+ AC_CHECK_FUNCS(strndup posix_memalign memalign valloc)
+ 
+ AC_CHECK_FUNCS(malloc_usable_size)
++
++MALLOC_USABLE_SIZE_CONST_PTR=const
++MOZ_CHECK_HEADERS([malloc.h], [
++  AC_MSG_CHECKING([whether malloc_usable_size definition can use const argument])
++  AC_TRY_COMPILE([#include <malloc.h>
++                  #include <stddef.h>
++                  size_t malloc_usable_size(const void *ptr);],
++                  [return malloc_usable_size(0);],
++                  AC_MSG_RESULT([yes]),
++                  AC_MSG_RESULT([no])
++                  MALLOC_USABLE_SIZE_CONST_PTR=)
++])
++AC_DEFINE_UNQUOTED([MALLOC_USABLE_SIZE_CONST_PTR],[$MALLOC_USABLE_SIZE_CONST_PTR])
+ 
+ dnl See if compiler supports some gcc-style attributes
+ 
+ AC_CACHE_CHECK(for __attribute__((always_inline)),
+                ac_cv_attribute_always_inline,
+                [AC_TRY_COMPILE([inline void f(void) __attribute__((always_inline));],
+                                [],
+                                ac_cv_attribute_always_inline=yes,
+diff --git a/memory/build/malloc_decls.h b/memory/build/malloc_decls.h
+--- a/memory/build/malloc_decls.h
++++ b/memory/build/malloc_decls.h
+@@ -10,21 +10,21 @@
+  *   - argument types
+  */
+ 
+ #ifndef malloc_decls_h
+ #  define malloc_decls_h
+ 
+ #  include "jemalloc_types.h"
+ 
+-#  if defined(__linux__) && (!defined(MOZ_MEMORY_ANDROID) || ANDROID_VERSION < 19)
+-typedef void * usable_ptr_t;
+-#  else
+-typedef const void * usable_ptr_t;
+-#  endif
++#ifndef MALLOC_USABLE_SIZE_CONST_PTR
++#define MALLOC_USABLE_SIZE_CONST_PTR const
++#endif
++
++typedef MALLOC_USABLE_SIZE_CONST_PTR void * usable_ptr_t;
+ 
+ #  define MALLOC_FUNCS_MALLOC 1
+ #  define MALLOC_FUNCS_JEMALLOC 2
+ #  define MALLOC_FUNCS_INIT 4
+ #  define MALLOC_FUNCS_BRIDGE 8
+ #  define MALLOC_FUNCS_ALL (MALLOC_FUNCS_INIT | MALLOC_FUNCS_BRIDGE | \
+                             MALLOC_FUNCS_MALLOC | MALLOC_FUNCS_JEMALLOC)
+ 
