@@ -672,9 +672,9 @@
 
 <!ENTITY columnChooser2.tooltip "Selectați coloanele de afișat">
 
-
-
-
+<!ENTITY fromColumn2.tooltip "Sortează după expeditor">
+<!ENTITY recipientColumn2.tooltip "Sortează după destinatar">
+<!ENTITY subjectColumn2.tooltip "Sortare după subiect">
 <!ENTITY dateColumn2.tooltip "Sortează după dată">
 <!ENTITY priorityColumn2.tooltip "Sortează după prioritate">
 <!ENTITY tagsColumn2.tooltip "Sortează după etichete">
@@ -684,7 +684,7 @@
 
 
 
-
+<!ENTITY readColumn2.tooltip "Sortare după citire">
 <!ENTITY receivedColumn2.tooltip "Sortează după data primirii">
 <!ENTITY starredColumn2.tooltip "Sortează după stea">
 <!ENTITY locationColumn2.tooltip "Sortează după locație">

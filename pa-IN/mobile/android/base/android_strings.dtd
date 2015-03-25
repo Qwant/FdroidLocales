@@ -199,6 +199,10 @@
 <!ENTITY pref_cookies_not_accept_foreign "ਚਾਲੂ ਹਨ, ਸੁਤੰਤਰ ਧਿਰ ਨੂੰ ਛੱਡ ਕੇ">
 <!ENTITY pref_cookies_disabled "ਬੰਦ ਹਨ">
 
+
+<!ENTITY pref_tracking_protection_title "ਟਰੈਕਿੰਗ ਸੁਰੱਖਿਆ">
+<!ENTITY pref_tracking_protection_summary "&brandShortName; ਸਾਈਟਾਂ ਵਲੋਂ ਤੁਹਾਨੂੰ ਟਰੈਕ ਕੀਤੇ ਜਾਣ ਤੋਂ ਬਚਾਏਗਾ">
+
 <!ENTITY pref_donottrack_title "ਟਰੈਕ ਨਾ ਕਰੋ">
 <!ENTITY pref_donottrack_summary "&brandShortName; ਸਾਈਟਾਂ ਨੂੰ ਦੱਸੇਗਾ ਕਿ ਤੁਸੀਂ ਟਰੈਕ ਨਹੀਂ ਕੀਤੇ ਜਾਣਾ ਚਾਹੁੰਦੇ ਹੋ">
 
@@ -442,7 +446,7 @@ size. -->
      as an advisory message on how to add content to the reading list when the reading list empty.
      The placeholder &formatI; will be replaced by a small image of the icon described, and can be moved to wherever
      it is applicable. -->
-<!ENTITY home_reading_list_hint2 "ਗੁਰ: ਲੇਖਾਂ ਨੂੰ ਆਪਣੀ ਪੜ੍ਹਨ ਸੂਚੀ ਵਿੱਚ  &formatI;ਆਈਕਾਨ, ਜੋ ਕਿ ਟਾਈਟਲ-ਪੱਟੀ ਵਿੱਚ ਵਿਖਾਈ ਦਿੰਦਾ ਹੈ, ਨੂੰ ਦਬਾ ਕੇ ਜੋੜ ਸਕਦੇ ਹੋ।">
+<!ENTITY home_reading_list_hint2 "ਟੋਟਕਾ: ਲੇਖਾਂ ਨੂੰ ਆਪਣੀ ਪੜ੍ਹਨ ਸੂਚੀ ਵਿੱਚ  &formatI;ਆਈਕਾਨ, ਜੋ ਕਿ ਟਾਈਟਲ-ਪੱਟੀ ਵਿੱਚ ਵਿਖਾਈ ਦਿੰਦਾ ਹੈ, ਨੂੰ ਦਬਾ ਕੇ ਜੋੜ ਸਕਦੇ ਹੋ।">
 <!-- Localization note (home_reading_list_hint_accessible): This string is used
      as alternate text for accessibility. It is not visible in the UI. -->
 <!ENTITY home_reading_list_hint_accessible "ਟੋਟਕਾ: ਲੇਖ ਨੂੰ ਆਪਣੀ ਪੜ੍ਹਨ ਸੂਚੀ ਵਿੱਚ ਰੀਡਰ ਮੋਡ ਨੂੰ ਲੰਮਾ ਸਮਾਂ ਦਬਾ ਕੇ ਰੱਖਣ ਨਾਲ ਜੋੜੋ, ਜਦੋਂ ਇਹ ਟਾਈਟਲ ਪੱਟੀ ਉੱਤੇ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ।.">
@@ -459,6 +463,8 @@ size. -->
 <!ENTITY home_remote_tabs_empty "ਹੋਰ ਯੰਤਰਾਂ ਤੋਂ ਤੁਹਾਡੀਆਂ ਟੈਬਾਂ ਨੂੰ ਇੱਥੇ ਵੇਖਾਇਆ ਜਾਂਦਾ ਹੈ।">
 <!ENTITY home_remote_tabs_unable_to_connect "ਕੁਨੈਕਟ ਕਰਨ ਲਈ ਅਸਮਰੱਥ">
 <!ENTITY home_remote_tabs_need_to_sign_in "ਆਪਣੇ ਫਾਇਰਫਾਕਸ ਨਾਲ ਮੁੜ-ਕੁਨੈਕਟ ਕਰਨ ਤੇ ਸਿੰਕ ਨੂੰ ਜਾਰੀ ਰੱਖਣ ਲਈ ਸਾਇਨ ਇਨ ਕਰੋ।">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "ਤੁਹਾਡਾ ਨਵਾਂ ਫਾਇਰਫਾਕਸ ਖਾਤਾ ਤਿਆਰ ਹੈ!">
+
 <!ENTITY home_remote_tabs_trouble_verifying "ਆਪਣੇ ਖਾਤੇ ਦੀ ਜਾਂਚ ਲਈ ਸਮੱਸਿਆ ਆ ਰਹੀ ਹੈ?">
 <!ENTITY home_remote_tabs_need_to_verify "ਸਿੰਕ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਆਪਣੇ ਫਾਇਰਫਾਕਸ ਖਾਤੇ ਦੀ ਜਾਂਚ ਕਰੋ।">
 
@@ -555,11 +561,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY updater_apply_title2 "&brandShortName; ਲਈ ਅੱਪਡੇਟ ਉਪਲੱਬਧ ਹੈ">
 <!ENTITY updater_apply_select2 "ਅੱਪਡੇਟ ਕਰਨ ਲਈ ਛੂਹੋ">
 
-<!-- New tablet UI -->
-
-<!-- LOCALIZATION NOTE (new_tablet_restart): Notification displayed after the user toggles the new tablet UI in the settings screen.-->
-<!ENTITY new_tablet_restart "ਤਬਦੀਲੀਆਂ ਲਾਗੂ ਕਰਨ ਲਈ ਬਰਾਊਜ਼ਰ ਨੂੰ ਮੁੜ-ਸ਼ੁਰੂ ਕਰੋ">
-<!ENTITY new_tablet_pref "ਨਵਾਂ ਟੇਬਲੇਟ UI ਚਲਾਓ">
 
 
 <!-- Guest mode -->

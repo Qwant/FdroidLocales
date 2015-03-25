@@ -1,0 +1,17 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY cmd_engineManager.label        "Pytawy zrjadować…">
+<!ENTITY searchEndCap.label             "Pytać">
+<!-- LOCALIZATION NOTE: The SearchHighlight strings are used in the
+   - UITour popups that shows on first use of the new search panel. -->
+
+<!ENTITY SearchHighlight1.title "Pytanje z jednym kliknjenjom">
+<!ENTITY SearchHighlight1.text "Někotre z tutych sydłow hnydom přepytać, bjeztoho zo swój standard změniće.">
+
+<!ENTITY SearchHighlight2.title "Inteligentne namjety">
+<!ENTITY SearchHighlight2.text "Namjety z wašeje standardneje pytawy so jewja, hdyž pisaće.">
+
+<!ENTITY SearchHighlightNext "Dale">
+<!ENTITY SearchHighlightClose "Wulki dźak!">

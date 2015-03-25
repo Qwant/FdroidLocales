@@ -172,7 +172,10 @@
 <!ENTITY pref_cookies_not_accept_foreign "सक्षम, तेसर पक्ष छोड़कर">
 <!ENTITY pref_cookies_disabled "निष्क्रिय">
 
-
+<!ENTITY pref_tracking_protection_title "ट्रैकिंग सुरक्षा">
+<!ENTITY pref_tracking_protection_summary "&brandShortName; ई  साइट्स के अहाँ के ट्रैकिंग करय स\u0027 रोकत ">
+<!ENTITY pref_donottrack_title "ट्रैक नहिं करु">
+<!ENTITY pref_donottrack_summary "साइट्स के सेहो बता\u0027यत कि अहाँ अपन ट्रैकिंग नहिं चाहैत छी">
 
 <!ENTITY pref_char_encoding "वर्ण ऐन्कोडिंग">
 <!ENTITY pref_char_encoding_on "मेनू देखाउ">
@@ -208,7 +211,8 @@ size. -->
 
 <!ENTITY pref_font_size_preview_text "अहाँक ई फुर्तीला नारंगी लोमड़ी आब बेसी लोच आ सुरक्षा सँ लैस भकए अहाँक उम्मीद सँ भी बेसी तेज दौड़त अछि. लाभ-लोभ सँ अलग हम बिनु समझौता कएने अहाँक सेवा मे नवाचार कलेल आजाद अछि. आउ, विश्ववव्यापी वेब क उज्ज्वल भविष्य मे विचरबाक अद्वितीय आनंद उठाउ.">
 
-
+<!ENTITY pref_media_autoplay_enabled "स्वचालन के लेल अनुमति दिय\u0027">
+<!ENTITY pref_media_autoplay_enabled_summary "नियंत्रित करु यदि वेबसाइट सब वीडियोज आउर दोसर मीडिया सामग्री सब के स्वचालित क\u0027 सकैत अछि">
 
 <!ENTITY pref_use_master_password "मुख्य गुड़किल्ली क\u0027 प्रयोग  करू ">
 <!ENTITY pref_sync "सिंक">
@@ -365,6 +369,8 @@ size. -->
      panel on the home page to give the user an estimate of how many minutes it will take to
      read an article. The word "minute" should be abbreviated if possible. -->
 
+<!ENTITY reading_list_time_minutes2 "मिनट">
+<!ENTITY reading_list_time_over_an_hour "एक घंटा सं बेसी">
 <!-- Localization note : These strings are used as alternate text for accessibility.
      They are not visible in the UI. -->
 
@@ -389,6 +395,8 @@ size. -->
 <!ENTITY home_top_sites_add "साइट जोड़ू">
 <!-- Localization note (home_title): This string should be kept in sync
      with the page title defined in aboutHome.dtd -->
+
+<!ENTITY home_title "&brandShortName; होम">
 <!ENTITY home_history_title "इतिहास">
 <!ENTITY home_clear_history_button "ब्राउजिंग इतिहास साफ करू">
 <!ENTITY home_clear_history_confirm "की अहाँ सुनिश्चित छी जे अहाँ अपन इतिहासकेँ साफ कएनाइ चाहैत अछि?">
@@ -400,6 +408,7 @@ size. -->
 <!ENTITY home_most_recent_empty "अहाँक देखल सबसँ हालिया वेबसाइट एतय देखाओल गेल अछि.">
 <!-- Localization note (home_most_recent_emptyhint2): "Psst" is a sound that might be used to attract someone's attention unobtrusively, and intended to hint at Private Browsing to the user.
      The placeholders &formatS1; and &formatS2; are used to mark the location of text underlining. -->
+<!ENTITY home_most_recent_emptyhint2 "एकर प्रयोग केलाह सँ  &formatS1;नव व्यक्तिगत टैब &formatS2; अहाँक इतिहास के नहि सहेजत.">
 <!ENTITY home_reading_list_empty "बादक लेल सहेजल गेल आलेख एतय देखाइ पड़ैत अछि.">
 <!-- Localization note (home_reading_list_hint): The "TIP" string is synonymous to "hint", "clue", etc. This string is displayed
      as an advisory message on how to add content to the reading list when the reading list empty.
@@ -422,6 +431,8 @@ size. -->
 <!ENTITY home_remote_tabs_empty "आन युक्तिसँ अहाँक टैब एतए देखाइ पड़ैछ.">
 <!ENTITY home_remote_tabs_unable_to_connect "कनेक्ट करबामे असमर्थ">
 <!ENTITY home_remote_tabs_need_to_sign_in "कृपया अपन फायरफाक्स खाता आओर सिंकिंग जारी रखबाक लेल साइन इन करू.">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "अहाँक नया फायरफॉक्स खाता तैयार अछि">
+
 <!ENTITY home_remote_tabs_trouble_verifying "अपन खाताकेँ जाँचबामे समस्या?">
 <!ENTITY home_remote_tabs_need_to_verify "सिंकिंग आरंभ करबाक लेल अपन फायरफाक्स खाताक जाँच करू.">
 
@@ -476,8 +487,10 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY blocked_mixed_content_message_bottom "ई सामग्री क रोक-थाम क बावजूद बेसी वेबसाइट नीक सँ काम करताह.">
 <!-- Tracking content notifications in site identity popup -->
 
-
-
+<!ENTITY loaded_tracking_content_message_top "ट्रैकिंग सुरक्षा निष्क्रिय">
+<!ENTITY loaded_tracking_content_message_bottom "अहि पृष्ठक अंश सब अहाँक ऑनलाइन गतिविधि के ट्रैक करि सकैत अछि.">
+<!ENTITY blocked_tracking_content_message_top2 "ट्रैकिंग सुरक्षा सक्रिय">
+<!ENTITY blocked_tracking_content_message_bottom2 "जाहि पृष्ठक अंश सब अहाँक ऑनलाइन गतिविधि कें ट्रैक करैत अछि तकरा सब कें ब्लॉक क\u0027 देल गेल अछि.">
 <!-- Common mixed and tracking content strings in site identity popup -->
 
 <!ENTITY learn_more "आओर जानू">
@@ -519,12 +532,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!ENTITY updater_apply_title2 "&brandShortName; कलेल अद्यतन उपलब्ध">
 <!ENTITY updater_apply_select2 "अद्यतन कलेल छुउ">
-<!-- New tablet UI -->
-<!-- LOCALIZATION NOTE (new_tablet_restart): Notification displayed after the user toggles the new tablet UI in the settings screen.-->
-
-
-<!ENTITY new_tablet_restart "परिवर्तनकेँ प्रभावी होबाक लेल ब्राउजरकेँ फेन चलाउ">
-<!ENTITY new_tablet_pref "नव टैब यूआई सक्रिय करू">
 <!-- Guest mode -->
 
 <!ENTITY new_guest_session "नवअतिथि सत्र">

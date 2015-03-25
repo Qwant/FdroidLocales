@@ -1,0 +1,43 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY aboutTelemetry.pageTitle "Telemetry Data">
+
+<!ENTITY aboutTelemetry.telemetryEnabled "    Telemetry is <span>enabled</span>.">
+
+<!ENTITY aboutTelemetry.telemetryDisabled "    Telemetry is <span>disabled</span>.">
+
+<!ENTITY aboutTelemetry.generalDataSection "  အထွေထွေ အချက်အလက်">
+
+<!ENTITY aboutTelemetry.slowSqlSection " Slow SQL Statements">
+
+<!ENTITY aboutTelemetry.chromeHangsSection " Browser Hangs">
+
+<!ENTITY aboutTelemetry.threadHangStatsSection "  Thread Hangs">
+
+<!ENTITY aboutTelemetry.histogramsSection "  Histograms">
+
+<!ENTITY aboutTelemetry.keyedHistogramsSection "  ကီးများဖြင့် ဇယားကွက်">
+
+<!ENTITY aboutTelemetry.simpleMeasurementsSection "   ရိုးရှင်းသော တိုင်းတာချက်များ">
+
+<!ENTITY aboutTelemetry.addonDetailsSection "   Add-on Details">
+
+<!ENTITY aboutTelemetry.lateWritesSection "နောက်ကျသောရေးသားချက်">
+
+<!ENTITY aboutTelemetry.systemInfoSection "စနစ်၏အချက်အလက်များ">
+
+<!ENTITY aboutTelemetry.addonHistogramsSection "   Histograms Collected by Add-ons">
+
+<!ENTITY aboutTelemetry.toggle "  Click to toggle section">
+
+<!ENTITY aboutTelemetry.emptySection "  (No data collected)">
+
+<!ENTITY aboutTelemetry.fullSqlWarning "  NOTE: Slow SQL debugging is enabled. Full SQL strings may be displayed below but they will not be submitted to Telemetry.">
+
+<!ENTITY aboutTelemetry.fetchSymbols "  Fetch function names for hang stacks">
+
+<!ENTITY aboutTelemetry.hideSymbols "  Show raw data from hangs">
+
+<!ENTITY aboutTelemetry.filterText "  Filter (strings or /regexp/)">

@@ -1,0 +1,80 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!-- The page shown when not logged in... -->
+
+<!ENTITY setupButton.label          "&syncBrand.fullName.label; S အားတပ်ဆင်မည်">
+<!ENTITY setupButton.accesskey      "S">
+<!ENTITY weaveDesc.label            "&syncBrand.fullName.label; သည်သင့်အား လျှို့ ၀က်သောစကားလုံးများ၊မှတ်ဉာဏ်များ ၀တ်ဆိုဒ်များအား သင်၏စက်ကိရိယားအားလုံးတွင်သုံးစွဲရယူနိုင်စေသည်။">
+<!-- The page shown when logged in... -->
+<!-- Login error feedback -->
+
+
+<!ENTITY updatePass.label             "မွမ်းမံချက်">
+<!ENTITY resetPass.label              "ပြန်ချိန်တယ်">
+<!-- Manage Account -->
+
+<!ENTITY manageAccount.label          "n အကောင့်အားပြင်ဆင်မည်">
+<!ENTITY manageAccount.accesskey      "n">
+<!ENTITY viewQuota.label              "Quotaအားကြည့်မည်">
+<!ENTITY changePassword2.label        "ပတ်စ်၀တ်ပြောင်းမည်...">
+<!ENTITY myRecoveryKey.label          "ကျွန်ုပ်၏ရီကာဗာကီး">
+<!ENTITY resetSync2.label             "ထပ်တူပြုအားအစပြန်လုပ်မည်">
+
+<!ENTITY pairDevice.label             "ပစ္စည်းတစ်ခုဖြင့်တွဲမည်။">
+
+<!ENTITY syncMy.label               "ထပ်တူပြုမည့်ကျွန်ုပ်">
+<!ENTITY engine.bookmarks.label     "m မှတ်သားချက်များ">
+<!ENTITY engine.bookmarks.accesskey "m">
+<!ENTITY engine.tabs.label          "T ခလုပ်ပြားများ">
+<!ENTITY engine.tabs.accesskey      "T">
+<!ENTITY engine.history.label       "rမှတ်တမ်း">
+<!ENTITY engine.history.accesskey   "r">
+<!ENTITY engine.passwords.label     "P စကားဝှက်များ">
+<!ENTITY engine.passwords.accesskey "P">
+<!ENTITY engine.prefs.label         "ဦးစားပေး အချက်များ">
+<!ENTITY engine.prefs.accesskey     "s">
+<!ENTITY engine.addons.label        "ပေါင်းထည့်ဆော့ဝဲများ">
+<!ENTITY engine.addons.accesskey    "ပ">
+<!-- Device Settings -->
+
+<!ENTITY syncDeviceName.label       "c စက်ပစ္စည်းအမည်:">
+<!ENTITY syncDeviceName.accesskey   "c">
+<!ENTITY unlinkDevice.label           "ဤကိရိယားအားဖြုတ်မည်">
+<!-- Footer stuff -->
+
+<!ENTITY prefs.tosLink.label        "အသုံးပြုချိန်တွင်လိုက်နာရမည့်အချက်များ">
+<!ENTITY prefs.ppLink.label         "ကိုယ်ရေးကိုယ်တာ လုံခြုံမှူအရလိုက်နာရမည့် စည်းမျဉ်း">
+<!-- Firefox Accounts stuff -->
+
+<!ENTITY fxaPrivacyNotice.link.label "ပရိုက်ဗစ်ဆီ သတိပေးချက်">
+<!ENTITY determiningAcctStatus.label     "သင့်အကောင့်အခြေအနေ အားရယူနေသှ် ...">
+<!-- LOCALIZATION NOTE (signedInUnverified.beforename.label,
+signedInUnverified.aftername.label): these two string are used respectively
+before and after the account email address. Localizers can use one of them, or
+both, to better adapt this sentence to their language.
+-->
+
+<!ENTITY signedInUnverified.beforename.label "">
+<!ENTITY signedInUnverified.aftername.label "​သှ် အတည်မပြု ရသေးပါ">
+<!-- LOCALIZATION NOTE (signedInLoginFailure.beforename.label,
+signedInLoginFailure.aftername.label): these two string are used respectively
+before and after the account email address. Localizers can use one of them, or
+both, to better adapt this sentence to their language.
+-->
+
+<!ENTITY signedInLoginFailure.beforename.label "ပြန်လည်ချိတ်ဆက် ရန် အကောင့်ဖြင့် ဝင်ရောက်ပါ ">
+<!ENTITY signedInLoginFailure.aftername.label "">
+
+<!ENTITY notSignedIn.label           "အကောင့်ဖြင့် မဝင်ထားပါ">
+<!ENTITY signIn.label                "ဝင်ပါ">
+<!ENTITY manage.label                "စီမံ">
+<!ENTITY disconnect.label            "ချိတ်ဆက်ဖြုတ်...">
+<!ENTITY verify.label                "အီးမေလ်း အတည်ပြု">
+<!ENTITY forget.label                "အခု အီးမေလ်းအား ဖျက်">
+
+<!ENTITY welcome.description "သင်၏ တပ်ဗ်များ ၊ စာအမှတ်များ နှင့် လျှို့ဝှက်စကားလုံးများကို &brandShortName; ဖြင့် မည်သည့်နေရာမှ မဆို ရယူသုံးဆွဲပါ ">
+<!ENTITY welcome.signIn.label "၀င်ပါ">
+<!ENTITY welcome.createAccount.label "အကောင့် အသစ်လုပ်ပါ">
+
+<!ENTITY welcome.useOldSync.label "ချိတ်ဆက်ဝန်ဆောင်မှူ​အဟောင်းသုံးနေသလား?">

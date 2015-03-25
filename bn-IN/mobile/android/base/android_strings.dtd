@@ -129,7 +129,7 @@
 <!ENTITY pref_category_add_search_providers "অার অনুসন্ধান প্রদানকারীদের যোগ করুন">
 <!ENTITY pref_category_search_restore_defaults "সার্চ ইঞ্জিনসমূহ রিস্টোর করুন">
 <!ENTITY pref_search_restore_defaults "ডিফল্ট মান রিস্টোর করুন">
-<!ENTITY pref_search_restore_defaults_summary " ডিফল্ট মান রিস্টোর করুন">
+<!ENTITY pref_search_restore_defaults_summary "ডিফল্ট মান রিস্টোর করুন">
 <!-- Localization note (pref_search_hint) : "TIP" as in "hint", "clue" etc. Displayed as an
      advisory message on the customise search providers settings page explaining how to add new
      search providers.
@@ -160,18 +160,20 @@
 <!-- Localization note: These are shown in the left sidebar on tablets -->
 
 <!ENTITY pref_header_customize "কাস্টমাইজ করুন">
-<!ENTITY pref_header_display "ডিসপ্লে">
-<!ENTITY pref_header_privacy_short "গোপনীয়তা">
+<!ENTITY pref_header_display "প্রদর্শন">
+<!ENTITY pref_header_privacy_short "গোপনীয়তা">
 <!ENTITY pref_header_help "সহায়তা">
 <!ENTITY pref_header_language "ভাষা">
 <!ENTITY pref_header_vendor "&vendorShortName;">
-<!ENTITY pref_header_devtools "ডেভলপার টুলগুলি">
+<!ENTITY pref_header_devtools "ডেভলপার টুলসমূহ">
 
 <!ENTITY pref_cookies_menu "কুকিসমূহ">
-<!ENTITY pref_cookies_accept_all "সক্রিয় অাছে">
+<!ENTITY pref_cookies_accept_all "সক্রিয়">
 <!ENTITY pref_cookies_not_accept_foreign "সক্রিয় অাছে , 3rd পার্টি ছাড়া">
 <!ENTITY pref_cookies_disabled "নিষ্ক্রিয়">
 
+<!ENTITY pref_tracking_protection_title "সুরক্ষা ট্র্যাক করা হচ্ছে">
+<!ENTITY pref_tracking_protection_summary "&brandShortName; সাইটগুলোকে আপনাকে ট্র্যাক করা থেকে দূরে রাখবে">
 <!ENTITY pref_donottrack_title "ট্র্যাক করবেন না">
 <!ENTITY pref_donottrack_summary "&brandShortName; সাইট দের বলে যে আপনি ট্র্যাক হতে চান না">
 
@@ -184,7 +186,7 @@
 <!ENTITY pref_clear_on_exit_summary2 "মেইন মেনু থেকে যখনি অাপনি  \u0022Quit\u0022 নির্বাচন করবেন &brandShortName; স্বয়ংক্রিয়ভাবে অাপনার তথ্য পরিষ্কার করে দেবে">
 <!ENTITY pref_clear_on_exit_dialog_title "কোন তথ্য মুছে ফেলতে হবে তা নির্বাচন করুন">
 <!ENTITY pref_plugins "প্লাগ-ইনসমূহ">
-<!ENTITY pref_plugins_enabled "সক্রিয় অাছে">
+<!ENTITY pref_plugins_enabled "সক্রিয়">
 <!ENTITY pref_plugins_tap_to_play "প্লে করার জন্য এখানে ট্যাপ করুন">
 <!ENTITY pref_plugins_disabled "নিষ্ক্রিয়">
 <!ENTITY pref_text_size "টেক্সট সাইজ">
@@ -272,7 +274,7 @@ size. -->
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
 <!ENTITY pref_update_autodownload2 "স্বয়ংক্রিয়ভাবে আপডেট ডাউনলোড করুন">
-<!ENTITY pref_update_autodownload_wifi "শুধু Wi-Fi দ্বারা">
+<!ENTITY pref_update_autodownload_wifi "কেবলমাত্র ওয়াইফাই দ্বারা">
 <!ENTITY pref_update_autodownload_never "কখনই নয়">
 <!ENTITY pref_update_autodownload_always "সর্বদা">
 <!-- Localization note (help_menu) : This string is used in the main menu-->
@@ -282,7 +284,7 @@ size. -->
 <!ENTITY quit "প্রস্থান">
 
 <!ENTITY addons "অ্যাড-অনসমূহ">
-<!ENTITY downloads "ডাউনলোডগুলি">
+<!ENTITY downloads "ডাউনলোডডাউনলোডসমূহ">
 <!ENTITY apps "অ্যাপসমূহ">
 <!ENTITY char_encoding "ক্যারেক্টার এনকোডিং">
 
@@ -321,9 +323,9 @@ size. -->
 
 <!ENTITY contextmenu_open_new_tab "নতুন ট্যাবের মধ্যে খুলুন">
 <!ENTITY contextmenu_open_private_tab "ব্যাক্তিগত ট্যাবে খুলুন">
-<!ENTITY contextmenu_remove "সরিয়ে ফেলুন">
+<!ENTITY contextmenu_remove "মুছে ফেলুন">
 <!ENTITY contextmenu_add_to_launcher "হোম স্ক্রিনে যুক্ত করুন">
-<!ENTITY contextmenu_share "শেয়ার করুন">
+<!ENTITY contextmenu_share "শেয়ার">
 <!ENTITY contextmenu_pasteandgo "পেস্ট ও পরিদর্শন করুন">
 <!ENTITY contextmenu_paste "পেস্ট করুন">
 <!ENTITY contextmenu_copyurl "ঠিকানা কপি করুন">
@@ -357,7 +359,7 @@ size. -->
      dialog that appears after selecting the "Edit Site Settings" context menu item. -->
 
 <!ENTITY site_settings_title3       "সিস্টেমের বৈশিষ্ট্য">
-<!ENTITY site_settings_cancel       "বাতিল">
+<!ENTITY site_settings_cancel       "বাতিল করুন">
 <!ENTITY site_settings_clear        "মুছে ফেলুন">
 <!ENTITY site_settings_no_settings  "মুছে ফেলার জন্য কোন সেটিংস নেই।">
 
@@ -380,12 +382,12 @@ size. -->
 <!ENTITY masterpassword_confirm "পাসওয়ার্ড নিশ্চিতকরণ">
 
 <!ENTITY button_ok "ঠিক আছে">
-<!ENTITY button_cancel "বাতিল">
+<!ENTITY button_cancel "বাতিল করুন">
 <!ENTITY button_yes "হ্যাঁ">
 <!ENTITY button_no "না">
 <!ENTITY button_clear_data "তথ্য মুছে ফেলুন">
-<!ENTITY button_set "সেট">
-<!ENTITY button_clear "সেট">
+<!ENTITY button_set "নির্ধারণ করুন">
+<!ENTITY button_clear "মুছে ফেলুন">
 
 <!ENTITY home_top_sites_title "শীর্ষ সাইটগুলো">
 <!-- Localization note (home_top_sites_add): This string is used as placeholder
@@ -395,7 +397,7 @@ size. -->
      with the page title defined in aboutHome.dtd -->
 
 <!ENTITY home_title "&brandShortName; হোম">
-<!ENTITY home_history_title "পূর্ববর্তী তথ্য">
+<!ENTITY home_history_title "ইতিহাস">
 <!ENTITY home_clear_history_button "ব্রাউসারের ইতিহাস মুছে ফেলুন">
 <!ENTITY home_clear_history_confirm "আপনি কি নিশ্চিতরূপে আপনার ইতিহাস মুছে ফেলতে ইচ্ছুক?">
 <!ENTITY home_bookmarks_empty "আপনি যেই বুকমার্কগুলি সংরক্ষণ করবেন সেগুলি এখানে দেখাবে।">
@@ -429,6 +431,8 @@ size. -->
 <!ENTITY home_remote_tabs_empty "আপনার অন্যান্য ডিভাইসের ট্যাবসমূহ এখানে প্রদর্শিত করা হবে।">
 <!ENTITY home_remote_tabs_unable_to_connect "সংযোগ করতে ব্যর্থ">
 <!ENTITY home_remote_tabs_need_to_sign_in "আপনার ফায়ারফক্স অ্যাকাউন্ট এর সাথে আবার সংযোগ স্থাপন করে সিঙ্কিং চালিয়ে যেতে হলে দয়া করে সাইন ইন করুন।">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "আপনার নতুন Firefox অ্যাকাউন্ট তৈরি!">
+
 <!ENTITY home_remote_tabs_trouble_verifying "আপনার অ্যাকাউন্ট যাঁচাই করতে সমস্যার সম্মুখীন হচ্ছেন?">
 <!ENTITY home_remote_tabs_need_to_verify "সিঙ্ক শুরু করতে হলে আপনার ফায়ারফক্স অ্যাকাউন্ট যাঁচাই করে নিন।">
 
@@ -526,20 +530,14 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY updater_downloading_select2 "ডাউনলোড ব্যর্থ হয়েছে">
 <!ENTITY updater_downloading_retry2 "পুনরায় চেষ্টা করুন">
 
-<!ENTITY updater_apply_title2 "আপডেট উপলব্ধ &brandShortName; জন্য ">
+<!ENTITY updater_apply_title2 "আপডেট উপলব্ধ &brandShortName; জন্য">
 <!ENTITY updater_apply_select2 "আপডেট করার জন্যে স্পর্শ করুন">
-<!-- New tablet UI -->
-<!-- LOCALIZATION NOTE (new_tablet_restart): Notification displayed after the user toggles the new tablet UI in the settings screen.-->
-
-
-<!ENTITY new_tablet_restart "পরিবর্তন গুলি পেতে হলে ব্রাউজার রিস্টার্ট করুন">
-<!ENTITY new_tablet_pref "নতুন ট্যাবলেট UI সক্রিয় করুন">
 <!-- Guest mode -->
 
 <!ENTITY new_guest_session "নতুন গেস্ট সেশন">
 <!ENTITY exit_guest_session "গেস্ট সেশান থেকে প্রস্থান করুন">
 <!ENTITY guest_session_dialog_continue "এগিয়ে চলুন">
-<!ENTITY guest_session_dialog_cancel "বাতিল">
+<!ENTITY guest_session_dialog_cancel "বাতিল করুন">
 <!ENTITY new_guest_session_title "&brandShortName; এখন রিস্টার্ট হবে">
 <!ENTITY new_guest_session_text "যিনি এটি ব্যবহার করছেন তিনি আপনার কোনোরকম ব্যাক্তিগত তথ্য দেখতে পাবেন না (যেমন সংরক্ষিত পাসওয়ার্ড, ইতিহাস  কিম্বা বুকমার্কসমূহ)। \n\nWhen যখন গেস্ট এর কাজ শেষ হবে তখন তার ব্রাউসিং তথ্য মুছে যাবে এবং আপনার সেশান রিস্টোর হয়ে যাবে।">
 <!ENTITY guest_browsing_notification_title "অতিথি ব্রাউজিং সক্রিয় করা আছে">
@@ -552,7 +550,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      designated space. Use the unicode ellipsis char, \u2026, or use "..." if \u2026 doesn't suit
      traditions in your locale. -->
 
-<!ENTITY ellipsis "…">
+<!ENTITY ellipsis "...">
 
 <!ENTITY colon ":">
 <!-- These are only used for accessibility for the done and overflow-menu buttons in the actionbar.

@@ -1,0 +1,19 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY newWindowsAsTabs.label       "t တဗ်တစ်ခု မဖွင့်ပဲ ဝင်းဒိုးတစ်ခုဖွင့်ပါ ">
+<!ENTITY newWindowsAsTabs.accesskey   "t">
+
+<!ENTITY warnCloseMultipleTabs.label  "m စာအမှတ်အများကို ပိတ်တဲ့အခါ သတိပေးပါ">
+<!ENTITY warnCloseMultipleTabs.accesskey  "m">
+
+
+
+
+
+
+
+<!ENTITY showTabsInTaskbar.label          "kဝင်းဒိုးတက်စ်ဘားတွင်တပ်များအားဖော်ပြထားမည်">
+<!ENTITY showTabsInTaskbar.accesskey      "k">
+<!ENTITY tabsGroup.label          "ခလုပ်ပြားများ">

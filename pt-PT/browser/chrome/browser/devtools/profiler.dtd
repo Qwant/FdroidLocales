@@ -33,15 +33,29 @@
   -  on a button that opens a dialog to import a saved profile data file. -->
 <!ENTITY profilerUI.importButton "Importar…">
 
+<!-- LOCALIZATION NOTE (profilerUI.exportButton): This string is displayed
+  -  on a button that opens a dialog to export a saved profile data file. -->
+<!ENTITY profilerUI.exportButton "Guardar">
+
 <!-- LOCALIZATION NOTE (profilerUI.clearButton): This string is displayed
   -  on a button that remvoes all the recordings. -->
 <!ENTITY profilerUI.clearButton "Limpar">
 
+<!-- LOCALIZATION NOTE (profilerUI.invertTree): This is the label shown next to
+  -  a checkbox that inverts and un-inverts the profiler's call tree. -->
+<!ENTITY profilerUI.invertTree "Inverter árvore de chamada">
+
+<!-- LOCALIZATION NOTE (profilerUI.invertTree.tooltiptext): This is the tooltip
+  -  for the tree-inverting checkbox's label.  -->
+<!ENTITY profilerUI.invertTree.tooltiptext "Inverter a árvore de chamada mostra os perfis dos caminhos do frames mais recentes até aos mais antigos.">
+
 <!-- LOCALIZATION NOTE (profilerUI.table.*): These strings are displayed
   -  in the call tree headers for a recording. -->
-<!ENTITY profilerUI.table.duration    "Tempo (ms)">
-<!ENTITY profilerUI.table.percentage  "Custo">
-<!ENTITY profilerUI.table.invocations "Chamadas">
+<!ENTITY profilerUI.table.totalDuration   "Tempo total">
+<!ENTITY profilerUI.table.selfDuration    "Tempo próprio">
+<!ENTITY profilerUI.table.totalPercentage "Custo total">
+<!ENTITY profilerUI.table.selfPercentage  "Custo próprio">
+<!ENTITY profilerUI.table.samples         "Amostras">
 <!ENTITY profilerUI.table.function    "Função">
 
 <!-- LOCALIZATION NOTE (profilerUI.newtab.tooltiptext): The tooltiptext shown

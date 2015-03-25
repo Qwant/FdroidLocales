@@ -162,7 +162,9 @@ selected to be added to the home page. -->
 <!ENTITY pref_cookies_not_accept_foreign "Akceptuj, z wyjątkiem ciasteczek zewnętrznych dostawców">
 <!ENTITY pref_cookies_disabled "Nie akceptuj">
 
-<!ENTITY pref_donottrack_title "Śledzenie">
+<!ENTITY pref_tracking_protection_title "Ochrona przed śledzeniem">
+<!ENTITY pref_tracking_protection_summary "Blokowanie przez program &brandShortName; prób śledzenia aktywności użytkownika przez strony">
+<!ENTITY pref_donottrack_title "Ograniczanie śledzenia">
 <!ENTITY pref_donottrack_summary "Informuj witryny, że użytkownik nie chce być śledzony">
 
 <!ENTITY pref_char_encoding "Kodowanie znaków">
@@ -312,8 +314,8 @@ size. -->
 <!ENTITY contextmenu_add_search_engine "Dodaj wyszukiwarkę">
 
 <!ENTITY pref_titlebar_mode "Pasek tytułu">
-<!ENTITY pref_titlebar_mode_title "Pokazuj tytuły stron">
-<!ENTITY pref_titlebar_mode_url "Pokazuj adresy stron">
+<!ENTITY pref_titlebar_mode_title "Pokazywanie tytuł strony">
+<!ENTITY pref_titlebar_mode_url "Pokazywanie adres strony">
 
 <!ENTITY pref_scroll_title_bar2 "Przeglądanie pełnoekranowe">
 <!ENTITY pref_scroll_title_bar_summary "Ukryj pasek tytułu przeglądarki &brandShortName; przy przewijaniu stron">
@@ -395,6 +397,7 @@ it is applicable. -->
 <!ENTITY home_remote_tabs_empty "Tutaj pojawią się twoje karty zsynchronizowane z innymi urządzeniami.">
 <!ENTITY home_remote_tabs_unable_to_connect "Nie udało się nawiązać połączenia">
 <!ENTITY home_remote_tabs_need_to_sign_in "Zaloguj się na konto Firefox, aby kontynuować synchronizację.">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "Twoje nowe konto Firefoksa jest gotowe!">
 <!ENTITY home_remote_tabs_trouble_verifying "Masz problem z weryfikacją konta?">
 <!ENTITY home_remote_tabs_need_to_verify "Przed synchronizacją musisz zweryfikować konto Firefox.">
 
@@ -475,9 +478,6 @@ it is applicable. -->
 
 <!ENTITY updater_apply_title2 "&brandShortName;: dostępne są nowe aktualizacje">
 <!ENTITY updater_apply_select2 "Dotknij, aby zaktualizować">
-
-<!ENTITY new_tablet_restart "Uruchom ponownie przeglądarkę, aby zmiany weszły w życie">
-<!ENTITY new_tablet_pref "Włącz nowy interfejs dla tabletów">
 
 <!-- Guest mode -->
 <!ENTITY new_guest_session "Nowa sesja gościnna">
