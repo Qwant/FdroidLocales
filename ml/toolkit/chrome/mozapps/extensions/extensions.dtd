@@ -4,6 +4,7 @@
 <!ENTITY addons.windowTitle                   "ആഡ്-ഓണ്‍ മാനേജര്‍">
 
 <!ENTITY search.placeholder                   "എല്ലാ ആഡ്-ഓണുകളും തെരയുക">
+<!ENTITY search.buttonlabel                   "തെരയുക">
 <!-- LOCALIZATION NOTE (search.commandKey):
      The search command key should match findOnCmd.commandkey from browser.dtd -->
 <!ENTITY search.commandkey                    "f">
@@ -225,3 +226,5 @@
 <!ENTITY experiment.info.learnmore.accesskey "L">
 <!ENTITY experiment.info.changetelemetry "ടെലിമെട്രി സജ്ജീകരണങ്ങള്‍">
 <!ENTITY experiment.info.changetelemetry.accesskey "T">
+
+<!ENTITY setting.learnmore "കൂടുതല്‍ അറിയുക…">

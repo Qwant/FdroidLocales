@@ -14,7 +14,7 @@
 
 <!ENTITY calendar.today.button.label "Aujourd'hui">
 <!ENTITY calendar.tomorrow.button.label "Demain">
-<!ENTITY calendar.soon.button.label "Bientôt">
+<!ENTITY calendar.upcoming.button.label "Prochainement">
 
 <!ENTITY calendar.events.filter.all.label "Tous les évènements">
 <!ENTITY calendar.events.filter.today.label "Évènements du jour">
@@ -202,8 +202,8 @@
 <!ENTITY priority.level.low.accesskey       "B">
 <!ENTITY priority.level.normal              "Normale">
 <!ENTITY priority.level.normal.accesskey    "N">
-<!ENTITY priority.level.high                "Élevée">
-<!ENTITY priority.level.high.accesskey      "v">
+<!ENTITY priority.level.high                "Haute">
+<!ENTITY priority.level.high.accesskey      "H">
 
 <!ENTITY calendar.context.postpone.1hour.label      "Une heure">
 <!ENTITY calendar.context.postpone.1hour.accesskey  "h">
@@ -225,8 +225,17 @@
 <!ENTITY calendar.context.newserver.accesskey          "N">
 <!ENTITY calendar.context.findcalendar.label           "Rechercher un agenda…" >
 <!ENTITY calendar.context.findcalendar.accesskey       "h" >
-<!ENTITY calendar.context.deleteserver.label           "Supprimer l'agenda">
-<!ENTITY calendar.context.deleteserver.accesskey       "S">
+<!ENTITY calendar.context.deleteserver2.label          "Supprimer l'agenda…">
+<!ENTITY calendar.context.deleteserver2.accesskey      "S">
+
+<!-- LOCALIZATION NOTE (calendar.context.removeserver.label): Removing the
+      calendar is the general action of removing it, while deleting means to
+      clear the data and unsubscribing means just taking it out of the calendar
+      list. -->
+<!ENTITY calendar.context.removeserver.label           "Retirer l'agenda…">
+<!ENTITY calendar.context.removeserver.accesskey       "R">
+<!ENTITY calendar.context.unsubscribeserver.label      "Se désabonner de l'agenda…">
+<!ENTITY calendar.context.unsubscribeserver.accesskey  "d">
 <!ENTITY calendar.context.synccalendars.label          "Synchroniser les agendas">
 <!ENTITY calendar.context.synccalendars.accesskey      "h">
 <!ENTITY calendar.context.publish.label                "Publier l'agenda…">
@@ -237,8 +246,8 @@
 <!ENTITY calendar.context.properties.accesskey         "P">
 
 <!-- LOCALIZATION NOTE (calendar.context.togglevisible.accesskey)
-     This is the access key used for the showCalendar string -->
-<!ENTITY calendar.context.togglevisible.accesskey      "f">
+     This is the access key used for showCalendar and hideCalendar strings -->
+<!ENTITY calendar.context.togglevisible.accesskey      "e">
 
 <!-- LOCALIZATION NOTE (calendar.context.showonly.accesskey)
      This is the access key used for the showOnlyCalendar string -->

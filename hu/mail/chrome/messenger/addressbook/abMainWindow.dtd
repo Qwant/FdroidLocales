@@ -3,8 +3,9 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY addressbookWindow.title                        "Címjegyzék">
+<!ENTITY blankResultsPaneMessage.label                  "Ez a címjegyzék csak keresés után jelenít meg névjegyeket">
+<!ENTITY localResultsOnlyMessage.label                  "A távoli címjegyzékekből származó névjegyek nem jelennek meg, amíg nem keres rájuk">
 <!-- File Menu -->
-
 <!ENTITY fileMenu.label                                 "Fájl">
 <!ENTITY fileMenu.accesskey                             "F">
 <!ENTITY newMenu.label                                  "Új">
@@ -73,7 +74,7 @@
 <!ENTITY swapFirstNameLastNameCmd.accesskey             "U">
 <!-- LOCALIZATION NOTE (hideSwapFnLnUI) : DONT_TRANSLATE -->
 <!-- Swap FN/LN UI  Set to "false" to show swap fn/ln UI -->
-<!ENTITY hideSwapFnLnUI "true">
+<!ENTITY hideSwapFnLnUI "false">
 <!ENTITY propertiesCmd2.label                           "Tulajdonságok…">
 <!ENTITY propertiesCmd2.accesskey                       "T">
 <!ENTITY propertiesCmd.key                              "i">
@@ -101,7 +102,7 @@
 <!ENTITY menu_ShowNameAs.accesskey                      "N"> 
 <!-- LOCALIZATION NOTE (firstLastCmd2.label): We're not including a comma here
 because displayed names don't have the comma in between. -->
-<!ENTITY firstLastCmd2.label                            "Utónév, vezetéknév">
+<!ENTITY firstLastCmd2.label                            "Utónév vezetéknév">
 <!ENTITY firstLastCmd2.accesskey                        "U"> 
 <!ENTITY lastFirstCmd.label                             "Vezetéknév, utónév">
 <!ENTITY lastFirstCmd.accesskey                         "V">
@@ -160,6 +161,8 @@ because displayed names don't have the comma in between. -->
 <!ENTITY searchItem.title "Gyorskeresés">
 <!-- Results Pane -->
 
+<!ENTITY Addrbook.label                                 "Címjegyzék">
+<!ENTITY Addrbook.accesskey                             "C">
 <!ENTITY GeneratedName.label                            "Név">
 <!ENTITY GeneratedName.accesskey                        "N">
 <!ENTITY PrimaryEmail.label                             "E-mail">

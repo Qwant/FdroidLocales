@@ -6,8 +6,12 @@
 <!ENTITY  window.width                    "38em">
 <!ENTITY  window.macWidth                 "41em">
 
-<!ENTITY  allowPagesToUse.label           "എന്റെ താല്‍പര്യത്തിനു പകരം, താളുകള്‍ തന്നെ നിറങ്ങള്‍ തെരഞ്ഞെടുക്കുവാന്‍ അനുവദിക്കുക. ">
-<!ENTITY  allowPagesToUse.accesskey       "A">
+<!ENTITY  overridePageColors.label        "തെരഞ്ഞെടുത്ത നിറങ്ങളുപയോഗിച്ചു് ഈ താളിലുള്ള നിറങ്ങള്‍ മാറ്റുക:">
+<!ENTITY  overridePageColors.accesskey    "ക">
+
+<!ENTITY  overridePageColors.always.label "എപ്പോഴും">
+
+<!ENTITY  overridePageColors.never.label  "ഒരിക്കലും ഇല്ല">
 
 <!ENTITY  color                           "ടെക്സ്റ്റും പശ്ചാത്തലവും">
 <!ENTITY  textColor.label                 "ടെക്സ്റ്റ്‌ :">
