@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 REPO=$( echo $( cd `dirname $0`; pwd ) )
 
 find toolkit/crashreporter/ -mindepth 1 -maxdepth 1 ! -name "crashreporter.mozbuild" ! -name "google-breakpad" -exec rm -R '{}' \;
@@ -68,27 +68,44 @@ sed -i -e '/test\//d' dom/indexedDB/moz.build
 sed -i -e '/MOCHITEST/d' layout/generic/moz.build
 sed -i -e '/reftests\//d'  -e '/crashtest\//d' layout/moz.build
 sed -i -e '/classycle_jar/,+7d' -e 's/.geckoview.deps ././g' -e 's/PROGUARD_PASSES=1/PROGUARD_PASSES=3/g' mobile/android/base/Makefile.in
+sed -i -e '/TEST/d' modules/libjar/moz.build
+sed -i -e '/TEST/d' modules/libjar/zipwriter/moz.build
 sed -i -e '/\/content/d' toolkit/toolkit.mozbuild
 sed -i -e '/xpcshell.ini/d' toolkit/components/search/moz.build
+sed -i -e '/MOCHITEST/,+5d' toolkit/devtools/apps/moz.build
 sed -i -e '/tests\//d' toolkit/modules/moz.build
 sed -i -e '/tests/d' toolkit/mozapps/update/moz.build
 
-sed -i -e 's/android:debuggable="true"//g' mobile/android/base/AndroidManifest.xml.in 
-sed -i -e '/MOZ_ANDROID_GOOGLE_PLAY_SERVICES/d' configure.in
-sed -i -e '/MOZ_DEVICES/d' -e '/MOZ_ANDROID_RESOURCE_CONSTRAINED/,+2d' mobile/android/confvars.sh
-echo -e 'MOZ_DEVICES=0\nMOZ_NATIVE_DEVICES=0\nMOZ_ANDROID_GOOGLE_PLAY_SERVICES=0\n' >> mobile/android/confvars.sh
+sed -i -e 's/android:debuggable="true"//g' mobile/android/base/AndroidManifest.xml.in
+sed -i -e '/MOZ_SERVICES_HEALTHREPORT/d' -e '/MOZ_DEVICES/d' -e '/MOZ_ANDROID_RESOURCE_CONSTRAINED/,+2d' mobile/android/confvars.sh
+echo -e 'MOZ_DEVICES=\nMOZ_NATIVE_DEVICES=\nMOZ_SERVICES_HEALTHREPORT=\n' >> mobile/android/confvars.sh
 echo "mk_add_options 'export MOZ_CHROME_MULTILOCALE=$(tr '\n' ' ' <  $REPO/used-locales)'" >> .mozconfig
 echo "mk_add_options 'export L10NBASEDIR=$REPO'" >> .mozconfig
 echo "ac_add_options --with-l10n-base=$REPO" >> .mozconfig
 
-##Fix Bug #1083116
-patch -p1 <$REPO/Bug1083116.patch
-
+##Hot-Fix
 sed -i -e 's/size_impl(v/size_impl(const v/g' memory/mozjemalloc/jemalloc.c
-
-##Fix Bug #1091377
-sed -i -e '/MOZ_WIDGET_TOOLKIT/,+2d' build/stlport/moz.build
 
 ##Get rid of Gradle
 rm -R mobile/android/gradle/
 sed -i -e '/gradle/d' mobile/android/moz.build
+
+##Disable Gecko Media Pluggins support 
+sed -i -e '/gmp-provider/d' mobile/android/app/mobile.js
+echo 'pref("media.gmp-provider.enabled", false);' >> mobile/android/app/mobile.js
+
+##Avoid openh264 being downloaded
+echo 'pref("media.gmp-manager.url.override", "data:text/plain,");' >> mobile/android/app/mobile.js
+
+##Disable openh264 if it was already downloaded
+echo 'pref("media.gmp-gmpopenh264.enabled", false);' >> mobile/android/app/mobile.js
+
+
+##Disable Casting and mirroring (Roku, chromecast)
+sed -i -e '/casting.enabled/d' mobile/android/app/mobile.js
+echo 'pref("browser.casting.enabled", false);' >> mobile/android/app/mobile.js
+
+##Already disabled upstream (BUG #1131084)
+##pref("browser.mirroring.enabled", false);
+##
+##pref("browser.mirroring.enabled.roku", false);
