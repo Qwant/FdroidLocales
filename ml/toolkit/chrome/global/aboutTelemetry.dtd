@@ -8,7 +8,8 @@
 
 <!ENTITY aboutTelemetry.telemetryDisabled "  ടെലിമെട്രി <span>പ്രവര്‍ത്തന രഹിതം</span>.">
 
-<!ENTITY aboutTelemetry.generalDataSection "  പൊതു വിവരം">
+
+<!ENTITY aboutTelemetry.telemetryLogSection " ടെലിമെട്രി ലോഗ്">
 
 <!ENTITY aboutTelemetry.slowSqlSection "  എസ്‌ക്യൂഎല്‍ വാചകങ്ങളുടെ വേഗത കുറയ്ക്കുക">
 
@@ -18,7 +19,6 @@
 
 <!ENTITY aboutTelemetry.histogramsSection "  ഹിസ്റ്റോഗ്രാം">
 
-<!ENTITY aboutTelemetry.keyedHistogramsSection "  കീഡ് ഹിസ്റ്റോഗ്രാം">
 
 <!ENTITY aboutTelemetry.simpleMeasurementsSection " ലളിതമായ അളവുകള്‍">
 

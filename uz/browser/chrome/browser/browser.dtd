@@ -83,7 +83,7 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY bookmarksToolbarItem.label "Xatcho‘plar paneli bandlari">
 
 <!ENTITY toolbarContextMenu.reloadAllTabs.label "Barcha ichki oynalarni yangilash">
-<!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "A">
+<!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "B">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Barcha ichki oynalarni xatcho‘plarga qo‘shish…">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "i">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "Yopilgan ichki oynani qaytarish">
@@ -269,6 +269,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY browserToolboxMenu.label     "Brauzer asboblar paneli">
 <!ENTITY browserToolboxMenu.accesskey "e">
+<!ENTITY browserToolboxCmd.commandkey "i">
 <!-- LOCALIZATION NOTE (browserContentToolboxMenu.label): This is the label for the
   -  application menu item that opens the browser content toolbox UI in the Tools menu.
   -  This toolbox allows to debug the chrome of the content process in multiprocess builds.  -->
@@ -363,7 +364,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuCustomizeExit.tooltip "Qulaylashtirishni tugatish">
 <!ENTITY appMenuHistory.label "Tarix">
 <!ENTITY appMenuHistory.showAll.label "Barcha tarixni ko‘rsatish">
-<!ENTITY appMenuHistory.clearRecent.label "So‘nggi tarixni tozalash…">
+<!ENTITY appMenuHistory.clearRecent.label "So‘nggi tarixni tozalash">
 <!ENTITY appMenuHistory.restoreSession.label "Oldingi seansni tiklash">
 <!ENTITY appMenuHistory.viewSidebar.label "Tarixni yon panelda ko‘rsatish">
 <!ENTITY appMenuHelp.tooltip "Yordam menyusini ochish">
@@ -564,7 +565,7 @@ items are mutually exclusive. -->
 <!ENTITY mediaShowControls.accesskey "B">
 <!ENTITY mediaHideControls.label     "Boshqaruvlarni yashirish">
 <!ENTITY mediaHideControls.accesskey "B">
-<!ENTITY videoFullScreen.label       "Butun ekranga">
+<!ENTITY videoFullScreen.label       "Butun ekran">
 <!ENTITY videoFullScreen.accesskey   "B">
 <!ENTITY videoSaveImage.label        "Olingan rasmni saqlash">
 <!ENTITY videoSaveImage.accesskey    "s">
@@ -853,7 +854,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY readingList.sidebar.showMore.label       "Ko‘proq ko‘rsatish">
 <!-- Pre-landed string for bug 1133662 -->
 <!ENTITY readingList.sidebar.emptyText            "Maqolalarni keyinroq o‘qish uchun &quot;O‘qish ro‘yxati&quot;ga qo‘shib qo‘ying. Kerak bo‘lganda osongina topishingiz mumkin.">
-<!-- Pre-landed string for bug 1123525 -->
 <!ENTITY readingList.sidebar.delete.tooltip       "Buni &quot;O‘qish ro‘yxati&quot;dan o‘chirish">
 <!-- Pre-landed strings for bug 1123519 -->
 <!ENTITY readingList.sidebar.add.label            "&quot;O‘qish ro‘yxati&quot;ga qo‘shish">

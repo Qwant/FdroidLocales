@@ -71,8 +71,8 @@
 <!ENTITY projects.addPackagedTooltip "Kompüterimdən yeni bir paketlənmiş tətbiq (qovluq) əlavə et">
 
 
-
-
+<!ENTITY projects.title "Lokal Tətbiqlər">
+<!ENTITY projects.appDetails "Tətbiq Detalları">
 
 <!ENTITY projects.updateApp "Yeniləmə">
 

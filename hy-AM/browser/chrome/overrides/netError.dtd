@@ -159,7 +159,7 @@ functionality specific to firefox. -->
 
 <!ENTITY errorReporting.title "Հաղորդել այս սխալի մասին">
 <!ENTITY errorReporting.longDesc "Մեզ հաղորդելով <span id='hostname'></span>-ի հասցեն և վկայագիրը՝ կօգնեք հայտնաբերել և արգելափակել վնասակար կայքերը:">
-<!ENTITY errorReporting.automatic "Հետագայում ինքնաշխատ հաղորդել ">
+<!ENTITY errorReporting.automatic "Հետագայում ինքնաշխատ զեկուցել">
 <!ENTITY errorReporting.learnMore "Իմանալ ավելին…">
 <!ENTITY errorReporting.sending "Զեկույցն ուղարկվում է">
 <!ENTITY errorReporting.sent "Ուղարկվել է">

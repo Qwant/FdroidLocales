@@ -36,7 +36,7 @@
 <!ENTITY community.middle2          ", వీరు జాలాన్ని స్వేచ్ఛగా, బహిరంగంగా, అందరికీ అందుబాటులో ఉంచేందుకు కలిసి కృషి చేస్తున్న ">
 <!-- LOCALIZATION NOTE (community.creditsLink): This is a link title that links to about:credits. -->
 <!ENTITY community.creditsLink      "ప్రపంచవ్యాప్త సముదాయం">
-<!ENTITY community.end3             ".">
+<!ENTITY community.end3             " వీరు జాలాన్ని స్వేచ్ఛగా, బహిరంగంగా, అందరికీ అందుబాటులో ఉంచేందుకు కలిసి కృషి చేస్తున్నారు.">
 
 <!ENTITY helpus.start               "సహాయపడాలని అనుకుంటున్నారా?">
 <!-- LOCALIZATION NOTE (helpus.donateLink): This is a link title that links to https://sendto.mozilla.org/page/contribute/Give-Now?source=mozillaorg_default_footer&ref=firefox_about&utm_campaign=firefox_about&utm_source=firefox&utm_medium=referral&utm_content=20140929_FireFoxAbout. -->
@@ -88,7 +88,7 @@
 
 <!ENTITY update.unsupported.start    "ఈ వ్యవస్థపై మీరు ఇంకేమీ తాజాకరణలు చెయ్యలేరు. ">
 <!ENTITY update.unsupported.linkText "మరింత నేర్చుకోండి">
-<!ENTITY update.unsupported.end      "మరింత తెలుసుకోండి">
+<!ENTITY update.unsupported.end      "">
 <!-- LOCALIZATION NOTE (update.downloading.start,update.downloading.end): update.downloading.start and 
      update.downloading.end all go into one line, with the amount downloaded inserted in between. As this
      is all in one line, try to make the localized text short (see bug 596813 for screenshots). The — is

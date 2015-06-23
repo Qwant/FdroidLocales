@@ -70,10 +70,10 @@
 <!-- Language settings -->
 <!ENTITY sendDefaultCharset.label         "Lähtevät viestit:">
 <!ENTITY sendDefaultCharset.accesskey     "L">
-<!ENTITY languagesTitle1.label		  "Merkistökoodaukset">
-<!ENTITY composingDescription.label       "Aseta oletusmerkistökoodaus lähteville ja saapuville viesteille">
+<!ENTITY languagesTitle2.label            "Merkistökoodaukset">
+<!ENTITY composingDescription2.label      "Aseta oletusmerkistökoodaus lähteville ja saapuville viesteille">
 
 <!ENTITY viewDefaultCharsetList.label     "Saapuvat viestit:">
 <!ENTITY viewDefaultCharsetList.accesskey "a">
-<!ENTITY replyInDefaultCharset2.label     "Jos mahdollista, käytä vastatessa oletusmerkistökoodausta">
-<!ENTITY replyInDefaultCharset2.accesskey "J">
+<!ENTITY replyInDefaultCharset3.label     "Jos mahdollista, käytä vastauksissa oletusmerkistökoodausta">
+<!ENTITY replyInDefaultCharset3.accesskey "J">

@@ -140,7 +140,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksMenu.accesskey "B">
 <!ENTITY bookmarkThisPageCmd.label "Setja síðu í bókamerki">
 <!ENTITY editThisBookmarkCmd.label "Breyta bókamerki">
-<!ENTITY bookmarkThisPageCmd.commandkey "d">
+<!ENTITY bookmarkThisPageCmd.commandkey "B">
 <!ENTITY markPageCmd.commandkey "l">
 <!-- LOCALIZATION NOTE (findShareServices.label):
   -  Use the unicode ellipsis char, \u2026,
@@ -241,7 +241,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY browserConsoleCmd.accesskey  "V">
 
 <!ENTITY inspectContextMenu.label     "Skoða einindi">
-<!ENTITY inspectContextMenu.accesskey "ð">
+<!ENTITY inspectContextMenu.accesskey "Q">
 
 <!ENTITY responsiveDesignTool.label   "Svartíma sýn">
 <!ENTITY responsiveDesignTool.accesskey "r">
@@ -269,6 +269,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY browserToolboxMenu.label     "Tækjaslá vafra">
 <!ENTITY browserToolboxMenu.accesskey "æ">
+<!ENTITY browserToolboxCmd.commandkey "i">
 <!-- LOCALIZATION NOTE (browserContentToolboxMenu.label): This is the label for the
   -  application menu item that opens the browser content toolbox UI in the Tools menu.
   -  This toolbox allows to debug the chrome of the content process in multiprocess builds.  -->
@@ -455,7 +456,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY viewPartialSourceForMathMLCmd.label    "Sýna MathML frumkóða">
 <!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both 
          viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
-<!ENTITY viewPartialSourceCmd.accesskey "k">
+<!ENTITY viewPartialSourceCmd.accesskey "e">
 <!ENTITY viewPageSourceCmd.label      "Sýna frumkóða síðu">
 <!ENTITY viewPageSourceCmd.accesskey  "k">
 <!ENTITY viewFrameSourceCmd.label     "Sýna frumkóða ramma">
@@ -630,7 +631,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageReportIcon.tooltip            "Breyta stillingum sprettigluggabana fyrir þennan vef">
 
-<!ENTITY allowPopups.accesskey "L">
+<!ENTITY allowPopups.accesskey "p">
 <!-- On Windows we use the term "Options" to describe settings, but
      on Linux and Mac OS X we use "Preferences" - carry that distinction
      over into this string, which is used in the "popup blocked" info bar . -->
@@ -853,7 +854,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY readingList.sidebar.showMore.label       "Sýna meira…">
 <!-- Pre-landed string for bug 1133662 -->
 <!ENTITY readingList.sidebar.emptyText            "Bættu við greinum í leslistann til að vista þær og lesa seinna og finna auðveldlega þegar þú þarft á þeim að halda.">
-<!-- Pre-landed string for bug 1123525 -->
 <!ENTITY readingList.sidebar.delete.tooltip       "Fjarlægja úr leslista">
 <!-- Pre-landed strings for bug 1123519 -->
 <!ENTITY readingList.sidebar.add.label            "Bæta við í leslista">

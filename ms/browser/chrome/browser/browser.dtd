@@ -267,6 +267,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY browserToolboxMenu.label     "Alatan Pelayar">
 <!ENTITY browserToolboxMenu.accesskey "a">
+
 <!-- LOCALIZATION NOTE (browserContentToolboxMenu.label): This is the label for the
   -  application menu item that opens the browser content toolbox UI in the Tools menu.
   -  This toolbox allows to debug the chrome of the content process in multiprocess builds.  -->
@@ -600,7 +601,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY quitApplicationCmdWin2.label       "Keluar">
 <!ENTITY quitApplicationCmdWin2.accesskey   "K">
-<!ENTITY quitApplicationCmdWin2.tooltip     "Keluar &brandShorterName;">
+
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goForwardCmd.commandKey "]">
 <!ENTITY quitApplicationCmd.label       "Keluar"> 
@@ -731,9 +732,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY customizeMode.lwthemes.recommended "Disyorkan">
 <!ENTITY customizeMode.lwthemes.menuManage "Urus">
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "M">
-<!ENTITY customizeMode.lwthemes.menuGetMore "Dapatkan Lebih Banyak Tema">
+
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "G">
-<!ENTITY customizeMode.deveditionTheme.label2 "Guna Tema Edisi Pembangun">
+
 
 <!ENTITY social.chatBar.commandkey "c">
 <!ENTITY social.chatBar.label "Focus chats">
@@ -753,10 +754,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!ENTITY badContentBlocked.moreinfo "Kebanyakan laman web masih lagi akan berfungsi walapun jika kandungan ini terhalang.">
 
-<!ENTITY mixedContentBlocked2.message "Kandungan tidak selamat">
 
 <!ENTITY mixedContentBlocked2.learnMore "Ketahui Lebih Lanjut">
-<!ENTITY mixedContentBlocked2.options "Pilihan">
+
 
 
 
@@ -798,9 +798,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE: (panicButton.view.mainTimeframeDesc, panicButton.view.5min, panicButton.view.2hr, panicButton.view.day):
      The .mainTimeframeDesc string combined with any of the 3 others is meant to form a complete sentence, e.g. "Forget the last: Five minutes".
      Please ensure that this remains the case in the translation. -->
-<!ENTITY panicButton.view.5min                    "Lima minit">
-<!ENTITY panicButton.view.2hr                     "Dua jam">
-<!ENTITY panicButton.view.day                     "24 jam">
+
+
+
 <!-- LOCALIZATION NOTE: (panicButton.view.mainLabel, panicButton.view.deleteCookies, panicButton.view.deleteHistory, panicButton.view.deleteTabsAndWindows, panicButton.view.openNewWindow):
      The .mainActionDesc string combined with any of the 4 others is meant to form a complete sentence, e.g. "Proceeding will: Delete Recent Cookies".
      Note also that the deleteCookies, deleteHistory and deleteTabsAndWindows strings include <html:strong> tags for emphasis on the words "Cookies", "History", "Tabs" and "Windows".
@@ -811,13 +811,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 
 <!ENTITY panicButton.view.undoWarning             "Tindakan ini tidak dapat dilakukan.">
-<!ENTITY panicButton.view.forgetButton            "Lupakan!">
-
-
-<!ENTITY panicButton.thankyou.buttonlabel         "Terima kasih!">
-
-<!ENTITY processHang.terminateScript.label        "Henti Skrip">
-<!ENTITY processHang.terminateScript.accessKey    "H">
 
 
 
@@ -825,8 +818,13 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 
 
-<!ENTITY emeLearnMoreContextMenu.label            "Ketahui lebih lanjut mengenai DRM…">
-<!ENTITY emeLearnMoreContextMenu.accesskey        "D">
+
+
+
+
+
+
+
 
 
 <!ENTITY emeNotificationsDontAskAgain.label       "Jangan tanya saya lagi">
@@ -836,6 +834,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 <!-- Pre-landed string for bug 1124153 -->
 <!-- Pre-landed string for bug 1133662 -->
-<!-- Pre-landed string for bug 1123525 -->
+
 <!-- Pre-landed strings for bug 1123519 -->
 

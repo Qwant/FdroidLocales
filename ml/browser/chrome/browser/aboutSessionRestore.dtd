@@ -26,25 +26,20 @@
 
 
 
-<!ENTITY welcomeback2.restoreButton  "നമ്മുക്കു പോകാം!">
+<!ENTITY welcomeback2.restoreButton  "നമുക്ക് പോകാം!">
 <!ENTITY welcomeback2.restoreButton.access "L">
 
-<!ENTITY welcomeback2.tabtitle      "വിജയം!">
 
-<!ENTITY welcomeback2.pageTitle     "വിജയം!">
-<!ENTITY welcomeback2.pageInfo1     "&brandShortName; പോകാൻ തയ്യാറായി">
+<!ENTITY welcomeback2.pageInfo1     "&brandShortName; പോകാൻ തയ്യാറാണ്.">
 
-<!ENTITY welcomeback2.label.restoreAll  "എല്ലാ ജാലകങ്ങളൂം ടാബുകളും പുനസ്ഥാപ്പിക്കുക">
-<!ENTITY welcomeback2.label.restoreSome "നിങ്ങൾ ഉപയോഗിച്ചവ മാത്രം പുനസ്ഥാപിക്കുക">
+<!ENTITY welcomeback2.label.restoreAll  "എല്ലാ ജാലകങ്ങളും ടാബുകളും പുനഃസ്ഥാപിക്കുക">
+<!ENTITY welcomeback2.label.restoreSome "നിങ്ങക്കു വേണ്ടതു മാത്രം വീണ്ടെടുക്കുക ">
 <!-- LOCALIZATION NOTE (welcomeback2.beforelink.pageInfo2,
 welcomeback2.afterlink.pageInfo2): these two string are used respectively
 before and after the the "learn more" link (welcomeback2.link.pageInfo2).
 Localizers can use one of them, or both, to better adapt this sentence to
 their language.
 -->
-
-
-<!ENTITY welcomeback2.beforelink.pageInfo2  "നിങ്ങളുടെ ആഡ്-ഓണുകളും യഥേഷ്ടമായി സജ്ജമാക്കിയിരിയ്ക്കുന്നവയും നിക്കം ചെയ്തിരിയ്ക്കുന്നു, ഒപ്പം ബ്രൌസര്‍ സജ്ജീകരണങ്ങളും സ്വതവേയുള്ളവയിലേക്കു് തിരിച്ചു് സജ്ജമാക്കിയിരിയ്ക്കുന്നു. ഇതു് നിങ്ങള്‍ക്കു് പരിഹാരം ലഭ്യമാക്കുന്നു,   ">
 <!ENTITY welcomeback2.afterlink.pageInfo2   "">
 
-<!ENTITY welcomeback2.link.pageInfo2        "നിങ്ങള്‍ക്കെന്തെല്ലാം ചെയ്യാനാവും എന്നറിയൂ.">
+<!ENTITY welcomeback2.link.pageInfo2        "നിങ്ങൾക്ക് എന്തു ചെയ്യാനാവുമെന്നു കൂടുതലറിയുക.">
