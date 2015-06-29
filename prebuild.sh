@@ -62,6 +62,7 @@ sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsEmbedFunctions.cpp
 
 sed -i -e '/source\/test\//d' addon-sdk/moz.build
 sed -i -e '/testing\/web-platform\/mach_commands.py/d' build/mach_bootstrap.py
+sed -i -e '/TESTS_MANIFESTS/,+19d' docshell/moz.build
 sed -i -e '/tests\//d' dom/apps/moz.build
 sed -i -e '/test\//d' dom/html/moz.build
 sed -i -e '/test\//d' dom/indexedDB/moz.build
@@ -77,8 +78,8 @@ sed -i -e '/tests\//d' toolkit/modules/moz.build
 sed -i -e '/tests/d' toolkit/mozapps/update/moz.build
 
 sed -i -e 's/android:debuggable="true"//g' mobile/android/base/AndroidManifest.xml.in
-sed -i -e '/MOZ_SERVICES_HEALTHREPORT/d' -e '/MOZ_DEVICES/d' -e '/MOZ_ANDROID_RESOURCE_CONSTRAINED/,+2d' mobile/android/confvars.sh
-echo -e 'MOZ_DEVICES=\nMOZ_NATIVE_DEVICES=\nMOZ_SERVICES_HEALTHREPORT=\n' >> mobile/android/confvars.sh
+sed -i -e '/MOZ_SERVICES_HEALTHREPORT/d' -e '/MOZ_DEVICES/d' -e '/MOZ_SAFE_BROWSING/d' -e '/MOZ_ANDROID_RESOURCE_CONSTRAINED/,+2d' mobile/android/confvars.sh
+echo -e 'MOZ_DEVICES=\nMOZ_NATIVE_DEVICES=\nMOZ_SERVICES_HEALTHREPORT=\nMOZ_SAFE_BROWSING=\n' >> mobile/android/confvars.sh
 echo "mk_add_options 'export MOZ_CHROME_MULTILOCALE=$(tr '\n' ' ' <  $REPO/used-locales)'" >> .mozconfig
 echo "mk_add_options 'export L10NBASEDIR=$REPO'" >> .mozconfig
 echo "ac_add_options --with-l10n-base=$REPO" >> .mozconfig
