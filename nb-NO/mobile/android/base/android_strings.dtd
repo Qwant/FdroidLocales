@@ -7,7 +7,7 @@
 <!ENTITY  error_loading_file "En feil oppstod ved forsøk på å laste nødvendige filer for å kjøre &brandShortName;">
 
 <!ENTITY  onboard_start_message2 "Velkommen til &brandShortName;">
-<!ENTITY  onboard_start_subtext2 "Flere personvernfunksjoner og tilpassingsmuligheter enn før.">
+<!ENTITY  onboard_start_subtext2 "Flere personvern-funksjoner og måter å tilpasse på enn før.">
 <!ENTITY  onboard_start_button_account "Logg inn på &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Start nettlesing">
 
@@ -150,7 +150,7 @@
      it is applicable. -->
 <!ENTITY pref_search_hint "TIPS: Legg til et nettsted som søketilbyder ved å lang-trykke på søkefeltet og deretter velge &formatI;-ikonet.">
 <!ENTITY pref_category_devtools "Utviklerverktøy">
-<!ENTITY pref_category_devtools_summary "Ekstern feilsøking og markering av skjermtegning">
+<!ENTITY pref_category_devtools_summary "Ekstern feilsøking, markering av skjermtegning">
 <!ENTITY pref_developer_paint_flashing "Markering av skjermtegning">
 <!ENTITY pref_developer_remotedebugging "Ekstern debugging">
 <!ENTITY pref_category_logins "Innlogginger">

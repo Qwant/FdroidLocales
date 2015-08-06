@@ -8,6 +8,7 @@
   - documentation on web development on the web. -->
 <!ENTITY browserConsole.title "Ikhonsoli Yebhrawuza">
 
+<!ENTITY networkPanel.requestURLColon             "Cela i-URL:">
 
 
 
@@ -15,6 +16,7 @@
 
 
 
+<!ENTITY networkPanel.responseHeaders             "Impendulo yombhalo ophezulu ephepheni">
 
 
 
@@ -62,6 +64,12 @@
 
 
 
+<!-- LOCALIZATION NODE (btnConsoleSharedWorkers) the term "Shared Workers"
+  -  should not be translated. -->
+<!-- LOCALIZATION NODE (btnConsoleServiceWorkers) the term "Service Workers"
+  -  should not be translated. -->
+<!-- LOCALIZATION NODE (btnConsoleWindowlessWorkers) the term "Workers"
+  -  should not be translated. -->
 
 <!ENTITY btnClear.label        "Susa">
 

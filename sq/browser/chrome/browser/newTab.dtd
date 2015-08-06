@@ -4,6 +4,10 @@
 
 <!-- These strings are used in the about:newtab page -->
 <!ENTITY newtab.pageTitle "Skedë e Re">
+<!ENTITY newtab.customize.classic "Shfaqni sajtet tuaj kryesues">
+<!ENTITY newtab.customize.cog.enhanced "Përfshi sajte të këshilluar">
+<!ENTITY newtab.customize.cog.title "Kontrolle për Skedë të Re">
+<!ENTITY newtab.customize.cog.learn "Mësoni rreth Skedës së Re">
 <!ENTITY newtab.customize.title "Personalizoni faqen tuaj Skedë e Re">
 <!ENTITY newtab.customize.suggested "Shfaqni sajtet tuaj kryesues dhe ata të këshilluar">
 <!ENTITY newtab.customize.topsites "Shfaqni sajtet tuaj kryesues">
