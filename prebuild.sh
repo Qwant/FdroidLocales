@@ -29,8 +29,8 @@ rm -R layout/base/crashtests/
 rm -R layout/generic/crashtests/
 rm -R layout/generic/test/
 rm -R layout/reftests/
-rm -R mobile/android/base/tests/
 rm -R mobile/android/build/classycle/
+rm -R mobile/android/tests/
 rm -R modules/libmar/tests/
 rm -R modules/libjar/test/
 rm -R modules/libjar/zipwriter/test/
@@ -67,7 +67,7 @@ sed -i -e '/tests\//d' dom/apps/moz.build
 sed -i -e '/test\//d' dom/html/moz.build
 sed -i -e '/test\//d' dom/indexedDB/moz.build
 sed -i -e '/MOCHITEST/d' layout/generic/moz.build
-sed -i -e '/reftests\//d'  -e '/crashtest\//d' layout/moz.build
+sed -i -e '/reftest/d'  -e '/crashtest/d' layout/moz.build
 sed -i -e '/classycle_jar/,+7d' -e 's/.geckoview.deps ././g' -e 's/PROGUARD_PASSES=1/PROGUARD_PASSES=3/g' mobile/android/base/Makefile.in
 sed -i -e '/TEST/d' modules/libjar/moz.build
 sed -i -e '/TEST/d' modules/libjar/zipwriter/moz.build
@@ -83,6 +83,17 @@ echo -e 'MOZ_DEVICES=\nMOZ_NATIVE_DEVICES=\nMOZ_SERVICES_HEALTHREPORT=\nMOZ_SAFE
 echo "mk_add_options 'export MOZ_CHROME_MULTILOCALE=$(tr '\n' ' ' <  $REPO/used-locales)'" >> .mozconfig
 echo "mk_add_options 'export L10NBASEDIR=$REPO'" >> .mozconfig
 echo "ac_add_options --with-l10n-base=$REPO" >> .mozconfig
+
+#HealthReporter
+##Option 1: Completely remove FHR
+rm mobile/android/base/health/*
+rm -R mobile/android/base/background/*report*
+rm mobile/android/services/manifests/HealthReport*
+patch -p1 <$REPO/Remove_FHR.patch
+###Option 2: Make the default pref false if not value present - Not tested
+#sed -i -e 's/HEALTHREPORT_UPLOAD_ENABLED, true/HEALTHREPORT_UPLOAD_ENABLED, false/g' mobile/android/base/preferences/GeckoPreferences.java
+###Option 3: Force the pref to be false - Not tested
+#sed -i -e 's/getBooleanPref(context, PREFS_HEALTHREPORT_UPLOAD_ENABLED, true)/false/g' mobile/android/base/preferences/GeckoPreferences.java
 
 ##Hot-Fix
 sed -i -e 's/size_impl(v/size_impl(const v/g' memory/mozjemalloc/jemalloc.c
