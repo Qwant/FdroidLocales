@@ -62,7 +62,7 @@
 
 
 
-
+<!ENTITY btnConsoleXhr          "XHR">
 
 <!-- LOCALIZATION NODE (btnConsoleSharedWorkers) the term "Shared Workers"
   -  should not be translated. -->
@@ -81,6 +81,8 @@
 <!ENTITY fullZoomReduceCmd.commandkey2  "">
 
 <!ENTITY fullZoomResetCmd.commandkey2   "">
+
+
 
 
 
