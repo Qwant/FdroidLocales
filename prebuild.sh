@@ -1,7 +1,7 @@
 #!/bin/bash
 REPO=$( echo $( cd `dirname $0`; pwd ) )
 
-find toolkit/crashreporter/ -mindepth 1 -maxdepth 1 ! -name "crashreporter.mozbuild" ! -name "google-breakpad" -exec rm -R '{}' \;
+find toolkit/crashreporter/ -mindepth 1 -maxdepth 1 ! -name "crashreporter.mozbuild" ! -name "google-breakpad" ! -name "breakpad-logging" -exec rm -R '{}' \;
 find toolkit/crashreporter/google-breakpad/ -mindepth 1 -maxdepth 1 ! -name "src" -exec rm -R '{}' \;
 rm -R toolkit/crashreporter/google-breakpad/src/tools/
 rm -R toolkit/crashreporter/google-breakpad/src/client/
