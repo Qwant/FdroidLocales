@@ -28,7 +28,7 @@
 <!ENTITY community.exp.creditsLink  "գլոբալ համայնք, ">
 <!ENTITY community.exp.end          " որն աշխատում է մեկ նպատակով՝ ապահովել համացանցի հասանելիությունը բոլորի համար:">
 
-<!ENTITY community.start2           "&brandShortName;-ը ստեղծել է  ">
+<!ENTITY community.start2           "&brandShortName;-ը ստեղծել է ">
 <!-- LOCALIZATION NOTE (community.mozillaLink): This is a link title that links to http://www.mozilla.org/. -->
 <!ENTITY community.mozillaLink      "&vendorShortName;-ը">
 <!ENTITY community.middle2          "-ն՝ ">
@@ -51,7 +51,7 @@
 <!ENTITY bottomLinks.rights         "Օգտագործողի Իրավունքները">
 <!-- LOCALIZATION NOTE (bottomLinks.privacy): This is a link title that links to https://www.mozilla.org/legal/privacy/. -->
 
-<!ENTITY bottomLinks.privacy        "Գաղտնիության Դրույթները">
+<!ENTITY bottomLinks.privacy        "Գաղտնիության դրույթներ">
 <!-- LOCALIZATION NOTE (update.checkingForUpdates): try to make the localized text short (see bug 596813 for screenshots). -->
 
 <!ENTITY update.checkingForUpdates  "Ստուգվում են թարմացումները...">
@@ -76,7 +76,7 @@
      try to make the localized text short (see bug 596813 for screenshots). -->
 
 <!ENTITY update.manual.start        "Ներբեռնել՝">
-<!ENTITY update.manual.linkText     "վերջին տարբերակը">
+<!ENTITY update.manual.linkText     "վերջին տարբերակ">
 <!ENTITY update.manual.end          "">
 <!-- LOCALIZATION NOTE (update.unsupported.start,update.unsupported.linkText,update.unsupported.end):
      update.unsupported.start, update.unsupported.linkText, and

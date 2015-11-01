@@ -26,9 +26,16 @@
 
 
 
+<!ENTITY welcomeback2.restoreButton  "Jom!">
+<!ENTITY welcomeback2.restoreButton.access "L">
 
+<!ENTITY welcomeback2.tabtitle      "Berjaya!">
 
+<!ENTITY welcomeback2.pageTitle     "Berjaya!">
+<!ENTITY welcomeback2.pageInfo1     "&brandShortName; sedia untuk memulakan.">
 
+<!ENTITY welcomeback2.label.restoreAll  "Pulihkan semua Tetingkap dan Tab">
+<!ENTITY welcomeback2.label.restoreSome "Simpan semula orang-orang yang hanya anda mahu">
 <!-- LOCALIZATION NOTE (welcomeback2.beforelink.pageInfo2,
 welcomeback2.afterlink.pageInfo2): these two string are used respectively
 before and after the the "learn more" link (welcomeback2.link.pageInfo2).
@@ -37,3 +44,4 @@ their language.
 -->
 <!ENTITY welcomeback2.afterlink.pageInfo2   "">
 
+<!ENTITY welcomeback2.link.pageInfo2        "ketahui lebih lanjut tentang apa yang boleh anda lakukan.">

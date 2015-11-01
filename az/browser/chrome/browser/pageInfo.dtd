@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY  pageInfoWindow.width  "600">
-<!ENTITY  pageInfoWindow.height "500">
+<!ENTITY  pageInfoWindow.height "550">
 
 <!ENTITY  copy.key              "C">
 <!ENTITY  copy.label            "Kopyala">
@@ -56,7 +56,7 @@
 <!ENTITY  permAllowSession      "Bu seans üçün icazə ver">
 <!ENTITY  permBlock             "Blokla">
 <!ENTITY  permissionsFor        "İcazələr:">
-<!ENTITY  permPlugins           "Əlavəni aktivləşdir">
+<!ENTITY  permPlugins           "Qoşmaları Aktivləşdir">
 
 <!ENTITY  permClearStorage           "Saxlananları təmizlə">
 <!ENTITY  permClearStorage.accesskey "t">

@@ -14,12 +14,18 @@
 <!ENTITY toolboxOptionsButton.key      "O">
 <!ENTITY toolboxNextTool.key           "]">
 <!ENTITY toolboxPreviousTool.key       "[">
+<!-- LOCALIZATION NOTE :
+fullZoomEnlargeCmd.commandkey, fullZoomEnlargeCmd.commandkey2,
+fullZoomEnlargeCmd.commandkey3, fullZoomReduceCmd.commandkey,
+fullZoomReduceCmd.commandkey2, fullZoomResetCmd.commandkey,
+and fullZoomResetCmd.commandkey2 should all match the corresponding
+values from browser.dtd.  -->
 
-<!ENTITY toolboxZoomIn.key             "+">
-<!-- + is above this key on many keyboards -->
-<!ENTITY toolboxZoomIn.key2            "="> 
-<!ENTITY toolboxZoomOut.key            "-">
-<!ENTITY toolboxZoomReset.key          "0">
+<!ENTITY fullZoomEnlargeCmd.commandkey3 "">
+
+<!ENTITY fullZoomReduceCmd.commandkey2  "">
+
+<!ENTITY fullZoomResetCmd.commandkey2   "">
 
 <!ENTITY toolboxReload.key             "r">
 <!-- This key is used with the accel+shift modifiers to minimize the toolbox -->
@@ -158,11 +164,6 @@
 
 <!ENTITY options.stylesheetAutocompletion.label      "CSS തനിയേ പൂർത്തിയാക്കുക">
 <!ENTITY options.stylesheetAutocompletion.tooltip    "CSS പ്രത്യേകതകളും, മൂല്യങ്ങളും, സെലക്ടറുകളും സ്റ്റൈൽ എഡിറ്ററിൽ നിങ്ങൾ ടൈപ്പ് ചെയ്യുന്ന മുറക്ക് തനിയേ പൂർത്തിയാക്കുക">
-<!-- LOCALIZATION NOTE (options.profiler.label): This is the label for the
-  -  heading of the group of JavaScript Profiler preferences in the options
-  -  panel. -->
-
-<!ENTITY options.profiler.label            "ജാവാസ്ക്രിപ്റ്റ് പ്രൊഫൈലര്‍">
 <!-- LOCALIZATION NOTE (options.commonprefs): This is the label for the heading
       of all preferences that affect both the Web Console and the Network
       Monitor -->

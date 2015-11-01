@@ -211,10 +211,6 @@
   -  in a "receive" state. -->
 <!ENTITY netmonitorUI.timings.receive     "Získávání:">
 
-<!-- LOCALIZATION NOTE (netmonitorUI.security.warning.protocol): A tooltip
-  -  for warning icon that indicates a connection uses insecure protocol. -->
-<!ENTITY netmonitorUI.security.warning.sslv3      "Protokol SSL 3.0 je zastaralý a nebezpečný.">
-
 <!-- LOCALIZATION NOTE (netmonitorUI.security.warning.cipher): A tooltip
   -  for warning icon that indicates a connection uses insecure cipher suite. -->
 <!ENTITY netmonitorUI.security.warning.cipher     "Šifra použitá pro šifrování je zastaralá a nebezpečná.">
@@ -296,7 +292,7 @@
 
 <!-- LOCALIZATION NOTE (netmonitorUI.context.copyRequestHeaders.accesskey): This is the access key
   -  for the Copy Request Headers menu item displayed in the context menu for a request -->
-<!ENTITY netmonitorUI.context.copyRequestHeaders.accesskey  "Q">
+<!ENTITY netmonitorUI.context.copyRequestHeaders.accesskey  "p">
 
 <!-- LOCALIZATION NOTE (netmonitorUI.context.copyResponseHeaders): This is the label displayed
   -  on the context menu that copies the selected item's response headers -->
@@ -304,7 +300,7 @@
 
 <!-- LOCALIZATION NOTE (netmonitorUI.context.copyResponseHeaders.accesskey): This is the access key
   -  for the Copy Response Headers menu item displayed in the context menu for a response -->
-<!ENTITY netmonitorUI.context.copyResponseHeaders.accesskey  "S">
+<!ENTITY netmonitorUI.context.copyResponseHeaders.accesskey  "d">
 
 <!-- LOCALIZATION NOTE (netmonitorUI.context.copyResponse): This is the label displayed
   -  on the context menu that copies the selected response as a string -->
@@ -312,7 +308,7 @@
 
 <!-- LOCALIZATION NOTE (netmonitorUI.context.copyRespose.accesskey): This is the access key
   -  for the Copy Response menu item displayed in the context menu for a request -->
-<!ENTITY netmonitorUI.context.copyResponse.accesskey  "R">
+<!ENTITY netmonitorUI.context.copyResponse.accesskey  "r">
 
 <!-- LOCALIZATION NOTE (netmonitorUI.context.copyAllAsHar): This is the label displayed
   -  on the context menu that copies all as HAR format -->
@@ -336,7 +332,7 @@
 
 <!-- LOCALIZATION NOTE (netmonitorUI.context.copyImageAsDataUri.accesskey): This is the access key
   -  for the Copy Image As Data URI menu item displayed in the context menu for a request -->
-<!ENTITY netmonitorUI.context.copyImageAsDataUri.accesskey  "o">
+<!ENTITY netmonitorUI.context.copyImageAsDataUri.accesskey  "I">
 
 <!-- LOCALIZATION NOTE (debuggerUI.summary.editAndResend): This is the label displayed
   -  on the button in the headers tab that opens a form to edit and resend the currently
@@ -345,7 +341,7 @@
 
 <!-- LOCALIZATION NOTE (debuggerUI.summary.editAndResend.accesskey): This is the access key
   -  for the "Edit and Resend" menu item displayed in the context menu for a request -->
-<!ENTITY netmonitorUI.summary.editAndResend.accesskey  "R">
+<!ENTITY netmonitorUI.summary.editAndResend.accesskey  "n">
 
 <!-- LOCALIZATION NOTE (debuggerUI.summary.rawHeaders): This is the label displayed
   -  on the button in the headers tab that toggle view for raw request/response headers

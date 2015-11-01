@@ -10,9 +10,9 @@
 <!ENTITY pixelsPopup.value "փիքսել">
 <!-- These are in the Location tab panel -->
 
-<!ENTITY locationEditField.label "Նկարի տեղը.">
-<!ENTITY locationEditField.accessKey "Ն">
-<!ENTITY locationEditField.tooltip "Նշեք նկարի ֆայլի անունը կամ տեղը">
+<!ENTITY locationEditField.label "Նկարի տեղադրությունը.">
+<!ENTITY locationEditField.accessKey "տ">
+<!ENTITY locationEditField.tooltip "Նշեք նկարի ֆայլի անունը կամ տեղադրությունը">
 <!ENTITY title.label "Հուշում.">
 <!ENTITY title.accessKey "Հ">
 <!ENTITY title.tooltip "Html 'title' հատկությունը, որը ցուցադրվում է հուշման մեջ">
@@ -29,7 +29,7 @@
 <!ENTITY actualSize.label "Իրական չափը.">
 <!ENTITY actualSizeRadio.label "Իրական չափը">
 <!ENTITY actualSizeRadio.accessKey "Ի">
-<!ENTITY actualSizeRadio.tooltip "Ետարկել նկարի իրական չափը">
+<!ENTITY actualSizeRadio.tooltip "Հետադարձել նկարի իրական չափը">
 <!ENTITY customSizeRadio.label "Որոշված չափ">
 <!ENTITY customSizeRadio.accessKey "Ո">
 <!ENTITY customSizeRadio.tooltip "Փոխել նկարի չափը, ինչպես որ էջում է">

@@ -197,6 +197,7 @@
 
 <!ENTITY fxaccount_status_header2 "Firefox fiók">
 <!ENTITY fxaccount_status_signed_in_as "Bejelentkezve mint">
+<!ENTITY fxaccount_status_manage_account "Fiók kezelése">
 <!ENTITY fxaccount_status_auth_server "Fiókkiszolgáló">
 <!ENTITY fxaccount_status_sync_now "Szinkronizálás most">
 <!ENTITY fxaccount_status_syncing2 "Szinkronizálás…">
@@ -230,6 +231,7 @@
 <!ENTITY fxaccount_remove_account_toast "&formatS; Firefox fiók eltávolítva.">
 
 <!ENTITY fxaccount_remove_account_menu_item "Fiók eltávolítása">
+<!ENTITY fxaccount_enable_debug_mode "Hibakeresési mód bekapcsolása">
 <!-- Localization note: this is the name shown by the Android system
      itself for a Firefox Account. Don't localize this. -->
 

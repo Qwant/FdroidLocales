@@ -229,12 +229,12 @@ en çok tutulan eklentilerden bazıları öne çıkarılacak.">
      to cause this tab to appear. -->
 
 <!ENTITY experiment.info.label "Bu nedir? Telemetry zaman zaman deneyler yükleyip çalıştırabilir.">
-<!ENTITY experiment.info.learnmore "Daha fazla bilgi">
+<!ENTITY experiment.info.learnmore "Daha fazla bilgi al">
 <!ENTITY experiment.info.learnmore.accesskey "D">
 <!ENTITY experiment.info.changetelemetry "Telemetry ayarları">
 <!ENTITY experiment.info.changetelemetry.accesskey "T">
 
-<!ENTITY setting.learnmore "Daha fazla bilgi…">
+<!ENTITY setting.learnmore "Daha fazla bilgi al…">
 
 <!ENTITY disabledUnsigned.heading "Bazı eklentiler etkisizleştirildi">
 <!-- LOCALIZATION NOTE (disabledUnsigned.description.start, disabledUnsigned.description.findAddonsLink, disabledUnsigned.description.end):
@@ -248,5 +248,5 @@ en çok tutulan eklentilerden bazıları öne çıkarılacak.">
      These entities form a sentence, with disabledUnsigned.devInfo.linkToManual
      being a link to an external site. -->
 <!ENTITY disabledUnsigned.devInfo.start "Eklentilerini doğrulamak için isteyen geliştiriciler ">
-<!ENTITY disabledUnsigned.devInfo.linkToManual "rehberimizi ">
-<!ENTITY disabledUnsigned.devInfo.end "okuyabilir.">
+<!ENTITY disabledUnsigned.devInfo.linkToManual "rehberimizi">
+<!ENTITY disabledUnsigned.devInfo.end " okuyabilir.">

@@ -80,7 +80,7 @@
 <!ENTITY inspectorHTMLDelete.label          "Șterge nodul">
 <!ENTITY inspectorHTMLDelete.accesskey      "n">
 
-<!ENTITY inspector.selectButton.tooltip     "Selectează elementul cu mausul">
+<!ENTITY inspector.selectButton.tooltip     "Selectează elementul cu mouse">
 <!-- LOCALIZATION NOTE (inspectorSearchHTML.label2): This is the label shown as
      the placeholder in inspector search box -->
 
@@ -97,13 +97,17 @@
      here Image Data URL). For more information:
      https://developer.mozilla.org/en-US/docs/Web/HTTP/data_URIs -->
 
-<!ENTITY inspectorCopyImageDataUri.label       "Copiază Data-URL al imaginii">
+<!ENTITY inspectorCopyImageDataUri.label       "Copiază Data-URL a imaginii">
 <!-- LOCALIZATION NOTE (inspectorShowDOMProperties.label): This is the label
      shown in the inspector contextual-menu for the item that lets users see
      the DOM properties of the current node. When triggered, this item
      opens the split Console and displays the properties in its side panel. -->
 
 <!ENTITY inspectorShowDOMProperties.label       "Arată proprietățile DOM">
+<!-- LOCALIZATION NOTE (inspectorUseInConsole.label): This is the label
+     shown in the inspector contextual-menu for the item that outputs a
+     variable for the current node to the console. When triggered,
+     this item opens the split Console. -->
 <!-- LOCALIZATION NOTE (inspectorExpandNode.label): This is the label
      shown in the inspector contextual-menu for recursively expanding
      mark-up elements -->

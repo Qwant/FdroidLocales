@@ -9,6 +9,10 @@
 <!ENTITY provideSearchSuggestions.label        "Sykfoarstellen jaan">
 <!ENTITY provideSearchSuggestions.accesskey    "S">
 
+<!ENTITY showURLBarSuggestions.label           "Sykfoarstellen yn lokaasjebalkresultaten toane">
+<!ENTITY showURLBarSuggestions.accesskey       "l">
+<!ENTITY urlBarSuggestionsPermanentPB.label    "Sykfoarstellen wurde net yn lokaasjebalkresultaten toand, omdat jo &brandShortName; konfigurearre hawwe om noait skiednis te ûnthâlden.">
+
 <!ENTITY redirectWindowsSearch.label 		   "Dizze sykmasine foar sykopdrachten fan Windows út brûke">
 <!ENTITY redirectWindowsSearch.accesskey       "W">
 

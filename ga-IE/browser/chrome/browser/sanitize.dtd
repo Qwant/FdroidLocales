@@ -52,16 +52,14 @@ that require it.  -->
 <!ENTITY itemHistoryAndDownloads.accesskey "B">
 <!ENTITY itemFormSearchHistory.label       "Stair Fhoirmeacha agus Chuardaigh">
 <!ENTITY itemFormSearchHistory.accesskey   "F">
-<!ENTITY itemPasswords.label               "Focail Fhaire a sábháladh">
-<!ENTITY itemPasswords.accesskey           "F">
 <!ENTITY itemCookies.label                 "Fianáin">
 <!ENTITY itemCookies.accesskey             "F">
 <!ENTITY itemCache.label                   "Taisce">
 <!ENTITY itemCache.accesskey               "a">
 <!ENTITY itemOfflineApps.label             "Sonraí Shuíomhanna Gréasáin As Líne">
 <!ENTITY itemOfflineApps.accesskey         "o">
-<!ENTITY itemActiveLogins.label            "Logálacha isteach Gníomhacha">
-<!ENTITY itemActiveLogins.accesskey        "L">
+<!ENTITY itemActiveLogins.label            "Seisiúin Ghníomhacha">
+<!ENTITY itemActiveLogins.accesskey        "S">
 <!ENTITY itemSitePreferences.label         "Sainroghanna an tSuímh">
 <!ENTITY itemSitePreferences.accesskey     "S">
 <!-- LOCALIZATION NOTE (sanitizeEverythingUndoWarning): Second warning paragraph

@@ -125,6 +125,7 @@
 <!ENTITY fxaccount_finish_migrating_description "Actualizar puede transferir muchos datos. Es mejor estar en una red WiFi.">
 <!ENTITY fxaccount_status_header2 "Cuenta de Firefox">
 <!ENTITY fxaccount_status_signed_in_as "Conectado como">
+<!ENTITY fxaccount_status_manage_account "Administrar cuenta">
 <!ENTITY fxaccount_status_auth_server "Servidor de cuentas">
 <!ENTITY fxaccount_status_sync_now "Sincronizar ahora">
 <!ENTITY fxaccount_status_syncing2 "Sincronizando…">
@@ -150,6 +151,7 @@
 <!ENTITY fxaccount_remove_account_dialog_message "&brandShortName; dejará de sincronizar con su cuenta, pero no eliminará ninguno de sus datos de navegación en este dispositivo.">
 <!ENTITY fxaccount_remove_account_toast "Cuenta de Firefox &formatS; eliminada.">
 <!ENTITY fxaccount_remove_account_menu_item "Eliminar cuenta">
+<!ENTITY fxaccount_enable_debug_mode "Activar modo de depuración">
 <!ENTITY fxaccount_account_type_label "Firefox">
 <!ENTITY fxaccount_options_title "Opciones de &syncBrand.shortName.label;">
 <!ENTITY fxaccount_options_configure_title "Configurar &syncBrand.shortName.label;">

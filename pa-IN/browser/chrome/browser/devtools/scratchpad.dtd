@@ -20,43 +20,43 @@
   -  "Scratchpad" in your locale. You should feel free to find a close
   -  approximation to it or choose a word (or words) that means
   -  "simple discardable text editor". -->
-<!ENTITY window.title                 "Scratchpad">
+<!ENTITY window.title                 "ਸਕਰੈਚਪੈਡ">
 
-<!ENTITY fileMenu.label               "File">
+<!ENTITY fileMenu.label               "ਫਾਇਲ">
 <!ENTITY fileMenu.accesskey           "F">
 
-<!ENTITY newWindowCmd.label           "New Window">
+<!ENTITY newWindowCmd.label           "ਨਵੀਂ ਵਿੰਡੋ">
 <!ENTITY newWindowCmd.accesskey       "N">
 <!ENTITY newWindowCmd.commandkey      "n">
 
-<!ENTITY openFileCmd.label            "Open File…">
+<!ENTITY openFileCmd.label            "…ਫਾਇਲ ਖੋਲ੍ਹੋ">
 <!ENTITY openFileCmd.accesskey        "O">
 <!ENTITY openFileCmd.commandkey       "o">
 
-<!ENTITY openRecentMenu.label         "Open Recent">
+<!ENTITY openRecentMenu.label         "ਤਾਜ਼ਾ ਖੋਲ੍ਹੇ">
 <!ENTITY openRecentMenu.accesskey     "R">
 
-<!ENTITY revertCmd.label              "Revert…">
+<!ENTITY revertCmd.label              "…ਰੀਵਰਟ">
 <!ENTITY revertCmd.accesskey          "t">
 
-<!ENTITY saveFileCmd.label            "Save">
+<!ENTITY saveFileCmd.label            "ਸੰਭਾਲੋ">
 <!ENTITY saveFileCmd.accesskey        "S">
 <!ENTITY saveFileCmd.commandkey       "s">
 
-<!ENTITY saveFileAsCmd.label          "Save As…">
+<!ENTITY saveFileAsCmd.label          "…ਵਜੋਂ ਸੰਭਾਲੋ">
 <!ENTITY saveFileAsCmd.accesskey      "A">
 
-<!ENTITY closeCmd.label               "Close">
+<!ENTITY closeCmd.label               "ਬੰਦ">
 <!ENTITY closeCmd.key                 "W">
 <!ENTITY closeCmd.accesskey           "C">
 
-<!ENTITY viewMenu.label               "View">
+<!ENTITY viewMenu.label               "ਵੇਖੋ">
 <!ENTITY viewMenu.accesskey           "V">
 
 <!ENTITY lineNumbers.label             "Show Line Numbers">
 <!ENTITY lineNumbers.accesskey         "L">
 
-<!ENTITY wordWrap.label                "Wrap Text">
+<!ENTITY wordWrap.label                "ਟੈਕਸਟ ਸਮੇਟੋ">
 <!ENTITY wordWrap.accesskey            "W">
 
 <!ENTITY highlightTrailingSpace.label     "Highlight Trailing Space">
@@ -65,7 +65,6 @@
 <!ENTITY largerFont.label             "Larger Font">
 <!ENTITY largerFont.accesskey         "a">
 <!ENTITY largerFont.commandkey        "+">
-<!ENTITY largerFont.commandkey2       "="> <!-- + is above this key on many keyboards -->
 
 <!ENTITY smallerFont.label            "Smaller Font">
 <!ENTITY smallerFont.accesskey        "M">
@@ -75,10 +74,10 @@
 <!ENTITY normalSize.accesskey         "N">
 <!ENTITY normalSize.commandkey        "0">
 
-<!ENTITY editMenu.label               "Edit">
+<!ENTITY editMenu.label               "ਸੋਧ">
 <!ENTITY editMenu.accesskey           "E">
 
-<!ENTITY run.label                    "Run">
+<!ENTITY run.label                    "ਚਲਾਓ">
 <!ENTITY run.accesskey                "R">
 <!ENTITY run.key                      "r">
 
@@ -86,7 +85,7 @@
 <!ENTITY inspect.accesskey            "I">
 <!ENTITY inspect.key                  "i">
 
-<!ENTITY display.label                "Display">
+<!ENTITY display.label                "ਡਿਸਪਲੇਅ">
 <!ENTITY display.accesskey            "D">
 <!ENTITY display.key                  "l">
 
@@ -100,11 +99,11 @@
   -  the user is evaluating against. I.e., Content (current tab) or Chrome
   -  (browser).
   -->
-<!ENTITY environmentMenu.label        "Environment">
+<!ENTITY environmentMenu.label        "ਇੰਵਾਇਰਨਮੈਂਟ">
 <!ENTITY environmentMenu.accesskey    "N">
 
 
-<!ENTITY contentContext.label         "Content">
+<!ENTITY contentContext.label         "ਸਮੱਗਰੀ">
 <!ENTITY contentContext.accesskey     "C">
 
 <!-- LOCALIZATION NOTE (browserContext.label, accesskey): This menu item is used
@@ -113,7 +112,7 @@
   -  enabled via the devtools.chrome.enabled preference. Formerly, this label
   -  was called "Chrome".
   -->
-<!ENTITY browserContext.label         "Browser">
+<!ENTITY browserContext.label         "ਝਲਕ">
 <!ENTITY browserContext.accesskey     "B">
 
 <!-- LOCALIZATION NOTE some localizations of Windows (ex:french, german) use "?"

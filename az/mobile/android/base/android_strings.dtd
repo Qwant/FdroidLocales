@@ -6,10 +6,21 @@
 <!ENTITY  no_space_to_start_error "&brandShortName; səyyahının başladılması üçün yetərli boş yaddaş yoxdur.">
 <!ENTITY  error_loading_file "&brandShortName; başladılması üçün zəruri olan faylların yüklənilməsi zamanı xəta baş verdi">
 
+<!ENTITY firstrun_panel_title_welcome "Xoş Gəldiniz">
 <!ENTITY  onboard_start_message3 "&brandShortName; ilə Gəz">
 <!ENTITY  onboard_start_subtext3 "Mobil internet səyahətinizi özünüzə məxsus tərzdə edin.">
 <!ENTITY  onboard_start_button_account "&brandShortName;-a daxil olun">
 <!ENTITY  onboard_start_button_browser "Səyahətə Başla">
+<!ENTITY firstrun_button_next "İrəli">
+
+<!ENTITY  onboard_start_restricted1 "Sadələşdirilmiş &brandShortName; versiyası ilə təhlükəsiz və idarədə qalın.">
+
+<!ENTITY firstrun_import_title "İdxal et">
+<!ENTITY firstrun_import_message "&brandShortName; səyyahına xoş gəlmisiniz">
+<!ENTITY firstrun_import_subtext "Əlfəcin və tarixçənizi digər səyyahdan idxal edin.">
+<!ENTITY firstrun_import_action "&brandShortName; səyyahına köçür">
+<!ENTITY firstrun_import_dialog_button "Köçür">
+<!ENTITY firstrun_import_progress_title "Köçürülür">
 <!-- Localization note: These are used as the titles of different pages on the home screen.
      They are automatically converted to all caps by the Android platform. -->
 
@@ -54,8 +65,9 @@
 
 <!ENTITY history_today_section "Bugün">
 <!ENTITY history_yesterday_section "Dünən">
-<!ENTITY history_week_section2 "Keçən həftə">
-<!ENTITY history_older_section2 "Keçən ay">
+<!ENTITY history_week_section3 "Son 7 gün">
+<!ENTITY history_this_month_section "Bu ay">
+<!ENTITY history_older_section3 "6 aydan gec">
 
 <!ENTITY go "Get">
 <!ENTITY search "Axtar">
@@ -78,6 +90,14 @@
      as possible because it's shown as a label in a toast.  Ideally, this string
      is upper-case, to match Google and Android's convention. -->
 <!ENTITY switch_button_message "DƏYİŞDİR">
+<!-- Localization note (tab_title_prefix_is_playing_audio): This string is not
+     visible in the UI, but rather used as a text-to-speech content description
+     for sight-impaired a11y users. The content description is set on a tab
+     title in a list of open tabs when content in that tab is playing audio.
+     &formatS; will be replaced with the title of the tab, as received from the
+     web page. When audio is not playing in a tab, &formatS; will be used as
+     the content description. -->
+<!ENTITY tab_title_prefix_is_playing_audio "Səs oxudulur – &formatS;">
 
 <!ENTITY settings "Tənzimləmələr">
 <!ENTITY settings_title "Tənzimləmələr">
@@ -155,6 +175,9 @@
 <!ENTITY pref_search_hint "MƏSLƏHƏT: Hər-hansı bir saytı axtarış mühərrikləriniz siyahısına əlavə etmək üçün onun axtarış yerinə basılı tutun və daha sonra &formatI; ikonuna basın.">
 <!ENTITY pref_category_devtools "Tərtibatçı alətləri">
 <!ENTITY pref_developer_remotedebugging "Uzaqdan sazlama">
+<!ENTITY pref_developer_remotedebugging_usb "USB ilə məsafəli sazlama">
+<!ENTITY pref_developer_remotedebugging_wifi "Wi-Fi ilə məsafəli sazlama">
+<!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Wi-Fi sazlama üçün cihazınızda QR kod oxuyucu tətbiqi qurulmalıdır.">
 <!ENTITY pref_category_logins "Hesablar">
 <!ENTITY pref_remember_signons2 "Daxil olmaları yadda saxla">
 <!ENTITY pref_open_external_urls_privately_title "Keçidləri Məxfi səyahətdə aç">
@@ -176,6 +199,9 @@
 <!ENTITY pref_home_updates_wifi "Yalnız Wi-Fi ilə">
 <!ENTITY pref_home_suggested_sites "Sayt təkliflərini göstər">
 <!ENTITY pref_home_suggested_sites_summary "Sizin üçün maraqlı ola biləcəyini düşündüyümüz saytların qısa yollarını ana səhifənizdə göstərir">
+<!ENTITY pref_category_home_homepage "Ana Səhifə">
+<!ENTITY home_homepage_title "Ana Səhifə seç">
+<!ENTITY home_homepage_use_current_tab "Mövcud vərəqi işlət">
 <!-- Localization note: These are shown in the left sidebar on tablets -->
 
 <!ENTITY pref_header_customize "Şəxsiləşdir">
@@ -192,15 +218,20 @@
 <!ENTITY pref_cookies_disabled "Söndürülüb">
 
 <!ENTITY pref_tracking_protection_title "İzlənmə qoruması">
-<!ENTITY pref_tracking_protection_summary "&brandShortName; saytların sizi izləməsinin qarşısını alacaq">
+<!ENTITY pref_tracking_protection_summary3 "Məxfi Səyahətdə aktivdir">
 <!ENTITY pref_donottrack_title "Məni izləmə">
 <!ENTITY pref_donottrack_summary "&brandShortName; saytlara izlənmək istəmədiyinizi xəbər edəcək">
+
+<!ENTITY tracking_protection_prompt_title "Artıq İzləmə Qoruması ilə">
+<!ENTITY tracking_protection_prompt_text "Bütün izləmə elementlərini aktiv bloklayır və beləliklə sizin narahat olmanıza əsas qalmır.">
+<!ENTITY tracking_protection_prompt_tip_text "Ətraflı öyrənmək üçün Məxfilik tənzimləmələrinə daxil olun">
+<!ENTITY tracking_protection_prompt_action_button "Bildim!">
 
 <!ENTITY tab_queue_toast_message3 "&brandShortName; səyyahında saxlanmış vərəq">
 <!ENTITY tab_queue_toast_action "İndi aç">
 <!ENTITY tab_queue_prompt_title "Çoxlu keçid açırsız?">
-<!ENTITY tab_queue_prompt_text3 "Onları &brandShortName; səyyahını bir sonraki dəfə açana qədər yadda saxla">
-<!ENTITY tab_queue_prompt_tip_text "bunu daha sonra Seçimlərdən dəyişə bilərsiz">
+<!ENTITY tab_queue_prompt_text4 "Onları &brandShortName; səyyahını bir sonraki dəfə açana qədər saxla.">
+<!ENTITY tab_queue_prompt_tip_text2 "Bunu daha sonra Seçimlərdən dəyişə bilərsiz">
 <!ENTITY tab_queue_prompt_positive_action_button "Aktiv et">
 <!ENTITY tab_queue_prompt_negative_action_button "Daha sonra">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
@@ -226,7 +257,6 @@
 <!ENTITY pref_plugins_tap_to_play "Oxutmaq üçün ekrana toxunun">
 <!ENTITY pref_plugins_disabled "Söndürülüb">
 <!ENTITY pref_text_size "Mətn ölçüsü">
-<!ENTITY pref_reflow_on_zoom4 "Mətn axını">
 <!ENTITY pref_restore "Vərəqlər">
 <!ENTITY pref_restore_always "Həmişə bərpa et">
 <!ENTITY pref_restore_quit "&brandShortName; səyyahından çıxdıqdan sonra bərpa etmə">
@@ -330,13 +360,13 @@ size. -->
 <!ENTITY addons "Əlavələr">
 <!ENTITY logins "Hesablar">
 <!ENTITY downloads "Endirilənlər">
-<!ENTITY apps "Tətbiqlər">
 <!ENTITY char_encoding "Simvol kodlaşdırması">
 
 <!ENTITY share "Paylaş">
 <!ENTITY share_title "Paylaş">
 <!ENTITY share_image_failed "Bu şəkli paylaşmaq mümkün olmadı">
 <!ENTITY save_as_pdf "PDF kimi yadda saxla">
+<!ENTITY print "Çap et">
 <!ENTITY find_in_page "Səhifədə Tap">
 <!ENTITY desktop_mode "Masaüstü saytını istə">
 <!ENTITY page "Səhifə">
@@ -381,6 +411,8 @@ size. -->
 <!ENTITY contextmenu_top_sites_pin "Saytı bərkid">
 <!ENTITY contextmenu_top_sites_unpin "Saytı pindən çıxart">
 <!ENTITY contextmenu_add_search_engine "Axtarış mühərriyi əlavə et">
+<!ENTITY contextmenu_mark_read "Oxunmuş olaraq işarələ">
+<!ENTITY contextmenu_mark_unread "Oxunmamış olaraq işarələ">
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
      contains brackets to indicate this is not actually a username, but rather a placeholder -->
@@ -400,6 +432,11 @@ size. -->
 <!ENTITY pref_titlebar_mode "Başlıq sətri">
 <!ENTITY pref_titlebar_mode_title "Səhifə başlığını göstər">
 <!ENTITY pref_titlebar_mode_url "Səhifə ünvanını göstər">
+<!-- Localization note (pref_prevent_magnifying_glass): Label for setting that controls
+     whether or not the magnifying glass is disabled. -->
+
+<!ENTITY pref_magnifying_glass_enabled "Balaca əraziləri yaxınlaşdır">
+<!ENTITY pref_magnifying_glass_enabled_summary "Yaxınına toxunduğum linkləri və form sahələrini böyüt">
 <!-- Localization note (pref_scroll_title_bar2): Label for setting that controls
      whether or not the dynamic toolbar is enabled. -->
 
@@ -407,7 +444,7 @@ size. -->
 <!ENTITY pref_scroll_title_bar_summary "Səhifəni aşağı sürüşdürərkən &brandShortName; başlıq sətrini gizlət">
 
 <!ENTITY pref_tab_queue_title2 "Çoxlu keçid aç">
-<!ENTITY pref_tab_queue_summary3 "Onları &brandShortName; səyyahını daha sonra açana qədər yadda saxla">
+<!ENTITY pref_tab_queue_summary3 "Onları &brandShortName; səyyahını daha sonra açana qədər saxla">
 <!-- Localization note (page_removed): This string appears in a toast message when
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
@@ -425,10 +462,10 @@ size. -->
 <!ENTITY site_settings_cancel       "Ləğv et">
 <!ENTITY site_settings_clear        "Təmizlə">
 <!ENTITY site_settings_no_settings  "Silinəcək tənzimləmə yoxdur.">
-<!-- Localization note (reading_list_added2) : Used in a toast, please keep as short
+<!-- Localization note (reading_list_added3) : Used in a toast, please keep as short
      as possible. -->
 
-<!ENTITY reading_list_added2 "Siyahıya əlavə edildi">
+<!ENTITY reading_list_added3 "Oxuma Siyahısına əlavə edildi">
 <!ENTITY reading_list_removed "Səhifə Oxuma Siyahınızdan silindi">
 <!-- Localization note (reading_list_remove) : Used to remove the currently open page from
      the user's reading list. The opposite of overlay_share_reading_list_btn_label. -->
@@ -458,8 +495,6 @@ size. -->
 <!ENTITY button_set "Qur">
 <!ENTITY button_clear "Təmizlə">
 <!ENTITY button_copy "Kopyala">
-
-<!ENTITY firstrun_panel_title_welcome "Xoş Gəldiniz">
 
 <!ENTITY home_top_sites_title "Qabaqcıl saytlar">
 <!-- Localization note (home_top_sites_add): This string is used as placeholder
@@ -545,21 +580,21 @@ The layout of the identity dialog prevents combining this into a single string w
 substitution variables.  If it is difficult to translate the sense of the string
 with that structure, consider a translation which ignores the preceding domain and
 just addresses the organization to follow, e.g. "This site is run by " -->
-<!ENTITY identity_run_by "İşlədən:">
-<!ENTITY identity_no_info "Bu saytın kimlik məlumatı yoxdur.">
-<!ENTITY identity_not_encrypted "Bu saytla aranızdakı bağlantı şifrələnməyib.">
-<!ENTITY identity_encrypted "Şifrələnmiş">
+<!ENTITY identity_connection_secure "Təhlükəsiz Bağlantı">
+<!ENTITY identity_connection_insecure "Təhlükəli bağlantı">
 <!-- Mixed content notifications in site identity popup -->
 
-<!ENTITY loaded_mixed_content_message "Bu səhifə təhlükəsizliyi olmayan məzmun göstərir.">
-<!ENTITY blocked_mixed_content_message_top "&brandShortName; təhlükəsizliyi olmayan məzmunu bloklaşdırdı.">
-<!ENTITY blocked_mixed_content_message_bottom "Əksər saytlar bu məzmun bloklaşdırıldıqda belə düzgün işləyəcəklər.">
+<!ENTITY mixed_content_blocked_all1 "&brandShortName; bu səhifədəki təhlükəli elementi blokladı.">
+<!ENTITY mixed_content_blocked_some1 "&brandShortName; bu səhifədəki təhlükəli məzmunun bir hissəsini blokladı.">
+<!ENTITY mixed_content_display_loaded1 "Bu səhifənin bəzi hissələri (şəkillər kimi) təhlükəsiz deyil.">
+<!ENTITY mixed_content_protection_disabled1 "Təhlükəli məzmunlardan qorunmanı söndürmüsünüz.">
 <!-- Tracking content notifications in site identity popup -->
 
-<!ENTITY loaded_tracking_content_message_top "İzlənmə qoruması söndürülüb.">
-<!ENTITY loaded_tracking_content_message_bottom "Bu səhifənin bəzi hissələri sizin onlayn aktivliyinizi izləyə bilər.">
-<!ENTITY blocked_tracking_content_message_top2 "İzlənmə qoruması aktivdir.">
-<!ENTITY blocked_tracking_content_message_bottom2 "Səhifənin onlayn aktivliyinizi izləyən hissələri bloklandı.">
+<!ENTITY doorhanger_tracking_title "İzlənmə qoruması">
+<!ENTITY doorhanger_tracking_state_enabled "Aktivdir">
+<!ENTITY doorhanger_tracking_state_disabled "Söndürülüb">
+<!ENTITY doorhanger_tracking_message_enabled1 "Sizin onlayn aktivliyi izləmə cəhdi bloklandı.">
+<!ENTITY doorhanger_tracking_message_disabled2 "Bu səhifədə sizin səyahətinizi izləyə biləcək elementlər var.">
 <!-- Common mixed and tracking content strings in site identity popup -->
 
 <!ENTITY learn_more "Daha çox məlumat alın">
@@ -645,10 +680,6 @@ idxal edilir">
 <!-- Voice search in the awesome bar -->
 
 <!ENTITY voicesearch_prompt "İndi danış">
-<!ENTITY voicesearch_failed_title "&brandShortName; Səsli Axtarış">
-<!ENTITY voicesearch_failed_message "Hazırsa səsli axtarışla bağlı problem var. Lütfən daha sonra yoxlayın.">
-<!ENTITY voicesearch_failed_message_recoverable "Bağışlayın! Sözlərinizi ayırd edə bilmədik. Lütfən təkrar yoxlayın.">
-<!ENTITY voicesearch_failed_retry "Təkrar yoxlayın">
 <!-- Localization note (remote_tabs_last_synced): the variable is replaced by a
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
@@ -666,3 +697,39 @@ idxal edilir">
 <!ENTITY find_matchcase "Aa">
 
 <!ENTITY intent_uri_cannot_open "Keçid açıla bilmir">
+<!-- DevTools Authentication -->
+<!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
+     above a QR reader that is actively scanning for QR codes.  The expected QR
+     code has already been displayed by the client trying to connect (such as
+     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     code. -->
+
+<!ENTITY devtools_auth_scan_header "Digər cihazınızda göstərilən QR kod üçün tətqiq edilir.">
+<!-- Restrictions -->
+<!-- Localization note: These are restrictions the device owner (e.g. parent) can enable for
+     a restricted profile (e.g. child). Used inside the Android settings UI. -->
+
+<!ENTITY restriction_disallow_import_settings_title2 "\u0027Android-dən daxil et\u0027-i söndür">
+<!ENTITY restriction_disallow_addons_title2 "Əlavə quraşdırılması söndürülüb">
+<!ENTITY restriction_disallow_devtools_title2 "Tərtibatçı alətlərini söndür">
+<!ENTITY restriction_disallow_customize_home_title2 "Ana səhifəni fərdiləşdirməni söndür">
+<!ENTITY restriction_disallow_private_browsing_title2 "Məxfi Səyahəti söndür">
+<!ENTITY restriction_disallow_location_services_title2 "Lokasiya Xidmətini söndür">
+<!ENTITY restriction_disallow_display_settings_title2 "Ekran tənzimləmələrini söndür">
+<!ENTITY restriction_disallow_clear_history_title2 "\u0027Səyahət tarixçəsini təmizlə\u0027-məni söndür">
+<!ENTITY restriction_disallow_master_password_title2 "Ana şifrəni söndür">
+<!ENTITY restriction_disallow_guest_browsing_title2 "Qonaq Səyahətini söndür">
+<!-- Default Bookmarks titles-->
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
+
+<!ENTITY bookmarks_about_browser "Firefox: Səyyahınız haqqında">
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
+<!ENTITY bookmarks_addons "Firefox: Əlavələrlə özəlləşdirin">
+<!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
+<!ENTITY bookmarks_support "Firefox: Dəstək">
+<!--LOCALIZATION NOTE (bookmarks_marketplace):link title for https://marketplace.firefox.com -->
+<!ENTITY bookmarks_marketplace "Firefox Marketplace">
+<!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
+<!ENTITY bookmarks_restricted_support2 "Android tabletlərdəki məhdudiyyətli profillər üçün Firefox Kömək və Dəstəyi">
+<!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
+<!ENTITY bookmarks_restricted_webmaker "Web-i Öyrənin: Mozilla Webmaker">

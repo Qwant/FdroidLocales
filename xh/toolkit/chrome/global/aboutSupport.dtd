@@ -7,7 +7,7 @@
 
 <!ENTITY aboutSupport.pageSubtitle "  Eli phepha liqulethe inkcazelo yobuchwepheshe enokuba luncedo xa 
 uzama ukusombulula ingxaki. Ukuba ufuna iimpendulo kwimibuzo eqhelekileyo 
-&brandShortName;, khangela kwisayithi yethu <a id='supportLink'>support website</a>.">
+ye-&brandShortName;, khangela kwisayithi yethu <a id='supportLink'>support website</a>.">
 
 <!ENTITY aboutSupport.crashes.title "Iingxelo zomonakalo">
 <!-- LOCALIZATION NOTE (aboutSupport.crashes.id):
@@ -59,6 +59,8 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsMultiProcessSupport "IWindows yeenkqubo ezininzi">
 
+<!ENTITY aboutSupport.appBasicsSafeMode "IMowudi Ekhuselekileyo">
+
 <!ENTITY aboutSupport.showDir.label "Isalathiso esivulekileyo">
 <!-- LOCALIZATION NOTE (aboutSupport.showMac.label): This is the Mac-specific
 variant of aboutSupport.showDir.label.  This allows us to use the preferred
@@ -74,7 +76,7 @@ variant of aboutSupport.showDir.label. -->
 <!-- LOCALIZATION NOTE (aboutSupport.userJSTitle, aboutSupport.userJSDescription): user.js is the name of the preference override file being checked. -->
 
 <!ENTITY aboutSupport.userJSTitle "Iipriferensi ze-user.js">
-<!ENTITY aboutSupport.userJSDescription "Ifolda yakho yeprofayile iqulethea ifayile <a id='prefs-user-js-link'>user.js </a>, equlethe iipriferensi ezingenziwanga &brandShortName;.">
+<!ENTITY aboutSupport.userJSDescription "Ifolda yakho yeprofayile iqulethe ifayile <a id='prefs-user-js-link'>user.js </a>, equlethe iipriferensi ezingenziwanga yi-&brandShortName;.">
 
 <!ENTITY aboutSupport.lockedKeyPrefsTitle "Iipriferensi ezitshixiweyo ezibalulekileyo">
 <!ENTITY aboutSupport.lockedPrefsName "Igama">

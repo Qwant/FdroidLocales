@@ -16,7 +16,6 @@
 <!-- Manage Account -->
 <!ENTITY manageAccount.label          "Administroni Llogarinë">
 <!ENTITY manageAccount.accesskey      "A">
-<!ENTITY viewQuota.label              "Shihni Kuotat">
 <!ENTITY changePassword2.label        "Ndryshoni Fjalëkalimin…">
 <!ENTITY myRecoveryKey.label          "Kyçi Im për Riparimin">
 <!ENTITY resetSync2.label             "Rirregulloni Sync-un…">
@@ -26,8 +25,6 @@
 <!ENTITY syncMy.label               "Njëkohëso">
 <!ENTITY engine.bookmarks.label     "Faqerojtësit e Mi">
 <!ENTITY engine.bookmarks.accesskey "F">
-<!ENTITY engine.readinglist.label   "Listë Leximesh">
-<!ENTITY engine.readinglist.accesskey "L">
 <!ENTITY engine.tabs.label          "Skedat e Mia">
 <!ENTITY engine.tabs.accesskey      "S">
 <!ENTITY engine.history.label       "Historikun Tim">
@@ -74,7 +71,10 @@ both, to better adapt this sentence to their language.
 
 <!ENTITY notSignedIn.label           "Nuk jeni i futur.">
 <!ENTITY signIn.label                "Hyni">
-<!ENTITY manage.label                "Administroni">
+<!ENTITY notSignedIn.label           "Nuk jeni i futur.">
+<!ENTITY signIn.label                "Hyni">
+<!ENTITY profilePicture.tooltip      "Ndryshoni foto profili">
+<!ENTITY verifiedManage.label        "Administroni Llogari">
 <!ENTITY disconnect.label            "Shkëputuni…">
 <!ENTITY verify.label                "Email Verifikimi">
 <!ENTITY forget.label                "Harroje këtë Email">
@@ -83,5 +83,18 @@ both, to better adapt this sentence to their language.
 <!ENTITY welcome.signIn.label "Hyni">
 <!ENTITY welcome.createAccount.label "Krijoni Llogari">
 
-<!ENTITY welcome.useOldSync.label "Version i vjetër Sync-u në përdorim?">
+<!ENTITY welcome.useOldSync.label "Po përdorni version të vjetër Sync-u?">
 
+<!ENTITY signedOut.caption            "Merreni Web-in me vete">
+<!ENTITY signedOut.description        "Njëkohësoni nëpër krejt pajisjet tuaja faqerojtësit, historikun e shfletimeve, skedat, fjalëkalimet, shtesat dhe parapëlqimet tuaja.">
+<!ENTITY signedOut.accountBox.title   "Lidhuni përmes një &syncBrand.fxAccount.label;">
+<!ENTITY signedOut.accountBox.create  "Krijoje Llogarinë">
+<!ENTITY signedOut.accountBox.signin  "Hyni">
+
+<!ENTITY signedIn.engines.label       "Njëkohëso nëpër krejt pajisjet">
+
+<!ENTITY mobilePromo.start            "Shkarkoni Firefox-in për ">
+<!-- LOCALIZATION NOTE (mobilePromo.androidLink): This is a link title that links to https://www.mozilla.org/firefox/android/ -->
+<!ENTITY mobilePromo.androidLink      "Android™">
+<!ENTITY mobilePromo.end              " që të bëhet njëkohësimi me pajisjen tuaj celulare.">
+<!ENTITY androidAttribution           "Android është shenjë tregtare e Google Inc.">

@@ -6,10 +6,21 @@
 <!ENTITY  no_space_to_start_error "Nepietiek brīvās vietas, lai palaistu &brandShortName;.">
 <!ENTITY  error_loading_file "Ielādējot &brandShortName; palaišanai nepieciešamos failus, notikusi kļūda">
 
+<!ENTITY firstrun_panel_title_welcome "Esiet sveicināti">
 <!ENTITY  onboard_start_message3 "Pārlūkot ar &brandShortName;">
 <!ENTITY  onboard_start_subtext3 "Iegūstiet pilnu kontroli pār to kā sērfojat internetā.">
 <!ENTITY  onboard_start_button_account "Pierakstīties &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Sākt pārlūkošanu">
+<!ENTITY firstrun_button_next "Nākamā">
+
+<!ENTITY  onboard_start_restricted1 "Kontrolējiet situāciju un esiet drošībā ar šo vienkāršoto &brandShortName; versiju.">
+
+<!ENTITY firstrun_import_title "Importēt">
+<!ENTITY firstrun_import_message "Laipni lūgti &brandShortName;">
+<!ENTITY firstrun_import_subtext "Importējiet grāmatzīmes un vēsturi no cita pārlūka.">
+<!ENTITY firstrun_import_action "Pārsūtīt uz &brandShortName;">
+<!ENTITY firstrun_import_dialog_button "Pārsūtīt">
+<!ENTITY firstrun_import_progress_title "Pārsūta">
 <!-- Localization note: These are used as the titles of different pages on the home screen.
      They are automatically converted to all caps by the Android platform. -->
 
@@ -54,8 +65,9 @@
 
 <!ENTITY history_today_section "Šodien">
 <!ENTITY history_yesterday_section "Vakar">
-<!ENTITY history_week_section2 "Pagājšnedēļ">
-<!ENTITY history_older_section2 "Pagājušajā mēnesī">
+<!ENTITY history_week_section3 "Pēdējās 7 dienas">
+<!ENTITY history_this_month_section "Šomenes">
+<!ENTITY history_older_section3 "Vecākas par 6 menešiem">
 
 <!ENTITY go "Iet">
 <!ENTITY search "Meklēt">
@@ -78,6 +90,14 @@
      as possible because it's shown as a label in a toast.  Ideally, this string
      is upper-case, to match Google and Android's convention. -->
 <!ENTITY switch_button_message "MAINĪT">
+<!-- Localization note (tab_title_prefix_is_playing_audio): This string is not
+     visible in the UI, but rather used as a text-to-speech content description
+     for sight-impaired a11y users. The content description is set on a tab
+     title in a list of open tabs when content in that tab is playing audio.
+     &formatS; will be replaced with the title of the tab, as received from the
+     web page. When audio is not playing in a tab, &formatS; will be used as
+     the content description. -->
+<!ENTITY tab_title_prefix_is_playing_audio "Atskaņo audio – &formatS;">
 
 <!ENTITY settings "Iestatījumi">
 <!ENTITY settings_title "Iestatījumi">
@@ -155,6 +175,9 @@
 <!ENTITY pref_search_hint "Padoms: Pievienojiet jebkuru lapu meklētājiem, ilgāku laiku paturot pirkstu uz tās meklēšanas lauka un tad piespiežot &formatI; iconu.">
 <!ENTITY pref_category_devtools "Izstrādātāju rīki">
 <!ENTITY pref_developer_remotedebugging "Attālinātā atkļūdošana">
+<!ENTITY pref_developer_remotedebugging_usb "Attālinātā atkļūdošana izmantojot USB">
+<!ENTITY pref_developer_remotedebugging_wifi "Attālinātā atkļūdošana izmantojot Wi-Fi">
+<!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Lai izmantotu Wi-Fi atkļūdošanu, jūsu ierīcē jābūt instalētai QR koda lasīšanas lietotnei.">
 <!ENTITY pref_category_logins "Lietotājvārdi">
 <!ENTITY pref_remember_signons2 "Atcerēties paroles">
 <!ENTITY pref_open_external_urls_privately_title "Atvērt saites privātajā režīmā">
@@ -176,6 +199,9 @@
 <!ENTITY pref_home_updates_wifi "Tikai pa Wi-Fi">
 <!ENTITY pref_home_suggested_sites "Rādīt lapu ieteikumus">
 <!ENTITY pref_home_suggested_sites_summary "Rādīt sākumlapā saites uz lapām, kas, mūsuprāt, varētu Jums interesēt">
+<!ENTITY pref_category_home_homepage "Mājas lapa">
+<!ENTITY home_homepage_title "Iestatīt mājas lapu">
+<!ENTITY home_homepage_use_current_tab "Izmantot pašreizējo cilni">
 <!-- Localization note: These are shown in the left sidebar on tablets -->
 
 <!ENTITY pref_header_customize "Pielāgošana">
@@ -192,15 +218,20 @@
 <!ENTITY pref_cookies_disabled "Deaktivētas">
 
 <!ENTITY pref_tracking_protection_title "Izsekošanas aizsardzība">
-<!ENTITY pref_tracking_protection_summary "&brandShortName; neļaus lapām izsekot jūs">
+<!ENTITY pref_tracking_protection_summary3 "Aktivēta privātajā pārlūkošanā">
 <!ENTITY pref_donottrack_title "Izsekošanas bloķēšana">
 <!ENTITY pref_donottrack_summary "&brandShortName; teiks lapām, ka nevēlaties, lai jūs izseko">
+
+<!ENTITY tracking_protection_prompt_title "Tagad ar izsekošanas aizsardzību">
+<!ENTITY tracking_protection_prompt_text "Aktīvi bloķē izsekošanas elementus, lai jums par to nav jāuztraucas.">
+<!ENTITY tracking_protection_prompt_tip_text "Apmeklējiet privātuma iestatījumus, lai uzzinātu vairāk">
+<!ENTITY tracking_protection_prompt_action_button "Viss skaidrs!">
 
 <!ENTITY tab_queue_toast_message3 "Cilne saglabāta &brandShortName;">
 <!ENTITY tab_queue_toast_action "Atvērt tagad">
 <!ENTITY tab_queue_prompt_title "Atvērt vairākas saites?">
-<!ENTITY tab_queue_prompt_text3 "Saglabājiet tās nākamai reizei, kad atvērsiet &brandShortName;">
-<!ENTITY tab_queue_prompt_tip_text "šo var mainīt Iestatījumos">
+<!ENTITY tab_queue_prompt_text4 "Saglabājiet tās nākamai reizei, kad atvērsiet &brandShortName;.">
+<!ENTITY tab_queue_prompt_tip_text2 "Šo var mainīt Iestatījumos">
 <!ENTITY tab_queue_prompt_positive_action_button "Aktivizēt">
 <!ENTITY tab_queue_prompt_negative_action_button "Ne tagad">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
@@ -226,7 +257,6 @@
 <!ENTITY pref_plugins_tap_to_play "Pieskarties, lai atskaņotu">
 <!ENTITY pref_plugins_disabled "Deaktivētas">
 <!ENTITY pref_text_size "Teksta izmērs">
-<!ENTITY pref_reflow_on_zoom4 "Teksta pārlāde">
 <!ENTITY pref_restore "Cilnes">
 <!ENTITY pref_restore_always "Vienmēr atjaunot">
 <!ENTITY pref_restore_quit "Neatjaunot pēc &brandShortName; aizvēršanas">
@@ -330,13 +360,13 @@ size. -->
 <!ENTITY addons "Papildinājumi">
 <!ENTITY logins "Lietotājvārdi">
 <!ENTITY downloads "Lejupielādes">
-<!ENTITY apps "Lietotnes">
 <!ENTITY char_encoding "Rakstzīmju kodējums">
 
 <!ENTITY share "Dalīties">
 <!ENTITY share_title "Dalīties caur...">
 <!ENTITY share_image_failed "Neizdevās dalīties ar šo attēlu">
 <!ENTITY save_as_pdf "Saglabāt kā PDF">
+<!ENTITY print "Drukāt">
 <!ENTITY find_in_page "Meklēt lapā">
 <!ENTITY desktop_mode "Lapu datora versijas">
 <!ENTITY page "Lapa">
@@ -356,7 +386,7 @@ size. -->
 
 <!ENTITY find_text "Meklēt lapā">
 <!ENTITY find_prev "Iepriekšējā">
-<!ENTITY find_next "Nākamā">
+<!ENTITY find_next "Turpināt">
 <!ENTITY find_close "Aizvērt">
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -381,6 +411,8 @@ size. -->
 <!ENTITY contextmenu_top_sites_pin "Piespraust lapu">
 <!ENTITY contextmenu_top_sites_unpin "Izņemt lapu">
 <!ENTITY contextmenu_add_search_engine "Pievienot meklētāju">
+<!ENTITY contextmenu_mark_read "Atzīmēt kā lasītu">
+<!ENTITY contextmenu_mark_unread "Atzīmēt kā nelasītu">
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
      contains brackets to indicate this is not actually a username, but rather a placeholder -->
@@ -400,6 +432,11 @@ size. -->
 <!ENTITY pref_titlebar_mode "Virsraksta josla">
 <!ENTITY pref_titlebar_mode_title "Rādīt lapas virsrakstu">
 <!ENTITY pref_titlebar_mode_url "Rādīt lapas adresi">
+<!-- Localization note (pref_prevent_magnifying_glass): Label for setting that controls
+     whether or not the magnifying glass is disabled. -->
+
+<!ENTITY pref_magnifying_glass_enabled "Palielināt mazus apgabalus">
+<!ENTITY pref_magnifying_glass_enabled_summary "Palielināt saites un formu laukus, ka pieskaras to tuvumā">
 <!-- Localization note (pref_scroll_title_bar2): Label for setting that controls
      whether or not the dynamic toolbar is enabled. -->
 
@@ -425,10 +462,10 @@ size. -->
 <!ENTITY site_settings_cancel       "Atcelt">
 <!ENTITY site_settings_clear        "Notīrīt">
 <!ENTITY site_settings_no_settings  "Nav iestatījumu, ko notīrīt.">
-<!-- Localization note (reading_list_added2) : Used in a toast, please keep as short
+<!-- Localization note (reading_list_added3) : Used in a toast, please keep as short
      as possible. -->
 
-<!ENTITY reading_list_added2 "Pievienots sarakstam">
+<!ENTITY reading_list_added3 "Pievienot lasīšanas sarakstam">
 <!ENTITY reading_list_removed "Lapa aizvākta no lasīšanas saraksta">
 <!-- Localization note (reading_list_remove) : Used to remove the currently open page from
      the user's reading list. The opposite of overlay_share_reading_list_btn_label. -->
@@ -458,8 +495,6 @@ size. -->
 <!ENTITY button_set "Iestatīt">
 <!ENTITY button_clear "Notīrīt">
 <!ENTITY button_copy "Kopēt">
-
-<!ENTITY firstrun_panel_title_welcome "Esiet sveicināti">
 
 <!ENTITY home_top_sites_title "Populārākās lapas">
 <!-- Localization note (home_top_sites_add): This string is used as placeholder
@@ -545,21 +580,21 @@ The layout of the identity dialog prevents combining this into a single string w
 substitution variables.  If it is difficult to translate the sense of the string
 with that structure, consider a translation which ignores the preceding domain and
 just addresses the organization to follow, e.g. "This site is run by " -->
-<!ENTITY identity_run_by "kuru pārvalda">
-<!ENTITY identity_no_info "Šī lapa nepiedāvā informāciju par tās saimniekiem.">
-<!ENTITY identity_not_encrypted "Savienojums ar šo lapu netiek šifrēts.">
-<!ENTITY identity_encrypted "Šifrēts">
+<!ENTITY identity_connection_secure "Drošs savienojums">
+<!ENTITY identity_connection_insecure "Nedrošs savienojums">
 <!-- Mixed content notifications in site identity popup -->
 
-<!ENTITY loaded_mixed_content_message "Šī lapa attēlo saturu, kas nav drošs.">
-<!ENTITY blocked_mixed_content_message_top "&brandShortName; bloķēja nedrošo saturu.">
-<!ENTITY blocked_mixed_content_message_bottom "Vairums lapu darbosies korekti arī tad, ja šis saturs ir bloķēts.">
+<!ENTITY mixed_content_blocked_all1 "&brandShortName; bloķēja nedrošo saturu šajā lapā.">
+<!ENTITY mixed_content_blocked_some1 "&brandShortName; bloķēja daļu nedrošā satura šajā lapā.">
+<!ENTITY mixed_content_display_loaded1 "Šīs lapas daļas (piemēram attēli) nav drošai.">
+<!ENTITY mixed_content_protection_disabled1 "Nedrošu elementu aizsardzība ir deaktivēta.">
 <!-- Tracking content notifications in site identity popup -->
 
-<!ENTITY loaded_tracking_content_message_top "Izsekošanas aizsardzība deaktivēta.">
-<!ENTITY loaded_tracking_content_message_bottom "Šīs lapas daļas var sekot jūsu darbībām.">
-<!ENTITY blocked_tracking_content_message_top2 "Izsekošanas aizsardzība aktivēta.">
-<!ENTITY blocked_tracking_content_message_bottom2 "Šīs lapas daļas, kas seko jūsu darbībām ir bloķētas.">
+<!ENTITY doorhanger_tracking_title "Izsekošanas aizsardzība">
+<!ENTITY doorhanger_tracking_state_enabled "Aktivizēta">
+<!ENTITY doorhanger_tracking_state_disabled "Deaktivēta">
+<!ENTITY doorhanger_tracking_message_enabled1 "Mēģinājumi izsekot jūsu aktivitātēm internetā tika bloķēti.">
+<!ENTITY doorhanger_tracking_message_disabled2 "Šajā lapā ir elementi, kas var izsekot jūsu aktivitātēm internetā.">
 <!-- Common mixed and tracking content strings in site identity popup -->
 
 <!ENTITY learn_more "Uzzināt vairāk">
@@ -645,10 +680,6 @@ no Android">
 <!-- Voice search in the awesome bar -->
 
 <!ENTITY voicesearch_prompt "Runājiet">
-<!ENTITY voicesearch_failed_title "&brandShortName; balss meklēšana">
-<!ENTITY voicesearch_failed_message "Radusies problēma ar balss meklēšanu. Lūdzu mēģiniet vēlreiz nedaudz vēlāk.">
-<!ENTITY voicesearch_failed_message_recoverable "Diemžēl, neizdevās atpazīt jūsu vārdus. Lūdzu mēģiniet vēlreiz.">
-<!ENTITY voicesearch_failed_retry "Mēģināt vēlreiz">
 <!-- Localization note (remote_tabs_last_synced): the variable is replaced by a
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
@@ -666,3 +697,39 @@ no Android">
 <!ENTITY find_matchcase "Aa">
 
 <!ENTITY intent_uri_cannot_open "Nevar atvērt saiti">
+<!-- DevTools Authentication -->
+<!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
+     above a QR reader that is actively scanning for QR codes.  The expected QR
+     code has already been displayed by the client trying to connect (such as
+     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     code. -->
+
+<!ENTITY devtools_auth_scan_header "Skanējamais QR kods tiek rādīs jūsu ierīcē">
+<!-- Restrictions -->
+<!-- Localization note: These are restrictions the device owner (e.g. parent) can enable for
+     a restricted profile (e.g. child). Used inside the Android settings UI. -->
+
+<!ENTITY restriction_disallow_import_settings_title2 "Deaktivēt \u0027Importēt no Android\u0027">
+<!ENTITY restriction_disallow_addons_title2 "Deaktivēt papildinājumus">
+<!ENTITY restriction_disallow_devtools_title2 "Deaktivēt izstrādātāju rīkus">
+<!ENTITY restriction_disallow_customize_home_title2 "Deaktivēt sākumlapas pielāgojumus">
+<!ENTITY restriction_disallow_private_browsing_title2 "Deaktivēt privāto pārlūkošanu">
+<!ENTITY restriction_disallow_location_services_title2 "Deaktivēt atrašanās vietu pakalpojumu">
+<!ENTITY restriction_disallow_display_settings_title2 "Deaktivēt ekrāna iestatījumus">
+<!ENTITY restriction_disallow_clear_history_title2 "Deaktivēt \u0027Attīrīt pārlūkošanas vēsturi\u0027">
+<!ENTITY restriction_disallow_master_password_title2 "Deaktivēt galveno paroli">
+<!ENTITY restriction_disallow_guest_browsing_title2 "Deaktivēt viesa pārlūošanu">
+<!-- Default Bookmarks titles-->
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
+
+<!ENTITY bookmarks_about_browser "Firefox: Par pārlūku">
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
+<!ENTITY bookmarks_addons "Firefox: Pielāgot ar papildinājumiem">
+<!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
+<!ENTITY bookmarks_support "Firefox: Atbalsts">
+<!--LOCALIZATION NOTE (bookmarks_marketplace):link title for https://marketplace.firefox.com -->
+<!ENTITY bookmarks_marketplace "Firefox veikals">
+<!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
+<!ENTITY bookmarks_restricted_support2 "Firefox atbalsts un palīdzība Android planšetdatoru aizsargātajiem profiliem">
+<!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
+<!ENTITY bookmarks_restricted_webmaker "Apgūstiet tīmekli: Mozilla Webmaker">

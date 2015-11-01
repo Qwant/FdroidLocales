@@ -26,8 +26,8 @@
 <!ENTITY pasteCmd.label            "Colar">
 <!ENTITY pasteCmd.key            "V">
 <!ENTITY pasteCmd.accesskey          "o">
-<!ENTITY deleteCmd.label          "Eliminar">
-<!ENTITY deleteCmd.accesskey        "l">
+<!ENTITY deleteCmd.label          "Apagar">
+<!ENTITY deleteCmd.accesskey        "A">
 <!ENTITY selectAllCmd.label          "Selecionar tudo">
 <!ENTITY selectAllCmd.key          "A">
 <!ENTITY selectAllCmd.accesskey        "S">
@@ -49,10 +49,10 @@
 
 <!ENTITY quitApplicationCmd.label  "Sair">
 <!ENTITY quitApplicationCmd.key    "Q">
-<!ENTITY quitApplicationCmd.accesskey  "S">
+<!ENTITY quitApplicationCmd.accesskey  "r">
 
 <!ENTITY quitApplicationCmdUnix.label  "Sair">
-<!ENTITY quitApplicationCmdUnix.accesskey  "S">
+<!ENTITY quitApplicationCmdUnix.accesskey  "r">
 
 <!ENTITY quitApplicationCmdMac.label  "Sair do &brandShortName;">
-<!ENTITY quitApplicationCmdMac.accesskey  "S">
+<!ENTITY quitApplicationCmdMac.accesskey  "r">

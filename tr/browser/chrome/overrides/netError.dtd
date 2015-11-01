@@ -135,9 +135,9 @@ kontrol edin.</li>
 <!ENTITY unwantedBlocked.title "İstenmeyen yazılım sitesi şüphesi!">
 <!ENTITY unwantedBlocked.longDesc "<p>İstenmeyen yazılım sayfaları, yanıltıcı olabilecek ve sisteminizi beklenmedik şekilde etkileyebilecek yazılımlar yüklemeye çalışır.</p>">
 
-<!ENTITY phishingBlocked.title "Sahtekârlık şüphesi!">
-<!ENTITY phishingBlocked.longDesc "<p>Bu sayfada yapılacak kişisel bilgi girişi, kimlik hırsızlığı ya da başka tür dolandırıcılıkla sonuçlanabilir.</p> 
-<p>Bu tür sahtekârlıklar yemleme olarak bilinen dümenlerde kullanılır. Yemleme saldırılarında araç olarak güvenebileceğiniz kurumları taklit eden sayfalara ve e-postalara başvurulur.</p>">
+<!ENTITY phishingBlocked.title "Web sahteciliği şüphesi!">
+<!ENTITY phishingBlocked.longDesc "<p>Bu sayfaya herhangi bir bilgi girmeniz, kimlik hırsızlığı veya başka bir dolandırıcılıkla sonuçlanabilir.</p> 
+<p>Bu tür web sahtecilikleri, yemleme denilen dümenlerde kullanılır. Yemleme saldırılarında, güvenebileceğiniz kaynakları taklit eden web sayfaları ve e-postalar kullanılır.</p>">
 
 <!ENTITY cspBlocked.title "İçerik güvenlik politikası uyarınca engellendi">
 <!ENTITY cspBlocked.longDesc "<p>&brandShortName; bu sayfanın bu şekilde yüklenmesini önledi, çünkü sayfanın buna izin vermeyen bir içerik güvenlik politikası var.</p>">
@@ -163,7 +163,7 @@ functionality specific to firefox. -->
 <!ENTITY errorReporting.title "Bu hatayı bildir">
 <!ENTITY errorReporting.longDesc "<span id='hostname'></span> için adres ve sertifika bilgilerini rapor etmeniz zararlı siteleri tanımlayıp engellememize yardımcı olacaktır. Daha güvenli bir web yaratmamıza yardım ettiğiniz için teşekkürler!">
 <!ENTITY errorReporting.automatic "İleride hataları otomatik olarak bildir">
-<!ENTITY errorReporting.learnMore "Daha fazla bilgi…">
+<!ENTITY errorReporting.learnMore "Daha fazla bilgi al…">
 <!ENTITY errorReporting.sending "Rapor gönderiliyor">
 <!ENTITY errorReporting.sent "Rapor gönderildi">
 <!ENTITY errorReporting.report "Raporla">
@@ -176,4 +176,4 @@ functionality specific to firefox. -->
 <!-- LOCALIZATION NOTE (sslv3Used.longDesc) - Do not translate
      "ssl_error_unsupported_version". -->
 <!ENTITY sslv3Used.longDesc "İleri düzey bilgi: ssl_error_unsupported_version">
-<!ENTITY sslv3Used.learnMore "Daha fazla bilgi…">
+<!ENTITY sslv3Used.learnMore "Daha fazla bilgi al…">

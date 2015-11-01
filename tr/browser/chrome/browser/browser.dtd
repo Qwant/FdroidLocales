@@ -13,7 +13,7 @@
 <!ENTITY mainWindow.titlemodifiermenuseparator " - ">
 <!-- LOCALIZATION NOTE (mainWindow.titlePrivateBrowsingSuffix): This will be appended to the window's title
                                                                 inside the private browsing mode -->
-<!ENTITY mainWindow.titlePrivateBrowsingSuffix "(Gizli tarama)">
+<!ENTITY mainWindow.titlePrivateBrowsingSuffix "(Gizli Gezinti)">
 
 <!ENTITY appmenu.tooltip                     "Menüyü aç">
 <!ENTITY navbarOverflow.label                "Daha fazla araç…">
@@ -110,13 +110,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.accesskey "s">
 
 <!ENTITY fxaSignIn.label "&syncBrand.shortName.label; oturumu aç">
+<!ENTITY fxaSignedIn.tooltip "&syncBrand.shortName.label; tercihlerini aç">
 <!ENTITY fxaSignInError.label "&syncBrand.shortName.label;'e tekrar bağlan">
+<!ENTITY fxaUnverified.label "Hesabınızı doğrulayın">
 <!ENTITY syncStartPanel2.heading "&syncBrand.shortName.label; etkinleştirildi">
 <!ENTITY syncStartPanel2.subTitle "&brandShortName; az sonra eşitlenmeye başlayacak.">
-<!ENTITY syncErrorPanel.heading "&syncBrand.shortName.label;'e bağlanılamadı">
-<!ENTITY syncErrorPanel.subTitle "Eşitlemeyi sürdürmek için lütfen oturum açın.">
-<!ENTITY syncErrorPanel.signInButton.label "Oturum aç">
-<!ENTITY syncErrorPanel.signInButton.accesskey "O">
 
 
 <!ENTITY fullScreenMinimize.tooltip "Küçült">
@@ -126,10 +124,20 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenAutohide.accesskey "A">
 <!ENTITY fullScreenExit.label "Tam ekran kipinden çık">
 <!ENTITY fullScreenExit.accesskey "T">
-<!ENTITY fullscreenAllowButton.label "İzin ver">
-<!ENTITY fullscreenExitButton.label "Reddet">
+<!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
+     fullscreenWarning.afterDomain.label): these two strings are used
+     respectively before and after the domain requiring fullscreen.
+     Localizers can use one of them, or both, to better adapt this
+     sentence to their language. -->
 
-<!ENTITY fullscreenExitHint2.value "Çıkmak istediğinizde ESC tuşuna basın.">
+<!ENTITY fullscreenWarning.beforeDomain.label "">
+<!ENTITY fullscreenWarning.afterDomain.label "artık tam ekran">
+<!ENTITY fullscreenWarning.generic.label "Bu belge artık tam ekran">
+<!-- LOCALIZATION NOTE (exitDOMFullscreen.button,
+     exitDOMFullscreenMac.button): the "escape" button on PC keyboards
+     is uppercase, while on Mac keyboards it is lowercase -->
+<!ENTITY exitDOMFullscreen.button "Tam ekrandan çık (Esc)">
+<!ENTITY exitDOMFullscreenMac.button "Tam ekrandan çık (esc)">
 <!ENTITY leaveDOMFullScreen.label "Tam ekrandan çık">
 <!ENTITY leaveDOMFullScreen.accesskey "e">
 
@@ -395,6 +403,14 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.placeholder2          "Arama yapın veya adres girin">
 <!ENTITY urlbar.accesskey             "d">
 <!ENTITY urlbar.switchToTab.label     "Geçilecek sekme:">
+
+<!ENTITY urlbar.searchSuggestionsNotification.question "Arama deneyiminizi önerilerle geliştirmek ister misiniz?">
+<!ENTITY urlbar.searchSuggestionsNotification.learnMore "Daha fazla bilgi al…">
+<!ENTITY urlbar.searchSuggestionsNotification.learnMore.accesskey "D">
+<!ENTITY urlbar.searchSuggestionsNotification.disable "Hayır">
+<!ENTITY urlbar.searchSuggestionsNotification.disable.accesskey "H">
+<!ENTITY urlbar.searchSuggestionsNotification.enable "Evet">
+<!ENTITY urlbar.searchSuggestionsNotification.enable.accesskey "E">
 <!-- 
   Comment duplicated from browser-sets.inc:
 
@@ -419,11 +435,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY searchFocus.commandkey       "k">
 <!ENTITY searchFocus.commandkey2      "e">
 <!ENTITY searchFocusUnix.commandkey   "j">
+<!-- LOCALIZATION NOTE (contentSearchInput.label, contentSearchSubmit.label):
+     These are set as the aria-label attribute for the search input box and
+     submit button in the in-content search UI, to be used by screen readers. -->
+
+<!ENTITY contentSearchInput.label     "Arama sorgusu">
+<!ENTITY contentSearchSubmit.label    "Aramayı gönder">
 <!-- LOCALIZATION NOTE (searchFor.label, searchWith.label):
      These two strings are used to build the header above the list of one-click
      search providers:  "Search for <used typed keywords> with:" -->
 
-<!ENTITY searchFor.label              "">
+<!ENTITY searchFor.label              "⁠">
 <!ENTITY searchWith.label             " terimini bununla ara:">
 <!-- LOCALIZATION NOTE (search.label, searchAfter.label):
      This string is used to build the header above the list of one-click search
@@ -431,7 +453,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      intentionally left empty for en-US and can be used by other localizations to
      display a string after the search engine name.  This string will be displayed
      as:  "Search <selected engine name><searchAfter.label text>" -->
-<!ENTITY searchAfter.label            "">
+
+<!ENTITY search.label                 "⁠">
+<!ENTITY searchAfter.label            " ile ara">
 <!-- LOCALIZATION NOTE (searchWithHeader.label):
      The wording of this string should be as close as possible to
      searchFor.label and searchWith.label. This string will be used instead of
@@ -442,6 +466,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      This string won't wrap, so if the translated string is longer,
      consider translating it as if it said only "Search Settings". -->
 <!ENTITY changeSearchSettings.button  "Arama ayarlarını değiştir">
+
+<!ENTITY searchInNewTab.label         "Yeni sekmede ara">
+<!ENTITY searchInNewTab.accesskey     "s">
+<!ENTITY searchSetAsDefault.label     "Varsayılan arama motoru yap">
+<!ENTITY searchSetAsDefault.accesskey "m">
 
 <!ENTITY tabView.commandkey           "e">
 
@@ -632,6 +661,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY closeCmd.key                   "W">  
 <!ENTITY closeCmd.accesskey             "K">
 
+<!ENTITY toggleMuteCmd.key              "M">
+
 <!ENTITY pageStyleMenu.label "Sayfa stili">
 <!ENTITY pageStyleMenu.accesskey "S">
 <!ENTITY pageStyleNoStyle.label "Stil yok">
@@ -674,12 +705,39 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.connectionSecure "Güvenli bağlantı">
 <!ENTITY identity.connectionNotSecure "Bağlantı güvenli değil">
-<!ENTITY identity.connectionVerified "&brandShortName; bu siteye güvenli bir şekilde bağlandığınızı doğruladı. Siteyi işleten:">
-<!ENTITY identity.connectionInternal "Bu sayfa güvenli bir &brandShortName; sayfasıdır.">
+<!ENTITY identity.connectionFile "Bu sayfa bilgisayarınızda depolanıyor.">
+<!ENTITY identity.connectionVerified1 "Bu siteye güvenli bir şekilde bağlandınız. Siteyi işleten:">
+<!ENTITY identity.connectionInternal "Burası güvenli bir &brandShortName; sayfasıdır.">
+<!ENTITY identity.insecureLoginForms "Hesabınız ele geçirilebilir.">
+<!-- Strings for connection state warnings. -->
+
+<!ENTITY identity.activeBlocked "&brandShortName; bu sayfanın güvenli olmayan kısımlarını engelledi.">
+<!ENTITY identity.passiveLoaded "Bu sayfanın bazı kısımları (örneğin resimler) güvenli değil.">
+<!ENTITY identity.activeLoaded "Bu sayfada korumayı devre dışı bıraktınız.">
+<!ENTITY identity.weakEncryption "Bu sayfada zayıf şifreleme kullanılıyor.">
+<!-- Strings for connection state warnings in the subview. -->
+
+<!ENTITY identity.description.insecure "Bu siteye bağlantınız size özel değil. Gönderdiğini bilgiler (parolalar, mesajlar, kredi kartı bilgileri vb.) başkaları tarafından görülebilir.">
+<!ENTITY identity.description.insecureLoginForms "Bu sayfaya yazdığınız giriş bilgileri güvende değildir ve saldırganlar tarafından ele geçirilebilir.">
+<!ENTITY identity.description.weakCipher "Bu siteye bağlatnınız zayıf bir şifreleme kullanıyor ve size özel değil.">
+<!ENTITY identity.description.weakCipher2 "Başkaları bilgilerinizi görebilir veya web sitesinin davranışını değiştirebilir.">
+<!ENTITY identity.description.activeBlocked "&brandShortName; bu sayfanın güvenli olmayan kısımlarını engelledi.">
+<!ENTITY identity.description.passiveLoaded "Bağlantınız size özel değil ve bu siteyle paylaştığınız bilgiler başkaları tarafından görülebilir.">
+<!ENTITY identity.description.passiveLoaded2 "Bu sitede güvenli olmayan içerikler (resimler vb.) var.">
+<!ENTITY identity.description.passiveLoaded3 "&brandShortName; bazı içerikleri engellemiş olmasına rağmen bu sayfada hâlâ güvenli olmayan içerikler (örn. resimler) var.">
+<!ENTITY identity.description.activeLoaded "Bu web sitesinde güvenli olmayan içerikler var (örn. betikler) ve siteye olan bağlantınız gizli değil.">
+<!ENTITY identity.description.activeLoaded2 "Bu siteyle paylaştığınız bilgiler (örn. parolalar, mesajlar, kredi kartı bilgileri vb.) başkaları tarafından görülebilir.">
+
+<!ENTITY identity.enableMixedContentBlocking.label "Korumayı etkinleştir">
+<!ENTITY identity.enableMixedContentBlocking.accesskey "e">
+<!ENTITY identity.disableMixedContentBlocking.label "Korumayı şimdilik devre dışı bırak">
+<!ENTITY identity.disableMixedContentBlocking.accesskey "d">
+<!ENTITY identity.learnMore "Daha fazla bilgi al">
 
 <!ENTITY identity.moreInfoLinkText2 "Daha fazla bilgi">
 
 <!ENTITY identity.permissions "İzinler">
+<!ENTITY identity.permissionsEmpty "Bu siteye özel bir izin vermediniz.">
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
 
@@ -690,8 +748,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncBrand.shortName.label    "Sync">
 
-<!ENTITY syncSetup.label              "&syncBrand.shortName.label; kurulumu…">
-<!ENTITY syncSetup.accesskey          "Y">
+<!ENTITY syncSignIn.label             "&syncBrand.shortName.label; oturumu aç…">
+<!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "Şimdi eşitle">
 <!ENTITY syncSyncNowItem.accesskey    "m">
 <!ENTITY syncReAuthItem.label         "&syncBrand.shortName.label;'e tekrar bağlan…">
@@ -714,7 +772,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY social.activated.description "<label/> servisleri etkinleştirilmiştir. Servis ayarlarınızı <label class='text-link'>Eklenti Yöneticisi</label>'nde değiştirebilirsiniz.">
 <!ENTITY social.activated.undo.label "Bunu geri al!">
 <!ENTITY social.activated.undo.accesskey "B">
-<!ENTITY social.learnMore.label "Daha fazla bilgi…">
+<!ENTITY social.learnMore.label "Daha fazla bilgi al…">
 <!ENTITY social.learnMore.accesskey "D">
 <!ENTITY social.closeNotificationItem.label "Şimdi değil">
 
@@ -752,30 +810,35 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.selectCamera.accesskey "k">
 <!ENTITY getUserMedia.selectMicrophone.label "Paylaşılacak mikrofon:">
 <!ENTITY getUserMedia.selectMicrophone.accesskey "m">
+<!ENTITY getUserMedia.audioCapture.label "Sekmedeki sesler paylaşılacaktır.">
 <!ENTITY getUserMedia.allWindowsShared.message "Ekranınızdaki tüm görünür pencereler paylaşılacaktır.">
-<!-- Bad Content Blocker Doorhanger Notification -->
 
-<!ENTITY badContentBlocked.moreinfo "İçerik engellense bile çoğu web sitesi normal şekilde çalışacaktır.">
-
-<!ENTITY mixedContentBlocked2.message "Güvensiz içerik">
-<!ENTITY mixedContentBlocked2.moreinfo "Bu web sitesindeki bazı şifrelenmemiş öğeler engellenmiştir.">
-<!ENTITY mixedContentBlocked2.learnMore "Daha fazla bilgi">
-<!ENTITY mixedContentBlocked2.options "Seçenekler">
-<!ENTITY mixedContentBlocked2.unblock.label "Korumayı şimdilik devre dışı bırak">
-<!ENTITY mixedContentBlocked2.unblock.accesskey "d">
-<!ENTITY mixedContentBlocked2.block.label "Korumayı etkinleştir">
-<!ENTITY mixedContentBlocked2.block.accesskey "e">
-<!ENTITY mixedContentBlocked2.disabled.message "Koruma devre dışı">
+<!ENTITY trackingProtection.title "İzlenme Koruması">
+<!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; bu sayfanın sizin izleme ihtimali olan kısımlarını engelliyor.">
+<!ENTITY trackingProtection.detectedNotBlocked3 "Bu site, gezintinizi izleme ihtimali olan öğeler içeriyor. Korumayı devre dışı bıraktınız.">
+<!ENTITY trackingProtection.notDetected3 "Bu sayfada sizi izleyen herhangi bir öğe bulunmadı.">
+<!-- LOCALIZATION NOTE (trackingProtection.unblock.label, trackingProtection.unblock.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock.label "Bu sitede korumayı devre dışı bırak">
+<!ENTITY trackingProtection.unblock.accesskey "d">
+<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate.label, trackingProtection.unblockPrivate.accesskey):
+     The associated button with this label and accesskey is only shown when opening the control
+     center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate.label "Bu oturumda korumayı devre dışı bırak">
+<!ENTITY trackingProtection.unblockPrivate.accesskey "d">
+<!ENTITY trackingProtection.block2.label "Korumayı etkinleştir">
+<!ENTITY trackingProtection.block2.accesskey "e">
 
 <!ENTITY trackingContentBlocked.message "İzleme">
 <!ENTITY trackingContentBlocked.moreinfo "Sayfadaki çevrimiçi etkinliklerinizi izleyen kısımlar engellenmiştir.">
-<!ENTITY trackingContentBlocked.learnMore "Daha fazla bilgi">
+<!ENTITY trackingContentBlocked.learnMore "Daha fazla bilgi al">
 <!ENTITY trackingContentBlocked.options "Seçenekler">
 <!ENTITY trackingContentBlocked.unblock2.label "Bu sitede korumayı devre dışı bırak">
 <!ENTITY trackingContentBlocked.unblock2.accesskey "d">
 <!ENTITY trackingContentBlocked.block.label "Korumayı etkinleştir">
 <!ENTITY trackingContentBlocked.block.accesskey "e">
-<!ENTITY trackingContentBlocked.disabled.message "İzleme koruması devre dışı">
+<!ENTITY trackingContentBlocked.disabled.message "İzlenme koruması devre dışı">
 
 <!ENTITY pointerLock.notification.message "Yeniden göstermek istediğinizde ESC tuşuna basın.">
 
@@ -832,24 +895,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY processHang.terminateProcess.label       "Web işlemini sonlandır">
 <!ENTITY processHang.terminateProcess.accessKey   "W">
 
-<!ENTITY emeLearnMoreContextMenu.label            "DRM hakkında daha fazla bilgi…">
+<!ENTITY emeLearnMoreContextMenu.label            "DRM hakkında daha fazla bilgi alın…">
 <!ENTITY emeLearnMoreContextMenu.accesskey        "D">
 <!ENTITY emeNotificationsNotNow.label             "Şimdi değil">
 <!ENTITY emeNotificationsNotNow.accesskey         "d">
 <!ENTITY emeNotificationsDontAskAgain.label       "Bunu bir daha sorma">
 <!ENTITY emeNotificationsDontAskAgain.accesskey   "B">
-
-<!ENTITY readingList.label                        "Okuma Listesi">
-<!ENTITY readingList.sidebar.commandKey           "R">
-<!ENTITY readingList.showSidebar.label            "Okuma Listesi kenar çubuğunu göster">
-<!-- Pre-landed string for bug 1124153 -->
-<!ENTITY readingList.sidebar.showMore.label       "Daha fazla göster…">
-<!-- Pre-landed string for bug 1133662 -->
-<!ENTITY readingList.sidebar.emptyText            "Daha sonra okumak istediğiniz yazıları Okuma Listenize kaydedin, gerektiğinde onları kolayca bulun.">
-<!ENTITY readingList.sidebar.delete.tooltip       "Bunu Okuma Listemden kaldır">
-<!-- Pre-landed strings for bug 1123519 -->
-<!ENTITY readingList.sidebar.add.label            "Okuma Listesi'ne ekle">
-<!ENTITY readingList.sidebar.add.tooltip          "Bu sayfayı Okuma Listeme ekle">
 <!-- LOCALIZATION NOTE (saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label): Pocket is a brand name -->
 
 <!ENTITY saveToPocketCmd.label     "Sayfayı Pocket’a kaydet">

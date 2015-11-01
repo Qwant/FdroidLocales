@@ -2,18 +2,54 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY aboutPrivateBrowsing.title            "Jo browse privee">
-<!ENTITY aboutPrivateBrowsing.title.normal     "In priveefinster iepenje?">
+<!ENTITY aboutPrivateBrowsing.notPrivate       "Jo befine jo p dit stuit net yn in priveefinster.">
+<!ENTITY privatebrowsingpage.openPrivateWindow.label "In priveefinster iepenje">
+<!ENTITY privatebrowsingpage.openPrivateWindow.accesskey "p">
 
-<!ENTITY aboutPrivateBrowsing.subtitle         "&brandShortName; sil gjin skiednis byhâlde fan dit finster.">
-<!ENTITY aboutPrivateBrowsing.subtitle.normal  "&brandShortName; sil gjin skiednis byhâlde fan finsters.">
+<!ENTITY privateBrowsing.title                 "Priveenavigaasje">
 
-<!ENTITY aboutPrivateBrowsing.description      "Dit betsjut browsskiednis, sykskiednis, downloadskienis, webformulierskiednis, cookies en tydlike ynternetbestannen. Mar, bestanne dy't jo downloaden en blêdwizers jo makke hawwe sille bewarre wurde.">
+<!-- LOCALIZATION NOTE (aboutPrivateBrowsing.width1):
+     Width of the Private Browsing section. This should depend primarily on the
+     length of the headers and text, but should be roughly 1.5 times the width
+     of the Tracking Protection section, and in general not much larger than
+     30em to prevent the sections from wrapping on smaller window sizes.
+     -->
+<!ENTITY aboutPrivateBrowsing.width1           "30em">
+<!ENTITY aboutPrivateBrowsing.title            "Jo navigearje privee">
 
-<!ENTITY aboutPrivateBrowsing.notPrivate       "Jo binne op dit stuit net yn in priveefinster.">
+<!ENTITY aboutPrivateBrowsing.info.notsaved    "Net bewarre">
+<!ENTITY aboutPrivateBrowsing.info.history     "Skiednis">
+<!ENTITY aboutPrivateBrowsing.info.searches    "Sykopdrachten">
+<!ENTITY aboutPrivateBrowsing.info.cookies     "Cookies">
+<!ENTITY aboutPrivateBrowsing.info.temporaryFiles "Tydlike bestannen">
 
-<!ENTITY aboutPrivateBrowsing.moreInfo         "Wylst dizze kompjûter gjin gegevens fan jo sneupskiednis hat, kin jo ynternetprovider of wurkjouwer noch hieltyd de siden dy't jo besykje neigean.">
+<!ENTITY aboutPrivateBrowsing.info.saved       "Bewarre">
+<!ENTITY aboutPrivateBrowsing.info.downloads   "Downloads">
+<!ENTITY aboutPrivateBrowsing.info.bookmarks   "Blêdwizers">
+
+<!ENTITY aboutPrivateBrowsing.note1            "Hâld der rekkening mei dat jo werkjouwer of ynternetprovider noch hieltyd jo besochte siden folgje kin.">
 <!ENTITY aboutPrivateBrowsing.learnMore        "Mear ynfo">
 
-<!ENTITY privatebrowsingpage.openPrivateWindow.label "Iepenje in Priveefinster">
-<!ENTITY privatebrowsingpage.openPrivateWindow.accesskey "P">
+<!-- LOCALIZATION NOTE (trackingProtection.width1):
+     Width of the Tracking Protection section. It is fine for the enabled or
+     disabled indicator or the words in the title to wrap to the next line, but
+     you can expand or reduce this section to fit better, as long as the width
+     of the Private Browsing section is roughly 1.5 times the width of this one.
+     Note that the required space may vary between platforms because fonts are
+     different, so testing on Windows, Mac, and Linux is encouraged.
+     -->
+<!ENTITY trackingProtection.width1             "22em">
+<!ENTITY trackingProtection.title              "Beskerming tsjin folgjen">
+
+<!-- LOCALIZATION NOTE (trackingProtection.state.width):
+     Width of the element representing the enabled or disabled indicator.
+     -->
+<!ENTITY trackingProtection.state.width        "6ch">
+<!ENTITY trackingProtection.state.enabled      "OAN">
+<!ENTITY trackingProtection.state.disabled     "ÚT">
+
+<!ENTITY trackingProtection.description1       "Priveefinsters blokkearje no ûnderdielen fan de side dy't jo sneupaktiviteit folgje kinne.">
+
+<!ENTITY trackingProtection.disable            "Beskerming tsjin folgjen útsette">
+<!ENTITY trackingProtection.enable             "Beskerming tsjin folgjen oansette">
+<!ENTITY trackingProtection.startTour1         "Sjen hoe't dit wurket">

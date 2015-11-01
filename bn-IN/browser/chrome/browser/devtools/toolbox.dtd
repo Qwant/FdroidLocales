@@ -14,12 +14,18 @@
 <!ENTITY toolboxOptionsButton.key      "O">
 <!ENTITY toolboxNextTool.key           "]">
 <!ENTITY toolboxPreviousTool.key       "[">
+<!-- LOCALIZATION NOTE :
+fullZoomEnlargeCmd.commandkey, fullZoomEnlargeCmd.commandkey2,
+fullZoomEnlargeCmd.commandkey3, fullZoomReduceCmd.commandkey,
+fullZoomReduceCmd.commandkey2, fullZoomResetCmd.commandkey,
+and fullZoomResetCmd.commandkey2 should all match the corresponding
+values from browser.dtd.  -->
 
-<!ENTITY toolboxZoomIn.key             "+">
-<!-- + is above this key on many keyboards -->
-<!ENTITY toolboxZoomIn.key2            "="> 
-<!ENTITY toolboxZoomOut.key            "-">
-<!ENTITY toolboxZoomReset.key          "0">
+<!ENTITY fullZoomEnlargeCmd.commandkey3 "">
+
+<!ENTITY fullZoomReduceCmd.commandkey2  "">
+
+<!ENTITY fullZoomResetCmd.commandkey2   "">
 
 <!ENTITY toolboxReload.key             "r">
 <!-- This key is used with the accel+shift modifiers to minimize the toolbox -->
@@ -102,7 +108,7 @@
   -  options.disableJavaScript.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles JavaScript on or off. -->
 
-<!ENTITY options.disableJavaScript.label     "&amp;JavaScript * নিষ্ক্রিয় করুন">
+<!ENTITY options.disableJavaScript.label     "JavaScript* নিষ্ক্রিয় করুন">
 <!ENTITY options.disableJavaScript.tooltip   "এই বিকল্প চালু করা হলে, বর্তমান ট্যাবের ক্ষেত্রে JavaScript নিষ্ক্রিয় করা হবে। ট্যাব বা টুলবক্স বন্ধ থাকলে, এই সেটিং প্রযোজ্য হবে না।">
 <!-- LOCALIZATION NOTE (options.disableCache.label2,
   -  options.disableCache.tooltip2): This is the options panel label and
@@ -171,11 +177,6 @@
 
 <!ENTITY options.stylesheetAutocompletion.label      "স্বয়ং-সম্পূর্ণ CSS">
 <!ENTITY options.stylesheetAutocompletion.tooltip    "স্টাইল এডিটরে CSS-র বৈশিষ্ট্যতা, মান এবং নির্বাচক লেখার সাথে সাথে তা স্বয়ং-সম্পূর্ণ করুন">
-<!-- LOCALIZATION NOTE (options.profiler.label): This is the label for the
-  -  heading of the group of JavaScript Profiler preferences in the options
-  -  panel. -->
-
-<!ENTITY options.profiler.label            "JavaScript প্রোফাইলার">
 <!-- LOCALIZATION NOTE (options.commonprefs): This is the label for the heading
       of all preferences that affect both the Web Console and the Network
       Monitor -->
@@ -207,9 +208,9 @@ Gecko প্ল্যাটফর্ম সংকেত অন্তর্ভু
 <!ENTITY options.sourceeditor.autoclosebrackets.tooltip "সমাপ্তি বন্ধনী স্বয়ংক্রিয় ভাবে দিন">
 <!ENTITY options.sourceeditor.expandtab.label           "শূন্যস্থান দিয়ে ইন্ডেন্ট">
 <!ENTITY options.sourceeditor.expandtab.tooltip         "ট্যাব অক্ষরের বদলে স্পেস ব্যবহার করুন">
-<!ENTITY options.sourceeditor.tabsize.label             "ট্যাবের মাপ(T)">
+<!ENTITY options.sourceeditor.tabsize.label             "ট্যাবের মাপ">
 <!ENTITY options.sourceeditor.tabsize.accesskey         "T">
-<!ENTITY options.sourceeditor.keybinding.label          "কি-বাইন্ডিং(K)">
+<!ENTITY options.sourceeditor.keybinding.label          "কি-বাইন্ডিং">
 <!ENTITY options.sourceeditor.keybinding.accesskey      "K">
 <!ENTITY options.sourceeditor.keybinding.default.label  "ডিফল্ট">
 

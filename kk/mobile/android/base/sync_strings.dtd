@@ -197,6 +197,7 @@
 
 <!ENTITY fxaccount_status_header2 "Firefox тіркелгісі">
 <!ENTITY fxaccount_status_signed_in_as "Кім ретінде кірген:">
+<!ENTITY fxaccount_status_manage_account "Тіркелгіні басқару">
 <!ENTITY fxaccount_status_auth_server "Тіркелгі сервері">
 <!ENTITY fxaccount_status_sync_now "Қазір синхрондау">
 <!ENTITY fxaccount_status_syncing2 "Синхрондау…">
@@ -230,6 +231,7 @@
 <!ENTITY fxaccount_remove_account_toast "&formatS; Firefox тіркелгісі өшірілді.">
 
 <!ENTITY fxaccount_remove_account_menu_item "Тіркелгіні өшіру">
+<!ENTITY fxaccount_enable_debug_mode "Жөндеу режимін іске қосу">
 <!-- Localization note: this is the name shown by the Android system
      itself for a Firefox Account. Don't localize this. -->
 

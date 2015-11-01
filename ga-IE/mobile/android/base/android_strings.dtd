@@ -6,10 +6,21 @@
 <!ENTITY  no_space_to_start_error "Ní féidir le &brandShortName; tosú mar nach bhfuil go leor spáis ann.">
 <!ENTITY  error_loading_file "Tharla earráid agus na comhaid atá riachtanach chun &brandShortName; a rith á luchtú.">
 
+<!ENTITY firstrun_panel_title_welcome "Fáilte">
 <!ENTITY  onboard_start_message3 "Brabhsáil le &brandShortName;">
 <!ENTITY  onboard_start_subtext3 "Cuir do bhrabhsálaí soghluaiste in oiriúint duit féin.">
 <!ENTITY  onboard_start_button_account "Logáil isteach in &brandShortName;">
 <!ENTITY  onboard_start_button_browser "Bí ag brabhsáil leat">
+<!ENTITY firstrun_button_next "Ar Aghaidh">
+
+<!ENTITY  onboard_start_restricted1 "Bí slán sábháilte agus bí i gceannas leis an leagan simplithe de &brandShortName;.">
+
+<!ENTITY firstrun_import_title "Iompórtáil">
+<!ENTITY firstrun_import_message "Fáilte go &brandShortName;">
+<!ENTITY firstrun_import_subtext "Iompórtáil leabharmharcanna agus stair ó bhrabhsálaí eile.">
+<!ENTITY firstrun_import_action "Aistrigh go &brandShortName;">
+<!ENTITY firstrun_import_dialog_button "Aistrigh">
+<!ENTITY firstrun_import_progress_title "Á nAistriú">
 <!-- Localization note: These are used as the titles of different pages on the home screen.
      They are automatically converted to all caps by the Android platform. -->
 
@@ -54,8 +65,9 @@
 
 <!ENTITY history_today_section "Inniu">
 <!ENTITY history_yesterday_section "Inné">
-<!ENTITY history_week_section2 "An tseachtain seo caite">
-<!ENTITY history_older_section2 "An Mhí Seo Caite">
+<!ENTITY history_week_section3 "Na 7 lá is déanaí">
+<!ENTITY history_this_month_section "An mhí seo">
+<!ENTITY history_older_section3 "Níos sine ná 6 mhí">
 
 <!ENTITY go "Ar Aghaidh">
 <!ENTITY search "Cuardaigh">
@@ -78,6 +90,14 @@
      as possible because it's shown as a label in a toast.  Ideally, this string
      is upper-case, to match Google and Android's convention. -->
 <!ENTITY switch_button_message "ATHRAIGH">
+<!-- Localization note (tab_title_prefix_is_playing_audio): This string is not
+     visible in the UI, but rather used as a text-to-speech content description
+     for sight-impaired a11y users. The content description is set on a tab
+     title in a list of open tabs when content in that tab is playing audio.
+     &formatS; will be replaced with the title of the tab, as received from the
+     web page. When audio is not playing in a tab, &formatS; will be used as
+     the content description. -->
+<!ENTITY tab_title_prefix_is_playing_audio "Fuaim á seinm – &formatS;">
 
 <!ENTITY settings "Socruithe">
 <!ENTITY settings_title "Socruithe">
@@ -153,13 +173,16 @@
      The &formatI; in the string will be replaced by a small image of the icon described, and can be moved to wherever
      it is applicable. -->
 <!ENTITY pref_search_hint "LEID: Is féidir aon suíomh Gréasáin a chur le do liosta de sholáthraithe cuardaigh trí fhadbhrú ar a réimse cuardaigh, ansin an deilbhín &formatI; a thapáil.">
-<!ENTITY pref_category_devtools "Uirlisí forbróra">
+<!ENTITY pref_category_devtools "Uirlisí forbartha">
 <!ENTITY pref_developer_remotedebugging "Cian-dífhabhtú">
-<!ENTITY pref_category_logins "Logálacha Isteach">
+<!ENTITY pref_developer_remotedebugging_usb "Dífhabhtú i gcéin trí USB">
+<!ENTITY pref_developer_remotedebugging_wifi "Dífhabhtú i gcéin trí Wi-Fi">
+<!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Le dífhabhtú a dhéanamh thar Wi-Fi, ní mór aip a léann cóid QR a bheith ar do ghléas.">
+<!ENTITY pref_category_logins "Focail Fhaire">
 <!ENTITY pref_remember_signons2 "Meabhraigh focail fhaire">
 <!ENTITY pref_open_external_urls_privately_title "Oscail nascanna i mBrabhsáil Phríobháideach">
 <!ENTITY pref_open_external_urls_privately_summary "Do gach nasc seachtrach a osclaítear i &brandShortName;">
-<!ENTITY pref_manage_logins "Bainistigh logálacha isteach">
+<!ENTITY pref_manage_logins "Bainistigh focail fhaire">
 
 <!ENTITY pref_category_home "Baile">
 <!ENTITY pref_category_home_summary "Saincheap do leathanach baile">
@@ -176,6 +199,9 @@
 <!ENTITY pref_home_updates_wifi "Thar Wi-Fi amháin">
 <!ENTITY pref_home_suggested_sites "Taispeáin suíomhanna molta">
 <!ENTITY pref_home_suggested_sites_summary "Taispeáin nascanna le suímh ar an leathanach baile a d\u0027fhéadfadh a bheith suim agat iontu">
+<!ENTITY pref_category_home_homepage "Leathanach Baile">
+<!ENTITY home_homepage_title "Roghnaigh Leathanach Baile">
+<!ENTITY home_homepage_use_current_tab "Úsáid an cluaisín oscailte">
 <!-- Localization note: These are shown in the left sidebar on tablets -->
 
 <!ENTITY pref_header_customize "Saincheap">
@@ -184,7 +210,7 @@
 <!ENTITY pref_header_help "Cabhair">
 <!ENTITY pref_header_language "Teanga">
 <!ENTITY pref_header_vendor "&vendorShortName;">
-<!ENTITY pref_header_devtools "Uirlisí forbróra">
+<!ENTITY pref_header_devtools "Uirlisí forbartha">
 
 <!ENTITY pref_cookies_menu "Fianáin">
 <!ENTITY pref_cookies_accept_all "Cumasaithe">
@@ -192,15 +218,20 @@
 <!ENTITY pref_cookies_disabled "Díchumasaithe">
 
 <!ENTITY pref_tracking_protection_title "Cosaint ar lorg">
-<!ENTITY pref_tracking_protection_summary "Ní ligfidh &brandShortName; do shuímh thú a lorg ar líne">
+<!ENTITY pref_tracking_protection_summary3 "Cumasaithe i mBrabhsáil Phríobháideach">
 <!ENTITY pref_donottrack_title "Ná lorgtar mé">
-<!ENTITY pref_donottrack_summary "Cuirfidh &brandShortName; in iúl do shuímh Ghréasáin gan tusa a lorg">
+<!ENTITY pref_donottrack_summary "Cuirfidh &brandShortName; in iúl do shuímh Ghréasáin gan tusa a lorg ar líne">
+
+<!ENTITY tracking_protection_prompt_title "Anois le Cosaint ar Lorg">
+<!ENTITY tracking_protection_prompt_text "Cuir cosc ar eilimintí rianaithe sa chaoi nach mbeidh imní ort.">
+<!ENTITY tracking_protection_prompt_tip_text "Tuilleadh eolais sna Socruithe Príobháideachta">
+<!ENTITY tracking_protection_prompt_action_button "Tuigim!">
 
 <!ENTITY tab_queue_toast_message3 "Cluaisín sábháilte i &brandShortName;">
 <!ENTITY tab_queue_toast_action "Oscail anois">
 <!ENTITY tab_queue_prompt_title "Níos mó ná nasc amháin á n-oscailt?">
-<!ENTITY tab_queue_prompt_text3 "Sábháil iad go dtí an chéad uair eile a osclóidh tú &brandShortName;">
-<!ENTITY tab_queue_prompt_tip_text "is féidir leat an rogha seo a athrú ar ball sna Socruithe">
+<!ENTITY tab_queue_prompt_text4 "Sábháil iad go dtí an chéad uair eile a osclóidh tú &brandShortName;.">
+<!ENTITY tab_queue_prompt_tip_text2 "Is féidir leat an rogha seo a athrú ar ball sna Socruithe">
 <!ENTITY tab_queue_prompt_positive_action_button "Cumasaigh">
 <!ENTITY tab_queue_prompt_negative_action_button "Níl anois">
 <!ENTITY tab_queue_notification_title "&brandShortName;">
@@ -226,7 +257,6 @@
 <!ENTITY pref_plugins_tap_to_play "Tapáil le seinm">
 <!ENTITY pref_plugins_disabled "Díchumasaithe">
 <!ENTITY pref_text_size "Méid téacs">
-<!ENTITY pref_reflow_on_zoom4 "Athscríobh téacs">
 <!ENTITY pref_restore "Cluaisíní">
 <!ENTITY pref_restore_always "Athchóirigh i gcónaí">
 <!ENTITY pref_restore_quit "Ná hathchóirigh tar éis scor ó &brandShortName;">
@@ -328,15 +358,15 @@ size. -->
 <!ENTITY quit "Scoir">
 
 <!ENTITY addons "Breiseáin">
-<!ENTITY logins "Logálacha isteach">
+<!ENTITY logins "Focail Fhaire">
 <!ENTITY downloads "Íosluchtuithe">
-<!ENTITY apps "Feidhmchláir">
 <!ENTITY char_encoding "Ionchódú Carachtar">
 
 <!ENTITY share "Roinn">
 <!ENTITY share_title "Comhroinn trí">
 <!ENTITY share_image_failed "Ní féidir an íomhá seo a roinnt">
 <!ENTITY save_as_pdf "Sábháil mar PDF">
+<!ENTITY print "Priontáil">
 <!ENTITY find_in_page "Aimsigh sa Leathanach">
 <!ENTITY desktop_mode "Iarr Suíomh don Ríomhaire">
 <!ENTITY page "Leathanach">
@@ -381,16 +411,18 @@ size. -->
 <!ENTITY contextmenu_top_sites_pin "Feistigh an suíomh seo">
 <!ENTITY contextmenu_top_sites_unpin "Dífheistigh an suíomh seo">
 <!ENTITY contextmenu_add_search_engine "Cuir Inneall Cuardaigh Leis">
+<!ENTITY contextmenu_mark_read "Marcáil “Léite”">
+<!ENTITY contextmenu_mark_unread "Marcáil “Neamhléite”">
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
      contains brackets to indicate this is not actually a username, but rather a placeholder -->
 
 <!ENTITY doorhanger_login_no_username "[Gan ainm úsáideora]">
-<!ENTITY doorhanger_login_edit_title "Cuir logáil isteach in eagar">
+<!ENTITY doorhanger_login_edit_title "Cuir an focal faire in eagar">
 <!ENTITY doorhanger_login_edit_username_hint "Ainm an Úsáideora">
 <!ENTITY doorhanger_login_edit_password_hint "Focal Faire">
 <!ENTITY doorhanger_login_edit_toggle "Taispeáin an focal faire">
-<!ENTITY doorhanger_login_edit_toast_error "Níor sábháladh an logáil isteach">
+<!ENTITY doorhanger_login_edit_toast_error "Níor sábháladh an focal faire">
 <!ENTITY doorhanger_login_select_message "Cóipeáil an focal faire ó &formatS;?">
 <!ENTITY doorhanger_login_select_toast_copy "Cóipeáladh an focal faire go dtí an ghearrthaisce">
 <!ENTITY doorhanger_login_select_toast_copy_error "Níorbh fhéidir an focal faire a chóipeáil">
@@ -400,6 +432,11 @@ size. -->
 <!ENTITY pref_titlebar_mode "Barra teidil">
 <!ENTITY pref_titlebar_mode_title "Taispeáin teideal an leathanaigh">
 <!ENTITY pref_titlebar_mode_url "Taispeáin seoladh an leathanaigh">
+<!-- Localization note (pref_prevent_magnifying_glass): Label for setting that controls
+     whether or not the magnifying glass is disabled. -->
+
+<!ENTITY pref_magnifying_glass_enabled "Méadaigh áiteanna beaga">
+<!ENTITY pref_magnifying_glass_enabled_summary "Méadaigh nascanna agus foirmeacha nuair a thapálann tú i ngar dóibh">
 <!-- Localization note (pref_scroll_title_bar2): Label for setting that controls
      whether or not the dynamic toolbar is enabled. -->
 
@@ -425,10 +462,10 @@ size. -->
 <!ENTITY site_settings_cancel       "Cealaigh">
 <!ENTITY site_settings_clear        "Glan">
 <!ENTITY site_settings_no_settings  "Níl aon socruithe le glanadh.">
-<!-- Localization note (reading_list_added2) : Used in a toast, please keep as short
+<!-- Localization note (reading_list_added3) : Used in a toast, please keep as short
      as possible. -->
 
-<!ENTITY reading_list_added2 "Curtha leis an liosta">
+<!ENTITY reading_list_added3 "Cuireadh ar do Liosta Léitheoireachta">
 <!ENTITY reading_list_removed "Baineadh an leathanach de do Liosta Léitheoireachta">
 <!-- Localization note (reading_list_remove) : Used to remove the currently open page from
      the user's reading list. The opposite of overlay_share_reading_list_btn_label. -->
@@ -458,8 +495,6 @@ size. -->
 <!ENTITY button_set "Socraigh">
 <!ENTITY button_clear "Glan">
 <!ENTITY button_copy "Cóipeáil">
-
-<!ENTITY firstrun_panel_title_welcome "Fáilte">
 
 <!ENTITY home_top_sites_title "Suímh Is Fearr">
 <!-- Localization note (home_top_sites_add): This string is used as placeholder
@@ -545,21 +580,21 @@ The layout of the identity dialog prevents combining this into a single string w
 substitution variables.  If it is difficult to translate the sense of the string
 with that structure, consider a translation which ignores the preceding domain and
 just addresses the organization to follow, e.g. "This site is run by " -->
-<!ENTITY identity_run_by "atá á reáchtáil ag">
-<!ENTITY identity_no_info "Ní sholáthraíonn an suíomh seo faisnéis maidir lena aitheantas.">
-<!ENTITY identity_not_encrypted "Níl do cheangal leis an suíomh Gréasáin seo criptithe.">
-<!ENTITY identity_encrypted "Criptithe">
+<!ENTITY identity_connection_secure "Ceangal Slán">
+<!ENTITY identity_connection_insecure "Ceangal neamhshlán">
 <!-- Mixed content notifications in site identity popup -->
 
-<!ENTITY loaded_mixed_content_message "Ábhar neamhshlán á thaispeáint ar an leathanach seo.">
-<!ENTITY blocked_mixed_content_message_top "Chuir &brandShortName; cosc ar ábhar neamhshlán.">
-<!ENTITY blocked_mixed_content_message_bottom "Feidhmíonn suímh Ghréasáin mar is ceart fiú nuair a bhíonn bac ar an ábhar seo.">
+<!ENTITY mixed_content_blocked_all1 "Chuir &brandShortName; cosc ar ábhar neamhshlán ar an leathanach seo.">
+<!ENTITY mixed_content_blocked_some1 "Chuir &brandShortName; cosc ar roinnt ábhair neamhshláin ar an leathanach seo.">
+<!ENTITY mixed_content_display_loaded1 "Tá codanna den leathanach seo neamhshlán (léithéidí íomhánna).">
+<!ENTITY mixed_content_protection_disabled1 "Dhíchumasaigh tú cosaint ar ábhar neamhshlán.">
 <!-- Tracking content notifications in site identity popup -->
 
-<!ENTITY loaded_tracking_content_message_top "Tá cosaint ar lorg díchumasaithe.">
-<!ENTITY loaded_tracking_content_message_bottom "Tá seans ann go bhfuil do ghníomhaíocht ar líne á lorg ag an leathanach seo.">
-<!ENTITY blocked_tracking_content_message_top2 "Tá cosaint ar lorg cumasaithe.">
-<!ENTITY blocked_tracking_content_message_bottom2 "Cuireadh cosc ar chodanna den leathanach a lorgann do chuid ghníomhaíochta ar líne.">
+<!ENTITY doorhanger_tracking_title "Cosaint ar lorg">
+<!ENTITY doorhanger_tracking_state_enabled "Cumasaithe">
+<!ENTITY doorhanger_tracking_state_disabled "Díchumasaithe">
+<!ENTITY doorhanger_tracking_message_enabled1 "Cuireadh cosc ar iarrachtaí d\u0027iompar ar líne a lorg.">
+<!ENTITY doorhanger_tracking_message_disabled2 "Tá eilimintí ar an leathanach seo a d\u0027fhéadfadh do bhrabhsáil a lorg.">
 <!-- Common mixed and tracking content strings in site identity popup -->
 
 <!ENTITY learn_more "Tuilleadh Eolais">
@@ -645,10 +680,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- Voice search in the awesome bar -->
 
 <!ENTITY voicesearch_prompt "Abair leat">
-<!ENTITY voicesearch_failed_title "Cuardach Gutha &brandShortName;">
-<!ENTITY voicesearch_failed_message "Tá fadhb le cuardach gutha faoi láthair. Bain triail eile as ar ball.">
-<!ENTITY voicesearch_failed_message_recoverable "Ár leithscéal. Níor thuigeamar é sin. Bain triail eile as.">
-<!ENTITY voicesearch_failed_retry "Bain triail eile as">
 <!-- Localization note (remote_tabs_last_synced): the variable is replaced by a
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
@@ -666,3 +697,39 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY find_matchcase "AaÁa">
 
 <!ENTITY intent_uri_cannot_open "Ní féidir an nasc a oscailt">
+<!-- DevTools Authentication -->
+<!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
+     above a QR reader that is actively scanning for QR codes.  The expected QR
+     code has already been displayed by the client trying to connect (such as
+     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     code. -->
+
+<!ENTITY devtools_auth_scan_header "Ag scanadh an chóid QR ar an ngléas eile">
+<!-- Restrictions -->
+<!-- Localization note: These are restrictions the device owner (e.g. parent) can enable for
+     a restricted profile (e.g. child). Used inside the Android settings UI. -->
+
+<!ENTITY restriction_disallow_import_settings_title2 "Díchumasaigh \u0027Iompórtáil ó Android\u0027">
+<!ENTITY restriction_disallow_addons_title2 "Díchumasaigh suiteáil breiseán">
+<!ENTITY restriction_disallow_devtools_title2 "Díchumasaigh na huirlisí forbartha">
+<!ENTITY restriction_disallow_customize_home_title2 "Díchumasaigh saincheapadh Baile">
+<!ENTITY restriction_disallow_private_browsing_title2 "Díchumasaigh Brabhsáil Phríobháideach">
+<!ENTITY restriction_disallow_location_services_title2 "Díchumasaigh Seirbhísí Geoshuite">
+<!ENTITY restriction_disallow_display_settings_title2 "Díchumasaigh Socruithe Taispeána">
+<!ENTITY restriction_disallow_clear_history_title2 "Díchumasaigh \u0027Glan an stair bhrabhsála\u0027">
+<!ENTITY restriction_disallow_master_password_title2 "Díchumasaigh an príomhfhocal faire">
+<!ENTITY restriction_disallow_guest_browsing_title2 "Díchumasaigh Seisiúin ar Iasacht">
+<!-- Default Bookmarks titles-->
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
+
+<!ENTITY bookmarks_about_browser "Firefox: Maidir le do bhrabhsálaí">
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
+<!ENTITY bookmarks_addons "Firefox: Cuir in oiriúint duit féin le breiseáin">
+<!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
+<!ENTITY bookmarks_support "Firefox: Tacaíocht">
+<!--LOCALIZATION NOTE (bookmarks_marketplace):link title for https://marketplace.firefox.com -->
+<!ENTITY bookmarks_marketplace "Margadh Firefox">
+<!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
+<!ENTITY bookmarks_restricted_support2 "Cúnamh agus Tacaíocht Firefox i dtaobh próifílí teoranta ar tháibléid Android">
+<!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
+<!ENTITY bookmarks_restricted_webmaker "Foghlaim an Gréasán: Mozilla Webmaker">

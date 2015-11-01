@@ -14,12 +14,13 @@
 <!ENTITY searchPrefs.label "Axtar:">
 <!ENTITY searchPrefs.accesskey "A">
 <!ENTITY focusSearch.key "k">
+<!ENTITY focusSearch2.key "f">
 <!-- Columns -->
 
 <!ENTITY prefColumn.label "Parametr adı">
 <!ENTITY lockColumn.label "Durum">
 <!ENTITY typeColumn.label "Format">
-<!ENTITY valueColumn.label "Kəmiyyət">
+<!ENTITY valueColumn.label "Dəyər">
 <!-- Tooltips -->
 
 <!ENTITY prefColumnHeader.tooltip "Sıralamak için tıklayın"> 

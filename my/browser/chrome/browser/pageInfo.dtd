@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY  pageInfoWindow.width  "600">
-<!ENTITY  pageInfoWindow.height "500">
+<!ENTITY  pageInfoWindow.height "၅၅၀">
 
 <!ENTITY  copy.key              "C">
 <!ENTITY  copy.label            "ကူးယူပါ">
@@ -22,7 +22,7 @@
 <!ENTITY  generalReferrer       "အညွန်း URL:">
 <!ENTITY  generalSource         "ကေရှ် ဇစ်မြစ်၊">
 <!ENTITY  generalModified       "ပြုပြင်ချက်၊">
-
+<!ENTITY  generalEncoding2      "စာသားသိမ်းဆည်းမှုစနစ်။">
 <!ENTITY  generalMetaName       "အမည်">
 <!ENTITY  generalMetaContent    "ပါဝင်ပစ္စည်း">
 

@@ -18,7 +18,7 @@
 <!ENTITY importButton.tooltip       "Importa e anexa uma nova folha de estilo para o documento">
 <!ENTITY importButton.accesskey     "I">
 
-<!ENTITY visibilityToggle.tooltip   "Trocar visibilidade da folha de estilo">
+<!ENTITY visibilityToggle.tooltip   "Alternar visibilidade da folha de estilo">
 
 <!ENTITY saveButton.label           "Guardar">
 <!ENTITY saveButton.tooltip         "Guardar esta folha de estilo para um ficheiro">
@@ -64,4 +64,4 @@
 <!-- LOCALIZATION NOTE (openLinkNewTab.label): This is the text for the
      context menu item that opens a stylesheet in a new tab -->
 
-<!ENTITY openLinkNewTab.label     "Abrir ligação em novo separador">
+<!ENTITY openLinkNewTab.label     "Abrir ligação num novo separador">

@@ -16,7 +16,6 @@
 
 <!ENTITY manageAccount.label          "Lawula iakhawunti">
 <!ENTITY manageAccount.accesskey      "w">
-<!ENTITY viewQuota.label              "Jonga ubuninzi">
 <!ENTITY changePassword2.label        "Guqula Igama Lokugqithisa…">
 <!ENTITY myRecoveryKey.label          "IQhosha lokuFumana lam">
 <!ENTITY resetSync2.label             "Seta kwakhona ungqamaniso…">
@@ -26,8 +25,6 @@
 <!ENTITY syncMy.label               "Ungqamaniso lwam">
 <!ENTITY engine.bookmarks.label     "Izalathisi eziphawulayo">
 <!ENTITY engine.bookmarks.accesskey "e">
-<!ENTITY engine.readinglist.label   "Uluhlu lokufunda">
-<!ENTITY engine.readinglist.accesskey "l">
 <!ENTITY engine.tabs.label          "Iithebhu">
 <!ENTITY engine.tabs.accesskey      "t">
 <!ENTITY engine.history.label       "Imbali">
@@ -74,13 +71,28 @@ both, to better adapt this sentence to their language.
 
 <!ENTITY notSignedIn.label           "Akungenanga.">
 <!ENTITY signIn.label                "Ngena">
-<!ENTITY manage.label                "Lawula">
+<!ENTITY profilePicture.tooltip      "Tshintsha umfanekiso weprofayili">
+<!ENTITY verifiedManage.label        "Lawula iAkhawunti">
 <!ENTITY disconnect.label            "Khupha kuqhagamshelo…">
 <!ENTITY verify.label                "Qinisekisa i-imeyili">
 <!ENTITY forget.label                "Yilibale le imeyili">
 
-<!ENTITY welcome.description "Ngena kwiithebhu, iibhukhmakhi, iipasiwedi nokunye okungakumbi naphi na xa usebenzisa &brandShortName;.">
+<!ENTITY welcome.description "Ngena kwiithebhu, iibhukhmakhi, iipasiwedi nokunye okungakumbi naphi na xa usebenzisa i-&brandShortName;.">
 <!ENTITY welcome.signIn.label "Sayina uNgene">
-<!ENTITY welcome.createAccount.label "Yenza i-akhawunti">
+<!ENTITY welcome.createAccount.label "Yenza i-Akhawunti">
 
 <!ENTITY welcome.useOldSync.label "Usebenzisa uhlelo oludala lokuNgqamanisa?">
+
+<!ENTITY signedOut.caption            "Phatha iWebhu yakho apho ukhoyo">
+<!ENTITY signedOut.description        "Ngqamanisa iibhukmakhi zakho, iimbali, iithebhu, iiphaswedi, ezongezelelwayo, kunye neepreferensi kuzo zonke izixhobo zakho.">
+<!ENTITY signedOut.accountBox.title   "Qhagamshela nge&syncBrand.fxAccount.label;">
+<!ENTITY signedOut.accountBox.create  "Yenza i-Akhawunti">
+<!ENTITY signedOut.accountBox.signin  "Sayina uNgene">
+
+<!ENTITY signedIn.engines.label       "Ngqamanisa zonke izixhobo">
+
+<!ENTITY mobilePromo.start            "Dawnlowuda iFirefox ye">
+<!-- LOCALIZATION NOTE (mobilePromo.androidLink): This is a link title that links to https://www.mozilla.org/firefox/android/ -->
+<!ENTITY mobilePromo.androidLink      "Android™">
+<!ENTITY mobilePromo.end              "ukuze ungqamanise nezixhobo zakho zemobhayili.">
+<!ENTITY androidAttribution           "IAndroid luphawu lorhwebo lukaGoogle Inc.">

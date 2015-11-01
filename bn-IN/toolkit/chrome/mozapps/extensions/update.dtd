@@ -9,7 +9,7 @@
 উদ্দেশ্যে আপডেট পরীক্ষণের জন্য &brandShortName; অন-লাইন অবস্থায় স্থাপন 
 করা আবশ্যক।">
 <!ENTITY  offline.toggleOffline.label     "অন-লাইন অবস্থায় চলুন">
-<!ENTITY  offline.toggleOffline.accesskey "অ">
+<!ENTITY  offline.toggleOffline.accesskey "G">
 
 <!ENTITY  mismatch.win.title              "বিসংগত বস্তু">
 <!ENTITY  mismatch.top.label              "নিম্নলিখিত বস্তুগুলি &brandShortName;-র এই সংস্করণের সাথে সুসংগত নয় 
@@ -26,7 +26,7 @@
 <!ENTITY  found.disabledXPinstall.label   "সফ্টওয়্যার ইনস্টলেশন বর্তমানে নিষ্ক্রিয় থাকার ফলে এই আপডেটগুলি 
 ইনস্টল করা সম্ভব হবে না। নিম্নলিখিত স্থানে এই বৈশিষ্ট্য পরিবর্তন করা যাবে।">
 <!ENTITY  found.enableXPInstall.label     "ওয়েব-সাইট দ্বারা সফ্টওয়্যার ইনস্টল করার অনুমতি প্রদান করা হবে">
-<!ENTITY  found.enableXPInstall.accesskey "ও">
+<!ENTITY  found.enableXPInstall.accesskey "A">
 
 <!ENTITY  installing.wizard.title         "সুসংগত অতিরিক্ত সামগ্রী ইনস্টলেশন">
 <!ENTITY  installing.top.label            "উপস্থিত অতিরিক্ত সামগ্রী সংক্রান্ত আপডেট ডাউনলোড করে ইনস্টল করা হচ্ছে...">

@@ -12,7 +12,7 @@
 
 <!ENTITY quitApplicationCmd.label       "Sair"> 
 <!ENTITY quitApplicationCmd.key         "Q"> 
-<!ENTITY quitApplicationCmd.accesskey   "S">
+<!ENTITY quitApplicationCmd.accesskey   "r">
 
 <!ENTITY redoCmd.key                    "Y">  
 <!ENTITY findReplaceCmd.key             "H">
@@ -37,3 +37,5 @@
 <!ENTITY altKey.label                   "Alt">
 <!ENTITY shiftKey.label                 "Shift">
 
+<!ENTITY menubarCmd.label               "Barra de menu">
+<!ENTITY menubarCmd.accesskey           "e">

@@ -206,6 +206,7 @@
 
 <!ENTITY fxaccount_status_header2 'Compte Firefox'>
 <!ENTITY fxaccount_status_signed_in_as 'Connecté en tant que'>
+<!ENTITY fxaccount_status_manage_account 'Gérer le compte'>
 <!ENTITY fxaccount_status_auth_server 'Serveur de comptes'>
 <!ENTITY fxaccount_status_sync_now 'Synchroniser maintenant'>
 <!ENTITY fxaccount_status_syncing2 'Synchronisation…'>
@@ -230,6 +231,8 @@
      the two uses differently. -->
 <!ENTITY fxaccount_status_linktos 'Conditions d\u0027utilisation'>
 <!ENTITY fxaccount_status_linkprivacy 'Politique de confidentialité'>
+
+<!ENTITY fxaccount_enable_debug_mode 'Activer le mode débogage'>
 
 <!-- Localization note: this is the name shown by the Android system
      itself for a Firefox Account. Don't localize this. -->

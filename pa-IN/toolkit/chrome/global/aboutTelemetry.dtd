@@ -53,15 +53,15 @@ Older ping &gt;&gt;
 ">
 
 <!ENTITY aboutTelemetry.archiveWeekHeader "
-ਹਫ਼ਤਾ
+Week
 ">
 
 <!ENTITY aboutTelemetry.archivePingHeader "
-ਪਿੰਗ
+Ping
 ">
 
 <!ENTITY aboutTelemetry.generalDataSection "
-  General Data
+  ਆਮ ਡਾਟਾ
 ">
 
 <!ENTITY aboutTelemetry.environmentDataSection "
@@ -69,70 +69,69 @@ Older ping &gt;&gt;
 ">
 
 <!ENTITY aboutTelemetry.telemetryLogSection "
-  Telemetry Log
+  ਟੈਲੀਮੈਂਟਰੀ ਡਾਟਾ
 ">
 
 <!ENTITY aboutTelemetry.slowSqlSection "
-  Slow SQL Statements
+  ਹੌਲੀ SQL ਸਟੇਟਮੈਂਟ
 ">
 
 <!ENTITY aboutTelemetry.chromeHangsSection "
-  Browser Hangs
+  ਬਰਾਊਜ਼ਰ ਹੈਂਗ
 ">
 
 <!ENTITY aboutTelemetry.threadHangStatsSection "
-  Thread Hangs
+  ਹੈਗ ਥਰਿੱਡ
 ">
 
 <!ENTITY aboutTelemetry.histogramsSection "
-  Histograms
+  ਆਇਤਗਰਾਫ਼
 ">
 
 <!ENTITY aboutTelemetry.keyedHistogramsSection "
-  Keyed Histograms
+  ਕੀਡ ਆਇਤਗਰਾਫ਼
 ">
 
 <!ENTITY aboutTelemetry.simpleMeasurementsSection "
-  Simple Measurements
+  ਨਮੂਨੇ ਮਾਪ
 ">
 
 <!ENTITY aboutTelemetry.addonDetailsSection "
-  Add-on Details
+  ਐਡ-ਆਨ ਵੇਰਵਾ
 ">
 
 <!ENTITY aboutTelemetry.lateWritesSection "
-  Late Writes
+  ਲੇਟ ਲਿਖਣਾ
 ">
 
 <!ENTITY aboutTelemetry.systemInfoSection "
-  System Information
+  ਸਿਸਟਮ ਜਾਣਕਾਰੀ
 ">
 
 <!ENTITY aboutTelemetry.addonHistogramsSection "
-  Histograms Collected by Add-ons
+  ਐਡ-ਆਨ ਵਲੋਂ ਇੱਕਠੇ ਕੀਤੇ ਆਇਤਗਾਰਫ਼
 ">
 
 <!ENTITY aboutTelemetry.toggle "
-  Click to toggle section
+  ਚੋਣ ਨੂੰ ਤਬਦੀਲ ਕਰਨ ਲਈ ਕਲਿੱਕ ਕਰੋ
 ">
 
 <!ENTITY aboutTelemetry.emptySection "
-  (No data collected)
+  (ਕੋਈ ਡਾਟਾ ਇੱਕਠਾ ਨਹੀਂ ਕੀਤਾ)
 ">
 
 <!ENTITY aboutTelemetry.fullSqlWarning "
-  NOTE: Slow SQL debugging is enabled. Full SQL strings may be displayed below 
-but they will not be submitted to Telemetry.
+  ਸੂਚਨਾ: ਹੌਲੀ SQL ਡੀਬੱਗ ਕਰਨਾ ਯੋਗ ਹੈ। ਪੂਰੀਆਂ SQL ਲਾਈਨਾਂ ਨੂੰ ਹੇਠਾਂ ਵੇਖਾਇਆ ਜਾਵੇਗਾ, ਪਰ ਉਹਨਾਂ ਨੂੰ ਟੈਲੀਮੈਂਟਰੀ ਨੂੰ ਭੇਜਿਆ ਨਹੀਂ ਜਾਵੇਗਾ।
 ">
 
 <!ENTITY aboutTelemetry.fetchSymbols "
-  Fetch function names for hang stacks
+  ਹੈਂਗ ਸਟੈਕਸ ਲਈ ਫੰਕਸ਼ਨ ਨਾਂ ਲਵੋ
 ">
 
 <!ENTITY aboutTelemetry.hideSymbols "
-  Show raw data from hangs
+  ਹੈਂਗ ਤੋਂ ਕੱਚਾ ਡਾਟਾ ਵੇਖਾਓ
 ">
 
 <!ENTITY aboutTelemetry.filterText "
-  Filter (strings or /regexp/)
+  ਫਿਲਟਰ (ਸਤਰ ਜਾਂ /regexp/)
 ">
