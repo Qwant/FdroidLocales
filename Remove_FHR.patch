@@ -1,118 +1,37 @@
-diff -r c7a06a2da85e mobile/android/base/AndroidManifest.xml.in
---- a/mobile/android/base/AndroidManifest.xml.in	Thu Sep 17 18:07:11 2015 -0400
-+++ b/mobile/android/base/AndroidManifest.xml.in	Fri Sep 18 22:55:36 2015 -0300
-@@ -16,7 +16,6 @@
-               android:targetSdkVersion="@ANDROID_TARGET_SDK@"/>
- 
- #include ../services/manifests/FxAccountAndroidManifest_permissions.xml.in
--#include ../services/manifests/HealthReportAndroidManifest_permissions.xml.in
- #include ../services/manifests/SyncAndroidManifest_permissions.xml.in
- 
- #ifdef MOZ_ANDROID_SEARCH_ACTIVITY
-@@ -375,7 +374,6 @@
-         </service>
- 
- #include ../services/manifests/FxAccountAndroidManifest_activities.xml.in
--#include ../services/manifests/HealthReportAndroidManifest_activities.xml.in
- #include ../services/manifests/SyncAndroidManifest_activities.xml.in
- #ifdef MOZ_ANDROID_SEARCH_ACTIVITY
- #include ../search/manifests/SearchAndroidManifest_activities.xml.in
-@@ -480,7 +478,6 @@
- 
- 
- #include ../services/manifests/FxAccountAndroidManifest_services.xml.in
--#include ../services/manifests/HealthReportAndroidManifest_services.xml.in
- #include ../services/manifests/SyncAndroidManifest_services.xml.in
- #ifdef MOZ_ANDROID_SEARCH_ACTIVITY
- #include ../search/manifests/SearchAndroidManifest_services.xml.in
-diff -r c7a06a2da85e mobile/android/base/BrowserApp.java
---- a/mobile/android/base/BrowserApp.java	Thu Sep 17 18:07:11 2015 -0400
-+++ b/mobile/android/base/BrowserApp.java	Fri Sep 18 22:55:36 2015 -0300
-@@ -34,10 +34,6 @@
+diff -r 5e7156ebdc78 mobile/android/base/BrowserApp.java
+--- a/mobile/android/base/BrowserApp.java	Wed Jan 20 18:40:08 2016 -0500
++++ b/mobile/android/base/BrowserApp.java	Wed Jan 20 22:12:02 2016 -0300
+@@ -28,8 +28,6 @@
+ import org.mozilla.gecko.gfx.DynamicToolbarAnimator;
  import org.mozilla.gecko.gfx.ImmutableViewportMetrics;
- import org.mozilla.gecko.gfx.LayerMarginsAnimator;
  import org.mozilla.gecko.gfx.LayerView;
--import org.mozilla.gecko.health.BrowserHealthRecorder;
--import org.mozilla.gecko.health.BrowserHealthReporter;
 -import org.mozilla.gecko.health.HealthRecorder;
 -import org.mozilla.gecko.health.SessionInformation;
  import org.mozilla.gecko.home.BrowserSearch;
  import org.mozilla.gecko.home.HomeBanner;
  import org.mozilla.gecko.home.HomeConfig.PanelType;
-@@ -257,8 +253,6 @@
- 
-     private OrderedBroadcastHelper mOrderedBroadcastHelper;
- 
--    private BrowserHealthReporter mBrowserHealthReporter;
--
-     private ReadingListHelper mReadingListHelper;
- 
-     // The tab to be selected on editing mode exit.
-@@ -851,7 +845,6 @@
-         JavaAddonManager.getInstance().init(appContext);
-         mSharedPreferencesHelper = new SharedPreferencesHelper(appContext);
-         mOrderedBroadcastHelper = new OrderedBroadcastHelper(appContext);
--        mBrowserHealthReporter = new BrowserHealthReporter();
-         mReadingListHelper = new ReadingListHelper(appContext, getProfile(), this);
- 
-         if (AppConstants.MOZ_ANDROID_BEAM) {
-@@ -1384,11 +1377,6 @@
-             mOrderedBroadcastHelper = null;
-         }
- 
--        if (mBrowserHealthReporter != null) {
--            mBrowserHealthReporter.uninit();
--            mBrowserHealthReporter = null;
--        }
--
-         if (mReadingListHelper != null) {
-             mReadingListHelper.uninit();
-             mReadingListHelper = null;
-@@ -2458,16 +2446,7 @@
+@@ -2275,16 +2273,7 @@
       *        {@link BrowserHealthRecorder#SEARCH_LOCATIONS}.
       */
      private static void recordSearch(SearchEngine engine, String where) {
--        try {
--            String identifier = (engine == null) ? "other" : engine.getEngineIdentifier();
--            JSONObject message = new JSONObject();
--            message.put("type", BrowserHealthRecorder.EVENT_SEARCH);
--            message.put("location", where);
--            message.put("identifier", identifier);
--            EventDispatcher.getInstance().dispatchEvent(message, null);
--        } catch (Exception e) {
--            Log.e(LOGTAG, "Error recording search.", e);
--        }
+-        //try {
+-        //    String identifier = (engine == null) ? "other" : engine.getEngineIdentifier();
+-        //    JSONObject message = new JSONObject();
+-        //    message.put("type", BrowserHealthRecorder.EVENT_SEARCH);
+-        //    message.put("location", where);
+-        //    message.put("identifier", identifier);
+-        //    EventDispatcher.getInstance().dispatchEvent(message, null);
+-        //} catch (Exception e) {
+-        //    Log.e(LOGTAG, "Error recording search.", e);
+-        //}
 +        return;
      }
  
      /**
-@@ -3915,22 +3894,6 @@
-         }
-     }
- 
--    @Override
--    protected HealthRecorder createHealthRecorder(final Context context,
--                                                  final String profilePath,
--                                                  final EventDispatcher dispatcher,
--                                                  final String osLocale,
--                                                  final String appLocale,
--                                                  final SessionInformation previousSession) {
--        return new BrowserHealthRecorder(context,
--                                         GeckoSharedPrefs.forApp(context),
--                                         profilePath,
--                                         dispatcher,
--                                         osLocale,
--                                         appLocale,
--                                         previousSession);
--    }
--
-     public static interface Refreshable {
-         public void refresh();
-     }
-diff -r c7a06a2da85e mobile/android/base/GeckoApp.java
---- a/mobile/android/base/GeckoApp.java	Thu Sep 17 18:07:11 2015 -0400
-+++ b/mobile/android/base/GeckoApp.java	Fri Sep 18 22:55:36 2015 -0300
-@@ -14,9 +14,6 @@
+diff -r 5e7156ebdc78 mobile/android/base/GeckoApp.java
+--- a/mobile/android/base/GeckoApp.java	Wed Jan 20 18:40:08 2016 -0500
++++ b/mobile/android/base/GeckoApp.java	Wed Jan 20 22:12:02 2016 -0300
+@@ -15,9 +15,6 @@
  import org.mozilla.gecko.gfx.Layer;
  import org.mozilla.gecko.gfx.LayerView;
  import org.mozilla.gecko.gfx.PluginLayer;
@@ -122,7 +41,7 @@ diff -r c7a06a2da85e mobile/android/base/GeckoApp.java
  import org.mozilla.gecko.menu.GeckoMenu;
  import org.mozilla.gecko.menu.GeckoMenuInflater;
  import org.mozilla.gecko.menu.MenuPanel;
-@@ -197,7 +194,6 @@
+@@ -207,7 +204,6 @@
  
      private String mPrivateBrowsingSession;
  
@@ -130,7 +49,7 @@ diff -r c7a06a2da85e mobile/android/base/GeckoApp.java
      private volatile Locale mLastLocale;
  
      private EventListener mWebappEventListener;
-@@ -673,15 +669,6 @@
+@@ -703,15 +699,6 @@
                  mGeckoReadyStartupTimer.stop();
                  geckoConnected();
  
@@ -146,7 +65,7 @@ diff -r c7a06a2da85e mobile/android/base/GeckoApp.java
              } else if (event.equals("Gecko:Exited")) {
                  // Gecko thread exited first; let GeckoApp die too.
                  doShutdown();
-@@ -1313,11 +1300,6 @@
+@@ -1420,11 +1407,6 @@
                  final LocaleManager localeManager = BrowserLocaleManager.getInstance();
                  localeManager.initialize(getApplicationContext());
  
@@ -158,7 +77,7 @@ diff -r c7a06a2da85e mobile/android/base/GeckoApp.java
                  SharedPreferences.Editor editor = prefs.edit();
                  editor.putBoolean(GeckoApp.PREFS_OOM_EXCEPTION, false);
  
-@@ -1345,13 +1327,6 @@
+@@ -1452,13 +1434,6 @@
                      appLocaleString = osLocaleString;
                  }
  
@@ -172,7 +91,7 @@ diff -r c7a06a2da85e mobile/android/base/GeckoApp.java
                  final String uiLocale = appLocaleString;
                  ThreadUtils.postToUiThread(new Runnable() {
                      @Override
-@@ -1565,37 +1540,6 @@
+@@ -1672,34 +1647,6 @@
                                             (TextSelectionHandle) findViewById(R.id.caret_handle),
                                             (TextSelectionHandle) findViewById(R.id.focus_handle));
  
@@ -193,9 +112,6 @@ diff -r c7a06a2da85e mobile/android/base/GeckoApp.java
 -                // receiver, which uses the system alarm infrastructure to perform tasks at
 -                // intervals.
 -                GeckoPreferences.broadcastHealthReportUploadPref(GeckoApp.this);
--                if (!GeckoThread.checkLaunchState(GeckoThread.LaunchState.Launched)) {
--                    return;
--                }
 -            }
 -        }, 50);
 -
@@ -210,11 +126,10 @@ diff -r c7a06a2da85e mobile/android/base/GeckoApp.java
          if (mIsRestoringActivity) {
              Tab selectedTab = Tabs.getInstance().getSelectedTab();
              if (selectedTab != null) {
-@@ -1935,29 +1879,6 @@
-         // track the duration of the session.
+@@ -2039,29 +1986,6 @@
          final long now = System.currentTimeMillis();
          final long realTime = android.os.SystemClock.elapsedRealtime();
--
+ 
 -        ThreadUtils.postToBackgroundThread(new Runnable() {
 -            @Override
 -            public void run() {
@@ -237,10 +152,11 @@ diff -r c7a06a2da85e mobile/android/base/GeckoApp.java
 -                }
 -            }
 -        });
+-
+         RestrictedProfiles.update(this);
      }
  
-     @Override
-@@ -1979,7 +1900,6 @@
+@@ -2084,7 +2008,6 @@
      @Override
      public void onPause()
      {
@@ -248,7 +164,7 @@ diff -r c7a06a2da85e mobile/android/base/GeckoApp.java
          final Context context = this;
  
          // In some way it's sad that Android will trigger StrictMode warnings
-@@ -1991,9 +1911,6 @@
+@@ -2096,9 +2019,6 @@
                  SharedPreferences prefs = GeckoApp.this.getSharedPreferences();
                  SharedPreferences.Editor editor = prefs.edit();
                  editor.putBoolean(GeckoApp.PREFS_WAS_STOPPED, true);
@@ -258,7 +174,7 @@ diff -r c7a06a2da85e mobile/android/base/GeckoApp.java
  
                  // If we haven't done it before, cleanup any old files in our old temp dir
                  if (prefs.getBoolean(GeckoApp.PREFS_CLEANUP_TEMP_FILES, true)) {
-@@ -2004,11 +1921,6 @@
+@@ -2109,11 +2029,6 @@
                  }
  
                  editor.apply();
@@ -270,18 +186,18 @@ diff -r c7a06a2da85e mobile/android/base/GeckoApp.java
              }
          });
  
-@@ -2096,18 +2008,6 @@
+@@ -2212,18 +2127,6 @@
              }
          }
  
 -        final HealthRecorder rec = mHealthRecorder;
 -        mHealthRecorder = null;
 -        if (rec != null && rec.isEnabled()) {
--            // Closing a BrowserHealthRecorder could incur a write.
+-            // Closing a HealthRecorder could incur a write.
 -            ThreadUtils.postToBackgroundThread(new Runnable() {
 -                @Override
 -                public void run() {
--                    rec.close();
+-                    rec.close(GeckoApp.this);
 -                }
 -            });
 -        }
@@ -289,7 +205,7 @@ diff -r c7a06a2da85e mobile/android/base/GeckoApp.java
          Favicons.close();
  
          super.onDestroy();
-@@ -2612,15 +2512,6 @@
+@@ -2777,15 +2680,6 @@
          final boolean startNewSession = true;
          final boolean shouldRestart = false;
  
@@ -305,11 +221,10 @@ diff -r c7a06a2da85e mobile/android/base/GeckoApp.java
          if (!shouldRestart) {
              ThreadUtils.postToUiThread(new Runnable() {
                  @Override
-@@ -2674,14 +2565,4 @@
-             }
+@@ -2840,16 +2734,6 @@
          });
      }
--
+ 
 -    protected HealthRecorder createHealthRecorder(final Context context,
 -                                                  final String profilePath,
 -                                                  final EventDispatcher dispatcher,
@@ -319,11 +234,14 @@ diff -r c7a06a2da85e mobile/android/base/GeckoApp.java
 -        // GeckoApp does not need to record any health information - return a stub.
 -        return new StubbedHealthRecorder();
 -    }
- }
-diff -r c7a06a2da85e mobile/android/base/android-services.mozbuild
---- a/mobile/android/base/android-services.mozbuild	Thu Sep 17 18:07:11 2015 -0400
-+++ b/mobile/android/base/android-services.mozbuild	Fri Sep 18 22:55:36 2015 -0300
-@@ -784,7 +784,6 @@
+-
+     protected StartupAction getStartupAction(final String passedURL) {
+         // Default to NORMAL here. Subclasses can handle the other types.
+         return StartupAction.NORMAL;
+diff -r 5e7156ebdc78 mobile/android/base/android-services.mozbuild
+--- a/mobile/android/base/android-services.mozbuild	Wed Jan 20 18:40:08 2016 -0500
++++ b/mobile/android/base/android-services.mozbuild	Wed Jan 20 22:12:02 2016 -0300
+@@ -780,7 +780,6 @@
      'background/common/log/writers/ThreadLocalTagLogWriter.java',
      'background/common/PrefsBranch.java',
      'background/common/telemetry/TelemetryWrapper.java',
@@ -331,74 +249,33 @@ diff -r c7a06a2da85e mobile/android/base/android-services.mozbuild
      'background/db/CursorDumper.java',
      'background/db/Tab.java',
      'background/fxa/FxAccount10AuthDelegate.java',
-@@ -806,30 +805,6 @@
-     'background/fxa/profile/FxAccountProfileClient10.java',
-     'background/fxa/QuickPasswordStretcher.java',
-     'background/fxa/SkewHandler.java',
--    'background/healthreport/AndroidConfigurationProvider.java',
--    'background/healthreport/Environment.java',
--    'background/healthreport/EnvironmentBuilder.java',
--    'background/healthreport/EnvironmentV1.java',
--    'background/healthreport/EnvironmentV2.java',
--    'background/healthreport/HealthReportBroadcastReceiver.java',
--    'background/healthreport/HealthReportBroadcastService.java',
--    'background/healthreport/HealthReportConstants.java',
--    'background/healthreport/HealthReportDatabases.java',
--    'background/healthreport/HealthReportDatabaseStorage.java',
--    'background/healthreport/HealthReportGenerator.java',
--    'background/healthreport/HealthReportProvider.java',
--    'background/healthreport/HealthReportStorage.java',
--    'background/healthreport/HealthReportUtils.java',
--    'background/healthreport/ProfileInformationCache.java',
--    'background/healthreport/prune/HealthReportPruneService.java',
--    'background/healthreport/prune/PrunePolicy.java',
--    'background/healthreport/prune/PrunePolicyDatabaseStorage.java',
--    'background/healthreport/prune/PrunePolicyStorage.java',
--    'background/healthreport/upload/AndroidSubmissionClient.java',
--    'background/healthreport/upload/HealthReportUploadService.java',
--    'background/healthreport/upload/ObsoleteDocumentTracker.java',
--    'background/healthreport/upload/SubmissionClient.java',
--    'background/healthreport/upload/SubmissionPolicy.java',
-     'background/nativecode/NativeCrypto.java',
-     'background/preferences/PreferenceFragment.java',
-     'background/preferences/PreferenceManagerCompat.java',
-diff -r c7a06a2da85e mobile/android/base/moz.build
---- a/mobile/android/base/moz.build	Thu Sep 17 18:07:11 2015 -0400
-+++ b/mobile/android/base/moz.build	Fri Sep 18 22:55:36 2015 -0300
-@@ -296,11 +296,6 @@
+diff -r 5e7156ebdc78 mobile/android/base/moz.build
+--- a/mobile/android/base/moz.build	Wed Jan 20 18:40:08 2016 -0500
++++ b/mobile/android/base/moz.build	Wed Jan 20 22:12:02 2016 -0300
+@@ -325,9 +325,6 @@
      'gfx/VirtualLayer.java',
      'GlobalHistory.java',
      'GuestSession.java',
--    'health/BrowserHealthRecorder.java',
--    'health/BrowserHealthReporter.java',
 -    'health/HealthRecorder.java',
 -    'health/SessionInformation.java',
 -    'health/StubbedHealthRecorder.java',
      'home/BookmarkFolderView.java',
      'home/BookmarksListAdapter.java',
      'home/BookmarksListView.java',
-diff -r c7a06a2da85e mobile/android/base/preferences/GeckoPreferences.java
---- a/mobile/android/base/preferences/GeckoPreferences.java	Thu Sep 17 18:07:11 2015 -0400
-+++ b/mobile/android/base/preferences/GeckoPreferences.java	Fri Sep 18 22:55:36 2015 -0300
-@@ -35,7 +35,6 @@
- import org.mozilla.gecko.TelemetryContract;
- import org.mozilla.gecko.TelemetryContract.Method;
- import org.mozilla.gecko.background.common.GlobalConstants;
--import org.mozilla.gecko.background.healthreport.HealthReportConstants;
- import org.mozilla.gecko.db.BrowserContract.SuggestedSites;
- import org.mozilla.gecko.updater.UpdateService;
- import org.mozilla.gecko.updater.UpdateServiceHelper;
-@@ -917,31 +916,6 @@
+diff -r 5e7156ebdc78 mobile/android/base/preferences/GeckoPreferences.java
+--- a/mobile/android/base/preferences/GeckoPreferences.java	Wed Jan 20 18:40:08 2016 -0500
++++ b/mobile/android/base/preferences/GeckoPreferences.java	Wed Jan 20 22:12:02 2016 -0300
+@@ -1035,31 +1035,6 @@
  
      /**
       * Broadcast the provided value as the value of the
 -     * <code>PREFS_HEALTHREPORT_UPLOAD_ENABLED</code> pref.
 -     */
 -    public static void broadcastHealthReportUploadPref(final Context context, final boolean value) {
--        broadcastPrefAction(context,
--                            HealthReportConstants.ACTION_HEALTHREPORT_UPLOAD_PREF,
--                            PREFS_HEALTHREPORT_UPLOAD_ENABLED,
--                            value);
+-        //broadcastPrefAction(context,
+-        //                    HealthReportConstants.ACTION_HEALTHREPORT_UPLOAD_PREF,
+-        //                    PREFS_HEALTHREPORT_UPLOAD_ENABLED,
+-        //                    value);
 -    }
 -
 -    /**
@@ -406,13 +283,13 @@ diff -r c7a06a2da85e mobile/android/base/preferences/GeckoPreferences.java
 -     * <code>PREFS_HEALTHREPORT_UPLOAD_ENABLED</code> pref.
 -     */
 -    public static void broadcastHealthReportUploadPref(final Context context) {
--        final boolean value = getBooleanPref(context, PREFS_HEALTHREPORT_UPLOAD_ENABLED, true);
--        broadcastHealthReportUploadPref(context, value);
+-        //final boolean value = getBooleanPref(context, PREFS_HEALTHREPORT_UPLOAD_ENABLED, true);
+-        //broadcastHealthReportUploadPref(context, value);
 -    }
 -
 -    public static void broadcastHealthReportPrune(final Context context) {
--        final Intent intent = new Intent(HealthReportConstants.ACTION_HEALTHREPORT_PRUNE);
--        broadcastAction(context, intent);
+-        //final Intent intent = new Intent(HealthReportConstants.ACTION_HEALTHREPORT_PRUNE);
+-        //broadcastAction(context, intent);
 -    }
 -
 -    /**
@@ -420,7 +297,7 @@ diff -r c7a06a2da85e mobile/android/base/preferences/GeckoPreferences.java
       * <code>PREFS_GEO_REPORTING</code> pref.
       */
      public static void broadcastStumblerPref(final Context context, final boolean value) {
-@@ -1123,12 +1097,6 @@
+@@ -1245,14 +1220,6 @@
              UpdateServiceHelper.setAutoDownloadPolicy(this, UpdateService.AutoDownloadPolicy.get((String) newValue));
          } else if (PREFS_UPDATER_URL.equals(prefName)) {
              UpdateServiceHelper.setUpdateUrl(this, (String) newValue);
@@ -429,27 +306,21 @@ diff -r c7a06a2da85e mobile/android/base/preferences/GeckoPreferences.java
 -            // to Gecko, but we do broadcast intent to the health report
 -            // background uploader service, which will start or stop the
 -            // repeated background upload attempts.
--            broadcastHealthReportUploadPref(this, (Boolean) newValue);
+-            final Boolean newBooleanValue = (Boolean) newValue;
+-            broadcastHealthReportUploadPref(this, newBooleanValue);
+-            AdjustConstants.getAdjustHelper().setEnabled(newBooleanValue);
          } else if (PREFS_GEO_REPORTING.equals(prefName)) {
              broadcastStumblerPref(this, (Boolean) newValue);
              // Translate boolean value to int for geo reporting pref.
-diff -r c7a06a2da85e mobile/android/search/java/org/mozilla/search/SearchActivity.java
---- a/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Thu Sep 17 18:07:11 2015 -0400
-+++ b/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Fri Sep 18 22:55:36 2015 -0300
-@@ -11,7 +11,6 @@
- import org.mozilla.gecko.TelemetryContract;
- import org.mozilla.gecko.db.BrowserContract.SearchHistory;
- import org.mozilla.gecko.distribution.Distribution;
--import org.mozilla.gecko.health.BrowserHealthRecorder;
- import org.mozilla.search.autocomplete.SearchBar;
- import org.mozilla.search.autocomplete.SuggestionsFragment;
- import org.mozilla.search.providers.SearchEngine;
-@@ -254,14 +253,6 @@
+diff -r 5e7156ebdc78 mobile/android/search/java/org/mozilla/search/SearchActivity.java
+--- a/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Wed Jan 20 18:40:08 2016 -0500
++++ b/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Wed Jan 20 22:12:02 2016 -0300
+@@ -253,14 +253,6 @@
      public void onSearch(String query, SuggestionAnimation suggestionAnimation) {
          storeQuery(query);
  
 -        try {
--            BrowserHealthRecorder.recordSearchDelayed("activity", engine.getIdentifier());
+-            //BrowserHealthRecorder.recordSearchDelayed("activity", engine.getIdentifier());
 -        } catch (Exception e) {
 -            // This should never happen: it'll only throw if the
 -            // search location is wrong. But let's not tempt fate.

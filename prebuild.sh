@@ -8,20 +8,24 @@ rm -R toolkit/crashreporter/google-breakpad/src/client/
 rm -R toolkit/crashreporter/google-breakpad/src/processor/testdata/
 rm -R toolkit/crashreporter/google-breakpad/src/third_party/linux/
 
-find dom/html/test/ -type f -exec rm '{}' \;
-
 rm -R accessible/tests/
 rm -R addon-sdk/source/test/
-rm -R browser/devtools/debugger/test/
-rm -R browser/devtools/webide/test/
+rm -R b2g/branding/
+rm -R b2g/components/test/
+rm -R browser/branding/*/dsstore
+rm -R browser/components/migration/tests/unit/
 rm -R build/mobile/robocop/
 rm -R build/mobile/sutagent/
+rm -R build/pymake/tests/
 rm -R chrome/test/
-rm -R content/
+rm -R devtools/client/debugger/test/
+rm -R devtools/client//webide/test/
+rm -R devtools/shared/apps/tests/
 rm -R docshell/test/
 rm -R dom/apps/tests/
 rm -R dom/base/crashtests/
 rm -R dom/base/test/
+rm -R dom/media/webspeech/recognition/models/
 rm -R dom/html/test/
 rm -R dom/indexedDB/test/
 rm -R dom/tests/
@@ -35,16 +39,24 @@ rm -R modules/libmar/tests/
 rm -R modules/libjar/test/
 rm -R modules/libjar/zipwriter/test/
 rm -R mozglue/linker/tests/
+rm -R netwerk/test/unit/data/signed_win.exe
+rm -R python/bitstring/test/
 rm -R security/manager/ssl/tests/compiled/
 rm -R security/manager/ssl/tests/*test/
 rm -R security/nss/cmd/bltest/tests/
+rm -R security/nss/cmd/samples/
 rm -R security/nss/tests/
 rm -R services/sync/tests/
+rm -R other-licenses/nsis/nsisui.exe
 rm -R testing/crashtest/
 rm -R testing/mozbase/mozinstall/tests/
 rm -R testing/mozbase/mozprofile/tests/
+rm -R testing/mozbase/mozrunner/mozrunner/resources/metrotestharness.exe
+rm -R testing/talos/talos/
 rm -R testing/web-platform/
-rm -R toolkit/devtools/apps/tests/
+rm -R tools/update-packaging/test/
+rm -R toolkit/components/downloads/test/unit/
+rm -R toolkit/components/mediasniffer/test/unit/
 rm -R toolkit/components/search/tests/
 rm -R toolkit/modules/tests/
 rm -R toolkit/mozapps/extensions/test/
@@ -62,18 +74,19 @@ sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsEmbedFunctions.cpp
 
 sed -i -e '/source\/test\//d' addon-sdk/moz.build
 sed -i -e '/testing\/web-platform\/mach_commands.py/d' build/mach_bootstrap.py
+sed -i -e '/MOCHITEST/,+5d' devtools/shared/apps/moz.build
 sed -i -e '/TESTS_MANIFESTS/,+19d' docshell/moz.build
 sed -i -e '/tests\//d' dom/apps/moz.build
 sed -i -e '/test\//d' dom/html/moz.build
-sed -i -e '/test\//d' dom/indexedDB/moz.build
+sed -i -e '/TEST_DIRS/,+14d' dom/indexedDB/moz.build
 sed -i -e '/MOCHITEST/d' layout/generic/moz.build
 sed -i -e '/reftest/d'  -e '/crashtest/d' layout/moz.build
 sed -i -e '/classycle_jar/,+7d' -e 's/.geckoview.deps ././g' -e 's/PROGUARD_PASSES=1/PROGUARD_PASSES=3/g' mobile/android/base/Makefile.in
 sed -i -e '/TEST/d' modules/libjar/moz.build
 sed -i -e '/TEST/d' modules/libjar/zipwriter/moz.build
-sed -i -e '/\/content/d' toolkit/toolkit.mozbuild
+sed -i -e '/xpcshell.ini/d' toolkit/components/downloads/moz.build
+sed -i -e '/xpcshell.ini/d' toolkit/components/mediasniffer/moz.build
 sed -i -e '/xpcshell.ini/d' toolkit/components/search/moz.build
-sed -i -e '/MOCHITEST/,+5d' toolkit/devtools/apps/moz.build
 sed -i -e '/tests\//d' toolkit/modules/moz.build
 sed -i -e '/tests/d' toolkit/mozapps/update/moz.build
 
@@ -87,18 +100,16 @@ echo "ac_add_options --with-l10n-base=$REPO" >> .mozconfig
 #HealthReporter
 ##Option 1: Completely remove FHR
 rm mobile/android/base/health/*
-rm -R mobile/android/base/background/*report*
-rm mobile/android/services/manifests/HealthReport*
+rm -R mobile/android/base/background/datareporting
 patch -p1 <$REPO/Remove_FHR.patch
 ###Option 2: Make the default pref false if not value present - Not tested
 #sed -i -e 's/HEALTHREPORT_UPLOAD_ENABLED, true/HEALTHREPORT_UPLOAD_ENABLED, false/g' mobile/android/base/preferences/GeckoPreferences.java
 ###Option 3: Force the pref to be false - Not tested
 #sed -i -e 's/getBooleanPref(context, PREFS_HEALTHREPORT_UPLOAD_ENABLED, true)/false/g' mobile/android/base/preferences/GeckoPreferences.java
 
-##Hot-Fix
-sed -i -e 's/size_impl(v/size_impl(const v/g' memory/mozjemalloc/jemalloc.c
-
 ##Get rid of Gradle
+rm -R gradle/
+rm -R build.gradle
 rm -R mobile/android/gradle/
 sed -i -e '/gradle/d' mobile/android/moz.build
 
