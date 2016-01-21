@@ -6,6 +6,15 @@
 
 <!ENTITY  blockPopups.label           "প'প-আপ উইন্ডোসমূহ প্ৰতিৰোধ কৰক">
 <!ENTITY  blockPopups.accesskey       "B">
+
+
+
+
+
+
+
+
+
 <!ENTITY  popupExceptions.label       "ব্যতিক্ৰসমূহ…">
 <!ENTITY  popupExceptions.accesskey   "E">
 
@@ -45,4 +54,4 @@
 
 
 
-<!ENTITY  playDRMContent.learnMore.label "অধিক জানক">
+

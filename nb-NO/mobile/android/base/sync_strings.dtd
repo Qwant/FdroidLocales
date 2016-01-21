@@ -197,6 +197,7 @@
 
 <!ENTITY fxaccount_status_header2 'Firefox-konto'>
 <!ENTITY fxaccount_status_signed_in_as 'Logget inn som'>
+<!ENTITY fxaccount_status_manage_account 'Behandle konto'>
 <!ENTITY fxaccount_status_auth_server 'Kontoserver'>
 <!ENTITY fxaccount_status_sync_now 'Synk nå'>
 <!ENTITY fxaccount_status_syncing2 'Synkroniserer …'>
@@ -222,6 +223,7 @@
 <!ENTITY fxaccount_status_linktos 'Tjenestevilkår'>
 <!ENTITY fxaccount_status_linkprivacy 'Personvern'>
 <!ENTITY fxaccount_status_more 'Mer &ellipsis;'>
+<!ENTITY fxaccount_remove_account 'Koble fra &ellipsis;'>
 
 <!ENTITY fxaccount_remove_account_dialog_title 'Slett Firefox-konto?'>
 <!ENTITY fxaccount_remove_account_dialog_message '&brandShortName; vil slutte synkronisering mot kontoen, men sletter ikke nettleserdata på denne enheten.'>
@@ -229,7 +231,6 @@
      with the Firefox Account's email address. -->
 <!ENTITY fxaccount_remove_account_toast 'Firefox-konto &formatS; fjernet.'>
 
-<!ENTITY fxaccount_remove_account_menu_item 'Fjern konto'>
 <!ENTITY fxaccount_enable_debug_mode 'Slå på debugmodus'>
 
 <!-- Localization note: this is the name shown by the Android system

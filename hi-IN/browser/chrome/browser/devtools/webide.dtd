@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY windowTitle "फ़ायरफ़ॉक्स WebIDE">
+<!ENTITY windowTitle "Firefox WebIDE">
 
 <!ENTITY projectMenu_label "परियोजना">
 <!ENTITY projectMenu_accesskey "P">
@@ -26,7 +26,7 @@
 <!ENTITY projectMenu_showPrefs_accesskey "e">
 <!ENTITY projectMenu_manageComponents_label "अतिरिक्त घटक प्रबंधित करें">
 <!ENTITY projectMenu_manageComponents_accesskey "M">
-
+<!ENTITY projectMenu_refreshTabs_label "टैब ताज़ा करें">
 
 <!ENTITY runtimeMenu_label "रनटाइम">
 <!ENTITY runtimeMenu_accesskey "R">
@@ -137,6 +137,8 @@
 <!ENTITY prefs_options_autoclosebrackets_tooltip "बंद कोष्ठक स्वतः डालें">
 <!ENTITY prefs_options_keybindings "कीबाइंडिंग">
 <!ENTITY prefs_options_keybindings_default "तयशुदा">
+<!ENTITY prefs_options_autosavefiles "स्वतःसहेजे फाइल">
+<!ENTITY prefs_options_autosavefiles_tooltip "परियोजना को चलाने से पहले संपादित फ़ाइलों स्वचालित रूप से सहेजें">
 <!-- Permissions Table -->
 
 <!ENTITY permissionstable_title "अनुमति सारणी">

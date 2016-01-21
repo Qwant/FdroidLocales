@@ -31,7 +31,7 @@
 <!-- LOCALIZATION NOTE (inspectorHTMLPasteInner.label): This is the label shown
      in the inspector contextual-menu for the item that lets users paste inner
      HTML in the current node -->
-<!ENTITY inspectorHTMLPasteInner.label      "Cole o HTML">
+<!ENTITY inspectorHTMLPasteInner.label      "Colar HTML interno">
 <!ENTITY inspectorHTMLPasteInner.accesskey  "o">
 
 <!-- LOCALIZATION NOTE (inspectorHTMLPasteExtraSubmenu.label): This is the label
@@ -79,6 +79,32 @@
      current node -->
 <!ENTITY inspectorHTMLDelete.label          "Excluir nó">
 <!ENTITY inspectorHTMLDelete.accesskey      "x">
+<!-- LOCALIZATION NOTE (inspectorAttributeSubmenu.label): This is the label
+     shown in the inspector contextual-menu for the sub-menu of the other
+     attribute items, which allow to:
+     - add new attribute
+     - edit attribute
+     - remove attribute -->
+<!ENTITY inspectorAttributeSubmenu.label      "Atributo">
+<!ENTITY inspectorAttributeSubmenu.accesskey  "A">
+
+<!-- LOCALIZATION NOTE (inspectorAddAttribute.label): This is the label shown in
+     the inspector contextual-menu for the item that lets users add attribute
+     to current node -->
+<!ENTITY inspectorAddAttribute.label        "Adicionar atributo">
+<!ENTITY inspectorAddAttribute.accesskey    "A">
+
+<!-- LOCALIZATION NOTE (inspectorEditAttribute.label): This is the label shown in
+     the inspector contextual-menu for the item that lets users edit attribute
+     for current node -->
+<!ENTITY inspectorEditAttribute.label        "Editar atributo">
+<!ENTITY inspectorEditAttribute.accesskey    "E">
+
+<!-- LOCALIZATION NOTE (inspectorRemoveAttribute.label): This is the label shown in
+     the inspector contextual-menu for the item that lets users delete attribute
+     from current node -->
+<!ENTITY inspectorRemoveAttribute.label        "Remover atributo">
+<!ENTITY inspectorRemoveAttribute.accesskey    "R">
 
 <!ENTITY inspector.selectButton.tooltip     "Selecionar elemento com o mouse">
 
@@ -90,7 +116,7 @@
 <!-- LOCALIZATION NOTE (inspectorSearchHTML.label3): This is the label that will
      be shown as the placeholder in the future, once the inspector search box
      supports the full text HTML search in Bug 835896. -->
-<!ENTITY inspectorSearchHTML.label3 "Localizar HTML">
+<!ENTITY inspectorSearchHTML.label3 "Pesquisar HTML">
 
 <!-- LOCALIZATION NOTE (inspectorCopyImageDataUri.label): This is the label
      shown in the inspector contextual-menu for the item that lets users copy
@@ -124,4 +150,9 @@
 <!-- LOCALIZATION NOTE (inspectorScreenshotNode.label): This is the label
      shown in the inspector contextual-menu for the item that lets users take
      a screenshot of the currently selected node. -->
-<!ENTITY inspectorScreenshotNode.label       "Nó da captura de tela">
+<!ENTITY inspectorScreenshotNode.label       "Captura de tela do nó">
+
+<!-- LOCALIZATION NOTE (inspectorDuplicateNode.label): This is the label
+     shown in the inspector contextual-menu for the item that lets users
+     duplicate the currently selected node. -->
+<!ENTITY inspectorDuplicateNode.label       "Duplicar nó">

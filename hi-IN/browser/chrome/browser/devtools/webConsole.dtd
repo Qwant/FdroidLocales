@@ -51,21 +51,23 @@
 <!ENTITY btnPageLogging.label   "लॉगिंग ">
 <!ENTITY btnPageLogging.tooltip "window.console वस्तु में लॉग संदेश भेजा गया">
 <!ENTITY btnPageLogging.accesskey3 "L">
-
-
-
-
+<!ENTITY btnConsoleErrors       "त्रुटियां">
+<!ENTITY btnConsoleInfo         "सूचना">
+<!ENTITY btnConsoleWarnings     "चेतावनीयां">
+<!ENTITY btnConsoleLog          "रोजनामचा">
 <!ENTITY btnConsoleXhr          "XHR">
 <!ENTITY btnConsoleReflows      "पुनर्बहाव">
 <!-- LOCALIZATION NOTE (btnServerLogging): This is used as the text of the
   -  the toolbar. It shows or hides messages that the web developer inserted on
   -  the page for debugging purposes, using calls on the HTTP server. -->
 
-
-
-
-
-
+<!ENTITY btnServerLogging.label       "Server">
+<!ENTITY btnServerLogging.tooltip     "वेब सर्वर द्वारा लॉग संदेश प्राप्त हुए">
+<!ENTITY btnServerLogging.accesskey   "S">
+<!ENTITY btnServerErrors              "त्रुटियां">
+<!ENTITY btnServerInfo                "सूचना">
+<!ENTITY btnServerWarnings            "चेतावनीयां">
+<!ENTITY btnServerLog                 "रोजनामचा">
 <!-- LOCALIZATION NODE (btnConsoleSharedWorkers) the term "Shared Workers"
   -  should not be translated. -->
 
@@ -85,7 +87,7 @@
 <!ENTITY fullZoomEnlargeCmd.commandkey  "+">
 <!-- + is above this key on many keyboards -->
 <!ENTITY fullZoomEnlargeCmd.commandkey2 "="> 
-<!ENTITY fullZoomEnlargeCmd.commandkey3 "">
+<!ENTITY fullZoomEnlargeCmd.commandkey3 "‍">
 
 <!ENTITY fullZoomReduceCmd.commandkey   "-">
 <!ENTITY fullZoomReduceCmd.commandkey2  "">
@@ -99,5 +101,7 @@
 <!ENTITY closeCmd.key         "W">
 <!ENTITY findCmd.key          "F">
 <!ENTITY clearOutputCtrl.key  "L">
-
-
+<!ENTITY openInVarViewCmd.label "Variable दृश्य में खोलें">
+<!ENTITY openInVarViewCmd.accesskey "V">
+<!ENTITY storeAsGlobalVar.label "Store वैश्विक चर जैसा">
+<!ENTITY storeAsGlobalVar.accesskey "S">

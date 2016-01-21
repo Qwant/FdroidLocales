@@ -6,6 +6,15 @@
 
 <!ENTITY  blockPopups.label           "Block pop-up windows">
 <!ENTITY  blockPopups.accesskey       "B">
+
+
+
+
+
+
+
+
+
 <!ENTITY  popupExceptions.label       "Exceptions…">
 <!ENTITY  popupExceptions.accesskey   "E">
 
@@ -45,4 +54,4 @@
 
 
 
-<!ENTITY  playDRMContent.learnMore.label "Learn more">
+

@@ -23,7 +23,7 @@
 <!ENTITY aboutPrivateBrowsing.info.cookies     "Cookie-ներ">
 <!ENTITY aboutPrivateBrowsing.info.temporaryFiles "Ժամանակավոր ֆայլեր">
 
-<!ENTITY aboutPrivateBrowsing.info.saved       "Պահված">
+<!ENTITY aboutPrivateBrowsing.info.saved       "Պահված է">
 <!ENTITY aboutPrivateBrowsing.info.downloads   "Բեռնումներ">
 <!ENTITY aboutPrivateBrowsing.info.bookmarks   "Էջանիշեր">
 
@@ -39,7 +39,7 @@
      -->
 
 <!ENTITY trackingProtection.width1             "24em">
-<!ENTITY trackingProtection.title              "Պատշտանություն հետագծումից">
+<!ENTITY trackingProtection.title              "Պաշտպանություն հետագծումից">
 <!-- LOCALIZATION NOTE (trackingProtection.state.width):
      Width of the element representing the enabled or disabled indicator.
      -->
@@ -48,6 +48,7 @@
 <!ENTITY trackingProtection.state.enabled      "ՄԻԱՑ.">
 <!ENTITY trackingProtection.state.disabled     "ԱՆՋ.">
 
+<!ENTITY trackingProtection.description1       "Գաղտնի պատուհանները այժմ արգելափակել են էջի այն մասերը, որոնք կարող են հետագծել դիտարկման ձեր ակտիվությունը:">
 
 <!ENTITY trackingProtection.disable            "Անջ. հետագծման պաշտպանությունը">
 <!ENTITY trackingProtection.enable             "Միաց. հետագծման պաշտպանությունը">

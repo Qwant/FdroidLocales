@@ -132,11 +132,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY fullscreenWarning.beforeDomain.label "">
 <!ENTITY fullscreenWarning.afterDomain.label "স্ক্রিন পূর্ণভাবে ব্যবহৃত হচ্ছে">
-
+<!ENTITY fullscreenWarning.generic.label "নথিটি পূর্ণ স্ক্রিনে স্থাপিত হয়েছে">
 <!-- LOCALIZATION NOTE (exitDOMFullscreen.button,
      exitDOMFullscreenMac.button): the "escape" button on PC keyboards
      is uppercase, while on Mac keyboards it is lowercase -->
-
+<!ENTITY exitDOMFullscreen.button "সম্পূর্ণ স্ক্রীন হইতে প্রস্থান করুন">
+<!ENTITY exitDOMFullscreenMac.button "পূর্ণ স্ক্রিন প্রস্থান করুন (esc)">
 <!ENTITY leaveDOMFullScreen.label "সম্পূর্ণ পর্দায় প্রদর্শন বন্ধ করুন">
 <!ENTITY leaveDOMFullScreen.accesskey "স">
 
@@ -188,7 +189,35 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY printButton.label            "প্রিন্ট করুন">
 <!ENTITY printButton.tooltip          "বর্তমানে প্রদর্শিত পৃষ্ঠা প্রিন্ট করুন">
 
-<!ENTITY locationItem.title           "অবস্থান">
+<!ENTITY urlbar.viewSiteInfo.label                      "সাইটের তথ্য দেখুন">
+<!-- LOCALIZATION NOTE: all of the following urlbar NotificationAnchor.label strings are
+     used to provide accessible labels to users of assistive technology like screenreaders.
+     It is not possible to see them visually in the UI. -->
+<!ENTITY urlbar.defaultNotificationAnchor.label         "একটি নোটিফিকেশন দেখুন">
+<!ENTITY urlbar.geolocationNotificationAnchor.label     "অবস্থানের অনুরোধ দেখুন">
+<!ENTITY urlbar.addonsNotificationAnchor.label          "অ্যাড-অন ইন্সটল বার্তা দেখুন">
+<!ENTITY urlbar.indexedDBNotificationAnchor.label       "অ্যাপ্লিকেশন - অফলাইন স্টোরেজ বার্তা দেখুন।">
+<!ENTITY urlbar.loginFillNotificationAnchor.label       "আপনার লগইন তথ্যর পরিচালনা করুন">
+<!ENTITY urlbar.passwordNotificationAnchor.label        "দেখুন যদি আপনি আপনার পাসওয়ার্ড সংরক্ষণ করতে চান">
+<!ENTITY urlbar.webappsNotificationAnchor.label         "অ্যাপ্লিকেশন ইনস্টল বার্তা দেখুন">
+<!ENTITY urlbar.pluginsNotificationAnchor.label         "এই পৃষ্ঠাতে ব্যবহার করা প্লাগইন পরিচালনা করুন">
+<!ENTITY urlbar.webNotsNotificationAnchor.label         "বদল করুন যদি সাইটটি আপনাকে নোটিফিকেশন দেখাতে পারে">
+
+<!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.label      "সাইটের সাথে আপনার ক্যামেরা/বা মাইক্রোফোন শেয়ার করাকে পরিচালনা করুন">
+<!ENTITY urlbar.webRTCSharingDevicesNotificationAnchor.label    "আপনি আপনার ক্যামেরা/বা মাইক্রোফোন সাইটের সাথে শেয়ার করছেন">
+<!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.label   "এই সাইটের সাথে আপনার মাইক্রোফোন শেয়ার করাকে পরিচালনা করুন">
+<!ENTITY urlbar.webRTCSharingMicrophoneNotificationAnchor.label "আপনি এই সাইটের সাথে আপনার মাইক্রোফোন শেয়ার করছেন">
+<!ENTITY urlbar.webRTCShareScreenNotificationAnchor.label       "আপনার উইন্ডোস বা স্ক্রিন এই সাইটের সাথে শেয়ার করাকে পরিচালনা করুন">
+<!ENTITY urlbar.webRTCSharingScreenNotificationAnchor.label     "আপনি সাইটের সাথে একটি উইন্ডো বা আপনার স্ক্রিন শেয়ার করছেন">
+
+<!ENTITY urlbar.pointerLockNotificationAnchor.label     "বদল করুন যদি সাইটটি পয়েন্টারটাকে হাটাতে পারে">
+<!ENTITY urlbar.servicesNotificationAnchor.label        "পরিসেবা ইনস্টল বার্তা দেখুন">
+<!ENTITY urlbar.translateNotificationAnchor.label       "এই পাতা অনুবাদ করুন">
+<!ENTITY urlbar.translatedNotificationAnchor.label      "পৃষ্ঠার অনুবাদ পরিচালনা করুন">
+<!ENTITY urlbar.emeNotificationAnchor.label             "DRM সফটওয়্যারের ব্যবহার পরিচালনা করুন">
+
+<!ENTITY urlbar.openHistoryPopup.tooltip                "ইতিহাস দেখান">
+
 <!ENTITY searchItem.title             "অনুসন্ধান">
 <!-- Toolbar items --> 
 
@@ -222,12 +251,14 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY downloads.label              "ডাউনলোড">
 <!ENTITY downloads.accesskey          "D">
 <!ENTITY downloads.commandkey         "j">
-
+<!ENTITY downloadsUnix.commandkey     "y">
 <!ENTITY addons.label                 "অতিরিক্ত সামগ্রী">
 <!ENTITY addons.accesskey             "A">
 <!ENTITY addons.commandkey            "A">
 <!ENTITY webapps.label                "অ্যাপসমূহ">
 <!ENTITY webapps.accesskey            "প">
+<!ENTITY loopMenuItem.label           "আলাপন শুরু করুন…">
+<!ENTITY loopMenuItem.accesskey       "t">
 
 <!ENTITY webDeveloperMenu.label       "ওয়েব ডিভেলপর">
 <!ENTITY webDeveloperMenu.accesskey   "W">
@@ -287,8 +318,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY devToolbarCloseButton.tooltiptext "ডিভেলপার টুল-বার বন্ধ করুন">
 <!ENTITY devToolbarMenu.label              "ডিভেলপার টুল-বার">
 <!ENTITY devToolbarMenu.accesskey          "ড">
-<!ENTITY devAppMgrMenu.label               "অ্যাপ ম্যানেজার">
-<!ENTITY devAppMgrMenu.accesskey           "A">
 <!ENTITY webide.label                      "WebIDE">
 <!ENTITY webide.accesskey                  "W">
 <!ENTITY webide.keycode                    "VK_F8">
@@ -307,6 +336,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY fileMenu.label         "ফাইল"> 
 <!ENTITY fileMenu.accesskey       "F">
+<!ENTITY newUserContext.label             "নতুন আধার ট্যাব">
+<!ENTITY newUserContext.accesskey         "C">
+<!ENTITY userContextPersonal.label        "ব্যক্তিগত">
+<!ENTITY userContextPersonal.accesskey    "P">
+<!ENTITY userContextWork.label            "কাজ">
+<!ENTITY userContextWork.accesskey        "W">
+<!ENTITY userContextBanking.label         "ব্যাঙ্কিং">
+<!ENTITY userContextBanking.accesskey     "B">
+<!ENTITY userContextShopping.label        "কেনাকাটা">
+<!ENTITY userContextShopping.accesskey    "S">
 <!ENTITY newNavigatorCmd.label        "নতুন উইন্ডো">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "N">
@@ -405,11 +444,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY urlbar.searchSuggestionsNotification.question "আপনি পরামর্শ দিয়ে আপনার অনুসন্ধান অভিজ্ঞতা উন্নত করতে চান?">
 <!ENTITY urlbar.searchSuggestionsNotification.learnMore "আরও জানুন...">
-
+<!ENTITY urlbar.searchSuggestionsNotification.learnMore.accesskey "I">
 <!ENTITY urlbar.searchSuggestionsNotification.disable "না">
-
+<!ENTITY urlbar.searchSuggestionsNotification.disable.accesskey "n">
 <!ENTITY urlbar.searchSuggestionsNotification.enable "হ্যাঁ">
-
+<!ENTITY urlbar.searchSuggestionsNotification.enable.accesskey "y">
 <!-- 
   Comment duplicated from browser-sets.inc:
 
@@ -466,9 +505,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      consider translating it as if it said only "Search Settings". -->
 <!ENTITY changeSearchSettings.button  "সার্চ সেটিংস বদল করুন">
 
-
-
-
+<!ENTITY searchInNewTab.label         "নতুন ট্যাবের মধ্যে খুলুন">
+<!ENTITY searchInNewTab.accesskey     "T">
+<!ENTITY searchSetAsDefault.label     "অনুসন্ধান ইঞ্জিনকে ডিফল্ট হিসাবে সংকলন করুন">
+<!ENTITY searchSetAsDefault.accesskey "D">
 
 <!ENTITY tabView.commandkey           "e">
 
@@ -704,9 +744,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.connectionSecure "সুরক্ষিত সংযোগ">
 <!ENTITY identity.connectionNotSecure "সংযোগ সুরক্ষিত নয়">
 <!ENTITY identity.connectionFile "এই পাতাটি আপনার কম্পিউটার এ সংরক্ষন করা হয়েছে।">
-
+<!ENTITY identity.connectionVerified1 "আপনি সুরখিতভাবে বর্তমান সাইটির সাথে সংযুক্ত রয়েছেন, চালনা করুন:">
 <!ENTITY identity.connectionInternal "এটি একটি সুরক্ষিত &brandShortName; পৃষ্ঠা।">
-
+<!ENTITY identity.insecureLoginForms "আপনার করা লগিনটি বিপদের সম্মুখীন হতে পারে।">
 <!-- Strings for connection state warnings. -->
 
 <!ENTITY identity.activeBlocked "&brandShortName; এই পৃষ্ঠাতে কিছু নিরাপদ নয় এমন উপাদানকে অবরোধ করেছে।">
@@ -716,7 +756,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- Strings for connection state warnings in the subview. -->
 
 <!ENTITY identity.description.insecure "এই সাইট টি তে আপনার কানেক্সন নিরাপদ নয়। আপনি যে তথ্যগুলি জমা করেছেন, সেগুলি অন্ন কেউ দেখতে পেতে পারেন(পাসওয়ার্ড, বার্তা, ক্রেডিট কার্ড ইত্যাদি )।">
-
+<!ENTITY identity.description.insecureLoginForms "আপনার দ্বারা পৃষ্ঠাটিতে প্রবেশ করানো তথ্যগুলি নিরাপদ নয় এবং এগুলি বিপদের সম্মুখীন হতে পারে।">
 <!ENTITY identity.description.weakCipher "এই ওয়েবসাইটে আপনার সংযোগ দুর্বল এনক্রিপশন ব্যবহার করে এবং ব্যক্তিগত নয়।">
 <!ENTITY identity.description.weakCipher2 "অন্ন কেউ আপনার তথ্য দেখে নিয়ে সেটিকে পরিবরতন করতে পারে।">
 <!ENTITY identity.description.activeBlocked "&brandShortName; এই পৃষ্ঠাতে কিছু নিরাপদ নয় উপাদান অবরোধ করেছে।">
@@ -735,7 +775,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.moreInfoLinkText2 "অধিক বিবরণ">
 
 <!ENTITY identity.permissions "অনুমতি">
-
+<!ENTITY identity.permissionsEmpty "আপনি বর্তমান সাইটটিকে কোনও বিশেষ অনুমতি দেননি।">
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
 
@@ -746,7 +786,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncBrand.shortName.label    "সুসংগতি">
 
-
+<!ENTITY syncSignIn.label             "&syncBrand.shortName.label; সাইন ইন করুন…">
+<!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "অবিলম্বে সুসংগত করুন">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "&syncBrand.shortName.label; সংযোগ করুন…">
