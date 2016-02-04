@@ -5,3 +5,5 @@ yahoo-bid-zh-TW
 findbook-zh-TW
 creativecommons
 wikipedia-zh-TW
+
+duckduckgo

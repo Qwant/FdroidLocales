@@ -6,3 +6,5 @@ eBay-es
 google
 yahoo
 wikipedia-eu
+
+duckduckgo

@@ -4,3 +4,4 @@ google
 tut.by
 yahoo
 yandex.by
+duckduckgo

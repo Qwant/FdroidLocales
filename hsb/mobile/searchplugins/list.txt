@@ -4,3 +4,5 @@ google
 twitter
 wikipedia-hsb
 yahoo-de
+
+duckduckgo

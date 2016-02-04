@@ -4,3 +4,5 @@ salidzinilv
 wikipedia-lv
 sslv
 dict-enlv
+
+duckduckgo

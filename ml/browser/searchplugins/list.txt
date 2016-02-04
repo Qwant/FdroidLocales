@@ -5,3 +5,5 @@ eBay-in
 wikipedia
 wikipedia-ml
 webdunia
+
+duckduckgo

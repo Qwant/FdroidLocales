@@ -6,3 +6,5 @@ palasprint
 termau
 wikipedia-cy
 yahoo-en-GB
+
+duckduckgo

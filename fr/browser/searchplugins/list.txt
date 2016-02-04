@@ -5,3 +5,5 @@ wikipedia-fr
 eBay-france
 yahoo-france
 cnrtl-tlfi-fr
+
+duckduckgo

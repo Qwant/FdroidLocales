@@ -5,3 +5,5 @@ google
 yahoo-in
 wikipedia-te
 wiktionary-te
+
+duckduckgo

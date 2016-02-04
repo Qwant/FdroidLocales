@@ -5,3 +5,5 @@ mercadolibre-ar
 creativecommons
 drae
 wikipedia-es
+
+duckduckgo

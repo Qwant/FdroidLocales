@@ -4,3 +4,5 @@ twitter
 wikipedia-ca
 diec2
 
+
+duckduckgo

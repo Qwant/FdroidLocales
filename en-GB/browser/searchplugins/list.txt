@@ -6,3 +6,5 @@ google
 twitter
 wikipedia
 yahoo-en-GB
+
+duckduckgo

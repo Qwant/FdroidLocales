@@ -2,3 +2,5 @@ google
 yandex-tr
 twitter
 wikipedia-tr
+
+duckduckgo

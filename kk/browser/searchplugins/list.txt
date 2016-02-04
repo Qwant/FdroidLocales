@@ -4,3 +4,5 @@ wikipedia-kk
 flip
 twitter
 yandex
+
+duckduckgo

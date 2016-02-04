@@ -3,3 +3,5 @@ salidzinilv
 sslv
 twitter
 wikipedia-lv
+
+duckduckgo

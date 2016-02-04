@@ -4,3 +4,5 @@ google
 klask
 wikipedia-br
 yahoo-france
+
+duckduckgo

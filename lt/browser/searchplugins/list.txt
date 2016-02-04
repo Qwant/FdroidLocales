@@ -4,3 +4,5 @@ eBay
 google
 twitter
 wikipedia-lt
+
+duckduckgo

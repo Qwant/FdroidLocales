@@ -5,3 +5,5 @@ yahoo-in
 creativecommons
 wikipedia-mr
 rediff
+
+duckduckgo

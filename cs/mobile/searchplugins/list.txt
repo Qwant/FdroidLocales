@@ -3,3 +3,5 @@ seznam-cz
 twitter
 wikipedia-cz
 zbozi-cz
+
+duckduckgo

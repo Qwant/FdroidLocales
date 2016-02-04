@@ -7,3 +7,5 @@ twitter-ja
 wikipedia-ja
 yahoo-jp
 yahoo-jp-auctions
+
+duckduckgo

@@ -1,3 +1,5 @@
 bing
 google
 wikipedia
+
+duckduckgo

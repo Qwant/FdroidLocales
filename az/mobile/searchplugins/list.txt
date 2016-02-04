@@ -5,3 +5,5 @@ google
 twitter
 wikipedia-az
 yandex-az
+
+duckduckgo

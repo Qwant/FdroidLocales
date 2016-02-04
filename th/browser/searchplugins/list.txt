@@ -6,3 +6,5 @@ google
 longdo
 wikipedia-th
 yahoo
+
+duckduckgo

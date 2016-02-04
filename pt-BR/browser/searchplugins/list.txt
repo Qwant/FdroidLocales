@@ -5,3 +5,5 @@ mercadolivre
 twitter
 wikipedia-br
 yahoo-br
+
+duckduckgo

@@ -7,3 +7,5 @@ answers
 creativecommons
 focal
 wikipedia-ga-IE
+
+duckduckgo

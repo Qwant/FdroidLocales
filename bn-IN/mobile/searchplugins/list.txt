@@ -5,3 +5,5 @@ google
 rediff
 wikipedia-bn
 yahoo-in
+
+duckduckgo

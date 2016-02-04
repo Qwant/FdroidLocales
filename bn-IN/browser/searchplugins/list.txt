@@ -6,3 +6,5 @@ rediff
 technorati
 wikipedia-bn
 bing
+
+duckduckgo

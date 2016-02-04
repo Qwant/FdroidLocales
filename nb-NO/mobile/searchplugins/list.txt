@@ -2,3 +2,5 @@ google
 twitter
 wikipedia-NO
 gulesider-mobile-NO
+
+duckduckgo

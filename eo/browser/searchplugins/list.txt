@@ -6,3 +6,4 @@ amazondotcom
 yahoo
 eBay
 bing
+duckduckgo

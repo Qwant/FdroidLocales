@@ -5,3 +5,5 @@ twitter
 wikipedia-kn
 wiktionary-kn
 yahoo-in
+
+duckduckgo

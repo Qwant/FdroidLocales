@@ -3,3 +3,5 @@ sapo
 priberam
 wikipedia-ptpt
 amazon-en-GB
+
+duckduckgo

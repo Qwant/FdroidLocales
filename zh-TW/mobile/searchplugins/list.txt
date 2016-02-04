@@ -1,2 +1,4 @@
 google
 wikipedia-zh-TW
+
+duckduckgo
