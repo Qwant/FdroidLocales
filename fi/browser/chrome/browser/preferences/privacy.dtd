@@ -47,6 +47,7 @@
 
 <!ENTITY  expire.label                  "kunnes ne vanhenevat">
 <!ENTITY  close.label                   "kunnes &brandShortName; suljetaan">
+<!ENTITY  askEachTime.label             "kysy aina erikseen">
 
 <!ENTITY  cookieExceptions.label        "Poikkeukset…">
 <!ENTITY  cookieExceptions.accesskey    "P">

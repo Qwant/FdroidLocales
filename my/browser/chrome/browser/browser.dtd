@@ -40,9 +40,6 @@ can reach it easily. -->
 <!ENTITY  pinTab.accesskey                   "P">
 <!ENTITY  unpinTab.label                     "Unpin Tab">
 <!ENTITY  unpinTab.accesskey                 "b">
-<!ENTITY  moveToGroup.label                  "အုပ်စုစီသို့ရွေ့မည်။">
-<!ENTITY  moveToGroup.accesskey              "အ">
-<!ENTITY  moveToNewGroup.label               "အုပ်စုတစ်ခုပြုလုပ်မည်။">
 <!ENTITY  moveToNewWindow.label              "အသစ်ဖွင့်လှစ်ထားသောဝင်းဒိုးဆီသို့ရွေ့မည်။">
 <!ENTITY  moveToNewWindow.accesskey          "အ">
 <!ENTITY  bookmarkAllTabs.label              "(T) တပ်ဗ်အားလုံး စာအမှတ်ဖြစ်သုံးပါ...">
@@ -189,36 +186,39 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY printButton.label            "ပုံနှိုပ်ပါ">
 <!ENTITY printButton.tooltip          "ဒီစာမျက်နှာကို ပုံနှိုပ်ပါ">
 
+<!ENTITY urlbar.viewSiteInfo.label                      "အခု ဝက်ဆိုက် ၏ အချက်အလက်များ ကြည့်ရန်။">
 <!-- LOCALIZATION NOTE: all of the following urlbar NotificationAnchor.label strings are
      used to provide accessible labels to users of assistive technology like screenreaders.
      It is not possible to see them visually in the UI. -->
+<!ENTITY urlbar.defaultNotificationAnchor.label         "အသိပေးချက် များကြည့်ရန်">
+<!ENTITY urlbar.geolocationNotificationAnchor.label     "တည်နေရာတောင်းဆိုမှုကို ကြည့်ရန်">
+<!ENTITY urlbar.addonsNotificationAnchor.label          "အတ်အွန်တပ်ဆင်မှု သတင်းကို ကြည့်ရန်">
+<!ENTITY urlbar.indexedDBNotificationAnchor.label       "အက်ပ်၏ ကွန်ယက်မဲ့ သိမ်းဆည်းမှု သတင်းကို ကြည့်ရန်">
+<!ENTITY urlbar.loginFillNotificationAnchor.label       "သင့်ရဲ့ဝင်ရောက်ခြင်းဆိုင်ရာအချက်အလက်များကိုစီမံရန်">
+<!ENTITY urlbar.passwordNotificationAnchor.label        "သင့်ရဲ့စကားဝှက်သိမ်းခြင်းကိုစစ်ဆေးပါ">
+<!ENTITY urlbar.webappsNotificationAnchor.label         "အက်ပ် ထည့်သွင်းမှု သတင်းကို ကြည့်ရန်">
+<!ENTITY urlbar.pluginsNotificationAnchor.label         "ဒီစာမျက်နှာရဲ့ပလပ်အင်အသုံးပြုမှုကိုစီမံရန်">
+<!ENTITY urlbar.webNotsNotificationAnchor3.label        "ဒီစာမျက်နှာရဲ့အသိပေးခြင်းကို လက်ခံခြင်းအားစီမံကြည့်ရန်">
 
+<!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.label      "ဒီဆိုက်နှင့် မျှဝေအသုံးပြုနေသည့် သင်၏ ကင်မရာ (သို့) မိုက္ကရိုဖုန်းတို့ကို စီမံပါ။">
+<!ENTITY urlbar.webRTCSharingDevicesNotificationAnchor.label    "ယခုစာမျက်နှာသည် မိုက်ကရိုဖုန်း၊ ကင်မရာများကို သင်နှင့်အတူ မျှသုံးနေသည်။">
+<!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.label   "ဤစာမျက်နှာသည် မိုက်ကရိုဖုန်းကို သင်နှင့်အတူ မျှသုံးနေသည်">
+<!ENTITY urlbar.webRTCSharingMicrophoneNotificationAnchor.label "ဤစာမျက်နှာသည် မိုက်ကရိုဖုန်းကို သင်နှင့်အတူ မျှသုံးနေသည်">
+<!ENTITY urlbar.webRTCShareScreenNotificationAnchor.label       "ဒီဆိုက်သို့ သင့် ဝင်းဒိုးများ (သို့) မျက်နှာပြင် မျှဝေအသုံးပြုမှုကို စီမံရန်">
+<!ENTITY urlbar.webRTCSharingScreenNotificationAnchor.label     "သင်သည် ဝင်းဒိုးတစ်ခု (သို့) မျက်နှာပြင်ကို ဒီဆိုက်နှင့်အတူ မျှသုံးနေသည်">
 
+<!ENTITY urlbar.pointerLockNotificationAnchor.label     "ဒီဆိုက်သည် ပွိုင်တာကို ဖျောက်သည်ဖြစ်စေကာမူ ပြောင်းလဲမှုကို ဆောင်ရွက်ပါ">
+<!ENTITY urlbar.servicesNotificationAnchor.label        "ဆားဗစ်ထည့်သွင်းမှု သတင်းကို ကြည့်ရန်">
+<!ENTITY urlbar.translateNotificationAnchor.label       "ဒီစာမျက်နှာကို ဘာသာပြန်ပါ">
+<!ENTITY urlbar.translatedNotificationAnchor.label      "စာမျက်နှာ ဘာသာပြန်ဆိုမှုကို စီမံရန်">
+<!ENTITY urlbar.emeNotificationAnchor.label             "DRM ဆော့ဖ်ဝဲများ အသုံးပြုခြင်းကို စီမံရန်">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!ENTITY urlbar.openHistoryPopup.tooltip                "မှတ်တမ်းကို ပြပါ">
 
 <!ENTITY searchItem.title             "ရှာဖွေပါ">
 <!-- Toolbar items --> 
 
 <!ENTITY homeButton.label             "အိမ်">
-
-<!ENTITY tabGroupsButton.label        "Strolladoù ivinelloù">
 
 <!ENTITY bookmarksButton.label          "မှတ်သားချက်များ">
 <!ENTITY bookmarksCmd.commandkey "b">
@@ -382,8 +382,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY viewMenu.label         "Vရှူမြင်ချက်"> 
 <!ENTITY viewMenu.accesskey       "V"> 
-<!ENTITY viewTabGroups.label            "စာမျက်နှာအစုများ။">
-<!ENTITY viewTabGroups.accesskey        "စ">
 <!ENTITY viewToolbarsMenu.label       "(T)ခလုပ်ဘားများ"> 
 <!ENTITY viewToolbarsMenu.accesskey     "T"> 
 <!ENTITY viewSidebarMenu.label "eဘေးတန်း">
@@ -411,6 +409,18 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.restoreSession.label "သုံးခဲ့တဲ့အတိုင်းပြန်ဖွင့်မယ်">
 <!ENTITY appMenuHistory.viewSidebar.label "အသုံးပြုမှတ်တမ်း ဘေးဘားအားသုံးမည်">
 <!ENTITY appMenuHelp.tooltip "အကူအညီမီနူးအားဖွင့်">
+
+
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.notabs.label): This is shown beneath
+     the name of a device when that device has no open tabs -->
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
+     when Sync is configured but syncing tabs is disabled. -->
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+     when Sync is configured but this appears to be the only device attached to
+     the account. We also show links to download Firefox for android/ios. -->
+
+
+
 
 <!ENTITY customizeMenu.addToToolbar.label "Aတူးဘားသို့ပေါင်းထည့်">
 <!ENTITY customizeMenu.addToToolbar.accesskey "A">
@@ -504,8 +514,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY searchInNewTab.accesskey     "T">
 <!ENTITY searchSetAsDefault.label     "အဓိက ရှာဖွေရန် နေရာ အဖြစ် သတ်မှတ် ရန်။">
 <!ENTITY searchSetAsDefault.accesskey "D">
-
-<!ENTITY tabView.commandkey           "e">
 
 <!ENTITY openLinkCmdInTab.label       "အချိတ်အဆက်ကို Tစာအမှတ်သစ်မှာ ဖွင့်ပါ">
 <!ENTITY openLinkCmdInTab.accesskey   "T">
@@ -775,9 +783,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The word "toolbar" is appended automatically and should not be contained below! -->
 
 <!ENTITY tabsToolbar.label "မီးမြေခွေးရှိဝတ်စာမျက်နှာများ">
-<!-- LOCALIZATION NOTE (syncTabsMenu2.label): This appears in the history menu -->
-
-<!ENTITY syncTabsMenu2.label     "အခြားပစ္စည်းများမှ Tab များ ">
+<!-- LOCALIZATION NOTE (syncTabsMenu3.label): This appears in the history menu and history panel -->
 
 <!ENTITY syncBrand.shortName.label    "ထပ်တူပြုပြိုင်တူအသုံးပြုခြင်း">
 
@@ -918,15 +924,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY panicButton.thankyou.msg1                "သင့် လတ်တလောမှတ်တမ်းကို ရှင်းလင်းထားသည်။">
 <!ENTITY panicButton.thankyou.msg2                "လုံခြုံစိတ်ချရသော ရှာဖွေကြည့်ရှုခြင်း။">
 <!ENTITY panicButton.thankyou.buttonlabel         "ကျေးဇူးတင်ပါသည်။">
-
-<!ENTITY processHang.terminateScript.label        "Script ကို Sရပ်ဆိုင်းပါ">
-<!ENTITY processHang.terminateScript.accessKey    "S">
-<!ENTITY processHang.debugScript.label            "Script Dပြဿနာကို ရှင်းပါ">
-<!ENTITY processHang.debugScript.accessKey        "D">
-<!ENTITY processHang.terminatePlugin.label        "Pပလဂ်အင် ဆောင်ရွက်နေမှုကို ရပ်ဆိုင်းပါ">
-<!ENTITY processHang.terminatePlugin.accessKey    "P">
-<!ENTITY processHang.terminateProcess.label       "ဝဘ်လုပ်ငန်းစဉ်ကို Kရပ်ဆိုင်းပါ">
-<!ENTITY processHang.terminateProcess.accessKey   "K">
 
 <!ENTITY emeLearnMoreContextMenu.label            "DRM အကြောင်း ပိုမိုလေ့လာပါ…">
 <!ENTITY emeLearnMoreContextMenu.accesskey        "D">

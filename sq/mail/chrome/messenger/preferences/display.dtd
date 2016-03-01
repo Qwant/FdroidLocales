@@ -21,6 +21,8 @@
 <!ENTITY quotedTextColor.accesskey        "n">
 <!ENTITY displayWidth.label               "Mesazhe Tekst i Thjeshtë">
 <!ENTITY displayText.label	          "Kur shfaqen mesazhe teksti të thjeshtë të cituar:">
+<!ENTITY quotedTextColor.label            "Ngjyrë:">
+<!ENTITY quotedTextColor.accesskey        "n">
 
 <!-- LOCALIZATION NOTE : (emoticonsAndStructs.label) 'Emoticons' are also known as 'Smileys', e.g. :-)   -->
 <!ENTITY convertEmoticons.label        "Emotikonet shfaqi si grafikë">

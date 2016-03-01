@@ -311,3 +311,7 @@
 <!ENTITY pasteAsQuotationCmd.key "o">
 <!ENTITY removeAttachment.accesskey "H">
 <!ENTITY removeAttachment.label "Hiqe Bashkëngjitjen">
+
+<!-- Identity popup customize menuitem -->
+<!ENTITY customizeFromAddress.label "Përshtatni Adresën Nga…">
+<!ENTITY customizeFromAddress.accesskey "A">

@@ -4,6 +4,8 @@
 
 <!ENTITY dialog.title                 "Ferstjoeropsjes">
 <!ENTITY sendMail.title               "Tekstopmaak">
+<!ENTITY autoDowngrade.label          "Ferstjoer berjochten wannear mooglik as platte tekst">
+<!ENTITY autoDowngrade.accesskey      "b">
 <!ENTITY sendMaildesc.label           "As in berjocht yn HTML-opmaak ferstjoerd wurdt en fan ien of mear ûntfangers is net bekend oft se HTML ûntfange kinne:">
 <!ENTITY askMe.label                  "My freegje wat te dwaan">
 <!ENTITY askMe.accesskey              "f">
@@ -11,7 +13,7 @@
 <!ENTITY convertPlain.accesskey       "k">
 <!ENTITY sendHTML.label               "Berjocht dochs as HTML ferstjoere">
 <!ENTITY sendHTML.accesskey           "H">
-<!ENTITY sendBoth.label               "Berjocht as platte tekst en HTML ferstjoere">
+<!ENTITY sendBoth.label               "It berjocht as platte tekst en HTML ferstjoere">
 <!ENTITY sendBoth.accesskey           "e">
 <!ENTITY override.label               "Noat: brûk it adresboek om winske tekstopmaak foar ûntfangers te spesifisearjen.">
 
