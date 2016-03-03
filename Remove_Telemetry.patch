@@ -1,0 +1,2481 @@
+diff -r 63bad80aea6e mobile/android/base/AndroidManifest.xml.in
+--- a/mobile/android/base/AndroidManifest.xml.in	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/AndroidManifest.xml.in	Tue Mar 01 13:14:42 2016 -0300
+@@ -499,10 +499,6 @@
+             android:name="org.mozilla.gecko.dlc.DownloadContentService">
+         </service>
+ 
+-        <service
+-          android:name="org.mozilla.gecko.telemetry.TelemetryUploadService"
+-          android:exported="false"/>
+-
+ #include ../services/manifests/FxAccountAndroidManifest_services.xml.in
+ #include ../services/manifests/SyncAndroidManifest_services.xml.in
+ 
+diff -r 63bad80aea6e mobile/android/base/android-services.mozbuild
+--- a/mobile/android/base/android-services.mozbuild	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/android-services.mozbuild	Tue Mar 01 13:14:42 2016 -0300
+@@ -779,7 +779,6 @@
+     'background/common/log/writers/TagLogWriter.java',
+     'background/common/log/writers/ThreadLocalTagLogWriter.java',
+     'background/common/PrefsBranch.java',
+-    'background/common/telemetry/TelemetryWrapper.java',
+     'background/db/CursorDumper.java',
+     'background/db/Tab.java',
+     'background/fxa/FxAccount10AuthDelegate.java',
+@@ -1114,7 +1112,6 @@
+     'sync/synchronizer/UnbundleError.java',
+     'sync/synchronizer/UnexpectedSessionException.java',
+     'sync/SynchronizerConfiguration.java',
+-    'sync/telemetry/TelemetryContract.java',
+     'sync/ThreadPool.java',
+     'sync/UnexpectedJSONException.java',
+     'sync/UnknownSynchronizerConfigurationVersionException.java',
+diff -r 63bad80aea6e mobile/android/base/moz.build
+--- a/mobile/android/base/moz.build	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/moz.build	Tue Mar 01 13:14:42 2016 -0300
+@@ -531,12 +531,6 @@
+     'tabs/TabsListLayout.java',
+     'tabs/TabsPanel.java',
+     'tabs/TabsPanelThumbnailView.java',
+-    'Telemetry.java',
+-    'telemetry/TelemetryConstants.java',
+-    'telemetry/TelemetryPing.java',
+-    'telemetry/TelemetryPingGenerator.java',
+-    'telemetry/TelemetryUploadService.java',
+-    'TelemetryContract.java',
+     'TextSelection.java',
+     'TextSelectionHandle.java',
+     'ThumbnailHelper.java',
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/BrowserApp.java
+--- a/mobile/android/base/java/org/mozilla/gecko/BrowserApp.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/BrowserApp.java	Tue Mar 01 13:14:42 2016 -0300
+@@ -56,8 +56,6 @@
+ import org.mozilla.gecko.tabs.TabHistoryFragment;
+ import org.mozilla.gecko.tabs.TabHistoryPage;
+ import org.mozilla.gecko.tabs.TabsPanel;
+-import org.mozilla.gecko.telemetry.TelemetryConstants;
+-import org.mozilla.gecko.telemetry.TelemetryUploadService;
+ import org.mozilla.gecko.toolbar.AutocompleteHandler;
+ import org.mozilla.gecko.toolbar.BrowserToolbar;
+ import org.mozilla.gecko.toolbar.BrowserToolbar.TabEditingState;
+@@ -155,7 +153,6 @@
+ import java.util.HashSet;
+ import java.util.List;
+ import java.util.Locale;
+-import java.util.UUID;
+ import java.util.Vector;
+ 
+ public class BrowserApp extends GeckoApp
+@@ -406,7 +403,6 @@
+         final SnackbarHelper.SnackbarCallback callback = new SnackbarHelper.SnackbarCallback() {
+             @Override
+             public void onClick(View v) {
+-                Telemetry.sendUIEvent(TelemetryContract.Event.SHOW, TelemetryContract.Method.TOAST, "bookmark_options");
+                 showBookmarkDialog();
+             }
+         };
+@@ -426,8 +422,6 @@
+         final SnackbarHelper.SnackbarCallback callback = new SnackbarHelper.SnackbarCallback() {
+             @Override
+             public void onClick(View v) {
+-                Telemetry.sendUIEvent(TelemetryContract.Event.SHOW, TelemetryContract.Method.TOAST, "reading_list");
+-
+                 final String aboutPageUrl = AboutPages.getURLForBuiltinPanelType(PanelType.READING_LIST);
+                 Tabs.getInstance().loadUrlInTab(aboutPageUrl);
+             }
+@@ -627,8 +621,6 @@
+             showTabQueuePromptIfApplicable(intent);
+         } else if (GuestSession.NOTIFICATION_INTENT.equals(action)) {
+             GuestSession.handleIntent(this, intent);
+-        } else if (TabQueueHelper.LOAD_URLS_ACTION.equals(action)) {
+-            Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.NOTIFICATION, "tabqueue");
+         }
+ 
+         if (HardwareUtils.isTablet()) {
+@@ -690,7 +682,6 @@
+             "Sanitize:ClearHistory",
+             "Sanitize:ClearSyncedTabs",
+             "Settings:Show",
+-            "Telemetry:Gather",
+             "Updater:Launch");
+ 
+         Distribution distribution = Distribution.init(this);
+@@ -747,8 +738,7 @@
+         mScreenshotObserver.setListener(getContext(), new ScreenshotObserver.OnScreenshotListener() {
+             @Override
+             public void onScreenshotTaken(String data, String title) {
+-                // Treat screenshots as a sharing method.
+-                Telemetry.sendUIEvent(TelemetryContract.Event.SHARE, TelemetryContract.Method.BUTTON, "screenshot");
++                return;
+             }
+         });
+ 
+@@ -855,7 +845,6 @@
+         }
+ 
+         if (hideFirstrunPager()) {
+-            Telemetry.sendUIEvent(TelemetryContract.Event.CANCEL, TelemetryContract.Method.BACK, "firstrun-pane");
+             return;
+         }
+ 
+@@ -893,9 +882,6 @@
+ 
+         int queuedTabCount = TabQueueHelper.getTabQueueLength(BrowserApp.this);
+ 
+-        Telemetry.addToHistogram("FENNEC_TABQUEUE_QUEUESIZE", queuedTabCount);
+-        Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.INTENT, "tabqueue-delayed");
+-
+         TabQueueHelper.openQueuedUrls(BrowserApp.this, mProfile, TabQueueHelper.FILE_NAME, false);
+ 
+         // If there's more than one tab then also show the tabs panel.
+@@ -967,15 +953,6 @@
+                     // have been shown.
+                     GuestSession.hideNotification(BrowserApp.this);
+                 }
+-
+-                // We don't upload in onCreate because that's only called when the Activity needs to be instantiated
+-                // and it's possible the system will never free the Activity from memory.
+-                //
+-                // We don't upload in onResume/onPause because that will be called each time the Activity is obscured,
+-                // including by our own Activities/dialogs, and there is no reason to upload each time we're unobscured.
+-                //
+-                // So we're left with onStart/onStop.
+-                uploadTelemetry(profile);
+             }
+         });
+     }
+@@ -1114,16 +1091,8 @@
+                 }
+ 
+                 if (itemId == 0) {
+-                    final String extrasId = res.getResourceEntryName(R.string.contextmenu_edit_bookmark);
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.ACTION,
+-                        TelemetryContract.Method.DIALOG, extrasId);
+-
+                     new EditBookmarkDialog(BrowserApp.this).show(tab.getURL());
+                 } else if (itemId == 1) {
+-                    final String extrasId = res.getResourceEntryName(R.string.contextmenu_add_to_launcher);
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.ACTION,
+-                        TelemetryContract.Method.DIALOG, extrasId);
+-
+                     String url = tab.getURL();
+                     String title = tab.getDisplayTitle();
+                     Bitmap favicon = tab.getFavicon();
+@@ -1185,8 +1154,6 @@
+             String text = Clipboard.getText();
+             if (!TextUtils.isEmpty(text)) {
+                 loadUrlOrKeywordSearch(text);
+-                Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.CONTEXT_MENU);
+-                Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.CONTEXT_MENU, "pasteandgo");
+             }
+             return true;
+         }
+@@ -1195,7 +1162,6 @@
+             // This can be selected from either the browser menu or the contextmenu, depending on the size and version (v11+) of the phone.
+             GeckoAppShell.sendEventToGecko(GeckoEvent.createBroadcastEvent("Permissions:Get", null));
+             if (Versions.preHC) {
+-                Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.CONTEXT_MENU, "site_settings");
+             }
+             return true;
+         }
+@@ -1206,7 +1172,6 @@
+                 enterEditingMode(text);
+                 showBrowserSearch();
+                 mBrowserSearch.filter(text, null);
+-                Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.CONTEXT_MENU, "paste");
+             }
+             return true;
+         }
+@@ -1222,9 +1187,6 @@
+                     Log.e(LOGTAG, "error building json arguments", e);
+                 }
+                 GeckoAppShell.sendEventToGecko(GeckoEvent.createBroadcastEvent("Feeds:Subscribe", args.toString()));
+-                if (Versions.preHC) {
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.CONTEXT_MENU, "subscribe");
+-                }
+             }
+             return true;
+         }
+@@ -1241,10 +1203,6 @@
+                     return true;
+                 }
+                 GeckoAppShell.sendEventToGecko(GeckoEvent.createBroadcastEvent("SearchEngines:Add", args.toString()));
+-
+-                if (Versions.preHC) {
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.CONTEXT_MENU, "add_search_engine");
+-                }
+             }
+             return true;
+         }
+@@ -1255,7 +1213,6 @@
+                 String url = ReaderModeUtils.stripAboutReaderUrl(tab.getURL());
+                 if (url != null) {
+                     Clipboard.setText(url);
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.CONTEXT_MENU, "copyurl");
+                 }
+             }
+             return true;
+@@ -1280,9 +1237,6 @@
+                                      Integer.MAX_VALUE,
+                                      LoadFaviconTask.FLAG_PERSIST,
+                                      listener);
+-
+-            Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.CONTEXT_MENU,
+-                getResources().getResourceEntryName(itemId));
+             return true;
+         }
+ 
+@@ -1361,7 +1315,6 @@
+             "Sanitize:ClearHistory",
+             "Sanitize:ClearSyncedTabs",
+             "Settings:Show",
+-            "Telemetry:Gather",
+             "Updater:Launch");
+ 
+         if (AppConstants.MOZ_ANDROID_BEAM) {
+@@ -1698,24 +1651,6 @@
+                 overridePendingTransition(0, 0);
+             }
+ 
+-        } else if ("Telemetry:Gather".equals(event)) {
+-            final BrowserDB db = getProfile().getDB();
+-            final ContentResolver cr = getContentResolver();
+-            Telemetry.addToHistogram("PLACES_PAGES_COUNT", db.getCount(cr, "history"));
+-            Telemetry.addToHistogram("FENNEC_BOOKMARKS_COUNT", db.getCount(cr, "bookmarks"));
+-            Telemetry.addToHistogram("FENNEC_FAVICONS_COUNT", db.getCount(cr, "favicons"));
+-            Telemetry.addToHistogram("FENNEC_THUMBNAILS_COUNT", db.getCount(cr, "thumbnails"));
+-            Telemetry.addToHistogram("FENNEC_READING_LIST_COUNT", db.getReadingListAccessor().getCount(cr));
+-            Telemetry.addToHistogram("BROWSER_IS_USER_DEFAULT", (isDefaultBrowser(Intent.ACTION_VIEW) ? 1 : 0));
+-            Telemetry.addToHistogram("FENNEC_TABQUEUE_ENABLED", (TabQueueHelper.isTabQueueEnabled(BrowserApp.this) ? 1 : 0));
+-            if (Versions.feature16Plus) {
+-                Telemetry.addToHistogram("BROWSER_IS_ASSIST_DEFAULT", (isDefaultBrowser(Intent.ACTION_ASSIST) ? 1 : 0));
+-            }
+-
+-            final SharedPreferences sharedPrefs = GeckoSharedPrefs.forApp(BrowserApp.this);
+-            if (sharedPrefs.getBoolean(GeckoPreferences.PREFS_OPEN_URLS_IN_PRIVATE, false)) {
+-                Telemetry.addToHistogram("FENNEC_OPEN_URLS_IN_PRIVATE", 1);
+-            }
+         } else if ("Updater:Launch".equals(event)) {
+             handleUpdaterLaunch();
+         } else {
+@@ -2188,10 +2123,6 @@
+      * the app starts. In this case, we simply fallback to an empty URL.
+      */
+     private void enterEditingMode() {
+-        if (hideFirstrunPager()) {
+-            Telemetry.sendUIEvent(TelemetryContract.Event.CANCEL, TelemetryContract.Method.ACTIONBAR, "firstrun-pane");
+-        }
+-
+         String url = "";
+ 
+         final Tab tab = Tabs.getInstance().getSelectedTab();
+@@ -2239,7 +2170,6 @@
+         showHomePagerWithAnimator(panelId, animator);
+ 
+         animator.start();
+-        Telemetry.startUISession(TelemetryContract.Session.AWESOMESCREEN);
+     }
+ 
+     private void commitEditingMode() {
+@@ -2247,9 +2177,6 @@
+             return;
+         }
+ 
+-        Telemetry.stopUISession(TelemetryContract.Session.AWESOMESCREEN,
+-                                TelemetryContract.Reason.COMMIT);
+-
+         final String url = mBrowserToolbar.commitEdit();
+ 
+         // HACK: We don't know the url that will be loaded when hideHomePager is initially called
+@@ -2284,7 +2211,6 @@
+         // If the URL doesn't look like a search query, just load it.
+         if (!StringUtils.isSearchQuery(url, true)) {
+             Tabs.getInstance().loadUrl(url, Tabs.LOADURL_USER_ENTERED);
+-            Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.ACTIONBAR, "user");
+             return;
+         }
+ 
+@@ -2311,7 +2237,6 @@
+                 // using the default search engine.
+                 if (TextUtils.isEmpty(keywordUrl)) {
+                     Tabs.getInstance().loadUrl(url, Tabs.LOADURL_USER_ENTERED);
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.ACTIONBAR, "user");
+                     return;
+                 }
+ 
+@@ -2324,9 +2249,6 @@
+                 final String searchUrl = keywordUrl.replace("%s", URLEncoder.encode(keywordSearch)).replace("%S", keywordSearch);
+ 
+                 Tabs.getInstance().loadUrl(searchUrl, Tabs.LOADURL_USER_ENTERED);
+-                Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL,
+-                                      TelemetryContract.Method.ACTIONBAR,
+-                                      "keyword");
+             }
+         });
+     }
+@@ -3279,15 +3201,12 @@
+             // Mask private browsing
+             extras = "new_tab";
+         }
+-        Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.MENU, extras);
+-
+         mBrowserToolbar.cancelEdit();
+ 
+         if (itemId == R.id.bookmark) {
+             tab = Tabs.getInstance().getSelectedTab();
+             if (tab != null) {
+                 if (item.isChecked()) {
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.UNSAVE, TelemetryContract.Method.MENU, "bookmark");
+                     tab.removeBookmark();
+                     item.setTitle(resolveBookmarkTitleID(false));
+                     if (Versions.feature11Plus) {
+@@ -3295,7 +3214,6 @@
+                         item.setIcon(resolveBookmarkIconID(false));
+                     }
+                 } else {
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.SAVE, TelemetryContract.Method.MENU, "bookmark");
+                     tab.addBookmark();
+                     item.setTitle(resolveBookmarkTitleID(true));
+                     if (Versions.feature11Plus) {
+@@ -3311,7 +3229,6 @@
+             tab = Tabs.getInstance().getSelectedTab();
+             if (tab != null) {
+                 if (item.isChecked()) {
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.UNSAVE, TelemetryContract.Method.MENU, "reading_list");
+                     tab.removeFromReadingList();
+                     item.setTitle(resolveReadingListTitleID(false));
+                     if (Versions.feature11Plus) {
+@@ -3319,7 +3236,6 @@
+                         item.setIcon(resolveReadingListIconID(false));
+                     }
+                 } else {
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.SAVE, TelemetryContract.Method.MENU, "reading_list");
+                     tab.addToReadingList();
+                     item.setTitle(resolveReadingListTitleID(true));
+                     if (Versions.feature11Plus) {
+@@ -3340,9 +3256,6 @@
+                         url = ReaderModeUtils.getUrlFromAboutReader(url);
+                     }
+ 
+-                    // Context: Sharing via chrome list (no explicit session is active)
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.SHARE, TelemetryContract.Method.LIST, "menu");
+-
+                     GeckoAppShell.openUriExternal(url, "text/plain", "", "", Intent.ACTION_SEND, tab.getDisplayTitle(), false);
+                 }
+             }
+@@ -3373,25 +3286,21 @@
+         if (itemId == R.id.bookmarks_list) {
+             final String url = AboutPages.getURLForBuiltinPanelType(PanelType.BOOKMARKS);
+             Tabs.getInstance().loadUrl(url);
+-            Telemetry.startUISession(TelemetryContract.Session.EXPERIMENT, Experiments.BOOKMARKS_HISTORY_MENU);
+             return true;
+         }
+ 
+         if (itemId == R.id.history_list) {
+             final String url = AboutPages.getURLForBuiltinPanelType(PanelType.HISTORY);
+             Tabs.getInstance().loadUrl(url);
+-            Telemetry.startUISession(TelemetryContract.Session.EXPERIMENT, Experiments.BOOKMARKS_HISTORY_MENU);
+             return true;
+         }
+ 
+         if (itemId == R.id.save_as_pdf) {
+-            Telemetry.sendUIEvent(TelemetryContract.Event.SAVE, TelemetryContract.Method.MENU, "pdf");
+             GeckoAppShell.sendEventToGecko(GeckoEvent.createBroadcastEvent("SaveAs:PDF", null));
+             return true;
+         }
+ 
+         if (itemId == R.id.print) {
+-            Telemetry.sendUIEvent(TelemetryContract.Event.SAVE, TelemetryContract.Method.MENU, "print");
+             PrintHelper.printPDF(this);
+             return true;
+         }
+@@ -3491,8 +3400,6 @@
+             Tab tab = Tabs.getInstance().getSelectedTab();
+             if (tab != null) {
+                 tab.doReload(true);
+-
+-                Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.MENU, "reload_force");
+             }
+             return true;
+         }
+@@ -3582,12 +3489,6 @@
+ 
+             // Hide firstrun-pane if the user is loading a URL from an external app.
+             hideFirstrunPager();
+-
+-            if (isBookmarkAction) {
+-                // GeckoApp.ACTION_HOMESCREEN_SHORTCUT means we're opening a bookmark that
+-                // was added to Android's homescreen.
+-                Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.HOMESCREEN);
+-            }
+         }
+ 
+         showTabQueuePromptIfApplicable(intent);
+@@ -3606,7 +3507,6 @@
+ 
+         // If the user has clicked the tab queue notification then load the tabs.
+         if (TabQueueHelper.TAB_QUEUE_ENABLED && mInitialized && isTabQueueAction) {
+-            Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.NOTIFICATION, "tabqueue");
+             ThreadUtils.postToBackgroundThread(new Runnable() {
+                 @Override
+                 public void run() {
+@@ -3738,8 +3638,6 @@
+         final SnackbarHelper.SnackbarCallback callback = new SnackbarHelper.SnackbarCallback() {
+             @Override
+             public void onClick(View v) {
+-                Telemetry.sendUIEvent(TelemetryContract.Event.SHOW, TelemetryContract.Method.TOAST, "switchtab");
+-
+                 maybeSwitchToTab(newTabId);
+             }
+         };
+@@ -3859,26 +3757,6 @@
+         mDynamicToolbar.setTemporarilyVisible(false, VisibilityTransition.IMMEDIATE);
+     }
+ 
+-    private void uploadTelemetry(final GeckoProfile profile) {
+-        if (!TelemetryUploadService.isUploadEnabledByProfileConfig(this, profile)) {
+-            return;
+-        }
+-
+-        final SharedPreferences sharedPrefs = GeckoSharedPrefs.forProfileName(this, profile.getName());
+-        final int seq = sharedPrefs.getInt(TelemetryConstants.PREF_SEQ_COUNT, 1);
+-
+-        final Intent i = new Intent(TelemetryConstants.ACTION_UPLOAD_CORE);
+-        i.setClass(this, TelemetryUploadService.class);
+-        i.putExtra(TelemetryConstants.EXTRA_DOC_ID, UUID.randomUUID().toString());
+-        i.putExtra(TelemetryConstants.EXTRA_PROFILE_NAME, profile.getName());
+-        i.putExtra(TelemetryConstants.EXTRA_PROFILE_PATH, profile.getDir().toString());
+-        i.putExtra(TelemetryConstants.EXTRA_SEQ, seq);
+-        startService(i);
+-
+-        // Intent redelivery will ensure this value gets used - see TelemetryUploadService class comments for details.
+-        sharedPrefs.edit().putInt(TelemetryConstants.PREF_SEQ_COUNT, seq + 1).apply();
+-    }
+-
+     public static interface Refreshable {
+         public void refresh();
+     }
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
+--- a/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Tue Mar 01 13:14:42 2016 -0300
+@@ -201,8 +201,6 @@
+     protected boolean mShouldRestore;
+     protected boolean mInitialized;
+     protected boolean mWindowFocusInitialized;
+-    private Telemetry.Timer mJavaUiStartupTimer;
+-    private Telemetry.Timer mGeckoReadyStartupTimer;
+ 
+     private String mPrivateBrowsingSession;
+ 
+@@ -636,9 +634,6 @@
+             }
+             GeckoAppShell.openUriExternal(text, "text/plain", "", "", Intent.ACTION_SEND, title, false);
+ 
+-            // Context: Sharing via chrome list (no explicit session is active)
+-            Telemetry.sendUIEvent(TelemetryContract.Event.SHARE, TelemetryContract.Method.LIST, "text");
+-
+         } else if ("Snackbar:Show".equals(event)) {
+             SnackbarHelper.showSnackbar(this, message, callback);
+         } else if ("SystemUI:Visibility".equals(event)) {
+@@ -668,7 +663,6 @@
+             if (event.equals("Gecko:DelayedStartup")) {
+                 ThreadUtils.postToBackgroundThread(new UninstallListener.DelayedStartupTask(this));
+             } else if (event.equals("Gecko:Ready")) {
+-                mGeckoReadyStartupTimer.stop();
+                 geckoConnected();
+ 
+             } else if (event.equals("Gecko:Exited")) {
+@@ -1136,10 +1130,6 @@
+             return;
+         }
+ 
+-        // The clock starts...now. Better hurry!
+-        mJavaUiStartupTimer = new Telemetry.UptimeTimer("FENNEC_STARTUP_TIME_JAVAUI");
+-        mGeckoReadyStartupTimer = new Telemetry.UptimeTimer("FENNEC_STARTUP_TIME_GECKOREADY");
+-
+         final SafeIntent intent = new SafeIntent(getIntent());
+         final String action = intent.getAction();
+         final String args = intent.getStringExtra("args");
+@@ -1213,7 +1203,6 @@
+             // This happens when the GeckoApp activity is destroyed by Android
+             // without killing the entire application (see Bug 769269).
+             mIsRestoringActivity = true;
+-            Telemetry.addToHistogram("FENNEC_RESTORING_ACTIVITY", 1);
+ 
+         } else {
+             final String uri = getURIFromIntent(intent);
+@@ -1307,12 +1296,6 @@
+             boolean wasInBackground =
+                 savedInstanceState.getBoolean(SAVED_STATE_IN_BACKGROUND, false);
+ 
+-            // Don't log OOM-kills if only one activity was destroyed. (For example
+-            // from "Don't keep activities" on ICS)
+-            if (!wasInBackground && !mIsRestoringActivity) {
+-                Telemetry.addToHistogram("FENNEC_WAS_KILLED", 1);
+-            }
+-
+             mPrivateBrowsingSession = savedInstanceState.getString(SAVED_STATE_PRIVATE_SESSION);
+         }
+ 
+@@ -1546,9 +1524,6 @@
+             getProfile().moveSessionFile();
+         }
+ 
+-        final StartupAction startupAction = getStartupAction(passedUri);
+-        Telemetry.addToHistogram("FENNEC_GECKOAPP_STARTUP_ACTION", startupAction.ordinal());
+-
+         // Check if launched from data reporting notification.
+         if (ACTION_LAUNCH_SETTINGS.equals(action)) {
+             Intent settingsIntent = new Intent(GeckoApp.this, GeckoPreferences.class);
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/home/HomePager.java
+--- a/mobile/android/base/java/org/mozilla/gecko/home/HomePager.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/home/HomePager.java	Tue Mar 01 13:14:42 2016 -0300
+@@ -11,8 +11,6 @@
+ 
+ import org.mozilla.gecko.AppConstants.Versions;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.animation.PropertyAnimator;
+ import org.mozilla.gecko.animation.ViewHelper;
+ import org.mozilla.gecko.home.HomeAdapter.OnAddPanelListener;
+@@ -53,10 +51,6 @@
+     // Cached original ViewPager background.
+     private final Drawable mOriginalBackground;
+ 
+-    // Telemetry session for current panel.
+-    private TelemetryContract.Session mCurrentPanelSession;
+-    private String mCurrentPanelSessionSuffix;
+-
+     // Current load state of HomePager.
+     private LoadState mLoadState;
+ 
+@@ -252,9 +246,6 @@
+         mVisible = false;
+         setAdapter(null);
+         mLoadState = LoadState.UNLOADED;
+-
+-        // Stop UI Telemetry sessions.
+-        stopCurrentPanelTelemetrySession();
+     }
+ 
+     /**
+@@ -484,10 +475,6 @@
+             if (mHomeBanner != null) {
+                 mHomeBanner.setActive(position == mDefaultPageIndex);
+             }
+-
+-            // Start a UI telemetry session for the newly selected panel.
+-            final String newPanelId = ((HomeAdapter) getAdapter()).getPanelIdAtPosition(position);
+-            startNewPanelTelemetrySession(newPanelId);
+         }
+ 
+         @Override
+@@ -513,23 +500,13 @@
+      * @param panelId of panel to start a session for
+      */
+     private void startNewPanelTelemetrySession(String panelId) {
+-        // Stop the current panel's session if we have one.
+-        stopCurrentPanelTelemetrySession();
+-
+-        mCurrentPanelSession = TelemetryContract.Session.HOME_PANEL;
+-        mCurrentPanelSessionSuffix = panelId;
+-        Telemetry.startUISession(mCurrentPanelSession, mCurrentPanelSessionSuffix);
++        return;
+     }
+ 
+     /**
+      * Stop the current panel telemetry session if one exists.
+      */
+     private void stopCurrentPanelTelemetrySession() {
+-        if (mCurrentPanelSession != null) {
+-            Telemetry.stopUISession(mCurrentPanelSession, mCurrentPanelSessionSuffix);
+-            mCurrentPanelSession = null;
+-            mCurrentPanelSessionSuffix = null;
+-            Telemetry.stopUISession(TelemetryContract.Session.EXPERIMENT, Experiments.BOOKMARKS_HISTORY_MENU);
+-        }
++        return;
+     }
+ }
+diff -r 63bad80aea6e mobile/android/services/src/main/java/org/mozilla/gecko/fxa/sync/FxAccountNotificationManager.java
+--- a/mobile/android/services/src/main/java/org/mozilla/gecko/fxa/sync/FxAccountNotificationManager.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/services/src/main/java/org/mozilla/gecko/fxa/sync/FxAccountNotificationManager.java	Tue Mar 01 17:02:13 2016 -0300
+@@ -13,14 +13,12 @@
+ import org.mozilla.gecko.Locales;
+ import org.mozilla.gecko.R;
+ import org.mozilla.gecko.background.common.log.Logger;
+-import org.mozilla.gecko.background.common.telemetry.TelemetryWrapper;
+ import org.mozilla.gecko.background.fxa.FxAccountUtils;
+ import org.mozilla.gecko.fxa.FxAccountConstants;
+ import org.mozilla.gecko.fxa.activities.FxAccountWebFlowActivity;
+ import org.mozilla.gecko.fxa.authenticator.AndroidFxAccount;
+ import org.mozilla.gecko.fxa.login.State;
+ import org.mozilla.gecko.fxa.login.State.Action;
+-import org.mozilla.gecko.sync.telemetry.TelemetryContract;
+ 
+ /**
+  * Abstraction that manages notifications shown or hidden for a Firefox Account.
+@@ -84,8 +82,6 @@
+     final String text;
+     final Intent notificationIntent;
+     if (action == Action.NeedsFinishMigrating) {
+-      TelemetryWrapper.addToHistogram(TelemetryContract.SYNC11_MIGRATION_NOTIFICATIONS_OFFERED, 1);
+-
+       title = context.getResources().getString(R.string.fxaccount_sync_finish_migrating_notification_title);
+       text = context.getResources().getString(R.string.fxaccount_sync_finish_migrating_notification_text, state.email);
+       notificationIntent = new Intent(FxAccountConstants.ACTION_FXA_FINISH_MIGRATING);
+diff -r 63bad80aea6e mobile/android/services/src/main/java/org/mozilla/gecko/fxa/sync/FxAccountSyncAdapter.java
+--- a/mobile/android/services/src/main/java/org/mozilla/gecko/fxa/sync/FxAccountSyncAdapter.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/services/src/main/java/org/mozilla/gecko/fxa/sync/FxAccountSyncAdapter.java	Tue Mar 01 17:02:13 2016 -0300
+@@ -16,7 +16,6 @@
+ 
+ import org.mozilla.gecko.AppConstants;
+ import org.mozilla.gecko.background.common.log.Logger;
+-import org.mozilla.gecko.background.common.telemetry.TelemetryWrapper;
+ import org.mozilla.gecko.background.fxa.FxAccountUtils;
+ import org.mozilla.gecko.background.fxa.SkewHandler;
+ import org.mozilla.gecko.browserid.JSONWebTokenUtils;
+@@ -44,7 +43,6 @@
+ import org.mozilla.gecko.sync.net.AuthHeaderProvider;
+ import org.mozilla.gecko.sync.net.HawkAuthHeaderProvider;
+ import org.mozilla.gecko.sync.stage.GlobalSyncStage.Stage;
+-import org.mozilla.gecko.sync.telemetry.TelemetryContract;
+ import org.mozilla.gecko.tokenserver.TokenServerClient;
+ import org.mozilla.gecko.tokenserver.TokenServerClientDelegate;
+ import org.mozilla.gecko.tokenserver.TokenServerException;
+@@ -90,14 +88,12 @@
+     public void handleSuccess() {
+       Logger.info(LOG_TAG, "Sync succeeded.");
+       super.handleSuccess();
+-      TelemetryWrapper.addToHistogram(TelemetryContract.SYNC_COMPLETED, 1);
+     }
+ 
+     @Override
+     public void handleError(Exception e) {
+       Logger.error(LOG_TAG, "Got exception syncing.", e);
+       super.handleError(e);
+-      TelemetryWrapper.addToHistogram(TelemetryContract.SYNC_FAILED, 1);
+     }
+ 
+     @Override
+@@ -407,7 +403,6 @@
+         (this.lastSyncRealtimeMillis + MINIMUM_SYNC_DELAY_MILLIS) > SystemClock.elapsedRealtime()) {
+       Logger.info(LOG_TAG, "Not syncing FxAccount " + Utils.obfuscateEmail(account.name) +
+                            ": minimum interval not met.");
+-      TelemetryWrapper.addToHistogram(TelemetryContract.SYNC_FAILED_BACKOFF, 1);
+       return;
+     }
+ 
+@@ -486,8 +481,6 @@
+         return;
+       }
+ 
+-      TelemetryWrapper.addToHistogram(TelemetryContract.SYNC_STARTED, 1);
+-
+       final FxAccountLoginStateMachine stateMachine = new FxAccountLoginStateMachine();
+       stateMachine.advance(state, StateLabel.Married, new FxADefaultLoginStateMachineDelegate(context, fxAccount) {
+         @Override
+diff -r 63bad80aea6e mobile/android/services/src/main/java/org/mozilla/gecko/sync/MigrationSentinelSyncStage.java
+--- a/mobile/android/services/src/main/java/org/mozilla/gecko/sync/MigrationSentinelSyncStage.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/services/src/main/java/org/mozilla/gecko/sync/MigrationSentinelSyncStage.java	Tue Mar 01 17:02:13 2016 -0300
+@@ -7,7 +7,6 @@
+ import java.net.URISyntaxException;
+ 
+ import org.mozilla.gecko.background.common.log.Logger;
+-import org.mozilla.gecko.background.common.telemetry.TelemetryWrapper;
+ import org.mozilla.gecko.background.fxa.FxAccountUtils;
+ import org.mozilla.gecko.fxa.FxAccountConstants;
+ import org.mozilla.gecko.fxa.authenticator.AndroidFxAccount;
+@@ -19,7 +18,6 @@
+ import org.mozilla.gecko.sync.net.SyncStorageResponse;
+ import org.mozilla.gecko.sync.stage.AbstractNonRepositorySyncStage;
+ import org.mozilla.gecko.sync.stage.NoSuchStageException;
+-import org.mozilla.gecko.sync.telemetry.TelemetryContract;
+ 
+ /**
+  * The purpose of this class is to talk to a Sync 1.1 server and check
+@@ -164,7 +162,6 @@
+ 
+     private void onMigrated() {
+       Logger.info(LOG_TAG, "Account migrated!");
+-      TelemetryWrapper.addToHistogram(TelemetryContract.SYNC11_MIGRATIONS_SUCCEEDED, 1);
+       session.config.persistLastMigrationSentinelCheckTimestamp(fetchTimestamp);
+       session.abort(null, "Account migrated.");
+     }
+@@ -176,7 +173,6 @@
+ 
+     private void onError(Exception ex, String reason) {
+       Logger.info(LOG_TAG, "Could not migrate: " + reason, ex);
+-      TelemetryWrapper.addToHistogram(TelemetryContract.SYNC11_MIGRATIONS_FAILED, 1);
+       session.abort(ex, reason);
+     }
+ 
+@@ -196,8 +192,6 @@
+             Logger.info(LOG_TAG, "Found " + META_FXA_CREDENTIALS + " record; attempting migration.");
+             setTimestamp(response.normalizedWeaveTimestamp());
+ 
+-            TelemetryWrapper.addToHistogram(TelemetryContract.SYNC11_MIGRATION_SENTINELS_SEEN, 1);
+-
+             try {
+               final ExtendedJSONObject body = response.jsonObjectBody();
+               final CryptoRecord cryptoRecord = CryptoRecord.fromJSONRecord(body);
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/FindInPageBar.java
+--- a/mobile/android/base/java/org/mozilla/gecko/FindInPageBar.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/FindInPageBar.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -4,7 +4,6 @@
+ 
+ package org.mozilla.gecko;
+ 
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.util.GeckoEventListener;
+ import org.mozilla.gecko.util.GeckoRequest;
+ import org.mozilla.gecko.util.NativeJSObject;
+@@ -151,7 +150,6 @@
+         final int viewId = v.getId();
+ 
+         String extras = getResources().getResourceEntryName(viewId);
+-        Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.BUTTON, extras);
+ 
+         if (viewId == R.id.find_matchcase) {
+             // Toggle matchcase state (color).
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/GeckoProfile.java
+--- a/mobile/android/base/java/org/mozilla/gecko/GeckoProfile.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/GeckoProfile.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -932,7 +932,6 @@
+             // We have no intention of stopping this session. The FIRSTRUN session
+             // ends when the browsing session/activity has ended. All events
+             // during firstrun will be tagged as FIRSTRUN.
+-            Telemetry.startUISession(TelemetryContract.Session.FIRSTRUN);
+         }
+ 
+         parser.addSection(profileSection);
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/db/DBUtils.java
+--- a/mobile/android/base/java/org/mozilla/gecko/db/DBUtils.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/db/DBUtils.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -20,7 +20,6 @@
+ import android.text.TextUtils;
+ import android.util.Log;
+ import org.mozilla.gecko.annotation.RobocopTarget;
+-import org.mozilla.gecko.Telemetry;
+ 
+ import java.util.Map;
+ 
+@@ -90,7 +89,6 @@
+             } catch (Exception e) {
+                 // We assume that this is a android.database.sqlite.SQLiteDatabaseLockedException.
+                 // That class is only available on API 11+.
+-                Telemetry.addToHistogram(HISTOGRAM_DATABASE_LOCKED, attempt);
+ 
+                 // Things could get very bad if we don't find a way to unlock the DB.
+                 Log.d(LOGTAG, "Database is locked, trying to kill any zombie processes: " + databasePath);
+@@ -107,12 +105,6 @@
+             GeckoAppShell.listOfOpenFiles();
+             return;
+         }
+-
+-        // If we needed to retry, but we succeeded, report that in telemetry.
+-        // Failures are indicated by a lower frequency of UNLOCKED than LOCKED.
+-        if (attempt > 1) {
+-            Telemetry.addToHistogram(HISTOGRAM_DATABASE_UNLOCKED, attempt - 1);
+-        }
+     }
+ 
+     /**
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/db/LocalURLMetadata.java
+--- a/mobile/android/base/java/org/mozilla/gecko/db/LocalURLMetadata.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/db/LocalURLMetadata.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -14,7 +14,6 @@
+ import java.util.Set;
+ 
+ import org.json.JSONObject;
+-import org.mozilla.gecko.Telemetry;
+ import org.mozilla.gecko.util.ThreadUtils;
+ 
+ import android.content.ContentResolver;
+@@ -120,8 +119,6 @@
+             }
+         }
+ 
+-        Telemetry.addToHistogram("FENNEC_TILES_CACHE_HIT", data.size());
+-
+         // If everything was in the cache, we're done!
+         if (urlsToQuery.size() == 0) {
+             return Collections.unmodifiableMap(data);
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/db/SQLiteBridgeContentProvider.java
+--- a/mobile/android/base/java/org/mozilla/gecko/db/SQLiteBridgeContentProvider.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/db/SQLiteBridgeContentProvider.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -10,7 +10,6 @@
+ import org.mozilla.gecko.AppConstants;
+ import org.mozilla.gecko.GeckoProfile;
+ import org.mozilla.gecko.GeckoThread;
+-import org.mozilla.gecko.Telemetry;
+ import org.mozilla.gecko.mozglue.GeckoLoader;
+ import org.mozilla.gecko.sqlite.SQLiteBridge;
+ import org.mozilla.gecko.sqlite.SQLiteBridgeException;
+@@ -450,8 +449,6 @@
+         if (histogram == null) {
+             return;
+         }
+-
+-        Telemetry.addToHistogram(histogram, op.getBucket());
+     }
+ 
+     protected abstract String getDBName();
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/distribution/Distribution.java
+--- a/mobile/android/base/java/org/mozilla/gecko/distribution/Distribution.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/distribution/Distribution.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -41,7 +41,6 @@
+ import org.mozilla.gecko.GeckoAppShell;
+ import org.mozilla.gecko.GeckoEvent;
+ import org.mozilla.gecko.GeckoSharedPrefs;
+-import org.mozilla.gecko.Telemetry;
+ import org.mozilla.gecko.util.FileUtils;
+ import org.mozilla.gecko.util.HardwareUtils;
+ import org.mozilla.gecko.util.ThreadUtils;
+@@ -74,13 +73,6 @@
+     private static final String DISTRIBUTION_PATH = "distribution/";
+ 
+     /**
+-     * Telemetry constants.
+-     */
+-    private static final String HISTOGRAM_REFERRER_INVALID = "FENNEC_DISTRIBUTION_REFERRER_INVALID";
+-    private static final String HISTOGRAM_DOWNLOAD_TIME_MS = "FENNEC_DISTRIBUTION_DOWNLOAD_TIME_MS";
+-    private static final String HISTOGRAM_CODE_CATEGORY = "FENNEC_DISTRIBUTION_CODE_CATEGORY";
+-
+-    /**
+      * Success/failure codes. Don't exceed the maximum listed in Histograms.json.
+      */
+     private static final int CODE_CATEGORY_STATUS_OUT_OF_RANGE = 0;
+@@ -367,11 +359,9 @@
+ 
+         } catch (IOException e) {
+             Log.e(LOGTAG, "Error getting distribution descriptor file.", e);
+-            Telemetry.addToHistogram(HISTOGRAM_CODE_CATEGORY, CODE_CATEGORY_MALFORMED_DISTRIBUTION);
+             return null;
+         } catch (JSONException e) {
+             Log.e(LOGTAG, "Error parsing preferences.json", e);
+-            Telemetry.addToHistogram(HISTOGRAM_CODE_CATEGORY, CODE_CATEGORY_MALFORMED_DISTRIBUTION);
+             return null;
+         }
+     }
+@@ -398,11 +388,9 @@
+ 
+         } catch (IOException e) {
+             Log.e(LOGTAG, "Error getting distribution descriptor file.", e);
+-            Telemetry.addToHistogram(HISTOGRAM_CODE_CATEGORY, CODE_CATEGORY_MALFORMED_DISTRIBUTION);
+             return new JSONObject();
+         } catch (JSONException e) {
+             Log.e(LOGTAG, "Error parsing preferences.json", e);
+-            Telemetry.addToHistogram(HISTOGRAM_CODE_CATEGORY, CODE_CATEGORY_MALFORMED_DISTRIBUTION);
+             return new JSONObject();
+         }
+     }
+@@ -418,11 +406,9 @@
+             return new JSONArray(FileUtils.getFileContents(bookmarks));
+         } catch (IOException e) {
+             Log.e(LOGTAG, "Error getting bookmarks", e);
+-            Telemetry.addToHistogram(HISTOGRAM_CODE_CATEGORY, CODE_CATEGORY_MALFORMED_DISTRIBUTION);
+             return null;
+         } catch (JSONException e) {
+             Log.e(LOGTAG, "Error parsing bookmarks.json", e);
+-            Telemetry.addToHistogram(HISTOGRAM_CODE_CATEGORY, CODE_CATEGORY_MALFORMED_DISTRIBUTION);
+             return null;
+         }
+     }
+@@ -521,14 +507,12 @@
+                     distro = fetchDistribution(uri, connection);
+                 } catch (Exception e) {
+                     Log.e(LOGTAG, "Error fetching distribution from network.", e);
+-                    recordFetchTelemetry(e);
+                     return false;
+                 }
+ 
+                 long end = SystemClock.uptimeMillis();
+                 final long duration = end - start;
+                 Log.d(LOGTAG, "Distro fetch took " + duration + "ms; result? " + (distro != null));
+-                Telemetry.addToHistogram(HISTOGRAM_DOWNLOAD_TIME_MS, clamp(MAX_DOWNLOAD_TIME_MSEC, duration));
+ 
+                 if (distro == null) {
+                     // Nothing to do.
+@@ -547,10 +531,8 @@
+                     }
+                 } catch (SecurityException e) {
+                     Log.e(LOGTAG, "Security exception copying files. Corrupt or malicious?", e);
+-                    Telemetry.addToHistogram(HISTOGRAM_CODE_CATEGORY, CODE_CATEGORY_POST_FETCH_SECURITY_EXCEPTION);
+                 } catch (Exception e) {
+                     Log.e(LOGTAG, "Error copying files from distribution.", e);
+-                    Telemetry.addToHistogram(HISTOGRAM_CODE_CATEGORY, CODE_CATEGORY_POST_FETCH_EXCEPTION);
+                 } finally {
+                     distro.close();
+                 }
+@@ -559,7 +541,6 @@
+             }
+         } catch (IOException e) {
+             Log.e(LOGTAG, "Error copying distribution files from network.", e);
+-            recordFetchTelemetry(e);
+         }
+ 
+         return false;
+@@ -591,52 +572,21 @@
+         } else {
+             value = status / 100;
+         }
+-        
+-        Telemetry.addToHistogram(HISTOGRAM_CODE_CATEGORY, value);
+ 
+         if (status != 200) {
+             Log.w(LOGTAG, "Got status " + status + " fetching distribution.");
+-            Telemetry.addToHistogram(HISTOGRAM_CODE_CATEGORY, CODE_CATEGORY_FETCH_NON_SUCCESS_RESPONSE);
+             return null;
+         }
+ 
+         final String contentType = connection.getContentType();
+         if (contentType == null || !contentType.startsWith(EXPECTED_CONTENT_TYPE)) {
+             Log.w(LOGTAG, "Malformed response: invalid Content-Type.");
+-            Telemetry.addToHistogram(HISTOGRAM_CODE_CATEGORY, CODE_CATEGORY_FETCH_INVALID_CONTENT_TYPE);
+             return null;
+         }
+ 
+         return new JarInputStream(new BufferedInputStream(connection.getInputStream()), true);
+     }
+ 
+-    private static void recordFetchTelemetry(final Exception exception) {
+-        if (exception == null) {
+-            // Should never happen.
+-            Telemetry.addToHistogram(HISTOGRAM_CODE_CATEGORY, CODE_CATEGORY_FETCH_EXCEPTION);
+-            return;
+-        }
+-
+-        if (exception instanceof UnknownHostException) {
+-            // Unknown host => we're offline.
+-            Telemetry.addToHistogram(HISTOGRAM_CODE_CATEGORY, CODE_CATEGORY_OFFLINE);
+-            return;
+-        }
+-
+-        if (exception instanceof SSLException) {
+-            Telemetry.addToHistogram(HISTOGRAM_CODE_CATEGORY, CODE_CATEGORY_FETCH_SSL_ERROR);
+-            return;
+-        }
+-
+-        if (exception instanceof ProtocolException ||
+-            exception instanceof SocketException) {
+-            Telemetry.addToHistogram(HISTOGRAM_CODE_CATEGORY, CODE_CATEGORY_FETCH_SOCKET_ERROR);
+-            return;
+-        }
+-
+-        Telemetry.addToHistogram(HISTOGRAM_CODE_CATEGORY, CODE_CATEGORY_FETCH_EXCEPTION);
+-    }
+-
+     /**
+      * @return true if we copied files out of the APK. Sets distributionDir in that case.
+      */
+@@ -803,7 +753,6 @@
+         // we're downloading a distribution payload based on intent input.
+         if (!content.matches("^[a-zA-Z0-9]+$")) {
+             Log.e(LOGTAG, "Invalid referrer content: " + content);
+-            Telemetry.addToHistogram(HISTOGRAM_REFERRER_INVALID, 1);
+             return null;
+         }
+ 
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/firstrun/FirstrunPager.java
+--- a/mobile/android/base/java/org/mozilla/gecko/firstrun/FirstrunPager.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/firstrun/FirstrunPager.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -19,8 +19,6 @@
+ import com.nineoldandroids.view.ViewHelper;
+ 
+ import org.mozilla.gecko.Restrictions;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.animation.TransitionsTracker;
+ import org.mozilla.gecko.home.HomePager.Decor;
+ import org.mozilla.gecko.home.TabMenuStrip;
+@@ -96,7 +94,6 @@
+             @Override
+             public void onPageSelected(int i) {
+                 mDecor.onPageSelected(i);
+-                Telemetry.sendUIEvent(TelemetryContract.Event.SHOW, TelemetryContract.Method.PANEL, "onboarding." + i);
+             }
+ 
+             @Override
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/firstrun/FirstrunPagerConfig.java
+--- a/mobile/android/base/java/org/mozilla/gecko/firstrun/FirstrunPagerConfig.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/firstrun/FirstrunPagerConfig.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -9,8 +9,6 @@
+ import android.util.Log;
+ import com.keepsafe.switchboard.SwitchBoard;
+ import org.mozilla.gecko.AppConstants;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ 
+ import java.util.LinkedList;
+ import java.util.List;
+@@ -27,12 +25,10 @@
+         // Exclude these users from the experiment to add an "Import" panel.
+         if (isInExperimentLocal(context, ONBOARDING_A) && AppConstants.Versions.preM) {
+             panels.add(new FirstrunPanelConfig(WelcomePanel.class.getName(), WelcomePanel.TITLE_RES));
+-            Telemetry.startUISession(TelemetryContract.Session.EXPERIMENT, ONBOARDING_A);
+         } else if (isInExperimentLocal(context, ONBOARDING_B) && AppConstants.Versions.preM) {
+             // Strings used for first run, pulled from existing strings.
+             panels.add(new FirstrunPanelConfig(ImportPanel.class.getName(), ImportPanel.TITLE_RES));
+             panels.add(new FirstrunPanelConfig(SyncPanel.class.getName(), SyncPanel.TITLE_RES));
+-            Telemetry.startUISession(TelemetryContract.Session.EXPERIMENT, ONBOARDING_B);
+         } else {
+             Log.d(LOGTAG, "Not in an experiment!");
+             panels.add(new FirstrunPanelConfig(WelcomePanel.class.getName(), WelcomePanel.TITLE_RES));
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/firstrun/FirstrunPane.java
+--- a/mobile/android/base/java/org/mozilla/gecko/firstrun/FirstrunPane.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/firstrun/FirstrunPane.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -15,8 +15,6 @@
+ import com.nineoldandroids.animation.AnimatorListenerAdapter;
+ import com.nineoldandroids.animation.ObjectAnimator;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.animation.TransitionsTracker;
+ 
+ public class FirstrunPane extends LinearLayout {
+@@ -60,8 +58,6 @@
+         animateHide();
+ 
+         // Stop all versions of firstrun A/B sessions.
+-        Telemetry.stopUISession(TelemetryContract.Session.EXPERIMENT, FirstrunPagerConfig.ONBOARDING_A);
+-        Telemetry.stopUISession(TelemetryContract.Session.EXPERIMENT, FirstrunPagerConfig.ONBOARDING_B);
+     }
+ 
+     private void animateHide() {
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/firstrun/ImportPanel.java
+--- a/mobile/android/base/java/org/mozilla/gecko/firstrun/ImportPanel.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/firstrun/ImportPanel.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -21,8 +21,6 @@
+ import android.widget.ListView;
+ import org.mozilla.gecko.AppConstants;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.preferences.AndroidImport;
+ import org.mozilla.gecko.util.ThreadUtils;
+ 
+@@ -52,13 +50,11 @@
+             public void onClick(View v) {
+                 final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                 final List<Integer> checked = new ArrayList<>(Arrays.asList(0, 1));
+-                Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.BUTTON, "firstrun-import-action");
+                 builder.setTitle(R.string.firstrun_import_action)
+                        .setMultiChoiceItems(R.array.pref_import_android_entries, makeBooleanArray(R.array.pref_import_android_defaults), new DialogInterface.OnMultiChoiceClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int index, boolean isChecked) {
+                                // Add telemetry for toggling checkboxes.
+-                               Telemetry.sendUIEvent(TelemetryContract.Event.EDIT, TelemetryContract.Method.DIALOG, "firstrun-import-dialog-checkbox");
+                                if (isChecked && !checked.contains(index)) {
+                                    checked.add(index);
+                                } else if (!isChecked && checked.contains(index)) {
+@@ -69,7 +65,6 @@
+                        .setNegativeButton(R.string.button_cancel, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int i) {
+-                               Telemetry.sendUIEvent(TelemetryContract.Event.CANCEL, TelemetryContract.Method.BUTTON, "firstrun-import-dialog");
+                                dialog.dismiss();
+                            }
+                        })
+@@ -82,8 +77,6 @@
+                                runImport(importBookmarks, importHistory);
+ 
+                                // Telemetry for what options are confirmed.
+-                               final int importState = (importBookmarks ? 1 : 0) + (importHistory ? 2 : 0);
+-                               Telemetry.sendUIEvent(TelemetryContract.Event.SAVE, TelemetryContract.Method.BUTTON, "firstrun-import-dialog-" + importState);
+                                dialog.dismiss();
+                            }
+                        });
+@@ -121,7 +114,6 @@
+         root.findViewById(R.id.import_link).setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+-                Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.BUTTON, "firstrun-import-next");
+                 pagerNavigation.next();
+             }
+         });
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/firstrun/RestrictedWelcomePanel.java
+--- a/mobile/android/base/java/org/mozilla/gecko/firstrun/RestrictedWelcomePanel.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/firstrun/RestrictedWelcomePanel.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -6,8 +6,6 @@
+ package org.mozilla.gecko.firstrun;
+ 
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.home.HomePager;
+ 
+ import android.app.Activity;
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/firstrun/SyncPanel.java
+--- a/mobile/android/base/java/org/mozilla/gecko/firstrun/SyncPanel.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/firstrun/SyncPanel.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -11,8 +11,6 @@
+ import android.view.View;
+ import android.view.ViewGroup;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.fxa.FxAccountConstants;
+ import org.mozilla.gecko.fxa.activities.FxAccountWebFlowActivity;
+ 
+@@ -27,7 +25,6 @@
+         root.findViewById(R.id.welcome_account).setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+-                Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.BUTTON, "firstrun-sync");
+                 showBrowserHint = false;
+ 
+                 final Intent intent = new Intent(FxAccountConstants.ACTION_FXA_GET_STARTED);
+@@ -42,7 +39,6 @@
+         root.findViewById(R.id.welcome_browse).setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+-                Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.BUTTON, "firstrun-browser");
+                 close();
+             }
+         });
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/firstrun/WelcomePanel.java
+--- a/mobile/android/base/java/org/mozilla/gecko/firstrun/WelcomePanel.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/firstrun/WelcomePanel.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -12,8 +12,6 @@
+ import android.view.ViewGroup;
+ import android.widget.ImageView;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.fxa.FxAccountConstants;
+ import org.mozilla.gecko.fxa.activities.FxAccountWebFlowActivity;
+ 
+@@ -26,7 +24,6 @@
+         root.findViewById(R.id.welcome_account).setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+-                Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.BUTTON, "firstrun-sync");
+                 showBrowserHint = false;
+ 
+                 final Intent intent = new Intent(FxAccountConstants.ACTION_FXA_GET_STARTED);
+@@ -41,7 +38,6 @@
+         root.findViewById(R.id.welcome_browse).setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+-                Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.BUTTON, "firstrun-browser");
+                 close();
+             }
+         });
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/home/BookmarksListView.java
+--- a/mobile/android/base/java/org/mozilla/gecko/home/BookmarksListView.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/home/BookmarksListView.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -8,8 +8,6 @@
+ import java.util.EnumSet;
+ 
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.db.BrowserContract.Bookmarks;
+ import org.mozilla.gecko.home.HomePager.OnUrlOpenListener;
+ 
+@@ -92,8 +90,6 @@
+             // Otherwise, just open the URL
+             final String url = cursor.getString(cursor.getColumnIndexOrThrow(Bookmarks.URL));
+ 
+-            Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.LIST_ITEM, "bookmarks");
+-
+             // This item is a TwoLinePageRow, so we allow switch-to-tab.
+             getOnUrlOpenListener().onUrlOpen(url, EnumSet.of(OnUrlOpenListener.Flags.ALLOW_SWITCH_TO_TAB));
+         }
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/home/BrowserSearch.java
+--- a/mobile/android/base/java/org/mozilla/gecko/home/BrowserSearch.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/home/BrowserSearch.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -30,8 +30,6 @@
+ import org.mozilla.gecko.SuggestClient;
+ import org.mozilla.gecko.Tab;
+ import org.mozilla.gecko.Tabs;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.annotation.RobocopTarget;
+ import org.mozilla.gecko.db.BrowserContract;
+ import org.mozilla.gecko.db.BrowserContract.History;
+@@ -280,15 +278,6 @@
+         } else {
+             updateSearchEngineBar();
+         }
+-
+-        Telemetry.startUISession(TelemetryContract.Session.FRECENCY);
+-    }
+-
+-    @Override
+-    public void onPause() {
+-        super.onPause();
+-
+-        Telemetry.stopUISession(TelemetryContract.Session.FRECENCY);
+     }
+ 
+     @Override
+@@ -340,8 +329,6 @@
+                 final Cursor c = mAdapter.getCursor(position);
+                 final String url = c.getString(c.getColumnIndexOrThrow(URLColumns.URL));
+ 
+-                Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.LIST_ITEM, "frecency");
+-
+                 // This item is a TwoLinePageRow, so we allow switch-to-tab.
+                 mUrlOpenListener.onUrlOpen(url, EnumSet.of(OnUrlOpenListener.Flags.ALLOW_SWITCH_TO_TAB));
+             }
+@@ -733,9 +720,6 @@
+ 
+     @Override
+     public void onSearchBarClickListener(final SearchEngine searchEngine) {
+-        Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.LIST_ITEM,
+-                "searchenginebar");
+-
+         mSearchListener.onSearch(searchEngine, mSearchTerm);
+     }
+ 
+@@ -827,8 +811,6 @@
+         // Pref observer in gecko will also set prompted = true
+         PrefsHelper.setPref("browser.search.suggest.enabled", enabled);
+ 
+-        Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.BUTTON, (enabled ? "suggestions_optin_yes" : "suggestions_optin_no"));
+-
+         TranslateAnimation slideAnimation = new TranslateAnimation(0, mSuggestionsOptInPrompt.getWidth(), 0, 0);
+         slideAnimation.setDuration(ANIMATION_DURATION);
+         slideAnimation.setInterpolator(new AccelerateInterpolator());
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/home/HistoryPanel.java
+--- a/mobile/android/base/java/org/mozilla/gecko/home/HistoryPanel.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/home/HistoryPanel.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -20,8 +20,6 @@
+ import org.mozilla.gecko.GeckoProfile;
+ import org.mozilla.gecko.R;
+ import org.mozilla.gecko.Restrictions;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.db.BrowserContract.Combined;
+ import org.mozilla.gecko.db.BrowserDB;
+ import org.mozilla.gecko.home.HomeContextMenuInfo.RemoveItemType;
+@@ -152,8 +150,6 @@
+             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                 final String url = ((HistoryUrlProvider) mAdapter).getURL(position);
+ 
+-                Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.LIST_ITEM, "history");
+-
+                 // This item is a TwoLinePageRow, so we allow switch-to-tab.
+                 mUrlOpenListener.onUrlOpen(url, EnumSet.of(OnUrlOpenListener.Flags.ALLOW_SWITCH_TO_TAB));
+             }
+@@ -210,8 +206,6 @@
+                         }
+ 
+                         GeckoAppShell.sendEventToGecko(GeckoEvent.createBroadcastEvent("Sanitize:ClearData", json.toString()));
+-
+-                        Telemetry.sendUIEvent(TelemetryContract.Event.SANITIZE, TelemetryContract.Method.BUTTON, "history");
+                     }
+                 });
+ 
+@@ -358,7 +352,6 @@
+         final ClickableSpan clickableSpan = new ClickableSpan() {
+             @Override
+             public void onClick(View widget) {
+-                Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.HOMESCREEN, "hint-private-browsing");
+                 try {
+                     final JSONObject json = new JSONObject();
+                     json.put("type", "Menu:Open");
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/home/HomeFragment.java
+--- a/mobile/android/base/java/org/mozilla/gecko/home/HomeFragment.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/home/HomeFragment.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -15,8 +15,6 @@
+ import org.mozilla.gecko.ReaderModeUtils;
+ import org.mozilla.gecko.Restrictions;
+ import org.mozilla.gecko.SnackbarHelper;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.db.BrowserDB;
+ import org.mozilla.gecko.db.BrowserContract.SuggestedSites;
+ import org.mozilla.gecko.favicons.Favicons;
+@@ -186,7 +184,6 @@
+             // Mask private browsing
+             extras = "home_open_new_tab";
+         }
+-        Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.CONTEXT_MENU, extras);
+ 
+         if (itemId == R.id.home_copyurl) {
+             if (info.url == null) {
+@@ -207,7 +204,6 @@
+                                               Intent.ACTION_SEND, info.getDisplayTitle(), false);
+ 
+                 // Context: Sharing via chrome homepage contextmenu list (home session should be active)
+-                Telemetry.sendUIEvent(TelemetryContract.Event.SHARE, TelemetryContract.Method.LIST, "home_contextmenu");
+                 return true;
+             }
+         }
+@@ -244,8 +240,6 @@
+ 
+             mUrlOpenInBackgroundListener.onUrlOpenInBackground(url, flags);
+ 
+-            Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.CONTEXT_MENU);
+-
+             return true;
+         }
+ 
+@@ -385,7 +379,6 @@
+ 
+             switch(mType) {
+                 case BOOKMARKS:
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.UNSAVE, TelemetryContract.Method.CONTEXT_MENU, "bookmark");
+                     mDB.removeBookmarksWithURL(cr, mUrl);
+                     break;
+ 
+@@ -394,7 +387,6 @@
+                     break;
+ 
+                 case READING_LIST:
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.UNSAVE, TelemetryContract.Method.CONTEXT_MENU, "reading_list");
+                     mDB.getReadingListAccessor().removeReadingListItemWithURL(cr, mUrl);
+                     GeckoAppShell.sendEventToGecko(GeckoEvent.createBroadcastEvent("Reader:Removed", mUrl));
+                     break;
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/home/ReadingListPanel.java
+--- a/mobile/android/base/java/org/mozilla/gecko/home/ReadingListPanel.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/home/ReadingListPanel.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -10,8 +10,6 @@
+ import org.mozilla.gecko.GeckoProfile;
+ import org.mozilla.gecko.R;
+ import org.mozilla.gecko.ReaderModeUtils;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.db.BrowserContract.ReadingListItems;
+ import org.mozilla.gecko.db.BrowserContract.URLColumns;
+ import org.mozilla.gecko.db.BrowserDB;
+@@ -91,8 +89,6 @@
+                 String url = c.getString(c.getColumnIndexOrThrow(URLColumns.URL));
+                 url = ReaderModeUtils.getAboutReaderForUrl(url);
+ 
+-                Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.LIST_ITEM, "reading_list");
+-
+                 // This item is a TwoLinePageRow, so we allow switch-to-tab.
+                 mUrlOpenListener.onUrlOpen(url, EnumSet.of(OnUrlOpenListener.Flags.ALLOW_SWITCH_TO_TAB));
+ 
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/home/RecentTabsPanel.java
+--- a/mobile/android/base/java/org/mozilla/gecko/home/RecentTabsPanel.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/home/RecentTabsPanel.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -18,8 +18,6 @@
+ import org.mozilla.gecko.GeckoProfile;
+ import org.mozilla.gecko.R;
+ import org.mozilla.gecko.SessionParser;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.db.BrowserContract.CommonColumns;
+ import org.mozilla.gecko.db.BrowserContract.URLColumns;
+ import org.mozilla.gecko.util.EventCallback;
+@@ -133,8 +131,6 @@
+                     return;
+                 }
+ 
+-                Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.LIST_ITEM, "recent_tabs");
+-
+                 final List<String> dataList = new ArrayList<>();
+                 dataList.add(c.getString(c.getColumnIndexOrThrow(RecentTabs.DATA)));
+                 restoreSessionWithHistory(dataList);
+@@ -256,8 +252,6 @@
+             }
+         } while (c.moveToNext());
+ 
+-        Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.BUTTON);
+-
+         restoreSessionWithHistory(dataList);
+     }
+ 
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/home/RemoteTabsExpandableListFragment.java
+--- a/mobile/android/base/java/org/mozilla/gecko/home/RemoteTabsExpandableListFragment.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/home/RemoteTabsExpandableListFragment.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -12,8 +12,6 @@
+ import org.mozilla.gecko.R;
+ import org.mozilla.gecko.RemoteClientsDialogFragment;
+ import org.mozilla.gecko.RemoteTabsExpandableListAdapter;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.db.RemoteClient;
+ import org.mozilla.gecko.db.RemoteTab;
+ import org.mozilla.gecko.home.HomePager.OnUrlOpenListener;
+@@ -71,8 +69,6 @@
+                     return false;
+                 }
+ 
+-                Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.LIST_ITEM, "remote_tabs");
+-
+                 // This item is a TwoLinePageRow, so we allow switch-to-tab.
+                 mUrlOpenListener.onUrlOpen(tab.url, EnumSet.of(OnUrlOpenListener.Flags.ALLOW_SWITCH_TO_TAB));
+                 return true;
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/home/RemoteTabsSplitPlaneFragment.java
+--- a/mobile/android/base/java/org/mozilla/gecko/home/RemoteTabsSplitPlaneFragment.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/home/RemoteTabsSplitPlaneFragment.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -20,8 +20,6 @@
+ import org.mozilla.gecko.RemoteClientsDialogFragment;
+ import org.mozilla.gecko.RemoteTabsExpandableListAdapter;
+ import org.mozilla.gecko.RemoteTabsExpandableListAdapter.GroupViewHolder;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.db.RemoteClient;
+ import org.mozilla.gecko.db.RemoteTab;
+ 
+@@ -78,8 +76,6 @@
+                     return;
+                 }
+ 
+-                Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.LIST_ITEM, "remote_tabs");
+-
+                 // This item is a TwoLinePageRow, so we allow switch-to-tab.
+                 mUrlOpenListener.onUrlOpen(tab.url, EnumSet.of(HomePager.OnUrlOpenListener.Flags.ALLOW_SWITCH_TO_TAB));
+             }
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/home/SearchEngineBar.java
+--- a/mobile/android/base/java/org/mozilla/gecko/home/SearchEngineBar.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/home/SearchEngineBar.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -18,8 +18,6 @@
+ 
+ import org.mozilla.gecko.annotation.RobocopTarget;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.preferences.GeckoPreferences;
+ import org.mozilla.gecko.util.ColorUtils;
+ import org.mozilla.gecko.widget.RecyclerViewClickSupport;
+@@ -133,7 +131,6 @@
+             final Intent settingsIntent = new Intent(getContext(), GeckoPreferences.class);
+             GeckoPreferences.setResourceToOpen(settingsIntent, "preferences_search");
+             getContext().startActivity(settingsIntent);
+-            Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.BUTTON, "searchenginebar-settings");
+             return;
+         }
+ 
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/home/SearchEngineRow.java
+--- a/mobile/android/base/java/org/mozilla/gecko/home/SearchEngineRow.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/home/SearchEngineRow.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -7,8 +7,6 @@
+ 
+ import org.mozilla.gecko.GeckoSharedPrefs;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.home.BrowserSearch.OnEditSuggestionListener;
+ import org.mozilla.gecko.home.BrowserSearch.OnSearchListener;
+ import org.mozilla.gecko.home.HomePager.OnUrlOpenListener;
+@@ -101,16 +99,9 @@
+                 // search for the term.
+                 if (v != mUserEnteredView && !StringUtils.isSearchQuery(suggestion, true)) {
+                     if (mUrlOpenListener != null) {
+-                        Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.SUGGESTION, "url");
+-
+                         mUrlOpenListener.onUrlOpen(suggestion, EnumSet.noneOf(OnUrlOpenListener.Flags.class));
+                     }
+                 } else if (mSearchListener != null) {
+-                    if (v == mUserEnteredView) {
+-                        Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.SUGGESTION, "user");
+-                    } else {
+-                        Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.SUGGESTION, (String) v.getTag());
+-                    }
+                     mSearchListener.onSearch(mSearchEngine, suggestion);
+                 }
+             }
+@@ -227,7 +218,6 @@
+     public void performUserEnteredSearch() {
+         String searchTerm = getSuggestionTextFromView(mUserEnteredView);
+         if (mSearchListener != null) {
+-            Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.SUGGESTION, "user");
+             mSearchListener.onSearch(mSearchEngine, searchTerm);
+         }
+     }
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/home/SearchLoader.java
+--- a/mobile/android/base/java/org/mozilla/gecko/home/SearchLoader.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/home/SearchLoader.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -8,7 +8,6 @@
+ import java.util.EnumSet;
+ 
+ import org.mozilla.gecko.GeckoProfile;
+-import org.mozilla.gecko.Telemetry;
+ import org.mozilla.gecko.db.BrowserDB.FilterFlags;
+ 
+ import android.content.Context;
+@@ -76,8 +75,6 @@
+     }
+ 
+     public static class SearchCursorLoader extends SimpleCursorLoader {
+-        private static final String TELEMETRY_HISTOGRAM_LOAD_CURSOR = "FENNEC_SEARCH_LOADER_TIME_MS";
+-
+         // Max number of search results.
+         private static final int SEARCH_LIMIT = 100;
+ 
+@@ -101,7 +98,6 @@
+             final Cursor cursor = mProfile.getDB().filter(getContext().getContentResolver(), mSearchTerm, SEARCH_LIMIT, mFlags);
+             final long end = SystemClock.uptimeMillis();
+             final long took = end - start;
+-            Telemetry.addToHistogram(TELEMETRY_HISTOGRAM_LOAD_CURSOR, (int) Math.min(took, Integer.MAX_VALUE));
+             return cursor;
+         }
+ 
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/home/TopSitesPanel.java
+--- a/mobile/android/base/java/org/mozilla/gecko/home/TopSitesPanel.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/home/TopSitesPanel.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -19,8 +19,6 @@
+ import org.mozilla.gecko.Restrictions;
+ import org.mozilla.gecko.Tab;
+ import org.mozilla.gecko.Tabs;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.db.BrowserContract.Thumbnails;
+ import org.mozilla.gecko.db.BrowserContract.TopSites;
+ import org.mozilla.gecko.db.BrowserDB;
+@@ -169,8 +167,6 @@
+ 
+                 final String url = c.getString(c.getColumnIndexOrThrow(TopSites.URL));
+ 
+-                Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.LIST_ITEM, "top_sites");
+-
+                 // This item is a TwoLinePageRow, so we allow switch-to-tab.
+                 mUrlOpenListener.onUrlOpen(url, EnumSet.of(OnUrlOpenListener.Flags.ALLOW_SWITCH_TO_TAB));
+             }
+@@ -209,14 +205,6 @@
+                 // If not, navigate to the page given by the url.
+                 if (type != TopSites.TYPE_BLANK) {
+                     if (mUrlOpenListener != null) {
+-                        final TelemetryContract.Method method;
+-                        if (type == TopSites.TYPE_SUGGESTED) {
+-                            method = TelemetryContract.Method.SUGGESTION;
+-                        } else {
+-                            method = TelemetryContract.Method.GRID_ITEM;
+-                        }
+-                        Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, method, Integer.toString(position));
+-
+                         mUrlOpenListener.onUrlOpen(url, EnumSet.noneOf(OnUrlOpenListener.Flags.class));
+                     }
+                 } else {
+@@ -387,8 +375,6 @@
+                     db.pinSite(context.getContentResolver(), url, title, position);
+                 }
+             });
+-
+-            Telemetry.sendUIEvent(TelemetryContract.Event.PIN);
+             return true;
+         }
+ 
+@@ -403,8 +389,6 @@
+                 }
+             });
+ 
+-            Telemetry.sendUIEvent(TelemetryContract.Event.UNPIN);
+-
+             return true;
+         }
+ 
+@@ -412,8 +396,6 @@
+             // Decode "user-entered" URLs before showing them.
+             mEditPinnedSiteListener.onEditPinnedSite(info.position,
+                                                      StringUtils.decodeUserEnteredUrl(info.url));
+-
+-            Telemetry.sendUIEvent(TelemetryContract.Event.EDIT);
+             return true;
+         }
+ 
+@@ -489,7 +471,6 @@
+     private static class TopSitesLoader extends SimpleCursorLoader {
+         // Max number of search results.
+         private static final int SEARCH_LIMIT = 30;
+-        private static final String TELEMETRY_HISTOGRAM_LOAD_CURSOR = "FENNEC_TOPSITES_LOADER_TIME_MS";
+         private final BrowserDB mDB;
+         private final int mMaxGridEntries;
+ 
+@@ -505,7 +486,6 @@
+             final Cursor cursor = mDB.getTopSites(getContext().getContentResolver(), mMaxGridEntries, SEARCH_LIMIT);
+             final long end = SystemClock.uptimeMillis();
+             final long took = end - start;
+-            Telemetry.addToHistogram(TELEMETRY_HISTOGRAM_LOAD_CURSOR, (int) Math.min(took, Integer.MAX_VALUE));
+             return cursor;
+         }
+     }
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/overlays/ui/SendTabList.java
+--- a/mobile/android/base/java/org/mozilla/gecko/overlays/ui/SendTabList.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/overlays/ui/SendTabList.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -12,8 +12,6 @@
+ import org.mozilla.gecko.AppConstants.Versions;
+ import org.mozilla.gecko.Assert;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.db.RemoteClient;
+ 
+ import android.app.AlertDialog;
+@@ -141,7 +139,7 @@
+                .setOnCancelListener(new DialogInterface.OnCancelListener() {
+                    @Override
+                    public void onCancel(DialogInterface dialogInterface) {
+-                       Telemetry.sendUIEvent(TelemetryContract.Event.CANCEL, TelemetryContract.Method.SHARE_OVERLAY, "device_selection_cancel");
++                       return;
+                    }
+                });
+ 
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/overlays/ui/ShareDialog.java
+--- a/mobile/android/base/java/org/mozilla/gecko/overlays/ui/ShareDialog.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/overlays/ui/ShareDialog.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -12,8 +12,6 @@
+ import org.mozilla.gecko.GeckoProfile;
+ import org.mozilla.gecko.Locales;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.db.LocalBrowserDB;
+ import org.mozilla.gecko.db.RemoteClient;
+ import org.mozilla.gecko.overlays.OverlayConstants;
+@@ -249,13 +247,10 @@
+         // TODO: Consider polling Fennec databases to find better information to display.
+         final String subjectText = intent.getStringExtra(Intent.EXTRA_SUBJECT);
+ 
+-        final String telemetryExtras = "title=" + (subjectText != null);
+         if (subjectText != null) {
+             ((TextView) findViewById(R.id.title)).setText(subjectText);
+         }
+ 
+-        Telemetry.sendUIEvent(TelemetryContract.Event.SHOW, TelemetryContract.Method.SHARE_OVERLAY, telemetryExtras);
+-
+         title = subjectText;
+         url = pageUrl;
+ 
+@@ -392,22 +387,16 @@
+ 
+         startService(serviceIntent);
+         animateOut(true);
+-
+-        Telemetry.sendUIEvent(TelemetryContract.Event.SHARE, TelemetryContract.Method.SHARE_OVERLAY, "sendtab");
+     }
+ 
+     public void addToReadingList() {
+         startService(getServiceIntent(ShareMethod.Type.ADD_TO_READING_LIST));
+         animateOut(true);
+-
+-        Telemetry.sendUIEvent(TelemetryContract.Event.SAVE, TelemetryContract.Method.SHARE_OVERLAY, "reading_list");
+     }
+ 
+     public void addBookmark() {
+         startService(getServiceIntent(ShareMethod.Type.ADD_BOOKMARK));
+         animateOut(true);
+-
+-        Telemetry.sendUIEvent(TelemetryContract.Event.SAVE, TelemetryContract.Method.SHARE_OVERLAY, "bookmark");
+     }
+ 
+     public void launchBrowser() {
+@@ -498,7 +487,6 @@
+     @Override
+     public void onBackPressed() {
+         animateOut(false);
+-        Telemetry.sendUIEvent(TelemetryContract.Event.CANCEL, TelemetryContract.Method.SHARE_OVERLAY);
+     }
+ 
+     /**
+@@ -507,7 +495,6 @@
+     @Override
+     public boolean onTouchEvent(MotionEvent event) {
+         animateOut(false);
+-        Telemetry.sendUIEvent(TelemetryContract.Event.CANCEL, TelemetryContract.Method.SHARE_OVERLAY);
+         return true;
+     }
+ }
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferenceFragment.java
+--- a/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferenceFragment.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferenceFragment.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -13,9 +13,6 @@
+ import org.mozilla.gecko.LocaleManager;
+ import org.mozilla.gecko.PrefsHelper;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+-import org.mozilla.gecko.TelemetryContract.Method;
+ 
+ import android.app.ActionBar;
+ import android.app.Activity;
+@@ -62,12 +59,6 @@
+         getPreferenceManager().setSharedPreferencesName(GeckoSharedPrefs.APP_PREFS_NAME);
+ 
+         int res = getResource();
+-        if (res == R.xml.preferences) {
+-            Telemetry.startUISession(TelemetryContract.Session.SETTINGS);
+-        } else {
+-            final String resourceName = getArguments().getString("resource");
+-            Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, Method.SETTINGS, resourceName);
+-        }
+ 
+         // Display a menu for Search preferences.
+         if (res == R.xml.preferences_search) {
+@@ -231,10 +222,5 @@
+         if (mPrefsRequestId > 0) {
+             PrefsHelper.removeObserver(mPrefsRequestId);
+         }
+-
+-        final int res = getResource();
+-        if (res == R.xml.preferences) {
+-            Telemetry.stopUISession(TelemetryContract.Session.SETTINGS);
+-        }
+     }
+ }
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java
+--- a/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -27,9 +27,6 @@
+ import org.mozilla.gecko.R;
+ import org.mozilla.gecko.Restrictions;
+ import org.mozilla.gecko.SnackbarHelper;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+-import org.mozilla.gecko.TelemetryContract.Method;
+ import org.mozilla.gecko.background.common.GlobalConstants;
+ import org.mozilla.gecko.db.BrowserContract.SuggestedSites;
+ import org.mozilla.gecko.restrictions.Restrictable;
+@@ -353,7 +350,6 @@
+             if (intentExtras != null && intentExtras.containsKey(INTENT_EXTRA_RESOURCES)) {
+                 // Fetch resource id from intent.
+                 final String resourceName = intentExtras.getString(INTENT_EXTRA_RESOURCES);
+-                Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, Method.SETTINGS, resourceName);
+ 
+                 if (resourceName != null) {
+                     res = getResources().getIdentifier(resourceName, "xml", getPackageName());
+@@ -366,7 +362,6 @@
+                 // No resource specified, or the resource was invalid; use the default preferences screen.
+                 Log.e(LOGTAG, "Displaying default settings.");
+                 res = R.xml.preferences;
+-                Telemetry.startUISession(TelemetryContract.Session.SETTINGS);
+             }
+ 
+             // We don't include a title in the XML, so set it here, in a locale-aware fashion.
+@@ -405,7 +400,6 @@
+ 
+         // If launched from notification, explicitly cancel the notification.
+         if (intentExtras != null && intentExtras.containsKey(DataReportingNotification.ALERT_NAME_DATAREPORTING_NOTIFICATION)) {
+-            Telemetry.sendUIEvent(TelemetryContract.Event.LAUNCH, Method.NOTIFICATION, "settings-data-choices");
+             NotificationManager notificationManager = (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
+             notificationManager.cancel(DataReportingNotification.ALERT_NAME_DATAREPORTING_NOTIFICATION.hashCode());
+         }
+@@ -517,8 +511,6 @@
+         if (NO_TRANSITIONS) {
+             overridePendingTransition(0, 0);
+         }
+-
+-        Telemetry.sendUIEvent(TelemetryContract.Event.CANCEL, Method.BACK, "settings");
+     }
+ 
+     @Override
+@@ -537,9 +529,6 @@
+         // The intent extras will be null if this is the top-level settings
+         // activity. In that case, we want to end the SETTINGS telmetry session.
+         // For HC+ versions of Android this is handled in GeckoPreferenceFragment.
+-        if (Versions.preHC && getIntent().getExtras() == null) {
+-            Telemetry.stopUISession(TelemetryContract.Session.SETTINGS);
+-        }
+     }
+ 
+     @Override
+@@ -814,7 +803,6 @@
+                         @Override
+                         public boolean onPreferenceClick(Preference preference) {
+                             GeckoPreferences.this.restoreDefaultSearchEngines();
+-                            Telemetry.sendUIEvent(TelemetryContract.Event.SEARCH_RESTORE_DEFAULTS, Method.LIST_ITEM);
+                             return true;
+                         }
+                     });
+@@ -948,7 +936,6 @@
+         // Generated R.id.* apparently aren't constant expressions, so they can't be switched.
+         if (itemId == R.id.restore_defaults) {
+             restoreDefaultSearchEngines();
+-            Telemetry.sendUIEvent(TelemetryContract.Event.SEARCH_RESTORE_DEFAULTS, Method.MENU);
+             return true;
+        }
+ 
+@@ -1076,14 +1063,10 @@
+ 
+                 if (TextUtils.isEmpty(newValue)) {
+                     BrowserLocaleManager.getInstance().resetToSystemLocale(context);
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.LOCALE_BROWSER_RESET);
+                 } else {
+                     if (null == localeManager.setSelectedLocale(context, newValue)) {
+                         localeManager.updateConfiguration(context, Locale.getDefault());
+                     }
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.LOCALE_BROWSER_UNSELECTED, Method.NONE,
+-                                          currentLocale == null ? "unknown" : currentLocale);
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.LOCALE_BROWSER_SELECTED, Method.NONE, newValue);
+                 }
+ 
+                 ThreadUtils.postToUiThread(new Runnable() {
+@@ -1163,8 +1146,6 @@
+         final String prefName = preference.getKey();
+         Log.i(LOGTAG, "Changed " + prefName + " = " + newValue);
+ 
+-        Telemetry.sendUIEvent(TelemetryContract.Event.EDIT, Method.SETTINGS, prefName);
+-
+         if (PREFS_MP_ENABLED.equals(prefName)) {
+             showDialog((Boolean) newValue ? DIALOG_CREATE_MASTER_PASSWORD : DIALOG_REMOVE_MASTER_PASSWORD);
+ 
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/preferences/PanelsPreferenceCategory.java
+--- a/mobile/android/base/java/org/mozilla/gecko/preferences/PanelsPreferenceCategory.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/preferences/PanelsPreferenceCategory.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -4,9 +4,6 @@
+ 
+ package org.mozilla.gecko.preferences;
+ 
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+-import org.mozilla.gecko.TelemetryContract.Method;
+ import org.mozilla.gecko.home.HomeConfig;
+ import org.mozilla.gecko.home.HomeConfig.PanelConfig;
+ import org.mozilla.gecko.home.HomeConfig.State;
+@@ -164,8 +161,6 @@
+ 
+         mConfigEditor.setDefault(id);
+         mConfigEditor.apply();
+-
+-        Telemetry.sendUIEvent(TelemetryContract.Event.PANEL_SET_DEFAULT, Method.DIALOG, id);
+     }
+ 
+     @Override
+@@ -181,8 +176,6 @@
+         mConfigEditor.uninstall(id);
+         mConfigEditor.apply();
+ 
+-        Telemetry.sendUIEvent(TelemetryContract.Event.PANEL_REMOVE, Method.DIALOG, id);
+-
+         super.uninstall(pref);
+     }
+ 
+@@ -193,8 +186,6 @@
+             mConfigEditor.moveTo(panelKey, panelIndex - 1);
+             final State state = mConfigEditor.apply();
+ 
+-            Telemetry.sendUIEvent(TelemetryContract.Event.PANEL_MOVE, Method.DIALOG, panelKey);
+-
+             refresh(state, panelKey);
+         }
+     }
+@@ -206,8 +197,6 @@
+             mConfigEditor.moveTo(panelKey, panelIndex + 1);
+             final State state = mConfigEditor.apply();
+ 
+-            Telemetry.sendUIEvent(TelemetryContract.Event.PANEL_MOVE, Method.DIALOG, panelKey);
+-
+             refresh(state, panelKey);
+         }
+     }
+@@ -224,12 +213,6 @@
+         mConfigEditor.setDisabled(id, toHide);
+         mConfigEditor.apply();
+ 
+-        if (toHide) {
+-            Telemetry.sendUIEvent(TelemetryContract.Event.PANEL_HIDE, Method.DIALOG, id);
+-        } else {
+-            Telemetry.sendUIEvent(TelemetryContract.Event.PANEL_SHOW, Method.DIALOG, id);
+-        }
+-
+         pref.setHidden(toHide);
+         setDefaultFromConfig();
+     }
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/preferences/PrivateDataPreference.java
+--- a/mobile/android/base/java/org/mozilla/gecko/preferences/PrivateDataPreference.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/preferences/PrivateDataPreference.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -7,8 +7,6 @@
+ 
+ import org.mozilla.gecko.GeckoAppShell;
+ import org.mozilla.gecko.GeckoEvent;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ 
+ import org.json.JSONException;
+ import org.json.JSONObject;
+@@ -35,8 +33,6 @@
+             return;
+         }
+ 
+-        Telemetry.sendUIEvent(TelemetryContract.Event.SANITIZE, TelemetryContract.Method.DIALOG, "settings");
+-
+         final Set<String> values = getValues();
+         final JSONObject json = new JSONObject();
+ 
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/preferences/SearchPreferenceCategory.java
+--- a/mobile/android/base/java/org/mozilla/gecko/preferences/SearchPreferenceCategory.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/preferences/SearchPreferenceCategory.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -16,9 +16,6 @@
+ import org.mozilla.gecko.EventDispatcher;
+ import org.mozilla.gecko.GeckoAppShell;
+ import org.mozilla.gecko.GeckoEvent;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+-import org.mozilla.gecko.TelemetryContract.Method;
+ import org.mozilla.gecko.util.GeckoEventListener;
+ import org.mozilla.gecko.util.ThreadUtils;
+ 
+@@ -58,9 +55,6 @@
+         super.setDefault(item);
+ 
+         sendGeckoEngineEvent("SearchEngines:SetDefault", item.getTitle().toString());
+-
+-        final String identifier = ((SearchEnginePreference) item).getIdentifier();
+-        Telemetry.sendUIEvent(TelemetryContract.Event.SEARCH_SET_DEFAULT, Method.DIALOG, identifier);
+     }
+ 
+     @Override
+@@ -68,9 +62,6 @@
+         super.uninstall(item);
+ 
+         sendGeckoEngineEvent("SearchEngines:Remove", item.getTitle().toString());
+-
+-        final String identifier = ((SearchEnginePreference) item).getIdentifier();
+-        Telemetry.sendUIEvent(TelemetryContract.Event.SEARCH_REMOVE, Method.DIALOG, identifier);
+     }
+ 
+     @Override
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/preferences/SyncPreference.java
+--- a/mobile/android/base/java/org/mozilla/gecko/preferences/SyncPreference.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/preferences/SyncPreference.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -19,9 +19,6 @@
+ 
+ import org.mozilla.gecko.AppConstants;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+-import org.mozilla.gecko.TelemetryContract.Method;
+ import org.mozilla.gecko.fxa.FirefoxAccounts;
+ import org.mozilla.gecko.fxa.FxAccountConstants;
+ import org.mozilla.gecko.fxa.activities.FxAccountWebFlowActivity;
+@@ -116,7 +113,6 @@
+         // open the settings page.
+         if (SyncAccounts.syncAccountsExist(mContext)) {
+             if (SyncAccounts.openSyncSettings(mContext) != null) {
+-                Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, Method.SETTINGS, "sync_settings");
+                 return;
+             }
+         }
+@@ -124,6 +120,5 @@
+         // Otherwise, launch the FxA "Get started" activity, which will
+         // dispatch to the right location.
+         launchFxASetup();
+-        Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, Method.SETTINGS, "sync_setup");
+     }
+ }
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/prompts/PromptListAdapter.java
+--- a/mobile/android/base/java/org/mozilla/gecko/prompts/PromptListAdapter.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/prompts/PromptListAdapter.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -1,8 +1,6 @@
+ package org.mozilla.gecko.prompts;
+ 
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.menu.MenuItemSwitcherLayout;
+ import org.mozilla.gecko.widget.GeckoActionProvider;
+ 
+@@ -210,7 +208,6 @@
+                         provider.chooseActivity(p);
+ 
+                         // Context: Sharing via content contextmenu list (no explicit session is active)
+-                        Telemetry.sendUIEvent(TelemetryContract.Event.SHARE, TelemetryContract.Method.LIST, "promptlist");
+                     }
+ 
+                     @Override
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/tabqueue/TabQueueDispatcher.java
+--- a/mobile/android/base/java/org/mozilla/gecko/tabqueue/TabQueueDispatcher.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/tabqueue/TabQueueDispatcher.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -8,8 +8,6 @@
+ import org.mozilla.gecko.AppConstants;
+ import org.mozilla.gecko.GeckoAppShell;
+ import org.mozilla.gecko.Locales;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.db.BrowserContract;
+ import org.mozilla.gecko.mozglue.ContextUtils;
+ 
+@@ -84,7 +82,6 @@
+     private void loadNormally(Intent intent) {
+         intent.setClassName(getApplicationContext(), AppConstants.MOZ_ANDROID_BROWSER_INTENT_CLASS);
+         startActivity(intent);
+-        Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.INTENT, "");
+         finish();
+     }
+ 
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/tabqueue/TabQueuePrompt.java
+--- a/mobile/android/base/java/org/mozilla/gecko/tabqueue/TabQueuePrompt.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/tabqueue/TabQueuePrompt.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -8,7 +8,6 @@
+ import org.mozilla.gecko.GeckoSharedPrefs;
+ import org.mozilla.gecko.Locales;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+ import org.mozilla.gecko.animation.TransitionsTracker;
+ 
+ import android.os.Bundle;
+@@ -47,13 +46,11 @@
+             @Override
+             public void onClick(View v) {
+                 onConfirmButtonPressed();
+-                Telemetry.addToHistogram("FENNEC_TABQUEUE_PROMPT_ENABLE_YES", numberOfTimesTabQueuePromptSeen);
+             }
+         });
+         findViewById(R.id.cancel_button).setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+-                Telemetry.addToHistogram("FENNEC_TABQUEUE_PROMPT_ENABLE_NO", numberOfTimesTabQueuePromptSeen);
+                 setResult(TabQueueHelper.TAB_QUEUE_NO);
+                 finish();
+             }
+@@ -160,4 +157,4 @@
+         slideOut();
+         return true;
+     }
+-}
+\ No newline at end of file
++}
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/tabqueue/TabQueueService.java
+--- a/mobile/android/base/java/org/mozilla/gecko/tabqueue/TabQueueService.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/tabqueue/TabQueueService.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -9,8 +9,6 @@
+ import org.mozilla.gecko.GeckoProfile;
+ import org.mozilla.gecko.GeckoSharedPrefs;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.mozglue.ContextUtils;
+ import org.mozilla.gecko.preferences.GeckoPreferences;
+ 
+@@ -146,8 +144,6 @@
+                             TabQueueHelper.removeURLFromFile(applicationContext, intentUrl, TabQueueHelper.FILE_NAME);
+                         }
+                         openNow(safeIntent.getUnsafe());
+-
+-                        Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.INTENT, "tabqueue-doubletap");
+                         stopSelfResult(startId);
+                     }
+                 });
+@@ -188,8 +184,6 @@
+                 stopServiceRunnable = null;
+                 removeView();
+                 openNow(intent);
+-
+-                Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL, TelemetryContract.Method.INTENT, "tabqueue-now");
+                 stopSelfResult(startId);
+             }
+         });
+@@ -214,8 +208,7 @@
+         executorService.submit(new Runnable() {
+             @Override
+             public void run() {
+-                int queuedTabCount = TabQueueHelper.getTabQueueLength(TabQueueService.this);
+-                Telemetry.addToHistogram("FENNEC_TABQUEUE_QUEUESIZE", queuedTabCount);
++                return;
+             }
+         });
+ 
+@@ -297,4 +290,4 @@
+ 
+         public abstract void onRun();
+     }
+-}
+\ No newline at end of file
++}
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/tabs/TabsPanel.java
+--- a/mobile/android/base/java/org/mozilla/gecko/tabs/TabsPanel.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/tabs/TabsPanel.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -10,8 +10,6 @@
+ import org.mozilla.gecko.GeckoApplication;
+ import org.mozilla.gecko.R;
+ import org.mozilla.gecko.Restrictions;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.animation.PropertyAnimator;
+ import org.mozilla.gecko.animation.ViewHelper;
+ import org.mozilla.gecko.lwt.LightweightTheme;
+@@ -183,8 +181,6 @@
+     }
+ 
+     private void addTab() {
+-        Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.ACTIONBAR, "new_tab");
+-
+         if (mCurrentPanel == Panel.NORMAL_TABS) {
+             mActivity.addTab();
+         } else {
+@@ -209,8 +205,6 @@
+ 
+         if (itemId == R.id.close_all_tabs) {
+             if (mCurrentPanel == Panel.NORMAL_TABS) {
+-                Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.MENU, "close_all_tabs");
+-
+                 // Disable the menu button so that the menu won't interfere with the tab close animation.
+                 mMenuButton.setEnabled(false);
+                 ((CloseAllPanelView) mPanelNormal).closeAll();
+@@ -223,8 +217,6 @@
+         if (itemId == R.id.close_private_tabs) {
+             if (mCurrentPanel == Panel.PRIVATE_TABS) {
+                 // Mask private browsing
+-                Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.MENU, "close_all_tabs");
+-
+                 ((CloseAllPanelView) mPanelPrivate).closeAll();
+             } else {
+                 Log.e(LOGTAG, "Close private tabs menu item should only be visible for private tabs panel");
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/toolbar/BrowserToolbar.java
+--- a/mobile/android/base/java/org/mozilla/gecko/toolbar/BrowserToolbar.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/toolbar/BrowserToolbar.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -15,8 +15,6 @@
+ import org.mozilla.gecko.R;
+ import org.mozilla.gecko.Tab;
+ import org.mozilla.gecko.Tabs;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.animation.PropertyAnimator;
+ import org.mozilla.gecko.animation.PropertyAnimator.PropertyAnimationListener;
+ import org.mozilla.gecko.animation.ViewHelper;
+@@ -364,8 +362,6 @@
+         // If we exit editing mode during the animation,
+         // we're put into an inconsistent state (bug 1017276).
+         if (isEditing() && !isAnimating()) {
+-            Telemetry.sendUIEvent(TelemetryContract.Event.CANCEL,
+-                                  TelemetryContract.Method.BACK);
+             cancelEdit();
+             return true;
+         }
+@@ -787,7 +783,6 @@
+      * @return the url that was entered
+      */
+     public String cancelEdit() {
+-        Telemetry.stopUISession(TelemetryContract.Session.AWESOMESCREEN);
+         return stopEditing();
+     }
+ 
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/toolbar/ToolbarEditLayout.java
+--- a/mobile/android/base/java/org/mozilla/gecko/toolbar/ToolbarEditLayout.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/toolbar/ToolbarEditLayout.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -15,8 +15,6 @@
+ import org.mozilla.gecko.GeckoAppShell;
+ import org.mozilla.gecko.GeckoSharedPrefs;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.animation.PropertyAnimator;
+ import org.mozilla.gecko.animation.PropertyAnimator.PropertyAnimationListener;
+ import org.mozilla.gecko.preferences.GeckoPreferences;
+@@ -280,7 +278,6 @@
+     }
+ 
+     private void launchVoiceRecognizer() {
+-        Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.ACTIONBAR, "voice_input_launch");
+         final Intent intent = InputOptionsUtils.createVoiceRecognizerIntent(getResources().getString(R.string.voicesearch_prompt));
+ 
+         Activity activity = GeckoAppShell.getGeckoInterface().getActivity();
+@@ -291,7 +288,6 @@
+                     return;
+                 }
+ 
+-                Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.ACTIONBAR, "voice_input_success");
+                 // We have RESULT_OK, not RESULT_NO_MATCH so it should be safe to assume that
+                 // we have at least one match. We only need one: this will be
+                 // used for showing the user search engines with this search term in it.
+@@ -317,7 +313,6 @@
+     }
+ 
+     private void launchQRCodeReader() {
+-        Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.ACTIONBAR, "qrcode_input_launch");
+         final Intent intent = InputOptionsUtils.createQRCodeReaderIntent();
+ 
+         Activity activity = GeckoAppShell.getGeckoInterface().getActivity();
+@@ -327,7 +322,6 @@
+                 if (resultCode == Activity.RESULT_OK) {
+                     String text = intent.getStringExtra("SCAN_RESULT");
+                     if (!StringUtils.isSearchQuery(text, false)) {
+-                        Telemetry.sendUIEvent(TelemetryContract.Event.ACTION, TelemetryContract.Method.ACTIONBAR, "qrcode_input_success");
+                         mEditText.setText(text);
+                         mEditText.selectAll();
+ 
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/widget/GeckoActionProvider.java
+--- a/mobile/android/base/java/org/mozilla/gecko/widget/GeckoActionProvider.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/widget/GeckoActionProvider.java	Tue Mar 01 23:59:57 2016 -0300
+@@ -8,8 +8,6 @@
+ import android.view.Menu;
+ import org.mozilla.gecko.GeckoAppShell;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.menu.QuickShareBarActionView;
+ import org.mozilla.gecko.overlays.ui.ShareDialog;
+ import org.mozilla.gecko.menu.MenuItemSwitcherLayout;
+@@ -251,7 +249,6 @@
+             chooseActivity(item.getItemId());
+ 
+             // Context: Sharing via chrome mainmenu list (no explicit session is active)
+-            Telemetry.sendUIEvent(TelemetryContract.Event.SHARE, TelemetryContract.Method.LIST, "actionprovider");
+             return true;
+         }
+ 
+@@ -261,7 +258,6 @@
+             chooseActivity(index);
+ 
+             // Context: Sharing via chrome mainmenu and content contextmenu quickshare (no explicit session is active)
+-            Telemetry.sendUIEvent(TelemetryContract.Event.SHARE, TelemetryContract.Method.BUTTON, "actionprovider");
+         }
+     }
+ 
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/DataReportingNotification.java
+--- a/mobile/android/base/java/org/mozilla/gecko/DataReportingNotification.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/DataReportingNotification.java	Wed Mar 02 02:03:32 2016 -0300
+@@ -125,9 +125,8 @@
+             editor.putInt(PREFS_POLICY_VERSION, DATA_REPORTING_VERSION);
+             editor.apply();
+             result = true;
+         } finally {
+-            // We want to track any errors, so record notification outcome.
+-            Telemetry.sendUIEvent(TelemetryContract.Event.POLICY_NOTIFICATION_SUCCESS, result);
++            boolean tru = false;
+         }
+     }
+ }
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/GlobalHistory.java
+--- a/mobile/android/base/java/org/mozilla/gecko/GlobalHistory.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/GlobalHistory.java	Wed Mar 02 02:03:32 2016 -0300
+@@ -24,10 +24,6 @@
+ class GlobalHistory {
+     private static final String LOGTAG = "GeckoGlobalHistory";
+ 
+-    private static final String TELEMETRY_HISTOGRAM_ADD = "FENNEC_GLOBALHISTORY_ADD_MS";
+-    private static final String TELEMETRY_HISTOGRAM_UPDATE = "FENNEC_GLOBALHISTORY_UPDATE_MS";
+-    private static final String TELEMETRY_HISTOGRAM_BUILD_VISITED_LINK = "FENNEC_GLOBALHISTORY_VISITED_BUILD_MS";
+-
+     private static final GlobalHistory sInstance = new GlobalHistory();
+ 
+     static GlobalHistory getInstance() {
+@@ -61,7 +57,6 @@
+             if (visitedSet == null) {
+                 // The cache was wiped. Repopulate it.
+                 Log.w(LOGTAG, "Rebuilding visited link set...");
+-                final long start = SystemClock.uptimeMillis();
+                 final Cursor c = mDB.getAllVisitedHistory(mContentResolver);
+                 if (c == null) {
+                     return;
+@@ -75,9 +70,6 @@
+                         } while (c.moveToNext());
+                     }
+                     mVisitedCache = new SoftReference<Set<String>>(visitedSet);
+-                    final long end = SystemClock.uptimeMillis();
+-                    final long took = end - start;
+-                    Telemetry.addToHistogram(TELEMETRY_HISTOGRAM_BUILD_VISITED_LINK, (int) Math.min(took, Integer.MAX_VALUE));
+                 } finally {
+                     c.close();
+                 }
+@@ -116,26 +108,16 @@
+ 
+     public void add(final Context context, final BrowserDB db, String uri) {
+         ThreadUtils.assertOnBackgroundThread();
+-        final long start = SystemClock.uptimeMillis();
+ 
+         db.updateVisitedHistory(context.getContentResolver(), uri);
+-
+-        final long end = SystemClock.uptimeMillis();
+-        final long took = end - start;
+-        Telemetry.addToHistogram(TELEMETRY_HISTOGRAM_ADD, (int) Math.min(took, Integer.MAX_VALUE));
+         addToGeckoOnly(uri);
+     }
+ 
+     @SuppressWarnings("static-method")
+     public void update(final ContentResolver cr, final BrowserDB db, String uri, String title) {
+         ThreadUtils.assertOnBackgroundThread();
+-        final long start = SystemClock.uptimeMillis();
+ 
+         db.updateHistoryTitle(cr, uri, title);
+-
+-        final long end = SystemClock.uptimeMillis();
+-        final long took = end - start;
+-        Telemetry.addToHistogram(TELEMETRY_HISTOGRAM_UPDATE, (int) Math.min(took, Integer.MAX_VALUE));
+     }
+ 
+     public void checkUriVisited(final String uri) {
+diff -r 63bad80aea6e mobile/android/base/java/org/mozilla/gecko/toolbar/BrowserToolbarPhoneBase.java
+--- a/mobile/android/base/java/org/mozilla/gecko/toolbar/BrowserToolbarPhoneBase.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/toolbar/BrowserToolbarPhoneBase.java	Wed Mar 02 02:03:32 2016 -0300
+@@ -9,8 +9,6 @@
+ 
+ import org.mozilla.gecko.R;
+ import org.mozilla.gecko.Tab;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.animation.PropertyAnimator;
+ import org.mozilla.gecko.animation.ViewHelper;
+ import org.mozilla.gecko.util.ColorUtils;
+@@ -78,9 +76,6 @@
+                 // If we exit editing mode during the animation,
+                 // we're put into an inconsistent state (bug 1017276).
+                 if (!isAnimating()) {
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.CANCEL,
+-                            TelemetryContract.Method.ACTIONBAR,
+-                            getResources().getResourceEntryName(editCancel.getId()));
+                     cancelEdit();
+                 }
+             }
+diff -r 63bad80aea6e mobile/android/search/java/org/mozilla/search/PostSearchFragment.java
+--- a/mobile/android/search/java/org/mozilla/search/PostSearchFragment.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/search/java/org/mozilla/search/PostSearchFragment.java	Wed Mar 02 10:56:00 2016 -0300
+@@ -10,8 +10,6 @@
+ 
+ import org.mozilla.gecko.AppConstants;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.util.ColorUtils;
+ import org.mozilla.search.providers.SearchEngine;
+ 
+@@ -135,11 +133,6 @@
+                 // If the intent URI didn't specify a package, open this in Fennec.
+                 if (i.getPackage() == null) {
+                     i.setClassName(AppConstants.ANDROID_PACKAGE_NAME, AppConstants.MOZ_ANDROID_BROWSER_INTENT_CLASS);
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.LOAD_URL,
+-                            TelemetryContract.Method.CONTENT, "search-result");
+-                } else {
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.LAUNCH,
+-                            TelemetryContract.Method.INTENT, "search-result");
+                 }
+ 
+                 i.addCategory(Intent.CATEGORY_BROWSABLE);
+diff -r 63bad80aea6e mobile/android/search/java/org/mozilla/search/PreSearchFragment.java
+--- a/mobile/android/search/java/org/mozilla/search/PreSearchFragment.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/search/java/org/mozilla/search/PreSearchFragment.java	Wed Mar 02 10:56:00 2016 -0300
+@@ -27,8 +27,6 @@
+ import android.widget.TextView;
+ 
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.db.BrowserContract;
+ import org.mozilla.gecko.db.BrowserContract.SearchHistory;
+ import org.mozilla.gecko.widget.SwipeDismissListViewTouchListener;
+@@ -110,8 +108,6 @@
+                     final Rect startBounds = new Rect();
+                     view.getGlobalVisibleRect(startBounds);
+ 
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.SEARCH, TelemetryContract.Method.HOMESCREEN, "history");
+-
+                     searchListener.onSearch(query, new SuggestionAnimation() {
+                         @Override
+                         public Rect getStartBounds() {
+diff -r 63bad80aea6e mobile/android/search/java/org/mozilla/search/SearchActivity.java
+--- a/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Wed Mar 02 10:56:00 2016 -0300
+@@ -7,8 +7,6 @@
+ import org.mozilla.gecko.GeckoAppShell;
+ import org.mozilla.gecko.Locales;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.db.BrowserContract.SearchHistory;
+ import org.mozilla.gecko.distribution.Distribution;
+ import org.mozilla.search.autocomplete.SearchBar;
+@@ -208,18 +206,6 @@
+     }
+ 
+     @Override
+-    protected void onStart() {
+-        super.onStart();
+-        Telemetry.startUISession(TelemetryContract.Session.SEARCH_ACTIVITY);
+-    }
+-
+-    @Override
+-    protected void onStop() {
+-        super.onStop();
+-        Telemetry.stopUISession(TelemetryContract.Session.SEARCH_ACTIVITY);
+-    }
+-
+-    @Override
+     public void onNewIntent(Intent intent) {
+         // Reset the activity in the presearch state if it was launched from a new intent.
+         setSearchState(SearchState.PRESEARCH);
+diff -r 63bad80aea6e mobile/android/search/java/org/mozilla/search/SearchPreferenceActivity.java
+--- a/mobile/android/search/java/org/mozilla/search/SearchPreferenceActivity.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/search/java/org/mozilla/search/SearchPreferenceActivity.java	Wed Mar 02 10:56:00 2016 -0300
+@@ -7,8 +7,6 @@
+ import org.mozilla.gecko.GeckoSharedPrefs;
+ import org.mozilla.gecko.Locales;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.db.BrowserContract;
+ 
+ import android.app.AlertDialog;
+@@ -73,7 +71,6 @@
+                 dialogBuilder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                     @Override
+                     public void onClick(DialogInterface dialog, int which) {
+-                        Telemetry.sendUIEvent(TelemetryContract.Event.SANITIZE, TelemetryContract.Method.MENU, "search-history");
+                         clearHistory();
+                     }
+                 });
+diff -r 63bad80aea6e mobile/android/search/java/org/mozilla/search/SearchWidget.java
+--- a/mobile/android/search/java/org/mozilla/search/SearchWidget.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/search/java/org/mozilla/search/SearchWidget.java	Wed Mar 02 10:56:00 2016 -0300
+@@ -8,8 +8,6 @@
+ import org.mozilla.gecko.AboutPages;
+ import org.mozilla.gecko.AppConstants;
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ 
+ import android.annotation.TargetApi;
+ import android.app.PendingIntent;
+@@ -70,24 +68,18 @@
+                                                AppConstants.ANDROID_PACKAGE_NAME,
+                                                AppConstants.MOZ_ANDROID_BROWSER_INTENT_CLASS,
+                                                intent);
+-                Telemetry.sendUIEvent(TelemetryContract.Event.LAUNCH,
+-                                      TelemetryContract.Method.WIDGET, "browser");
+                 break;
+             case ACTION_LAUNCH_NEW_TAB:
+                 redirect = buildRedirectIntent(Intent.ACTION_VIEW,
+                                                AppConstants.ANDROID_PACKAGE_NAME,
+                                                AppConstants.MOZ_ANDROID_BROWSER_INTENT_CLASS,
+                                                intent);
+-                Telemetry.sendUIEvent(TelemetryContract.Event.LAUNCH,
+-                                      TelemetryContract.Method.WIDGET, "new-tab");
+                 break;
+             case ACTION_LAUNCH_SEARCH:
+                 redirect = buildRedirectIntent(Intent.ACTION_VIEW,
+                                                AppConstants.ANDROID_PACKAGE_NAME,
+                                                AppConstants.MOZ_ANDROID_SEARCH_INTENT_CLASS,
+                                                intent);
+-                Telemetry.sendUIEvent(TelemetryContract.Event.LAUNCH,
+-                                      TelemetryContract.Method.WIDGET, "search");
+                 break;
+             default:
+                 redirect = null;
+diff -r 63bad80aea6e mobile/android/search/java/org/mozilla/search/autocomplete/SearchBar.java
+--- a/mobile/android/search/java/org/mozilla/search/autocomplete/SearchBar.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/search/java/org/mozilla/search/autocomplete/SearchBar.java	Wed Mar 02 10:56:00 2016 -0300
+@@ -5,8 +5,6 @@
+ package org.mozilla.search.autocomplete;
+ 
+ import org.mozilla.gecko.R;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.gfx.BitmapUtils;
+ import org.mozilla.search.providers.SearchEngine;
+ 
+@@ -87,7 +85,6 @@
+                 if (listener != null &&
+                     (actionId == EditorInfo.IME_ACTION_UNSPECIFIED || actionId == EditorInfo.IME_ACTION_SEARCH)) {
+                     // The user searched without using search engine suggestions.
+-                    Telemetry.sendUIEvent(TelemetryContract.Event.SEARCH, TelemetryContract.Method.ACTIONBAR, "text");
+                     listener.onSubmit(v.getText().toString());
+                     return true;
+                 }
+diff -r 63bad80aea6e mobile/android/search/java/org/mozilla/search/autocomplete/SuggestionsFragment.java
+--- a/mobile/android/search/java/org/mozilla/search/autocomplete/SuggestionsFragment.java	Tue Mar 01 03:35:38 2016 -0500
++++ b/mobile/android/search/java/org/mozilla/search/autocomplete/SuggestionsFragment.java	Wed Mar 02 10:56:00 2016 -0300
+@@ -9,8 +9,6 @@
+ 
+ import org.mozilla.gecko.R;
+ import org.mozilla.gecko.SuggestClient;
+-import org.mozilla.gecko.Telemetry;
+-import org.mozilla.gecko.TelemetryContract;
+ import org.mozilla.gecko.util.ColorUtils;
+ import org.mozilla.search.AcceptsSearchQuery;
+ import org.mozilla.search.AcceptsSearchQuery.SuggestionAnimation;
+@@ -106,8 +104,6 @@
+                 view.getGlobalVisibleRect(startBounds);
+ 
+                 // The user tapped on a suggestion from the search engine.
+-                Telemetry.sendUIEvent(TelemetryContract.Event.SEARCH, TelemetryContract.Method.SUGGESTION, position);
+-
+                 searchListener.onSearch(suggestion.value, new SuggestionAnimation() {
+                     @Override
+                     public Rect getStartBounds() {

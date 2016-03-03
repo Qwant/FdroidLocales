@@ -14,7 +14,6 @@ rm -R b2g/branding/
 rm -R b2g/components/test/
 rm -R browser/branding/*/dsstore
 rm -R browser/components/migration/tests/unit/
-rm -R build/mobile/robocop/
 rm -R build/mobile/sutagent/
 rm -R build/pymake/tests/
 rm -R chrome/test/
@@ -25,9 +24,10 @@ rm -R docshell/test/
 rm -R dom/apps/tests/
 rm -R dom/base/crashtests/
 rm -R dom/base/test/
-rm -R dom/media/webspeech/recognition/models/
 rm -R dom/html/test/
 rm -R dom/indexedDB/test/
+rm -R dom/media/webspeech/recognition/models/
+rm -R dom/security/test/
 rm -R dom/tests/
 rm -R layout/base/crashtests/
 rm -R layout/generic/crashtests/
@@ -58,6 +58,7 @@ rm -R tools/update-packaging/test/
 rm -R toolkit/components/downloads/test/unit/
 rm -R toolkit/components/mediasniffer/test/unit/
 rm -R toolkit/components/search/tests/
+rm -R toolkit/components/telemetry/tests/unit/
 rm -R toolkit/modules/tests/
 rm -R toolkit/mozapps/extensions/test/
 rm -R toolkit/mozapps/update/tests/
@@ -87,6 +88,7 @@ sed -i -e '/TEST/d' modules/libjar/zipwriter/moz.build
 sed -i -e '/xpcshell.ini/d' toolkit/components/downloads/moz.build
 sed -i -e '/xpcshell.ini/d' toolkit/components/mediasniffer/moz.build
 sed -i -e '/xpcshell.ini/d' toolkit/components/search/moz.build
+sed -i -e '/xpcshell.ini/d' -e '/TESTING/,+3d' toolkit/components/telemetry/moz.build
 sed -i -e '/tests\//d' toolkit/modules/moz.build
 sed -i -e '/tests/d' toolkit/mozapps/update/moz.build
 
@@ -99,18 +101,27 @@ echo "ac_add_options --with-l10n-base=$REPO" >> .mozconfig
 
 #HealthReporter
 ##Option 1: Completely remove FHR
-rm mobile/android/base/health/*
-rm -R mobile/android/base/background/datareporting
+rm mobile/android/base/java/org/mozilla/gecko/health/*
+rm -R mobile/android/services/src/main/java/org/mozilla/gecko/background/datareporting/
 patch -p1 <$REPO/Remove_FHR.patch
 ###Option 2: Make the default pref false if not value present - Not tested
-#sed -i -e 's/HEALTHREPORT_UPLOAD_ENABLED, true/HEALTHREPORT_UPLOAD_ENABLED, false/g' mobile/android/base/preferences/GeckoPreferences.java
+#sed -i -e 's/HEALTHREPORT_UPLOAD_ENABLED, true/HEALTHREPORT_UPLOAD_ENABLED, false/g' mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java
 ###Option 3: Force the pref to be false - Not tested
-#sed -i -e 's/getBooleanPref(context, PREFS_HEALTHREPORT_UPLOAD_ENABLED, true)/false/g' mobile/android/base/preferences/GeckoPreferences.java
+#sed -i -e 's/getBooleanPref(context, PREFS_HEALTHREPORT_UPLOAD_ENABLED, true)/false/g' mmobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java
+
+#Telemetry
+sed -i -e 's/AppConstants.MOZILLA_OFFICIAL/false/g' mobile/android/base/java/org/mozilla/gecko/telemetry/TelemetryConstants.java
+##Option 2: Completely remove Telemetry
+#rm mobile/android/base/java/org/mozilla/gecko/Telemetry*
+#rm -R mobile/android/base/java/org/mozilla/gecko/telemetry/
+#rm -R mobile/android/services/src/main/java/org/mozilla/gecko/background/common/telemetry/
+#patch -p1 <$REPO/Remove_Telemetry.patch
 
 ##Get rid of Gradle
 rm -R gradle/
 rm -R build.gradle
 rm -R mobile/android/gradle/
+rm -R mobile/android/app/base/build.gradle
 sed -i -e '/gradle/d' mobile/android/moz.build
 
 ##Disable Gecko Media Pluggins support 

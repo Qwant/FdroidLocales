@@ -1,6 +1,6 @@
-diff -r 5e7156ebdc78 mobile/android/base/BrowserApp.java
---- a/mobile/android/base/BrowserApp.java	Wed Jan 20 18:40:08 2016 -0500
-+++ b/mobile/android/base/BrowserApp.java	Wed Jan 20 22:12:02 2016 -0300
+diff -r 5e7156ebdc78 mobile/android/base/java/org/mozilla/gecko/BrowserApp.java
+--- a/mobile/android/base/java/org/mozilla/gecko/BrowserApp.java	Wed Jan 20 18:40:08 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/BrowserApp.java	Wed Jan 20 22:12:02 2016 -0300
 @@ -28,8 +28,6 @@
  import org.mozilla.gecko.gfx.DynamicToolbarAnimator;
  import org.mozilla.gecko.gfx.ImmutableViewportMetrics;
@@ -28,9 +28,9 @@ diff -r 5e7156ebdc78 mobile/android/base/BrowserApp.java
      }
  
      /**
-diff -r 5e7156ebdc78 mobile/android/base/GeckoApp.java
---- a/mobile/android/base/GeckoApp.java	Wed Jan 20 18:40:08 2016 -0500
-+++ b/mobile/android/base/GeckoApp.java	Wed Jan 20 22:12:02 2016 -0300
+diff -r 5e7156ebdc78 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
+--- a/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Wed Jan 20 18:40:08 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Wed Jan 20 22:12:02 2016 -0300
 @@ -15,9 +15,6 @@
  import org.mozilla.gecko.gfx.Layer;
  import org.mozilla.gecko.gfx.LayerView;
@@ -153,7 +153,7 @@ diff -r 5e7156ebdc78 mobile/android/base/GeckoApp.java
 -            }
 -        });
 -
-         RestrictedProfiles.update(this);
+         Restrictions.update(this);
      }
  
 @@ -2084,7 +2008,6 @@
@@ -239,8 +239,8 @@ diff -r 5e7156ebdc78 mobile/android/base/GeckoApp.java
          // Default to NORMAL here. Subclasses can handle the other types.
          return StartupAction.NORMAL;
 diff -r 5e7156ebdc78 mobile/android/base/android-services.mozbuild
---- a/mobile/android/base/android-services.mozbuild	Wed Jan 20 18:40:08 2016 -0500
-+++ b/mobile/android/base/android-services.mozbuild	Wed Jan 20 22:12:02 2016 -0300
+--- a/mobile/android/base/android-services.mozbuild    Wed Jan 20 18:40:08 2016 -0500
++++ b/mobile/android/base/android-services.mozbuild    Wed Jan 20 22:12:02 2016 -0300
 @@ -780,7 +780,6 @@
      'background/common/log/writers/ThreadLocalTagLogWriter.java',
      'background/common/PrefsBranch.java',
@@ -262,9 +262,9 @@ diff -r 5e7156ebdc78 mobile/android/base/moz.build
      'home/BookmarkFolderView.java',
      'home/BookmarksListAdapter.java',
      'home/BookmarksListView.java',
-diff -r 5e7156ebdc78 mobile/android/base/preferences/GeckoPreferences.java
---- a/mobile/android/base/preferences/GeckoPreferences.java	Wed Jan 20 18:40:08 2016 -0500
-+++ b/mobile/android/base/preferences/GeckoPreferences.java	Wed Jan 20 22:12:02 2016 -0300
+diff -r 5e7156ebdc78 mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java
+--- a/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Wed Jan 20 18:40:08 2016 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Wed Jan 20 22:12:02 2016 -0300
 @@ -1035,31 +1035,6 @@
  
      /**
