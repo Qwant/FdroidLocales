@@ -235,7 +235,7 @@ diff -r 5e7156ebdc78 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
 -        return new StubbedHealthRecorder();
 -    }
 -
-     protected StartupAction getStartupAction(final String passedURL) {
+     protected StartupAction getStartupAction(final String passedURL, final String action) {
          // Default to NORMAL here. Subclasses can handle the other types.
          return StartupAction.NORMAL;
 diff -r 5e7156ebdc78 mobile/android/base/android-services.mozbuild
