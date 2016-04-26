@@ -55,7 +55,7 @@
 # link title for https://www.mozilla.org/en-US/firefox/customize/
 
 
-#define firefox_customize Firefox मनपसंद बनाएँ
+#define firefox_customize Customize Firefox
 
 
 # LOCALIZATION NOTE (firefox_community):

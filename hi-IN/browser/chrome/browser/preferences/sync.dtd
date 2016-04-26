@@ -72,7 +72,7 @@ both, to better adapt this sentence to their language.
 <!ENTITY notSignedIn.label           "आप साइन इन नहीं हैं">
 <!ENTITY signIn.label                "साइन इन">
 <!ENTITY profilePicture.tooltip      "प्रोफ़ाइल तस्वीर बदलें">
-<!ENTITY verifiedManage.label        "खाता प्रबंधित करें">
+<!ENTITY manage.label                "प्रबंधित">
 <!ENTITY disconnect.label            "डिस्कनेक्ट करें">
 <!ENTITY verify.label                "ईमेल सत्यापित करें">
 <!ENTITY forget.label                "इस ईमेल को भूल जाइए">
@@ -90,19 +90,9 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedOut.accountBox.signin  "साइन इन">
 
 <!ENTITY signedIn.engines.label       "सभी डिवाइस को सिंक करें">
-<!-- LOCALIZATION NOTE (mobilePromo2.*): the following strings will be used to
-     create a single sentence with active links.
-     The resulting sentence in English is: "Sync to your mobile device.
-     Download Firefox for Android or Firefox for iOS." -->
 
-
-<!ENTITY mobilePromo2.start            "अपने मोबाइल डिवाइस के साथ सिंक करे.डाउनलोड">
-<!-- LOCALIZATION NOTE (mobilePromo2.androidLink): This is a link title that links to https://www.mozilla.org/firefox/android/ -->
-<!ENTITY mobilePromo2.androidLink      "Android के लिए Firefox">
-<!-- LOCALIZATION NOTE (mobilePromo2.iOSBefore): This is text displayed between mobilePromo2.androidLink and mobilePromo2.iosLink -->
-
-<!ENTITY mobilePromo2.iOSBefore         " ओआर ">
-<!-- LOCALIZATION NOTE (mobilePromo2.iOSLink): This is a link title that links to https://www.mozilla.org/firefox/ios/ -->
-<!ENTITY mobilePromo2.iOSLink          "iOS के लिए Firefox">
-
-<!ENTITY mobilePromo2.end              ".">
+<!ENTITY mobilePromo.start            "के लिए फ़ायरफ़ॉक्स डाउनलोड करें">
+<!-- LOCALIZATION NOTE (mobilePromo.androidLink): This is a link title that links to https://www.mozilla.org/firefox/android/ -->
+<!ENTITY mobilePromo.androidLink      "एंड्राइड™">
+<!ENTITY mobilePromo.end              "अपने मोबाइल डिवाइस के साथ सिंक करने के लिए">
+<!ENTITY androidAttribution           "एंड्रॉयड Google Inc का व्यापार-चिह्न हैं.">

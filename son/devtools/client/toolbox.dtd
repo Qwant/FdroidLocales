@@ -21,10 +21,14 @@ fullZoomReduceCmd.commandkey2, fullZoomResetCmd.commandkey,
 and fullZoomResetCmd.commandkey2 should all match the corresponding
 values from browser.dtd.  -->
 
+<!ENTITY fullZoomEnlargeCmd.commandkey  "+">
+<!ENTITY fullZoomEnlargeCmd.commandkey2 "=">
 <!ENTITY fullZoomEnlargeCmd.commandkey3 "">
 
+<!ENTITY fullZoomReduceCmd.commandkey   "-">
 <!ENTITY fullZoomReduceCmd.commandkey2  "">
 
+<!ENTITY fullZoomResetCmd.commandkey    "0">
 <!ENTITY fullZoomResetCmd.commandkey2   "">
 
 <!ENTITY toolboxReload.key             "r">
@@ -66,6 +70,8 @@ values from browser.dtd.  -->
 <!ENTITY options.defaultColorUnit.accesskey "u">
 <!-- LOCALIZATION NOTE (options.defaultColorUnit.authored): This is used in the
   -  'Default color unit' dropdown list and is visible in the options panel. -->
+
+<!ENTITY options.defaultColorUnit.authored "Hantumkaw">
 <!-- LOCALIZATION NOTE (options.defaultColorUnit.hex): This is used in the
   -  'Default color unit' dropdown list and is visible in the options panel. -->
 
@@ -92,7 +98,7 @@ values from browser.dtd.  -->
   -  checkbox that toggles chrome debugging, i.e. devtools.chrome.enabled
   -  boolean preference in about:config, in the options panel. -->
 
-<!ENTITY options.enableChrome.label5    "Chrome ceecikaa nda hansari goyjinawey dirandi.">
+<!ENTITY options.enableChrome.label5    "Ceecikaw kungaa feeri nda hansari goyjinawey tunandi">
 <!ENTITY options.enableChrome.tooltip3  "Suubaaroo woo tunandiyanoo ga too war ma hin ka goy nda cinakaw goyjinay dumi booboyaŋ ceecikaa ra (nda Goyjinawey > Ceecikaw goyjinay bata) nda ka tontoney hanse tontoney juwalkaa ra">
 <!-- LOCALIZATION NOTE (options.enableRemote.label3): This is the label for the
   -  checkbox that toggles remote debugging, i.e. devtools.debugger.remote-enabled
@@ -105,23 +111,25 @@ values from browser.dtd.  -->
   -  boolean preference in about:config, in the options panel. -->
 
 <!ENTITY options.enableWorkers.label    "Goykaw hanseyan tunandi (cinari dumi no)">
-
+<!ENTITY options.enableWorkers.tooltip  "Suubarooo woo tunandiyanoo ka too cinakaw goyjinawey ma hasaraw kaa">
 <!-- LOCALIZATION NOTE (options.disableJavaScript.label,
   -  options.disableJavaScript.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles JavaScript on or off. -->
 
 <!ENTITY options.disableJavaScript.label     "JavaScript kayandi *">
-<!ENTITY options.disableJavaScript.tooltip   "Suubaroo tunandiroo ga JavaScript kayandi nor lokoo ra. Nda nor lokoo wala goyjinay bataa daaba kul kayandiyanoo mma dere.">
+<!ENTITY options.disableJavaScript.tooltip   "Suubaroo tunandiroo ga JavaScript kayandi kanjoo ra. Nda kanjoo wala goyjinay bataa daaba kul kayandiyanoo mma dere.">
 <!-- LOCALIZATION NOTE (options.disableCache.label2,
   -  options.disableCache.tooltip2): This is the options panel label and
   -  tooltip for the checkbox that toggles the cache on or off. -->
 
 <!ENTITY options.disableCache.label2     "Tugudoo kayandi (nda goyjinay bata ga feera)">
-<!ENTITY options.disableCache.tooltip2   "Suubaroo woo tunandiroo ka too tugudoo ma kay nor lokey kaŋ goyjinay bata ga feeri se.">
+<!ENTITY options.disableCache.tooltip2   "Suubaroo woo tunandiroo ka too tugudoo ma kay kanjey kaŋ goyjinay bata ga feeri se.">
 <!-- LOCALIZATION NOTE (options.enableServiceWorkersHTTP.label,
   -  options.enableServiceWorkersHTTP.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles the service workers testing features on or off. This option enables service workers over HTTP. -->
 
+<!ENTITY options.enableServiceWorkersHTTP.label     "Service Workers tunandi HTTP boŋ (nda bataa ga feeri)">
+<!ENTITY options.enableServiceWorkersHTTP.tooltip   "Suubaroo woo tunandiroo ga service workers kul tunandi HTTP boŋ kanjey kaŋ na goyjinay bataa feeri kul se.">
 <!-- LOCALIZATION NOTE (options.selectDefaultTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
@@ -208,8 +216,8 @@ Gecko goydaari jinay tammaasayaŋ">
 <!ENTITY options.sourceeditor.autoclosebrackets.tooltip "Holgu daabuyan dam nga boŋ se">
 <!ENTITY options.sourceeditor.expandtab.label           "Hirri nor nda farrey">
 <!ENTITY options.sourceeditor.expandtab.tooltip         "Goy nda farrey, manti nor loku harfu ">
-<!ENTITY options.sourceeditor.tabsize.label             "Nor loku azzaati">
-<!ENTITY options.sourceeditor.tabsize.accesskey         "N">
+<!ENTITY options.sourceeditor.tabsize.label             "Kanji azzaati">
+<!ENTITY options.sourceeditor.tabsize.accesskey         "K">
 <!ENTITY options.sourceeditor.keybinding.label          "Kufalhawarey">
 <!ENTITY options.sourceeditor.keybinding.accesskey      "K">
 <!ENTITY options.sourceeditor.keybinding.default.label  "Tilasu">

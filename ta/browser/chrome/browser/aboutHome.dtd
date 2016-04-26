@@ -10,6 +10,8 @@
 
 
 <!ENTITY abouthome.pageTitle "&brandFullName; தொடக்க பக்கம்">
+
+<!ENTITY abouthome.searchEngineButton.label "தேடு">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):
      text in <a/> will be linked to the Firefox features page on mozilla.com
 -->

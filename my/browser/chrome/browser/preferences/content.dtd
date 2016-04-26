@@ -6,15 +6,6 @@
 
 <!ENTITY  blockPopups.label           "B ပွင့်ထွက်ဝင်းဒိုးများကိုပိတ်ဆို့ပါ">
 <!ENTITY  blockPopups.accesskey       "B">
-
-
-
-
-
-
-
-
-
 <!ENTITY  popupExceptions.label       "E ခြွင်းချက်များ...">
 <!ENTITY  popupExceptions.accesskey   "E">
 
@@ -37,8 +28,7 @@
 <!ENTITY chooseButton.label           "o ရွေးပါ...">
 <!ENTITY chooseButton.accesskey       "o">
 
-<!ENTITY translateWebPages.label      "ဝဘ်စာကိုယ်ကို ဘာသာပြန်ပါ T">
-<!ENTITY translateWebPages.accesskey  "T">
+
 <!ENTITY translateExceptions.label    "xခြွင်းချက်များ...">
 <!ENTITY translateExceptions.accesskey "x">
 <!-- LOCALIZATION NOTE (translation.options.attribution.beforeLogo,
@@ -48,12 +38,8 @@
   -  The translations for these strings should match the translations in
   -  browser/translation.dtd
   -->
-
-<!ENTITY translation.options.attribution.beforeLogo "ဘာသာပြန်ဆိုသူ">
 <!ENTITY translation.options.attribution.afterLogo "">
 
-<!ENTITY  drmContent.label             "DRM အကြောင်းအရာ">
 
-<!ENTITY  playDRMContent.label         "DRM အကြောင်းအရာများကို ဖွင့်ပါ P">
-<!ENTITY  playDRMContent.accesskey     "P">
+
 

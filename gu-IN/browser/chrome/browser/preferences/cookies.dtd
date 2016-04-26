@@ -7,12 +7,10 @@
 <!ENTITY     cookiesonsystem.label          "નીચેની કુકીઓ તમારા કમ્પ્યૂટર પર સંગ્રહિત છે:">
 <!ENTITY     cookiename.label               "કુકી નામ">
 <!ENTITY     cookiedomain.label             "સાઈટ"> 
-<!-- LOCALIZATION NOTE (button.removeSelectedCookies.accesskey):
-  The label associated with this accesskey can be found in 
-  preferences.properties as removeSelectedCookies.
--->
-
-
+<!ENTITY     button.removecookie.label      "કુકી દૂર કરો">
+<!ENTITY     button.removecookie.accesskey  "R">
+<!ENTITY     button.removeallcookies.label  "બધી કુકીઓ દૂર કરો">
+<!ENTITY     button.removeallcookies.accesskey "A">
 
 <!ENTITY     props.name.label               "નામ:">
 <!ENTITY     props.value.label              "સમાવિષ્ટો:">
@@ -31,3 +29,4 @@
 
 <!ENTITY     button.close.label             "બંધ કરો">
 <!ENTITY     button.close.accesskey         "C">
+<!ENTITY     button.removecookies.label     "કુકીઓને દૂર કરો">

@@ -1,0 +1,100 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY index.title "အက်ပလီကေးရှင်း မန်နေဂျာ">
+<!ENTITY index.projects2 "အက်ပလီကေးရှင်းများ">
+<!ENTITY index.device2 "စက်ကိရိယာ">
+<!ENTITY index.help "အကူအညီ">
+
+<!ENTITY device.debugMainProcess "အဓိက Debug လုပ်ငန်း">
+<!ENTITY device.debugMainProcessTooltip "တီထွင်သူ လက်စွဲ ပစ္စည်းများအား ဖွင့်ပြီး  ချိတ်ဆက်ထားသော အဓိက လုပ်ငန်းစဉ် ကိုကြည့်ပါ">
+<!ENTITY device.screenshot "မျက်နှာပြင်ရိုက်ချက်">
+<!ENTITY device.screenshotTooltip "လက်ရှိ ပစ္စည်း၏ ပုံစံအတိုင်း ဓာတ်ပုံရယူပြီး တပ်ဗ်အသစ် တစ်ခုမှာဖွင့်ပါ">
+<!ENTITY device.title "ဗဟို စက်ကိရိယာ ထိန်းချုပ်ဌာန">
+<!ENTITY device.notConnected "မချိတ်ဆက်ထားပါ။ ကျေးဇူးပြု၍ သင့်စက်ကိရိယာကို အောက်ဘက်တွင် ချိတ်ဆက်ပေးပါ။">
+<!ENTITY device.startApp "စတင်ပါ">
+<!ENTITY device.startAppTooltip "ဒီ အပ်(ပ်)ကို ပစ္စည်း ပေါ်တွင် ဖွင့်ပါ">
+<!ENTITY device.stopApp "ရပ်">
+<!ENTITY device.stopAppTooltip "ဒီ အပ်(ပ်)ကို ပစ္စည်းပေါ်တွင် ဖွင့်ထားသှ်ကို ပိတ်ပါ">
+<!ENTITY device.debugApp "အမှားစစ်">
+
+<!ENTITY device.name "အမည်">
+
+
+
+<!ENTITY device.allow "ခွင့်ပြုပါ">
+
+<!ENTITY device.prompt "လှုံ့ဆော်ချက်">
+
+<!ENTITY device.deny "ငြင်းပယ်ပါ">
+
+
+
+<!ENTITY device.permissions "ပါမစ်ရှင်များ">
+
+
+
+
+
+
+
+
+<!ENTITY connection.disconnect "ချိတ်ဆက်ဖြုတ်">
+
+
+
+
+<!ENTITY connection.changeHostAndPort "ပြောင်း">
+
+
+
+
+
+<!ENTITY connection.connecting "ချက်ဆက်နေသည်">
+
+<!ENTITY connection.cancel "ပယ်​ဖျက်ပါ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!ENTITY projects.valid "ရပြီ">
+<!ENTITY projects.error "အမှား">
+
+
+
+
+<!ENTITY help.close "ပိတ်ပါ ">
+
+
+
+
+
+
+

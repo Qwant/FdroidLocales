@@ -4,23 +4,15 @@
 
 <!ENTITY tracking.label                 "অনুসৰণ কৰা">
 
-
-<!ENTITY doNotTrackInfo.label          "অধিক জানক">
-
-
-
-
-
-
-
-
+<!ENTITY dntTrackingNotOkay.label2      "ৱেবছাইঠসমূহক কওক মোক অনুসৰণ কৰিব নালাগে">
+<!ENTITY dntTrackingNotOkay.accesskey   "n">
+<!ENTITY trackingProtection.label       "ছাইটসমূহক মোক অনুকৰণ কৰাৰ পৰা প্ৰতিৰোধ কৰক">
+<!ENTITY trackingProtection.accesskey   "m">
+<!ENTITY trackingProtectionLearnMore.label "অধিক জানক">
+<!ENTITY doNotTrackInfo.label           "অধিক জানক">
 
 
 <!ENTITY  locationBar.label             "অৱস্থান বাৰ">
-
-
-
-
 
 
 
@@ -42,6 +34,7 @@
 
 <!ENTITY  expire.label                  "তেওলোক অস্তিত্বহীন হয়">
 <!ENTITY  close.label                   "মই বন্ধ কৰো &brandShortName;">
+<!ENTITY  askEachTime.label             "মোক প্ৰতিবাৰে সোধিব">
 
 <!ENTITY  cookieExceptions.label        "ব্যতিক্ৰমসমূহ…">
 <!ENTITY  cookieExceptions.accesskey    "E">

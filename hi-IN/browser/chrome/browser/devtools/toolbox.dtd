@@ -14,22 +14,12 @@
 <!ENTITY toolboxOptionsButton.key      "O">
 <!ENTITY toolboxNextTool.key           "]">
 <!ENTITY toolboxPreviousTool.key       "[">
-<!-- LOCALIZATION NOTE :
-fullZoomEnlargeCmd.commandkey, fullZoomEnlargeCmd.commandkey2,
-fullZoomEnlargeCmd.commandkey3, fullZoomReduceCmd.commandkey,
-fullZoomReduceCmd.commandkey2, fullZoomResetCmd.commandkey,
-and fullZoomResetCmd.commandkey2 should all match the corresponding
-values from browser.dtd.  -->
 
-<!ENTITY fullZoomEnlargeCmd.commandkey  "+">
-<!ENTITY fullZoomEnlargeCmd.commandkey2 "=">
-<!ENTITY fullZoomEnlargeCmd.commandkey3 "">
-
-<!ENTITY fullZoomReduceCmd.commandkey   "- ">
-<!ENTITY fullZoomReduceCmd.commandkey2  "">
-
-<!ENTITY fullZoomResetCmd.commandkey    "0">
-<!ENTITY fullZoomResetCmd.commandkey2   "">
+<!ENTITY toolboxZoomIn.key             "+">
+<!-- + is above this key on many keyboards -->
+<!ENTITY toolboxZoomIn.key2            "="> 
+<!ENTITY toolboxZoomOut.key            "-">
+<!ENTITY toolboxZoomReset.key          "0">
 
 <!ENTITY toolboxReload.key             "r">
 <!-- This key is used with the accel+shift modifiers to minimize the toolbox -->
@@ -68,10 +58,6 @@ values from browser.dtd.  -->
   -  inspector. This is visible in the options panel. -->
 
 <!ENTITY options.defaultColorUnit.accesskey "u">
-<!-- LOCALIZATION NOTE (options.defaultColorUnit.authored): This is used in the
-  -  'Default color unit' dropdown list and is visible in the options panel. -->
-
-<!ENTITY options.defaultColorUnit.authored "लेखक जैसा">
 <!-- LOCALIZATION NOTE (options.defaultColorUnit.hex): This is used in the
   -  'Default color unit' dropdown list and is visible in the options panel. -->
 
@@ -99,19 +85,17 @@ values from browser.dtd.  -->
   -  boolean preference in about:config, in the options panel. -->
 
 <!ENTITY options.enableChrome.label5    "ब्राउज़र क्रोम और ऐड-ऑन डिबगिंग टूलबॉक्स को सक्षम करें">
-<!ENTITY options.enableChrome.tooltip3  "इस विकल्प को चालू करना आपको ब्राउज़र संदर्भ में कई डेवलपर टूल को उपयोग करने की स्वीकृति देगा(via Tools > Web Developer > Browser Toolbox) और सहयुक्ति प्रबंधक से उन्हें डिबग करेगा">
+
 <!-- LOCALIZATION NOTE (options.enableRemote.label3): This is the label for the
   -  checkbox that toggles remote debugging, i.e. devtools.debugger.remote-enabled
   -  boolean preference in about:config, in the options panel. -->
 
 <!ENTITY options.enableRemote.label3    "इस विकल्प को चालू करना डेवलपर टूल को फ़ायरफ़ॉक्स OS जैसे फ़ायरफ़ॉक्स उदाहरण को डिबग करने की स्वीकृति देगादूरस्थ डिबगिंग सक्रिय करें">
-<!ENTITY options.enableRemote.tooltip   "इस विकल्प को चालू करना डेवलपर टूल को Firefox OS जैसे Firefox उदाहरण को डिबग करने की स्वीकृति देगा">
+<!ENTITY options.enableRemote.tooltip   "इस विकल्प को चालू करना डेवलपर टूल को फ़ायरफ़ॉक्स OS जैसे फ़ायरफ़ॉक्स उदाहरण को डिबग करने की स्वीकृति देगा">
 <!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
   -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
   -  boolean preference in about:config, in the options panel. -->
 
-<!ENTITY options.enableWorkers.label    "कामगार डिबगिंग सक्रिय करें (in development)">
-<!ENTITY options.enableWorkers.tooltip  "इस विकल्प को चालू डिबग श्रमिकों के लिए डेवलपर उपकरण की अनुमति देगा">
 <!-- LOCALIZATION NOTE (options.disableJavaScript.label,
   -  options.disableJavaScript.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles JavaScript on or off. -->
@@ -129,12 +113,12 @@ values from browser.dtd.  -->
   -  tooltip for the checkbox that toggles the service workers testing features on or off. This option enables service workers over HTTP. -->
 
 <!ENTITY options.enableServiceWorkersHTTP.label     "(जब टूलबॉक्स खुले हों) HTTP पर वर्कर सेवा सक्षम करें">
-<!ENTITY options.enableServiceWorkersHTTP.tooltip   "इस विकल्प को सक्रिय करने से HTTP पर वर्कर सेवा सक्रिय हो जाएगी उन सभी टैब के लिए जिनमें औजारपेटी खुली होगी |">
+
 <!-- LOCALIZATION NOTE (options.selectDefaultTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
 
-<!ENTITY options.selectDefaultTools.label     "तयशुदा Firefox डेवलेपर औज़ार">
+<!ENTITY options.selectDefaultTools.label     "तयशुदा फ़ायरफ़ॉक्स डेवलेपर औज़ार">
 <!-- LOCALIZATION NOTE (options.selectAdditionalTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the developer tools
   -  added by add-ons. This heading is hidden when there is no developer tool

@@ -195,7 +195,6 @@
 
 <!ENTITY fxaccount_status_header2 "Akaun Firefox">
 <!ENTITY fxaccount_status_signed_in_as "Daftar masuk sebagai">
-
 <!ENTITY fxaccount_status_auth_server "Pelayan akaun">
 
 
@@ -222,12 +221,13 @@
 <!ENTITY fxaccount_status_linkprivacy "Notis Privasi">
 <!ENTITY fxaccount_status_more "Lagi&ellipsis;">
 
-
 <!ENTITY fxaccount_remove_account_dialog_title "Singkir Akaun Firefox">
 <!ENTITY fxaccount_remove_account_dialog_message "&brandShortName; akan menghentikan menyegerak dengan akaun anda, tetapi tidak akan menghapus sebarang data pelayaran anda di dalam peranti ini.">
 <!-- Localization note: format string below will be replaced
      with the Firefox Account's email address. -->
 <!ENTITY fxaccount_remove_account_toast "Akaun Firefox &formatS; disingkir.">
+
+<!ENTITY fxaccount_remove_account_menu_item "Singkir Akaun">
 
 <!-- Localization note: this is the name shown by the Android system
      itself for a Firefox Account. Don't localize this. -->
@@ -264,6 +264,3 @@
 
 <!-- Localization note: the format string below will be replaced
      with the Firefox Account's email address. -->
-<!-- Localization note: the following strings are used in a
-     notification and should be kept as short as possible. -->
-
