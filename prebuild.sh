@@ -5,7 +5,6 @@ find toolkit/crashreporter/ -mindepth 1 -maxdepth 1 ! -name "crashreporter.mozbu
 find toolkit/crashreporter/google-breakpad/ -mindepth 1 -maxdepth 1 ! -name "src" -exec rm -R '{}' \;
 rm -R toolkit/crashreporter/google-breakpad/src/tools/
 rm -R toolkit/crashreporter/google-breakpad/src/client/
-rm -R toolkit/crashreporter/google-breakpad/src/processor/testdata/
 rm -R toolkit/crashreporter/google-breakpad/src/third_party/linux/
 
 rm -R accessible/tests/
@@ -75,8 +74,8 @@ sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsEmbedFunctions.cpp
 
 sed -i -e '/source\/test\//d' addon-sdk/moz.build
 sed -i -e '/testing\/web-platform\/mach_commands.py/d' build/mach_bootstrap.py
-sed -i -e '/MOCHITEST/,+5d' devtools/shared/apps/moz.build
-sed -i -e '/TESTS_MANIFESTS/,+19d' docshell/moz.build
+sed -i -e '/MOCHITEST/,+14d' devtools/shared/apps/moz.build
+sed -i -e '/TESTS_MANIFESTS/,+36d' docshell/moz.build
 sed -i -e '/tests\//d' dom/apps/moz.build
 sed -i -e '/test\//d' dom/html/moz.build
 sed -i -e '/TEST_DIRS/,+14d' dom/indexedDB/moz.build
@@ -120,8 +119,8 @@ sed -i -e 's/AppConstants.MOZILLA_OFFICIAL/false/g' mobile/android/base/java/org
 ##Get rid of Gradle
 rm -R gradle/
 rm -R build.gradle
-rm -R mobile/android/gradle/
-rm -R mobile/android/app/base/build.gradle
+rm -R mobile/android/app/build.gradle
+rm -R testing/docker/android-gradle-build
 sed -i -e '/gradle/d' mobile/android/moz.build
 
 ##Disable Gecko Media Pluggins support 
