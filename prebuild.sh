@@ -13,7 +13,6 @@ rm -R b2g/branding/
 rm -R b2g/components/test/
 rm -R browser/branding/*/dsstore
 rm -R browser/components/migration/tests/unit/
-rm -R build/mobile/sutagent/
 rm -R build/pymake/tests/
 rm -R chrome/test/
 rm -R devtools/client/debugger/test/
@@ -61,7 +60,6 @@ rm -R toolkit/components/telemetry/tests/unit/
 rm -R toolkit/modules/tests/
 rm -R toolkit/mozapps/extensions/test/
 rm -R toolkit/mozapps/update/tests/
-rm -R toolkit/webapps/tests/
 rm -R widget/crashtests/
 rm -R xpcom/tests/
 
@@ -72,7 +70,7 @@ sed -i -e '/nsExceptionHandler/d' ipc/glue/GeckoChildProcessHost.cpp
 sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsAndroidStartup.cpp
 sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsEmbedFunctions.cpp
 
-sed -i -e '/source\/test\//d' addon-sdk/moz.build
+sed -i -e '/source\/test\//d' -e '/GENERATED_FILES += addons/,+5d' addon-sdk/moz.build
 sed -i -e '/testing\/web-platform\/mach_commands.py/d' build/mach_bootstrap.py
 sed -i -e '/MOCHITEST/,+14d' devtools/shared/apps/moz.build
 sed -i -e '/TESTS_MANIFESTS/,+36d' docshell/moz.build
@@ -84,12 +82,18 @@ sed -i -e '/reftest/d'  -e '/crashtest/d' layout/moz.build
 sed -i -e '/classycle_jar/,+7d' -e 's/.geckoview.deps ././g' -e 's/PROGUARD_PASSES=1/PROGUARD_PASSES=3/g' mobile/android/base/Makefile.in
 sed -i -e '/TEST/d' modules/libjar/moz.build
 sed -i -e '/TEST/d' modules/libjar/zipwriter/moz.build
+sed -i -e '/TEST_HARNESS_FILES/,+3d' toolkit/moz.build
 sed -i -e '/xpcshell.ini/d' toolkit/components/downloads/moz.build
 sed -i -e '/xpcshell.ini/d' toolkit/components/mediasniffer/moz.build
 sed -i -e '/xpcshell.ini/d' toolkit/components/search/moz.build
 sed -i -e '/xpcshell.ini/d' -e '/TESTING/,+3d' toolkit/components/telemetry/moz.build
 sed -i -e '/tests\//d' toolkit/modules/moz.build
 sed -i -e '/tests/d' toolkit/mozapps/update/moz.build
+
+sed -i -e '/dom\//d' dom/media/test/mochitest.ini
+sed -i -e '/dom\//d' dom/workers/test/browser.ini
+sed -i -e '/dom\//d' dom/workers/test/mochitest.ini
+sed -i -e '/dom\//d' dom/workers/test/serviceworkers/mochitest.ini
 
 sed -i -e 's/android:debuggable="true"//g' mobile/android/base/AndroidManifest.xml.in
 sed -i -e '/MOZ_SERVICES_HEALTHREPORT/d' -e '/MOZ_DEVICES/d' -e '/MOZ_SAFE_BROWSING/d' -e '/MOZ_ANDROID_RESOURCE_CONSTRAINED/,+2d' mobile/android/confvars.sh
@@ -119,6 +123,7 @@ sed -i -e 's/AppConstants.MOZILLA_OFFICIAL/false/g' mobile/android/base/java/org
 ##Get rid of Gradle
 rm -R gradle/
 rm -R build.gradle
+rm -R mobile/android/gradle/
 rm -R mobile/android/app/build.gradle
 rm -R testing/docker/android-gradle-build
 sed -i -e '/gradle/d' mobile/android/moz.build

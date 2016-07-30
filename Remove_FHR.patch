@@ -1,7 +1,7 @@
 diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/BrowserApp.java
---- a/mobile/android/base/java/org/mozilla/gecko/BrowserApp.java	Sat Jun 04 22:14:06 2016 -0400
-+++ b/mobile/android/base/java/org/mozilla/gecko/BrowserApp.java	Sat Jun 04 23:38:39 2016 -0400
-@@ -2504,16 +2504,7 @@
+--- a/mobile/android/base/java/org/mozilla/gecko/BrowserApp.java	Sat Jul 30 00:00:00 2016 -0000
++++ b/mobile/android/base/java/org/mozilla/gecko/BrowserApp.java	Sat Jul 30 00:00:00 2016 -0000
+@@ -2579,16 +2579,7 @@
       *        {@link BrowserHealthRecorder#SEARCH_LOCATIONS}.
       */
      private static void recordSearch(SearchEngine engine, String where) {
@@ -20,8 +20,8 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/BrowserApp.java
  
      /**
 diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
---- a/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Sat Jun 04 22:14:06 2016 -0400
-+++ b/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Sat Jun 04 23:38:39 2016 -0400
+--- a/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Sat Jul 30 00:00:00 2016 -0000
++++ b/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Sat Jul 30 00:00:00 2016 -0000
 @@ -16,9 +16,6 @@
  import org.mozilla.gecko.gfx.Layer;
  import org.mozilla.gecko.gfx.LayerView;
@@ -32,7 +32,7 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
  import org.mozilla.gecko.menu.GeckoMenu;
  import org.mozilla.gecko.menu.GeckoMenuInflater;
  import org.mozilla.gecko.menu.MenuPanel;
-@@ -202,7 +199,6 @@
+@@ -203,7 +200,6 @@
  
      private String mPrivateBrowsingSession;
  
@@ -40,7 +40,7 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
      private volatile Locale mLastLocale;
  
      private Intent mRestartIntent;
-@@ -686,15 +682,6 @@
+@@ -684,15 +680,6 @@
                  mGeckoReadyStartupTimer.stop();
                  geckoConnected();
  
@@ -53,10 +53,10 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
 -                  rec.recordGeckoStartupTime(mGeckoReadyStartupTimer.getElapsed());
 -                }
 -
+                 GeckoApplication.get().onDelayedStartup();
+ 
              } else if (event.equals("Gecko:Exited")) {
-                 // Gecko thread exited first; let GeckoApp die too.
-                 doShutdown();
-@@ -1342,11 +1329,6 @@
+@@ -1290,11 +1277,6 @@
                  final LocaleManager localeManager = BrowserLocaleManager.getInstance();
                  localeManager.initialize(getApplicationContext());
  
@@ -68,7 +68,7 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
                  SharedPreferences.Editor editor = prefs.edit();
                  editor.putBoolean(GeckoApp.PREFS_OOM_EXCEPTION, false);
  
-@@ -1374,13 +1356,6 @@
+@@ -1322,13 +1304,6 @@
                      appLocaleString = osLocaleString;
                  }
  
@@ -82,9 +82,9 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
                  final String uiLocale = appLocaleString;
                  ThreadUtils.postToUiThread(new Runnable() {
                      @Override
-@@ -1619,34 +1594,6 @@
-                                            (TextSelectionHandle) findViewById(R.id.caret_handle),
-                                            (TextSelectionHandle) findViewById(R.id.focus_handle));
+@@ -1555,34 +1530,6 @@
+ 
+         mPromptService = new PromptService(this);
  
 -        // Trigger the completion of the telemetry timer that wraps activity startup,
 -        // then grab the duration to give to FHR.
@@ -177,7 +177,7 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
              }
          });
  
-@@ -2175,18 +2090,6 @@
+@@ -2172,18 +2087,6 @@
              }
          }
  
@@ -196,7 +196,7 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
          Favicons.close();
  
          super.onDestroy();
-@@ -2701,15 +2604,6 @@
+@@ -2700,15 +2603,6 @@
          final boolean startNewSession = true;
          final boolean shouldRestart = false;
  
@@ -212,7 +212,7 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
          if (!shouldRestart) {
              ThreadUtils.postToUiThread(new Runnable() {
                  @Override
-@@ -2764,16 +2658,6 @@
+@@ -2759,16 +2653,6 @@
          });
      }
  
@@ -228,14 +228,16 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
 -
      protected void recordStartupActionTelemetry(final String passedURL, final String action) {
      }
- }
-diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java
---- a/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Sat Jun 04 22:14:06 2016 -0400
-+++ b/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Sat Jun 04 23:38:39 2016 -0400
-@@ -1022,31 +1022,6 @@
  
-     /**
-      * Broadcast the provided value as the value of the
+diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java
+--- a/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Sat Jul 30 00:00:00 2016 -0000
++++ b/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Sat Jul 30 00:00:00 2016 -0000
+@@ -965,31 +965,6 @@
+         }
+     }
+ 
+-    /**
+-     * Broadcast the provided value as the value of the
 -     * <code>PREFS_HEALTHREPORT_UPLOAD_ENABLED</code> pref.
 -     */
 -    public static void broadcastHealthReportUploadPref(final Context context, final boolean value) {
@@ -259,12 +261,10 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/preferences/Geck
 -        //broadcastAction(context, intent);
 -    }
 -
--    /**
--     * Broadcast the provided value as the value of the
+     /**
+      * Broadcast the provided value as the value of the
       * <code>PREFS_GEO_REPORTING</code> pref.
-      */
-     public static void broadcastStumblerPref(final Context context, final boolean value) {
-@@ -1232,14 +1207,6 @@
+@@ -1185,14 +1160,6 @@
              UpdateServiceHelper.setAutoDownloadPolicy(this, UpdateService.AutoDownloadPolicy.get((String) newValue));
          } else if (PREFS_UPDATER_URL.equals(prefName)) {
              UpdateServiceHelper.setUpdateUrl(this, (String) newValue);
@@ -280,9 +280,9 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/preferences/Geck
              if ((Boolean) newValue) {
                  enableStumbler((CheckBoxPreference) preference);
 diff -r 090cfb572e72 mobile/android/base/moz.build
---- a/mobile/android/base/moz.build	Sat Jun 04 22:14:06 2016 -0400
-+++ b/mobile/android/base/moz.build	Sat Jun 04 23:38:39 2016 -0400
-@@ -357,9 +357,6 @@
+--- a/mobile/android/base/moz.build	Sat Jul 30 00:00:00 2016 -0000
++++ b/mobile/android/base/moz.build	Sat Jul 30 00:00:00 2016 -0000
+@@ -377,9 +377,6 @@
      'gfx/VirtualLayer.java',
      'GlobalHistory.java',
      'GuestSession.java',
@@ -290,11 +290,11 @@ diff -r 090cfb572e72 mobile/android/base/moz.build
 -    'health/SessionInformation.java',
 -    'health/StubbedHealthRecorder.java',
      'home/BookmarkFolderView.java',
+     'home/BookmarkScreenshotRow.java',
      'home/BookmarksListAdapter.java',
-     'home/BookmarksListView.java',
 diff -r 090cfb572e72 mobile/android/search/java/org/mozilla/search/SearchActivity.java
---- a/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Sat Jun 04 22:14:06 2016 -0400
-+++ b/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Sat Jun 04 23:38:39 2016 -0400
+--- a/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Sat Jul 30 00:00:00 2016 -0000
++++ b/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Sat Jul 30 00:00:00 2016 -0000
 @@ -254,14 +254,6 @@
      public void onSearch(String query, SuggestionAnimation suggestionAnimation) {
          storeQuery(query);
