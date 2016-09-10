@@ -1,24 +1,3 @@
-diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/BrowserApp.java
---- a/mobile/android/base/java/org/mozilla/gecko/BrowserApp.java	Sat Jul 30 00:00:00 2016 -0000
-+++ b/mobile/android/base/java/org/mozilla/gecko/BrowserApp.java	Sat Jul 30 00:00:00 2016 -0000
-@@ -2579,16 +2579,7 @@
-      *        {@link BrowserHealthRecorder#SEARCH_LOCATIONS}.
-      */
-     private static void recordSearch(SearchEngine engine, String where) {
--        //try {
--        //    String identifier = (engine == null) ? "other" : engine.getEngineIdentifier();
--        //    JSONObject message = new JSONObject();
--        //    message.put("type", BrowserHealthRecorder.EVENT_SEARCH);
--        //    message.put("location", where);
--        //    message.put("identifier", identifier);
--        //    EventDispatcher.getInstance().dispatchEvent(message, null);
--        //} catch (Exception e) {
--        //    Log.e(LOGTAG, "Error recording search.", e);
--        //}
-+        return;
-     }
- 
-     /**
 diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
 --- a/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Sat Jul 30 00:00:00 2016 -0000
 +++ b/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Sat Jul 30 00:00:00 2016 -0000
@@ -29,9 +8,9 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
 -import org.mozilla.gecko.health.HealthRecorder;
 -import org.mozilla.gecko.health.SessionInformation;
 -import org.mozilla.gecko.health.StubbedHealthRecorder;
+ import org.mozilla.gecko.home.HomeConfig.PanelType;
  import org.mozilla.gecko.menu.GeckoMenu;
  import org.mozilla.gecko.menu.GeckoMenuInflater;
- import org.mozilla.gecko.menu.MenuPanel;
 @@ -203,7 +200,6 @@
  
      private String mPrivateBrowsingSession;
@@ -117,7 +96,7 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
          if (mIsRestoringActivity) {
              Tab selectedTab = Tabs.getInstance().getSelectedTab();
              if (selectedTab != null) {
-@@ -2001,29 +1948,6 @@
+@@ -2001,36 +1948,6 @@
          final long now = System.currentTimeMillis();
          final long realTime = android.os.SystemClock.elapsedRealtime();
  
@@ -131,6 +110,13 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
 -                SharedPreferences prefs = GeckoApp.this.getSharedPreferences();
 -                SharedPreferences.Editor editor = prefs.edit();
 -                editor.putBoolean(GeckoApp.PREFS_WAS_STOPPED, false);
+-
+-                if (!mLastSessionCrashed) {
+-                    // The last session terminated normally,
+-                    // so we can reset the count of successive crashes.
+-                    editor.putInt(GeckoApp.PREFS_CRASHED_COUNT, 0);
+-                }
+-
 -                currentSession.recordBegin(editor);
 -                editor.apply();
 -

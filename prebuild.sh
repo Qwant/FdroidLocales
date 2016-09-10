@@ -70,6 +70,7 @@ sed -i -e '/nsExceptionHandler/d' ipc/glue/GeckoChildProcessHost.cpp
 sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsAndroidStartup.cpp
 sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsEmbedFunctions.cpp
 
+sed -i -e '/tests\//d' accessible/moz.build
 sed -i -e '/source\/test\//d' -e '/GENERATED_FILES += addons/,+5d' addon-sdk/moz.build
 sed -i -e '/testing\/web-platform\/mach_commands.py/d' build/mach_bootstrap.py
 sed -i -e '/MOCHITEST/,+14d' devtools/shared/apps/moz.build
@@ -96,11 +97,13 @@ sed -i -e '/dom\//d' dom/workers/test/mochitest.ini
 sed -i -e '/dom\//d' dom/workers/test/serviceworkers/mochitest.ini
 
 sed -i -e 's/android:debuggable="true"//g' mobile/android/base/AndroidManifest.xml.in
-sed -i -e '/MOZ_SERVICES_HEALTHREPORT/d' -e '/MOZ_DEVICES/d' -e '/MOZ_SAFE_BROWSING/d' -e '/MOZ_ANDROID_RESOURCE_CONSTRAINED/,+2d' mobile/android/confvars.sh
-echo -e 'MOZ_DEVICES=\nMOZ_NATIVE_DEVICES=\nMOZ_SERVICES_HEALTHREPORT=\nMOZ_SAFE_BROWSING=\n' >> mobile/android/confvars.sh
+sed -i -e '/HEALTHREPORT/d' -e '/MOZ_DEVICES/d' -e '/SAFE_BROWSING/d' -e '/NATIVE_DEVICES/d' -e '/TRACKING/d' mobile/android/confvars.sh
+echo -e 'MOZ_DEVICES=\nMOZ_NATIVE_DEVICES=\nMOZ_SERVICES_HEALTHREPORT=\nMOZ_SAFE_BROWSING=\nMOZ_INSTALL_TRACKING=\n' >> mobile/android/confvars.sh
 echo "mk_add_options 'export MOZ_CHROME_MULTILOCALE=$(tr '\n' ' ' <  $REPO/used-locales)'" >> .mozconfig
 echo "mk_add_options 'export L10NBASEDIR=$REPO'" >> .mozconfig
 echo "ac_add_options --with-l10n-base=$REPO" >> .mozconfig
+
+sed -i -e '/MOZ_ANDROID_GCM/,+4d' mobile/android/moz.configure
 
 #HealthReporter
 ##Option 1: Completely remove FHR
