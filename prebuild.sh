@@ -97,7 +97,7 @@ sed -i -e '/dom\//d' dom/workers/test/mochitest.ini
 sed -i -e '/dom\//d' dom/workers/test/serviceworkers/mochitest.ini
 
 sed -i -e 's/android:debuggable="true"//g' mobile/android/base/AndroidManifest.xml.in
-sed -i -e '/HEALTHREPORT/d' -e '/MOZ_DEVICES/d' -e '/SAFE_BROWSING/d' -e '/NATIVE_DEVICES/d' -e '/TRACKING/d' mobile/android/confvars.sh
+sed -i -e '/HEALTHREPORT/d' -e '/MOZ_DEVICES/d' -e '/SAFE_BROWSING/d' -e '/NATIVE_DEVICES/d' -e '/TRACKING/,+1d' mobile/android/confvars.sh
 echo -e 'MOZ_DEVICES=\nMOZ_NATIVE_DEVICES=\nMOZ_SERVICES_HEALTHREPORT=\nMOZ_SAFE_BROWSING=\nMOZ_INSTALL_TRACKING=\n' >> mobile/android/confvars.sh
 echo "mk_add_options 'export MOZ_CHROME_MULTILOCALE=$(tr '\n' ' ' <  $REPO/used-locales)'" >> .mozconfig
 echo "mk_add_options 'export L10NBASEDIR=$REPO'" >> .mozconfig
