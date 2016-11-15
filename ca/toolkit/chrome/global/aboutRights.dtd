@@ -46,6 +46,8 @@
 
 <!ENTITY rights2.webservices-header "Serveis d'informació web del &brandFullName;">
 <!-- point 5 -->
+
+<!ENTITY rights.intro-point5 "Per tal de reproduir determinats tipus de contingut de vídeo, el &brandShortName; ha de baixar alguns mòduls de desxifratge de contingut de tercers.">
 <!-- Note that this paragraph references a couple of entities from
      preferences/security.dtd, so that we can refer to text the user sees in
      the UI, without this page being forgotten every time those strings are
@@ -61,7 +63,7 @@
 <!ENTITY rights.safebrowsing-b "No és recomanable inhabilitar la funcionalitat de navegació segura perquè pot comportar que visiteu llocs insegurs. Si voleu inhabilitar-la completament, seguiu els passos següents:">
 <!ENTITY rights.safebrowsing-term1 "Obriu les preferències de l'aplicació">
 <!ENTITY rights.safebrowsing-term2 "Seleccioneu la secció de seguretat">
-<!ENTITY rights.safebrowsing-term3 "Desmarqueu les opcions «&blockAttackSites.label;» i «&blockWebForgeries.label;»">
+<!ENTITY rights2.safebrowsing-term3 "Desmarqueu l'opció «&enableSafeBrowsing.label;»">
 <!ENTITY rights.safebrowsing-term4 "A partir d'aquell moment, la navegació segura estarà inhabilitada">
 <!-- location aware browsing points for branded builds -->
 

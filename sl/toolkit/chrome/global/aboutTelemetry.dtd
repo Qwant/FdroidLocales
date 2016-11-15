@@ -91,6 +91,9 @@ Ping
   Sesutja niti
 ">
 
+<!ENTITY aboutTelemetry.scalarsSection "
+  Skalarji">
+
 <!ENTITY aboutTelemetry.histogramsSection "
   Histogrami
 ">
@@ -143,3 +146,7 @@ Ping
 
 <!ENTITY aboutTelemetry.payloadChoiceHeader "
   Koristna vsebina">
+
+<!ENTITY aboutTelemetry.rawPayload "
+  Surova koristna vsebina
+">

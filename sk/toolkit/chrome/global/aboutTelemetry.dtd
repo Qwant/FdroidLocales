@@ -4,7 +4,9 @@
 
 <!ENTITY aboutTelemetry.pageTitle "Údaje telemetrie">
 
-<!ENTITY aboutTelemetry.changeDataChoices "Zmeniť">
+<!ENTITY aboutTelemetry.changeDataChoices "
+  Zmeniť
+">
 
 <!ENTITY aboutTelemetry.uploadEnabled "Odosielanie údajov FHR je <span>povolené</span>.">
 
@@ -52,6 +54,10 @@
 
 <!ENTITY aboutTelemetry.threadHangStatsSection "Zlyhania vlákien">
 
+<!ENTITY aboutTelemetry.scalarsSection "
+  Skaláre
+">
+
 <!ENTITY aboutTelemetry.histogramsSection "Histogramy">
 
 <!ENTITY aboutTelemetry.keyedHistogramsSection "Histogramy s kľúčom">
@@ -80,3 +86,6 @@
 <!ENTITY aboutTelemetry.filterText "Filter (reťazec alebo /regexp/)">
 
 <!ENTITY aboutTelemetry.payloadChoiceHeader "Obsah">
+
+<!ENTITY aboutTelemetry.rawPayload "
+  Nespracovaný obsah">

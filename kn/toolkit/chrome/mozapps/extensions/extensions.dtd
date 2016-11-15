@@ -25,8 +25,8 @@
 
 <!ENTITY showUnsignedExtensions.button.label  "ಕೆಲವು ವಿಸ್ತರಣಿಕೆಗಳನ್ನು ದೃಢಪಡಿಸಲಾಗಿಲ್ಲ">
 <!ENTITY showAllExtensions.button.label       "ಎಲ್ಲ ವಿಸ್ತರಣಗಳನ್ನು ತೋರಿಸು">
-
-
+<!ENTITY debugAddons.label                    "ಆಡ್-ಆನ್‍ಗಳನ್ನು ಪರೀಕ್ಷಿಸಿ">
+<!ENTITY debugAddons.accesskey                "b">
 <!-- global warnings -->
 
 <!ENTITY warning.safemode.label                    "ಎಲ್ಲಾ ಆಡ್-ಆನ್‌ಗಳನ್ನು ಸುರಕ್ಷತಾ ಕ್ರಮದಿಂದ ಅಶಕ್ತಗೊಳಿಸಲಾಗಿದೆ.">
@@ -36,10 +36,6 @@
 <!ENTITY warning.updatesecurity.label              "ಆಡ್-ಆನ್ ಅಪ್‌ಡೇಟ್ ಸುರಕ್ಷತಾ ಪರಿಶೀಲನೆಯನ್ನು ಅಶಕ್ತಗೊಳಿಸಲಾಗಿದೆ. ನೀವು ಅಪ್‌ಡೇಟ್‌ಗಳಿಂದ ರಾಜಿ ಮಾಡಿಕೊಂಡಂತಾಗಬಹುದು.">
 <!ENTITY warning.updatesecurity.enable.label       "ಶಕ್ತಗೊಳಿಸು">
 <!ENTITY warning.updatesecurity.enable.tooltip     "ಆಡ್-ಆನ್ ಅಪ್‌ಡೇಟ್ ಸುರಕ್ಷತಾ ಪರಿಶೀಲನೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು">
-<!-- global informations -->
-
-<!ENTITY info.plugincheck.label                 "ನಿಮ್ಮ ಪ್ಲಗ್‌ಇನ್‌ಗಳು ಅಪ್‌ ಟು ಡೇಟ್ ಆಗಿದ್ದಾವೆಯೆ ಎಂದು ಪರಿಶೀಲಿಸಿ">
-<!ENTITY info.plugincheck.tooltip               "ನಿಮ್ಮ ಪ್ಲಗ್‌ಇನ್‌ಗಳು ಅಪ್‌ ಟು ಡೇಟ್ ಆಗಿದ್ದಾವೆಯೆ ಎಂದು ಪರಿಶೀಲಿಸಿ">
 <!-- categories / views -->
 
 <!ENTITY view.search.label                    "ಹುಡುಕು">
@@ -124,11 +120,8 @@
      Displayed in the center of the Get Add-ons view, see bug 601143 for mockups. -->
 
 <!ENTITY discover.title                       "ಆಡ್-ಆನ್‌ಗಳೆಂದರೇನು?">
-<!ENTITY discover.description2                "ಆಡ್‌-ಆನ್‌ಗಳನ್ನು ಬಳಸಿಕೊಂಡು ನೀವು &brandShortName; ಅನ್ನು ಹೆಚ್ಚಿನ ಉಪಯುಕ್ತತೆ ಅಥವ ಶೈಲಿಯೊಂದಿಗೆ 
-ನಿಮ್ಮ ಇಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಬದಲಾಯಿಸಬಹುದಾದ ಅನ್ವಯಗಳಾಗಿರುತ್ತವೆ. ಸಮಯ-ಉಳಿಸುವ ಬದಿಯ ಪಟ್ಟಿಕೆ, ಒಂದು ಹವಾಮಾನ ಸೂಚಕ, ಅಥವ &brandShortName; 
-ನಿಮ್ಮದೆ ಆದ ರೀತಿಯಲ್ಲಿ ಕಾಣಿಸುವಂತೆ ವಿನ್ಯಸಿಸಲಾದ ನೋಟವನ್ನು ಪ್ರಯತ್ನಿಸಿ.">
-<!ENTITY discover.footer                      "ನೀವು ಅಂತರಜಾಲಕ್ಕೆ ಸಂಪರ್ಕಿತಗೊಂಡಾಗ, ಈ ಪಟ್ಟಿಯಲ್ಲಿ ಉತ್ತಮವಾದ ಕೆಲವು ಹಾಗು 
-ಜನಪ್ರಿಯ ಆಡ್-ಆನ್‌ಗಳನ್ನು ನೀವು ಪ್ರಯತ್ನಿಸುವಂತೆ ನಿಮಗೆ ತೋರಿಸಲಾಗುತ್ತದೆ.">
+<!ENTITY discover.description2                "ಆಡ್‌-ಆನ್‌ಗಳನ್ನು ಬಳಸಿಕೊಂಡು ನೀವು &brandShortName; ಅನ್ನು ಹೆಚ್ಚಿನ ಉಪಯುಕ್ತತೆ ಅಥವ ಶೈಲಿಯೊಂದಿಗೆ ನಿಮ್ಮ ಇಚ್ಛೆಗೆ ತಕ್ಕಂತೆ ಬದಲಾಯಿಸಬಹುದಾದ ಅನ್ವಯಗಳಾಗಿರುತ್ತವೆ. ಸಮಯ-ಉಳಿಸುವ ಬದಿಯ ಪಟ್ಟಿಕೆ, ಒಂದು ಹವಾಮಾನ ಸೂಚಕ, ಅಥವ &brandShortName; ನಿಮ್ಮದೆ ಆದ ರೀತಿಯಲ್ಲಿ ಕಾಣಿಸುವಂತೆ ವಿನ್ಯಸಿಸಲಾದ ನೋಟವನ್ನು ಪ್ರಯತ್ನಿಸಿ.">
+<!ENTITY discover.footer                      "ನೀವು ಅಂತರಜಾಲಕ್ಕೆ ಸಂಪರ್ಕಿತಗೊಂಡಾಗ, ಈ ಪಟ್ಟಿಯಲ್ಲಿ ಉತ್ತಮವಾದ ಕೆಲವು ಹಾಗು ಜನಪ್ರಿಯ ಆಡ್-ಆನ್‌ಗಳನ್ನು ನೀವು ಪ್ರಯತ್ನಿಸುವಂತೆ ನಿಮಗೆ ತೋರಿಸಲಾಗುತ್ತದೆ.">
 <!-- detail view -->
 
 <!ENTITY detail.version.label                 "ಆವೃತ್ತಿ">
@@ -155,7 +148,7 @@
 <!ENTITY detail.checkForUpdates.tooltip       "ಈ ಆಡ್-ಆನ್‌ಗಳಿಗಾಗಿ ಹುಡುಕು">
 <!ENTITY detail.showPreferencesWin.label      "Options">
 <!ENTITY detail.showPreferencesWin.accesskey  "O">
-<!ENTITY detail.showPreferencesWin.tooltip    "ಈ ಆಡ್-ಆನ್‌ಗಳ ಆಯ್ಕೆಗಳನ್ನು ಬದಲಾಯಿಸಿ">
+<!ENTITY detail.showPreferencesWin.tooltip    "ಈ ಆಡ್‌-ಆನ್‌ನ ಆಯ್ಕೆಗಳನ್ನು ಬದಲಾಯಿಸಿ">
 <!ENTITY detail.showPreferencesUnix.label     "Preferences">
 <!ENTITY detail.showPreferencesUnix.accesskey "P">
 <!ENTITY detail.showPreferencesUnix.tooltip   "ಈ ಆಡ್‌-ಆನ್‌ನ ಆದ್ಯತೆಗಳನ್ನು ಬದಲಾಯಿಸಿ">

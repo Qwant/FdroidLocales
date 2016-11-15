@@ -6,7 +6,7 @@
 #define bookmarks_title Bladwijzers
 #define bookmarks_heading Bladwijzers
 
-#define personal_toolbarfolder Persoonlijke werkbalk
+#define personal_toolbarfolder Map Persoonlijke werkbalk
 
 #define seamonkey_and_mozilla SeaMonkey en Mozilla
 
@@ -32,7 +32,7 @@
 
 # LOCALIZATION NOTE (mozilla_about):
 # link title for http://www.mozilla.org/about/
-#define mozilla_about About Mozilla
+#define mozilla_about Over Mozilla
 
 #define extend_seamonkey SeaMonkey uitbreiden
 

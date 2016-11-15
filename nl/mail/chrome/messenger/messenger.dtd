@@ -164,6 +164,8 @@
 <!ENTITY recentFolders.accesskey "R">
 <!ENTITY compactVersion.label "Compacte weergave">
 <!ENTITY compactVersion.accesskey "C">
+<!ENTITY folderPaneBar.label "Mappenvensterwerkbalk">
+<!ENTITY folderModeSelector.label "Mappenweergaven">
 
 <!-- Sort Menu -->
 <!ENTITY sortMenu.label "Sorteren op">
@@ -361,6 +363,8 @@
 <!ENTITY editAsNewMsgCmd.label "Bewerken als nieuw bericht">
 <!ENTITY editAsNewMsgCmd.accesskey "B">
 <!ENTITY editAsNewMsgCmd.key "e">
+<!ENTITY editDraftMsgCmd.label "Conceptbericht bewerken">
+<!ENTITY editDraftMsgCmd.accesskey "b">
 <!ENTITY createFilter.label "Filter maken op basis van bericht…">
 <!ENTITY createFilter.accesskey "F">
 <!ENTITY moveMsgToMenu.label "Verplaatsen naar">
@@ -664,7 +668,7 @@
 <!ENTITY subjectColumn.label "Onderwerp">
 <!ENTITY dateColumn.label "Datum">
 <!ENTITY priorityColumn.label "Prioriteit">
-<!ENTITY tagsColumn.label "Label">
+<!ENTITY tagsColumn.label "Labels">
 <!ENTITY accountColumn.label "Account">
 <!ENTITY statusColumn.label "Status">
 <!ENTITY sizeColumn.label "Grootte">
@@ -714,8 +718,9 @@
 <!ENTITY contextOpenConversation.accesskey "n">
 <!ENTITY contextOpenContainingFolder.label "Bericht openen in bijbehorende map">
 <!ENTITY contextOpenContainingFolder.accesskey "m">
-<!ENTITY contextEditMsgAsNew.label "Bewerken als nieuw bericht…">
+<!ENTITY contextEditMsgAsNew.label "Bewerken als nieuw bericht">
 <!ENTITY contextEditMsgAsNew.accesskey "B">
+<!ENTITY contextEditDraftMsg.label "Conceptbericht bewerken">
 <!ENTITY contextArchive.label "Archiveren">
 <!ENTITY contextArchive.accesskey "h">
 <!ENTITY contextReplySender.label "Afzender beantwoorden">
@@ -745,7 +750,13 @@
 <!ENTITY contextKillThreadMenu.label "Conversatie negeren">
 <!ENTITY contextKillThreadMenu.accesskey "C">
 <!ENTITY contextKillSubthreadMenu.label "Subconversatie negeren">
+<!ENTITY contextKillSubthreadMenu.accesskey "b">
 <!ENTITY contextWatchThreadMenu.label "Conversatie volgen">
+<!--LOCALIZATION NOTE (contextWatchThreadMenu.accesskey):
+   In the en-US locale we ran out of access keys, so there is an empty access key for
+   Watch Thread. Localizers can pick a suitable key
+  -->
+<!ENTITY contextWatchThreadMenu.accesskey "C">
 <!ENTITY contextSaveAs.label "Opslaan als…">
 <!ENTITY contextSaveAs.accesskey "O">
 <!ENTITY contextPrint.label "Afdrukken…">
@@ -807,7 +818,7 @@
 <!ENTITY contextPause.accesskey "P">
 <!ENTITY contextMute.label "Dempen">
 <!ENTITY contextMute.accesskey "D">
-<!ENTITY contextUnmute.label "Dempen uitschakelen">
+<!ENTITY contextUnmute.label "Dempen opheffen">
 <!ENTITY contextUnmute.accesskey "D">
 
 <!-- Quick Search Bar -->
@@ -841,13 +852,13 @@
 
 <!-- Message Header Context Menu -->
 <!ENTITY AddToAddressBook.label "Toevoegen aan adresboek…">
-<!ENTITY AddToAddressBook.accesskey "v">
+<!ENTITY AddToAddressBook.accesskey "T">
 <!ENTITY AddDirectlyToAddressBook.label "Toevoegen aan adresboek">
-<!ENTITY AddDirectlyToAddressBook.accesskey "v">
+<!ENTITY AddDirectlyToAddressBook.accesskey "T">
 <!ENTITY EditContact1.label "Contact bewerken">
 <!ENTITY EditContact1.accesskey "C">
 <!ENTITY ViewContact.label "Contact bekijken">
-<!ENTITY ViewContact.accesskey "e">
+<!ENTITY ViewContact.accesskey "C">
 <!ENTITY SubscribeToNewsgroup.label "Abonneren op nieuwsgroep">
 <!ENTITY SubscribeToNewsgroup.accesskey "N">
 <!ENTITY SendMessageTo.label "Bericht opstellen aan">
@@ -870,7 +881,7 @@
 <!ENTITY spellAddDictionaries.accesskey "t">
 
 <!-- Content Pane Context Menu -->
-<!ENTITY saveLinkAsCmd.label "Koppelingsdoel opslaan als…">
+<!ENTITY saveLinkAsCmd.label "Koppeling opslaan als…">
 <!ENTITY saveLinkAsCmd.accesskey "d">
 <!ENTITY saveImageAsCmd.label "Afbeelding opslaan als…">
 <!ENTITY saveImageAsCmd.accesskey "p">

@@ -26,7 +26,7 @@
 <!ENTITY bookmarksToolbarCmd.accesskey "B">
 
 <!ENTITY closeWindow.label "Venster sluiten">
-<!ENTITY closeWindow.accesskey "n">
+<!ENTITY closeWindow.accesskey "e">
 
 <!ENTITY minimizeButton.tooltip       "Minimaliseren">
 <!ENTITY restoreButton.tooltip        "Herstellen">
@@ -49,12 +49,12 @@
 <!ENTITY stopButton.tooltip           "Het laden van deze pagina stoppen">
 <!ENTITY searchButton.label           "Zoeken">
 <!ENTITY searchButton.tooltip         "Typ een woord in het veld links hiernaast en klik daarna op Zoeken">
-<!ENTITY goButton.label               "Ga">
-<!ENTITY goButton.tooltip             "Typ een locatie in het veld links hiernaast en klik daarna op Ga">
+<!ENTITY goButton.label               "Gaan">
+<!ENTITY goButton.tooltip             "Typ een locatie in het veld links hiernaast en klik daarna op Gaan">
 <!ENTITY printButton.label            "Afdrukken">
 <!ENTITY printButton.tooltip          "Deze pagina afdrukken">
 
-<!ENTITY throbber.tooltip             "Naar de &vendorShortName;-startpagina">
+<!ENTITY throbber.tooltip             "Naar de &vendorShortName;-startpagina gaan">
 
 <!ENTITY locationBar.tooltip          "Voer een zoekterm, sleutelwoord of webadres in">
 <!ENTITY locationBar.accesskey        "d">
@@ -66,18 +66,18 @@
 
 <!ENTITY bookmarksButton.label        "Bladwijzers">
 <!ENTITY bookmarksButton.tooltip      "Bladwijzerlijst">
-<!ENTITY homeButton.label             "Beginpagina">
+<!ENTITY homeButton.label             "Startpagina">
 <!ENTITY bookmarksToolbarItem.label   "Bladwijzerwerkbalkitems">
 <!ENTITY  bookmarksToolbarChevron.tooltip "Meer bladwijzers tonen">
 
 <!-- Statusbar -->
-<!ENTITY  statusText.label            "Klaar">
+<!ENTITY  statusText.label            "Gereed">
 
 <!ENTITY popupIcon.tooltiptext      "Pop-ups van deze website deblokkeren">
 
 <!ENTITY viewSecurityInfo.label      "Beveiligingsinfo bekijken">
 <!ENTITY viewSecurityInfo.accesskey  "i">
-<!ENTITY viewCertificate.label       "Certificaten bekijken">
+<!ENTITY viewCertificate.label       "Certificaat bekijken">
 <!ENTITY viewCertificate.accesskey   "C">
 <!ENTITY viewCertManager.label       "Certificatenbeheerder openen">
 <!ENTITY viewCertManager.accesskey   "b">

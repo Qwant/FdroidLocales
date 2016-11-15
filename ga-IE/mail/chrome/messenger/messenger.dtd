@@ -34,8 +34,8 @@
 <!ENTITY newIMAccountCmd.accesskey "C">
 <!ENTITY newFeedAccountCmd.label "Cuntas Fotha…">
 <!ENTITY newFeedAccountCmd.accesskey "t">
-<!ENTITY newIMContactCmd.label "Teagmháil Chomhrá…">
-<!ENTITY newIMContactCmd.accesskey "h">
+<!ENTITY newIMContactCmd.label "Teagmhálaí Comhrá…">
+<!ENTITY newIMContactCmd.accesskey "o">
 <!ENTITY openMessageFileCmd.label "Oscail Teachtaireacht Shábháilte…">
 <!ENTITY openMessageFileCmd.accesskey "O">
 <!ENTITY saveAsMenu.label "Sábháil Mar">
@@ -143,9 +143,9 @@
 <!ENTITY messagePaneWide.accesskey "L">
 <!ENTITY messagePaneVertical.label "Amharc Ingearach">
 <!ENTITY messagePaneVertical.accesskey "I">
-<!ENTITY showFolderPaneCmd.label "Pána an Fhillteáin">
+<!ENTITY showFolderPaneCmd.label "Pána na bhFillteán">
 <!ENTITY showFolderPaneCmd.accesskey "F">
-<!ENTITY showFolderPaneColsCmd.label "Colúin sa Phána Fillteáin">
+<!ENTITY showFolderPaneColsCmd.label "Colúin i bPána na bhFillteán">
 <!ENTITY showFolderPaneColsCmd.accesskey "P">
 <!ENTITY showMessageCmd.label "Pána Teachtaireachta">
 <!ENTITY showMessageCmd.accesskey "T">
@@ -164,6 +164,8 @@
 <!ENTITY recentFolders.accesskey "L">
 <!ENTITY compactVersion.label "Dlúthamharc">
 <!ENTITY compactVersion.accesskey "D">
+<!ENTITY folderPaneBar.label "Barra Uirlisí Phána na bhFillteán">
+<!ENTITY folderModeSelector.label "Amhairc Fhillteáin">
 <!-- Sort Menu -->
 
 <!ENTITY sortMenu.label "Sórtáil de réir">
@@ -361,6 +363,8 @@
 <!ENTITY editAsNewMsgCmd.label "Cuir in eagar mar theachtaireacht nua">
 <!ENTITY editAsNewMsgCmd.accesskey "C">
 <!ENTITY editAsNewMsgCmd.key "l">
+<!ENTITY editDraftMsgCmd.label "Cuir Dréacht in Eagar">
+<!ENTITY editDraftMsgCmd.accesskey "D">
 <!ENTITY createFilter.label "Cruthaigh Scagaire ón Teachtaireacht…">
 <!ENTITY createFilter.accesskey "a">
 <!ENTITY moveMsgToMenu.label "Bog Go">
@@ -584,7 +588,7 @@
 <!-- AppMenu Popup -->
 
 <!ENTITY appmenuNewMsgCmd.label "Teachtaireacht Nua">
-<!ENTITY appmenuNewContactCmd.label "Teagmháil sa Leabhar Seoltaí…">
+<!ENTITY appmenuNewContactCmd.label "Teagmhálaí sa Leabhar Seoltaí…">
 <!ENTITY appmenuEditMenu.label "Eagar">
 <!ENTITY appmenuToolbarLayout.label "Leagan Amach an Bharra Uirlisí…">
 <!ENTITY appmenuSelectThread.label "Roghnaigh Snáithe">
@@ -716,6 +720,7 @@
 <!ENTITY contextOpenContainingFolder.accesskey "n">
 <!ENTITY contextEditMsgAsNew.label "Cuir in Eagar Mar Theachtaireacht Nua">
 <!ENTITY contextEditMsgAsNew.accesskey "E">
+<!ENTITY contextEditDraftMsg.label "Cuir Dréacht in Eagar">
 <!ENTITY contextArchive.label "Cuir sa chartlann">
 <!ENTITY contextArchive.accesskey "h">
 <!ENTITY contextReplySender.label "Freagair an Seoltóir Amháin">
@@ -743,9 +748,15 @@
 <!ENTITY contextCopyMsgMenu.label "Cóipeáil Go">
 <!ENTITY contextCopyMsgMenu.accesskey "C">
 <!ENTITY contextKillThreadMenu.label "Tabhair Neamhaird ar an Snáithe">
+<!ENTITY contextKillSubthreadMenu.accesskey "b">
 <!ENTITY contextKillThreadMenu.accesskey "T">
 <!ENTITY contextKillSubthreadMenu.label "Tabhair Neamhaird ar an bhFoshnáithe">
 <!ENTITY contextWatchThreadMenu.label "Bí ag Faire ar an Snáithe">
+<!--LOCALIZATION NOTE (contextWatchThreadMenu.accesskey):
+   In the en-US locale we ran out of access keys, so there is an empty access key for
+   Watch Thread. Localizers can pick a suitable key
+  -->
+<!ENTITY contextWatchThreadMenu.accesskey "">
 <!ENTITY contextSaveAs.label "Sábháil Mar…">
 <!ENTITY contextSaveAs.accesskey "S">
 <!ENTITY contextPrint.label "Priontáil…">
@@ -844,9 +855,9 @@
 <!ENTITY AddToAddressBook.accesskey "b">
 <!ENTITY AddDirectlyToAddressBook.label "Cuir sa Leabhar Seoltaí">
 <!ENTITY AddDirectlyToAddressBook.accesskey "b">
-<!ENTITY EditContact1.label "Cuir Teagmháil in Eagar">
+<!ENTITY EditContact1.label "Cuir Teagmhálaí in Eagar">
 <!ENTITY EditContact1.accesskey "E">
-<!ENTITY ViewContact.label "Amharc ar an Teagmháil">
+<!ENTITY ViewContact.label "Amharc ar an Teagmhálaí">
 <!ENTITY ViewContact.accesskey "m">
 <!ENTITY SubscribeToNewsgroup.label "Liostáil le Grúpa Nuachta">
 <!ENTITY SubscribeToNewsgroup.accesskey "N">

@@ -52,6 +52,7 @@
 
 <!ENTITY aboutTelemetry.threadHangStatsSection "  Penchadas de filos">
 
+
 <!ENTITY aboutTelemetry.histogramsSection "  Histogramas">
 
 <!ENTITY aboutTelemetry.keyedHistogramsSection "  Datos chenerals">
@@ -79,3 +80,5 @@
 <!ENTITY aboutTelemetry.filterText "  Filtrar (cadenas u /regexp/)">
 
 <!ENTITY aboutTelemetry.payloadChoiceHeader "  Payload">
+
+<!ENTITY aboutTelemetry.rawPayload "  Carga util cruda">

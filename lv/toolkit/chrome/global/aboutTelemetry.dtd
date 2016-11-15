@@ -52,6 +52,10 @@
 
 <!ENTITY aboutTelemetry.threadHangStatsSection "  Pavedienu uzkāršanās">
 
+<!ENTITY aboutTelemetry.scalarsSection "
+  Skalāri
+">
+
 <!ENTITY aboutTelemetry.histogramsSection "  Histogrammas">
 
 <!ENTITY aboutTelemetry.keyedHistogramsSection "  Atzīmētās histogrammas">
@@ -79,3 +83,5 @@
 <!ENTITY aboutTelemetry.filterText "  Filtrs (virkne vai /regexp/)">
 
 <!ENTITY aboutTelemetry.payloadChoiceHeader "  Saturs">
+
+<!ENTITY aboutTelemetry.rawPayload "  Neapstrādāti dati">

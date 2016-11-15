@@ -10,7 +10,7 @@
 
 <!ENTITY update.checkForUpdatesButton.label       "Gwirio am ddiweddariadau">
 <!ENTITY update.checkForUpdatesButton.accesskey   "G">
-<!ENTITY update.updateButton.label2                "Ailgychwyn &brandShortName; i Ddiweddaru">
+<!ENTITY update.updateButton.label2                "Ailgychwyn &brandShortName; i'w Ddiweddaru">
 <!ENTITY update.updateButton.accesskey            "A">
 <!ENTITY update.applyButtonBillboard.label        "Gosod y Diweddariad…">
 <!ENTITY update.applyButtonBillboard.accesskey    "D">
@@ -46,10 +46,10 @@
 <!ENTITY helpus.getInvolvedLink     "ymuno â ni!">
 <!ENTITY helpus.end                 "">
 
-<!ENTITY releaseNotes.link          "Beth sy'n Newydd">
+<!ENTITY releaseNotes.link          "Beth sy'n newydd">
 <!-- LOCALIZATION NOTE (bottomLinks.license): This is a link title that links to about:license. -->
 
-<!ENTITY bottomLinks.license        "Gwybodaeth Trwyddedu">
+<!ENTITY bottomLinks.license        "Manylion Trwyddedu">
 <!-- LOCALIZATION NOTE (bottomLinks.rights): This is a link title that links to about:rights. -->
 
 <!ENTITY bottomLinks.rights         "Hawliau'r Defnyddiwr">
@@ -65,6 +65,7 @@
 <!ENTITY update.adminDisabled       "Mae'r diweddariad wedi ei analluogi gan eich gweinyddwr">
 <!-- LOCALIZATION NOTE (update.otherInstanceHandlingUpdates): try to make the localized text short -->
 <!ENTITY update.otherInstanceHandlingUpdates "Mae &brandShortName; yn cael ei ddiweddaru gan enghraifft arall">
+<!ENTITY update.restarting          "Ailgychwyn…">
 <!-- LOCALIZATION NOTE (update.failed.start,update.failed.linkText,update.failed.end):
      update.failed.start, update.failed.linkText, and update.failed.end all go into
      one line with linkText being wrapped in an anchor that links to a site to download

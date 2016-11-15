@@ -2,14 +2,25 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+
+
+
+
+
+<!ENTITY  trackingProtectionLearnMore.label    "மேலும் அறி">
+
+
+
 <!ENTITY tracking.label                 "கண்காணிப்பு">
 
-<!ENTITY dntTrackingNotOkay.label2      "நான் கண்காணிக்கப்படுவதை விரும்பவில்லை என்று வலைதளங்களிடம் கூறவும்">
-<!ENTITY dntTrackingNotOkay.accesskey   "n">
-<!ENTITY trackingProtection.label       "என்னை தடமறிதலிருந்து தளங்களைத் தடு">
-<!ENTITY trackingProtection.accesskey   "m">
-<!ENTITY trackingProtectionLearnMore.label "மேலும் அறிய">
-<!ENTITY doNotTrackInfo.label           "இன்னும் கற்க">
+
+
+
+
+<!-- LOCALIZATION NOTE (doNotTrack.pre.label): include a trailing space as needed -->
+<!-- LOCALIZATION NOTE (doNotTrack.post.label): include a starting space as needed -->
+
+
 
 <!ENTITY  history.label                 "வரலாறு">
 
@@ -25,11 +36,12 @@
 
 
 
+
+
 <!ENTITY  acceptCookies.label           "இணைய தளங்களிலிருந்து நினைவிகளை அனுமதிக்கவும்">
 <!ENTITY  acceptCookies.accesskey       "அ">
 
-<!ENTITY  acceptThirdParty.pre.label      "மூன்றாம் தரப்பினரின் நினைவிகளை அனுமதிக்கவும்:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "அ">
+
 <!ENTITY  acceptThirdParty.always.label   "எப்போதும்">
 <!ENTITY  acceptThirdParty.never.label    "ஒரு போதும் இல்லை">
 <!ENTITY  acceptThirdParty.visited.label  "பார்வையிட்டதிலிருந்து">
@@ -39,9 +51,8 @@
 
 <!ENTITY  expire.label                  "அவை காலாவதியாகிவிட்டது">
 <!ENTITY  close.label                   "நான் &brandShortName;ஐ மூடுகிறேன்">
-<!ENTITY  askEachTime.label             "ஒவ்வொரு முறையும் என்னை கேள்">
 
-<!ENTITY  cookieExceptions.label        "விதிவிலக்குகள்…">
+<!ENTITY  cookieExceptions.label        "விதிவிலக்குகள்...">
 <!ENTITY  cookieExceptions.accesskey    "E">
 
 <!ENTITY  showCookies.label             "நினைவிகளைக் காட்டு…">
@@ -87,3 +98,7 @@
 
 <!ENTITY  clearOnCloseSettings.label     "அமைவுகள்…">
 <!ENTITY  clearOnCloseSettings.accesskey "t">
+
+
+
+

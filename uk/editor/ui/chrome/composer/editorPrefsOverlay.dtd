@@ -4,8 +4,8 @@
 
 
 <!--LOCALIZATION NOTE (editorCheck.label): DONT_TRANSLATE -->
-<!ENTITY editorCheck.label "Composer">
-<!ENTITY editorCheck.accesskey "c">
+<!ENTITY editorCheck.label "Редактор">
+<!ENTITY editorCheck.accesskey "Р">
 
 <!ENTITY compose.label "Редактор">
 <!ENTITY editing.label "Параметри нової сторінки">

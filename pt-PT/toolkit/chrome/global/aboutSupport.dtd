@@ -5,9 +5,7 @@
 <!ENTITY aboutSupport.pageTitle "Informações sobre resolução de problemas">
 <!-- LOCALIZATION NOTE (aboutSupport.pageSubtitle): don't change the 'supportLink' id. -->
 
-<!ENTITY aboutSupport.pageSubtitle "  Esta página contém as informações técnicas que podem ser úteis para o ajudar 
-a tentar resolver um problema. Se estiver à procura de respostas a questões comuns 
-sobre o &brandShortName;, aceda ao nosso <a id='supportLink'>website de apoio</a>.">
+<!ENTITY aboutSupport.pageSubtitle "  Esta página contém as informações técnicas que podem ser úteis para o ajudar a tentar resolver um problema. Se estiver à procura de respostas a questões comuns sobre o &brandShortName;, aceda ao nosso <a id='supportLink'>website de apoio</a>.">
 
 <!ENTITY aboutSupport.crashes.title "Relatórios de falha">
 <!-- LOCALIZATION NOTE (aboutSupport.crashes.id):
@@ -51,8 +49,10 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsEnabledPlugins "Plugins ativos">
 <!ENTITY aboutSupport.appBasicsBuildConfig "Configuração da versão">
-<!ENTITY aboutSupport.appBasicsUserAgent "Agente de utilizador">
+<!ENTITY aboutSupport.appBasicsUserAgent "User Agent">
+<!ENTITY aboutSupport.appBasicsOS "SO">
 <!ENTITY aboutSupport.appBasicsMemoryUse "Utilização da memória">
+<!ENTITY aboutSupport.appBasicsPerformance "Desempenho">
 <!-- LOCALIZATION NOTE the term "Service Workers" should not be translated. -->
 
 <!ENTITY aboutSupport.appBasicsServiceWorkers "Service Workers registados">
@@ -86,6 +86,10 @@ variant of aboutSupport.showDir.label. -->
 
 <!ENTITY aboutSupport.graphicsTitle "Gráficos">
 
+<!ENTITY aboutSupport.placeDatabaseTitle "Base de dados de locais">
+<!ENTITY aboutSupport.placeDatabaseIntegrity "Integridade">
+<!ENTITY aboutSupport.placeDatabaseVerifyIntegrity "Verificar integridade">
+
 <!ENTITY aboutSupport.jsTitle "JavaScript">
 <!ENTITY aboutSupport.jsIncrementalGC "GC incremental">
 
@@ -103,5 +107,14 @@ variant of aboutSupport.showDir.label. -->
 
 <!ENTITY aboutSupport.sandboxTitle "Sandbox">
 
-<!ENTITY aboutSupport.safeModeTitle "Tentar o modo de segurança">
+<!ENTITY aboutSupport.safeModeTitle "Tente o modo de segurança">
 <!ENTITY aboutSupport.restartInSafeMode.label "Reiniciar com os extras desativados…">
+
+<!ENTITY aboutSupport.graphicsFeaturesTitle "Funcionalidades">
+<!ENTITY aboutSupport.graphicsDiagnosticsTitle "Diagnósticos">
+<!ENTITY aboutSupport.graphicsFailureLogTitle "Registo de falha">
+<!ENTITY aboutSupport.graphicsGPU1Title "GPU #1">
+<!ENTITY aboutSupport.graphicsGPU2Title "GPU #2">
+<!ENTITY aboutSupport.graphicsDecisionLogTitle "Registo de decisões">
+<!ENTITY aboutSupport.graphicsCrashGuardsTitle "Funcionalidades desativadas do Crash Guard">
+<!ENTITY aboutSupport.graphicsWorkaroundsTitle "Alternativas">

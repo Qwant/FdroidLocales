@@ -2,19 +2,25 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY tracking.label                 "ट्रैकिंग">
 
-<!ENTITY dntTrackingNotOkay4.label     "अनुरोध करू जे ओ साइट अहाँक ट्रैक नहि करै.">
-<!ENTITY dntTrackingNotOkay4.accesskey "n">
-<!ENTITY doNotTrackInfo.label          "आओर जानू">
-<!ENTITY trackingProtection5.label     "ट्रैकिंग सुरक्षा उपयोग करू">
-<!ENTITY trackingProtection5.accesskey "i">
-<!ENTITY trackingProtectionLearnMore.label "आओर जानू">
+
+
+
+
+<!ENTITY  trackingProtectionLearnMore.label    "आओर जानू">
+
+
+
+<!ENTITY tracking.label                 "ट्रैकिंग">
 <!ENTITY trackingProtectionPBM5.label         "निज विंडो मे ट्रैकिंग सुरक्षा उपयोग करू">
 <!ENTITY trackingProtectionPBM5.accesskey     "v">
 <!ENTITY trackingProtectionPBMLearnMore.label "आओर जानू">
 <!ENTITY changeBlockList.label          "अवरोधित सूची बदलू">
 <!ENTITY changeBlockList.accesskey      "अ">
+<!-- LOCALIZATION NOTE (doNotTrack.pre.label): include a trailing space as needed -->
+<!-- LOCALIZATION NOTE (doNotTrack.post.label): include a starting space as needed -->
+
+
 
 <!ENTITY  history.label                 "इतिहास">
 
@@ -30,14 +36,13 @@
 <!ENTITY  locbar.searches.label         "डिफ़ॉल्ट खोज इंजिन द्वारा संबंधित खोज">
 <!ENTITY  locbar.searches.accesskey     "d">
 
-<!ENTITY  suggestionSettings.label      "खोज इंजिन सुझाव कलेल वरीयता बदलू (g)...">
+<!ENTITY  suggestionSettings.label      "खोज इंजिन सुझाव कलेल वरीयता बदलू...">
 <!ENTITY  suggestionSettings.accesskey  "g">
 
 <!ENTITY  acceptCookies.label           "साइट सँ कुकीज स्वीकारू">
 <!ENTITY  acceptCookies.accesskey       "A">
 
-<!ENTITY  acceptThirdParty.pre.label      "तृतीय पक्षीय कुकीज़ स्वीकारू (c)">
-<!ENTITY  acceptThirdParty.pre.accesskey  "c">
+
 <!ENTITY  acceptThirdParty.always.label   "हमेशा">
 <!ENTITY  acceptThirdParty.never.label    "कखनो नहि">
 <!ENTITY  acceptThirdParty.visited.label  "भ्रमण कएलसँ">
@@ -94,3 +99,7 @@
 
 <!ENTITY  clearOnCloseSettings.label     "सेटिंग…">
 <!ENTITY  clearOnCloseSettings.accesskey "t">
+
+
+
+

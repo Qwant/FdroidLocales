@@ -5,21 +5,38 @@
 <!--LOCALIZATION NOTE : FILE The Appearance > Content prefs dialog.  -->
 
 <!ENTITY pref.content.title                     "Contenu">
-<!ENTITY pref.content.description               "Ces paramètres influencent l'affichage du contenu des sites web et des messages par &brandShortName;.">
+<!ENTITY pref.content.description               "Ces paramètres influencent l’affichage du contenu des sites web et des messages par &brandShortName;.">
 <!ENTITY siteIcons.label                        "Icônes de sites web">
 <!ENTITY useSiteIcons.label                     "Afficher les icônes de sites web">
 <!ENTITY useSiteIcons.accesskey                 "S">
-<!ENTITY useFavIcons.label                      "Rechercher activement les icônes de sites web quand la page n'en définit pas">
+<!ENTITY useFavIcons.label                      "Rechercher activement les icônes de sites web quand la page n’en définit pas">
 <!ENTITY useFavIcons.accesskey                  "A">
-<!ENTITY enableAutomaticImageResizing.label     "Réduire les images à la taille de la fenêtre">
-<!ENTITY enableAutomaticImageResizing.accesskey "R">
+
+<!ENTITY scrolling.label                        "Défilement">
+<!ENTITY useAutoScroll.label                    "Utiliser le défilement automatique">
+<!ENTITY useAutoScroll.accesskey                "t">
 <!ENTITY useSmoothScroll.label                  "Utiliser le défilement doux">
 <!ENTITY useSmoothScroll.accesskey              "d">
-<!ENTITY allowHWAccel.label                     "Utiliser l'accélération graphique matérielle si disponible">
-<!ENTITY allowHWAccel.accesskey                 "e">
-<!ENTITY textZoomOnly.label                     "Zoomer uniquement le texte plutôt que l'ensemble du contenu">
-<!ENTITY textZoomOnly.accesskey                 "Z">
-<!ENTITY blockAutoRefresh.label                 "Avertir lorsque des sites essaient de rediriger ou recharger la page">
-<!ENTITY blockAutoRefresh.accesskey             "v">
+
+<!ENTITY zoomPrefs.label                        "Options de zoom">
+<!-- LOCALIZATION NOTE (minZoom.label, maxZoom.label, percent.label):
+     single hbox with minZoom.label preceding the minZoom control and
+     maxZoom.label preceding the maxZoom control; percent.label shows
+     the ASCII '%' character at the end of that string -->
+<!ENTITY minZoom.label                          "De">
+<!ENTITY minZoom.accesskey                      "e">
+<!ENTITY maxZoom.label                          "à">
+<!ENTITY maxZoom.accesskey                      "">
+<!ENTITY percent.label                          " &#37;">
+
 <!ENTITY siteSpecific.label                     "Retenir les niveaux de zoom pour chaque site">
 <!ENTITY siteSpecific.accesskey                 "x">
+<!ENTITY textZoomOnly.label                     "Zoomer uniquement le texte plutôt que l’ensemble du contenu">
+<!ENTITY textZoomOnly.accesskey                 "Z">
+<!ENTITY enableAutomaticImageResizing.label     "Réduire les images à la taille de la fenêtre">
+<!ENTITY enableAutomaticImageResizing.accesskey "R">
+
+<!ENTITY allowHWAccel.label                     "Utiliser l’accélération graphique matérielle si disponible">
+<!ENTITY allowHWAccel.accesskey                 "i">
+<!ENTITY blockAutoRefresh.label                 "Avertir lorsque des sites essaient de rediriger ou recharger la page">
+<!ENTITY blockAutoRefresh.accesskey             "v">

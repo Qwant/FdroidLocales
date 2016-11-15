@@ -3,17 +3,17 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY minimizeWindow.key       "m">
-<!ENTITY minimizeWindow.label     "ch'utinarisaxïk">
+<!ENTITY minimizeWindow.label     "Ch'utinarisaxïk">
 <!ENTITY bringAllToFront.label    "Ruk'amik chuwäch ronojel">
 <!ENTITY zoomWindow.label         "Sum">
-<!ENTITY windowMenu.label         "winow">
+<!ENTITY windowMenu.label         "Window">
 
 <!ENTITY helpMenu.label           "To'ïk"> 
-<!ENTITY helpMenu.accesskey       "H"> 
+<!ENTITY helpMenu.accesskey       "T"> 
 <!-- LOCALIZATION NOTE some localizations of Windows (ex:french, german) use "?"
                        for the help button in the menubar but Gnome does not.   -->
 <!ENTITY helpMenuWin.label        "To'ïk"> 
-<!ENTITY helpMenuWin.accesskey    "H">
+<!ENTITY helpMenuWin.accesskey    "T">
 <!ENTITY aboutProduct2.label      "Chi rij ri &brandShorterName;">
 <!ENTITY aboutProduct2.accesskey  "C">
 <!ENTITY productHelp2.label       "&brandShorterName; To'ïk">
@@ -23,24 +23,24 @@
 <!ENTITY helpKeyboardShortcuts.label     "Ruq'a' rub'ey Keyboard">
 <!ENTITY helpKeyboardShortcuts.accesskey "K">
 
-<!ENTITY helpSafeMode.label       "Rutzijik jub'ey chik rik'in chupül taq rutz'aqat…">
-<!ENTITY helpSafeMode.accesskey   "R">
-<!ENTITY helpSafeMode.stop.label       "Titikirisäx chik rik'in tzijon taq rutz'aqat">
+<!ENTITY helpSafeMode.label       "Titikirisäx chik kik'in ri chupül taq tz'aqat…">
+<!ENTITY helpSafeMode.accesskey   "T">
+<!ENTITY helpSafeMode.stop.label       "Titikirisäx chik rik'in ri tzijïl taq tz'aqat">
 <!ENTITY helpSafeMode.stop.accesskey   "T">
 
 <!ENTITY healthReport2.label      "Rutzijol raxnaqil richin &brandShorterName;">
 <!ENTITY healthReport2.accesskey  "i">
 
-<!ENTITY helpTroubleshootingInfo.label      "Na'oj richin ye'asöl taq k'ayewal">
-<!ENTITY helpTroubleshootingInfo.accesskey  "N">
+<!ENTITY helpTroubleshootingInfo.label      "Etamab'äl richin yesol taq k'ayewal">
+<!ENTITY helpTroubleshootingInfo.accesskey  "E">
 
-<!ENTITY helpFeedbackPage.label      "Rutaqik ana'oj.">
-<!ENTITY helpFeedbackPage.accesskey  "S">
+<!ENTITY helpFeedbackPage.label      "Ketaq taq rutzijol…">
+<!ENTITY helpFeedbackPage.accesskey  "K">
 
-<!ENTITY helpShowTour2.label            "&brandShorterName; B'eyajem">
-<!ENTITY helpShowTour2.accesskey        "a">
+<!ENTITY helpShowTour2.label            "&brandShorterName; B'enam">
+<!ENTITY helpShowTour2.accesskey        "n">
 
-<!ENTITY preferencesCmdMac.label        "Taq cha'oj…">
+<!ENTITY preferencesCmdMac.label        "Taq ajowab'äl…">
 <!ENTITY preferencesCmdMac.commandkey   ",">
 
 <!ENTITY servicesMenuMac.label          "Taq samaj">
@@ -51,4 +51,4 @@
 <!ENTITY hideOtherAppsCmdMac.label      "Kewaxik ch'aqa' chikKe">
 <!ENTITY hideOtherAppsCmdMac.commandkey "H">
 
-<!ENTITY showAllAppsCmdMac.label        "Ruk'utik ronojel">
+<!ENTITY showAllAppsCmdMac.label        "Tik'ut pe ronojel">

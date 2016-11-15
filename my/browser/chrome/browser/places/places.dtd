@@ -52,8 +52,8 @@
 <!ENTITY cmd.open.accesskey              "O">
 <!ENTITY cmd.open_window.label           "၀င်းဒိုးအသစ် တခုမှာ ဖွင့်ပါ">
 <!ENTITY cmd.open_window.accesskey       "N">
-
-
+<!ENTITY cmd.open_private_window.label     "သီးသန့် ဝင်းဒိုးအသစ်ထဲတွင် ဖွင့်ပါ။ P">
+<!ENTITY cmd.open_private_window.accesskey "P">
 <!ENTITY cmd.open_tab.label              "စာအမှတ် အသစ်တခုမှာ ဖွင့်ပါ">
 <!ENTITY cmd.open_tab.accesskey          "w">
 <!ENTITY cmd.open_all_in_tabs.label      "အားလုံးကို စာအမှတ်များနဲ့ ဖွင့်ပါ">
@@ -85,7 +85,6 @@
 <!ENTITY col.url.label           "တည်နေရာ">
 <!ENTITY col.mostrecentvisit.label "နောက်ဆုံးအသုံးပြုခဲ့သော ဝတ်ဆိုဒ်များ">
 <!ENTITY col.visitcount.label    "လည်ပတ်မူ အရေအတွက်">
-<!ENTITY col.keyword.label       "သော့ချက် စာလုံး">
 <!ENTITY col.description.label   "ဖေါ်ပြချက်">
 <!ENTITY col.dateadded.label     "ထည့်သွင်းထားပြီ">
 <!ENTITY col.lastmodified.label  "နောက်ဆုံး မွမ်းမံချိန်">

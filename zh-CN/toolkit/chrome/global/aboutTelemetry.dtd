@@ -52,6 +52,10 @@
 
 <!ENTITY aboutTelemetry.threadHangStatsSection "  线程挂起">
 
+<!ENTITY aboutTelemetry.scalarsSection "
+  标量
+">
+
 <!ENTITY aboutTelemetry.histogramsSection "  直方图">
 
 <!ENTITY aboutTelemetry.keyedHistogramsSection "键控直方图">
@@ -79,3 +83,7 @@
 <!ENTITY aboutTelemetry.filterText "  筛选器（字符串或者 /正则表达式/）">
 
 <!ENTITY aboutTelemetry.payloadChoiceHeader "负载">
+
+<!ENTITY aboutTelemetry.rawPayload "
+  原始数据
+">

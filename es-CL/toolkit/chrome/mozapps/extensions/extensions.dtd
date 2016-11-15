@@ -15,7 +15,7 @@
 <!ENTITY listEmpty.recentUpdates.label        "No ha habido actualizaciones recientes de ningún complemento">
 <!ENTITY listEmpty.findUpdates.label          "Buscar actualizaciones">
 <!ENTITY listEmpty.search.label               "No se pudo encontrar ningún complemento que coincida">
-<!ENTITY listEmpty.button.label               "Conocer más sobre complementos">
+<!ENTITY listEmpty.button.label               "Aprender más sobre complementos">
 <!ENTITY installAddonFromFile.label           "Instalar complemento desde archivo…">
 <!ENTITY installAddonFromFile.accesskey       "I">
 <!ENTITY toolsMenu.tooltip                    "Herramientas para todos los complementos">
@@ -36,10 +36,6 @@
 <!ENTITY warning.updatesecurity.label              "La verificación de actualizaciones de seguridad de complementos está deshabilitada. Puedes estar en peligro por las actualizaciones.">
 <!ENTITY warning.updatesecurity.enable.label       "Habilitar">
 <!ENTITY warning.updatesecurity.enable.tooltip     "Habilitar la verificación de actualizaciones de seguridad">
-
-<!-- global informations -->
-<!ENTITY info.plugincheck.label                 "Verifica si tus complementos están actualizados">
-<!ENTITY info.plugincheck.tooltip               "Verifica si tus complementos están actualizados">
 
 <!-- categories / views -->
 <!ENTITY view.search.label                    "Buscar">
@@ -108,9 +104,9 @@
 <!ENTITY cmd.uninstallAddon.label             "Eliminar">
 <!ENTITY cmd.uninstallAddon.accesskey         "r">
 <!ENTITY cmd.showPreferencesWin.label         "Opciones">
-<!ENTITY cmd.showPreferencesWin.tooltip       "Cambiar las opciones de este complemento">
+<!ENTITY cmd.showPreferencesWin.tooltip       "Cambiar las opciones para este complemento">
 <!ENTITY cmd.showPreferencesUnix.label        "Preferencias">
-<!ENTITY cmd.showPreferencesUnix.tooltip      "Cambiar las preferencias de este complemento">
+<!ENTITY cmd.showPreferencesUnix.tooltip      "Cambiar las preferencias para este complemento">
 <!ENTITY cmd.contribute.label                 "Contribuir">
 <!ENTITY cmd.contribute.accesskey             "C">
 <!ENTITY cmd.contribute.tooltip               "Contribuir al desarrollo de este complemento">
@@ -206,7 +202,7 @@
 <!ENTITY addon.updateNow.tooltip              "Instalar la actualización para este complemento">
 <!ENTITY addon.includeUpdate.label            "Incluir en la actualización">
 <!ENTITY addon.updateAvailable.label          "Hay una actualización disponible">
-<!ENTITY addon.checkingForUpdates.label       "Buscar actualizaciones…">
+<!ENTITY addon.checkingForUpdates.label       "Buscando actualizaciones…">
 <!ENTITY addon.releaseNotes.label             "Notas de lanzamiento:">
 <!ENTITY addon.loadingReleaseNotes.label      "Cargando…">
 <!ENTITY addon.errorLoadingReleaseNotes.label "Lo siento, hubo un error al cargar las notas de lanzamiento.">

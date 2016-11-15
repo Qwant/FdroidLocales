@@ -14,6 +14,8 @@
 <!ENTITY searchStartTyping.accesskey     "x">
 <!ENTITY blockAutoRefresh.label          "मुझे चेतावनी दें जब वेबसाइट पृष्ठ को पुनर्निर्देशित या पुनर्लोड करना चाहता है">
 <!ENTITY blockAutoRefresh.accesskey      "b">
+<!ENTITY useOnScreenKeyboard.label       "आवश्यकता अनुसार स्पर्श वाला कीबोर्ड दिखाएँ">
+<!ENTITY useOnScreenKeyboard.accesskey   "k">
 
 <!ENTITY browsing.label                  "ब्राउज़िंग">
 
@@ -80,9 +82,6 @@
 <!ENTITY updateCheck.accesskey           "C">
 <!ENTITY updateManual.label              "अद्यतन के लिए कभी मत जाँचें (अनुशंसित नहीं: सुरक्षा जोखिम)">
 <!ENTITY updateManual.accesskey          "N">
-
-<!ENTITY updateAutoAddonWarn.label       "मुझे चताएँ यदि यह किसी सहयुक्ति को निष्क्रिय करता है">
-<!ENTITY updateAutoAddonWarn.accesskey   "W">
 
 <!ENTITY updateHistory.label             "अद्यतन इतिहास दिखाएँ">
 <!ENTITY updateHistory.accesskey         "p">

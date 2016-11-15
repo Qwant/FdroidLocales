@@ -52,7 +52,9 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 <!ENTITY aboutSupport.appBasicsEnabledPlugins "Aktivaj kromprogramoj">
 <!ENTITY aboutSupport.appBasicsBuildConfig "Agordoj de konstruado">
 <!ENTITY aboutSupport.appBasicsUserAgent "Agento de uzanto">
+<!ENTITY aboutSupport.appBasicsOS "OS">
 <!ENTITY aboutSupport.appBasicsMemoryUse "Uzado de memoro">
+<!ENTITY aboutSupport.appBasicsPerformance "Efikeco">
 
 <!-- LOCALIZATION NOTE the term "Service Workers" should not be translated. -->
 <!ENTITY aboutSupport.appBasicsServiceWorkers "Registritaj Service Workers">
@@ -86,12 +88,16 @@ variant of aboutSupport.showDir.label. -->
 
 <!ENTITY aboutSupport.graphicsTitle "Grafikoj">
 
+<!ENTITY aboutSupport.placeDatabaseTitle "Datumbazo de lokoj">
+<!ENTITY aboutSupport.placeDatabaseIntegrity "Integreco">
+<!ENTITY aboutSupport.placeDatabaseVerifyIntegrity "Kontroli integrecon">
+
 <!ENTITY aboutSupport.jsTitle "JavaScript">
 <!ENTITY aboutSupport.jsIncrementalGC "Poioma GC">
 
 <!ENTITY aboutSupport.a11yTitle "Alirebleco">
 <!ENTITY aboutSupport.a11yActivated "Aktiva">
-<!ENTITY aboutSupport.a11yForceDisabled "Eviti alireblecon">
+<!ENTITY aboutSupport.a11yForceDisabled "Eviti alireblon">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Versioj de bibliotekoj">
 
@@ -105,3 +111,12 @@ variant of aboutSupport.showDir.label. -->
 
 <!ENTITY aboutSupport.safeModeTitle "Provi la sekuran reĝimon">
 <!ENTITY aboutSupport.restartInSafeMode.label "Restartigi kun ĉiuj aldonaĵoj malaktivaj…">
+
+<!ENTITY aboutSupport.graphicsFeaturesTitle "Trajtoj">
+<!ENTITY aboutSupport.graphicsDiagnosticsTitle "Diagnozoj">
+<!ENTITY aboutSupport.graphicsFailureLogTitle "Registro de misoj">
+<!ENTITY aboutSupport.graphicsGPU1Title "GPU #1">
+<!ENTITY aboutSupport.graphicsGPU2Title "GPU #2">
+<!ENTITY aboutSupport.graphicsDecisionLogTitle "Registro de decidoj">
+<!ENTITY aboutSupport.graphicsCrashGuardsTitle "Trajtoj malŝaltitaj de la protekto kontraŭ paneoj">
+<!ENTITY aboutSupport.graphicsWorkaroundsTitle "Provizoraj solvoj">

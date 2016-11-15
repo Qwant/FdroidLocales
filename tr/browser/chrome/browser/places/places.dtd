@@ -22,8 +22,8 @@
 <!ENTITY view.sort.accesskey            "S">
 <!ENTITY view.unsorted.label            "Sıralanmamış">
 <!ENTITY view.unsorted.accesskey        "r">
-<!ENTITY view.sortAscending.label       "’dan Z’ye sırala">
-<!ENTITY view.sortAscending.accesskey   "’">
+<!ENTITY view.sortAscending.label       "A’dan Z’ye sırala">
+<!ENTITY view.sortAscending.accesskey   "A">
 <!ENTITY view.sortDescending.label      "Z’den A’ya sırala">
 <!ENTITY view.sortDescending.accesskey  "Z">
 
@@ -68,13 +68,13 @@
 
 <!ENTITY cmd.new_bookmark.label            "Yeni yer imi…">
 <!ENTITY cmd.new_bookmark.accesskey        "m">
-<!ENTITY cmd.new_folder.label              "Yeni dizin…">
-<!ENTITY cmd.new_folder.accesskey          "d">
-<!ENTITY cmd.context_new_folder.accesskey  "d">
+<!ENTITY cmd.new_folder.label              "Yeni klasör…">
+<!ENTITY cmd.new_folder.accesskey          "k">
+<!ENTITY cmd.context_new_folder.accesskey  "r">
 <!ENTITY cmd.new_separator.label           "Yeni ayraç">
 <!ENTITY cmd.new_separator.accesskey       "Y">
 
-<!ENTITY cmd.reloadLivebookmark.label      "Canlı yer imini tazele">
+<!ENTITY cmd.reloadLivebookmark.label      "Canlı Yer İmini tazele">
 <!ENTITY cmd.reloadLivebookmark.accesskey  "t">
 
 <!ENTITY cmd.moveBookmarks.label                  "Taşı…">

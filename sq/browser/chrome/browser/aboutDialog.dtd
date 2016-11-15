@@ -18,7 +18,7 @@
 <!-- LOCALIZATION NOTE (warningDesc.version): This is a warning about the experimental nature of Nightly and Aurora builds. It is only shown in those versions. -->
 <!ENTITY warningDesc.version        "&brandShortName; është eksperimentale dhe mund të jetë e paqëndrueshme.">
 <!-- LOCALIZATION NOTE (warningDesc.telemetryDesc): This is a notification that Nightly/Aurora builds automatically send Telemetry data back to Mozilla. It is only shown in those versions. "It" refers to brandShortName. -->
-<!ENTITY warningDesc.telemetryDesc  "Dërgon vetvetiu te &vendorShortName; të dhëna mbi funksionimin, hardware-in, përdorimin dhe personalizimet, për të ndihmuar në përmirësimin e &brandShortName;-it.">
+<!ENTITY warningDesc.telemetryDesc  "Dërgon vetvetiu te &vendorShortName; të dhëna mbi funksionimin, hardware-in, përdorimin dhe përshtatjet, për të ndihmuar në përmirësimin e &brandShortName;-it.">
 
 <!-- LOCALIZATION NOTE (community.exp.*) This paragraph is shown in "experimental" builds, i.e. Nightly and Aurora builds, instead of the other "community.*" strings below. -->
 <!ENTITY community.exp.start        "">
@@ -64,6 +64,7 @@
 <!ENTITY update.adminDisabled       "Përditësimet janë çaktivizuar nga përgjegjësi i sistemit tuaj">
 <!-- LOCALIZATION NOTE (update.otherInstanceHandlingUpdates): try to make the localized text short -->
 <!ENTITY update.otherInstanceHandlingUpdates "&brandShortName;-i po përditësohet nga një tjetër provë">
+<!ENTITY update.restarting          "Po riniset…">
 
 <!-- LOCALIZATION NOTE (update.failed.start,update.failed.linkText,update.failed.end):
      update.failed.start, update.failed.linkText, and update.failed.end all go into

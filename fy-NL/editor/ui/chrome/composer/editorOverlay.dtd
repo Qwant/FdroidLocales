@@ -180,7 +180,7 @@
 <!ENTITY listPropsCmd.label "Listeigenskippen…">
 <!ENTITY listPropsCmd.accesskey "L">
 
-<!ENTITY ParagraphSelect.tooltip "Alineaopmaak kieze">
+<!ENTITY ParagraphSelect.tooltip "In alineaopmaak kieze">
 <!-- Shared in Paragraph, and Toolbar menulist -->
 <!ENTITY bodyTextCmd.label "Tekst">
 <!ENTITY bodyTextCmd.accesskey "T">
@@ -194,8 +194,8 @@
 <!ENTITY alignLeft.label "Links">
 <!ENTITY alignLeft.accesskey "L">
 <!ENTITY alignLeft.tooltip "Links útlynje">
-<!ENTITY alignCenter.label "Midden">
-<!ENTITY alignCenter.accesskey "M">
+<!ENTITY alignCenter.label "Sintrearre">
+<!ENTITY alignCenter.accesskey "S">
 <!ENTITY alignCenter.tooltip "Sintrearje">
 <!ENTITY alignRight.label "Rjochts">
 <!ENTITY alignRight.accesskey "R">
@@ -206,7 +206,7 @@
 
 <!-- Layer toolbar items -->
 <!ENTITY layer.tooltip "Leech">
-<!ENTITY layerSendToBack.tooltip "Nei efter bringe">
+<!ENTITY layerSendToBack.tooltip "Nei achter bringe">
 <!ENTITY layerBringToFront.tooltip "Nei foaren bringe">
 
 <!ENTITY increaseIndent.label "Ynspringe fergrutsje">
@@ -291,7 +291,7 @@
 <!ENTITY printToolbarCmd.label "Ofdrukke">
 <!ENTITY printToolbarCmd.tooltip "Dizze side ôfdrukke">
 <!ENTITY findToolbarCmd.label "Sykje">
-<!ENTITY findToolbarCmd.tooltip "Tekst sykje yn side">
+<!ENTITY findToolbarCmd.tooltip "Tekst sykje op side">
 <!ENTITY spellToolbarCmd.label "Stavering">
 <!ENTITY spellToolbarCmd.tooltip "Stavering fan seleksje of hiele side kontrolearje">
 <!ENTITY imageToolbarCmd.label "Ofbylding">
@@ -302,7 +302,7 @@
 <!ENTITY tableToolbarCmd.tooltip "Nije tabel ynfoegje of eigenskippen fan selektearre tabel oanpasse">
 <!ENTITY linkToolbarCmd.label "Keppeling">
 <!ENTITY linkToolbarCmd.tooltip "Nije keppeling ynfoegje of eigenskippen fan selektearre keppeling oanpasse">
-<!ENTITY anchorToolbarCmd.label "Anker">
+<!ENTITY anchorToolbarCmd.label "Ankerferwizing">
 <!ENTITY anchorToolbarCmd.tooltip "Nije ankerferwizing ynfoegje of eigenskippen fan selektearre ankerferwizing oanpasse">
 <!ENTITY TextColorButton.tooltip "Tekstkleur kieze">
 <!ENTITY BackgroundColorButton.tooltip "Eftergrûnkleur kieze">
@@ -323,7 +323,7 @@
 <!ENTITY AlignPopupButton.tooltip "Tekstútlyning kieze">
 <!ENTITY InsertPopupButton.tooltip "In keppeling, ankerferwizing, ôfbylding, horizontale line of tabel ynfoegje">
 <!ENTITY alignLeftButton.tooltip "Tekst by de linkermarzje útlynje">
-<!ENTITY alignCenterButton.tooltip "Tekst útlynje yn it midden">
+<!ENTITY alignCenterButton.tooltip "Tekst sintrearre útlynje">
 <!ENTITY alignRightButton.tooltip "Tekst by de rjochtermarzje útlynje">
 <!ENTITY alignJustifyButton.tooltip "Tekst by de linker- en rjochtermarzje útlynje">
 

@@ -5,8 +5,8 @@
 <!ENTITY  trackingProtectionHeader.label       "ಜಾಡು ಇರಿಸದಂತೆ ರಕ್ಷಣೆಯನ್ನು ಬಳಸು">
 <!ENTITY  trackingProtectionAlways.label       "ಯಾವಾಗಲೂ">
 <!ENTITY  trackingProtectionAlways.accesskey   "y">
-
-
+<!ENTITY  trackingProtectionPrivate.label      "Only ಖಾಸಗಿ ಕಿಟಕಿಗಳಲ್ಲಿ">
+<!ENTITY  trackingProtectionPrivate.accesskey  "l">
 <!ENTITY  trackingProtectionNever.label        "ಎಂದಿಗೂ ಬೇಡ">
 <!ENTITY  trackingProtectionNever.accesskey    "N">
 <!ENTITY  trackingProtectionLearnMore.label    "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ">
@@ -14,14 +14,16 @@
 <!ENTITY  trackingProtectionExceptions.accesskey "x">
 
 <!ENTITY tracking.label                 "ಜಾಡು ಇರಿಸುವಿಕೆ">
-
-
+<!ENTITY trackingProtectionPBM5.label         "ಖಾಸಗೀ ಕಿಟಕಿಗಳಲ್ಲಿ ಜಾಡುಹಿಡಿಯುವಿಕೆಯ ಸುರಕ್ಷತೆಯನ್ನು ಬಳಸಿ">
+<!ENTITY trackingProtectionPBM5.accesskey     "v">
 <!ENTITY trackingProtectionPBMLearnMore.label "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ">
-
-
+<!ENTITY changeBlockList.label          "Change ನಿರ್ಬಂಧಿತ ಪಟ್ಟಿ">
+<!ENTITY changeBlockList.accesskey      "C">
 <!-- LOCALIZATION NOTE (doNotTrack.pre.label): include a trailing space as needed -->
 <!-- LOCALIZATION NOTE (doNotTrack.post.label): include a starting space as needed -->
 
+<!ENTITY  doNotTrack.pre.label          "ನೀವೂ ಕೂಡ ">
+<!ENTITY  doNotTrack.settings.label     "ನಿಮ್ಮ ಜಾಡು ಹಿಡಿಯಬೇಡ ಸಿದ್ಧತೆಗಳನ್ನು ನಿರ್ವಹಿಸಿ">
 <!ENTITY  doNotTrack.post.label         ".">
 
 <!ENTITY  history.label                 "ಇತಿಹಾಸ">
@@ -38,13 +40,14 @@
 <!ENTITY  locbar.searches.label         "ಪೂರ್ವನಿಯೋಜಿತ ಹುಡುಕು ಎಂಜಿನ್‌ನಿಂದ Related ಹುಡುಕಾಟಗಳು">
 <!ENTITY  locbar.searches.accesskey     "d">
 
-
+<!ENTITY  suggestionSettings.label      "ಹುಡುಕು ಯಂತ್ರಗಳ ಸಲಹೆಗಳ ಇಚ್ಛೆಗಳನ್ನು ಬದಲಾಯಿಸಿ…">
+<!ENTITY  suggestionSettings.accesskey  "g">
 
 <!ENTITY  acceptCookies.label           "ಈ ತಾಣದಿಂದ ಕುಕಿಗಳನ್ನು ಅನುಮತಿಸು">
 <!ENTITY  acceptCookies.accesskey       "A">
 
-<!ENTITY  acceptThirdParty.pre.label      "ಥರ್ಡ್‌ ಪಾರ್ಟಿ ಕುಕಿಗಳನ್ನು ಅಂಗೀಕರಿಸು:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "c">
+<!ENTITY  acceptThirdParty.pre.label      "ಮೂರನೇ ವ್ಯಕ್ತಿಯ ಕುಕಿಗಳನ್ನು ಅಂಗೀಕರಿಸು:">
+<!ENTITY  acceptThirdParty.pre.accesskey  "y">
 <!ENTITY  acceptThirdParty.always.label   "ಯಾವಾಗಲೂ">
 <!ENTITY  acceptThirdParty.never.label    "ಎಂದಿಗೂ ಬೇಡ">
 <!ENTITY  acceptThirdParty.visited.label  "ಭೇಟಿ ಮಾಡಿದವುಗಳಿಂದ">
@@ -101,3 +104,8 @@
 
 <!ENTITY  clearOnCloseSettings.label     "ಸಿದ್ಧತೆಗಳು…">
 <!ENTITY  clearOnCloseSettings.accesskey "t">
+
+<!ENTITY  browserContainersHeader.label         "ಕಂಟೈನರ್ ಟ್ಯಾಬ್‍‍ಗಳು">
+<!ENTITY  browserContainersLearnMore.label      "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ">
+<!ENTITY  browserContainersEnabled.label        "ಕಂಟೈನರ್ ಟ್ಯಾಬ್ಸ್ ಸಕ್ರಿಯಗೊಳಿಸಿ">
+<!ENTITY  browserContainersEnabled.accesskey    "n">

@@ -1,7 +1,7 @@
 bing
 duckduckgo
-eBay-france
 google
+qwant
 twitter
 wikipedia-fr
 yahoo-france

@@ -100,6 +100,10 @@ Ping
   Konversaasjefêstrinners
 ">
 
+<!ENTITY aboutTelemetry.scalarsSection "
+  Skalars
+">
+
 <!ENTITY aboutTelemetry.histogramsSection "
   Histogrammen
 ">
@@ -154,4 +158,8 @@ Ping
 
 <!ENTITY aboutTelemetry.payloadChoiceHeader "
   Nettolading
+">
+
+<!ENTITY aboutTelemetry.rawPayload "
+  Net bewurke nettolading
 ">

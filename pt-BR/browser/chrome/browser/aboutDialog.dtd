@@ -8,8 +8,8 @@
 # The button when displayed is located directly under the Firefox version in
 # the about dialog (see bug 596813 for screenshots).
 -->
-<!ENTITY update.checkForUpdatesButton.label       "Procurar atualizações">
-<!ENTITY update.checkForUpdatesButton.accesskey   "V">
+<!ENTITY update.checkForUpdatesButton.label       "Checar se há atualizações">
+<!ENTITY update.checkForUpdatesButton.accesskey   "C">
 <!ENTITY update.updateButton.label2                "Reiniciar o &brandShortName; para atualizar">
 <!ENTITY update.updateButton.accesskey            "R">
 <!ENTITY update.applyButtonBillboard.label        "Aplicar atualização…">
@@ -28,7 +28,7 @@
 <!ENTITY community.exp.middle       " é uma ">
 <!-- LOCALIZATION NOTE (community.exp.creditslink): This is a link title that links to about:credits. -->
 <!ENTITY community.exp.creditsLink  "comunidade global">
-<!ENTITY community.exp.end          " trabalhando em conjunto para manter a web aberta, pública e acessível a todos.">
+<!ENTITY community.exp.end          " que trabalha em conjunto para manter a web aberta, pública e acessível a todos.">
 
 <!ENTITY community.start2           "O &brandShortName; é desenvolvido pela ">
 <!-- LOCALIZATION NOTE (community.mozillaLink): This is a link title that links to http://www.mozilla.org/. -->
@@ -36,7 +36,7 @@
 <!ENTITY community.middle2          ", uma ">
 <!-- LOCALIZATION NOTE (community.creditsLink): This is a link title that links to about:credits. -->
 <!ENTITY community.creditsLink      "comunidade global">
-<!ENTITY community.end3             " trabalhando em conjunto para manter a web aberta, pública e acessível a todos.">
+<!ENTITY community.end3             " que trabalha em conjunto para manter a web aberta, pública e acessível a todos.">
 
 <!ENTITY helpus.start               "Quer ajudar? ">
 <!-- LOCALIZATION NOTE (helpus.donateLink): This is a link title that links to https://sendto.mozilla.org/page/contribute/Give-Now?source=mozillaorg_default_footer&ref=firefox_about&utm_campaign=firefox_about&utm_source=firefox&utm_medium=referral&utm_content=20140929_FireFoxAbout. -->
@@ -46,7 +46,7 @@
 <!ENTITY helpus.getInvolvedLink     "envolva-se!">
 <!ENTITY helpus.end                 "">
 
-<!ENTITY releaseNotes.link          "O que há de novo">
+<!ENTITY releaseNotes.link          "Novidades">
 
 <!-- LOCALIZATION NOTE (bottomLinks.license): This is a link title that links to about:license. -->
 <!ENTITY bottomLinks.license        "Informações de licenciamento">
@@ -65,6 +65,7 @@
 <!ENTITY update.adminDisabled       "Atualizações desativadas pelo administrador do sistema">
 <!-- LOCALIZATION NOTE (update.otherInstanceHandlingUpdates): try to make the localized text short -->
 <!ENTITY update.otherInstanceHandlingUpdates "O &brandShortName; está sendo atualizado por outra instância">
+<!ENTITY update.restarting          "Reiniciando…">
 
 <!-- LOCALIZATION NOTE (update.failed.start,update.failed.linkText,update.failed.end):
      update.failed.start, update.failed.linkText, and update.failed.end all go into
@@ -89,7 +90,7 @@
      why the system is no longer supported. As this is all in one line, try to
      make the localized text short (see bug 843497 for screenshots). -->
 <!ENTITY update.unsupported.start    "Não é possível efetuar mais atualizações neste sistema. ">
-<!ENTITY update.unsupported.linkText "Saiba mais">
+<!ENTITY update.unsupported.linkText "Saber mais">
 <!ENTITY update.unsupported.end      "">
 
 <!-- LOCALIZATION NOTE (update.downloading.start,update.downloading.end): update.downloading.start and 

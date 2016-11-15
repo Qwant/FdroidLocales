@@ -4,6 +4,8 @@
 <!ENTITY titleSeparator.label " - ">
 <!-- File Menu -->
 
+<!ENTITY newFolderCmd.label "Mape...">
+<!ENTITY newFolderCmd.accesskey "M">
 
 
 
@@ -42,6 +44,8 @@
 
 
 
+<!ENTITY getAllNewMsgCmdPopupMenu.label "Visi konti">
+<!ENTITY getAllNewMsgCmdPopupMenu.accesskey "V">
 
 
 
@@ -71,10 +75,8 @@
 
 
 
-
-
-
-
+<!ENTITY printCmd.label "Drukāt...">
+<!ENTITY printCmd.accesskey "D">
 
 
 
@@ -142,6 +144,9 @@
 
 
 
+<!ENTITY folderView.label "Mapes">
+<!ENTITY folderView.accesskey "M">
+
 
 
 
@@ -167,24 +172,24 @@
 
 
 
+<!ENTITY sortBySizeCmd.label "Izmērs">
+<!ENTITY sortBySizeCmd.accesskey "z">
+<!ENTITY sortByStatusCmd.label "Statuss">
+<!ENTITY sortByStatusCmd.accesskey "u">
+<!ENTITY sortByTagsCmd.label "Birkas">
+<!ENTITY sortByTagsCmd.accesskey "B">
 
 
+<!ENTITY sortBySubjectCmd.label "Temats">
+<!ENTITY sortBySubjectCmd.accesskey "T">
+<!ENTITY sortByFromCmd.label "No">
+<!ENTITY sortByFromCmd.accesskey "N">
+<!ENTITY sortByRecipientCmd.label "Saņēmējs">
+<!ENTITY sortByRecipientCmd.accesskey "S">
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!ENTITY sortByUnreadCmd.label "Lasīt">
+<!ENTITY sortByUnreadCmd.accesskey "L">
 
 
 
@@ -199,6 +204,8 @@
 
 <!ENTITY msgsMenu.label "Ziņojumi">
 <!ENTITY msgsMenu.accesskey "m">
+<!ENTITY threads.label "Pavedieni">
+<!ENTITY threads.accesskey "e">
 
 
 
@@ -213,10 +220,8 @@
 
 
 
-
-
-
-
+<!ENTITY ignoredThreadsCmd.label "Ignorēt pavedienus">
+<!ENTITY ignoredThreadsCmd.accesskey "I">
 
 
 
@@ -259,8 +264,8 @@
 
 
 
-
-
+<!ENTITY searchMailCmd.label "Meklēt ziņojumus...">
+<!ENTITY searchMailCmd.accesskey "m">
 
 
 
@@ -312,11 +317,13 @@
 <!ENTITY newMsgCmd.accesskey "n">
 <!ENTITY newNewMsgCmd.label "Ziņojums">
 <!ENTITY newNewMsgCmd.accesskey "m">
-
-
+<!ENTITY archiveMsgCmd.label "Arhivēt">
+<!ENTITY archiveMsgCmd.accesskey "A">
 
 <!ENTITY cancelNewsMsgCmd.label "Atcelt ziņojumu">
 <!ENTITY cancelNewsMsgCmd.accesskey "c">
+<!ENTITY replyMsgCmd.label "Atbildēt">
+<!ENTITY replyMsgCmd.accesskey "A">
 
 
 
@@ -350,19 +357,19 @@
 
 
 
+<!ENTITY copyMsgToMenu.label "Kopēt uz">
+<!ENTITY copyMsgToMenu.accesskey "K">
 
 
 
+<!ENTITY killThreadMenu.label "Ignorēt pavedienu">
+<!ENTITY killThreadMenu.accesskey "I">
 
+<!ENTITY killSubthreadMenu.label "Ignorēt apakšpavedienu">
+<!ENTITY killSubthreadMenu.accesskey "a">
 
-
-
-
-
-
-
-
-
+<!ENTITY watchThreadMenu.label "Vērot pavedienu">
+<!ENTITY watchThreadMenu.accesskey "V">
 <!ENTITY watchThreadMenu.key "w">
 
 
@@ -424,8 +431,8 @@
 
 
 
-
-
+<!ENTITY addressBookCmd.label "Adrešu grāmata">
+<!ENTITY addressBookCmd.accesskey "g">
 <!ENTITY addressBookCmd.key "B">
 
 
@@ -474,13 +481,13 @@
 
 
 <!ENTITY fileButton.label "Datne">
+<!ENTITY archiveButton.label "Arhivēt">
+<!ENTITY nextButton.label "Nākošais">
 
+<!ENTITY nextMsgButton.label "Nākošais">
+<!ENTITY previousButton.label "Iepriekšējais">
 
-
-
-
-
-
+<!ENTITY previousMsgButton.label "Iepriekšējais">
 
 
 <!ENTITY deleteItem.title "Dzēst">
@@ -488,7 +495,7 @@
 
 
 
-
+<!ENTITY stopButton.label "Apturēt">
 
 
 
@@ -499,7 +506,7 @@
 
 
 
-
+<!ENTITY tagButton.label "Atzīmēt">
 
 
 <!-- Mail Toolbar Tooltips-->
@@ -519,16 +526,16 @@
 
 
 
+<!ENTITY goForwardButton.tooltip "Doties vienu ziņojumu uz priekšu">
+<!ENTITY goBackButton.tooltip "Doties vienu ziņojumu atpakaļ">
 
 
 
+<!ENTITY printButton.tooltip "Drukāt šo ziņojumu">
 
 
 
-
-
-
-
+<!ENTITY addressBookButton.tooltip "Doties uz adrešu grāmatu">
 
 
 
@@ -549,6 +556,8 @@
 
 <!-- AppMenu Popup -->
 
+<!ENTITY appmenuNewMsgCmd.label "Jauns ziņojums">
+<!ENTITY appmenuNewContactCmd.label "Adrešu grāmatas kontakts...">
 <!ENTITY appmenuEditMenu.label "Rediģēt">
 
 
@@ -558,19 +567,23 @@
 
 
 <!-- Folder Pane -->
+
+<!ENTITY folderNameColumn.label "Nosaukums">
 <!ENTITY folderUnreadColumn.label "Nelasīti">
-
-
+<!ENTITY folderTotalColumn.label "Kopā">
+<!ENTITY folderSizeColumn.label "Izmērs">
 <!-- Folder Pane Context Menu -->
 
+<!ENTITY folderContextGetMessages.label "Iegūt ziņojumus">
+<!ENTITY folderContextGetMessages.accesskey "g">
 
 
 
 
-
-
-
-
+<!ENTITY folderContextNew.label "Jauna apakšmape...">
+<!ENTITY folderContextNew.accesskey "n">
+<!ENTITY folderContextRename.label "Pārdēvēt">
+<!ENTITY folderContextRename.accesskey "r">
 <!ENTITY folderContextRemove.label "Dzēst">
 <!ENTITY folderContextRemove.accesskey "D">
 
@@ -589,63 +602,69 @@
 
 
 
+<!ENTITY folderContextSearchForMessages.label "Meklēt ziņojumus...">
+<!ENTITY folderContextSearchForMessages.accesskey "M">
+<!ENTITY folderContextProperties2.label "Īpašības">
+<!ENTITY folderContextProperties2.accesskey "p">
 
 
-
-
-
-
-
-
+<!ENTITY folderContextSettings2.label "Iestatījumi">
+<!ENTITY folderContextSettings2.accesskey "e">
 <!-- Search Bar -->
 
 <!-- Gloda Search Bar -->
+
+<!ENTITY glodaSearchBar.placeholder "Meklēt ziņojumus...">
 <!-- Quick Search Menu Bar -->
 
+<!ENTITY searchSubjectMenu.label "Temats">
+<!ENTITY searchFromMenu.label "No">
 
 
 
-
+<!ENTITY searchMessageBody.label "Viss ziņojums">
 
 <!-- Thread Pane -->
 
+<!ENTITY threadColumn.label "Pavediens">
+<!ENTITY fromColumn.label "No">
+<!ENTITY recipientColumn.label "Saņēmējs">
 
-
-
-
-
-
-
-
-
+<!ENTITY subjectColumn.label "Temats">
+<!ENTITY dateColumn.label "Datums">
+<!ENTITY priorityColumn.label "Prioritāte">
+<!ENTITY tagsColumn.label "Birka">
+<!ENTITY accountColumn.label "Konts">
+<!ENTITY statusColumn.label "Statuss">
+<!ENTITY sizeColumn.label "Izmērs">
 
 <!ENTITY unreadColumn.label "Nelasīti">
+<!ENTITY totalColumn.label "Kopā">
+<!ENTITY readColumn.label "Lasīt">
+<!ENTITY receivedColumn.label "Saņemts">
 
-
-
-
-
+<!ENTITY locationColumn.label "Atrašanās vieta">
 
 <!ENTITY attachmentColumn.label "Pielikumi">
 <!-- Thread Pane Tooltips -->
 
+<!ENTITY fromColumn2.tooltip "Kārtot pēc formas">
+
+
+
+<!ENTITY dateColumn2.tooltip "Kārtot pēc datuma">
+<!ENTITY priorityColumn2.tooltip "Kārtot pēc prioritātes">
+<!ENTITY tagsColumn2.tooltip "Kārtot pēc birkām">
+<!ENTITY accountColumn2.tooltip "Kārtot pēc konta">
+<!ENTITY statusColumn2.tooltip "Kārtot pēc statusa">
+<!ENTITY sizeColumn2.tooltip "Kārtot pēc izmēra">
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+<!ENTITY locationColumn2.tooltip "Kārtot pēc atrašanās vietas">
 
 
 <!-- Thread Pane Context Menu -->
@@ -659,6 +678,11 @@
 
 
 
+<!ENTITY contextEditMsgAsNew.label "Rediģēt kā jaunu ziņojumu">
+<!ENTITY contextEditMsgAsNew.accesskey "e">
+
+<!ENTITY contextArchive.label "Arhivēt">
+<!ENTITY contextArchive.accesskey "h">
 
 
 
@@ -673,28 +697,30 @@
 
 
 
+<!ENTITY contextForwardAsAttachmentItem.label "Pielikums">
+<!ENTITY contextForwardAsAttachmentItem.accesskey "P">
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+<!ENTITY contextCopyMsgMenu.label "Kopēt uz">
+<!ENTITY contextCopyMsgMenu.accesskey "K">
+<!ENTITY contextKillThreadMenu.label "Ignorēt pavedienu">
+<!ENTITY contextKillSubthreadMenu.accesskey "a">
+<!ENTITY contextKillThreadMenu.accesskey "I">
+<!ENTITY contextKillSubthreadMenu.label "Ignorēt apakšpavedienu">
+<!ENTITY contextWatchThreadMenu.label "Vērot pavedienu">
+<!--LOCALIZATION NOTE (contextWatchThreadMenu.accesskey):
+   In the en-US locale we ran out of access keys, so there is an empty access key for
+   Watch Thread. Localizers can pick a suitable key
+  -->
+<!ENTITY contextWatchThreadMenu.accesskey "">
 <!ENTITY contextSaveAs.label "Saglabāt kā…">
 <!ENTITY contextSaveAs.accesskey "S">
-
-
+<!ENTITY contextPrint.label "Drukāt...">
+<!ENTITY contextPrint.accesskey "D">
 
 
 <!-- Thread Pane Column Picker -->
@@ -718,6 +744,7 @@
    that the user selects using the same widget as the move to/copy to
    mechanism (via a series of popups).
   -->
+<!ENTITY columnPicker.applyToFolder.label "Mape...">
 <!-- LOCALIZATION NOTE (columnPicker.applyToFolderAndChildren.label):
    This option in the thread pane column picker is found on a sub-menu beneath
    the "columnPicker.applyTo.label" alongside
@@ -737,19 +764,25 @@
    items are "This folder", "B", and "C".  This is the equivalent of the
    "File here" option for the move to/copy to widge.t
   -->
+<!ENTITY columnPicker.thisFolder.label "Šī mape">
 <!-- Media (video/audio) controls -->
 
 
-
-
-
-
-
+<!ENTITY contextPlay.label "Atskaņot">
+<!ENTITY contextPlay.accesskey "A">
+<!ENTITY contextPause.label "Pauzēt">
+<!ENTITY contextPause.accesskey "P">
+<!ENTITY contextMute.label "Klusināt">
+<!ENTITY contextMute.accesskey "K">
+<!ENTITY contextUnmute.label "Atklusināt">
+<!ENTITY contextUnmute.accesskey "k">
 <!-- Quick Search Bar -->
 <!-- LOCALIZATION NOTE (quickSearchCmd.key):
      This is actually the key used for the global message search box; we have
      not changed
      -->
+
+<!ENTITY quickSearchCmd.key "k">
 <!-- LOCALIZATION NOTE (search.label.base1):
      This is the base of the empty text for the global search box.  We replace
      #1 with the contents of the appropriate search.keyLabel.* value for the
@@ -771,18 +804,20 @@
      -->
 <!-- Message Header Context Menu -->
 
+<!ENTITY AddToAddressBook.label "Pievienot adrešu grāmatai...">
+<!ENTITY AddToAddressBook.accesskey "g">
+<!ENTITY AddDirectlyToAddressBook.label "Pievienot adrešu grāmatai">
+<!ENTITY AddDirectlyToAddressBook.accesskey "g">
+<!ENTITY EditContact1.label "Rediģēt kontaktu">
+<!ENTITY EditContact1.accesskey "e">
 
 
 
 
 
 
-
-
-
-
-
-
+<!ENTITY CopyEmailAddress.label "Kopēt epasta adresi">
+<!ENTITY CopyEmailAddress.accesskey "e">
 
 
 
@@ -803,10 +838,10 @@
 
 
 
-
-
-
-
+<!ENTITY copyEmailCmd.label "Kopēt epasta adresi">
+<!ENTITY copyEmailCmd.accesskey "e">
+<!ENTITY stopCmd.label "Apturēt">
+<!ENTITY stopCmd.accesskey "A">
 
 
 
@@ -814,20 +849,24 @@
 
 
 <!-- Statusbar -->
+
+<!ENTITY statusText.label "Izdarīts">
 <!--  Mac OS X Window Menu -->
 
-
-
+<!ENTITY minimizeWindow.label "Minimizēt">
+<!ENTITY minimizeWindow.key "m">
+<!ENTITY bringAllToFront.label "Nest visu uz priekšplānu">
+<!ENTITY zoomWindow.label "Tālummaiņa">
 <!-- Mac OS X Application Menu (Cocoa widgets) -->
 
 <!ENTITY preferencesCmdMac2.label       "Iestatījumi">
-
+<!ENTITY preferencesCmdMac.commandkey   ",">
 
 <!ENTITY servicesMenuMac.label          "Pakalpojumi">
 
 
 
-
+<!ENTITY hideOtherAppsCmdMac.label      "Paslēpt citus">
 
 
 

@@ -30,8 +30,6 @@
 <!ENTITY retentionKeepAll.accesskey              "A">
 <!ENTITY retentionKeepRecent.label               "最近のメッセージを次の数だけ残して削除する">
 <!ENTITY retentionKeepRecent.accesskey           "n">
-<!-- LOCALIZATION NOTE: Unhide with .keepUnreadOnly { display: -moz-box; } -->
-<!ENTITY retentionKeepUnreadHidden.label         "既読のメッセージは常に削除する (最優先)">
 <!ENTITY retentionApplyToFlagged.label           "フラグ付きのメッセージは残す">
 <!ENTITY retentionApplyToFlagged.accesskey       "e">
 
@@ -63,7 +61,7 @@
 <!ENTITY folderQuotaTab.label                    "クォータ">
 <!ENTITY folderQuotaRoot.label                   "クォータルート:">
 <!ENTITY folderQuotaUsage.label                  "使用容量:">
-<!ENTITY folderQuotaStatus.label                 "状態割合:">
+<!ENTITY folderQuotaStatus.label                 "使用割合:">
 
 <!ENTITY numberOfMessages.label                  "メッセージ数:">
 <!-- LOCALIZATION NOTE: When the number of messages can't be determined, this string is displayed as the number -->

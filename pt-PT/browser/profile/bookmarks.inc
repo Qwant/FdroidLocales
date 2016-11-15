@@ -16,7 +16,7 @@
 #define bookmarks_heading Marcadores
 
 
-#define bookmarks_toolbarfolder Pasta da barra de ferramentas de marcadores
+#define bookmarks_toolbarfolder Pasta da barra de marcadores
 
 
 #define bookmarks_toolbarfolder_description Adicione os marcadores a esta pasta se os quiser mostrar na barra de marcadores
@@ -73,7 +73,7 @@
 # link title for https://www.mozilla.org/en-US/about/
 
 
-#define firefox_about Sobre Nós
+#define firefox_about Acerca de nós
 
 
 #unfilter emptyLines

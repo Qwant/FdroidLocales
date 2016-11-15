@@ -40,6 +40,12 @@ can reach it easily. -->
 <!ENTITY  pinTab.accesskey                   "l">
 <!ENTITY  unpinTab.label                     "Depingli langeton">
 <!ENTITY  unpinTab.accesskey                 "D">
+<!ENTITY  sendTabToDevice.label              "Sendi langeton al aparato">
+<!ENTITY  sendTabToDevice.accesskey          "a">
+<!ENTITY  sendPageToDevice.label             "Sendi paĝon al aparato">
+<!ENTITY  sendPageToDevice.accesskey         "a">
+<!ENTITY  sendLinkToDevice.label             "Sendi ligilon al aparato">
+<!ENTITY  sendLinkToDevice.accesskey         "a">
 <!ENTITY  moveToNewWindow.label              "Movi al nova fenestro">
 <!ENTITY  moveToNewWindow.accesskey          "n">
 <!ENTITY  bookmarkAllTabs.label              "Aldoni legosignon por ĉiuj langetoj…">
@@ -105,13 +111,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenCmd.macCommandKey "f">
 <!ENTITY showAllTabsCmd.label "Montri ĉiujn langetojn">
 <!ENTITY showAllTabsCmd.accesskey "m">
+<!ENTITY toggleReaderMode.key "R">
 
 <!ENTITY fxaSignIn.label "Komenci seancon en &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "Malfermi preferojn de &syncBrand.shortName.label;">
 <!ENTITY fxaSignInError.label "Reconnect to &syncBrand.shortName.label;">
 <!ENTITY fxaUnverified.label "Konfirmi vian konton">
-<!ENTITY syncStartPanel2.heading "&syncBrand.shortName.label; aktiva">
-<!ENTITY syncStartPanel2.subTitle "&brandShortName; komencos tre baldaŭ speguli.">
 
 
 <!ENTITY fullScreenMinimize.tooltip "Malplejgrandigi">
@@ -130,6 +135,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullscreenWarning.beforeDomain.label "">
 <!ENTITY fullscreenWarning.afterDomain.label "videblas nun plenekrane">
 <!ENTITY fullscreenWarning.generic.label "Tiu ĉi dokumento videbas nun plenekrane">
+
 <!-- LOCALIZATION NOTE (exitDOMFullscreen.button,
      exitDOMFullscreenMac.button): the "escape" button on PC keyboards
      is uppercase, while on Mac keyboards it is lowercase -->
@@ -137,6 +143,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY exitDOMFullscreenMac.button "Eliri el plenekrana reĝimo (esk)">
 <!ENTITY leaveDOMFullScreen.label "Eliri el ekranplena reĝimo">
 <!ENTITY leaveDOMFullScreen.accesskey "e">
+
+<!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
+     pointerlockWarning.afterDomain.label): these two strings are used
+     respectively before and after the domain requiring pointerlock.
+     Localizers can use one of them, or both, to better adapt this
+     sentence to their language. -->
+<!ENTITY pointerlockWarning.beforeDomain.label "">
+<!ENTITY pointerlockWarning.afterDomain.label "regas vian musmontrilon. Premu Esk por repreni la regadon.">
+<!ENTITY pointerlockWarning.generic.label "Tiu ĉi dokumento regas vian musmontrilon. Premu Esk por repreni la regadon.">
 
 <!ENTITY closeWindow.label "Fermi fenestron">
 <!ENTITY closeWindow.accesskey "e">
@@ -163,13 +178,18 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY shareSelect.accesskey "e">
 <!ENTITY shareVideo.label "Dividi tiun ĉi filmeton">
 <!ENTITY shareVideo.accesskey "f">
-<!ENTITY feedsMenu.label "Aboni">
+<!ENTITY feedsMenu2.label "Aboni tiun ĉi paĝon">
 <!ENTITY subscribeToPageMenupopup.label "Aboni tiun ĉi paĝon">
 <!ENTITY subscribeToPageMenuitem.label "Aboni tiun ĉi paĝon…">
 <!ENTITY addCurPagesCmd.label "Aldoni legosignon por ĉiuj langetoj…">
 <!ENTITY showAllBookmarks2.label "Montri ĉiujn legosignojn">
-<!ENTITY unsortedBookmarksCmd.label "Neordigitaj legosignoj">
+<!ENTITY recentBookmarks.label "Ĵusaj legosignoj">
+<!ENTITY otherBookmarksCmd.label "Aliaj legosignoj">
 <!ENTITY bookmarksToolbarChevron.tooltip "Montri pliajn legosignojn">
+<!ENTITY showRecentlyBookmarked.label     "Montri ĵusajn legosignojn">
+<!ENTITY showRecentlyBookmarked.accesskey "M">
+<!ENTITY hideRecentlyBookmarked.label     "Kaŝi ĵusajn legosignojn">
+<!ENTITY hideRecentlyBookmarked.accesskey "K">
 
 <!ENTITY backCmd.label                "Malantaŭen">
 <!ENTITY backButton.tooltip           "Unu paĝo malantaŭen">
@@ -196,7 +216,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.indexedDBNotificationAnchor.label       "Vidi la mesaĝon de konservado de malkonektitaĵoj">
 <!ENTITY urlbar.loginFillNotificationAnchor.label       "Administri vian akreditilon">
 <!ENTITY urlbar.passwordNotificationAnchor.label        "Kontroli ĉu vi volas konservi vian pasvorton">
-<!ENTITY urlbar.webappsNotificationAnchor.label         "Vidi la mesaĝon de instalo de la programo">
 <!ENTITY urlbar.pluginsNotificationAnchor.label         "Administri la uzon de kromprogramoj en tiu ĉi paĝo">
 <!ENTITY urlbar.webNotsNotificationAnchor3.label        "Ŝanĝi, ĉu vi povas ricevi sciigojn el tiu ĉi retejo">
 
@@ -224,9 +243,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksCmd.commandkey "b">
 
 <!ENTITY bookmarksMenuButton.label          "Legosignoj">
-<!ENTITY bookmarksMenuButton.unsorted.label "Neordigitaj legosignoj">
+<!ENTITY bookmarksMenuButton.other.label "Aliaj legosignoj">
 <!ENTITY viewBookmarksSidebar2.label        "Montri flankan strion de legosignoj">
 <!ENTITY viewBookmarksToolbar.label         "Montri ilaron de legosignoj">
+
+<!ENTITY containersMenu.label "Ujoj">
 
 <!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
@@ -254,89 +275,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY webDeveloperMenu.label       "TTTa programisto">
 <!ENTITY webDeveloperMenu.accesskey   "P">
 
-<!ENTITY devToolsCmd.keycode          "VK_F12">
-<!ENTITY devToolsCmd.keytext          "F12">
-
-<!ENTITY devtoolsConnect.label        "Konekti…">
-<!ENTITY devtoolsConnect.accesskey    "k">
-
-<!ENTITY errorConsoleCmd.label        "Konzolo de eraroj">
-<!ENTITY errorConsoleCmd.accesskey    "E">
-
-<!ENTITY remoteWebConsoleCmd.label    "Fora teksaĵa konzolo">
-
-<!ENTITY browserConsoleCmd.label      "Retumila konzolo">
-<!ENTITY browserConsoleCmd.commandkey "j">
-<!ENTITY browserConsoleCmd.accesskey  "R">
-
 <!ENTITY inspectContextMenu.label     "Inspekti elementon">
 <!ENTITY inspectContextMenu.accesskey "n">
-
-<!ENTITY responsiveDesignTool.label   "Adaptebla vido de fasono">
-<!ENTITY responsiveDesignTool.accesskey "A">
-<!ENTITY responsiveDesignTool.commandkey "M">
-
-<!ENTITY eyedropper.label   "Eyedropper">
-<!ENTITY eyedropper.accesskey "Y">
-
-<!-- LOCALIZATION NOTE (scratchpad.label): This menu item label appears
-  -  in the Tools menu. See bug 653093.
-  -  The Scratchpad is intended to provide a simple text editor for creating
-  -  and evaluating bits of JavaScript code for the purposes of function
-  -  prototyping, experimentation and convenient scripting.
-  -
-  -  It's quite possible that you won't have a good analogue for the word
-  -  "Scratchpad" in your locale. You should feel free to find a close
-  -  approximation to it or choose a word (or words) that means
-  -  "simple discardable text editor". -->
-<!ENTITY scratchpad.label             "Malneta redaktilo">
-<!ENTITY scratchpad.accesskey         "r">
-<!ENTITY scratchpad.keycode           "VK_F4">
-<!ENTITY scratchpad.keytext           "F4">
-
-<!-- LOCALIZATION NOTE (browserToolboxMenu.label): This is the label for the
-  -  application menu item that opens the browser toolbox UI in the Tools menu. -->
-<!ENTITY browserToolboxMenu.label     "Ilarujo de retumilo">
-<!ENTITY browserToolboxMenu.accesskey "u">
-<!ENTITY browserToolboxCmd.commandkey "i">
-
-<!-- LOCALIZATION NOTE (browserContentToolboxMenu.label): This is the label for the
-  -  application menu item that opens the browser content toolbox UI in the Tools menu.
-  -  This toolbox allows to debug the chrome of the content process in multiprocess builds.  -->
-<!ENTITY browserContentToolboxMenu.label     "Ilaro por enhava procezo">
-<!ENTITY browserContentToolboxMenu.accesskey "p">
-
-<!ENTITY devToolbarCloseButton.tooltiptext "Fermi ilaron de programistoj">
-<!ENTITY devToolbarMenu.label              "Ilaro de programistoj">
-<!ENTITY devToolbarMenu.accesskey          "p">
-<!ENTITY webide.label                      "WebIDE">
-<!ENTITY webide.accesskey                  "W">
-<!ENTITY webide.keycode                    "VK_F8">
-<!ENTITY webide.keytext                    "F8">
-<!ENTITY devToolbar.keycode                "VK_F2">
-<!ENTITY devToolbar.keytext                "F2">
-<!ENTITY devToolboxMenuItem.label          "Montri/kaŝi ilojn">
-<!ENTITY devToolboxMenuItem.accesskey      "T">
-<!ENTITY devToolboxMenuItem.keytext        "I">
-
-<!ENTITY devToolbarToolsButton.tooltip     "Montri/kaŝi ilojn de disvolvanto">
-<!ENTITY devToolbarOtherToolsButton.label  "Pli da iloj">
-
-<!ENTITY getMoreDevtoolsCmd.label        "Akiri pli da iloj">
-<!ENTITY getMoreDevtoolsCmd.accesskey    "A">
 
 <!ENTITY fileMenu.label         "Dosiero"> 
 <!ENTITY fileMenu.accesskey       "o">
 <!ENTITY newUserContext.label             "Nova entena langeto">
 <!ENTITY newUserContext.accesskey         "e">
-<!ENTITY userContextPersonal.label        "Persona">
-<!ENTITY userContextPersonal.accesskey    "P">
-<!ENTITY userContextWork.label            "Laboro">
-<!ENTITY userContextWork.accesskey        "L">
-<!ENTITY userContextBanking.label         "Banka">
-<!ENTITY userContextBanking.accesskey     "B">
-<!ENTITY userContextShopping.label        "Aĉetumado">
-<!ENTITY userContextShopping.accesskey    "A">
 <!ENTITY newNavigatorCmd.label        "Nova fenestro">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "N">
@@ -407,7 +352,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHelp.tooltip "Malfermi menuon de helpo">
 
 <!ENTITY appMenuRemoteTabs.label "Spegulitaj langetoj">
-<!ENTITY appMenuRemoteTabs.fetching.label "Akiro de spegulitaj langetoj…">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.notabs.label): This is shown beneath
      the name of a device when that device has no open tabs -->
 <!ENTITY appMenuRemoteTabs.notabs.label "Neniu spegulita langeto">
@@ -417,10 +361,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.label "Komencu seancon en Firefox el viaj aliaj aparatoj por vidi iliajn langetojn ĉi tie.">
+<!ENTITY appMenuRemoteTabs.noclients.title "Neniu spegulita langeto… ankoraŭ!">
+<!ENTITY appMenuRemoteTabs.noclients.subtitle "Ĉu vi volas vidi ĉi tie viajn langetojn el aliaj aparatoj?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Preferoj de Speguli">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Komencu seancon por vidi liston de langetoj el viaj aliaj aparatoj.">
 <!ENTITY appMenuRemoteTabs.signin.label "Komencu seancon en Speguli">
+<!ENTITY appMenuRemoteTabs.sidebar.label "Vidi flankan strion de spegulitaj langetoj">
 
 <!ENTITY customizeMenu.addToToolbar.label "Aldoni al ilarstrio">
 <!ENTITY customizeMenu.addToToolbar.accesskey "A">
@@ -527,6 +473,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY openFrameCmdInTab.accesskey  "l">
 <!ENTITY openFrameCmd.label           "Malfermi kadron en nova fenestro">
 <!ENTITY openFrameCmd.accesskey       "F">
+<!ENTITY openLinkCmdInContainerTab.label "Malfermi ligilon en nova entenanta langeto">
+<!ENTITY openLinkCmdInContainerTab.accesskey "e">
 <!ENTITY showOnlyThisFrameCmd.label     "Montri nur tiun ĉi kadron">
 <!ENTITY showOnlyThisFrameCmd.accesskey "T">
 <!ENTITY reloadCmd.commandkey         "r">
@@ -625,19 +573,23 @@ items are mutually exclusive. -->
 <!ENTITY mediaMute.accesskey         "S">
 <!ENTITY mediaUnmute.label           "Malsilentigi">
 <!ENTITY mediaUnmute.accesskey       "M">
-<!ENTITY mediaPlaybackRate.label     "Ludrapido">
-<!ENTITY mediaPlaybackRate.accesskey "l">
-<!ENTITY mediaPlaybackRate050x.label "Malrapide (0.5×)">
-<!ENTITY mediaPlaybackRate050x.accesskey "M">
-<!ENTITY mediaPlaybackRate100x.label "Normale rapide">
-<!ENTITY mediaPlaybackRate100x.accesskey "N">
-<!ENTITY mediaPlaybackRate150x.label "Tre rapide (1.5×)">
-<!ENTITY mediaPlaybackRate150x.accesskey "T">
-<!-- LOCALIZATION NOTE: "Ludicrous Speed" is a reference to the
+<!ENTITY mediaPlaybackRate2.label     "Ludrapido">
+<!ENTITY mediaPlaybackRate2.accesskey "d">
+<!ENTITY mediaPlaybackRate050x2.label "Malrapide (0.5×)">
+<!ENTITY mediaPlaybackRate050x2.accesskey "M">
+<!ENTITY mediaPlaybackRate100x2.label "Normale">
+<!ENTITY mediaPlaybackRate100x2.accesskey "N">
+<!ENTITY mediaPlaybackRate125x2.label "Rapide (1.25×)">
+<!ENTITY mediaPlaybackRate125x2.accesskey "R">
+<!ENTITY mediaPlaybackRate150x2.label "Pli rapide (1.5×)">
+<!ENTITY mediaPlaybackRate150x2.accesskey "P">
+<!-- LOCALIZATION NOTE: "Ludicrous" is a reference to the
 movie "Space Balls" and is meant to say that this speed is very
 fast. -->
-<!ENTITY mediaPlaybackRate200x.label "Treege rapide (2×)">
-<!ENTITY mediaPlaybackRate200x.accesskey "g">
+<!ENTITY mediaPlaybackRate200x2.label "Rapidege (2×)">
+<!ENTITY mediaPlaybackRate200x2.accesskey "g">
+<!ENTITY mediaLoop.label             "Ripeti">
+<!ENTITY mediaLoop.accesskey         "R">
 <!-- LOCALIZATION NOTE: The access keys for "Show Controls" and
 "Hide Controls" are the same because the two context-menu
 items are mutually exclusive. -->
@@ -740,13 +692,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY spellAddDictionaries.accesskey "A">
 
 <!ENTITY editBookmark.done.label                     "Preta">
-<!ENTITY editBookmark.cancel.label                   "Nuligi">
 <!ENTITY editBookmark.removeBookmark.accessKey       "F">
 
 <!ENTITY identity.connectionSecure "Sekura konekto">
 <!ENTITY identity.connectionNotSecure "Nesekura konekto">
 <!ENTITY identity.connectionFile "Tiu ĉi paĝo estas konservita en via komputilo.">
-<!ENTITY identity.connectionVerified1 "Vi estas sekure konektita al tiu ĉi retejo, funkciigita de:">
+<!ENTITY identity.connectionVerified2 "Vi estas sekure konektita al tiu ĉi retejo, kies posedanto estas:">
 <!ENTITY identity.connectionInternal "Tiu ĉi estas sekura paĝo de &brandShortName;.">
 <!ENTITY identity.insecureLoginForms2 "Akreditiloj uzitaj en tiu ĉi paĝo povus esti riskitaj.">
 
@@ -774,6 +725,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.disableMixedContentBlocking.accesskey "M">
 <!ENTITY identity.learnMore "Pli da informo">
 
+<!ENTITY identity.removeCertException.label "Forigi escepton">
+<!ENTITY identity.removeCertException.accesskey "F">
+
 <!ENTITY identity.moreInfoLinkText2 "Pli da informo">
 
 <!ENTITY identity.permissions "Permesoj">
@@ -783,8 +737,33 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The word "toolbar" is appended automatically and should not be contained below! -->
 <!ENTITY tabsToolbar.label "Langetoj de retumilo">
 
-<!-- LOCALIZATION NOTE (syncTabsMenu3.label): This appears in the history menu and history panel -->
+<!-- LOCALIZATION NOTE (syncTabsMenu3.label): This appears in the history menu -->
 <!ENTITY syncTabsMenu3.label     "Spegulitaj langetoj">
+
+<!ENTITY syncedTabs.sidebar.label              "Spegulitaj langetoj">
+<!ENTITY syncedTabs.sidebar.noclients.label    "Komencu seancon en Firefox, el viaj aliaj aparatoj, por vidi iliajn langetojn ĉi tie.">
+<!ENTITY syncedTabs.sidebar.noclients.title    "Neniu spegulita langeto… ankoraŭ!">
+<!ENTITY syncedTabs.sidebar.noclients.subtitle "Ĉu vi volas vidi ĉi tie viajn langetojn el aliaj aparatoj?">
+<!ENTITY syncedTabs.sidebar.notsignedin.label  "Komencu seancon por vidi liston de langetoj el viaj aliaj aparatoj.">
+<!ENTITY syncedTabs.sidebar.notabs.label       "Neniu malfermita langeto">
+<!ENTITY syncedTabs.sidebar.openprefs.label    "Malfermi preferojn de &syncBrand.shortName.label;">
+<!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
+     when Sync is configured but syncing tabs is disabled. -->
+<!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Ŝaltu la speguladon de langetoj por vidi liston de langetoj el viaj aliaj aparatoj.">
+
+<!ENTITY syncedTabs.context.open.label                       "Malfermi">
+<!ENTITY syncedTabs.context.open.accesskey                   "M">
+<!ENTITY syncedTabs.context.openInNewTab.label               "Malfermi en nova langeto">
+<!ENTITY syncedTabs.context.openInNewTab.accesskey           "l">
+<!ENTITY syncedTabs.context.openInNewWindow.label            "Malfermi en nova fenesto">
+<!ENTITY syncedTabs.context.openInNewWindow.accesskey        "f">
+<!ENTITY syncedTabs.context.openInNewPrivateWindow.label     "Malfermi en nova privata fenestro">
+<!ENTITY syncedTabs.context.openInNewPrivateWindow.accesskey "p">
+<!ENTITY syncedTabs.context.bookmarkSingleTab.label          "Aldoni legosignon por tiu ĉi langeto…">
+<!ENTITY syncedTabs.context.bookmarkSingleTab.accesskey      "l">
+<!ENTITY syncedTabs.context.copy.label                       "Kopii">
+<!ENTITY syncedTabs.context.copy.accesskey                   "K">
+
 
 <!ENTITY syncBrand.shortName.label    "Speguli">
 
@@ -809,12 +788,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY social.toggleNotifications.label "Montri labortablajn sciigojn">
 <!ENTITY social.toggleNotifications.accesskey "M">
 
-<!ENTITY social.activated.description "Servoj el <label/> estis aktivigitaj. Vi povas ŝanĝi viajn agordojn de servoj en la <label class='text-link'>Administrado de aldonaĵoj</label>.">
-<!ENTITY social.activated.undo.label "Fuŝ!, malfaru tion!">
-<!ENTITY social.activated.undo.accesskey "m">
 <!ENTITY social.learnMore.label "Pli da informo…">
 <!ENTITY social.learnMore.accesskey "i">
-<!ENTITY social.closeNotificationItem.label "Nun ne">
 
 <!ENTITY social.directory.label "Dosierujo de aktivigoj">
 <!ENTITY social.directory.text "Vi povas aktivigi dividajn servojn el la dosierujo.">
@@ -822,7 +797,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY social.directory.introText "Klaku servon por aldoni ĝin al &brandShortName;.">
 <!ENTITY social.directory.viewmore.text "Vidi pli da servoj">
 
-<!ENTITY customizeMode.tabTitle "Persone agordi &brandShortName;">
 <!ENTITY customizeMode.menuAndToolbars.header2 "Aldonaj iloj kaj trajtoj">
 <!ENTITY customizeMode.menuAndToolbars.empty "Ĉu vi volas pli da iloj?">
 <!ENTITY customizeMode.menuAndToolbars.emptyLink "Elekti inter miloj de aldonaĵoj">
@@ -928,7 +902,3 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY emeLearnMoreContextMenu.label            "Pli da informo pri DRM…">
 <!ENTITY emeLearnMoreContextMenu.accesskey        "i">
-<!ENTITY emeNotificationsNotNow.label             "Ne nun">
-<!ENTITY emeNotificationsNotNow.accesskey         "N">
-<!ENTITY emeNotificationsDontAskAgain.label       "Ne demandi denove">
-<!ENTITY emeNotificationsDontAskAgain.accesskey   "d">

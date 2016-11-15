@@ -45,6 +45,9 @@
 <!ENTITY rights.intro-point4c-unbranded "section.">
 
 <!ENTITY rights2.webservices-header "&brandFullName;၏အင်တာနက်ခြေခံသတင်းအချက်အလက်ဝန်ဆောင်မှူ">
+<!-- point 5 -->
+
+<!ENTITY rights.intro-point5 "အမျိုးအစားသေချာပါရှိသည့် ဗွီဒီယိုများကို ဖွင့်ရန်၊ &brandShortName; သည် ဖိုင်အမျိုးအစားနှင့် ပတ်သက်သည့် အခြားအဖွဲ့ထံမှ ဝှက်စာဖြည်အစိတ်အပိုင်းကို ကူးယူဆွဲချပါမည်။">
 <!-- Note that this paragraph references a couple of entities from
      preferences/security.dtd, so that we can refer to text the user sees in
      the UI, without this page being forgotten every time those strings are
@@ -60,7 +63,7 @@
 <!ENTITY rights.safebrowsing-b "လုံခြုံသော ရှာဖွေခြင်းအား ပိတ်ထားခြင်းကို အားမပေးပါအဘယ့်ကြောင့်ဆိုသော် မလုံခြုံသော ဝတ်ဆိုက်များမှ တိုက်ခိုက်ခြင်းကို ခံရနိုင်ဖွယ်ရှိသောကြောင့်ဖြစ်သည်။၎င်းအောင်း သင်အမှန်တကယ် ဖြုတ်ချင်လိုပါက အောက်ပါအချက်များကိုလိုက်လံဆောင်ရွက်ပါ :">
 <!ENTITY rights.safebrowsing-term1 "အက်ပလီးကေးရှင်းအပြင်အဆင်များအားဖွင့်ပါ။">
 <!ENTITY rights.safebrowsing-term2 "လုံခြုံရေးအပြင်အဆင်အားရွေးပါ">
-<!ENTITY rights.safebrowsing-term3 "ရွေးပိုင်ခွင့် &quot;&blockAttackSites.label;&quot; နှင့် &quot;&blockWebForgeries.label;&quot; တို့ကို ပယ်ဖျယ်ပါ">
+<!ENTITY rights2.safebrowsing-term3 "&quot;&enableSafeBrowsing.label;&quot; ကို ရွေးချယ်ထားခြင်းမှ ဖြုတ်ရန်">
 <!ENTITY rights.safebrowsing-term4 "လုံခြုံသောအင်တာနက်အသုံးပြုခြင်းအပြင်အဆင်အား ဖျက်သိမ်းပြီး။">
 <!-- location aware browsing points for branded builds -->
 

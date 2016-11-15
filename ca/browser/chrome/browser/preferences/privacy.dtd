@@ -2,14 +2,29 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY tracking.label                 "Seguiment">
+<!ENTITY  trackingProtectionHeader.label       "Utilitza la protecció contra el seguiment">
+<!ENTITY  trackingProtectionAlways.label       "Sempre">
+<!ENTITY  trackingProtectionAlways.accesskey   "S">
+<!ENTITY  trackingProtectionPrivate.label      "Només en finestres privades">
+<!ENTITY  trackingProtectionPrivate.accesskey  "N">
+<!ENTITY  trackingProtectionNever.label        "Mai">
+<!ENTITY  trackingProtectionNever.accesskey    "M">
+<!ENTITY  trackingProtectionLearnMore.label    "Més informació">
+<!ENTITY  trackingProtectionExceptions.label   "Excepcions…">
+<!ENTITY  trackingProtectionExceptions.accesskey "x">
 
-<!ENTITY dntTrackingNotOkay.label2      "Fes saber als llocs web que no vull que se'm segueixi">
-<!ENTITY dntTrackingNotOkay.accesskey   "n">
-<!ENTITY trackingProtection.label       "Impedeix que els llocs em facin un seguiment">
-<!ENTITY trackingProtection.accesskey   "m">
-<!ENTITY trackingProtectionLearnMore.label "Més informació">
-<!ENTITY doNotTrackInfo.label           "Més informació">
+<!ENTITY tracking.label                 "Seguiment">
+<!ENTITY trackingProtectionPBM5.label         "Utilitza la protecció contra el seguiment en les finestres privades">
+<!ENTITY trackingProtectionPBM5.accesskey     "v">
+<!ENTITY trackingProtectionPBMLearnMore.label "Més informació">
+<!ENTITY changeBlockList.label          "Canvia la llista de bloquejos">
+<!ENTITY changeBlockList.accesskey      "C">
+<!-- LOCALIZATION NOTE (doNotTrack.pre.label): include a trailing space as needed -->
+<!-- LOCALIZATION NOTE (doNotTrack.post.label): include a starting space as needed -->
+
+<!ENTITY  doNotTrack.pre.label          "També podeu ">
+<!ENTITY  doNotTrack.settings.label     "gestionar els paràmetres de «No vull ser seguit»">
+<!ENTITY  doNotTrack.post.label         ".">
 
 <!ENTITY  history.label                 "Historial">
 
@@ -22,8 +37,11 @@
 <!ENTITY  locbar.bookmarks.accesskey    "d">
 <!ENTITY  locbar.openpage.label         "Pestanyes obertes">
 <!ENTITY  locbar.openpage.accesskey     "P">
+<!ENTITY  locbar.searches.label         "Cerques relacionades del motor de cerca per defecte">
+<!ENTITY  locbar.searches.accesskey     "d">
 
-
+<!ENTITY  suggestionSettings.label      "Canvia les preferències dels suggeriments de motors de cerca…">
+<!ENTITY  suggestionSettings.accesskey  "v">
 
 <!ENTITY  acceptCookies.label           "Accepta galetes dels llocs web">
 <!ENTITY  acceptCookies.accesskey       "A">
@@ -39,7 +57,6 @@
 
 <!ENTITY  expire.label                  "que vencin">
 <!ENTITY  close.label                   "que tanqui el &brandShortName;">
-<!ENTITY  askEachTime.label             "demana-m'ho cada vegada">
 
 <!ENTITY  cookieExceptions.label        "Excepcions…">
 <!ENTITY  cookieExceptions.accesskey    "E">
@@ -87,3 +104,8 @@
 
 <!ENTITY  clearOnCloseSettings.label     "Paràmetres…">
 <!ENTITY  clearOnCloseSettings.accesskey "t">
+
+<!ENTITY  browserContainersHeader.label         "Pestanyes de contenidor">
+<!ENTITY  browserContainersLearnMore.label      "Més informació">
+<!ENTITY  browserContainersEnabled.label        "Habilita les pestanyes de contenidor">
+<!ENTITY  browserContainersEnabled.accesskey    "H">

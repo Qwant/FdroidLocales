@@ -70,7 +70,7 @@
 <!ENTITY clearCacheNow.accesskey         "C">
 <!ENTITY clearOfflineAppCacheNow.label   "今すぐ消去">
 <!ENTITY clearOfflineAppCacheNow.accesskey "N">
-<!ENTITY overrideSmartCacheSize.label    "キャッシュサイズを制限する">
+<!ENTITY overrideSmartCacheSize.label    "キャッシュサイズを変更する">
 <!ENTITY overrideSmartCacheSize.accesskey "O">
 
 <!ENTITY updateTab.label                 "更新">
@@ -82,9 +82,6 @@
 <!ENTITY updateCheck.accesskey           "C">
 <!ENTITY updateManual.label              "更新の確認は行わない (非推奨: セキュリティリスク)">
 <!ENTITY updateManual.accesskey          "N">
-
-<!ENTITY updateAutoAddonWarn.label       "更新によりアドオンが無効化される場合は警告する">
-<!ENTITY updateAutoAddonWarn.accesskey   "W">
 
 <!ENTITY updateHistory.label             "更新履歴を表示...">
 <!ENTITY updateHistory.accesskey         "p">

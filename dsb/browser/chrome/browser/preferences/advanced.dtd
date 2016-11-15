@@ -4,7 +4,7 @@
 <!-- Note: each tab panel must contain unique accesskeys -->
 
 
-<!ENTITY generalTab.label                "Powšykny">
+<!ENTITY generalTab.label                "Powšykne">
 
 <!ENTITY accessibility.label             "Pśistupnosć">
 
@@ -82,9 +82,6 @@
 <!ENTITY updateCheck.accesskey           "Z">
 <!ENTITY updateManual.label              "Nigda za aktualizacijami njepytaś (njedopórucone: wěstotne riziko)">
 <!ENTITY updateManual.accesskey          "e">
-
-<!ENTITY updateAutoAddonWarn.label       "Warnowaś, jolic to znjemóžnijo dodanki">
-<!ENTITY updateAutoAddonWarn.accesskey   "W">
 
 <!ENTITY updateHistory.label             "Aktualizacisku historiju pokazaś">
 <!ENTITY updateHistory.accesskey         "h">

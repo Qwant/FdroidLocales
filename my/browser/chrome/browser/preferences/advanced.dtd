@@ -14,6 +14,8 @@
 <!ENTITY searchStartTyping.accesskey     "x">
 <!ENTITY blockAutoRefresh.label          "၀တ်ဆိုက်သည် ညွှန်းဆိုသို့ပြန်လည် ရယူပြသချင်လိုပါက ကျွန်ုပ်အားသတိပေးပါ။">
 <!ENTITY blockAutoRefresh.accesskey      "၀">
+<!ENTITY useOnScreenKeyboard.label       "လိုအပ်လျှင် တို့ထိကီးဘုတ်ကို ပြပါ">
+<!ENTITY useOnScreenKeyboard.accesskey   "k">
 
 <!ENTITY browsing.label                  "လှော်လှန်ခြင်း">
 
@@ -34,8 +36,8 @@
 <!ENTITY healthReportLearnMore.label     "ဆက်လက်ဖတ်ရှူရန်">
 
 <!ENTITY telemetryDesc.label             "လုပ်ဆောင်ချက်များ ၊ ဟတ်ဒ်ဝဲနှင့် ပြင်ဆင်မှူအချက်အလက်များအား &vendorShortName; အားမျှဝေပေးခြင်း အားဖြင့် &brandShortName; အားပိုကောင်းအောင်လုပ်ရန်ကူညီပါ။">
-
-
+<!ENTITY enableTelemetryData.label       "အခြားအချက်အလက်များကို မျှဝေရန် (နမူနာ၊ တယ်လီမတြီ T)">
+<!ENTITY enableTelemetryData.accesskey   "T">
 <!ENTITY telemetryLearnMore.label        "ဆက်လက်ဖတ်ရှူရန်">
 
 <!ENTITY crashReporterDesc.label         "&brandShortName; သည် အချက်အလက်အချို့အား &vendorShortName; သို့ပေးပို့ခြင်းအားဖြင့် သင်၏ သုံးဆွဲမှူအားပိုမိုတည်ငြိမ်လုံခြုံအောင် လုပ်ရန် ကူညီပါ။">
@@ -74,22 +76,12 @@
 <!ENTITY updateTab.label                 "မွမ်းမံချက်">
 
 <!ENTITY updateApp.label                 "&brandShortName; ပြုပြင်ချင်းများ">
-<!-- Note either updateAuto1 is used or (updateAutoMetro and updateAutoDesktop),
-     so re-using accesss key in updateAuto1 is OK. updateAutoDesktop can be found
-     in preferences.properties -->
 <!ENTITY updateAuto1.label               "Aအလိုအလျောက် ပြုပြင်ချင်းများ (အကြံပြုထားသော၊ လုံခြုံရေးမြှင့်ထားသော)">
 <!ENTITY updateAuto1.accesskey           "A">
-<!ENTITY updateAutoMetro.label           "sအလိုအလျောက် &brandShortName; အား အဆင့်မြှင့်တင်ပါ">
-<!ENTITY updateAutoMetro.accesskey       "s">
 <!ENTITY updateCheck.label               "Cပြုပြင်ချင်းများစုံစမ်းစစ်ဆေး၊ ဒါပေမယ့် တစ်ခုမဟုတ်တစ်ခု တပ်ဆင်ပါ">
 <!ENTITY updateCheck.accesskey           "C">
 <!ENTITY updateManual.label              "Never check for updates (not recommended: security risk)">
 <!ENTITY updateManual.accesskey          "N">
-
-<!ENTITY updateAutoAddonWarn.label       "ကျွန်ပ်ရဲ့ ပေါင်းထည့်ချက်များ တခုခုကို ပိတ်မယ်ဆိုရင် ကျွန်ပ်ကို သတိပေးပါ">
-<!ENTITY updateAutoAddonWarn.accesskey   "က">
-
-<!ENTITY updateAutoMetroWarn.label       "(Windows 8 စတိုင်လ် &brandShortName; ဟာ ထပ်ပေါင်းဆော့ဝဲများအား မစစ်ဆေးပါ)">
 
 <!ENTITY updateHistory.label             "pမွမ်းမံချက် မှတ်တမ်းကို ပြသပါ">
 <!ENTITY updateHistory.accesskey         "p">
@@ -113,14 +105,15 @@
 <!ENTITY offlineAppRemove.confirm        "ချိတ်ဆက်မဲ့ အချက်အလက်ကြမ်းကို ဖယ်ရှားပါ">
 
 <!ENTITY certificateTab.label            "အသိအမှတ်ပြုလက်မှတ်များ">
+<!ENTITY certSelection.label             "တောင်းခံချက်များ">
 <!ENTITY certSelection.description       "ဆာဗာ တခုမှ ကျွန်ပ် ကိုယ်ရေး လက်မှတ်ကို တောင်းဆိုတဲ့အခါ">
 <!ENTITY certs.auto                      "တခုကို အလိုအလျောက် ရွေးချယ်ပါ">
-
+<!ENTITY certs.auto.accesskey            "S">
 <!ENTITY certs.ask                       "အချိန်တိုင်း ကျွန်ပ်ကို မေးပါ">
-
-
-
-
-
-
-
+<!ENTITY certs.ask.accesskey             "A">
+<!ENTITY enableOCSP.label                "လက်ရှိအထောက်အထားများ၏ ခိုင်လုံမှုကို အတည်ပြုရန် OSCP responder servers များကို ဆွဲထုတ်ပါ Q">
+<!ENTITY enableOCSP.accesskey            "Q">
+<!ENTITY viewCerts.label                 "အထောက်အထားများကို ကြည့်ရန် C">
+<!ENTITY viewCerts.accesskey             "C">
+<!ENTITY viewSecurityDevices.label       "လုံခြုံရေး ကိရိယာများ D">
+<!ENTITY viewSecurityDevices.accesskey   "D">

@@ -7,7 +7,7 @@
 <!ENTITY importAll.accesskey      "a">
 <!ENTITY importMail.label         "E-post">
 <!ENTITY importMail.accesskey     "E">
-<!ENTITY importFeeds.label        "Flödesprenumerationer">
+<!ENTITY importFeeds.label        "RSS-prenumerationer">
 <!ENTITY importFeeds.accesskey    "p">
 <!ENTITY importAddressbook.label  "Adressböcker">
 <!ENTITY importAddressbook.accesskey "A">
@@ -30,7 +30,7 @@
 <!ENTITY selectDescription.accesskey "p">
 <!ENTITY acctName.label           "Namn:">
 <!ENTITY acctName.accesskey       "N">
-
+<!ENTITY noModulesFound.label     "Hittade inget program eller fil att importera data från.">
 
 <!ENTITY back.label               "&lt; Bakåt">
 <!ENTITY forward.label            "Nästa &gt;">

@@ -94,6 +94,10 @@
   Зависання потоків
 ">
 
+<!ENTITY aboutTelemetry.scalarsSection "
+  Величини
+">
+
 <!ENTITY aboutTelemetry.histogramsSection "
   Гістограми
 ">
@@ -148,4 +152,8 @@
 
 <!ENTITY aboutTelemetry.payloadChoiceHeader "
   Корисне навантаження
+">
+
+<!ENTITY aboutTelemetry.rawPayload "
+  Необроблене корисне навантаження
 ">

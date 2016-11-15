@@ -6,21 +6,43 @@
 
 <!ENTITY aboutTelemetry.changeDataChoices "  Canvia">
 
+<!ENTITY aboutTelemetry.uploadEnabled "  L'enviament de dades del FHR està <span>habilitat</span>.">
 
+<!ENTITY aboutTelemetry.uploadDisabled "  L'enviament de dades del FHR està <span>inhabilitat</span>.">
 
+<!ENTITY aboutTelemetry.extendedRecordingEnabled "  L'enregistrament ampliat de la telemesura està <span>habilitat</span>.">
 
+<!ENTITY aboutTelemetry.extendedRecordingDisabled "  L'enregistrament ampliat de la telemesura està <span>inhabilitat</span>.">
 
+<!ENTITY aboutTelemetry.pingDataSource "Font de dades de ping:">
 
+<!ENTITY aboutTelemetry.showCurrentPingData "Dades de ping actuals">
 
+<!ENTITY aboutTelemetry.showArchivedPingData "Dades de ping arxivades">
 
+<!ENTITY aboutTelemetry.pingDataDisplay "Visualització de dades de ping:">
 
+<!ENTITY aboutTelemetry.structured "Estructurat">
 
+<!ENTITY aboutTelemetry.raw "JSON sense processar">
 
+<!ENTITY aboutTelemetry.showSubsessionData "Mostra dades de la subsessió">
 
+<!ENTITY aboutTelemetry.choosePing "Trieu el ping:">
 
+<!ENTITY aboutTelemetry.showNewerPing "&lt;&lt; Ping més recent">
+
+<!ENTITY aboutTelemetry.showOlderPing "Ping més antic &gt;&gt;">
+
+<!ENTITY aboutTelemetry.rawPingData "Dades de ping sense processar…">
+
+<!ENTITY aboutTelemetry.archiveWeekHeader "Setmana">
+
+<!ENTITY aboutTelemetry.archivePingHeader "Ping">
 
 <!ENTITY aboutTelemetry.generalDataSection "  Dades generals">
 
+<!ENTITY aboutTelemetry.environmentDataSection "  Dades de l'entorn">
 
 <!ENTITY aboutTelemetry.telemetryLogSection "  Registre de telemesura">
 
@@ -29,6 +51,8 @@
 <!ENTITY aboutTelemetry.chromeHangsSection "  El navegador es penja">
 
 <!ENTITY aboutTelemetry.threadHangStatsSection "  Bloquejos de fils">
+
+<!ENTITY aboutTelemetry.scalarsSection "  Escalars">
 
 <!ENTITY aboutTelemetry.histogramsSection "  Histogrames">
 
@@ -40,7 +64,7 @@
 
 <!ENTITY aboutTelemetry.lateWritesSection "  Escriptures tardanes">
 
-<!ENTITY aboutTelemetry.systemInfoSection "  Informació del sistema">
+<!ENTITY aboutTelemetry.sessionInfoSection "  Informació de la sessió">
 
 <!ENTITY aboutTelemetry.addonHistogramsSection "  Histogrames recollits pels complements">
 
@@ -55,3 +79,7 @@
 <!ENTITY aboutTelemetry.hideSymbols "  Mostra les dades sense processar dels bloquejos">
 
 <!ENTITY aboutTelemetry.filterText "  Filtra (cadenes o /regexp/)">
+
+<!ENTITY aboutTelemetry.payloadChoiceHeader "  Càrrega útil">
+
+<!ENTITY aboutTelemetry.rawPayload "  Càrrega útil sense processar">

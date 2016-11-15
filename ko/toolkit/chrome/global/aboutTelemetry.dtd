@@ -99,6 +99,10 @@
   쓰레드 중단
 ">
 
+<!ENTITY aboutTelemetry.scalarsSection "
+  스칼라
+">
+
 <!ENTITY aboutTelemetry.histogramsSection "
   히스토그램
 ">
@@ -153,4 +157,8 @@
 
 <!ENTITY aboutTelemetry.payloadChoiceHeader "
   페이로드
+">
+
+<!ENTITY aboutTelemetry.rawPayload "
+  원본 페이로드
 ">

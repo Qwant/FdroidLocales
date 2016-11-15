@@ -45,6 +45,8 @@
 <!-- LOCALIZATION NOTE (helpus.getInvolvedLink): This is a link title that links to http://www.mozilla.org/contribute/. -->
 <!ENTITY helpus.getInvolvedLink     "col·laboreu-hi!">
 <!ENTITY helpus.end                 "">
+
+<!ENTITY releaseNotes.link          "Novetats">
 <!-- LOCALIZATION NOTE (bottomLinks.license): This is a link title that links to about:license. -->
 
 <!ENTITY bottomLinks.license        "Informació de la llicència">
@@ -63,6 +65,7 @@
 <!ENTITY update.adminDisabled       "L'administrador ha inhabilitat les actualitzacions">
 <!-- LOCALIZATION NOTE (update.otherInstanceHandlingUpdates): try to make the localized text short -->
 <!ENTITY update.otherInstanceHandlingUpdates "Una altra instància està actualitzant el &brandShortName;">
+<!ENTITY update.restarting          "S'està reiniciant…">
 <!-- LOCALIZATION NOTE (update.failed.start,update.failed.linkText,update.failed.end):
      update.failed.start, update.failed.linkText, and update.failed.end all go into
      one line with linkText being wrapped in an anchor that links to a site to download

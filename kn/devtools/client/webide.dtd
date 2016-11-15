@@ -26,7 +26,7 @@
 <!ENTITY projectMenu_showPrefs_accesskey "e">
 <!ENTITY projectMenu_manageComponents_label "ಅಧಿಕ ಘಟಕಗಳನ್ನು ನಿರ್ವಹಿಸಿ">
 <!ENTITY projectMenu_manageComponents_accesskey "M">
-
+<!ENTITY projectMenu_refreshTabs_label "ಹಾಳೆಗಳನ್ನು ಪುನಶ್ಚೇತನಗೊಳಿಸು">
 
 <!ENTITY runtimeMenu_label "ಚಾಲನಾಸಮಯ">
 <!ENTITY runtimeMenu_accesskey "R">
@@ -75,8 +75,6 @@
 <!ENTITY key_zoomin2 "=">
 <!ENTITY key_zoomout "-">
 <!ENTITY key_resetzoom "0">
-<!-- reload WebIDE and devtools from local checkout -->
-<!-- this binding is with accel+alt, whereas all others are just accel -->
 
 <!ENTITY projectPanel_myProjects "ನನ್ನ ಯೋಜನೆಗಳು">
 <!ENTITY projectPanel_runtimeApps "ಚಾಲನಾಸಮಯದ ಆಪ್‌ಗಳು">
@@ -88,7 +86,7 @@
 <!ENTITY runtimePanel_installsimulator "ಸಿಮ್ಯುಲೇಟರ್ ಅನುಸ್ಥಾಪಿಸು">
 <!ENTITY runtimePanel_noadbhelper "ADB ಹೆಲ್ಪರ್ ಅನ್ನು ಅನುಸ್ಥಾಪಿಸಿ">
 <!ENTITY runtimePanel_nousbdevice "ನಿಮ್ಮ ಸಾಧನವು ಕಾಣಿಸುತ್ತಿಲ್ಲವೆ?">
-
+<!ENTITY runtimePanel_refreshDevices_label "ಸಾಧನಗಳನ್ನು ಪುನಶ್ಚೇತನಗೊಳಿಸು">
 <!-- Lense -->
 
 <!ENTITY details_valid_header "ಮಾನ್ಯ">
@@ -140,7 +138,7 @@
 <!ENTITY prefs_options_autoclosebrackets_tooltip "ಮುಚ್ಚುವ ಆವರಣ ಚಿಹ್ನೆಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸೇರಿಸು">
 <!ENTITY prefs_options_keybindings "ಕೀಲಿಬೈಂಡಿಂಗ್‌ಗಳು">
 <!ENTITY prefs_options_keybindings_default "ಪೂರ್ವನಿಯೋಜಿತ">
-
+<!ENTITY prefs_options_autosavefiles "‍ಕಡತಗಳನ್ನು ಸ್ವಯಂ ಉಳಿಸು">
 
 <!-- Permissions Table -->
 
@@ -198,6 +196,7 @@
 <!-- LOCALIZATION NOTE (wifi_auth_token_request): Instructions requesting the
      user to transfer authentication info by transferring a token. -->
 <!ENTITY wifi_auth_token_request "ನಿಮ್ಮ ಮತ್ತೊಂದು ಸಾಧನ QR ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡದೆ ಟೋಕನ್ ಕೇಳಿದ ಪಕ್ಷದಲ್ಲಿ, ದಯವಿಟ್ಟು ಈ ಕೆಳಗಿನ ಮೌಲ್ಯವನ್ನು ಮತ್ತೊಂದು ಸಾಧನಕ್ಕೆ ನಕಲಿಸಿ:">
+
 <!-- Logs panel -->
 
 <!ENTITY logs_title "ಪ್ರಿ-ಪ್ಯಾಕೇಜಿಂಗ್ ಆದೇಶ ದಿನಚರಿಗಳು">
@@ -214,6 +213,6 @@
 <!ENTITY simulator_device "ಸಾಧನ">
 <!ENTITY simulator_screenSize "ಪರದೆ">
 <!ENTITY simulator_pixelRatio "ಪಿಕ್ಸೆಲ್ ರೇಶ್ಯೋ">
-
-
-
+<!ENTITY simulator_tv_data "TV ಸಿಮ್ಯುಲೇಶನ್">
+<!ENTITY simulator_tv_data_open "ಡೇಟಾ ಸಂಯೋಜನೆ">
+<!ENTITY simulator_tv_data_open_button "ಸಂಯೋಜನೆ ಸೂಚಿ ತೆರೆ…">

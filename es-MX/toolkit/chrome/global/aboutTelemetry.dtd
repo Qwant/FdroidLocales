@@ -52,6 +52,9 @@
 
 <!ENTITY aboutTelemetry.threadHangStatsSection "  Cuelgues de hilos">
 
+<!ENTITY aboutTelemetry.scalarsSection "
+ Escalares">
+
 <!ENTITY aboutTelemetry.histogramsSection "  Histogramas">
 
 <!ENTITY aboutTelemetry.keyedHistogramsSection "  Histogramas claves">
@@ -79,3 +82,5 @@
 <!ENTITY aboutTelemetry.filterText "  Filtrar (cadenas o /regexp/)">
 
 <!ENTITY aboutTelemetry.payloadChoiceHeader "  Contenido">
+
+<!ENTITY aboutTelemetry.rawPayload "  Contenido sin procesar">

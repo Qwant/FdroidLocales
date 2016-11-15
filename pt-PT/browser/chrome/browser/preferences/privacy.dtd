@@ -14,7 +14,7 @@
 <!ENTITY  trackingProtectionExceptions.accesskey "x">
 
 <!ENTITY tracking.label                 "Monitorização da navegação">
-<!ENTITY trackingProtectionPBM5.label         "Usar proteção contra monitorização em janelas privadas">
+<!ENTITY trackingProtectionPBM5.label         "Utilizar proteção contra monitorização em janelas privadas">
 <!ENTITY trackingProtectionPBM5.accesskey     "v">
 <!ENTITY trackingProtectionPBMLearnMore.label "Saber mais">
 <!ENTITY changeBlockList.label          "Alterar lista de bloqueio">
@@ -28,16 +28,16 @@
 
 <!ENTITY  history.label                 "Histórico">
 
-<!ENTITY  locationBar.label             "Barra de endereços">
+<!ENTITY  locationBar.label             "Barra de localização">
 
-<!ENTITY  locbar.suggest.label          "Ao usar a barra de endereços, mostrar sugestões com base em:">
+<!ENTITY  locbar.suggest.label          "Ao usar a barra de localização, sugerir:">
 <!ENTITY  locbar.history.label          "Histórico">
 <!ENTITY  locbar.history.accesskey      "H">
 <!ENTITY  locbar.bookmarks.label        "Marcadores">
 <!ENTITY  locbar.bookmarks.accesskey    "M">
 <!ENTITY  locbar.openpage.label         "Separadores abertos">
 <!ENTITY  locbar.openpage.accesskey     "o">
-<!ENTITY  locbar.searches.label         "Pesquisar relacionadas do motor de pesquisa por omissão">
+<!ENTITY  locbar.searches.label         "Pesquisar relacionadas do motor de pesquisa por predefinição">
 <!ENTITY  locbar.searches.accesskey     "d">
 
 <!ENTITY  suggestionSettings.label      "Alterar preferências das sugestões do motores de pesquisa…">
@@ -56,7 +56,7 @@
 <!ENTITY  keepUntil.accesskey           "G">
 
 <!ENTITY  expire.label                  "expirarem">
-<!ENTITY  close.label                   "o &brandShortName; ser fechado">
+<!ENTITY  close.label                   "Eu fechar o &brandShortName;">
 
 <!ENTITY  cookieExceptions.label        "Exceções…">
 <!ENTITY  cookieExceptions.accesskey    "E">
@@ -104,3 +104,8 @@
 
 <!ENTITY  clearOnCloseSettings.label     "Definições…">
 <!ENTITY  clearOnCloseSettings.accesskey "e">
+
+<!ENTITY  browserContainersHeader.label         "Separadores contentores">
+<!ENTITY  browserContainersLearnMore.label      "Saber mais">
+<!ENTITY  browserContainersEnabled.label        "Ativar separadores contentores">
+<!ENTITY  browserContainersEnabled.accesskey    "n">

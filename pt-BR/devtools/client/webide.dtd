@@ -4,27 +4,27 @@
 
 <!ENTITY windowTitle "Firefox WebIDE">
 
-<!ENTITY projectMenu_label "Projeto">
+<!ENTITY projectMenu_label "Project">
 <!ENTITY projectMenu_accesskey "P">
-<!ENTITY projectMenu_newApp_label "Novo aplicativo…">
+<!ENTITY projectMenu_newApp_label "New App…">
 <!ENTITY projectMenu_newApp_accesskey "N">
-<!ENTITY projectMenu_importPackagedApp_label "Abrir aplicativo empacotado…">
-<!ENTITY projectMenu_importPackagedApp_accesskey "b">
-<!ENTITY projectMenu_importHostedApp_label "Abrir aplicativo hospedado…">
-<!ENTITY projectMenu_importHostedApp_accesskey "r">
-<!ENTITY projectMenu_selectApp_label "Abrir aplicativo…">
-<!ENTITY projectMenu_selectApp_accesskey "A">
-<!ENTITY projectMenu_play_label "Instalar e executar">
+<!ENTITY projectMenu_importPackagedApp_label "Open Packaged App…">
+<!ENTITY projectMenu_importPackagedApp_accesskey "P">
+<!ENTITY projectMenu_importHostedApp_label "Open Hosted App…">
+<!ENTITY projectMenu_importHostedApp_accesskey "H">
+<!ENTITY projectMenu_selectApp_label "Open App…">
+<!ENTITY projectMenu_selectApp_accesskey "O">
+<!ENTITY projectMenu_play_label "Install and Run">
 <!ENTITY projectMenu_play_accesskey "I">
 <!ENTITY projectMenu_stop_label "Parar aplicativo">
-<!ENTITY projectMenu_stop_accesskey "P">
-<!ENTITY projectMenu_debug_label "Depurar aplicativo">
+<!ENTITY projectMenu_stop_accesskey "S">
+<!ENTITY projectMenu_debug_label "Debug App">
 <!ENTITY projectMenu_debug_accesskey "D">
-<!ENTITY projectMenu_remove_label "Remover projeto">
-<!ENTITY projectMenu_remove_accesskey "x">
-<!ENTITY projectMenu_showPrefs_label "Preferências">
+<!ENTITY projectMenu_remove_label "Remove Project">
+<!ENTITY projectMenu_remove_accesskey "R">
+<!ENTITY projectMenu_showPrefs_label "Preferences">
 <!ENTITY projectMenu_showPrefs_accesskey "e">
-<!ENTITY projectMenu_manageComponents_label "Gerenciar componentes extras">
+<!ENTITY projectMenu_manageComponents_label "Manage Extra Components">
 <!ENTITY projectMenu_manageComponents_accesskey "M">
 <!ENTITY projectMenu_refreshTabs_label "Atualizar abas">
 
@@ -32,12 +32,12 @@
 <!ENTITY runtimeMenu_accesskey "m">
 <!ENTITY runtimeMenu_disconnect_label "Desconectar">
 <!ENTITY runtimeMenu_disconnect_accesskey "D">
-<!ENTITY runtimeMenu_showPermissionTable_label "Tabela de permissões">
-<!ENTITY runtimeMenu_showPermissionTable_accesskey "T">
-<!ENTITY runtimeMenu_takeScreenshot_label "Imagem da página">
-<!ENTITY runtimeMenu_takeScreenshot_accesskey "I">
-<!ENTITY runtimeMenu_showDetails_label "Propriedades do ambiente de execução">
-<!ENTITY runtimeMenu_showDetails_accesskey "P">
+<!ENTITY runtimeMenu_showPermissionTable_label "Permissions Table">
+<!ENTITY runtimeMenu_showPermissionTable_accesskey "P">
+<!ENTITY runtimeMenu_takeScreenshot_label "Screenshot">
+<!ENTITY runtimeMenu_takeScreenshot_accesskey "S">
+<!ENTITY runtimeMenu_showDetails_label "Runtime Info">
+<!ENTITY runtimeMenu_showDetails_accesskey "E">
 <!ENTITY runtimeMenu_showMonitor_label "Monitorar">
 <!ENTITY runtimeMenu_showMonitor_accesskey "M">
 <!ENTITY runtimeMenu_showDevicePrefs_label "Preferência do dispositivo">
@@ -47,7 +47,7 @@
 
 <!ENTITY viewMenu_label "Exibir">
 <!ENTITY viewMenu_accesskey "x">
-<!ENTITY viewMenu_toggleEditor_label "Alternar editor">
+<!ENTITY viewMenu_toggleEditor_label "Toggle Editor">
 <!ENTITY viewMenu_toggleEditor_accesskey "A">
 <!ENTITY viewMenu_zoomin_label "Aumentar zoom">
 <!ENTITY viewMenu_zoomin_accesskey "I">
@@ -61,7 +61,7 @@
 
 <!-- We try to repicate Firefox' bindings: -->
 <!-- quit app -->
-<!ENTITY key_quit "w">
+<!ENTITY key_quit "W">
 <!-- open menu -->
 <!ENTITY key_showProjectPanel "o">
 <!-- reload app -->
@@ -75,9 +75,6 @@
 <!ENTITY key_zoomin2 "=">
 <!ENTITY key_zoomout "-">
 <!ENTITY key_resetzoom "0">
-<!-- reload WebIDE and devtools from local checkout -->
-<!-- this binding is with accel+alt, whereas all others are just accel -->
-<!ENTITY key_reload_devtools "R">
 
 <!ENTITY projectPanel_myProjects "Meus projetos">
 <!ENTITY projectPanel_runtimeApps "Aplicativos do ambiente de execução">
@@ -99,18 +96,18 @@
 <!ENTITY details_location "Localização">
 <!ENTITY details_manifestURL "ID do aplicativo">
 <!ENTITY details_removeProject_button "Remover projeto">
-<!ENTITY details_showPrepackageLog_button "Exibir registro do pré-pacote">
+<!ENTITY details_showPrepackageLog_button "Show Pre-package Log">
 
 <!-- New App -->
 <!ENTITY newAppWindowTitle "Novo aplicativo">
 <!ENTITY newAppHeader "Selecionar modelo">
 <!ENTITY newAppLoadingTemplate "Carregando modelos…">
-<!ENTITY newAppProjectName "Nome do projeto:">
+<!ENTITY newAppProjectName "Project Name:">
 
 
 <!-- Decks -->
 
-<!ENTITY deck_close "Fechar">
+<!ENTITY deck_close "Close">
 
 <!-- Addons -->
 <!ENTITY addons_title "Componentes extras">
@@ -128,8 +125,8 @@
 <!ENTITY prefs_options_rememberlastproject_tooltip "Restaurar projeto anterior ao iniciar o WebIDE">
 <!ENTITY prefs_options_templatesurl "URL dos modelos">
 <!ENTITY prefs_options_templatesurl_tooltip "Índice de modelos disponíveis">
-<!ENTITY prefs_options_showeditor "Exibir editor">
-<!ENTITY prefs_options_showeditor_tooltip "Exibir editor interno">
+<!ENTITY prefs_options_showeditor "Show editor">
+<!ENTITY prefs_options_showeditor_tooltip "Show internal editor">
 <!ENTITY prefs_options_tabsize "Tamanho do tab">
 <!ENTITY prefs_options_expandtab "Tabs suaves">
 <!ENTITY prefs_options_expandtab_tooltip "Usar espaços em vez de tabs">
@@ -199,22 +196,23 @@
 <!-- LOCALIZATION NOTE (wifi_auth_token_request): Instructions requesting the
      user to transfer authentication info by transferring a token. -->
 <!ENTITY wifi_auth_token_request "Se o seu outro dispositivo pede por um token em vez de um código QR, copie o valor abaixo para o seu outro dispositivo:">
+<!ENTITY wifi_auth_qr_size_note "If the QR code appears too small for the connection to be successfully established, try zooming or enlarging the window.">
 
 <!-- Logs panel -->
 <!ENTITY logs_title "Registros de comandos pré-empacotamento">
 
 <!-- Simulator Options -->
 <!ENTITY simulator_title "Opções do simulador">
-<!ENTITY simulator_remove "Excluir simulador">
-<!ENTITY simulator_reset "Restaurar padrões">
-<!ENTITY simulator_name "Nome">
+<!ENTITY simulator_remove "Delete Simulator">
+<!ENTITY simulator_reset "Restore Defaults">
+<!ENTITY simulator_name "Name">
 <!ENTITY simulator_software "Software">
-<!ENTITY simulator_version "Versão">
-<!ENTITY simulator_profile "Perfil">
+<!ENTITY simulator_version "Version">
+<!ENTITY simulator_profile "Profile">
 <!ENTITY simulator_hardware "Hardware">
-<!ENTITY simulator_device "Dispositivo">
-<!ENTITY simulator_screenSize "Tela">
-<!ENTITY simulator_pixelRatio "Proporção do Pixel">
+<!ENTITY simulator_device "Device">
+<!ENTITY simulator_screenSize "Screen">
+<!ENTITY simulator_pixelRatio "Pixel Ratio">
 <!ENTITY simulator_tv_data "TV Simulation">
 <!ENTITY simulator_tv_data_open "Config Data">
 <!ENTITY simulator_tv_data_open_button "Open Config Directory…">

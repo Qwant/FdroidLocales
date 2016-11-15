@@ -19,6 +19,9 @@
 <!ENTITY fileNotFound.title "未找到文件">
 <!ENTITY fileNotFound.longDesc "<ul><li>该项目是否可能已经被改名、移除或者移动？</li><li>地址中是否可能有拼写、大小写或者输入错误？</li><li>您是否有访问该项目的权限？</li></ul>">
 
+<!ENTITY fileAccessDenied.title "访问该文件被拒绝">
+<!ENTITY fileAccessDenied.longDesc "<ul><li>它可能已被删除、移动，或者因文件权限拒绝访问。</li></ul>">
+
 <!ENTITY generic.title "无法完成请求">
 <!ENTITY generic.longDesc "<p>暂无关于此问题或错误的其他信息。</p>">
 
@@ -35,11 +38,11 @@
 <!ENTITY netOffline.longDesc2 "<p>浏览器目前在离线模式下运行，并且无法连接到请求的项目。</p><ul><li>您确定计算机已连接到了一个有效网络吗？</li><li>按“重试”切换到在线模式并重新加载此页面。</li></ul>">
 
 <!ENTITY contentEncodingError.title "内容编码错误">
-<!ENTITY contentEncodingError.longDesc "<p>您尝试查看的页面无法显示，因为它使用了无效的或者不支持的压缩格式。</p><ul><li>请联系网站的所有者，告知他们这个问题。</li></ul>">
+<!ENTITY contentEncodingError.longDesc "<p>您尝试查看的页面无法显示，因为它使用了无效的或者不支持的压缩格式。</p><ul><li>请联系此网站的管理员并告知此问题。</li></ul>">
 
 <!ENTITY unsafeContentType.title "不安全的文件类型">
 <!ENTITY unsafeContentType.longDesc "<ul> 
-<li>请联系网站所有者并告知该问题。</li> 
+<li>请联系此网站的管理员并告知此问题。</li> 
 </ul>">
 
 <!ENTITY netReset.title "连接被中断">
@@ -61,30 +64,16 @@
 <!ENTITY redirectLoop.longDesc "<p>浏览器已停止尝试请求的项。因为此站点将请求重定向到其自身，以至于不可能完成。</p><ul><li>您是否禁止了该站点所必须的 Cookie？</li><li><em>注意</em>：如果接受该站点的 Cookie 仍然不能解决此问题，那么可能是由于该站点的服务器配置问题而不是您计算机的问题。</li></ul>">
 
 <!ENTITY unknownSocketType.title "不正确的响应">
-<!ENTITY unknownSocketType.longDesc "<p>该站点响应网络请求的方式不是所预期的，以至于浏览器无法继续。</p>">
+<!ENTITY unknownSocketType.longDesc "<p>该站点响应网络请求的方式与预期不符，因此浏览器无法继续。</p>">
 
 <!ENTITY nssFailure2.title "安全连接失败">
-<!ENTITY nssFailure2.longDesc2 "<p>无法显示您尝试查看的页面，因为无法验证所收到数据的真实性。</p><ul><li>请联系网站的所有者以告知此问题。</li></ul>">
+<!ENTITY nssFailure2.longDesc2 "<p>无法显示您尝试查看的页面，因为无法验证所收到数据的真实性。</p><ul><li>请联系此网站的管理员并告知此问题。</li></ul>">
 
 <!ENTITY nssBadCert.title "安全连接失败">
 <!ENTITY nssBadCert.longDesc2 "<ul> 
 <li>这可能是服务器配置的问题，或者有人尝试冒充该服务器所致。</li> 
 <li>如果您之前曾成功连接该服务器，那么此错误可能是暂时的，您可以稍后再试。</li> 
 </ul>">
-
-<!ENTITY malwareBlocked.title "可疑的攻击站点！">
-<!ENTITY malwareBlocked.longDesc "<p>有攻击行为的站点尝试通过安装程序来窃取隐私数据、使用您的计算机攻击他人或者破坏您的系统。</p> 
-<p>网站所有者若认为自己的站点被错误地举报为攻击站点，可以<a href='http://www.stopbadware.org/home/reviewinfo' >申诉</a>。</p> ">
-
-<!ENTITY unwantedBlocked.title "疑似不受欢迎软件的网站！">
-<!ENTITY unwantedBlocked.longDesc "<p>提供不安全的软件的网页可能会诱导您安装诈骗软件，或以其他难以预料的方式损害您的系统。</p>">
-
-<!ENTITY phishingBlocked.title "疑似钓鱼网站！">
-<!ENTITY phishingBlocked.longDesc " <p>在本页面输入个人信息可能会导致账号被盗或其他危险。</p><p>这类钓鱼网站常含有被称为“钓鱼攻击”的诈骗行为，这些伪装的网页或邮件地址可能用来假冒成您信任的源地址以实施诈骗。</p> ">
-
-<!ENTITY forbiddenBlocked.title "禁止的站点">
-<!ENTITY forbiddenBlocked.longDesc "<p>浏览器阻止了此页面的加载，因为它被配置成需要阻止它。</p>
-">
 
 <!ENTITY securityOverride.linkText "或者，您可以添加一个例外…">
 <!ENTITY securityOverride.warningContent "
@@ -95,8 +84,13 @@
 <!ENTITY cspBlocked.title "由于内容安全策略而被拦截">
 <!ENTITY cspBlocked.longDesc "<p>浏览器阻止了这个页面的载入，因为该页面含有安全政策不允许的内容。</p>">
 
-<!ENTITY corruptedContentError.title "内容损坏错误">
-<!ENTITY corruptedContentError.longDesc "<p>您尝试查看的页面无法显示，因为检测到一个数据传输错误。</p><ul><li>请联系网站所有者告知此问题。</li></ul>">
+<!ENTITY corruptedContentErrorv2.title "损坏内容错误">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>您尝试查看的页面无法显示，因为检测到传输的数据含有错误。</p><ul><li>请联系此网站的管理员并告知此问题。</li></ul>">
 
 <!ENTITY remoteXUL.title "远程 XUL">
-<!ENTITY remoteXUL.longDesc "<p><ul><li>请联系网站拥有者告知这个问题。</li></ul></p>">
+<!ENTITY remoteXUL.longDesc "<p><ul><li>请联系此网站的管理员并告知此问题。</li></ul></p>">
+
+<!ENTITY inadequateSecurityError.title "您的连接不安全">
+<!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
+     "NS_ERROR_NET_INADEQUATE_SECURITY". -->
+<!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> 使用了过时的安全技术，较容易遭受攻击。攻击者可以容易地获取您认为是安全的信息。需要该网站的管理员先修正服务器，然后您才能访问该网站。</p><p>错误代码：NS_ERROR_NET_INADEQUATE_SECURITY</p>">

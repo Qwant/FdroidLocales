@@ -6,7 +6,7 @@
 %brandDTD;
 
 <!ENTITY loadError.label "Probleem by it laden fan de side">
-<!ENTITY retry.label "Probearje it op 'e nij">
+<!ENTITY retry.label "Probearje it opnij">
 
 <!-- Specific error messages -->
 
@@ -16,7 +16,7 @@
 <!ENTITY deniedPortAccess.title "Dit adres hat in beheinde tagong">
 <!ENTITY deniedPortAccess.longDesc "">
 
-<!ENTITY dnsNotFound.title "Tsjinner net fûn">
+<!ENTITY dnsNotFound.title "Server net fûn">
 <!-- LOCALIZATION NOTE (dnsNotFound.longDesc4) This string contains markup including widgets for searching
      or enabling wifi connections. The text inside tags should be localized.  Do not change the ids. -->
 <!ENTITY dnsNotFound.longDesc4 "
@@ -42,6 +42,12 @@
 </ul>
 ">
 
+<!ENTITY fileAccessDenied.title "Tagong ta it bestân is wegere">
+<!ENTITY fileAccessDenied.longDesc "
+<ul>
+  <li>It kin fuortsmiten wêze, ferpleatst, of bestânsmachtigingen kinne tagong tsjingean.</li>
+</ul>
+">
 
 <!ENTITY generic.title "Oei.">
 <!ENTITY generic.longDesc "
@@ -68,8 +74,7 @@
 <!ENTITY netInterrupt.longDesc2 "&sharedLongDesc3;">
 
 <!ENTITY notCached.title "Dokumint ferrûn">
-<!ENTITY notCached.longDesc "<p>It fersochte dokumint is net beskikber yn de buffer fan &brandShortName;.</p><ul><li>Fanwege in feilichheidsfoarsoarchmaatregel sil &brandShortName; fertroulike dokuminten net automatysk opnij oanfreegje.</li><li>Klik om it dokumint opnij oan te freegjen fan it webstee.</li></ul>">
-
+<!ENTITY notCached.longDesc "<p>It opfrege dokumint is net beskikber yn de buffer fan &brandShortName;.</p><ul><li>As befeiligingsmaatregel freget &brandShortName; gefoelige dokuminten net automatysk opnij op.</li><li>Klik op Opnij probearje om it dokumint opnij fan de website op te freegjen.</li></ul>">
 <!ENTITY netOffline.title "Offline-moadus">
 <!ENTITY netOffline.longDesc3 "
 <ul>
@@ -82,18 +87,18 @@
 <!ENTITY contentEncodingError.title "Ynhâldkodearingsflater">
 <!ENTITY contentEncodingError.longDesc "
 <ul>
-  <li>Nim kontakt op mei de webstee-eigners om se te ynformearjen oer dit probleem.</li>
+  <li>Nim kontakt op mei de website-eigners om se oer dit probleem te ynformearjen.</li>
 </ul>
 ">
 
 <!ENTITY unsafeContentType.title "Unfeilich bestânstype">
 <!ENTITY unsafeContentType.longDesc "
 <ul>
-  <li>Nim asjobleaft kontakt op mei de webstee-eigners om se te ynformearjen oer dit probleem.</li>
+  <li>Nim kontakt op mei de website-eigners om se oer dit probleem te ynformearjen.</li>
 </ul>
 ">
 
-<!ENTITY netReset.title "De ferbining waard op 'e nij inisjalisearre">
+<!ENTITY netReset.title "De ferbining waard opnij inisjalisearre">
 <!ENTITY netReset.longDesc2 "&sharedLongDesc3;">
 
 <!ENTITY netTimeout.title "De wachttiid foar de ferbining is ferstrutsen">
@@ -106,16 +111,16 @@
 </ul>
 ">
 
-<!ENTITY proxyConnectFailure.title "De proxytsjinner wegeret ferbiningen">
+<!ENTITY proxyConnectFailure.title "De proxyserver wegeret ferbiningen">
 <!ENTITY proxyConnectFailure.longDesc "
 <ul>
   <li>Kontrolearje oft jo proxy-ynstellingen goed binne.</li>
-  <li>Nim kontakt op mei jo netwurkbeheerder om te kontrolearjen oft de proxytsjinner
+  <li>Nim kontakt op mei jo netwurkbeheerder om te kontrolearjen oft de proxyserver
     wurket.</li>
 </ul>
 ">
 
-<!ENTITY proxyResolveFailure.title "Kin de proxytsjinner net fine">
+<!ENTITY proxyResolveFailure.title "Kin de proxyserver net fine">
 <!ENTITY proxyResolveFailure.longDesc3 "
 <ul>
   <li>Kontrolearje de proxyynstellingen om wis te wêzen dat se korrekt binne.</li>
@@ -133,28 +138,28 @@
 </ul>
 ">
 
-<!ENTITY unknownSocketType.title "Unferwacht antwurd fan de tsjinner">
+<!ENTITY unknownSocketType.title "Unferwacht antwurd fan de server">
 <!ENTITY unknownSocketType.longDesc "
 <ul>
-  <li>Soargje derfoar dat de persoanlike befeiligingsbehearder op jo systeem
-    ynstallearre is.</li>
-  <li>Dit kin it gefolch wêze fan in net-standert konfiguraasje fan de tsjinner.</li>
+  <li>Soargje derfoar dat de persoanlike befeiligingsbehearder op jo systeem 
+  ynstallearre is.</li>
+  <li>Dit kin it gefolch wêze fan in net-standert konfiguraasje fan de server.</li>
 </ul>
 ">
 
 <!ENTITY nssFailure2.title "Befeilige ferbining mislearre">
 <!ENTITY nssFailure2.longDesc2 "
 <ul>
-  <li>De side dy't jo besjen wolle kin net toand wurde, omdat de werkomst fan de ûntfongen gegevens net ferifiearre wurde kin.</li>
-  <li>Nim kontakt op mei de webstee-eigners om se te ynformearjen oer dit probleem.</li>
+  <li>De side dy't jo besjen wolle kin net toand wurde, omdat de echtheid fan de ûntfongen gegevens net ferifiearre wurde kin.</li>
+  <li>Nim kontakt op mei de website-eigners om se oer dit probleem te ynformearjen.</li>
 </ul>
 ">
 
 <!ENTITY nssBadCert.title "Feilige Ferbining Mislearre">
 <!ENTITY nssBadCert.longDesc2 "
 <ul>
-<li>Dit koe in probleem wêze mei de konfiguraasje fan de tsjinner, of it kin iets wêze wat probeart de tsjinner as in oar foar te dwaan.</li>
-<li>As jo earder al súksesfol ferbining hân hawwe mei dizze tsjinner, kin de flater tydlik wêze en kinne jo it letter nochris probearje.</li>
+<li>Dit koe in probleem wêze mei de konfiguraasje fan de server, of it kin iets wêze wat probeart de server as in oar foar te dwaan.</li>
+<li>As jo earder al súksesfol ferbining hân hawwe mei dizze server, kin de flater tydlik wêze en kinne jo it letter nochris probearje.</li>
 </ul>
 ">
 
@@ -170,13 +175,12 @@
 <!ENTITY cspBlocked.title "Blokkearre troch ynhâldsbefeiligingsbelied">
 <!ENTITY cspBlocked.longDesc "<p>De browser hat opkeard dat de side op dizze manier laden wurd, omdat de side in ynhâldsbefeiligingsbelied hat dat dit net tastiet.</p>">
 
-<!ENTITY corruptedContentError.title "Korruptearre ynhâldsflater">
-<!ENTITY corruptedContentError.longDesc "<p>De side dy't jo probearje te besjen kin net toand wurde omdat der in flater yn de gegevensoerdracht ûntdekt waard.</p><ul><li>Nim kontakt op mei de webstee-eigners om se te ynformearjen oer dit probleem.</li></ul>">
-
+<!ENTITY corruptedContentErrorv2.title "Skansearre-ynhâldsflater">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>De side dy't jo besjen wolle kin net werjûn wurde, omdat der in flater yn de gegevensoerdracht detektearre is.</p><ul><li>Nim kontakt op mei de website-eigners om se oer dit probleem te ynformearjen.</li></ul>">
 
 <!ENTITY securityOverride.linkText "Of jo kinne in útsûndering tafoegje...">
 <!ENTITY securityOverride.getMeOutOfHereButton "Helje My Hjir út!">
-<!ENTITY securityOverride.exceptionButtonLabel "Foech Utsûndering ta">
+<!ENTITY securityOverride.exceptionButtonLabel "Utsûndering tafoegje…">
 
 <!-- LOCALIZATION NOTE (securityOverride.warningText) - Do not translate the
 contents of the <xul:button> tags.  The only language content is the label= field,
@@ -184,14 +188,14 @@ which uses strings already defined above. The button is included here (instead o
 netError.xhtml) because it exposes functionality specific to firefox. -->
 
 <!ENTITY securityOverride.warningContent "
-<p>Jo kinne better gjin útsûndering tafoegje as jo in ynternetferbining hawwe dy't jo net folslein fertrouwe, of as it net normaal is dat jo in warskôging sjogge foar dizze tsjinner.</p>
+<p>Jo kinne better gjin útsûndering tafoegje as jo in ynternetferbining hawwe dy't jo net folslein fertrouwe, of as it net normaal is dat jo in warskôging sjogge foar dizze server.</p>
 
 <button id='getMeOutOfHereButton'>&securityOverride.getMeOutOfHereButton;</button>
 <button id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>
 ">
 
 <!ENTITY remoteXUL.title "Remote XUL">
-<!ENTITY remoteXUL.longDesc "<p><ul><li>Nim kontakt op mei de webstee-eigners om se te ynformearjen oer dit probleem.</li></ul></p>">
+<!ENTITY remoteXUL.longDesc "<p><ul><li>Nim kontakt op mei de website-eigners om se oer dit probleem te ynformearjen.</li></ul></p>">
 
 <!ENTITY sslv3Used.title "Kin gjin befeilige ferbining meitsje">
 <!-- LOCALIZATION NOTE (sslv3Used.longDesc) - Do not translate
@@ -202,3 +206,8 @@ netError.xhtml) because it exposes functionality specific to firefox. -->
 <!-- LOCALIZATION NOTE (weakCryptoUsed.longDesc) - Do not translate
      "SSL_ERROR_NO_CYPHER_OVERLAP". -->
 <!ENTITY weakCryptoUsed.longDesc "Avansearre ynfo: SSL_ERROR_NO_CYPHER_OVERLAP">
+
+<!ENTITY inadequateSecurityError.title "Jo ferbining is net befeilige">
+<!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
+     "NS_ERROR_NET_INADEQUATE_SECURITY". -->
+<!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> brûkt ferâldere befeiligingstechnology dy't kwetsber is foar oanfallen. In oanfaller kin ienfâldichwei gegevens ûnthulle wêrfan jo tochten dat dizze feilich wienen. De websitebehearder moat earst de server yn oarder meitsje eardat jo de website besykje kinne.</p><p>Flaterkoade: NS_ERROR_NET_INADEQUATE_SECURITY</p>">

@@ -52,6 +52,8 @@
 
 <!ENTITY aboutTelemetry.threadHangStatsSection "Szállefagyások">
 
+<!ENTITY aboutTelemetry.scalarsSection "  Skalárok">
+
 <!ENTITY aboutTelemetry.histogramsSection "  Hisztogramok">
 
 <!ENTITY aboutTelemetry.keyedHistogramsSection "  Hisztogramok kulccsal">
@@ -79,3 +81,5 @@
 <!ENTITY aboutTelemetry.filterText "Szűrő (karakterláncok vagy /regexp/)">
 
 <!ENTITY aboutTelemetry.payloadChoiceHeader "  Terhelés">
+
+<!ENTITY aboutTelemetry.rawPayload "  Nyers terhelés">

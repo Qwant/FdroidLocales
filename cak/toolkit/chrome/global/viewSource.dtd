@@ -14,15 +14,15 @@
 
 <!ENTITY fileMenu.label "Yakb'äl">
 <!ENTITY fileMenu.accesskey "Y">
-<!ENTITY savePageCmd.label "Rub'eyal yakïk…">
-<!ENTITY savePageCmd.accesskey "A">
+<!ENTITY savePageCmd.label "Tiyak re ruxaq achi'el…">
+<!ENTITY savePageCmd.accesskey "a">
 <!ENTITY savePageCmd.commandkey "S">
-<!ENTITY pageSetupCmd.label "Runuk'ik ruxaq…">
-<!ENTITY pageSetupCmd.accesskey "u">
+<!ENTITY pageSetupCmd.label "Tinuk'samajïx ruxaq…">
+<!ENTITY pageSetupCmd.accesskey "s">
 <!ENTITY printPreviewCmd.label "Nab'ey tz'etoj">
-<!ENTITY printPreviewCmd.accesskey "v">
-<!ENTITY printCmd.label "Tz'ajixïk…">
-<!ENTITY printCmd.accesskey "P">
+<!ENTITY printPreviewCmd.accesskey "o">
+<!ENTITY printCmd.label "Titz'ajb'äx…">
+<!ENTITY printCmd.accesskey "T">
 <!ENTITY printCmd.commandkey "P">
 <!ENTITY closeCmd.label "Elem">
 <!ENTITY closeCmd.accesskey "C">
@@ -36,11 +36,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY textEnlarge.commandkey "+">
 <!ENTITY textEnlarge.commandkey2 "=">
-<!ENTITY textEnlarge.commandkey3 "Kaqchikel">
+<!ENTITY textEnlarge.commandkey3 "">
 <!ENTITY textReduce.commandkey "-">
-<!ENTITY textReduce.commandkey2 "Kaqchikel">
+<!ENTITY textReduce.commandkey2 "">
 <!ENTITY textReset.commandkey "0">
-<!ENTITY textReset.commandkey2 "kaqchikel">
+<!ENTITY textReset.commandkey2 "">
 
 <!ENTITY goToLineCmd.label "B'enam pa ri cholaj…">
 <!ENTITY goToLineCmd.accesskey "B">
@@ -82,5 +82,5 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY copyLinkCmd.label "Tiwachib'ëx rochochib'äl ximonel tzij">
 <!ENTITY copyLinkCmd.accesskey "x">
-<!ENTITY copyEmailCmd.label "Ruwachib'exik rub'ey taqoya'l">
-<!ENTITY copyEmailCmd.accesskey "b">
+<!ENTITY copyEmailCmd.label "Tiwachib'ëx rochochib'al taqoya'l">
+<!ENTITY copyEmailCmd.accesskey "t">

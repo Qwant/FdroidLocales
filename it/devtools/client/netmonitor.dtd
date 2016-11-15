@@ -4,6 +4,7 @@
 
 <!ENTITY netmonitorUI.perfNotice1 "• Fai clic sul pulsante">
 <!ENTITY netmonitorUI.perfNotice2 "per avviare l’analisi delle prestazioni.">
+<!ENTITY netmonitorUI.perfNotice3 "Analizza">
 <!ENTITY netmonitorUI.reloadNotice1 "• Invia una richiesta o">
 <!ENTITY netmonitorUI.reloadNotice2 "Ricarica">
 <!ENTITY netmonitorUI.reloadNotice3 "la pagina per visualizzare informazioni dettagliate sull’attività di rete.">
@@ -11,6 +12,7 @@
 <!ENTITY netmonitorUI.toolbar.method "Metodo">
 <!ENTITY netmonitorUI.toolbar.file "File">
 <!ENTITY netmonitorUI.toolbar.domain "Dominio">
+<!ENTITY netmonitorUI.toolbar.cause "Origine">
 <!ENTITY netmonitorUI.toolbar.type "Tipo">
 <!ENTITY netmonitorUI.toolbar.transferred "Trasferito">
 <!ENTITY netmonitorUI.toolbar.size "Dimensione">
@@ -24,12 +26,12 @@
 <!ENTITY netmonitorUI.tab.security "Sicurezza">
 <!ENTITY netmonitorUI.security.error "Si è verificato un errore:">
 <!ENTITY netmonitorUI.security.protocolVersion "Versione del protocollo:">
-<!ENTITY netmonitorUI.security.cipherSuite "Pacchetto di cifratura:">
+<!ENTITY netmonitorUI.security.cipherSuite "Suite di cifratura:">
 <!ENTITY netmonitorUI.security.hsts "Sicurezza del trasporto HTTP ristretta (HSTS):">
 <!ENTITY netmonitorUI.security.hpkp "“Key Pinning” pubblico:">
 <!ENTITY netmonitorUI.security.connection "Connessione:">
 <!ENTITY netmonitorUI.security.certificate "Certificato:">
-<!ENTITY netmonitorUI.footer.filterAll "Tutto">
+<!ENTITY netmonitorUI.footer.filterAll "Tutti">
 <!ENTITY netmonitorUI.footer.filterHTML "HTML">
 <!ENTITY netmonitorUI.footer.filterCSS "CSS">
 <!ENTITY netmonitorUI.footer.filterJS "JS">
@@ -38,6 +40,7 @@
 <!ENTITY netmonitorUI.footer.filterImages "Immagini">
 <!ENTITY netmonitorUI.footer.filterMedia "Media">
 <!ENTITY netmonitorUI.footer.filterFlash "Flash">
+<!ENTITY netmonitorUI.footer.filterWS "WS">
 <!ENTITY netmonitorUI.footer.filterOther "Altro">
 <!ENTITY netmonitorUI.footer.filterFreetext.label "Filtra URL">
 <!ENTITY netmonitorUI.footer.filterFreetext.key "F">
@@ -59,7 +62,7 @@
 <!ENTITY netmonitorUI.timings.send "Invio:">
 <!ENTITY netmonitorUI.timings.wait "In attesa:">
 <!ENTITY netmonitorUI.timings.receive "Ricezione:">
-<!ENTITY netmonitorUI.security.warning.cipher "L’algoritmo utilizzato per la cifratura è deprecato e insicuro.">
+<!ENTITY netmonitorUI.security.warning.cipher "L’algoritmo utilizzato per la crittografia è deprecato e insicuro.">
 <!ENTITY netmonitorUI.context.perfTools "Inizia analisi prestazioni…">
 <!ENTITY netmonitorUI.context.perfTools.accesskey "I">
 <!ENTITY netmonitorUI.context.copyUrl "Copia URL">

@@ -52,6 +52,8 @@
 
 <!ENTITY aboutTelemetry.threadHangStatsSection "  Snàithlean reòite">
 
+<!ENTITY aboutTelemetry.scalarsSection "  Scalars">
+
 <!ENTITY aboutTelemetry.histogramsSection "  Histograms">
 
 <!ENTITY aboutTelemetry.keyedHistogramsSection "  Keyed Histograms">
@@ -79,3 +81,5 @@
 <!ENTITY aboutTelemetry.filterText "  Criathraich (sreangan no /regexp/)">
 
 <!ENTITY aboutTelemetry.payloadChoiceHeader "  Payload">
+
+<!ENTITY aboutTelemetry.rawPayload "  Raw Payload">

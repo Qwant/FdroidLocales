@@ -16,7 +16,7 @@
 #define bookmarks_heading ที่คั่นหน้า
 
 
-#define bookmarks_toolbarfolder แถบเครื่องมือที่คั่นหน้า
+#define bookmarks_toolbarfolder โฟลเดอร์แถบเครื่องมือที่คั่นหน้า
 
 
 #define bookmarks_toolbarfolder_description เพิ่มที่คั่นหน้าลงในโฟลเดอร์นี้เพื่อให้แสดงในแถบเครื่องมือที่คั่นหน้า
@@ -28,7 +28,7 @@
 # link title for https://www.mozilla.org/en-US/firefox/central/
 
 
-#define getting_started เริ่มใช้งาน
+#define getting_started เริ่มต้นใช้งาน
 
 
 # LOCALIZATION NOTE (firefox_heading):

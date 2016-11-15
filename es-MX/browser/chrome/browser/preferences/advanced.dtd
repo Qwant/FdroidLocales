@@ -1,8 +1,8 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<!-- Note: each tab panel must contain unique accesskeys -->
 
+<!-- Note: each tab panel must contain unique accesskeys -->
 
 <!ENTITY generalTab.label                "General">
 
@@ -28,7 +28,7 @@
 <!ENTITY checkSpelling.label             "Revisar mi ortografía mientras escribo">
 <!ENTITY checkSpelling.accesskey         "o">
 
-<!ENTITY dataChoicesTab.label            "Data Choices">
+<!ENTITY dataChoicesTab.label            "Elección de datos">
 
 <!ENTITY healthReportDesc.label          "                  Te ayuda a entender el rendimiento de tu navegador y comparte información con &vendorShortName; sobre el estado de tu navegador                ">
 <!ENTITY enableHealthReport.label        "Activar el reporte de salud de &brandShortName;">
@@ -56,13 +56,13 @@
 <!ENTITY httpCache.label                 "Contenido web cacheado">
 
 <!ENTITY offlineStorage2.label           "Contenido web sin conexión y datos de usuario">
+
 <!-- LOCALIZATION NOTE:
   The entities limitCacheSizeBefore.label and limitCacheSizeAfter.label appear on a single
   line in preferences as follows:
 
   &limitCacheSizeBefore.label [textbox for cache size in MB] &limitCacheSizeAfter.label;
 -->
-
 <!ENTITY limitCacheSizeBefore.label      "Caché limitado a">
 <!ENTITY limitCacheSizeBefore.accesskey  "l">
 <!ENTITY limitCacheSizeAfter.label       "MB de espacio">

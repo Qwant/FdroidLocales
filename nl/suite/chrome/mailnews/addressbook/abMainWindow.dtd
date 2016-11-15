@@ -28,7 +28,7 @@
 <!ENTITY printAddressBook.label                         "Adresboek afdrukken…">
 <!ENTITY printAddressBook.accesskey                     "f">
 <!ENTITY printPreviewAddressBook.label                  "Afdrukvoorbeeld adresboek"> 
-<!ENTITY printPreviewAddressBook.accesskey              "R">
+<!ENTITY printPreviewAddressBook.accesskey              "b">
 
 <!-- Edit Menu -->
 <!ENTITY deleteAbCmd.label                              "Adresboek verwijderen">
@@ -41,7 +41,7 @@
 <!ENTITY swapFirstNameLastNameCmd.accesskey             "w">
 <!ENTITY propertiesCmd.label                            "Eigenschappen…">
 <!-- LOCALIZATION NOTE (propertiesCmd.accesskey) : DONT_TRANSLATE -->  
-<!ENTITY propertiesCmd.accesskey                        "i">  
+<!ENTITY propertiesCmd.accesskey                        "E">
 <!ENTITY propertiesCmd.key                              "i">  
 
 <!-- View Menu -->
@@ -93,7 +93,7 @@
 <!ENTITY newmsgButton.tooltip                           "Een e-mailbericht sturen">
 <!ENTITY newIM.tooltip                                  "Een instant-bericht sturen of chatten">
 <!ENTITY deleteItemButton.tooltip                       "Geselecteerde item verwijderen">
-<!ENTITY throbber.tooltip                               "Naar de &vendorShortName;-startpagina">
+<!ENTITY throbber.tooltip                               "Naar de &vendorShortName;-startpagina gaan">
 <!ENTITY advancedButton.tooltip                         "Uitgebreid adres zoeken">
 
 <!-- Dir Tree header -->

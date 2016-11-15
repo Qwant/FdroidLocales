@@ -54,7 +54,9 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 <!ENTITY aboutSupport.appBasicsEnabledPlugins "Aktivierte Plugins">
 <!ENTITY aboutSupport.appBasicsBuildConfig "Build-Konfiguration">
 <!ENTITY aboutSupport.appBasicsUserAgent "User-Agent">
+<!ENTITY aboutSupport.appBasicsOS "Betriebssystem">
 <!ENTITY aboutSupport.appBasicsMemoryUse "Speicherverwendung">
+<!ENTITY aboutSupport.appBasicsPerformance "Leistung">
 
 <!-- LOCALIZATION NOTE the term "Service Workers" should not be translated. -->
 <!ENTITY aboutSupport.appBasicsServiceWorkers "Angemeldete Service-Worker">
@@ -88,6 +90,10 @@ variant of aboutSupport.showDir.label. -->
 
 <!ENTITY aboutSupport.graphicsTitle "Grafik">
 
+<!ENTITY aboutSupport.placeDatabaseTitle "Chronik- und Lesezeichendatenbank">
+<!ENTITY aboutSupport.placeDatabaseIntegrity "Integrität">
+<!ENTITY aboutSupport.placeDatabaseVerifyIntegrity "Integrität überprüfen">
+
 <!ENTITY aboutSupport.jsTitle "JavaScript">
 <!ENTITY aboutSupport.jsIncrementalGC "Inkrementelle GC">
 
@@ -107,3 +113,12 @@ variant of aboutSupport.showDir.label. -->
 
 <!ENTITY aboutSupport.safeModeTitle "Abgesicherten Modus probieren">
 <!ENTITY aboutSupport.restartInSafeMode.label "Mit deaktivierten Add-ons neu starten…">
+
+<!ENTITY aboutSupport.graphicsFeaturesTitle "Allgemeine Merkmale">
+<!ENTITY aboutSupport.graphicsDiagnosticsTitle "Weitere Informationen">
+<!ENTITY aboutSupport.graphicsFailureLogTitle "Fehlerprotokoll">
+<!ENTITY aboutSupport.graphicsGPU1Title "GPU 1">
+<!ENTITY aboutSupport.graphicsGPU2Title "GPU 2">
+<!ENTITY aboutSupport.graphicsDecisionLogTitle "Entscheidungsprotokoll">
+<!ENTITY aboutSupport.graphicsCrashGuardsTitle "Absturzverhinderer hat Funktionen deaktiviert">
+<!ENTITY aboutSupport.graphicsWorkaroundsTitle "Lösungen">

@@ -20,8 +20,11 @@
 
 <!ENTITY aboutTelemetry.showArchivedPingData "ಸಂಗ್ರಹಿಸಿದ ಪಿಂಗ್ ದತ್ತಾಂಶ">
 
+<!ENTITY aboutTelemetry.pingDataDisplay "ಪ್ಲಗಿನ್ ಡೇಟಾ ಪ್ರದರ್ಶಕ:">
 
+<!ENTITY aboutTelemetry.structured "ಸಂರಚಿತವಾಗಿ">
 
+<!ENTITY aboutTelemetry.raw "ಸಂಸ್ಕರಿಸದ JSON">
 
 <!ENTITY aboutTelemetry.showSubsessionData "ಉಪಅಧಿವೇಶನ ದತ್ತಾಂಶವನ್ನು ತೋರಿಸು">
 
@@ -31,6 +34,7 @@
 
 <!ENTITY aboutTelemetry.showOlderPing "ಹಳೆಯ ಪಿಂಗ್ &gt;&gt;">
 
+<!ENTITY aboutTelemetry.rawPingData "ಸಂಸ್ಕರಿಸದ ಪಿಂಗ್ ಡೇಟಾ…">
 
 <!ENTITY aboutTelemetry.archiveWeekHeader "ವಾರ">
 
@@ -48,6 +52,8 @@
 
 <!ENTITY aboutTelemetry.threadHangStatsSection "   ಎಳೆ ನಿಶ್ಚಲವಾಗಿದೆ">
 
+<!ENTITY aboutTelemetry.scalarsSection "  ಸ್ಕಾಲಾರ್‍‍ಗಳು">
+
 <!ENTITY aboutTelemetry.histogramsSection "  ಹಿಸ್ಟೊಗ್ರಾಮ್‌ಗಳು">
 
 <!ENTITY aboutTelemetry.keyedHistogramsSection "  ಟೈಪಿಸಿದ ಹಿಸ್ಟೋಗ್ರಾಮ್‌ಗಳು">
@@ -58,6 +64,7 @@
 
 <!ENTITY aboutTelemetry.lateWritesSection "  ತಡವಾಗಿ ಬರೆಯುವಿಕೆ">
 
+<!ENTITY aboutTelemetry.sessionInfoSection "  ಅಧಿವೇಶನದ ಮಾಹಿತಿ">
 
 <!ENTITY aboutTelemetry.addonHistogramsSection "  ಆಡ್-ಆನ್‌ಗಲಿಂದ ಸಂಗ್ರಹಿಸಲಾದ ಹಿಸ್ಟೊಗ್ರಾಮ್‌ಗಳು">
 
@@ -73,3 +80,6 @@
 
 <!ENTITY aboutTelemetry.filterText "  ಸೋಸಕ (ಪದಸಮುಚ್ಚಯಗಳು ಅಥವ /regexp/)">
 
+<!ENTITY aboutTelemetry.payloadChoiceHeader "  ಮಾನ್ಯಸರಕು">
+
+<!ENTITY aboutTelemetry.rawPayload "  ಸಂಸ್ಕರಿಸದ ಪೇಲೋಡ್">

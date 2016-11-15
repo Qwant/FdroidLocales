@@ -44,7 +44,7 @@
 <!ENTITY useStyleSheetNone.accesskey "N">
 <!ENTITY useStyleSheetPersistentOnly.label "Základní styl">
 <!ENTITY useStyleSheetPersistentOnly.accesskey "z">
-<!ENTITY bidiSwitchPageDirectionItem.label "Přepnout orientaci stránky">
+<!ENTITY bidiSwitchPageDirectionItem.label "Změnit orientaci stránky">
 <!ENTITY bidiSwitchPageDirectionItem.accesskey "o">
 <!ENTITY pageSourceCmd.label "Zdrojový kód stránky">
 <!ENTITY pageSourceCmd.accesskey "j">
@@ -75,12 +75,12 @@
 <!-- Bookmarks Menu -->
 <!ENTITY bookmarksMenu.label "Záložky">
 <!ENTITY bookmarksMenu.accesskey "o">
-<!ENTITY addCurPageCmd.label "Přidat k záložkám">
+<!ENTITY addCurPageCmd.label "Přidat stránku do záložek">
 <!ENTITY addCurPageCmd.accesskey "P">
-<!ENTITY addCurPageAsCmd.label "Přidat k záložkám jako…">
+<!ENTITY addCurPageAsCmd.label "Přidat do záložek jako…">
 <!ENTITY addCurPageAsCmd.accesskey "J">
 <!ENTITY addCurPageAsCmd.commandkey "d">
-<!ENTITY addCurTabsAsCmd.label "Přidat skupinu panelů k záložkám…">
+<!ENTITY addCurTabsAsCmd.label "Přidat skupinu panelů do záložek…">
 <!ENTITY addCurTabsAsCmd.accesskey "K">
 <!ENTITY manBookmarksCmd.label "Správce záložek…">
 <!ENTITY manBookmarksCmd.accesskey "S">
@@ -122,17 +122,25 @@
 <!ENTITY cookieBlockImagesCmd.accesskey "B">
 <!ENTITY cookieBlockImagesMsg.label "Obrázky z tohoto serveru nebudou nikdy stahovány.">
 
-<!ENTITY cookieAllowPopupsCmd.label "Povolit vyskakovací okna pro tento server">
-<!ENTITY cookieAllowPopupsCmd.accesskey "A">
-<!ENTITY cookieManagePopups.label "Správa vyskakovacích oken">
-<!ENTITY cookieManagePopups.accesskey "V">
+<!ENTITY popupsMessageChangeTitle.label "Oprávnění k vyskakovacím oknům změněno">
+<!ENTITY popupAllowCmd.label "Povolit vyskakovací okna pro tento server">
+<!ENTITY popupAllowCmd.accesskey "a">
+<!ENTITY popupAllowMsg.label "Vyskakovací okna z tohoto serveru budou vždy povolena.">
+<!ENTITY popupDefaultCmd.label "Použít výchozí oprávnění pro vyskakovací okna">
+<!ENTITY popupDefaultCmd.accesskey "u">
+<!ENTITY popupDefaultMsg.label "Vyskakovací okna z tohoto serveru budou zobrazována na základě výchozího nastavení.">
+<!ENTITY popupBlockCmd.label "Blokovat vyskakovací okna pro tento server">
+<!ENTITY popupBlockCmd.accesskey "B">
+<!ENTITY popupBlockMsg.label "Vyskakovací okna z tohoto serveru nebudou zobrazována.">
+<!ENTITY popupsManage.label "Správa vyskakovacích oken">
+<!ENTITY popupsManage.accesskey "S">
 
 <!ENTITY cookieCookieManager.label "Správce cookies">
 <!ENTITY cookieCookieManager.accesskey "c">
 <!ENTITY cookieImageManager.label "Správce obrázků">
 <!ENTITY cookieImageManager.accesskey "o">
-<!ENTITY cookiePopupManager.label "Správce vyskakovacích oken">
-<!ENTITY cookiePopupManager.accesskey "v">
+<!ENTITY popupsManager.label "Správce vyskakovacích oken">
+<!ENTITY popupsManager.accesskey "v">
 
 <!ENTITY clearPrivateDataCmd.label "Vymazat důvěrná data">
 <!ENTITY clearPrivateDataCmd.accesskey "m">

@@ -36,10 +36,6 @@
 <!ENTITY warning.updatesecurity.label              "Gehigarrien eguneraketa-segurtasuna egiaztatzea desgaituta dago. Eguneraketek arriskuan jar zaitzakete.">
 <!ENTITY warning.updatesecurity.enable.label       "Gaitu">
 <!ENTITY warning.updatesecurity.enable.tooltip     "Gaitu gehigarrien eguneraketa-segurtasuna egiaztatzea">
-<!-- global informations -->
-
-<!ENTITY info.plugincheck.label                 "Egiaztatu zure pluginak egunean dauden ikusteko">
-<!ENTITY info.plugincheck.tooltip               "Egiaztatu zure pluginak egunean dauden ikusteko">
 <!-- categories / views -->
 
 <!ENTITY view.search.label                    "Bilaketa">
@@ -124,11 +120,8 @@
      Displayed in the center of the Get Add-ons view, see bug 601143 for mockups. -->
 
 <!ENTITY discover.title                       "Zer dira gehigarriak?">
-<!ENTITY discover.description2                "&brandShortName; aparteko funtzionaltasun edo estiloarekin 
-pertsonalizatzeko aplikazioak dira gehigarriak. Proba ezazu denbora aurrezteko alboko barra bat, eguraldiaren jakinarazlea edo 
-&brandShortName;(r)en itxura zeure egiteko gai bat.">
-<!ENTITY discover.footer                      "Internetera konektatuta zaudenean, panel honetan 
-gehigarri on eta ezagunenetako batzuk agertuko dira proba ditzazun.">
+<!ENTITY discover.description2                "&brandShortName; aparteko funtzionaltasun edo estiloarekin pertsonalizatzeko aplikazioak dira gehigarriak. Proba ezazu denbora aurrezteko alboko barra bat, eguraldiaren jakinarazlea edo &brandShortName;(r)en itxura zeure egiteko gai bat.">
+<!ENTITY discover.footer                      "Internetera konektatuta zaudenean, panel honetan gehigarri on eta ezagunenetako batzuk agertuko dira proba ditzazun.">
 <!-- detail view -->
 
 <!ENTITY detail.version.label                 "Bertsioa">

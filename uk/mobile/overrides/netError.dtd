@@ -42,6 +42,12 @@
 </ul>
 ">
 
+<!ENTITY fileAccessDenied.title "Доступ до файлу було заборонено">
+<!ENTITY fileAccessDenied.longDesc "
+<ul>
+  <li>Він міг бути вилучений, переміщений, або дозволи файлу забороняють доступ.</li>
+</ul>
+">
 
 <!ENTITY generic.title "Ой.">
 <!ENTITY generic.longDesc "
@@ -178,8 +184,8 @@
 <!ENTITY cspBlocked.title "Блоковано політикою безпеки вмісту">
 <!ENTITY cspBlocked.longDesc "<p>&brandShortName; не дозволив цій сторінці завантажитись цим чином, бо вона має політику безпеки вмісту котра це забороняє.</p>">
 
-<!ENTITY corruptedContentError.title "Пошкоджений вміст">
-<!ENTITY corruptedContentError.longDesc "<p>Сторінку, яку ви намагаєтесь переглянути, неможливо відобразити тому, що у передачі даних виявлена помилка.</p><ul><li>Будь ласка, повідомте власника сайта про цю проблему.</li></ul>">
+<!ENTITY corruptedContentErrorv2.title "Помилка пошкодженого вмісту">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>Сторінка, яку ви намагаєтесь переглянути, не може бути показана через те, що було виявлено помилку в передачі даних.</p><ul><li>Будь ласка, зв'яжіться з власниками веб-сайту та повідомте їх про цю проблему.</li></ul>">
 
 <!ENTITY securityOverride.linkText "Або ви можете зробити виняток…">
 <!ENTITY securityOverride.getMeOutOfHereButton "Заберіть мене звідси">
@@ -209,3 +215,8 @@ netError.xhtml) because it exposes functionality specific to firefox. -->
 <!-- LOCALIZATION NOTE (weakCryptoUsed.longDesc) - Do not translate
      "SSL_ERROR_NO_CYPHER_OVERLAP". -->
 <!ENTITY weakCryptoUsed.longDesc "Додаткова інформація: SSL_ERROR_NO_CYPHER_OVERLAP">
+
+<!ENTITY inadequateSecurityError.title "Ваше з'єднання незахищене">
+<!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
+     "NS_ERROR_NET_INADEQUATE_SECURITY". -->
+<!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> використовує технологію безпеки, яка є застарілою і вразливою до атак. Нападник може з легкістю розкрити інформацію, яка, на вашу думку, є захищеною. Для відвідування сайту, адміністратор веб-сайту повинен виправити це на сервері.</p><p>Код помилки: NS_ERROR_NET_INADEQUATE_SECURITY</p>">

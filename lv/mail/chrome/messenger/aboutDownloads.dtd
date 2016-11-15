@@ -10,12 +10,12 @@
 
 
 
+<!ENTITY cmd.open.label                            "Atvērt">
+<!ENTITY cmd.open.accesskey                        "A">
 
 
 
 
 
-
-
-
-
+<!ENTITY cmd.searchDownloads.label                 "Meklēt...">
+<!ENTITY cmd.searchDownloads.key                   "F">

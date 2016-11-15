@@ -52,6 +52,7 @@
 
 <!ENTITY aboutTelemetry.threadHangStatsSection "  Viseći threadovi">
 
+
 <!ENTITY aboutTelemetry.histogramsSection "  Histogrami">
 
 <!ENTITY aboutTelemetry.keyedHistogramsSection "  Histogrami s ključem">
@@ -79,3 +80,5 @@
 <!ENTITY aboutTelemetry.filterText "  Filtriraj (tekst ili /regexp/)">
 
 <!ENTITY aboutTelemetry.payloadChoiceHeader "  Sadržaj">
+
+<!ENTITY aboutTelemetry.rawPayload "  Neobrađeni podaci">

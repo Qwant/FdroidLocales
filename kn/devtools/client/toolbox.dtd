@@ -11,31 +11,17 @@
 <!ENTITY toggleToolboxF12.keytext          "F12">
 
 <!ENTITY toolboxCloseButton.tooltip    "ವಿಕಸನೆಗಾರ ಉಪಕರಣಗಳನ್ನು ಮುಚ್ಚು">
-<!ENTITY toolboxOptionsButton.key      "O">
-<!ENTITY toolboxNextTool.key           "]">
-<!ENTITY toolboxPreviousTool.key       "[">
-<!-- LOCALIZATION NOTE :
-fullZoomEnlargeCmd.commandkey, fullZoomEnlargeCmd.commandkey2,
-fullZoomEnlargeCmd.commandkey3, fullZoomReduceCmd.commandkey,
-fullZoomReduceCmd.commandkey2, fullZoomResetCmd.commandkey,
-and fullZoomResetCmd.commandkey2 should all match the corresponding
-values from browser.dtd.  -->
-
-<!ENTITY fullZoomEnlargeCmd.commandkey3 "">
-
-<!ENTITY fullZoomReduceCmd.commandkey2  "">
-
-<!ENTITY fullZoomResetCmd.commandkey2   "">
-
-<!ENTITY toolboxReload.key             "r">
-<!-- This key is used with the accel+shift modifiers to minimize the toolbox -->
-<!ENTITY toolboxToggleMinimize.key     "U">
-
-<!ENTITY toolboxToggle.key             "d">
 <!-- LOCALIZATION NOTE (toolboxFramesButton): This is the label for
   -  the iframes menu list that appears only when the document has some.
   -  It allows you to switch the context of the whole toolbox. -->
+
 <!ENTITY toolboxFramesTooltip          "ಪ್ರಸಕ್ತ iframe ಅನ್ನು ಗುರಿಯ ದಸ್ತಾವೇಜಾಗಿ ಆರಿಸಿ">
+<!-- LOCALIZATION NOTE (toolboxNoAutoHideButton): This is the label for
+  -  the button to force the popups/panels to stay visible on blur.
+  -  This is only visible in the browser toolbox as it is meant for
+  -  addon developers and Firefox contributors. -->
+
+<!ENTITY toolboxNoAutoHideTooltip      "ಪಾಪ್‍ಅಪ್ ಸ್ವಯಂ ಅಡಗುವುದನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ">
 <!-- LOCALIZATION NOTE (browserToolboxErrorMessage): This is the label
   -  shown next to error details when the Browser Toolbox is unable to open. -->
 
@@ -54,6 +40,12 @@ values from browser.dtd.  -->
 
 <!ENTITY options.showUserAgentStyles.label "ಜಾಲವೀಕ್ಷಕದ ಶೈಲಿಗಳನ್ನು ತೋರಿಸು">
 <!ENTITY options.showUserAgentStyles.tooltip "ಇದನ್ನು ಸಕ್ರಿಯವಾಗಿಸುವುದರಿಂದ ಜಾಲವೀಕ್ಷಕದಿಂದ ಲೋಡ್ ಮಾಡಲಾಗುವ ಪೂರ್ವನಿಯೋಜಿತ ಶೈಲಿಗಳನ್ನು ತೋರಿಸಲಾಗುತ್ತದೆ.">
+<!-- LOCALIZATION NOTE (options.collapseAttrs.label): This is the label
+  -  for the checkbox option to enable collapse attributes in the Inspector
+  -  panel. -->
+
+<!ENTITY options.collapseAttrs.label "DOM ಗುಣವಿಶೇಷಗಳನ್ನು ಕಿರಿದಾಗಿಸಿ">
+<!ENTITY options.collapseAttrs.tooltip "ಪರಿಶೀಲಕನಲ್ಲಿ ಉದ್ದ ಗುಣವಿಶೇಷಗಳನ್ನು ಕಿರಿದಾಗಿಸಿ">
 <!-- LOCALIZATION NOTE (options.defaultColorUnit.label): This is the label for a
   -  dropdown list that controls the default color unit used in the inspector.
   -  This label is visible in the options panel. -->
@@ -66,6 +58,8 @@ values from browser.dtd.  -->
 <!ENTITY options.defaultColorUnit.accesskey "u">
 <!-- LOCALIZATION NOTE (options.defaultColorUnit.authored): This is used in the
   -  'Default color unit' dropdown list and is visible in the options panel. -->
+
+<!ENTITY options.defaultColorUnit.authored "‍ಆಗಿ ರಚಿಸಲಾಗಿದೆ">
 <!-- LOCALIZATION NOTE (options.defaultColorUnit.hex): This is used in the
   -  'Default color unit' dropdown list and is visible in the options panel. -->
 
@@ -112,12 +106,12 @@ values from browser.dtd.  -->
 
 <!ENTITY options.disableJavaScript.label     "JavaScript * ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸು">
 <!ENTITY options.disableJavaScript.tooltip   "ಈ ಆಯ್ಕೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವುದರಿಂದ ಪ್ರಸಕ್ತ ಟ್ಯಾಬ್‌ಗಾಗಿ JavaScript ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸದಂತಾಗುತ್ತದೆ. ಟ್ಯಾಬ್ ಅಥವ ಉಪಕರಣಪಟ್ಟಿಯನ್ನು ಮುಚ್ಚಿದಲ್ಲಿ ಈ ಸಿದ್ಧತೆಯನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ.">
-<!-- LOCALIZATION NOTE (options.disableCache.label2,
-  -  options.disableCache.tooltip2): This is the options panel label and
-  -  tooltip for the checkbox that toggles the cache on or off. -->
+<!-- LOCALIZATION NOTE (options.disableHTTPCache.label,
+  -  options.disableHTTPCache.tooltip): This is the options panel label and
+  -  tooltip for the checkbox that toggles the HTTP cache on or off. -->
 
-<!ENTITY options.disableCache.label2     "ಕ್ಯಾಶೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸು (ಉಪಕರಣಪೆಟ್ಟಿಗೆಯು ತೆರೆದಾಗ)">
-<!ENTITY options.disableCache.tooltip2   "ಈ ಆಯ್ಕೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವುದರಿಂದ ಉಪಕರಣಪೆಟ್ಟಿಗೆಯನ್ನು ಯಾವ ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳಲ್ಲಿ ತೆರೆಯಲಾಗಿದೆಯೊ ಅವುಗಳಿಗಾಗಿನ ಕ್ಯಾಶ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗುತ್ತದೆ.">
+<!ENTITY options.disableHTTPCache.label     "HTTP ಕ್ಯಾಶೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸು (ಉಪಕರಣಪೆಟ್ಟಿಗೆಯು ತೆರೆದಾಗ)">
+<!ENTITY options.disableHTTPCache.tooltip   "‍ಈ ಆಯ್ಕೆಯನ್ನು ಆನ್ ಮಾಡುವುದರಿಂದ ಟೂಲ್‌ಬಾಕ್ಸ್ ತೆರೆದಿರುವ ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳಲ್ಲಿ HTTP ಕ್ಯಾಶೆ ನಿಷ್ಕ್ರಿಯಗೊಳ್ಳುತ್ತವೆ. ‍ಸರ್ವೀಸ್ ವರ್ಕರ್‌ಗಳು ಈ ಆಯ್ಕೆಯಿಂದ ತೊಂದರೆಗೊಳಗಾಗುವುದಿಲ್ಲ.">
 <!-- LOCALIZATION NOTE (options.enableServiceWorkersHTTP.label,
   -  options.enableServiceWorkersHTTP.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles the service workers testing features on or off. This option enables service workers over HTTP. -->
@@ -197,8 +191,7 @@ values from browser.dtd.  -->
   -  in about:config, in the options panel. -->
 
 <!ENTITY options.showPlatformData.label    "Gecko ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ದತ್ತಾಂಶವನ್ನು ತೋರಿಸು">
-<!ENTITY options.showPlatformData.tooltip  "ನೀವು ಈ ಆಯ್ಕೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದಲ್ಲಿ JavaScript ಪ್ರೊಫೈಲರ್ ವರದಿಗಳು Gecko  
-ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ಸಂಕೇತಗಳನ್ನು ಹೊಂದಿರುತ್ತದೆ">
+<!ENTITY options.showPlatformData.tooltip  "ನೀವು ಈ ಆಯ್ಕೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದಲ್ಲಿ JavaScript ಪ್ರೊಫೈಲರ್ ವರದಿಗಳು Gecko  ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ಸಂಕೇತಗಳನ್ನು ಹೊಂದಿರುತ್ತದೆ">
 <!-- LOCALIZATION NOTE (options.sourceeditor.*): Options under the editor
   -  section. -->
 
@@ -215,4 +208,3 @@ values from browser.dtd.  -->
 <!ENTITY options.sourceeditor.keybinding.label          "ಕೀಲಿಬೈಂಡಿಂಗ್‌ಗಳು">
 <!ENTITY options.sourceeditor.keybinding.accesskey      "K">
 <!ENTITY options.sourceeditor.keybinding.default.label  "ಪೂರ್ವನಿಯೋಜಿತ">
-

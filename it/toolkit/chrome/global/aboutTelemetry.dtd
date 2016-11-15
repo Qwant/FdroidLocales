@@ -27,6 +27,7 @@
 <!ENTITY aboutTelemetry.slowSqlSection "Istruzioni SQL lente">
 <!ENTITY aboutTelemetry.chromeHangsSection "Blocchi del browser">
 <!ENTITY aboutTelemetry.threadHangStatsSection "Blocchi dei thread">
+<!ENTITY aboutTelemetry.scalarsSection "Scalari">
 <!ENTITY aboutTelemetry.histogramsSection "Istogrammi">
 <!ENTITY aboutTelemetry.keyedHistogramsSection "Istogrammi con chiave">
 <!ENTITY aboutTelemetry.simpleMeasurementsSection "Misurazioni semplici">
@@ -41,3 +42,4 @@
 <!ENTITY aboutTelemetry.hideSymbols "Visualizza dati non elaborati dai blocchi">
 <!ENTITY aboutTelemetry.filterText "Filtra (stringhe o espressione regolare)">
 <!ENTITY aboutTelemetry.payloadChoiceHeader "Payload">
+<!ENTITY aboutTelemetry.rawPayload "Payload non elaborato">

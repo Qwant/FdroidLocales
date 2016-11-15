@@ -7,6 +7,8 @@
 
 <!ENTITY loadError.label "စာမျက်နှာ ဖွင့်လှစ်မှု အမှား">
 <!ENTITY retry.label "ထပ်ကြိုးစားပါ">
+<!ENTITY returnToPreviousPage.label "နောက်သို့ သွားရန်">
+<!ENTITY advanced.label "အဆင့်မြင့်">
 <!-- Specific error messages -->
 
 
@@ -17,33 +19,19 @@
 <!ENTITY deniedPortAccess.longDesc "">
 
 <!ENTITY dnsNotFound.title "လိပ်စာ မတွေ့ရဘူး">
-<!ENTITY dnsNotFound.longDesc "<ul> 
-<li>Check the address for typing errors such as 
-<strong>ww</strong>.example.com instead of 
-<strong>www</strong>.example.com</li> 
-<li>If you are unable to load any pages, check your computer's network 
-connection.</li> 
-<li>If your computer or network is protected by a firewall or proxy, make sure 
-that &brandShortName; is permitted to access the Web.</li> 
-</ul>">
+<!ENTITY dnsNotFound.longDesc "<ul> <li>Check the address for typing errors such as <strong>ww</strong>.example.com instead of <strong>www</strong>.example.com</li> <li>If you are unable to load any pages, check your computer's network connection.</li> <li>If your computer or network is protected by a firewall or proxy, make sure that &brandShortName; is permitted to access the Web.</li> </ul>">
 
 <!ENTITY fileNotFound.title "ဖိုင် မတွေ့ရဘူး">
-<!ENTITY fileNotFound.longDesc "<ul> 
-<li>Check the file name for capitalization or other typing errors.</li> 
-<li>Check to see if the file was moved, renamed or deleted.</li> 
-</ul>">
+<!ENTITY fileNotFound.longDesc "<ul> <li>Check the file name for capitalization or other typing errors.</li> <li>Check to see if the file was moved, renamed or deleted.</li> </ul>">
 
+<!ENTITY fileAccessDenied.title "ဖိုင်အသုံးပြုခြင်းကို တားမြစ်ထားသည်">
+<!ENTITY fileAccessDenied.longDesc "<ul> <li>၎င်းကို ဖျက်ထားခြင်း၊ ရွှေ့ထားခြင်း သို့မဟုတ် ဖိုင်အသုံးပြုမှုဆိုင်ရာမူဝါဒများက အသုံးမပြုနိုင်စေရန် တားမြစ်နေခြင်း ဖြစ်နိုင်ပါသည်။</li> </ul>">
 
 <!ENTITY generic.title "တောင်းဆိုချက်ကို အပြီးမသတ်နိုင်ဘူး">
 <!ENTITY generic.longDesc "<p>&brandShortName; can't load this page for some reason.</p>">
 
 <!ENTITY malformedURI.title "မမှန်တဲ့ လိပ်စာ">
-<!ENTITY malformedURI.longDesc "<ul> 
-<li>Web addresses are usually written like 
-<strong>http://www.example.com/</strong></li> 
-<li>Make sure that you're using forward slashes (i.e. 
-<strong>/</strong>).</li> 
-</ul>">
+<!ENTITY malformedURI.longDesc "<ul> <li>Web addresses are usually written like <strong>http://www.example.com/</strong></li> <li>Make sure that you're using forward slashes (i.e. <strong>/</strong>).</li> </ul>">
 
 <!ENTITY netInterrupt.title "အချက်အလက်ကြမ်း လွှဲပြောင်းမှု တုံ့ဆိုင်းသွားတယ်">
 <!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
@@ -52,19 +40,13 @@ that &brandShortName; is permitted to access the Web.</li>
 <!ENTITY notCached.longDesc "<p>တောင်းဆိုထားသောဒေါ့ကုမန့်သည် &brandShortName;၏ခေတ္တသိမ်းမှတ်ဉာဏ်ထဲတွင်မရှိတော့ပါ</p><ul><li>လုံခြုံရေးကာကွယ်မှူအရ &brandShortName; သည် အချို့သောဒေါ့ကုမန့်များအားသိမ်းထားလေ့မရှိပါ.</li><li>ဝတ်ဆိုဒ်မှပြန်လည်တောင်းဆိုရန်အတွက် နောက်ထပ် ကိုနှိပ်ပါ။</li></ul>">
 
 <!ENTITY netOffline.title "ချိတ်ဆက်မဲ့ စနစ်">
-<!ENTITY netOffline.longDesc2 "<ul> 
-<li>&quot;Try Again&quot; အားနှိပ်ပြီး အင်တာနက်ပြန်လည်ချိတ်ဆက်ကာ စာမျက်နှာအားဖွင့်.</li> 
-</ul>">
+<!ENTITY netOffline.longDesc2 "<ul> <li>&quot;Try Again&quot; အားနှိပ်ပြီး အင်တာနက်ပြန်လည်ချိတ်ဆက်ကာ စာမျက်နှာအားဖွင့်.</li> </ul>">
 
 <!ENTITY contentEncodingError.title "အကြောင်းအရာ စာဝှက်ရေးသားမှု အမှား">
-<!ENTITY contentEncodingError.longDesc "<ul> 
-<li>Please contact the website owners to inform them of this problem.</li> 
-</ul>">
+<!ENTITY contentEncodingError.longDesc "<ul> <li>Please contact the website owners to inform them of this problem.</li> </ul>">
 
 <!ENTITY unsafeContentType.title "အန္တရာယ်မကင်းတဲ့ ဖိုင်အမျိုးအစား">
-<!ENTITY unsafeContentType.longDesc "<ul> 
-<li>Please contact the website owners to inform them of this problem.</li> 
-</ul>">
+<!ENTITY unsafeContentType.longDesc "<ul> <li>Please contact the website owners to inform them of this problem.</li> </ul>">
 
 <!ENTITY netReset.title "ချိတ်ဆက်မှု တုံ့ဆိုင်းသွားတယ်။">
 <!ENTITY netReset.longDesc "&sharedLongDesc;">
@@ -73,98 +55,71 @@ that &brandShortName; is permitted to access the Web.</li>
 <!ENTITY netTimeout.longDesc "&sharedLongDesc;">
 
 <!ENTITY unknownProtocolFound.title "အမည်မသိ နည်းလမ်း">
-<!ENTITY unknownProtocolFound.longDesc "<ul> 
-<li>You might need to install other software to open this address.</li> 
-</ul>">
+<!ENTITY unknownProtocolFound.longDesc "<ul> <li>You might need to install other software to open this address.</li> </ul>">
 
 <!ENTITY proxyConnectFailure.title "ကြားခံ ဆာဗာက ချိတ်ဆက်မှုကို ငြင်းပယ်တယ်">
-<!ENTITY proxyConnectFailure.longDesc "<ul> 
-<li>Check the proxy settings to make sure that they are correct.</li> 
-<li>Contact your network administrator to make sure the proxy server is 
-working.</li> 
-</ul>">
+<!ENTITY proxyConnectFailure.longDesc "<ul> <li>Check the proxy settings to make sure that they are correct.</li> <li>Contact your network administrator to make sure the proxy server is working.</li> </ul>">
 
 <!ENTITY proxyResolveFailure.title "ကြားခံ ဆာဗာ မတွေ့ရဘူး။">
-<!ENTITY proxyResolveFailure.longDesc "<ul> 
-<li>Check the proxy settings to make sure that they are correct.</li> 
-<li>Check to make sure your computer has a working network connection.</li> 
-<li>If your computer or network is protected by a firewall or proxy, make sure 
-that &brandShortName; is permitted to access the Web.</li> 
-</ul>">
+<!ENTITY proxyResolveFailure.longDesc "<ul> <li>Check the proxy settings to make sure that they are correct.</li> <li>Check to make sure your computer has a working network connection.</li> <li>If your computer or network is protected by a firewall or proxy, make sure that &brandShortName; is permitted to access the Web.</li> </ul>">
 
 <!ENTITY redirectLoop.title "ပတ်လမ်း လမ်းလွှဲပေးပါ">
-<!ENTITY redirectLoop.longDesc "<ul> 
-<li>This problem can sometimes be caused by disabling or refusing to accept 
-cookies.</li> 
-</ul>">
+<!ENTITY redirectLoop.longDesc "<ul> <li>This problem can sometimes be caused by disabling or refusing to accept cookies.</li> </ul>">
 
 <!ENTITY unknownSocketType.title "မမှန်ကန်တဲ့ တုံ့ပြန်ချက်">
-<!ENTITY unknownSocketType.longDesc "<ul> 
-<li>Check to make sure your system has the Personal Security Manager 
-installed.</li> 
-<li>This might be due to a non-standard configuration on the server.</li> 
-</ul>">
+<!ENTITY unknownSocketType.longDesc "<ul> <li>Check to make sure your system has the Personal Security Manager installed.</li> <li>This might be due to a non-standard configuration on the server.</li> </ul>">
 
-<!ENTITY nssFailure2.title "လုံခြုံတဲ့ ချိတ်ဆက်မှု ပျက်သွားတယ်">
+<!ENTITY nssFailure2.title "လုံခြုံသောချိတ်ဆက်မှု မအောင်မြင်ပါ">
+<!ENTITY nssFailure2.longDesc2 "<ul> <li>လက်ခံရရှိလိုက်သော ခွင့်ပြုချက်အား အတည်မပြုနိုင်သဖြင့် ဝတ်စာမျက်နှာအား မပြနိုင်ပါ</li> <li>ယခု ပြသာနာအတွက် ဝတ်ဆိုဒ် ပိုင်ရှင်အား ဆက်သွယ်ပါ</li> </ul>">
 
+<!ENTITY certerror.longpagetitle1 "ချိတ်ဆက်မှုသည် မလုံခြုံပါ">
+<!-- Localization note (certerror.introPara) - The text content of the span tag
+will be replaced at runtime with the name of the server to which the user
+was trying to connect. -->
+<!ENTITY certerror.introPara "<span class='hostname'/>၏ ပိုင်ရှင်သည် သူတို့၏ ဒီဝဘ်ဆိုက်ကို သင့်လျော်မှန်ကန်စွာ ချိန်ညှိထားခြင်း မရှိပါ။ သင့်အချက်အလက်များ ခိုးယူခံရခြင်းမှ ကာကွယ်ရန် &brandShortName; သည် ဒီဝဘ်ဆိုက်ကို မချိတ်ဆက်ထားပါ။">
 
-<!ENTITY nssBadCert.title "လုံခြုံတဲ့ ချိတ်ဆက်မှု ပျက်သွားတယ်">
-<!ENTITY nssBadCert.longDesc2 "<ul> 
-<li>ဒါဟာ ဆာဗာ ပြုပြင်ဖန်တီးမှု ပြဿနာ (သို့) တစုံတယောက်က ဆာဗာကို 
-အယောင်ဆောင်ဖို့ ကြိုးစားတာ​ ဖြစ်နိုင်တယ်။ </li> 
-<li>အရင်တုန်းက ဒီဆာဗာကို အောင်အောင် မြင်မြင် သင်ချိတ်ဆက်ခဲ့ရင်၊ အမှားဟာ ခေတ္တ ဖြစ်နိုင်တယ်၊
- ဒါကြောင့် သင်နောက်တခါ ထပ်ကြိုးစားနိုင်ပါ။</li> 
-</ul>">
-
-<!ENTITY sharedLongDesc "<ul> 
-<li>သင်ကြည့်ရှုလိုသောဝတ်ဆိုက်သည်လောလောဆယ်ကြည့်ရှူမရနိုင်ပါ။ 
-အလွန်အလုပ်များနေသောကြောင့်ဖြစ်ပါလိမ့်မည်။</li> 
-<li>အကယ်လိုပြန်လည်ကြည့်ရှူမရပါကသင်၏ကွန်ပျူတာနက်ဝပ် 
-ချိတ်ဆက်မှူကိုစစ်ကြည့်ပါ။.</li> 
-<li>အကယ်လို့သင့်ကွန်ပျူတာအား ဖိုင်းယားဝေါလ်တစ်ခုခုဖြင့်ကာကွယ်တာပါက &brandShortName; 
-အားအင်တာနက်သို့ဆက်သွယ်မှူ ပါမစ်ခွင့်ပြုပေးထားလားစစ်ပါ။</li> 
-</ul>">
-
-<!ENTITY malwareBlocked.title "သံသယ ဖြစ်ဖွယ် တိုက်ခိုက်တဲ့ ကွန်ရက်။">
-<!ENTITY malwareBlocked.longDesc "<p>တိုက်ခိုက်ခံထားရသော၀တ်ဆိုက်များသည်သင့်ကွန်ပျူတာအားအသုံးပြုပြီးအခြားသူများအားတိုက်ခိုက်တတ်သောပရိုဂရမ်များကိုထည့်သွင်းတတ်သည်။</p> 
-<p>တိုက်ခိုက်ခံဆိုက်များမှာပိုင်ရှင်များအနေဖြင့်၄င်းတို့၀တ်ဆိုက်အားကြည့်ရှူပေးရန် <a href='http://www.stopbadware.org/home/reviewinfo' >ဤတွင်တောင်းဆိုနိုင်သည်။</a></p>">
-
-<!ENTITY phishingBlocked.title "သံသယဖြစ်ဖွယ် ကွန်ရက်တု။">
-<!ENTITY phishingBlocked.longDesc "<p>Entering any personal information on this page may result in identity theft or other fraud.</p> 
-<p>These types of web forgeries are used in scams known as phishing attacks, in which fraudulent web pages and emails are used to imitate sources you may trust.</p>">
+<!ENTITY sharedLongDesc "<ul> <li>သင်ကြည့်ရှုလိုသောဝတ်ဆိုက်သည်လောလောဆယ်ကြည့်ရှူမရနိုင်ပါ။ အလွန်အလုပ်များနေသောကြောင့်ဖြစ်ပါလိမ့်မည်။</li> <li>အကယ်လိုပြန်လည်ကြည့်ရှူမရပါကသင်၏ကွန်ပျူတာနက်ဝပ် ချိတ်ဆက်မှူကိုစစ်ကြည့်ပါ။.</li> <li>အကယ်လို့သင့်ကွန်ပျူတာအား ဖိုင်းယားဝေါလ်တစ်ခုခုဖြင့်ကာကွယ်တာပါက &brandShortName; အားအင်တာနက်သို့ဆက်သွယ်မှူ ပါမစ်ခွင့်ပြုပေးထားလားစစ်ပါ။</li> </ul>">
 
 <!ENTITY cspBlocked.title "Content Security Policy အရပိတ်ပင်ထားသည်။">
 <!ENTITY cspBlocked.longDesc "<p>&brandShortName; သည်ယခု၀တ်ဆိုက်အားပါ၀င်နေသောအရာတစ်ခု၏လုံခြုံရေး ကြောင့်ရယူခြင်းကိုခွင့်မပြုပါ.</p>">
 
-<!ENTITY corruptedContentError.title "နှောက်ယှက်ခံရသောပြသာနာ">
-<!ENTITY corruptedContentError.longDesc "<p>အချက်အလက်ကူးယူပြောင်းခြင်းပြသာနာကြောင့်၀တ်ဆိုက်အားမပြသနိုင်ပါ။</p><ul><li>၀တ်ဆိုက်ပိုင်ရှင်များဤပြသာနာအားအသိပေးရန်ကျေးဇူးပြုပြီးဆက်သွယ်ပေးပါ။</li></ul>">
+<!ENTITY corruptedContentErrorv2.title "နှောက်ယှက်ခံရသောပြသာနာ">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>အချက်အလက်ကူးယူပြောင်းခြင်းပြသာနာကြောင့်၀တ်ဆိုက်အားမပြသနိုင်ပါ။</p><ul><li>၀တ်ဆိုက်ပိုင်ရှင်များဤပြသာနာအားအသိပေးရန်ကျေးဇူးပြုပြီးဆက်သွယ်ပေးပါ။</li></ul>">
 
 
-<!ENTITY securityOverride.linkText "Or you can add an exception...">
-<!ENTITY securityOverride.getMeOutOfHereButton "ဒီနေရာမှ ကျွန်ပ်ကကို ဆွဲထုတ်ပါ။">
 <!ENTITY securityOverride.exceptionButtonLabel "ချွင်းချက် ထည့်သွင်းပါ...">
-<!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
-contents of the <button> tags. It uses strings already defined above. The
-button is included here (instead of netError.xhtml) because it exposes
-functionality specific to firefox. -->
 
-
-<!ENTITY securityOverride.warningContent "<p>You should not add an exception if you are using an internet connection that you do not trust completely or if you are not used to seeing a warning for this server.</p> 
-
-<button id='getMeOutOfHereButton'>&securityOverride.getMeOutOfHereButton;</button> 
-<button id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>">
-
-
-
-
-
-
-
-
+<!ENTITY errorReporting.automatic2 "မလိုတမာဝဘ်ဆိုက်များကို မော်ဇီလာက ခွဲခြားသတ်မှတ်ရာတွင်နှင့် ပိတ်ပင်တားဆီးရာတွင် ကူညီရန် ယခုကိစ္စကဲ့သို့သော အမှားများကို အကြောင်းကြားပေးပို့ပါ။">
+<!ENTITY errorReporting.learnMore "ပိုမို လေ့လာပါ…">
 
 <!ENTITY remoteXUL.title "အားဖယ်ပါ XUL">
 <!ENTITY remoteXUL.longDesc "<p><ul><li>၀တ်ဆိုက်ပိုင်ရှင်အားဤပြသာနားအားတင်ပြရန်ဆက်သွယ်ပါ</li></ul></p>">
 
-<!-- LOCALIZATION NOTE (sslv3Used.longDesc) - Do not translate
-     "ssl_error_unsupported_version". -->
+<!ENTITY sslv3Used.title "လုံခြုံစိတ်ချစွာ မချိတ်ဆက်နိုင်ပါ">
+<!-- LOCALIZATION NOTE (sslv3Used.longDesc2) - Do not translate
+     "SSL_ERROR_UNSUPPORTED_VERSION". -->
+<!ENTITY sslv3Used.longDesc2 "Advanced info: SSL_ERROR_UNSUPPORTED_VERSION">
 
+<!ENTITY weakCryptoUsed.title "ချိတ်ဆက်မှုသည် မလုံခြုံပါ">
+<!-- LOCALIZATION NOTE (weakCryptoUsed.longDesc2) - Do not translate
+     "SSL_ERROR_NO_CYPHER_OVERLAP". -->
+<!ENTITY weakCryptoUsed.longDesc2 "Advanced info: SSL_ERROR_NO_CYPHER_OVERLAP">
+<!ENTITY weakCryptoAdvanced.title "အဆင့်မြင့်">
+<!ENTITY weakCryptoAdvanced.longDesc "<span class='hostname'></span>သည် အိုဟောင်းပြီး ခုခံမှုအားနည်းသည့် လုံခြုံရေးနည်းပညာကို အသုံးပြုထားသည်။ တိုက်ခိုက်သူသည် သင်လုံခြုံသည်ဟု ထင်ရသည့် အချက်အလက်များကို လွယ်ကူစွာ ဖော်ထုတ်နိုင်သည်။">
+<!ENTITY weakCryptoAdvanced.override "(မလုံခြုံပါ) အိုဟောင်းနေသည့် လုံခြုံရေးနည်းပညာအသုံးပြုထားသော <span class='hostname'></span>ကို ခေါ်ယူကြည့်ပါ">
+<!-- LOCALIZATION NOTE (certerror.wrongSystemTime) - The <span id='..' /> tags will be injected with actual values,
+     please leave them unchanged. -->
+
+<!ENTITY certerror.wrongSystemTime "<p>ဒီ <span id='wrongSystemTime_URL'/> သို့ လုံခြုံသော ချိတ်ဆက်မှုသည် မဖြစ်နိုင်ပါ၊ အဘယ်ကြောင့်ဆိုသော် သင့်နာရီသည် အချိန်မှားယွင်းနိုင်ဖွယ်ရှိသည်။</p> <p>သင့်ကွန်ပျူတာသည် <span id='wrongSystemTime_systemDate'/>ကို အမှန်ထင်သော်လည်း အမှန်မှာမူ <span id='wrongSystemTime_actualDate'/> ဖြစ်သင့်သည်။ ဒီပြဿနာကိုဖြေရှင်းရန် သင့်ရက်စွဲနှင့် အချိန်အပြင်ဆင်များကို မှန်ကန်ကိုက်ညီစေရန် ပြောင်းလဲသတ်မှတ်ပါ။</p>">
+
+<!ENTITY certerror.pagetitle1  "မလုံခြုံသော ချိတ်ဆက်မှု">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation "&brandShortName; က ဒီဝဘ်ဆိုက်ကို လုံခြုံစွာ ချိတ်ဆက်နိုင်ခြင်းရှိမရှိ ဖော်ပြရန် ၎င်းဝဘ်ဆိုက်သည် HTTP Strict Transport Security (HSTS) ကို အသုံးပြုထားသည်။ ရလဒ်အနေနှင့် ဒီအထောက်အထားအတွက် ခြွင်းချက်အဖြစ်ထည့်ရန် မဖြစ်နိုင်ပါ။">
+<!ENTITY certerror.copyToClipboard.label "စာကို ကလစ်ဘုတ်သို့ ကူးပါ">
+
+<!ENTITY inadequateSecurityError.title "ချိတ်ဆက်မှုသည် မလုံခြုံပါ">
+<!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
+     "NS_ERROR_NET_INADEQUATE_SECURITY". -->
+<!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span>သည် အိုဟောင်းပြီး တိုက်ခိုက်ရန်လွယ်ကူသည့် လုံခြုံရေးနည်းပညာကို အသုံးပြုထားသည်။ တိုက်ခိုက်သူသည် သင်လုံခြုံသည်ဟုထင်သည့် အချက်အလက်များကို လွယ်ကူစွာ ဖော်ထုတ်နိုင်ပါလိမ့်မည်။ သင်လာရောက်မလည်ပတ်မီ ဝဘ်ဆိုဒ်စီမံခန့်ခွဲသူသည် ဆာဗာကို အရင်ဆုံး ပြုပြင်ဖြေရှင်းရန် လိုအပ်သည်။</p><p>Error code: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+
+<!ENTITY prefReset.longDesc "သင့်ကွန်ယက်လုံခြုံရေးအပြင်အဆင်များတွင် ဒီပြဿနာဖြစ်နေသည် ထင်မြင်ရပါသည်။ သင်သည် မူလအပြင်အဆင်များအတိုင်း ပြန်လည်သတ်မှတ်လိုပါသလား။">
+<!ENTITY prefReset.label "မူလသတ်မှတ်ထားသည့်အတိုင်း ပြန်ထားပါ">

@@ -71,6 +71,9 @@ Ping
 <!ENTITY aboutTelemetry.threadHangStatsSection "
   Cuelgues de hilos
 ">
+<!ENTITY aboutTelemetry.scalarsSection "
+  Escalares
+">
 <!ENTITY aboutTelemetry.histogramsSection "
   Histogramas
 ">
@@ -111,4 +114,7 @@ Ping
 ">
 <!ENTITY aboutTelemetry.payloadChoiceHeader "
   Contenido
+">
+<!ENTITY aboutTelemetry.rawPayload "
+  Contenido sin procesar
 ">

@@ -59,8 +59,6 @@
 <!ENTITY updateCheck.accesskey           "t">
 <!ENTITY updateManual.label              "Yangilanishlar uchun hech qachon tekshirilmasin (tavsiya qilinmaydi: xavfsizlik tahdidi)">
 <!ENTITY updateManual.accesskey          "h">
-<!ENTITY updateAutoAddonWarn.label       "Agar u qo‘shimcha dasturlarimdan birortasini o‘chirib qo‘ysa, meni ogohlantir">
-<!ENTITY updateAutoAddonWarn.accesskey   "m">
 <!ENTITY updateHistory.label             "Yangilash tarixini ko‘rsatish">
 <!ENTITY updateHistory.accesskey         "a">
 
@@ -103,6 +101,7 @@
 <!ENTITY enableOCSP.label                "OCSP javob berish serverlari sertifikatlarining joriy yaroqliligini tasdiqlash uchun so‘rov jo‘natish">
 <!ENTITY enableOCSP.accesskey            "s">
 
-
+<!ENTITY manageCertificates.label "Sertifikatlarni boshqarish">
+<!ENTITY manageCertificates.accesskey "b">
 <!ENTITY viewSecurityDevices.label "Xavfsizlik qurilmalari">
 <!ENTITY viewSecurityDevices.accesskey "q">

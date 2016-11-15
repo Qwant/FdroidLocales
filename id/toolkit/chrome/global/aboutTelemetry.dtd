@@ -52,6 +52,10 @@
 
 <!ENTITY aboutTelemetry.threadHangStatsSection "  Utas Macet">
 
+<!ENTITY aboutTelemetry.scalarsSection "
+  Skalar
+">
+
 <!ENTITY aboutTelemetry.histogramsSection "  Histogram">
 
 <!ENTITY aboutTelemetry.keyedHistogramsSection "  Histogram Berdasar Kunci">
@@ -79,3 +83,5 @@
 <!ENTITY aboutTelemetry.filterText "  Filter (string atau /ekspresi reguler/)">
 
 <!ENTITY aboutTelemetry.payloadChoiceHeader "  Muatan">
+
+<!ENTITY aboutTelemetry.rawPayload "  Muatan Mentah">

@@ -84,22 +84,25 @@ both, to better adapt this sentence to their language.
 <!ENTITY welcome.useOldSync.label "ಹಳೆಯ ಆವೃತ್ತಿಯ ಸಿಂಕ್ ಬಳಸುತ್ತಿದ್ದೀರಾ?">
 
 <!ENTITY signedOut.caption            "ನಿಮ್ಮ ಜಾಲವನ್ನು ನಿಮ್ಮೊಂದಿಗೆ ಕೊಂಡೊಯ್ಯಿರಿ">
-
+<!ENTITY signedOut.description        "ನಿಮ್ಮ ಎಲ್ಲಾ ಸಾಧನಗಳ ಜೊತೆ ನಿಮ್ಮ ಪುಟಗುರುತುಗಳು, ಇತಿಹಾಸ, ಹಾಳೆ, ಪ್ರವೇಶ ಪದ, ಆಡ್-ಆನ್‌ಗಳು, ಮತ್ತು ಆದ್ಯತೆಗಳನ್ನು ಸಿಂಕ್ ಮಾಡಿ">
 <!ENTITY signedOut.accountBox.title   "&syncBrand.fxAccount.label; ನೊಂದಿಗೆ ಸಂಪರ್ಕಿಸು">
 <!ENTITY signedOut.accountBox.create  "ಖಾತೆಯನ್ನು ರಚಿಸಿ">
 <!ENTITY signedOut.accountBox.signin  "ಸೈನ್ ಇನ್">
 
 <!ENTITY signedIn.engines.label       "ಎಲ್ಲಾ ಸಾಧನಗಳೊಂದಿಗೆ ಸಿಂಕ್ ಮಾಡಿ">
-<!-- LOCALIZATION NOTE (mobilePromo2.*): the following strings will be used to
+<!-- LOCALIZATION NOTE (mobilePromo3.*): the following strings will be used to
      create a single sentence with active links.
-     The resulting sentence in English is: "Sync to your mobile device.
-     Download Firefox for Android or Firefox for iOS." -->
-<!-- LOCALIZATION NOTE (mobilePromo2.androidLink): This is a link title that links to https://www.mozilla.org/firefox/android/ -->
-<!ENTITY mobilePromo2.androidLink      "ಆ್ಯಂಡ್ರಾಯ್ಡಿಗಾಗಿ Firefox">
-<!-- LOCALIZATION NOTE (mobilePromo2.iOSBefore): This is text displayed between mobilePromo2.androidLink and mobilePromo2.iosLink -->
+     The resulting sentence in English is: "Download Firefox for
+     Android or iOS to sync with your mobile device." -->
 
-<!ENTITY mobilePromo2.iOSBefore         " ಅಥವ ">
-<!-- LOCALIZATION NOTE (mobilePromo2.iOSLink): This is a link title that links to https://www.mozilla.org/firefox/ios/ -->
-<!ENTITY mobilePromo2.iOSLink          "iOS ಗಾಗಿ Firefox">
 
-<!ENTITY mobilePromo2.end              ".">
+<!ENTITY mobilePromo3.start            "Firefox ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ">
+<!-- LOCALIZATION NOTE (mobilePromo3.androidLink): This is a link title that links to https://www.mozilla.org/firefox/android/ -->
+<!ENTITY mobilePromo3.androidLink      "Android">
+<!-- LOCALIZATION NOTE (mobilePromo3.iOSBefore): This is text displayed between mobilePromo3.androidLink and mobilePromo3.iosLink -->
+
+<!ENTITY mobilePromo3.iOSBefore         " ಅಥವ ">
+<!-- LOCALIZATION NOTE (mobilePromo3.iOSLink): This is a link title that links to https://www.mozilla.org/firefox/ios/ -->
+<!ENTITY mobilePromo3.iOSLink          "iOS">
+
+<!ENTITY mobilePromo3.end              " ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನದ ಜೊತೆ ಸಿಂಕ್ ಮಾಡಲು.">

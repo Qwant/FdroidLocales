@@ -8,13 +8,13 @@
 <!ENTITY  blockPopups.accesskey       "B">
 
 <!ENTITY  notificationsPolicy.label            "Notificações">
-<!ENTITY  notificationsPolicyLearnMore.label   "Saiba mais">
+<!ENTITY  notificationsPolicyLearnMore.label   "Saber mais">
 <!ENTITY  notificationsPolicyDesc3.label       "Escolher quais sites podem mostrar notificações">
 <!ENTITY  notificationsPolicyButton.accesskey  "h">
 <!ENTITY  notificationsPolicyButton.label      "Escolher…">
 <!ENTITY  notificationsDoNotDisturb.label      "Não me perturbe">
 <!ENTITY  notificationsDoNotDisturb.accesskey  "n">
-<!ENTITY  notificationsDoNotDisturbDetails.value "Nenhuma notificação será mostrada até que você reinicie o &brandShortName;">
+<!ENTITY  notificationsDoNotDisturbDetails.value "Nenhuma notificação será mostrada até que reinicie o &brandShortName;">
 
 <!ENTITY  popupExceptions.label       "Exceções…">
 <!ENTITY  popupExceptions.accesskey   "E">
@@ -57,4 +57,4 @@
 
 <!ENTITY  playDRMContent.label         "Reproduzir conteúdo com DRM">
 <!ENTITY  playDRMContent.accesskey     "p">
-<!ENTITY  playDRMContent.learnMore.label "Saiba mais">
+<!ENTITY  playDRMContent.learnMore.label "Saber mais">

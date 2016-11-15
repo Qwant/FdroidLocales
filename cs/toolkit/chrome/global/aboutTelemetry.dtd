@@ -96,6 +96,9 @@ Ping
   Zatuhnutí vláken
 ">
 
+<!ENTITY aboutTelemetry.scalarsSection "
+  Skaláry">
+
 <!ENTITY aboutTelemetry.histogramsSection "Histogramy">
 
 <!ENTITY aboutTelemetry.keyedHistogramsSection "
@@ -134,4 +137,8 @@ Ping
 
 <!ENTITY aboutTelemetry.payloadChoiceHeader "
   Obsah
+">
+
+<!ENTITY aboutTelemetry.rawPayload "
+  Raw obsah
 ">

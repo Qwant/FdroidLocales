@@ -100,6 +100,10 @@ Ping
   スレッドの停止
 ">
 
+<!ENTITY aboutTelemetry.scalarsSection "
+  スカラー
+">
+
 <!ENTITY aboutTelemetry.histogramsSection "
   ヒストグラム
 ">
@@ -154,4 +158,8 @@ Ping
 
 <!ENTITY aboutTelemetry.payloadChoiceHeader "
   ペイロード
+">
+
+<!ENTITY aboutTelemetry.rawPayload "
+  生ペイロード
 ">

@@ -48,6 +48,7 @@
 
 <!ENTITY aboutTelemetry.threadHangStatsSection "থ্রেড হ্যাং">
 
+
 <!ENTITY aboutTelemetry.histogramsSection "স্তম্ভচিত্র">
 
 <!ENTITY aboutTelemetry.keyedHistogramsSection "  উদ্দীপিত হিস্টোগ্রামসমূহ">
@@ -72,4 +73,5 @@
 <!ENTITY aboutTelemetry.hideSymbols "hangs থেকে কাঁচা ডেটা দেখান">
 
 <!ENTITY aboutTelemetry.filterText "ফিল্টার (স্ট্রিং অথবা /regexp/)">
+
 

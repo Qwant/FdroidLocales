@@ -27,7 +27,7 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.experimentDescription "描述">
 <!ENTITY aboutSupport.experimentActive "激活">
 <!ENTITY aboutSupport.experimentEndDate "结束日期">
-<!ENTITY aboutSupport.experimentHomepage "首页">
+<!ENTITY aboutSupport.experimentHomepage "主页">
 <!ENTITY aboutSupport.experimentBranch "分支">
 
 <!ENTITY aboutSupport.appBasicsTitle "应用程序概要">
@@ -50,7 +50,9 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 <!ENTITY aboutSupport.appBasicsEnabledPlugins "已启用的插件">
 <!ENTITY aboutSupport.appBasicsBuildConfig "构建配置">
 <!ENTITY aboutSupport.appBasicsUserAgent "用户代理">
+<!ENTITY aboutSupport.appBasicsOS "操作系统">
 <!ENTITY aboutSupport.appBasicsMemoryUse "内存使用">
+<!ENTITY aboutSupport.appBasicsPerformance "性能">
 
 <!-- LOCALIZATION NOTE the term "Service Workers" should not be translated. -->
 <!ENTITY aboutSupport.appBasicsServiceWorkers "已注册的 Service Worker">
@@ -84,6 +86,10 @@ variant of aboutSupport.showDir.label. -->
 
 <!ENTITY aboutSupport.graphicsTitle "图像">
 
+<!ENTITY aboutSupport.placeDatabaseTitle "Places 数据库">
+<!ENTITY aboutSupport.placeDatabaseIntegrity "完整性">
+<!ENTITY aboutSupport.placeDatabaseVerifyIntegrity "验证完整性">
+
 <!ENTITY aboutSupport.jsTitle "JavaScript">
 <!ENTITY aboutSupport.jsIncrementalGC "渐进式垃圾收集">
 
@@ -103,3 +109,12 @@ variant of aboutSupport.showDir.label. -->
 
 <!ENTITY aboutSupport.safeModeTitle "尝试安全模式">
 <!ENTITY aboutSupport.restartInSafeMode.label "以安全模式重新启动…">
+
+<!ENTITY aboutSupport.graphicsFeaturesTitle "特性">
+<!ENTITY aboutSupport.graphicsDiagnosticsTitle "诊断">
+<!ENTITY aboutSupport.graphicsFailureLogTitle "失败日志">
+<!ENTITY aboutSupport.graphicsGPU1Title "GPU #1">
+<!ENTITY aboutSupport.graphicsGPU2Title "GPU #2">
+<!ENTITY aboutSupport.graphicsDecisionLogTitle "决策日志">
+<!ENTITY aboutSupport.graphicsCrashGuardsTitle "崩溃守卫已禁用功能">
+<!ENTITY aboutSupport.graphicsWorkaroundsTitle "变通方法">

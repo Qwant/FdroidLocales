@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY pref.mailnews.title              "Mail &amp; nieuwsgroepen">
+<!ENTITY pref.mailnews.title              "E-mail &amp; nieuwsgroepen">
 <!ENTITY generalSettings.caption          "Algemene instellingen">
 <!ENTITY confirmMove.label                "Bevestiging vragen bij het verplaatsen van mappen naar de prullenbak">
 <!ENTITY confirmMove.accesskey            "B">
@@ -13,7 +13,7 @@
 
 <!ENTITY defaultMailSettings.description  "&brandShortName; als de standaardtoepassing gebruiken voor:">
 <!ENTITY setDefaultMail.label             "E-mail">
-<!ENTITY setDefaultMail.accesskey         "M">
+<!ENTITY setDefaultMail.accesskey         "m">
 <!ENTITY setDefaultNews.label             "Nieuws">
 <!ENTITY setDefaultNews.accesskey         "N">
 <!ENTITY setDefaultFeed.label             "Feeds">

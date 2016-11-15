@@ -8,8 +8,8 @@
 <!ENTITY treehead.sitename.label      "ਸਾਈਟ">
 <!ENTITY treehead.status.label        "ਹਾਲਤ">
 
-<!ENTITY removepermission.label       "ਸਾਈਟ ਹਟਾਓ">
-<!ENTITY removeallpermissions.label   "ਸਭ ਸਾਈਟਾਂ ਹਟਾਓ">
+<!ENTITY removepermission.label       "ਸਾਈਟ ਨੂੰ ਹਟਾਓ">
+<!ENTITY removeallpermissions.label   "ਸਭ ਸਾਈਟਾਂ ਨੂੰ ਹਟਾਓ">
 <!ENTITY removepermission.accesskey   "R">
 <!ENTITY removeallpermissions.accesskey "e">
 <!ENTITY address.label                "ਵੈਬ ਸਾਈਟ ਐਡਰੈੱਸ:">
@@ -22,5 +22,7 @@
 <!ENTITY allow.accesskey              "A">
 <!ENTITY windowClose.key              "w">
 
-<!ENTITY button.close.label           "ਬੰਦ ਕਰੋ">
-<!ENTITY button.close.accesskey       "C">
+<!ENTITY button.cancel.label          "ਰੱਦ ਕਰੋ">
+<!ENTITY button.cancel.accesskey      "C">
+<!ENTITY button.ok.label              "ਤਬਦੀਲੀਆਂ ਨੂੰ ਸੰਭਾਲੋ">
+<!ENTITY button.ok.accesskey          "S">

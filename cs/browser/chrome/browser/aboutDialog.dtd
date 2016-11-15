@@ -49,7 +49,7 @@
 <!ENTITY releaseNotes.link          "Co je nového">
 
 <!-- LOCALIZATION NOTE (bottomLinks.license): This is a link title that links to about:license. -->
-<!ENTITY bottomLinks.license        "Licenční informace">
+<!ENTITY bottomLinks.license        "Licence">
 
 <!-- LOCALIZATION NOTE (bottomLinks.rights): This is a link title that links to about:rights. -->
 <!ENTITY bottomLinks.rights         "O vašich právech">
@@ -65,6 +65,7 @@
 <!ENTITY update.adminDisabled       "Aktualizace jsou zakázány správcem">
 <!-- LOCALIZATION NOTE (update.otherInstanceHandlingUpdates): try to make the localized text short -->
 <!ENTITY update.otherInstanceHandlingUpdates "&brandShortName; je aktualizován jinou instancí">
+<!ENTITY update.restarting          "Restartování…">
 
 <!-- LOCALIZATION NOTE (update.failed.start,update.failed.linkText,update.failed.end):
      update.failed.start, update.failed.linkText, and update.failed.end all go into

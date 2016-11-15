@@ -6,9 +6,9 @@
     equal to the value of accountManager.size entity minus the value
     of accountTree.width entity. -->
 <!ENTITY identityDialog.style "min-width: 75ch;">
-<!ENTITY identityTitle.label    "Paramètres de l'identité">
+<!ENTITY identityTitle.label    "Paramètres de l’identité">
 <!ENTITY identityListDesc.label "Configurer les paramètres pour cette identité :">
 
 <!ENTITY settingsTab.label      "Paramètres">
-<!ENTITY copiesFoldersTab.label "Copies &amp; Dossiers">
-<!ENTITY addressingTab.label    "Rédaction &amp; adressage">
+<!ENTITY copiesFoldersTab.label "Copies et dossiers">
+<!ENTITY addressingTab.label    "Rédaction et adressage">

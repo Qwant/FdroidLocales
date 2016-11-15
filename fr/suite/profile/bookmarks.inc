@@ -24,7 +24,7 @@
 
 # LOCALIZATION NOTE (mozilla_org_long):
 # link title for http://www.mozilla.org/ (in normal bookmarks)
-#define mozilla_org_long L'organisation Mozilla
+#define mozilla_org_long L’organisation Mozilla
 
 # LOCALIZATION NOTE (mozilla_projects):
 # link title for http://www.mozilla.org/projects/
@@ -77,11 +77,11 @@
 # LOCALIZATION NOTE (seamonkey_l10n):
 # insert full bookmark line for localized SeaMonkey page (personal toolbar)
 # e.g. #define seamonkey_l10n <DT><A HREF="http://www.seamonkey.tlh/">SeaMonkey tlhIngan</a>
-#define seamonkey_l10n <DT><A HREF="http://www.frenchmozilla.fr/seamonkey.php">SeaMonkey en français</a>
+#define seamonkey_l10n  
 
 # LOCALIZATION NOTE (seamonkey_l10n_long):
 # insert full bookmark line for localized SeaMonkey page (normal bookmark)
 # e.g. #define seamonkey_l10n <DT><A HREF="http://www.seamonkey.tld/">tlhIngan Hol SeaMonkey</a>
-#define seamonkey_l10n_long <DT><A HREF="http://www.frenchmozilla.fr/seamonkey.php">SeaMonkey en français</a>
+#define seamonkey_l10n_long  
 
 #unfilter emptyLines

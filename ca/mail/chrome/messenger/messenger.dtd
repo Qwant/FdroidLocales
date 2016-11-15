@@ -164,6 +164,8 @@
 <!ENTITY recentFolders.accesskey "R">
 <!ENTITY compactVersion.label "Visualització compacta">
 <!ENTITY compactVersion.accesskey "V">
+<!ENTITY folderPaneBar.label "Barra d'eines de la subfinestra de carpetes">
+<!ENTITY folderModeSelector.label "Vistes de carpetes">
 <!-- Sort Menu -->
 
 <!ENTITY sortMenu.label "Ordena">
@@ -361,6 +363,8 @@
 <!ENTITY editAsNewMsgCmd.label "Edita com un missatge nou">
 <!ENTITY editAsNewMsgCmd.accesskey "E">
 <!ENTITY editAsNewMsgCmd.key "e">
+<!ENTITY editDraftMsgCmd.label "Edita l'esborrany">
+<!ENTITY editDraftMsgCmd.accesskey "b">
 <!ENTITY createFilter.label "Crea un filtre…">
 <!ENTITY createFilter.accesskey "a">
 <!ENTITY moveMsgToMenu.label "Mou">
@@ -716,6 +720,7 @@
 <!ENTITY contextOpenContainingFolder.accesskey "n">
 <!ENTITY contextEditMsgAsNew.label "Edita com un missatge nou">
 <!ENTITY contextEditMsgAsNew.accesskey "E">
+<!ENTITY contextEditDraftMsg.label "Edita l'esborrany">
 <!ENTITY contextArchive.label "Arxiva">
 <!ENTITY contextArchive.accesskey "x">
 <!ENTITY contextReplySender.label "Respon només al remitent">
@@ -743,9 +748,15 @@
 <!ENTITY contextCopyMsgMenu.label "Copia a">
 <!ENTITY contextCopyMsgMenu.accesskey "C">
 <!ENTITY contextKillThreadMenu.label "Ignora la conversa">
+<!ENTITY contextKillSubthreadMenu.accesskey "b">
 <!ENTITY contextKillThreadMenu.accesskey "I">
 <!ENTITY contextKillSubthreadMenu.label "Ignora la subconversa">
 <!ENTITY contextWatchThreadMenu.label "Vigila la conversa">
+<!--LOCALIZATION NOTE (contextWatchThreadMenu.accesskey):
+   In the en-US locale we ran out of access keys, so there is an empty access key for
+   Watch Thread. Localizers can pick a suitable key
+  -->
+<!ENTITY contextWatchThreadMenu.accesskey "">
 <!ENTITY contextSaveAs.label "Anomena i desa…">
 <!ENTITY contextSaveAs.accesskey "s">
 <!ENTITY contextPrint.label "Imprimeix…">
@@ -812,11 +823,11 @@
 <!-- Quick Search Bar -->
 <!-- LOCALIZATION NOTE (quickSearchCmd.key):
      This is actually the key used for the global message search box; we have
-     not changed 
+     not changed
      -->
 
 <!ENTITY quickSearchCmd.key "k">
-<!-- LOCALIZATION NOTE (search.label.base):
+<!-- LOCALIZATION NOTE (search.label.base1):
      This is the base of the empty text for the global search box.  We replace
      #1 with the contents of the appropriate search.keyLabel.* value for the
      platform.
@@ -825,7 +836,7 @@
      to get to the box faster.  If the global indexer is disabled, the search
      box will be collapsed and the user will never see this message.
      -->
-<!ENTITY search.label.base "Cerca… #1">
+<!ENTITY search.label.base1 "Cerca #1">
 <!-- LOCALIZATION NOTE (search.keyLabel.nonmac):
      The description of the key-binding to get into the global search box on
      windows and linux (which use the control key).  We use the key defined in
@@ -854,6 +865,8 @@
 <!ENTITY SendMessageTo.accesskey "R">
 <!ENTITY CopyEmailAddress.label "Copia l'adreça electrònica">
 <!ENTITY CopyEmailAddress.accesskey "C">
+<!ENTITY CopyNameAndEmailAddress.label "Copia el nom i l'adreça electrònica">
+<!ENTITY CopyNameAndEmailAddress.accesskey "n">
 <!ENTITY CopyNewsgroupName.label "Copia el nom del grup de discussió">
 <!ENTITY CopyNewsgroupName.accesskey "C">
 <!ENTITY CopyNewsgroupURL.label "Copia l'URL del grup de discussió">

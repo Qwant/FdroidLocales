@@ -41,7 +41,7 @@
 <!ENTITY helpus.start               "ಸಹಾಯ ಮಾಡಲು ಇಚ್ಛಿಸುವಿರಾ? ">
 <!-- LOCALIZATION NOTE (helpus.donateLink): This is a link title that links to https://sendto.mozilla.org/page/contribute/Give-Now?source=mozillaorg_default_footer&ref=firefox_about&utm_campaign=firefox_about&utm_source=firefox&utm_medium=referral&utm_content=20140929_FireFoxAbout. -->
 <!ENTITY helpus.donateLink          "ದೇಣಿಗೆಯನ್ನು ನೀಡಿ">
-<!ENTITY helpus.middle              "ಅಥವ">
+<!ENTITY helpus.middle              " ಅಥವ ">
 <!-- LOCALIZATION NOTE (helpus.getInvolvedLink): This is a link title that links to http://www.mozilla.org/contribute/. -->
 <!ENTITY helpus.getInvolvedLink     "ನೀವೂ ಪಾಲ್ಗೊಳ್ಳಿ!">
 <!ENTITY helpus.end                 "‌">
@@ -65,6 +65,7 @@
 <!ENTITY update.adminDisabled       "ನಿಮ್ಮ ವ್ಯವಸ್ಥೆಯ ನಿರ್ವಾಹಕರಿಂದ ಅಪ್‌ಡೇಟ್‌ಗಳನ್ನು ಅಶಕ್ತಗೊಳಿಸಲಾಗಿದೆ">
 <!-- LOCALIZATION NOTE (update.otherInstanceHandlingUpdates): try to make the localized text short -->
 <!ENTITY update.otherInstanceHandlingUpdates "&brandShortName; ಅನ್ನು ಇನ್ನೊಂದು ನಿದರ್ಶನದಿಂದ ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗುತ್ತಿದೆ">
+<!ENTITY update.restarting          "ಮರಳಿಆರಂಭಿಸಲಾಗುತ್ತಿದೆ…">
 <!-- LOCALIZATION NOTE (update.failed.start,update.failed.linkText,update.failed.end):
      update.failed.start, update.failed.linkText, and update.failed.end all go into
      one line with linkText being wrapped in an anchor that links to a site to download

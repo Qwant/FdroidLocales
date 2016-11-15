@@ -4,17 +4,58 @@
 
 <!ENTITY aboutTelemetry.pageTitle "Telemetry Data">
 
-<!ENTITY aboutTelemetry.telemetryEnabled "    Telemetry is <span>enabled</span>.">
+<!ENTITY aboutTelemetry.changeDataChoices "  ပြောင်းလဲရန်">
 
-<!ENTITY aboutTelemetry.telemetryDisabled "    Telemetry is <span>disabled</span>.">
+<!ENTITY aboutTelemetry.uploadEnabled "  FHR ဒေတာပို့လွှတ်မှုကို <span>ဖွင့်ထားသည်</span>။">
+
+<!ENTITY aboutTelemetry.uploadDisabled "  FHR ဒေတာပို့လွှတ်မှုကို <span>ပိတ်ထားသည်</span>။">
+
+<!ENTITY aboutTelemetry.extendedRecordingEnabled "  Extended Telemetry ရုပ်/သံသွင်းခြင်းကို <span>ဖွင့်ထားသည်</span>။">
+
+<!ENTITY aboutTelemetry.extendedRecordingDisabled "  Extended Telemetry ရုပ်/သံသွင်းခြင်းကို <span>ပိတ်ထားသည်</span>။">
+
+<!ENTITY aboutTelemetry.pingDataSource "ကွန်ယက်စာတို(ပင်းန်) ဒေတာရင်းမြစ်။">
+
+<!ENTITY aboutTelemetry.showCurrentPingData "လက်ရှိ ပင်းန် ဒေတာ">
+
+<!ENTITY aboutTelemetry.showArchivedPingData "သိမ်းထားသည့် ပင်းန် ဒေတာ">
+
+<!ENTITY aboutTelemetry.pingDataDisplay "Ping အချက်အလက်ပြသမှု။:">
+
+<!ENTITY aboutTelemetry.structured "ဖွဲ့စည်းထားသော">
+
+<!ENTITY aboutTelemetry.raw "JSON အကြမ်းထည်">
+
+<!ENTITY aboutTelemetry.showSubsessionData "အချိန်ခွဲသိမ်း ဒေတာကို ပြပါ">
+
+<!ENTITY aboutTelemetry.choosePing "ပင်းန်ကို ရွေးရန်။">
+
+<!ENTITY aboutTelemetry.showNewerPing "&lt;&lt; ပင်းန် အသစ်">
+
+<!ENTITY aboutTelemetry.showOlderPing "ပင်းန် အဟောင်း &gt;&gt;">
+
+<!ENTITY aboutTelemetry.rawPingData "အကြမ်းထည် Ping အချက်အလက်…">
+
+<!ENTITY aboutTelemetry.archiveWeekHeader "ရက်သတ္တပတ်">
+
+<!ENTITY aboutTelemetry.archivePingHeader "ပင်းန်">
 
 <!ENTITY aboutTelemetry.generalDataSection "  အထွေထွေ အချက်အလက်">
+
+<!ENTITY aboutTelemetry.environmentDataSection "  Environment Data">
+
+<!ENTITY aboutTelemetry.telemetryLogSection "  Telemetry မှတ်တမ်း">
 
 <!ENTITY aboutTelemetry.slowSqlSection " Slow SQL Statements">
 
 <!ENTITY aboutTelemetry.chromeHangsSection " Browser Hangs">
 
 <!ENTITY aboutTelemetry.threadHangStatsSection "  Thread Hangs">
+
+<!ENTITY aboutTelemetry.scalarsSection "
+  
+  Scalars
+  ">
 
 <!ENTITY aboutTelemetry.histogramsSection "  Histograms">
 
@@ -26,7 +67,7 @@
 
 <!ENTITY aboutTelemetry.lateWritesSection "နောက်ကျသောရေးသားချက်">
 
-<!ENTITY aboutTelemetry.systemInfoSection "စနစ်၏အချက်အလက်များ">
+<!ENTITY aboutTelemetry.sessionInfoSection "  အသုံးပြုမှုကာလအချက်အလက်">
 
 <!ENTITY aboutTelemetry.addonHistogramsSection "   Histograms Collected by Add-ons">
 
@@ -41,3 +82,7 @@
 <!ENTITY aboutTelemetry.hideSymbols "  Show raw data from hangs">
 
 <!ENTITY aboutTelemetry.filterText "  Filter (strings or /regexp/)">
+
+<!ENTITY aboutTelemetry.payloadChoiceHeader "  ကုန်">
+
+<!ENTITY aboutTelemetry.rawPayload "  ကုန်ကြမ်း">

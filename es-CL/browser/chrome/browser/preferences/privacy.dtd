@@ -13,7 +13,7 @@
 <!ENTITY  trackingProtectionExceptions.label   "Excepciones…">
 <!ENTITY  trackingProtectionExceptions.accesskey "x">
 
-<!ENTITY tracking.label                 "Rastreo">
+<!ENTITY tracking.label                 "Seguimiento">
 <!ENTITY trackingProtectionPBM5.label         "Usar protección de seguimiento en ventanas privadas">
 <!ENTITY trackingProtectionPBM5.accesskey     "y">
 <!ENTITY trackingProtectionPBMLearnMore.label "Aprender más">
@@ -104,3 +104,8 @@
 
 <!ENTITY  clearOnCloseSettings.label     "Ajustes…">
 <!ENTITY  clearOnCloseSettings.accesskey "g">
+
+<!ENTITY  browserContainersHeader.label         "Pestañas contenedoras">
+<!ENTITY  browserContainersLearnMore.label      "Aprender más">
+<!ENTITY  browserContainersEnabled.label        "Activar pestañas contenedoras">
+<!ENTITY  browserContainersEnabled.accesskey    "n">

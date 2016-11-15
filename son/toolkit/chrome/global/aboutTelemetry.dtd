@@ -52,6 +52,7 @@
 
 <!ENTITY aboutTelemetry.threadHangStatsSection "  Šilli deejarey">
 
+
 <!ENTITY aboutTelemetry.histogramsSection "--Titilawey">
 
 <!ENTITY aboutTelemetry.keyedHistogramsSection " Bayhaya titila kufalantey">
@@ -79,3 +80,5 @@
 <!ENTITY aboutTelemetry.filterText "  Fay (tenjirey wala /regexp/)">
 
 <!ENTITY aboutTelemetry.payloadChoiceHeader "  Jeeje">
+
+<!ENTITY aboutTelemetry.rawPayload "  Jeeje gani">
