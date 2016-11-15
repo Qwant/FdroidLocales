@@ -61,7 +61,7 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
                  final String uiLocale = appLocaleString;
                  ThreadUtils.postToUiThread(new Runnable() {
                      @Override
-@@ -1555,34 +1530,6 @@
+@@ -1530,29 +1505,6 @@
  
          mPromptService = new PromptService(this);
  
@@ -77,11 +77,6 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
 -                if (rec != null) {
 -                    rec.recordJavaStartupTime(javaDuration);
 -                }
--
--                // Kick off our background services. We do this by invoking the broadcast
--                // receiver, which uses the system alarm infrastructure to perform tasks at
--                // intervals.
--                GeckoPreferences.broadcastHealthReportUploadPref(GeckoApp.this);
 -            }
 -        }, 50);
 -
@@ -151,18 +146,6 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
  
                  // If we haven't done it before, cleanup any old files in our old temp dir
                  if (prefs.getBoolean(GeckoApp.PREFS_CLEANUP_TEMP_FILES, true)) {
-@@ -2076,11 +1996,6 @@
-                 }
- 
-                 editor.apply();
--
--                // In theory, the first browser session will not run long enough that we need to
--                // prune during it and we'd rather run it when the browser is inactive so we wait
--                // until here to register the prune service.
--                GeckoPreferences.broadcastHealthReportPrune(context);
-             }
-         });
- 
 @@ -2172,18 +2087,6 @@
              }
          }
@@ -218,49 +201,12 @@ diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
 diff -r 090cfb572e72 mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java
 --- a/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Sat Jul 30 00:00:00 2016 -0000
 +++ b/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Sat Jul 30 00:00:00 2016 -0000
-@@ -965,31 +965,6 @@
-         }
-     }
- 
--    /**
--     * Broadcast the provided value as the value of the
--     * <code>PREFS_HEALTHREPORT_UPLOAD_ENABLED</code> pref.
--     */
--    public static void broadcastHealthReportUploadPref(final Context context, final boolean value) {
--        //broadcastPrefAction(context,
--        //                    HealthReportConstants.ACTION_HEALTHREPORT_UPLOAD_PREF,
--        //                    PREFS_HEALTHREPORT_UPLOAD_ENABLED,
--        //                    value);
--    }
--
--    /**
--     * Broadcast the current value of the
--     * <code>PREFS_HEALTHREPORT_UPLOAD_ENABLED</code> pref.
--     */
--    public static void broadcastHealthReportUploadPref(final Context context) {
--        //final boolean value = getBooleanPref(context, PREFS_HEALTHREPORT_UPLOAD_ENABLED, true);
--        //broadcastHealthReportUploadPref(context, value);
--    }
--
--    public static void broadcastHealthReportPrune(final Context context) {
--        //final Intent intent = new Intent(HealthReportConstants.ACTION_HEALTHREPORT_PRUNE);
--        //broadcastAction(context, intent);
--    }
--
-     /**
-      * Broadcast the provided value as the value of the
-      * <code>PREFS_GEO_REPORTING</code> pref.
-@@ -1185,14 +1160,6 @@
+@@ -1185,9 +1160,6 @@
              UpdateServiceHelper.setAutoDownloadPolicy(this, UpdateService.AutoDownloadPolicy.get((String) newValue));
          } else if (PREFS_UPDATER_URL.equals(prefName)) {
              UpdateServiceHelper.setUpdateUrl(this, (String) newValue);
 -        } else if (PREFS_HEALTHREPORT_UPLOAD_ENABLED.equals(prefName)) {
--            // The healthreport pref only lives in Android, so we do not persist
--            // to Gecko, but we do broadcast intent to the health report
--            // background uploader service, which will start or stop the
--            // repeated background upload attempts.
 -            final Boolean newBooleanValue = (Boolean) newValue;
--            broadcastHealthReportUploadPref(this, newBooleanValue);
 -            AdjustConstants.getAdjustHelper().setEnabled(newBooleanValue);
          } else if (PREFS_GEO_REPORTING.equals(prefName)) {
              if ((Boolean) newValue) {
@@ -275,9 +221,9 @@ diff -r 090cfb572e72 mobile/android/base/moz.build
 -    'health/HealthRecorder.java',
 -    'health/SessionInformation.java',
 -    'health/StubbedHealthRecorder.java',
+     'home/activitystream/ActivityStream.java',
      'home/BookmarkFolderView.java',
      'home/BookmarkScreenshotRow.java',
-     'home/BookmarksListAdapter.java',
 diff -r 090cfb572e72 mobile/android/search/java/org/mozilla/search/SearchActivity.java
 --- a/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Sat Jul 30 00:00:00 2016 -0000
 +++ b/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Sat Jul 30 00:00:00 2016 -0000

@@ -27,6 +27,7 @@ rm -R dom/indexedDB/test/
 rm -R dom/media/webspeech/recognition/models/
 rm -R dom/security/test/
 rm -R dom/tests/
+rm -R dom/xhr/tests/
 rm -R layout/base/crashtests/
 rm -R layout/generic/crashtests/
 rm -R layout/generic/test/
@@ -73,11 +74,12 @@ sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsEmbedFunctions.cpp
 sed -i -e '/tests\//d' accessible/moz.build
 sed -i -e '/source\/test\//d' -e '/GENERATED_FILES += addons/,+5d' addon-sdk/moz.build
 sed -i -e '/testing\/web-platform\/mach_commands.py/d' build/mach_bootstrap.py
-sed -i -e '/MOCHITEST/,+14d' devtools/shared/apps/moz.build
+sed -i -e '/MOCHITEST/,+12d' devtools/shared/apps/moz.build
 sed -i -e '/TESTS_MANIFESTS/,+36d' docshell/moz.build
 sed -i -e '/tests\//d' dom/apps/moz.build
 sed -i -e '/test\//d' dom/html/moz.build
 sed -i -e '/TEST_DIRS/,+14d' dom/indexedDB/moz.build
+sed -i -e '/TEST/d' dom/xhr/moz.build
 sed -i -e '/MOCHITEST/d' layout/generic/moz.build
 sed -i -e '/reftest/d'  -e '/crashtest/d' layout/moz.build
 sed -i -e '/classycle_jar/,+7d' -e 's/.geckoview.deps ././g' -e 's/PROGUARD_PASSES=1/PROGUARD_PASSES=3/g' mobile/android/base/Makefile.in
