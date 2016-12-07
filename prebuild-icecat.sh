@@ -10,8 +10,6 @@ rm -R toolkit/crashreporter/google-breakpad/src/third_party/linux/
 
 rm -R accessible/tests/
 rm -R addon-sdk/source/test/
-rm -R b2g/branding/
-rm -R b2g/components/test/
 rm -R browser/branding/*/dsstore
 rm -R browser/components/migration/tests/unit/
 rm -R build/mobile/sutagent/
@@ -82,7 +80,6 @@ sed -i -e '/test\//d' dom/html/moz.build
 sed -i -e '/TEST_DIRS/,+14d' dom/indexedDB/moz.build
 sed -i -e '/MOCHITEST/d' layout/generic/moz.build
 sed -i -e '/reftest/d'  -e '/crashtest/d' layout/moz.build
-sed -i -e '/classycle_jar/,+7d' -e 's/.geckoview.deps ././g' -e 's/PROGUARD_PASSES=1/PROGUARD_PASSES=3/g' mobile/android/base/Makefile.in
 sed -i -e '/TEST/d' modules/libjar/moz.build
 sed -i -e '/TEST/d' modules/libjar/zipwriter/moz.build
 sed -i -e '/xpcshell.ini/d' toolkit/components/downloads/moz.build
@@ -93,8 +90,9 @@ sed -i -e '/tests\//d' toolkit/modules/moz.build
 sed -i -e '/tests/d' toolkit/mozapps/update/moz.build
 
 sed -i -e 's/android:debuggable="true"//g' mobile/android/base/AndroidManifest.xml.in
-sed -i -e '/MOZ_SERVICES_HEALTHREPORT/d' -e '/MOZ_DEVICES/d' -e '/MOZ_SAFE_BROWSING/d' -e '/MOZ_ANDROID_RESOURCE_CONSTRAINED/,+2d' mobile/android/confvars.sh
-echo -e 'MOZ_DEVICES=\nMOZ_NATIVE_DEVICES=\nMOZ_SERVICES_HEALTHREPORT=\nMOZ_SAFE_BROWSING=\n' >> mobile/android/confvars.sh
+sed -i -e '/classycle_jar/,+7d' -e 's/.geckoview.deps ././g' -e 's/PROGUARD_PASSES=1/PROGUARD_PASSES=3/g' mobile/android/base/Makefile.in
+
+#L10N
 echo "mk_add_options 'export MOZ_CHROME_MULTILOCALE=$(tr '\n' ' ' <  $REPO/used-locales)'" >> .mozconfig
 echo "mk_add_options 'export L10NBASEDIR=$REPO'" >> .mozconfig
 echo "ac_add_options --with-l10n-base=$REPO" >> .mozconfig
@@ -120,26 +118,4 @@ sed -i -e 's/AppConstants.MOZILLA_OFFICIAL/false/g' mobile/android/base/java/org
 ##Get rid of Gradle
 rm -R gradle/
 rm -R build.gradle
-rm -R mobile/android/gradle/
 rm -R mobile/android/app/base/build.gradle
-sed -i -e '/gradle/d' mobile/android/moz.build
-
-##Disable Gecko Media Pluggins support 
-sed -i -e '/gmp-provider/d' mobile/android/app/mobile.js
-echo 'pref("media.gmp-provider.enabled", false);' >> mobile/android/app/mobile.js
-
-##Avoid openh264 being downloaded
-echo 'pref("media.gmp-manager.url.override", "data:text/plain,");' >> mobile/android/app/mobile.js
-
-##Disable openh264 if it was already downloaded
-echo 'pref("media.gmp-gmpopenh264.enabled", false);' >> mobile/android/app/mobile.js
-
-
-##Disable Casting and mirroring (Roku, chromecast)
-sed -i -e '/casting.enabled/d' mobile/android/app/mobile.js
-echo 'pref("browser.casting.enabled", false);' >> mobile/android/app/mobile.js
-
-##Already disabled upstream (BUG #1131084)
-##pref("browser.mirroring.enabled", false);
-##
-##pref("browser.mirroring.enabled.roku", false);
