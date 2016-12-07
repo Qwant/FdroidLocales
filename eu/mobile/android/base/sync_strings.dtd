@@ -4,7 +4,7 @@
 <!-- Don't localize these. They're here until they have
      a better place to live. -->
 
-<!ENTITY syncBrand.fullName.label "Firefox Sync">
+<!ENTITY syncBrand.fullName.label "IceCat Sync">
 <!ENTITY syncBrand.shortName.label "Sync">
 <!-- Main titles. -->
 
@@ -16,7 +16,7 @@
 
 <!ENTITY sync.subtitle.connect.label "Zure gailu berria aktibatzeko, hautatu “Konfiguratu &syncBrand.shortName.label;” gailuan.">
 <!ENTITY sync.subtitle.header2.label "Idatzi kode hau zure beste gailuan">
-<!ENTITY sync.subtitle.connectlocation2.label "Hautatu “&sync.title.pair.label;” zure beste gailuko Firefoxen aukeren &syncBrand.shortName.label; atalean.">
+<!ENTITY sync.subtitle.connectlocation2.label "Hautatu “&sync.title.pair.label;” zure beste gailuko IceCaten aukeren &syncBrand.shortName.label; atalean.">
 <!ENTITY sync.subtitle.pair.label "Aktibatzeko, hautatu “Parekatu gailua” zure beste gailuan.">
 <!ENTITY sync.pin.default.label "...\n...\n...\n">
 <!ENTITY sync.pin.oneline.label "...">
@@ -42,7 +42,7 @@
 <!ENTITY sync.button.manual.label "Eskuzko konfigurazioa">
 <!ENTITY sync.subtitle.nointernet.label "Ez dago Internet konexiorik erabilgarri.">
 <!ENTITY sync.subtitle.failaccount.label "Zure gailuan kontua sortzeak huts egin du.">
-<!ENTITY sync.subtitle.failmultiple.label "Firefox bat baino gehiago dauzkazu instalatuta? Une honetan &syncBrand.fullName.label;(e)k Firefoxen instalazio bakarra onartzen du. &syncBrand.shortName.label; erabiltzeko, desinstalatu beste instantziak mesedez.">
+<!ENTITY sync.subtitle.failmultiple.label "IceCat bat baino gehiago dauzkazu instalatuta? Une honetan &syncBrand.fullName.label;(e)k IceCaten instalazio bakarra onartzen du. &syncBrand.shortName.label; erabiltzeko, desinstalatu beste instantziak mesedez.">
 <!-- Setup Success -->
 
 <!ENTITY sync.title.success.label "Konfigurazioa osatuta">
@@ -53,7 +53,7 @@
 
 <!ENTITY sync.pair.tryagain.label "Saiatu berriro mesedez.">
 <!ENTITY sync.pair.connectlocation.label "Zure gailu berria aktibatzeko, hautatu “Konfiguratu &syncBrand.shortName.label;” gailuan eta gero hautatu “Badaukat kontua”.">
-<!-- Firefox SyncAdapter Settings Screen -->
+<!-- IceCat SyncAdapter Settings Screen -->
 
 <!ENTITY sync.settings.options.label "Aukerak">
 <!ENTITY sync.summary.pair.label "Lotu beste gailu bat zure &syncBrand.shortName.label; kontura">
@@ -74,10 +74,10 @@
 
 <!ENTITY sync.account.label "&syncBrand.fullName.label; (zaharkituta)">
 <!-- Localization note (sync.default.client.name): Default string of the "Device
-     name" menu item upon setting up Firefox Sync.  The placeholder &formatS1
-     will be replaced by the name of the Firefox release channel and &formatS2
+     name" menu item upon setting up IceCat Sync.  The placeholder &formatS1
+     will be replaced by the name of the IceCat release channel and &formatS2
      by the model name of the Android device. Examples look like "Aurora on
-     GT-I1950" and "Fennec on MI 2S". -->
+     GT-I1950" and "IceCatMobile on MI 2S". -->
 
 <!ENTITY sync.default.client.name "&formatS1;@&formatS2;">
 <!-- Bookmark folder strings -->
@@ -111,10 +111,10 @@
 <!ENTITY sync.text.redirect.to.set.up.sync.label "Konfiguratu &syncBrand.fullName.label; zure gailuan beste gailuetara fitxak bidaltzeko.">
 <!ENTITY sync.text.tab.sent.label "Zure fitxa bidali da!">
 <!ENTITY sync.text.tab.not.sent.label "Arazo bat izan da zure fitxa bidaltzean.">
-<!-- Firefox Account strings. -->
+<!-- IceCat Account strings. -->
 
 
-<!ENTITY fxaccount_full_label "Firefoxeko kontuak">
+<!ENTITY fxaccount_full_label "IceCateko kontuak">
 
 <!ENTITY fxaccount_custom_server_account_title "Zerbitzariko kontua erabiliz">
 <!ENTITY fxaccount_custom_server_sync_title "Sync datuak zerbitzarian biltegiratuz">
@@ -128,7 +128,7 @@
 <!ENTITY fxaccount_password_show "Erakutsi">
 <!-- Localization note: these are shown in screens after the user has
      created or signed in to an account, and take the user back to
-     Firefox. -->
+     IceCat. -->
 
 <!ENTITY fxaccount_back_to_browsing "Atzera nabigaziora">
 <!-- Localization note: the following two strings are interpolated
@@ -143,18 +143,18 @@
 <!ENTITY fxaccount_getting_started_welcome_to_sync "Ongi etorri &syncBrand.shortName.label;(e)ra">
 <!ENTITY fxaccount_getting_started_description2 "Hasi saioa zure fitxak, laster-markak, saio-hasierak eta gehiago sinkronizatzeko.">
 <!ENTITY fxaccount_getting_started_get_started "Hasi erabiltzen">
-<!ENTITY fxaccount_getting_started_old_firefox "&syncBrand.shortName.label;(e)n bertsio zaharrago bat darabilzu?">
-<!-- Localization note: the Firefox below should not change with the
-     particular version of Firefox installed (Release, Beta, Aurora,
-     etc).  The account remains a "Firefox Account". -->
+<!ENTITY fxaccount_getting_started_old_icecat "&syncBrand.shortName.label;(e)n bertsio zaharrago bat darabilzu?">
+<!-- Localization note: the IceCat below should not change with the
+     particular version of IceCat installed (Release, Beta, Aurora,
+     etc).  The account remains a "IceCat Account". -->
 
-<!ENTITY fxaccount_create_account_header2 "Sortu Firefox kontua">
+<!ENTITY fxaccount_create_account_header2 "Sortu IceCat kontua">
 <!ENTITY fxaccount_create_account_password_length_restriction "Gutxienez 8 karaktere izan behar ditu">
 <!ENTITY fxaccount_create_account_day_of_birth "Eguna">
 <!ENTITY fxaccount_create_account_month_of_birth "Hilabetea">
 <!ENTITY fxaccount_create_account_year_of_birth "Jaiotze-urtea">
 <!-- Localization note: &formatS1; is fxaccount_policy_linktos, &formatS2; is fxaccount_policy_linkprivacy, both hyperlinked. -->
-<!ENTITY fxaccount_create_account_policy_text2 "Jarraitzearekin bat, Firefoxen hodeieko zerbitzuen &formatS1; eta &formatS2; onartzen ditut.">
+<!ENTITY fxaccount_create_account_policy_text2 "Jarraitzearekin bat, IceCaten hodeieko zerbitzuen &formatS1; eta &formatS2; onartzen ditut.">
 <!ENTITY fxaccount_create_account_button "Hurrengoa">
 <!ENTITY fxaccount_create_account_choose_what_to_sync "Aukeratu zer sinkronizatu">
 <!ENTITY fxaccount_create_account_sign_in_instead "Baduzu kontua? Hasi saioa">
@@ -166,7 +166,7 @@
 <!ENTITY fxaccount_account_create_not_allowed_learn_more "Argibide gehiago">
 
 <!ENTITY fxaccount_confirm_account_header "Berretsi kontua">
-<!-- Localization note: &formatS; is the Firefox Account's email address. -->
+<!-- Localization note: &formatS; is the IceCat Account's email address. -->
 <!ENTITY fxaccount_confirm_account_verification_link "Egiaztapen-lotura &formatS; helbidera bidali da">
 <!ENTITY fxaccount_confirm_account_resend_email "Birbidali mezua">
 <!ENTITY fxaccount_confirm_account_change_email "Helbide elektronikoa ahaztuta?">
@@ -195,7 +195,7 @@
 <!ENTITY fxaccount_finish_migrating_button_label "Amaitu bertsio-berritzea">
 <!ENTITY fxaccount_finish_migrating_description "Bertsio-berritzeak datu asko transferi ditzake. Hobe da Wi-Fi sare batean egotea.">
 
-<!ENTITY fxaccount_status_header2 "Firefox kontua">
+<!ENTITY fxaccount_status_header2 "IceCat kontua">
 <!ENTITY fxaccount_status_signed_in_as "Saioa hasita:">
 <!ENTITY fxaccount_status_manage_account "Kudeatu kontua">
 <!ENTITY fxaccount_status_auth_server "Kontuaren zerbitzaria">
@@ -210,7 +210,7 @@
 <!ENTITY fxaccount_status_needs_upgrade "&brandShortName; bertsio-berritu behar duzu saioa hasteko.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled "&syncBrand.shortName.label; konfiguratuta dago baina ez da ari automatikoki sinkronizatzen. Txandakatu \u0027Auto-sinkronizatu datuak\u0027 aukera Androideko Ezarpenak &gt; Datuen erabilpena atalean.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled_v21 "&syncBrand.shortName.label; konfiguratuta dago baina ez da ari automatikoki sinkronizatzen. Txandakatu \u0027Auto-sinkronizatu datuak\u0027 aukera Androideko Ezarpenak &gt; Kontuak atalean.">
-<!ENTITY fxaccount_status_needs_finish_migrating "Sakatu zure Firefoxeko kontu berrian saioa hasteko.">
+<!ENTITY fxaccount_status_needs_finish_migrating "Sakatu zure IceCateko kontu berrian saioa hasteko.">
 <!ENTITY fxaccount_status_bookmarks "Laster-markak">
 <!ENTITY fxaccount_status_history "Historia">
 <!ENTITY fxaccount_status_passwords2 "Saio-hasierak">
@@ -225,21 +225,21 @@
 <!ENTITY fxaccount_status_more "Gehiago&ellipsis;">
 <!ENTITY fxaccount_remove_account "Deskonektatu&ellipsis;">
 
-<!ENTITY fxaccount_remove_account_dialog_title "Firefoxeko kontua kendu?">
+<!ENTITY fxaccount_remove_account_dialog_title "IceCateko kontua kendu?">
 <!ENTITY fxaccount_remove_account_dialog_message "&brandShortName;(e)k zure kontuarekin sinkronizatzeari utziko dio baina ez du gailu honetako zure nabigatze-daturik ezabatuko.">
 <!-- Localization note: format string below will be replaced
-     with the Firefox Account's email address. -->
-<!ENTITY fxaccount_remove_account_toast "&formatS; Firefoxeko kontua kendu egin da.">
+     with the IceCat Account's email address. -->
+<!ENTITY fxaccount_remove_account_toast "&formatS; IceCateko kontua kendu egin da.">
 
 <!ENTITY fxaccount_enable_debug_mode "Gaitu arazketa modua">
 <!-- Localization note: this is the name shown by the Android system
-     itself for a Firefox Account. Don't localize this. -->
+     itself for a IceCat Account. Don't localize this. -->
 
-<!ENTITY fxaccount_account_type_label "Firefox">
+<!ENTITY fxaccount_account_type_label "IceCat">
 <!-- Localization note: these are shown by the Android system itself,
-     when the user navigates to the Android > Accounts > {Firefox
-     Account} Screen. The link takes the user to the Firefox Account
-     status activity, which lets them manage their Firefox
+     when the user navigates to the Android > Accounts > {IceCat
+     Account} Screen. The link takes the user to the IceCat Account
+     status activity, which lets them manage their IceCat
      Account. -->
 
 <!ENTITY fxaccount_options_title "&syncBrand.shortName.label; aukerak">
@@ -248,7 +248,7 @@
      has been made to the remote server, and an error of some type has
      been returned. -->
 
-<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Firefox bertsio-berritu behar duzu">
+<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "IceCat bertsio-berritu behar duzu">
 <!-- Localization note: the format string will be fxaccount_sign_in_button_label, linkified. -->
 
 <!ENTITY fxaccount_remote_error_ATTEMPT_TO_CREATE_AN_ACCOUNT_THAT_ALREADY_EXISTS_2 "Kontua badago lehendik ere. &formatS1;">
@@ -263,12 +263,12 @@
 
 <!ENTITY fxaccount_sync_sign_in_error_notification_title2 "&syncBrand.shortName.label; konektatu gabe dago">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_sign_in_error_notification_text2 "Sakatu &formatS; gisa saioa hasteko">
 
 <!ENTITY fxaccount_sync_finish_migrating_notification_title "&syncBrand.shortName.label; bertsio-berritzea amaitu?">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_finish_migrating_notification_text "Sakatu &formatS; gisa saioa hasteko">
 <!-- Localization note: the following strings are used in a
      notification and should be kept as short as possible. -->

@@ -10,7 +10,7 @@
 
 <!ENTITY importFromNothing.label        "कुछ मत आयात करें">
 <!ENTITY importFromNothing.accesskey    "D">
-<!ENTITY importFromSeamonkey.label      "Netscape 6, 7 या Mozilla 1.x">
+<!ENTITY importFromSeamonkey.label      "Netscape 6, 7 या GNU 1.x">
 <!ENTITY importFromSeamonkey.accesskey  "N">
 <!ENTITY importFromNetscape4.label      "Netscape 4.x">
 <!ENTITY importFromNetscape4.accesskey  "4">

@@ -105,7 +105,7 @@ values from browser.dtd.  -->
   -  boolean preference in about:config, in the options panel. -->
 
 <!ENTITY options.enableRemote.label3    "Zdalene pytanje za zmylkami">
-<!ENTITY options.enableRemote.tooltip   "Zmóžnjenje tutoho nastajenja dowoli wuwiwarskim nastrojam, zdalene instancu Firefox kaž Firefox OS za zmylkami přepytać">
+<!ENTITY options.enableRemote.tooltip   "Zmóžnjenje tutoho nastajenja dowoli wuwiwarskim nastrojam, zdalene instancu IceCat kaž IceCat OS za zmylkami přepytać">
 <!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
   -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
   -  boolean preference in about:config, in the options panel. -->
@@ -134,7 +134,7 @@ values from browser.dtd.  -->
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
 
-<!ENTITY options.selectDefaultTools.label     "Standardne wuwiwarske nastroje Firefox">
+<!ENTITY options.selectDefaultTools.label     "Standardne wuwiwarske nastroje IceCat">
 <!-- LOCALIZATION NOTE (options.selectAdditionalTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the developer tools
   -  added by add-ons. This heading is hidden when there is no developer tool

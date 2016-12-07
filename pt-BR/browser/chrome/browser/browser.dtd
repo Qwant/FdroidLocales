@@ -56,7 +56,7 @@ can reach it easily. -->
 <!ENTITY tabCmd.commandkey "t">
 <!-- LOCALIZATION NOTE (openLocationCmd.label): "Open Location" is only
 displayed on OS X, and only on windows that aren't main browser windows, or
-when there are no windows but Firefox is still running. -->
+when there are no windows but IceCat is still running. -->
 <!ENTITY openLocationCmd.label "Abrir endereço…">
 <!ENTITY openFileCmd.label "Abrir arquivo…">
 <!ENTITY openFileCmd.accesskey "A">
@@ -420,8 +420,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Ligue a sincronização para exibir uma lista de abas de outros dispositivos.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
      when Sync is configured but this appears to be the only device attached to
-     the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.label "Entre no Firefox em outros dispositivos para ver suas abas aqui.">
+     the account. We also show links to download IceCat for android/ios. -->
+<!ENTITY appMenuRemoteTabs.noclients.label "Entre no IceCat em outros dispositivos para ver suas abas aqui.">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Preferências do Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Entre para ver uma lista de abas de outros dispositivos.">
 <!ENTITY appMenuRemoteTabs.signin.label "Entrar no Sync">

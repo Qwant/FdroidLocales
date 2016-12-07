@@ -12,13 +12,13 @@
 <!ENTITY abouthome.pageTitle "Початкова сторінка &brandFullName;">
 
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):
-     text in <a/> will be linked to the Firefox features page on mozilla.com
+     text in <a/> will be linked to the IceCat features page on mozilla.com
 -->
-<!ENTITY abouthome.defaultSnippet1.v1 "Дякуємо, що обрали Firefox! Щоб використовувати його сповна, дізнайтесь більше про <a>нові можливості</a>.">
+<!ENTITY abouthome.defaultSnippet1.v1 "Дякуємо, що обрали IceCat! Щоб використовувати його сповна, дізнайтесь більше про <a>нові можливості</a>.">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet2.v1):
      text in <a/> will be linked to the featured add-ons on addons.mozilla.org
 -->
-<!ENTITY abouthome.defaultSnippet2.v1 "Ви можете легко пристосувати Firefox саме для своїх потреб. <a>Вибирайте серед тисяч додатків</a>.">
+<!ENTITY abouthome.defaultSnippet2.v1 "Ви можете легко пристосувати IceCat саме для своїх потреб. <a>Вибирайте серед тисяч додатків</a>.">
 <!-- LOCALIZATION NOTE (abouthome.rightsSnippet): text in <a/> will be linked to about:rights -->
 <!ENTITY abouthome.rightsSnippet "&brandFullName; є безплатною програмою з відкритим кодом від некомерційної Фундації Mozilla. <a>Знайте свої права…</a>">
 
@@ -33,7 +33,7 @@
 <!ENTITY abouthome.addonsButton.label    "Додатки">
 <!-- LOCALIZATION NOTE (abouthome.appsButton2.label): This string should be consistent with
      the Apps menu item in the Tools menu (webapps.label in browser.dtd) and the Apps toolbar button in
-     Firefox's customization palette (web-apps-button.label in customizableWidgets.properties) -->
+     IceCat's customization palette (web-apps-button.label in customizableWidgets.properties) -->
 <!ENTITY abouthome.appsButton2.label     "Програми">
 <!ENTITY abouthome.downloadsButton.label "Завантаження">
 <!ENTITY abouthome.syncButton.label      "&syncBrand.shortName.label;">

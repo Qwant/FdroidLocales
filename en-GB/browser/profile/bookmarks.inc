@@ -14,27 +14,27 @@
 #define bookmarks_toolbarfolder_description Add bookmarks to this folder to see them displayed on the Bookmarks Toolbar
 
 # LOCALIZATION NOTE (getting_started):
-# link title for https://www.mozilla.org/en-US/firefox/central/
+# link title for https://www.mozilla.org/en-US/icecat/central/
 #define getting_started Getting Started
 
-# LOCALIZATION NOTE (firefox_heading):
-# Firefox links folder name
-#define firefox_heading Mozilla Firefox
+# LOCALIZATION NOTE (icecat_heading):
+# IceCat links folder name
+#define icecat_heading GNU IceCat
 
-# LOCALIZATION NOTE (firefox_help):
-# link title for https://www.mozilla.org/en-US/firefox/help/
-#define firefox_help Help and Tutorials
+# LOCALIZATION NOTE (icecat_help):
+# link title for https://www.mozilla.org/en-US/icecat/help/
+#define icecat_help Help and Tutorials
 
-# LOCALIZATION NOTE (firefox_customize):
-# link title for https://www.mozilla.org/en-US/firefox/customize/
-#define firefox_customize Customise Firefox
+# LOCALIZATION NOTE (icecat_customize):
+# link title for https://www.mozilla.org/en-US/icecat/customize/
+#define icecat_customize Customise IceCat
 
-# LOCALIZATION NOTE (firefox_community):
+# LOCALIZATION NOTE (firefox.community):
 # link title for https://www.mozilla.org/en-US/contribute/
-#define firefox_community Get Involved
+#define firefox.community Get Involved
 
-# LOCALIZATION NOTE (firefox_about):
+# LOCALIZATION NOTE (icecat_about):
 # link title for https://www.mozilla.org/en-US/about/
-#define firefox_about About Us
+#define icecat_about About Us
 
 #unfilter emptyLines

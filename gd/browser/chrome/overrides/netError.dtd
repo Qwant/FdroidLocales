@@ -157,7 +157,7 @@ dèan cinnteach gu bheil cead aig &brandShortName; ceangal ris an lìon.</li>
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <button> tags. It uses strings already defined above. The
 button is included here (instead of netError.xhtml) because it exposes
-functionality specific to firefox. -->
+functionality specific to icecat. -->
 
 
 <!ENTITY securityOverride.warningContent "<p>Cha bu chòir dhut eisgeachd a chur ris ma tha thu a' cleachdadh ceangal dhan eadar-lìon anns nach eil earbsa agad buileach no mur eil dùil agad ri rabhadh mun fhrithealaiche seo.</p> 
@@ -165,7 +165,7 @@ functionality specific to firefox. -->
 <button id='getMeOutOfHereButton'>&securityOverride.getMeOutOfHereButton;</button> 
 <button id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>">
 
-<!ENTITY errorReporting.automatic2 "Nach cuir thu aithisg mu mhearachdan d’ a leithid dha Mozilla ach an urrainn dhuinn làraichean droch-rùnach mar seo a bhacadh?">
+<!ENTITY errorReporting.automatic2 "Nach cuir thu aithisg mu mhearachdan d’ a leithid dha GNU ach an urrainn dhuinn làraichean droch-rùnach mar seo a bhacadh?">
 <!ENTITY errorReporting.learnMore "Barrachd fiosrachaidh…">
 <!ENTITY errorReporting.sending "A' cur na h-aithisge">
 <!ENTITY errorReporting.sent "Chaidh an aithisg a chur">

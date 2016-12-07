@@ -56,7 +56,7 @@ can reach it easily. -->
 <!ENTITY tabCmd.commandkey "t">
 <!-- LOCALIZATION NOTE (openLocationCmd.label): "Open Location" is only
 displayed on OS X, and only on windows that aren't main browser windows, or
-when there are no windows but Firefox is still running. -->
+when there are no windows but IceCat is still running. -->
 <!ENTITY openLocationCmd.label "ठिकाण उघडा…">
 <!ENTITY openFileCmd.label "फाइल उघडा…">
 <!ENTITY openFileCmd.accesskey "O">
@@ -420,8 +420,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "तुमच्या इतर उपकरणावरुन या उपकरणावर टॅब्स पाहण्यासाठी टॅब सींकींग सक्रीय करा.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
      when Sync is configured but this appears to be the only device attached to
-     the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.label "तुमच्या इतर उपकरणावरुन येथे टॅब्स पाहण्यासाठी Firefox मध्ये साइन इन करा.">
+     the account. We also show links to download IceCat for android/ios. -->
+<!ENTITY appMenuRemoteTabs.noclients.label "तुमच्या इतर उपकरणावरुन येथे टॅब्स पाहण्यासाठी IceCat मध्ये साइन इन करा.">
 <!ENTITY appMenuRemoteTabs.openprefs.label "ताळमेळ प्राधान्यता">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "तुमच्या इतर उपकरणावरुन टॅब्स पाहण्यासाठी साइन इन करा.">
 <!ENTITY appMenuRemoteTabs.signin.label "सींक करणयासाठी साइन इन करा">

@@ -194,7 +194,7 @@
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <button> tags. It uses strings already defined above. The
 button is included here (instead of netError.xhtml) because it exposes
-functionality specific to firefox. -->
+functionality specific to icecat. -->
 
 <!ENTITY securityOverride.warningContent "
 <p>Вам не слід додавати виняток, якщо використовуєте з’єднання, котрому не повністю довіряєте, або якщо ви не звикли бачити попередження для цього сервера.</p>
@@ -203,7 +203,7 @@ functionality specific to firefox. -->
 <button id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>
 ">
 
-<!ENTITY errorReporting.automatic2 "Звітувати про подібні помилки, щоб допомогти Mozilla виявляти й блокувати зловмисні сайти">
+<!ENTITY errorReporting.automatic2 "Звітувати про подібні помилки, щоб допомогти GNU виявляти й блокувати зловмисні сайти">
 <!ENTITY errorReporting.learnMore "Докладніше…">
 <!ENTITY errorReporting.sending "Відправлення звіту">
 <!ENTITY errorReporting.sent "Звіт відправлено">

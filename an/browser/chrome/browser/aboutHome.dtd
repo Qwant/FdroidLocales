@@ -11,14 +11,14 @@
 
 <!ENTITY abouthome.pageTitle "Pachina d'inicio de &brandFullName;">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):
-     text in <a/> will be linked to the Firefox features page on mozilla.com
+     text in <a/> will be linked to the IceCat features page on mozilla.com
 -->
 
-<!ENTITY abouthome.defaultSnippet1.v1 "Gracias por trigar Firefox! Ta aconseguir o millor d'o suyo navegador, conoixca mas sobre as <a>zagueras caracteristicas</a>.">
+<!ENTITY abouthome.defaultSnippet1.v1 "Gracias por trigar IceCat! Ta aconseguir o millor d'o suyo navegador, conoixca mas sobre as <a>zagueras caracteristicas</a>.">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet2.v1):
      text in <a/> will be linked to the featured add-ons on addons.mozilla.org
 -->
-<!ENTITY abouthome.defaultSnippet2.v1 "Firefox ye de buen personalizar, exactament d'a traza que quiera. <a>Trigue entre milars de complementos</a>.">
+<!ENTITY abouthome.defaultSnippet2.v1 "IceCat ye de buen personalizar, exactament d'a traza que quiera. <a>Trigue entre milars de complementos</a>.">
 <!-- LOCALIZATION NOTE (abouthome.rightsSnippet): text in <a/> will be linked to about:rights -->
 <!ENTITY abouthome.rightsSnippet "&brandFullName; ye un software libre y de codigo fuent ubierto d'a fundación sin animo de lucro Mozilla. <a>Conoixca os suyos dreitos…</a>">
 
@@ -33,7 +33,7 @@
 <!ENTITY abouthome.addonsButton.label    "Complementos">
 <!-- LOCALIZATION NOTE (abouthome.appsButton2.label): This string should be consistent with
      the Apps menu item in the Tools menu (webapps.label in browser.dtd) and the Apps toolbar button in
-     Firefox's customization palette (web-apps-button.label in customizableWidgets.properties) -->
+     IceCat's customization palette (web-apps-button.label in customizableWidgets.properties) -->
 <!ENTITY abouthome.appsButton2.label     "Aplicacions">
 <!ENTITY abouthome.downloadsButton.label "Descargas">
 <!ENTITY abouthome.syncButton.label      "&syncBrand.shortName.label;">

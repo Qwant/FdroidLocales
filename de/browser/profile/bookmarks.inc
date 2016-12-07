@@ -14,27 +14,27 @@
 #define bookmarks_toolbarfolder_description Lesezeichen, die Sie in diesem Ordner ablegen, werden in der Lesezeichen-Symbolleiste angezeigt.
 
 # LOCALIZATION NOTE (getting_started):
-# link title for https://www.mozilla.org/en-US/firefox/central/
+# link title for https://www.mozilla.org/en-US/icecat/central/
 #define getting_started Erste Schritte
 
-# LOCALIZATION NOTE (firefox_heading):
-# Firefox links folder name
-#define firefox_heading Mozilla Firefox
+# LOCALIZATION NOTE (icecat_heading):
+# IceCat links folder name
+#define icecat_heading GNU IceCat
 
-# LOCALIZATION NOTE (firefox_help):
-# link title for https://www.mozilla.org/en-US/firefox/help/
-#define firefox_help Hilfe und Anleitungen
+# LOCALIZATION NOTE (icecat_help):
+# link title for https://www.mozilla.org/en-US/icecat/help/
+#define icecat_help Hilfe und Anleitungen
 
-# LOCALIZATION NOTE (firefox_customize):
-# link title for https://www.mozilla.org/en-US/firefox/customize/
-#define firefox_customize Firefox anpassen
+# LOCALIZATION NOTE (icecat_customize):
+# link title for https://www.mozilla.org/en-US/icecat/customize/
+#define icecat_customize IceCat anpassen
 
-# LOCALIZATION NOTE (firefox_community):
+# LOCALIZATION NOTE (firefox.community):
 # link title for https://www.mozilla.org/en-US/contribute/
-#define firefox_community Machen Sie mit
+#define firefox.community Machen Sie mit
 
-# LOCALIZATION NOTE (firefox_about):
+# LOCALIZATION NOTE (icecat_about):
 # link title for https://www.mozilla.org/en-US/about/
-#define firefox_about Über uns
+#define icecat_about Über uns
 
 #unfilter emptyLines

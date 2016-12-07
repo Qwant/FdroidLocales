@@ -56,7 +56,7 @@ can reach it easily. -->
 <!ENTITY tabCmd.commandkey "t">
 <!-- LOCALIZATION NOTE (openLocationCmd.label): "Open Location" is only
 displayed on OS X, and only on windows that aren't main browser windows, or
-when there are no windows but Firefox is still running. -->
+when there are no windows but IceCat is still running. -->
 <!ENTITY openLocationCmd.label "Abrir ubicación…">
 <!ENTITY openFileCmd.label "Abrir archivo…">
 <!ENTITY openFileCmd.accesskey "A">
@@ -420,8 +420,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Activa la sincronización de pestañas para ver una lista de pestañas desde tus otros dispositivos.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
      when Sync is configured but this appears to be the only device attached to
-     the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.label "Inicia sesión en Firefox desde otros dispositivos para ver tus pestañas aquí.">
+     the account. We also show links to download IceCat for android/ios. -->
+<!ENTITY appMenuRemoteTabs.noclients.label "Inicia sesión en IceCat desde otros dispositivos para ver tus pestañas aquí.">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Sincronizar preferencias">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Inicia sesión para ver una lista de pestañas de tus otros dispositivos.">
 <!ENTITY appMenuRemoteTabs.signin.label "Inicia sesión en Sync">

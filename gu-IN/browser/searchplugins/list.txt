@@ -4,3 +4,5 @@ gujaratilexicon
 wikipedia-gu
 yahoo-in
 bing
+
+duckduckgo

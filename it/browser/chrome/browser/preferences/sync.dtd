@@ -59,7 +59,7 @@
 <!ENTITY signedOut.accountBox.signin "Accedi">
 <!ENTITY signedIn.engines.label "Sincronizza attraverso i dispositivi">
 <!ENTITY mobilePromo2.start "Sincronizza con cellulari e tablet. Scarica ">
-<!ENTITY mobilePromo2.androidLink "Firefox per Android™">
+<!ENTITY mobilePromo2.androidLink "IceCat per Android™">
 <!ENTITY mobilePromo2.iOSBefore " o ">
-<!ENTITY mobilePromo2.iOSLink "Firefox per iOS">
+<!ENTITY mobilePromo2.iOSLink "IceCat per iOS">
 <!ENTITY mobilePromo2.end ".">

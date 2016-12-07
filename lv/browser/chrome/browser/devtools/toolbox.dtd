@@ -105,7 +105,7 @@ values from browser.dtd.  -->
   -  boolean preference in about:config, in the options panel. -->
 
 <!ENTITY options.enableRemote.label3    "Aktivēt attālināto atkļūdošanu">
-<!ENTITY options.enableRemote.tooltip   "Ieslēdzot šo iespēju, jūs varēsiet izmantot izstrādātāju rīkus attālinātai Firefox instancei, piemēram Firefox OS">
+<!ENTITY options.enableRemote.tooltip   "Ieslēdzot šo iespēju, jūs varēsiet izmantot izstrādātāju rīkus attālinātai IceCat instancei, piemēram IceCat OS">
 <!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
   -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
   -  boolean preference in about:config, in the options panel. -->

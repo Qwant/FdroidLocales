@@ -2,8 +2,8 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY crashprompt.title "Вы хочаце дасылаць Mozilla справаздачы пра крахі?">
-<!ENTITY crashprompt.message "Прабачце, &brandShortName; зараз аднавіўся пасля краху. Дасыланне справаздачы пра крах дапаможа Mozilla зрабіць &brandShortName; больш устольлівым і бяспечным. Вы заўсёды можаце змяніць вашы перавагі ў наладжваннях.">
+<!ENTITY crashprompt.title "Вы хочаце дасылаць GNU справаздачы пра крахі?">
+<!ENTITY crashprompt.message "Прабачце, &brandShortName; зараз аднавіўся пасля краху. Дасыланне справаздачы пра крах дапаможа GNU зрабіць &brandShortName; больш устольлівым і бяспечным. Вы заўсёды можаце змяніць вашы перавагі ў наладжваннях.">
 <!ENTITY crashprompt.detailsLink "Што ёсць ў крахасправаздачы?">
 <!ENTITY crashprompt.detailedMessage.firstParagraph "Справаздача змяшчае прадрабязнасці пра крах, вашу машыну, здымак стану вашага азіральніка падчас краху.">
 <!ENTITY crashprompt.detailedMessage.secondParagraph "Можа ўключаць звесткі пра адчыненыя старонкі, набраны ў формах тэкст, змесціва адчыненых лістоў, нядаўнюю гісторыю азірання або месцазнаходжанне, якім дзяліліся з пляцоўкай.">

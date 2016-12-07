@@ -105,7 +105,7 @@ values from browser.dtd.  -->
   -  boolean preference in about:config, in the options panel. -->
 
 <!ENTITY options.enableRemote.label3    "Omogući udaljeno riješavanje problema">
-<!ENTITY options.enableRemote.tooltip   "Uključivanje ove opcije će omogućiti alatima za razvijatelje udaljeno riješavanje problema na Firefox instanci poput Firefox OS-a">
+<!ENTITY options.enableRemote.tooltip   "Uključivanje ove opcije će omogućiti alatima za razvijatelje udaljeno riješavanje problema na IceCat instanci poput IceCat OS-a">
 <!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
   -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
   -  boolean preference in about:config, in the options panel. -->
@@ -134,7 +134,7 @@ values from browser.dtd.  -->
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
 
-<!ENTITY options.selectDefaultTools.label     "Zadani Firefoxovi alati za razvijatelje">
+<!ENTITY options.selectDefaultTools.label     "Zadani IceCatovi alati za razvijatelje">
 <!-- LOCALIZATION NOTE (options.selectAdditionalTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the developer tools
   -  added by add-ons. This heading is hidden when there is no developer tool

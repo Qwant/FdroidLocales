@@ -155,7 +155,7 @@ so &brandShortName; ena yamiraa naatde e geese.</li>
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <button> tags. It uses strings already defined above. The
 button is included here (instead of netError.xhtml) because it exposes
-functionality specific to firefox. -->
+functionality specific to icecat. -->
 
 
 <!ENTITY securityOverride.warningContent "<p>A fotaani ɓeydude paltoor so tawii aɗa huutoroo ceŋol enternet ngol a hoolaaji no feewi walla so a woowaani yiyde hono deentine ummiiɗe e ndee sarworde.</p> 

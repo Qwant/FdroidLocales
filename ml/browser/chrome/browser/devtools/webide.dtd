@@ -58,7 +58,7 @@
 
 <!ENTITY projectButton_label "ആപ്പ് തുറക്കുക">
 <!ENTITY runtimeButton_label "റണ്‍ടൈം തെരഞ്ഞെടുക്കുക">
-<!-- We try to repicate Firefox' bindings: -->
+<!-- We try to repicate IceCat' bindings: -->
 <!-- quit app -->
 
 <!ENTITY key_quit "W">

@@ -13,13 +13,13 @@
 <!ENTITY abouthome.pageTitle "Faqja e Fillimit për &brandFullName;-in">
 
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):
-     text in <a/> will be linked to the Firefox features page on mozilla.com
+     text in <a/> will be linked to the IceCat features page on mozilla.com
 -->
-<!ENTITY abouthome.defaultSnippet1.v1 "Faleminderit për zgjedhjen e Firefox-it! Për të përfituar maksimumin prej shfletuesit tuaj, njihuni më tej me <a>veçoritë më të reja</a>.">
+<!ENTITY abouthome.defaultSnippet1.v1 "Faleminderit për zgjedhjen e IceCat-it! Për të përfituar maksimumin prej shfletuesit tuaj, njihuni më tej me <a>veçoritë më të reja</a>.">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet2.v1):
      text in <a/> will be linked to the featured add-ons on addons.mozilla.org
 -->
-<!ENTITY abouthome.defaultSnippet2.v1 "Është e lehtë ta personalizoni Firefox-in tuaj pikërisht si e doni. <a>Zgjidhni prej mijëra shtesash për të</a>.">
+<!ENTITY abouthome.defaultSnippet2.v1 "Është e lehtë ta personalizoni IceCat-in tuaj pikërisht si e doni. <a>Zgjidhni prej mijëra shtesash për të</a>.">
 <!-- LOCALIZATION NOTE (abouthome.rightsSnippet): text in <a/> will be linked to about:rights -->
 <!ENTITY abouthome.rightsSnippet "&brandFullName;-i është software i lirë dhe me burim të hapur, ndërtuar nga organizmi jofitimprurës Mozilla Foundation. <a>Njihni të drejtat tuaja…</a>">
 
@@ -37,6 +37,6 @@
 
 <!-- LOCALIZATION NOTE (abouthome.appsButton2.label): This string should be consistent with
      the Apps menu item in the Tools menu (webapps.label in browser.dtd) and the Apps toolbar button in
-     Firefox's customization palette (web-apps-button.label in customizableWidgets.properties) -->
+     IceCat's customization palette (web-apps-button.label in customizableWidgets.properties) -->
 <!ENTITY abouthome.appsButton2.label     "Aplikacione">
 <!ENTITY abouthome.downloadsButton.label "Shkarkime">

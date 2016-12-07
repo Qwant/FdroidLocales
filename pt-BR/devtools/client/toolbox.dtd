@@ -105,7 +105,7 @@ values from browser.dtd.  -->
   -  checkbox that toggles remote debugging, i.e. devtools.debugger.remote-enabled
   -  boolean preference in about:config, in the options panel. -->
 <!ENTITY options.enableRemote.label3    "Ativar depuração remota">
-<!ENTITY options.enableRemote.tooltip   "Ative esta opção para permitir a depuração de instâncias remotas do Firefox como o Firefox OS">
+<!ENTITY options.enableRemote.tooltip   "Ative esta opção para permitir a depuração de instâncias remotas do IceCat como o IceCat OS">
 
 <!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
   -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
@@ -134,7 +134,7 @@ values from browser.dtd.  -->
 <!-- LOCALIZATION NOTE (options.selectDefaultTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
-<!ENTITY options.selectDefaultTools.label     "Ferramentas padrão do Firefox">
+<!ENTITY options.selectDefaultTools.label     "Ferramentas padrão do IceCat">
 
 <!-- LOCALIZATION NOTE (options.selectAdditionalTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the developer tools

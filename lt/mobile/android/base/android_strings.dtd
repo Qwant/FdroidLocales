@@ -104,19 +104,19 @@
 <!ENTITY pref_category_general "Bendra">
 <!ENTITY pref_category_general_summary2 "Pradžia, kalba, adreso laukas">
 <!-- Localization note (pref_category_language) : This is the preferences
-     section in which the user picks the locale in which to display Firefox
+     section in which the user picks the locale in which to display IceCat
      UI. The locale includes both language and region concepts. -->
 
 <!ENTITY pref_category_language "Kalba">
 <!ENTITY pref_category_language_summary "Pakeiskite savo naršyklės sąsajos kalbą">
 <!ENTITY pref_browser_locale "Naršyklės sąsajos kalba">
 <!-- Localization note (locale_system_default) : This string indicates that
-     Firefox will use the locale currently selected in Android's settings
+     IceCat will use the locale currently selected in Android's settings
      to display browser chrome. -->
 
 <!ENTITY locale_system_default "Sistemos numatytoji">
 <!-- Localization note (overlay_share_label) : This is the label that appears
-     in Android's intent chooser when sending a link to Firefox to bookmark,
+     in Android's intent chooser when sending a link to IceCat to bookmark,
      send to another device, or add to Reading List. -->
 
 <!ENTITY overlay_share_label "Pridėti į „&brandShortName;“">
@@ -140,7 +140,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "Nerasta su „Firefox“ paskyra susietų įrenginių">
+<!ENTITY overlay_no_synced_devices "Nerasta su „IceCat“ paskyra susietų įrenginių">
 
 <!ENTITY pref_category_search3 "Paieška">
 <!ENTITY pref_category_search_summary "Ieškyklių tinkinimas">
@@ -193,7 +193,7 @@
 <!ENTITY home_homepage_title "Nustatykite pradžios tinklalapį">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
-     button for this string, they will use the built-in default Firefox homepage (about:home). -->
+     button for this string, they will use the built-in default IceCat homepage (about:home). -->
 <!ENTITY home_homepage_radio_default "„&brandShortName;“ pradžios tinklalapis">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
@@ -320,7 +320,7 @@ size. -->
 <!ENTITY pref_private_data_syncedTabs "Sinchronizuotos kortelės">
 
 
-<!ENTITY pref_about_firefox "Apie „&brandShortName;“">
+<!ENTITY pref_about_icecat "Apie „&brandShortName;“">
 <!ENTITY pref_vendor_faqs "Dažni klausimai">
 <!ENTITY pref_vendor_feedback "Palikti atsiliepimą">
 
@@ -548,11 +548,11 @@ size. -->
 <!ENTITY home_remote_tabs_title "Sinchronizuotos kortelės">
 <!ENTITY home_remote_tabs_empty "Kortelės iš kitų jūsų įrenginių matomos čia.">
 <!ENTITY home_remote_tabs_unable_to_connect "Nepavyko užmegzti ryšio">
-<!ENTITY home_remote_tabs_need_to_sign_in "Norint tęsti sinchronizavimą, reikia iš naujo prisijungti prie jūsų „Firefox“ paskyros.">
-<!ENTITY home_remote_tabs_need_to_finish_migrating "Jūsų nauja „Firefox“ paskyra jau paruošta!">
+<!ENTITY home_remote_tabs_need_to_sign_in "Norint tęsti sinchronizavimą, reikia iš naujo prisijungti prie jūsų „IceCat“ paskyros.">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "Jūsų nauja „IceCat“ paskyra jau paruošta!">
 
 <!ENTITY home_remote_tabs_trouble_verifying "Nepavyksta patvirtinti paskyros?">
-<!ENTITY home_remote_tabs_need_to_verify "Prieš pradedant sinchronizavimą, reikia patvirtinti jūsų „Firefox“ paskyrą.">
+<!ENTITY home_remote_tabs_need_to_verify "Prieš pradedant sinchronizavimą, reikia patvirtinti jūsų „IceCat“ paskyrą.">
 
 <!ENTITY home_remote_tabs_one_hidden_device "1 paslėptas įrenginys">
 <!-- Localization note (home_remote_tabs_many_hidden_devices) : The
@@ -696,7 +696,7 @@ iš „Android“">
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
      include "42 minutes ago", "4 days ago", "last week", etc. The subject of
-     "Last synced" is one of the user's other Sync clients, typically Firefox on
+     "Last synced" is one of the user's other Sync clients, typically IceCat on
      their desktop or laptop.-->
 
 <!ENTITY remote_tabs_last_synced "Paskiausiai sinchronizuota: &formatS;">
@@ -726,7 +726,7 @@ iš „Android“">
 <!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
      above a QR reader that is actively scanning for QR codes.  The expected QR
      code has already been displayed by the client trying to connect (such as
-     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     desktop IceCat via WebIDE), so you just need to aim this device at the QR
      code. -->
 
 <!ENTITY devtools_auth_scan_header "Ieškoma kitame jūsų įrenginyje rodomo QR kodo">
@@ -735,7 +735,7 @@ iš „Android“">
      a restricted profile (e.g. child). Used inside the Android settings UI. -->
 
 <!ENTITY restrictable_feature_addons_installation "Priedai">
-<!ENTITY restrictable_feature_addons_installation_description "Suteikite „Firefox“ naujų galimybių ir funkcionalumo. Atminkite: priedai gali išjungti kai kuriuos apribojimus.">
+<!ENTITY restrictable_feature_addons_installation_description "Suteikite „IceCat“ naujų galimybių ir funkcionalumo. Atminkite: priedai gali išjungti kai kuriuos apribojimus.">
 <!ENTITY restrictable_feature_private_browsing "Privatusis naršymas">
 <!ENTITY restrictable_feature_private_browsing_description "Leidžia šeimoms nariams naršyti neįrašant informacijos apie jų aplankytas svetaines ir tinklalapius.">
 <!ENTITY restrictable_feature_clear_history "Išvalyti žurnalą">
@@ -747,15 +747,15 @@ iš „Android“">
 <!ENTITY restrictable_feature_data_choices "Duomenų siuntimas">
 <!ENTITY restrictable_feature_data_choices_description "Pasirinkite, ar leidžiate siųsti naudojimo informaciją „Mozillai“ programos tobulinimo tikslais.">
 <!-- Default Bookmarks titles-->
-<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:icecatmobile -->
 
-<!ENTITY bookmarks_about_browser "„Firefox“: apie jūsų naršyklę">
-<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
-<!ENTITY bookmarks_addons "„Firefox“: individualizuokite naršyklę priedais">
+<!ENTITY bookmarks_about_browser "„IceCat“: apie jūsų naršyklę">
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://directory.fsf.org/wiki/GNU_IceCat -->
+<!ENTITY bookmarks_addons "„IceCat“: individualizuokite naršyklę priedais">
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
-<!ENTITY bookmarks_support "„Firefox“: pagalba">
+<!ENTITY bookmarks_support "„IceCat“: pagalba">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
-<!ENTITY bookmarks_restricted_support2 "„Firefox“ žinynas ir pagalba apribotiems „Android“ planšečių profiliams">
+<!ENTITY bookmarks_restricted_support2 "„IceCat“ žinynas ir pagalba apribotiems „Android“ planšečių profiliams">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
 <!ENTITY bookmarks_restricted_webmaker "Sužinok, kaip veikia saitynas: „Mozilla Webmaker“">
 <!-- LOCALIZATION NOTE (unsupported_sdk_version): The user installed a build of this app that does not support

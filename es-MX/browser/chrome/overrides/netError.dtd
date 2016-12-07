@@ -157,7 +157,7 @@ que &brandShortName; pueda acceder a internet.</li>
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <button> tags. It uses strings already defined above. The
 button is included here (instead of netError.xhtml) because it exposes
-functionality specific to firefox. -->
+functionality specific to icecat. -->
 
 
 <!ENTITY securityOverride.warningContent "<p>No deberías agregar una excepción si estás usando una conexión a Internet en la que no confías completamente o si no estás acostumbrado a ver una advertencia para este servidor.</p> 
@@ -165,7 +165,7 @@ functionality specific to firefox. -->
 <button id='getMeOutOfHereButton'>&securityOverride.getMeOutOfHereButton;</button> 
 <button id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>">
 
-<!ENTITY errorReporting.automatic2 "Informa errores de este tipo para ayudar a Mozilla a identificar y bloquear sitios maliciosos.">
+<!ENTITY errorReporting.automatic2 "Informa errores de este tipo para ayudar a GNU a identificar y bloquear sitios maliciosos.">
 <!ENTITY errorReporting.learnMore "Aprender más…">
 <!ENTITY errorReporting.sending "Enviando reporte">
 <!ENTITY errorReporting.sent "Reporte enviado">

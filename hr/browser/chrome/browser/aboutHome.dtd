@@ -11,16 +11,16 @@
 
 <!ENTITY abouthome.pageTitle "&brandFullName; početna stranica">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):
-     text in <a/> will be linked to the Firefox features page on mozilla.com
+     text in <a/> will be linked to the IceCat features page on mozilla.com
 -->
 
-<!ENTITY abouthome.defaultSnippet1.v1 "Hvala što ste odabrali Firefox! Da biste izvukli najviše iz svojeg preglednika, informirajte se o <a>najnovijim mogućnostima</a>.">
+<!ENTITY abouthome.defaultSnippet1.v1 "Hvala što ste odabrali IceCat! Da biste izvukli najviše iz svojeg preglednika, informirajte se o <a>najnovijim mogućnostima</a>.">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet2.v1):
      text in <a/> will be linked to the featured add-ons on addons.mozilla.org
 -->
-<!ENTITY abouthome.defaultSnippet2.v1 "Firefox je moguće vrlo lako prilagoditi vašim željama. <a>Provjerite tisuće dodataka</a>.">
+<!ENTITY abouthome.defaultSnippet2.v1 "IceCat je moguće vrlo lako prilagoditi vašim željama. <a>Provjerite tisuće dodataka</a>.">
 <!-- LOCALIZATION NOTE (abouthome.rightsSnippet): text in <a/> will be linked to about:rights -->
-<!ENTITY abouthome.rightsSnippet "&brandFullName; je besplatan softver otvorenog kôda Mozilla fundacije. <a>Saznajte vaša prava…</a>">
+<!ENTITY abouthome.rightsSnippet "&brandFullName; je besplatan softver otvorenog kôda GNU fundacije. <a>Saznajte vaša prava…</a>">
 
 <!ENTITY abouthome.bookmarksButton.label "Zabilješke">
 <!ENTITY abouthome.historyButton.label   "Povijest">
@@ -33,7 +33,7 @@
 <!ENTITY abouthome.addonsButton.label    "Dodaci">
 <!-- LOCALIZATION NOTE (abouthome.appsButton2.label): This string should be consistent with
      the Apps menu item in the Tools menu (webapps.label in browser.dtd) and the Apps toolbar button in
-     Firefox's customization palette (web-apps-button.label in customizableWidgets.properties) -->
+     IceCat's customization palette (web-apps-button.label in customizableWidgets.properties) -->
 <!ENTITY abouthome.appsButton2.label     "Aplikacije">
 <!ENTITY abouthome.downloadsButton.label "Preuzimanja">
 <!ENTITY abouthome.syncButton.label      "&syncBrand.shortName.label;">

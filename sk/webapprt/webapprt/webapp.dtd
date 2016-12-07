@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE: These are localized strings for the webapp runtime,
-   - which loads a webapp in a separate process from Firefox.  Webapps loaded
+   - which loads a webapp in a separate process from IceCat.  Webapps loaded
    - in this way have very little application chrome, but the runtime does
    - provide them with some default functionality, like the standard OS
    - menus/menuitems. -->

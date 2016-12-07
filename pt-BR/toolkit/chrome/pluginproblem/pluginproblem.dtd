@@ -39,4 +39,4 @@
 
 <!ENTITY plugin.file                                         "Arquivo">
 <!ENTITY plugin.mimeTypes                                    "Tipos MIME">
-<!ENTITY plugin.flashProtectedMode.label                     "Ativar o modo protegido do Adobe Flash">
+<!ENTITY plugin.flashProtectedMode.label                     "Ativar o modo protegido do Flash">

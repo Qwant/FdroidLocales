@@ -3,3 +3,5 @@ google
 pwn-pl
 wikipedia-pl
 wolnelektury-pl
+
+duckduckgo

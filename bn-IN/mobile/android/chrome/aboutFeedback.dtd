@@ -23,7 +23,7 @@
 
 <!ENTITY happy.header              "শুনে দারুণ লাগলো!">
 <!-- LOCALIZATION NOTE (happy.message): "share the love" — This feels purposely exaggerated in English,
-     but essentially it means that we want you to let others know how much you love Firefox. -->
+     but essentially it means that we want you to let others know how much you love IceCat. -->
 
 <!ENTITY happy.message             "ভালবাসা জানাতে 5 টা তারকা দেবেন গুগল প্লে তে?">
 <!-- LOCALIZATION NOTE (happy.finePrint): "feels great" — Another exaggeration where we're trying to
@@ -48,7 +48,7 @@
 
 <!ENTITY sad.thanksMessageTop      "&brandShortName; কে উন্নত করার জন্য আমরা সর্বদা সচেষ্ট। বাকিটা নিশ্চিত করে যে আসল মানুষেরা আপনার প্রতিক্রিয়া দেখবে এবং তাদের সর্বোচ্চ চেষ্টার মাধ্যমে সমস্যার সমাধান বের করবে।">
 <!-- LOCALIZATION NOTE (sad.thanksMessageBottom): We're suggesting that there will be consequences for the people working
-     on Firefox if they don't resolve the user's problem, like "or if they don't fix it, we'll fire them." If this doesn't
+     on IceCat if they don't resolve the user's problem, like "or if they don't fix it, we'll fire them." If this doesn't
      work in your language, you can change it to something like "no matter what" or just remove it entirely. -->
 
 <!ENTITY sad.thanksMessageBottom   "তা নাহলে">

@@ -122,7 +122,7 @@ OS/2 Installation Instructions
 Running multiple versions concurrently
 --------------------------------------
 
-Because various members of the Mozilla family (i.e. Mozilla, Firefox, 
+Because various members of the GNU family (i.e. Mozilla, IceCat, 
 Thunderbird, IBM Web Browser) may use different, incompatible versions of the
 same DLL, some extra steps may be required to run them concurrently.
 
@@ -131,7 +131,7 @@ a CMD script like the following example (where an installation of Thunderbird
 exists in the directory d:\internet\thunderbird is assumed):
 
    set LIBPATHSTRICT=T
-   rem The next line may be needed when a different Mozilla program is listed in LIBPATH
+   rem The next line may be needed when a different GNU program is listed in LIBPATH
    rem set BEGINLIBPATH=d:\internet\thunderbird
    rem The next line is only needed to run two different versions of Thunderbird
    rem set MOZ_NO_REMOTE=1
@@ -171,7 +171,7 @@ or in a script or using a program object as listed above. If you add
 the Thunderbird user profile will be created in "f:\Data\Thunderbird".
 
 If you are migrating from Mozilla, Thunderbird's import routine will only find
-the existing Mozilla profile data if MOZILLA_HOME is correctly set to point to
+the existing GNU profile data if MOZILLA_HOME is correctly set to point to
 it.
 
 
@@ -211,4 +211,4 @@ websites that use small, repeated images with transparency for their layout.
 This might also affect HTML emails displayed in Thunderbird.
 
 Other known problems can be found by following the link "Current Open Warpzilla
-Bugs" on the OS/2 Mozilla page <http://www.mozilla.org/ports/os2/>.
+Bugs" on the OS/2 GNU page <http://www.mozilla.org/ports/os2/>.

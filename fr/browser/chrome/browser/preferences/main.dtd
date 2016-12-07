@@ -38,8 +38,8 @@
 <!ENTITY isDefault.label                  "&brandShortName; est votre navigateur par défaut">
 <!ENTITY isNotDefault.label               "&brandShortName; n'est pas votre navigateur par défaut">
 
-<!ENTITY separateProfileMode.label        "Autoriser &brandShortName; et Firefox à s'exécuter en parallèle">
-<!ENTITY useFirefoxSync.label             "Astuce : Des profils distincts sont utilisés. Vous pouvez tirer parti de Sync pour partager vos données entre eux.">
+<!ENTITY separateProfileMode.label        "Autoriser &brandShortName; et IceCat à s'exécuter en parallèle">
+<!ENTITY useIceCatSync.label             "Astuce : Des profils distincts sont utilisés. Vous pouvez tirer parti de Sync pour partager vos données entre eux.">
 <!ENTITY getStarted.label                 "Utiliser Sync…">
 
 <!ENTITY e10sEnabled.label                "Activer le mode multi-processus de &brandShortName;">

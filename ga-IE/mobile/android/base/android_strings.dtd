@@ -104,19 +104,19 @@
 <!ENTITY pref_category_general "Ginearálta">
 <!ENTITY pref_category_general_summary2 "Baile, teanga, barra URL">
 <!-- Localization note (pref_category_language) : This is the preferences
-     section in which the user picks the locale in which to display Firefox
+     section in which the user picks the locale in which to display IceCat
      UI. The locale includes both language and region concepts. -->
 
 <!ENTITY pref_category_language "Teanga">
 <!ENTITY pref_category_language_summary "Athraigh teanga do bhrabhsálaí">
 <!ENTITY pref_browser_locale "Teanga an bhrabhsálaí">
 <!-- Localization note (locale_system_default) : This string indicates that
-     Firefox will use the locale currently selected in Android's settings
+     IceCat will use the locale currently selected in Android's settings
      to display browser chrome. -->
 
 <!ENTITY locale_system_default "Réamhshocrú an chórais">
 <!-- Localization note (overlay_share_label) : This is the label that appears
-     in Android's intent chooser when sending a link to Firefox to bookmark,
+     in Android's intent chooser when sending a link to IceCat to bookmark,
      send to another device, or add to Reading List. -->
 
 <!ENTITY overlay_share_label "Cuir le &brandShortName; é">
@@ -140,7 +140,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "Níor aimsíodh aon ghléasanna ceangailte le Cuntas Firefox">
+<!ENTITY overlay_no_synced_devices "Níor aimsíodh aon ghléasanna ceangailte le Cuntas IceCat">
 
 <!ENTITY pref_category_search3 "Cuardaigh">
 <!ENTITY pref_category_search_summary "Saincheap na hinnill chuardaigh">
@@ -193,7 +193,7 @@
 <!ENTITY home_homepage_title "Roghnaigh Leathanach Baile">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
-     button for this string, they will use the built-in default Firefox homepage (about:home). -->
+     button for this string, they will use the built-in default IceCat homepage (about:home). -->
 <!ENTITY home_homepage_radio_default "Baile &brandShortName;">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
@@ -320,7 +320,7 @@ size. -->
 <!ENTITY pref_private_data_syncedTabs "Cluaisíní sioncrónaithe">
 
 
-<!ENTITY pref_about_firefox "Maidir le &brandShortName;">
+<!ENTITY pref_about_icecat "Maidir le &brandShortName;">
 <!ENTITY pref_vendor_faqs "CCanna">
 <!ENTITY pref_vendor_feedback "Seol aiseolas">
 
@@ -548,11 +548,11 @@ size. -->
 <!ENTITY home_remote_tabs_title "Cluaisíní Sioncrónaithe">
 <!ENTITY home_remote_tabs_empty "Taispeánfar do chuid cluaisíní ó ghléasanna eile anseo.">
 <!ENTITY home_remote_tabs_unable_to_connect "Ní féidir ceangal">
-<!ENTITY home_remote_tabs_need_to_sign_in "Logáil isteach chun athcheangal le do Chuntas Firefox agus dul ar aghaidh leis an sioncrónú.">
-<!ENTITY home_remote_tabs_need_to_finish_migrating "Tá do chuntas nua Firefox réidh!">
+<!ENTITY home_remote_tabs_need_to_sign_in "Logáil isteach chun athcheangal le do Chuntas IceCat agus dul ar aghaidh leis an sioncrónú.">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "Tá do chuntas nua IceCat réidh!">
 
 <!ENTITY home_remote_tabs_trouble_verifying "Fadhbanna ag deimhniú do chuntais?">
-<!ENTITY home_remote_tabs_need_to_verify "Caithfidh tú do Chuntas Firefox a dheimhniú chun sioncrónú a thosú.">
+<!ENTITY home_remote_tabs_need_to_verify "Caithfidh tú do Chuntas IceCat a dheimhniú chun sioncrónú a thosú.">
 
 <!ENTITY home_remote_tabs_one_hidden_device "Gléas amháin i bhfolach">
 <!-- Localization note (home_remote_tabs_many_hidden_devices) : The
@@ -696,7 +696,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
      include "42 minutes ago", "4 days ago", "last week", etc. The subject of
-     "Last synced" is one of the user's other Sync clients, typically Firefox on
+     "Last synced" is one of the user's other Sync clients, typically IceCat on
      their desktop or laptop.-->
 
 <!ENTITY remote_tabs_last_synced "Sioncrónaithe: &formatS;">
@@ -726,7 +726,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
      above a QR reader that is actively scanning for QR codes.  The expected QR
      code has already been displayed by the client trying to connect (such as
-     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     desktop IceCat via WebIDE), so you just need to aim this device at the QR
      code. -->
 
 <!ENTITY devtools_auth_scan_header "Ag scanadh an chóid QR ar an ngléas eile">
@@ -735,7 +735,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      a restricted profile (e.g. child). Used inside the Android settings UI. -->
 
 <!ENTITY restrictable_feature_addons_installation "Breiseáin">
-<!ENTITY restrictable_feature_addons_installation_description "Cuir gnéithe nó feidhmeanna nua le Firefox. Aire: Uaireanta díchumasaíonn breiseáin srianta áirithe.">
+<!ENTITY restrictable_feature_addons_installation_description "Cuir gnéithe nó feidhmeanna nua le IceCat. Aire: Uaireanta díchumasaíonn breiseáin srianta áirithe.">
 <!ENTITY restrictable_feature_private_browsing "Brabhsáil Phríobháideach">
 <!ENTITY restrictable_feature_private_browsing_description "Ligeann seo do dhaoine muinteartha an Gréasán a bhrabhsáil gan faisnéis faoi na suímh agus na leathanaigh a dtugann siad cuairt orthu a shábháil.">
 <!ENTITY restrictable_feature_clear_history "Glan an Stair">
@@ -745,19 +745,19 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY restrictable_feature_camera_microphone "Ceamara agus Micreafón">
 <!ENTITY restrictable_feature_camera_microphone_description "Ligeann seo do dhaoine muinteartha cumarsáid fhíor-ama a dhéanamh ar shuímh Ghréasáin.">
 <!ENTITY restrictable_feature_data_choices "Roghanna Sonraí">
-<!ENTITY restrictable_feature_data_choices_description "An mbeifeá sásta faisnéis úsáide a sheoladh chuig Mozilla chun cabhrú linn Firefox a fheabhsú?">
+<!ENTITY restrictable_feature_data_choices_description "An mbeifeá sásta faisnéis úsáide a sheoladh chuig GNU chun cabhrú linn IceCat a fheabhsú?">
 <!-- Default Bookmarks titles-->
-<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:icecatmobile -->
 
-<!ENTITY bookmarks_about_browser "Firefox: Maidir le do bhrabhsálaí">
-<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
-<!ENTITY bookmarks_addons "Firefox: Cuir in oiriúint duit féin le breiseáin">
+<!ENTITY bookmarks_about_browser "IceCat: Maidir le do bhrabhsálaí">
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://directory.fsf.org/wiki/GNU_IceCat -->
+<!ENTITY bookmarks_addons "IceCat: Cuir in oiriúint duit féin le breiseáin">
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
-<!ENTITY bookmarks_support "Firefox: Tacaíocht">
+<!ENTITY bookmarks_support "IceCat: Tacaíocht">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
-<!ENTITY bookmarks_restricted_support2 "Cúnamh agus Tacaíocht Firefox i dtaobh próifílí teoranta ar tháibléid Android">
+<!ENTITY bookmarks_restricted_support2 "Cúnamh agus Tacaíocht IceCat i dtaobh próifílí teoranta ar tháibléid Android">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
-<!ENTITY bookmarks_restricted_webmaker "Foghlaim an Gréasán: Mozilla Webmaker">
+<!ENTITY bookmarks_restricted_webmaker "Foghlaim an Gréasán: GNU Webmaker">
 <!-- LOCALIZATION NOTE (unsupported_sdk_version): The user installed a build of this app that does not support
      the Android version of this device. the formatS1 is replaced by the CPU ABI (e.g., ARMv7); the formatS2 is
      replaced by the Android OS version (e.g., 14)-->

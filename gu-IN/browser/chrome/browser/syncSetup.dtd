@@ -16,7 +16,7 @@
 <!-- New Account AND Existing Account -->
 
 <!ENTITY server.label               "સર્વર">
-<!ENTITY serverType.default.label      "મૂળભૂત: Mozilla &syncBrand.fullName.label; સર્વર">
+<!ENTITY serverType.default.label      "મૂળભૂત: GNU &syncBrand.fullName.label; સર્વર">
 <!ENTITY serverType.custom2.label   "વૈવિધ્ય સર્વરને વાપરો…">
 <!ENTITY signIn.account2.label      "ખાતુ">
 <!ENTITY signIn.account2.accesskey  "A">

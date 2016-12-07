@@ -39,4 +39,4 @@
 
 <!ENTITY plugin.file                                         "Fayl">
 <!ENTITY plugin.mimeTypes                                    "MIME Növləri">
-<!ENTITY plugin.flashProtectedMode.label                     "Adobe Flash müdafiə rejimini aktivləşdir">
+<!ENTITY plugin.flashProtectedMode.label                     "Flash müdafiə rejimini aktivləşdir">

@@ -16,7 +16,7 @@
 <!-- New Account AND Existing Account -->
 
 <!ENTITY server.label               "Server">
-<!ENTITY serverType.default.label      "Standart: Mozilla &syncBrand.fullName.label; server">
+<!ENTITY serverType.default.label      "Standart: GNU &syncBrand.fullName.label; server">
 <!ENTITY serverType.custom2.label   "Boshqa serverdan foydalanish">
 <!ENTITY signIn.account2.label      "Hisob">
 <!ENTITY signIn.account2.accesskey  "H">

@@ -29,11 +29,11 @@
 <!-- notification -->
 <!ENTITY testpilot.notification.close.tooltip           "Close">
 
-<!-- Firefox 4 beta version UI -->
+<!-- IceCat 4 beta version UI -->
 <!ENTITY testpilot.enable.label                         "Turn On User Studies">
 <!ENTITY testpilot.feedbackbutton.label                 "Feedback">
-<!ENTITY testpilot.happy.label                          "Firefox Made Me Happy Because…">
-<!ENTITY testpilot.sad.label                            "Firefox Made Me Sad Because…">
+<!ENTITY testpilot.happy.label                          "IceCat Made Me Happy Because…">
+<!ENTITY testpilot.sad.label                            "IceCat Made Me Sad Because…">
 <!ENTITY testpilot.happy.thunderbirdLabel               "Thunderbird Made Me Happy Because…">
 <!ENTITY testpilot.sad.thunderbirdLabel                 "Thunderbird Made Me Sad Because…">
 <!ENTITY testpilot.broken.label                         "Report this website as broken…">

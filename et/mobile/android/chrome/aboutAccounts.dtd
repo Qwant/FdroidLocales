@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY aboutAccounts.connected.title             "Firefoxi kontod">
+<!ENTITY aboutAccounts.connected.title             "IceCati kontod">
 <!ENTITY aboutAccounts.connected.description       "Oled ühendatud kasutajana">
 <!ENTITY aboutAccounts.syncPreferences.label       "Synci sätete vaatamiseks puuduta siit">
 
@@ -10,4 +10,4 @@
 <!ENTITY aboutAccounts.retry.label                 "Proovi uuesti">
 
 <!ENTITY aboutAccounts.restrictedError.title       "Piiratud õigused">
-<!ENTITY aboutAccounts.restrictedError.description "Sul pole võimalik Firefoxi kontosid selle profiili alt hallata.">
+<!ENTITY aboutAccounts.restrictedError.description "Sul pole võimalik IceCati kontosid selle profiili alt hallata.">

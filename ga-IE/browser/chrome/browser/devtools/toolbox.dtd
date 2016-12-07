@@ -105,7 +105,7 @@ values from browser.dtd.  -->
   -  boolean preference in about:config, in the options panel. -->
 
 <!ENTITY options.enableRemote.label3    "Cumasaigh cian-dífhabhtú">
-<!ENTITY options.enableRemote.tooltip   "Leis an rogha seo, beidh tú in ann na huirlisí forbartha a úsáid chun cóip de Firefox ar ríomhaire nó gléas i gcéin a dhífhabhtú, mar shampla Firefox OS">
+<!ENTITY options.enableRemote.tooltip   "Leis an rogha seo, beidh tú in ann na huirlisí forbartha a úsáid chun cóip de IceCat ar ríomhaire nó gléas i gcéin a dhífhabhtú, mar shampla IceCat OS">
 <!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
   -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
   -  boolean preference in about:config, in the options panel. -->
@@ -134,7 +134,7 @@ values from browser.dtd.  -->
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
 
-<!ENTITY options.selectDefaultTools.label     "Uirlisí Réamhshocraithe Forbartha do Firefox">
+<!ENTITY options.selectDefaultTools.label     "Uirlisí Réamhshocraithe Forbartha do IceCat">
 <!-- LOCALIZATION NOTE (options.selectAdditionalTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the developer tools
   -  added by add-ons. This heading is hidden when there is no developer tool

@@ -157,7 +157,7 @@
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <xul:button> tags.  The only language content is the label= field,
 which uses strings already defined above. The button is included here (instead of
-netError.xhtml) because it exposes functionality specific to firefox. -->
+netError.xhtml) because it exposes functionality specific to icecat. -->
 
 
 <!ENTITY securityOverride.warningContent "<p>আপুনি এটা ব্যতিক্ৰম যোগ কৰিব নালাগে যদি আপুনি এনে এটা ইন্টাৰনেট সংযোগ ব্যৱহাৰ কৰি আছে যাক আপুনি সম্পূৰ্ণৰূপে ভৰষা নকৰে অথবা যদি আপুনি এই চাৰ্ভাৰৰ বাবে এটা সতৰ্কবাৰ্তা চোৱাত অভ্যস্ত নহয়।</p> 

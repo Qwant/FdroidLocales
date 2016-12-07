@@ -4,7 +4,7 @@
 
 <!-- Don't localize these. They're here until they have
      a better place to live. -->
-<!ENTITY syncBrand.fullName.label "Firefox Sync">
+<!ENTITY syncBrand.fullName.label "IceCat Sync">
 <!ENTITY syncBrand.shortName.label "Sync">
 
 <!-- Main titles. -->
@@ -16,7 +16,7 @@
 <!-- J-PAKE Key Screen -->
 <!ENTITY sync.subtitle.connect.label '請在您的裝置上選擇「設定 &syncBrand.shortName.label;」以啟用您的新裝置。'>
 <!ENTITY sync.subtitle.header2.label '在您其他的裝置中輸入這組代碼'>
-<!ENTITY sync.subtitle.connectlocation2.label '在您其他裝置的 Firefox 設定當中的 &syncBrand.shortName.label; 項目當中點選「&sync.title.pair.label;」。'>
+<!ENTITY sync.subtitle.connectlocation2.label '在您其他裝置的 IceCat 設定當中的 &syncBrand.shortName.label; 項目當中點選「&sync.title.pair.label;」。'>
 <!ENTITY sync.subtitle.pair.label '若要啟用，請在您的另一台裝置選擇「與裝置配對」。'>
 <!ENTITY sync.pin.default.label '...\n...\n...\n'>
 <!ENTITY sync.pin.oneline.label '...'>
@@ -42,7 +42,7 @@
 <!ENTITY sync.button.manual.label '手動設定'>
 <!ENTITY sync.subtitle.nointernet.label '無可用網路連線。'>
 <!ENTITY sync.subtitle.failaccount.label '無法在您的裝置上建立帳號。'>
-<!ENTITY sync.subtitle.failmultiple.label '您安裝了超過一套 Firefox 嗎？目前 &syncBrand.fullName.label; 只能同時支援一套 Firefox。請移除其他的 Firefox 才能使用 &syncBrand.shortName.label;。'>
+<!ENTITY sync.subtitle.failmultiple.label '您安裝了超過一套 IceCat 嗎？目前 &syncBrand.fullName.label; 只能同時支援一套 IceCat。請移除其他的 IceCat 才能使用 &syncBrand.shortName.label;。'>
 
 <!-- Setup Success -->
 <!ENTITY sync.title.success.label '完成設定'>
@@ -54,7 +54,7 @@
 <!ENTITY sync.pair.tryagain.label '請再試一次。'>
 <!ENTITY sync.pair.connectlocation.label '請在裝置上選擇「設定 &syncBrand.shortName.label;」，然後選擇「我已經有帳號了。」以啟用您的新裝置。'>
 
-<!-- Firefox SyncAdapter Settings Screen -->
+<!-- IceCat SyncAdapter Settings Screen -->
 <!ENTITY sync.settings.options.label '選項'>
 <!ENTITY sync.summary.pair.label '鏈結其他裝置至您的 &syncBrand.shortName.label; 帳號'>
 
@@ -75,10 +75,10 @@
 <!ENTITY sync.account.label '&syncBrand.fullName.label;（舊版）'>
 
 <!-- Localization note (sync.default.client.name): Default string of the "Device
-     name" menu item upon setting up Firefox Sync.  The placeholder &formatS1
-     will be replaced by the name of the Firefox release channel and &formatS2
+     name" menu item upon setting up IceCat Sync.  The placeholder &formatS1
+     will be replaced by the name of the IceCat release channel and &formatS2
      by the model name of the Android device. Examples look like "Aurora on
-     GT-I1950" and "Fennec on MI 2S". -->
+     GT-I1950" and "IceCatMobile on MI 2S". -->
 <!ENTITY sync.default.client.name '&formatS2; 上的 &formatS1;'>
 
 <!-- Bookmark folder strings -->
@@ -112,9 +112,9 @@
 <!ENTITY sync.text.tab.sent.label '已送出您的分頁！'>
 <!ENTITY sync.text.tab.not.sent.label '傳送您的分頁時發生問題。'>
 
-<!-- Firefox Account strings. -->
+<!-- IceCat Account strings. -->
 
-<!ENTITY fxaccount_full_label 'Firefox 帳號'>
+<!ENTITY fxaccount_full_label 'IceCat 帳號'>
 
 <!ENTITY fxaccount_custom_server_account_title '使用伺服器上的帳號'>
 <!ENTITY fxaccount_custom_server_sync_title '在伺服器上儲存同步資料'>
@@ -129,7 +129,7 @@
 
 <!-- Localization note: these are shown in screens after the user has
      created or signed in to an account, and take the user back to
-     Firefox. -->
+     IceCat. -->
 <!ENTITY fxaccount_back_to_browsing '回到瀏覽器'>
 
 <!-- Localization note: the following two strings are interpolated
@@ -143,18 +143,18 @@
 <!ENTITY fxaccount_getting_started_welcome_to_sync '歡迎使用 &syncBrand.shortName.label;'>
 <!ENTITY fxaccount_getting_started_description2 '登入以同步您的分頁、書籤、登入帳密與其他資料。'>
 <!ENTITY fxaccount_getting_started_get_started '開始設定'>
-<!ENTITY fxaccount_getting_started_old_firefox '正在使用舊版的 &syncBrand.shortName.label;？'>
+<!ENTITY fxaccount_getting_started_old_icecat '正在使用舊版的 &syncBrand.shortName.label;？'>
 
-<!-- Localization note: the Firefox below should not change with the
-     particular version of Firefox installed (Release, Beta, Aurora,
-     etc).  The account remains a "Firefox Account". -->
-<!ENTITY fxaccount_create_account_header2 '註冊 Firefox 帳號'>
+<!-- Localization note: the IceCat below should not change with the
+     particular version of IceCat installed (Release, Beta, Aurora,
+     etc).  The account remains a "IceCat Account". -->
+<!ENTITY fxaccount_create_account_header2 '註冊 IceCat 帳號'>
 <!ENTITY fxaccount_create_account_password_length_restriction '至少要有 8 個字元長'>
 <!ENTITY fxaccount_create_account_day_of_birth '日'>
 <!ENTITY fxaccount_create_account_month_of_birth '月'>
 <!ENTITY fxaccount_create_account_year_of_birth '出生年'>
 <!-- Localization note: &formatS1; is fxaccount_policy_linktos, &formatS2; is fxaccount_policy_linkprivacy, both hyperlinked. -->
-<!ENTITY fxaccount_create_account_policy_text2 '若繼續，代表您同意 Firefox 雲端服務的 &formatS1; 與 &formatS2;。'>
+<!ENTITY fxaccount_create_account_policy_text2 '若繼續，代表您同意 IceCat 雲端服務的 &formatS1; 與 &formatS2;。'>
 <!ENTITY fxaccount_create_account_button '下一步'>
 <!ENTITY fxaccount_create_account_choose_what_to_sync '選擇要同步的項目'>
 <!ENTITY fxaccount_create_account_sign_in_instead '已經有帳號了？在此登入'>
@@ -166,7 +166,7 @@
 <!ENTITY fxaccount_account_create_not_allowed_learn_more '詳細資訊'>
 
 <!ENTITY fxaccount_confirm_account_header '確認您的帳號'>
-<!-- Localization note: &formatS; is the Firefox Account's email address. -->
+<!-- Localization note: &formatS; is the IceCat Account's email address. -->
 <!ENTITY fxaccount_confirm_account_verification_link '已將驗證連結寄送至 &formatS;'>
 <!ENTITY fxaccount_confirm_account_resend_email '重寄驗證郵件'>
 <!ENTITY fxaccount_confirm_account_change_email '要忘記此電子郵件地址？'>
@@ -195,7 +195,7 @@
 <!ENTITY fxaccount_finish_migrating_button_label '完成升級'>
 <!ENTITY fxaccount_finish_migrating_description '升級過程可能需要傳輸很多資料，建議您最好連線到 Wi-Fi 網路。'>
 
-<!ENTITY fxaccount_status_header2 'Firefox 帳號'>
+<!ENTITY fxaccount_status_header2 'IceCat 帳號'>
 <!ENTITY fxaccount_status_signed_in_as '已登入為'>
 <!ENTITY fxaccount_status_manage_account '管理帳號'>
 <!ENTITY fxaccount_status_auth_server '帳號伺服器'>
@@ -210,7 +210,7 @@
 <!ENTITY fxaccount_status_needs_upgrade '您需要升級 &brandShortName; 才能登入。'>
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled '&syncBrand.shortName.label; 已設定完成，但不會自動進行同步。請到 Android 設定 &gt; 帳號與同步處理開啟「自動同步」。'>
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled_v21 '&syncBrand.shortName.label; 已設定完成，但不會自動進行同步。請到 Android 設定的「帳號與同步設定」選單中打開「自動同步資料」才會自動同步。'>
-<!ENTITY fxaccount_status_needs_finish_migrating '點擊此處以登入至您全新的 Firefox 帳號。'>
+<!ENTITY fxaccount_status_needs_finish_migrating '點擊此處以登入至您全新的 IceCat 帳號。'>
 <!ENTITY fxaccount_status_bookmarks '書籤'>
 <!ENTITY fxaccount_status_history '瀏覽紀錄'>
 <!ENTITY fxaccount_status_passwords2 '登入資訊'>
@@ -225,22 +225,22 @@
 <!ENTITY fxaccount_status_more '更多&ellipsis;'>
 <!ENTITY fxaccount_remove_account '取消連線&ellipsis;'>
 
-<!ENTITY fxaccount_remove_account_dialog_title '移除 Firefox 帳號？'>
+<!ENTITY fxaccount_remove_account_dialog_title '移除 IceCat 帳號？'>
 <!ENTITY fxaccount_remove_account_dialog_message '&brandShortName; 將停止同步您的帳號，但不會刪除此裝置中的任何瀏覽資料。'>
 <!-- Localization note: format string below will be replaced
-     with the Firefox Account's email address. -->
-<!ENTITY fxaccount_remove_account_toast '已移除 Firefox 帳號 &formatS;。'>
+     with the IceCat Account's email address. -->
+<!ENTITY fxaccount_remove_account_toast '已移除 IceCat 帳號 &formatS;。'>
 
 <!ENTITY fxaccount_enable_debug_mode '開啟除錯模式'>
 
 <!-- Localization note: this is the name shown by the Android system
-     itself for a Firefox Account. Don't localize this. -->
-<!ENTITY fxaccount_account_type_label 'Firefox'>
+     itself for a IceCat Account. Don't localize this. -->
+<!ENTITY fxaccount_account_type_label 'IceCat'>
 
 <!-- Localization note: these are shown by the Android system itself,
-     when the user navigates to the Android > Accounts > {Firefox
-     Account} Screen. The link takes the user to the Firefox Account
-     status activity, which lets them manage their Firefox
+     when the user navigates to the Android > Accounts > {IceCat
+     Account} Screen. The link takes the user to the IceCat Account
+     status activity, which lets them manage their IceCat
      Account. -->
 <!ENTITY fxaccount_options_title '&syncBrand.shortName.label; 選項'>
 <!ENTITY fxaccount_options_configure_title '設定 &syncBrand.shortName.label;'>
@@ -248,7 +248,7 @@
 <!-- Localization note: these error messages are shown after a request
      has been made to the remote server, and an error of some type has
      been returned. -->
-<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED '您需要升級 Firefox'>
+<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED '您需要升級 IceCat'>
 
 <!-- Localization note: the format string will be fxaccount_sign_in_button_label, linkified. -->
 <!ENTITY fxaccount_remote_error_ATTEMPT_TO_CREATE_AN_ACCOUNT_THAT_ALREADY_EXISTS_2 '帳號已存在。 &formatS1;'>
@@ -263,12 +263,12 @@
 
 <!ENTITY fxaccount_sync_sign_in_error_notification_title2 '&syncBrand.shortName.label; 未連線'>
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_sign_in_error_notification_text2 '點擊以登入為 &formatS;'>
 
 <!ENTITY fxaccount_sync_finish_migrating_notification_title '&syncBrand.shortName.label; 升級完成了嗎？'>
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_finish_migrating_notification_text '點擊以登入為 &formatS;'>
 
 <!-- Localization note: the following strings are used in a

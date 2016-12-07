@@ -23,8 +23,8 @@
 <!ENTITY importFromChrome.accesskey     "க">
 
 
-<!ENTITY importFromFirefox.label        "பயர்பாக்ஸ்(x)">
-<!ENTITY importFromFirefox.accesskey    "x">
+<!ENTITY importFromIceCat.label        "பயர்பாக்ஸ்(x)">
+<!ENTITY importFromIceCat.accesskey    "x">
 
 
 

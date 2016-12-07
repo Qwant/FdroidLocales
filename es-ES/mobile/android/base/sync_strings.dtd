@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY syncBrand.fullName.label "Firefox Sync">
+<!ENTITY syncBrand.fullName.label "IceCat Sync">
 <!ENTITY syncBrand.shortName.label "Sync">
 <!ENTITY sync.app.name.label "&syncBrand.fullName.label;">
 <!ENTITY sync.title.connect.label "Conectar a &syncBrand.shortName.label;">
@@ -10,7 +10,7 @@
 <!ENTITY sync.title.pair.label "Emparejar un dispositivo">
 <!ENTITY sync.subtitle.connect.label 'Para activar un nuevo dispositivo, seleccione \"Configurar &syncBrand.shortName.label;\" en su dispositivo.'>
 <!ENTITY sync.subtitle.header2.label "Escriba este código en su otro dispositivo">
-<!ENTITY sync.subtitle.connectlocation2.label "Seleccione “&sync.title.pair.label;” en la sección de &syncBrand.shortName.label; en las preferencias de su otro dispositivo con Firefox.">
+<!ENTITY sync.subtitle.connectlocation2.label "Seleccione “&sync.title.pair.label;” en la sección de &syncBrand.shortName.label; en las preferencias de su otro dispositivo con IceCat.">
 <!ENTITY sync.subtitle.pair.label 'Para activarlo, seleccione \"Emparejar un dispositivo\" en su otro dispositivo.'>
 <!ENTITY sync.pin.default.label "...\n...\n...\n">
 <!ENTITY sync.pin.oneline.label "...">
@@ -30,7 +30,7 @@
 <!ENTITY sync.button.manual.label "Configuración manual">
 <!ENTITY sync.subtitle.nointernet.label "No está disponible una conexión a internet.">
 <!ENTITY sync.subtitle.failaccount.label "La creación de la cuenta en su dispositivo ha fallado.">
-<!ENTITY sync.subtitle.failmultiple.label "¿Tiene más de un Firefox instalado? Actualmente &syncBrand.fullName.label; sólo admite una instalación de Firefox a la vez. Desinstale las otras instancias para usar &syncBrand.shortName.label;.">
+<!ENTITY sync.subtitle.failmultiple.label "¿Tiene más de un IceCat instalado? Actualmente &syncBrand.fullName.label; sólo admite una instalación de IceCat a la vez. Desinstale las otras instancias para usar &syncBrand.shortName.label;.">
 <!ENTITY sync.title.success.label "Instalación completada">
 <!ENTITY sync.subtitle.success.label1 "Sus datos están ahora siendo descargados en segundo plano. Puede ir a Ajustes para administrar su cuenta o empezar a navegar con &brandShortName;.">
 <!ENTITY sync.settings.label "Configuración">
@@ -72,7 +72,7 @@
 <!ENTITY sync.text.redirect.to.set.up.sync.label "Configurar &syncBrand.fullName.label; en su dispositivo para enviar pestañas a otros equipos.">
 <!ENTITY sync.text.tab.sent.label "¡Su pestaña ha sido enviada!">
 <!ENTITY sync.text.tab.not.sent.label "Hubo un problema al enviar su pestaña.">
-<!ENTITY fxaccount_full_label "Firefox Accounts">
+<!ENTITY fxaccount_full_label "IceCat Accounts">
 <!ENTITY fxaccount_custom_server_account_title "Usando la cuenta del servidor">
 <!ENTITY fxaccount_custom_server_sync_title "Guardar datos de Sync en el servidor">
 <!ENTITY fxaccount_email_hint "Correo">
@@ -85,13 +85,13 @@
 <!ENTITY fxaccount_getting_started_welcome_to_sync "Bienvenido a &syncBrand.shortName.label;">
 <!ENTITY fxaccount_getting_started_description2 "Inicie sesión para sincronizar sus pestañas, marcadores, credenciales y más.">
 <!ENTITY fxaccount_getting_started_get_started "Comenzar">
-<!ENTITY fxaccount_getting_started_old_firefox "¿Usa una versión antigua de &syncBrand.shortName.label;?">
-<!ENTITY fxaccount_create_account_header2 "Crear una cuenta de Firefox">
+<!ENTITY fxaccount_getting_started_old_icecat "¿Usa una versión antigua de &syncBrand.shortName.label;?">
+<!ENTITY fxaccount_create_account_header2 "Crear una cuenta de IceCat">
 <!ENTITY fxaccount_create_account_password_length_restriction "Debe tener al menos 8 caracteres">
 <!ENTITY fxaccount_create_account_day_of_birth "Día">
 <!ENTITY fxaccount_create_account_month_of_birth "Mes">
 <!ENTITY fxaccount_create_account_year_of_birth "Año de nacimiento">
-<!ENTITY fxaccount_create_account_policy_text2 "Al continuar, acepto los &formatS1; y el &formatS2; de los servicios en la nube de Firefox.">
+<!ENTITY fxaccount_create_account_policy_text2 "Al continuar, acepto los &formatS1; y el &formatS2; de los servicios en la nube de IceCat.">
 <!ENTITY fxaccount_create_account_button "Siguiente">
 <!ENTITY fxaccount_create_account_choose_what_to_sync "Elegir qué sincronizar">
 <!ENTITY fxaccount_create_account_sign_in_instead "¿Ya tiene una cuenta? Inicie sesión">
@@ -123,7 +123,7 @@
 <!ENTITY fxaccount_finish_migrating_header "Inicie sesión para finalizar actualización">
 <!ENTITY fxaccount_finish_migrating_button_label "Finalizar actualización">
 <!ENTITY fxaccount_finish_migrating_description "Actualizar puede transferir muchos datos. Es mejor estar en una red WiFi.">
-<!ENTITY fxaccount_status_header2 "Cuenta de Firefox">
+<!ENTITY fxaccount_status_header2 "Cuenta de IceCat">
 <!ENTITY fxaccount_status_signed_in_as "Conectado como">
 <!ENTITY fxaccount_status_manage_account "Administrar cuenta">
 <!ENTITY fxaccount_status_auth_server "Servidor de cuentas">
@@ -138,7 +138,7 @@
 <!ENTITY fxaccount_status_needs_upgrade "Necesita actualizar &brandShortName; para iniciar sesión.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled "&syncBrand.shortName.label; está configurado, pero no sincronizando automáticamente. Marque “Sincronizar datos automáticamente” en Ajustes Android &gt; Uso de datos.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled_v21 "&syncBrand.shortName.label; está configurado, pero no sincronizando automáticamente. Marque “Sincronizar datos automáticamente” en el menú Ajustes Android &gt; Uso de datos.">
-<!ENTITY fxaccount_status_needs_finish_migrating "Toque para iniciar sesión con su nueva cuenta de Firefox.">
+<!ENTITY fxaccount_status_needs_finish_migrating "Toque para iniciar sesión con su nueva cuenta de IceCat.">
 <!ENTITY fxaccount_status_bookmarks "Marcadores">
 <!ENTITY fxaccount_status_history "Historial">
 <!ENTITY fxaccount_status_passwords2 "Inicios de sesión">
@@ -148,14 +148,14 @@
 <!ENTITY fxaccount_status_linkprivacy "Aviso sobre privacidad">
 <!ENTITY fxaccount_status_more "Más&ellipsis;">
 <!ENTITY fxaccount_remove_account "Desconectar&ellipsis;">
-<!ENTITY fxaccount_remove_account_dialog_title "¿Eliminar cuenta de Firefox?">
+<!ENTITY fxaccount_remove_account_dialog_title "¿Eliminar cuenta de IceCat?">
 <!ENTITY fxaccount_remove_account_dialog_message "&brandShortName; dejará de sincronizar con su cuenta, pero no eliminará ninguno de sus datos de navegación en este dispositivo.">
-<!ENTITY fxaccount_remove_account_toast "Cuenta de Firefox &formatS; eliminada.">
+<!ENTITY fxaccount_remove_account_toast "Cuenta de IceCat &formatS; eliminada.">
 <!ENTITY fxaccount_enable_debug_mode "Activar modo de depuración">
-<!ENTITY fxaccount_account_type_label "Firefox">
+<!ENTITY fxaccount_account_type_label "IceCat">
 <!ENTITY fxaccount_options_title "Opciones de &syncBrand.shortName.label;">
 <!ENTITY fxaccount_options_configure_title "Configurar &syncBrand.shortName.label;">
-<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Necesita actualizar Firefox">
+<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Necesita actualizar IceCat">
 <!ENTITY fxaccount_remote_error_ATTEMPT_TO_CREATE_AN_ACCOUNT_THAT_ALREADY_EXISTS_2 "La cuenta ya existe. &formatS1;">
 <!ENTITY fxaccount_remote_error_ATTEMPT_TO_ACCESS_AN_ACCOUNT_THAT_DOES_NOT_EXIST "Dirección de correo o contraseña no válidos">
 <!ENTITY fxaccount_remote_error_INCORRECT_PASSWORD "Dirección de correo o contraseña no válidos">

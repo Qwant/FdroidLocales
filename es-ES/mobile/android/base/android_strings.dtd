@@ -84,7 +84,7 @@
 <!ENTITY overlay_share_send_tab_btn_label "Enviar a otro dispositivo">
 <!ENTITY overlay_share_no_url "No se ha encontrado enlace en esta compartición">
 <!ENTITY overlay_share_select_device "Seleccione dispositivo">
-<!ENTITY overlay_no_synced_devices "No se han encontrado dispositivos conectados a Firefox Accounts">
+<!ENTITY overlay_no_synced_devices "No se han encontrado dispositivos conectados a IceCat Accounts">
 <!ENTITY pref_category_search3 "Buscar">
 <!ENTITY pref_category_search_summary "Personalizar sus buscadores">
 <!ENTITY pref_category_accessibility "Accesibilidad">
@@ -213,7 +213,7 @@
 <!ENTITY pref_private_data_siteSettings2 "Configuración de sitios">
 <!ENTITY pref_private_data_downloadFiles2 "Descargas">
 <!ENTITY pref_private_data_syncedTabs "Pestañas sincronizadas">
-<!ENTITY pref_about_firefox "Acerca de &brandShortName;">
+<!ENTITY pref_about_icecat "Acerca de &brandShortName;">
 <!ENTITY pref_vendor_faqs "FAQ">
 <!ENTITY pref_vendor_feedback "Enviar opinión">
 <!ENTITY pref_dialog_set_default "Configurar como predet.">
@@ -359,10 +359,10 @@
 <!ENTITY home_remote_tabs_title "Pestañas sincronizadas">
 <!ENTITY home_remote_tabs_empty "Sus pestañas de otros dispositivos se muestran aquí.">
 <!ENTITY home_remote_tabs_unable_to_connect "No se puede conectar">
-<!ENTITY home_remote_tabs_need_to_sign_in "Regístrese para reconectar su cuenta de Firefox y continuar sincronizando.">
-<!ENTITY home_remote_tabs_need_to_finish_migrating "¡Su nueva cuenta de Firefox está lista!">
+<!ENTITY home_remote_tabs_need_to_sign_in "Regístrese para reconectar su cuenta de IceCat y continuar sincronizando.">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "¡Su nueva cuenta de IceCat está lista!">
 <!ENTITY home_remote_tabs_trouble_verifying "¿Tiene problemas para verificar su cuenta?">
-<!ENTITY home_remote_tabs_need_to_verify "Verifique su cuenta de Firefox para comenzar a sincronizar.">
+<!ENTITY home_remote_tabs_need_to_verify "Verifique su cuenta de IceCat para comenzar a sincronizar.">
 <!ENTITY home_remote_tabs_one_hidden_device "1 dispositivo oculto">
 <!ENTITY home_remote_tabs_many_hidden_devices "&formatD; dispositivos ocultos">
 <!ENTITY home_remote_tabs_hidden_devices_title "Dispositivos ocultos">
@@ -439,7 +439,7 @@
 <!ENTITY intent_uri_private_browsing_multiple_match_title "¿Salir de navegación privada?">
 <!ENTITY devtools_auth_scan_header "Escaneando el código QR mostrado en su otro dispositivo">
 <!ENTITY restrictable_feature_addons_installation "Complementos">
-<!ENTITY restrictable_feature_addons_installation_description "Añadir características o funcionalidades a Firefox. Nota: los complementos pueden desactivar ciertas restricciones.">
+<!ENTITY restrictable_feature_addons_installation_description "Añadir características o funcionalidades a IceCat. Nota: los complementos pueden desactivar ciertas restricciones.">
 <!ENTITY restrictable_feature_private_browsing "Navegación privada">
 <!ENTITY restrictable_feature_private_browsing_description "Permitir a los miembros de la familia navegar sin guardar información sobre los sitios y páginas que han visitado.">
 <!ENTITY restrictable_feature_clear_history "Limpiar historial">
@@ -449,12 +449,12 @@
 <!ENTITY restrictable_feature_camera_microphone "Cámara y micrófono">
 <!ENTITY restrictable_feature_camera_microphone_description "Permitir a los miembros de la familia iniciar comunicación en tiempo real en los sitios web.">
 <!ENTITY restrictable_feature_data_choices "Elección de datos">
-<!ENTITY restrictable_feature_data_choices_description "Elegir si enviar o no información de uso a Mozilla para ayudar a mejorar Firefox.">
-<!ENTITY bookmarks_about_browser "Firefox: acerca de su navegador">
-<!ENTITY bookmarks_addons "Firefox: personalizar con complementos">
-<!ENTITY bookmarks_support "Ayuda de Firefox">
-<!ENTITY bookmarks_restricted_support2 "Ayuda y asistencia de Firefox para perfiles limitados en tabletas Android">
-<!ENTITY bookmarks_restricted_webmaker "Aprenda la web: Mozilla Webmaker">
+<!ENTITY restrictable_feature_data_choices_description "Elegir si enviar o no información de uso a GNU para ayudar a mejorar IceCat.">
+<!ENTITY bookmarks_about_browser "IceCat: acerca de su navegador">
+<!ENTITY bookmarks_addons "IceCat: personalizar con complementos">
+<!ENTITY bookmarks_support "Ayuda de IceCat">
+<!ENTITY bookmarks_restricted_support2 "Ayuda y asistencia de IceCat para perfiles limitados en tabletas Android">
+<!ENTITY bookmarks_restricted_webmaker "Aprenda la web: GNU Webmaker">
 <!ENTITY unsupported_sdk_version "¡Lo sentimos! Este &brandShortName; no funcionará en este dispositivo (&formatS1;, &formatS2;). Descargue la versión correcta.">
 <!ENTITY eol_notification_title "&brandShortName; ya no es compatible con Android 3">
 <!ENTITY eol_notification_summary "Toque para más información">

@@ -54,12 +54,12 @@
 <!ENTITY welcome.useOldSync.label "Используете старую версию Синхронизации?">
 <!ENTITY signedOut.caption "Возьмите свой Интернет с собой">
 <!ENTITY signedOut.description "Синхронизируйте свои закладки, историю, вкладки, пароли, дополнения и настройки на всех ваших устройствах.">
-<!ENTITY signedOut.accountBox.title "Соединитесь с Учётной записью Firefox">
+<!ENTITY signedOut.accountBox.title "Соединитесь с Учётной записью IceCat">
 <!ENTITY signedOut.accountBox.create "Создать учётную запись">
 <!ENTITY signedOut.accountBox.signin "Войти">
 <!ENTITY signedIn.engines.label "Синхронизируйте со всеми устройствами">
 <!ENTITY mobilePromo2.start "Синхронизируйтесь со своим мобильным устройством. Загрузите ">
-<!ENTITY mobilePromo2.androidLink "Firefox для Android">
+<!ENTITY mobilePromo2.androidLink "IceCat для Android">
 <!ENTITY mobilePromo2.iOSBefore " или ">
-<!ENTITY mobilePromo2.iOSLink "Firefox для iOS">
+<!ENTITY mobilePromo2.iOSLink "IceCat для iOS">
 <!ENTITY mobilePromo2.end ".">

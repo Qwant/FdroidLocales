@@ -17,9 +17,9 @@
 
 <!ENTITY rights.intro-point1a "Mae &brandShortName; ar gael i chi o dan amodau'r ">
 <!ENTITY rights.intro-point1b "Trwydded Gyhoeddus Mozilla">
-<!ENTITY rights.intro-point1c ". Mae hyn yn golygu y cewch ddefnyddio, gopïo a dosbarthu &brandShortName; i eraill.  Mae croeso i chi newid cod ffynhonnell &brandShortName; yn ôl eich angen. Mae Trwydded Gyhoeddus Mozilla yn rhoi'r hawl i chi ddosbarthu'r fersiwn rydych wedi ei newid.">
+<!ENTITY rights.intro-point1c ". Mae hyn yn golygu y cewch ddefnyddio, gopïo a dosbarthu &brandShortName; i eraill.  Mae croeso i chi newid cod ffynhonnell &brandShortName; yn ôl eich angen. Mae Trwydded Gyhoeddus GNU yn rhoi'r hawl i chi ddosbarthu'r fersiwn rydych wedi ei newid.">
 
-<!ENTITY rights.intro-point2-a "Nid ydych yn derbyn unrhyw hawliau nod masnachu na thrwyddedau i nod masnach y Mozilla Foundation neu unrhyw barti, gan gynnwys y Mozzilla Foundation heb gyfyngiadau i enw na logo Firefox. Mae gwybodaeth bellach am nodau masnach i’w cael ">
+<!ENTITY rights.intro-point2-a "Nid ydych yn derbyn unrhyw hawliau nod masnachu na thrwyddedau i nod masnach y Mozilla Foundation neu unrhyw barti, gan gynnwys y Mozzilla Foundation heb gyfyngiadau i enw na logo IceCat. Mae gwybodaeth bellach am nodau masnach i’w cael ">
 <!ENTITY rights.intro-point2-b "yma">
 <!ENTITY rights.intro-point2-c ".">
 <!-- point 2.5 text for official branded builds -->

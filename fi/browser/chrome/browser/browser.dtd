@@ -59,7 +59,7 @@ can reach it easily. -->
 <!ENTITY tabCmd.commandkey  "t">
 <!-- LOCALIZATION NOTE (openLocationCmd.label): "Open Location" is only
 displayed on OS X, and only on windows that aren't main browser windows, or
-when there are no windows but Firefox is still running. -->
+when there are no windows but IceCat is still running. -->
 <!ENTITY openLocationCmd.label "Avaa kohde…">
 <!ENTITY openFileCmd.label  "Avaa tiedosto…">
 <!ENTITY openFileCmd.accesskey  "d">

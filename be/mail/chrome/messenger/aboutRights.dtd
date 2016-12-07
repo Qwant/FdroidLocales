@@ -8,8 +8,8 @@
 <!ENTITY rights.intro "&brandFullName; свабоднае праграмнае забеспячэнне з адкрытымі зыходнікамі, створанае шматлюднай сусветнай грамадой. Вам будзе цікава ведаць:">
 <!ENTITY rights.intro-point1a "&brandShortName; даступны вам згодна умовам">
 <!ENTITY rights.intro-point1b "Прылюднай Ліцэнзіі Mozilla">
-<!ENTITY rights.intro-point1c ". Яна дазваляе вам ужываць, капіяваць і распаўсюджваць &brandShortName;.  Вы таксама можаце змяняць зыходны код &brandShortName; дзеля задавальнення вашых патрэбаў. Прылюдная Ліцэнзія Mozilla дазваляе вам распаўсюджваць вашы змененыя версіі.">
-<!ENTITY rights.intro-point2a "Mozilla не дае вам ніякіх правоў на гандлёвыя маркі і эмблемы Mozilla і Thunderbird. Дадатковыя звесткі пра гандлёвыя маркі можна адшукаць ">
+<!ENTITY rights.intro-point1c ". Яна дазваляе вам ужываць, капіяваць і распаўсюджваць &brandShortName;.  Вы таксама можаце змяняць зыходны код &brandShortName; дзеля задавальнення вашых патрэбаў. Прылюдная Ліцэнзія GNU дазваляе вам распаўсюджваць вашы змененыя версіі.">
+<!ENTITY rights.intro-point2a "Mozilla не дае вам ніякіх правоў на гандлёвыя маркі і эмблемы GNU і Thunderbird. Дадатковыя звесткі пра гандлёвыя маркі можна адшукаць ">
 <!ENTITY rights.intro-point2b "тут">
 <!ENTITY rights.intro-point2c ".">
 <!ENTITY rights.intro-point3a "З палітыкамі прыватнасці прадуктаў &vendorShortName; можна пазнаёміцца ">

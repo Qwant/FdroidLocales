@@ -20,5 +20,5 @@
 <!ENTITY aboutPage.credits.label                "Autorid">
 <!ENTITY aboutPage.license.label                "Litsentsist">
 
-<!-- LOCALIZATION NOTE (aboutPage.logoTrademark): The message is explicitly about the word "Firefox" being trademarked, that's why we use it, instead of brandShortName. -->
-<!ENTITY aboutPage.logoTrademark                "Firefox ja Firefoxi logod on Mozilla Foundation'i kaubamärgid.">
+<!-- LOCALIZATION NOTE (aboutPage.logoTrademark): The message is explicitly about the word "IceCat" being trademarked, that's why we use it, instead of brandShortName. -->
+<!ENTITY aboutPage.logoTrademark                "IceCat ja IceCati logod on Mozilla Foundation'i kaubamärgid.">

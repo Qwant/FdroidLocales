@@ -1,4 +1,4 @@
-<!-- LOCALIZATION NOTE This file is very similar to the one in Firefox from browser/locales/en-US/chrome/browser/aboutRights.dtd so you can use that file as a starting point -->
+<!-- LOCALIZATION NOTE This file is very similar to the one in IceCat from browser/locales/en-US/chrome/browser/aboutRights.dtd so you can use that file as a starting point -->
 <!-- rights.locale-direction instead of the usual local.dir entity, so RTL can skip translating page. -->
 <!ENTITY rights.locale-direction "ltr">
 <!ENTITY rights.pagetitle       "about:rights">
@@ -15,9 +15,9 @@
      deliberate for formatting around the embedded links. -->
 <!ENTITY rights.intro-point1a "&brandShortName; est disponible suivant les modalités de la ">
 <!ENTITY rights.intro-point1b "Mozilla Public License">
-<!ENTITY rights.intro-point1c "(Licence publique Mozilla). Ceci signifie que vous pouvez utiliser, copier et distribuer &brandShortName; à d'autres personnes. Vous pouvez également modifier le code source de &brandShortName; à votre gré pour répondre à vos besoins. La Licence publique Mozilla vous autorise aussi à distribuer vos versions modifiées.">
+<!ENTITY rights.intro-point1c "(Licence publique Mozilla). Ceci signifie que vous pouvez utiliser, copier et distribuer &brandShortName; à d'autres personnes. Vous pouvez également modifier le code source de &brandShortName; à votre gré pour répondre à vos besoins. La Licence publique GNU vous autorise aussi à distribuer vos versions modifiées.">
 
-<!ENTITY rights.intro-point2a "Mozilla ne vous cède aucun droit sur les marques déposées et logos Mozilla et SeaMonkey. Vous pouvez consulter des ">
+<!ENTITY rights.intro-point2a "Mozilla ne vous cède aucun droit sur les marques déposées et logos GNU et SeaMonkey. Vous pouvez consulter des ">
 <!ENTITY rights.intro-point2b "informations complémentaires">
 <!ENTITY rights.intro-point2c " sur ces marques déposées.">
 

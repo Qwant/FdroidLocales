@@ -11,14 +11,14 @@
 
 <!ENTITY abouthome.pageTitle "&brandFullName; startowy bok">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):
-     text in <a/> will be linked to the Firefox features page on mozilla.com
+     text in <a/> will be linked to the IceCat features page on mozilla.com
 -->
 
-<!ENTITY abouthome.defaultSnippet1.v1 "Źěkujomy se, až sćo Firefox wubrał! Aby wy nejwěcej ze swójogo wobglědowaka wuwónoźeł, zgóńśo wěcej wó <a>nejnowšych funkcijach</a>.">
+<!ENTITY abouthome.defaultSnippet1.v1 "Źěkujomy se, až sćo IceCat wubrał! Aby wy nejwěcej ze swójogo wobglědowaka wuwónoźeł, zgóńśo wěcej wó <a>nejnowšych funkcijach</a>.">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet2.v1):
      text in <a/> will be linked to the featured add-ons on addons.mozilla.org
 -->
-<!ENTITY abouthome.defaultSnippet2.v1 "Jo lažko waš Firefox eksaktnje wašym žycenjam pśiměriś. <a>Wubjeŕśo z tysacow dodankow</a>.">
+<!ENTITY abouthome.defaultSnippet2.v1 "Jo lažko waš IceCat eksaktnje wašym žycenjam pśiměriś. <a>Wubjeŕśo z tysacow dodankow</a>.">
 <!-- LOCALIZATION NOTE (abouthome.rightsSnippet): text in <a/> will be linked to about:rights -->
 <!ENTITY abouthome.rightsSnippet "&brandFullName; jo licha a zjawna softwara wót za wše wužytneje załožby Mozilla Foundation. <a>Waše pšawa…</a>">
 
@@ -33,7 +33,7 @@
 <!ENTITY abouthome.addonsButton.label    "Dodanki">
 <!-- LOCALIZATION NOTE (abouthome.appsButton2.label): This string should be consistent with
      the Apps menu item in the Tools menu (webapps.label in browser.dtd) and the Apps toolbar button in
-     Firefox's customization palette (web-apps-button.label in customizableWidgets.properties) -->
+     IceCat's customization palette (web-apps-button.label in customizableWidgets.properties) -->
 <!ENTITY abouthome.appsButton2.label     "Nałoženja">
 <!ENTITY abouthome.downloadsButton.label "Ześěgnjenja">
 <!ENTITY abouthome.syncButton.label      "&syncBrand.shortName.label;">

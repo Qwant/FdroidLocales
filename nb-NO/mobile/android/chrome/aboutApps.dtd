@@ -5,6 +5,6 @@
 <!ENTITY aboutApps.title2                          "Apper">
 <!ENTITY aboutApps.header                          "Dine apper">
 
-<!ENTITY aboutApps.browseMarketplace "Åpne Firefox Marketplace">
+<!ENTITY aboutApps.browseMarketplace "Åpne F-droid free software repository">
 <!ENTITY aboutApps.uninstall "Avinstaller">
 <!ENTITY aboutApps.checkForUpdates "Se etter oppdateringer">

@@ -11,14 +11,14 @@
 
 <!ENTITY abouthome.pageTitle "&brandFullName; Hello Naatirngo">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):
-     text in <a/> will be linked to the Firefox features page on mozilla.com
+     text in <a/> will be linked to the IceCat features page on mozilla.com
 -->
 
-<!ENTITY abouthome.defaultSnippet1.v1 "A jaaraama e cuɓagol Firefox! Ngam naftoraade tigi ndee wanngorde, ɓeydu humpito maa e <a>fannuuji cakkitiiɗi</a>.">
+<!ENTITY abouthome.defaultSnippet1.v1 "A jaaraama e cuɓagol IceCat! Ngam naftoraade tigi ndee wanngorde, ɓeydu humpito maa e <a>fannuuji cakkitiiɗi</a>.">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet2.v1):
      text in <a/> will be linked to the featured add-ons on addons.mozilla.org
 -->
-<!ENTITY abouthome.defaultSnippet2.v1 "Feŋtaade Firefox haa nannda e no njiɗir-ɗaa ena weeɓi sanne. <a>Suɓo ɓeyditte e nder ujunnaaji</a>.">
+<!ENTITY abouthome.defaultSnippet2.v1 "Feŋtaade IceCat haa nannda e no njiɗir-ɗaa ena weeɓi sanne. <a>Suɓo ɓeyditte e nder ujunnaaji</a>.">
 <!-- LOCALIZATION NOTE (abouthome.rightsSnippet): text in <a/> will be linked to about:rights -->
 <!ENTITY abouthome.rightsSnippet "&brandFullName; ko dokkal tee ko topateeri open source iwndi e fedde nde ɗaɓɓaani ngalu hono Mozilla Foundation. <a>Anndu Hakkeeji Maa…</a>">
 
@@ -33,7 +33,7 @@
 <!ENTITY abouthome.addonsButton.label    "Ɓeyditte">
 <!-- LOCALIZATION NOTE (abouthome.appsButton2.label): This string should be consistent with
      the Apps menu item in the Tools menu (webapps.label in browser.dtd) and the Apps toolbar button in
-     Firefox's customization palette (web-apps-button.label in customizableWidgets.properties) -->
+     IceCat's customization palette (web-apps-button.label in customizableWidgets.properties) -->
 <!ENTITY abouthome.appsButton2.label     "Jaaɓirɗe">
 <!ENTITY abouthome.downloadsButton.label "Gaawte">
 <!ENTITY abouthome.syncButton.label      "&syncBrand.shortName.label;">

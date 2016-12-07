@@ -52,7 +52,7 @@
 <!ENTITY prefs.ppLink.label         "ਪਰਦੇਦਾਰੀ ਸੂਚਨਾ">
 
 
-<!-- Firefox Accounts stuff -->
+<!-- IceCat Accounts stuff -->
 <!ENTITY fxaPrivacyNotice.link.label "ਪਰਦੇਦਾਰੀ ਸੂਚਨਾ">
 <!ENTITY determiningAcctStatus.label     "…ਤੁਹਾਡੀ ਖਾਤਾ ਸਥਿਤੀ ਬਾਰੇ ਪਤਾ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ">
 

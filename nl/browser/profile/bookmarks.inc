@@ -14,27 +14,27 @@
 #define bookmarks_toolbarfolder_description Voeg bladwijzers aan deze map toe om ze op de bladwijzerwerkbalk weer te geven
 
 # LOCALIZATION NOTE (getting_started):
-# link title for https://www.mozilla.org/en-US/firefox/central/
+# link title for https://www.mozilla.org/en-US/icecat/central/
 #define getting_started Aan de slag
 
-# LOCALIZATION NOTE (firefox_heading):
-# Firefox links folder name
-#define firefox_heading Mozilla Firefox
+# LOCALIZATION NOTE (icecat_heading):
+# IceCat links folder name
+#define icecat_heading GNU IceCat
 
-# LOCALIZATION NOTE (firefox_help):
-# link title for https://www.mozilla.org/en-US/firefox/help/
-#define firefox_help Hulp en handleidingen
+# LOCALIZATION NOTE (icecat_help):
+# link title for https://www.mozilla.org/en-US/icecat/help/
+#define icecat_help Hulp en handleidingen
 
-# LOCALIZATION NOTE (firefox_customize):
-# link title for https://www.mozilla.org/en-US/firefox/customize/
-#define firefox_customize Firefox aanpassen
+# LOCALIZATION NOTE (icecat_customize):
+# link title for https://www.mozilla.org/en-US/icecat/customize/
+#define icecat_customize IceCat aanpassen
 
-# LOCALIZATION NOTE (firefox_community):
+# LOCALIZATION NOTE (firefox.community):
 # link title for https://www.mozilla.org/en-US/contribute/
-#define firefox_community Meewerken
+#define firefox.community Meewerken
 
-# LOCALIZATION NOTE (firefox_about):
+# LOCALIZATION NOTE (icecat_about):
 # link title for https://www.mozilla.org/en-US/about/
-#define firefox_about Over Mozilla
+#define icecat_about Over Mozilla
 
 #unfilter emptyLines

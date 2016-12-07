@@ -20,15 +20,15 @@
 
 # LOCALIZATION NOTE (mozilla_org):
 # link title for http://www.mozilla.org/ (in the personal toolbar)
-#define mozilla_org Mozilla 基金會
+#define mozilla_org GNU 基金會
 
 # LOCALIZATION NOTE (mozilla_org_long):
 # link title for http://www.mozilla.org/ (in normal bookmarks)
-#define mozilla_org_long Mozilla 基金會
+#define mozilla_org_long GNU 基金會
 
 # LOCALIZATION NOTE (mozilla_projects):
 # link title for http://www.mozilla.org/projects/
-#define mozilla_projects Mozilla 的專案
+#define mozilla_projects GNU 的專案
 
 # LOCALIZATION NOTE (mozilla_about):
 # link title for http://www.mozilla.org/about/
@@ -77,7 +77,7 @@
 # LOCALIZATION NOTE (seamonkey_l10n):
 # insert full bookmark line for localized SeaMonkey page (personal toolbar)
 # e.g. #define seamonkey_l10n <DT><A HREF="http://www.seamonkey.tlh/">SeaMonkey tlhIngan</a>
-#define seamonkey_l10n Mozilla Taiwan Comminity (MozTW)
+#define seamonkey_l10n GNU Taiwan Comminity (MozTW)
 
 # LOCALIZATION NOTE (seamonkey_l10n_long):
 # insert full bookmark line for localized SeaMonkey page (normal bookmark)

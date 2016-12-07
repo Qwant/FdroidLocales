@@ -33,8 +33,8 @@
 <!ENTITY options.selectEnabledToolboxButtons.label "Przyciski narzędzi dla programistów">
 
 <!ENTITY options.selectDevToolsTheme.label2 "Motyw">
-<!ENTITY options.usedeveditiontheme.label "Motyw Firefox Developer Edition">
-<!ENTITY options.usedeveditiontheme.tooltip "Przełącza motyw Firefox Developer Edition przeglądarki">
+<!ENTITY options.usedeveditiontheme.label "Motyw IceCat Developer Edition">
+<!ENTITY options.usedeveditiontheme.tooltip "Przełącza motyw IceCat Developer Edition przeglądarki">
 
 <!ENTITY options.commonPrefs.label "Ogólne">
 <!ENTITY options.enablePersistentLogs.label "Trwałe dzienniki">
@@ -81,7 +81,7 @@
 <!ENTITY options.enableChrome.label5 "Narzędzia debugowania chrome przeglądarki i dodatków">
 <!ENTITY options.enableChrome.tooltip3 "Włączenie tej opcji pozwoli na używanie wielu narzędzi dla programistów w kontekście przeglądarki (poprzez Narzędzia > Dla twórców witryn > Narzędzia przeglądarki) i debugowanie dodatków z menedżera dodatków">
 <!ENTITY options.enableRemote.label3 "Debugowanie zdalne">
-<!ENTITY options.enableRemote.tooltip "Włączenie tej opcji pozwoli na debugowanie zdalnych instancji Firefoksa takich jak Firefox OS z poziomu narzędzi dla programistów">
+<!ENTITY options.enableRemote.tooltip "Włączenie tej opcji pozwoli na debugowanie zdalnych instancji Firefoksa takich jak IceCat OS z poziomu narzędzi dla programistów">
 <!ENTITY options.enableWorkers.label "Debugowanie wątków (eksperymentalne)">
 <!ENTITY options.enableWorkers.tooltip "Włączenie tej opcji pozwoli narzędziom przeglądarki na debugowanie wątków">
 <!ENTITY options.disableJavaScript.label "Wyłącz JavaScript *">

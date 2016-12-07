@@ -104,19 +104,19 @@
 <!ENTITY pref_category_general "Жалпы">
 <!ENTITY pref_category_general_summary2 "Үй, тіл, адрес жолағы">
 <!-- Localization note (pref_category_language) : This is the preferences
-     section in which the user picks the locale in which to display Firefox
+     section in which the user picks the locale in which to display IceCat
      UI. The locale includes both language and region concepts. -->
 
 <!ENTITY pref_category_language "Тіл">
 <!ENTITY pref_category_language_summary "Браузеріңіздің тілін өзгертіңіз">
 <!ENTITY pref_browser_locale "Браузер тілі">
 <!-- Localization note (locale_system_default) : This string indicates that
-     Firefox will use the locale currently selected in Android's settings
+     IceCat will use the locale currently selected in Android's settings
      to display browser chrome. -->
 
 <!ENTITY locale_system_default "Жүйелік">
 <!-- Localization note (overlay_share_label) : This is the label that appears
-     in Android's intent chooser when sending a link to Firefox to bookmark,
+     in Android's intent chooser when sending a link to IceCat to bookmark,
      send to another device, or add to Reading List. -->
 
 <!ENTITY overlay_share_label "&brandShortName; ішіне қосу">
@@ -140,7 +140,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "Firefox тіркелгісімен байланысқан құрылғылар табылмады">
+<!ENTITY overlay_no_synced_devices "IceCat тіркелгісімен байланысқан құрылғылар табылмады">
 
 <!ENTITY pref_category_search3 "Іздеу">
 <!ENTITY pref_category_search_summary "Іздеу қызметтерін баптаңыз">
@@ -193,7 +193,7 @@
 <!ENTITY home_homepage_title "Үй парағын орнату">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
-     button for this string, they will use the built-in default Firefox homepage (about:home). -->
+     button for this string, they will use the built-in default IceCat homepage (about:home). -->
 <!ENTITY home_homepage_radio_default "&brandShortName; үй парағы">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
@@ -320,7 +320,7 @@ size. -->
 <!ENTITY pref_private_data_syncedTabs "Синхрондалған беттер">
 
 
-<!ENTITY pref_about_firefox "&brandShortName; туралы">
+<!ENTITY pref_about_icecat "&brandShortName; туралы">
 <!ENTITY pref_vendor_faqs "FAQ">
 <!ENTITY pref_vendor_feedback "Кері байланыс">
 
@@ -548,11 +548,11 @@ size. -->
 <!ENTITY home_remote_tabs_title "Синхрондалған беттер">
 <!ENTITY home_remote_tabs_empty "Басқа құрылғыларыңыздан беттер осында көрсетіледі.">
 <!ENTITY home_remote_tabs_unable_to_connect "Қосылу нәтижесіз аяқталды">
-<!ENTITY home_remote_tabs_need_to_sign_in "Firefox тіркелгісін қайта байланыстыру және синхрондауды жалғастыру үшін кіріңіз.">
-<!ENTITY home_remote_tabs_need_to_finish_migrating "Сіздің жаңа Firefox тіркелгіңіз дайын!">
+<!ENTITY home_remote_tabs_need_to_sign_in "IceCat тіркелгісін қайта байланыстыру және синхрондауды жалғастыру үшін кіріңіз.">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "Сіздің жаңа IceCat тіркелгіңіз дайын!">
 
 <!ENTITY home_remote_tabs_trouble_verifying "Тіркелгіңізді растау мәселелері бар ма?">
-<!ENTITY home_remote_tabs_need_to_verify "Синхрондауды бастау үшін өз Firefox тіркелгісін растаңыз.">
+<!ENTITY home_remote_tabs_need_to_verify "Синхрондауды бастау үшін өз IceCat тіркелгісін растаңыз.">
 
 <!ENTITY home_remote_tabs_one_hidden_device "1 жасырын құрылғы">
 <!-- Localization note (home_remote_tabs_many_hidden_devices) : The
@@ -696,7 +696,7 @@ Android-тан импорттау">
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
      include "42 minutes ago", "4 days ago", "last week", etc. The subject of
-     "Last synced" is one of the user's other Sync clients, typically Firefox on
+     "Last synced" is one of the user's other Sync clients, typically IceCat on
      their desktop or laptop.-->
 
 <!ENTITY remote_tabs_last_synced "Соңғы синхрондау: &formatS;">
@@ -726,7 +726,7 @@ Android-тан импорттау">
 <!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
      above a QR reader that is actively scanning for QR codes.  The expected QR
      code has already been displayed by the client trying to connect (such as
-     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     desktop IceCat via WebIDE), so you just need to aim this device at the QR
      code. -->
 
 <!ENTITY devtools_auth_scan_header "QR кодтарын сканерлеу сіздің басқа құрылғыңызда сөндірілген">
@@ -735,7 +735,7 @@ Android-тан импорттау">
      a restricted profile (e.g. child). Used inside the Android settings UI. -->
 
 <!ENTITY restrictable_feature_addons_installation "Қосымшалар">
-<!ENTITY restrictable_feature_addons_installation_description "Firefox-қа мүмкіндіктерді қосыңыз. Ескерту: Қосымшалар кейбір шектеулерді бұза алады.">
+<!ENTITY restrictable_feature_addons_installation_description "IceCat-қа мүмкіндіктерді қосыңыз. Ескерту: Қосымшалар кейбір шектеулерді бұза алады.">
 <!ENTITY restrictable_feature_private_browsing "Жекелік шолу">
 <!ENTITY restrictable_feature_private_browsing_description "Отбасыңыздың мүшелеріне олар өздері қараған сайттар және беттер тарихын сақтамай-ақ, шолу мүмкіндігін рұқсат ету.">
 <!ENTITY restrictable_feature_clear_history "Тарихты тазарту">
@@ -745,19 +745,19 @@ Android-тан импорттау">
 <!ENTITY restrictable_feature_camera_microphone "Камера және микрофон">
 <!ENTITY restrictable_feature_camera_microphone_description "Отбасыңыздың мүшелеріне веб сайттарда нақты уақыттағы сөйлесулерге қатысуды рұқсат ету.">
 <!ENTITY restrictable_feature_data_choices "Деректер таңдауы">
-<!ENTITY restrictable_feature_data_choices_description "Firefox-ты жақсарту мақсатында Mozilla-ға қолдану ақпаратын жіберу керек пе, соны таңдаңыз.">
+<!ENTITY restrictable_feature_data_choices_description "IceCat-ты жақсарту мақсатында Mozilla-ға қолдану ақпаратын жіберу керек пе, соны таңдаңыз.">
 <!-- Default Bookmarks titles-->
-<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:icecatmobile -->
 
-<!ENTITY bookmarks_about_browser "Firefox: Браузеріңіз туралы">
-<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
-<!ENTITY bookmarks_addons "Firefox: Кеңейтулер көмегімен баптау">
+<!ENTITY bookmarks_about_browser "IceCat: Браузеріңіз туралы">
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://directory.fsf.org/wiki/GNU_IceCat -->
+<!ENTITY bookmarks_addons "IceCat: Кеңейтулер көмегімен баптау">
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
-<!ENTITY bookmarks_support "Firefox: Қолдау">
+<!ENTITY bookmarks_support "IceCat: Қолдау">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
-<!ENTITY bookmarks_restricted_support2 "Android планшеттеріндегі шектелген профильдер үшін Firefox көмегі және қолдауы">
+<!ENTITY bookmarks_restricted_support2 "Android планшеттеріндегі шектелген профильдер үшін IceCat көмегі және қолдауы">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
-<!ENTITY bookmarks_restricted_webmaker "Интернетті тану: Mozilla Webmaker">
+<!ENTITY bookmarks_restricted_webmaker "Интернетті тану: GNU Webmaker">
 <!-- LOCALIZATION NOTE (unsupported_sdk_version): The user installed a build of this app that does not support
      the Android version of this device. the formatS1 is replaced by the CPU ABI (e.g., ARMv7); the formatS2 is
      replaced by the Android OS version (e.g., 14)-->

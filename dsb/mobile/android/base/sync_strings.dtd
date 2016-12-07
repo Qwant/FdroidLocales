@@ -4,7 +4,7 @@
 <!-- Don't localize these. They're here until they have
      a better place to live. -->
 
-<!ENTITY syncBrand.fullName.label "Firefox Sync">
+<!ENTITY syncBrand.fullName.label "IceCat Sync">
 <!ENTITY syncBrand.shortName.label "Sync">
 <!-- Main titles. -->
 
@@ -16,7 +16,7 @@
 
 <!ENTITY sync.subtitle.connect.label "Aby swój nowy rěd aktiwěrował, wubjeŕśo “&syncBrand.shortName.label; konfigurěrowaś” na rěźe.">
 <!ENTITY sync.subtitle.header2.label "Zapódajśo toś ten kode na swójom drugem rěźe">
-<!ENTITY sync.subtitle.connectlocation2.label "Wubjeŕśo “&sync.title.pair.label;” we wótrězku &syncBrand.shortName.label; w nastajenjach Firefox swójogo drugego rěda.">
+<!ENTITY sync.subtitle.connectlocation2.label "Wubjeŕśo “&sync.title.pair.label;” we wótrězku &syncBrand.shortName.label; w nastajenjach IceCat swójogo drugego rěda.">
 <!ENTITY sync.subtitle.pair.label "Za aktiwěrowanje wubjeŕśo “Rěd zwězaś” na wašom drugem rěźe.">
 <!ENTITY sync.pin.default.label "...\n...\n...\n">
 <!ENTITY sync.pin.oneline.label "...">
@@ -42,7 +42,7 @@
 <!ENTITY sync.button.manual.label "Manuelna konfiguracija">
 <!ENTITY sync.subtitle.nointernet.label "Internetny zwisk njestoj k dispoziciji.">
 <!ENTITY sync.subtitle.failaccount.label "Załoženje konta na wašom rěźe njejo se raźiło.">
-<!ENTITY sync.subtitle.failmultiple.label "Sćo wěcej ako jaden Firefox zainstalěrował? Tuchylu pódpěra &syncBrand.fullName.label; jadnu instalaciju Firefox naraz. Pšosym wótinstalěrujśo druge instance, aby &syncBrand.shortName.label; wužywał.">
+<!ENTITY sync.subtitle.failmultiple.label "Sćo wěcej ako jaden IceCat zainstalěrował? Tuchylu pódpěra &syncBrand.fullName.label; jadnu instalaciju IceCat naraz. Pšosym wótinstalěrujśo druge instance, aby &syncBrand.shortName.label; wužywał.">
 <!-- Setup Success -->
 
 <!ENTITY sync.title.success.label "Konfiguracija dokóńcona">
@@ -53,7 +53,7 @@
 
 <!ENTITY sync.pair.tryagain.label "Pšosym wopytajśo hyšći raz.">
 <!ENTITY sync.pair.connectlocation.label "Aby swój nowy rěd aktiwěrował, wubjeŕśo “&syncBrand.shortName.label; konfigurěrowaś” na rěźe a wubjeŕśo pótom “Mam konto.”">
-<!-- Firefox SyncAdapter Settings Screen -->
+<!-- IceCat SyncAdapter Settings Screen -->
 
 <!ENTITY sync.settings.options.label "Nastajenja">
 <!ENTITY sync.summary.pair.label "Drugi rěd z wašym kontom &syncBrand.shortName.label; zwězaś">
@@ -74,10 +74,10 @@
 
 <!ENTITY sync.account.label "&syncBrand.fullName.label; (zestarjony)">
 <!-- Localization note (sync.default.client.name): Default string of the "Device
-     name" menu item upon setting up Firefox Sync.  The placeholder &formatS1
-     will be replaced by the name of the Firefox release channel and &formatS2
+     name" menu item upon setting up IceCat Sync.  The placeholder &formatS1
+     will be replaced by the name of the IceCat release channel and &formatS2
      by the model name of the Android device. Examples look like "Aurora on
-     GT-I1950" and "Fennec on MI 2S". -->
+     GT-I1950" and "IceCatMobile on MI 2S". -->
 
 <!ENTITY sync.default.client.name "&formatS1; na &formatS2;">
 <!-- Bookmark folder strings -->
@@ -111,10 +111,10 @@
 <!ENTITY sync.text.redirect.to.set.up.sync.label "Konfigurěrujśo &syncBrand.fullName.label; na swójom rěźe, aby rejtarki na druge rědy pósłał.">
 <!ENTITY sync.text.tab.sent.label "Waš rejtark jo se pósłał!">
 <!ENTITY sync.text.tab.not.sent.label "Pśi słanju wašogo rejtarka jo problem nastał.">
-<!-- Firefox Account strings. -->
+<!-- IceCat Account strings. -->
 
 
-<!ENTITY fxaccount_full_label "Konta Firefox">
+<!ENTITY fxaccount_full_label "Konta IceCat">
 
 <!ENTITY fxaccount_custom_server_account_title "Wužywanje konta na serwerje">
 <!ENTITY fxaccount_custom_server_sync_title "Składowanje synchronizaciskich datow na serwerje">
@@ -128,7 +128,7 @@
 <!ENTITY fxaccount_password_show "Pokazaś">
 <!-- Localization note: these are shown in screens after the user has
      created or signed in to an account, and take the user back to
-     Firefox. -->
+     IceCat. -->
 
 <!ENTITY fxaccount_back_to_browsing "Slědk k pśeglědowanjeju">
 <!-- Localization note: the following two strings are interpolated
@@ -143,18 +143,18 @@
 <!ENTITY fxaccount_getting_started_welcome_to_sync "Witajśo do &syncBrand.shortName.label;">
 <!ENTITY fxaccount_getting_started_description2 "Pśizjawśo se, aby swóje rejtarki, cytańske znamjenja, gronidła a druge synchronizěrował.">
 <!ENTITY fxaccount_getting_started_get_started "Prědne kšace">
-<!ENTITY fxaccount_getting_started_old_firefox "Staršu wersiju &syncBrand.shortName.label; wužywaś?">
-<!-- Localization note: the Firefox below should not change with the
-     particular version of Firefox installed (Release, Beta, Aurora,
-     etc).  The account remains a "Firefox Account". -->
+<!ENTITY fxaccount_getting_started_old_icecat "Staršu wersiju &syncBrand.shortName.label; wužywaś?">
+<!-- Localization note: the IceCat below should not change with the
+     particular version of IceCat installed (Release, Beta, Aurora,
+     etc).  The account remains a "IceCat Account". -->
 
-<!ENTITY fxaccount_create_account_header2 "Konto Firefox załožyś">
+<!ENTITY fxaccount_create_account_header2 "Konto IceCat załožyś">
 <!ENTITY fxaccount_create_account_password_length_restriction "Nanejmjenjej 8 znamuškow trěbnych">
 <!ENTITY fxaccount_create_account_day_of_birth "Źeń">
 <!ENTITY fxaccount_create_account_month_of_birth "Mjasec">
 <!ENTITY fxaccount_create_account_year_of_birth "Lěto naroźenja">
 <!-- Localization note: &formatS1; is fxaccount_policy_linktos, &formatS2; is fxaccount_policy_linkprivacy, both hyperlinked. -->
-<!ENTITY fxaccount_create_account_policy_text2 "Gaž pókšacujośo, zwolijośo do &formatS1; a &formatS2; online-słužbow Firefox.">
+<!ENTITY fxaccount_create_account_policy_text2 "Gaž pókšacujośo, zwolijośo do &formatS1; a &formatS2; online-słužbow IceCat.">
 <!ENTITY fxaccount_create_account_button "Dalej">
 <!ENTITY fxaccount_create_account_choose_what_to_sync "Wubjeŕśo, což ma se sychronizěrowaś">
 <!ENTITY fxaccount_create_account_sign_in_instead "Maśo južo konto? Pśizjawśo se">
@@ -166,7 +166,7 @@
 <!ENTITY fxaccount_account_create_not_allowed_learn_more "Dalšne informacije">
 
 <!ENTITY fxaccount_confirm_account_header "Wašo konto wobkšuśiś">
-<!-- Localization note: &formatS; is the Firefox Account's email address. -->
+<!-- Localization note: &formatS; is the IceCat Account's email address. -->
 <!ENTITY fxaccount_confirm_account_verification_link "Wobkšuśeński wótkaz jo se na &formatS; pósłał">
 <!ENTITY fxaccount_confirm_account_resend_email "Mailku znowego pósłaś">
 <!ENTITY fxaccount_confirm_account_change_email "Toś tu e-mailowu adresu zabyś?">
@@ -195,7 +195,7 @@
 <!ENTITY fxaccount_finish_migrating_button_label "Aktualizěrowanje skóńcyś">
 <!ENTITY fxaccount_finish_migrating_description "Aktualizěrowanje móžo wjele datow pśenosowaś. Cynśo to nejlěpjej we WLAN-seśi.">
 
-<!ENTITY fxaccount_status_header2 "Konto Firefox">
+<!ENTITY fxaccount_status_header2 "Konto IceCat">
 <!ENTITY fxaccount_status_signed_in_as "Pśizjawjony ako">
 <!ENTITY fxaccount_status_manage_account "Konto zastojaś">
 <!ENTITY fxaccount_status_auth_server "Kontowy serwer">
@@ -210,7 +210,7 @@
 <!ENTITY fxaccount_status_needs_upgrade "Musyśo &brandShortName; aktualizěrowaś, aby se pśizjawił.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled "&syncBrand.shortName.label; jo konfigurěrowany, ale njesynchronizěrujo awtomatiski. Zmóžniśo “Daty awtomatiski synchronizěrowaś” w Androidowych nastajenjach &gt; Wužywanje datow.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled_v21 "&syncBrand.shortName.label; jo konfigurěrowany, ale njesynchronizěrujo awtomatiski. Zmóžniśo “Daty awtomatiski synchronizěrowaś” w meniju Androidowe nastajenja a konta.">
-<!ENTITY fxaccount_status_needs_finish_migrating "Pótusniśo, aby se pla swójogo nowego konta Firefox pśizjawił.">
+<!ENTITY fxaccount_status_needs_finish_migrating "Pótusniśo, aby se pla swójogo nowego konta IceCat pśizjawił.">
 <!ENTITY fxaccount_status_bookmarks "Cytańske znamjenja">
 <!ENTITY fxaccount_status_history "Historija">
 <!ENTITY fxaccount_status_passwords2 "Pśizjawjenja">
@@ -225,21 +225,21 @@
 <!ENTITY fxaccount_status_more "Wěcej&ellipsis;">
 <!ENTITY fxaccount_remove_account "Zwisk źěliś&ellipsis;">
 
-<!ENTITY fxaccount_remove_account_dialog_title "Konto Firefox wópóraś?">
+<!ENTITY fxaccount_remove_account_dialog_title "Konto IceCat wópóraś?">
 <!ENTITY fxaccount_remove_account_dialog_message "&brandShortName; jo pśestał wašo konto synchronizěrowaś, ale njewulašujo waše pśeglědowańske daty na toś tom rěźe.">
 <!-- Localization note: format string below will be replaced
-     with the Firefox Account's email address. -->
-<!ENTITY fxaccount_remove_account_toast "&formatS; konta Firefox wótpórany.">
+     with the IceCat Account's email address. -->
+<!ENTITY fxaccount_remove_account_toast "&formatS; konta IceCat wótpórany.">
 
 <!ENTITY fxaccount_enable_debug_mode "Modus pytanja zmólkow zmóžniś">
 <!-- Localization note: this is the name shown by the Android system
-     itself for a Firefox Account. Don't localize this. -->
+     itself for a IceCat Account. Don't localize this. -->
 
-<!ENTITY fxaccount_account_type_label "Firefox">
+<!ENTITY fxaccount_account_type_label "IceCat">
 <!-- Localization note: these are shown by the Android system itself,
-     when the user navigates to the Android > Accounts > {Firefox
-     Account} Screen. The link takes the user to the Firefox Account
-     status activity, which lets them manage their Firefox
+     when the user navigates to the Android > Accounts > {IceCat
+     Account} Screen. The link takes the user to the IceCat Account
+     status activity, which lets them manage their IceCat
      Account. -->
 
 <!ENTITY fxaccount_options_title "&syncBrand.shortName.label; - Nastajenja">
@@ -248,7 +248,7 @@
      has been made to the remote server, and an error of some type has
      been returned. -->
 
-<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Musyśo Firefox aktualizěrowaś">
+<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Musyśo IceCat aktualizěrowaś">
 <!-- Localization note: the format string will be fxaccount_sign_in_button_label, linkified. -->
 
 <!ENTITY fxaccount_remote_error_ATTEMPT_TO_CREATE_AN_ACCOUNT_THAT_ALREADY_EXISTS_2 "Konto južo eksistěrujo. &formatS1;">
@@ -263,12 +263,12 @@
 
 <!ENTITY fxaccount_sync_sign_in_error_notification_title2 "&syncBrand.shortName.label; njejo zwězany">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_sign_in_error_notification_text2 "Potusniśo, aby se ako &formatS; pśizjawił">
 
 <!ENTITY fxaccount_sync_finish_migrating_notification_title "Aktualizěrowanje &syncBrand.shortName.label; skóńcyś?">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_finish_migrating_notification_text "Potusniśo, aby se ako &formatS; pśizjawił">
 <!-- Localization note: the following strings are used in a
      notification and should be kept as short as possible. -->

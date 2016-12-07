@@ -39,4 +39,4 @@
 
 <!ENTITY plugin.file                                         "Kartelë">
 <!ENTITY plugin.mimeTypes                                    "Lloj MIME">
-<!ENTITY plugin.flashProtectedMode.label                     "Aktivizo Adobe Flash protected mode">
+<!ENTITY plugin.flashProtectedMode.label                     "Aktivizo Flash protected mode">

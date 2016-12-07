@@ -93,7 +93,7 @@ values from browser.dtd.  -->
   -  boolean preference in about:config, in the options panel. -->
 
 <!ENTITY options.enableRemote.label3    "தொலைநிலை வழுநீக்கத்தை செயல்படுத்து">
-<!ENTITY options.enableRemote.tooltip   "இந்த விருப்பத்தை செயல்படுத்தினால் உருவாக்குநர் கருவிகளால் Firefox OS போன்ற தொலைநிலை Firefox வடிவங்களை வழுநீக்க முடியும்">
+<!ENTITY options.enableRemote.tooltip   "இந்த விருப்பத்தை செயல்படுத்தினால் உருவாக்குநர் கருவிகளால் IceCat OS போன்ற தொலைநிலை IceCat வடிவங்களை வழுநீக்க முடியும்">
 <!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
   -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
   -  boolean preference in about:config, in the options panel. -->
@@ -118,7 +118,7 @@ values from browser.dtd.  -->
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
 
-<!ENTITY options.selectDefaultTools.label     "முன்னிருப்பு Firefox உருவாக்குநர் கருவிகள்">
+<!ENTITY options.selectDefaultTools.label     "முன்னிருப்பு IceCat உருவாக்குநர் கருவிகள்">
 <!-- LOCALIZATION NOTE (options.selectAdditionalTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the developer tools
   -  added by add-ons. This heading is hidden when there is no developer tool

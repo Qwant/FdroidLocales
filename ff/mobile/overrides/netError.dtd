@@ -157,7 +157,7 @@ juutataa, ngati aɗa waawi etaade so ɓooyii.</li>
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <xul:button> tags.  The only language content is the label= field,
 which uses strings already defined above. The button is included here (instead of
-netError.xhtml) because it exposes functionality specific to firefox. -->
+netError.xhtml) because it exposes functionality specific to icecat. -->
 
 
 <!ENTITY securityOverride.warningContent "<p>A fotaani ɓeydude paltoor so tawii aɗa huutoroo ceŋol enternet ngol a hoolaaji no feewi walla so a woowaani yiyde hono deentine ummiiɗe e ndee sarworde.</p> 

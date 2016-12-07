@@ -25,55 +25,55 @@
 # LOCALIZATION NOTE (getting_started):
 
 
-# link title for https://www.mozilla.org/en-US/firefox/central/
+# link title for https://www.mozilla.org/en-US/icecat/central/
 
 
 #define getting_started İlk addım
 
 
-# LOCALIZATION NOTE (firefox_heading):
+# LOCALIZATION NOTE (icecat_heading):
 
 
-# Firefox links folder name
+# IceCat links folder name
 
 
-#define firefox_heading Mozilla Firefox
+#define icecat_heading GNU IceCat
 
 
-# LOCALIZATION NOTE (firefox_help):
+# LOCALIZATION NOTE (icecat_help):
 
 
-# link title for https://www.mozilla.org/en-US/firefox/help/
+# link title for https://www.mozilla.org/en-US/icecat/help/
 
 
-#define firefox_help Kömək və Öyrədicilər
+#define icecat_help Kömək və Öyrədicilər
 
 
-# LOCALIZATION NOTE (firefox_customize):
+# LOCALIZATION NOTE (icecat_customize):
 
 
-# link title for https://www.mozilla.org/en-US/firefox/customize/
+# link title for https://www.mozilla.org/en-US/icecat/customize/
 
 
-#define firefox_customize Firefoxu Fərdiləşdirin
+#define icecat_customize IceCatu Fərdiləşdirin
 
 
-# LOCALIZATION NOTE (firefox_community):
+# LOCALIZATION NOTE (firefox.community):
 
 
 # link title for https://www.mozilla.org/en-US/contribute/
 
 
-#define firefox_community Kömək edin
+#define firefox.community Kömək edin
 
 
-# LOCALIZATION NOTE (firefox_about):
+# LOCALIZATION NOTE (icecat_about):
 
 
 # link title for https://www.mozilla.org/en-US/about/
 
 
-#define firefox_about Haqqımızda
+#define icecat_about Haqqımızda
 
 
 #unfilter emptyLines

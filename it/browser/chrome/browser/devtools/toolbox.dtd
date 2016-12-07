@@ -37,7 +37,7 @@
 <!ENTITY options.enableChrome.label5 "Attiva debug chrome del browser e componenti aggiuntivi">
 <!ENTITY options.enableChrome.tooltip3 "Attivando questa opzione è possibile utilizzare diversi strumenti di sviluppo direttamente sul browser (da Strumenti > Sviluppo web > Cassetta degli attrezzi browser) ed effettuare il debug dei componenti aggiuntivi">
 <!ENTITY options.enableRemote.label3 "Attiva debug remoto">
-<!ENTITY options.enableRemote.tooltip "Attivando questa opzione è possibile utilizzare gli strumenti di sviluppo per effettuare il debug su istanze remote di Firefox come Firefox OS">
+<!ENTITY options.enableRemote.tooltip "Attivando questa opzione è possibile utilizzare gli strumenti di sviluppo per effettuare il debug su istanze remote di IceCat come IceCat OS">
 <!ENTITY options.enableWorkers.label "Attiva debug worker (in sviluppo)">
 <!ENTITY options.enableWorkers.tooltip "Attivando questa opzione è possibile utilizzare gli strumenti di sviluppo per effettuare il debug dei worker">
 <!ENTITY options.disableJavaScript.label "Disattiva JavaScript *">
@@ -46,7 +46,7 @@
 <!ENTITY options.disableCache.tooltip2 "Attivando questa opzione la cache verrà disattivata per tutte le schede in cui sono aperti gli strumenti di sviluppo.">
 <!ENTITY options.enableServiceWorkersHTTP.label "Attiva Service worker via HTTP (quando la cassetta degli attrezzi è aperta)">
 <!ENTITY options.enableServiceWorkersHTTP.tooltip "Attivando questa opzione verranno attivati i Service worker via HTTP in tutte le schede dove la cassetta degli attrezzi è aperta.">
-<!ENTITY options.selectDefaultTools.label "Strumenti di sviluppo predefiniti di Firefox">
+<!ENTITY options.selectDefaultTools.label "Strumenti di sviluppo predefiniti di IceCat">
 <!ENTITY options.selectAdditionalTools.label "Strumenti di sviluppo installati da componenti aggiuntivi">
 <!ENTITY options.selectEnabledToolboxButtons.label "Pulsanti disponibili">
 <!ENTITY options.toolNotSupported.label "* Non supportato per il target corrente degli strumenti">

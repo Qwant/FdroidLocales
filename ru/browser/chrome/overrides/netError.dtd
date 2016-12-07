@@ -145,7 +145,7 @@
 <button id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>
 ">
 
-<!ENTITY errorReporting.automatic2 "Отправка сообщений о подобных ошибках поможет Mozilla обнаружить и заблокировать вредоносные сайты">
+<!ENTITY errorReporting.automatic2 "Отправка сообщений о подобных ошибках поможет GNU обнаружить и заблокировать вредоносные сайты">
 <!ENTITY errorReporting.learnMore "Подробнее…">
 <!ENTITY errorReporting.sending "Отправка сообщения">
 <!ENTITY errorReporting.sent "Сообщение отправлено">

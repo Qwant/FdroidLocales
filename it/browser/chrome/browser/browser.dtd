@@ -304,7 +304,7 @@
 <!ENTITY appMenuRemoteTabs.fetching.label "Caricamento schede sincronizzate…">
 <!ENTITY appMenuRemoteTabs.notabs.label "Nessuna scheda aperta">
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Attivare la sincronizzazione delle schede per visualizzare le schede aperte in altri dispositivi.">
-<!ENTITY appMenuRemoteTabs.noclients.label "Accedi a Firefox con altri dispositivi per visualizzarne le schede aperte.">
+<!ENTITY appMenuRemoteTabs.noclients.label "Accedi a IceCat con altri dispositivi per visualizzarne le schede aperte.">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Preferenze Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Accedi per visualizzare un elenco delle schede aperte in altri dispositivi.">
 <!ENTITY appMenuRemoteTabs.signin.label "Accedi a Sync">

@@ -17,9 +17,9 @@
 
 <!ENTITY rights.intro-point1a "&brandShortName; ga bara war se kalimawey wey bande ">
 <!ENTITY rights.intro-point1b "Mozilla baytal duɲe kaddasu">
-<!ENTITY rights.intro-point1c ". Maanaa ti kaŋ war ga hin ka &brandShortName; ka goy, k'a berandi nda g'a žemna boro tanayaŋ še.  War ga hin ka &brandShortName; aššil ašariya nda takaa kaŋ ga tee war še nafaw. Mozilla baytal duɲe kaddasoo ga naŋ war ma dumey kaŋ war n'i barmay žemni.">
+<!ENTITY rights.intro-point1c ". Maanaa ti kaŋ war ga hin ka &brandShortName; ka goy, k'a berandi nda g'a žemna boro tanayaŋ še.  War ga hin ka &brandShortName; aššil ašariya nda takaa kaŋ ga tee war še nafaw. GNU baytal duɲe kaddasoo ga naŋ war ma dumey kaŋ war n'i barmay žemni.">
 
-<!ENTITY rights.intro-point2-a "War mana duu teekaw tammaasa alhaku wala duɲe kaddasu kul Mozilla Foundation do wala nga kondo tana foo, sanda kaŋ a ši nda Firefox maaɲoo wala maa-biyoo. Alhabar tontoni teekaw tammaasawey še ga hin ka duwandi ">
+<!ENTITY rights.intro-point2-a "War mana duu teekaw tammaasa alhaku wala duɲe kaddasu kul Mozilla Foundation do wala nga kondo tana foo, sanda kaŋ a ši nda IceCat maaɲoo wala maa-biyoo. Alhabar tontoni teekaw tammaasawey še ga hin ka duwandi ">
 <!ENTITY rights.intro-point2-b "ne">
 <!ENTITY rights.intro-point2-c ".">
 <!-- point 2.5 text for official branded builds -->

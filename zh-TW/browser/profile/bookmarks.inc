@@ -14,27 +14,27 @@
 #define bookmarks_toolbarfolder_description 此處的書籤會出現於書籤工具列上
 
 # LOCALIZATION NOTE (getting_started):
-# link title for https://www.mozilla.org/en-US/firefox/central/
+# link title for https://www.mozilla.org/en-US/icecat/central/
 #define getting_started 新手上路
 
-# LOCALIZATION NOTE (firefox_heading):
-# Firefox links folder name
-#define firefox_heading Mozilla Firefox
+# LOCALIZATION NOTE (icecat_heading):
+# IceCat links folder name
+#define icecat_heading GNU IceCat
 
-# LOCALIZATION NOTE (firefox_help):
-# link title for https://www.mozilla.org/en-US/firefox/help/
-#define firefox_help 說明和教學
+# LOCALIZATION NOTE (icecat_help):
+# link title for https://www.mozilla.org/en-US/icecat/help/
+#define icecat_help 說明和教學
 
-# LOCALIZATION NOTE (firefox_customize):
-# link title for https://www.mozilla.org/en-US/firefox/customize/
-#define firefox_customize 自訂 Firefox
+# LOCALIZATION NOTE (icecat_customize):
+# link title for https://www.mozilla.org/en-US/icecat/customize/
+#define icecat_customize 自訂 IceCat
 
-# LOCALIZATION NOTE (firefox_community):
+# LOCALIZATION NOTE (firefox.community):
 # link title for https://www.mozilla.org/en-US/contribute/
-#define firefox_community 參與其中
+#define firefox.community 參與其中
 
-# LOCALIZATION NOTE (firefox_about):
+# LOCALIZATION NOTE (icecat_about):
 # link title for https://www.mozilla.org/en-US/about/
-#define firefox_about 關於我們
+#define icecat_about 關於我們
 
 #unfilter emptyLines

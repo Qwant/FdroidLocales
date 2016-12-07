@@ -12,7 +12,7 @@ pref("general.useragent.locale", "@AB_CD@");
 
 #ifdef XP_WIN
 
-// overwrite zh-CN defaults with zh-TW ones in win32 Firefox. (see bug 603549)
+// overwrite zh-CN defaults with zh-TW ones in win32 IceCat. (see bug 603549)
 // noted that below setting should change accordingly if setting in intl/all.js changes.
 pref("font.name.serif.zh-CN", "Times New Roman");
 pref("font.name.sans-serif.zh-CN", "Arial");

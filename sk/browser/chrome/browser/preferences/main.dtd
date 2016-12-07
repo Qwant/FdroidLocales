@@ -37,8 +37,8 @@
 <!ENTITY isDefault.label                  "&brandShortName; je nastavený ako predvolený prehliadač">
 <!ENTITY isNotDefault.label               "&brandShortName; nie je váš predvolený prehliadač">
 
-<!ENTITY separateProfileMode.label        "Umožniť, aby &brandShortName; a Firefox mohli byť spustené v rovnakom čase">
-<!ENTITY useFirefoxSync.label             "Tip: použijú sa oddelené používateľské profily. Ak chcete medzi nimi zdieľať údaje, môžete využiť službu Sync.">
+<!ENTITY separateProfileMode.label        "Umožniť, aby &brandShortName; a IceCat mohli byť spustené v rovnakom čase">
+<!ENTITY useIceCatSync.label             "Tip: použijú sa oddelené používateľské profily. Ak chcete medzi nimi zdieľať údaje, môžete využiť službu Sync.">
 <!ENTITY getStarted.label                 "Začať používať službu Sync…">
 
 <!ENTITY e10sEnabled.label                "Zapnúť režim viacerých procesov prehliadača &brandShortName;">

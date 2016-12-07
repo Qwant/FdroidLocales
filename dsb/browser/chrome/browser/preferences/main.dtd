@@ -38,8 +38,8 @@
 <!ENTITY isDefault.label                  "&brandShortName; jo tuchylu waš standardny wobglědowak">
 <!ENTITY isNotDefault.label               "&brandShortName; njejo waš standardny wobglědowak">
 
-<!ENTITY separateProfileMode.label        "&brandShortName; a Firefox dowóliś, rownocasnje běžaś">
-<!ENTITY useFirefoxSync.label             "Tip: To wužywa separatne profile. Wužywajśo Sync, aby daty mjazy nimi źělił.">
+<!ENTITY separateProfileMode.label        "&brandShortName; a IceCat dowóliś, rownocasnje běžaś">
+<!ENTITY useIceCatSync.label             "Tip: To wužywa separatne profile. Wužywajśo Sync, aby daty mjazy nimi źělił.">
 <!ENTITY getStarted.label                 "Sync startowaś…">
 
 <!ENTITY e10sEnabled.label                "Wěcejprocesowy &brandShortName; zmóžniś">

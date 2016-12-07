@@ -49,7 +49,7 @@
 <!ENTITY prefs.tosLink.label        "Termos do servizo">
 <!ENTITY prefs.ppLink.label         "Política de privacidade">
 
-<!-- Firefox Accounts stuff -->
+<!-- IceCat Accounts stuff -->
 <!ENTITY fxaPrivacyNotice.link.label "Política de privacidade">
 <!ENTITY determiningAcctStatus.label     "Determinando o estado da súa conta…">
 
@@ -91,8 +91,8 @@ both, to better adapt this sentence to their language.
 
 <!ENTITY signedIn.engines.label       "Sincronizar en todos os dispositivos">
 
-<!ENTITY mobilePromo.start            "Descargue Firefox para ">
-<!-- LOCALIZATION NOTE (mobilePromo.androidLink): This is a link title that links to https://www.mozilla.org/firefox/android/ -->
+<!ENTITY mobilePromo.start            "Descargue IceCat para ">
+<!-- LOCALIZATION NOTE (mobilePromo.androidLink): This is a link title that links to https://www.mozilla.org/icecat/android/ -->
 <!ENTITY mobilePromo.androidLink      "Android™">
 <!ENTITY mobilePromo.end              " para sincronizar co seu dispositivo móbil.">
 <!ENTITY androidAttribution           "Android é unha marca rexistrada de Google Inc.">

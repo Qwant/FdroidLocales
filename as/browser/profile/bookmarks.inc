@@ -25,55 +25,55 @@
 # LOCALIZATION NOTE (getting_started):
 
 
-# link title for https://www.mozilla.org/en-US/firefox/central/
+# link title for https://www.mozilla.org/en-US/icecat/central/
 
 
 #define getting_started আৰম্ভণি
 
 
-# LOCALIZATION NOTE (firefox_heading):
+# LOCALIZATION NOTE (icecat_heading):
 
 
-# Firefox links folder name
+# IceCat links folder name
 
 
-#define firefox_heading Mozilla Firefox
+#define icecat_heading GNU IceCat
 
 
-# LOCALIZATION NOTE (firefox_help):
+# LOCALIZATION NOTE (icecat_help):
 
 
-# link title for https://www.mozilla.org/en-US/firefox/help/
+# link title for https://www.mozilla.org/en-US/icecat/help/
 
 
-#define firefox_help সহায় আৰু শিক্ষা
+#define icecat_help সহায় আৰু শিক্ষা
 
 
-# LOCALIZATION NOTE (firefox_customize):
+# LOCALIZATION NOTE (icecat_customize):
 
 
-# link title for https://www.mozilla.org/en-US/firefox/customize/
+# link title for https://www.mozilla.org/en-US/icecat/customize/
 
 
-#define firefox_customize Firefox স্বনিৰ্বাচন কৰক
+#define icecat_customize IceCat স্বনিৰ্বাচন কৰক
 
 
-# LOCALIZATION NOTE (firefox_community):
+# LOCALIZATION NOTE (firefox.community):
 
 
 # link title for https://www.mozilla.org/en-US/contribute/
 
 
-#define firefox_community জড়িত হওক
+#define firefox.community জড়িত হওক
 
 
-# LOCALIZATION NOTE (firefox_about):
+# LOCALIZATION NOTE (icecat_about):
 
 
 # link title for https://www.mozilla.org/en-US/about/
 
 
-#define firefox_about আমাৰ বিষয়ে
+#define icecat_about আমাৰ বিষয়ে
 
 
 #unfilter emptyLines

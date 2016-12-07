@@ -33,11 +33,11 @@
 
 
 
-# link title for about:fennec
+# link title for about:icecatmobile
 
 
 
-#define bookmarks_aboutBrowser Firefox: Malunga nebhrawuza yakho
+#define bookmarks_aboutBrowser IceCat: Malunga nebhrawuza yakho
 
 
 
@@ -45,11 +45,11 @@
 
 
 
-# link title for https://addons.mozilla.org/en-US/mobile
+# link title for https://directory.fsf.org/wiki/GNU_IceCat
 
 
 
-#define bookmarks_addons Firefox: Qhelanisa nezongezelelo
+#define bookmarks_addons IceCat: Qhelanisa nezongezelelo
 
 
 
@@ -61,7 +61,7 @@
 
 
 
-#define bookmarks_support Firefox: Inkxaso
+#define bookmarks_support IceCat: Inkxaso
 
 
 
@@ -69,11 +69,11 @@
 
 
 
-# link title for https://marketplace.firefox.com
+# link title for https://f-droid.org/repository/browse
 
 
 
-#define bookmarks_marketplace IMarike yeFirefox
+#define bookmarks_marketplace IMarike yeIceCat
 
 
 

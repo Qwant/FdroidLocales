@@ -58,7 +58,7 @@
 
 <!ENTITY projectButton_label "అనువర్తనం తెరు">
 <!ENTITY runtimeButton_label "రన్‌టైమ్ ఎంపికచేయి">
-<!-- We try to repicate Firefox' bindings: -->
+<!-- We try to repicate IceCat' bindings: -->
 <!-- quit app -->
 
 <!ENTITY key_quit "W">

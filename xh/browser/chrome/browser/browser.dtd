@@ -56,7 +56,7 @@ can reach it easily. -->
 <!ENTITY tabCmd.commandkey "t">
 <!-- LOCALIZATION NOTE (openLocationCmd.label): "Open Location" is only
 displayed on OS X, and only on windows that aren't main browser windows, or
-when there are no windows but Firefox is still running. -->
+when there are no windows but IceCat is still running. -->
 <!ENTITY openLocationCmd.label "Vula indawo…">
 <!ENTITY openFileCmd.label "Vula ifayile…">
 <!ENTITY openFileCmd.accesskey "V">
@@ -420,8 +420,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Layita ungqamaniso lwethebhu ukuze ujonge uludwe lweethebhu kwezinye izixhobo zakho.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
      when Sync is configured but this appears to be the only device attached to
-     the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.label "Sayina ungene kwi-Firefox ngokusuka kwezinye izixhobo zakho ukuze uonge iithebhu zazo apha.">
+     the account. We also show links to download IceCat for android/ios. -->
+<!ENTITY appMenuRemoteTabs.noclients.label "Sayina ungene kwi-IceCat ngokusuka kwezinye izixhobo zakho ukuze uonge iithebhu zazo apha.">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Ngqamanisa iiPreferensi">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Sayina ungene ukuze ujonge iithebhu kwezinye izixhobo zakho.">
 <!ENTITY appMenuRemoteTabs.signin.label "Sayina ungene ukuze uNgqamanise">

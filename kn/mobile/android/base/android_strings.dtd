@@ -102,19 +102,19 @@
 <!ENTITY pref_category_general "ಸಾಮಾನ್ಯ">
 <!ENTITY pref_category_general_summary2 "ಮನೆ, ಭಾಷೆ, URL ಪಟ್ಟಿ">
 <!-- Localization note (pref_category_language) : This is the preferences
-     section in which the user picks the locale in which to display Firefox
+     section in which the user picks the locale in which to display IceCat
      UI. The locale includes both language and region concepts. -->
 
 <!ENTITY pref_category_language "ಭಾಷೆ">
 <!ENTITY pref_category_language_summary "ನಿಮ್ಮ ಬ್ರೌಸರ್‌ನ ಭಾಷೆ ಬದಲಾಯಿಸಿ">
 <!ENTITY pref_browser_locale "ವೀಕ್ಷಕದ ಭಾಷೆ">
 <!-- Localization note (locale_system_default) : This string indicates that
-     Firefox will use the locale currently selected in Android's settings
+     IceCat will use the locale currently selected in Android's settings
      to display browser chrome. -->
 
 <!ENTITY locale_system_default "ವ್ಯವಸ್ಥೆಯ ಪೂರ್ವನಿಯೋಜಿತ">
 <!-- Localization note (overlay_share_label) : This is the label that appears
-     in Android's intent chooser when sending a link to Firefox to bookmark,
+     in Android's intent chooser when sending a link to IceCat to bookmark,
      send to another device, or add to Reading List. -->
 
 <!ENTITY overlay_share_label "&brandShortName; ಗೆ ಸೇರಿಸಿ">
@@ -138,7 +138,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "Firefox ಖಾತೆ ಸಂಪರ್ಕಿತಗೊಂಡಿರುವ ಸಾಧನಗಳು ಕಂಡುಬಂದಿಲ್ಲ">
+<!ENTITY overlay_no_synced_devices "IceCat ಖಾತೆ ಸಂಪರ್ಕಿತಗೊಂಡಿರುವ ಸಾಧನಗಳು ಕಂಡುಬಂದಿಲ್ಲ">
 
 <!ENTITY pref_category_search3 "ಹುಡುಕು">
 <!ENTITY pref_category_search_summary "ನಿಮ್ಮ ಹುಡುಕು ಪೂರೈಕೆದಾರರನ್ನು ಗ್ರಾಹಕೀಯಗೊಳಿಸು">
@@ -191,7 +191,7 @@
 <!ENTITY home_homepage_title "ಮುಖಪುಟ ಹೊಂದಿಸು">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
-     button for this string, they will use the built-in default Firefox homepage (about:home). -->
+     button for this string, they will use the built-in default IceCat homepage (about:home). -->
 <!ENTITY home_homepage_radio_default "&brandShortName; ಮುಖಪುಟ">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
@@ -318,7 +318,7 @@ size. -->
 <!ENTITY pref_private_data_syncedTabs "ಸಿಂಕ್ ಮಾಡಿದ ಹಾಳೆಗಳು">
 
 
-<!ENTITY pref_about_firefox "&brandShortName; ಬಗ್ಗೆ">
+<!ENTITY pref_about_icecat "&brandShortName; ಬಗ್ಗೆ">
 <!ENTITY pref_vendor_faqs "ಸಾಮಾನ್ಯವಾಗಿ ಕೇಳಲಾಗುವ ಪ್ರಶ್ನೆಗಳು">
 <!ENTITY pref_vendor_feedback "ಪ್ರತಿಕ್ರಿಯೆ ನೀಡು">
 
@@ -536,11 +536,11 @@ size. -->
 <!ENTITY home_remote_tabs_title "ಸಿಂಕ್ ಮಾಡಿದ ಹಾಳೆಗಳು">
 <!ENTITY home_remote_tabs_empty "ನಿಮ್ಮ ಬೇರೆ ಸಾಧನಗಳ ಹಾಳೆಗಳು ಇಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆ.">
 <!ENTITY home_remote_tabs_unable_to_connect "ಸಂಪರ್ಕ ಹೊಂದಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ">
-<!ENTITY home_remote_tabs_need_to_sign_in "Firefox ಖಾತೆಗೆ ಮತ್ತೆ ಸಂಪರ್ಕಿಸಲು ಮತ್ತು ಸಿಂಕ್ ಮುಂದುವರೆಸಲು ದಯವಿಟ್ಟು ಸೈನ್ ಇನ್ ಆಗಿ.">
-<!ENTITY home_remote_tabs_need_to_finish_migrating "ನಿಮ್ಮ ಹೊಸ Firefox ಖಾತೆ ತಯಾರಾಗಿದೆ!">
+<!ENTITY home_remote_tabs_need_to_sign_in "IceCat ಖಾತೆಗೆ ಮತ್ತೆ ಸಂಪರ್ಕಿಸಲು ಮತ್ತು ಸಿಂಕ್ ಮುಂದುವರೆಸಲು ದಯವಿಟ್ಟು ಸೈನ್ ಇನ್ ಆಗಿ.">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "ನಿಮ್ಮ ಹೊಸ IceCat ಖಾತೆ ತಯಾರಾಗಿದೆ!">
 
 <!ENTITY home_remote_tabs_trouble_verifying "ನಿಮ್ಮ ಖಾತೆ ದೃಢಪಡಿಸುವಲ್ಲಿ ತೊಂದರೆಯಾಗುತ್ತಿದೆಯೇ?">
-<!ENTITY home_remote_tabs_need_to_verify "ಸಿಂಕ್ ಪ್ರಾರಂಭಿಸಲು ದಯವಿಟ್ಟು ನಿಮ್ಮ Firefox ಖಾತೆಯನ್ನು ದೃಢಪಡಿಸಿ.">
+<!ENTITY home_remote_tabs_need_to_verify "ಸಿಂಕ್ ಪ್ರಾರಂಭಿಸಲು ದಯವಿಟ್ಟು ನಿಮ್ಮ IceCat ಖಾತೆಯನ್ನು ದೃಢಪಡಿಸಿ.">
 
 <!ENTITY home_remote_tabs_one_hidden_device "1 ಸಾಧನ ಅಡಗಿದೆ">
 <!-- Localization note (home_remote_tabs_many_hidden_devices) : The
@@ -681,7 +681,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
      include "42 minutes ago", "4 days ago", "last week", etc. The subject of
-     "Last synced" is one of the user's other Sync clients, typically Firefox on
+     "Last synced" is one of the user's other Sync clients, typically IceCat on
      their desktop or laptop.-->
 
 <!ENTITY remote_tabs_last_synced "ಕಡೆಗೆ ಸಿಂಕ್ ಆದದ್ದು: &formatS;">
@@ -709,7 +709,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
      above a QR reader that is actively scanning for QR codes.  The expected QR
      code has already been displayed by the client trying to connect (such as
-     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     desktop IceCat via WebIDE), so you just need to aim this device at the QR
      code. -->
 <!-- Restrictable features -->
 <!-- Localization note: These are features the device owner (e.g. parent) can enable or disable for
@@ -726,13 +726,13 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 
 <!-- Default Bookmarks titles-->
-<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:icecatmobile -->
 
-<!ENTITY bookmarks_about_browser "Firefox: ನಿಮ್ಮ ಬ್ರೌಸರ್ ಬಗ್ಗೆ">
-<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
-<!ENTITY bookmarks_addons "Firefox: ಆಡ್-ಆನ್‌ಗಳೊಂದಿಗೆ ಅಗತ್ಯಾನುಗುಣಗೊಳಿಸು">
+<!ENTITY bookmarks_about_browser "IceCat: ನಿಮ್ಮ ಬ್ರೌಸರ್ ಬಗ್ಗೆ">
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://directory.fsf.org/wiki/GNU_IceCat -->
+<!ENTITY bookmarks_addons "IceCat: ಆಡ್-ಆನ್‌ಗಳೊಂದಿಗೆ ಅಗತ್ಯಾನುಗುಣಗೊಳಿಸು">
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
-<!ENTITY bookmarks_support "Firefox: ಬೆಂಬಲ">
+<!ENTITY bookmarks_support "IceCat: ಬೆಂಬಲ">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
 <!-- LOCALIZATION NOTE (unsupported_sdk_version): The user installed a build of this app that does not support

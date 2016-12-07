@@ -157,7 +157,7 @@ mai gwall dros dro ydyw ac i geisio eto.</li>
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <xul:button> tags.  The only language content is the label= field,
 which uses strings already defined above. The button is included here (instead of
-netError.xhtml) because it exposes functionality specific to firefox. -->
+netError.xhtml) because it exposes functionality specific to icecat. -->
 
 
 <!ENTITY securityOverride.warningContent "<p>Ni ddylech ychwanegu eithriad os ydych yn defnyddio cyswllt gwe nad ydych yn ymddiried ynddo'n llwyr neu os nad ydych wedi arfer a gweld rhybudd ar y gweinydd hwn.</p> 

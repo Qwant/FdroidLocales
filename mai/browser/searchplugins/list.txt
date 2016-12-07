@@ -4,3 +4,5 @@ bing
 wikipedia-hi
 eBay-in
 twitter
+
+duckduckgo

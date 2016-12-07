@@ -105,7 +105,7 @@ values from browser.dtd.  -->
   -  checkbox that toggles remote debugging, i.e. devtools.debugger.remote-enabled
   -  boolean preference in about:config, in the options panel. -->
 <!ENTITY options.enableRemote.label3    "Activer le débogage distant">
-<!ENTITY options.enableRemote.tooltip  "Activer cette option permettra de déboguer grâce aux outils de développement des instances distantes de Firefox telles que Firefox OS">
+<!ENTITY options.enableRemote.tooltip  "Activer cette option permettra de déboguer grâce aux outils de développement des instances distantes de IceCat telles que IceCat OS">
 
 <!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
   -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers

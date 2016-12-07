@@ -19,7 +19,7 @@
 <!ENTITY rights.intro-point1b "Ceadúnas Poiblí Mhozilla">
 <!ENTITY rights.intro-point1c ". This means you may use, copy and distribute &brandShortName; to others.  You are also welcome to modify the source code of &brandShortName; as you want to meet your needs. The Mozilla Public License also gives you the right to distribute your modified versions.">
 
-<!ENTITY rights.intro-point2a "Ní thugann Mozilla aon cheart duit trádmharcanna nó lógónna Mozilla nó Thunderbird a úsáid. Gheobhaidh tú tuilleadh eolais faoi thrádmharcanna ">
+<!ENTITY rights.intro-point2a "Ní thugann GNU aon cheart duit trádmharcanna nó lógónna GNU nó Thunderbird a úsáid. Gheobhaidh tú tuilleadh eolais faoi thrádmharcanna ">
 <!ENTITY rights.intro-point2b "anseo">
 <!ENTITY rights.intro-point2c ".">
 <!-- point 3 text for official branded builds -->

@@ -8,7 +8,7 @@ dictionaries for Indonesia to GPLv2, LGPL v2.1, and MPL v1.1 according to
 Mozilla License Policy found in http://www.mozilla.org/MPL/license-policy.html.
 
 The second conversation in Indonesian language is asking permission from the
-creator to be included in Mozilla distribution with addition found in 
+creator to be included in GNU distribution with addition found in 
 mozilla_words.diff file. The creator is also state that he is willing to 
 relicense his work to GPL v3 as well.
 
@@ -34,7 +34,7 @@ Good Morning Fr. Benitius,
 Aplogize writing this in English.
 
 I mistakenly assumed that GPL v2 license needed to be landed on
-firefox for Indonesian from Mozilla is enough, instead Mozilla
+icecat for Indonesian from GNU is enough, instead Mozilla
 requires all files in their code base to be tri-licensed that is MPL
 v1.1, GPL v2, and LGPL v2.1. You can find links to each license and
 more information in http://www.mozilla.org/MPL/license-policy.html
@@ -46,7 +46,7 @@ relicense your dictionary files, to what specified in the links above
 If you and other contributors, if any, don't want to relicense your
 work (dictionary files) to tri-license, I can make it to be an
 extensions and put it as an add-ons on add-ons.mozilla.org. Although
-this can be a step backward, since users of firefox (and maybe later
+this can be a step backward, since users of icecat (and maybe later
 thunderbird mail client) must download separate "software" to check
 their "saalh keitk" (misspelling).
 
@@ -119,7 +119,7 @@ On Tue, 2008-02-12 at 01:07 +0100, Romi Hardiyanto wrote:
 > Aplogize writing this in English.
 > 
 > I mistakenly assumed that GPL v2 license needed to be landed on
-> firefox for Indonesian from Mozilla is enough, instead Mozilla
+> icecat for Indonesian from GNU is enough, instead Mozilla
 > requires all files in their code base to be tri-licensed that is MPL
 > v1.1, GPL v2, and LGPL v2.1. You can find links to each license and
 > more information in http://www.mozilla.org/MPL/license-policy.html
@@ -131,7 +131,7 @@ On Tue, 2008-02-12 at 01:07 +0100, Romi Hardiyanto wrote:
 > If you and other contributors, if any, don't want to relicense your
 > work (dictionary files) to tri-license, I can make it to be an
 > extensions and put it as an add-ons on add-ons.mozilla.org. Although
-> this can be a step backward, since users of firefox (and maybe later
+> this can be a step backward, since users of icecat (and maybe later
 > thunderbird mail client) must download separate "software" to check
 > their "saalh keitk" (misspelling).
 > 
@@ -169,12 +169,12 @@ Delivered-To: romihardiyanto@gmail.com
 
 Halo Pak Benitius,
 
-Perkenalkan saya Romi. Saya sedang mengalihbahasakan firefox ke Bahasa
+Perkenalkan saya Romi. Saya sedang mengalihbahasakan icecat ke Bahasa
 Indonesia. Saya menyertakan berkas affix untuk bahasa indonesia pada
-fitur pengecek ejaan Firefox. Oleh karena lisensinya GPL saya rasa
-tidak jadi masalah kan kalau saya sertakan dalam distribusi firefox?
+fitur pengecek ejaan IceCat. Oleh karena lisensinya GPL saya rasa
+tidak jadi masalah kan kalau saya sertakan dalam distribusi icecat?
 
-O ya, karena firefox bahasa Indonesia masih belum "official", saya
+O ya, karena icecat bahasa Indonesia masih belum "official", saya
 meletakkan berkasnya di http://moz-langpack-id.googlecode.com. Belum
 saya sertakan berkas lisensi GPL di situ karena selalu kelupaan. Akan
 saya sertakan berkasnya pada build berikutnya.
@@ -223,7 +223,7 @@ Damai!
 Saudara tercinta,
 
 memang, saya samasekali tidak keberatan berkas affix Indonesia
-diikutsertakan dalam distribusi Firefox.  Pada waktu saya susun file itu
+diikutsertakan dalam distribusi IceCat.  Pada waktu saya susun file itu
 masih ada lisensi GPL saja.  Maka saya setuju dengan dipergunakannya
 lisensi GPL 2 dan GPL 3 untuk file-file itu.
 
@@ -233,12 +233,12 @@ Salam hangat,
 On Fri, 2008-02-01 at 10:00 +0100, Romi Hardiyanto wrote:
 > Halo Pak Benitius,
 > 
-> Perkenalkan saya Romi. Saya sedang mengalihbahasakan firefox ke Bahasa
+> Perkenalkan saya Romi. Saya sedang mengalihbahasakan icecat ke Bahasa
 > Indonesia. Saya menyertakan berkas affix untuk bahasa indonesia pada
-> fitur pengecek ejaan Firefox. Oleh karena lisensinya GPL saya rasa
-> tidak jadi masalah kan kalau saya sertakan dalam distribusi firefox?
+> fitur pengecek ejaan IceCat. Oleh karena lisensinya GPL saya rasa
+> tidak jadi masalah kan kalau saya sertakan dalam distribusi icecat?
 > 
-> O ya, karena firefox bahasa Indonesia masih belum "official", saya
+> O ya, karena icecat bahasa Indonesia masih belum "official", saya
 > meletakkan berkasnya di http://moz-langpack-id.googlecode.com. Belum
 > saya sertakan berkas lisensi GPL di situ karena selalu kelupaan. Akan
 > saya sertakan berkasnya pada build berikutnya.
@@ -274,7 +274,7 @@ baru ingat kalau READMEnya sudah ada GPL versi 2-nya . Saya-nya saja
 yang kelupaan :D
 
 O iya, saya juga menambah beberapa entri agar selaras dengan perangkat
-lunak firefox sendiri, seperti merk "firefox", "webmaster", "blog".
+lunak icecat sendiri, seperti merk "icecat", "webmaster", "blog".
 Nanti saya sertakan juga berkas "diff"-nya dalam distribusi
 perangkatnya.
 
@@ -289,7 +289,7 @@ Pada tanggal 01/02/08, Benitius Brevoort
 > Saudara tercinta,
 >
 > memang, saya samasekali tidak keberatan berkas affix Indonesia
-> diikutsertakan dalam distribusi Firefox.  Pada waktu saya susun file itu
+> diikutsertakan dalam distribusi IceCat.  Pada waktu saya susun file itu
 > masih ada lisensi GPL saja.  Maka saya setuju dengan dipergunakannya
 > lisensi GPL 2 dan GPL 3 untuk file-file itu.
 >
@@ -299,12 +299,12 @@ Pada tanggal 01/02/08, Benitius Brevoort
 > On Fri, 2008-02-01 at 10:00 +0100, Romi Hardiyanto wrote:
 > > Halo Pak Benitius,
 > >
-> > Perkenalkan saya Romi. Saya sedang mengalihbahasakan firefox ke Bahasa
+> > Perkenalkan saya Romi. Saya sedang mengalihbahasakan icecat ke Bahasa
 > > Indonesia. Saya menyertakan berkas affix untuk bahasa indonesia pada
-> > fitur pengecek ejaan Firefox. Oleh karena lisensinya GPL saya rasa
-> > tidak jadi masalah kan kalau saya sertakan dalam distribusi firefox?
+> > fitur pengecek ejaan IceCat. Oleh karena lisensinya GPL saya rasa
+> > tidak jadi masalah kan kalau saya sertakan dalam distribusi icecat?
 > >
-> > O ya, karena firefox bahasa Indonesia masih belum "official", saya
+> > O ya, karena icecat bahasa Indonesia masih belum "official", saya
 > > meletakkan berkasnya di http://moz-langpack-id.googlecode.com. Belum
 > > saya sertakan berkas lisensi GPL di situ karena selalu kelupaan. Akan
 > > saya sertakan berkasnya pada build berikutnya.
@@ -368,7 +368,7 @@ On Mon, 2008-02-04 at 03:31 +0100, Romi Hardiyanto wrote:
 > yang kelupaan :D
 > 
 > O iya, saya juga menambah beberapa entri agar selaras dengan perangkat
-> lunak firefox sendiri, seperti merk "firefox", "webmaster", "blog".
+> lunak icecat sendiri, seperti merk "icecat", "webmaster", "blog".
 > Nanti saya sertakan juga berkas "diff"-nya dalam distribusi
 > perangkatnya.
 > 
@@ -383,7 +383,7 @@ On Mon, 2008-02-04 at 03:31 +0100, Romi Hardiyanto wrote:
 > > Saudara tercinta,
 > >
 > > memang, saya samasekali tidak keberatan berkas affix Indonesia
-> > diikutsertakan dalam distribusi Firefox.  Pada waktu saya susun file itu
+> > diikutsertakan dalam distribusi IceCat.  Pada waktu saya susun file itu
 > > masih ada lisensi GPL saja.  Maka saya setuju dengan dipergunakannya
 > > lisensi GPL 2 dan GPL 3 untuk file-file itu.
 > >
@@ -393,12 +393,12 @@ On Mon, 2008-02-04 at 03:31 +0100, Romi Hardiyanto wrote:
 > > On Fri, 2008-02-01 at 10:00 +0100, Romi Hardiyanto wrote:
 > > > Halo Pak Benitius,
 > > >
-> > > Perkenalkan saya Romi. Saya sedang mengalihbahasakan firefox ke Bahasa
+> > > Perkenalkan saya Romi. Saya sedang mengalihbahasakan icecat ke Bahasa
 > > > Indonesia. Saya menyertakan berkas affix untuk bahasa indonesia pada
-> > > fitur pengecek ejaan Firefox. Oleh karena lisensinya GPL saya rasa
-> > > tidak jadi masalah kan kalau saya sertakan dalam distribusi firefox?
+> > > fitur pengecek ejaan IceCat. Oleh karena lisensinya GPL saya rasa
+> > > tidak jadi masalah kan kalau saya sertakan dalam distribusi icecat?
 > > >
-> > > O ya, karena firefox bahasa Indonesia masih belum "official", saya
+> > > O ya, karena icecat bahasa Indonesia masih belum "official", saya
 > > > meletakkan berkasnya di http://moz-langpack-id.googlecode.com. Belum
 > > > saya sertakan berkas lisensi GPL di situ karena selalu kelupaan. Akan
 > > > saya sertakan berkasnya pada build berikutnya.

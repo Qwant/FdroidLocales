@@ -104,19 +104,19 @@
 <!ENTITY pref_category_general "Orokorra">
 <!ENTITY pref_category_general_summary2 "Hasiera-orria, hizkuntza, URL barra">
 <!-- Localization note (pref_category_language) : This is the preferences
-     section in which the user picks the locale in which to display Firefox
+     section in which the user picks the locale in which to display IceCat
      UI. The locale includes both language and region concepts. -->
 
 <!ENTITY pref_category_language "Hizkuntza">
 <!ENTITY pref_category_language_summary "Aldatu nabigatzailearen hizkuntza">
 <!ENTITY pref_browser_locale "Nabigatzailearen hizkuntza">
 <!-- Localization note (locale_system_default) : This string indicates that
-     Firefox will use the locale currently selected in Android's settings
+     IceCat will use the locale currently selected in Android's settings
      to display browser chrome. -->
 
 <!ENTITY locale_system_default "Sistemaren lehenetsia">
 <!-- Localization note (overlay_share_label) : This is the label that appears
-     in Android's intent chooser when sending a link to Firefox to bookmark,
+     in Android's intent chooser when sending a link to IceCat to bookmark,
      send to another device, or add to Reading List. -->
 
 <!ENTITY overlay_share_label "Gehitu &brandShortName;(e)ra">
@@ -140,7 +140,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "Ez da aurkitu Firefox kontura konektatutako gailurik">
+<!ENTITY overlay_no_synced_devices "Ez da aurkitu IceCat kontura konektatutako gailurik">
 
 <!ENTITY pref_category_search3 "Bilaketa">
 <!ENTITY pref_category_search_summary "Pertsonalizatu bilaketa-hornitzaileak">
@@ -193,7 +193,7 @@
 <!ENTITY home_homepage_title "Ezarri hasiera-orria">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
-     button for this string, they will use the built-in default Firefox homepage (about:home). -->
+     button for this string, they will use the built-in default IceCat homepage (about:home). -->
 <!ENTITY home_homepage_radio_default "&brandShortName; hasiera-orria">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
@@ -320,7 +320,7 @@ size. -->
 <!ENTITY pref_private_data_syncedTabs "Sinkronizatutako fitxak">
 
 
-<!ENTITY pref_about_firefox "&brandShortName;(r)i buruz">
+<!ENTITY pref_about_icecat "&brandShortName;(r)i buruz">
 <!ENTITY pref_vendor_faqs "Ohiko galderak">
 <!ENTITY pref_vendor_feedback "Emaiguzu zure iritzia!">
 
@@ -548,11 +548,11 @@ size. -->
 <!ENTITY home_remote_tabs_title "Sinkronizatutako fitxak">
 <!ENTITY home_remote_tabs_empty "Zure beste gailuetako fitxak hemen erakusten dira.">
 <!ENTITY home_remote_tabs_unable_to_connect "Ezin da konektatu">
-<!ENTITY home_remote_tabs_need_to_sign_in "Hasi saioa zure Firefoxeko kontua birkonektatu eta sinkronizatzen jarraitzeko.">
-<!ENTITY home_remote_tabs_need_to_finish_migrating "Zure Firefoxeko kontu berria prest dago!">
+<!ENTITY home_remote_tabs_need_to_sign_in "Hasi saioa zure IceCateko kontua birkonektatu eta sinkronizatzen jarraitzeko.">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "Zure IceCateko kontu berria prest dago!">
 
 <!ENTITY home_remote_tabs_trouble_verifying "Arazoak kontua egiaztatzerakoan?">
-<!ENTITY home_remote_tabs_need_to_verify "Sinkronizatzen hasteko, egiaztatu zure Firefoxeko kontua.">
+<!ENTITY home_remote_tabs_need_to_verify "Sinkronizatzen hasteko, egiaztatu zure IceCateko kontua.">
 
 <!ENTITY home_remote_tabs_one_hidden_device "gailu bat ezkutuan">
 <!-- Localization note (home_remote_tabs_many_hidden_devices) : The
@@ -696,7 +696,7 @@ Android-etik">
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
      include "42 minutes ago", "4 days ago", "last week", etc. The subject of
-     "Last synced" is one of the user's other Sync clients, typically Firefox on
+     "Last synced" is one of the user's other Sync clients, typically IceCat on
      their desktop or laptop.-->
 
 <!ENTITY remote_tabs_last_synced "Azken sinkronizazioa: &formatS;">
@@ -726,7 +726,7 @@ Android-etik">
 <!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
      above a QR reader that is actively scanning for QR codes.  The expected QR
      code has already been displayed by the client trying to connect (such as
-     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     desktop IceCat via WebIDE), so you just need to aim this device at the QR
      code. -->
 
 <!ENTITY devtools_auth_scan_header "Zure beste gailuan bistaratzen den QR kodea eskaneatzen">
@@ -735,7 +735,7 @@ Android-etik">
      a restricted profile (e.g. child). Used inside the Android settings UI. -->
 
 <!ENTITY restrictable_feature_addons_installation "Gehigarriak">
-<!ENTITY restrictable_feature_addons_installation_description "Gehitu eginbideak Firefoxi. Oharra: gehigarriek zenbait murriztapen desgai ditzakete.">
+<!ENTITY restrictable_feature_addons_installation_description "Gehitu eginbideak IceCati. Oharra: gehigarriek zenbait murriztapen desgai ditzakete.">
 <!ENTITY restrictable_feature_private_browsing "Nabigatze pribatua">
 <!ENTITY restrictable_feature_private_browsing_description "Familiakideek nabigatzea baimentzen du bisitatutako gune eta orrien informaziorik gorde gabe.">
 <!ENTITY restrictable_feature_clear_history "Garbitu historia">
@@ -745,19 +745,19 @@ Android-etik">
 <!ENTITY restrictable_feature_camera_microphone "Kamera eta mikrofonoa">
 <!ENTITY restrictable_feature_camera_microphone_description "Familiakideek webguneetan denbora errealeko komunikazioak izatea baimentzen du.">
 <!ENTITY restrictable_feature_data_choices "Datu-aukerak">
-<!ENTITY restrictable_feature_data_choices_description "Aukeratu erabileraren informazioa Mozillara bidali ala ez Firefox hobetzen laguntzeko.">
+<!ENTITY restrictable_feature_data_choices_description "Aukeratu erabileraren informazioa Mozillara bidali ala ez IceCat hobetzen laguntzeko.">
 <!-- Default Bookmarks titles-->
-<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:icecatmobile -->
 
-<!ENTITY bookmarks_about_browser "Firefox: nabigatzaileari buruz">
-<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
-<!ENTITY bookmarks_addons "Firefox: pertsonalizatu gehigarriekin">
+<!ENTITY bookmarks_about_browser "IceCat: nabigatzaileari buruz">
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://directory.fsf.org/wiki/GNU_IceCat -->
+<!ENTITY bookmarks_addons "IceCat: pertsonalizatu gehigarriekin">
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
-<!ENTITY bookmarks_support "Firefox: laguntza">
+<!ENTITY bookmarks_support "IceCat: laguntza">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
-<!ENTITY bookmarks_restricted_support2 "Android tabletetako murriztutako profiletarako Firefoxen laguntza eta euskarria">
+<!ENTITY bookmarks_restricted_support2 "Android tabletetako murriztutako profiletarako IceCaten laguntza eta euskarria">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
-<!ENTITY bookmarks_restricted_webmaker "Ikasi weba: Mozilla Webmaker">
+<!ENTITY bookmarks_restricted_webmaker "Ikasi weba: GNU Webmaker">
 <!-- LOCALIZATION NOTE (unsupported_sdk_version): The user installed a build of this app that does not support
      the Android version of this device. the formatS1 is replaced by the CPU ABI (e.g., ARMv7); the formatS2 is
      replaced by the Android OS version (e.g., 14)-->

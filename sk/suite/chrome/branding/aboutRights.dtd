@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!-- LOCALIZATION NOTE This file is very similar to the one in Firefox from browser/locales/en-US/chrome/browser/aboutRights.dtd so you can use that file as a starting point -->
+<!-- LOCALIZATION NOTE This file is very similar to the one in IceCat from browser/locales/en-US/chrome/browser/aboutRights.dtd so you can use that file as a starting point -->
 <!-- rights.locale-direction instead of the usual local.dir entity, so RTL can skip translating page. -->
 <!ENTITY rights.locale-direction "ltr">
 <!ENTITY rights.pagetitle       "about:rights">
@@ -21,7 +21,7 @@
 <!ENTITY rights.intro-point1b "Mozilla Public License">
 <!ENTITY rights.intro-point1c ". To znamená, že &brandShortName; môžete používať, kopírovať a ďalej rozširovať. Takisto môžete upravovať zdrojový kód &brandShortName; podľa vašich predstáv. Licencia Mozilla Public License umožňuje šírenie aj upravených verzií.">
 
-<!ENTITY rights.intro-point2a "Mozilla vám nedáva právo na používanie ochranných známok a logotypov Mozilla a SeaMonkey. Ďalšie informácie o ochranných známkach získate ">
+<!ENTITY rights.intro-point2a "Mozilla vám nedáva právo na používanie ochranných známok a logotypov GNU a SeaMonkey. Ďalšie informácie o ochranných známkach získate ">
 <!ENTITY rights.intro-point2b "na tejto stránke">
 <!ENTITY rights.intro-point2c ".">
 

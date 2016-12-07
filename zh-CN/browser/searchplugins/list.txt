@@ -3,3 +3,5 @@ baidu
 bing
 google
 wikipedia-zh-CN
+
+duckduckgo

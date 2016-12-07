@@ -26,7 +26,7 @@
 <!ENTITY performanceUI.disabledRealTime.nonE10SBuild "നോണ്‍-മള്‍ട്ടിപ്രോസെസ് ഫയര്‍ഫോക്സില്‍ റിയല്‍ടൈം ഡാറ്റ റെക്കോര്‍ഡ്‌ ചെയ്യുന്നത് ഡിസബിള്‍ഡ് ആണ്.">
 <!-- LOCALIZATION NOTE (performanceUI.disabledRealTime.disabledE10S): This string
   -  is displayed as a message for why the real time overview graph is disabled
-  -  when running on a build that can run multiprocess Firefox, but just is not enabled. -->
+  -  when running on a build that can run multiprocess IceCat, but just is not enabled. -->
 
 <!ENTITY performanceUI.disabledRealTime.disabledE10S "റെക്കോര്‍ഡിംഗ് ഡാറ്റ റിയല്‍ടൈമില്‍ റെന്‍ഡര്‍ ചെയ്യുവാന്‍ മുന്‍ഗണനകളില്‍ മള്‍ട്ടിപ്രോസെസ് ഫയര്‍ഫോക്സ് ഇനേബിള്‍ ചെയ്യുക.">
 <!-- LOCALIZATION NOTE (performanceUI.bufferStatusFull): This string

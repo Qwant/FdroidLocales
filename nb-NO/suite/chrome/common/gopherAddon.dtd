@@ -5,5 +5,5 @@
 <!ENTITY loadError.label        "Feil ved sidelasting">
 <!ENTITY gopherAddon.title      "Gopher-protokoll">
 <!ENTITY gopherAddon.shortDesc  "gopher er ikke registrert som en protokoll.">
-<!ENTITY gopherAddon.longDesc   "Adressen bruker gopher-protokollen, som ikke lenger støttes, slik at nettleseren ikke kan koble til nettstedet. Du kan finne kompatible utvidelser for å bruke denne serveren fra Mozilla Add-ons.">
+<!ENTITY gopherAddon.longDesc   "Adressen bruker gopher-protokollen, som ikke lenger støttes, slik at nettleseren ikke kan koble til nettstedet. Du kan finne kompatible utvidelser for å bruke denne serveren fra GNU Add-ons.">
 <!ENTITY goToAddOn.label        "Gå til utvidelsesnettstedet">

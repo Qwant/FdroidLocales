@@ -155,7 +155,7 @@ yang &brandShortName; dibenarkan untuk mencapai Web.</li>
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <button> tags. It uses strings already defined above. The
 button is included here (instead of netError.xhtml) because it exposes
-functionality specific to firefox. -->
+functionality specific to icecat. -->
 
 
 <!ENTITY securityOverride.warningContent "<p>Kamu tidak sepatutnya menambah pengecualian jika kamu menggunakan sambungan internet yang kamu tidak percayai sepenuhnya atau kamu tidak biasa lagi melihat amaran untuk server ini.</p> 

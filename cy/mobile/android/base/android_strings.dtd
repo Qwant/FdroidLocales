@@ -104,19 +104,19 @@
 <!ENTITY pref_category_general "Cyffredinol">
 <!ENTITY pref_category_general_summary2 "Cartref, iaith, Bar URL">
 <!-- Localization note (pref_category_language) : This is the preferences
-     section in which the user picks the locale in which to display Firefox
+     section in which the user picks the locale in which to display IceCat
      UI. The locale includes both language and region concepts. -->
 
 <!ENTITY pref_category_language "Iaith">
 <!ENTITY pref_category_language_summary "Newid iaith eich porwr">
 <!ENTITY pref_browser_locale "Iaith y porwr">
 <!-- Localization note (locale_system_default) : This string indicates that
-     Firefox will use the locale currently selected in Android's settings
+     IceCat will use the locale currently selected in Android's settings
      to display browser chrome. -->
 
 <!ENTITY locale_system_default "Rhagosodiad y system">
 <!-- Localization note (overlay_share_label) : This is the label that appears
-     in Android's intent chooser when sending a link to Firefox to bookmark,
+     in Android's intent chooser when sending a link to IceCat to bookmark,
      send to another device, or add to Reading List. -->
 
 <!ENTITY overlay_share_label "Ynghylch &brandShortName;">
@@ -140,7 +140,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "Heb ganfod dyfeisiau sy\u0027n cysylltu â Chyfrif Firefox">
+<!ENTITY overlay_no_synced_devices "Heb ganfod dyfeisiau sy\u0027n cysylltu â Chyfrif IceCat">
 
 <!ENTITY pref_category_search3 "Chwilio">
 <!ENTITY pref_category_search_summary "Cyfaddasu eich darparwyr chwilio">
@@ -193,7 +193,7 @@
 <!ENTITY home_homepage_title "Gosod fel y Dudalen Cartref">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
-     button for this string, they will use the built-in default Firefox homepage (about:home). -->
+     button for this string, they will use the built-in default IceCat homepage (about:home). -->
 <!ENTITY home_homepage_radio_default "Cartref &brandShortName;">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
@@ -320,7 +320,7 @@ size. -->
 <!ENTITY pref_private_data_syncedTabs "Tabiau wedi eu cydweddu">
 
 
-<!ENTITY pref_about_firefox "Ynghylch &brandShortName;">
+<!ENTITY pref_about_icecat "Ynghylch &brandShortName;">
 <!ENTITY pref_vendor_faqs "Atebion">
 <!ENTITY pref_vendor_feedback "Rhoi adborth">
 
@@ -548,11 +548,11 @@ size. -->
 <!ENTITY home_remote_tabs_title "Tabiau wedi eu Cydweddu">
 <!ENTITY home_remote_tabs_empty "Mae eich tabiau o ddyfeisiau eraill yn ymddangos yma.">
 <!ENTITY home_remote_tabs_unable_to_connect "Methu cysylltu">
-<!ENTITY home_remote_tabs_need_to_sign_in "Mewngofnodwch i ailgysylltu â\u0027ch Cyfrif Firefox a pharhau i gydweddu.">
-<!ENTITY home_remote_tabs_need_to_finish_migrating "Mae eich Cyfrif Firefox newydd yn barod!">
+<!ENTITY home_remote_tabs_need_to_sign_in "Mewngofnodwch i ailgysylltu â\u0027ch Cyfrif IceCat a pharhau i gydweddu.">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "Mae eich Cyfrif IceCat newydd yn barod!">
 
 <!ENTITY home_remote_tabs_trouble_verifying "Anhawster gwirio eich cyfrif?">
-<!ENTITY home_remote_tabs_need_to_verify "Gwiriwch eich Cyfrif Firefox i gychwyn cydweddu.">
+<!ENTITY home_remote_tabs_need_to_verify "Gwiriwch eich Cyfrif IceCat i gychwyn cydweddu.">
 
 <!ENTITY home_remote_tabs_one_hidden_device "1 dyfais cudd">
 <!-- Localization note (home_remote_tabs_many_hidden_devices) : The
@@ -696,7 +696,7 @@ o Android">
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
      include "42 minutes ago", "4 days ago", "last week", etc. The subject of
-     "Last synced" is one of the user's other Sync clients, typically Firefox on
+     "Last synced" is one of the user's other Sync clients, typically IceCat on
      their desktop or laptop.-->
 
 <!ENTITY remote_tabs_last_synced "Cydweddwyd diwethaf: &formatS;">
@@ -726,7 +726,7 @@ o Android">
 <!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
      above a QR reader that is actively scanning for QR codes.  The expected QR
      code has already been displayed by the client trying to connect (such as
-     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     desktop IceCat via WebIDE), so you just need to aim this device at the QR
      code. -->
 
 <!ENTITY devtools_auth_scan_header "Sganio am y cod QR sydd i\u0027w weld ar eich dyfais arall">
@@ -735,7 +735,7 @@ o Android">
      a restricted profile (e.g. child). Used inside the Android settings UI. -->
 
 <!ENTITY restrictable_feature_addons_installation "Ychwanegion">
-<!ENTITY restrictable_feature_addons_installation_description "Ychwanegwch nodweddion neu swyddogaethau i Firefox. Sylw: Gall ychwanegion analluogi rhai cyfyngiadau.">
+<!ENTITY restrictable_feature_addons_installation_description "Ychwanegwch nodweddion neu swyddogaethau i IceCat. Sylw: Gall ychwanegion analluogi rhai cyfyngiadau.">
 <!ENTITY restrictable_feature_private_browsing "Pori Preifat">
 <!ENTITY restrictable_feature_private_browsing_description "Mae\u0027n caniatáu i aelodau\u0027r teulu i bori heb gadw manylion gwefannau a\u0027r tudalennau mae nhw wedi ymweld â nhw.">
 <!ENTITY restrictable_feature_clear_history "Clirio Hanes">
@@ -745,19 +745,19 @@ o Android">
 <!ENTITY restrictable_feature_camera_microphone "Camera a Meicroffon">
 <!ENTITY restrictable_feature_camera_microphone_description "Caniatáu i aelodau\u0027r teulu i gysylltu\u0027n fyw pan ar wefannau.">
 <!ENTITY restrictable_feature_data_choices "Dewisiadau Data">
-<!ENTITY restrictable_feature_data_choices_description "Dewis p\u0027un ai i anfon manylon defnydd at Mozilla er mwyn gwella Firefox, neu beidio.">
+<!ENTITY restrictable_feature_data_choices_description "Dewis p\u0027un ai i anfon manylon defnydd at GNU er mwyn gwella IceCat, neu beidio.">
 <!-- Default Bookmarks titles-->
-<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:icecatmobile -->
 
-<!ENTITY bookmarks_about_browser "Firefox: Ynghylch eich porwr">
-<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
-<!ENTITY bookmarks_addons "Firefox: Cyfaddasu gydag ychwanegion">
+<!ENTITY bookmarks_about_browser "IceCat: Ynghylch eich porwr">
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://directory.fsf.org/wiki/GNU_IceCat -->
+<!ENTITY bookmarks_addons "IceCat: Cyfaddasu gydag ychwanegion">
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
-<!ENTITY bookmarks_support "Firefox: Cefnogaeth">
+<!ENTITY bookmarks_support "IceCat: Cefnogaeth">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
-<!ENTITY bookmarks_restricted_support2 "Cymorth a Chefnogaeth Firefox ar gyfer proffiliau cyfyngedig tabledi Android">
+<!ENTITY bookmarks_restricted_support2 "Cymorth a Chefnogaeth IceCat ar gyfer proffiliau cyfyngedig tabledi Android">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
-<!ENTITY bookmarks_restricted_webmaker "Dysgwch y We: Mozilla Webmaker">
+<!ENTITY bookmarks_restricted_webmaker "Dysgwch y We: GNU Webmaker">
 <!-- LOCALIZATION NOTE (unsupported_sdk_version): The user installed a build of this app that does not support
      the Android version of this device. the formatS1 is replaced by the CPU ABI (e.g., ARMv7); the formatS2 is
      replaced by the Android OS version (e.g., 14)-->

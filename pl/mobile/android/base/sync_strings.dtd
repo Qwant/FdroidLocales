@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY syncBrand.fullName.label "Firefox Sync">
+<!ENTITY syncBrand.fullName.label "IceCat Sync">
 <!ENTITY syncBrand.shortName.label "Sync">
 
 <!ENTITY sync.app.name.label "&syncBrand.fullName.label;">
@@ -114,7 +114,7 @@
 <!ENTITY fxaccount_getting_started_welcome_to_sync "Witaj w usłudze &syncBrand.shortName.label;">
 <!ENTITY fxaccount_getting_started_description2 "Zarejestruj się i synchronizuj swoje karty, zakładki, dane logowania i więcej.">
 <!ENTITY fxaccount_getting_started_get_started "Pierwsze kroki">
-<!ENTITY fxaccount_getting_started_old_firefox "Korzystasz ze starej wersji usługi &syncBrand.shortName.label;?">
+<!ENTITY fxaccount_getting_started_old_icecat "Korzystasz ze starej wersji usługi &syncBrand.shortName.label;?">
 
 <!ENTITY fxaccount_create_account_header2 "Utwórz konto Firefoksa">
 <!ENTITY fxaccount_create_account_password_length_restriction "Hasło musi mieć przynajmniej 8 znaków">
@@ -185,7 +185,7 @@
 <!ENTITY fxaccount_status_linktos "Warunki użytkowania">
 <!ENTITY fxaccount_status_linkprivacy "Polityka prywatności">
  
-<!ENTITY fxaccount_account_type_label "Firefox">
+<!ENTITY fxaccount_account_type_label "IceCat">
 
 <!ENTITY fxaccount_options_title "Opcje usługi &syncBrand.shortName.label;">
 <!ENTITY fxaccount_options_configure_title "Ustawienia usługi &syncBrand.shortName.label;">

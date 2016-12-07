@@ -38,8 +38,8 @@
 <!ENTITY isDefault.label               "&brandShortName; on määratud vaikebrauseriks">
 <!ENTITY isNotDefault.label            "&brandShortName; pole vaikebrauseriks määratud">
 
-<!ENTITY separateProfileMode.label     "Lubatakse &brandShortName;i ja Firefoxi samaaegne töötamine">
-<!ENTITY useFirefoxSync.label          "Vihje: kasutatakse erinevaid profiile. Andmete jagamiseks nende profiilide vahel kasuta Synci.">
+<!ENTITY separateProfileMode.label     "Lubatakse &brandShortName;i ja IceCati samaaegne töötamine">
+<!ENTITY useIceCatSync.label          "Vihje: kasutatakse erinevaid profiile. Andmete jagamiseks nende profiilide vahel kasuta Synci.">
 <!ENTITY getStarted.label              "Tee algust Synci kasutamisega…">
 
 <!ENTITY e10sEnabled.label             "Lubatakse mitme protsessiga &brandShortName;">

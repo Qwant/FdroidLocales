@@ -14,27 +14,27 @@
 #define bookmarks_toolbarfolder_description Foegje blêdwizers ta oan dizze map om se op de blêdwizerarkbalke wer te jaan
 
 # LOCALIZATION NOTE (getting_started):
-# link title for http://www.mozilla.com/en-US/firefox/central/
+# link title for http://www.mozilla.com/en-US/icecat/central/
 #define getting_started Starte
 
-# LOCALIZATION NOTE (firefox_heading):
-# Firefox links folder name
-#define firefox_heading Mozilla Firefox
+# LOCALIZATION NOTE (icecat_heading):
+# IceCat links folder name
+#define icecat_heading GNU IceCat
 
-# LOCALIZATION NOTE (firefox_help):
-# link title for http://www.mozilla.com/en-US/firefox/help/
-#define firefox_help Help en útlis
+# LOCALIZATION NOTE (icecat_help):
+# link title for http://www.mozilla.com/en-US/icecat/help/
+#define icecat_help Help en útlis
 
-# LOCALIZATION NOTE (firefox_customize):
-# link title for http://www.mozilla.com/en-US/firefox/customize/
-#define firefox_customize Firefox oanpasse
+# LOCALIZATION NOTE (icecat_customize):
+# link title for http://www.mozilla.com/en-US/icecat/customize/
+#define icecat_customize IceCat oanpasse
 
-# LOCALIZATION NOTE (firefox_community):
-# link title for http://www.mozilla.com/en-US/firefox/community/
-#define firefox_community Meiwurkje
+# LOCALIZATION NOTE (firefox.community):
+# link title for http://www.mozilla.com/en-US/firefox.community/
+#define firefox.community Meiwurkje
 
-# LOCALIZATION NOTE (firefox_about):
-# link title for http://www.mozilla.com/en-US/firefox/about/
-#define firefox_about Oer Mozilla
+# LOCALIZATION NOTE (icecat_about):
+# link title for http://www.mozilla.com/en-US/icecat/about/
+#define icecat_about Oer Mozilla
 
 #unfilter emptyLines

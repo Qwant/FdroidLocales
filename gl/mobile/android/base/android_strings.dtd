@@ -108,19 +108,19 @@
 <!ENTITY pref_category_customize_alt_summary "Inicio, busca, lapelas, abrir máis tarde, importar">
 
 <!-- Localization note (pref_category_language) : This is the preferences
-     section in which the user picks the locale in which to display Firefox
+     section in which the user picks the locale in which to display IceCat
      UI. The locale includes both language and region concepts. -->
 <!ENTITY pref_category_language "Idioma">
 <!ENTITY pref_category_language_summary "Cambiar o idioma do seu navegador">
 <!ENTITY pref_browser_locale "Idioma do navegador">
 
 <!-- Localization note (locale_system_default) : This string indicates that
-     Firefox will use the locale currently selected in Android's settings
+     IceCat will use the locale currently selected in Android's settings
      to display browser chrome. -->
 <!ENTITY locale_system_default "Predeterminado do sistema">
 
 <!-- Localization note (overlay_share_label) : This is the label that appears
-     in Android's intent chooser when sending a link to Firefox to bookmark,
+     in Android's intent chooser when sending a link to IceCat to bookmark,
      send to another device, or add to Reading List. -->
 <!ENTITY overlay_share_label "Engadir a &brandShortName;">
 
@@ -143,7 +143,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "Non se atoparon dispositivos conectados a unha conta Firefox">
+<!ENTITY overlay_no_synced_devices "Non se atoparon dispositivos conectados a unha conta IceCat">
 <!-- Localization note (overlay_share_tab_not_sent) : Used when the menu option
      to send a tab to a synced device is pressed and there is an error
      connecting to the server so the tab could not be sent. The text should be
@@ -304,7 +304,7 @@ size. -->
 <!ENTITY pref_private_data_syncedTabs "Lapelas sincronizadas">
 
 
-<!ENTITY pref_about_firefox "Sobre o &brandShortName;">
+<!ENTITY pref_about_icecat "Sobre o &brandShortName;">
 <!ENTITY pref_vendor_faqs "FAQ">
 <!ENTITY pref_vendor_feedback "Enviar opinión">
 
@@ -537,11 +537,11 @@ size. -->
 <!ENTITY home_remote_tabs_title "Lapelas sincronizadas">
 <!ENTITY home_remote_tabs_empty "Aquí amósanse as súas lapelas doutros dispositivos.">
 <!ENTITY home_remote_tabs_unable_to_connect "Non é posíbel conectarse">
-<!ENTITY home_remote_tabs_need_to_sign_in "Identifíquese para volver a conectarse a súa conta Firefox e continuar a sincronización.">
-<!ENTITY home_remote_tabs_need_to_finish_migrating "A súa conta Firefox está lista!">
+<!ENTITY home_remote_tabs_need_to_sign_in "Identifíquese para volver a conectarse a súa conta IceCat e continuar a sincronización.">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "A súa conta IceCat está lista!">
 
 <!ENTITY home_remote_tabs_trouble_verifying "Ten problemas para comprobar a súa conta?">
-<!ENTITY home_remote_tabs_need_to_verify "Comprobe a súa conta Firefox para comezar a sincronización.">
+<!ENTITY home_remote_tabs_need_to_verify "Comprobe a súa conta IceCat para comezar a sincronización.">
 
 <!ENTITY home_remote_tabs_one_hidden_device "1 dispositivo agochado">
 <!-- Localization note (home_remote_tabs_many_hidden_devices) : The
@@ -682,7 +682,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
      include "42 minutes ago", "4 days ago", "last week", etc. The subject of
-     "Last synced" is one of the user's other Sync clients, typically Firefox on
+     "Last synced" is one of the user's other Sync clients, typically IceCat on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "Última sincronización: &formatS;">
 <!-- Localization note: Used when the sync has not happend yet, showed in place of a date -->
@@ -699,7 +699,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
      above a QR reader that is actively scanning for QR codes.  The expected QR
      code has already been displayed by the client trying to connect (such as
-     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     desktop IceCat via WebIDE), so you just need to aim this device at the QR
      code. -->
 <!ENTITY devtools_auth_scan_header "Examinando o código QR amosado no outro dispositivo">
 
@@ -718,15 +718,15 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY restriction_disallow_guest_browsing_title2 "Desactivar a navegación de invitado">
 
 <!-- Default Bookmarks titles-->
-<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
-<!ENTITY bookmarks_about_browser "Firefox: Sobre o seu navegador">
-<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
-<!ENTITY bookmarks_addons "Firefox: Personalizar con complementos">
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:icecatmobile -->
+<!ENTITY bookmarks_about_browser "IceCat: Sobre o seu navegador">
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://directory.fsf.org/wiki/GNU_IceCat -->
+<!ENTITY bookmarks_addons "IceCat: Personalizar con complementos">
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
-<!ENTITY bookmarks_support "Firefox: Asistencia">
-<!--LOCALIZATION NOTE (bookmarks_marketplace):link title for https://marketplace.firefox.com -->
-<!ENTITY bookmarks_marketplace "Firefox Marketplace">
+<!ENTITY bookmarks_support "IceCat: Asistencia">
+<!--LOCALIZATION NOTE (bookmarks_marketplace):link title for https://f-droid.org/repository/browse -->
+<!ENTITY bookmarks_marketplace "F-droid free software repository">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
-<!ENTITY bookmarks_restricted_support2 "Asistencia e axuda de Firefox para perfiles restrinxidos en tabletas Android">
+<!ENTITY bookmarks_restricted_support2 "Asistencia e axuda de IceCat para perfiles restrinxidos en tabletas Android">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
-<!ENTITY bookmarks_restricted_webmaker "Ensinar a Web: Mozilla Webmaker">
+<!ENTITY bookmarks_restricted_webmaker "Ensinar a Web: GNU Webmaker">

@@ -105,7 +105,7 @@ values from browser.dtd.  -->
   -  boolean preference in about:config, in the options panel. -->
 
 <!ENTITY options.enableRemote.label3    "Habilitar depuración remota">
-<!ENTITY options.enableRemote.tooltip   "Usando esta opción permitirá a las herramientas del programador depurar una instancia de Firefox como Firefox OS">
+<!ENTITY options.enableRemote.tooltip   "Usando esta opción permitirá a las herramientas del programador depurar una instancia de IceCat como IceCat OS">
 <!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
   -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
   -  boolean preference in about:config, in the options panel. -->
@@ -134,7 +134,7 @@ values from browser.dtd.  -->
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
 
-<!ENTITY options.selectDefaultTools.label     "Herramientas de desarrollo para Firefox por defecto">
+<!ENTITY options.selectDefaultTools.label     "Herramientas de desarrollo para IceCat por defecto">
 <!-- LOCALIZATION NOTE (options.selectAdditionalTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the developer tools
   -  added by add-ons. This heading is hidden when there is no developer tool

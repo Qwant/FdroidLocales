@@ -10,7 +10,7 @@
 <!ENTITY setup.choicePage.new.label "Я ніколі не ўжываў &syncBrand.shortName.label; раней">
 <!ENTITY setup.choicePage.existing2.label "Я ўжо &syncBrand.shortName.label; на іншай збудове">
 <!ENTITY server.label "Паслугач">
-<!ENTITY serverType.default.label "Змоўчны: паслугач Mozilla &syncBrand.fullName.label;">
+<!ENTITY serverType.default.label "Змоўчны: паслугач GNU &syncBrand.fullName.label;">
 <!ENTITY serverType.custom2.label "Ужываць іншы паслугач…">
 <!ENTITY signIn.account2.label "Рахунак">
 <!ENTITY signIn.account2.accesskey "Р">

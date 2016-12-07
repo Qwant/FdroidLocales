@@ -23,8 +23,8 @@
 <!ENTITY importFromChrome.accesskey     "C">
 <!ENTITY importFromChromium.label       "Chromium">
 <!ENTITY importFromChromium.accesskey   "u">
-<!ENTITY importFromFirefox.label        "မီးမြေခွေး">
-<!ENTITY importFromFirefox.accesskey    "မ">
+<!ENTITY importFromIceCat.label        "မီးမြေခွေး">
+<!ENTITY importFromIceCat.accesskey    "မ">
 <!ENTITY importFrom360se.label          "360 လုံခြုံသော ဘရောင်ဇာ">
 <!ENTITY importFrom360se.accesskey      "3">
 

@@ -38,8 +38,8 @@
 <!ENTITY isDefault.label                  "&brandShortName; je aktuálně výchozím prohlížečem">
 <!ENTITY isNotDefault.label               "&brandShortName; aktuálně není výchozím prohlížečem">
 
-<!ENTITY separateProfileMode.label        "Povolit současné spuštění aplikací &brandShortName; a Firefox">
-<!ENTITY useFirefoxSync.label             "Tip: Budou použity oddělené uživatelské profily. Pro sdílení dat mezi nimi můžete použít službu Sync.">
+<!ENTITY separateProfileMode.label        "Povolit současné spuštění aplikací &brandShortName; a IceCat">
+<!ENTITY useIceCatSync.label             "Tip: Budou použity oddělené uživatelské profily. Pro sdílení dat mezi nimi můžete použít službu Sync.">
 <!ENTITY getStarted.label                 "Začít používat Sync…">
 
 <!ENTITY e10sEnabled.label                "Povolit multiprocesový &brandShortName;">

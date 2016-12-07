@@ -38,8 +38,8 @@
 <!ENTITY isDefault.label                  "&brandShortName; เป็นเบราว์เซอร์ปริยายของคุณ">
 <!ENTITY isNotDefault.label               "&brandShortName; ไม่ได้เป็นเบราว์เซอร์ปริยายของคุณ">
 
-<!ENTITY separateProfileMode.label        "อนุญาตให้ &brandShortName; และ Firefox ใช้งานพร้อมกัน">
-<!ENTITY useFirefoxSync.label             "เคล็ดลับ: นี้ใช้โพรไฟล์แยกต่างหาก ใช้ Sync เพื่อแบ่งปันข้อมูลระหว่างกัน">
+<!ENTITY separateProfileMode.label        "อนุญาตให้ &brandShortName; และ IceCat ใช้งานพร้อมกัน">
+<!ENTITY useIceCatSync.label             "เคล็ดลับ: นี้ใช้โพรไฟล์แยกต่างหาก ใช้ Sync เพื่อแบ่งปันข้อมูลระหว่างกัน">
 <!ENTITY getStarted.label                 "เริ่มใช้งาน Sync…">
 
 <!ENTITY e10sEnabled.label                "เปิดใช้การทำงานแบบหลายโพรเซสของ &brandShortName;">

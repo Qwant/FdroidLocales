@@ -5,3 +5,5 @@ tearma
 twitter
 wikipedia-ga-IE
 yahoo-en-GB
+
+duckduckgo

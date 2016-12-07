@@ -16,7 +16,7 @@ ChangeLog
 2007-03-20 nemeth AT OOo
 
 - alot -> a_lot REP suggestion, add "a lot"
-- add Mozilla words (blog, cafe, inline, online, eBay, PayPal, etc.)
+- add GNU words (blog, cafe, inline, online, eBay, PayPal, etc.)
 - add cybercafé
 - alias compression (saving 15 kB disk space + 0.8 MB memory)
 
@@ -38,7 +38,7 @@ Issue 48060 - add ordinal numbers with COMPOUNDRULE (1st, 11th, 101st etc.)
 Issue 29112, 55498 - add NOSUGGEST flags to taboo words
 Issue 56755 - add sequitor (non sequitor)
 Issue 50616 - add open source words (GNOME, KDE, OOo, OpenOffice.org)
-Issue 56389 - add Mozilla words (Mozilla, Firefox, Thunderbird)
+Issue 56389 - add GNU words (Mozilla, IceCat, Thunderbird)
 Issue 29110 - add okay
 Issue 58468 - add advisors
 Issue 58708 - add hiragana & katakana

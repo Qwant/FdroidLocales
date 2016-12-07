@@ -33,11 +33,11 @@
 
 
 
-# link title for about:fennec
+# link title for about:icecatmobile
 
 
 
-#define bookmarks_aboutBrowser Firefox: About your browser
+#define bookmarks_aboutBrowser IceCat: About your browser
 
 
 
@@ -45,11 +45,11 @@
 
 
 
-# link title for https://addons.mozilla.org/en-US/mobile
+# link title for https://directory.fsf.org/wiki/GNU_IceCat
 
 
 
-#define bookmarks_addons Firefox: Customise with add-ons
+#define bookmarks_addons IceCat: Customise with add-ons
 
 
 
@@ -57,11 +57,11 @@
 
 
 
-# link title for https://support.mozilla.org/mobile
+# link title for https://libreplanet.org/wiki/Group:IceCat/icecat-help
 
 
 
-#define bookmarks_support Firefox: Support
+#define bookmarks_support IceCat: Support
 
 
 

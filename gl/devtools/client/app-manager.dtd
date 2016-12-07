@@ -94,10 +94,10 @@
 
 <!ENTITY help.title "Xestor de aplicativos">
 <!ENTITY help.close "Pechar">
-<!ENTITY help.intro "Esta ferramenta axudaralle a construír e instalar aplicativos web en dispositivos compatíbeis (p.e. Firefox OS). A lapela <strong>Aplicativos</strong> asistirao no proceso de validación e instalación dos seus aplicativos. A lapela <strong>Dispositivo</strong> daralle información sobre o dispositivo conectado. Use a barra de ferramentas de abaixo para conectarse a un dispositivo ou iniciar o simulador.">
+<!ENTITY help.intro "Esta ferramenta axudaralle a construír e instalar aplicativos web en dispositivos compatíbeis (p.e. IceCat OS). A lapela <strong>Aplicativos</strong> asistirao no proceso de validación e instalación dos seus aplicativos. A lapela <strong>Dispositivo</strong> daralle información sobre o dispositivo conectado. Use a barra de ferramentas de abaixo para conectarse a un dispositivo ou iniciar o simulador.">
 <!ENTITY help.usefullLinks "Ligazóns útiles:">
 <!ENTITY help.appMgrDoc "Documentación: Uso do xestor de aplicativos">
-<!ENTITY help.configuringDevice "Como configurar o seu dispositivo Firefox OS">
+<!ENTITY help.configuringDevice "Como configurar o seu dispositivo IceCat OS">
 <!ENTITY help.troubleShooting "Solución de problemas">
 <!ENTITY help.simulatorAddon "Instalación do complemento Simulator">
 <!ENTITY help.adbHelperAddon "Instalación do complemento Adb Helper">

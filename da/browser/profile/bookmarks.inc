@@ -11,27 +11,27 @@
 #define bookmarks_toolbarfolder_description Tilføj bogmærker til denne mappe for at se dem i Bogmærkelinjen
 
 # LOCALIZATION NOTE (getting_started):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/central/
-#define getting_started I gang med Firefox
+# link title for http://en-US.www.mozilla.com/en-US/icecat/central/
+#define getting_started I gang med IceCat
 
-# LOCALIZATION NOTE (firefox_heading):
-# Firefox links folder name
-#define firefox_heading Mozilla Firefox
+# LOCALIZATION NOTE (icecat_heading):
+# IceCat links folder name
+#define icecat_heading GNU IceCat
 
-# LOCALIZATION NOTE (firefox_help):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/help/
-#define firefox_help Hjælp og vejledninger
+# LOCALIZATION NOTE (icecat_help):
+# link title for http://en-US.www.mozilla.com/en-US/icecat/help/
+#define icecat_help Hjælp og vejledninger
 
-# LOCALIZATION NOTE (firefox_customize):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/customize/
-#define firefox_customize Tilpas Firefox
+# LOCALIZATION NOTE (icecat_customize):
+# link title for http://en-US.www.mozilla.com/en-US/icecat/customize/
+#define icecat_customize Tilpas IceCat
 
-# LOCALIZATION NOTE (firefox_community):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/community/
-#define firefox_community Deltag i Mozillaprojektet
+# LOCALIZATION NOTE (firefox.community):
+# link title for http://en-US.www.mozilla.com/en-US/firefox.community/
+#define firefox.community Deltag i Mozillaprojektet
 
-# LOCALIZATION NOTE (firefox_about):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/about/
-#define firefox_about Om os
+# LOCALIZATION NOTE (icecat_about):
+# link title for http://en-US.www.mozilla.com/en-US/icecat/about/
+#define icecat_about Om os
 
 #unfilter emptyLines

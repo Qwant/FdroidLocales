@@ -4,7 +4,7 @@
 <!-- Don't localize these. They're here until they have
      a better place to live. -->
 
-<!ENTITY syncBrand.fullName.label "Firefox সিঙ্ক">
+<!ENTITY syncBrand.fullName.label "IceCat সিঙ্ক">
 <!ENTITY syncBrand.shortName.label "সুসংগতি">
 <!-- Main titles. -->
 
@@ -53,7 +53,7 @@
 
 <!ENTITY sync.pair.tryagain.label "অনুগ্রহ করে পুনরায় প্রচেষ্টা করুন।">
 <!ENTITY sync.pair.connectlocation.label "আপনার নতুন ডিভাইস শুরু করতে হলে, নতুন ডিভাইসে “Set up &syncBrand.shortName.label;” নির্বাচন করুন, তারপর “আমার একটি অ্যাকাউন্ট আছে” নির্বাচন করুন |">
-<!-- Firefox SyncAdapter Settings Screen -->
+<!-- IceCat SyncAdapter Settings Screen -->
 
 <!ENTITY sync.settings.options.label "বিবিধ বিকল্প">
 <!ENTITY sync.summary.pair.label "আপনার এই &syncBrand.shortName.label; অ্যাকাউন্ট এর সাথে অন্য ডিভাইস যুক্ত করুন">
@@ -74,10 +74,10 @@
 
 <!ENTITY sync.account.label "&syncBrand.fullName.label; (অবচিত)">
 <!-- Localization note (sync.default.client.name): Default string of the "Device
-     name" menu item upon setting up Firefox Sync.  The placeholder &formatS1
-     will be replaced by the name of the Firefox release channel and &formatS2
+     name" menu item upon setting up IceCat Sync.  The placeholder &formatS1
+     will be replaced by the name of the IceCat release channel and &formatS2
      by the model name of the Android device. Examples look like "Aurora on
-     GT-I1950" and "Fennec on MI 2S". -->
+     GT-I1950" and "IceCatMobile on MI 2S". -->
 
 <!ENTITY sync.default.client.name "&formatS1; এর ওপর &formatS2;">
 <!-- Bookmark folder strings -->
@@ -111,10 +111,10 @@
 <!ENTITY sync.text.redirect.to.set.up.sync.label "আপনার অন্য ডিভাইসে ট্যাব প্রেরণ করার জন্য &syncBrand.fullName.label; এর স্থাপনা করুন।">
 <!ENTITY sync.text.tab.sent.label "আপনার ট্যাব পাঠানো হয়েছে!">
 <!ENTITY sync.text.tab.not.sent.label "আপনার ট্যাব পাঠাতে একটি সমস্যা হয়েছে।">
-<!-- Firefox Account strings. -->
+<!-- IceCat Account strings. -->
 
 
-<!ENTITY fxaccount_full_label "Firefox অ্যাকাউন্টসমূহ">
+<!ENTITY fxaccount_full_label "IceCat অ্যাকাউন্টসমূহ">
 
 <!ENTITY fxaccount_custom_server_account_title "সার্ভারের অ্যাকাউন্টের সাহায্যে">
 <!ENTITY fxaccount_custom_server_sync_title "সিঙ্ক করা তথ্য সার্ভারে সংরক্ষিত হচ্ছে">
@@ -128,7 +128,7 @@
 <!ENTITY fxaccount_password_show "দেখান">
 <!-- Localization note: these are shown in screens after the user has
      created or signed in to an account, and take the user back to
-     Firefox. -->
+     IceCat. -->
 
 <!ENTITY fxaccount_back_to_browsing "ব্রাউসিং এ ফিরে যান">
 <!-- Localization note: the following two strings are interpolated
@@ -143,12 +143,12 @@
 <!ENTITY fxaccount_getting_started_welcome_to_sync "&syncBrand.shortName.label; তে স্বাগতম">
 <!ENTITY fxaccount_getting_started_description2 "ট্যাব, বুকমার্ক, পাসওয়ার্ড এবং অন্যান্য জিনিস সিঙ্ক করতে হলে সাইন ইন করুন।">
 <!ENTITY fxaccount_getting_started_get_started "শুরু করে দিন">
-<!ENTITY fxaccount_getting_started_old_firefox "&syncBrand.shortName.label; এর পুরানো সংস্করণ ব্যবহার করা হচ্ছে?">
-<!-- Localization note: the Firefox below should not change with the
-     particular version of Firefox installed (Release, Beta, Aurora,
-     etc).  The account remains a "Firefox Account". -->
+<!ENTITY fxaccount_getting_started_old_icecat "&syncBrand.shortName.label; এর পুরানো সংস্করণ ব্যবহার করা হচ্ছে?">
+<!-- Localization note: the IceCat below should not change with the
+     particular version of IceCat installed (Release, Beta, Aurora,
+     etc).  The account remains a "IceCat Account". -->
 
-<!ENTITY fxaccount_create_account_header2 "একটি নতুন Firefox অ্যাকাউন্ট তৈরি করুন">
+<!ENTITY fxaccount_create_account_header2 "একটি নতুন IceCat অ্যাকাউন্ট তৈরি করুন">
 <!ENTITY fxaccount_create_account_password_length_restriction "অন্তত 8 অক্ষর বিশিষ্ট হওয়া আবশ্যক">
 <!ENTITY fxaccount_create_account_day_of_birth "দিন">
 <!ENTITY fxaccount_create_account_month_of_birth "মাস">
@@ -166,7 +166,7 @@
 <!ENTITY fxaccount_account_create_not_allowed_learn_more "আরও জানুন">
 
 <!ENTITY fxaccount_confirm_account_header "অ্যাকাউন্ট নিশ্চিত করুন">
-<!-- Localization note: &formatS; is the Firefox Account's email address. -->
+<!-- Localization note: &formatS; is the IceCat Account's email address. -->
 <!ENTITY fxaccount_confirm_account_verification_link "একটি যাঁচাইকারী লিঙ্ক &formatS; এ পাঠানো হল">
 <!ENTITY fxaccount_confirm_account_resend_email "পুনরায় ইমেল পাঠান">
 <!ENTITY fxaccount_confirm_account_change_email "এই ইমেইল অ্যাড্রেসটি ভুলে গেছেন?">
@@ -195,7 +195,7 @@
 <!ENTITY fxaccount_finish_migrating_button_label "আপগ্রেড করা শেষ করুন">
 <!ENTITY fxaccount_finish_migrating_description "আপগ্রেড করা অনেক ডাটা ট্রান্সফার করতে পারে। সবথেকে ভালো হবে একটি WiFi নেটওয়ার্কে থাকা।">
 
-<!ENTITY fxaccount_status_header2 "Firefox অ্যাকাউন্ট">
+<!ENTITY fxaccount_status_header2 "IceCat অ্যাকাউন্ট">
 <!ENTITY fxaccount_status_signed_in_as "উল্লিখিত পরিচয়ে লগ-ইন করা হয়েছে">
 <!ENTITY fxaccount_status_manage_account "অ্যাকাউন্ট পরিচালনা">
 <!ENTITY fxaccount_status_auth_server "অ্যাকাউন্ট সার্ভার">
@@ -210,7 +210,7 @@
 <!ENTITY fxaccount_status_needs_upgrade "সাইন ইন করতে হলে আপনাকে &brandShortName; আপগ্রেড করতেই হবে।">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled "&syncBrand.shortName.label; সেট আপ করা হয়েছে, কিন্তু স্বয়ংক্রিয়ভাবে সিঙ্ক হয় না। অ্যান্ড্রয়েড সেটিংসে “Auto-sync data” টগল করুন &gt; ডেটা ব্যবহার প্রণালী।">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled_v21 "&syncBrand.shortName.label; সেট আপ করা হয়েছে, কিন্তু স্বয়ংক্রিয়ভাবে সিঙ্ক হয় না। অ্যান্ড্রয়েড সেটিংসে “Auto-sync data” টগল করুন &gt; ডেটা ব্যবহার প্রণালী।">
-<!ENTITY fxaccount_status_needs_finish_migrating "আপনার নতুন Firefox অ্যাকাউন্টে সাইন ইন করবার জন্য ট্যাপ করুন।">
+<!ENTITY fxaccount_status_needs_finish_migrating "আপনার নতুন IceCat অ্যাকাউন্টে সাইন ইন করবার জন্য ট্যাপ করুন।">
 <!ENTITY fxaccount_status_bookmarks "বুকমার্কসমূহ">
 <!ENTITY fxaccount_status_history "পূর্ববর্তী তথ্য">
 <!ENTITY fxaccount_status_passwords2 "লগ ইন গুলি">
@@ -228,18 +228,18 @@
 <!ENTITY fxaccount_remove_account_dialog_title "ফায়ারফক্স অ্যাকাউন্ট মুছে ফেলবেন?">
 <!ENTITY fxaccount_remove_account_dialog_message "&brandShortName; আপনার অ্যাকাউন্টের সাথে সিঙ্ক করা বন্ধ করবে, কিন্তু এই ডিভাইসে আপনার ব্রাউজিং ডেটা মুছে ফেলবে না।">
 <!-- Localization note: format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_remove_account_toast "ফায়ারফক্স অ্যাকাউন্ট &formatS; মুছে ফেলা হয়েছে।">
 
 <!ENTITY fxaccount_enable_debug_mode "ডিবাগ মোড সক্রিয়করন">
 <!-- Localization note: this is the name shown by the Android system
-     itself for a Firefox Account. Don't localize this. -->
+     itself for a IceCat Account. Don't localize this. -->
 
-<!ENTITY fxaccount_account_type_label "Firefox">
+<!ENTITY fxaccount_account_type_label "IceCat">
 <!-- Localization note: these are shown by the Android system itself,
-     when the user navigates to the Android > Accounts > {Firefox
-     Account} Screen. The link takes the user to the Firefox Account
-     status activity, which lets them manage their Firefox
+     when the user navigates to the Android > Accounts > {IceCat
+     Account} Screen. The link takes the user to the IceCat Account
+     status activity, which lets them manage their IceCat
      Account. -->
 
 <!ENTITY fxaccount_options_title "&syncBrand.shortName.label; এর পছন্দসমুহ">
@@ -263,12 +263,12 @@
 
 <!ENTITY fxaccount_sync_sign_in_error_notification_title2 "&syncBrand.shortName.label; টি যুক্ত নয়">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_sign_in_error_notification_text2 "&formatS; রূপে সাইন ইন করতে আবার ট্যাপ করুন">
 
 <!ENTITY fxaccount_sync_finish_migrating_notification_title "&syncBrand.shortName.label; আপগ্রেড করা শেষ?">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_finish_migrating_notification_text "&formatS; রূপে সাইন ইন করতে ট্যাপ করুন">
 <!-- Localization note: the following strings are used in a
      notification and should be kept as short as possible. -->

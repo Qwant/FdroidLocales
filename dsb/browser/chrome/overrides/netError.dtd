@@ -157,7 +157,7 @@ zawěsććo, až &brandShortName; ma pšawo na Web pśistup měś.</li> 
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <button> tags. It uses strings already defined above. The
 button is included here (instead of netError.xhtml) because it exposes
-functionality specific to firefox. -->
+functionality specific to icecat. -->
 
 
 <!ENTITY securityOverride.warningContent "<p>Wy njeby měł wuwześe pśidaś, jolic wužywaśo internetny zwisk, kótaremuž cele njedowěriśo abo jolic njewiźiśo warnowanje za toś ten serwer.</p> 
@@ -165,7 +165,7 @@ functionality specific to firefox. -->
 <button id='getMeOutOfHereButton'>&securityOverride.getMeOutOfHereButton;</button> 
 <button id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>">
 
-<!ENTITY errorReporting.automatic2 "Dajśo zmólki ako toś te k wěsći, aby Mozilla pomagał, złosne sedła identificěrował a blokěrował">
+<!ENTITY errorReporting.automatic2 "Dajśo zmólki ako toś te k wěsći, aby GNU pomagał, złosne sedła identificěrował a blokěrował">
 <!ENTITY errorReporting.learnMore "Dalšne informacije…">
 <!ENTITY errorReporting.sending "Rozpšawa se sćelo">
 <!ENTITY errorReporting.sent "Rozpšawa jo se pósłała">

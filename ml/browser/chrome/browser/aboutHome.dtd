@@ -11,7 +11,7 @@
 
 <!ENTITY abouthome.pageTitle "&brandFullName; പ്രാരംഭ താള്‍">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):
-     text in <a/> will be linked to the Firefox features page on mozilla.com
+     text in <a/> will be linked to the IceCat features page on mozilla.com
 -->
 
 <!ENTITY abouthome.defaultSnippet1.v1 "ഫയര്‍ഫോക്സ് ഉപയോഗിയ്ക്കുന്നതിനു് നന്ദി! ഈ ബ്രൌസര്‍ സംബന്ധിച്ചുള്ള കൂടുതല്‍ വിവരങ്ങള്‍ക്കായി, <a>ഏറ്റവും പുതിയ വിശേഷതകള്‍</a> കാണുക.">
@@ -33,7 +33,7 @@
 <!ENTITY abouthome.addonsButton.label    "ആഡ്-ഓണുകള്‍">
 <!-- LOCALIZATION NOTE (abouthome.appsButton2.label): This string should be consistent with
      the Apps menu item in the Tools menu (webapps.label in browser.dtd) and the Apps toolbar button in
-     Firefox's customization palette (web-apps-button.label in customizableWidgets.properties) -->
+     IceCat's customization palette (web-apps-button.label in customizableWidgets.properties) -->
 <!ENTITY abouthome.appsButton2.label     "പ്രയോഗങ്ങള്‍">
 <!ENTITY abouthome.downloadsButton.label "ഡൌണ്‍ലോഡുകള്‍">
 <!ENTITY abouthome.syncButton.label      "&syncBrand.shortName.label;">

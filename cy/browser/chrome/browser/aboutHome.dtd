@@ -11,14 +11,14 @@
 
 <!ENTITY abouthome.pageTitle "Tudalen Cychwyn &brandFullName;">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):
-     text in <a/> will be linked to the Firefox features page on mozilla.com
+     text in <a/> will be linked to the IceCat features page on mozilla.com
 -->
 
-<!ENTITY abouthome.defaultSnippet1.v1 "Diolch am ddewis Firefox! I gael y gorau o'ch porwr, dysgwch ragor am y <a>nodweddion diweddaraf</a>.">
+<!ENTITY abouthome.defaultSnippet1.v1 "Diolch am ddewis IceCat! I gael y gorau o'ch porwr, dysgwch ragor am y <a>nodweddion diweddaraf</a>.">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet2.v1):
      text in <a/> will be linked to the featured add-ons on addons.mozilla.org
 -->
-<!ENTITY abouthome.defaultSnippet2.v1 "Mae'n hawdd cyfaddasu Firefox i'r ffordd rydych am ei ddefnyddio. <a>Dewiswch o filoedd o ychwanegion</a>.">
+<!ENTITY abouthome.defaultSnippet2.v1 "Mae'n hawdd cyfaddasu IceCat i'r ffordd rydych am ei ddefnyddio. <a>Dewiswch o filoedd o ychwanegion</a>.">
 <!-- LOCALIZATION NOTE (abouthome.rightsSnippet): text in <a/> will be linked to about:rights -->
 <!ENTITY abouthome.rightsSnippet "Mae &brandFullName; yn feddalwedd rhydd ac agored o'r Mozilla Foundation sy'n gorff dim am elw. <a>Gwybod eich hawliau…</a>">
 
@@ -33,7 +33,7 @@
 <!ENTITY abouthome.addonsButton.label    "Ychwanegion">
 <!-- LOCALIZATION NOTE (abouthome.appsButton2.label): This string should be consistent with
      the Apps menu item in the Tools menu (webapps.label in browser.dtd) and the Apps toolbar button in
-     Firefox's customization palette (web-apps-button.label in customizableWidgets.properties) -->
+     IceCat's customization palette (web-apps-button.label in customizableWidgets.properties) -->
 <!ENTITY abouthome.appsButton2.label     "Apiau">
 <!ENTITY abouthome.downloadsButton.label "Llwythi">
 <!ENTITY abouthome.syncButton.label      "&syncBrand.shortName.label;">

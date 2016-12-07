@@ -14,27 +14,27 @@
 #define bookmarks_toolbarfolder_description Aldonu legosignojn al tiu ĉi dosierujo por vidi ilin montritaj en la ilaro de legosignoj
 
 # LOCALIZATION NOTE (getting_started):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/central/
+# link title for http://en-US.www.mozilla.com/en-US/icecat/central/
 #define getting_started Unuaj paŝoj
 
-# LOCALIZATION NOTE (firefox_heading):
-# Firefox links folder name
-#define firefox_heading Mozilla Firefox
+# LOCALIZATION NOTE (icecat_heading):
+# IceCat links folder name
+#define icecat_heading GNU IceCat
 
-# LOCALIZATION NOTE (firefox_help):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/help/
-#define firefox_help Helpo kaj gvidado
+# LOCALIZATION NOTE (icecat_help):
+# link title for http://en-US.www.mozilla.com/en-US/icecat/help/
+#define icecat_help Helpo kaj gvidado
 
-# LOCALIZATION NOTE (firefox_customize):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/customize/
-#define firefox_customize Agordi Firefox
+# LOCALIZATION NOTE (icecat_customize):
+# link title for http://en-US.www.mozilla.com/en-US/icecat/customize/
+#define icecat_customize Agordi IceCat
 
-# LOCALIZATION NOTE (firefox_community):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/community/
-#define firefox_community Partopreni
+# LOCALIZATION NOTE (firefox.community):
+# link title for http://en-US.www.mozilla.com/en-US/firefox.community/
+#define firefox.community Partopreni
 
-# LOCALIZATION NOTE (firefox_about):
+# LOCALIZATION NOTE (icecat_about):
 # link title for http://en-US.www.mozilla.com/en-US/about/
-#define firefox_about Pri ni
+#define icecat_about Pri ni
 
 #unfilter emptyLines

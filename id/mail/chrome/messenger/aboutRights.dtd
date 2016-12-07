@@ -19,7 +19,7 @@
 <!ENTITY rights.intro-point1b "Mozilla Public License">
 <!ENTITY rights.intro-point1c ". Ini berarti Anda dapat menggunakan, menyalin, dan mendistribusikan &brandShortName; kepada pihak lain. Anda juga dapat memodifikasi kode sumber program &brandShortName; sesuai dengan kebutuhan Anda. Lisensi Mozilla Public License memberi hak kepada Anda untuk mendistribusikan versi yang telah Anda modifikasi.">
 
-<!ENTITY rights.intro-point2a "Mozilla tidak memberi Anda hak atas merek dagang atau logo Mozilla dan Thunderbird. Informasi lebih lanjut mengenai Merek Dagang dapat Anda temukan ">
+<!ENTITY rights.intro-point2a "Mozilla tidak memberi Anda hak atas merek dagang atau logo GNU dan Thunderbird. Informasi lebih lanjut mengenai Merek Dagang dapat Anda temukan ">
 <!ENTITY rights.intro-point2b "di sini">
 <!ENTITY rights.intro-point2c ".">
 <!-- point 3 text for official branded builds -->

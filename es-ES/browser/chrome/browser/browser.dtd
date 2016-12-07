@@ -304,7 +304,7 @@
 <!ENTITY appMenuRemoteTabs.fetching.label "Recuperando pestañas sincronizadas…">
 <!ENTITY appMenuRemoteTabs.notabs.label "No hay pestañas abiertas">
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Active la sincronización de pestañas para ver una lista de las mismas de sus otros dispositivos.">
-<!ENTITY appMenuRemoteTabs.noclients.label "Inicie sesión en Firefox desde sus otros dispositivos para ver sus pestañas aquí.">
+<!ENTITY appMenuRemoteTabs.noclients.label "Inicie sesión en IceCat desde sus otros dispositivos para ver sus pestañas aquí.">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Preferencias de Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Inicie sesión para ver una lista de pestañas de sus otros dispositivos.">
 <!ENTITY appMenuRemoteTabs.signin.label "Inicie sesión en Sync">

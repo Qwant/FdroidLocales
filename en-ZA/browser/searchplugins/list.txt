@@ -3,3 +3,5 @@ bing
 amazondotcom
 wikipedia
 twitter
+
+duckduckgo

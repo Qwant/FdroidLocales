@@ -11,16 +11,16 @@
 
 <!ENTITY abouthome.pageTitle "หน้าเริ่มต้นของ &brandFullName;">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):
-     text in <a/> will be linked to the Firefox features page on mozilla.com
+     text in <a/> will be linked to the IceCat features page on mozilla.com
 -->
 
-<!ENTITY abouthome.defaultSnippet1.v1 "ขอบคุณที่เลือกใช้ Firefox! เรียนรู้<a>ความสามารถใหม่ๆ</a> เพื่อใช้งานเบราว์เซอร์ของคุณให้ได้ประโยชน์สูงสุด">
+<!ENTITY abouthome.defaultSnippet1.v1 "ขอบคุณที่เลือกใช้ IceCat! เรียนรู้<a>ความสามารถใหม่ๆ</a> เพื่อใช้งานเบราว์เซอร์ของคุณให้ได้ประโยชน์สูงสุด">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet2.v1):
      text in <a/> will be linked to the featured add-ons on addons.mozilla.org
 -->
-<!ENTITY abouthome.defaultSnippet2.v1 "ปรับแต่ง Firefox ตามอย่างที่คุณต้องการได้ง่ายๆ <a>เลือกจากส่วนขยายที่มีให้นับพัน</a>.">
+<!ENTITY abouthome.defaultSnippet2.v1 "ปรับแต่ง IceCat ตามอย่างที่คุณต้องการได้ง่ายๆ <a>เลือกจากส่วนขยายที่มีให้นับพัน</a>.">
 <!-- LOCALIZATION NOTE (abouthome.rightsSnippet): text in <a/> will be linked to about:rights -->
-<!ENTITY abouthome.rightsSnippet "&brandFullName; เป็นซอฟต์แวร์เสรีและโอเพนซอร์สจากมูลนิธิไม่แสวงหาผลกำไร Mozilla <a>รู้ถึงสิทธิของคุณ…</a>">
+<!ENTITY abouthome.rightsSnippet "&brandFullName; เป็นซอฟต์แวร์เสรีและโอเพนซอร์สจากมูลนิธิไม่แสวงหาผลกำไร GNU <a>รู้ถึงสิทธิของคุณ…</a>">
 
 <!ENTITY abouthome.bookmarksButton.label "ที่คั่นหน้า">
 <!ENTITY abouthome.historyButton.label   "ประวัติ">
@@ -33,7 +33,7 @@
 <!ENTITY abouthome.addonsButton.label    "ส่วนเสริม">
 <!-- LOCALIZATION NOTE (abouthome.appsButton2.label): This string should be consistent with
      the Apps menu item in the Tools menu (webapps.label in browser.dtd) and the Apps toolbar button in
-     Firefox's customization palette (web-apps-button.label in customizableWidgets.properties) -->
+     IceCat's customization palette (web-apps-button.label in customizableWidgets.properties) -->
 <!ENTITY abouthome.appsButton2.label     "แอป">
 <!ENTITY abouthome.downloadsButton.label "ดาวน์โหลด">
 <!ENTITY abouthome.syncButton.label      "&syncBrand.shortName.label;">

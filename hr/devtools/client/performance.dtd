@@ -23,12 +23,12 @@
   -  is displayed as a message for why the real time overview graph is disabled
   -  when running on a non-multiprocess build. -->
 
-<!ENTITY performanceUI.disabledRealTime.nonE10SBuild "Uživo snimanje podataka je isključeno na ne-višeprocesnom Firefoxu.">
+<!ENTITY performanceUI.disabledRealTime.nonE10SBuild "Uživo snimanje podataka je isključeno na ne-višeprocesnom IceCatu.">
 <!-- LOCALIZATION NOTE (performanceUI.disabledRealTime.disabledE10S): This string
   -  is displayed as a message for why the real time overview graph is disabled
-  -  when running on a build that can run multiprocess Firefox, but just is not enabled. -->
+  -  when running on a build that can run multiprocess IceCat, but just is not enabled. -->
 
-<!ENTITY performanceUI.disabledRealTime.disabledE10S "Za renderiranje snimljenih podataka u realnom vremenu, uključite višeprocesni Firefox u postavkama.">
+<!ENTITY performanceUI.disabledRealTime.disabledE10S "Za renderiranje snimljenih podataka u realnom vremenu, uključite višeprocesni IceCat u postavkama.">
 <!-- LOCALIZATION NOTE (performanceUI.bufferStatusFull): This string
   -  is displayed when the profiler's circular buffer has started to overlap. -->
 

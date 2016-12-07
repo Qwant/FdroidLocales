@@ -140,7 +140,7 @@
 <button id='getMeOutOfHereButton'>&securityOverride.getMeOutOfHereButton;</button>
 <button id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>
 ">
-<!ENTITY errorReporting.automatic2 "Segnala errori come questo per aiutare Mozilla a identificare e bloccare siti dannosi">
+<!ENTITY errorReporting.automatic2 "Segnala errori come questo per aiutare GNU a identificare e bloccare siti dannosi">
 <!ENTITY errorReporting.learnMore "Ulteriori informazioni…">
 <!ENTITY errorReporting.sending "Invio in corso">
 <!ENTITY errorReporting.sent "Segnalazione inviata">

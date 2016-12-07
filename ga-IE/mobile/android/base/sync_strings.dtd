@@ -4,7 +4,7 @@
 <!-- Don't localize these. They're here until they have
      a better place to live. -->
 
-<!ENTITY syncBrand.fullName.label "Firefox Sync">
+<!ENTITY syncBrand.fullName.label "IceCat Sync">
 <!ENTITY syncBrand.shortName.label "Sync">
 <!-- Main titles. -->
 
@@ -16,7 +16,7 @@
 
 <!ENTITY sync.subtitle.connect.label "Chun do ghléas nua a ghníomhachtú, roghnaigh “Socraigh &syncBrand.shortName.label;” ar an ngléas.">
 <!ENTITY sync.subtitle.header2.label "Cuir an cód seo isteach i do ghléas eile">
-<!ENTITY sync.subtitle.connectlocation2.label "Roghnaigh “&sync.title.pair.label;” sa rannán &syncBrand.shortName.label; sna roghanna Firefox ar do ghléas eile.">
+<!ENTITY sync.subtitle.connectlocation2.label "Roghnaigh “&sync.title.pair.label;” sa rannán &syncBrand.shortName.label; sna roghanna IceCat ar do ghléas eile.">
 <!ENTITY sync.subtitle.pair.label "Chun gníomhachtú, roghnaigh “Ceangail gléas” ar do ghléas eile.">
 <!ENTITY sync.pin.default.label "...\n...\n...\n">
 <!ENTITY sync.pin.oneline.label "...">
@@ -42,7 +42,7 @@
 <!ENTITY sync.button.manual.label "Socrú De Láimh">
 <!ENTITY sync.subtitle.nointernet.label "Níl ceangal leis an Idirlíon ar fáil.">
 <!ENTITY sync.subtitle.failaccount.label "Níorbh fhéidir cuntas a chruthú ar do ghléas.">
-<!ENTITY sync.subtitle.failmultiple.label "An bhfuil níos mó ná Firefox amháin suiteáilte agat? Ní thacaíonn &syncBrand.fullName.label; le níos mó ná leagan amháin de Firefox faoi láthair. Caithfidh tú leaganacha eile a dhíshuiteáil chun &syncBrand.shortName.label; a úsáid.">
+<!ENTITY sync.subtitle.failmultiple.label "An bhfuil níos mó ná IceCat amháin suiteáilte agat? Ní thacaíonn &syncBrand.fullName.label; le níos mó ná leagan amháin de IceCat faoi láthair. Caithfidh tú leaganacha eile a dhíshuiteáil chun &syncBrand.shortName.label; a úsáid.">
 <!-- Setup Success -->
 
 <!ENTITY sync.title.success.label "Críochnaithe">
@@ -53,7 +53,7 @@
 
 <!ENTITY sync.pair.tryagain.label "Bain triail as arís.">
 <!ENTITY sync.pair.connectlocation.label "Chun do ghléas nua a chur i ngníomh, roghnaigh “Socraigh &syncBrand.shortName.label;” ar an ngléas, ansin roghnaigh “Tá Cuntas Agam”.">
-<!-- Firefox SyncAdapter Settings Screen -->
+<!-- IceCat SyncAdapter Settings Screen -->
 
 <!ENTITY sync.settings.options.label "Roghanna">
 <!ENTITY sync.summary.pair.label "Nasc gléas eile le do chuntas &syncBrand.shortName.label;">
@@ -74,10 +74,10 @@
 
 <!ENTITY sync.account.label "&syncBrand.fullName.label; (ligthe i léig)">
 <!-- Localization note (sync.default.client.name): Default string of the "Device
-     name" menu item upon setting up Firefox Sync.  The placeholder &formatS1
-     will be replaced by the name of the Firefox release channel and &formatS2
+     name" menu item upon setting up IceCat Sync.  The placeholder &formatS1
+     will be replaced by the name of the IceCat release channel and &formatS2
      by the model name of the Android device. Examples look like "Aurora on
-     GT-I1950" and "Fennec on MI 2S". -->
+     GT-I1950" and "IceCatMobile on MI 2S". -->
 
 <!ENTITY sync.default.client.name "&formatS1; ar &formatS2;">
 <!-- Bookmark folder strings -->
@@ -111,10 +111,10 @@
 <!ENTITY sync.text.redirect.to.set.up.sync.label "Socraigh &syncBrand.fullName.label; ar do ghléas chun cluaisíní a sheoladh chuig ghléasanna eile.">
 <!ENTITY sync.text.tab.sent.label "Seoladh do chluaisín!">
 <!ENTITY sync.text.tab.not.sent.label "Tharla earráid agus do chluaisín á sheoladh.">
-<!-- Firefox Account strings. -->
+<!-- IceCat Account strings. -->
 
 
-<!ENTITY fxaccount_full_label "Cuntais Firefox">
+<!ENTITY fxaccount_full_label "Cuntais IceCat">
 
 <!ENTITY fxaccount_custom_server_account_title "Cuntas ar an bhfreastalaí á úsáid">
 <!ENTITY fxaccount_custom_server_sync_title "Sonraí Sync á stóráil ar an bhfreastalaí">
@@ -128,7 +128,7 @@
 <!ENTITY fxaccount_password_show "Taispeáin">
 <!-- Localization note: these are shown in screens after the user has
      created or signed in to an account, and take the user back to
-     Firefox. -->
+     IceCat. -->
 
 <!ENTITY fxaccount_back_to_browsing "Fill ar bhrabhsáil">
 <!-- Localization note: the following two strings are interpolated
@@ -143,18 +143,18 @@
 <!ENTITY fxaccount_getting_started_welcome_to_sync "Fáilte go dtí &syncBrand.shortName.label;">
 <!ENTITY fxaccount_getting_started_description2 "Logáil isteach chun do chuid cluaisíní, leabharmharcanna, focail fhaire agus araile a shioncrónú.">
 <!ENTITY fxaccount_getting_started_get_started "Tús maith">
-<!ENTITY fxaccount_getting_started_old_firefox "An bhfuil seanleagan de &syncBrand.shortName.label; agat?">
-<!-- Localization note: the Firefox below should not change with the
-     particular version of Firefox installed (Release, Beta, Aurora,
-     etc).  The account remains a "Firefox Account". -->
+<!ENTITY fxaccount_getting_started_old_icecat "An bhfuil seanleagan de &syncBrand.shortName.label; agat?">
+<!-- Localization note: the IceCat below should not change with the
+     particular version of IceCat installed (Release, Beta, Aurora,
+     etc).  The account remains a "IceCat Account". -->
 
-<!ENTITY fxaccount_create_account_header2 "Cruthaigh Cuntas Firefox">
+<!ENTITY fxaccount_create_account_header2 "Cruthaigh Cuntas IceCat">
 <!ENTITY fxaccount_create_account_password_length_restriction "Ní mór dó a bheith 8 gcarachtar ar a laghad">
 <!ENTITY fxaccount_create_account_day_of_birth "Lá">
 <!ENTITY fxaccount_create_account_month_of_birth "Mí">
 <!ENTITY fxaccount_create_account_year_of_birth "Bliain bhreithe">
 <!-- Localization note: &formatS1; is fxaccount_policy_linktos, &formatS2; is fxaccount_policy_linkprivacy, both hyperlinked. -->
-<!ENTITY fxaccount_create_account_policy_text2 "Glacaim le &formatS1; agus &formatS2; do néalseirbhísí Firefox.">
+<!ENTITY fxaccount_create_account_policy_text2 "Glacaim le &formatS1; agus &formatS2; do néalseirbhísí IceCat.">
 <!ENTITY fxaccount_create_account_button "Ar Aghaidh">
 <!ENTITY fxaccount_create_account_choose_what_to_sync "Roghnaigh na rudaí le sioncrónú">
 <!ENTITY fxaccount_create_account_sign_in_instead "An bhfuil cuntas agat cheana? Logáil isteach">
@@ -166,7 +166,7 @@
 <!ENTITY fxaccount_account_create_not_allowed_learn_more "Tuilleadh eolais">
 
 <!ENTITY fxaccount_confirm_account_header "Dearbhaigh do chuntas">
-<!-- Localization note: &formatS; is the Firefox Account's email address. -->
+<!-- Localization note: &formatS; is the IceCat Account's email address. -->
 <!ENTITY fxaccount_confirm_account_verification_link "Seoladh nasc deimhnithe chuig &formatS;">
 <!ENTITY fxaccount_confirm_account_resend_email "Seol an ríomhphost arís">
 <!ENTITY fxaccount_confirm_account_change_email "Déan dearmad den seoladh ríomhphoist seo?">
@@ -195,7 +195,7 @@
 <!ENTITY fxaccount_finish_migrating_button_label "Cuir an nuashonrú i gcrích">
 <!ENTITY fxaccount_finish_migrating_description "Is gá go leor sonraí a aistriú chun nuashonrú a dhéanamh. Tá sé níos fearr é dhéanamh ar líonra Wi-Fi.">
 
-<!ENTITY fxaccount_status_header2 "Cuntas Firefox">
+<!ENTITY fxaccount_status_header2 "Cuntas IceCat">
 <!ENTITY fxaccount_status_signed_in_as "Logáilte isteach mar">
 <!ENTITY fxaccount_status_manage_account "Bainistigh mo chuntas">
 <!ENTITY fxaccount_status_auth_server "Freastalaí an chuntais">
@@ -210,7 +210,7 @@
 <!ENTITY fxaccount_status_needs_upgrade "Caithfidh tú &brandShortName; a nuashonrú chun logáil isteach.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled "Tá &syncBrand.shortName.label; réidh, ach níl sé ag sioncrónú go huathoibríoch. Scoránaigh “Auto-sync data” sna Android Settings &gt; Data Usage.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled_v21 "Tá &syncBrand.shortName.label; réidh, ach níl sé ag sioncrónú go huathoibríoch. Scoránaigh “Auto-sync data” sna Android Settings &gt; Accounts.">
-<!ENTITY fxaccount_status_needs_finish_migrating "Tapáil le logáil isteach i do chuntas nua Firefox.">
+<!ENTITY fxaccount_status_needs_finish_migrating "Tapáil le logáil isteach i do chuntas nua IceCat.">
 <!ENTITY fxaccount_status_bookmarks "Leabharmharcanna">
 <!ENTITY fxaccount_status_history "Stair">
 <!ENTITY fxaccount_status_passwords2 "Focail Fhaire">
@@ -225,21 +225,21 @@
 <!ENTITY fxaccount_status_more "Tuilleadh&ellipsis;">
 <!ENTITY fxaccount_remove_account "Dícheangail&ellipsis;">
 
-<!ENTITY fxaccount_remove_account_dialog_title "Bain an Cuntas Firefox?">
+<!ENTITY fxaccount_remove_account_dialog_title "Bain an Cuntas IceCat?">
 <!ENTITY fxaccount_remove_account_dialog_message "Stopfaidh &brandShortName; sioncrónú le do chuntas, ach ní scriosfaidh sé do chuid sonraí brabhsála ar an ngléas seo.">
 <!-- Localization note: format string below will be replaced
-     with the Firefox Account's email address. -->
-<!ENTITY fxaccount_remove_account_toast "Baineadh Cuntas Firefox &formatS;.">
+     with the IceCat Account's email address. -->
+<!ENTITY fxaccount_remove_account_toast "Baineadh Cuntas IceCat &formatS;.">
 
 <!ENTITY fxaccount_enable_debug_mode "Cumasaigh an Mód Dífhabhtaithe">
 <!-- Localization note: this is the name shown by the Android system
-     itself for a Firefox Account. Don't localize this. -->
+     itself for a IceCat Account. Don't localize this. -->
 
-<!ENTITY fxaccount_account_type_label "Firefox">
+<!ENTITY fxaccount_account_type_label "IceCat">
 <!-- Localization note: these are shown by the Android system itself,
-     when the user navigates to the Android > Accounts > {Firefox
-     Account} Screen. The link takes the user to the Firefox Account
-     status activity, which lets them manage their Firefox
+     when the user navigates to the Android > Accounts > {IceCat
+     Account} Screen. The link takes the user to the IceCat Account
+     status activity, which lets them manage their IceCat
      Account. -->
 
 <!ENTITY fxaccount_options_title "Roghanna &syncBrand.shortName.label;">
@@ -248,7 +248,7 @@
      has been made to the remote server, and an error of some type has
      been returned. -->
 
-<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Caithfidh tú Firefox a uasghrádú">
+<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Caithfidh tú IceCat a uasghrádú">
 <!-- Localization note: the format string will be fxaccount_sign_in_button_label, linkified. -->
 
 <!ENTITY fxaccount_remote_error_ATTEMPT_TO_CREATE_AN_ACCOUNT_THAT_ALREADY_EXISTS_2 "Tá an cuntas ann cheana. &formatS1;">
@@ -263,12 +263,12 @@
 
 <!ENTITY fxaccount_sync_sign_in_error_notification_title2 "Níl &syncBrand.shortName.label; ceangailte">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_sign_in_error_notification_text2 "Tapáil le logáil isteach mar &formatS;">
 
 <!ENTITY fxaccount_sync_finish_migrating_notification_title "Nuashonrú &syncBrand.shortName.label; a chur i gcrích?">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_finish_migrating_notification_text "Tapáil le logáil isteach mar &formatS;">
 <!-- Localization note: the following strings are used in a
      notification and should be kept as short as possible. -->

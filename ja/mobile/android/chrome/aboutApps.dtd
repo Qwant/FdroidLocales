@@ -5,6 +5,6 @@
 <!ENTITY aboutApps.title2 "アプリ">
 <!ENTITY aboutApps.header "マイアプリ"><!-- Google Play 用語に合わせた -->
 
-<!ENTITY aboutApps.browseMarketplace "Firefox Marketplace を閲覧">
+<!ENTITY aboutApps.browseMarketplace "F-droid free software repository を閲覧">
 <!ENTITY aboutApps.uninstall "アンインストール">
 <!ENTITY aboutApps.checkForUpdates "アップデートを確認">

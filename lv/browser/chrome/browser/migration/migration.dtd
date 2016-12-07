@@ -23,8 +23,8 @@
 <!ENTITY importFromChrome.accesskey     "C">
 <!ENTITY importFromChromium.label       "Chromium">
 <!ENTITY importFromChromium.accesskey   "u">
-<!ENTITY importFromFirefox.label        "Firefox">
-<!ENTITY importFromFirefox.accesskey    "x">
+<!ENTITY importFromIceCat.label        "IceCat">
+<!ENTITY importFromIceCat.accesskey    "x">
 <!ENTITY importFrom360se.label          "360 Drošs pārlūks">
 <!ENTITY importFrom360se.accesskey      "3">
 

@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY aboutAccounts.connected.title "Firefox fiókok">
+<!ENTITY aboutAccounts.connected.title "IceCat fiókok">
 <!ENTITY aboutAccounts.connected.description "Bejelentkezett mint:">
 <!ENTITY aboutAccounts.syncPreferences.label "Koppintson a Sync beállítások ellenőrzéséhez">
 
@@ -10,4 +10,4 @@
 <!ENTITY aboutAccounts.retry.label "Újra">
 
 <!ENTITY aboutAccounts.restrictedError.title "Korlátozott">
-<!ENTITY aboutAccounts.restrictedError.description "Ebből a profilból nem kezelheti a Firefox fiókokat.">
+<!ENTITY aboutAccounts.restrictedError.description "Ebből a profilból nem kezelheti a IceCat fiókokat.">

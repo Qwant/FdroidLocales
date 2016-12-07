@@ -5,6 +5,6 @@
 <!ENTITY aboutApps.title2                          "Aplikacije">
 <!ENTITY aboutApps.header                          "Vaše aplikacije">
 
-<!ENTITY aboutApps.browseMarketplace "Prebrskaj Firefox Marketplace">
+<!ENTITY aboutApps.browseMarketplace "Prebrskaj F-droid free software repository">
 <!ENTITY aboutApps.uninstall "Odstrani">
 <!ENTITY aboutApps.checkForUpdates "Preveri posodobitve">

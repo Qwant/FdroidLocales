@@ -247,7 +247,7 @@
 <!ENTITY pref_private_data_downloadFiles2 "Pobrane pliki">
 <!ENTITY pref_private_data_syncedTabs "Zsynchronizowane karty">
 
-<!ENTITY pref_about_firefox "O programie &brandShortName;">
+<!ENTITY pref_about_icecat "O programie &brandShortName;">
 <!ENTITY pref_vendor_faqs "FAQ">
 <!ENTITY pref_vendor_feedback "Przekaż informacje zwrotne">
 <!ENTITY pref_dialog_set_default "Ustaw jako domyślną">
@@ -529,7 +529,7 @@
 <!ENTITY devtools_auth_scan_header "Skanowanie kodu QR wyświetlonego na drugim urządzeniu">
 
 <!ENTITY restrictable_feature_addons_installation "Dodatki">
-<!ENTITY restrictable_feature_addons_installation_description "Dodawanie funkcji do przeglądarki Firefox. Uwaga: Dodatki mogą wyłączać pewne ograniczenia.">
+<!ENTITY restrictable_feature_addons_installation_description "Dodawanie funkcji do przeglądarki IceCat. Uwaga: Dodatki mogą wyłączać pewne ograniczenia.">
 <!ENTITY restrictable_feature_private_browsing "Tryb prywatny">
 <!ENTITY restrictable_feature_private_browsing_description "Umożliwia członkom rodziny przeglądanie bez zachowywania informacji o odwiedzanych stronach.">
 <!ENTITY restrictable_feature_clear_history "Czyszczenie historii przeglądania">
@@ -539,13 +539,13 @@
 <!ENTITY restrictable_feature_camera_microphone "Kamera i mikrofon">
 <!ENTITY restrictable_feature_camera_microphone_description "Umożliwia członkom rodziny korzystanie z komunikacji w czasie rzeczywistym.">
 <!ENTITY restrictable_feature_data_choices "Udostępnianie danych">
-<!ENTITY restrictable_feature_data_choices_description "Czy wysyłać do Mozilli informacje o wykorzystaniu, aby pomóc w ulepszaniu przeglądarki Firefox.">
+<!ENTITY restrictable_feature_data_choices_description "Czy wysyłać do Mozilli informacje o wykorzystaniu, aby pomóc w ulepszaniu przeglądarki IceCat.">
 
-<!ENTITY bookmarks_about_browser "Firefox: O przeglądarce">
-<!ENTITY bookmarks_addons "Firefox: Dodatki">
-<!ENTITY bookmarks_support "Firefox: Pomoc">
-<!ENTITY bookmarks_restricted_support2 "Firefox: Pomoc dla ograniczonych profili na tabletach Android">
-<!ENTITY bookmarks_restricted_webmaker "Twórz Internet: Mozilla Webmaker">
+<!ENTITY bookmarks_about_browser "IceCat: O przeglądarce">
+<!ENTITY bookmarks_addons "IceCat: Dodatki">
+<!ENTITY bookmarks_support "IceCat: Pomoc">
+<!ENTITY bookmarks_restricted_support2 "IceCat: Pomoc dla ograniczonych profili na tabletach Android">
+<!ENTITY bookmarks_restricted_webmaker "Twórz Internet: GNU Webmaker">
 
 <!ENTITY unsupported_sdk_version "Ta wersja programu &brandShortName; nie może działać na tym urządzeniu (&formatS1;, &formatS2;). Prosimy pobrać właściwą wersję.">
 

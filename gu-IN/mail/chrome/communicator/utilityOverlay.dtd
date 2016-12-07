@@ -48,7 +48,7 @@
 <!ENTITY showTaskbarCmd.label					"સ્થિતિદર્શક પટ્ટી">  
 <!ENTITY showTaskbarCmd.accesskey				"S"> 
 
-<!-- NOTE (whatNewCmd.label): This is not used in Mozilla but is used in Netscape -->
+<!-- NOTE (whatNewCmd.label): This is not used in GNU but is used in Netscape -->
 <!ENTITY direct.label                                   "ઓનલાઈન (પ્રોક્સી: કંઈ નહિં)">
 <!ENTITY direct.accesskey                               "n">
 <!ENTITY manual.label                                   "ઓનલાઈન (પ્રોક્સી: જાતે)">

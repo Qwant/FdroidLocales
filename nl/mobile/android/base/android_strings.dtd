@@ -105,19 +105,19 @@
 <!ENTITY pref_category_general_summary2 "Startpagina, taal, URL-balk">
 
 <!-- Localization note (pref_category_language) : This is the preferences
-     section in which the user picks the locale in which to display Firefox
+     section in which the user picks the locale in which to display IceCat
      UI. The locale includes both language and region concepts. -->
 <!ENTITY pref_category_language "Taal">
 <!ENTITY pref_category_language_summary "De taal van uw browser wijzigen">
 <!ENTITY pref_browser_locale "Browsertaal">
 
 <!-- Localization note (locale_system_default) : This string indicates that
-     Firefox will use the locale currently selected in Android's settings
+     IceCat will use the locale currently selected in Android's settings
      to display browser chrome. -->
 <!ENTITY locale_system_default "Systeemstandaard">
 
 <!-- Localization note (overlay_share_label) : This is the label that appears
-     in Android's intent chooser when sending a link to Firefox to bookmark,
+     in Android's intent chooser when sending a link to IceCat to bookmark,
      send to another device, or add to Reading List. -->
 <!ENTITY overlay_share_label "Toevoegen aan &brandShortName;">
 
@@ -140,7 +140,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "Geen via Firefox-account gekoppelde apparaten gevonden">
+<!ENTITY overlay_no_synced_devices "Geen via IceCat-account gekoppelde apparaten gevonden">
 
 <!ENTITY pref_category_search3 "Zoeken">
 <!ENTITY pref_category_search_summary "Uw zoekproviders aanpassen">
@@ -193,7 +193,7 @@
 <!ENTITY home_homepage_title "Een startpagina instellen">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
-     button for this string, they will use the built-in default Firefox homepage (about:home). -->
+     button for this string, they will use the built-in default IceCat homepage (about:home). -->
 <!ENTITY home_homepage_radio_default "&brandShortName;-startpagina">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
@@ -320,7 +320,7 @@ size. -->
 <!ENTITY pref_private_data_syncedTabs "Gesynchroniseerde tabbladen">
 
 
-<!ENTITY pref_about_firefox "Over &brandShortName;">
+<!ENTITY pref_about_icecat "Over &brandShortName;">
 <!ENTITY pref_vendor_faqs "FAQ’s">
 <!ENTITY pref_vendor_feedback "Feedback geven">
 
@@ -548,11 +548,11 @@ size. -->
 <!ENTITY home_remote_tabs_title "Gesynchroniseerde tabbbladen">
 <!ENTITY home_remote_tabs_empty "Hier verschijnen uw tabbladen van andere apparaten.">
 <!ENTITY home_remote_tabs_unable_to_connect "Kan geen verbinding maken">
-<!ENTITY home_remote_tabs_need_to_sign_in "Meld u aan om uw Firefox-account opnieuw te verbinden en door te gaan met synchroniseren.">
-<!ENTITY home_remote_tabs_need_to_finish_migrating "Uw nieuwe Firefox-account is gereed!">
+<!ENTITY home_remote_tabs_need_to_sign_in "Meld u aan om uw IceCat-account opnieuw te verbinden en door te gaan met synchroniseren.">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "Uw nieuwe IceCat-account is gereed!">
 
 <!ENTITY home_remote_tabs_trouble_verifying "Probleem bij het verifiëren van uw account?">
-<!ENTITY home_remote_tabs_need_to_verify "Verifieer uw Firefox-account om het synchroniseren te starten.">
+<!ENTITY home_remote_tabs_need_to_verify "Verifieer uw IceCat-account om het synchroniseren te starten.">
 
 <!ENTITY home_remote_tabs_one_hidden_device "1 apparaat verborgen">
 <!-- Localization note (home_remote_tabs_many_hidden_devices) : The
@@ -697,7 +697,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
      include "42 minutes ago", "4 days ago", "last week", etc. The subject of
-     "Last synced" is one of the user's other Sync clients, typically Firefox on
+     "Last synced" is one of the user's other Sync clients, typically IceCat on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "Laatst gesynchroniseerd: &formatS;">
 <!-- Localization note: Used when the sync has not happend yet, showed in place of a date -->
@@ -727,7 +727,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
      above a QR reader that is actively scanning for QR codes.  The expected QR
      code has already been displayed by the client trying to connect (such as
-     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     desktop IceCat via WebIDE), so you just need to aim this device at the QR
      code. -->
 <!ENTITY devtools_auth_scan_header "QR-code scannen die op uw andere apparaat wordt weergegeven">
 
@@ -735,7 +735,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- Localization note: These are features the device owner (e.g. parent) can enable or disable for
      a restricted profile (e.g. child). Used inside the Android settings UI. -->
 <!ENTITY restrictable_feature_addons_installation "Add-ons">
-<!ENTITY restrictable_feature_addons_installation_description "Voeg functies of functionaliteiten toe aan Firefox. Noot: add-ons kunnen bepaalde beperkingen uitschakelen.">
+<!ENTITY restrictable_feature_addons_installation_description "Voeg functies of functionaliteiten toe aan IceCat. Noot: add-ons kunnen bepaalde beperkingen uitschakelen.">
 <!ENTITY restrictable_feature_private_browsing "Privénavigatie">
 <!ENTITY restrictable_feature_private_browsing_description "Laat gezinsleden surfen zonder gegevens over de door hen bezochte websites en pagina’s op te slaan.">
 <!ENTITY restrictable_feature_clear_history "Geschiedenis wissen">
@@ -745,19 +745,19 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY restrictable_feature_camera_microphone "Camera &amp; microfoon">
 <!ENTITY restrictable_feature_camera_microphone_description "Laat gezinsleden deelnemen aan realtime-communicatie op websites.">
 <!ENTITY restrictable_feature_data_choices "Gegevenskeuzes">
-<!ENTITY restrictable_feature_data_choices_description "Kiezen of gebruiksgegevens naar Mozilla worden verzonden om Firefox te helpen verbeteren.">
+<!ENTITY restrictable_feature_data_choices_description "Kiezen of gebruiksgegevens naar GNU worden verzonden om IceCat te helpen verbeteren.">
 
 <!-- Default Bookmarks titles-->
-<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
-<!ENTITY bookmarks_about_browser "Firefox: over uw browser">
-<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
-<!ENTITY bookmarks_addons "Firefox: aanpassen met add-ons">
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:icecatmobile -->
+<!ENTITY bookmarks_about_browser "IceCat: over uw browser">
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://directory.fsf.org/wiki/GNU_IceCat -->
+<!ENTITY bookmarks_addons "IceCat: aanpassen met add-ons">
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
-<!ENTITY bookmarks_support "Firefox: ondersteuning">
+<!ENTITY bookmarks_support "IceCat: ondersteuning">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
-<!ENTITY bookmarks_restricted_support2 "Firefox: hulp en ondersteuning voor beperkte profielen op Android-tablets">
+<!ENTITY bookmarks_restricted_support2 "IceCat: hulp en ondersteuning voor beperkte profielen op Android-tablets">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
-<!ENTITY bookmarks_restricted_webmaker "Leer het web: Mozilla Webmaker">
+<!ENTITY bookmarks_restricted_webmaker "Leer het web: GNU Webmaker">
 
 <!-- LOCALIZATION NOTE (unsupported_sdk_version): The user installed a build of this app that does not support
      the Android version of this device. the formatS1 is replaced by the CPU ABI (e.g., ARMv7); the formatS2 is

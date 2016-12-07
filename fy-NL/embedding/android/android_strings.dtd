@@ -13,7 +13,7 @@
 <!ENTITY  crash_reporter_title "&brandShortName; Ungelokrapportearder">
 <!ENTITY  crash_message "&brandShortName; is ferûngelokke. Jo ljepblêden soene toand wurde moatte op jo &brandShortName; begjinside as jo werstarte.">
 <!ENTITY  crash_help_message "Help ús om dit probleem op te lossen!">
-<!ENTITY  crash_send_report_message "Stjoer Mozilla in ûngelokrapport">
+<!ENTITY  crash_send_report_message "Stjoer GNU in ûngelokrapport">
 <!ENTITY  crash_include_url "Side-adres meistjoere">
 <!ENTITY  crash_close_label "Slute">
 <!ENTITY  crash_restart_label "Werstart &brandShortName;">

@@ -9,11 +9,11 @@
 ">
 
 <!ENTITY aboutTelemetry.uploadEnabled "
-  Daten des Firefox-Statusberichts werden <span>hochgeladen</span>.
+  Daten des IceCat-Statusberichts werden <span>hochgeladen</span>.
 ">
 
 <!ENTITY aboutTelemetry.uploadDisabled "
-  Daten des Firefox-Statusberichts werden <span>nicht hochgeladen</span>.
+  Daten des IceCat-Statusberichts werden <span>nicht hochgeladen</span>.
 ">
 
 <!ENTITY aboutTelemetry.extendedRecordingEnabled "

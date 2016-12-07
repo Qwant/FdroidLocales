@@ -5,3 +5,5 @@ google
 twitter
 wikipedia-uz
 yahoo
+
+duckduckgo

@@ -3,3 +3,5 @@ eBay-es
 google
 wikipedia-gl
 yahoo-es
+
+duckduckgo

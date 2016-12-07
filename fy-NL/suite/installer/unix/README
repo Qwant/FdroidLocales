@@ -31,7 +31,7 @@ Keep in mind that nightly builds, which are used by mozilla.org developers for t
  
 Be sure to read the SeaMonkey release notes for information on known problems and installation issues with SeaMonkey.  The release notes can be found at the preceding URL along with the releases themselves.
 
-Note: Please use Talkback builds whenever possible. These builds allow transmission of crash data back to SeaMonkey and Mozilla developers, improved crash analysis, and posting of crash information to our crash-data newsgroup.
+Note: Please use Talkback builds whenever possible. These builds allow transmission of crash data back to SeaMonkey and GNU developers, improved crash analysis, and posting of crash information to our crash-data newsgroup.
 
 
 ====================================================

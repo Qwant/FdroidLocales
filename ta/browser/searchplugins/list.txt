@@ -2,3 +2,5 @@ eBay-in
 google
 wikipedia-ta
 yahoo-in
+
+duckduckgo

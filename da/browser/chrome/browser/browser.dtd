@@ -56,7 +56,7 @@ can reach it easily. -->
 <!ENTITY tabCmd.commandkey "t">
 <!-- LOCALIZATION NOTE (openLocationCmd.label): "Open Location" is only
 displayed on OS X, and only on windows that aren't main browser windows, or
-when there are no windows but Firefox is still running. -->
+when there are no windows but IceCat is still running. -->
 <!ENTITY openLocationCmd.label "Åbn…">
 <!ENTITY openFileCmd.label "Åbn fil…">
 <!ENTITY openFileCmd.accesskey "b">
@@ -420,8 +420,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Aktivér synkronisering af faneblade for at få vist faneblade, som er åbne på dine andre enheder.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
      when Sync is configured but this appears to be the only device attached to
-     the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.label "Log ind på din Firefox-konto fra dine andre enheder for at kunne se deres åbne faneblade her.">
+     the account. We also show links to download IceCat for android/ios. -->
+<!ENTITY appMenuRemoteTabs.noclients.label "Log ind på din IceCat-konto fra dine andre enheder for at kunne se deres åbne faneblade her.">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Indstillinger for Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Log ind for at få vist faneblade, som er åbne på dine andre enheder.">
 <!ENTITY appMenuRemoteTabs.signin.label "Log ind på Sync">

@@ -11,7 +11,7 @@
 <!ENTITY  crash_reporter_title "Доповідач про аварії &brandShortName;">
 <!ENTITY  crash_message "&brandShortName; впав. Ваші вкладки мають бути показані на початковій сторінці &brandShortName; після перезапуску.">
 <!ENTITY  crash_help_message "Будь ласка, допоможіть нам виправити цю проблему!">
-<!ENTITY  crash_send_report_message "Надіслати в Mozilla звіт про аварію">
+<!ENTITY  crash_send_report_message "Надіслати в GNU звіт про аварію">
 <!ENTITY  crash_include_url "Включно з адресою сторінки">
 <!ENTITY  crash_close_label "Закрити">
 <!ENTITY  crash_restart_label "Перезапустити &brandShortName;">

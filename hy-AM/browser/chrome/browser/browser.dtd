@@ -56,7 +56,7 @@ can reach it easily. -->
 <!ENTITY tabCmd.commandkey "t">
 <!-- LOCALIZATION NOTE (openLocationCmd.label): "Open Location" is only
 displayed on OS X, and only on windows that aren't main browser windows, or
-when there are no windows but Firefox is still running. -->
+when there are no windows but IceCat is still running. -->
 <!ENTITY openLocationCmd.label "Բացել Հասցե…">
 <!ENTITY openFileCmd.label "Բացել Ֆայլ…">
 <!ENTITY openFileCmd.accesskey "Բ">
@@ -419,8 +419,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      when Sync is configured but syncing tabs is disabled. -->
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
      when Sync is configured but this appears to be the only device attached to
-     the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.label "Մուտք գործե՛ք Firefox Ձեր այլ սարքերից, որ տեսնեք դրանց ներդիրներն այստեղ։">
+     the account. We also show links to download IceCat for android/ios. -->
+<!ENTITY appMenuRemoteTabs.noclients.label "Մուտք գործե՛ք IceCat Ձեր այլ սարքերից, որ տեսնեք դրանց ներդիրներն այստեղ։">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Սինքի նախընտրանքներ">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Մուտք գործե՛ք, որ տեսնեք Ձեր այլ սարքերից ավելացրած ներդիրների ցանկը։">
 <!ENTITY appMenuRemoteTabs.signin.label "Մուտք գործել Սինք">

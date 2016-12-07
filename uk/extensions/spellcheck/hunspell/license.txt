@@ -1,4 +1,4 @@
-This is Ukrainian spelling dictionary for Firefox >=3, Thunderbird >= 3 and Seamonkey 
+This is Ukrainian spelling dictionary for IceCat >=3, Thunderbird >= 3 and Seamonkey 
 that use hunspell as spelling engine and it is based on 
 dictionary of spell-uk project http://ispell-uk.sourceforge.net/
 

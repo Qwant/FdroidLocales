@@ -3,3 +3,5 @@ daum-kr
 naver-kr
 wikipedia-kr
 danawa-kr
+
+duckduckgo

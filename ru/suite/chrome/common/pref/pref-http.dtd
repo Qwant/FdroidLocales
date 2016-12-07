@@ -17,5 +17,5 @@
 <!ENTITY prefPara "С помощью этих параметров можно настроить HTTP-соединения так, чтобы увеличить их скорость и/или совместимость с серверами. Например, некоторые прокси-серверы требуют использования HTTP 1.0 (см. примечания к версии).">
 <!ENTITY prefPipeWarning "ПРЕДУПРЕЖДЕНИЕ: конвейерная обработка данных — экспериментальная функция, предназначенная для уменьшения времени загрузки страниц; некоторыми веб- и прокси-серверами поддерживается, к сожалению, не полностью.">
 <!ENTITY prefUseragent.label "Строка User Agent">
-<!ENTITY prefFirefoxCompat.label "Сообщать о совместимости с Firefox">
-<!ENTITY prefFirefoxCompat.accesskey "F">
+<!ENTITY prefIceCatCompat.label "Сообщать о совместимости с IceCat">
+<!ENTITY prefIceCatCompat.accesskey "F">

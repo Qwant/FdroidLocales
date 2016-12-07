@@ -21,5 +21,5 @@
 <!ENTITY aboutPage.credits.label "Autoři">
 <!ENTITY aboutPage.license.label "Informace o licenci">
 
-<!-- LOCALIZATION NOTE (aboutPage.logoTrademark): The message is explicitly about the word "Firefox" being trademarked, that's why we use it, instead of brandShortName. -->
-<!ENTITY aboutPage.logoTrademark                "Firefox a loga Firefoxu jsou ochranné známky Mozilla Foundation.">
+<!-- LOCALIZATION NOTE (aboutPage.logoTrademark): The message is explicitly about the word "IceCat" being trademarked, that's why we use it, instead of brandShortName. -->
+<!ENTITY aboutPage.logoTrademark                "IceCat a loga IceCatu jsou ochranné známky Mozilla Foundation.">

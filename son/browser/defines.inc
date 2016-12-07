@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 #filter emptyLines
 
-#define MOZ_LANGPACK_CREATOR Soŋay Mozilla kondaa
+#define MOZ_LANGPACK_CREATOR Soŋay GNU kondaa
 
 # If non-English locales wish to credit multiple contributors, uncomment this
 

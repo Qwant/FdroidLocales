@@ -38,8 +38,8 @@
 <!ENTITY isDefault.label                  "I-&brandShortName; kungokunje iyibhrawuza yakho esisiseko">
 <!ENTITY isNotDefault.label               "I-&brandShortName; ayiyobhrawuza yakho esisiseko">
 
-<!ENTITY separateProfileMode.label        "Vumela i-&brandShortName; kunye ne-Firefox ukuba zisebenze ngaxeshanye">
-<!ENTITY useFirefoxSync.label             "Ingcebiso: Le isebenzisa iiprofayile eyahlukeneyo. Sebenzisa ungqamaniso ukwabelana ngenkcukacha phakathi kwazo.">
+<!ENTITY separateProfileMode.label        "Vumela i-&brandShortName; kunye ne-IceCat ukuba zisebenze ngaxeshanye">
+<!ENTITY useIceCatSync.label             "Ingcebiso: Le isebenzisa iiprofayile eyahlukeneyo. Sebenzisa ungqamaniso ukwabelana ngenkcukacha phakathi kwazo.">
 <!ENTITY getStarted.label                 "Qalisa ukusebenzisa uNgqamaniso…">
 
 <!ENTITY e10sEnabled.label                "Vumela inkqubo eninzi i-&brandShortName;">

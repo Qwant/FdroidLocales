@@ -105,7 +105,7 @@ values from browser.dtd.  -->
   -  boolean preference in about:config, in the options panel. -->
 
 <!ENTITY options.enableRemote.label3    "启用远程调试">
-<!ENTITY options.enableRemote.tooltip   "打开此选项将允许开发者工具调试远端 Firefox 实例，比如 Firefox OS">
+<!ENTITY options.enableRemote.tooltip   "打开此选项将允许开发者工具调试远端 IceCat 实例，比如 IceCat OS">
 <!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
   -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
   -  boolean preference in about:config, in the options panel. -->
@@ -134,7 +134,7 @@ values from browser.dtd.  -->
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
 
-<!ENTITY options.selectDefaultTools.label     "默认的 Firefox 开发者工具">
+<!ENTITY options.selectDefaultTools.label     "默认的 IceCat 开发者工具">
 <!-- LOCALIZATION NOTE (options.selectAdditionalTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the developer tools
   -  added by add-ons. This heading is hidden when there is no developer tool

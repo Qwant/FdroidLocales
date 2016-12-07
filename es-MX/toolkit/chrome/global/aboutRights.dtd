@@ -17,9 +17,9 @@
 
 <!ENTITY rights.intro-point1a "&brandShortName; esta disponible bajo los terminos de ">
 <!ENTITY rights.intro-point1b "Licencia Pública de Mozilla">
-<!ENTITY rights.intro-point1c ". Esto quiere decir que puedes usar, copiar y distribuir &brandShortName; a otros. Eres tambien bienvenido a modificar el código fuente de &brandShortName; como tu quieras para satisfacer tus necesidades. La licencia pública de Mozilla tambien te da el derecho de distribuir tus versiones modificadas.">
+<!ENTITY rights.intro-point1c ". Esto quiere decir que puedes usar, copiar y distribuir &brandShortName; a otros. Eres tambien bienvenido a modificar el código fuente de &brandShortName; como tu quieras para satisfacer tus necesidades. La licencia pública de GNU tambien te da el derecho de distribuir tus versiones modificadas.">
 
-<!ENTITY rights.intro-point2-a "No se conceden los derechos de patentes o licencias para las marcas registradas de la Fundación Mozilla o cualquier parte, incluyendo sin limitación el nombre o el logotipo de Firefox. Información adicional sobre las marcas se pueden encontrar ">
+<!ENTITY rights.intro-point2-a "No se conceden los derechos de patentes o licencias para las marcas registradas de la Fundación GNU o cualquier parte, incluyendo sin limitación el nombre o el logotipo de IceCat. Información adicional sobre las marcas se pueden encontrar ">
 <!ENTITY rights.intro-point2-b "aquí">
 <!ENTITY rights.intro-point2-c ".">
 <!-- point 2.5 text for official branded builds -->

@@ -3,3 +3,5 @@ bing
 bolcom-nl
 wikipedia-nl
 marktplaats-nl
+
+duckduckgo

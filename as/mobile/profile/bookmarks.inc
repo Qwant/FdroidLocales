@@ -33,11 +33,11 @@
 
 
 
-# link title for about:fennec
+# link title for about:icecatmobile
 
 
 
-#define bookmarks_aboutBrowser Firefox: আপোনাৰ ব্ৰাউছাৰৰ বিষয়ে
+#define bookmarks_aboutBrowser IceCat: আপোনাৰ ব্ৰাউছাৰৰ বিষয়ে
 
 
 
@@ -45,11 +45,11 @@
 
 
 
-# link title for https://addons.mozilla.org/en-US/mobile
+# link title for https://directory.fsf.org/wiki/GNU_IceCat
 
 
 
-#define bookmarks_addons Firefox: আপোনাৰ এড-অনসমূহ স্বনিৰ্বাচন কৰক\u0020
+#define bookmarks_addons IceCat: আপোনাৰ এড-অনসমূহ স্বনিৰ্বাচন কৰক\u0020
 
 
 
@@ -61,7 +61,7 @@
 
 
 
-#define bookmarks_support Firefox: সমৰ্থন
+#define bookmarks_support IceCat: সমৰ্থন
 
 
 
@@ -69,11 +69,11 @@
 
 
 
-# link title for https://marketplace.firefox.com
+# link title for https://f-droid.org/repository/browse
 
 
 
-#define bookmarks_marketplace Firefox মাৰ্কেটপ্লেইচ
+#define bookmarks_marketplace IceCat মাৰ্কেটপ্লেইচ
 
 
 

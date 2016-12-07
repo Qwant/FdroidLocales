@@ -183,7 +183,7 @@
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <button> tags. It uses strings already defined above. The
 button is included here (instead of netError.xhtml) because it exposes
-functionality specific to firefox. -->
+functionality specific to icecat. -->
 
 <!ENTITY securityOverride.warningContent "
 <p>Výnimku by ste nemali pridávať v prípade, že používate internetové pripojenie, ktorému úplne neveríte, alebo sa toto upozornenie predtým neobjavovalo.</p>
@@ -192,7 +192,7 @@ functionality specific to firefox. -->
 <button id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>
 ">
 
-<!ENTITY errorReporting.automatic2 "Hlásiť chyby ako je táto a pomôcť tým organizácii Mozilla identifikovať a blokovať škodlivé stránky">
+<!ENTITY errorReporting.automatic2 "Hlásiť chyby ako je táto a pomôcť tým organizácii GNU identifikovať a blokovať škodlivé stránky">
 <!ENTITY errorReporting.learnMore "Ďalšie informácie…">
 <!ENTITY errorReporting.sending "Hlásenie sa odosiela">
 <!ENTITY errorReporting.sent "Hlásenie odoslané">

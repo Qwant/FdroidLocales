@@ -126,7 +126,7 @@
 <!ENTITY pref_private_data_offlineApps "Пазасеткавыя здаткі пляцовак сеціва">
 <!ENTITY pref_private_data_siteSettings2 "Наладжванні пляцоўкі">
 <!ENTITY pref_private_data_downloadFiles2 "Сцягванні">
-<!ENTITY pref_about_firefox "Пра &brandShortName;">
+<!ENTITY pref_about_icecat "Пра &brandShortName;">
 <!ENTITY pref_vendor_faqs "Пытанні і адказы">
 <!ENTITY pref_vendor_feedback "Даць водгук">
 <!ENTITY pref_dialog_set_default "Прызначыць змоўчным">

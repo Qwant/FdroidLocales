@@ -4,7 +4,7 @@
 <!ENTITY aboutDialog.title          "&brandFullName; ବିଷୟରେ">
 <!-- LOCALIZATION NOTE (update.checkForUpdatesButton.*, update.updateButton.*, update.applyButtonBillboard.*):
 # Only one button is present at a time.
-# The button when displayed is located directly under the Firefox version in
+# The button when displayed is located directly under the IceCat version in
 # the about dialog (see bug 596813 for screenshots).
 -->
 
@@ -38,7 +38,7 @@
 <!ENTITY community.creditsLink      "ବିଶ୍ୱ ସମ୍ପ୍ରଦାୟ">
 <!ENTITY community.end3             " ୱେବକୁ ମୁକ୍ତ, ସର୍ବସାଧାରଣ ଏବଂ ସମସ୍ତଙ୍କ ପାଇଁ ଅଭିଗମ୍ୟ କରିବା ପାଇଁ ଏକା ସହିତ ମିଶି କାମ କରୁଅଛୁ।">
 
-<!-- LOCALIZATION NOTE (helpus.donateLink): This is a link title that links to https://sendto.mozilla.org/page/contribute/Give-Now?source=mozillaorg_default_footer&ref=firefox_about&utm_campaign=firefox_about&utm_source=firefox&utm_medium=referral&utm_content=20140929_FireFoxAbout. -->
+<!-- LOCALIZATION NOTE (helpus.donateLink): This is a link title that links to https://sendto.mozilla.org/page/contribute/Give-Now?source=mozillaorg_default_footer&ref=icecat_about&utm_campaign=icecat_about&utm_source=icecat&utm_medium=referral&utm_content=20140929_FireFoxAbout. -->
 
 <!-- LOCALIZATION NOTE (helpus.getInvolvedLink): This is a link title that links to http://www.mozilla.org/contribute/. -->
 <!ENTITY helpus.end                 "">
@@ -48,7 +48,7 @@
 <!-- LOCALIZATION NOTE (bottomLinks.rights): This is a link title that links to about:rights. -->
 
 <!ENTITY bottomLinks.rights         "ଚାଳକ ସୂଚନା">
-<!-- LOCALIZATION NOTE (bottomLinks.privacy): This is a link title that links to https://www.mozilla.org/legal/privacy/. -->
+<!-- LOCALIZATION NOTE (bottomLinks.privacy): This is a link title that links to https:///. -->
 
 <!ENTITY bottomLinks.privacy        "ଗୋପନୀୟତା ନିତୀ">
 <!-- LOCALIZATION NOTE (update.checkingForUpdates): try to make the localized text short (see bug 596813 for screenshots). -->
@@ -63,7 +63,7 @@
 <!-- LOCALIZATION NOTE (update.failed.start,update.failed.linkText,update.failed.end):
      update.failed.start, update.failed.linkText, and update.failed.end all go into
      one line with linkText being wrapped in an anchor that links to a site to download
-     the latest version of Firefox (e.g. http://www.firefox.com). As this is all in
+     the latest version of IceCat (e.g. http://www.firefox.com). As this is all in
      one line, try to make the localized text short (see bug 596813 for screenshots). -->
 
 <!ENTITY update.failed.start        "ଅପଡେଟ ବିଫଳ ।">
@@ -71,7 +71,7 @@
 <!ENTITY update.failed.end          "">
 <!-- LOCALIZATION NOTE (update.manual.start,update.manual.end): update.manual.start and update.manual.end
      all go into one line and have an anchor in between with text that is the same as the link to a site
-     to download the latest version of Firefox (e.g. http://www.firefox.com). As this is all in one line,
+     to download the latest version of IceCat (e.g. http://www.firefox.com). As this is all in one line,
      try to make the localized text short (see bug 596813 for screenshots). -->
 
 <!ENTITY update.manual.start        "ଅପଡେଟସବୁ ଏଠାରେ ପାଇବେ:">

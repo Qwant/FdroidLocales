@@ -5,3 +5,5 @@ prisjakt-sv-SE
 tyda-sv-SE
 wikipedia-sv-SE
 yahoo-sv-SE
+
+duckduckgo

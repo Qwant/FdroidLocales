@@ -12,13 +12,13 @@
 <!ENTITY abouthome.pageTitle "Úvodná stránka prehliadača &brandFullName;">
 
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):
-     text in <a/> will be linked to the Firefox features page on mozilla.com
+     text in <a/> will be linked to the IceCat features page on mozilla.com
 -->
-<!ENTITY abouthome.defaultSnippet1.v1 "Ďakujeme, že ste si zvolili Firefox! Aby ste mohli prehliadač využívať naplno, pozrite si prehľad jeho <a>najnovších funkcií</a>.">
+<!ENTITY abouthome.defaultSnippet1.v1 "Ďakujeme, že ste si zvolili IceCat! Aby ste mohli prehliadač využívať naplno, pozrite si prehľad jeho <a>najnovších funkcií</a>.">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet2.v1):
      text in <a/> will be linked to the featured add-ons on addons.mozilla.org
 -->
-<!ENTITY abouthome.defaultSnippet2.v1 "Prispôsobiť si Firefox podľa svojich predstáv je naozaj jednoduché. <a>Vyberte si z tisícov doplnkov</a>.">
+<!ENTITY abouthome.defaultSnippet2.v1 "Prispôsobiť si IceCat podľa svojich predstáv je naozaj jednoduché. <a>Vyberte si z tisícov doplnkov</a>.">
 <!-- LOCALIZATION NOTE (abouthome.rightsSnippet): text in <a/> will be linked to about:rights -->
 <!ENTITY abouthome.rightsSnippet "&brandFullName; je voľne šírený softvér s otvoreným zdrojovým kódom od neziskovej organizácie Mozilla Foundation. <a>Spoznajte svoje práva…</a>">
 
@@ -33,7 +33,7 @@
 <!ENTITY abouthome.addonsButton.label    "Doplnky">
 <!-- LOCALIZATION NOTE (abouthome.appsButton2.label): This string should be consistent with
      the Apps menu item in the Tools menu (webapps.label in browser.dtd) and the Apps toolbar button in
-     Firefox's customization palette (web-apps-button.label in customizableWidgets.properties) -->
+     IceCat's customization palette (web-apps-button.label in customizableWidgets.properties) -->
 <!ENTITY abouthome.appsButton2.label     "Aplikácie">
 <!ENTITY abouthome.downloadsButton.label "Prevzaté súbory">
 <!ENTITY abouthome.syncButton.label      "Synchronizácia">

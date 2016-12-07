@@ -152,7 +152,7 @@ that &brandShortName; কে ওয়েব ব্যবহারের অনু�
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <button> tags. It uses strings already defined above. The
 button is included here (instead of netError.xhtml) because it exposes
-functionality specific to firefox. -->
+functionality specific to icecat. -->
 
 
 <!ENTITY securityOverride.warningContent "<p>Yসম্পূর্ণ বিশ্বাসযোগ্য ইন্টারনেট সংযোগ ব্যবহার না করা হলে অথবা এই সার্ভার থেকে কোনো ধরনের সতর্কবার্তা সাধারণত না প্রদর্শিত হলে, ব্যতিক্রম যোগ না করা বাঞ্ছনীয়।</p> 

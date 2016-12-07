@@ -11,7 +11,7 @@
 
 <!ENTITY abouthome.pageTitle "&brandFullName; ಆರಂಭಿಕ ಪುಟ">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):
-     text in <a/> will be linked to the Firefox features page on mozilla.com
+     text in <a/> will be linked to the IceCat features page on mozilla.com
 -->
 
 <!ENTITY abouthome.defaultSnippet1.v1 "ಫೈರ್ಫಾಕ್ಸನ್ನು ಆಯ್ಕೆ ಮಾಡಿಕೊಂಡಿದ್ದಕ್ಕೆ ಧನ್ಯವಾದಗಳು! ನಿಮ್ಮ ಜಾಲವೀಕ್ಷಕದಿಂದ ಹೆಚ್ಚಿನ ಉಪಯೋಗ ಪಡೆದುಕೊಳ್ಳಲು, <a>ಇತ್ತೀಚಿನ ಸವಲತ್ತುಗಳ</a>ನ್ನು ನೋಡಿ.">
@@ -33,7 +33,7 @@
 <!ENTITY abouthome.addonsButton.label    "ಆಡ್-ಆನ್‌ಗಳು">
 <!-- LOCALIZATION NOTE (abouthome.appsButton2.label): This string should be consistent with
      the Apps menu item in the Tools menu (webapps.label in browser.dtd) and the Apps toolbar button in
-     Firefox's customization palette (web-apps-button.label in customizableWidgets.properties) -->
+     IceCat's customization palette (web-apps-button.label in customizableWidgets.properties) -->
 <!ENTITY abouthome.appsButton2.label     "ಅನ್ವಯಗಳು">
 <!ENTITY abouthome.downloadsButton.label "ಇಳಿಕೆಗಳು">
 <!ENTITY abouthome.syncButton.label      "&syncBrand.shortName.label;">

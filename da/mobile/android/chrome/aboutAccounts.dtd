@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY aboutAccounts.connected.title "Firefox-konti">
+<!ENTITY aboutAccounts.connected.title "IceCat-konti">
 <!ENTITY aboutAccounts.connected.description "Du er forbundet som">
 <!ENTITY aboutAccounts.syncPreferences.label "Tryk her for at kontrollere Sync-indstillinger">
 
@@ -10,4 +10,4 @@
 <!ENTITY aboutAccounts.retry.label "Prøv igen">
 
 <!ENTITY aboutAccounts.restrictedError.title "Begrænset">
-<!ENTITY aboutAccounts.restrictedError.description "Du kan ikke håndtere Firefox-konti fra denne profil.">
+<!ENTITY aboutAccounts.restrictedError.description "Du kan ikke håndtere IceCat-konti fra denne profil.">

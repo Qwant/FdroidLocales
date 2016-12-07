@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY aboutAccounts.connected.title "Firefox hisoblari">
+<!ENTITY aboutAccounts.connected.title "IceCat hisoblari">
 <!ENTITY aboutAccounts.connected.description "Ulangan:">
 <!ENTITY aboutAccounts.syncPreferences.label "Sinxronlash sozlamalarini tekshirish uchun bu yerga bosing">
 
@@ -10,4 +10,4 @@
 <!ENTITY aboutAccounts.retry.label "Yana urinib ko‘ring">
 
 <!ENTITY aboutAccounts.restrictedError.title "Cheklangan">
-<!ENTITY aboutAccounts.restrictedError.description "Ushbu profildan Firefox hisoblarini boshqara olmaysiz.">
+<!ENTITY aboutAccounts.restrictedError.description "Ushbu profildan IceCat hisoblarini boshqara olmaysiz.">

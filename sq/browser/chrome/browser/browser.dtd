@@ -415,8 +415,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Aktivizoni njëkohësim skedash që të shihni një listë skedash prej pajisjesh tuajat të tjera.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
      when Sync is configured but this appears to be the only device attached to
-     the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.label "Bëni hyrjen në Firefox prej pajisjesh të tjera që të shihni këtu skeda prej tyre.">
+     the account. We also show links to download IceCat for android/ios. -->
+<!ENTITY appMenuRemoteTabs.noclients.label "Bëni hyrjen në IceCat prej pajisjesh të tjera që të shihni këtu skeda prej tyre.">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Parapëlqime Njëkohësimi">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Bëni hyrjen që të shihni një listë skedash prej pajisjesh tuajat të tjera.">
 <!ENTITY appMenuRemoteTabs.signin.label "Hyni në Sync">

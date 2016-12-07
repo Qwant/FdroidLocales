@@ -15,6 +15,6 @@
 <!ENTITY errorTimeout "Памылка: часаспын злучэння.">
 <!ENTITY errorRefused "Памылка: злучэнне адхілена.">
 <!ENTITY errorUnexpected "Нечаканая памылка.">
-<!ENTITY remoteHelp "Прылады распрацаўніка Firefox могуць наладжваць адлеглыя збудовы (напрыклад: Firefox для Android і Firefox OS). Упэўніцеся, што вы ўключылі наладжванне 'Адлеглая наладка' у адлеглай збудове. Падрабязней у ">
+<!ENTITY remoteHelp "Прылады распрацаўніка IceCat могуць наладжваць адлеглыя збудовы (напрыклад: IceCat для Android і IceCat OS). Упэўніцеся, што вы ўключылі наладжванне 'Адлеглая наладка' у адлеглай збудове. Падрабязней у ">
 <!ENTITY remoteDocumentation "дакументацыі">
 <!ENTITY remoteHelpSuffix ".">

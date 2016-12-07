@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY windowTitle "Firefox WebIDE">
+<!ENTITY windowTitle "IceCat WebIDE">
 
 <!ENTITY projectMenu_label "Жоба">
 <!ENTITY projectMenu_accesskey "о">
@@ -58,7 +58,7 @@
 
 <!ENTITY projectButton_label "Қолданбаны ашу">
 <!ENTITY runtimeButton_label "Орындалу ортасын таңдау">
-<!-- We try to repicate Firefox' bindings: -->
+<!-- We try to repicate IceCat' bindings: -->
 <!-- quit app -->
 
 <!ENTITY key_quit "W">

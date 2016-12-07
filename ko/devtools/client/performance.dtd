@@ -23,12 +23,12 @@
 <!-- LOCALIZATION NOTE (performanceUI.disabledRealTime.nonE10SBuild): This string
   -  is displayed as a message for why the real time overview graph is disabled
   -  when running on a non-multiprocess build. -->
-<!ENTITY performanceUI.disabledRealTime.nonE10SBuild "다중 프로세스가 아닌 Firefox에서는 실시간 기록 데이터가 비활성화됩니다.">
+<!ENTITY performanceUI.disabledRealTime.nonE10SBuild "다중 프로세스가 아닌 IceCat에서는 실시간 기록 데이터가 비활성화됩니다.">
 
 <!-- LOCALIZATION NOTE (performanceUI.disabledRealTime.disabledE10S): This string
   -  is displayed as a message for why the real time overview graph is disabled
-  -  when running on a build that can run multiprocess Firefox, but just is not enabled. -->
-<!ENTITY performanceUI.disabledRealTime.disabledE10S "실시간으로 기록된 데이터를 랜더링 하기 위해서 설정에서 다중 프로세스 Firefox를 활성화 하세요.">
+  -  when running on a build that can run multiprocess IceCat, but just is not enabled. -->
+<!ENTITY performanceUI.disabledRealTime.disabledE10S "실시간으로 기록된 데이터를 랜더링 하기 위해서 설정에서 다중 프로세스 IceCat를 활성화 하세요.">
 
 <!-- LOCALIZATION NOTE (performanceUI.bufferStatusFull): This string
   -  is displayed when the profiler's circular buffer has started to overlap. -->

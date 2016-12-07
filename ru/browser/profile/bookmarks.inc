@@ -14,27 +14,27 @@
 #define bookmarks_toolbarfolder_description Добавьте закладки в эту папку, чтобы увидеть их на панели закладок
 
 # LOCALIZATION NOTE (getting_started):
-# link title for http://www.mozilla.com/ru/firefox/central/
+# link title for http://www.mozilla.com/ru/icecat/central/
 #define getting_started Начальная страница
 
-# LOCALIZATION NOTE (firefox_heading):
-# Firefox links folder name
-#define firefox_heading Mozilla Firefox
+# LOCALIZATION NOTE (icecat_heading):
+# IceCat links folder name
+#define icecat_heading GNU IceCat
 
-# LOCALIZATION NOTE (firefox_help):
-# link title for http://www.mozilla.com/ru/firefox/help/
-#define firefox_help Справка и руководства
+# LOCALIZATION NOTE (icecat_help):
+# link title for http://www.mozilla.com/ru/icecat/help/
+#define icecat_help Справка и руководства
 
-# LOCALIZATION NOTE (firefox_customize):
-# link title for http://www.mozilla.com/ru/firefox/customize/
-#define firefox_customize Настройка Firefox
+# LOCALIZATION NOTE (icecat_customize):
+# link title for http://www.mozilla.com/ru/icecat/customize/
+#define icecat_customize Настройка IceCat
 
-# LOCALIZATION NOTE (firefox_community):
-# link title for http://www.mozilla.com/ru/firefox/community/
-#define firefox_community Присоединяйтесь к сообществу
+# LOCALIZATION NOTE (firefox.community):
+# link title for http://www.mozilla.com/ru/firefox.community/
+#define firefox.community Присоединяйтесь к сообществу
 
-# LOCALIZATION NOTE (firefox_about):
-# link title for http://www.mozilla.com/ru/firefox/about/
-#define firefox_about О нас
+# LOCALIZATION NOTE (icecat_about):
+# link title for http://www.mozilla.com/ru/icecat/about/
+#define icecat_about О нас
 
 #unfilter emptyLines

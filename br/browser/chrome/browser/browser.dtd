@@ -56,7 +56,7 @@ can reach it easily. -->
 <!ENTITY tabCmd.commandkey "t">
 <!-- LOCALIZATION NOTE (openLocationCmd.label): "Open Location" is only
 displayed on OS X, and only on windows that aren't main browser windows, or
-when there are no windows but Firefox is still running. -->
+when there are no windows but IceCat is still running. -->
 <!ENTITY openLocationCmd.label "Digeriñ ul lec'hiadur…">
 <!ENTITY openFileCmd.label "Digeriñ ur restr…">
 <!ENTITY openFileCmd.accesskey "D">
@@ -420,8 +420,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Gweredekait goubredañ an ivinelloù evit gwelout ur roll ivinelloù eus ho trevnadoù all.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
      when Sync is configured but this appears to be the only device attached to
-     the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.label "Kennaskit da Firefox adalek ho trevnadoù all evit gwelout o ivinelloù aze.">
+     the account. We also show links to download IceCat for android/ios. -->
+<!ENTITY appMenuRemoteTabs.noclients.label "Kennaskit da IceCat adalek ho trevnadoù all evit gwelout o ivinelloù aze.">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Gwellvezvioù goubredañ">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Kennaskit da welet ur roll ivinelloù eus ho trevnadoù all">
 <!ENTITY appMenuRemoteTabs.signin.label "Kennaskañ da Synx">

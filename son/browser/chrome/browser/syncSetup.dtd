@@ -16,7 +16,7 @@
 <!-- New Account AND Existing Account -->
 
 <!ENTITY server.label               "Feršikaw">
-<!ENTITY serverType.default.label      "Tilasu: Mozilla &syncBrand.fullName.label; ferškaa">
+<!ENTITY serverType.default.label      "Tilasu: GNU &syncBrand.fullName.label; ferškaa">
 <!ENTITY serverType.custom2.label   "Goy nda alaada feršikaw…">
 <!ENTITY signIn.account2.label      "Kontu">
 <!ENTITY signIn.account2.accesskey  "o">

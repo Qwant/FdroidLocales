@@ -15,19 +15,19 @@
 #define bookmarks_title モバイル
 
 # LOCALIZATION NOTE (bookmarks_aboutBrowser):
-# link title for about:fennec
-#define bookmarks_aboutBrowser Firefox について
+# link title for about:icecatmobile
+#define bookmarks_aboutBrowser IceCat について
 
 # LOCALIZATION NOTE (bookmarks_addons):
-# link title for https://addons.mozilla.org/en-US/mobile
-#define bookmarks_addons Firefox をアドオンでカスタマイズ
+# link title for https://directory.fsf.org/wiki/GNU_IceCat
+#define bookmarks_addons IceCat をアドオンでカスタマイズ
 
 # LOCALIZATION NOTE (bookmarks_support):
-# link title for https://support.mozilla.org/mobile
-#define bookmarks_support Firefox サポート
+# link title for https://libreplanet.org/wiki/Group:IceCat/icecat-help
+#define bookmarks_support IceCat サポート
 
 # LOCALIZATION NOTE (bookmarks_marketplace):
-# link title for https://marketplace.firefox.com
-#define bookmarks_marketplace Firefox マーケットプレイス
+# link title for https://f-droid.org/repository/browse
+#define bookmarks_marketplace IceCat マーケットプレイス
 
 #unfilter emptyLines

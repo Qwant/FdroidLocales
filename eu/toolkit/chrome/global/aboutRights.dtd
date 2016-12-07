@@ -19,7 +19,7 @@
 <!ENTITY rights.intro-point1b "Mozilla Public License">
 <!ENTITY rights.intro-point1c " lizentziaren baldintzapean. Honek esan nahi du, &brandShortName; erabili, kopiatu eta besteei bana diezaiokezula. Era berean, &brandShortName;(r)en iturburu-kodea alda dezakezu zure beharrizanetara moldatzeko. Egindako aldaketak banatzeko eskubidea ematen dizu Mozilla Public License-k.">
 
-<!ENTITY rights.intro-point2-a "Ez zaizu ematen Mozilla Fundazioaren edo edozein alderdiren erregistratutako marken eskubiderik ezta hauen gaineko lizentziarik ere, Firefox izena edo logoak barne. Erregistratutako marken gaineko informazio gehiago ">
+<!ENTITY rights.intro-point2-a "Ez zaizu ematen GNU Fundazioaren edo edozein alderdiren erregistratutako marken eskubiderik ezta hauen gaineko lizentziarik ere, IceCat izena edo logoak barne. Erregistratutako marken gaineko informazio gehiago ">
 <!ENTITY rights.intro-point2-b "hemen">
 <!ENTITY rights.intro-point2-c " topa daiteke.">
 <!-- point 2.5 text for official branded builds -->

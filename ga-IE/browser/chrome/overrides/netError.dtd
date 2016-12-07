@@ -112,7 +112,7 @@ go bhfuil cead ag &brandShortName; an Gréasán a rochtain.</li>
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <button> tags. It uses strings already defined above. The
 button is included here (instead of netError.xhtml) because it exposes
-functionality specific to firefox. -->
+functionality specific to icecat. -->
 
 
 <!ENTITY securityOverride.warningContent "<p>Ná cruthaigh eisceacht mura bhfuil muinín agat as do cheangal Idirlín nó mura fheiceann tú rabhadh maidir leis an bhfreastalaí seo go rialta.</p> 
@@ -120,7 +120,7 @@ functionality specific to firefox. -->
 <button id='getMeOutOfHereButton'>&securityOverride.getMeOutOfHereButton;</button> 
 <button id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>">
 
-<!ENTITY errorReporting.automatic2 "Tuairiscigh earráidí cosúil leis seo chun cuidiú le Mozilla suíomhanna mailíseacha a aithint agus a chosc">
+<!ENTITY errorReporting.automatic2 "Tuairiscigh earráidí cosúil leis seo chun cuidiú le GNU suíomhanna mailíseacha a aithint agus a chosc">
 <!ENTITY errorReporting.learnMore "Tuilleadh eolais…">
 <!ENTITY errorReporting.sending "Tuairisc á seoladh">
 <!ENTITY errorReporting.sent "Seoladh an tuairisc">

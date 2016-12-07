@@ -100,17 +100,17 @@
 <!ENTITY pref_category_general "பொதுவான">
 
 <!-- Localization note (pref_category_language) : This is the preferences
-     section in which the user picks the locale in which to display Firefox
+     section in which the user picks the locale in which to display IceCat
      UI. The locale includes both language and region concepts. -->
 <!ENTITY pref_category_language_summary "உங்கள் உலாவியின் மொழியை மாற்று">
 <!ENTITY pref_browser_locale "உலாவி மொழி">
 <!-- Localization note (locale_system_default) : This string indicates that
-     Firefox will use the locale currently selected in Android's settings
+     IceCat will use the locale currently selected in Android's settings
      to display browser chrome. -->
 
 <!ENTITY locale_system_default "கருவி முன்னிருப்பு">
 <!-- Localization note (overlay_share_label) : This is the label that appears
-     in Android's intent chooser when sending a link to Firefox to bookmark,
+     in Android's intent chooser when sending a link to IceCat to bookmark,
      send to another device, or add to Reading List. -->
 
 <!ENTITY overlay_share_label "&brandShortName; இல் சேர்">
@@ -134,7 +134,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "Firefox கணக்குடன் இணைக்கப்பட்ட சாதனம் ஏதுமில்லை">
+<!ENTITY overlay_no_synced_devices "IceCat கணக்குடன் இணைக்கப்பட்ட சாதனம் ஏதுமில்லை">
 
 <!ENTITY pref_category_search3 "தேடு">
 <!ENTITY pref_category_search_summary "தேடு பொறி வழங்குநர்களை தனிப்பயனாக்கு">
@@ -187,7 +187,7 @@
 
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
-     button for this string, they will use the built-in default Firefox homepage (about:home). -->
+     button for this string, they will use the built-in default IceCat homepage (about:home). -->
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
      button for this string, a text field will appear below the radio button and allow the
@@ -304,7 +304,7 @@ size. -->
 
 
 
-<!ENTITY pref_about_firefox "&brandShortName;வைப் பற்றி">
+<!ENTITY pref_about_icecat "&brandShortName;வைப் பற்றி">
 <!ENTITY pref_vendor_faqs "அடிக்கடி கேட்கப்படும் கேள்விகளும் பதில்களும்">
 <!ENTITY pref_vendor_feedback "கருத்து தெரிவிக்கவும்">
 
@@ -662,7 +662,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
      include "42 minutes ago", "4 days ago", "last week", etc. The subject of
-     "Last synced" is one of the user's other Sync clients, typically Firefox on
+     "Last synced" is one of the user's other Sync clients, typically IceCat on
      their desktop or laptop.-->
 
 <!ENTITY remote_tabs_last_synced "கடைசி ஒத்தசைவு: &formatS;">
@@ -689,7 +689,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
      above a QR reader that is actively scanning for QR codes.  The expected QR
      code has already been displayed by the client trying to connect (such as
-     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     desktop IceCat via WebIDE), so you just need to aim this device at the QR
      code. -->
 <!-- Restrictable features -->
 <!-- Localization note: These are features the device owner (e.g. parent) can enable or disable for
@@ -706,8 +706,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 
 <!-- Default Bookmarks titles-->
-<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
-<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:icecatmobile -->
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://directory.fsf.org/wiki/GNU_IceCat -->
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->

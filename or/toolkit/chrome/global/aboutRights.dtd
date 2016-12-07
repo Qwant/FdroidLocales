@@ -15,11 +15,11 @@
      Also note the leading/trailing whitespace in strings here, which is
      deliberate for formatting around the embedded links. -->
 
-<!ENTITY rights.intro-point1a "&brandShortName; ଟି Mozilla ସର୍ବସାଧାରଣ ଅନୁମତିପତ୍ର ନିତୀ ଅନ୍ତର୍ଗତରେ ଆପଣଙ୍କ ପାଇଁ">
+<!ENTITY rights.intro-point1a "&brandShortName; ଟି GNU ସର୍ବସାଧାରଣ ଅନୁମତିପତ୍ର ନିତୀ ଅନ୍ତର୍ଗତରେ ଆପଣଙ୍କ ପାଇଁ">
 <!ENTITY rights.intro-point1b "ଉପଲବ୍ଧ ହୋଇଥାଏ">
-<!ENTITY rights.intro-point1c "। ଏହା ଅର୍ଥ ଆପଣ  &brandShortName; କୁ ଅନ୍ୟମାନଙ୍କ ପାଇଁ ବ୍ୟବହାର କରିପାରିବେ, ନକଲ କରିପାରିବେ ଏବଂ ବଣ୍ଟନ କରିପାରିବେ। ଆପଣ &brandShortName; ର ଉତ୍ସ ସଂକେତକୁ ମଧ୍ଯ ଆପଣଙ୍କ ଆବଶ୍ୟକତା ଅନୁସାରେ ପରିବର୍ତ୍ତନ କରିପାରିବେ। Mozilla ସର୍ବସାଧାରଣ ଅନୁମତିପତ୍ର ଆପଣଙ୍କୁ ନିଜର ପରିବର୍ତ୍ତିତ ସଂସ୍କରଣକୁ ବଣ୍ଟନ କରିବାର ଅଧିକାର ମଧ୍ଯ ପ୍ରଦାନ କରିଥାଏ।">
+<!ENTITY rights.intro-point1c "। ଏହା ଅର୍ଥ ଆପଣ  &brandShortName; କୁ ଅନ୍ୟମାନଙ୍କ ପାଇଁ ବ୍ୟବହାର କରିପାରିବେ, ନକଲ କରିପାରିବେ ଏବଂ ବଣ୍ଟନ କରିପାରିବେ। ଆପଣ &brandShortName; ର ଉତ୍ସ ସଂକେତକୁ ମଧ୍ଯ ଆପଣଙ୍କ ଆବଶ୍ୟକତା ଅନୁସାରେ ପରିବର୍ତ୍ତନ କରିପାରିବେ। GNU ସର୍ବସାଧାରଣ ଅନୁମତିପତ୍ର ଆପଣଙ୍କୁ ନିଜର ପରିବର୍ତ୍ତିତ ସଂସ୍କରଣକୁ ବଣ୍ଟନ କରିବାର ଅଧିକାର ମଧ୍ଯ ପ୍ରଦାନ କରିଥାଏ।">
 
-<!ENTITY rights.intro-point2-a "ଆପଣଙ୍କୁ Mozilla ଅନୁଷ୍ଠାନ କିମ୍ବା ଅନ୍ୟ କୌଣସି ପକ୍ଷ ତରଫରୁ କୌଣସି ବ୍ୟବସାୟୀକ ଚିହ୍ନ ଅଧିକାର କିମ୍ବା ଅନୁମତି ପ୍ରଦାନ କରାଯାଇନଥାଏ , Firefox ନାମ କିମ୍ବା ପ୍ରତୀକକୁ ଅନ୍ତର୍ଭୁକ୍ତ କରି। ବ୍ୟବସାୟୀକ ଚିହ୍ନ ବିଷୟରେ ଅତିରିକ୍ତ ସୂଚନା  ">
+<!ENTITY rights.intro-point2-a "ଆପଣଙ୍କୁ GNU ଅନୁଷ୍ଠାନ କିମ୍ବା ଅନ୍ୟ କୌଣସି ପକ୍ଷ ତରଫରୁ କୌଣସି ବ୍ୟବସାୟୀକ ଚିହ୍ନ ଅଧିକାର କିମ୍ବା ଅନୁମତି ପ୍ରଦାନ କରାଯାଇନଥାଏ , IceCat ନାମ କିମ୍ବା ପ୍ରତୀକକୁ ଅନ୍ତର୍ଭୁକ୍ତ କରି। ବ୍ୟବସାୟୀକ ଚିହ୍ନ ବିଷୟରେ ଅତିରିକ୍ତ ସୂଚନା  ">
 <!ENTITY rights.intro-point2-b "ଏଠାରେ ମିଳି ପାରିବ">
 <!ENTITY rights.intro-point2-c ".">
 <!-- point 2.5 text for official branded builds -->

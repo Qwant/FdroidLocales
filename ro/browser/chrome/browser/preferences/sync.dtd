@@ -48,7 +48,7 @@
 
 <!ENTITY prefs.tosLink.label        "Termenii serviciului">
 <!ENTITY prefs.ppLink.label         "Politică de confidențialitate">
-<!-- Firefox Accounts stuff -->
+<!-- IceCat Accounts stuff -->
 
 <!ENTITY fxaPrivacyNotice.link.label "Politica de confidențialitate">
 <!ENTITY determiningAcctStatus.label     "Se determină starea contului tău…">
@@ -93,16 +93,16 @@ both, to better adapt this sentence to their language.
 <!-- LOCALIZATION NOTE (mobilePromo2.*): the following strings will be used to
      create a single sentence with active links.
      The resulting sentence in English is: "Sync to your mobile device.
-     Download Firefox for Android or Firefox for iOS." -->
+     Download IceCat for Android or IceCat for iOS." -->
 
 
 <!ENTITY mobilePromo2.start            "Sincronizează-te cu dispozitivul mobil. Descarcă ">
-<!-- LOCALIZATION NOTE (mobilePromo2.androidLink): This is a link title that links to https://www.mozilla.org/firefox/android/ -->
-<!ENTITY mobilePromo2.androidLink      "Firefox pentru Android">
+<!-- LOCALIZATION NOTE (mobilePromo2.androidLink): This is a link title that links to https://www.mozilla.org/icecat/android/ -->
+<!ENTITY mobilePromo2.androidLink      "IceCat pentru Android">
 <!-- LOCALIZATION NOTE (mobilePromo2.iOSBefore): This is text displayed between mobilePromo2.androidLink and mobilePromo2.iosLink -->
 
 <!ENTITY mobilePromo2.iOSBefore         " sau ">
-<!-- LOCALIZATION NOTE (mobilePromo2.iOSLink): This is a link title that links to https://www.mozilla.org/firefox/ios/ -->
-<!ENTITY mobilePromo2.iOSLink          "Firefox pentru iOS">
+<!-- LOCALIZATION NOTE (mobilePromo2.iOSLink): This is a link title that links to https://www.mozilla.org/icecat/ios/ -->
+<!ENTITY mobilePromo2.iOSLink          "IceCat pentru iOS">
 
 <!ENTITY mobilePromo2.end              ".">

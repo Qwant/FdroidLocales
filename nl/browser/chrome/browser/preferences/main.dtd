@@ -38,8 +38,8 @@
 <!ENTITY isDefault.label                  "&brandShortName; is momenteel uw standaardbrowser">
 <!ENTITY isNotDefault.label               "&brandShortName; is niet uw standaardbrowser">
 
-<!ENTITY separateProfileMode.label        "Tegelijkertijd uitvoeren van &brandShortName; en Firefox toestaan">
-<!ENTITY useFirefoxSync.label             "Tip: dit gebruikt aparte profielen. Gebruik Sync om gegevens ertussen te delen.">
+<!ENTITY separateProfileMode.label        "Tegelijkertijd uitvoeren van &brandShortName; en IceCat toestaan">
+<!ENTITY useIceCatSync.label             "Tip: dit gebruikt aparte profielen. Gebruik Sync om gegevens ertussen te delen.">
 <!ENTITY getStarted.label                 "Sync gebruiken…">
 
 <!ENTITY e10sEnabled.label                "Multiprocess in &brandShortName; inschakelen">

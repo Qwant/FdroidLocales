@@ -16,7 +16,7 @@
 <!-- New Account AND Existing Account -->
 
 <!ENTITY server.label               "Gweinydd">
-<!ENTITY serverType.default.label      "Rhagosodedig: Gweinydd Mozilla &syncBrand.fullName.label;">
+<!ENTITY serverType.default.label      "Rhagosodedig: Gweinydd GNU &syncBrand.fullName.label;">
 <!ENTITY serverType.custom2.label   "Defnyddio gweinydd cyfaddas…">
 <!ENTITY signIn.account2.label      "Cyfrif">
 <!ENTITY signIn.account2.accesskey  "C">

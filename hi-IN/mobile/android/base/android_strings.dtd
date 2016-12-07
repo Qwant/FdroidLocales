@@ -104,17 +104,17 @@
 
 
 <!-- Localization note (pref_category_language) : This is the preferences
-     section in which the user picks the locale in which to display Firefox
+     section in which the user picks the locale in which to display IceCat
      UI. The locale includes both language and region concepts. -->
 <!ENTITY pref_category_language_summary "अपने ब्राउज़र की भाषा बदलें">
 <!ENTITY pref_browser_locale "ब्राउज़र की भाषा  ">
 <!-- Localization note (locale_system_default) : This string indicates that
-     Firefox will use the locale currently selected in Android's settings
+     IceCat will use the locale currently selected in Android's settings
      to display browser chrome. -->
 
 <!ENTITY locale_system_default "सिस्टम डिफ़ॉल्ट">
 <!-- Localization note (overlay_share_label) : This is the label that appears
-     in Android's intent chooser when sending a link to Firefox to bookmark,
+     in Android's intent chooser when sending a link to IceCat to bookmark,
      send to another device, or add to Reading List. -->
 
 <!ENTITY overlay_share_label "&brandShortName; पर जोडें">
@@ -191,7 +191,7 @@
 <!ENTITY home_homepage_title "होमपेज व्यवस्थित करें">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
-     button for this string, they will use the built-in default Firefox homepage (about:home). -->
+     button for this string, they will use the built-in default IceCat homepage (about:home). -->
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
      button for this string, a text field will appear below the radio button and allow the
@@ -312,7 +312,7 @@ size. -->
 <!ENTITY pref_private_data_syncedTabs "सिंक किया टैब">
 
 
-<!ENTITY pref_about_firefox "&brandShortName; परिचय">
+<!ENTITY pref_about_icecat "&brandShortName; परिचय">
 <!ENTITY pref_vendor_faqs "आम सवाल">
 <!ENTITY pref_vendor_feedback "प्रतिक्रिया दें">
 
@@ -532,11 +532,11 @@ size. -->
 <!ENTITY home_remote_tabs_title "सिंक किया टैब">
 <!ENTITY home_remote_tabs_empty "अन्य उपकरणों से आपके टैब यहाँ दिखाई देंगी.">
 <!ENTITY home_remote_tabs_unable_to_connect "कनेक्ट करने में असमर्थ">
-<!ENTITY home_remote_tabs_need_to_sign_in "अपने Firefox खाता जोड़ने और समन्वयन जारी रखने के लिए साइन इन करें.">
+<!ENTITY home_remote_tabs_need_to_sign_in "अपने IceCat खाता जोड़ने और समन्वयन जारी रखने के लिए साइन इन करें.">
 <!ENTITY home_remote_tabs_need_to_finish_migrating "आपका नया फ़ायरफ़ॉक्स खाता तैयार है!">
 
 <!ENTITY home_remote_tabs_trouble_verifying "खाते की पुष्टि करने में मुसीबत?">
-<!ENTITY home_remote_tabs_need_to_verify "समन्वयन शुरू करने के लिए अपने Firefox खाता सत्यापित करें.">
+<!ENTITY home_remote_tabs_need_to_verify "समन्वयन शुरू करने के लिए अपने IceCat खाता सत्यापित करें.">
 
 <!ENTITY home_remote_tabs_one_hidden_device "1 छिपा हुआ उपकरण">
 <!-- Localization note (home_remote_tabs_many_hidden_devices) : The
@@ -677,7 +677,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
      include "42 minutes ago", "4 days ago", "last week", etc. The subject of
-     "Last synced" is one of the user's other Sync clients, typically Firefox on
+     "Last synced" is one of the user's other Sync clients, typically IceCat on
      their desktop or laptop.-->
 
 <!ENTITY remote_tabs_last_synced "अाखरी सिंक: &formatS;">
@@ -705,7 +705,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
      above a QR reader that is actively scanning for QR codes.  The expected QR
      code has already been displayed by the client trying to connect (such as
-     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     desktop IceCat via WebIDE), so you just need to aim this device at the QR
      code. -->
 
 <!ENTITY devtools_auth_scan_header "आपके अन्य डिवाइस पर प्रदर्शित QR कोड के लिए स्कैन कर रहे हैं">
@@ -724,8 +724,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 
 
 <!-- Default Bookmarks titles-->
-<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
-<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:icecatmobile -->
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://directory.fsf.org/wiki/GNU_IceCat -->
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->

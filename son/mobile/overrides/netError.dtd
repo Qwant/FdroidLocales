@@ -157,7 +157,7 @@ waati-waati haya, adiši war ga ceeci taaga nd'a too kayna.</li>
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <xul:button> tags.  The only language content is the label= field,
 which uses strings already defined above. The button is included here (instead of
-netError.xhtml) because it exposes functionality specific to firefox. -->
+netError.xhtml) because it exposes functionality specific to icecat. -->
 
 
 <!ENTITY securityOverride.warningContent "<p>War ši hima ka hasaraw tonton nda war ga goy nda Interneti ciyari kaŋ ši nda naanay gumo wala war mana doona ka dii yaamaroo woo feršikaa woo se.</p> 

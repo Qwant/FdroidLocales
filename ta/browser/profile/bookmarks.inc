@@ -25,55 +25,55 @@
 # LOCALIZATION NOTE (getting_started):
 
 
-# link title for https://www.mozilla.org/en-US/firefox/central/
+# link title for https://www.mozilla.org/en-US/icecat/central/
 
 
 #define getting_started துவங்குதல்
 
 
-# LOCALIZATION NOTE (firefox_heading):
+# LOCALIZATION NOTE (icecat_heading):
 
 
-# Firefox links folder name
+# IceCat links folder name
 
 
-#define firefox_heading மோசில்லா பயர்பாக்ஸ்
+#define icecat_heading மோசில்லா பயர்பாக்ஸ்
 
 
-# LOCALIZATION NOTE (firefox_help):
+# LOCALIZATION NOTE (icecat_help):
 
 
-# link title for https://www.mozilla.org/en-US/firefox/help/
+# link title for https://www.mozilla.org/en-US/icecat/help/
 
 
-#define firefox_help உதவி மற்றும் பயிற்சிகள்
+#define icecat_help உதவி மற்றும் பயிற்சிகள்
 
 
-# LOCALIZATION NOTE (firefox_customize):
+# LOCALIZATION NOTE (icecat_customize):
 
 
-# link title for https://www.mozilla.org/en-US/firefox/customize/
+# link title for https://www.mozilla.org/en-US/icecat/customize/
 
 
-#define firefox_customize firefox தனிப்பயனாக்கம்\u0020
+#define icecat_customize icecat தனிப்பயனாக்கம்\u0020
 
 
-# LOCALIZATION NOTE (firefox_community):
+# LOCALIZATION NOTE (firefox.community):
 
 
 # link title for https://www.mozilla.org/en-US/contribute/
 
 
-#define firefox_community எங்களுடன் ஈடுபட
+#define firefox.community எங்களுடன் ஈடுபட
 
 
-# LOCALIZATION NOTE (firefox_about):
+# LOCALIZATION NOTE (icecat_about):
 
 
 # link title for https://www.mozilla.org/en-US/about/
 
 
-#define firefox_about எங்களை பற்றி
+#define icecat_about எங்களை பற்றி
 
 
 #unfilter emptyLines

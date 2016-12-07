@@ -187,7 +187,7 @@ ja sa võid hiljem uuesti proovida.</li>
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <button> tags. It uses strings already defined above. The
 button is included here (instead of netError.xhtml) because it exposes
-functionality specific to firefox. -->
+functionality specific to icecat. -->
 
 <!ENTITY securityOverride.warningContent       "
 <p>Erandit ei tohiks lisada, kui kasutad internetiühendust, mida sa täielikult ei usalda, või kui sa pole harjunud nägema hoiatusi sellelt serverilt.</p>

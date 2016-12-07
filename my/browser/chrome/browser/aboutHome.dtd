@@ -11,7 +11,7 @@
 
 <!ENTITY abouthome.pageTitle "&brandFullName; ကနဦးစာမျက်နှာ">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):
-     text in <a/> will be linked to the Firefox features page on mozilla.com
+     text in <a/> will be linked to the IceCat features page on mozilla.com
 -->
 
 <!ENTITY abouthome.defaultSnippet1.v1 "မီးမြေခွေးအားရွေးချယ်ခြင်းအတွက်ကျေးဇူးတင်ပါသည်!သင်၏ဘရောင်ဆာနှင့်အတူနောက်ဆုံးပေါ် လုပ်ဆောင်ချက်များကို ကြည့်ရှူရန် <a>latest features</a>ကိုဆက်လက်လေ့လာလိုက်ပါ။">
@@ -33,7 +33,7 @@
 <!ENTITY abouthome.addonsButton.label    "ပေါင်းထည့်ဆော့ဝဲများ">
 <!-- LOCALIZATION NOTE (abouthome.appsButton2.label): This string should be consistent with
      the Apps menu item in the Tools menu (webapps.label in browser.dtd) and the Apps toolbar button in
-     Firefox's customization palette (web-apps-button.label in customizableWidgets.properties) -->
+     IceCat's customization palette (web-apps-button.label in customizableWidgets.properties) -->
 <!ENTITY abouthome.appsButton2.label     "အက်ပလီကေးရှင်းများ">
 <!ENTITY abouthome.downloadsButton.label "ဆွဲချစရာများ">
 <!ENTITY abouthome.syncButton.label      "&syncBrand.shortName.label;">

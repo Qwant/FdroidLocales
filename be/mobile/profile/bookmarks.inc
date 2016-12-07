@@ -15,19 +15,19 @@
 #define bookmarks_title Мабільны
 
 # LOCALIZATION NOTE (bookmarks_aboutBrowser):
-# link title for about:fennec
-#define bookmarks_aboutBrowser Firefox: Пра ваш азіральнік
+# link title for about:icecatmobile
+#define bookmarks_aboutBrowser IceCat: Пра ваш азіральнік
 
 # LOCALIZATION NOTE (bookmarks_addons):
-# link title for https://addons.mozilla.org/en-US/mobile
-#define bookmarks_addons Firefox: Уладкаваць дадаткамі
+# link title for https://directory.fsf.org/wiki/GNU_IceCat
+#define bookmarks_addons IceCat: Уладкаваць дадаткамі
 
 # LOCALIZATION NOTE (bookmarks_support):
 # link title for https://support.mozilla.com/mobile
-#define bookmarks_support Firefox: Падтрымка
+#define bookmarks_support IceCat: Падтрымка
 
 # LOCALIZATION NOTE (bookmarks_marketplace):
-# link title for https://marketplace.firefox.com
-#define bookmarks_marketplace Firefox: Рынак
+# link title for https://f-droid.org/repository/browse
+#define bookmarks_marketplace IceCat: Рынак
 
 #unfilter emptyLines

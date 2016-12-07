@@ -5,7 +5,7 @@
 <!-- The page shown when not logged in... -->
 <!ENTITY setupButton.label          "&syncBrand.fullName.label; をセットアップ">
 <!ENTITY setupButton.accesskey      "S">
-<!ENTITY weaveDesc.label            "&syncBrand.fullName.label; を使えば、Firefox の履歴、ブックマーク、パスワード、開いているタブに、様々な端末からアクセスできます。">
+<!ENTITY weaveDesc.label            "&syncBrand.fullName.label; を使えば、IceCat の履歴、ブックマーク、パスワード、開いているタブに、様々な端末からアクセスできます。">
 
 <!-- The page shown when logged in... -->
 
@@ -49,7 +49,7 @@
 <!ENTITY prefs.tosLink.label		"利用規約">
 <!ENTITY prefs.ppLink.label		"プライバシーポリシー">
 
-<!-- Firefox Accounts stuff -->
+<!-- IceCat Accounts stuff -->
 <!ENTITY fxaPrivacyNotice.link.label	"プライバシーポリシーを表示">
 <!ENTITY determiningAcctStatus.label	"アカウントの状態を確認しています...">
 
@@ -94,15 +94,15 @@ both, to better adapt this sentence to their language.
 <!-- LOCALIZATION NOTE (mobilePromo2.*): the following strings will be used to
      create a single sentence with active links.
      The resulting sentence in English is: "Sync to your mobile device.
-     Download Firefox for Android or Firefox for iOS." -->
+     Download IceCat for Android or IceCat for iOS." -->
 
 <!ENTITY mobilePromo2.start            "">
-<!-- LOCALIZATION NOTE (mobilePromo2.androidLink): This is a link title that links to https://www.mozilla.org/firefox/android/ -->
-<!ENTITY mobilePromo2.androidLink      "Firefox for Android">
+<!-- LOCALIZATION NOTE (mobilePromo2.androidLink): This is a link title that links to https://www.mozilla.org/icecat/android/ -->
+<!ENTITY mobilePromo2.androidLink      "IceCat for Android">
 
 <!-- LOCALIZATION NOTE (mobilePromo2.iOSBefore): This is text displayed between mobilePromo2.androidLink and mobilePromo2.iosLink -->
 <!ENTITY mobilePromo2.iOSBefore         " または ">
-<!-- LOCALIZATION NOTE (mobilePromo2.iOSLink): This is a link title that links to https://www.mozilla.org/firefox/ios/ -->
-<!ENTITY mobilePromo2.iOSLink          "Firefox for iOS">
+<!-- LOCALIZATION NOTE (mobilePromo2.iOSLink): This is a link title that links to https://www.mozilla.org/icecat/ios/ -->
+<!ENTITY mobilePromo2.iOSLink          "IceCat for iOS">
 
 <!ENTITY mobilePromo2.end              "をダウンロードしてモバイル端末と同期しましょう。">

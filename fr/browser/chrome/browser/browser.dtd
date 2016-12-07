@@ -58,7 +58,7 @@ can reach it easily. -->
 <!ENTITY tabCmd.commandkey "t">
 <!-- LOCALIZATION NOTE (openLocationCmd.label): "Open Location" is only
 displayed on OS X, and only on windows that aren't main browser windows, or
-when there are no windows but Firefox is still running. -->
+when there are no windows but IceCat is still running. -->
 <!ENTITY openLocationCmd.label "Ouvrir l'emplacement…">
 <!ENTITY openFileCmd.label "Ouvrir un fichier…">
 <!ENTITY openFileCmd.accesskey "O">
@@ -421,8 +421,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Activez la synchronisation des onglets pour afficher la liste des onglets de vos autres appareils.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
      when Sync is configured but this appears to be the only device attached to
-     the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.label "Connectez-vous via Firefox depuis vos autres appareils pour afficher leurs onglets ici.">
+     the account. We also show links to download IceCat for android/ios. -->
+<!ENTITY appMenuRemoteTabs.noclients.label "Connectez-vous via IceCat depuis vos autres appareils pour afficher leurs onglets ici.">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Préférences de synchronisation">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Connectez-vous pour afficher la liste des onglets de vos autres appareils.">
 <!ENTITY appMenuRemoteTabs.signin.label "Se connecter à Sync">

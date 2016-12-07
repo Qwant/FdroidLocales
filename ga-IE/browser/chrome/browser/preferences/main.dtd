@@ -38,8 +38,8 @@
 <!ENTITY isDefault.label                  "Is é &brandShortName; do bhrabhsálaí réamhshocraithe faoi láthair">
 <!ENTITY isNotDefault.label               "Ní hé &brandShortName; do bhrabhsálaí réamhshocraithe faoi láthair">
 
-<!ENTITY separateProfileMode.label        "Lig do &brandShortName; agus Firefox a bheith ar siúl san am céanna">
-<!ENTITY useFirefoxSync.label             "Leid: Úsáideann sé seo dhá phróifíl ar leith. Úsáid Sync le sonraí a chomhroinnt eatarthu.">
+<!ENTITY separateProfileMode.label        "Lig do &brandShortName; agus IceCat a bheith ar siúl san am céanna">
+<!ENTITY useIceCatSync.label             "Leid: Úsáideann sé seo dhá phróifíl ar leith. Úsáid Sync le sonraí a chomhroinnt eatarthu.">
 <!ENTITY getStarted.label                 "Tosaigh le Sync…">
 
 <!ENTITY e10sEnabled.label                "Cumasaigh &brandShortName; ilphróisis">

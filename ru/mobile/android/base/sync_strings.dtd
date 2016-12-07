@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY syncBrand.fullName.label "Firefox Sync">
+<!ENTITY syncBrand.fullName.label "IceCat Sync">
 <!ENTITY syncBrand.shortName.label "Синхронизация">
 <!ENTITY sync.app.name.label "&syncBrand.fullName.label;">
 <!ENTITY sync.title.connect.label "Соединение с Синхронизацией">
@@ -10,7 +10,7 @@
 <!ENTITY sync.title.pair.label "Соединиться с устройством">
 <!ENTITY sync.subtitle.connect.label "Для активации вашего нового устройства выберите на устройстве «Настроить Синхронизацию».">
 <!ENTITY sync.subtitle.header2.label "Введите этот код на другом вашем устройстве">
-<!ENTITY sync.subtitle.connectlocation2.label "Выберите “&sync.title.pair.label;” в разделе Синхронизация настроек Firefox на другом вашем устройстве.">
+<!ENTITY sync.subtitle.connectlocation2.label "Выберите “&sync.title.pair.label;” в разделе Синхронизация настроек IceCat на другом вашем устройстве.">
 <!ENTITY sync.subtitle.pair.label "Для активации выберите «Соединиться с устройством» на другом вашем устройстве.">
 <!ENTITY sync.pin.default.label "...\n...\n...\n">
 <!ENTITY sync.pin.oneline.label "...">
@@ -30,7 +30,7 @@
 <!ENTITY sync.button.manual.label "Настройка вручную">
 <!ENTITY sync.subtitle.nointernet.label "Нет соединения с Интернетом.">
 <!ENTITY sync.subtitle.failaccount.label "Не удалось создать учётную запись на вашем устройстве.">
-<!ENTITY sync.subtitle.failmultiple.label "У вас установлено более одного Firefox? В настоящее время, &syncBrand.fullName.label; поддерживает работу только с одной установкой Firefox. Чтобы использовать Синхронизацию, пожалуйста, удалите другие установки.">
+<!ENTITY sync.subtitle.failmultiple.label "У вас установлено более одного IceCat? В настоящее время, &syncBrand.fullName.label; поддерживает работу только с одной установкой IceCat. Чтобы использовать Синхронизацию, пожалуйста, удалите другие установки.">
 <!ENTITY sync.title.success.label "Настройка завершена">
 <!ENTITY sync.subtitle.success.label1 "Ваши данные сейчас загружаются в фоновом режиме. Вы можете перейти в Параметры для управления вашей учётной записью, или начать сёрфинг в &brandShortName;.">
 <!ENTITY sync.settings.label "Параметры">
@@ -72,7 +72,7 @@
 <!ENTITY sync.text.redirect.to.set.up.sync.label "Настройка &syncBrand.fullName.label; на вашем устройстве для отправки вкладок на другие устройства.">
 <!ENTITY sync.text.tab.sent.label "Ваша вкладка была отправлена!">
 <!ENTITY sync.text.tab.not.sent.label "При отправке вашей вкладки возникла проблема.">
-<!ENTITY fxaccount_full_label "Учётные записи Firefox">
+<!ENTITY fxaccount_full_label "Учётные записи IceCat">
 <!ENTITY fxaccount_custom_server_account_title "Используется учётная запись на сервере">
 <!ENTITY fxaccount_custom_server_sync_title "Данные синхронизации хранятся на сервере">
 <!ENTITY fxaccount_email_hint "Эл. почта">
@@ -85,13 +85,13 @@
 <!ENTITY fxaccount_getting_started_welcome_to_sync "Добро пожаловать в Синхронизацию">
 <!ENTITY fxaccount_getting_started_description2 "Войдите для синхронизации ваших вкладок, закладок, логинов и многого другого.">
 <!ENTITY fxaccount_getting_started_get_started "Начать">
-<!ENTITY fxaccount_getting_started_old_firefox "Используете старую версию Синхронизации?">
-<!ENTITY fxaccount_create_account_header2 "Создать Учётную запись Firefox">
+<!ENTITY fxaccount_getting_started_old_icecat "Используете старую версию Синхронизации?">
+<!ENTITY fxaccount_create_account_header2 "Создать Учётную запись IceCat">
 <!ENTITY fxaccount_create_account_password_length_restriction "Должен быть не короче 8 символов">
 <!ENTITY fxaccount_create_account_day_of_birth "День">
 <!ENTITY fxaccount_create_account_month_of_birth "Месяц">
 <!ENTITY fxaccount_create_account_year_of_birth "Год рождения">
-<!ENTITY fxaccount_create_account_policy_text2 "Продолжив, я принимаю &formatS1; и &formatS2; облачных служб Firefox.">
+<!ENTITY fxaccount_create_account_policy_text2 "Продолжив, я принимаю &formatS1; и &formatS2; облачных служб IceCat.">
 <!ENTITY fxaccount_create_account_button "Далее">
 <!ENTITY fxaccount_create_account_choose_what_to_sync "Выбрать, что синхронизировать">
 <!ENTITY fxaccount_create_account_sign_in_instead "Уже есть учетная запись? Войдите">
@@ -123,7 +123,7 @@
 <!ENTITY fxaccount_finish_migrating_header "Войти, чтобы завершить обновление">
 <!ENTITY fxaccount_finish_migrating_button_label "Завершить обновление">
 <!ENTITY fxaccount_finish_migrating_description "При обновлении может передаваться большое количество данных. Лучше всего подключиться к сети Wi-Fi.">
-<!ENTITY fxaccount_status_header2 "Учётная запись Firefox">
+<!ENTITY fxaccount_status_header2 "Учётная запись IceCat">
 <!ENTITY fxaccount_status_signed_in_as "Вошёл как">
 <!ENTITY fxaccount_status_manage_account "Управление аккаунтом">
 <!ENTITY fxaccount_status_auth_server "Сервер учётной записи">
@@ -138,7 +138,7 @@
 <!ENTITY fxaccount_status_needs_upgrade "Чтобы войти, вам нужно обновить &brandShortName;.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled "Синхронизация настроена, но автоматически не запущена. Установите флажок «Автосинхронизация» в меню «Настройки &gt; Использование данных» Android.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled_v21 "Синхронизация настроена, но автоматически не запущена. Установите флажок «Автосинхронизация данных» в меню «Настройки &gt; Аккаунты» Android.">
-<!ENTITY fxaccount_status_needs_finish_migrating "Нажмите, чтобы войти в новую Учётную запись Firefox.">
+<!ENTITY fxaccount_status_needs_finish_migrating "Нажмите, чтобы войти в новую Учётную запись IceCat.">
 <!ENTITY fxaccount_status_bookmarks "Закладки">
 <!ENTITY fxaccount_status_history "История">
 <!ENTITY fxaccount_status_passwords2 "Логины">
@@ -148,14 +148,14 @@
 <!ENTITY fxaccount_status_linkprivacy "Уведомление о приватности">
 <!ENTITY fxaccount_status_more "Подробнее&ellipsis;">
 <!ENTITY fxaccount_remove_account "Отсоединить&ellipsis;">
-<!ENTITY fxaccount_remove_account_dialog_title "Удалить Учётную запись Firefox?">
+<!ENTITY fxaccount_remove_account_dialog_title "Удалить Учётную запись IceCat?">
 <!ENTITY fxaccount_remove_account_dialog_message "&brandShortName; остановит синхронизацию с вашей учётной записью, но не будет удалять ничего из ваших данных веб-сёрфинга на этом устройстве.">
-<!ENTITY fxaccount_remove_account_toast "Учётная запись Firefox &formatS; удалена.">
+<!ENTITY fxaccount_remove_account_toast "Учётная запись IceCat &formatS; удалена.">
 <!ENTITY fxaccount_enable_debug_mode "Включить режим отладки">
-<!ENTITY fxaccount_account_type_label "Firefox">
+<!ENTITY fxaccount_account_type_label "IceCat">
 <!ENTITY fxaccount_options_title "Настройки Синхронизации">
 <!ENTITY fxaccount_options_configure_title "Настройка Синхронизации">
-<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Вам нужно обновить Firefox">
+<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Вам нужно обновить IceCat">
 <!ENTITY fxaccount_remote_error_ATTEMPT_TO_CREATE_AN_ACCOUNT_THAT_ALREADY_EXISTS_2 "Учётная запись уже существует. &formatS1;">
 <!ENTITY fxaccount_remote_error_ATTEMPT_TO_ACCESS_AN_ACCOUNT_THAT_DOES_NOT_EXIST "Неверный адрес эл. почты или пароль">
 <!ENTITY fxaccount_remote_error_INCORRECT_PASSWORD "Неверный адрес эл. почты или пароль">

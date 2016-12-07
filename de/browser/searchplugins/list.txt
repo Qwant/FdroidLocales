@@ -6,3 +6,5 @@ eBay-de
 wikipedia-de
 leo_ende_de
 
+
+duckduckgo

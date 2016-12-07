@@ -38,8 +38,8 @@
 <!ENTITY isDefault.label                  "&brandShortName; ti war tilasu ceecikaa sohõda.">
 <!ENTITY isNotDefault.label               "&brandShortName; manti war tilasu ceecikaa sohõda">
 
-<!ENTITY separateProfileMode.label        "Naŋ &brandShortName; nda Firefox ma dira cere bande">
-<!ENTITY useFirefoxSync.label             "Dabari: Woo ga goy nda alhaali fayanteyaŋ. Goy nda Sync ka bayhayey žemni gamey ra.">
+<!ENTITY separateProfileMode.label        "Naŋ &brandShortName; nda IceCat ma dira cere bande">
+<!ENTITY useIceCatSync.label             "Dabari: Woo ga goy nda alhaali fayanteyaŋ. Goy nda Sync ka bayhayey žemni gamey ra.">
 <!ENTITY getStarted.label                 "Šintin ka goy nda Sync…">
 
 <!ENTITY e10sEnabled.label                "Goy-boobo alhaali tunandi &brandShortName; se">

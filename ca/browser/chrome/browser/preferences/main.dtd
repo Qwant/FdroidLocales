@@ -38,8 +38,8 @@
 <!ENTITY isDefault.label                  "Actualment el &brandShortName; és el navegador per defecte">
 <!ENTITY isNotDefault.label               "El &brandShortName; no és el navegador per defecte">
 
-<!ENTITY separateProfileMode.label        "Permet que el &brandShortName; i el Firefox s'executin alhora">
-<!ENTITY useFirefoxSync.label             "Consell: Aquesta funcionalitat utilitza perfils separats. Utilitzeu el Sync per sincronitzar dades entre ells.">
+<!ENTITY separateProfileMode.label        "Permet que el &brandShortName; i el IceCat s'executin alhora">
+<!ENTITY useIceCatSync.label             "Consell: Aquesta funcionalitat utilitza perfils separats. Utilitzeu el Sync per sincronitzar dades entre ells.">
 <!ENTITY getStarted.label                 "Comenceu a utilitzar el Sync…">
 
 <!ENTITY e10sEnabled.label                "Activa el mode multiprocés del &brandShortName;">

@@ -105,7 +105,7 @@ values from browser.dtd.  -->
   -  boolean preference in about:config, in the options panel. -->
 
 <!ENTITY options.enableRemote.label3    "Galluogi dadfygio pell">
-<!ENTITY options.enableRemote.tooltip   "Bydd cychwyn y dewis hwn yn caniatáu i chi ddefnyddio offer datblygu i ddadfygio enghreifftiau Firefox pell megis Firefox OS">
+<!ENTITY options.enableRemote.tooltip   "Bydd cychwyn y dewis hwn yn caniatáu i chi ddefnyddio offer datblygu i ddadfygio enghreifftiau IceCat pell megis IceCat OS">
 <!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
   -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
   -  boolean preference in about:config, in the options panel. -->
@@ -134,7 +134,7 @@ values from browser.dtd.  -->
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
 
-<!ENTITY options.selectDefaultTools.label     "Offer Datblygu Firefox Rhagosodedig">
+<!ENTITY options.selectDefaultTools.label     "Offer Datblygu IceCat Rhagosodedig">
 <!-- LOCALIZATION NOTE (options.selectAdditionalTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the developer tools
   -  added by add-ons. This heading is hidden when there is no developer tool

@@ -157,7 +157,7 @@ ser temporário, e poderá tentar novamente mais tarde.</li>
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <xul:button> tags.  The only language content is the label= field,
 which uses strings already defined above. The button is included here (instead of
-netError.xhtml) because it exposes functionality specific to firefox. -->
+netError.xhtml) because it exposes functionality specific to icecat. -->
 
 
 <!ENTITY securityOverride.warningContent "<p>Não deve adicionar uma exceção se estiver a utilizar uma ligação à Internet em que não confia plenamente ou se não estiver habituado a ver avisos neste servidor.</p> 

@@ -33,11 +33,11 @@
 
 
 
-# link title for about:fennec
+# link title for about:icecatmobile
 
 
 
-#define bookmarks_aboutBrowser Firefox: Tentang peramban Anda
+#define bookmarks_aboutBrowser IceCat: Tentang peramban Anda
 
 
 
@@ -45,11 +45,11 @@
 
 
 
-# link title for https://addons.mozilla.org/en-US/mobile
+# link title for https://directory.fsf.org/wiki/GNU_IceCat
 
 
 
-#define bookmarks_addons Firefox: Ubahsuai dengan pengaya
+#define bookmarks_addons IceCat: Ubahsuai dengan pengaya
 
 
 
@@ -61,7 +61,7 @@
 
 
 
-#define bookmarks_support Firefox: Layanan Dukungan
+#define bookmarks_support IceCat: Layanan Dukungan
 
 
 
@@ -69,11 +69,11 @@
 
 
 
-# link title for https://marketplace.firefox.com
+# link title for https://f-droid.org/repository/browse
 
 
 
-#define bookmarks_marketplace Firefox Marketplace
+#define bookmarks_marketplace F-droid free software repository
 
 
 

@@ -105,7 +105,7 @@ values from browser.dtd.  -->
   -  checkbox that toggles remote debugging, i.e. devtools.debugger.remote-enabled
   -  boolean preference in about:config, in the options panel. -->
 <!ENTITY options.enableRemote.label3    "リモートデバッガを有効">
-<!ENTITY options.enableRemote.tooltip   "Firefox OS などのリモート Firefox インスタンスを、開発ツールでデバッグできるようになります">
+<!ENTITY options.enableRemote.tooltip   "IceCat OS などのリモート IceCat インスタンスを、開発ツールでデバッグできるようになります">
 
 <!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
   -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
@@ -134,7 +134,7 @@ values from browser.dtd.  -->
 <!-- LOCALIZATION NOTE (options.selectDefaultTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
-<!ENTITY options.selectDefaultTools.label     "標準の Firefox 開発ツール">
+<!ENTITY options.selectDefaultTools.label     "標準の IceCat 開発ツール">
 
 <!-- LOCALIZATION NOTE (options.selectAdditionalTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the developer tools

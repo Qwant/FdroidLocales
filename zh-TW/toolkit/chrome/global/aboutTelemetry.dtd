@@ -6,9 +6,9 @@
 
 <!ENTITY aboutTelemetry.changeDataChoices "變更">
 
-<!ENTITY aboutTelemetry.uploadEnabled "<span>已啟用</span> Firefox 健康檢查報告資料上傳。">
+<!ENTITY aboutTelemetry.uploadEnabled "<span>已啟用</span> IceCat 健康檢查報告資料上傳。">
 
-<!ENTITY aboutTelemetry.uploadDisabled "<span>已停用</span> Firefox 健康檢查報告資料上傳。">
+<!ENTITY aboutTelemetry.uploadDisabled "<span>已停用</span> IceCat 健康檢查報告資料上傳。">
 
 <!ENTITY aboutTelemetry.extendedRecordingEnabled "<span>已啟用</span> Extended Telemetry 紀錄。">
 

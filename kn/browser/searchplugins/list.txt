@@ -4,3 +4,5 @@ bing
 wikipedia-kn
 yahoo-in
 kannadastore
+
+duckduckgo

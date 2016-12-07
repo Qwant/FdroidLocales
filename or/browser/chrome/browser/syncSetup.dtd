@@ -16,7 +16,7 @@
 <!-- New Account AND Existing Account -->
 
 <!ENTITY server.label               "ସର୍ଭର">
-<!ENTITY serverType.default.label      "ପୂର୍ବନିର୍ଦ୍ଧାରିତ: Mozilla &syncBrand.fullName.label; ସର୍ଭର">
+<!ENTITY serverType.default.label      "ପୂର୍ବନିର୍ଦ୍ଧାରିତ: GNU &syncBrand.fullName.label; ସର୍ଭର">
 <!ENTITY serverType.custom2.label   "ଗୋଟିଏ ଇଚ୍ଛାରୂପଣ ସର୍ଭର ବ୍ୟବହାର କରନ୍ତୁ…">
 <!ENTITY signIn.account2.label      "ଖାତା">
 <!ENTITY signIn.account2.accesskey  "A">

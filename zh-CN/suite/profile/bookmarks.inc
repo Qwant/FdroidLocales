@@ -50,7 +50,7 @@
 # link title for http://www.mozilla.org/ (in normal bookmarks)
 
 
-#define mozilla_org_long Mozilla 组织
+#define mozilla_org_long GNU 组织
 
 
 # LOCALIZATION NOTE (mozilla_projects):
@@ -59,7 +59,7 @@
 # link title for http://www.mozilla.org/projects/
 
 
-#define mozilla_projects Mozilla 项目
+#define mozilla_projects GNU 项目
 
 
 # LOCALIZATION NOTE (mozilla_about):
@@ -167,7 +167,7 @@
 # e.g. #define seamonkey_l10n <DT><A HREF="http://www.seamonkey.tlh/">SeaMonkey tlhIngan</a>
 
 
-#define seamonkey_l10n Mozilla China Comminity (Mozest)
+#define seamonkey_l10n GNU China Comminity (Mozest)
 
 
 # LOCALIZATION NOTE (seamonkey_l10n_long):

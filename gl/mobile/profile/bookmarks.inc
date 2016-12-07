@@ -15,19 +15,19 @@
 #define bookmarks_title Móbil
 
 # LOCALIZATION NOTE (bookmarks_aboutBrowser):
-# link title for about:fennec
-#define bookmarks_aboutBrowser Firefox: Sobre o seu navegador
+# link title for about:icecatmobile
+#define bookmarks_aboutBrowser IceCat: Sobre o seu navegador
 
 # LOCALIZATION NOTE (bookmarks_addons):
-# link title for https://addons.mozilla.org/en-US/mobile
-#define bookmarks_addons Firefox: Personalizar con complementos
+# link title for https://directory.fsf.org/wiki/GNU_IceCat
+#define bookmarks_addons IceCat: Personalizar con complementos
 
 # LOCALIZATION NOTE (bookmarks_support):
 # link title for https://mobile.support.mozilla.com
-#define bookmarks_support Firefox: Asistencia
+#define bookmarks_support IceCat: Asistencia
 
 # LOCALIZATION NOTE (bookmarks_marketplace):
-# link title for https://marketplace.firefox.com
-#define bookmarks_marketplace Firefox Marketplace
+# link title for https://f-droid.org/repository/browse
+#define bookmarks_marketplace F-droid free software repository
 
 #unfilter emptyLines

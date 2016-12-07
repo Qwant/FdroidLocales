@@ -38,8 +38,8 @@
 <!ENTITY isDefault.label                  "&brandShortName; šobrīd ir jūsu noklusētais pārlūks">
 <!ENTITY isNotDefault.label               "&brandShortName; šobrīd nav jūsu noklusētais pārlūks">
 
-<!ENTITY separateProfileMode.label        "Ļaut &brandShortName; un Firefox darboties vienlaicīgi">
-<!ENTITY useFirefoxSync.label             "Padoms: Šis izmanto atsevišķu profilu. Izmantojiet sinhronizāciju, lai apmainītos ar datiem, starp šiem profiliem.">
+<!ENTITY separateProfileMode.label        "Ļaut &brandShortName; un IceCat darboties vienlaicīgi">
+<!ENTITY useIceCatSync.label             "Padoms: Šis izmanto atsevišķu profilu. Izmantojiet sinhronizāciju, lai apmainītos ar datiem, starp šiem profiliem.">
 <!ENTITY getStarted.label                 "Sākt sinhronizāciju…">
 
 <!ENTITY e10sEnabled.label                "Aktivizēt vairāku procesu &brandShortName;">

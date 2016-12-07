@@ -10,7 +10,7 @@
 
 <Url type="text/html" method="GET" template="http://search.danawa.com/dsearch.php" resultdomain="danawa.com">
   <Param name="k1" value="{searchTerms}"/>
-  <Param name="from" value="firefox"/>
+  <Param name="from" value="icecat"/>
 </Url>
 <SearchForm>http://search.danawa.com</SearchForm>
 </SearchPlugin>

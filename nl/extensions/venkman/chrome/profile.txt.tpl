@@ -27,5 +27,5 @@ $section-number <$full-url>
 @-section-end
 
 
-Thanks for using Venkman, the Mozilla JavaScript Debugger.
+Thanks for using Venkman, the GNU JavaScript Debugger.
 <http://www.mozilla.org/projects/venkman>

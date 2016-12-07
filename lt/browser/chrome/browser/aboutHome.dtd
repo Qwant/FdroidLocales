@@ -11,14 +11,14 @@
 
 <!ENTITY abouthome.pageTitle "„&brandFullName;“ pradžios tinklalapis">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):
-     text in <a/> will be linked to the Firefox features page on mozilla.com
+     text in <a/> will be linked to the IceCat features page on mozilla.com
 -->
 
-<!ENTITY abouthome.defaultSnippet1.v1 "Dėkojame, kad pasirinkote „Firefox“! Susipažinkite su šia naršykle iš arčiau – sužinokite apie <a>naujausias jos savybes</a>.">
+<!ENTITY abouthome.defaultSnippet1.v1 "Dėkojame, kad pasirinkote „IceCat“! Susipažinkite su šia naršykle iš arčiau – sužinokite apie <a>naujausias jos savybes</a>.">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet2.v1):
      text in <a/> will be linked to the featured add-ons on addons.mozilla.org
 -->
-<!ENTITY abouthome.defaultSnippet2.v1 "Pritaikyti „Firefox“ savo poreikiams ypač lengva. <a>Rinkitės iš tūkstančių priedų</a>.">
+<!ENTITY abouthome.defaultSnippet2.v1 "Pritaikyti „IceCat“ savo poreikiams ypač lengva. <a>Rinkitės iš tūkstančių priedų</a>.">
 <!-- LOCALIZATION NOTE (abouthome.rightsSnippet): text in <a/> will be linked to about:rights -->
 <!ENTITY abouthome.rightsSnippet "„&brandFullName;“ yra laisvoji atvirojo kodo programa, kuriama ne pelno organizacijos „Mozilla Foundation“. <a>Žinokite savo teises…</a>">
 
@@ -33,7 +33,7 @@
 <!ENTITY abouthome.addonsButton.label    "Priedai">
 <!-- LOCALIZATION NOTE (abouthome.appsButton2.label): This string should be consistent with
      the Apps menu item in the Tools menu (webapps.label in browser.dtd) and the Apps toolbar button in
-     Firefox's customization palette (web-apps-button.label in customizableWidgets.properties) -->
+     IceCat's customization palette (web-apps-button.label in customizableWidgets.properties) -->
 <!ENTITY abouthome.appsButton2.label     "Programos">
 <!ENTITY abouthome.downloadsButton.label "Atsiuntimai">
 <!ENTITY abouthome.syncButton.label      "&syncBrand.shortName.label;">

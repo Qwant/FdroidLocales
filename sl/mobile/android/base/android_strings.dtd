@@ -105,19 +105,19 @@
 <!ENTITY pref_category_general_summary2 "Domača stran, jezik, naslovna vrstica">
 
 <!-- Localization note (pref_category_language) : This is the preferences
-     section in which the user picks the locale in which to display Firefox
+     section in which the user picks the locale in which to display IceCat
      UI. The locale includes both language and region concepts. -->
 <!ENTITY pref_category_language "Jezik">
 <!ENTITY pref_category_language_summary "Spremenite jezik vašega brskalnika">
 <!ENTITY pref_browser_locale "Jezik brskalnika">
 
 <!-- Localization note (locale_system_default) : This string indicates that
-     Firefox will use the locale currently selected in Android's settings
+     IceCat will use the locale currently selected in Android's settings
      to display browser chrome. -->
 <!ENTITY locale_system_default "Privzeto v sistemu">
 
 <!-- Localization note (overlay_share_label) : This is the label that appears
-     in Android's intent chooser when sending a link to Firefox to bookmark,
+     in Android's intent chooser when sending a link to IceCat to bookmark,
      send to another device, or add to Reading List. -->
 <!ENTITY overlay_share_label "Dodaj v &brandShortName;">
 
@@ -140,7 +140,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "Ni povezanih naprav s Firefox Računom">
+<!ENTITY overlay_no_synced_devices "Ni povezanih naprav s IceCat Računom">
 
 <!ENTITY pref_category_search3 "Iskanje">
 <!ENTITY pref_category_search_summary "Prilagodite svoje iskalnike">
@@ -193,7 +193,7 @@
 <!ENTITY home_homepage_title "Nastavi domačo stran">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
-     button for this string, they will use the built-in default Firefox homepage (about:home). -->
+     button for this string, they will use the built-in default IceCat homepage (about:home). -->
 <!ENTITY home_homepage_radio_default "&brandShortName; Domov">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
@@ -320,7 +320,7 @@ size. -->
 <!ENTITY pref_private_data_syncedTabs "Sinhronizirani zavihki">
 
 
-<!ENTITY pref_about_firefox "O &brandShortName;u">
+<!ENTITY pref_about_icecat "O &brandShortName;u">
 <!ENTITY pref_vendor_faqs "Pogosta vprašanja">
 <!ENTITY pref_vendor_feedback "Sporočite nam svoje mnenje">
 
@@ -548,11 +548,11 @@ size. -->
 <!ENTITY home_remote_tabs_title "Sinhronizirani zavihki">
 <!ENTITY home_remote_tabs_empty "Tukaj bodo prikazani vaši zavihki iz drugih naprav.">
 <!ENTITY home_remote_tabs_unable_to_connect "Povezava neuspešna">
-<!ENTITY home_remote_tabs_need_to_sign_in "Prijavite se za ponovno povezavo vašega Firefox Računa in nadaljevanje sinhronizacije.">
-<!ENTITY home_remote_tabs_need_to_finish_migrating "Vaš nov Firefox Račun je pripravljen!">
+<!ENTITY home_remote_tabs_need_to_sign_in "Prijavite se za ponovno povezavo vašega IceCat Računa in nadaljevanje sinhronizacije.">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "Vaš nov IceCat Račun je pripravljen!">
 
 <!ENTITY home_remote_tabs_trouble_verifying "Težave pri preverjanju vašega računa?">
-<!ENTITY home_remote_tabs_need_to_verify "Preverite vaš Firefox Račun za začetek sinhronizacije.">
+<!ENTITY home_remote_tabs_need_to_verify "Preverite vaš IceCat Račun za začetek sinhronizacije.">
 
 <!ENTITY home_remote_tabs_one_hidden_device "1 naprava skrita">
 <!-- Localization note (home_remote_tabs_many_hidden_devices) : The
@@ -697,7 +697,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
      include "42 minutes ago", "4 days ago", "last week", etc. The subject of
-     "Last synced" is one of the user's other Sync clients, typically Firefox on
+     "Last synced" is one of the user's other Sync clients, typically IceCat on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "Zadnja sinhronizacija: &formatS;">
 <!-- Localization note: Used when the sync has not happend yet, showed in place of a date -->
@@ -727,7 +727,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
      above a QR reader that is actively scanning for QR codes.  The expected QR
      code has already been displayed by the client trying to connect (such as
-     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     desktop IceCat via WebIDE), so you just need to aim this device at the QR
      code. -->
 <!ENTITY devtools_auth_scan_header "Skeniranje QR kode prikazane na drugi napravi">
 
@@ -735,7 +735,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- Localization note: These are features the device owner (e.g. parent) can enable or disable for
      a restricted profile (e.g. child). Used inside the Android settings UI. -->
 <!ENTITY restrictable_feature_addons_installation "Dodatki">
-<!ENTITY restrictable_feature_addons_installation_description "Dodajte zmogljivosti Firefoxu. Opomba: dodatki lahko onemogočijo nekatere omejitve.">
+<!ENTITY restrictable_feature_addons_installation_description "Dodajte zmogljivosti IceCatu. Opomba: dodatki lahko onemogočijo nekatere omejitve.">
 <!ENTITY restrictable_feature_private_browsing "Zasebno brskanje">
 <!ENTITY restrictable_feature_private_browsing_description "Članom družine omogoča brskanje brez shranjevanja informacij o tem, katere spletne strani so obiskali.">
 <!ENTITY restrictable_feature_clear_history "Počisti zgodovino">
@@ -745,19 +745,19 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY restrictable_feature_camera_microphone "Kamera in mikrofon">
 <!ENTITY restrictable_feature_camera_microphone_description "Dovoli družinskim članom, da uporabljajo komunikacijo v realnem času na spletnih straneh.">
 <!ENTITY restrictable_feature_data_choices "Podatkovne možnosti">
-<!ENTITY restrictable_feature_data_choices_description "Izberite, ali želite pomagati izboljšati Firefox s pošiljanjem podatkov o uporabi Mozilli.">
+<!ENTITY restrictable_feature_data_choices_description "Izberite, ali želite pomagati izboljšati IceCat s pošiljanjem podatkov o uporabi Mozilli.">
 
 <!-- Default Bookmarks titles-->
-<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
-<!ENTITY bookmarks_about_browser "Firefox: O vašem brskalniku">
-<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
-<!ENTITY bookmarks_addons "Firefox: Prilagodite ga z dodatki">
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:icecatmobile -->
+<!ENTITY bookmarks_about_browser "IceCat: O vašem brskalniku">
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://directory.fsf.org/wiki/GNU_IceCat -->
+<!ENTITY bookmarks_addons "IceCat: Prilagodite ga z dodatki">
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
-<!ENTITY bookmarks_support "Firefox: Pomoč">
+<!ENTITY bookmarks_support "IceCat: Pomoč">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
-<!ENTITY bookmarks_restricted_support2 "Pomoč in podpora za Firefox z omejenimi profili na tablicah Android">
+<!ENTITY bookmarks_restricted_support2 "Pomoč in podpora za IceCat z omejenimi profili na tablicah Android">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
-<!ENTITY bookmarks_restricted_webmaker "Spoznajte splet: Mozilla Webmaker">
+<!ENTITY bookmarks_restricted_webmaker "Spoznajte splet: GNU Webmaker">
 
 <!-- LOCALIZATION NOTE (unsupported_sdk_version): The user installed a build of this app that does not support
      the Android version of this device. the formatS1 is replaced by the CPU ABI (e.g., ARMv7); the formatS2 is

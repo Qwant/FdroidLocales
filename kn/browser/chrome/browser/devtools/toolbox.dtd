@@ -99,7 +99,7 @@ values from browser.dtd.  -->
   -  boolean preference in about:config, in the options panel. -->
 
 <!ENTITY options.enableRemote.label3    "ದೂರದಿಂದಲೆ ಡೀಬಗ್‌ ಮಾಡುವುದನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ">
-<!ENTITY options.enableRemote.tooltip   "ಈ ಆಯ್ಕೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವುದರಿಂದ Firefox OS ನಂತರ Firefox ಇನ್‌ಸ್ಟನ್ಸ್‌ ಅನ್ನು ಡೀಬಗ್‌ ಮಾಡಲು ವಿಕಸನೆಗಾರ ಉಪಕರಣಗಳಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ">
+<!ENTITY options.enableRemote.tooltip   "ಈ ಆಯ್ಕೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವುದರಿಂದ IceCat OS ನಂತರ IceCat ಇನ್‌ಸ್ಟನ್ಸ್‌ ಅನ್ನು ಡೀಬಗ್‌ ಮಾಡಲು ವಿಕಸನೆಗಾರ ಉಪಕರಣಗಳಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ">
 <!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
   -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
   -  boolean preference in about:config, in the options panel. -->
@@ -128,7 +128,7 @@ values from browser.dtd.  -->
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
 
-<!ENTITY options.selectDefaultTools.label     "ಪೂರ್ವನಿಯೋಜಿತ Firefox ವಿಕಸನಾ ಉಪಕರಣಗಳು">
+<!ENTITY options.selectDefaultTools.label     "ಪೂರ್ವನಿಯೋಜಿತ IceCat ವಿಕಸನಾ ಉಪಕರಣಗಳು">
 <!-- LOCALIZATION NOTE (options.selectAdditionalTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the developer tools
   -  added by add-ons. This heading is hidden when there is no developer tool

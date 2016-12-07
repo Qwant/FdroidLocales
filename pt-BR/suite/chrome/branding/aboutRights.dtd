@@ -1,7 +1,7 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<!-- LOCALIZATION NOTE This file is very similar to the one in Firefox from browser/locales/en-US/chrome/browser/aboutRights.dtd so you can use that file as a starting point -->
+<!-- LOCALIZATION NOTE This file is very similar to the one in IceCat from browser/locales/en-US/chrome/browser/aboutRights.dtd so you can use that file as a starting point -->
 <!-- rights.locale-direction instead of the usual local.dir entity, so RTL can skip translating page. -->
 <!ENTITY rights.locale-direction "ltr">
 <!ENTITY rights.pagetitle       "about:rights">
@@ -18,9 +18,9 @@
 
 <!ENTITY rights.intro-point1a "O &brandShortName; é disponibilizado de acordo com os termos da  ">
 <!ENTITY rights.intro-point1b "Licença Pública Mozilla">
-<!ENTITY rights.intro-point1c ". Isso significa que pode usar, copiar e distribuir o &brandShortName; para outras pessoas. Também é bem-vindo para modificar o código-fonte do &brandShortName; para atender suas necessidades. A Licença Pública Mozilla também lhe dá o direito de distribuir as suas versões modificadas.">
+<!ENTITY rights.intro-point1c ". Isso significa que pode usar, copiar e distribuir o &brandShortName; para outras pessoas. Também é bem-vindo para modificar o código-fonte do &brandShortName; para atender suas necessidades. A Licença Pública GNU também lhe dá o direito de distribuir as suas versões modificadas.">
 
-<!ENTITY rights.intro-point2a "A Mozilla não lhe concede quaisquer direitos sobre as marcas registradas ou logotipos da Mozilla e SeaMonkey. Informações adicionais sobre as marcas comerciais podem ser encontrados ">
+<!ENTITY rights.intro-point2a "A GNU não lhe concede quaisquer direitos sobre as marcas registradas ou logotipos da GNU e SeaMonkey. Informações adicionais sobre as marcas comerciais podem ser encontrados ">
 <!ENTITY rights.intro-point2b "aqui">
 <!ENTITY rights.intro-point2c ".">
 <!-- point 3 text for official branded builds -->

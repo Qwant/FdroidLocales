@@ -6,9 +6,9 @@
 
 <!ENTITY aboutTelemetry.changeDataChoices "  更改">
 
-<!ENTITY aboutTelemetry.uploadEnabled "  Firefox 健康报告数据上传<span>已启用</span>。">
+<!ENTITY aboutTelemetry.uploadEnabled "  IceCat 健康报告数据上传<span>已启用</span>。">
 
-<!ENTITY aboutTelemetry.uploadDisabled "  Firefox 健康报告数据上传<span>已禁用</span>。">
+<!ENTITY aboutTelemetry.uploadDisabled "  IceCat 健康报告数据上传<span>已禁用</span>。">
 
 <!ENTITY aboutTelemetry.extendedRecordingEnabled "  增强的遥测记录<span>已启用</span>。">
 

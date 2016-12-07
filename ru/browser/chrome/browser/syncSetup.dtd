@@ -10,7 +10,7 @@
 <!ENTITY setup.choicePage.new.label "Я никогда раньше не использовал Синхронизацию">
 <!ENTITY setup.choicePage.existing2.label "Я уже использую Синхронизацию на другом устройстве">
 <!ENTITY server.label "Сервер">
-<!ENTITY serverType.default.label "По умолчанию: Сервер Mozilla &syncBrand.fullName.label;">
+<!ENTITY serverType.default.label "По умолчанию: Сервер GNU &syncBrand.fullName.label;">
 <!ENTITY serverType.custom2.label "Использовать свой сервер…">
 <!ENTITY signIn.account2.label "Учётная запись">
 <!ENTITY signIn.account2.accesskey "ч">

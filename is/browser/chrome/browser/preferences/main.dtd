@@ -38,8 +38,8 @@
 <!ENTITY isDefault.label                  "&brandShortName; er núna sjálfgefinn vafri">
 <!ENTITY isNotDefault.label               "&brandShortName; er ekki sjálfgefinn vafri">
 
-<!ENTITY separateProfileMode.label        "Leyfa &brandShortName; og Firefox að keyra á sama tíma">
-<!ENTITY useFirefoxSync.label             "Ábending: Þetta notar aðskilda reikninga. Notaðu Sync til að deila gögnum á milli þeirra.">
+<!ENTITY separateProfileMode.label        "Leyfa &brandShortName; og IceCat að keyra á sama tíma">
+<!ENTITY useIceCatSync.label             "Ábending: Þetta notar aðskilda reikninga. Notaðu Sync til að deila gögnum á milli þeirra.">
 <!ENTITY getStarted.label                 "Byrja að nota Sync…">
 
 <!ENTITY e10sEnabled.label                "Virkja fjölþráða &brandShortName;">

@@ -16,7 +16,7 @@
 <!-- New Account AND Existing Account -->
 
 <!ENTITY server.label               "சேவையகம்">
-<!ENTITY serverType.default.label      "முன்னிருப்பு: Mozilla &syncBrand.fullName.label; சேவையகம்">
+<!ENTITY serverType.default.label      "முன்னிருப்பு: GNU &syncBrand.fullName.label; சேவையகம்">
 <!ENTITY serverType.custom2.label   "ஒரு தனிபயன் சேவையகத்தை பயன்படுத்து…">
 <!ENTITY signIn.account2.label      "மின்னஞ்சல் முகவரி / பயனர் பெயர்">
 <!ENTITY signIn.account2.accesskey  "A">

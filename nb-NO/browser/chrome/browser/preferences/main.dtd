@@ -38,8 +38,8 @@
 <!ENTITY isDefault.label                  "&brandShortName; er din standard nettleser">
 <!ENTITY isNotDefault.label               "&brandShortName; er ikke valgt som standard nettleser">
 
-<!ENTITY separateProfileMode.label        "Tillat &brandShortName; og Firefox å kjøre samtidig">
-<!ENTITY useFirefoxSync.label             "Tips: Dette bruker egne profiler. Bruk Sync for å dele data mellom dem.">
+<!ENTITY separateProfileMode.label        "Tillat &brandShortName; og IceCat å kjøre samtidig">
+<!ENTITY useIceCatSync.label             "Tips: Dette bruker egne profiler. Bruk Sync for å dele data mellom dem.">
 <!ENTITY getStarted.label                 "Start å bruke Sync …">
 
 <!ENTITY e10sEnabled.label                "Slå på multi-prosess &brandShortName;">

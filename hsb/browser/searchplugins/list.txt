@@ -5,3 +5,5 @@ google
 leo_ende_de
 wikipedia-hsb
 yahoo-de
+
+duckduckgo

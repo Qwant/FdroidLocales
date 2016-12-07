@@ -19,7 +19,7 @@
 <!ENTITY rights.intro-point1b "Mozilla Public License">
 <!ENTITY rights.intro-point1c ". Això vol dir que podeu utilitzar, copiar i distribuir el &brandShortName; a altres persones. També podeu modificar el codi del &brandShortName; com desitgeu. La llicència Mozilla Public License us dóna el dret de distribuir les versions modificades.">
 
-<!ENTITY rights.intro-point2a "Però Mozilla no us dóna cap dret sobre les marques Mozilla i Thunderbird o els seus logotips. Per a més informació sobre les marques consulteu  ">
+<!ENTITY rights.intro-point2a "Però GNU no us dóna cap dret sobre les marques GNU i Thunderbird o els seus logotips. Per a més informació sobre les marques consulteu  ">
 <!ENTITY rights.intro-point2b "aquí">
 <!ENTITY rights.intro-point2c ".">
 <!-- point 3 text for official branded builds -->

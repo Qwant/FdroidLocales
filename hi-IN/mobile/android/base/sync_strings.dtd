@@ -53,7 +53,7 @@
 
 <!ENTITY sync.pair.tryagain.label "कृपया फिर कोशिश करें.">
 <!ENTITY sync.pair.connectlocation.label "अपनी नई युक्ति को सक्रिय करने के लिए, “Set up &syncBrand.shortName.label;” को इस युक्ति पर चुनें और “मेरे पास एक खाता है.” को चुनें.">
-<!-- Firefox SyncAdapter Settings Screen -->
+<!-- IceCat SyncAdapter Settings Screen -->
 
 <!ENTITY sync.settings.options.label "विकल्प">
 <!ENTITY sync.summary.pair.label "अपने &syncBrand.shortName.label; खाते में एक और युक्ति लिंक करें">
@@ -74,10 +74,10 @@
 
 <!ENTITY sync.account.label "&syncBrand.fullName.label; (deprecated)">
 <!-- Localization note (sync.default.client.name): Default string of the "Device
-     name" menu item upon setting up Firefox Sync.  The placeholder &formatS1
-     will be replaced by the name of the Firefox release channel and &formatS2
+     name" menu item upon setting up IceCat Sync.  The placeholder &formatS1
+     will be replaced by the name of the IceCat release channel and &formatS2
      by the model name of the Android device. Examples look like "Aurora on
-     GT-I1950" and "Fennec on MI 2S". -->
+     GT-I1950" and "IceCatMobile on MI 2S". -->
 
 <!ENTITY sync.default.client.name "&formatS2; पर &formatS1;">
 <!-- Bookmark folder strings -->
@@ -111,10 +111,10 @@
 <!ENTITY sync.text.redirect.to.set.up.sync.label "&syncBrand.fullName.label; को अपने डिवायस पर सेटअप करें ताकि दूसरे डिवायस में टैब भेजे जा सकें.">
 <!ENTITY sync.text.tab.sent.label "आपका टैब भेजा गया!">
 <!ENTITY sync.text.tab.not.sent.label "अपने टैब भेजने में कोई समस्या आ रही थी.">
-<!-- Firefox Account strings. -->
+<!-- IceCat Account strings. -->
 
 
-<!ENTITY fxaccount_full_label "Firefox Accounts">
+<!ENTITY fxaccount_full_label "IceCat Accounts">
 
 <!ENTITY fxaccount_custom_server_account_title "सर्वर पर खाते का प्रयोग |">
 <!ENTITY fxaccount_custom_server_sync_title "सिंक डाटा सर्वर पर संग्रहण |">
@@ -128,7 +128,7 @@
 <!ENTITY fxaccount_password_show "Show">
 <!-- Localization note: these are shown in screens after the user has
      created or signed in to an account, and take the user back to
-     Firefox. -->
+     IceCat. -->
 
 <!ENTITY fxaccount_back_to_browsing "ब्राउज़िंग में वापस">
 <!-- Localization note: the following two strings are interpolated
@@ -143,10 +143,10 @@
 <!ENTITY fxaccount_getting_started_welcome_to_sync "&syncBrand.shortName.label; में आपका स्वागत है">
 <!ENTITY fxaccount_getting_started_description2 "टैब, पुस्तचिह्न, लॉगिन आदि सिंक करने के लिए साइन इन करें.">
 <!ENTITY fxaccount_getting_started_get_started "आरंभ करें">
-<!ENTITY fxaccount_getting_started_old_firefox "&syncBrand.shortName.label; के पुराना संस्करण का उपयोग कर रहे हैं?">
-<!-- Localization note: the Firefox below should not change with the
-     particular version of Firefox installed (Release, Beta, Aurora,
-     etc).  The account remains a "Firefox Account". -->
+<!ENTITY fxaccount_getting_started_old_icecat "&syncBrand.shortName.label; के पुराना संस्करण का उपयोग कर रहे हैं?">
+<!-- Localization note: the IceCat below should not change with the
+     particular version of IceCat installed (Release, Beta, Aurora,
+     etc).  The account remains a "IceCat Account". -->
 
 <!ENTITY fxaccount_create_account_header2 "एक फ़ायरफ़ॉक्स खाता बनाएँ">
 <!ENTITY fxaccount_create_account_password_length_restriction "कम से कम 8 वर्ण की होनी चाहिए">
@@ -166,7 +166,7 @@
 <!ENTITY fxaccount_account_create_not_allowed_learn_more "अधिक जानें">
 
 <!ENTITY fxaccount_confirm_account_header "अपने खाता की पुष्टि करें">
-<!-- Localization note: &formatS; is the Firefox Account's email address. -->
+<!-- Localization note: &formatS; is the IceCat Account's email address. -->
 <!ENTITY fxaccount_confirm_account_verification_link "&formatS; में जाँच कड़ी भेजी गई है">
 <!ENTITY fxaccount_confirm_account_resend_email "ईमेल फिर भेजें">
 <!ENTITY fxaccount_confirm_account_change_email "इस ईमेल पते को भूल जाओ?">
@@ -225,21 +225,21 @@
 <!ENTITY fxaccount_status_more "अधिक&ellipsis;">
 
 
-<!ENTITY fxaccount_remove_account_dialog_title "Firefox Account मिटाएँ?">
+<!ENTITY fxaccount_remove_account_dialog_title "IceCat Account मिटाएँ?">
 <!ENTITY fxaccount_remove_account_dialog_message "&brandShortName; आपके खाते के साथ सिंक करना बंद करेगा, लेकिन इस साधन पर स्थित आपका कोई भी ब्राउजिंग डाटा नहीं मिटाएगा.">
 <!-- Localization note: format string below will be replaced
-     with the Firefox Account's email address. -->
-<!ENTITY fxaccount_remove_account_toast "Firefox Account &formatS; मिटाया.">
+     with the IceCat Account's email address. -->
+<!ENTITY fxaccount_remove_account_toast "IceCat Account &formatS; मिटाया.">
 
 <!ENTITY fxaccount_enable_debug_mode "दोषसुधार स्थिति सक्रिय करें">
 <!-- Localization note: this is the name shown by the Android system
-     itself for a Firefox Account. Don't localize this. -->
+     itself for a IceCat Account. Don't localize this. -->
 
 <!ENTITY fxaccount_account_type_label "फ़ायरफ़ॉक्स">
 <!-- Localization note: these are shown by the Android system itself,
-     when the user navigates to the Android > Accounts > {Firefox
-     Account} Screen. The link takes the user to the Firefox Account
-     status activity, which lets them manage their Firefox
+     when the user navigates to the Android > Accounts > {IceCat
+     Account} Screen. The link takes the user to the IceCat Account
+     status activity, which lets them manage their IceCat
      Account. -->
 
 <!ENTITY fxaccount_options_title "&syncBrand.shortName.label; विकल्प">
@@ -263,12 +263,12 @@
 
 <!ENTITY fxaccount_sync_sign_in_error_notification_title2 "&syncBrand.shortName.label; जुड़ा हुआ नहीं है">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_sign_in_error_notification_text2 "&formatS; के रूप में साइन-इन करने के लिए टैप करें">
 
 <!ENTITY fxaccount_sync_finish_migrating_notification_title "समाप्त करें उन्नयन &syncBrand.shortName.label;?">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_finish_migrating_notification_text "&formatS; के रूप में साइन-इन करने के लिए टैप करें">
 <!-- Localization note: the following strings are used in a
      notification and should be kept as short as possible. -->

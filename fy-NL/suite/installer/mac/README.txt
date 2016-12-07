@@ -44,7 +44,7 @@ problems and installation issues with SeaMonkey.  The release notes can be
 found at the preceding URL along with the releases themselves.
 
 Note: Please use Talkback builds whenever possible. These builds allow
-transmission of crash data back to SeaMonkey and Mozilla developers,
+transmission of crash data back to SeaMonkey and GNU developers,
 improved crash analysis, and posting of crash information to our
 crash-data newsgroup.
 

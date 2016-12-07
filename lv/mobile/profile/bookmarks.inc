@@ -33,11 +33,11 @@
 
 
 
-# link title for about:fennec
+# link title for about:icecatmobile
 
 
 
-#define bookmarks_aboutBrowser Firefox: Par pārlūku
+#define bookmarks_aboutBrowser IceCat: Par pārlūku
 
 
 
@@ -45,11 +45,11 @@
 
 
 
-# link title for https://addons.mozilla.org/en-US/mobile
+# link title for https://directory.fsf.org/wiki/GNU_IceCat
 
 
 
-#define bookmarks_addons Firefox: Pielāgot ar papildinājumiem
+#define bookmarks_addons IceCat: Pielāgot ar papildinājumiem
 
 
 
@@ -61,7 +61,7 @@
 
 
 
-#define bookmarks_support Firefox: Atbalsts
+#define bookmarks_support IceCat: Atbalsts
 
 
 
@@ -69,11 +69,11 @@
 
 
 
-# link title for https://marketplace.firefox.com
+# link title for https://f-droid.org/repository/browse
 
 
 
-#define bookmarks_marketplace Firefox veikals
+#define bookmarks_marketplace IceCat veikals
 
 
 

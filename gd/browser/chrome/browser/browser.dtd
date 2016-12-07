@@ -56,7 +56,7 @@ can reach it easily. -->
 <!ENTITY tabCmd.commandkey "t">
 <!-- LOCALIZATION NOTE (openLocationCmd.label): "Open Location" is only
 displayed on OS X, and only on windows that aren't main browser windows, or
-when there are no windows but Firefox is still running. -->
+when there are no windows but IceCat is still running. -->
 <!ENTITY openLocationCmd.label "Fosgail ionad…">
 <!ENTITY openFileCmd.label "Fosgail faidhle…">
 <!ENTITY openFileCmd.accesskey "o">
@@ -420,8 +420,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Cuir air sioncronachadh nan tabaichean airson cothrom fhaighinn air na tabaichean agad o uidheaman eile.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
      when Sync is configured but this appears to be the only device attached to
-     the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.label "Clàraich a-steach gu Firefox o na h-uidheaman eile agad gus na tabaichean uapa fhaicinn an-seo.">
+     the account. We also show links to download IceCat for android/ios. -->
+<!ENTITY appMenuRemoteTabs.noclients.label "Clàraich a-steach gu IceCat o na h-uidheaman eile agad gus na tabaichean uapa fhaicinn an-seo.">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Roghainnean sioncronachaidh">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Clàraich a-steach airson liosta de thabaichean a tha agad air uidheaman eile.">
 <!ENTITY appMenuRemoteTabs.signin.label "Clàraich a-steach gun t-sioncronachadh">

@@ -1,7 +1,7 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<!-- LOCALIZATION NOTE This file is very similar to the one in Firefox from browser/locales/en-US/chrome/browser/aboutRights.dtd so you can use that file as a starting point -->
+<!-- LOCALIZATION NOTE This file is very similar to the one in IceCat from browser/locales/en-US/chrome/browser/aboutRights.dtd so you can use that file as a starting point -->
 <!-- rights.locale-direction instead of the usual local.dir entity, so RTL can skip translating page. -->
 <!ENTITY rights.locale-direction "ltr">
 <!ENTITY rights.pagetitle       "about:rights">
@@ -18,9 +18,9 @@
 
 <!ENTITY rights.intro-point1a "&brandShortName; ye disponible ta vusté baixo os termins de a ">
 <!ENTITY rights.intro-point1b "Licencia Publica de Mozilla">
-<!ENTITY rights.intro-point1c ". Isto significa que puede usar, copiar y distribuir &brandShortName; a atros. Tamién ye libre de modificar o codigo fuent de &brandShortName; como deseye ta adaptar-lo a las suyas necesidatz. a Licencia Publica Mozilla tamién le atorga o dreito a distribuir as suyas versions modificadas.">
+<!ENTITY rights.intro-point1c ". Isto significa que puede usar, copiar y distribuir &brandShortName; a atros. Tamién ye libre de modificar o codigo fuent de &brandShortName; como deseye ta adaptar-lo a las suyas necesidatz. a Licencia Publica GNU tamién le atorga o dreito a distribuir as suyas versions modificadas.">
 
-<!ENTITY rights.intro-point2a "Mozilla no le atorga garra dreito sobre las marcas rechistradas y logos de Mozilla y SeaMonkey. Se puede trobar información adicional sobre las marcas rechistradas ">
+<!ENTITY rights.intro-point2a "Mozilla no le atorga garra dreito sobre las marcas rechistradas y logos de GNU y SeaMonkey. Se puede trobar información adicional sobre las marcas rechistradas ">
 <!ENTITY rights.intro-point2b "aquí">
 <!ENTITY rights.intro-point2c ".">
 <!-- point 3 text for official branded builds -->

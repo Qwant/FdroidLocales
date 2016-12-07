@@ -23,8 +23,8 @@
 <!ENTITY importFromChrome.accesskey     "C">
 
 
-<!ENTITY importFromFirefox.label        "ಫೈರ್ಫಾಕ್ಸ್">
-<!ENTITY importFromFirefox.accesskey    "x">
+<!ENTITY importFromIceCat.label        "ಫೈರ್ಫಾಕ್ಸ್">
+<!ENTITY importFromIceCat.accesskey    "x">
 <!ENTITY importFrom360se.label          "360 ಸುರಕ್ಷಿತ ವೀಕ್ಷಕ">
 <!ENTITY importFrom360se.accesskey      "3">
 

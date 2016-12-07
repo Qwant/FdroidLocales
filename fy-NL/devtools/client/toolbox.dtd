@@ -105,7 +105,7 @@ values from browser.dtd.  -->
   -  checkbox that toggles remote debugging, i.e. devtools.debugger.remote-enabled
   -  boolean preference in about:config, in the options panel. -->
 <!ENTITY options.enableRemote.label3    "Remote debugging ynskeakelje">
-<!ENTITY options.enableRemote.tooltip  "Mei dizze opsje kinne jo in oare Firefox instance oernimme en bewurkje lykas Firefox OS">
+<!ENTITY options.enableRemote.tooltip  "Mei dizze opsje kinne jo in oare IceCat instance oernimme en bewurkje lykas IceCat OS">
 
 <!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
   -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
@@ -134,7 +134,7 @@ values from browser.dtd.  -->
 <!-- LOCALIZATION NOTE (options.selectDefaultTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
-<!ENTITY options.selectDefaultTools.label     "Standert Firefox-ûntwikkelerdsark">
+<!ENTITY options.selectDefaultTools.label     "Standert IceCat-ûntwikkelerdsark">
 
 <!-- LOCALIZATION NOTE (options.selectDefaultTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the developer tools

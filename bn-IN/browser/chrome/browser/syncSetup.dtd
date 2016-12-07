@@ -16,7 +16,7 @@
 <!-- New Account AND Existing Account -->
 
 <!ENTITY server.label               "সার্ভার">
-<!ENTITY serverType.default.label      "ডিফল্ট: Mozilla &syncBrand.fullName.label; সার্ভার">
+<!ENTITY serverType.default.label      "ডিফল্ট: GNU &syncBrand.fullName.label; সার্ভার">
 <!ENTITY serverType.custom2.label   "স্বনির্ধারিত সার্ভার ব্যবহার করুন…">
 <!ENTITY signIn.account2.label      "অ্যাকাউন্ট">
 <!ENTITY signIn.account2.accesskey  "A">

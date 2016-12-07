@@ -23,8 +23,8 @@
 <!ENTITY importFromChrome.accesskey     "C">
 
 
-<!ENTITY importFromFirefox.label        "Firefox">
-<!ENTITY importFromFirefox.accesskey    "x">
+<!ENTITY importFromIceCat.label        "IceCat">
+<!ENTITY importFromIceCat.accesskey    "x">
 
 
 

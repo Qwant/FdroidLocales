@@ -23,8 +23,8 @@
 <!ENTITY importFromChrome.accesskey     "C">
 <!ENTITY importFromChromium.label       "क्रोमियम">
 <!ENTITY importFromChromium.accesskey   "u">
-<!ENTITY importFromFirefox.label        "फ़ायरफ़ॉक्स">
-<!ENTITY importFromFirefox.accesskey    "x">
+<!ENTITY importFromIceCat.label        "फ़ायरफ़ॉक्स">
+<!ENTITY importFromIceCat.accesskey    "x">
 <!ENTITY importFrom360se.label          "360 सुरक्षित ब्राउज़र">
 <!ENTITY importFrom360se.accesskey      "3">
 

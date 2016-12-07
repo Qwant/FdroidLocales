@@ -4,3 +4,5 @@ neti-ee
 osta-ee
 eki-ee
 wikipedia-et
+
+duckduckgo

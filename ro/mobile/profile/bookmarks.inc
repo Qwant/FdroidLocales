@@ -33,11 +33,11 @@
 
 
 
-# link title for about:fennec
+# link title for about:icecatmobile
 
 
 
-#define bookmarks_aboutBrowser Firefox: Despre browserul tău
+#define bookmarks_aboutBrowser IceCat: Despre browserul tău
 
 
 
@@ -45,11 +45,11 @@
 
 
 
-# link title for https://addons.mozilla.org/en-US/mobile
+# link title for https://directory.fsf.org/wiki/GNU_IceCat
 
 
 
-#define bookmarks_addons Firefox: personalizare cu suplimente
+#define bookmarks_addons IceCat: personalizare cu suplimente
 
 
 
@@ -61,7 +61,7 @@
 
 
 
-#define bookmarks_support Firefox: suport
+#define bookmarks_support IceCat: suport
 
 
 
@@ -69,11 +69,11 @@
 
 
 
-# link title for https://marketplace.firefox.com
+# link title for https://f-droid.org/repository/browse
 
 
 
-#define bookmarks_marketplace Firefox Marketplace
+#define bookmarks_marketplace F-droid free software repository
 
 
 

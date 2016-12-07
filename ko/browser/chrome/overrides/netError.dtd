@@ -195,7 +195,7 @@
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <button> tags. It uses strings already defined above. The
 button is included here (instead of netError.xhtml) because it exposes
-functionality specific to firefox. -->
+functionality specific to icecat. -->
 
 <!ENTITY securityOverride.warningContent "
 <p>여러분이 완전히 신뢰할 수 없는 인터넷 연결을 사용하는 중이거나 이 서버에서 예전에 이러한 경고를 본 적이 없는 경우에는 예외로 추가해서는 안 됩니다.</p>

@@ -20,5 +20,5 @@
 <!ENTITY aboutPage.credits.label                "Atribuoj">
 <!ENTITY aboutPage.license.label                "Permesila informo">
 
-<!-- LOCALIZATION NOTE (aboutPage.logoTrademark): The message is explicitly about the word "Firefox" being trademarked, that's why we use it, instead of brandShortName. -->
-<!ENTITY aboutPage.logoTrademark                "Firefox kaj la emblemoj de Firefox estas registritaj varmarkoj de Mozilla Foundation.">
+<!-- LOCALIZATION NOTE (aboutPage.logoTrademark): The message is explicitly about the word "IceCat" being trademarked, that's why we use it, instead of brandShortName. -->
+<!ENTITY aboutPage.logoTrademark                "IceCat kaj la emblemoj de IceCat estas registritaj varmarkoj de Mozilla Foundation.">

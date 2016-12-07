@@ -11,7 +11,7 @@
 <!ENTITY  crash_reporter_title "&brandShortName;-crashreporter">
 <!ENTITY  crash_message "&brandShortName; is gecrasht. Uw tabbladen worden op de &brandShortName;-startpagina getoond wanneer u herstart.">
 <!ENTITY  crash_help_message "Help ons dit probleem op te lossen!">
-<!ENTITY  crash_send_report_message "Crashrapport naar Mozilla verzenden">
+<!ENTITY  crash_send_report_message "Crashrapport naar GNU verzenden">
 <!ENTITY  crash_include_url "Pagina-adres bijvoegen">
 <!ENTITY  crash_close_label "Sluiten">
 <!ENTITY  crash_restart_label "&brandShortName; herstarten">

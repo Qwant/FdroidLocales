@@ -16,7 +16,7 @@
 <!-- New Account AND Existing Account -->
 
 <!ENTITY server.label               "Pelayan">
-<!ENTITY serverType.default.label      "Lalai: Mozilla &syncBrand.fullName.label; pelayan">
+<!ENTITY serverType.default.label      "Lalai: GNU &syncBrand.fullName.label; pelayan">
 <!ENTITY serverType.custom2.label   "Gunakan server pelanggan">
 <!ENTITY signIn.account2.label      "Akaun">
 <!ENTITY signIn.account2.accesskey  "A">

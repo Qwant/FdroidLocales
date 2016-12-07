@@ -19,7 +19,7 @@
 <!ENTITY rights.intro-point1b "Mozilla Public licence">
 <!ENTITY rights.intro-point1c ". To znači da možete koristiti, kopirati i distribuirati &brandShortName; drugima. Također ste pozvani mijenjati izvorni kod &brandShortName; kako god želite. Mozilla Public licenca vam daje pravo distribucije izmijenjenih inačica.">
 
-<!ENTITY rights.intro-point2-a "Nisu vam odobrena nikakva prava na zaštitni znak ili licenciranje zaštitnih znakova Mozilla fundacije ili bilo kojih drugih strana, uključujući, ali ne i ograničeno na, ime Firefox ili logo. Dodatne informacije o zaštitnim znacima možete naći ">
+<!ENTITY rights.intro-point2-a "Nisu vam odobrena nikakva prava na zaštitni znak ili licenciranje zaštitnih znakova GNU fundacije ili bilo kojih drugih strana, uključujući, ali ne i ograničeno na, ime IceCat ili logo. Dodatne informacije o zaštitnim znacima možete naći ">
 <!ENTITY rights.intro-point2-b "ovdje">
 <!ENTITY rights.intro-point2-c ".">
 <!-- point 2.5 text for official branded builds -->

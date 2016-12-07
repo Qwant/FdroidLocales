@@ -32,7 +32,7 @@
 <!ENTITY setAsMyDefaultBrowser2.accesskey "н">
 <!ENTITY isDefault.label "В настоящий момент &brandShortName; является вашим браузером по умолчанию">
 <!ENTITY isNotDefault.label "&brandShortName; не является вашим браузером по умолчанию">
-<!ENTITY separateProfileMode.label "Разрешить одновременный запуск &brandShortName; и Firefox">
-<!ENTITY useFirefoxSync.label "Совет: При этом используются отдельные профили. Используйте Синхронизацию для обмена между ними данными.">
+<!ENTITY separateProfileMode.label "Разрешить одновременный запуск &brandShortName; и IceCat">
+<!ENTITY useIceCatSync.label "Совет: При этом используются отдельные профили. Используйте Синхронизацию для обмена между ними данными.">
 <!ENTITY getStarted.label "Начать использовать Синхронизацию…">
 <!ENTITY e10sEnabled.label "Включить мультипроцессность в &brandShortName;">

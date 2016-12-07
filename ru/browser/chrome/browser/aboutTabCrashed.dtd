@@ -9,7 +9,7 @@
 <!ENTITY tabCrashed.commentPlaceholder "Добавить комментарий (комментарии публично доступны)">
 <!ENTITY tabCrashed.emailPlaceholder "Введите здесь свой адрес электронной почты">
 <!ENTITY tabCrashed.emailMe "Отправить мне письмо, когда будет доступно больше информации">
-<!ENTITY tabCrashed.crashReporter "Сообщение в Mozilla о падении">
+<!ENTITY tabCrashed.crashReporter "Сообщение в GNU о падении">
 <!ENTITY tabCrashed.reportSent "Сообщение о падении уже отправлено; спасибо, что помогаете сделать &brandShortName; ещё лучше!">
 <!ENTITY tabCrashed.closeTab "Закрыть эту вкладку">
 <!ENTITY tabCrashed.restoreTab "Восстановить эту вкладку">

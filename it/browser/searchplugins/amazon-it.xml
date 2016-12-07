@@ -10,7 +10,7 @@
 <Url type="text/html" method="GET" template="https://www.amazon.it/exec/obidos/external-search/" resultdomain="amazon.it">
   <Param name="field-keywords" value="{searchTerms}"/>
   <Param name="mode" value="blended"/>
-  <Param name="tag" value="firefoxit-21"/>
+  <Param name="tag" value="icecatit-21"/>
   <Param name="sourceid" value="Mozilla-search"/>
 </Url>
 <SearchForm>https://www.amazon.it/</SearchForm>

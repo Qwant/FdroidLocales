@@ -33,11 +33,11 @@
 
 
 
-# link title for about:fennec
+# link title for about:icecatmobile
 
 
 
-#define bookmarks_aboutBrowser Firefox : Diwar-benn ho merdeer
+#define bookmarks_aboutBrowser IceCat : Diwar-benn ho merdeer
 
 
 
@@ -45,11 +45,11 @@
 
 
 
-# link title for https://addons.mozilla.org/en-US/mobile
+# link title for https://directory.fsf.org/wiki/GNU_IceCat
 
 
 
-#define bookmarks_addons Firefox : Personelaat gant enlugelladoù
+#define bookmarks_addons IceCat : Personelaat gant enlugelladoù
 
 
 
@@ -61,7 +61,7 @@
 
 
 
-#define bookmarks_support Firefox : Skor
+#define bookmarks_support IceCat : Skor
 
 
 
@@ -69,11 +69,11 @@
 
 
 
-# link title for https://marketplace.firefox.com
+# link title for https://f-droid.org/repository/browse
 
 
 
-#define bookmarks_marketplace Marketplace Firefox
+#define bookmarks_marketplace Marketplace IceCat
 
 
 

@@ -17,9 +17,9 @@
 
 <!ENTITY rights.intro-point1a "Tha &brandShortName; 'ga sholar dhut fo theirmichean ">
 <!ENTITY rights.intro-point1b "Ceadachas Poblach Mozilla">
-<!ENTITY rights.intro-point1c ". 'S ciall dha seo gu bheil cead agad &brandShortName; a chleachdadh, lethbhreacan a dhèanamh dheth agus a thoirt do dhaoine eile.  Tha fàilte romhad cuideachd an còd tùsail aig &brandShortName; atharrachadh ach an obraich e nas fhearr dhut. Tha Ceadachas Poblach Mozilla a' toirt cead dhut cuideachd na tionndaidhean a dh'atharraich thu a sgaoileadh.">
+<!ENTITY rights.intro-point1c ". 'S ciall dha seo gu bheil cead agad &brandShortName; a chleachdadh, lethbhreacan a dhèanamh dheth agus a thoirt do dhaoine eile.  Tha fàilte romhad cuideachd an còd tùsail aig &brandShortName; atharrachadh ach an obraich e nas fhearr dhut. Tha Ceadachas Poblach GNU a' toirt cead dhut cuideachd na tionndaidhean a dh'atharraich thu a sgaoileadh.">
 
-<!ENTITY rights.intro-point2-a "Chan eil sinn a' toirt seachad còir air comharran-malairt no ceadachas air comharran-malairt aig Fonndas Mozilla no pàrtaidh sam bith, a' gabhail a-steach (gun chuingeachadh) ainm no suaicheantas Firefox. Gheibh thu fiosrachadh sam bith mu na comharran-malairt ">
+<!ENTITY rights.intro-point2-a "Chan eil sinn a' toirt seachad còir air comharran-malairt no ceadachas air comharran-malairt aig Fonndas GNU no pàrtaidh sam bith, a' gabhail a-steach (gun chuingeachadh) ainm no suaicheantas IceCat. Gheibh thu fiosrachadh sam bith mu na comharran-malairt ">
 <!ENTITY rights.intro-point2-b "an-seo">
 <!ENTITY rights.intro-point2-c ".">
 <!-- point 2.5 text for official branded builds -->

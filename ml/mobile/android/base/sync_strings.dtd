@@ -53,7 +53,7 @@
 
 <!ENTITY sync.pair.tryagain.label "ദയവായി വീണ്ടും ശ്രമിയ്ക്കുക.">
 <!ENTITY sync.pair.connectlocation.label "പുതിയ ഉപകരണം സജീവമാക്കുന്നതിനു്, “&syncBrand.shortName.label; സജ്ജമാക്കുക” ഐച്ഛികത്തില്‍ “സ്വന്തമായി അക്കൌണ്ടുണ്ടു്” തെരഞ്ഞെടുക്കുക.">
-<!-- Firefox SyncAdapter Settings Screen -->
+<!-- IceCat SyncAdapter Settings Screen -->
 
 <!ENTITY sync.settings.options.label "ഐച്ഛികങ്ങള്‍">
 <!ENTITY sync.summary.pair.label "&syncBrand.shortName.label; അക്കൌണ്ടിലേക്കു് മറ്റൊരു ഉപകരണം ബന്ധപ്പെടുത്തക">
@@ -74,10 +74,10 @@
 
 <!ENTITY sync.account.label "&syncBrand.fullName.label;(ഒഴിവാക്കി)">
 <!-- Localization note (sync.default.client.name): Default string of the "Device
-     name" menu item upon setting up Firefox Sync.  The placeholder &formatS1
-     will be replaced by the name of the Firefox release channel and &formatS2
+     name" menu item upon setting up IceCat Sync.  The placeholder &formatS1
+     will be replaced by the name of the IceCat release channel and &formatS2
      by the model name of the Android device. Examples look like "Aurora on
-     GT-I1950" and "Fennec on MI 2S". -->
+     GT-I1950" and "IceCatMobile on MI 2S". -->
 <!-- Bookmark folder strings -->
 
 <!ENTITY bookmarks.folder.menu.label "അടയാളക്കുറിപ്പുകള്‍ക്കുള്ള പട്ടിക">
@@ -109,7 +109,7 @@
 <!ENTITY sync.text.redirect.to.set.up.sync.label "മറ്റു് ഉപകരണങ്ങള്‍ക്കു് റ്റാബുകള്‍ അയയ്ക്കുന്നതിനു്, &syncBrand.fullName.label; സജ്ജമാക്കുക.">
 <!ENTITY sync.text.tab.sent.label "നിങ്ങളുടെ ടാബ് അയച്ചു!">
 <!ENTITY sync.text.tab.not.sent.label "നിങ്ങളുടെ ടാബ് അയക്കുന്നതിൽ തടസ്സം നേരിട്ടു.">
-<!-- Firefox Account strings. -->
+<!-- IceCat Account strings. -->
 
 
 <!ENTITY fxaccount_full_label "ഫയർഫോക്സ് അക്കൗണ്ടുകള്‍">
@@ -126,7 +126,7 @@
 <!ENTITY fxaccount_password_show "പ്രദര്‍ശിപ്പിക്കുക">
 <!-- Localization note: these are shown in screens after the user has
      created or signed in to an account, and take the user back to
-     Firefox. -->
+     IceCat. -->
 
 <!ENTITY fxaccount_back_to_browsing "ബ്രൗസിംഗിലേക്ക് തിരികെ">
 <!-- Localization note: the following two strings are interpolated
@@ -141,10 +141,10 @@
 <!ENTITY fxaccount_getting_started_welcome_to_sync "&syncBrand.shortName.label;-ലേക്കു് സ്വാഗതം">
 
 <!ENTITY fxaccount_getting_started_get_started "ഉപയോഗിച്ചു് തൂടങ്ങൂ">
-<!ENTITY fxaccount_getting_started_old_firefox "&syncBrand.shortName.label;-ന്റെ പഴയ പതിപ്പു് ഉപയോഗിയ്ക്കുന്നോ?">
-<!-- Localization note: the Firefox below should not change with the
-     particular version of Firefox installed (Release, Beta, Aurora,
-     etc).  The account remains a "Firefox Account". -->
+<!ENTITY fxaccount_getting_started_old_icecat "&syncBrand.shortName.label;-ന്റെ പഴയ പതിപ്പു് ഉപയോഗിയ്ക്കുന്നോ?">
+<!-- Localization note: the IceCat below should not change with the
+     particular version of IceCat installed (Release, Beta, Aurora,
+     etc).  The account remains a "IceCat Account". -->
 
 <!ENTITY fxaccount_create_account_header2 "ഒരു ഫയര്‍ഫോക്സ് അക്കൌണ്ട് തയ്യാറാക്കുക">
 <!ENTITY fxaccount_create_account_password_length_restriction "കുറഞ്ഞതു് 8 അക്ഷരങ്ങളുണ്ടായിരിയ്ക്കണം">
@@ -164,7 +164,7 @@
 <!ENTITY fxaccount_account_create_not_allowed_learn_more "കൂടുതല്‍ അറിയുക">
 
 <!ENTITY fxaccount_confirm_account_header "അക്കൌണ്ട് ഉറപ്പാക്കുക">
-<!-- Localization note: &formatS; is the Firefox Account's email address. -->
+<!-- Localization note: &formatS; is the IceCat Account's email address. -->
 <!ENTITY fxaccount_confirm_account_verification_link "ഉറപ്പാക്കുന്നതിനുള്ളൊരു കണ്ണി &formatS;-ലേക്കു് അയച്ചു">
 <!ENTITY fxaccount_confirm_account_resend_email "മെയില്‍ വീണ്ടും അയയ്ക്കൂ">
 
@@ -224,17 +224,17 @@
 <!ENTITY fxaccount_remove_account_dialog_title "ഫയര്‍ഫോക്സ് അക്കൌണ്ട് നീക്കം ചെയ്യണമോ?">
 <!ENTITY fxaccount_remove_account_dialog_message "&brandShortName; താങ്കളുടെ അക്കൗണ്ടുമായി സിന്‍ക് ചെയ്യുന്നത് നിലയ്ക്കും, പക്ഷെ ഈ ഡിവൈസിലുള്ള താങ്കളുടെ ബ്രൗസിങ്ങ് വിവരങ്ങള്‍ വെട്ടി നീക്കില്ല.">
 <!-- Localization note: format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_remove_account_toast "&formatS; ഫയര്‍ഫോക്സ് അക്കൗണ്ട് കളഞ്ഞു.">
 
 <!-- Localization note: this is the name shown by the Android system
-     itself for a Firefox Account. Don't localize this. -->
+     itself for a IceCat Account. Don't localize this. -->
 
 <!ENTITY fxaccount_account_type_label "ഫയര്‍ഫോക്സ്">
 <!-- Localization note: these are shown by the Android system itself,
-     when the user navigates to the Android > Accounts > {Firefox
-     Account} Screen. The link takes the user to the Firefox Account
-     status activity, which lets them manage their Firefox
+     when the user navigates to the Android > Accounts > {IceCat
+     Account} Screen. The link takes the user to the IceCat Account
+     status activity, which lets them manage their IceCat
      Account. -->
 
 <!ENTITY fxaccount_options_title "&syncBrand.shortName.label; ഐച്ഛികങ്ങള്‍">
@@ -258,10 +258,10 @@
 
 <!ENTITY fxaccount_sync_sign_in_error_notification_title2 "&syncBrand.shortName.label; കണക്ട് ചെയ്തിട്ടില്ല">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!-- Localization note: the following strings are used in a
      notification and should be kept as short as possible. -->
 

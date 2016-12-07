@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY syncBrand.fullName.label "Firefox Sync">
+<!ENTITY syncBrand.fullName.label "IceCat Sync">
 <!ENTITY syncBrand.shortName.label "Sync">
 <!ENTITY sync.app.name.label "&syncBrand.fullName.label;">
 <!ENTITY sync.title.connect.label "Злучыцца з &syncBrand.shortName.label;">
@@ -10,7 +10,7 @@
 <!ENTITY sync.title.pair.label "Спараванне збудовы">
 <!ENTITY sync.subtitle.connect.label "Каб задзейнічаць новую збудову, выберыце “Наладзіць &syncBrand.shortName.label;” на збудове.">
 <!ENTITY sync.subtitle.header2.label "Увядзіце гэты код на іншай збудове">
-<!ENTITY sync.subtitle.connectlocation2.label "Выберыце “&sync.title.pair.label;” у раздзеле &syncBrand.shortName.label; наладжванняў Firefox на вашай іншай збудове.">
+<!ENTITY sync.subtitle.connectlocation2.label "Выберыце “&sync.title.pair.label;” у раздзеле &syncBrand.shortName.label; наладжванняў IceCat на вашай іншай збудове.">
 <!ENTITY sync.subtitle.pair.label "Каб задзейнічаць, выберыце “Спараваць збудову” на вашай іншай збудове.">
 <!ENTITY sync.pin.default.label "...\n...\n...\n">
 <!ENTITY sync.pin.oneline.label "...">
@@ -30,7 +30,7 @@
 <!ENTITY sync.button.manual.label "Ручное ўладкаванне">
 <!ENTITY sync.subtitle.nointernet.label "Няма злучэння з Інтэрнэтам.">
 <!ENTITY sync.subtitle.failaccount.label "Няўдача стварэння рахунку на вашай збудове.">
-<!ENTITY sync.subtitle.failmultiple.label "Вы маеце некалькі ўсталяваных Firefox? Зараз &syncBrand.fullName.label; падтрымлівае толькі адно ўсталяванне Firefox. Высталюйце, калі ласка, іншыя асобнікі, каб скарыстацца &syncBrand.shortName.label;.">
+<!ENTITY sync.subtitle.failmultiple.label "Вы маеце некалькі ўсталяваных IceCat? Зараз &syncBrand.fullName.label; падтрымлівае толькі адно ўсталяванне IceCat. Высталюйце, калі ласка, іншыя асобнікі, каб скарыстацца &syncBrand.shortName.label;.">
 <!ENTITY sync.title.success.label "Уладкаванне скончана">
 <!ENTITY sync.subtitle.success.label1 "Вашы здаткі зараз фонава сцягваюцца. Вы можаце перайсці ў Наладжванні, каб кіраваць вашым рахункам, або пачаць азіранне ў &brandShortName;.">
 <!ENTITY sync.settings.label "Наладжванні">
@@ -81,11 +81,11 @@
 <!ENTITY fxaccount_getting_started_welcome_to_sync "Калі ласка да &syncBrand.shortName.label;">
 <!ENTITY fxaccount_getting_started_description "Увайсці, каб сінхранізаваць вашы ўстаўкі, закладкі, паролі і іншае.">
 <!ENTITY fxaccount_getting_started_get_started "Пачаць">
-<!ENTITY fxaccount_getting_started_old_firefox "Ужываеце старэйшую версію &syncBrand.shortName.label;?">
-<!ENTITY fxaccount_create_account_header2 "Стварыць рахунак Firefox">
+<!ENTITY fxaccount_getting_started_old_icecat "Ужываеце старэйшую версію &syncBrand.shortName.label;?">
+<!ENTITY fxaccount_create_account_header2 "Стварыць рахунак IceCat">
 <!ENTITY fxaccount_create_account_password_length_restriction "Павінна быць прынамсі 8 знакаў">
 <!ENTITY fxaccount_create_account_year_of_birth "Год нараджэння">
-<!ENTITY fxaccount_create_account_policy_text2 "Працягваючы, я згодны з &formatS1; і &formatS2; воблачных службаў Firefox.">
+<!ENTITY fxaccount_create_account_policy_text2 "Працягваючы, я згодны з &formatS1; і &formatS2; воблачных службаў IceCat.">
 <!ENTITY fxaccount_create_account_button "Далей">
 <!ENTITY fxaccount_create_account_choose_what_to_sync "Выбраць, чым дзяліцца">
 <!ENTITY fxaccount_create_account_sign_in_instead "Ужо маеце рахунак? Увайсці">
@@ -109,7 +109,7 @@
 <!ENTITY fxaccount_update_credentials_header "Уваход">
 <!ENTITY fxaccount_update_credentials_button_label "Увайсці">
 <!ENTITY fxaccount_update_credentials_unknown_error "Немагчыма ўвайсці">
-<!ENTITY fxaccount_status_header2 "Рахунак Firefox">
+<!ENTITY fxaccount_status_header2 "Рахунак IceCat">
 <!ENTITY fxaccount_status_signed_in_as "Увайшоўшы як">
 <!ENTITY fxaccount_status_sync "&syncBrand.shortName.label;">
 <!ENTITY fxaccount_status_sync_enabled "&syncBrand.shortName.label;: дазволены">
@@ -125,10 +125,10 @@
 <!ENTITY fxaccount_status_legal "Легальны">
 <!ENTITY fxaccount_status_linktos "Умовы абслугоўвання">
 <!ENTITY fxaccount_status_linkprivacy "Папярэджанне адасаблення">
-<!ENTITY fxaccount_account_type_label "Firefox">
+<!ENTITY fxaccount_account_type_label "IceCat">
 <!ENTITY fxaccount_options_title "Наладжванні &syncBrand.shortName.label;">
 <!ENTITY fxaccount_options_configure_title "Наладжванне &syncBrand.shortName.label;">
-<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Вы павінны ўзняць Firefox">
+<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Вы павінны ўзняць IceCat">
 <!ENTITY fxaccount_remote_error_ATTEMPT_TO_CREATE_AN_ACCOUNT_THAT_ALREADY_EXISTS_2 "Рахунак ужо існуе. &formatS1;">
 <!ENTITY fxaccount_remote_error_ATTEMPT_TO_ACCESS_AN_ACCOUNT_THAT_DOES_NOT_EXIST "Крывы адрас э-пошты або пароль">
 <!ENTITY fxaccount_remote_error_INCORRECT_PASSWORD "Крывы адрас э-пошты або пароль">

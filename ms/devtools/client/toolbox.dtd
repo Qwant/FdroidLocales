@@ -92,7 +92,7 @@ values from browser.dtd.  -->
   -  boolean preference in about:config, in the options panel. -->
 
 <!ENTITY options.enableRemote.label3    "Bolehkan menyahpepijat jauh">
-<!ENTITY options.enableRemote.tooltip   "Menghidupkan pilihan ini akan membenarkan alatan pembangun untuk menyahpepijat misalan Firefox jauh seperti FIrefox OS">
+<!ENTITY options.enableRemote.tooltip   "Menghidupkan pilihan ini akan membenarkan alatan pembangun untuk menyahpepijat misalan IceCat jauh seperti FIrefox OS">
 <!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
   -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
   -  boolean preference in about:config, in the options panel. -->
@@ -117,7 +117,7 @@ values from browser.dtd.  -->
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
 
-<!ENTITY options.selectDefaultTools.label     "Alatan Pembangun Firefox Lalai">
+<!ENTITY options.selectDefaultTools.label     "Alatan Pembangun IceCat Lalai">
 <!-- LOCALIZATION NOTE (options.selectAdditionalTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the developer tools
   -  added by add-ons. This heading is hidden when there is no developer tool

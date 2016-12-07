@@ -16,7 +16,7 @@
 <!ENTITY rights.intro-point1b "Mozillan julkisen lisenssin (Mozilla Public License)">
 <!ENTITY rights.intro-point1c " ehdoilla. Lisenssissä annetaan sinulle oikeus käyttää, kopioida ja levittää &brandShortName;ia. Sinulla on myös halutessasi oikeus muokata ja muuttaa &brandShortName;in lähdekoodia omien tarpeittesi mukaisesti. Mozillan julkinen lisenssi antaa sinulle myös oikeuden levittää näitä muokkaamiasi versioita.">
 
-<!ENTITY rights.intro-point2a "Mozilla ei anna sinulle mitään oikeuksia Mozilla tai Thunderbird tavaramerkkeihin tai logoihin. Voit lukea tarkempia lisätietoja tavaramerkeistä  ">
+<!ENTITY rights.intro-point2a "Mozilla ei anna sinulle mitään oikeuksia GNU tai Thunderbird tavaramerkkeihin tai logoihin. Voit lukea tarkempia lisätietoja tavaramerkeistä  ">
 <!ENTITY rights.intro-point2b "täältä">
 <!ENTITY rights.intro-point2c ".">
 
@@ -29,7 +29,7 @@
 <!ENTITY rights.intro-point3-unbranded "Kaikki tämän tuotteen käyvät tietosuojakäytänteet tulisi luetteloida tässä.">
 
 <!-- point 4 text for official branded builds -->
-<!ENTITY rights.intro-point4a "&brandShortName;iin on sisällytetty myös verkkopohjaisia palveluja kuten turvallisen selaamisen SafeBrowsing-palvelu, jotka on tarvittaessa mahdollista ottaa pois päältä. Mozilla ei kuitenkaan takaa näiden palvelujen olevan 100 &#37; tarkkoja tai virheettömiä. Lisätietoja palveluista mukaan lukien ohjeet niiden päältä poistamiseen löydät ">
+<!ENTITY rights.intro-point4a "&brandShortName;iin on sisällytetty myös verkkopohjaisia palveluja kuten turvallisen selaamisen SafeBrowsing-palvelu, jotka on tarvittaessa mahdollista ottaa pois päältä. GNU ei kuitenkaan takaa näiden palvelujen olevan 100 &#37; tarkkoja tai virheettömiä. Lisätietoja palveluista mukaan lukien ohjeet niiden päältä poistamiseen löydät ">
 <!ENTITY rights.intro-point4b "palveluehdoista">
 <!ENTITY rights.intro-point4c ".">
 

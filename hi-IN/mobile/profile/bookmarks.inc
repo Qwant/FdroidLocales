@@ -33,11 +33,11 @@
 
 
 
-# link title for about:fennec
+# link title for about:icecatmobile
 
 
 
-#define bookmarks_aboutBrowser Firefox: आपके ब्राउज़र के बारे में
+#define bookmarks_aboutBrowser IceCat: आपके ब्राउज़र के बारे में
 
 
 
@@ -45,11 +45,11 @@
 
 
 
-# link title for https://addons.mozilla.org/en-US/mobile
+# link title for https://directory.fsf.org/wiki/GNU_IceCat
 
 
 
-#define bookmarks_addons Firefox: सहयुक्तियाँ मनपसंद बनाएँ
+#define bookmarks_addons IceCat: सहयुक्तियाँ मनपसंद बनाएँ
 
 
 
@@ -61,7 +61,7 @@
 
 
 
-#define bookmarks_support Firefox: समर्थन
+#define bookmarks_support IceCat: समर्थन
 
 
 
@@ -69,11 +69,11 @@
 
 
 
-# link title for https://marketplace.firefox.com
+# link title for https://f-droid.org/repository/browse
 
 
 
-#define bookmarks_marketplace Firefox Marketplace
+#define bookmarks_marketplace F-droid free software repository
 
 
 

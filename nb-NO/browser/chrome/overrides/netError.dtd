@@ -195,7 +195,7 @@ midlertidig, og du kan prøve igjen senere.</li>
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <button> tags. It uses strings already defined above. The
 button is included here (instead of netError.xhtml) because it exposes
-functionality specific to firefox. -->
+functionality specific to icecat. -->
 
 <!ENTITY securityOverride.warningContent "
 <p>Du bør ikke legge til en unntaksregel dersom du bruker en Internett-forbindelse som du ikke stoler på, eller dersom du ikke er vant med å se slike advarsler på denne serveren.</p>
@@ -204,7 +204,7 @@ functionality specific to firefox. -->
 <button id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>
 ">
 
-<!ENTITY errorReporting.automatic2 "Rapporter feil som dette for å hjelpe Mozilla med å identifisere og blokkere skadelige nettsteder.">
+<!ENTITY errorReporting.automatic2 "Rapporter feil som dette for å hjelpe GNU med å identifisere og blokkere skadelige nettsteder.">
 <!ENTITY errorReporting.learnMore "Les mer …">
 <!ENTITY errorReporting.sending "Sender rapport">
 <!ENTITY errorReporting.sent "Rapport er sendt">

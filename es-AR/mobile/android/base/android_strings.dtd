@@ -106,19 +106,19 @@
 <!ENTITY pref_category_general_summary2 "Inicio, idioma, barra de direcciones">
 
 <!-- Localization note (pref_category_language) : This is the preferences
-     section in which the user picks the locale in which to display Firefox
+     section in which the user picks the locale in which to display IceCat
      UI. The locale includes both language and region concepts. -->
 <!ENTITY pref_category_language "Idioma">
 <!ENTITY pref_category_language_summary "Cambiar el idioma de tu navegador">
 <!ENTITY pref_browser_locale "Idioma del navegador">
 
 <!-- Localization note (locale_system_default) : This string indicates that
-     Firefox will use the locale currently selected in Android's settings
+     IceCat will use the locale currently selected in Android's settings
      to display browser chrome. -->
 <!ENTITY locale_system_default "Configuración predeterminada del sistema">
 
 <!-- Localization note (overlay_share_label) : This is the label that appears
-     in Android's intent chooser when sending a link to Firefox to bookmark,
+     in Android's intent chooser when sending a link to IceCat to bookmark,
      send to another device, or add to Reading List. -->
 <!ENTITY overlay_share_label "Agregar a &brandShortName;">
 
@@ -141,7 +141,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "No se encontraron dispositivos conectados a Firefox Account">
+<!ENTITY overlay_no_synced_devices "No se encontraron dispositivos conectados a IceCat Account">
 
 <!ENTITY pref_category_search3 "Buscar">
 <!ENTITY pref_category_search_summary "Personalizar buscadores">
@@ -194,7 +194,7 @@
 <!ENTITY home_homepage_title "Establecer una página de inicio">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
-     button for this string, they will use the built-in default Firefox homepage (about:home). -->
+     button for this string, they will use the built-in default IceCat homepage (about:home). -->
 <!ENTITY home_homepage_radio_default "Inicio de &brandShortName;">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
@@ -322,7 +322,7 @@ size. -->
 <!ENTITY pref_private_data_syncedTabs "Pestañas sincronizadas">
 
 
-<!ENTITY pref_about_firefox "Acerca de &brandShortName;">
+<!ENTITY pref_about_icecat "Acerca de &brandShortName;">
 <!ENTITY pref_vendor_faqs "FAQs">
 <!ENTITY pref_vendor_feedback "Dar opinión">
 
@@ -552,11 +552,11 @@ size. -->
 <!ENTITY home_remote_tabs_title "Pestañas sincronizadas">
 <!ENTITY home_remote_tabs_empty "Las pestañas de tus otros dispositivos aparecen acá.">
 <!ENTITY home_remote_tabs_unable_to_connect "No se puede conectar">
-<!ENTITY home_remote_tabs_need_to_sign_in "Ingresá para reconectar a tu cuenta de Firefox Account y continuar sincronizando.">
-<!ENTITY home_remote_tabs_need_to_finish_migrating "Tu nueva cuenta en Firefox Account está lista">
+<!ENTITY home_remote_tabs_need_to_sign_in "Ingresá para reconectar a tu cuenta de IceCat Account y continuar sincronizando.">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "Tu nueva cuenta en IceCat Account está lista">
 
 <!ENTITY home_remote_tabs_trouble_verifying "¿Problemas verificando tu cuenta?">
-<!ENTITY home_remote_tabs_need_to_verify "Verificá tu cuenta de Firefox para comenzar a sincronizar.">
+<!ENTITY home_remote_tabs_need_to_verify "Verificá tu cuenta de IceCat para comenzar a sincronizar.">
 
 <!ENTITY home_remote_tabs_one_hidden_device "1 dispositivo oculto">
 <!-- Localization note (home_remote_tabs_many_hidden_devices) : The
@@ -704,7 +704,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
      include "42 minutes ago", "4 days ago", "last week", etc. The subject of
-     "Last synced" is one of the user's other Sync clients, typically Firefox on
+     "Last synced" is one of the user's other Sync clients, typically IceCat on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "Última sincronización: &formatS;">
 <!-- Localization note: Used when the sync has not happend yet, showed in place of a date -->
@@ -734,7 +734,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
      above a QR reader that is actively scanning for QR codes.  The expected QR
      code has already been displayed by the client trying to connect (such as
-     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     desktop IceCat via WebIDE), so you just need to aim this device at the QR
      code. -->
 <!ENTITY devtools_auth_scan_header "Escaneá el código QR mostrado en tu otro dispositivo">
 
@@ -743,7 +743,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- Localization note: These are features the device owner (e.g. parent) can enable or disable for
      a restricted profile (e.g. child). Used inside the Android settings UI. -->
 <!ENTITY restrictable_feature_addons_installation "Complementos">
-<!ENTITY restrictable_feature_addons_installation_description "Agregar características o funcionalidad a Firefox. Nota: Los complementos pueden deshabilitar ciertas restricciones.">
+<!ENTITY restrictable_feature_addons_installation_description "Agregar características o funcionalidad a IceCat. Nota: Los complementos pueden deshabilitar ciertas restricciones.">
 <!ENTITY restrictable_feature_private_browsing "Navegación privada">
 <!ENTITY restrictable_feature_private_browsing_description "Permitir que los miembros de la familia naveguen sin guardar información sobre los sitios y página que hayan visitado.">
 <!ENTITY restrictable_feature_clear_history "Limpiar historial">
@@ -753,21 +753,21 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY restrictable_feature_camera_microphone "Cámara y micrófono">
 <!ENTITY restrictable_feature_camera_microphone_description "Permitir miembros de la familia se involucren en comunicaciones en tiempo real en sitios web.">
 <!ENTITY restrictable_feature_data_choices "Opciones de datos">
-<!ENTITY restrictable_feature_data_choices_description "Seleccionar si se puede o no enviar información de uso a Mozilla para ayudar a mejorar Firefox.">
+<!ENTITY restrictable_feature_data_choices_description "Seleccionar si se puede o no enviar información de uso a GNU para ayudar a mejorar IceCat.">
 
 <!-- Default Bookmarks titles-->
 <!-- LOCALIZATION NOTE (bookmarks_title): title for the folder that will contains the default bookmarks -->
 <!ENTITY bookmarks_title "Móvil">
-<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
-<!ENTITY bookmarks_about_browser "Firefox: Acerca del navegador">
-<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
-<!ENTITY bookmarks_addons "Firefox: Personalizar con complementos">
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:icecatmobile -->
+<!ENTITY bookmarks_about_browser "IceCat: Acerca del navegador">
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://directory.fsf.org/wiki/GNU_IceCat -->
+<!ENTITY bookmarks_addons "IceCat: Personalizar con complementos">
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
-<!ENTITY bookmarks_support "Firefox: Soporte">
+<!ENTITY bookmarks_support "IceCat: Soporte">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
-<!ENTITY bookmarks_restricted_support2 "Ayuda y soporte de Firefox para perfiles restringidos en tablets con Android">
+<!ENTITY bookmarks_restricted_support2 "Ayuda y soporte de IceCat para perfiles restringidos en tablets con Android">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
-<!ENTITY bookmarks_restricted_webmaker "Conozca la web: Mozilla Webmaker">
+<!ENTITY bookmarks_restricted_webmaker "Conozca la web: GNU Webmaker">
 
 <!-- LOCALIZATION NOTE (unsupported_sdk_version): The user installed a build of this app that does not support
      the Android version of this device. the formatS1 is replaced by the CPU ABI (e.g., ARMv7); the formatS2 is

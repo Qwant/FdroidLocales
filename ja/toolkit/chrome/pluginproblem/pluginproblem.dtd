@@ -39,4 +39,4 @@
 
 <!ENTITY plugin.file				"ファイル">
 <!ENTITY plugin.mimeTypes			"MIME タイプ">
-<!ENTITY plugin.flashProtectedMode.label	"Adobe Flash の保護モードを有効化">
+<!ENTITY plugin.flashProtectedMode.label	"Flash の保護モードを有効化">

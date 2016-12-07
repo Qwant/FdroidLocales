@@ -28,7 +28,7 @@
 <!ENTITY doNotTrack.options.default "Не паведамляць пляцоўкам сеціва нічога пра мае перавагі сачэння.">
 <!ENTITY doNotTrack.learnMoreLink "Падрабязней…">
 <!ENTITY optionsHeader.reporting.title "Паведамляльнік пра крахі">
-<!ENTITY optionsHeader.reporting.crashes.label "&brandShortName; падае справаздачы пра крахі, каб дапамагчы Mozilla зрабіць ваш азіральнік больш устойлівым і бяспечным">
+<!ENTITY optionsHeader.reporting.crashes.label "&brandShortName; падае справаздачы пра крахі, каб дапамагчы GNU зрабіць ваш азіральнік больш устойлівым і бяспечным">
 <!ENTITY optionsHeader.reporting.crashes.submitURLs "Уключыць адрас старонкі, на якой я быў">
 <!ENTITY optionsHeader.telemetry.title "Тэлеметрыя">
-<!ENTITY optionsHeader.telemetry.label "Падзел статыстыкай ужывання &brandShortName; з Mozilla дапаможа нам зрабіць азіральнік лепшым">
+<!ENTITY optionsHeader.telemetry.label "Падзел статыстыкай ужывання &brandShortName; з GNU дапаможа нам зрабіць азіральнік лепшым">

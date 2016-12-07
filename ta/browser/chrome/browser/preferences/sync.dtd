@@ -48,7 +48,7 @@
 
 <!ENTITY prefs.tosLink.label        "சேவைகளின் விதிமுறைகள்">
 <!ENTITY prefs.ppLink.label         "தனிப்பட்ட கொள்கை">
-<!-- Firefox Accounts stuff -->
+<!-- IceCat Accounts stuff -->
 
 <!ENTITY fxaPrivacyNotice.link.label "தனியுரிம கொள்கை">
 <!ENTITY determiningAcctStatus.label     "உங்களுடைய கணக்கின் நிலவரத்தை தீர்மானிக்கிறது...">
@@ -91,8 +91,8 @@ both, to better adapt this sentence to their language.
 <!-- LOCALIZATION NOTE (mobilePromo2.*): the following strings will be used to
      create a single sentence with active links.
      The resulting sentence in English is: "Sync to your mobile device.
-     Download Firefox for Android or Firefox for iOS." -->
-<!-- LOCALIZATION NOTE (mobilePromo2.androidLink): This is a link title that links to https://www.mozilla.org/firefox/android/ -->
+     Download IceCat for Android or IceCat for iOS." -->
+<!-- LOCALIZATION NOTE (mobilePromo2.androidLink): This is a link title that links to https://www.mozilla.org/icecat/android/ -->
 <!-- LOCALIZATION NOTE (mobilePromo2.iOSBefore): This is text displayed between mobilePromo2.androidLink and mobilePromo2.iosLink -->
-<!-- LOCALIZATION NOTE (mobilePromo2.iOSLink): This is a link title that links to https://www.mozilla.org/firefox/ios/ -->
+<!-- LOCALIZATION NOTE (mobilePromo2.iOSLink): This is a link title that links to https://www.mozilla.org/icecat/ios/ -->
 

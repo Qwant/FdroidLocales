@@ -49,7 +49,7 @@
 <!ENTITY prefs.tosLink.label             "Teenuse tingimused">
 <!ENTITY prefs.ppLink.label              "Privaatsusreeglid">
 
-<!-- Firefox Accounts stuff -->
+<!-- IceCat Accounts stuff -->
 <!ENTITY fxaPrivacyNotice.link.label     "Privaatsusest">
 <!ENTITY determiningAcctStatus.label     "Konto oleku tuvastamine…">
 
@@ -91,8 +91,8 @@ both, to better adapt this sentence to their language.
 
 <!ENTITY signedIn.engines.label          "Kõigis seadmetes sünkroniseeritakse">
 
-<!ENTITY mobilePromo.start               "Hangi Firefox ">
-<!-- LOCALIZATION NOTE (mobilePromo.androidLink): This is a link title that links to https://www.mozilla.org/firefox/android/ -->
+<!ENTITY mobilePromo.start               "Hangi IceCat ">
+<!-- LOCALIZATION NOTE (mobilePromo.androidLink): This is a link title that links to https://www.mozilla.org/icecat/android/ -->
 <!ENTITY mobilePromo.androidLink         "Android™-ile">
 <!ENTITY mobilePromo.end                 ", et sünkroniseerida ka mobiilse seadmega.">
 <!ENTITY androidAttribution              "Android on Google Inc. kaubamärk">

@@ -1,6 +1,6 @@
 #filter emptyLines
 
-#define MOZ_LANGPACK_CREATOR Mozilla Brasil
+#define MOZ_LANGPACK_CREATOR GNU Brasil
 
 # If non-English locales wish to credit multiple contributors, uncomment this
 

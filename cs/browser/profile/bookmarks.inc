@@ -14,27 +14,27 @@
 #define bookmarks_toolbarfolder_description Pro zobrazení záložky v liště záložek stačí přidat záložku do této složky
 
 # LOCALIZATION NOTE (getting_started):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/central/
+# link title for http://en-US.www.mozilla.com/en-US/icecat/central/
 #define getting_started Jak začít
 
-# LOCALIZATION NOTE (firefox_heading):
-# Firefox links folder name
-#define firefox_heading Mozilla Firefox
+# LOCALIZATION NOTE (icecat_heading):
+# IceCat links folder name
+#define icecat_heading GNU IceCat
 
-# LOCALIZATION NOTE (firefox_help):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/help/
-#define firefox_help Nápověda a návody
+# LOCALIZATION NOTE (icecat_help):
+# link title for http://en-US.www.mozilla.com/en-US/icecat/help/
+#define icecat_help Nápověda a návody
 
-# LOCALIZATION NOTE (firefox_customize):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/customize/
-#define firefox_customize Přizpůsobení Firefoxu
+# LOCALIZATION NOTE (icecat_customize):
+# link title for http://en-US.www.mozilla.com/en-US/icecat/customize/
+#define icecat_customize Přizpůsobení IceCatu
 
-# LOCALIZATION NOTE (firefox_community):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/community/
-#define firefox_community Zapojte se
+# LOCALIZATION NOTE (firefox.community):
+# link title for http://en-US.www.mozilla.com/en-US/firefox.community/
+#define firefox.community Zapojte se
 
-# LOCALIZATION NOTE (firefox_about):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/about/
-#define firefox_about O nás
+# LOCALIZATION NOTE (icecat_about):
+# link title for http://en-US.www.mozilla.com/en-US/icecat/about/
+#define icecat_about O nás
 
 #unfilter emptyLines

@@ -105,7 +105,7 @@ values from browser.dtd.  -->
   -  checkbox that toggles remote debugging, i.e. devtools.debugger.remote-enabled
   -  boolean preference in about:config, in the options panel. -->
 <!ENTITY options.enableRemote.label3    "Ebligi foran sencimigon">
-<!ENTITY options.enableRemote.tooltip   "Ŝalto de tiu ĉi elekteblo permesos al la iloj por disvolvantoj la sencimigon de foraj instancoj de Firefox, kiel Firefox OS">
+<!ENTITY options.enableRemote.tooltip   "Ŝalto de tiu ĉi elekteblo permesos al la iloj por disvolvantoj la sencimigon de foraj instancoj de IceCat, kiel IceCat OS">
 
 <!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
   -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
@@ -134,7 +134,7 @@ values from browser.dtd.  -->
 <!-- LOCALIZATION NOTE (options.selectDefaultTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the default developer
   -  tools. -->
-<!ENTITY options.selectDefaultTools.label     "Normaj iloj de Firefox por disvolvantoj">
+<!ENTITY options.selectDefaultTools.label     "Normaj iloj de IceCat por disvolvantoj">
 
 <!-- LOCALIZATION NOTE (options.selectAdditionalTools.label): This is the label for
   -  the heading of group of checkboxes corresponding to the developer tools

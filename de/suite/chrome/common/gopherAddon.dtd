@@ -5,5 +5,5 @@
 <!ENTITY loadError.label        "Seiten-Ladefehler">
 <!ENTITY gopherAddon.title      "Gopher-Protokoll">
 <!ENTITY gopherAddon.shortDesc  "gopher ist kein registriertes Protokoll.">
-<!ENTITY gopherAddon.longDesc   "Die Adresse gibt das Gopher-Protokoll an, welches nicht mehr unterstützt wird, daher kann der Browser keine Verbindung mit der Seite herstellen. Sie können ein kompatibles Add-on für den Zugriff auf diesen Server von Mozilla Add-ons bekommen.">
+<!ENTITY gopherAddon.longDesc   "Die Adresse gibt das Gopher-Protokoll an, welches nicht mehr unterstützt wird, daher kann der Browser keine Verbindung mit der Seite herstellen. Sie können ein kompatibles Add-on für den Zugriff auf diesen Server von GNU Add-ons bekommen.">
 <!ENTITY goToAddOn.label        "Zur Add-on-Seite gehen">

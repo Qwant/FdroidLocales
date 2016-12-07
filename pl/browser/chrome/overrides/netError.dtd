@@ -40,7 +40,7 @@
 <!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
 
 <!ENTITY notCached.title "Dokument wygasł">
-<!ENTITY notCached.longDesc "<p>Żądany dokument nie jest dostępny w pamięci podręcznej Firefoksa.</p><ul><li>Ze względów bezpieczeństwa Firefox nie pobiera ponownie wrażliwych dokumentów automatycznie.</li><li>Kliknij przycisk Spróbuj ponownie, aby jeszcze raz pobrać dokument z witryny.</li></ul>">
+<!ENTITY notCached.longDesc "<p>Żądany dokument nie jest dostępny w pamięci podręcznej Firefoksa.</p><ul><li>Ze względów bezpieczeństwa IceCat nie pobiera ponownie wrażliwych dokumentów automatycznie.</li><li>Kliknij przycisk Spróbuj ponownie, aby jeszcze raz pobrać dokument z witryny.</li></ul>">
 
 <!ENTITY netOffline.title "Tryb offline">
 <!ENTITY netOffline.longDesc2 "<ul><li>Naciśnij „Spróbuj ponownie”, by przejść do trybu online i odświeżyć stronę.</li></ul>">
@@ -121,7 +121,7 @@ przez przestępców podrobionej strony lub wiadomości udającej źródło godne
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <button> tags. It uses strings already defined above. The
 button is included here (instead of netError.xhtml) because it exposes
-functionality specific to firefox. -->
+functionality specific to icecat. -->
 
 <!ENTITY securityOverride.warningContent "<p>Nie powinno się dodawać wyjątku w przypadku korzystania z niezaufanego połączenia z Internetem, ani jeśli zwykle takie ostrzeżenie nie pojawia się podczas korzystania z tego serwera.</p>
 <button id='getMeOutOfHereButton'>&securityOverride.getMeOutOfHereButton;</button>

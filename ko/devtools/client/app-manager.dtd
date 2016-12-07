@@ -94,10 +94,10 @@
 
 <!ENTITY help.title "앱 관리자">
 <!ENTITY help.close "닫기">
-<!ENTITY help.intro "이 도구는 웹앱을 빌드하고 호환되는 기기(예: Firefox OS)에 설치하는 것을 도와줄 것입니다. <strong>앱</strong> 탭에서는 앱이 유효한지 검사한 다음 설치하는 과정을 도와줄 것입니다. <strong>기기</strong> 탭에서는 연결된 기기에 대한 정보를 줄 것입니다. 아래에 있는 도구 모음에서 기기에 연결하거나 시뮬레이터를 시작할 수 있습니다.">
+<!ENTITY help.intro "이 도구는 웹앱을 빌드하고 호환되는 기기(예: IceCat OS)에 설치하는 것을 도와줄 것입니다. <strong>앱</strong> 탭에서는 앱이 유효한지 검사한 다음 설치하는 과정을 도와줄 것입니다. <strong>기기</strong> 탭에서는 연결된 기기에 대한 정보를 줄 것입니다. 아래에 있는 도구 모음에서 기기에 연결하거나 시뮬레이터를 시작할 수 있습니다.">
 <!ENTITY help.usefullLinks "도움이 될만한 링크:">
 <!ENTITY help.appMgrDoc "문서: 앱 관리자 사용하기">
-<!ENTITY help.configuringDevice "Firefox OS 기기를 설정하는 방법">
+<!ENTITY help.configuringDevice "IceCat OS 기기를 설정하는 방법">
 <!ENTITY help.troubleShooting "문제 해결">
 <!ENTITY help.simulatorAddon "시뮬레이터 부가 기능 설치">
 <!ENTITY help.adbHelperAddon "Adb 도우미 부가 기능 설치">

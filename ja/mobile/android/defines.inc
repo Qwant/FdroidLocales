@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 #filter emptyLines
 
-#define MOZ_LANGPACK_CREATOR Mozilla Japanese L10N Community
+#define MOZ_LANGPACK_CREATOR GNU Japanese L10N Community
 
 # If non-English locales wish to credit multiple contributors, uncomment this
 # variable definition and use the format specified.

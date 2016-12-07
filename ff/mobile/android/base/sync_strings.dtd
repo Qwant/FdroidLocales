@@ -4,7 +4,7 @@
 <!-- Don't localize these. They're here until they have
      a better place to live. -->
 
-<!ENTITY syncBrand.fullName.label "Firefox Sync">
+<!ENTITY syncBrand.fullName.label "IceCat Sync">
 <!ENTITY syncBrand.shortName.label "Sanngoɗin">
 <!-- Main titles. -->
 
@@ -16,7 +16,7 @@
 
 <!ENTITY sync.subtitle.connect.label "Ngam hurminde kaɓirgol maa kesol ngol, labo “Set up &syncBrand.shortName.label;” e kaɓirgol ngol.">
 <!ENTITY sync.subtitle.header2.label "Naatnu ngol dokkol e kaɓirgol maa ngola">
-<!ENTITY sync.subtitle.connectlocation2.label "Labo “&sync.title.pair.label;” e rogere &syncBrand.shortName.label; e nder cuɓe maa Firefox e kaɓirgol maa ngola.">
+<!ENTITY sync.subtitle.connectlocation2.label "Labo “&sync.title.pair.label;” e rogere &syncBrand.shortName.label; e nder cuɓe maa IceCat e kaɓirgol maa ngola.">
 <!ENTITY sync.subtitle.pair.label "Ngam hurminde, labo “Jokkondir Kaɓirɗi” e kaɓirgol maa ngola.">
 <!ENTITY sync.pin.default.label "...\n...\n...\n">
 <!ENTITY sync.pin.oneline.label "...">
@@ -42,7 +42,7 @@
 <!ENTITY sync.button.manual.label "Teelte junngol">
 <!ENTITY sync.subtitle.nointernet.label "Alaa ceŋol enternet woodi.">
 <!ENTITY sync.subtitle.failaccount.label "Cosgol konte e kaɓirgol maa woorii.">
-<!ENTITY sync.subtitle.failmultiple.label "Aɗa jogii ko ɓuri aafannde wootere Firefox? Oo sahaa, &syncBrand.fullName.label; jaɓata tan ko aafannde Firefox wootere laawol gootol. Tiiɗno aaftu cili goɗɗi ɗii ngam huutoraade &syncBrand.shortName.label;.">
+<!ENTITY sync.subtitle.failmultiple.label "Aɗa jogii ko ɓuri aafannde wootere IceCat? Oo sahaa, &syncBrand.fullName.label; jaɓata tan ko aafannde IceCat wootere laawol gootol. Tiiɗno aaftu cili goɗɗi ɗii ngam huutoraade &syncBrand.shortName.label;.">
 <!-- Setup Success -->
 
 <!ENTITY sync.title.success.label "Teeltagol Gasii">
@@ -53,7 +53,7 @@
 
 <!ENTITY sync.pair.tryagain.label "Tiiɗno fuɗɗito.">
 <!ENTITY sync.pair.connectlocation.label "Ngam hurminde kaɓirgol maa kesol ngol, labo “Set up &syncBrand.shortName.label;” e kaɓirgol ngol, kisa labo-ɗaa “Miɗo Jogii Konte.”">
-<!-- Firefox SyncAdapter Settings Screen -->
+<!-- IceCat SyncAdapter Settings Screen -->
 
 <!ENTITY sync.settings.options.label "Cuɓe">
 <!ENTITY sync.summary.pair.label "Seŋ kaɓirgol goɗngol e konte maa &syncBrand.shortName.label;">
@@ -74,10 +74,10 @@
 
 <!ENTITY sync.account.label "&syncBrand.fullName.label; (woppaama)">
 <!-- Localization note (sync.default.client.name): Default string of the "Device
-     name" menu item upon setting up Firefox Sync.  The placeholder &formatS1
-     will be replaced by the name of the Firefox release channel and &formatS2
+     name" menu item upon setting up IceCat Sync.  The placeholder &formatS1
+     will be replaced by the name of the IceCat release channel and &formatS2
      by the model name of the Android device. Examples look like "Aurora on
-     GT-I1950" and "Fennec on MI 2S". -->
+     GT-I1950" and "IceCatMobile on MI 2S". -->
 
 <!ENTITY sync.default.client.name "&formatS1; e &formatS2;">
 <!-- Bookmark folder strings -->
@@ -111,10 +111,10 @@
 <!ENTITY sync.text.redirect.to.set.up.sync.label "Teelto &syncBrand.fullName.label; e kaɓirgol maa ngam neldude tabbe to kaɓirɗi goeei.">
 <!ENTITY sync.text.tab.sent.label "Tabbere maa neldaama!">
 <!ENTITY sync.text.tab.not.sent.label "Caɗeele mbaɗii nde tabbe maa neldetee.">
-<!-- Firefox Account strings. -->
+<!-- IceCat Account strings. -->
 
 
-<!ENTITY fxaccount_full_label "Konte Firefox">
+<!ENTITY fxaccount_full_label "Konte IceCat">
 
 <!ENTITY fxaccount_custom_server_account_title "Nana huutoroo konte e sarworde">
 <!ENTITY fxaccount_custom_server_sync_title "Nana moofta keɓe Sync e sarworde">
@@ -128,7 +128,7 @@
 <!ENTITY fxaccount_password_show "Hollu">
 <!-- Localization note: these are shown in screens after the user has
      created or signed in to an account, and take the user back to
-     Firefox. -->
+     IceCat. -->
 
 <!ENTITY fxaccount_back_to_browsing "Rutto to banngagol">
 <!-- Localization note: the following two strings are interpolated
@@ -143,18 +143,18 @@
 <!ENTITY fxaccount_getting_started_welcome_to_sync "A jaɓɓaama e &syncBrand.shortName.label;">
 
 <!ENTITY fxaccount_getting_started_get_started "Fuɗɗo ɗoo">
-<!ENTITY fxaccount_getting_started_old_firefox "Njogi-ɗaa ko yamre hiiɗnde &syncBrand.shortName.label;?">
-<!-- Localization note: the Firefox below should not change with the
-     particular version of Firefox installed (Release, Beta, Aurora,
-     etc).  The account remains a "Firefox Account". -->
+<!ENTITY fxaccount_getting_started_old_icecat "Njogi-ɗaa ko yamre hiiɗnde &syncBrand.shortName.label;?">
+<!-- Localization note: the IceCat below should not change with the
+     particular version of IceCat installed (Release, Beta, Aurora,
+     etc).  The account remains a "IceCat Account". -->
 
-<!ENTITY fxaccount_create_account_header2 "Sos Konte Firefox">
+<!ENTITY fxaccount_create_account_header2 "Sos Konte IceCat">
 <!ENTITY fxaccount_create_account_password_length_restriction "Ena foti waɗde alkule 8 so famɗii">
 
 
 <!ENTITY fxaccount_create_account_year_of_birth "Hitaande jibinannde">
 <!-- Localization note: &formatS1; is fxaccount_policy_linktos, &formatS2; is fxaccount_policy_linkprivacy, both hyperlinked. -->
-<!ENTITY fxaccount_create_account_policy_text2 "So mi yawtii ɗoo, mi jaɓorii &formatS1; e&formatS2; carwol ruulde Firefox.">
+<!ENTITY fxaccount_create_account_policy_text2 "So mi yawtii ɗoo, mi jaɓorii &formatS1; e&formatS2; carwol ruulde IceCat.">
 <!ENTITY fxaccount_create_account_button "Payɗo">
 <!ENTITY fxaccount_create_account_choose_what_to_sync "Suɓo ko sanngoɗintee">
 <!ENTITY fxaccount_create_account_sign_in_instead "Aɗa jogii konnte kisa? Seŋo">
@@ -166,7 +166,7 @@
 <!ENTITY fxaccount_account_create_not_allowed_learn_more "Ɓeydu humpito">
 
 <!ENTITY fxaccount_confirm_account_header "Teeŋtin konte maa">
-<!-- Localization note: &formatS; is the Firefox Account's email address. -->
+<!-- Localization note: &formatS; is the IceCat Account's email address. -->
 <!ENTITY fxaccount_confirm_account_verification_link "Jokkol ƴeewtagol neldaama to &formatS;">
 <!ENTITY fxaccount_confirm_account_resend_email "Neltir iimeel">
 <!ENTITY fxaccount_confirm_account_change_email "Yejjit ndee ñiiɓirde iimeel?">
@@ -195,7 +195,7 @@
 <!ENTITY fxaccount_finish_migrating_button_label "Timmin kesɗitinal">
 
 
-<!ENTITY fxaccount_status_header2 "Konte Firefox">
+<!ENTITY fxaccount_status_header2 "Konte IceCat">
 <!ENTITY fxaccount_status_signed_in_as "A naatii e innde">
 
 <!ENTITY fxaccount_status_auth_server "Sarwrorde konte">
@@ -210,7 +210,7 @@
 <!ENTITY fxaccount_status_needs_upgrade "Aɗa sokli hasɗitinde &brandShortName; ngam seŋaade.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled "&syncBrand.shortName.label; teeltaama, kono wonaa e syncude e jaajol. Toggilo “Auto-sync data” e Teelte Android &gt; Data Usage.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled_v21 "&syncBrand.shortName.label; teeltaama, kono wonaani e syncude e jaajol. Toggilo “Auto-sync data” e dosol Teelte Android &gt; Konte.">
-<!ENTITY fxaccount_status_needs_finish_migrating "Tappu ngam seŋaade e Konte Firefox maa kese">
+<!ENTITY fxaccount_status_needs_finish_migrating "Tappu ngam seŋaade e Konte IceCat maa kese">
 <!ENTITY fxaccount_status_bookmarks "Maantore">
 <!ENTITY fxaccount_status_history "Aslol">
 
@@ -225,20 +225,20 @@
 <!ENTITY fxaccount_status_more "Goɗɗi&ellipsis;">
 
 
-<!ENTITY fxaccount_remove_account_dialog_title "Momtu Konte Firefox?">
+<!ENTITY fxaccount_remove_account_dialog_title "Momtu Konte IceCat?">
 <!ENTITY fxaccount_remove_account_dialog_message "&brandShortName; maa dartin canngoɗinal e konte maa, kono momtoytaa hay huunde e keɓe banngagol maa e ngol kaɓirgol.">
 <!-- Localization note: format string below will be replaced
-     with the Firefox Account's email address. -->
-<!ENTITY fxaccount_remove_account_toast "Konte Firefox &formatS; momtaama.">
+     with the IceCat Account's email address. -->
+<!ENTITY fxaccount_remove_account_toast "Konte IceCat &formatS; momtaama.">
 
 <!-- Localization note: this is the name shown by the Android system
-     itself for a Firefox Account. Don't localize this. -->
+     itself for a IceCat Account. Don't localize this. -->
 
-<!ENTITY fxaccount_account_type_label "Firefox">
+<!ENTITY fxaccount_account_type_label "IceCat">
 <!-- Localization note: these are shown by the Android system itself,
-     when the user navigates to the Android > Accounts > {Firefox
-     Account} Screen. The link takes the user to the Firefox Account
-     status activity, which lets them manage their Firefox
+     when the user navigates to the Android > Accounts > {IceCat
+     Account} Screen. The link takes the user to the IceCat Account
+     status activity, which lets them manage their IceCat
      Account. -->
 
 <!ENTITY fxaccount_options_title "&syncBrand.shortName.label; Cuɓe">
@@ -247,7 +247,7 @@
      has been made to the remote server, and an error of some type has
      been returned. -->
 
-<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Aɗa sokli hesɗitinde Firefox">
+<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Aɗa sokli hesɗitinde IceCat">
 <!-- Localization note: the format string will be fxaccount_sign_in_button_label, linkified. -->
 
 <!ENTITY fxaccount_remote_error_ATTEMPT_TO_CREATE_AN_ACCOUNT_THAT_ALREADY_EXISTS_2 "Konte ɗee ena ngoodi kisa. &formatS1;">
@@ -262,12 +262,12 @@
 
 <!ENTITY fxaccount_sync_sign_in_error_notification_title2 "&syncBrand.shortName.label; seŋaaki">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_sign_in_error_notification_text2 "Tappu ngam seŋaade &formatS;">
 
 <!ENTITY fxaccount_sync_finish_migrating_notification_title "Timmin kesɗitinal &syncBrand.shortName.label;?">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_finish_migrating_notification_text "Tappu ngam seŋaade e &formatS;">
 <!-- Localization note: the following strings are used in a
      notification and should be kept as short as possible. -->

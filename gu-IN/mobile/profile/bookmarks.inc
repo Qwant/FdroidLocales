@@ -12,19 +12,19 @@
 #define bookmarks_title Mobile
 
 # LOCALIZATION NOTE (bookmarks_aboutBrowser):
-# link title for about:fennec
-#define bookmarks_aboutBrowser Firefox: તમારા બ્રાઉઝર વિશે
+# link title for about:icecatmobile
+#define bookmarks_aboutBrowser IceCat: તમારા બ્રાઉઝર વિશે
 
 # LOCALIZATION NOTE (bookmarks_addons):
-# link title for https://addons.mozilla.org/en-US/mobile
-#define bookmarks_addons Firefox: ઍડ-ઓન વડે વૈવિધ્ય બનાવો
+# link title for https://directory.fsf.org/wiki/GNU_IceCat
+#define bookmarks_addons IceCat: ઍડ-ઓન વડે વૈવિધ્ય બનાવો
 
 # LOCALIZATION NOTE (bookmarks_support):
-# link title for https://support.mozilla.org/mobile
-#define bookmarks_support Firefox: આધાર
+# link title for https://libreplanet.org/wiki/Group:IceCat/icecat-help
+#define bookmarks_support IceCat: આધાર
 
 # LOCALIZATION NOTE (bookmarks_marketplace):
-# link title for https://marketplace.firefox.com
-#define bookmarks_marketplace Firefox બજાર
+# link title for https://f-droid.org/repository/browse
+#define bookmarks_marketplace IceCat બજાર
 
 #unfilter emptyLines

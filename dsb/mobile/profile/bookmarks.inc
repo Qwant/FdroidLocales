@@ -33,11 +33,11 @@
 
 
 
-# link title for about:fennec
+# link title for about:icecatmobile
 
 
 
-#define bookmarks_aboutBrowser Firefox: Wó wašom wobglědowaku
+#define bookmarks_aboutBrowser IceCat: Wó wašom wobglědowaku
 
 
 
@@ -45,11 +45,11 @@
 
 
 
-# link title for https://addons.mozilla.org/en-US/mobile
+# link title for https://directory.fsf.org/wiki/GNU_IceCat
 
 
 
-#define bookmarks_addons Firefox: Z dodankami pśiměriś
+#define bookmarks_addons IceCat: Z dodankami pśiměriś
 
 
 
@@ -61,7 +61,7 @@
 
 
 
-#define bookmarks_support Firefox: Pódpěra
+#define bookmarks_support IceCat: Pódpěra
 
 
 
@@ -69,11 +69,11 @@
 
 
 
-# link title for https://marketplace.firefox.com
+# link title for https://f-droid.org/repository/browse
 
 
 
-#define bookmarks_marketplace Wikowanišćo Firefox
+#define bookmarks_marketplace Wikowanišćo IceCat
 
 
 

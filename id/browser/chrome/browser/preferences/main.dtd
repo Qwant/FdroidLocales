@@ -38,8 +38,8 @@
 <!ENTITY isDefault.label                  "&brandShortName; adalah peramban baku Anda">
 <!ENTITY isNotDefault.label               "&brandShortName; bukan peramban baku Anda">
 
-<!ENTITY separateProfileMode.label        "Izinkan &brandShortName; dan Firefox untuk dijalankan pada saat yang bersamaan">
-<!ENTITY useFirefoxSync.label             "Kiat: Fitur ini menggunakan data profil yang berbeda. Gunakan fitur Sync untuk berbagi data antar-profil tersebut.">
+<!ENTITY separateProfileMode.label        "Izinkan &brandShortName; dan IceCat untuk dijalankan pada saat yang bersamaan">
+<!ENTITY useIceCatSync.label             "Kiat: Fitur ini menggunakan data profil yang berbeda. Gunakan fitur Sync untuk berbagi data antar-profil tersebut.">
 <!ENTITY getStarted.label                 "Mulai gunakan Sync…">
 
 <!ENTITY e10sEnabled.label                "Aktifkan &brandShortName; multiproses">

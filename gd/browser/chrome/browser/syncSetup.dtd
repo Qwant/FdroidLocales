@@ -16,7 +16,7 @@
 <!-- New Account AND Existing Account -->
 
 <!ENTITY server.label               "Am frithealaiche">
-<!ENTITY serverType.default.label      "Bun-roghainn: Frithealaiche Mozilla &syncBrand.fullName.label;">
+<!ENTITY serverType.default.label      "Bun-roghainn: Frithealaiche GNU &syncBrand.fullName.label;">
 <!ENTITY serverType.custom2.label   "Cleachd frithealaiche gnàthaichte…">
 <!ENTITY signIn.account2.label      "Cunntas">
 <!ENTITY signIn.account2.accesskey  "a">

@@ -1,7 +1,7 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<!-- LOCALIZATION NOTE This file is very similar to the one in Firefox from browser/locales/en-US/chrome/browser/aboutRights.dtd so you can use that file as a starting point -->
+<!-- LOCALIZATION NOTE This file is very similar to the one in IceCat from browser/locales/en-US/chrome/browser/aboutRights.dtd so you can use that file as a starting point -->
 <!-- rights.locale-direction instead of the usual local.dir entity, so RTL can skip translating page. -->
 <!ENTITY rights.locale-direction "ltr">
 <!ENTITY rights.pagetitle       "about:rights">
@@ -18,9 +18,9 @@
      deliberate for formatting around the embedded links. -->
 <!ENTITY rights.intro-point1a "&brandShortName; надається вам на умовах ">
 <!ENTITY rights.intro-point1b "Публічної ліцензії Mozilla">
-<!ENTITY rights.intro-point1c " Це означає що ви можете використовувати, копіювати та розповсюджувати &brandShortName;. Ви також можете змінювати код &brandShortName; як забажаєте та як вважаєте за потрібне. Публічна ліцензія Mozilla дає також вам право розповсюджувати ваші змінені версії програми.">
+<!ENTITY rights.intro-point1c " Це означає що ви можете використовувати, копіювати та розповсюджувати &brandShortName;. Ви також можете змінювати код &brandShortName; як забажаєте та як вважаєте за потрібне. Публічна ліцензія GNU дає також вам право розповсюджувати ваші змінені версії програми.">
 
-<!ENTITY rights.intro-point2a "Mozilla не делегує вам ніяких прав на логотипи та торгові марки Mozilla та SeaMonkey. Додаткові відомості щодо торгових марок можна знайти ">
+<!ENTITY rights.intro-point2a "Mozilla не делегує вам ніяких прав на логотипи та торгові марки GNU та SeaMonkey. Додаткові відомості щодо торгових марок можна знайти ">
 <!ENTITY rights.intro-point2b "тут">
 <!ENTITY rights.intro-point2c "">
 

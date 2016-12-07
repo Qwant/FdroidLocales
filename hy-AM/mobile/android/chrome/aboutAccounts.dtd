@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY aboutAccounts.connected.title "Firefox-ի հաշիվներ">
+<!ENTITY aboutAccounts.connected.title "IceCat-ի հաշիվներ">
 <!ENTITY aboutAccounts.connected.description "Դուք կապակցված եք որպես՝">
 <!ENTITY aboutAccounts.syncPreferences.label "Հպվեք այստեղ՝ փոխելու համար Սինքի կարգավորումները">
 
@@ -10,4 +10,4 @@
 <!ENTITY aboutAccounts.retry.label "Կրկին փորձել">
 
 <!ENTITY aboutAccounts.restrictedError.title "Սահմանափակված">
-<!ENTITY aboutAccounts.restrictedError.description "Չեք կարող կառավարել Firefox-ի հաշիվները այս պրոֆիլից:">
+<!ENTITY aboutAccounts.restrictedError.description "Չեք կարող կառավարել IceCat-ի հաշիվները այս պրոֆիլից:">

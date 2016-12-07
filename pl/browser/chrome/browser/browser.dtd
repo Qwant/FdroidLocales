@@ -669,7 +669,7 @@ you can use these alternative items. Otherwise, their values should be empty. --
 <!ENTITY identity.description.insecureLoginForms "Dane logowania wprowadzone na tej stronie nie są bezpieczne i mogą być dostępne dla innych.">
 <!ENTITY identity.description.weakCipher "Połączenie z tą stroną nie zapewnia prywatności, ponieważ szyfrowanie nie jest wystarczające.">
 <!ENTITY identity.description.weakCipher2 "Informacje na stronie mogą być dostępne dla innych a jej działanie modyfikowane.">
-<!ENTITY identity.description.activeBlocked "Firefox zablokował elementy tej strony, które nie były przesłane w sposób bezpieczny.">
+<!ENTITY identity.description.activeBlocked "IceCat zablokował elementy tej strony, które nie były przesłane w sposób bezpieczny.">
 <!ENTITY identity.description.passiveLoaded "Połączenie z tą stroną nie zapewnia prywatności a przesyłane informacje mogą być dostępne dla innych.">
 <!ENTITY identity.description.passiveLoaded2 "Niektóre elementy tej strony (np. obrazki) nie były przesłane w sposób bezpieczny.">
 <!ENTITY identity.description.passiveLoaded3 "&brandShortName; zablokował niektóre elementy strony, mimo to nie wszystkie pozostałe elementy były przesłane w sposób bezpieczny (np. obrazki).">
@@ -692,7 +692,7 @@ you can use these alternative items. Otherwise, their values should be empty. --
 
 <!ENTITY syncTabsMenu3.label "Karty z innych urządzeń">
 
-<!ENTITY syncBrand.shortName.label "Firefox Sync">
+<!ENTITY syncBrand.shortName.label "IceCat Sync">
 <!ENTITY syncSignIn.label "Zaloguj się do &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey "s">
 <!ENTITY syncSyncNowItem.label        "Synchronizuj teraz">

@@ -40,7 +40,7 @@
 <!ENTITY bottomLinks.license "Leyfisupplýsingar">
 <!-- LOCALIZATION NOTE (bottomLinks.rights): This is a link title that links to about:rights. -->
 <!ENTITY bottomLinks.rights "Notendaréttindi">
-<!-- LOCALIZATION NOTE (bottomLinks.privacy): This is a link title that links to https://www.mozilla.org/legal/privacy/. -->
+<!-- LOCALIZATION NOTE (bottomLinks.privacy): This is a link title that links to https:///. -->
 <!ENTITY bottomLinks.privacy "Meðferð persónuupplýsinga">
 <!-- LOCALIZATION NOTE (update.checkingForUpdates): try to make the localized text short (see bug 596813 for screenshots). -->
 <!ENTITY update.checkingForUpdates "Athuga með uppfærslur…">
@@ -53,14 +53,14 @@
 <!-- LOCALIZATION NOTE (update.failed.start,update.failed.linkText,update.failed.end):
      update.failed.start, update.failed.linkText, and update.failed.end all go into
      one line with linkText being wrapped in an anchor that links to a site to download
-     the latest version of Firefox (e.g. http://www.firefox.com). As this is all in
+     the latest version of IceCat (e.g. http://www.firefox.com). As this is all in
      one line, try to make the localized text short (see bug 596813 for screenshots). -->
 <!ENTITY update.failed.start "Uppfærsla mistókst. ">
 <!ENTITY update.failed.linkText "Niðurhala nýjustu útgáfu">
 <!ENTITY update.failed.end "">
 <!-- LOCALIZATION NOTE (update.manual.start,update.manual.end): update.manual.start and update.manual.end
      all go into one line and have an anchor in between with text that is the same as the link to a site
-     to download the latest version of Firefox (e.g. http://www.firefox.com). As this is all in one line,
+     to download the latest version of IceCat (e.g. http://www.firefox.com). As this is all in one line,
      try to make the localized text short (see bug 596813 for screenshots). -->
 <!ENTITY update.manual.start "Niðurhala ">
 <!ENTITY update.manual.linkText "nýjustu útgáfu">

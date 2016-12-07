@@ -33,11 +33,11 @@
 
 
 
-# link title for about:fennec
+# link title for about:icecatmobile
 
 
 
-#define bookmarks_aboutBrowser Firefox: Браузеріңіз туралы
+#define bookmarks_aboutBrowser IceCat: Браузеріңіз туралы
 
 
 
@@ -45,11 +45,11 @@
 
 
 
-# link title for https://addons.mozilla.org/en-US/mobile
+# link title for https://directory.fsf.org/wiki/GNU_IceCat
 
 
 
-#define bookmarks_addons Firefox: Кеңейтулер көмегімен баптау
+#define bookmarks_addons IceCat: Кеңейтулер көмегімен баптау
 
 
 
@@ -61,7 +61,7 @@
 
 
 
-#define bookmarks_support Firefox: Қолдау
+#define bookmarks_support IceCat: Қолдау
 
 
 
@@ -69,11 +69,11 @@
 
 
 
-# link title for https://marketplace.firefox.com
+# link title for https://f-droid.org/repository/browse
 
 
 
-#define bookmarks_marketplace Firefox дүкені
+#define bookmarks_marketplace IceCat дүкені
 
 
 

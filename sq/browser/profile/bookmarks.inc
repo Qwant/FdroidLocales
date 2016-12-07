@@ -11,27 +11,27 @@
 #define bookmarks_toolbarfolder_description Shtoni faqerojtës te kjo dosje që t'i shihni ata të shfaqen te Paneli i Faqerojtësve
 
 # LOCALIZATION NOTE (getting_started):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/central/
+# link title for http://en-US.www.mozilla.com/en-US/icecat/central/
 #define getting_started Si T'ia Fillohet
 
-# LOCALIZATION NOTE (firefox_heading):
-# Firefox links folder name
-#define firefox_heading Mozilla Firefox
+# LOCALIZATION NOTE (icecat_heading):
+# IceCat links folder name
+#define icecat_heading GNU IceCat
 
-# LOCALIZATION NOTE (firefox_help):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/help/
-#define firefox_help Ndihmë dhe Përkujdesore
+# LOCALIZATION NOTE (icecat_help):
+# link title for http://en-US.www.mozilla.com/en-US/icecat/help/
+#define icecat_help Ndihmë dhe Përkujdesore
 
-# LOCALIZATION NOTE (firefox_customize):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/customize/
-#define firefox_customize Personalizojeni Firefox-in
+# LOCALIZATION NOTE (icecat_customize):
+# link title for http://en-US.www.mozilla.com/en-US/icecat/customize/
+#define icecat_customize Personalizojeni IceCat-in
 
-# LOCALIZATION NOTE (firefox_community):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/community/
-#define firefox_community Përfshihuni
+# LOCALIZATION NOTE (firefox.community):
+# link title for http://en-US.www.mozilla.com/en-US/firefox.community/
+#define firefox.community Përfshihuni
 
-# LOCALIZATION NOTE (firefox_about):
-# link title for http://en-US.www.mozilla.com/en-US/firefox/about/
-#define firefox_about Rreth Nesh
+# LOCALIZATION NOTE (icecat_about):
+# link title for http://en-US.www.mozilla.com/en-US/icecat/about/
+#define icecat_about Rreth Nesh
 
 #unfilter emptyLines

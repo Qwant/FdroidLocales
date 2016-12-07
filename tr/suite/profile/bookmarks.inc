@@ -39,21 +39,21 @@
 
 # link title for http://www.mozilla.org/ (in normal bookmarks)
 
-#define mozilla_org_long Mozilla Kurumu
+#define mozilla_org_long GNU Kurumu
 
 
 # LOCALIZATION NOTE (mozilla_projects):
 
 # link title for http://www.mozilla.org/projects/
 
-#define mozilla_projects Mozilla projeleri
+#define mozilla_projects GNU projeleri
 
 
 # LOCALIZATION NOTE (mozilla_about):
 
 # link title for http://www.mozilla.org/about/
 
-#define mozilla_about Mozilla hakkında
+#define mozilla_about GNU hakkında
 
 
 #define extend_seamonkey SeaMonkey uygulamasını zenginleştirin

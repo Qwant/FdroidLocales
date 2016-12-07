@@ -39,4 +39,4 @@
 
 <!ENTITY plugin.file                                         "Soubor">
 <!ENTITY plugin.mimeTypes                                    "Typy MIME">
-<!ENTITY plugin.flashProtectedMode.label                     "Povolit chráněný režim Adobe Flash">
+<!ENTITY plugin.flashProtectedMode.label                     "Povolit chráněný režim Flash">

@@ -53,7 +53,7 @@
 
 <!ENTITY sync.pair.tryagain.label "దయచేసి మరలా ప్రయత్నించు.">
 <!ENTITY sync.pair.connectlocation.label "మీ కొత్త పరికరం క్రియాశీలపరచుటకు, పరికరంపైన  “&syncBrand.shortName.label; అమర్చు” ను ఎంపికచేయి, మరియు “నేను ఖాతా కలిగివున్నాను” ఎంపికచేయి.">
-<!-- Firefox SyncAdapter Settings Screen -->
+<!-- IceCat SyncAdapter Settings Screen -->
 
 <!ENTITY sync.settings.options.label "ఐచ్ఛికములు">
 <!ENTITY sync.summary.pair.label "మీ &syncBrand.shortName.label; ఖాతాకు మరో పరికరాన్ని జోడించండి">
@@ -74,10 +74,10 @@
 
 <!ENTITY sync.account.label "&syncBrand.fullName.label; (ఆపివేయబడెను)">
 <!-- Localization note (sync.default.client.name): Default string of the "Device
-     name" menu item upon setting up Firefox Sync.  The placeholder &formatS1
-     will be replaced by the name of the Firefox release channel and &formatS2
+     name" menu item upon setting up IceCat Sync.  The placeholder &formatS1
+     will be replaced by the name of the IceCat release channel and &formatS2
      by the model name of the Android device. Examples look like "Aurora on
-     GT-I1950" and "Fennec on MI 2S". -->
+     GT-I1950" and "IceCatMobile on MI 2S". -->
 
 <!ENTITY sync.default.client.name "&formatS2;పై &formatS1;">
 <!-- Bookmark folder strings -->
@@ -111,7 +111,7 @@
 <!ENTITY sync.text.redirect.to.set.up.sync.label "టాబ్‌లను ఇతర పరికరాలకు పంపుటకు మీ పరికరం పైన &syncBrand.fullName.label; అమర్చు.">
 <!ENTITY sync.text.tab.sent.label "మీ టాబ్ పంపబడెను!">
 <!ENTITY sync.text.tab.not.sent.label "మీ ట్యాబును పంపడంలో ఏదో సమస్య ఉంది.">
-<!-- Firefox Account strings. -->
+<!-- IceCat Account strings. -->
 
 
 <!ENTITY fxaccount_full_label "ఫైర్‌ఫాక్స్ ఖాతాలు">
@@ -128,7 +128,7 @@
 <!ENTITY fxaccount_password_show "చూపించు">
 <!-- Localization note: these are shown in screens after the user has
      created or signed in to an account, and take the user back to
-     Firefox. -->
+     IceCat. -->
 
 <!ENTITY fxaccount_back_to_browsing "తిరిగి విహరణకు">
 <!-- Localization note: the following two strings are interpolated
@@ -143,10 +143,10 @@
 <!ENTITY fxaccount_getting_started_welcome_to_sync "&syncBrand.shortName.label;కి స్వాగతం">
 
 <!ENTITY fxaccount_getting_started_get_started "మొదలు పెట్టండి">
-<!ENTITY fxaccount_getting_started_old_firefox "&syncBrand.shortName.label; పాత వర్షన్ ఉపయోగిస్తున్నారా?">
-<!-- Localization note: the Firefox below should not change with the
-     particular version of Firefox installed (Release, Beta, Aurora,
-     etc).  The account remains a "Firefox Account". -->
+<!ENTITY fxaccount_getting_started_old_icecat "&syncBrand.shortName.label; పాత వర్షన్ ఉపయోగిస్తున్నారా?">
+<!-- Localization note: the IceCat below should not change with the
+     particular version of IceCat installed (Release, Beta, Aurora,
+     etc).  The account remains a "IceCat Account". -->
 
 <!ENTITY fxaccount_create_account_header2 "ఫైర్‌ఫాక్స్ ఖాతా సృష్టించండి">
 <!ENTITY fxaccount_create_account_password_length_restriction "కనీసం 8 అక్షరాలు ఉండాలి">
@@ -166,7 +166,7 @@
 <!ENTITY fxaccount_account_create_not_allowed_learn_more "మరింత తెలుసుకోండి">
 
 <!ENTITY fxaccount_confirm_account_header "ఖాతా‌ను నిర్ధారించండి">
-<!-- Localization note: &formatS; is the Firefox Account's email address. -->
+<!-- Localization note: &formatS; is the IceCat Account's email address. -->
 <!ENTITY fxaccount_confirm_account_verification_link "నిర్ధారణ కోరుతూ లంకె &formatS; కు పంపబడెను.">
 <!ENTITY fxaccount_confirm_account_resend_email "ఈమెయిల్ తిరిగిపంపు">
 <!ENTITY fxaccount_confirm_account_change_email "ఈ ఈమెయిలు చిరునామాను మరచిపోవాలా?">
@@ -228,17 +228,17 @@
 <!ENTITY fxaccount_remove_account_dialog_title "ఫైర్‌ఫాక్స్ ఖాతాను తొలగించాలా?">
 <!ENTITY fxaccount_remove_account_dialog_message "&brandShortName; మీ ఖాతాతో సింక్ అవ్వడాన్ని ఆపుతుంది, కానీ ఈ పరికరంపైని మీ విహారణ డేటాను తొలగించదు.">
 <!-- Localization note: format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_remove_account_toast "ఫైర్‌ఫాక్స్ ఖాతా &formatS; తొలగించబడింది.">
 
 <!-- Localization note: this is the name shown by the Android system
-     itself for a Firefox Account. Don't localize this. -->
+     itself for a IceCat Account. Don't localize this. -->
 
 <!ENTITY fxaccount_account_type_label "ఫైర్‌ఫాక్స్">
 <!-- Localization note: these are shown by the Android system itself,
-     when the user navigates to the Android > Accounts > {Firefox
-     Account} Screen. The link takes the user to the Firefox Account
-     status activity, which lets them manage their Firefox
+     when the user navigates to the Android > Accounts > {IceCat
+     Account} Screen. The link takes the user to the IceCat Account
+     status activity, which lets them manage their IceCat
      Account. -->
 
 <!ENTITY fxaccount_options_title "&syncBrand.shortName.label; ఎంపికలు">
@@ -262,12 +262,12 @@
 
 <!ENTITY fxaccount_sync_sign_in_error_notification_title2 "&syncBrand.shortName.label; అనుసంధానమై లేదు">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_sign_in_error_notification_text2 "&formatS; వలె ప్రవేశించడానికి తాకండి">
 
 <!ENTITY fxaccount_sync_finish_migrating_notification_title "&syncBrand.shortName.label;‌ని నవీకరించడం పూర్తిచేయాలా?">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_finish_migrating_notification_text "&formatS; వలె ప్రవేశించడానికి తాకండి">
 <!-- Localization note: the following strings are used in a
      notification and should be kept as short as possible. -->

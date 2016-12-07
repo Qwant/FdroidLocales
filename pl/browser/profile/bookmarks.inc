@@ -11,27 +11,27 @@
 #define bookmarks_toolbarfolder_description Zakładki umieszczone w tym folderze będą widoczne na pasku zakładek.
 
 # LOCALIZATION NOTE (getting_started):
-# link title for http://www.mozilla.com/en-US/firefox/central/
+# link title for http://www.mozilla.com/en-US/icecat/central/
 #define getting_started Pierwsze kroki
 
-# LOCALIZATION NOTE (firefox_heading):
-# Firefox links folder name
-#define firefox_heading Mozilla Firefox
+# LOCALIZATION NOTE (icecat_heading):
+# IceCat links folder name
+#define icecat_heading GNU IceCat
 
-# LOCALIZATION NOTE (firefox_help):
-# link title for http://www.mozilla.com/en-US/firefox/help/
-#define firefox_help Pomoc
+# LOCALIZATION NOTE (icecat_help):
+# link title for http://www.mozilla.com/en-US/icecat/help/
+#define icecat_help Pomoc
 
-# LOCALIZATION NOTE (firefox_customize):
-# link title for http://www.mozilla.com/en-US/firefox/customize/
-#define firefox_customize Dostosuj Firefoksa
+# LOCALIZATION NOTE (icecat_customize):
+# link title for http://www.mozilla.com/en-US/icecat/customize/
+#define icecat_customize Dostosuj Firefoksa
 
-# LOCALIZATION NOTE (firefox_community):
-# link title for http://www.mozilla.com/en-US/firefox/community/
-#define firefox_community Dołącz do nas
+# LOCALIZATION NOTE (firefox.community):
+# link title for http://www.mozilla.com/en-US/firefox.community/
+#define firefox.community Dołącz do nas
 
-# LOCALIZATION NOTE (firefox_about):
-# link title for http://www.mozilla.com/en-US/firefox/about/
-#define firefox_about O Mozilli
+# LOCALIZATION NOTE (icecat_about):
+# link title for http://www.mozilla.com/en-US/icecat/about/
+#define icecat_about O Mozilli
 
 #unfilter emptyLines

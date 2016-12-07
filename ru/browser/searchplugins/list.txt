@@ -5,3 +5,5 @@ priceru
 wikipedia-ru
 yandex-slovari
 yandex
+
+duckduckgo

@@ -94,10 +94,10 @@
 
 <!ENTITY help.title "Upravitelj aplikacij">
 <!ENTITY help.close "Zapri">
-<!ENTITY help.intro "To orodje vam bo pomagalo pri razvoju in nameščanju spletnih aplikacij na združljive naprave (npr. Firefox OS). Zavihek <strong>Aplikacije</strong> bo v pomoč med preverjanjem in nameščanjem vaše aplikacije. Zavihek <strong>Naprava</strong> bo prikazal podatke o povezani napravi. Uporabite spodnjo orodno vrstico za povezavo z napravo ali zagonom simulatorja.">
+<!ENTITY help.intro "To orodje vam bo pomagalo pri razvoju in nameščanju spletnih aplikacij na združljive naprave (npr. IceCat OS). Zavihek <strong>Aplikacije</strong> bo v pomoč med preverjanjem in nameščanjem vaše aplikacije. Zavihek <strong>Naprava</strong> bo prikazal podatke o povezani napravi. Uporabite spodnjo orodno vrstico za povezavo z napravo ali zagonom simulatorja.">
 <!ENTITY help.usefullLinks "Uporabne povezave:">
 <!ENTITY help.appMgrDoc "Dokumentacija: Uporaba upravitelja aplikacij">
-<!ENTITY help.configuringDevice "Kako nastaviti vašo napravo s Firefox OS">
+<!ENTITY help.configuringDevice "Kako nastaviti vašo napravo s IceCat OS">
 <!ENTITY help.troubleShooting "Odpravljanje težav">
 <!ENTITY help.simulatorAddon "Namesti dodatek Simulator">
 <!ENTITY help.adbHelperAddon "Namesti dodatek Adb Helper">

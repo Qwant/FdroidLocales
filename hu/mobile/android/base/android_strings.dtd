@@ -104,19 +104,19 @@
 <!ENTITY pref_category_general "Általános">
 <!ENTITY pref_category_general_summary2 "Kezdőoldal, nyelv, címsáv">
 <!-- Localization note (pref_category_language) : This is the preferences
-     section in which the user picks the locale in which to display Firefox
+     section in which the user picks the locale in which to display IceCat
      UI. The locale includes both language and region concepts. -->
 
 <!ENTITY pref_category_language "Nyelv">
 <!ENTITY pref_category_language_summary "Böngésző nyelvének módosítása">
 <!ENTITY pref_browser_locale "Böngésző nyelve">
 <!-- Localization note (locale_system_default) : This string indicates that
-     Firefox will use the locale currently selected in Android's settings
+     IceCat will use the locale currently selected in Android's settings
      to display browser chrome. -->
 
 <!ENTITY locale_system_default "Rendszer alapbeállítása">
 <!-- Localization note (overlay_share_label) : This is the label that appears
-     in Android's intent chooser when sending a link to Firefox to bookmark,
+     in Android's intent chooser when sending a link to IceCat to bookmark,
      send to another device, or add to Reading List. -->
 
 <!ENTITY overlay_share_label "Hozzáadás a &brandShortName; programhoz…">
@@ -140,7 +140,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "Nem található Firefox fiókhoz csatlakoztatott eszköz">
+<!ENTITY overlay_no_synced_devices "Nem található IceCat fiókhoz csatlakoztatott eszköz">
 
 <!ENTITY pref_category_search3 "Keresés">
 <!ENTITY pref_category_search_summary "Keresőszolgáltatások beállítása">
@@ -193,7 +193,7 @@
 <!ENTITY home_homepage_title "Honlap beállítása">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
-     button for this string, they will use the built-in default Firefox homepage (about:home). -->
+     button for this string, they will use the built-in default IceCat homepage (about:home). -->
 <!ENTITY home_homepage_radio_default "&brandShortName; kezdőoldal">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
@@ -320,7 +320,7 @@ size. -->
 <!ENTITY pref_private_data_syncedTabs "Szinkronizált lapok">
 
 
-<!ENTITY pref_about_firefox "A &brandShortName; névjegye">
+<!ENTITY pref_about_icecat "A &brandShortName; névjegye">
 <!ENTITY pref_vendor_faqs "GYIK">
 <!ENTITY pref_vendor_feedback "Visszajelzés">
 
@@ -548,11 +548,11 @@ size. -->
 <!ENTITY home_remote_tabs_title "Szinkronizált lapok">
 <!ENTITY home_remote_tabs_empty "A lapok más készülékekről itt jelennek meg.">
 <!ENTITY home_remote_tabs_unable_to_connect "A kapcsolódás sikertelen">
-<!ENTITY home_remote_tabs_need_to_sign_in "Jelentkezzen be a Firefox fiókja újracsatlakoztatásához és a szinkronizálás folytatásához.">
-<!ENTITY home_remote_tabs_need_to_finish_migrating "Az új Firefox fiókja készen áll!">
+<!ENTITY home_remote_tabs_need_to_sign_in "Jelentkezzen be a IceCat fiókja újracsatlakoztatásához és a szinkronizálás folytatásához.">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "Az új IceCat fiókja készen áll!">
 
 <!ENTITY home_remote_tabs_trouble_verifying "Probléma a fiók ellenőrzésekor?">
-<!ENTITY home_remote_tabs_need_to_verify "Ellenőrizze Firefox fiókját a szinkronizálás megkezdéséhez.">
+<!ENTITY home_remote_tabs_need_to_verify "Ellenőrizze IceCat fiókját a szinkronizálás megkezdéséhez.">
 
 <!ENTITY home_remote_tabs_one_hidden_device "1 készülék elrejtve">
 <!-- Localization note (home_remote_tabs_many_hidden_devices) : The
@@ -696,7 +696,7 @@ Androidról">
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
      include "42 minutes ago", "4 days ago", "last week", etc. The subject of
-     "Last synced" is one of the user's other Sync clients, typically Firefox on
+     "Last synced" is one of the user's other Sync clients, typically IceCat on
      their desktop or laptop.-->
 
 <!ENTITY remote_tabs_last_synced "Utolsó szinkronizálás: &formatS;">
@@ -726,7 +726,7 @@ Androidról">
 <!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
      above a QR reader that is actively scanning for QR codes.  The expected QR
      code has already been displayed by the client trying to connect (such as
-     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     desktop IceCat via WebIDE), so you just need to aim this device at the QR
      code. -->
 
 <!ENTITY devtools_auth_scan_header "A másik eszközön megjelenített QR kód beolvasása">
@@ -735,7 +735,7 @@ Androidról">
      a restricted profile (e.g. child). Used inside the Android settings UI. -->
 
 <!ENTITY restrictable_feature_addons_installation "Kiegészítők">
-<!ENTITY restrictable_feature_addons_installation_description "Szolgáltatásokat vagy funkciókat ad a Firefoxhoz. Megjegyzés: a kiegészítők feloldhatnak bizonyos korlátozásokat. ">
+<!ENTITY restrictable_feature_addons_installation_description "Szolgáltatásokat vagy funkciókat ad a IceCathoz. Megjegyzés: a kiegészítők feloldhatnak bizonyos korlátozásokat. ">
 <!ENTITY restrictable_feature_private_browsing "Privát böngészés">
 <!ENTITY restrictable_feature_private_browsing_description "Lehetővé teszi családtagoknak a böngészést adatok tárolása nélkül az általuk meglátogatott oldalakról.">
 <!ENTITY restrictable_feature_clear_history "Előzmények törlése">
@@ -745,19 +745,19 @@ Androidról">
 <!ENTITY restrictable_feature_camera_microphone "Kamera és mikrofon">
 <!ENTITY restrictable_feature_camera_microphone_description "Lehetővé teszi családtagoknak a valós idejű kommunikációt a weboldalakon.">
 <!ENTITY restrictable_feature_data_choices "Adatküldések">
-<!ENTITY restrictable_feature_data_choices_description "Válassza ki, hogy szeretne-e használati adatokat küldeni a Mozillának a Firefox jobbá tétele érdekében.">
+<!ENTITY restrictable_feature_data_choices_description "Válassza ki, hogy szeretne-e használati adatokat küldeni a Mozillának a IceCat jobbá tétele érdekében.">
 <!-- Default Bookmarks titles-->
-<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:icecatmobile -->
 
-<!ENTITY bookmarks_about_browser "Firefox: A böngésző névjegye">
-<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
-<!ENTITY bookmarks_addons "Firefox: Testreszabás kiegészítőkkel">
+<!ENTITY bookmarks_about_browser "IceCat: A böngésző névjegye">
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://directory.fsf.org/wiki/GNU_IceCat -->
+<!ENTITY bookmarks_addons "IceCat: Testreszabás kiegészítőkkel">
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
-<!ENTITY bookmarks_support "Firefox: Támogatás">
+<!ENTITY bookmarks_support "IceCat: Támogatás">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
-<!ENTITY bookmarks_restricted_support2 "Firefox súgó és támogatás az androidos tabletek korlátozott profiljaihoz">
+<!ENTITY bookmarks_restricted_support2 "IceCat súgó és támogatás az androidos tabletek korlátozott profiljaihoz">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
-<!ENTITY bookmarks_restricted_webmaker "Tanulja meg a webet: Mozilla Webmaker">
+<!ENTITY bookmarks_restricted_webmaker "Tanulja meg a webet: GNU Webmaker">
 <!-- LOCALIZATION NOTE (unsupported_sdk_version): The user installed a build of this app that does not support
      the Android version of this device. the formatS1 is replaced by the CPU ABI (e.g., ARMv7); the formatS2 is
      replaced by the Android OS version (e.g., 14)-->

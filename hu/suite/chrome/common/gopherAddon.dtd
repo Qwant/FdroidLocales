@@ -5,5 +5,5 @@
 <!ENTITY loadError.label        "Oldalbetöltési hiba">
 <!ENTITY gopherAddon.title      "Gopher protokoll">
 <!ENTITY gopherAddon.shortDesc  "A gopher nem regisztrált protokoll.">
-<!ENTITY gopherAddon.longDesc   "A megadott cím a már nem támogatott gopher protokollt használja, így a böngésző nem tud a helyhez csatlakozni. A kiszolgáló eléréséhez letöltheti a kompatibilitási kiterjesztést a Mozilla Kiegészítők webhelyről.">
+<!ENTITY gopherAddon.longDesc   "A megadott cím a már nem támogatott gopher protokollt használja, így a böngésző nem tud a helyhez csatlakozni. A kiszolgáló eléréséhez letöltheti a kompatibilitási kiterjesztést a GNU Kiegészítők webhelyről.">
 <!ENTITY goToAddOn.label        "Ugrás a Kiegészítők oldalra">

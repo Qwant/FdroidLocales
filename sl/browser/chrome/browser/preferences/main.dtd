@@ -38,8 +38,8 @@
 <!ENTITY isDefault.label                  "&brandShortName; je trenutno vaš privzet brskalnik">
 <!ENTITY isNotDefault.label               "&brandShortName; ni vaš privzet brskalnik">
 
-<!ENTITY separateProfileMode.label        "Dovoli, da &brandShortName; in Firefox tečeta sočasno">
-<!ENTITY useFirefoxSync.label             "Nasvet: uporabljena bosta različna profila, ki ju lahko uskladite z uporabo Sync.">
+<!ENTITY separateProfileMode.label        "Dovoli, da &brandShortName; in IceCat tečeta sočasno">
+<!ENTITY useIceCatSync.label             "Nasvet: uporabljena bosta različna profila, ki ju lahko uskladite z uporabo Sync.">
 <!ENTITY getStarted.label                 "Začni uporabljati Sync …">
 
 <!ENTITY e10sEnabled.label                "Omogoči večprocesni &brandShortName;">

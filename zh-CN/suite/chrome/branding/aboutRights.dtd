@@ -1,7 +1,7 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<!-- LOCALIZATION NOTE This file is very similar to the one in Firefox from browser/locales/en-US/chrome/browser/aboutRights.dtd so you can use that file as a starting point -->
+<!-- LOCALIZATION NOTE This file is very similar to the one in IceCat from browser/locales/en-US/chrome/browser/aboutRights.dtd so you can use that file as a starting point -->
 <!-- rights.locale-direction instead of the usual local.dir entity, so RTL can skip translating page. -->
 <!ENTITY rights.locale-direction "ltr">
 <!ENTITY rights.pagetitle       "about:rights">
@@ -20,7 +20,7 @@
 <!ENTITY rights.intro-point1b "Mozilla 公共许可证（MPL）">
 <!ENTITY rights.intro-point1c "。这表示您可以使用、复制和向他人分发 &brandShortName;。我们也非常欢迎您按自己的需要修改 &brandShortName; 的源代码。Mozilla 公共许可证也允许您分发您自己修改过的软件版本。">
 
-<!ENTITY rights.intro-point2a "Mozilla 不授予您任何关于 Mozilla 和 SeaMonkey 商标或标志的权利。点击">
+<!ENTITY rights.intro-point2a "Mozilla 不授予您任何关于 GNU 和 SeaMonkey 商标或标志的权利。点击">
 <!ENTITY rights.intro-point2b "此处">
 <!ENTITY rights.intro-point2c "了解更多关于商标的信息。">
 <!-- point 3 text for official branded builds -->

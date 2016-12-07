@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 #filter emptyLines
 
-#define MOZ_LANGPACK_CREATOR 한글 Mozilla 프로젝트(mozilla.or.kr)
+#define MOZ_LANGPACK_CREATOR 한글 GNU 프로젝트(mozilla.or.kr)
 
 # If non-English locales wish to credit multiple contributors, uncomment this
 # variable definition and use the format specified.

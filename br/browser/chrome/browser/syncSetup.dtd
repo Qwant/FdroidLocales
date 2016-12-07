@@ -16,7 +16,7 @@
 <!-- New Account AND Existing Account -->
 
 <!ENTITY server.label               "Dafariad">
-<!ENTITY serverType.default.label      "Diouer : Dafariad Mozilla &syncBrand.fullName.label;">
+<!ENTITY serverType.default.label      "Diouer : Dafariad GNU &syncBrand.fullName.label;">
 <!ENTITY serverType.custom2.label   "Grit gant un dafariad personelaet…">
 <!ENTITY signIn.account2.label      "Kont">
 <!ENTITY signIn.account2.accesskey  "K">

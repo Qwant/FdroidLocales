@@ -11,14 +11,14 @@
 
 <!ENTITY abouthome.pageTitle "&brandFullName; startsida">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):
-     text in <a/> will be linked to the Firefox features page on mozilla.com
+     text in <a/> will be linked to the IceCat features page on mozilla.com
 -->
 
-<!ENTITY abouthome.defaultSnippet1.v1 "Tack för att du valt Firefox! För att få ut det mesta av din webbläsare, läs mer om de <a>senaste funktionerna</a>.">
+<!ENTITY abouthome.defaultSnippet1.v1 "Tack för att du valt IceCat! För att få ut det mesta av din webbläsare, läs mer om de <a>senaste funktionerna</a>.">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet2.v1):
      text in <a/> will be linked to the featured add-ons on addons.mozilla.org
 -->
-<!ENTITY abouthome.defaultSnippet2.v1 "Det är enkelt att anpassa Firefox exakt som du vill ha det. <a>Välj bland tusentals tillägg</a>.">
+<!ENTITY abouthome.defaultSnippet2.v1 "Det är enkelt att anpassa IceCat exakt som du vill ha det. <a>Välj bland tusentals tillägg</a>.">
 <!-- LOCALIZATION NOTE (abouthome.rightsSnippet): text in <a/> will be linked to about:rights -->
 <!ENTITY abouthome.rightsSnippet "&brandFullName; är fri programvara med öppen källkod från den ideella organisationen Mozilla Foundation. <a>Läs om dina rättigheter …</a>">
 
@@ -33,7 +33,7 @@
 <!ENTITY abouthome.addonsButton.label    "Tillägg">
 <!-- LOCALIZATION NOTE (abouthome.appsButton2.label): This string should be consistent with
      the Apps menu item in the Tools menu (webapps.label in browser.dtd) and the Apps toolbar button in
-     Firefox's customization palette (web-apps-button.label in customizableWidgets.properties) -->
+     IceCat's customization palette (web-apps-button.label in customizableWidgets.properties) -->
 <!ENTITY abouthome.appsButton2.label     "Appar">
 <!ENTITY abouthome.downloadsButton.label "Filhämtningar">
 <!ENTITY abouthome.syncButton.label      "&syncBrand.shortName.label;">

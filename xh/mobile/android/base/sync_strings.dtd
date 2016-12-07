@@ -4,7 +4,7 @@
 <!-- Don't localize these. They're here until they have
      a better place to live. -->
 
-<!ENTITY syncBrand.fullName.label "Ungqamaniso lweFirefox">
+<!ENTITY syncBrand.fullName.label "Ungqamaniso lweIceCat">
 <!ENTITY syncBrand.shortName.label "Ungqamaniso">
 <!-- Main titles. -->
 
@@ -16,7 +16,7 @@
 
 <!ENTITY sync.subtitle.connect.label "Ukusenza sisebenze isixhobo sakho esitsha, khetha “Useto &syncBrand.shortName.label;” kwisixhobo.">
 <!ENTITY sync.subtitle.header2.label "Ngenisa le khowudi kwesinye isixhobo sakho">
-<!ENTITY sync.subtitle.connectlocation2.label "Khetha “&sync.title.pair.label;” kwicandelo le-&syncBrand.shortName.label; lendlela yokhetho yesinye isixhobo sakho se-Firefox.">
+<!ENTITY sync.subtitle.connectlocation2.label "Khetha “&sync.title.pair.label;” kwicandelo le-&syncBrand.shortName.label; lendlela yokhetho yesinye isixhobo sakho se-IceCat.">
 <!ENTITY sync.subtitle.pair.label "Ukuvuselela, khetha “Hambisa ngambini isixhobo” kwesinye isixhobo sakho.">
 <!ENTITY sync.pin.default.label "...\n...\n...\n">
 <!ENTITY sync.pin.oneline.label "...">
@@ -42,7 +42,7 @@
 <!ENTITY sync.button.manual.label "Useto lweManyuwali">
 <!ENTITY sync.subtitle.nointernet.label "Alufumaneki unxibelelwano lweintanethi.">
 <!ENTITY sync.subtitle.failaccount.label "Uyilo lweakhawunti kwisixhobo sakho aluphumelelanga.">
-<!ENTITY sync.subtitle.failmultiple.label "Ingaba une-Firefox engaphaya kwenye efakelweyo? Ngokunje, i-&syncBrand.fullName.label; ixhasa kuphela ufakelo lwe-Firefox enye ngexesha. Nceda ukhuphe ufakelo lwezinye iimeko usebenzise i-&syncBrand.shortName.label;.">
+<!ENTITY sync.subtitle.failmultiple.label "Ingaba une-IceCat engaphaya kwenye efakelweyo? Ngokunje, i-&syncBrand.fullName.label; ixhasa kuphela ufakelo lwe-IceCat enye ngexesha. Nceda ukhuphe ufakelo lwezinye iimeko usebenzise i-&syncBrand.shortName.label;.">
 <!-- Setup Success -->
 
 <!ENTITY sync.title.success.label "Useto lugqityiwe">
@@ -53,7 +53,7 @@
 
 <!ENTITY sync.pair.tryagain.label "Nceda uzame kwakhona.">
 <!ENTITY sync.pair.connectlocation.label "Ukuvuselela isixhobo sakho esitsha, khetha “Seta i-&syncBrand.shortName.label;” kwisixhobo, uze ukhethe “Ndinayo iAkhawunti.”">
-<!-- Firefox SyncAdapter Settings Screen -->
+<!-- IceCat SyncAdapter Settings Screen -->
 
 <!ENTITY sync.settings.options.label "Iindlela zokhetho">
 <!ENTITY sync.summary.pair.label "Dibanisa esinye isixhobo kwiakhawunti yakho ye-&syncBrand.shortName.label;">
@@ -74,10 +74,10 @@
 
 <!ENTITY sync.account.label "&syncBrand.fullName.label; (kwaliwe)">
 <!-- Localization note (sync.default.client.name): Default string of the "Device
-     name" menu item upon setting up Firefox Sync.  The placeholder &formatS1
-     will be replaced by the name of the Firefox release channel and &formatS2
+     name" menu item upon setting up IceCat Sync.  The placeholder &formatS1
+     will be replaced by the name of the IceCat release channel and &formatS2
      by the model name of the Android device. Examples look like "Aurora on
-     GT-I1950" and "Fennec on MI 2S". -->
+     GT-I1950" and "IceCatMobile on MI 2S". -->
 
 <!ENTITY sync.default.client.name "&formatS1; kwi &formatS2;">
 <!-- Bookmark folder strings -->
@@ -111,10 +111,10 @@
 <!ENTITY sync.text.redirect.to.set.up.sync.label "Seta i-&syncBrand.fullName.label; kwisixhobo sakho ukuthumela iithebhu kwezinye izixhobo.">
 <!ENTITY sync.text.tab.sent.label "Ithebhu yakho ithunyelwe!">
 <!ENTITY sync.text.tab.not.sent.label "Kubekho ingxaki ekuthumeleni ithebhu yakho.">
-<!-- Firefox Account strings. -->
+<!-- IceCat Account strings. -->
 
 
-<!ENTITY fxaccount_full_label "Iiakhawunti zeFirefox">
+<!ENTITY fxaccount_full_label "Iiakhawunti zeIceCat">
 
 <!ENTITY fxaccount_custom_server_account_title "Ukusebenzisa iakhawunti kwiseva">
 <!ENTITY fxaccount_custom_server_sync_title "Ukugcina ingcombolo yongqamaniso kwiseva">
@@ -128,7 +128,7 @@
 <!ENTITY fxaccount_password_show "Bonisa">
 <!-- Localization note: these are shown in screens after the user has
      created or signed in to an account, and take the user back to
-     Firefox. -->
+     IceCat. -->
 
 <!ENTITY fxaccount_back_to_browsing "Buyela ekubhrawuzeni">
 <!-- Localization note: the following two strings are interpolated
@@ -143,18 +143,18 @@
 <!ENTITY fxaccount_getting_started_welcome_to_sync "Wamkelekile kwi-&syncBrand.shortName.label;">
 <!ENTITY fxaccount_getting_started_description2 "Sayina ungene ukuze ungqamanise iithebhu, iibhukhmakhi, iilogini nokunye kwakho.">
 <!ENTITY fxaccount_getting_started_get_started "Qalisa">
-<!ENTITY fxaccount_getting_started_old_firefox "Usebenzisa uhlelo oludadlala lwe-&syncBrand.shortName.label;?">
-<!-- Localization note: the Firefox below should not change with the
-     particular version of Firefox installed (Release, Beta, Aurora,
-     etc).  The account remains a "Firefox Account". -->
+<!ENTITY fxaccount_getting_started_old_icecat "Usebenzisa uhlelo oludadlala lwe-&syncBrand.shortName.label;?">
+<!-- Localization note: the IceCat below should not change with the
+     particular version of IceCat installed (Release, Beta, Aurora,
+     etc).  The account remains a "IceCat Account". -->
 
-<!ENTITY fxaccount_create_account_header2 "Yila iakhawunti yeFirefox">
+<!ENTITY fxaccount_create_account_header2 "Yila iakhawunti yeIceCat">
 <!ENTITY fxaccount_create_account_password_length_restriction "Ubuncinane ifanele ibe noonobumba abasi-8">
 <!ENTITY fxaccount_create_account_day_of_birth "Usuku">
 <!ENTITY fxaccount_create_account_month_of_birth "Inyanga">
 <!ENTITY fxaccount_create_account_year_of_birth "Unyaka wokuzalwa">
 <!-- Localization note: &formatS1; is fxaccount_policy_linktos, &formatS2; is fxaccount_policy_linkprivacy, both hyperlinked. -->
-<!ENTITY fxaccount_create_account_policy_text2 "Ngokudlulela phambili, ndiyavumelana ne&formatS1; kunye no&formatS2; zeenkonzo zeklawudi yeFirefox.">
+<!ENTITY fxaccount_create_account_policy_text2 "Ngokudlulela phambili, ndiyavumelana ne&formatS1; kunye no&formatS2; zeenkonzo zeklawudi yeIceCat.">
 <!ENTITY fxaccount_create_account_button "Okulandelayo">
 <!ENTITY fxaccount_create_account_choose_what_to_sync "Khetha into oza kuyingqamanisa">
 <!ENTITY fxaccount_create_account_sign_in_instead "Ingaba sele une-akhawunti? Ngena">
@@ -166,7 +166,7 @@
 <!ENTITY fxaccount_account_create_not_allowed_learn_more "Funda okungakumbi">
 
 <!ENTITY fxaccount_confirm_account_header "Qinisekisa i-akhawunti yakho">
-<!-- Localization note: &formatS; is the Firefox Account's email address. -->
+<!-- Localization note: &formatS; is the IceCat Account's email address. -->
 <!ENTITY fxaccount_confirm_account_verification_link "Uthunyelelwe ikhonkco lokuqinisekisa kwi-&formatS;">
 <!ENTITY fxaccount_confirm_account_resend_email "Phinda uthumele i-imeyili">
 <!ENTITY fxaccount_confirm_account_change_email "Uyilibele idilesi ye imeyile?">
@@ -195,7 +195,7 @@
 <!ENTITY fxaccount_finish_migrating_button_label "Ugqibile ukuphuhlisa">
 <!ENTITY fxaccount_finish_migrating_description "Uphuhliso lungathumela iinkcukacha ezininzi. Kungcono ukuba kwinethiwokhi eno-WiFi.">
 
-<!ENTITY fxaccount_status_header2 "I-akhawunti yeFirefox">
+<!ENTITY fxaccount_status_header2 "I-akhawunti yeIceCat">
 <!ENTITY fxaccount_status_signed_in_as "Ungene njenge">
 <!ENTITY fxaccount_status_manage_account "Lawula iakhawunti">
 <!ENTITY fxaccount_status_auth_server "Iseva yeakhawunti">
@@ -210,7 +210,7 @@
 <!ENTITY fxaccount_status_needs_upgrade "Kufuneka uhlaziye i-&brandShortName; ukuze ungene.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled "I-&syncBrand.shortName.label; ifakelwe kodwa ayingqamani ngokuzenzekelayo. Sebenzisa njengeqhosha i-“Auto-sync data” kwi-Android Settings &gt; Usetyenziso lweengcombolo.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled_v21 "I-&syncBrand.shortName.label; ifakelwe kodwa ayingqamani ngokuzenzekelayo. Sebenzisa njengeqhosha i-“Auto-sync data” kwi-Android Settings &gt; Usetyenziso lweengcombolo.">
-<!ENTITY fxaccount_status_needs_finish_migrating "Cofa ukusayina ungene kwi-akhawunti yakho entsha ka-Firefox.">
+<!ENTITY fxaccount_status_needs_finish_migrating "Cofa ukusayina ungene kwi-akhawunti yakho entsha ka-IceCat.">
 <!ENTITY fxaccount_status_bookmarks "Iibhukhmakhi">
 <!ENTITY fxaccount_status_history "Imbali">
 <!ENTITY fxaccount_status_passwords2 "IiLogini">
@@ -225,21 +225,21 @@
 <!ENTITY fxaccount_status_more "Yongeza&ellipsis;">
 <!ENTITY fxaccount_remove_account "Disconnect&ellipsis;">
 
-<!ENTITY fxaccount_remove_account_dialog_title "Susa i-Akhawunti ye-Firefox?">
+<!ENTITY fxaccount_remove_account_dialog_title "Susa i-Akhawunti ye-IceCat?">
 <!ENTITY fxaccount_remove_account_dialog_message "I-&brandShortName; izakuyeka ukusynka ne-akhawunti yakho, kodwa ayizokucima ukubhrawuza kwakho">
 <!-- Localization note: format string below will be replaced
-     with the Firefox Account's email address. -->
-<!ENTITY fxaccount_remove_account_toast "I-Akhawunti yeFirefox &formatS; isusiwe.">
+     with the IceCat Account's email address. -->
+<!ENTITY fxaccount_remove_account_toast "I-Akhawunti yeIceCat &formatS; isusiwe.">
 
 <!ENTITY fxaccount_enable_debug_mode "Vula IMowudi Yokususa Ibhagi">
 <!-- Localization note: this is the name shown by the Android system
-     itself for a Firefox Account. Don't localize this. -->
+     itself for a IceCat Account. Don't localize this. -->
 
-<!ENTITY fxaccount_account_type_label "IFirefox">
+<!ENTITY fxaccount_account_type_label "IIceCat">
 <!-- Localization note: these are shown by the Android system itself,
-     when the user navigates to the Android > Accounts > {Firefox
-     Account} Screen. The link takes the user to the Firefox Account
-     status activity, which lets them manage their Firefox
+     when the user navigates to the Android > Accounts > {IceCat
+     Account} Screen. The link takes the user to the IceCat Account
+     status activity, which lets them manage their IceCat
      Account. -->
 
 <!ENTITY fxaccount_options_title "&syncBrand.shortName.label; Okukhethayo">
@@ -248,7 +248,7 @@
      has been made to the remote server, and an error of some type has
      been returned. -->
 
-<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Udinga ukuhlaziya iFirefox">
+<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Udinga ukuhlaziya iIceCat">
 <!-- Localization note: the format string will be fxaccount_sign_in_button_label, linkified. -->
 
 <!ENTITY fxaccount_remote_error_ATTEMPT_TO_CREATE_AN_ACCOUNT_THAT_ALREADY_EXISTS_2 "Sele ikhona i-akhawunti. &formatS1;">
@@ -263,12 +263,12 @@
 
 <!ENTITY fxaccount_sync_sign_in_error_notification_title2 "I-&syncBrand.shortName.label; ayinxityelelaniswanga">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_sign_in_error_notification_text2 "Cofa ukuze ungene njenge-&formatS;">
 
 <!ENTITY fxaccount_sync_finish_migrating_notification_title "Ugqibile ukuphuhlisa &syncBrand.shortName.label;?">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_finish_migrating_notification_text "Cofa ukuze ungene njenge-&formatS;">
 <!-- Localization note: the following strings are used in a
      notification and should be kept as short as possible. -->

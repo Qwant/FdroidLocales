@@ -82,19 +82,19 @@
 <!ENTITY pref_category_customize_alt_summary "Home, search, tabs, open later, import">
 
 <!-- Localization note (pref_category_language) : This is the preferences
-     section in which the user picks the locale in which to display Firefox
+     section in which the user picks the locale in which to display IceCat
      UI. The locale includes both language and region concepts. -->
 <!ENTITY pref_category_language "ਭਾਸ਼ਾ">
 <!ENTITY pref_category_language_summary "ਆਪਣੇ ਬਰਾਊਜ਼ਰ ਦੀ ਭਾਸ਼ਾ ਬਦਲੋ">
 <!ENTITY pref_browser_locale "ਬਰਾਊਜ਼ਰ ਦੀ ਭਾਸ਼ਾ">
 
 <!-- Localization note (locale_system_default) : This string indicates that
-     Firefox will use the locale currently selected in Android's settings
+     IceCat will use the locale currently selected in Android's settings
      to display browser chrome. -->
 <!ENTITY locale_system_default "ਸਿਸਟਮ ਮੂਲ">
 
 <!-- Localization note (overlay_share_label) : This is the label that appears
-     in Android's intent chooser when sending a link to Firefox to bookmark,
+     in Android's intent chooser when sending a link to IceCat to bookmark,
      send to another device, or add to Reading List. -->
 <!ENTITY overlay_share_label "&brandShortName; ਵਿੱਚ ਜੋੜੋ">
 
@@ -117,7 +117,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "No Firefox Account connected devices found">
+<!ENTITY overlay_no_synced_devices "No IceCat Account connected devices found">
 <!-- Localization note (overlay_share_tab_not_sent) : Used when the menu option
      to send a tab to a synced device is pressed and there is an error
      connecting to the server so the tab could not be sent. The text should be
@@ -290,7 +290,7 @@ size. -->
 <!ENTITY pref_private_data_siteSettings2 "ਸਾਈਟ ਸੈਟਿੰਗ">
 <!ENTITY pref_private_data_downloadFiles2 "ਡਾਊਨਲੋਡ">
 
-<!ENTITY pref_about_firefox "&brandShortName; ਬਾਰੇ">
+<!ENTITY pref_about_icecat "&brandShortName; ਬਾਰੇ">
 <!ENTITY pref_vendor_faqs "ਸਵਾਲ-ਜਵਾਬ">
 <!ENTITY pref_vendor_feedback "ਸੁਝਾਅ ਦਿਓ">
 
@@ -668,7 +668,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
      include "42 minutes ago", "4 days ago", "last week", etc. The subject of
-     "Last synced" is one of the user's other Sync clients, typically Firefox on
+     "Last synced" is one of the user's other Sync clients, typically IceCat on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "ਆਖਰੀ ਕੀਤਾ ਸਿੰਕ: &formatS;">
 <!ENTITY remote_tabs_never_synced "ਆਖਰੀ ਕੀਤਾ ਸਿੰਕ: ਕਦੇ ਨਹੀਂ">

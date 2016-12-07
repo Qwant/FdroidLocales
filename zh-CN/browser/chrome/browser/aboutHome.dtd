@@ -11,16 +11,16 @@
 
 <!ENTITY abouthome.pageTitle "&brandFullName; 开始页">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet1.v1):
-     text in <a/> will be linked to the Firefox features page on mozilla.com
+     text in <a/> will be linked to the IceCat features page on mozilla.com
 -->
 
-<!ENTITY abouthome.defaultSnippet1.v1 "感谢您选择 Firefox！为了您能更好的使用本浏览器，欢迎了解<a>最新功能</a>。">
+<!ENTITY abouthome.defaultSnippet1.v1 "感谢您选择 IceCat！为了您能更好的使用本浏览器，欢迎了解<a>最新功能</a>。">
 <!-- LOCALIZATION NOTE (abouthome.defaultSnippet2.v1):
      text in <a/> will be linked to the featured add-ons on addons.mozilla.org
 -->
-<!ENTITY abouthome.defaultSnippet2.v1 "定制出您想要的 Firefox 很简单。<a>来挑选成千上万的附加组件吧</a>。">
+<!ENTITY abouthome.defaultSnippet2.v1 "定制出您想要的 IceCat 很简单。<a>来挑选成千上万的附加组件吧</a>。">
 <!-- LOCALIZATION NOTE (abouthome.rightsSnippet): text in <a/> will be linked to about:rights -->
-<!ENTITY abouthome.rightsSnippet "&brandFullName; 是来自 Mozilla 基金会的自由开源软件。<a>了解您的权利…</a>">
+<!ENTITY abouthome.rightsSnippet "&brandFullName; 是来自 GNU 基金会的自由开源软件。<a>了解您的权利…</a>">
 
 <!ENTITY abouthome.bookmarksButton.label "书签">
 <!ENTITY abouthome.historyButton.label   "历史">
@@ -33,7 +33,7 @@
 <!ENTITY abouthome.addonsButton.label    "附加组件">
 <!-- LOCALIZATION NOTE (abouthome.appsButton2.label): This string should be consistent with
      the Apps menu item in the Tools menu (webapps.label in browser.dtd) and the Apps toolbar button in
-     Firefox's customization palette (web-apps-button.label in customizableWidgets.properties) -->
+     IceCat's customization palette (web-apps-button.label in customizableWidgets.properties) -->
 <!ENTITY abouthome.appsButton2.label     "应用">
 <!ENTITY abouthome.downloadsButton.label "下载">
 <!ENTITY abouthome.syncButton.label      "&syncBrand.shortName.label;">

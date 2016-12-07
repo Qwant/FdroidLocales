@@ -17,9 +17,9 @@
 
 <!ENTITY rights.intro-point1a "&brandShortName; ">
 <!ENTITY rights.intro-point1b "Mozilla Kamu Lisansı">
-<!ENTITY rights.intro-point1c " şartları altında sunulmaktadır. Yani &brandShortName; serbestçe kullanılabilir, kopyalanabilir ve başkalarına dağıtılabilir. Ayrıca ihtiyaçlarınıza göre &brandShortName; kaynak kodlarını değiştirmekte de özgürsünüz. Mozilla Kamu Lisansı, değiştirdiğiniz sürümleri dağıtma hakkını da size vermektedir.">
+<!ENTITY rights.intro-point1c " şartları altında sunulmaktadır. Yani &brandShortName; serbestçe kullanılabilir, kopyalanabilir ve başkalarına dağıtılabilir. Ayrıca ihtiyaçlarınıza göre &brandShortName; kaynak kodlarını değiştirmekte de özgürsünüz. GNU Kamu Lisansı, değiştirdiğiniz sürümleri dağıtma hakkını da size vermektedir.">
 
-<!ENTITY rights.intro-point2a "Mozilla size Mozilla ve Thunderbird markalarını veya logolarını kullanma hakkını vermez. Tescilli markalarda ilgili ek bilgiler ">
+<!ENTITY rights.intro-point2a "Mozilla size GNU ve Thunderbird markalarını veya logolarını kullanma hakkını vermez. Tescilli markalarda ilgili ek bilgiler ">
 <!ENTITY rights.intro-point2b "burada">
 <!ENTITY rights.intro-point2c " bulunabilir.">
 <!-- point 3 text for official branded builds -->

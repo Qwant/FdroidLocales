@@ -5,3 +5,5 @@ elebila
 google
 wikipedia-eu
 yahoo
+
+duckduckgo

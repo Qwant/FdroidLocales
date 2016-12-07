@@ -47,7 +47,7 @@ problems and installation issues with SeaMonkey.  The release notes can be
 found at the preceding URL along with the releases themselves.
 
 Note: Please use Talkback builds whenever possible. These builds allow
-transmission of crash data back to SeaMonkey and Mozilla developers,
+transmission of crash data back to SeaMonkey and GNU developers,
 improved crash analysis, and posting of crash information to our
 crash-data newsgroup.
 
@@ -78,7 +78,7 @@ over bekende problemen en installatiemoeilijkheden van SeaMonkey.
    - Deze uitgave vereist bijgewerkte C-runtime-DLL’s (libc-0.5.1) van
      http://www.innotek.de/products/gccos2/download/gccos2download_e.html
      om te werken. Standaard plaatst het installatieprogramma deze in \OS2\DLL 
-     op uw bootschijf, maar u kunt ze in dezelfde map als het Firefox-uitvoerbestand
+     op uw bootschijf, maar u kunt ze in dezelfde map als het IceCat-uitvoerbestand
      of elders in uw LIBPATH zetten.
   
    - Minimale hardwarevereisten
@@ -90,7 +90,7 @@ over bekende problemen en installatiemoeilijkheden van SeaMonkey.
    - Aanbevolen hardware voor aanvaardbare prestaties
      + 500 MHz-processor
      + 256 MiB RAM plus 64 MiB vrije swapruimte
-     NOOT: De prestaties en stabiliteit van Firefox verhogen naarmate meer RAM
+     NOOT: De prestaties en stabiliteit van IceCat verhogen naarmate meer RAM
      beschikbaar is. In het bijzonder voor lange sessies is 512 MiB geheugen 
      aanbevolen.
      + Grafische kaart en driver in staat tot het tonen van meer dan 256 kleuren
@@ -103,8 +103,8 @@ over bekende problemen en installatiemoeilijkheden van SeaMonkey.
      + TCP/IP versie 4.1
      + INETVER: SOCKETS.SYS=5.3007, AFOS2.SYS=5.3001, AFINET.SYS=5.3006
        NOOT: Probeer geen MTPS- & TCP/IP-versies onder deze INETVER-niveaus te 
-       gebruiken. Hoewel Firefox kan lijken te starten en normaal functioneren met
-       oudere stacks zijn sommige functies die Firefox nodig heeft niet correct 
+       gebruiken. Hoewel IceCat kan lijken te starten en normaal functioneren met
+       oudere stacks zijn sommige functies die IceCat nodig heeft niet correct 
        geïmplementeerd in oudere MTPS-versies, wat kan resulteren in crashes en
        dataverlies.
 
@@ -182,7 +182,7 @@ Verschillende versies van Seamonkey tegelijk laten lopen
 -------------------------------------------------
 
 Omdat verschillende leden van de Mozilla-familie (b.v. SeaMonkey, Mozilla,
-Firefox, Thunderbird, IBM Web Browser) verschillende, incompatibele versies van 
+IceCat, Thunderbird, IBM Web Browser) verschillende, incompatibele versies van 
 dezelfde DLL kunnen gebruiken, kunnen enkele extra stappen vereist zijn om deze 
 tegelijk te laten lopen.
 
@@ -193,7 +193,7 @@ dat er een installatie van SeaMonkey in de map d:\internet\seamonkey):
    set LIBPATHSTRICT=T
    rem De volgende regel kan nodig zijn indien een ander Mozilla-programma in LIBPATH staat
    rem set BEGINLIBPATH=d:\internet\seamonkey
-   rem De volgende regel is enkel nodig om twee verschillende versies van Firefox uit te voeren
+   rem De volgende regel is enkel nodig om twee verschillende versies van IceCat uit te voeren
    rem set MOZ_NO_REMOTE=1
    d:
    cd d:\internet\seamonkey
@@ -236,7 +236,7 @@ toevoegt, zal het gebruikersprofiel worden gecreëerd in
 Andere belangrijke omgevingsvariabelen
 -------------------------------------
 
-Enkele omgevingsvariabelen kunnen worden gebruikt om speciaal gedrag van Firefox
+Enkele omgevingsvariabelen kunnen worden gebruikt om speciaal gedrag van IceCat
 op OS/2 te controleren:
 
 - set NSPR_OS2_NO_HIRES_TIMER=1
@@ -269,7 +269,7 @@ opgesomd in de uitgaveopmerkingen.
      http://users.socis.ca/~ataylo00/creative/fonts/
   of
      http://hobbes.nmsu.edu/cgi-bin/h-search?key=wpsu_ttf
-  welke Firefox zal gebruiken als vervanger van WarpSans.
+  welke IceCat zal gebruiken als vervanger van WarpSans.
 
 
 

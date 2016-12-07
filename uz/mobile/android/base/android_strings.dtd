@@ -104,19 +104,19 @@
 <!ENTITY pref_category_general "Umumiy">
 <!ENTITY pref_category_general_summary2 "Uy, til, URL qatori">
 <!-- Localization note (pref_category_language) : This is the preferences
-     section in which the user picks the locale in which to display Firefox
+     section in which the user picks the locale in which to display IceCat
      UI. The locale includes both language and region concepts. -->
 
 <!ENTITY pref_category_language "Til">
 <!ENTITY pref_category_language_summary "Brauzeringiz tilini o‘zgartirish">
 <!ENTITY pref_browser_locale "Brauzer tili">
 <!-- Localization note (locale_system_default) : This string indicates that
-     Firefox will use the locale currently selected in Android's settings
+     IceCat will use the locale currently selected in Android's settings
      to display browser chrome. -->
 
 <!ENTITY locale_system_default "Tizim standartlari">
 <!-- Localization note (overlay_share_label) : This is the label that appears
-     in Android's intent chooser when sending a link to Firefox to bookmark,
+     in Android's intent chooser when sending a link to IceCat to bookmark,
      send to another device, or add to Reading List. -->
 
 <!ENTITY overlay_share_label "&brandShortName; haqida">
@@ -140,7 +140,7 @@
 <!-- Localization note (overlay_no_synced_devices) : Used when the menu option
      to send a tab to a synced device is pressed and no other synced devices
      are found. -->
-<!ENTITY overlay_no_synced_devices "Firefox hisobi ulangan qurilmalar topilmadi">
+<!ENTITY overlay_no_synced_devices "IceCat hisobi ulangan qurilmalar topilmadi">
 
 <!ENTITY pref_category_search3 "Izlash">
 <!ENTITY pref_category_search_summary "Izlash tizimlarini moslash">
@@ -193,7 +193,7 @@
 <!ENTITY home_homepage_title "Bosh sahifa sifatida o‘rnatish">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
-     button for this string, they will use the built-in default Firefox homepage (about:home). -->
+     button for this string, they will use the built-in default IceCat homepage (about:home). -->
 <!ENTITY home_homepage_radio_default "&brandShortName; bosh sahifasi">
 <!-- Localization note (home_homepage_radio_user_address): The user will see a series of radio
      buttons to choose the homepage they'd like to start on. When they click the radio
@@ -320,7 +320,7 @@ size. -->
 <!ENTITY pref_private_data_syncedTabs "Sinxronlangan ichki oynalar">
 
 
-<!ENTITY pref_about_firefox "&brandShortName; haqida">
+<!ENTITY pref_about_icecat "&brandShortName; haqida">
 <!ENTITY pref_vendor_faqs "FAQ">
 <!ENTITY pref_vendor_feedback "Mulohaza bildiring">
 
@@ -548,11 +548,11 @@ size. -->
 <!ENTITY home_remote_tabs_title "Sinxronlangan ichki oynalar">
 <!ENTITY home_remote_tabs_empty "Boshqa qurilmalaringizdagi ichki oynalar bu yerda ko‘rinadi.">
 <!ENTITY home_remote_tabs_unable_to_connect "Ulana olmadi">
-<!ENTITY home_remote_tabs_need_to_sign_in "Firefox hisobingizga qayta ulanish va sinxornlashni davom ettirish uchun kiring.">
-<!ENTITY home_remote_tabs_need_to_finish_migrating "Sizning yangi \&quot;Firefox hisobi\&quot;ngiz tayyor!">
+<!ENTITY home_remote_tabs_need_to_sign_in "IceCat hisobingizga qayta ulanish va sinxornlashni davom ettirish uchun kiring.">
+<!ENTITY home_remote_tabs_need_to_finish_migrating "Sizning yangi \&quot;IceCat hisobi\&quot;ngiz tayyor!">
 
 <!ENTITY home_remote_tabs_trouble_verifying "Hisobingizni tasdiqlashda muammo yuz berdimi?">
-<!ENTITY home_remote_tabs_need_to_verify "Sinxronlashni boshlash uchun \&quot;Firefox hisobi\&quot;ngizni tasdiqlang.">
+<!ENTITY home_remote_tabs_need_to_verify "Sinxronlashni boshlash uchun \&quot;IceCat hisobi\&quot;ngizni tasdiqlang.">
 
 <!ENTITY home_remote_tabs_one_hidden_device "1 ta qurilma yashirilgan">
 <!-- Localization note (home_remote_tabs_many_hidden_devices) : The
@@ -696,7 +696,7 @@ import qilinmoqda">
      "relative time span string" produced by Android.  This string describes the
      time the tabs were last synced relative to the current time; examples
      include "42 minutes ago", "4 days ago", "last week", etc. The subject of
-     "Last synced" is one of the user's other Sync clients, typically Firefox on
+     "Last synced" is one of the user's other Sync clients, typically IceCat on
      their desktop or laptop.-->
 
 <!ENTITY remote_tabs_last_synced "So‘nggi sinxronlash: &formatS;">
@@ -726,7 +726,7 @@ import qilinmoqda">
 <!-- LOCALIZATION NOTE (devtools_auth_scan_header): This header text appears
      above a QR reader that is actively scanning for QR codes.  The expected QR
      code has already been displayed by the client trying to connect (such as
-     desktop Firefox via WebIDE), so you just need to aim this device at the QR
+     desktop IceCat via WebIDE), so you just need to aim this device at the QR
      code. -->
 
 <!ENTITY devtools_auth_scan_header "Skanerlash uchun QR kodi boshqa qurilmangizda ko‘rinadi">
@@ -735,7 +735,7 @@ import qilinmoqda">
      a restricted profile (e.g. child). Used inside the Android settings UI. -->
 
 <!ENTITY restrictable_feature_addons_installation "Qo‘shimcha dasturlar">
-<!ENTITY restrictable_feature_addons_installation_description "Xususiyatlar yoki funksiyalarni Firefox brauzeriga qo‘shish. Eslatma: qo‘shimcha dasturlarni belgiangan cheklovlar bo‘yicha o‘chirib qo‘yish mumkin.">
+<!ENTITY restrictable_feature_addons_installation_description "Xususiyatlar yoki funksiyalarni IceCat brauzeriga qo‘shish. Eslatma: qo‘shimcha dasturlarni belgiangan cheklovlar bo‘yicha o‘chirib qo‘yish mumkin.">
 <!ENTITY restrictable_feature_private_browsing "Maxfiy ko‘rish">
 <!ENTITY restrictable_feature_private_browsing_description "Oila a’zolariga sayt va sahifalar haqidagi ma’lumotlarni saqlamasdan internetda ishlashga ruxsat beradi.">
 <!ENTITY restrictable_feature_clear_history "Tarixni tozalash">
@@ -745,19 +745,19 @@ import qilinmoqda">
 <!ENTITY restrictable_feature_camera_microphone "Kamera va mikrofon">
 <!ENTITY restrictable_feature_camera_microphone_description "Oila a’zolariga veb saytlarda real vaqtda bog‘lanish imkonini beradi.">
 <!ENTITY restrictable_feature_data_choices "Ma’lumotlar tanlovi">
-<!ENTITY restrictable_feature_data_choices_description "Firefox brauzerini yaxshilashda yordam berish uchun Mozillaga foydalanilgan ma’lumotlarni jo‘natish yoki jo‘natmaslikni tanlang.">
+<!ENTITY restrictable_feature_data_choices_description "IceCat brauzerini yaxshilashda yordam berish uchun Mozillaga foydalanilgan ma’lumotlarni jo‘natish yoki jo‘natmaslikni tanlang.">
 <!-- Default Bookmarks titles-->
-<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:fennec -->
+<!-- LOCALIZATION NOTE (bookmarks_about_browser): link title for about:icecatmobile -->
 
-<!ENTITY bookmarks_about_browser "Firefox: brauzeringiz haqida">
-<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://addons.mozilla.org/en-US/mobile -->
-<!ENTITY bookmarks_addons "Firefox: qo‘shimcha dasturlar bilan moslang">
+<!ENTITY bookmarks_about_browser "IceCat: brauzeringiz haqida">
+<!-- LOCALIZATION NOTE (bookmarks_addons): link title for https://directory.fsf.org/wiki/GNU_IceCat -->
+<!ENTITY bookmarks_addons "IceCat: qo‘shimcha dasturlar bilan moslang">
 <!-- LOCALIZATION NOTE (bookmarks_support): link title for https://support.mozilla.org/ -->
-<!ENTITY bookmarks_support "Firefox: qo‘llab-quvvatlash">
+<!ENTITY bookmarks_support "IceCat: qo‘llab-quvvatlash">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess -->
-<!ENTITY bookmarks_restricted_support2 "Android planshetlardagi nogironlar profillari uchun Firefox yordami va qo‘llab-quvvatlash">
+<!ENTITY bookmarks_restricted_support2 "Android planshetlardagi nogironlar profillari uchun IceCat yordami va qo‘llab-quvvatlash">
 <!-- LOCALIZATION NOTE (bookmarks_restricted_webmaker):link title for https://webmaker.org -->
-<!ENTITY bookmarks_restricted_webmaker "Vebni o‘rganing: Mozilla Webmaker">
+<!ENTITY bookmarks_restricted_webmaker "Vebni o‘rganing: GNU Webmaker">
 <!-- LOCALIZATION NOTE (unsupported_sdk_version): The user installed a build of this app that does not support
      the Android version of this device. the formatS1 is replaced by the CPU ABI (e.g., ARMv7); the formatS2 is
      replaced by the Android OS version (e.g., 14)-->

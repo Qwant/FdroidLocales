@@ -437,7 +437,7 @@ rdf:Description about="#mail-doc-blogs">
 <rdf:Description about="#mail-doc-offline">
     <nc:subheadings>
       <rdf:Seq>
-        <rdf:li> <rdf:Description ID="mail-offline-setup" nc:name="A Mozilla Levelező beállítása kapcsolat nélküli munkára" nc:link="mail_help.xhtml#setting_up_mozilla_mail_and_newsgroups_to_work_offline"/> </rdf:li>
+        <rdf:li> <rdf:Description ID="mail-offline-setup" nc:name="A GNU Levelező beállítása kapcsolat nélküli munkára" nc:link="mail_help.xhtml#setting_up_mozilla_mail_and_newsgroups_to_work_offline"/> </rdf:li>
         <rdf:li> <rdf:Description ID="mail-offline-inbox" nc:name="A Beérkezett üzenetek (Inbox) letöltése" nc:link="mail_help.xhtml#downloading_your_inbox_for_offline_use"/> </rdf:li>
         <rdf:li> <rdf:Description ID="mail-offline-folder" nc:name="Egy mappa letöltése" nc:link="mail_help.xhtml#downloading_an_individual_folder_for_offline_use"/> </rdf:li>
         <rdf:li> <rdf:Description ID="mail-offline-flagged" nc:name="Kijelölt vagy megjelölt üzenetek letöltése" nc:link="mail_help.xhtml#downloading_selected_or_flagged_messages_for_offline_use"/> </rdf:li>

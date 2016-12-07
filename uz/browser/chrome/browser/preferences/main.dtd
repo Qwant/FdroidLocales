@@ -38,7 +38,7 @@
 <!ENTITY isDefault.label                  "&brandShortName; - hozircha standart brauzeringiz">
 <!ENTITY isNotDefault.label               "&brandShortName; - standart brauzeringiz emas">
 
-<!ENTITY separateProfileMode.label        "&brandShortName; Firefox’ni bir vaqtda ishga tushirishga ruxsat berish">
-<!ENTITY useFirefoxSync.label             "Maslahat: U alohida profillardan foydalandi. Ular o‘rtasida ma’lumotlarni almashish uchum sinxronlashdan foydalaning.">
+<!ENTITY separateProfileMode.label        "&brandShortName; IceCat’ni bir vaqtda ishga tushirishga ruxsat berish">
+<!ENTITY useIceCatSync.label             "Maslahat: U alohida profillardan foydalandi. Ular o‘rtasida ma’lumotlarni almashish uchum sinxronlashdan foydalaning.">
 <!ENTITY getStarted.label                 "Sinxronlashdan foydalanishni boshlash…">
 

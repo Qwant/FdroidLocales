@@ -23,7 +23,7 @@
 
 <!ENTITY happy.header              "Tha sinn fìor thoilichte sin a chluinntinn!">
 <!-- LOCALIZATION NOTE (happy.message): "share the love" — This feels purposely exaggerated in English,
-     but essentially it means that we want you to let others know how much you love Firefox. -->
+     but essentially it means that we want you to let others know how much you love IceCat. -->
 
 <!ENTITY happy.message             "Nach cum thu taic rinn? Bhitheadh 5 rionnagan air Google Play sgoinneil!">
 <!-- LOCALIZATION NOTE (happy.finePrint): "feels great" — Another exaggeration where we're trying to
@@ -48,7 +48,7 @@
 
 <!ENTITY sad.thanksMessageTop      "Tha sinn a' sìor leasachadh &brandShortName;. Bheir sinn sùil air gach beachd a thig a-steach agus nì sinn ar dìcheall gus a rèiteachadh.">
 <!-- LOCALIZATION NOTE (sad.thanksMessageBottom): We're suggesting that there will be consequences for the people working
-     on Firefox if they don't resolve the user's problem, like "or if they don't fix it, we'll fire them." If this doesn't
+     on IceCat if they don't resolve the user's problem, like "or if they don't fix it, we'll fire them." If this doesn't
      work in your language, you can change it to something like "no matter what" or just remove it entirely. -->
 
 <!ENTITY sad.thanksMessageBottom   "Air neo.">

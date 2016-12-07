@@ -4,7 +4,7 @@
 <!-- Don't localize these. They're here until they have
      a better place to live. -->
 
-<!ENTITY syncBrand.fullName.label "Firefox Sync">
+<!ENTITY syncBrand.fullName.label "IceCat Sync">
 <!ENTITY syncBrand.shortName.label "Goubred">
 <!-- Main titles. -->
 
@@ -16,7 +16,7 @@
 
 <!ENTITY sync.subtitle.connect.label "Evit gweredekaat ho trevnad nevez, diuzit ”&syncBrand.shortName.label;” war an trevnad.">
 <!ENTITY sync.subtitle.header2.label "Enankit ar rineg-mañ war ho trevnad all">
-<!ENTITY sync.subtitle.connectlocation2.label "Diuzañ “&sync.title.pair.label;” e kevrenn &syncBrand.shortName.label; eus dibarzhioù ho trevnad Firefox all.">
+<!ENTITY sync.subtitle.connectlocation2.label "Diuzañ “&sync.title.pair.label;” e kevrenn &syncBrand.shortName.label; eus dibarzhioù ho trevnad IceCat all.">
 <!ENTITY sync.subtitle.pair.label "Da weredekaat, diuzit “Koublañ un trevnad” war ho trevnad all.">
 <!ENTITY sync.pin.default.label "...\n...\n...\n">
 <!ENTITY sync.pin.oneline.label "...">
@@ -42,7 +42,7 @@
 <!ENTITY sync.button.manual.label "Kefluniañ dre zorn">
 <!ENTITY sync.subtitle.nointernet.label "N\u0027eus kennask hegerz ebet ouzh internet.">
 <!ENTITY sync.subtitle.failaccount.label "C\u0027hwitadenn war grouiñ ho kont war ho trevnad.">
-<!ENTITY sync.subtitle.failmultiple.label "Meur a Firefox hoc\u0027h eus staliet ? Evit poent e vez skoret ur staliadenn eus Firefox hepken gant &syncBrand.fullName.label; Mar plij, distailhit an erioloù all da arverañ  &syncBrand.shortName.label;.">
+<!ENTITY sync.subtitle.failmultiple.label "Meur a IceCat hoc\u0027h eus staliet ? Evit poent e vez skoret ur staliadenn eus IceCat hepken gant &syncBrand.fullName.label; Mar plij, distailhit an erioloù all da arverañ  &syncBrand.shortName.label;.">
 <!-- Setup Success -->
 
 <!ENTITY sync.title.success.label "Echu eo ar c\u0027hefluniadur">
@@ -53,7 +53,7 @@
 
 <!ENTITY sync.pair.tryagain.label "Mar plij, klaskit en-dro.">
 <!ENTITY sync.pair.connectlocation.label "Da weredekaat ho trevnad nevez, diuzit ”Kefluniañ &syncBrand.shortName.label;” war an trevnad ha neuze diuzit ”Ur gont am eus.”">
-<!-- Firefox SyncAdapter Settings Screen -->
+<!-- IceCat SyncAdapter Settings Screen -->
 
 <!ENTITY sync.settings.options.label "Dibarzhioù">
 <!ENTITY sync.summary.pair.label "Eren un trevnad nevez ouzh ho kont evit &syncBrand.shortName.label;">
@@ -74,10 +74,10 @@
 
 <!ENTITY sync.account.label "&syncBrand.fullName.label; (diamzeret)">
 <!-- Localization note (sync.default.client.name): Default string of the "Device
-     name" menu item upon setting up Firefox Sync.  The placeholder &formatS1
-     will be replaced by the name of the Firefox release channel and &formatS2
+     name" menu item upon setting up IceCat Sync.  The placeholder &formatS1
+     will be replaced by the name of the IceCat release channel and &formatS2
      by the model name of the Android device. Examples look like "Aurora on
-     GT-I1950" and "Fennec on MI 2S". -->
+     GT-I1950" and "IceCatMobile on MI 2S". -->
 
 <!ENTITY sync.default.client.name "&formatS1; war &formatS2;">
 <!-- Bookmark folder strings -->
@@ -111,10 +111,10 @@
 <!ENTITY sync.text.redirect.to.set.up.sync.label "Kefluniañ &syncBrand.fullName.label; war ho trevnad da gas ivinelloù da drevnadoù all.">
 <!ENTITY sync.text.tab.sent.label "Kaset eo bet hoc\u0027h ivinell !">
 <!ENTITY sync.text.tab.not.sent.label "Ur gudenn ez eus bet e-pad kas hoc\u0027h ivinell.">
-<!-- Firefox Account strings. -->
+<!-- IceCat Account strings. -->
 
 
-<!ENTITY fxaccount_full_label "Kontoù Firefox">
+<!ENTITY fxaccount_full_label "Kontoù IceCat">
 
 <!ENTITY fxaccount_custom_server_account_title "Arver ar gont war an dafariad">
 <!ENTITY fxaccount_custom_server_sync_title "Gwarediñ ar roadennoù goubredañ war an dafariad">
@@ -128,7 +128,7 @@
 <!ENTITY fxaccount_password_show "Diskouez">
 <!-- Localization note: these are shown in screens after the user has
      created or signed in to an account, and take the user back to
-     Firefox. -->
+     IceCat. -->
 
 <!ENTITY fxaccount_back_to_browsing "Distreiñ d\u0027ar merdeiñ">
 <!-- Localization note: the following two strings are interpolated
@@ -143,18 +143,18 @@
 <!ENTITY fxaccount_getting_started_welcome_to_sync "Donemat war &syncBrand.shortName.label;">
 <!ENTITY fxaccount_getting_started_description2 "Kennaskit evit goubredañ hoc\u0027h ivinelloù, ho sinedoù, ho titouroù kennaskañ hag ouzhpenn c\u0027hoazh.">
 <!ENTITY fxaccount_getting_started_get_started "Deraouiñ">
-<!ENTITY fxaccount_getting_started_old_firefox "Emaoc\u0027h oc\u0027h ober gant un handelv all eus &syncBrand.shortName.label; ?">
-<!-- Localization note: the Firefox below should not change with the
-     particular version of Firefox installed (Release, Beta, Aurora,
-     etc).  The account remains a "Firefox Account". -->
+<!ENTITY fxaccount_getting_started_old_icecat "Emaoc\u0027h oc\u0027h ober gant un handelv all eus &syncBrand.shortName.label; ?">
+<!-- Localization note: the IceCat below should not change with the
+     particular version of IceCat installed (Release, Beta, Aurora,
+     etc).  The account remains a "IceCat Account". -->
 
-<!ENTITY fxaccount_create_account_header2 "Krouiñ ur gont Firefox">
+<!ENTITY fxaccount_create_account_header2 "Krouiñ ur gont IceCat">
 <!ENTITY fxaccount_create_account_password_length_restriction " Enankit 8 arouezenn da nebeutañ">
 <!ENTITY fxaccount_create_account_day_of_birth "Deiz">
 <!ENTITY fxaccount_create_account_month_of_birth "Miz">
 <!ENTITY fxaccount_create_account_year_of_birth "Bloaz ar c\u0027hanedigezh">
 <!-- Localization note: &formatS1; is fxaccount_policy_linktos, &formatS2; is fxaccount_policy_linkprivacy, both hyperlinked. -->
-<!ENTITY fxaccount_create_account_policy_text2 "En ur genderc\u0027hel ez asantan da &formatS1; ha &formatS2; eus gwazerezhioù evit koumoul Firefox.">
+<!ENTITY fxaccount_create_account_policy_text2 "En ur genderc\u0027hel ez asantan da &formatS1; ha &formatS2; eus gwazerezhioù evit koumoul IceCat.">
 <!ENTITY fxaccount_create_account_button "War-lerc\u0027h">
 <!ENTITY fxaccount_create_account_choose_what_to_sync "Dibab pezh a vo da c\u0027houbredañ">
 <!ENTITY fxaccount_create_account_sign_in_instead "Ur gont hoc\u0027h eus endeo ? En em gennaskit">
@@ -166,7 +166,7 @@
 <!ENTITY fxaccount_account_create_not_allowed_learn_more "Gouzout hiroc\u0027h">
 
 <!ENTITY fxaccount_confirm_account_header "Kadarnaat ho kont">
-<!-- Localization note: &formatS; is the Firefox Account's email address. -->
+<!-- Localization note: &formatS; is the IceCat Account's email address. -->
 <!ENTITY fxaccount_confirm_account_verification_link "Kaset ez eus bet un ere gwiriañ da &formatS;">
 <!ENTITY fxaccount_confirm_account_resend_email "Adkas ar postel">
 <!ENTITY fxaccount_confirm_account_change_email "Disoñjal ar chomlec\u0027h-mañ ?">
@@ -195,7 +195,7 @@
 <!ENTITY fxaccount_finish_migrating_button_label "Echuiñ an hizivadenn">
 <!ENTITY fxaccount_finish_migrating_description "Ur bern roadennoù a c\u0027hell bezañ implijet gant an hizivadenn. Gwelloc\u0027h eo bezañ kennasket war ur rouedad WiFi.">
 
-<!ENTITY fxaccount_status_header2 "Kont Firefox">
+<!ENTITY fxaccount_status_header2 "Kont IceCat">
 <!ENTITY fxaccount_status_signed_in_as "Kennasket evel">
 <!ENTITY fxaccount_status_manage_account "Ardeiñ ar gont">
 <!ENTITY fxaccount_status_auth_server "Dafariad ar gont">
@@ -210,7 +210,7 @@
 <!ENTITY fxaccount_status_needs_upgrade "Ret eo deoc\u0027h hizivaat &brandShortName; d\u0027en em varilhañ.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled "Kefluniet eo &syncBrand.shortName.label;, ne c\u0027houbred ket ent emgefreek avat. Trec\u0027haolit an arventenn ”Goubredañ ar roadennoù emgefreek” e Arventennoù Android &gt; Arver ar roadennoù.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled_v21 "Kefluniet eo &syncBrand.shortName.label;, ne c\u0027houbred ket ent emgefreek avat. Trec\u0027haolit an arventenn ”Goubredañ ar roadennoù emgefreek” e Arventennoù Android &gt; Arver ar roadennoù.">
-<!ENTITY fxaccount_status_needs_finish_migrating "Stokit evit kennaskañ d\u0027ho Kont Firefox nevez.">
+<!ENTITY fxaccount_status_needs_finish_migrating "Stokit evit kennaskañ d\u0027ho Kont IceCat nevez.">
 <!ENTITY fxaccount_status_bookmarks "Sinedoù">
 <!ENTITY fxaccount_status_history "Roll istor">
 <!ENTITY fxaccount_status_passwords2 "Titouroù kennaskañ">
@@ -225,21 +225,21 @@
 <!ENTITY fxaccount_status_more "Muioc\u0027h&ellipsis;">
 <!ENTITY fxaccount_remove_account "Digennaskañ&ellipsis;">
 
-<!ENTITY fxaccount_remove_account_dialog_title "Dilemel kont Firefox ?">
+<!ENTITY fxaccount_remove_account_dialog_title "Dilemel kont IceCat ?">
 <!ENTITY fxaccount_remove_account_dialog_message "&brandShortName; a arsavo ar goubredañ gant ho kont, ne zilamo ket avat ho roadennoù merdeiñ war an trevnad-mañ.">
 <!-- Localization note: format string below will be replaced
-     with the Firefox Account's email address. -->
-<!ENTITY fxaccount_remove_account_toast "Dilamet eo bet &formatS; kont Firefox.">
+     with the IceCat Account's email address. -->
+<!ENTITY fxaccount_remove_account_toast "Dilamet eo bet &formatS; kont IceCat.">
 
 <!ENTITY fxaccount_enable_debug_mode "Diweredekaat ar mod diveugañ">
 <!-- Localization note: this is the name shown by the Android system
-     itself for a Firefox Account. Don't localize this. -->
+     itself for a IceCat Account. Don't localize this. -->
 
-<!ENTITY fxaccount_account_type_label "Firefox">
+<!ENTITY fxaccount_account_type_label "IceCat">
 <!-- Localization note: these are shown by the Android system itself,
-     when the user navigates to the Android > Accounts > {Firefox
-     Account} Screen. The link takes the user to the Firefox Account
-     status activity, which lets them manage their Firefox
+     when the user navigates to the Android > Accounts > {IceCat
+     Account} Screen. The link takes the user to the IceCat Account
+     status activity, which lets them manage their IceCat
      Account. -->
 
 <!ENTITY fxaccount_options_title "Dibarzhioù &syncBrand.shortName.label;">
@@ -248,7 +248,7 @@
      has been made to the remote server, and an error of some type has
      been returned. -->
 
-<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Ezhomm hoc\u0027h eus hizivaat Firefox">
+<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED "Ezhomm hoc\u0027h eus hizivaat IceCat">
 <!-- Localization note: the format string will be fxaccount_sign_in_button_label, linkified. -->
 
 <!ENTITY fxaccount_remote_error_ATTEMPT_TO_CREATE_AN_ACCOUNT_THAT_ALREADY_EXISTS_2 "Ur gont ez eus anezhi endeo. &formatS1;">
@@ -263,12 +263,12 @@
 
 <!ENTITY fxaccount_sync_sign_in_error_notification_title2 "N\u0027eo ket kennasket &syncBrand.shortName.label;">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_sign_in_error_notification_text2 "Stokit d\u0027en em gennaskañ gant &formatS;">
 
 <!ENTITY fxaccount_sync_finish_migrating_notification_title "Echuiñ gant hizivadenn &syncBrand.shortName.label; ?">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_finish_migrating_notification_text "Stokit d\u0027en em gennaskañ gant &formatS;">
 <!-- Localization note: the following strings are used in a
      notification and should be kept as short as possible. -->

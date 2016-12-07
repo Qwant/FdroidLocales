@@ -53,7 +53,7 @@
 
 <!ENTITY sync.pair.tryagain.label "ದಯವಿಟ್ಟು ಇನ್ನೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ.">
 <!ENTITY sync.pair.connectlocation.label "ನಿಮ್ಮ ಹೊಸ ಸಾಧನವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು, ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ “&syncBrand.shortName.label; ಸಿದ್ಧಗೊಳಿಸಿ” ಅನ್ನು ಆರಿಸಿ, ಹಾಗೂ ನಂತರ “ನಾನು ಖಾತೆಯೊಂದನ್ನು ಹೊಂದಿರುವೆ.” ಅನ್ನು ಆರಿಸಿ">
-<!-- Firefox SyncAdapter Settings Screen -->
+<!-- IceCat SyncAdapter Settings Screen -->
 
 <!ENTITY sync.settings.options.label "ಆಯ್ಕೆಗಳು">
 <!ENTITY sync.summary.pair.label "ನಿಮ್ಮ &syncBrand.shortName.label; ಖಾತೆಗೆ ಮತ್ತೊಂದು ಸಾಧನವನ್ನು ಜೋಡಿಸಿ">
@@ -74,10 +74,10 @@
 
 <!ENTITY sync.account.label "&syncBrand.fullName.label; (ಹಳತಾದ)">
 <!-- Localization note (sync.default.client.name): Default string of the "Device
-     name" menu item upon setting up Firefox Sync.  The placeholder &formatS1
-     will be replaced by the name of the Firefox release channel and &formatS2
+     name" menu item upon setting up IceCat Sync.  The placeholder &formatS1
+     will be replaced by the name of the IceCat release channel and &formatS2
      by the model name of the Android device. Examples look like "Aurora on
-     GT-I1950" and "Fennec on MI 2S". -->
+     GT-I1950" and "IceCatMobile on MI 2S". -->
 
 <!ENTITY sync.default.client.name "&formatS2; ನ ಮೇಲೆ &formatS1;">
 <!-- Bookmark folder strings -->
@@ -111,7 +111,7 @@
 <!ENTITY sync.text.redirect.to.set.up.sync.label "&syncBrand.fullName.label; ಅನ್ನು ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಅನುಸ್ಥಾಪಿಸಿಕೊಂಡು ಇತರೆ ಸಾಧನಗಳಿಗೆ ಹಾಳೆಗಳನ್ನು ತಲುಪಿಸಲು ಆಗುವಂತೆ ಅನುಸ್ಥಾಪಿಸಿಕೊಳ್ಳಿ.">
 <!ENTITY sync.text.tab.sent.label "ನಿಮ್ಮ ಪುಟವನ್ನು ಕಳಿಸಲಾಯಿತು!">
 <!ENTITY sync.text.tab.not.sent.label "ನಿಮ್ಮ ಹಾಳೆಯನ್ನು ಕಳಿಸುವುದರಲ್ಲಿ ತೊಂದರೆ ಕಂಡುಬಂದಿದೆ.">
-<!-- Firefox Account strings. -->
+<!-- IceCat Account strings. -->
 
 
 <!ENTITY fxaccount_full_label "ಫೈರ್ಫಾಕ್ಸ್ ಖಾತೆಗಳು">
@@ -128,7 +128,7 @@
 <!ENTITY fxaccount_password_show "ತೋರಿಸು">
 <!-- Localization note: these are shown in screens after the user has
      created or signed in to an account, and take the user back to
-     Firefox. -->
+     IceCat. -->
 
 <!ENTITY fxaccount_back_to_browsing "ಜಾಲಾಟಕ್ಕೆ ಹಿಂತಿರುಗಿ">
 <!-- Localization note: the following two strings are interpolated
@@ -143,10 +143,10 @@
 <!ENTITY fxaccount_getting_started_welcome_to_sync "&syncBrand.shortName.label; ಗೆ ಸ್ವಾಗತ">
 <!ENTITY fxaccount_getting_started_description2 "ನಿಮ್ಮ ಟ್ಯಾಬ್‌ಗಳು, ಪುಟಗುರುತುಗಳು, ಪ್ರವೇಶಪದಗಳು &amp; ಇನ್ನಷ್ಟನ್ನು ಸಿಂಕ್ ಮಾಡಲು ಪ್ರವೇಶಿಸಿ.">
 <!ENTITY fxaccount_getting_started_get_started "ಪ್ರಾರಂಭಿಸಿರಿ">
-<!ENTITY fxaccount_getting_started_old_firefox "&syncBrand.shortName.label; ನ ಹಳೆಯ ಆವೃತ್ತಿ ಬಳಸುತ್ತಿರುವಿರಾ?">
-<!-- Localization note: the Firefox below should not change with the
-     particular version of Firefox installed (Release, Beta, Aurora,
-     etc).  The account remains a "Firefox Account". -->
+<!ENTITY fxaccount_getting_started_old_icecat "&syncBrand.shortName.label; ನ ಹಳೆಯ ಆವೃತ್ತಿ ಬಳಸುತ್ತಿರುವಿರಾ?">
+<!-- Localization note: the IceCat below should not change with the
+     particular version of IceCat installed (Release, Beta, Aurora,
+     etc).  The account remains a "IceCat Account". -->
 
 <!ENTITY fxaccount_create_account_header2 "ಫೈರ್ ಫಾಕ್ಸ್ ಖಾತೆಯನ್ನು ರಚಿಸಿ">
 <!ENTITY fxaccount_create_account_password_length_restriction "ಕನಿಷ್ಟ 8 ಅಕ್ಷರಗಳನ್ನು ಹೊಂದಿರಬೇಕು">
@@ -166,7 +166,7 @@
 <!ENTITY fxaccount_account_create_not_allowed_learn_more "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ">
 
 <!ENTITY fxaccount_confirm_account_header "ಖಾತೆಯನ್ನು ದೃಢಪಡಿಸಿ">
-<!-- Localization note: &formatS; is the Firefox Account's email address. -->
+<!-- Localization note: &formatS; is the IceCat Account's email address. -->
 <!ENTITY fxaccount_confirm_account_verification_link "ಒಂದು ಪರಿಶೀಲನಾ ಕೊಂಡಿಯನ್ನು &formatS; ಗೆ ಕಳುಹಿಸಲಾಗಿದೆ">
 <!ENTITY fxaccount_confirm_account_resend_email "ಮಿಂಚೆಯನ್ನು ಮರು-ಕಳುಹಿಸಿ">
 <!ENTITY fxaccount_confirm_account_change_email "ಈ ವಿ-ಅಂಚೆ ವಿಳಾಸ ಮರೆಯಬೇಕೆ?">
@@ -210,7 +210,7 @@
 <!ENTITY fxaccount_status_needs_upgrade "ಸೈನಿನ್ ಮಾಡಲು, &brandShortName;ನ ಅಪ್-ಗ್ರೇಡ್ ಅನ್ನು ನೀವು ಪಡೆಯಬೇಕು.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled "&syncBrand.shortName.label; ಸಿದ್ಧವಾಗಿದೆ, ಆದರೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸಿಂಕ್ ಆಗುತ್ತಿಲ್ಲ. ಆಂಡ್ರಾಯ್ಡ್ ಸಿದ್ದತೆಗಳಲ್ಲಿ &gt; ದತ್ತಾಂಶ ಬಳಕೆ ಯಲ್ಲಿ “ಸ್ವ-ಸಿಂಕ್ ದತ್ತಾಂಶ” ಅಂತರಣ ಮಾಡಿ.">
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled_v21 "&syncBrand.shortName.label; ಸಿದ್ಧವಾಗಿದೆ, ಆದರೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸಿಂಕ್ ಆಗುತ್ತಿಲ್ಲ. ಆಂಡ್ರಾಯ್ಡ್ ಸಿದ್ದತೆಗಳಲ್ಲಿ &gt; ದತ್ತಾಂಶ ಬಳಕೆ ಯಲ್ಲಿ “ಸ್ವ-ಸಿಂಕ್ ದತ್ತಾಂಶ” ಅಂತರಣ ಮಾಡಿ.">
-<!ENTITY fxaccount_status_needs_finish_migrating "ನಿಮ್ಮ ಹೊಸ Firefox ಖಾತೆಗೆ ಸೈನ್‌ಇನ್ ಆಗಲು ಮೆಲ್ಲಗೆ ತಟ್ಟಿ.">
+<!ENTITY fxaccount_status_needs_finish_migrating "ನಿಮ್ಮ ಹೊಸ IceCat ಖಾತೆಗೆ ಸೈನ್‌ಇನ್ ಆಗಲು ಮೆಲ್ಲಗೆ ತಟ್ಟಿ.">
 <!ENTITY fxaccount_status_bookmarks "ಪುಟಗುರುತುಗಳು">
 <!ENTITY fxaccount_status_history "ಇತಿಹಾಸ">
 <!ENTITY fxaccount_status_passwords2 "ಲಾಗಿನ್‌ಗಳು">
@@ -228,18 +228,18 @@
 <!ENTITY fxaccount_remove_account_dialog_title "ಫೈರ್ಫಾಕ್ಸ್ ಖಾತೆಯನ್ನು ತೆಗೆದು ಹಾಕುವುದೇ?">
 <!ENTITY fxaccount_remove_account_dialog_message "&brandShortName; ನಿಮ್ಮ ಖಾತೆಯೊಂದಿಗೆ ಸಿಂಕ್ ಮಾಡುವುದನ್ನು ನಿಲ್ಲಿಸುವುದು, ಆದರೆ ಈ ಸಾಧನದಿಂದ ನಿಮ್ಮ ಯಾವುದೇ ಅಂತರ್ಜಾಲ ಪರಿವೀಕ್ಷಣಾ ಡೇಟಾವನ್ನು ಅಳಿಸುವುದಿಲ್ಲ.">
 <!-- Localization note: format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_remove_account_toast "ಫಯರ್ಫಾಕ್ಸ್ ನ ಖಾತೆ &formatS; ಅನ್ನು ತೆಗೆದುಹಾಕಲಾಗಿದೆ.">
 
 <!ENTITY fxaccount_enable_debug_mode "ದೋಷನಿದಾನ ಸ್ಥಿತಿ ಸಕ್ರಿಯಗೊಳಿಸು">
 <!-- Localization note: this is the name shown by the Android system
-     itself for a Firefox Account. Don't localize this. -->
+     itself for a IceCat Account. Don't localize this. -->
 
 <!ENTITY fxaccount_account_type_label "ಫೈರ್ಫಾಕ್ಸ್">
 <!-- Localization note: these are shown by the Android system itself,
-     when the user navigates to the Android > Accounts > {Firefox
-     Account} Screen. The link takes the user to the Firefox Account
-     status activity, which lets them manage their Firefox
+     when the user navigates to the Android > Accounts > {IceCat
+     Account} Screen. The link takes the user to the IceCat Account
+     status activity, which lets them manage their IceCat
      Account. -->
 
 <!ENTITY fxaccount_options_title "&syncBrand.shortName.label; ಆಯ್ಕೆಗಳು">
@@ -263,12 +263,12 @@
 
 <!ENTITY fxaccount_sync_sign_in_error_notification_title2 "&syncBrand.shortName.label; ಸಂಪರ್ಕಿತಗೊಂಡಿಲ್ಲ">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_sign_in_error_notification_text2 "&formatS; ಆಗಿ ಸೈನ್‌ ಇನ್ ಆಗಲು ಮೆಲ್ಲಗೆ ತಟ್ಟಿ">
 
 <!ENTITY fxaccount_sync_finish_migrating_notification_title "&syncBrand.shortName.label; ಅಪ್ಗ್ರೇಡ್ ಮುಗಿಸಬೇಕೆ?">
 <!-- Localization note: the format string below will be replaced
-     with the Firefox Account's email address. -->
+     with the IceCat Account's email address. -->
 <!ENTITY fxaccount_sync_finish_migrating_notification_text "&formatS; ಆಗಿ ಸೈನ್‌ ಇನ್ ಆಗಲು ಮೆಲ್ಲಗೆ ತಟ್ಟಿ">
 <!-- Localization note: the following strings are used in a
      notification and should be kept as short as possible. -->

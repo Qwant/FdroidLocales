@@ -10,7 +10,7 @@
 <!ENTITY  crash_reporter_title "&brandShortName; Fejlrapportør">
 <!ENTITY  crash_message "&brandShortName; gik ned. Dine faneblade bør blive vist på &brandShortName; Start-siden når du genstarter.">
 <!ENTITY  crash_help_message "Hjælp os med at rette dette problem!">
-<!ENTITY  crash_send_report_message "Send Mozilla en fejlrapport">
+<!ENTITY  crash_send_report_message "Send GNU en fejlrapport">
 <!ENTITY  crash_include_url "Inkluder webadresse">
 <!ENTITY  crash_close_label "Luk">
 <!ENTITY  crash_restart_label "Genstart &brandShortName;">

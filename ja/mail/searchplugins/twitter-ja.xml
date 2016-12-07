@@ -10,7 +10,7 @@
 <SearchForm>https://twitter.com/search/</SearchForm>
 <Url type="text/html" method="GET" template="https://twitter.com/search/{searchTerms} lang:ja">
 <!--
-  <Param name="partner" value="Firefox"/>
+  <Param name="partner" value="IceCat"/>
   <Param name="source" value="desktop-search"/>
 -->
 </Url>

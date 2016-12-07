@@ -15,7 +15,7 @@
 </Url>
 <Url type="text/html" method="GET" template="http://search.seznam.cz/searchScreen" resultdomain="seznam.cz">
 	<Param name="q" value="{searchTerms}"/>
-	<Param name="sourceid" value="firefox"/>
+	<Param name="sourceid" value="icecat"/>
 </Url>
 <SearchForm>http://search.seznam.cz/</SearchForm>
 </SearchPlugin>
