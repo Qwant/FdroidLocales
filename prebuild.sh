@@ -152,3 +152,6 @@ echo 'pref("browser.casting.enabled", false);' >> mobile/android/app/mobile.js
 ##pref("browser.mirroring.enabled", false);
 ##
 ##pref("browser.mirroring.enabled.roku", false);
+
+##HOTFIX## (BUG #1324331)
+patch -p1 <$REPO/Bindings.patch
