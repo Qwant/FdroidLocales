@@ -7,6 +7,14 @@ rm -R toolkit/crashreporter/google-breakpad/src/tools/
 rm -R toolkit/crashreporter/google-breakpad/src/client/
 rm -R toolkit/crashreporter/google-breakpad/src/third_party/linux/
 
+sed -i -e '/nsExceptionHandler/d' gfx/ipc/GPUParent.cpp
+sed -i -e '/nsExceptionHandler/d' ipc/glue/GeckoChildProcessHost.cpp
+sed -i -e '/nsExceptionHandler/d' -e '/AnnotationTable/d'  ipc/glue/CrashReporterHost.h
+sed -i -e '/nsExceptionHandler/d' -e '/AnnotationTable/d' ipc/glue/CrashReporterMetadataShmem.h
+sed -i -e '/mNotes\.Iter/,+6d' -e '/mNotes\.Put/d' ipc/glue/CrashReporterMetadataShmem.cpp
+sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsAndroidStartup.cpp
+sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsEmbedFunctions.cpp
+
 rm -R accessible/tests/
 rm -R addon-sdk/source/test/
 rm -R b2g/branding/
@@ -16,8 +24,7 @@ rm -R browser/components/migration/tests/unit/
 rm -R build/pymake/tests/
 rm -R chrome/test/
 rm -R devtools/client/debugger/test/
-rm -R devtools/client//webide/test/
-rm -R devtools/shared/apps/tests/
+rm -R devtools/client/webide/test/
 rm -R docshell/test/
 rm -R dom/apps/tests/
 rm -R dom/base/crashtests/
@@ -40,7 +47,6 @@ rm -R modules/libjar/zipwriter/test/
 rm -R mozglue/linker/tests/
 rm -R netwerk/test/unit/data/signed_win.exe
 rm -R python/bitstring/test/
-rm -R security/manager/ssl/tests/compiled/
 rm -R security/manager/ssl/tests/*test/
 rm -R security/nss/cmd/bltest/tests/
 rm -R security/nss/cmd/samples/
@@ -67,14 +73,9 @@ rm -R xpcom/tests/
 cp -f $REPO/.mozconfig ./
 cp -f $REPO/used-locales ./
 
-sed -i -e '/nsExceptionHandler/d' ipc/glue/GeckoChildProcessHost.cpp
-sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsAndroidStartup.cpp
-sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsEmbedFunctions.cpp
-
 sed -i -e '/tests\//d' accessible/moz.build
 sed -i -e '/source\/test\//d' -e '/GENERATED_FILES += addons/,+5d' addon-sdk/moz.build
 sed -i -e '/testing\/web-platform\/mach_commands.py/d' build/mach_bootstrap.py
-sed -i -e '/MOCHITEST/,+12d' devtools/shared/apps/moz.build
 sed -i -e '/TESTS_MANIFESTS/,+36d' docshell/moz.build
 sed -i -e '/tests\//d' dom/apps/moz.build
 sed -i -e '/test\//d' dom/html/moz.build
@@ -144,14 +145,9 @@ echo 'pref("media.gmp-manager.url.override", "data:text/plain,");' >> mobile/and
 echo 'pref("media.gmp-gmpopenh264.enabled", false);' >> mobile/android/app/mobile.js
 
 
-##Disable Casting and mirroring (Roku, chromecast)
+##Disable Casting (Roku, chromecast)
 sed -i -e '/casting.enabled/d' mobile/android/app/mobile.js
 echo 'pref("browser.casting.enabled", false);' >> mobile/android/app/mobile.js
-
-##Already disabled upstream (BUG #1131084)
-##pref("browser.mirroring.enabled", false);
-##
-##pref("browser.mirroring.enabled.roku", false);
 
 ##HOTFIX## (BUG #1324331)
 patch -p1 <$REPO/Bindings.patch
