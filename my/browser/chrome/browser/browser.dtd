@@ -685,7 +685,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY findOnCmd.label     "ဒီစာမျက်နှာတွင် ရှာပါ…">
 <!ENTITY findOnCmd.accesskey "F">
-<!ENTITY findOnCmd.commandkey "f ">
+<!ENTITY findOnCmd.commandkey "f">
 <!ENTITY findAgainCmd.label  "ထပ် ရှာပါ">
 <!ENTITY findAgainCmd.accesskey "g">
 <!ENTITY findAgainCmd.commandkey "g">
@@ -756,6 +756,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "သင့်အခြား ကိရိယာများမှ တပ်ဗ်စာရင်းကို ကြည့်ရန် တပ်ဗ်ထပ်တူပြုအသုံးပြုခြင်းကို ဖွင့်ပါ။">
 
+<!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
+                        syncedTabs.context.openAllInTabs.accesskey):
+     These access keys are identical because their associated menu items are
+     mutually exclusive -->
 <!ENTITY syncedTabs.context.open.label                       "ဖွင့်ပါ">
 <!ENTITY syncedTabs.context.open.accesskey                   "O">
 <!ENTITY syncedTabs.context.openInNewTab.label               "တပ်ဗ်အသစ်တစ်ခုတွင် ဖွင့်ပါ">
@@ -768,6 +772,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.context.bookmarkSingleTab.accesskey      "B">
 <!ENTITY syncedTabs.context.copy.label                       "ကူးယူပါ">
 <!ENTITY syncedTabs.context.copy.accesskey                   "C">
+
+<!ENTITY syncedTabs.context.openAllInTabs.label              "အားလုံးကို တပ်ဗ်များဖြင့် ဖွင့်ပါ">
+<!ENTITY syncedTabs.context.openAllInTabs.accesskey          "O">
 
 
 <!ENTITY syncBrand.shortName.label    "Sync">
