@@ -1,7 +1,7 @@
-diff -r 0bcea7b72ff9 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
---- a/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Mon Dec 19 21:26:30 2016 -0500
-+++ b/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Sat Dec 31 00:00:00 2016 -0000
-@@ -12,9 +12,6 @@
+diff -r db89a02ecfbb mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
+--- a/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Mon Apr 10 13:21:17 2017 -0700
++++ b/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Thu Apr 13 00:00:00 2017 -0000
+@@ -13,9 +13,6 @@
  import org.mozilla.gecko.gfx.BitmapUtils;
  import org.mozilla.gecko.gfx.FullScreenState;
  import org.mozilla.gecko.gfx.LayerView;
@@ -11,31 +11,31 @@ diff -r 0bcea7b72ff9 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
  import org.mozilla.gecko.home.HomeConfig.PanelType;
  import org.mozilla.gecko.icons.IconCallback;
  import org.mozilla.gecko.icons.IconResponse;
-@@ -284,7 +281,6 @@
+@@ -340,7 +337,6 @@
  
      private String mPrivateBrowsingSession;
  
 -    private volatile HealthRecorder mHealthRecorder;
      private volatile Locale mLastLocale;
  
-     private Intent mRestartIntent;
-@@ -748,15 +744,6 @@
-                 mGeckoReadyStartupTimer.stop();
-                 geckoConnected();
+     protected Intent mRestartIntent;
+@@ -670,15 +666,6 @@
+             mGeckoReadyStartupTimer.stop();
+             geckoConnected();
  
--                // This method is already running on the background thread, so we
--                // know that mHealthRecorder will exist. That doesn't stop us being
--                // paranoid.
--                // This method is cheap, so don't spawn a new runnable.
--                final HealthRecorder rec = mHealthRecorder;
--                if (rec != null) {
--                  rec.recordGeckoStartupTime(mGeckoReadyStartupTimer.getElapsed());
--                }
+-            // This method is already running on the background thread, so we
+-            // know that mHealthRecorder will exist. That doesn't stop us being
+-            // paranoid.
+-            // This method is cheap, so don't spawn a new runnable.
+-            final HealthRecorder rec = mHealthRecorder;
+-            if (rec != null) {
+-              rec.recordGeckoStartupTime(mGeckoReadyStartupTimer.getElapsed());
+-            }
 -
-                 GeckoApplication.get().onDelayedStartup();
+             ((GeckoApplication) getApplicationContext()).onDelayedStartup();
  
-             } else if (event.equals("Gecko:Exited")) {
-@@ -1361,11 +1348,6 @@
+         } else if ("Gecko:Exited".equals(event)) {
+@@ -1414,11 +1401,6 @@
                  final LocaleManager localeManager = BrowserLocaleManager.getInstance();
                  localeManager.initialize(getApplicationContext());
  
@@ -47,7 +47,7 @@ diff -r 0bcea7b72ff9 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
                  SharedPreferences.Editor editor = prefs.edit();
                  editor.putBoolean(GeckoAppShell.PREFS_OOM_EXCEPTION, false);
  
-@@ -1393,13 +1375,6 @@
+@@ -1446,13 +1428,6 @@
                      appLocaleString = osLocaleString;
                  }
  
@@ -61,7 +61,7 @@ diff -r 0bcea7b72ff9 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
                  final String uiLocale = appLocaleString;
                  ThreadUtils.postToUiThread(new Runnable() {
                      @Override
-@@ -1626,29 +1601,6 @@
+@@ -1689,29 +1664,6 @@
  
          mPromptService = new PromptService(this);
  
@@ -91,7 +91,7 @@ diff -r 0bcea7b72ff9 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
          if (mIsRestoringActivity) {
              Tab selectedTab = Tabs.getInstance().getSelectedTab();
              if (selectedTab != null) {
-@@ -2072,36 +2024,6 @@
+@@ -2202,36 +2154,6 @@
          final long now = System.currentTimeMillis();
          final long realTime = android.os.SystemClock.elapsedRealtime();
  
@@ -128,15 +128,15 @@ diff -r 0bcea7b72ff9 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
          Restrictions.update(this);
      }
  
-@@ -2129,7 +2051,6 @@
-             return;
+@@ -2269,7 +2191,6 @@
          }
+         lastActiveGeckoApp = new WeakReference<GeckoApp>(this);
  
 -        final HealthRecorder rec = mHealthRecorder;
          final Context context = this;
  
          // In some way it's sad that Android will trigger StrictMode warnings
-@@ -2141,9 +2062,6 @@
+@@ -2281,9 +2202,6 @@
                  SharedPreferences prefs = GeckoApp.this.getSharedPreferences();
                  SharedPreferences.Editor editor = prefs.edit();
                  editor.putBoolean(GeckoApp.PREFS_WAS_STOPPED, true);
@@ -146,9 +146,9 @@ diff -r 0bcea7b72ff9 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
  
                  // onPause might in fact be called even after a crash, but in that case the
                  // crash reporter will record this fact for us and we'll pick it up in onCreate.
-@@ -2248,18 +2166,6 @@
-             }
-         }
+@@ -2381,18 +2299,6 @@
+         if (mPromptService != null)
+             mPromptService.destroy();
  
 -        final HealthRecorder rec = mHealthRecorder;
 -        mHealthRecorder = null;
@@ -165,7 +165,7 @@ diff -r 0bcea7b72ff9 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
          super.onDestroy();
  
          Tabs.unregisterOnTabsChangedListener(this);
-@@ -2752,15 +2658,6 @@
+@@ -2852,15 +2758,6 @@
          final boolean startNewSession = true;
          final boolean shouldRestart = false;
  
@@ -181,8 +181,8 @@ diff -r 0bcea7b72ff9 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
          if (!shouldRestart) {
              ThreadUtils.postToUiThread(new Runnable() {
                  @Override
-@@ -2811,16 +2708,6 @@
-         });
+@@ -2898,16 +2795,6 @@
+         onLocaleChanged(resultant);
      }
  
 -    protected HealthRecorder createHealthRecorder(final Context context,
@@ -198,10 +198,10 @@ diff -r 0bcea7b72ff9 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
      protected void recordStartupActionTelemetry(final String passedURL, final String action) {
      }
  
-diff -r 0bcea7b72ff9 mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java
---- a/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Mon Dec 19 21:26:30 2016 -0500
-+++ b/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Sat Dec 31 00:00:00 2016 -0000
-@@ -1184,9 +1184,6 @@
+diff -r db89a02ecfbb mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java
+--- a/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Mon Apr 10 13:21:17 2017 -0700
++++ b/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Thu Apr 13 00:00:00 2017 -0000
+@@ -1215,9 +1215,6 @@
              UpdateServiceHelper.setAutoDownloadPolicy(this, UpdateService.AutoDownloadPolicy.get((String) newValue));
          } else if (PREFS_UPDATER_URL.equals(prefName)) {
              UpdateServiceHelper.setUpdateUrl(this, (String) newValue);
@@ -211,12 +211,12 @@ diff -r 0bcea7b72ff9 mobile/android/base/java/org/mozilla/gecko/preferences/Geck
          } else if (PREFS_GEO_REPORTING.equals(prefName)) {
              if ((Boolean) newValue) {
                  enableStumbler((CheckBoxPreference) preference);
-diff -r 0bcea7b72ff9 mobile/android/base/moz.build
---- a/mobile/android/base/moz.build	Mon Dec 19 21:26:30 2016 -0500
-+++ b/mobile/android/base/moz.build	Sat Dec 17 00:00:00 2016 -0000
-@@ -434,9 +434,6 @@
-     'GeckoUpdateReceiver.java',
+diff -r db89a02ecfbb mobile/android/base/moz.build
+--- a/mobile/android/base/moz.build	Mon Apr 10 13:21:17 2017 -0700
++++ b/mobile/android/base/moz.build	Thu Apr 13 00:00:00 2017 -0000
+@@ -460,9 +460,6 @@
      'GlobalHistory.java',
+     'GlobalPageMetadata.java',
      'GuestSession.java',
 -    'health/HealthRecorder.java',
 -    'health/SessionInformation.java',
@@ -224,10 +224,10 @@ diff -r 0bcea7b72ff9 mobile/android/base/moz.build
      'home/activitystream/ActivityStream.java',
      'home/activitystream/ActivityStreamHomeFragment.java',
      'home/activitystream/ActivityStreamHomeScreen.java',
-diff -r 0bcea7b72ff9 mobile/android/search/java/org/mozilla/search/SearchActivity.java
---- a/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Mon Dec 19 21:26:30 2016 -0500
-+++ b/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Sat Dec 31 00:00:00 2016 -0000
-@@ -254,14 +254,6 @@
+diff -r db89a02ecfbb mobile/android/search/java/org/mozilla/search/SearchActivity.java
+--- a/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Mon Apr 10 13:21:17 2017 -0700
++++ b/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Thu Apr 13 00:00:00 2017 -0000
+@@ -300,14 +300,6 @@
      public void onSearch(String query, SuggestionAnimation suggestionAnimation) {
          storeQuery(query);
  

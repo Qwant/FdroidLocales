@@ -77,7 +77,7 @@ sed -i -e '/tests\//d' accessible/moz.build
 sed -i -e '/source\/test\//d' -e '/GENERATED_FILES += addons/,+5d' addon-sdk/moz.build
 sed -i -e '/testing\/web-platform\/mach_commands.py/d' build/mach_bootstrap.py
 sed -i -e '/TESTS_MANIFESTS/,+36d' docshell/moz.build
-sed -i -e '/tests\//d' dom/apps/moz.build
+sed -i -e '/tests\//d' dom/file/moz.build
 sed -i -e '/test\//d' dom/html/moz.build
 sed -i -e '/TEST_DIRS/,+14d' dom/indexedDB/moz.build
 sed -i -e '/TEST/d' dom/xhr/moz.build
@@ -131,7 +131,6 @@ rm -R gradle/
 rm -R build.gradle
 rm -R mobile/android/gradle/
 rm -R mobile/android/app/build.gradle
-rm -R testing/docker/android-gradle-build
 sed -i -e '/gradle/d' mobile/android/moz.build
 
 ##Disable Gecko Media Pluggins support 

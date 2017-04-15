@@ -1,10 +1,11 @@
-diff -r b333389d770f widget/android/fennec/FennecJNINatives.h
---- a/widget/android/fennec/FennecJNINatives.h	Fri Mar 03 05:55:44 2017 -0500
-+++ b/widget/android/fennec/FennecJNINatives.h	Sat Mar 04 00:00:00 2017 -0000
+diff -r db89a02ecfbb widget/android/fennec/FennecJNINatives.h
+--- a/widget/android/fennec/FennecJNINatives.h	Mon Apr 10 13:21:17 2017 -0700
++++ b/widget/android/fennec/FennecJNINatives.h	Thu Apr 13 00:00:00 2017 -0000
 @@ -67,29 +67,6 @@
+             ::template Wrap<&Impl::DispatchMemoryPressure>)
  };
  
- template<class Impl>
+-template<class Impl>
 -class PresentationMediaPlayerManager::Natives : public mozilla::jni::NativeImpl<PresentationMediaPlayerManager, Impl>
 -{
 -public:
@@ -27,13 +28,12 @@ diff -r b333389d770f widget/android/fennec/FennecJNINatives.h
 -            ::template Wrap<&Impl::RemovePresentationSurface>)
 -};
 -
--template<class Impl>
- class ScreenManagerHelper::Natives : public mozilla::jni::NativeImpl<ScreenManagerHelper, Impl>
+ template<class Impl>
+ class Telemetry::Natives : public mozilla::jni::NativeImpl<Telemetry, Impl>
  {
- public:
-diff -r b333389d770f widget/android/fennec/FennecJNIWrappers.cpp
---- a/widget/android/fennec/FennecJNIWrappers.cpp	Fri Mar 03 05:55:44 2017 -0500
-+++ b/widget/android/fennec/FennecJNIWrappers.cpp	Sat Mar 04 00:00:00 2017 -0000
+diff -r db89a02ecfbb widget/android/fennec/FennecJNIWrappers.cpp
+--- a/widget/android/fennec/FennecJNIWrappers.cpp	Mon Apr 10 13:21:17 2017 -0700
++++ b/widget/android/fennec/FennecJNIWrappers.cpp	Thu Apr 13 00:00:00 2017 -0000
 @@ -109,18 +109,6 @@
  constexpr char MemoryMonitor::DispatchMemoryPressure_t::name[];
  constexpr char MemoryMonitor::DispatchMemoryPressure_t::signature[];
@@ -50,12 +50,12 @@ diff -r b333389d770f widget/android/fennec/FennecJNIWrappers.cpp
 -constexpr char PresentationMediaPlayerManager::RemovePresentationSurface_t::name[];
 -constexpr char PresentationMediaPlayerManager::RemovePresentationSurface_t::signature[];
 -
- const char ScreenManagerHelper::name[] =
-         "org/mozilla/gecko/ScreenManagerHelper";
+ const char Telemetry::name[] =
+         "org/mozilla/gecko/Telemetry";
  
-diff -r b333389d770f widget/android/fennec/FennecJNIWrappers.h
---- a/widget/android/fennec/FennecJNIWrappers.h	Fri Mar 03 05:55:44 2017 -0500
-+++ b/widget/android/fennec/FennecJNIWrappers.h	Sat Mar 04 00:00:00 2017 -0000
+diff -r db89a02ecfbb widget/android/fennec/FennecJNIWrappers.h
+--- a/widget/android/fennec/FennecJNIWrappers.h	Mon Apr 10 13:21:17 2017 -0700
++++ b/widget/android/fennec/FennecJNIWrappers.h	Thu Apr 13 00:00:00 2017 -0000
 @@ -330,73 +330,6 @@
      template<class Impl> class Natives;
  };
@@ -127,13 +127,13 @@ diff -r b333389d770f widget/android/fennec/FennecJNIWrappers.h
 -    template<class Impl> class Natives;
 -};
 -
- class ScreenManagerHelper : public mozilla::jni::ObjectBase<ScreenManagerHelper>
+ class Telemetry : public mozilla::jni::ObjectBase<Telemetry>
  {
  public:
-diff -r b333389d770f widget/android/nsWindow.cpp
---- a/widget/android/nsWindow.cpp	Fri Mar 03 05:55:44 2017 -0500
-+++ b/widget/android/nsWindow.cpp	Sat Mar 04 00:00:00 2017 -0000
-@@ -996,12 +996,6 @@
+diff -r db89a02ecfbb widget/android/nsWindow.cpp
+--- a/widget/android/nsWindow.cpp	Mon Apr 10 13:21:17 2017 -0700
++++ b/widget/android/nsWindow.cpp	Thu Apr 13 00:00:00 2017 -0000
+@@ -1004,12 +1004,6 @@
          }
      }
  
@@ -146,7 +146,7 @@ diff -r b333389d770f widget/android/nsWindow.cpp
      LayerViewSupport(NativePtr<LayerViewSupport>* aPtr, nsWindow* aWindow,
                       const LayerView::Compositor::LocalRef& aInstance)
          : mWindow(aPtr, aWindow)
-@@ -1214,92 +1208,6 @@
+@@ -1247,92 +1241,6 @@
  template<> const char
  nsWindow::NativePtr<nsWindow::LayerViewSupport>::sName[] = "LayerViewSupport";
  
@@ -239,7 +239,7 @@ diff -r b333389d770f widget/android/nsWindow.cpp
  nsWindow::GeckoViewSupport::~GeckoViewSupport()
  {
      // Disassociate our GeckoEditable instance with our native object.
-@@ -1453,9 +1361,6 @@
+@@ -1505,9 +1413,6 @@
      nsWindow::GeckoViewSupport::EditableBase::Init();
      nsWindow::LayerViewSupport::Init();
      nsWindow::NPZCSupport::Init();
@@ -249,7 +249,7 @@ diff -r b333389d770f widget/android/nsWindow.cpp
  }
  
  nsWindow*
-@@ -2082,12 +1987,6 @@
+@@ -2132,12 +2037,6 @@
                  return lvs->GetSurface().Get();
              }
              return nullptr;
@@ -262,7 +262,7 @@ diff -r b333389d770f widget/android/nsWindow.cpp
      }
  
      return nullptr;
-@@ -2098,7 +1997,6 @@
+@@ -2148,7 +2047,6 @@
  {
      switch (aDataType) {
          case NS_PRESENTATION_SURFACE:
@@ -270,10 +270,10 @@ diff -r b333389d770f widget/android/nsWindow.cpp
              break;
      }
  }
-diff -r b333389d770f widget/android/nsWindow.h
---- a/widget/android/nsWindow.h	Fri Mar 03 05:55:44 2017 -0500
-+++ b/widget/android/nsWindow.h	Sat Mar 04 00:00:00 2017 -0000
-@@ -113,9 +113,6 @@
+diff -r db89a02ecfbb widget/android/nsWindow.h
+--- a/widget/android/nsWindow.h	Mon Apr 10 13:21:17 2017 -0700
++++ b/widget/android/nsWindow.h	Thu Apr 13 00:00:00 2017 -0000
+@@ -131,9 +131,6 @@
      // keep it last in the list, so its destructor is called first.
      mozilla::UniquePtr<GeckoViewSupport> mGeckoViewSupport;
  
