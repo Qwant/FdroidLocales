@@ -41,7 +41,7 @@ diff -r 78278c4dc730 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
  
 -                SessionInformation previousSession = SessionInformation.fromSharedPrefs(prefs);
 -                if (previousSession.wasKilled()) {
--                    Telemetry.addToHistogram("FENNEC_WAS_KILLED", 1);
+-                    Telemetry.addToHistogram("ICECATMOBILE_WAS_KILLED", 1);
 -                }
 -
                  SharedPreferences.Editor editor = prefs.edit();

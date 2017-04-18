@@ -1,0 +1,12 @@
+{
+  "Global": {
+    "id": "icecat",
+    "version": 1.0,
+    "about": "F-Droid IceCatMobile"
+  },
+  "LocalizablePreferences": {
+    "browser.search.defaultenginename": "DuckDuckGo",
+    "browser.search.order.1": "DuckDuckGo",
+    "browser.search.order.2": "Google"
+  }
+}

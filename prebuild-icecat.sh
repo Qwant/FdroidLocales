@@ -32,6 +32,7 @@ rm -R security/nss/cmd/samples/
 rm -R security/nss/tests/
 rm -R servo/components/net/tests/parsable_mime/
 rm -R other-licenses/nsis/nsisui.exe
+rm -R other-licenses/7zstub/src/bin
 rm -R testing/talos/talos/
 rm -R testing/web-platform/
 rm -R tools/update-packaging/test/
@@ -56,6 +57,9 @@ echo "mk_add_options 'export L10NBASEDIR=$REPO'" >> .mozconfig
 echo "ac_add_options --with-l10n-base=$REPO" >> .mozconfig
 
 sed -i -e "s/HEALTHREPORT\', True/HEALTHREPORT\', False/g" mobile/android/moz.configure
+
+#Files entries are not sorted because of the rebranding
+sed -i -e 's/srtd != l/False/g' python/mozbuild/mozbuild/util.py
 
 #Remove rust libs
 rm -R third_party/rust/winapi-*-pc-windows-gnu/lib/*.a
@@ -86,16 +90,19 @@ sed -i -e '/gms/d' mobile/android/app/build.gradle
 sed -i -e '/GOOGLE/d' mobile/android/thirdparty/build.gradle
 sed -i -e 's/mozconfig.substs.MOZILLA_OFFICIAL/true/g' mobile/android/app/build.gradle
 
-##Disable Gecko Media Pluggins support 
-sed -i -e '/gmp-provider/d' mobile/android/app/mobile.js
-echo 'pref("media.gmp-provider.enabled", false);' >> mobile/android/app/mobile.js
+##HOTFIX## (BUG #1324331)
+patch -p1 <$REPO/Bindings.patch
 
-##Avoid openh264 being downloaded
-echo 'pref("media.gmp-manager.url.override", "data:text/plain,");' >> mobile/android/app/mobile.js
+mkdir -p fdroid/assets/distribution/extensions
 
-##Disable openh264 if it was already downloaded
-echo 'pref("media.gmp-gmpopenh264.enabled", false);' >> mobile/android/app/mobile.js
+##Put the extensions .xpi in the required directory
+for dir in extensions/gnu/*; do
+    pushd $dir
+    zip -r ../../../fdroid/assets/distribution/extensions/$(basename $dir).xpi ./
+    popd
+done
 
-##Disable Casting (Roku, chromecast)
-sed -i -e '/casting.enabled/d' mobile/android/app/mobile.js
-echo 'pref("browser.casting.enabled", false);' >> mobile/android/app/mobile.js
+##Mark duckduckgo as the default
+cp $REPO/preferences.json fdroid/assets/distribution/preferences.json
+
+sed -i -e 's/return 1/return 0/g' python/mozbuild/mozbuild/action/generate_suggestedsites.py
