@@ -17,8 +17,6 @@ sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsEmbedFunctions.cpp
 
 rm -R accessible/tests/
 rm -R addon-sdk/source/test/
-rm -R b2g/branding/
-rm -R b2g/components/test/
 rm -R browser/branding/*/dsstore
 rm -R browser/components/migration/tests/unit/
 rm -R build/pymake/tests/
@@ -108,6 +106,9 @@ echo "ac_add_options --with-l10n-base=$REPO" >> .mozconfig
 
 sed -i -e '/MOZ_ANDROID_GCM/,+4d' mobile/android/moz.configure
 
+sed -i -e 's/srtd != l/False/g' python/mozbuild/mozbuild/util.py
+sed -i -e '/MOZ_ANDROID_GCM_SENDERID/d' mobile/android/app/mobile.js
+
 #HealthReporter
 ##Option 1: Completely remove FHR
 rm mobile/android/base/java/org/mozilla/gecko/health/*
@@ -129,25 +130,16 @@ sed -i -e 's/AppConstants.MOZILLA_OFFICIAL/false/g' mobile/android/base/java/org
 ##Get rid of Gradle
 rm -R gradle/
 rm -R build.gradle
-rm -R mobile/android/gradle/
 rm -R mobile/android/app/build.gradle
 rm -R testing/docker/android-gradle-build
-sed -i -e '/gradle/d' mobile/android/moz.build
-
-##Disable Gecko Media Pluggins support 
-sed -i -e '/gmp-provider/d' mobile/android/app/mobile.js
-echo 'pref("media.gmp-provider.enabled", false);' >> mobile/android/app/mobile.js
-
-##Avoid openh264 being downloaded
-echo 'pref("media.gmp-manager.url.override", "data:text/plain,");' >> mobile/android/app/mobile.js
-
-##Disable openh264 if it was already downloaded
-echo 'pref("media.gmp-gmpopenh264.enabled", false);' >> mobile/android/app/mobile.js
-
-
-##Disable Casting (Roku, chromecast)
-sed -i -e '/casting.enabled/d' mobile/android/app/mobile.js
-echo 'pref("browser.casting.enabled", false);' >> mobile/android/app/mobile.js
 
 ##HOTFIX## (BUG #1324331)
 patch -p1 <$REPO/Bindings.patch
+
+mkdir -p fdroid/assets/distribution/extensions
+cp -a extensions/gnu/ fdroid/assets/distribution/extensions
+
+mkdir -p fdroid/assets/distribution/searchplugins/common
+cp mobile/locales/en-US/searchplugins/duckduckgo.xml fdroid/assets/distribution/searchplugins/common/duckduckgo.xml
+
+cp $REPO/preferences.json fdroid/assets/distribution/preferences.json

@@ -1,6 +1,6 @@
-diff -r b333389d770f widget/android/fennec/FennecJNINatives.h
---- a/widget/android/fennec/FennecJNINatives.h	Fri Mar 03 05:55:44 2017 -0500
-+++ b/widget/android/fennec/FennecJNINatives.h	Sat Mar 04 00:00:00 2017 -0000
+diff -r b333389d770f widget/android/icecatmobile/IceCatMobileJNINatives.h
+--- a/widget/android/icecatmobile/IceCatMobileJNINatives.h	Fri Mar 03 05:55:44 2017 -0500
++++ b/widget/android/icecatmobile/IceCatMobileJNINatives.h	Sat Mar 04 00:00:00 2017 -0000
 @@ -67,29 +67,6 @@
  };
  
@@ -31,9 +31,9 @@ diff -r b333389d770f widget/android/fennec/FennecJNINatives.h
  class ScreenManagerHelper::Natives : public mozilla::jni::NativeImpl<ScreenManagerHelper, Impl>
  {
  public:
-diff -r b333389d770f widget/android/fennec/FennecJNIWrappers.cpp
---- a/widget/android/fennec/FennecJNIWrappers.cpp	Fri Mar 03 05:55:44 2017 -0500
-+++ b/widget/android/fennec/FennecJNIWrappers.cpp	Sat Mar 04 00:00:00 2017 -0000
+diff -r b333389d770f widget/android/icecatmobile/IceCatMobileJNIWrappers.cpp
+--- a/widget/android/icecatmobile/IceCatMobileJNIWrappers.cpp	Fri Mar 03 05:55:44 2017 -0500
++++ b/widget/android/icecatmobile/IceCatMobileJNIWrappers.cpp	Sat Mar 04 00:00:00 2017 -0000
 @@ -109,18 +109,6 @@
  constexpr char MemoryMonitor::DispatchMemoryPressure_t::name[];
  constexpr char MemoryMonitor::DispatchMemoryPressure_t::signature[];
@@ -53,9 +53,9 @@ diff -r b333389d770f widget/android/fennec/FennecJNIWrappers.cpp
  const char ScreenManagerHelper::name[] =
          "org/mozilla/gecko/ScreenManagerHelper";
  
-diff -r b333389d770f widget/android/fennec/FennecJNIWrappers.h
---- a/widget/android/fennec/FennecJNIWrappers.h	Fri Mar 03 05:55:44 2017 -0500
-+++ b/widget/android/fennec/FennecJNIWrappers.h	Sat Mar 04 00:00:00 2017 -0000
+diff -r b333389d770f widget/android/icecatmobile/IceCatMobileJNIWrappers.h
+--- a/widget/android/icecatmobile/IceCatMobileJNIWrappers.h	Fri Mar 03 05:55:44 2017 -0500
++++ b/widget/android/icecatmobile/IceCatMobileJNIWrappers.h	Sat Mar 04 00:00:00 2017 -0000
 @@ -330,73 +330,6 @@
      template<class Impl> class Natives;
  };
@@ -243,7 +243,7 @@ diff -r b333389d770f widget/android/nsWindow.cpp
      nsWindow::GeckoViewSupport::EditableBase::Init();
      nsWindow::LayerViewSupport::Init();
      nsWindow::NPZCSupport::Init();
--    if (jni::IsFennec()) {
+-    if (jni::IsIceCatMobile()) {
 -        nsWindow::PMPMSupport::Init();
 -    }
  }
