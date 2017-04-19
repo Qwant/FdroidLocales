@@ -6,4 +6,5 @@ ac_add_options --disable-updater
 ac_add_options --disable-crashreporter
 ac_add_options --with-branding=mobile/android/branding/unofficial
 ac_add_options --with-android-distribution-directory=$topsrcdir/fdroid
+mk_add_options 'export MOZ_ANDROID_PACKAGE_INSTALL_BOUNCER='
 mk_add_options MOZ_OBJDIR=./obj-android

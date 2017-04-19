@@ -137,7 +137,7 @@ rm -R testing/docker/android-gradle-build
 patch -p1 <$REPO/Bindings.patch
 
 mkdir -p fdroid/assets/distribution/extensions
-cp -a extensions/gnu/ fdroid/assets/distribution/extensions
+cp -a extensions/gnu/* fdroid/assets/distribution/extensions/
 
 mkdir -p fdroid/assets/distribution/searchplugins/common
 cp mobile/locales/en-US/searchplugins/duckduckgo.xml fdroid/assets/distribution/searchplugins/common/duckduckgo.xml
