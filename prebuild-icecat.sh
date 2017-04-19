@@ -137,9 +137,19 @@ rm -R testing/docker/android-gradle-build
 patch -p1 <$REPO/Bindings.patch
 
 mkdir -p fdroid/assets/distribution/extensions
-cp -a extensions/gnu/* fdroid/assets/distribution/extensions/
+##Fennec marks the extension as incomptible if one targetApplication has 2 ids
+sed -i -e '/ec8030f7/d' extensions/gnu/jid1-KtlZuoiikVfFew@jetpack/install.rdf
 
+##Put the extensions .xpi in the required directory
+for dir in extensions/gnu/*; do
+    pushd $dir
+    zip -r ../../../fdroid/assets/distribution/extensions/$(basename $dir).xpi ./
+    popd
+done
+
+##Add duckduckgo
 mkdir -p fdroid/assets/distribution/searchplugins/common
 cp mobile/locales/en-US/searchplugins/duckduckgo.xml fdroid/assets/distribution/searchplugins/common/duckduckgo.xml
 
+##Mark duckduckgo as the default
 cp $REPO/preferences.json fdroid/assets/distribution/preferences.json
