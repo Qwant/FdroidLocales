@@ -107,7 +107,6 @@ echo "ac_add_options --with-l10n-base=$REPO" >> .mozconfig
 sed -i -e '/MOZ_ANDROID_GCM/,+4d' mobile/android/moz.configure
 
 sed -i -e 's/srtd != l/False/g' python/mozbuild/mozbuild/util.py
-sed -i -e '/MOZ_ANDROID_GCM_SENDERID/d' mobile/android/app/mobile.js
 
 #HealthReporter
 ##Option 1: Completely remove FHR
