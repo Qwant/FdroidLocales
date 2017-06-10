@@ -100,8 +100,16 @@
   ਥਰਿੱਡ ਹੈਂਗ
 ">
 
+<!ENTITY aboutTelemetry.capturedStacksSection "
+  Captured Stacks
+">
+
 <!ENTITY aboutTelemetry.scalarsSection "
   ਸਕੇਲਰ
+">
+
+<!ENTITY aboutTelemetry.keyedScalarsSection "
+  Keyed Scalars
 ">
 
 <!ENTITY aboutTelemetry.histogramsSection "
@@ -110,6 +118,10 @@
 
 <!ENTITY aboutTelemetry.keyedHistogramsSection "
   ਕੀਡ ਹਿਸਟੋਗਰਾਮ
+">
+
+<!ENTITY aboutTelemetry.eventsSection "
+  Events
 ">
 
 <!ENTITY aboutTelemetry.simpleMeasurementsSection "
@@ -144,12 +156,12 @@
   ਸੂਚਨਾ: ਹੌਲੀ SQL ਡੀਬੱਗ ਕਰਨਾ ਸਮਰੱਥ ਹੈ। ਪੂਰੀਆਂ SQL ਸਤਰਾਂ ਨੂੰ ਹੇਠਾਂ ਦੇਖਾਇਆ ਜਾ ਸਕਦਾ ਹੈ, ਪਰ ਉਹਨਾਂ ਨੂੰ ਟੈਲੀਮੈਂਟਰੀ ਨੂੰ ਭੇਜਿਆ ਨਹੀਂ ਜਾਵੇਗਾ।
 ">
 
-<!ENTITY aboutTelemetry.fetchSymbols "
-  ਹੈਂਗ ਸਟੈਕ ਲਈ ਫੰਕਸ਼ਨ ਨਾਂ ਲਵੋ
+<!ENTITY aboutTelemetry.fetchStackSymbols "
+  Fetch function names for stacks
 ">
 
-<!ENTITY aboutTelemetry.hideSymbols "
-  ਹੈਂਗ ਤੋਂ ਅਣਘੜ ਡਾਟਾ ਵੇਖਾਓ
+<!ENTITY aboutTelemetry.hideStackSymbols "
+  Show raw stack data
 ">
 
 <!ENTITY aboutTelemetry.filterText "

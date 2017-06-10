@@ -607,6 +607,9 @@
 <!-- Folder Pane Context Menu -->
 <!ENTITY folderContextGetMessages.label "Ná í póst">
 <!ENTITY folderContextGetMessages.accesskey "N">
+<!ENTITY folderContextPauseAllUpdates.label "Stöðva allar uppfærslur">
+<!ENTITY folderContextPauseUpdates.label "Stöðva uppfærslu">
+<!ENTITY folderContextPauseUpdates.accesskey "u">
 <!ENTITY folderContextOpenInNewWindow.label "Opna í nýjum glugga">
 <!ENTITY folderContextOpenInNewWindow.accesskey "O">
 <!ENTITY folderContextOpenNewTab.label "Opna í nýjum flipa">

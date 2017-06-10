@@ -14,6 +14,14 @@
 <!ENTITY validateText.label "Athuga sannprófun og ná í rétt veffang.">
 <!ENTITY feedFolder.label "Geyma greinar í:">
 <!ENTITY feedFolder.accesskey "G">
+<!-- Account Settings and Subscription Dialog -->
+<!ENTITY biffStart.label "Leita að nýjum greinum á hverjum ">
+<!ENTITY biffStart.accesskey "L">
+<!ENTITY biffMinutes.label "mínútna fresti">
+<!ENTITY biffMinutes.accesskey "n">
+<!ENTITY biffDays.label "dagar">
+<!ENTITY biffDays.accesskey "d">
+<!ENTITY recommendedUnits.label "Útgefandi mælir með:">
 <!ENTITY quickMode.label "Sýna yfirlit greinar í staðinn fyrir að hlaða inn vefsíðu">
 <!ENTITY quickMode.accesskey "h">
 <!ENTITY autotagEnable.label "Búa sjálkrafa til tög frá &lt;flokka&gt; nöfnum straums">
@@ -21,6 +29,7 @@
 <!ENTITY autotagUsePrefix.label "Setja forskeyti á tög:">
 <!ENTITY autotagUsePrefix.accesskey "S">
 <!ENTITY autoTagPrefix.placeholder "Sláðu inn forskeyti fyrir tög">
+<!-- Subscription Dialog -->
 <!ENTITY button.addFeed.label "Bæta við">
 <!ENTITY button.addFeed.accesskey "æ">
 <!ENTITY button.updateFeed.label "Uppfæra">
