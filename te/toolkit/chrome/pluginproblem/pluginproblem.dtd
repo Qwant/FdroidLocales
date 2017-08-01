@@ -3,6 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE (tapToPlayPlugin): Mobile (used for touch interfaces) only has one type of plugin possible. -->
+<!ENTITY pluginActivationWarning                             "ఈ సైట్ &brandShortName;నెమ్మదిగా పనిచేసే ప్లగిన్ను ఉపయోగిస్తుంది.">
 <!ENTITY tapToPlayPlugin                                     "ప్లగిన్ సక్రియం చేయడానికి ఇక్కడ నొక్కండి.">
 <!ENTITY clickToActivatePlugin                               "ప్లగిన్ సక్రియం చేయండి.">
 <!ENTITY checkForUpdates                                     "నవీకరణల కొరకు పరిశీలించు…">
@@ -29,3 +30,4 @@
 <!ENTITY plugin.file                                         "దస్త్రం">
 <!ENTITY plugin.mimeTypes                                    "MIME రకాలు">
 <!ENTITY plugin.flashProtectedMode.label                     "Adobe Flash రక్షిత మోడ్ ని ప్రారంభించు">
+<!ENTITY plugin.enableBlocklists.label                       "ప్రమాదకరమైన మరియు అనుచిత ఫ్లాష్ కంటెంట్ను నిరోధించండి">

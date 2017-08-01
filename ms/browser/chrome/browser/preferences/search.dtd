@@ -20,10 +20,10 @@
 <!ENTITY engineNameColumn.label                "Enjin Carian">
 <!ENTITY engineKeywordColumn.label             "Kata kunci">
 
-<!ENTITY restoreDefaultSearchEngines.label     "Kembalikan Enjin Carian Piawai">
-<!ENTITY restoreDefaultSearchEngines.accesskey "K">
+<!ENTITY restoreDefaultSearchEngines.label     "Pulih Enjin Carian Piawai">
+<!ENTITY restoreDefaultSearchEngines.accesskey "u">
 
 <!ENTITY removeEngine.label                    "Alih keluar">
 <!ENTITY removeEngine.accesskey                "r">
 
-<!ENTITY addMoreSearchEngines.label            "Dapatkan lebih lagi enjin carian...">
+<!ENTITY addMoreSearchEngines2.label           "Tambah lebih banyak enjin carian">

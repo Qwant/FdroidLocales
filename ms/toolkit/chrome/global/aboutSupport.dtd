@@ -25,6 +25,11 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionVersion "Versi">
 <!ENTITY aboutSupport.extensionId "ID">
 
+<!ENTITY aboutSupport.featuresTitle "&brandShortName; Ciri">
+<!ENTITY aboutSupport.featureName "Nama">
+<!ENTITY aboutSupport.featureVersion "Versi">
+<!ENTITY aboutSupport.featureId "ID">
+
 <!ENTITY aboutSupport.experimentsTitle "Ciri-ciri Eksperimen">
 <!ENTITY aboutSupport.experimentName "Nama">
 <!ENTITY aboutSupport.experimentId "ID">
@@ -110,7 +115,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.updateHistoryTitle "Kemaskini Sejarah">
 
 <!ENTITY aboutSupport.copyTextToClipboard.label "Salin teks ke clipboard">
-<!ENTITY aboutSupport.copyRawDataToClipboard.label "Salin data mentah kepada clipboard">
+<!ENTITY aboutSupport.copyRawDataToClipboard.label "Salin data mentah ke klipbod">
 
 <!ENTITY aboutSupport.sandboxTitle "Sandbox">
 <!ENTITY aboutSupport.sandboxSyscallLogTitle "Rejected System Calls">

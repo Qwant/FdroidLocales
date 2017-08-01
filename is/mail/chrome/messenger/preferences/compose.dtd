@@ -49,7 +49,7 @@
 <!ENTITY editDirectories.label "Breyta netfangaþjónum…">
 <!ENTITY editDirectories.accesskey "e">
 <!ENTITY showAsDefault.label "Sjálfgefin ræsimappa fyrir nafnabókarglugga:">
-<!ENTITY showAsDefault.accesskey "S">
+<!ENTITY showAsDefault.accesskey "">
 <!ENTITY showAsDefaultLast.label "Síðast notaða mappa">
 <!ENTITY sendOptionsDescription.label "Skilgreina hegðun textasniðs">
 <!ENTITY sendOptions.label "Sendingarkostir…">

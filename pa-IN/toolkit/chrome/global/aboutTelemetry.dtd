@@ -104,6 +104,7 @@
   Captured Stacks
 ">
 
+
 <!ENTITY aboutTelemetry.scalarsSection "
   ਸਕੇਲਰ
 ">
@@ -123,6 +124,7 @@
 <!ENTITY aboutTelemetry.eventsSection "
   Events
 ">
+
 
 <!ENTITY aboutTelemetry.simpleMeasurementsSection "
   ਸਧਾਰਨ ਮਾਪ

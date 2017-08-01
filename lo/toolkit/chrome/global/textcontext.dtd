@@ -1,0 +1,37 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY cutCmd.label "ຕັດ">
+<!ENTITY cutCmd.accesskey "t">
+<!ENTITY copyCmd.label "ສຳເນົາ">
+<!ENTITY copyCmd.accesskey "C">
+<!ENTITY pasteCmd.label "ວາງ">
+<!ENTITY pasteCmd.accesskey "P">
+<!ENTITY undoCmd.label "ເອົາກັບຄືນ">
+<!ENTITY undoCmd.accesskey "U">
+<!ENTITY selectAllCmd.label "ເລືອກທັ້ງຫມົດ">
+<!ENTITY selectAllCmd.accesskey "A">
+<!ENTITY deleteCmd.label "ລຶບ">
+<!ENTITY deleteCmd.accesskey "D">
+
+<!ENTITY spellAddToDictionary.label "ເພີ່ມເຂົ້າວັດຈະນານຸກົມ">
+<!ENTITY spellAddToDictionary.accesskey "o">
+<!ENTITY spellUndoAddToDictionary.label "ຍົກເລີກການເພີ່ມເຂົ້າວັດຈະນານຸກົມ">
+<!ENTITY spellUndoAddToDictionary.accesskey "n">
+<!ENTITY spellCheckToggle.label "ກວດເບິງການສະກົດ">
+<!ENTITY spellCheckToggle.accesskey "g">
+<!ENTITY spellNoSuggestions.label "(ບໍ່ມີການສະກົດແນະນຳ)">
+<!ENTITY spellDictionaries.label "ພາສາ">
+<!ENTITY spellDictionaries.accesskey "l">
+
+<!ENTITY searchTextBox.clear.label "ລົບລ້າງ">
+
+<!ENTITY fillLoginMenu.label          "ຕື່ມຂໍ້ມູນໃສ່ການລັອກອິນ">
+<!ENTITY fillLoginMenu.accesskey      "F">
+<!ENTITY fillPasswordMenu.label       "ຕື່ມລະຫັດຜ່ານໃສ່">
+<!ENTITY fillPasswordMenu.accesskey   "F">
+<!ENTITY fillUsernameMenu.label       "ຕື່ມຊື່ຜູ້ໃຊ້ໃສ່">
+<!ENTITY fillUsernameMenu.accesskey   "F">
+<!ENTITY noLoginSuggestions.label     "(ບໍ່ມີການລັອກອິນແນະນຳ)">
+<!ENTITY viewSavedLogins.label        "ເບິງການລັອກອິນທີ່ໄດ້ບັນທຶກໄວ້">
