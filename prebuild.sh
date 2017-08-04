@@ -14,15 +14,14 @@ sed -i -e '/nsExceptionHandler/d' -e '/AnnotationTable/d' -e 's/CrashReporter::T
 sed -i -e '/nsExceptionHandler/d' -e '/AnnotationTable/d' ipc/glue/CrashReporterMetadataShmem.h
 sed -i -e '/mNotes\.Iter/,+6d' -e '/mNotes\.Put/d' ipc/glue/CrashReporterMetadataShmem.cpp
 sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsAndroidStartup.cpp
-sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsEmbedFunctions.cpp
+sed -i -e '/nsExceptionHandler/d'  -e '/ThreadAnnotation/d' toolkit/xre/nsEmbedFunctions.cpp
 
 rm -R accessible/tests/
 rm -R addon-sdk/source/test/
-rm -R b2g/branding/
-rm -R b2g/components/test/
 rm -R browser/branding/*/dsstore
 rm -R browser/components/migration/tests/unit/
 rm -R build/pymake/tests/
+rm -R build/win32/vswhere.exe
 rm -R chrome/test/
 rm -R devtools/client/debugger/test/
 rm -R devtools/client/webide/test/
@@ -46,7 +45,6 @@ rm -R modules/libjar/test/
 rm -R modules/libjar/zipwriter/test/
 rm -R mozglue/linker/tests/
 rm -R netwerk/test/unit/data/signed_win.exe
-rm -R python/bitstring/test/
 rm -R security/manager/ssl/tests/*test/
 rm -R security/nss/cmd/bltest/tests/
 rm -R security/nss/cmd/samples/
@@ -98,7 +96,7 @@ sed -i -e '/xpcshell.ini/d' toolkit/components/downloads/moz.build
 sed -i -e '/xpcshell.ini/d' toolkit/components/mediasniffer/moz.build
 sed -i -e '/xpcshell.ini/d' toolkit/components/search/moz.build
 sed -i -e '/xpcshell.ini/d' -e '/TESTING/,+3d' toolkit/components/telemetry/moz.build
-sed -i -e '/tests\//d' toolkit/modules/moz.build
+sed -i -e '/Files(.tests/,+2d'  -e '/tests\//d' toolkit/modules/moz.build
 sed -i -e '/tests/d' toolkit/mozapps/update/moz.build
 
 sed -i -e '/dom\//d' dom/media/test/mochitest.ini
@@ -107,15 +105,18 @@ sed -i -e '/dom\//d' dom/workers/test/mochitest.ini
 sed -i -e '/dom\//d' dom/workers/test/serviceworkers/mochitest.ini
 
 sed -i -e 's/android:debuggable="true"//g' mobile/android/base/AndroidManifest.xml.in
-sed -i -e 's/MOZ_SAFE_BROWSING=1/false/g' -e 's/MOZ_NATIVE_DEVICES=1/false/g' -e 's/MOZ_INSTALL_TRACKING=1/false/g' mobile/android/confvars.sh
-echo -e 'MOZ_DEVICES=\nMOZ_NATIVE_DEVICES=\nMOZ_SERVICES_HEALTHREPORT=\nMOZ_SAFE_BROWSING=\nMOZ_INSTALL_TRACKING=\n' >> mobile/android/confvars.sh
 echo "mk_add_options 'export MOZ_CHROME_MULTILOCALE=$(tr '\n' ' ' <  $REPO/used-locales)'" >> .mozconfig
 echo "mk_add_options 'export L10NBASEDIR=$REPO'" >> .mozconfig
 echo "ac_add_options --with-l10n-base=$REPO" >> .mozconfig
 
-sed -i -e '/MOZ_ANDROID_GCM/,+4d' mobile/android/moz.configure
+sed -i -e '/(.MOZ_ANDROID_GCM/,+4d' -e '/MOZ_ANDROID_GCM.,/d' -e '/android_gcm,/d' -e 's/if not android_gcm/if true/g' mobile/android/moz.configure
+sed -i -e "s/HEALTHREPORT\', True/HEALTHREPORT\', False/g" mobile/android/moz.configure
 
-#HealthReporter
+#Remove rust libs
+rm -R third_party/rust/dbghelp-sys/*/*.a
+rm -R third_party/rust/ktmw32-sys/*/*.a
+rm -R third_party/rust/lazy_static-*
+
 ##Option 1: Completely remove FHR
 rm mobile/android/base/java/org/mozilla/gecko/health/*
 rm -R mobile/android/services/src/main/java/org/mozilla/gecko/background/datareporting/
@@ -138,7 +139,8 @@ rm -R gradle/
 rm -R build.gradle
 rm -R mobile/android/gradle/
 rm -R mobile/android/app/build.gradle
-sed -i -e '/gradle/d' mobile/android/moz.build
+rm -R mobile/android/thirdparty/build.gradle
+sed -i -e '/gradle/,+2d' mobile/android/moz.build
 
 ##Disable Gecko Media Pluggins support 
 sed -i -e '/gmp-provider/d' mobile/android/app/mobile.js
@@ -157,3 +159,4 @@ echo 'pref("browser.casting.enabled", false);' >> mobile/android/app/mobile.js
 
 ##HOTFIX## (BUG #1324331)
 patch -p1 <$REPO/Bindings.patch
+patch -p1 <$REPO/Fix_Mediarouter_Dependency.patch
