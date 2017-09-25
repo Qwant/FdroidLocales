@@ -295,6 +295,9 @@
 <!-- Long-click title of CustomTabsActivity will copy URL to clipboard and display this hint -->
 <!ENTITY custom_tabs_hint_url_copy "Adresse web copiée">
 
+<!ENTITY pref_pwa "Applications web progressives">
+<!ENTITY pref_pwa_summary "Autoriser l’ajout d’applications web sur l’écran d’accueil">
+
 <!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
 <!ENTITY pref_activity_stream "Flux d’activité">
 <!ENTITY pref_activity_stream_summary "Un historique visuel et une page d’accueil repensée vous permettent de trouver plus facilement ce que vous recherchez dans &brandShortName;.">
@@ -358,10 +361,6 @@
 <!ENTITY pref_clear_on_exit_title3 "Effacer mes traces à la fermeture">
 <!ENTITY pref_clear_on_exit_summary2 "&brandShortName; effacera automatiquement vos données lorsque vous sélectionnerez « Quitter » depuis le menu principal.">
 <!ENTITY pref_clear_on_exit_dialog_title "Sélectionner les données à effacer">
-<!ENTITY pref_plugins "Plugins">
-<!ENTITY pref_plugins_enabled "Activés">
-<!ENTITY pref_plugins_tap_to_play2 "Appuyer pour lancer la lecture">
-<!ENTITY pref_plugins_disabled "Désactivés">
 <!ENTITY pref_restore_tabs "Restaurer les onglets">
 <!ENTITY pref_restore_always "Toujours restaurer">
 <!ENTITY pref_restore_quit "Ne pas restaurer après avoir quitté &brandShortName;">
@@ -545,6 +544,7 @@
 <!ENTITY page_removed "Page retirée">
 
 <!ENTITY bookmark_edit_title "Modifier le marque-page">
+<!ENTITY bookmark_edit_folder_title "Modifier le dossier">
 <!ENTITY bookmark_edit_name "Nom">
 <!ENTITY bookmark_edit_location "Emplacement">
 <!ENTITY bookmark_edit_keyword "Mot-clé">
@@ -621,6 +621,11 @@
 <!-- Localization note (home_remote_tabs_unhide_selected_devices) : This is
      the text of a button; we expect more than one device. -->
 <!ENTITY home_remote_tabs_unhide_selected_devices "Afficher les appareils sélectionnés">
+
+<!-- Localization note (home_pinned_site) : This is a snackbar label displayed after
+    a site is pinned or unpinned. -->
+<!ENTITY home_pinned_site "Site épinglé">
+<!ENTITY home_unpinned_site "Site retiré">
 
 <!ENTITY remote_tabs_panel_moved_title "Où mes onglets sont-ils passés ?">
 <!ENTITY remote_tabs_panel_moved_desc "Nous avons déplacé les onglets de vos autres appareils au sein d’un panneau de votre écran d’accueil pour que vous puissiez y accéder facilement à chaque ouverture d’un nouvel onglet.">
@@ -842,3 +847,4 @@ is simply hidden from the Activity Stream panel. -->
 
 <!ENTITY activity_stream_welcome_title "Découvrez les éléments mis en avant">
 <!ENTITY activity_stream_welcome_content1 "&brandShortName; met désormais en avant des éléments-clés que vous avez découverts sur le Web, afin que vous puissiez retrouver facilement des articles, vidéos, marque-pages et d’autres pages.">
+<!ENTITY fullscreen_warning "Mode plein écran activé">

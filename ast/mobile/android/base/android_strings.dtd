@@ -295,6 +295,9 @@
 <!-- Long-click title of CustomTabsActivity will copy URL to clipboard and display this hint -->
 <!ENTITY custom_tabs_hint_url_copy "Copióse la URL">
 
+<!ENTITY pref_pwa "Aplicaciones web progresives">
+<!ENTITY pref_pwa_summary "Permite que les aplicaciones web s\&apos;amiesten a la pantalla d\&apos;aniciu">
+
 <!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
 <!ENTITY pref_activity_stream "Fluxu d\&apos;actividá">
 <!ENTITY pref_activity_stream_summary "Un feed visual ricu del historial y una páxina d\&apos;aniciu reimaxinada que fai más cenciello qu\&apos;enxamás alcontrar exautamente lo que guetes en &brandShortName;.">
@@ -358,10 +361,6 @@
 <!ENTITY pref_clear_on_exit_title3 "Llimpiar datos privaos al colar">
 <!ENTITY pref_clear_on_exit_summary2 "&brandShortName; va llimpiar automáticamente los tos datos siempres qu\&apos;esbilles \u00abColar\u00bb dende\&apos;l menú principal">
 <!ENTITY pref_clear_on_exit_dialog_title "Esbilla qué datos llimpiar">
-<!ENTITY pref_plugins "Estensiones">
-<!ENTITY pref_plugins_enabled "Habilitáu">
-<!ENTITY pref_plugins_tap_to_play2 "Toca pa reproducir">
-<!ENTITY pref_plugins_disabled "Deshabilitáu">
 <!ENTITY pref_restore_tabs "Restaurar llingüetes">
 <!ENTITY pref_restore_always "Restaurar siempres">
 <!ENTITY pref_restore_quit "Nun restaurar dempués de colar de &brandShortName;">
@@ -545,6 +544,7 @@
 <!ENTITY page_removed "Desanicióse la páxina">
 
 <!ENTITY bookmark_edit_title "Editar marcador">
+<!ENTITY bookmark_edit_folder_title "Editar carpeta">
 <!ENTITY bookmark_edit_name "Nome">
 <!ENTITY bookmark_edit_location "Allugamientu">
 <!ENTITY bookmark_edit_keyword "Pallabra clave">
@@ -621,6 +621,11 @@
 <!-- Localization note (home_remote_tabs_unhide_selected_devices) : This is
      the text of a button; we expect more than one device. -->
 <!ENTITY home_remote_tabs_unhide_selected_devices "Amosar preseos esbillaos">
+
+<!-- Localization note (home_pinned_site) : This is a snackbar label displayed after
+    a site is pinned or unpinned. -->
+<!ENTITY home_pinned_site "Fixóse\&apos;l sitiu">
+<!ENTITY home_unpinned_site "Desfixóse\&apos;l sitiu">
 
 <!ENTITY remote_tabs_panel_moved_title "¿Ánde foron les mios llingüetes?">
 <!ENTITY remote_tabs_panel_moved_desc "Movimos les llingüetes d\&apos;otros preseos a un panel na to páxina d\&apos;aniciu, que pue accedese cenciellamente cada vegada qu\&apos;abras una llingüeta nueva.">
@@ -845,3 +850,4 @@ is simply hidden from the Activity Stream panel. -->
 
 <!ENTITY activity_stream_welcome_title "Bienllegáu a los tos destacaos">
 <!ENTITY activity_stream_welcome_content1 "Agora &brandShortName; crea destacaos de coses que descubrieres na web pa qu\&apos;asina pueas volver alcontrar artículos, vídeos, marcadores y otres páxines fabuloses.">
+<!ENTITY fullscreen_warning "Entróse nel mou pantalla completa">

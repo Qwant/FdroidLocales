@@ -295,6 +295,9 @@
 <!-- Long-click title of CustomTabsActivity will copy URL to clipboard and display this hint -->
 <!ENTITY custom_tabs_hint_url_copy "URL köçürüldü">
 
+<!ENTITY pref_pwa "Proqressiv Web Tətbiqlər">
+<!ENTITY pref_pwa_summary "Web tətbiqlərin ana ekrana əlavə edilməsinə icazə ver">
+
 <!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
 <!ENTITY pref_activity_stream "Aktivlik Axını">
 <!ENTITY pref_activity_stream_summary "Zəngin vizual tarixçə axını və yenidən qurulmuş ana səhifə &brandShortName; səyyahında axtardığınız şeyləri həmişəkindən çox daha asan tapmağı təmin edir.">
@@ -356,12 +359,8 @@
      The action is shown below a header saying "Clear private data"; See pref_clear_private_data -->
 <!ENTITY pref_clear_private_data_now_tablet "İndi təmizlə">
 <!ENTITY pref_clear_on_exit_title3 "Şəxsi məlumatları çıxışda təmizlə">
-<!ENTITY pref_clear_on_exit_summary2 "Əsas menyudan \u0022Çıx\u0022 seçdiyiniz zaman &brandShortName; sizin məlumatlarınız avtomatik təmizləyəcək">
+<!ENTITY pref_clear_on_exit_summary2 "Əsas menyudan \&quot;Çıx\&quot; seçdiyiniz zaman &brandShortName; sizin məlumatlarınız avtomatik təmizləyəcək">
 <!ENTITY pref_clear_on_exit_dialog_title "Hansı məlumatın təmizlənəcəyini seçin">
-<!ENTITY pref_plugins "Qoşmalar">
-<!ENTITY pref_plugins_enabled "Aktiv">
-<!ENTITY pref_plugins_tap_to_play2 "Oxutmaq üçün toxun">
-<!ENTITY pref_plugins_disabled "Söndürülüb">
 <!ENTITY pref_restore_tabs "Vərəqləri bərpa et">
 <!ENTITY pref_restore_always "Həmişə bərpa et">
 <!ENTITY pref_restore_quit "&brandShortName; səyyahından çıxdıqdan sonra bərpa etmə">
@@ -545,6 +544,7 @@
 <!ENTITY page_removed "Səhifə silindi">
 
 <!ENTITY bookmark_edit_title "Əlfəcini düzəlt">
+<!ENTITY bookmark_edit_folder_title "Qovluğu redaktə et">
 <!ENTITY bookmark_edit_name "Ad">
 <!ENTITY bookmark_edit_location "Ünvan">
 <!ENTITY bookmark_edit_keyword "Açar söz">
@@ -621,6 +621,11 @@
 <!-- Localization note (home_remote_tabs_unhide_selected_devices) : This is
      the text of a button; we expect more than one device. -->
 <!ENTITY home_remote_tabs_unhide_selected_devices "Seçilən cihazları göstər">
+
+<!-- Localization note (home_pinned_site) : This is a snackbar label displayed after
+    a site is pinned or unpinned. -->
+<!ENTITY home_pinned_site "Bərkidilmiş sayt">
+<!ENTITY home_unpinned_site "Çıxardılmış sayt">
 
 <!ENTITY remote_tabs_panel_moved_title "Vərəqlərim hara gedib?">
 <!ENTITY remote_tabs_panel_moved_desc "Digər cihazlarınızdan olan vərəqləri hər vərəq açdığınızda rahat istifadə edə biləsiniz deyə ana səhifədə xüsusi bölümə keçirtdik.">
@@ -842,3 +847,4 @@ is simply hidden from the Activity Stream panel. -->
 
 <!ENTITY activity_stream_welcome_title "Seçilmişlərinizə xoş gəldiniz">
 <!ENTITY activity_stream_welcome_content1 "&brandShortName; artıq internetdə kəşf etdiyiniz şeyləri işıqlandıraraq gözəl məqalə, video, əlfəcin və digər səhifələrə geri qayıtmağınızı asandlaşdırır.">
+<!ENTITY fullscreen_warning "Tam ekrana daxil oldu">

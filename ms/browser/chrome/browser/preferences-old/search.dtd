@@ -21,9 +21,9 @@
 <!ENTITY engineKeywordColumn.label             "Kata kunci">
 
 <!ENTITY restoreDefaultSearchEngines.label     "Pulih Enjin Carian Piawai">
-<!ENTITY restoreDefaultSearchEngines.accesskey "u">
+<!ENTITY restoreDefaultSearchEngines.accesskey "w">
 
-<!ENTITY removeEngine.label                    "Alih keluar">
-<!ENTITY removeEngine.accesskey                "r">
+<!ENTITY removeEngine.label                    "Buang">
+<!ENTITY removeEngine.accesskey                "u">
 
 <!ENTITY addMoreSearchEngines.label            "Dapatkan lebih lagi enjin carian...">

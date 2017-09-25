@@ -295,6 +295,9 @@
 <!-- Long-click title of CustomTabsActivity will copy URL to clipboard and display this hint -->
 <!ENTITY custom_tabs_hint_url_copy "Адресът е копиран">
 
+<!ENTITY pref_pwa "Модерни приложения за уеб">
+<!ENTITY pref_pwa_summary "Разрешаване на приложения за уеб да бъдат добавяни към началния екран">
+
 <!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
 <!ENTITY pref_activity_stream "Поток от дейности">
 <!ENTITY pref_activity_stream_summary "Богатият визуален списък на историята и изцяло новата начална страница правят търсенето неща от &brandShortName; изключително лесно.">
@@ -356,12 +359,8 @@
      The action is shown below a header saying "Clear private data"; See pref_clear_private_data -->
 <!ENTITY pref_clear_private_data_now_tablet "Изчистване">
 <!ENTITY pref_clear_on_exit_title3 "Изчистване на лични данни след изход">
-<!ENTITY pref_clear_on_exit_summary2 "&brandShortName; автоматично ще изчисти вашите данни при избиране на \u0022Изход\u0022 от главното меню">
+<!ENTITY pref_clear_on_exit_summary2 "&brandShortName; автоматично ще изчисти вашите данни при избиране на \&quot;Изход\&quot; от главното меню">
 <!ENTITY pref_clear_on_exit_dialog_title "Изберете кои данни да бъдат изтрити">
-<!ENTITY pref_plugins "Приставки">
-<!ENTITY pref_plugins_enabled "Включени">
-<!ENTITY pref_plugins_tap_to_play2 "Включване след докосване">
-<!ENTITY pref_plugins_disabled "Изключени">
 <!ENTITY pref_restore_tabs "Възстановяване на раздели">
 <!ENTITY pref_restore_always "Всеки път">
 <!ENTITY pref_restore_quit "Никога след изход от &brandShortName;">
@@ -545,6 +544,7 @@
 <!ENTITY page_removed "Страницата е премахната">
 
 <!ENTITY bookmark_edit_title "Редактиране на отметка">
+<!ENTITY bookmark_edit_folder_title "Редактиране на папка">
 <!ENTITY bookmark_edit_name "Име">
 <!ENTITY bookmark_edit_location "Адрес">
 <!ENTITY bookmark_edit_keyword "Ключова дума">
@@ -621,6 +621,11 @@
 <!-- Localization note (home_remote_tabs_unhide_selected_devices) : This is
      the text of a button; we expect more than one device. -->
 <!ENTITY home_remote_tabs_unhide_selected_devices "Показване на избраните">
+
+<!-- Localization note (home_pinned_site) : This is a snackbar label displayed after
+    a site is pinned or unpinned. -->
+<!ENTITY home_pinned_site "Закачане на сайта">
+<!ENTITY home_unpinned_site "Премахване от леснодостъпните">
 
 <!ENTITY remote_tabs_panel_moved_title "Къде изчезнаха моите раздели?">
 <!ENTITY remote_tabs_panel_moved_desc "Преместихме разделите ви от другите устройства в отделна секция на началната страница, така че да ги имате всеки път, когато отваряте нов раздел.">
@@ -781,7 +786,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      a restricted profile (e.g. child). Used inside the Android settings UI. -->
 <!ENTITY restrictable_feature_addons_installation "Добавки">
 <!ENTITY restrictable_feature_addons_installation_description "Добавя възможности и функции към Firefox. Забележка: Добавки могат да отменят някои ограничения.">
-<!ENTITY restrictable_feature_private_browsing "Поверително сърфиране">
+<!ENTITY restrictable_feature_private_browsing "Поверително разглеждане">
 <!ENTITY restrictable_feature_private_browsing_description "Позволява на близките ви да сърфират без запазване на информация за посетените от тях сайтове и страници.">
 <!ENTITY restrictable_feature_clear_history "Изчистване на историята">
 <!ENTITY restrictable_feature_clear_history_description "Позволява на близките ви да изтриват информация за посетените от тях сайтове и страници.">
@@ -845,3 +850,4 @@ is simply hidden from the Activity Stream panel. -->
 
 <!ENTITY activity_stream_welcome_title "Добре дошли в Акценти">
 <!ENTITY activity_stream_welcome_content1 "&brandShortName; сега създава акценти от местата, които сте открили в мрежата, за да намирате по-лесно страхотни статии, видео, отметки и други страници.">
+<!ENTITY fullscreen_warning "Режим на цял екран">

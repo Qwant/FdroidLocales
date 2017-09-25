@@ -287,13 +287,16 @@
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
 <!ENTITY pref_custom_tabs "Προσαρμοσμένες καρτέλες">
-<!ENTITY pref_custom_tabs_summary3 "Να επιτρέπεται σε εφαρμογές να ανοίγουν ιστοσελίδες με μια προσαρμοσμένη έκδοση του &brandShortName;">
+<!ENTITY pref_custom_tabs_summary3 "Να επιτρέπεται σε εφαρμογές να ανοίγουν ιστoτόπους χρησιμοποιώντας μία προσαρμοσμένη έκδοση του &brandShortName;">
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "Άνοιγμα στο &formatS;">
 <!ENTITY custom_tabs_menu_footer "Με την υποστήριξη του &brandShortName;">
 <!-- Long-click title of CustomTabsActivity will copy URL to clipboard and display this hint -->
 <!ENTITY custom_tabs_hint_url_copy "Το URL αντεγράφη">
+
+<!ENTITY pref_pwa "Προοδευτικές διαδικτυακές εφαρμογές">
+<!ENTITY pref_pwa_summary "Να επιτρέπεται η προσθήκη διαδικτυακών εφαρμογών στην αρχική οθόνη">
 
 <!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
 <!ENTITY pref_activity_stream "Ροή δραστηριότητας">
@@ -356,12 +359,8 @@
      The action is shown below a header saying "Clear private data"; See pref_clear_private_data -->
 <!ENTITY pref_clear_private_data_now_tablet "Εκκαθάριση τώρα">
 <!ENTITY pref_clear_on_exit_title3 "Εκκαθάριση ιδιωτικών δεδομένων κατά την έξοδο">
-<!ENTITY pref_clear_on_exit_summary2 "Ο &brandShortName; θα προχωρά αυτόματα σε εκκαθάριση των δεδομένων σας όταν θα επιλέγετε \u0022Έξοδος\u0022 από το κύριο μενού">
+<!ENTITY pref_clear_on_exit_summary2 "Ο &brandShortName; θα προχωρά αυτόματα σε εκκαθάριση των δεδομένων σας όταν θα επιλέγετε \&quot;Έξοδος\&quot; από το κύριο μενού">
 <!ENTITY pref_clear_on_exit_dialog_title "Επιλέξετε τα δεδομένα προς εκκαθάριση">
-<!ENTITY pref_plugins "Πρόσθετες λειτουργίες">
-<!ENTITY pref_plugins_enabled "Ενεργοποιημένες">
-<!ENTITY pref_plugins_tap_to_play2 "Ενεργοποίηση με πάτημα">
-<!ENTITY pref_plugins_disabled "Απενεργοποιημένες">
 <!ENTITY pref_restore_tabs "Επαναφορά καρτελών">
 <!ENTITY pref_restore_always "Να επαναφέρονται πάντα">
 <!ENTITY pref_restore_quit "Να μην επαναφέρονται μετά την έξοδο από τον &brandShortName;">
@@ -545,6 +544,7 @@
 <!ENTITY page_removed "Η σελίδα αφαιρέθηκε">
 
 <!ENTITY bookmark_edit_title "Επεξεργασία σελιδοδείκτη">
+<!ENTITY bookmark_edit_folder_title "Επεξεργασία φακέλου">
 <!ENTITY bookmark_edit_name "Όνομα">
 <!ENTITY bookmark_edit_location "Τοποθεσία">
 <!ENTITY bookmark_edit_keyword "Λέξη κλειδί">
@@ -621,6 +621,11 @@
 <!-- Localization note (home_remote_tabs_unhide_selected_devices) : This is
      the text of a button; we expect more than one device. -->
 <!ENTITY home_remote_tabs_unhide_selected_devices "Επανεμφάνιση επιλεγμένων συσκευών">
+
+<!-- Localization note (home_pinned_site) : This is a snackbar label displayed after
+    a site is pinned or unpinned. -->
+<!ENTITY home_pinned_site "Η ιστοσελίδα καρφιτσώθηκε">
+<!ENTITY home_unpinned_site "Η ιστοσελίδα ξεκαρφιτσώθηκε">
 
 <!ENTITY remote_tabs_panel_moved_title "Πού πήγαν οι καρτέλες μου;">
 <!ENTITY remote_tabs_panel_moved_desc "Έχουμε μετακινήσει τις καρτέλες από άλλες συσκευές σας σε ένα πλαίσιο στην αρχική σελίδα για εύκολη πρόσβαση κάθε φορά που ανοίγετε μια νέα καρτέλα.">
@@ -845,3 +850,4 @@ is simply hidden from the Activity Stream panel. -->
 
 <!ENTITY activity_stream_welcome_title "Καλώς ορίσατε στις κορυφαίες στιγμές σας">
 <!ENTITY activity_stream_welcome_content1 "Το &brandShortName; δημιουργεί πλέον τις κορυφαίες στιγμές από πράγματα που έχετε ανακαλύψει στο διαδίκτυο, ώστε να μπορέσετε να επιστρέψετε σε έξοχα άρθρα, βίντεο, σελιδοδείκτες και άλλες σελίδες.">
+<!ENTITY fullscreen_warning "Εισήχθη σε πλήρη οθόνη">

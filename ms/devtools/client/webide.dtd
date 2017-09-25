@@ -13,15 +13,15 @@
 <!ENTITY projectMenu_importHostedApp_label "Buka App Hos…">
 <!ENTITY projectMenu_importHostedApp_accesskey "H">
 <!ENTITY projectMenu_selectApp_label "Buka App…">
-<!ENTITY projectMenu_selectApp_accesskey "O">
+<!ENTITY projectMenu_selectApp_accesskey "B">
 <!ENTITY projectMenu_play_label "Pasang dan Buka">
 <!ENTITY projectMenu_play_accesskey "I">
 <!ENTITY projectMenu_stop_label "Hentikan App">
 <!ENTITY projectMenu_stop_accesskey "S">
 <!ENTITY projectMenu_debug_label "App Nyahpepijat">
 <!ENTITY projectMenu_debug_accesskey "D">
-<!ENTITY projectMenu_remove_label "Alih keluar Projek">
-<!ENTITY projectMenu_remove_accesskey "R">
+<!ENTITY projectMenu_remove_label "Buang Projek">
+<!ENTITY projectMenu_remove_accesskey "B">
 <!ENTITY projectMenu_showPrefs_label "Keutamaan">
 <!ENTITY projectMenu_showPrefs_accesskey "e">
 <!ENTITY projectMenu_manageComponents_label "Urus Komponen Tambahan">
@@ -30,8 +30,8 @@
 
 <!ENTITY runtimeMenu_label "Runtime">
 <!ENTITY runtimeMenu_accesskey "R">
-<!ENTITY runtimeMenu_disconnect_label "Terputus">
-<!ENTITY runtimeMenu_disconnect_accesskey "D">
+<!ENTITY runtimeMenu_disconnect_label "Memutuskan">
+<!ENTITY runtimeMenu_disconnect_accesskey "M">
 <!ENTITY runtimeMenu_takeScreenshot_label "Skrinsyot">
 <!ENTITY runtimeMenu_takeScreenshot_accesskey "S">
 <!ENTITY runtimeMenu_showDetails_label "Maklumat Runtime">
@@ -89,8 +89,7 @@
 <!ENTITY details_description "Huraian">
 <!ENTITY details_location "Lokasi">
 <!ENTITY details_manifestURL "ID App">
-<!ENTITY details_removeProject_button "Alih keluar Projek">
-<!ENTITY details_showPrepackageLog_button "Papar Log Pra-pakej">
+<!ENTITY details_removeProject_button "Buang Projek">
 
 <!-- New App -->
 <!ENTITY newAppWindowTitle "App Baru">
@@ -178,7 +177,7 @@
 
 <!-- Simulator Options -->
 <!ENTITY simulator_title "Tetapan Pensimulasi">
-<!ENTITY simulator_remove "Hapus Simulator">
+<!ENTITY simulator_remove "Buang Simulator">
 <!ENTITY simulator_reset "Pulih Piawai">
 <!ENTITY simulator_name "Nama">
 <!ENTITY simulator_software "Perisian">

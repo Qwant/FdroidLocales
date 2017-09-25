@@ -295,6 +295,9 @@
 <!-- Long-click title of CustomTabsActivity will copy URL to clipboard and display this hint -->
 <!ENTITY custom_tabs_hint_url_copy "URL kopierad">
 
+<!ENTITY pref_pwa "Progressiva webbappar">
+<!ENTITY pref_pwa_summary "Tillåt att webappar läggs till på startskärmen">
+
 <!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
 <!ENTITY pref_activity_stream "Aktivitetsflöde">
 <!ENTITY pref_activity_stream_summary "En rik visuell historik och en återskapad startsida gör det enklare än någonsin att hitta exakt vad du letar efter i &brandShortName;.">
@@ -329,7 +332,7 @@
 
 <!-- Localization note (tab_queue_notification_settings): This notification text is shown if a tab
      has been queued but we are missing the system permission to show an overlay. -->
-<!ENTITY tab_queue_notification_settings "För att \&quot;Öppna flera länkar\&quot;, aktivera \u0027Rita över andra appar\u0027 tillståndet för &brandShortName;">
+<!ENTITY tab_queue_notification_settings "För att \&quot;Öppna flera länkar\&quot;, aktivera \&apos;Rita över andra appar\&apos; tillståndet för &brandShortName;">
 
 <!ENTITY content_notification_summary "&brandShortName;">
 <!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
@@ -356,12 +359,8 @@
      The action is shown below a header saying "Clear private data"; See pref_clear_private_data -->
 <!ENTITY pref_clear_private_data_now_tablet "Rensa nu">
 <!ENTITY pref_clear_on_exit_title3 "Rensa privat data vid avslut">
-<!ENTITY pref_clear_on_exit_summary2 "&brandShortName; kommer automatiskt rensa din data när du väljer \u0022Avsluta\u0022 från huvudmenyn">
+<!ENTITY pref_clear_on_exit_summary2 "&brandShortName; kommer automatiskt rensa din data när du väljer \&quot;Avsluta\&quot; från huvudmenyn">
 <!ENTITY pref_clear_on_exit_dialog_title "Välj vilken data som ska rensas">
-<!ENTITY pref_plugins "Insticksmoduler">
-<!ENTITY pref_plugins_enabled "Aktiverad">
-<!ENTITY pref_plugins_tap_to_play2 "Tryck för att spela">
-<!ENTITY pref_plugins_disabled "Inaktiverat">
 <!ENTITY pref_restore_tabs "Återställ flikar">
 <!ENTITY pref_restore_always "Återställ alltid">
 <!ENTITY pref_restore_quit "Återställ inte när &brandShortName; avslutats">
@@ -509,8 +508,8 @@
 <!ENTITY contextmenu_subscribe "Prenumerera på sidan">
 <!ENTITY contextmenu_site_settings "Redigera platsinställningar">
 <!ENTITY contextmenu_top_sites_edit "Redigera">
-<!ENTITY contextmenu_top_sites_pin "Fäst plats">
-<!ENTITY contextmenu_top_sites_unpin "Lösgör plats">
+<!ENTITY contextmenu_top_sites_pin "Fäst webbplats">
+<!ENTITY contextmenu_top_sites_unpin "Lösgör webbplats">
 <!ENTITY contextmenu_add_search_engine "Lägg till en sökmotor">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
@@ -545,6 +544,7 @@
 <!ENTITY page_removed "Sidan borttagen">
 
 <!ENTITY bookmark_edit_title "Redigera bokmärke">
+<!ENTITY bookmark_edit_folder_title "Redigera mapp">
 <!ENTITY bookmark_edit_name "Namn">
 <!ENTITY bookmark_edit_location "Plats">
 <!ENTITY bookmark_edit_keyword "Nyckelord">
@@ -621,6 +621,11 @@
 <!-- Localization note (home_remote_tabs_unhide_selected_devices) : This is
      the text of a button; we expect more than one device. -->
 <!ENTITY home_remote_tabs_unhide_selected_devices "Ta fram valda enheter">
+
+<!-- Localization note (home_pinned_site) : This is a snackbar label displayed after
+    a site is pinned or unpinned. -->
+<!ENTITY home_pinned_site "Webbplats fäst">
+<!ENTITY home_unpinned_site "Webbplats lösgjord">
 
 <!ENTITY remote_tabs_panel_moved_title "Vart tog mina flikar vägen?">
 <!ENTITY remote_tabs_panel_moved_desc "Vi har flyttat dina flikar från dina andra enheter till en panel på din hem-sida så att du enkelt kan hitta dom varje gång du öppnar en ny flik.">
@@ -842,3 +847,4 @@ is simply hidden from the Activity Stream panel. -->
 
 <!ENTITY activity_stream_welcome_title "Välkommen till dina höjdpunkter">
 <!ENTITY activity_stream_welcome_content1 "&brandShortName; skapar nu höjdpunkter av saker som du har upptäckt på webben så att du kan hitta tillbaka till bra artiklar, filmer, bokmärken och andra sidor.">
+<!ENTITY fullscreen_warning "Fullskärmsläge startad">
