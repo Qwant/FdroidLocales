@@ -38,6 +38,7 @@ rm -R layout/base/crashtests/
 rm -R layout/generic/crashtests/
 rm -R layout/generic/test/
 rm -R layout/reftests/
+rm -R media/webrtc/trunk/webrtc/test/
 rm -R mobile/android/build/classycle/
 rm -R mobile/android/tests/
 rm -R modules/libmar/tests/
@@ -140,6 +141,7 @@ rm -R build.gradle
 rm -R mobile/android/gradle/
 rm -R mobile/android/app/build.gradle
 rm -R mobile/android/thirdparty/build.gradle
+rm -R servo/support/android/apk/gradle/
 sed -i -e '/gradle/,+2d' mobile/android/moz.build
 
 ##Disable Gecko Media Pluggins support 
