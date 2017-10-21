@@ -134,6 +134,8 @@ rm -R testing/docker/android-gradle-build
 
 ##HOTFIX## (BUG #1324331)
 patch -p1 <$REPO/Bindings.patch
+##HOTFIX##
+patch -p1 <$REPO/Fix_NPE.patch
 
 mkdir -p fdroid/assets/distribution/extensions
 ##Fennec marks the extension as incomptible if one targetApplication has 2 ids

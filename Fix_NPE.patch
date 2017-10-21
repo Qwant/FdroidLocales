@@ -1,0 +1,13 @@
+diff -r b333389d770f mobile/android/base/java/org/mozilla/gecko/distribution/Distribution.java
+--- a/mobile/android/base/java/org/mozilla/gecko/distribution/Distribution.java	Fri Mar 03 05:55:44 2017 -0500
++++ b/mobile/android/base/java/org/mozilla/gecko/distribution/Distribution.java	Fri Oct 20 00:00:00 2017 -0000
+@@ -226,7 +226,8 @@ public void run() {
+                     String preferencesJSON = "";
+                     try {
+                         final File descFile = distribution.getDistributionFile("preferences.json");
+-                        preferencesJSON = FileUtils.readStringFromFile(descFile);
++                        if (descFile != null)
++                            preferencesJSON = FileUtils.readStringFromFile(descFile);
+                     } catch (IOException e) {
+                         Log.e(LOGTAG, "Error getting distribution descriptor file.", e);
+                     }
