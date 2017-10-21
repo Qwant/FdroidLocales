@@ -129,8 +129,16 @@ sed -i -e 's/AppConstants.MOZILLA_OFFICIAL/false/g' mobile/android/base/java/org
 ##Get rid of Gradle
 rm -R gradle/
 rm -R build.gradle
+rm -R settings.gradle
 rm -R mobile/android/app/build.gradle
 rm -R testing/docker/android-gradle-build
+
+## Remove jars
+rm -R config/tests/test.manifest.jar
+rm -R dom/canvas/test/webgl-conf/checkout/deqp/compiler.jar
+rm -R python/mozbuild/mozbuild/test/
+rm -R toolkit/components/telemetry/tests/search/searchTest.jar
+sed -i -e '/mozbuild\/test/,+9d' python/moz.build
 
 ##HOTFIX## (BUG #1324331)
 patch -p1 <$REPO/Bindings.patch
