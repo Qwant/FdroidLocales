@@ -17,23 +17,24 @@ sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsAndroidStartup.cpp
 sed -i -e '/nsExceptionHandler/d'  -e '/ThreadAnnotation/d' toolkit/xre/nsEmbedFunctions.cpp
 
 rm -R accessible/tests/
-rm -R addon-sdk/source/test/
 rm -R browser/branding/*/dsstore
 rm -R browser/components/migration/tests/unit/
 rm -R build/pymake/tests/
 rm -R build/win32/vswhere.exe
 rm -R chrome/test/
+rm -R config/tests/test.manifest.jar
 rm -R devtools/client/debugger/test/
 rm -R devtools/client/webide/test/
 rm -R docshell/test/
 rm -R dom/base/crashtests/
 rm -R dom/base/test/
+rm -R dom/canvas/test/
 rm -R dom/html/test/
 rm -R dom/indexedDB/test/
-rm -R dom/media/webspeech/recognition/models/
 rm -R dom/security/test/
 rm -R dom/tests/
 rm -R dom/xhr/tests/
+rm -R dom/webauthn/u2f-hid-rs/fuzz/corpus/
 rm -R layout/base/crashtests/
 rm -R layout/generic/crashtests/
 rm -R layout/generic/test/
@@ -56,7 +57,6 @@ rm -R other-licenses/nsis/nsisui.exe
 rm -R testing/crashtest/
 rm -R testing/mozbase/mozinstall/tests/
 rm -R testing/mozbase/mozprofile/tests/
-rm -R testing/mozbase/mozrunner/mozrunner/resources/metrotestharness.exe
 rm -R testing/talos/talos/
 rm -R testing/web-platform/
 rm -R third_party/rust/term/tests/data/
@@ -65,6 +65,7 @@ rm -R toolkit/components/downloads/test/unit/
 rm -R toolkit/components/mediasniffer/test/unit/
 rm -R toolkit/components/search/tests/
 rm -R toolkit/components/telemetry/tests/unit/
+rm -R toolkit/components/telemetry/tests/search/
 rm -R toolkit/modules/tests/
 rm -R toolkit/mozapps/extensions/test/
 rm -R toolkit/mozapps/update/tests/
@@ -80,12 +81,12 @@ sed -i -e "/'testing\/mochitest'/d" python/mozbuild/mozbuild/testing.py
 sed -i -e '/PYTHON_UNITTEST/d' python/mozbuild/mozbuild/testing.py
 
 sed -i -e '/tests\//d' accessible/moz.build
-sed -i -e '/source\/test\//d' -e '/GENERATED_FILES += addons/,+5d' addon-sdk/moz.build
 sed -i -e '/testing\/web-platform\/mach_commands.py/d' build/mach_bootstrap.py
 sed -i -e '/TESTS_MANIFESTS/,+36d' docshell/moz.build
+sed -i -e '/TEST_MANIFESTS/,+9d' dom/canvas/moz.build
 sed -i -e '/tests\//d' dom/file/moz.build
 sed -i -e '/test\//d' dom/html/moz.build
-sed -i -e '/TEST_DIRS/,+14d' dom/indexedDB/moz.build
+sed -i -e '/TEST_MANIFESTS/,+12d' dom/indexedDB/moz.build
 sed -i -e '/tests/d' dom/xhr/moz.build
 sed -i -e '/MOCHITEST/d' layout/generic/moz.build
 sed -i -e '/reftest/d'  -e '/crashtest/d' layout/moz.build
@@ -138,6 +139,7 @@ sed -i -e 's/AppConstants.MOZILLA_OFFICIAL/false/g' mobile/android/base/java/org
 ##Get rid of Gradle
 rm -R gradle/
 rm -R build.gradle
+rm -R settings.gradle
 rm -R mobile/android/gradle/
 rm -R mobile/android/app/build.gradle
 rm -R mobile/android/thirdparty/build.gradle
@@ -162,3 +164,5 @@ echo 'pref("browser.casting.enabled", false);' >> mobile/android/app/mobile.js
 ##HOTFIX## (BUG #1324331)
 patch -p1 <$REPO/Bindings.patch
 patch -p1 <$REPO/Fix_Mediarouter_Dependency.patch
+#https://hg.mozilla.org/mozilla-central/rev/4705d4f9fcdf
+sed -i -e '/PushManager/d' mobile/android/base/java/org/mozilla/gecko/mma/MmaDelegate.java
