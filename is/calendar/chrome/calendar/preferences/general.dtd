@@ -29,8 +29,13 @@
 <!ENTITY pref.default_task_offset_start.label "Miðað við byrjunartíma">
 <!ENTITY pref.default_task_offset_next_hour.label "Miðað við næstu klukkustund">
 <!ENTITY pref.calendar.todaypane.agenda.caption "Dagurinn í dag">
-<!ENTITY pref.soondays.label "Næsta svæði sýnir:">
-<!ENTITY pref.soondays.accesskey "æ">
+<!-- LOCALIZATION NOTE (pref.soondays2.label):
+     "Upcoming" is the name of a section and the translation must match the
+     translation of that section name (calendar.upcoming.button.label). Also,
+     it should be upper case (as a proper name) if the target language permits.
+  -->
+<!ENTITY pref.soondays2.label "Næsta svæði sýnir:">
+<!ENTITY pref.soondays2.accesskey "æ">
 <!ENTITY pref.accessibility.label "Auðveldað aðgengi">
 <!ENTITY pref.systemcolors.label "Finna bestu liti fyrir aðgengi">
 <!ENTITY pref.systemcolors.accesskey "ð">

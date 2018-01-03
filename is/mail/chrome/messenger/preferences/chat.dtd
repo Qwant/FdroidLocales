@@ -2,6 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY generalTab.label "Almennt">
 <!ENTITY startupAction.label "Þegar &brandShortName; ræsir:">
 <!ENTITY startupAction.accesskey "s">
 <!ENTITY startupOffline.label "Aftengja spjallreikninga">
@@ -35,3 +36,19 @@ sentence. -->
 <!ENTITY customsound.accesskey "N">
 <!ENTITY browse.label "Velja…">
 <!ENTITY browse.accesskey "V">
+<!ENTITY messageStyleTab.title "Skilaboða stílar">
+<!ENTITY messageStylePreview.label "Forskoðun:">
+<!ENTITY messageStyleTheme.label "Þema:">
+<!ENTITY messageStyleTheme.accesskey "Þ">
+<!ENTITY messageStyleThunderbirdTheme.label "Thunderbird">
+<!ENTITY messageStyleBubblesTheme.label "Sápukúlur">
+<!ENTITY messageStyleDarkTheme.label "Dökkur">
+<!ENTITY messageStylePaperSheetsTheme.label "Pappírsblöð">
+<!ENTITY messageStyleSimpleTheme.label "Einfalt">
+<!ENTITY messageStyleDefaultTheme.label "Sjálfgefið">
+<!ENTITY messageStyleVariant.label "Tilbrigði:">
+<!ENTITY messageStyleVariant.accesskey "T">
+<!ENTITY messageStyleShowHeader.label "Sýna haus">
+<!ENTITY messageStyleShowHeader.accesskey "h">
+<!ENTITY messageStyleNoPreview.title "Engin forskoðun tiltæk">
+<!ENTITY messageStyleNoPreview.description "Þetta þema er ekki í lagi eða er ekki aðgengilegt eins og er (óvirk viðbót, öryggishamur, …).">

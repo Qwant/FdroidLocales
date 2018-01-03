@@ -1,0 +1,17 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY  applications.label       "অ্যাপ্লিকেশন">
+<!ENTITY  applications.description "পছন্দ করুন &brandShortName; কিভাবে আপনার ফাইল ওয়েব থেকে ডাউনলোড করতে অথবা যে অ্যাপলিকেশনগুলো আপনার ব্রাউজিং এর সময় ব্যবহার করেন।">
+
+<!ENTITY  typeColumn.label        "বিষয়বস্তুর ধরণ">
+<!ENTITY  typeColumn.accesskey    "T">
+
+<!ENTITY  actionColumn2.label     "করণীয়">
+<!ENTITY  actionColumn2.accesskey "A">
+
+<!ENTITY  focusSearch1.key        "f">
+<!ENTITY  focusSearch2.key        "k">
+
+<!ENTITY  filter2.emptytext        "ফাইলের ধরন অথবা অ্যাপ্লিকেশন অনুসন্ধান করুন">

@@ -1,0 +1,25 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY defaultSearchEngine.label             "पूर्वनिर्धारित खोज इन्जिन">
+
+
+<!ENTITY provideSearchSuggestions.label        "खोज सुझावहरू प्रदान गर्ने">
+<!ENTITY provideSearchSuggestions.accesskey    "s">
+
+
+<!ENTITY urlBarSuggestionsPermanentPB.label    "खोज इतिहास कहिले पनि लोकेसन बारमा देखिदैन किनभने &brandShortName; लाई कहिले पनि इतिहास नसम्झनेमा सेट गर्नुभएको छ ।">
+
+<!ENTITY oneClickSearchEngines.label           "एक-क्लिक खोज इन्जिनहरू">
+
+
+<!ENTITY engineNameColumn.label                "सर्च इन्जिनहरू">
+<!ENTITY engineKeywordColumn.label             "शब्दकुञ्जी">
+
+<!ENTITY restoreDefaultSearchEngines.label     "पूर्वानिर्धारीत खोज इन्जिन पुनर्स्थापना गर्नुहोस् ">
+<!ENTITY restoreDefaultSearchEngines.accesskey "D">
+
+<!ENTITY removeEngine.label                    "हटाउनुहोस्">
+<!ENTITY removeEngine.accesskey                "R">
+
