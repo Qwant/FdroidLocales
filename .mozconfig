@@ -5,5 +5,6 @@ ac_add_options --disable-debug
 ac_add_options --disable-updater
 ac_add_options --disable-crashreporter
 ac_add_options --with-branding=mobile/android/branding/unofficial
+ac_add_options --without-gradle
 export MOZ_INSTALL_TRACKING=
 export MOZ_NATIVE_DEVICES=

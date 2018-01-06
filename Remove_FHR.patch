@@ -227,21 +227,3 @@ diff -r 78278c4dc730 mobile/android/base/moz.build
      'home/BookmarkFolderView.java',
      'home/BookmarkScreenshotRow.java',
      'home/BookmarksListAdapter.java',
-diff -r 78278c4dc730 mobile/android/search/java/org/mozilla/search/SearchActivity.java
---- a/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Wed Aug 02 14:04:05 2017 -0400
-+++ b/mobile/android/search/java/org/mozilla/search/SearchActivity.java	Thu Aug 03 00:00:00 2017 -0000
-@@ -254,14 +254,6 @@
-     public void onSearch(String query, SuggestionAnimation suggestionAnimation) {
-         storeQuery(query);
- 
--        try {
--            //BrowserHealthRecorder.recordSearchDelayed("activity", engine.getIdentifier());
--        } catch (Exception e) {
--            // This should never happen: it'll only throw if the
--            // search location is wrong. But let's not tempt fate.
--            Log.w(LOGTAG, "Unable to record search.");
--        }
--
-         startSearch(query);
- 
-         if (suggestionAnimation != null) {

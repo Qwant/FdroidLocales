@@ -4,15 +4,11 @@ REPO=$( echo $( cd `dirname $0`; pwd ) )
 find toolkit/crashreporter/ -mindepth 1 -maxdepth 1 ! -name "crashreporter.mozbuild" ! -name "google-breakpad" ! -name "breakpad-logging" -exec rm -R '{}' \;
 find toolkit/crashreporter/google-breakpad/ -mindepth 1 -maxdepth 1 ! -name "src" -exec rm -R '{}' \;
 rm -R toolkit/crashreporter/google-breakpad/src/tools/
-rm -R toolkit/crashreporter/google-breakpad/src/client/
 rm -R toolkit/crashreporter/google-breakpad/src/third_party/linux/
 
-sed -i -e '/nsExceptionHandler/d' gfx/ipc/GPUParent.cpp
-sed -i -e '/nsExceptionHandler/d' ipc/glue/GeckoChildProcessHost.cpp
-sed -i -e 's/CrashReporter::ThreadId/int/g' ipc/glue/CrashReporterHost.cpp
-sed -i -e '/nsExceptionHandler/d' -e '/AnnotationTable/d' -e 's/CrashReporter::ThreadId/int/g' ipc/glue/CrashReporterHost.h
-sed -i -e '/nsExceptionHandler/d' -e '/AnnotationTable/d' ipc/glue/CrashReporterMetadataShmem.h
 sed -i -e '/mNotes\.Iter/,+6d' -e '/mNotes\.Put/d' ipc/glue/CrashReporterMetadataShmem.cpp
+sed -i -e '/nsExceptionHandler/d' -e '/AnnotationTable/d' ipc/glue/CrashReporterMetadataShmem.h
+sed -i -e '/nsExceptionHandler/d' ipc/glue/GeckoChildProcessHost.cpp
 sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsAndroidStartup.cpp
 sed -i -e '/nsExceptionHandler/d'  -e '/ThreadAnnotation/d' toolkit/xre/nsEmbedFunctions.cpp
 
@@ -52,17 +48,16 @@ rm -R security/nss/cmd/bltest/tests/
 rm -R security/nss/cmd/samples/
 rm -R security/nss/tests/
 rm -R services/sync/tests/
-rm -R servo/tests/unit/
+rm -R servo/tests/unit/net/parsable_mime/
 rm -R other-licenses/nsis/nsisui.exe
 rm -R testing/crashtest/
 rm -R testing/mozbase/mozinstall/tests/
 rm -R testing/mozbase/mozprofile/tests/
 rm -R testing/talos/talos/
 rm -R testing/web-platform/
-rm -R third_party/rust/term/tests/data/
 rm -R tools/update-packaging/test/
-rm -R toolkit/components/downloads/test/unit/
 rm -R toolkit/components/mediasniffer/test/unit/
+rm -R toolkit/components/reputationservice/test/unit/data/signed_win.exe
 rm -R toolkit/components/search/tests/
 rm -R toolkit/components/telemetry/tests/unit/
 rm -R toolkit/components/telemetry/tests/search/
@@ -115,13 +110,11 @@ sed -i -e '/(.MOZ_ANDROID_GCM/,+4d' -e '/MOZ_ANDROID_GCM.,/d' -e '/android_gcm,/
 sed -i -e "s/HEALTHREPORT\', True/HEALTHREPORT\', False/g" mobile/android/moz.configure
 
 #Remove rust libs
-rm -R third_party/rust/dbghelp-sys/*/*.a
 rm -R third_party/rust/ktmw32-sys/*/*.a
-rm -R third_party/rust/lazy_static-*
+rm -R third_party/rust/lazy_static-0.1.16
 
 ##Option 1: Completely remove FHR
 rm mobile/android/base/java/org/mozilla/gecko/health/*
-rm -R mobile/android/services/src/main/java/org/mozilla/gecko/background/datareporting/
 patch -p1 <$REPO/Remove_FHR.patch
 ###Option 2: Make the default pref false if not value present - Not tested
 #sed -i -e 's/HEALTHREPORT_UPLOAD_ENABLED, true/HEALTHREPORT_UPLOAD_ENABLED, false/g' mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java
@@ -156,7 +149,6 @@ echo 'pref("media.gmp-manager.url.override", "data:text/plain,");' >> mobile/and
 ##Disable openh264 if it was already downloaded
 echo 'pref("media.gmp-gmpopenh264.enabled", false);' >> mobile/android/app/mobile.js
 
-
 ##Disable Casting (Roku, chromecast)
 sed -i -e '/casting.enabled/d' mobile/android/app/mobile.js
 echo 'pref("browser.casting.enabled", false);' >> mobile/android/app/mobile.js
@@ -166,3 +158,5 @@ patch -p1 <$REPO/Bindings.patch
 patch -p1 <$REPO/Fix_Mediarouter_Dependency.patch
 #https://hg.mozilla.org/mozilla-central/rev/4705d4f9fcdf
 sed -i -e '/PushManager/d' mobile/android/base/java/org/mozilla/gecko/mma/MmaDelegate.java
+#BUG #1428110
+sed -i -e 's/android_sdk_root\/emulator/android_tools/g' build/autoconf/android.m4
