@@ -1,0 +1,37 @@
+diff -r cb9a0bfe28ea build.gradle
+--- a/build.gradle	Tue Dec 26 09:48:25 2017 +0100
++++ b/build.gradle	Wed Jan 03 00:00:00 2018 +0000
+@@ -28,10 +28,11 @@
+     }
+ 
+     repositories {
+-        gradle.mozconfig.substs.GRADLE_MAVEN_REPOSITORIES.each { repository ->
+-            maven {
+-                url repository
+-            }
++        maven {
++            url "https://jcenter.bintray.com/"
++        }
++        maven {
++            url "https://maven.google.com/"
+         }
+     }
+ }
+@@ -40,14 +41,11 @@
+ 
+ buildscript {
+     repositories {
+-        gradle.mozconfig.substs.GRADLE_MAVEN_REPOSITORIES.each { repository ->
+-            maven {
+-                url repository
+-            }
++        maven {
++            url "https://jcenter.bintray.com/"
+         }
+-        // For in tree plugins.
+         maven {
+-            url "file://${gradle.mozconfig.topsrcdir}/mobile/android/gradle/m2repo"
++            url "https://maven.google.com/"
+         }
+     }
+ 

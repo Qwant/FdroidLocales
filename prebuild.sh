@@ -129,15 +129,21 @@ sed -i -e 's/AppConstants.MOZILLA_OFFICIAL/false/g' mobile/android/base/java/org
 #rm -R mobile/android/services/src/main/java/org/mozilla/gecko/background/common/telemetry/
 #patch -p1 <$REPO/Remove_Telemetry.patch
 
-##Get rid of Gradle
-rm -R gradle/
-rm -R build.gradle
-rm -R settings.gradle
-rm -R mobile/android/gradle/
-rm -R mobile/android/app/build.gradle
-rm -R mobile/android/thirdparty/build.gradle
-rm -R servo/support/android/apk/gradle/
-sed -i -e '/gradle/,+2d' mobile/android/moz.build
+##HOTFIX## (BUG #1324331)
+patch -p1 <$REPO/Bindings.patch
+patch -p1 <$REPO/Missing_Excludes.patch
+patch -p1 <$REPO/Fix_Mediarouter_Dependency.patch
+
+##Fix Gradle for fdroid
+echo "ac_add_options --with-gradle=$(which gradle)" >> .mozconfig
+sed -i -e '/assembleOfficialPhotonDebugAndroidTest/d' mobile/android/base/Makefile.in
+# fennec generates the repo list at build time, but it makes the scanner fail
+patch -p1 <$REPO/Gradle.patch
+# the google play dependencies are not pulled without MOZ_ANDROID_GCM, but the scanner detects them and fails
+sed -i -e '/gms/d' mobile/android/app/build.gradle
+sed -i -e '/GOOGLE/d' mobile/android/thirdparty/build.gradle
+# add android:debuggable false
+sed -i -e 's/!defined(MOZILLA_OFFICIAL)/0/g' mobile/android/base/AndroidManifest.xml.in
 
 ##Disable Gecko Media Pluggins support 
 sed -i -e '/gmp-provider/d' mobile/android/app/mobile.js
@@ -153,9 +159,6 @@ echo 'pref("media.gmp-gmpopenh264.enabled", false);' >> mobile/android/app/mobil
 sed -i -e '/casting.enabled/d' mobile/android/app/mobile.js
 echo 'pref("browser.casting.enabled", false);' >> mobile/android/app/mobile.js
 
-##HOTFIX## (BUG #1324331)
-patch -p1 <$REPO/Bindings.patch
-patch -p1 <$REPO/Fix_Mediarouter_Dependency.patch
 #https://hg.mozilla.org/mozilla-central/rev/4705d4f9fcdf
 sed -i -e '/PushManager/d' mobile/android/base/java/org/mozilla/gecko/mma/MmaDelegate.java
 #BUG #1428110
