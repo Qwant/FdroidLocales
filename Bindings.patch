@@ -56,7 +56,7 @@ diff -r 78278c4dc730 widget/android/fennec/FennecJNIWrappers.cpp
 diff -r 78278c4dc730 widget/android/fennec/FennecJNIWrappers.h
 --- a/widget/android/fennec/FennecJNIWrappers.h	Wed Aug 02 14:04:05 2017 -0400
 +++ b/widget/android/fennec/FennecJNIWrappers.h	Thu Aug 03 00:00:00 2017 -0000
-@@ -545,73 +545,6 @@
+@@ -518,73 +518,6 @@
      template<class Impl> class Natives;
  };
  
@@ -76,7 +76,7 @@ diff -r 78278c4dc730 widget/android/fennec/FennecJNIWrappers.h
 -                mozilla::jni::Object::Param> Args;
 -        static constexpr char name[] = "addPresentationSurface";
 -        static constexpr char signature[] =
--                "(Lorg/mozilla/gecko/GeckoView;Landroid/view/Surface;)V";
+-                "(Lorg/mozilla/gecko/GeckoSession;Landroid/view/Surface;)V";
 -        static const bool isStatic = true;
 -        static const mozilla::jni::ExceptionMode exceptionMode =
 -                mozilla::jni::ExceptionMode::ABORT;
@@ -94,7 +94,7 @@ diff -r 78278c4dc730 widget/android/fennec/FennecJNIWrappers.h
 -                mozilla::jni::Object::Param> Args;
 -        static constexpr char name[] = "invalidateAndScheduleComposite";
 -        static constexpr char signature[] =
--                "(Lorg/mozilla/gecko/GeckoView;)V";
+-                "(Lorg/mozilla/gecko/GeckoSession;)V";
 -        static const bool isStatic = true;
 -        static const mozilla::jni::ExceptionMode exceptionMode =
 -                mozilla::jni::ExceptionMode::ABORT;
@@ -133,20 +133,20 @@ diff -r 78278c4dc730 widget/android/fennec/FennecJNIWrappers.h
 diff -r 78278c4dc730 widget/android/nsWindow.cpp
 --- a/widget/android/nsWindow.cpp	Wed Aug 02 14:04:05 2017 -0400
 +++ b/widget/android/nsWindow.cpp	Thu Aug 03 00:00:00 2017 -0000
-@@ -827,12 +827,6 @@
+@@ -829,12 +829,6 @@
          MOZ_CRASH("Unexpected call");
      }
  
 -    static LayerViewSupport*
--    FromNative(const LayerView::Compositor::LocalRef& instance)
+-    FromNative(const LayerSession::Compositor::LocalRef& instance)
 -    {
 -        return GetNative(instance);
 -    }
 -
      LayerViewSupport(NativePtr<LayerViewSupport>* aPtr, nsWindow* aWindow,
-                      const LayerView::Compositor::LocalRef& aInstance)
+                      const LayerSession::Compositor::LocalRef& aInstance)
          : mWindow(aPtr, aWindow)
-@@ -1143,92 +1137,6 @@
+@@ -1139,92 +1133,6 @@
  template<> const char
  nsWindow::NativePtr<nsWindow::LayerViewSupport>::sName[] = "LayerViewSupport";
  
@@ -156,12 +156,12 @@ diff -r 78278c4dc730 widget/android/nsWindow.cpp
 -{
 -    PMPMSupport() = delete;
 -
--    static LayerViewSupport* GetLayerViewSupport(jni::Object::Param aView)
+-    static LayerViewSupport* GetLayerViewSupport(jni::Object::Param aSession)
 -    {
--        const auto& layerView = LayerView::Ref::From(aView);
+-        const auto& session = LayerSession::Ref::From(aSession);
 -
--        LayerView::Compositor::LocalRef compositor = layerView->GetCompositor();
--        if (!layerView->IsCompositorReady() || !compositor) {
+-        LayerSession::Compositor::LocalRef compositor = session->GetCompositor();
+-        if (!compositor) {
 -            return nullptr;
 -        }
 -
@@ -177,21 +177,21 @@ diff -r 78278c4dc730 widget/android/nsWindow.cpp
 -    static ANativeWindow* sWindow;
 -    static EGLSurface sSurface;
 -
--    static void InvalidateAndScheduleComposite(jni::Object::Param aView)
+-    static void InvalidateAndScheduleComposite(jni::Object::Param aSession)
 -    {
--        LayerViewSupport* const lvs = GetLayerViewSupport(aView);
+-        LayerViewSupport* const lvs = GetLayerViewSupport(aSession);
 -        if (lvs) {
 -            lvs->SyncInvalidateAndScheduleComposite();
 -        }
 -    }
 -
 -    static void AddPresentationSurface(const jni::Class::LocalRef& aCls,
--                                       jni::Object::Param aView,
+-                                       jni::Object::Param aSession,
 -                                       jni::Object::Param aSurface)
 -    {
 -        RemovePresentationSurface();
 -
--        LayerViewSupport* const lvs = GetLayerViewSupport(aView);
+-        LayerViewSupport* const lvs = GetLayerViewSupport(aSession);
 -        if (!lvs) {
 -            return;
 -        }
@@ -239,17 +239,17 @@ diff -r 78278c4dc730 widget/android/nsWindow.cpp
  nsWindow::GeckoViewSupport::~GeckoViewSupport()
  {
      // Disassociate our GeckoEditable instance with our native object.
-@@ -1420,9 +1328,6 @@
+@@ -1390,9 +1298,6 @@
      nsWindow::GeckoViewSupport::Base::Init();
      nsWindow::LayerViewSupport::Init();
      nsWindow::NPZCSupport::Init();
 -    if (jni::IsFennec()) {
 -        nsWindow::PMPMSupport::Init();
 -    }
- }
  
- nsWindow*
-@@ -2057,12 +1962,6 @@
+     GeckoEditableSupport::Init();
+ }
+@@ -2073,12 +1978,6 @@
                  return lvs->GetSurface().Get();
              }
              return nullptr;
@@ -262,7 +262,7 @@ diff -r 78278c4dc730 widget/android/nsWindow.cpp
      }
  
      return nullptr;
-@@ -2073,7 +1972,6 @@
+@@ -2089,7 +1988,6 @@
  {
      switch (aDataType) {
          case NS_PRESENTATION_SURFACE:
@@ -273,13 +273,13 @@ diff -r 78278c4dc730 widget/android/nsWindow.cpp
 diff -r 78278c4dc730 widget/android/nsWindow.h
 --- a/widget/android/nsWindow.h	Wed Aug 02 14:04:05 2017 -0400
 +++ b/widget/android/nsWindow.h	Thu Aug 03 00:00:00 2017 -0000
-@@ -203,9 +203,6 @@
+@@ -193,9 +193,6 @@
      // keep it last in the list, so its destructor is called first.
      mozilla::UniquePtr<GeckoViewSupport> mGeckoViewSupport;
  
 -    // Class that implements native PresentationMediaPlayerManager calls.
 -    class PMPMSupport;
 -
- public:
-     static nsWindow* TopWindow();
+     mozilla::Atomic<bool, mozilla::ReleaseAcquire> mContentDocumentDisplayed;
  
+ public:

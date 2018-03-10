@@ -1,17 +1,13 @@
 #!/bin/bash
 REPO=$( echo $( cd `dirname $0`; pwd ) )
 
-find toolkit/crashreporter/ -mindepth 1 -maxdepth 1 ! -name "crashreporter.mozbuild" ! -name "google-breakpad" ! -name "breakpad-logging" -exec rm -R '{}' \;
+#Make sure that crashreporter code is not used (just the dummy implementation), and remove test files
+find toolkit/crashreporter/ -mindepth 1 -maxdepth 1 ! -name "jar.mn" ! -name "ns*Utils.cpp" ! -name "nsDummy*.cpp" ! -name "ns*.h" ! -name "*Annotation.h" ! -name "*build" ! -name "google*" -exec rm -R '{}' \;
 find toolkit/crashreporter/google-breakpad/ -mindepth 1 -maxdepth 1 ! -name "src" -exec rm -R '{}' \;
 rm -R toolkit/crashreporter/google-breakpad/src/tools/
 rm -R toolkit/crashreporter/google-breakpad/src/third_party/linux/
 
-sed -i -e '/mNotes\.Iter/,+6d' -e '/mNotes\.Put/d' ipc/glue/CrashReporterMetadataShmem.cpp
-sed -i -e '/nsExceptionHandler/d' -e '/AnnotationTable/d' ipc/glue/CrashReporterMetadataShmem.h
-sed -i -e '/nsExceptionHandler/d' ipc/glue/GeckoChildProcessHost.cpp
-sed -i -e '/nsExceptionHandler/d' toolkit/xre/nsAndroidStartup.cpp
-sed -i -e '/nsExceptionHandler/d'  -e '/ThreadAnnotation/d' toolkit/xre/nsEmbedFunctions.cpp
-
+#Remove test files that make the fdroid scanner fail
 rm -R accessible/tests/
 rm -R browser/branding/*/dsstore
 rm -R browser/components/migration/tests/unit/
@@ -36,7 +32,6 @@ rm -R layout/generic/crashtests/
 rm -R layout/generic/test/
 rm -R layout/reftests/
 rm -R media/webrtc/trunk/webrtc/test/
-rm -R mobile/android/build/classycle/
 rm -R mobile/android/tests/
 rm -R modules/libmar/tests/
 rm -R modules/libjar/test/
@@ -48,7 +43,7 @@ rm -R security/nss/cmd/bltest/tests/
 rm -R security/nss/cmd/samples/
 rm -R security/nss/tests/
 rm -R services/sync/tests/
-rm -R servo/tests/unit/net/parsable_mime/
+rm -R servo/components/net/tests/parsable_mime/
 rm -R other-licenses/nsis/nsisui.exe
 rm -R testing/crashtest/
 rm -R testing/mozbase/mozinstall/tests/
@@ -67,9 +62,11 @@ rm -R toolkit/mozapps/update/tests/
 rm -R widget/crashtests/
 rm -R xpcom/tests/
 
+#Copy config
 cp -f $REPO/.mozconfig ./
 cp -f $REPO/used-locales ./
 
+#Remove references to deleted test files
 sed -i -e '/BROWSER_CHROME_MANIFESTS/s/ManifestparserManifestList/OrderedStringList/' python/mozbuild/mozbuild/frontend/context.py
 sed -i -e '/PYTHON_UNITTEST_MANIFESTS/s/ManifestparserManifestList/OrderedStringList/' python/mozbuild/mozbuild/frontend/context.py
 sed -i -e "/'testing\/mochitest'/d" python/mozbuild/mozbuild/testing.py
@@ -136,7 +133,7 @@ patch -p1 <$REPO/Fix_Mediarouter_Dependency.patch
 
 ##Fix Gradle for fdroid
 echo "ac_add_options --with-gradle=$(which gradle)" >> .mozconfig
-sed -i -e '/assembleOfficialPhotonDebugAndroidTest/d' mobile/android/base/Makefile.in
+sed -i -e '/{app.variant.name}AndroidTest/d' mobile/android/gradle.configure
 # fennec generates the repo list at build time, but it makes the scanner fail
 patch -p1 <$REPO/Gradle.patch
 # the google play dependencies are not pulled without MOZ_ANDROID_GCM, but the scanner detects them and fails
@@ -161,5 +158,3 @@ echo 'pref("browser.casting.enabled", false);' >> mobile/android/app/mobile.js
 
 #https://hg.mozilla.org/mozilla-central/rev/4705d4f9fcdf
 sed -i -e '/PushManager/d' mobile/android/base/java/org/mozilla/gecko/mma/MmaDelegate.java
-#BUG #1428110
-sed -i -e 's/android_sdk_root\/emulator/android_tools/g' build/autoconf/android.m4
