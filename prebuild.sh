@@ -84,6 +84,7 @@ patch -p1 <$REPO/Gradle.patch
 # the google play dependencies are not pulled without MOZ_ANDROID_GCM, but the scanner detects them and fails
 sed -i -e '/gms/d' mobile/android/app/build.gradle
 sed -i -e '/GOOGLE/d' mobile/android/thirdparty/build.gradle
+sed -i -e 's/mozconfig.substs.MOZILLA_OFFICIAL/true/g' mobile/android/app/build.gradle
 
 ##Disable Gecko Media Pluggins support 
 sed -i -e '/gmp-provider/d' mobile/android/app/mobile.js
