@@ -8,58 +8,39 @@ rm -R toolkit/crashreporter/google-breakpad/src/tools/
 rm -R toolkit/crashreporter/google-breakpad/src/third_party/linux/
 
 #Remove test files that make the fdroid scanner fail
-rm -R accessible/tests/
 rm -R browser/branding/*/dsstore
 rm -R browser/components/migration/tests/unit/
 rm -R build/pymake/tests/
 rm -R build/win32/vswhere.exe
-rm -R chrome/test/
 rm -R config/tests/test.manifest.jar
-rm -R devtools/client/debugger/test/
-rm -R devtools/client/webide/test/
 rm -R docshell/test/
-rm -R dom/base/crashtests/
 rm -R dom/base/test/
 rm -R dom/canvas/test/
 rm -R dom/html/test/
-rm -R dom/indexedDB/test/
 rm -R dom/security/test/
 rm -R dom/tests/
 rm -R dom/xhr/tests/
 rm -R dom/webauthn/u2f-hid-rs/fuzz/corpus/
-rm -R layout/base/crashtests/
-rm -R layout/generic/crashtests/
-rm -R layout/generic/test/
 rm -R layout/reftests/
 rm -R media/webrtc/trunk/webrtc/test/
 rm -R mobile/android/tests/
 rm -R modules/libmar/tests/
 rm -R modules/libjar/test/
-rm -R modules/libjar/zipwriter/test/
-rm -R mozglue/linker/tests/
 rm -R netwerk/test/unit/data/signed_win.exe
-rm -R security/manager/ssl/tests/*test/
 rm -R security/nss/cmd/bltest/tests/
 rm -R security/nss/cmd/samples/
 rm -R security/nss/tests/
-rm -R services/sync/tests/
 rm -R servo/components/net/tests/parsable_mime/
 rm -R other-licenses/nsis/nsisui.exe
-rm -R testing/crashtest/
-rm -R testing/mozbase/mozinstall/tests/
-rm -R testing/mozbase/mozprofile/tests/
 rm -R testing/talos/talos/
 rm -R testing/web-platform/
 rm -R tools/update-packaging/test/
 rm -R toolkit/components/mediasniffer/test/unit/
 rm -R toolkit/components/reputationservice/test/unit/data/signed_win.exe
 rm -R toolkit/components/search/tests/
-rm -R toolkit/components/telemetry/tests/unit/
 rm -R toolkit/components/telemetry/tests/search/
-rm -R toolkit/modules/tests/
 rm -R toolkit/mozapps/extensions/test/
 rm -R toolkit/mozapps/update/tests/
-rm -R widget/crashtests/
 rm -R xpcom/tests/
 
 #Copy config
@@ -96,19 +77,15 @@ sed -i -e '/tests/d' toolkit/mozapps/update/moz.build
 sed -i -e '/dom\//d' dom/media/test/mochitest.ini
 sed -i -e '/dom\//d' dom/workers/test/browser.ini
 sed -i -e '/dom\//d' dom/workers/test/mochitest.ini
-sed -i -e '/dom\//d' dom/workers/test/serviceworkers/mochitest.ini
 
-sed -i -e 's/android:debuggable="true"//g' mobile/android/base/AndroidManifest.xml.in
 echo "mk_add_options 'export MOZ_CHROME_MULTILOCALE=$(tr '\n' ' ' <  $REPO/used-locales)'" >> .mozconfig
 echo "mk_add_options 'export L10NBASEDIR=$REPO'" >> .mozconfig
 echo "ac_add_options --with-l10n-base=$REPO" >> .mozconfig
 
-sed -i -e '/(.MOZ_ANDROID_GCM/,+4d' -e '/MOZ_ANDROID_GCM.,/d' -e '/android_gcm,/d' -e 's/if not android_gcm/if true/g' mobile/android/moz.configure
 sed -i -e "s/HEALTHREPORT\', True/HEALTHREPORT\', False/g" mobile/android/moz.configure
 
 #Remove rust libs
-rm -R third_party/rust/ktmw32-sys/*/*.a
-rm -R third_party/rust/lazy_static-0.1.16
+rm -R third_party/rust/winapi-*-pc-windows-gnu/lib/*.a
 
 ##Option 1: Completely remove FHR
 rm mobile/android/base/java/org/mozilla/gecko/health/*
@@ -126,11 +103,6 @@ sed -i -e 's/AppConstants.MOZILLA_OFFICIAL/false/g' mobile/android/base/java/org
 #rm -R mobile/android/services/src/main/java/org/mozilla/gecko/background/common/telemetry/
 #patch -p1 <$REPO/Remove_Telemetry.patch
 
-##HOTFIX## (BUG #1324331)
-patch -p1 <$REPO/Bindings.patch
-patch -p1 <$REPO/Missing_Excludes.patch
-patch -p1 <$REPO/Fix_Mediarouter_Dependency.patch
-
 ##Fix Gradle for fdroid
 echo "ac_add_options --with-gradle=$(which gradle)" >> .mozconfig
 sed -i -e '/{app.variant.name}AndroidTest/d' mobile/android/gradle.configure
@@ -139,8 +111,6 @@ patch -p1 <$REPO/Gradle.patch
 # the google play dependencies are not pulled without MOZ_ANDROID_GCM, but the scanner detects them and fails
 sed -i -e '/gms/d' mobile/android/app/build.gradle
 sed -i -e '/GOOGLE/d' mobile/android/thirdparty/build.gradle
-# add android:debuggable false
-sed -i -e 's/!defined(MOZILLA_OFFICIAL)/0/g' mobile/android/base/AndroidManifest.xml.in
 
 ##Disable Gecko Media Pluggins support 
 sed -i -e '/gmp-provider/d' mobile/android/app/mobile.js
@@ -155,6 +125,3 @@ echo 'pref("media.gmp-gmpopenh264.enabled", false);' >> mobile/android/app/mobil
 ##Disable Casting (Roku, chromecast)
 sed -i -e '/casting.enabled/d' mobile/android/app/mobile.js
 echo 'pref("browser.casting.enabled", false);' >> mobile/android/app/mobile.js
-
-#https://hg.mozilla.org/mozilla-central/rev/4705d4f9fcdf
-sed -i -e '/PushManager/d' mobile/android/base/java/org/mozilla/gecko/mma/MmaDelegate.java

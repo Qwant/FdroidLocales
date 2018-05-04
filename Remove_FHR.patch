@@ -2,9 +2,9 @@ diff -r 78278c4dc730 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
 --- a/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Wed Aug 02 14:04:05 2017 -0400
 +++ b/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Thu Aug 03 00:00:00 2017 -0000
 @@ -10,9 +10,6 @@
+ import org.mozilla.gecko.GeckoProfileDirectories.NoMozillaDirectoryException;
  import org.mozilla.gecko.annotation.RobocopTarget;
  import org.mozilla.gecko.annotation.WrapForJNI;
- import org.mozilla.gecko.db.BrowserDB;
 -import org.mozilla.gecko.health.HealthRecorder;
 -import org.mozilla.gecko.health.SessionInformation;
 -import org.mozilla.gecko.health.StubbedHealthRecorder;
@@ -214,16 +214,3 @@ diff -r 78278c4dc730 mobile/android/base/java/org/mozilla/gecko/preferences/Geck
          } else if (PREFS_GEO_REPORTING.equals(prefName)) {
              if ((Boolean) newValue) {
                  enableStumbler((CheckBoxPreference) preference);
-diff -r 78278c4dc730 mobile/android/base/moz.build
---- a/mobile/android/base/moz.build	Wed Aug 02 14:04:05 2017 -0400
-+++ b/mobile/android/base/moz.build	Thu Aug 03 00:00:00 2017 -0000
-@@ -646,9 +646,6 @@
-     'GlobalHistory.java',
-     'GlobalPageMetadata.java',
-     'GuestSession.java',
--    'health/HealthRecorder.java',
--    'health/SessionInformation.java',
--    'health/StubbedHealthRecorder.java',
-     'home/BookmarkFolderView.java',
-     'home/BookmarkScreenshotRow.java',
-     'home/BookmarksListAdapter.java',
