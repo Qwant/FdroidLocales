@@ -7,18 +7,30 @@
 <!ENTITY engine.bookmarks.label     "书签">
 <!ENTITY engine.bookmarks.accesskey "m">
 <!ENTITY engine.tabs.label2         "打开的标签页">
+<!ENTITY engine.tabs.title          "已同步的所有设备目前打开什么">
 <!ENTITY engine.tabs.accesskey      "T">
 <!ENTITY engine.history.label       "历史记录">
 <!ENTITY engine.history.accesskey   "r">
 <!ENTITY engine.logins.label        "登录信息">
+<!ENTITY engine.logins.title        "您已保存的用户名和密码">
 <!ENTITY engine.logins.accesskey    "L">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "选项">
+<!ENTITY engine.prefsWin.accesskey  "S">
 <!ENTITY engine.prefs.label         "首选项">
 <!ENTITY engine.prefs.accesskey     "s">
+<!ENTITY engine.prefs.title         "您已更改的常规、隐私和安全设置">
 <!ENTITY engine.addons.label        "附加组件">
+<!ENTITY engine.addons.title        "用于 Firefox 桌面版的扩展和主题">
 <!ENTITY engine.addons.accesskey    "A">
 <!ENTITY engine.addresses.label     "地址">
+<!ENTITY engine.addresses.title     "您已保存的邮政地址（仅限桌面版）">
 <!ENTITY engine.addresses.accesskey "e">
 <!ENTITY engine.creditcards.label   "信用卡">
+<!ENTITY engine.creditcards.title   "姓名、号码、有效期限（仅限桌面版）">
 <!ENTITY engine.creditcards.accesskey "C">
 
 <!-- Device Settings -->
@@ -50,29 +62,32 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedInLoginFailure.beforename.label "请登录以重新连接">
 <!ENTITY signedInLoginFailure.aftername.label "">
 
-<!ENTITY notSignedIn.label           "您尚未登录。">
-<!ENTITY signIn.label                "登录">
-<!ENTITY signIn.accesskey            "g">
-<!ENTITY profilePicture.tooltip      "更改头像">
-<!ENTITY verifiedManage.label        "管理账户">
-<!ENTITY verifiedManage.accesskey    "o">
-<!ENTITY disconnect3.label           "断开连接…">
-<!ENTITY disconnect3.accesskey       "D">
-<!ENTITY verify.label                "验证邮箱">
-<!ENTITY verify.accesskey            "V">
-<!ENTITY forget.label                "忘记此邮箱">
-<!ENTITY forget.accesskey            "F">
+<!ENTITY notSignedIn.label            "您尚未登录。">
+<!ENTITY signIn.label                 "登录">
+<!ENTITY signIn.accesskey             "g">
+<!ENTITY profilePicture.tooltip       "更改头像">
+<!ENTITY verifiedManage.label         "管理账户">
+<!ENTITY verifiedManage.accesskey     "o">
+<!ENTITY disconnect3.label            "断开连接…">
+<!ENTITY disconnect3.accesskey        "D">
+<!ENTITY resendVerification.label     "重发验证邮件">
+<!ENTITY resendVerification.accesskey "d">
+<!ENTITY cancelSetup.label            "取消设置">
+<!ENTITY cancelSetup.accesskey        "p">
+
+<!ENTITY removeAccount.label          "移除账号">
+<!ENTITY removeAccount.accesskey      "p">
 
 <!ENTITY signedOut.caption            "让您个性化的网络体验随身相伴">
 <!ENTITY signedOut.description        "在您的各种设备间同步您的书签、历史记录、标签页、密码、附加组件与首选项。">
 <!ENTITY signedOut.accountBox.title   "使用 &syncBrand.fxAccount.label; 登录，开启同步功能">
-<!ENTITY signedOut.accountBox.create  "创建账户">
-<!ENTITY signedOut.accountBox.create.accesskey  "C">
-<!ENTITY signedOut.accountBox.signin  "登录">
-<!ENTITY signedOut.accountBox.signin.accesskey  "I">
+<!ENTITY signedOut.accountBox.create2 "没有账户吗？注册一个吧">
+<!ENTITY signedOut.accountBox.create2.accesskey "C">
+<!ENTITY signedOut.accountBox.signin2 "登录…">
+<!ENTITY signedOut.accountBox.signin2.accesskey "I">
 
 <!ENTITY signedIn.settings.label       "同步设置">
-<!ENTITY signedIn.settings.description "选择在您的设备上使用 &brandShortName; 时同步哪些内容。">
+<!ENTITY signedIn.settings.description "选择 &brandShortName; 要在您的设备间同步哪些数据。">
 
 <!-- LOCALIZATION NOTE (mobilePromo3.*): the following strings will be used to
      create a single sentence with active links.
@@ -89,3 +104,6 @@ both, to better adapt this sentence to their language.
 <!ENTITY mobilePromo3.iOSLink          "iOS">
 
 <!ENTITY mobilePromo3.end              " 上安装 Firefox，让您的个性体验随身相伴。">
+
+<!ENTITY mobilepromo.singledevice      "连接其他设备">
+<!ENTITY mobilepromo.multidevice       "管理设备">

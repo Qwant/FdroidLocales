@@ -6,7 +6,7 @@
 %brandDTD;
 
 <!ENTITY loadError.label "Проблем при зареждане на страница">
-<!ENTITY retry.label "Нов опит">
+<!ENTITY retry.label "Повторен опит">
 <!ENTITY returnToPreviousPage.label "Връщане назад">
 <!ENTITY advanced.label "Подробности">
 
@@ -18,12 +18,16 @@
 <!ENTITY deniedPortAccess.title "Този адрес е ограничен">
 <!ENTITY deniedPortAccess.longDesc "">
 
-<!ENTITY dnsNotFound.title "Сървърът не е намерен">
-<!ENTITY dnsNotFound.longDesc "<ul>
-  <li>Проверете адреса за правописни грешки, като например <strong>ww</strong>.example.com вместо <strong>www</strong>.example.com</li>
-  <li>Ако не може да отворите друга страница, проверете връзката си с Интернет.</li>
-  <li>Ако компютърът или мрежата ви са зад защитна стена или прокси проверете дали &brandShortName; има право на достъп до Интернет.</li>
-</ul>">
+<!ENTITY dnsNotFound.pageTitle "Сървърът не е намерен">
+<!-- Localization note (dnsNotFound.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
+<!ENTITY dnsNotFound.title1 "Хмм. Страницата не е намерена">
+<!ENTITY dnsNotFound.longDesc1 "<strong>Ако адресът е правилен има други три неща, които да направите</strong>
+<ul>
+  <li>опитайте по-късно</li>
+  <li>проверете вашата връзка с интернет</li>
+  <li>ако сте свързани, но зад защитна стена проверете дали &brandShortName; има право на достъп до интернет</li>
+</ul>
+">
 
 <!ENTITY fileNotFound.title "Файлът не е намерен">
 <!ENTITY fileNotFound.longDesc "<ul>
@@ -44,17 +48,24 @@
 
 <!ENTITY openPortalLoginPage.label2 "Страница за вписване в мрежа">
 
-<!ENTITY malformedURI.title "Адресът е невалиден">
-<!ENTITY malformedURI.longDesc "<ul><li>Адресите обикновено изглеждат така <strong>http://www.example.com/</strong></li><li>Уверете се, че използвате наклонени черти(т.е. <strong>/</strong>).</li></ul>">
+<!ENTITY malformedURI.pageTitle "Неправилен адрес">
+<!-- Localization note (malformedURI.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
+<!ENTITY malformedURI.title1 "Хм. Адресът не изглежда правилен">
 
 <!ENTITY netInterrupt.title "Връзката беше прекъсната">
 <!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
 
 <!ENTITY notCached.title "Документът е с изтекъл срок на валидност">
-<!ENTITY notCached.longDesc "<p>Търсеният документ не е наличен в кеша на &brandShortName;.</p><ul><li>Като предпазна мярка &brandShortName; не прави повторна заявка на документи с поверително съдържание.</li><li>Натиснете Нов опит за нова заявка на документа от сайта.</li></ul>">
+<!ENTITY notCached.longDesc "<p>Търсеният документ не е наличен в буфера на &brandShortName;.</p>
+<ul>
+  <li>Като предпазна мярка &brandShortName; не прави повторна заявка на документи с поверително съдържание.</li>
+  <li>Натиснете „Повторен опит“ за нова заявка на документа от страницата.</li>
+</ul>">
 
 <!ENTITY netOffline.title "Работа извън мрежата">
-<!ENTITY netOffline.longDesc2 "<ul> <li>Натиснете „Нов опит“, за да превключите към режим с връзка и да презаредите страницата.</li> </ul>">
+<!ENTITY netOffline.longDesc2 "<ul>
+  <li>Натиснете „Повторен опит“, за да превключите към режим с връзка и да презаредите страницата.</li>
+</ul>">
 
 <!ENTITY contentEncodingError.title "Грешка в кодировката на съдържанието">
 <!ENTITY contentEncodingError.longDesc "<ul> <li>Моля, свържете се със собствениците на сайта, за да ги информирате за проблема.</li> </ul>">
@@ -71,14 +82,18 @@
 <!ENTITY unknownProtocolFound.title "Адресът не е разпознат">
 <!ENTITY unknownProtocolFound.longDesc "<ul> <li>Вероятно ще трябва да инсталирате друг софтуер, за да отворите този адрес.</li> </ul>">
 
-<!ENTITY proxyConnectFailure.title "Прокси сървърът отказва връзката">
+<!ENTITY proxyConnectFailure.title "Мрежовият посредник отказва връзката">
 <!ENTITY proxyConnectFailure.longDesc "<ul>
-  <li>Уверете се, че настройките на прокси сървъра са правилни.</li>
-  <li>Свържете се с мрежовия администратор и проверете дали прокси сървърът работи.</li>
+  <li>Уверете се, че настройките на мрежовия посредник са правилни.</li>
+  <li>Свържете се с мрежовия администратор и проверете дали мрежовият посредник работи.</li>
 </ul>">
 
-<!ENTITY proxyResolveFailure.title "Прокси сървърът не може да бъде открит">
-<!ENTITY proxyResolveFailure.longDesc "<ul><li>Уверете се, че настройките на прокси сървъра са правилни.</li><li>Проверете дали връзката на компютъра с мрежата е наред.</li><li>Ако компютърът или мрежата ви са зад защитна стена или прокси проверете дали &brandShortName; има право на достъп до Интернет.</li></ul>">
+<!ENTITY proxyResolveFailure.title "Мрежовия посредник не може да бъде открит">
+<!ENTITY proxyResolveFailure.longDesc "<ul>
+  <li>Уверете се, че настройките на мрежовия посредник са правилни.</li>
+  <li>Проверете дали връзката на компютъра с мрежата е наред.</li>
+  <li>Ако компютърът или мрежата ви са зад защитна стена или мрежов посредник проверете дали &brandShortName; има право на достъп до Интернет.</li>
+</ul>">
 
 <!ENTITY redirectLoop.title "Страницата не пренасочва правилно">
 <!ENTITY redirectLoop.longDesc "<ul><li>Такъв проблем може да е причинен от изключване или забраняване на бисквитките.</li></ul>">
@@ -93,12 +108,12 @@
 <!-- Localization note (certerror.introPara) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
-<!ENTITY certerror.introPara "Собственикът на <span class='hostname'/> е настроил уеб сайта неправилно. За да ви защити от кражба на информация, &brandShortName; отказа връзката с този сайт.">
+<!ENTITY certerror.introPara "Собственикът на <span class='hostname'/> е настроил страницата неправилно. За да ви защити от кражба на информация, &brandShortName; отказа връзката с тази страница.">
 
 <!ENTITY sharedLongDesc "<ul>
-  <li>Сайтът може да е временно недостъпен или натоварен. Опитайте отново след малко.</li>
-  <li>Ако не може да отворите друга страница, проверете връзката си с Интернет.</li>
-  <li>Ако компютърът или мрежата ви са зад защитна стена или прокси проверете дали &brandShortName; има право на достъп до Интернет.</li>
+  <li>Страницата може да е временно недостъпна или натоварена. Опитайте отново след малко.</li>
+  <li>Ако не може да отворите друга страница, проверете връзката си с интернет.</li>
+  <li>Ако компютърът или мрежата ви са зад защитна стена или мрежов посредник проверете дали &brandShortName; има право на достъп до Интернет.</li>
 </ul>">
 
 <!ENTITY cspBlocked.title "Блокирано от Content Security Policy">
@@ -135,6 +150,8 @@ was trying to connect. -->
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> използва остаряла технология за сигурност, уязвима към атаки. Такива атаки могат лесно да разкрият информация, която мислите, че е защитена. Администраторът на сайта трябва да поправи сървъра преди да може да използвате сайта.</p><p>Код на грешка: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
+
+<!ENTITY blockedByPolicy.title "Забранена страница">
 
 <!ENTITY prefReset.longDesc "Изглежда вашите настройките на сигурността може да са предизвикали това. Искате ли да възстановите оригиналните настройки?">
 <!ENTITY prefReset.label "Възстановяване на оригиналните настройки">

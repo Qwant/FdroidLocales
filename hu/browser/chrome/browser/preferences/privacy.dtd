@@ -3,32 +3,24 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY  trackingProtectionHeader2.label      "Követés elleni védelem">
-<!ENTITY  trackingProtection2.description      "A követés a webhelyek közti böngészésének adatgyűjtése. A követés profilépítésre, és a böngészési valamint személyes információi alapján megjelenített tartalomhoz használható.">
-<!ENTITY  trackingProtection2.radioGroupLabel  "Használja a követésvédelmet az ismert követők blokkolására">
+<!ENTITY  trackingProtection3.description      "A követés elleni védelem blokkolja az online nyomkövetőket, melyek a webhelyek közti böngészési adatait gyűjtik.">
+<!ENTITY  trackingProtection3.radioGroupLabel  "Követés elleni védelem használata az ismert követők blokkolására">
 <!ENTITY  trackingProtectionAlways.label       "Mindig">
 <!ENTITY  trackingProtectionAlways.accesskey   "d">
 <!ENTITY  trackingProtectionPrivate.label      "Csak privát ablakokban">
 <!ENTITY  trackingProtectionPrivate.accesskey  "C">
 <!ENTITY  trackingProtectionNever.label        "Soha">
 <!ENTITY  trackingProtectionNever.accesskey    "o">
-<!ENTITY  trackingProtectionLearnMore.label    "További tudnivalók">
+<!ENTITY  trackingProtectionLearnMore2.label    "Tudjon meg többet a követés elleni védelemről és az adatvédelemről">
 <!ENTITY  trackingProtectionExceptions.label   "Kivételek…">
 <!ENTITY  trackingProtectionExceptions.accesskey "K">
 
-<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
-<!ENTITY trackingProtectionPBM5.label         "Követés elleni védelem használata privát ablakokban">
-<!ENTITY trackingProtectionPBM5.accesskey     "p">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
+<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM6.label         "Követésvédelem használata privát böngészésben, az ismert követők blokkolására">
-<!ENTITY trackingProtectionPBM6.accesskey     "p">
+<!ENTITY trackingProtectionPBM6.accesskey     "v">
 <!ENTITY trackingProtectionPBMLearnMore.label "További tudnivalók">
 <!ENTITY changeBlockList2.label               "Blokkolási lista módosítása…">
 <!ENTITY changeBlockList2.accesskey           "m">
-
-<!ENTITY  doNotTrack.description        "„Do Not Track” jelzés küldése a webhelyeknek, jelezve, hogy nem szeretné, hogy kövessék">
-<!ENTITY  doNotTrack.learnMore.label    "További tudnivalók">
-<!ENTITY  doNotTrack.default.label      "Csak, ha követésvédelmet használ">
-<!ENTITY  doNotTrack.always.label       "Mindig">
 
 <!ENTITY  history.label                 "Előzmények">
 <!ENTITY  permissions.label             "Engedélyek">
@@ -47,16 +39,25 @@
 <!ENTITY  suggestionSettings2.label     "Keresőszolgáltatás-javaslatok beállításainak módosítása">
 
 <!ENTITY  acceptCookies2.label          "Sütik elfogadása webhelyekről">
-<!ENTITY  acceptCookies2.accesskey      "e">
+<!ENTITY  acceptCookies2.accesskey      "w">
 
-<!ENTITY  acceptThirdParty.pre.label      "Harmadik féltől származó sütik elfogadása:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "H">
+<!ENTITY  acceptThirdParty2.pre.label     "Harmadik féltől származó sütik elfogadása">
+<!ENTITY  acceptThirdParty2.pre.accesskey "H">
+
+<!ENTITY  acceptCookies4.label          "Sütik és oldaladatok elfogadása a webhelyektől (ajánlott)">
+<!ENTITY  acceptCookies4.accesskey      "e">
+
+<!ENTITY  blockCookies.label            "Sütik és oldaladatok blokkolása (a weboldalak hibáját okozhatja)">
+<!ENTITY  blockCookies.accesskey        "b">
+
+<!ENTITY  acceptThirdParty3.pre.label     "Harmadik féltől származó sütik és oldaladatok elfogadása">
+<!ENTITY  acceptThirdParty3.pre.accesskey "f">
 <!ENTITY  acceptThirdParty.always.label   "Mindig">
 <!ENTITY  acceptThirdParty.never.label    "Soha">
 <!ENTITY  acceptThirdParty.visited.label  "Meglátogatottól">
 
-<!ENTITY  keepUntil.label               "Sütik megtartása:">
-<!ENTITY  keepUntil.accesskey           "m">
+<!ENTITY  keepUntil2.label              "Sütik megtartása">
+<!ENTITY  keepUntil2.accesskey          "m">
 
 <!ENTITY  expire.label                  "amíg le nem járnak">
 <!ENTITY  close.label                   "a &brandShortName; bezárásáig">
@@ -85,6 +86,8 @@
 <!ENTITY  rememberActions.removeCookies.label "eltávolítani az egyes sütiket">
 <!ENTITY  rememberActions.post.label          ".">
 
+<!ENTITY  rememberDescription1.label      "A &brandShortName; emlékezni fog a böngészési, letöltési, űrlap és keresési előzményekre.">
+
 <!ENTITY  dontrememberDescription.label  "A &brandShortName; ugyanazokat a beállításokat fogja használni, mint a privát böngészés, és nem fogja megjegyezni az internethasználat előzményeit.">
 
 <!-- LOCALIZATION NOTE (dontrememberActions.pre.label): include a trailing space as needed -->
@@ -92,6 +95,9 @@
 <!ENTITY  dontrememberActions.pre.label          "Lehetősége van ">
 <!ENTITY  dontrememberActions.clearHistory.label "minden előzmény törlésére">
 <!ENTITY  dontrememberActions.post.label         ".">
+
+<!ENTITY  clearHistoryButton.label       "Előzmények törlése…">
+<!ENTITY  clearHistoryButton.accesskey   "l">
 
 <!ENTITY  privateBrowsingPermanent2.label "Mindig a privát böngészési módot használja">
 <!ENTITY  privateBrowsingPermanent2.accesskey "p">
@@ -113,3 +119,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "n">
 <!ENTITY  browserContainersSettings.label        "Beállítások…">
 <!ENTITY  browserContainersSettings.accesskey    "B">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Az akadálymentesítési szolgáltatások ne férjenek hozzá a böngészőhöz">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "a">
+<!ENTITY  a11yPrivacy.learnmore.label    "További tudnivalók">
+<!ENTITY enableSafeBrowsingLearnMore.label "További tudnivalók">

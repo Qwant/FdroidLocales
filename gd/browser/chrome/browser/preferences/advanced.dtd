@@ -1,8 +1,8 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<!-- Note: each tab panel must contain unique accesskeys -->
 
+<!-- Note: each tab panel must contain unique accesskeys -->
 
 <!ENTITY generalTab.label                "Coitcheann">
 
@@ -23,14 +23,14 @@
 <!ENTITY checkUserSpelling.accesskey     "t">
 
 <!ENTITY dataChoicesTab.label            "Roghainnean dàta">
+
 <!-- LOCALIZATION NOTE (healthReportingDisabled.label): This message is displayed above
 disabled data sharing options in developer builds or builds with no Telemetry support
 available. -->
-
 <!ENTITY healthReportingDisabled.label   "Tha aithriseadh dàta à comas airson rèiteachadh a’ bhuild seo">
 
-<!ENTITY enableHealthReport1.label       "Leig le &brandShortName; dàta teicnigeach is dàta mu eadar-ghabhail a chur gu Mozilla gu fèin-obrachail">
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.label       "Leig le &brandShortName; dàta teicnigeach is dàta mu eadar-ghabhail a chur gu Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "Barrachd fiosrachaidh">
 
 <!ENTITY dataCollection.label            "Cruinneachadh is cleachdadh dàta le &brandShortName;">
@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Leig le &brandShortName; aithisgean mu thuislidhean a chur gu Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "c">
+
+<!ENTITY collectBrowserErrors.label          "Leig le &brandShortName; aithisgean air mearachdan brabhsair (a’ gabhail a-staigh teachdaireachdan mhearachdan) a chur a-null gu Mozilla">
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "Barrachd fiosrachaidh">
+
+<!ENTITY sendBackloggedCrashReports.label  "Leig le &brandShortName; aithisgean tuislidh a chàirn roimhe as do leth">
+<!ENTITY sendBackloggedCrashReports.accesskey "c">
 <!ENTITY crashReporterLearnMore.label    "Barrachd fiosrachaidh">
 
 <!ENTITY networkTab.label                "Lìonra">
@@ -51,38 +58,39 @@ available. -->
 
 <!ENTITY httpCache.label                 "Susbaint-lìn san tasglann">
 
-<!ENTITY offlineStorage2.label           "Susbaint-lìn is dàta cleachdaiche far loidhne">
 <!--  Site Data section manages sites using Storage API and is under Network -->
-
 <!ENTITY siteData.label                  "Dàta na làraich">
 <!ENTITY clearSiteData.label             "Falamhaich an dàta air fad">
 <!ENTITY clearSiteData.accesskey         "l">
 <!ENTITY siteDataSettings.label          "Roghainnean…">
 <!ENTITY siteDataSettings.accesskey      "i">
+<!ENTITY siteData1.label                 "Briosgaidean is dàta làraichean">
+<!ENTITY clearSiteData1.label            "Falamhaich an dàta...">
+<!ENTITY clearSiteData1.accesskey        "l">
+<!ENTITY siteDataSettings1.label         "Stiùirich an dàta...">
+<!ENTITY siteDataSettings1.accesskey     "M">
 <!ENTITY siteDataLearnMoreLink.label     "Barrachd fiosrachaidh">
+
 <!-- LOCALIZATION NOTE:
   The entities limitCacheSizeBefore.label and limitCacheSizeAfter.label appear on a single
   line in preferences as follows:
 
   &limitCacheSizeBefore.label [textbox for cache size in MB] &limitCacheSizeAfter.label;
 -->
-
 <!ENTITY limitCacheSizeBefore.label      "Cuingich an tasgadan gu">
 <!ENTITY limitCacheSizeBefore.accesskey  "C">
 <!ENTITY limitCacheSizeAfter.label       "MB a dh'àite">
 <!ENTITY clearCacheNow.label             "Falamhaich an-dràsta">
 <!ENTITY clearCacheNow.accesskey         "F">
-<!ENTITY clearOfflineAppCacheNow.label   "Falamhaich an-dràsta">
-<!ENTITY clearOfflineAppCacheNow.accesskey "c">
 <!ENTITY overrideSmartCacheSize.label    "Leig seachad stiùireadh fèin-obrachail an tasgadain">
 <!ENTITY overrideSmartCacheSize.accesskey "o">
 
 <!ENTITY updateTab.label                 "Ùraich">
+
 <!-- LOCALIZATION NOTE (updateApplication.label):
   Strings from aboutDialog.dtd are displayed in this section of the preferences.
   Please check for possible accesskey conflicts.
 -->
-
 <!ENTITY updateApplication.label         "Ùrachaidhean &brandShortName;">
 <!-- LOCALIZATION NOTE (updateApplication.version.*): updateApplication.version.pre
 # is followed by a version number, keep the trailing space or replace it with a
@@ -90,7 +98,8 @@ available. -->
 # after the version number, and is empty on purpose for English. You can use it
 # if required by your language.
  -->
-<!ENTITY updateApplicationDescription.label "Cum &brandShortName; ùraichte airson dèanadas, seasmhachd is tèarainteachd as fhearr.">
+<!ENTITY updateApplicationDescription.label
+                                         "Cum &brandShortName; ùraichte airson dèanadas, seasmhachd is tèarainteachd as fhearr.">
 <!ENTITY updateApplication.version.pre   "Tionndadh ">
 <!ENTITY updateApplication.version.post  "">
 <!ENTITY updateApplication.description   "Thoir cead dha &brandShortName;">
@@ -110,17 +119,6 @@ available. -->
 <!ENTITY enableSearchUpdate2.label       "na h-einnseanan-luirg ùrachadh gu fèin-obrachail">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
 
-<!ENTITY offlineStorageNotify.label               "Innis ma bhios làrach-lìn ag iarraidh dàta a stòradh a chum cleachdaidh far loidhne">
-<!ENTITY offlineStorageNotify.accesskey           "t">
-<!ENTITY offlineStorageNotifyExceptions.label     "Eisgeachdan…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "E">
-
-<!ENTITY offlineAppsList2.label          "Tha cead aig na làraichean-lìn a leanas dàta a stòradh a chum cleachdaidh far loidhne:">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Thoir air falbh…">
-<!ENTITY offlineAppsListRemove.accesskey "r">
-<!ENTITY offlineAppRemove.confirm        "Thoir air falbh an dàta far loidhne">
-
 <!ENTITY certificateTab.label            "Teisteanasan">
 <!ENTITY certPersonal2.description       "Nuair a dh’iarras frithealaiche an teisteanas pearsanta agad">
 <!ENTITY selectCerts.auto                "Taghar fear leis fhèin">
@@ -135,14 +133,21 @@ available. -->
 <!ENTITY viewSecurityDevices2.accesskey  "n">
 
 <!ENTITY performance.label               "Dèanadas">
-<!ENTITY useRecommendedPerformanceSettings2.label "Cleachd na roghainnean dèanadais a mholamaid-ne">
-<!ENTITY useRecommendedPerformanceSettings2.description "Chaidh na roghainnean seo a thaghadh airson ’s gum freagair iad air bathar-cruaidh agus siostam-obrachaidh a’ choimpiutair agad.">
-<!ENTITY useRecommendedPerformanceSettings2.accesskey "o">
-<!ENTITY performanceSettingsLearnMore.label "Barrachd fiosrachaidh">
+<!ENTITY useRecommendedPerformanceSettings2.label
+                                         "Cleachd na roghainnean dèanadais a mholamaid-ne">
+<!ENTITY useRecommendedPerformanceSettings2.description
+                                         "Chaidh na roghainnean seo a thaghadh airson ’s gum freagair iad air bathar-cruaidh agus siostam-obrachaidh a’ choimpiutair agad.">
+<!ENTITY useRecommendedPerformanceSettings2.accesskey
+                                         "o">
+<!ENTITY performanceSettingsLearnMore.label
+                                         "Barrachd fiosrachaidh">
 <!ENTITY limitContentProcessOption.label "Crìoch pròiseasadh na susbaint">
-<!ENTITY limitContentProcessOption.description "Ma cheadaicheas tu pròiseasan susbaint a bharrachd, dh﻿﻿’fhaoidte gum faigh thu dèanadas nas fhearr ach feumaidh e barrachd cuimhne aig an aon àm.">
+<!ENTITY limitContentProcessOption.description
+                                         "Ma cheadaicheas tu pròiseasan susbaint a bharrachd, dh﻿﻿’fhaoidte gum faigh thu dèanadas nas fhearr ach feumaidh e barrachd cuimhne aig an aon àm.">
 <!ENTITY limitContentProcessOption.accesskey   "n">
-<!ENTITY limitContentProcessOption.disabledDescription "Chan urrainn dhut àireamh nam pròiseasan susbaint atharrachadh ach ann am &brandShortName; ioma-phròiseasach.">
-<!ENTITY limitContentProcessOption.disabledDescriptionLink "Mar a dh’fhiosraicheas tu a bheil ioma-phròiseasadh an comas">
+<!ENTITY limitContentProcessOption.disabledDescription
+                                         "Chan urrainn dhut àireamh nam pròiseasan susbaint atharrachadh ach ann am &brandShortName; ioma-phròiseasach.">
+<!ENTITY limitContentProcessOption.disabledDescriptionLink
+                                         "Mar a dh’fhiosraicheas tu a bheil ioma-phròiseasadh an comas">
 <!ENTITY allowHWAccel.label              "Cleachd luathachadh a' bhathar-bhog ma bhios e ri làimh">
 <!ENTITY allowHWAccel.accesskey          "m">

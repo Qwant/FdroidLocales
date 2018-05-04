@@ -2,6 +2,18 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY searchBar.label                       "Bilaketa-barra">
+
+<!ENTITY searchBar.hidden.label                "Erabili helbide-barra bilaketarako eta nabigaziorako">
+<!ENTITY searchBar.shown.label                 "Gehitu bilaketa-barra tresna-barran">
+
+<!-- LOCALIZATION NOTE (showSearchSuggestionsAboveHistory.label): This string
+     describes what the user will observe when the system prioritizes search
+     suggestions over browsing history in the results that extend down from the
+     address bar. In the original English string, "ahead" refers to location
+     (appearing most proximate to), not time (appearing before). -->
+<!ENTITY showSearchSuggestionsAboveHistory.label "Helbide-barrako emaitzetan, erakutsi bilaketa-gomendioak nabigatze-historiaren aurretik">
+
 <!ENTITY defaultSearchEngine.label             "Bilaketa-motor lehenetsia">
 
 <!ENTITY chooseYourDefaultSearchEngine2.label   "Aukeratu helbide- eta bilaketa-barran erabili beharreko bilaketa-motor lehenetsia.">

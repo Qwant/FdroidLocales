@@ -3,9 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "Croeso">
-
-<!ENTITY firstrun_urlbar_message "Croeso i &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext "Canfod pethau\&apos;n gynt gydag llwybrau byr awgrymiadau defnyddiol.">
+<!ENTITY firstrun_urlbar_message2 "Diolch am ddewis &brandShortName;">
+<!ENTITY firstrun_urlbar_subtext2 "Porwr symudol modern gan Mozilla, y corff ddim-er-elw sy\&apos;n ymroddedig i we rydd ac agored.">
+<!ENTITY firstrun_panel_title_privacy "Preifatrwydd">
+<!ENTITY firstrun_privacy_message "Pori fel petai neb yn eich gwylio">
+<!ENTITY firstrun_privacy_subtext "Mae Pori Preifat gyda Diogelwch rhag Tracio yn rhwystro tracwyr wrth i chi bori ac ni fydd yn cofio eich hanes pan fyddwch wedi gorffen pori.">
+<!ENTITY firstrun_panel_title_customize "Cyfaddasu">
+<!ENTITY firstrun_customize_message "Gwneud &brandShortName; yn gysurus.">
+<!ENTITY firstrun_customize_subtext "Cyfaddaswch &brandShortName; gydag ychwanegion. Rhwystro hysbysebion, ychwanegu nodweddion neu ddewis thema newydd i adlewyrchu eich personoliaeth.">
 <!ENTITY firstrun_bookmarks_title "Hanes">
 <!ENTITY firstrun_bookmarks_message "Eich ffefrynnau, y hwylus a defnyddiol">
 <!ENTITY firstrun_bookmarks_subtext "Derbyn canlyniadau o\&apos;ch nodau tudalen a hanes wrth i chi chwilio.">
@@ -13,8 +18,8 @@
 <!ENTITY firstrun_data_message "Llai o ddata, mwy o arbedion">
 <!ENTITY firstrun_data_subtext2 "Diffoddwch ddelweddau a gwario llai ar ddata pob gwefan fyddwch yn mynd iddyn nhw.">
 <!ENTITY firstrun_sync_title "Sync">
-<!ENTITY firstrun_sync_message "&brandShortName;, bob tro o\&apos;ch plaid chi">
-<!ENTITY firstrun_sync_subtext "Cydweddu eich tabiau, cyfrineiriau a rhagor ym mhob man fyddwch yn ei ddefnyddio.">
+<!ENTITY firstrun_sync_message2 "Parhau lle roeddech o\&apos;r blaen.">
+<!ENTITY firstrun_sync_subtext2 "Defnyddiwch Sync i ganfod nodau tudalen, cyfrineiriau a phethau eraill rydych wedi eu cadw i &brandShortName; ar eich holl ddyfeisiau.">
 <!ENTITY firstrun_signin_message "Cysylltu a chychwyn arni">
 <!ENTITY firstrun_signin_button "Mewngofnodwch i Sync">
 <!ENTITY  onboard_start_button_browser "Cychwyn Pori">
@@ -87,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "Eitemau &formatD;">
 <!ENTITY bookmark_folder_one_item "1 eitem">
+<!ENTITY bookmark_folder_updated "Diweddarwyd y ffolder">
 <!ENTITY bookmark_parent_folder "Ffolder Rhiant">
 <!ENTITY bookmark_add_folder "Ychwanegu ffolder newydd">
 
@@ -201,8 +207,6 @@
 <!ENTITY pref_category_advanced_summary3 "Adfer tabiau, arbedwr data, offer datblygwyr">
 <!ENTITY pref_category_notifications "Hysbysiadau">
 <!ENTITY pref_category_notifications_summary "Nodweddion newydd, diweddariadau gwefan">
-<!ENTITY pref_content_notifications "Diweddariadau\&apos;r wefan">
-<!ENTITY pref_content_notifications_summary2 "Darganfod cynnwys newydd o wefannau sy\&apos;n cael eu cefnogi">
 <!ENTITY pref_developer_remotedebugging_usb "Dadfygio pell drwy USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Dadfygio pell drwy\&apos;r diwifr">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Mae dadfygio pell drwy\&apos;r diwifr angen i\&apos;ch dyfais gael ap darllenydd QR wedi ei osod.">
@@ -268,7 +272,6 @@
 <!ENTITY pref_show_web_fonts_summary2 "Llwytho ffontiau pell wrth lwytho tudalen">
 
 <!ENTITY pref_tracking_protection_title2 "Diogelwch rhag Tracio">
-<!ENTITY pref_tracking_protection_summary3 "Wedi ei Alluogi yn Pori Preifat">
 <!ENTITY pref_donottrack_title "Dim tracio">
 <!ENTITY pref_donottrack_summary "Bydd &brandShortName; yn dweud wrth wefannau nad ydych am gael eich tracio">
 
@@ -279,6 +282,13 @@
 <!ENTITY pref_whats_new_notification "Beth sy\&apos;n newydd yn &brandShortName;">
 <!ENTITY pref_whats_new_notification_summary "Dysgu am nodweddion newydd ar ôl diweddariad">
 
+<!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification"-->
+<!ENTITY pref_feature_tips_notification "Awgrymiadau cynnyrch a nodweddion">
+<!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification_summary"-->
+<!ENTITY pref_feature_tips_notification_summary "Dysgu rhagor am ddefnyddio &brandShortName; a chynnyrch eraill &vendorShortName;">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "Nodweddion arbrofol">
@@ -286,8 +296,9 @@
 <!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "Tabiau Cyfaddas">
-<!ENTITY pref_custom_tabs_summary3 "Caniatewch i apiau agor gwefannau gan ddefnyddio fersiwn cyfaddasedig o &brandShortName;">
+<!ENTITY pref_custom_tabs2 "Tabiau Cyfaddas">
+<!ENTITY pref_custom_tabs_summary4 "Caniatewch i apiau agor cynnwys gwe mewn tab cyfaddas sy\&apos;n llwytho\&apos;n gyflym.">
+
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "Agor yn &formatS;">
@@ -297,10 +308,6 @@
 
 <!ENTITY pref_pwa "Apiau Gwe Blaengar">
 <!ENTITY pref_pwa_summary "Caniatáu i apiau gwe gael eu hychwanegu i\&apos;r sgrin cartref">
-
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-<!ENTITY pref_activity_stream "Ffrwd Gweithgaredd">
-<!ENTITY pref_activity_stream_summary "Mae ffrwd hanes cyfoethog yn weledol a thudalen cartref newydd yn ei gwneud hi\&apos;n haws nag erioed i ganfod yr hyn rydych yn chwilio amdano yn &brandShortName;.">
 
 <!ENTITY tracking_protection_prompt_title "Nawr gyda Diogelwch Rhag Tracio">
 <!ENTITY tracking_protection_prompt_text "Yn rhwystro elfennau tracio heb i chi orfod poeni.">
@@ -334,23 +341,6 @@
      has been queued but we are missing the system permission to show an overlay. -->
 <!ENTITY tab_queue_notification_settings "Er mwyn \&quot;Agor dolenni niferus\&quot;, galluogwch ganiatâd \&apos;Draw over other apps\&apos; ar gyfer &brandShortName;">
 
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY content_notification_title_plural "&formatD; gwefannau wedi eu diweddaru">
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "Gosodiadau">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "Darllen nawr">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
-<!ENTITY content_notification_updated_on "Ddiweddarwyd ar &formatS;">
-
 <!ENTITY pref_char_encoding "Amgodiad nod">
 <!ENTITY pref_char_encoding_on "Dangos dewislen">
 <!ENTITY pref_char_encoding_off "Peidio dangos dewislen">
@@ -372,7 +362,7 @@
 
 <!ENTITY pref_media_autoplay_enabled "Caniatáu awtochwarae">
 <!ENTITY pref_media_autoplay_enabled_summary "Rheoli os yw gwefannau yn awtochwarae fideos neu gynnwys cyfrwng arall">
-<!ENTITY pref_zoom_force_enabled "Galluogi chwyno bob tro">
+<!ENTITY pref_zoom_force_enabled "Galluogi chwyddo bob tro">
 <!ENTITY pref_zoom_force_enabled_summary "Gorfodi gwrthwneud er mwyn gallu chwyddo unrhyw dudalen">
 <!ENTITY pref_voice_input "Mewnbwn llais">
 <!ENTITY pref_voice_input_summary2 "Caniatáu llefaru yn y bar URL">
@@ -380,6 +370,7 @@
 <!ENTITY pref_qrcode_enabled_summary2 "Caniatáu\&apos;r sganiwr QR yn y bar URL">
 
 <!ENTITY pref_use_master_password "Defnyddio prif gyfrinair">
+<!ENTITY pref_sync_default_title "Cyfrif Firefox">
 <!ENTITY pref_sync2 "Mewngofnodi">
 <!ENTITY pref_sync_summary2 "Cydweddu eich tabiau, nodau tudalen, mewngofnodion, hanes">
 <!ENTITY pref_search_suggestions "Dangos awgrymiadau chwilio">
@@ -409,6 +400,9 @@
 <!ENTITY pref_dialog_set_default "Gosod fel y rhagosodedig">
 <!ENTITY pref_dialog_default "Rhagosodedig">
 <!ENTITY pref_dialog_remove "Tynnu">
+<!ENTITY pref_dialog_activitystream_header_content "Cynnwys ychwanegol">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "Nodau Tudalen Diweddar">
+<!ENTITY pref_dialog_activitystream_visited "Ymwelwyd">
 
 <!ENTITY pref_search_last_toast "Nid oes modd tynnu nac analluogi eich peiriant chwilio olaf.">
 
@@ -435,7 +429,6 @@
      crashReporterDesc.label). -->
 <!ENTITY datareporting_fhr_title "Adroddiad Iechyd &brandShortName;">
 <!ENTITY datareporting_fhr_summary2 "Mae\&apos;n rhannu data gyda &vendorShortName; am iechyd eich porwr ac yn cynorthwyo i ddeall perfformiad eich porwr">
-<!ENTITY datareporting_abouthr_title "Gweld fy Adroddiad Iechyd">
 <!ENTITY datareporting_telemetry_title "Telemetreg">
 <!ENTITY datareporting_telemetry_summary "Rhannu gwybodaeth am berfformiad, defnydd, caledwedd a chyfaddasu am eich porwr gyda &vendorShortName; i\&apos;n cynorthwyo i wneud &brandShortName; yn well">
 <!ENTITY datareporting_crashreporter_summary "Mae &brandShortName; yn cyflwyno adroddiadau chwalu i gynorthwyo &vendorShortName; wneud eich porwr yn fwy sefydlog a diogel">
@@ -467,6 +460,7 @@
 <!ENTITY share_image_failed "Methu rhannu\&apos;r ddelwedd">
 <!ENTITY save_as_pdf "Cadw fel PDF">
 <!ENTITY print "Argraffu">
+<!ENTITY view_page_source "Gweld Ffynhonnell y Dudalen">
 <!ENTITY find_in_page "Canfod ar y Dudalen">
 <!ENTITY desktop_mode "Gofyn am wefan bwrdd gwaith">
 <!ENTITY page "Tudalen">
@@ -498,7 +492,7 @@
 <!ENTITY contextmenu_open_new_tab "Agor mewn Tab Newydd">
 <!ENTITY contextmenu_open_private_tab "Agor mewn Tab Preifat">
 <!ENTITY contextmenu_remove "Tynnu">
-<!ENTITY contextmenu_add_to_launcher "Ychwanegu i’r Sgrin Cartref">
+<!ENTITY contextmenu_add_page_shortcut "Ychwanegu Llwybr Byr Tudalen">
 <!ENTITY contextmenu_set_as_homepage "Gosod fel y Dudalen Cartref">
 <!ENTITY contextmenu_share "Rhannu">
 <!ENTITY contextmenu_pasteandgo "Gludo a Mynd">
@@ -510,7 +504,17 @@
 <!ENTITY contextmenu_top_sites_edit "Golygu">
 <!ENTITY contextmenu_top_sites_pin "Pinio Gwefan">
 <!ENTITY contextmenu_top_sites_unpin "Dad-binio Gwefan">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "Pinio i\&apos;r Hoff Wefannau">
+<!ENTITY contextmenu_unpin_from_top_sites "Dad-binio o\&apos;r Hoff Wefannau">
 <!ENTITY contextmenu_add_search_engine "Ychwanegu Peiriant Chwilio">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "Tudalennau Hoff Wefannau wedi eu pinio">
+<!ENTITY unpinned_page_from_top_sites "Tudalen Hoff Wefannau heb eu pinio">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -542,6 +546,7 @@
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Wedi tynnu\&apos;r dudalen">
+<!ENTITY folder_removed "Tynnwyd y ffolder">
 
 <!ENTITY bookmark_edit_title "Golygu Nod Tudalen">
 <!ENTITY bookmark_edit_folder_title "Golygu Ffolder">
@@ -811,6 +816,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      replaced by the Android OS version (e.g., 14)-->
 <!ENTITY unsupported_sdk_version "Ymddiheuriadau! Fydd &brandShortName; ddim yn gweithio ar y ddyfais hon (&formatS1;, &formatS2;). Llwythwch y fersiwn cywir i lawr.">
 
+<!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
+<!ENTITY corrupt_apk "Methu agor &brandShortName;. Ail osodwch a cheisiwch eto.">
+
 <!ENTITY eol_notification_title2 "Ni fydd &brandShortName; bellach yn diweddaru">
 <!ENTITY eol_notification_summary "Tapiwch i ddysgu rhagor">
 
@@ -819,7 +827,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY whatsnew_notification_title "Mae &brandShortName; yn gyfredol">
 <!ENTITY whatsnew_notification_summary "Beth sy\&apos;n newydd yn y fersiwn yma">
 
-<!ENTITY promotion_add_to_homescreen "Ychwanegu i’r sgrin cartref">
+<!ENTITY promotion_add_page_shortcut "Ychwanegu llwybr byr tudalen">
 
 <!ENTITY helper_first_offline_bookmark_title "Darllen all-lein">
 <!ENTITY helper_first_offline_bookmark_message "Canfod eich eitemau Golwg Darllen yn Nodau Tudalen, hyd yn oed all-lein.">
@@ -830,7 +838,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_button "Ychwanegu at y Nodau Tudalen">
 
 <!ENTITY activity_stream_topsites "Hoff Wefannau">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "Argymhellwyd gan &brandPocket;">
 <!ENTITY activity_stream_highlights "Uchafbwyntiau">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "RHAGOR">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
@@ -838,13 +851,30 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "Ymwelwyd">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "Trendio">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "Cychwynnwch bori ac fe ddangoswn rhai erthyglau, fideos a thudalennau eraill difyr rydych wedi ymweld â nhw\&apos;n ddiweddar neu wedi gosod nod tudalen arnyn nhw yma.">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "Diffodd">
+<!ENTITY activity_stream_remove "Tynnu">
 <!ENTITY activity_stream_delete_history "Dileu o\&apos;r Hanes">
 
-<!ENTITY activity_stream_welcome_title "Croeso i\&apos;ch Uchafbwyntiau">
-<!ENTITY activity_stream_welcome_content1 "Mae &brandShortName; nawr yn creu uchafbwyntiau o bethau ydych wedi eu darganfod ar y we fel bod modd canfod eich ffordd yn ôl at erthyglau, nodau tudalen a thudalennau eraill, da.">
-<!ENTITY fullscreen_warning "Wedi mynd i\&apos;r sgrin llawn">
+<!ENTITY private_tab_panel_title "Pori Preifat + Diogelwch Rhag Tracio">
+<!ENTITY private_tab_panel_description "Mae &brandShortName; yn rhwystro rhannau o\&apos;r dudalen gall fod yn tracio eich pori.">
+<!ENTITY private_tab_panel_description2 "Byddwn ni ddim yn cofio unrhyw hanes ond bydd unrhyw ffeiliau rydych wedi eu llwytho i lawr a nodau tudalen yn cael eu cadw ar eich dyfais.">
+<!ENTITY private_tab_learn_more "Eisiau dysgu rhagor?">
+
+<!ENTITY fullscreen_warning "Mynd i\&apos;r sgrin lawn">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_confirm): The plus sign here is part of UI design -->
+<!ENTITY pwa_add_to_launcher_confirm "+ Ychwanegu i’r Sgrin Cartref">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_badge2): Used as label in the page actions dropdown list,
+displayed when there are more than 3 actions available for a page.
+See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
+<!ENTITY pwa_add_to_launcher_badge2 "Ychwanegu i’r Sgrin Cartref">
+<!ENTITY pwa_continue_to_website "Parhau i\&apos;r Wefan">
+<!ENTITY pwa_onboarding_sumo "Gallwch ychwanegu\&apos;r wefan hon yn hawdd i\&apos;ch sgrin Cartref er mwyn cael mynediad cyflym a phori\&apos;n gynt gyda phrofiad fel mewn ap.">

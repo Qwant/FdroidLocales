@@ -29,29 +29,34 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Datarapportering er deaktivert for denne byggekonfigurasjonen">
 
-<!ENTITY enableHealthReport1.label       "Tillat &brandShortName; å automatisk sende teknisk- og interaksjonsdata til Mozilla">
-<!ENTITY enableHealthReport1.accesskey   "T">
+<!ENTITY enableHealthReport2.label       "Tillat &brandShortName; å sende teknisk- og interaksjonsdata til Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "Les meir">
 
 <!ENTITY dataCollection.label            "Datainnsamling og bruk for &brandShortName;">
-<!ENTITY dataCollectionDesc.label        "Vi prøver alltid å gje deg val og samlar berre det vi treng for å levere og forbetre &brandShortName; for alle. Vi ber alltid om løyve før vi aksepterer personopplysningar.">
-<!ENTITY dataCollectionPrivacyNotice.label    "Personvernpraksis">
+<!ENTITY dataCollectionDesc.label        "Vi prøver alltid å gje deg val og samlar inn berre det vi treng for å levere og forbetre &brandShortName; for alle. Vi ber alltid om løyve før vi får personopplysningar.">
+<!ENTITY dataCollectionPrivacyNotice.label    "Personvernerklæring">
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Tillat &brandShortName; å sende krasjrapportar til Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "T">
+
+<!ENTITY collectBrowserErrors.label          "Tillat &brandShortName; å sende feilrapportar (inkludert feilmeldingar) til Mozilla">
+<!ENTITY collectBrowserErrors.accesskey      "T">
+<!ENTITY collectBrowserErrorsLearnMore.label "Les meir">
+
+<!ENTITY sendBackloggedCrashReports.label  "Tillat &brandShortName; å sende etterslepne krasjrapportar på dine vegner">
+<!ENTITY sendBackloggedCrashReports.accesskey "s">
 <!ENTITY crashReporterLearnMore.label    "Les meir">
 
 <!ENTITY networkTab.label                "Nettverk">
 
 <!ENTITY networkProxy.label              "Nettverksproxy">
 
-<!ENTITY connectionDesc.label            "Still inn korleis &brandShortName; koplar seg til Internett">
+<!ENTITY connectionDesc.label            "Still inn korleis &brandShortName; koplar seg til internett">
 <!ENTITY connectionSettings.label        "Innstillingar…">
 <!ENTITY connectionSettings.accesskey    "I">
 
-<!ENTITY httpCache.label                 "Snøgglagra nettinnhald">
-
-<!ENTITY offlineStorage2.label           "Fråkopla nettinnhald og brukardata">
+<!ENTITY httpCache.label                 "Snøgglagra nettinnhald (Cache)">
 
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Sidedata">
@@ -59,6 +64,11 @@ available. -->
 <!ENTITY clearSiteData.accesskey         "u">
 <!ENTITY siteDataSettings.label          "Innstillingar…">
 <!ENTITY siteDataSettings.accesskey      "I">
+<!ENTITY siteData1.label                 "Infokapslar og sidedata">
+<!ENTITY clearSiteData1.label            "Tøm data…">
+<!ENTITY clearSiteData1.accesskey        "T">
+<!ENTITY siteDataSettings1.label         "Handter data…">
+<!ENTITY siteDataSettings1.accesskey     "H">
 <!ENTITY siteDataLearnMoreLink.label     "Les meir">
 
 <!-- LOCALIZATION NOTE:
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       " MB diskplass">
 <!ENTITY clearCacheNow.label             "Tøm no">
 <!ENTITY clearCacheNow.accesskey         "T">
-<!ENTITY clearOfflineAppCacheNow.label   "Tøm no">
-<!ENTITY clearOfflineAppCacheNow.accesskey "ø">
 <!ENTITY overrideSmartCacheSize.label    "Overstyr automatisk kontroll av snøgglager">
 <!ENTITY overrideSmartCacheSize.accesskey "O">
 
@@ -111,20 +119,9 @@ available. -->
 <!ENTITY enableSearchUpdate2.label       "Oppdater søkemotorar automatisk">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
 
-<!ENTITY offlineStorageNotify.label               "Fortel meg når ein nettstad ber om å lagre data for fråkopla bruk">
-<!ENTITY offlineStorageNotify.accesskey           "F">
-<!ENTITY offlineStorageNotifyExceptions.label     "Unntak…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "U">
-
-<!ENTITY offlineAppsList2.label          "Følgjande nettstad har løyve til å lagre data for fråkopla bruk:">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Slett…">
-<!ENTITY offlineAppsListRemove.accesskey "S">
-<!ENTITY offlineAppRemove.confirm        "Slett fråkopla-data">
-
 <!ENTITY certificateTab.label            "Sertifikat">
 <!ENTITY certPersonal2.description       "Når ein server ber om det personlege sertifikatet ditt">
-<!ENTITY selectCerts.auto                "Vel eit automastisk">
+<!ENTITY selectCerts.auto                "Vel eit automatisk">
 <!ENTITY selectCerts.auto.accesskey      "s">
 <!ENTITY selectCerts.ask                 "Spør kvar gong">
 <!ENTITY selectCerts.ask.accesskey       "S">
@@ -137,9 +134,9 @@ available. -->
 
 <!ENTITY performance.label               "Yting">
 <!ENTITY useRecommendedPerformanceSettings2.label
-                                         "Bruk tilrådde ytingsinnstillingar">
+                                         "Bruk tilrådde ytings-innstillingar">
 <!ENTITY useRecommendedPerformanceSettings2.description
-                                         "Desse innstillingane er skreddarsydd til datamaskinas maskinvare og operativsystem.">
+                                         "Desse innstillingane er skreddarsydde for maskinvare og operativsystem i datamaskina di.">
 <!ENTITY useRecommendedPerformanceSettings2.accesskey
                                          "B">
 <!ENTITY performanceSettingsLearnMore.label
@@ -147,7 +144,7 @@ available. -->
 <!ENTITY limitContentProcessOption.label "Grense for innhaldsprosessar">
 <!ENTITY limitContentProcessOption.description
                                          "Ytterlegere innhaldsprosessar kan forbetre ytinga når du brukar fleire faner, men vil også bruke meir minne.">
-<!ENTITY limitContentProcessOption.accesskey   "Y">
+<!ENTITY limitContentProcessOption.accesskey   "G">
 <!ENTITY limitContentProcessOption.disabledDescription
                                          "Endring av talet på innhaldsprosessar kan berre gjerast med multiprosess &brandShortName;.">
 <!ENTITY limitContentProcessOption.disabledDescriptionLink

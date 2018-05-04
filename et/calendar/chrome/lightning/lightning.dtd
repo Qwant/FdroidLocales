@@ -37,7 +37,18 @@
 <!ENTITY lightning.menu.eventtask.accesskey            "n">
 
 <!-- properties dialog, calendar creation wizard -->
-<!ENTITY lightning.calendarproperties.email.label               "E-post:">
+<!-- LOCALIZATON NOTE(lightning.calendarproperties.email.label,
+     lightning.calendarproperties.forceEmailScheduling.label)
+     These strings are used in the calendar wizard and the calendar properties dialog, but are only
+     displayed when setting/using a caldav calendar -->
+<!ENTITY lightning.calendarproperties.email.label                           "E-post:">
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.label            "Eelistatakse kliendipoolset e-postiga ajastamist">
+<!-- LOCALIZATON NOTE(lightning.calendarproperties.forceEmailScheduling.tooltiptext1,
+     lightning.calendarproperties.forceEmailScheduling.tooltiptext2)
+     - tooltiptext1 is used in the calendar wizard when setting a new caldav calendar
+     - tooltiptext2 is used in the calendar properties dialog for caldav calendars -->
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext1     "Hetkel saab seda lubada vaid peale kalendri seadistamist selle omaduste dialoogis, kui kalendriserver haldab ajastamist.">
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext2     "Valik on saadaval vaid juhul, kui kalendriserver haldab ajastamist. Lubamisel kasutatakse varuvariandina standardil põhinevat e-postiga ajastamist serveripoolse halduse asemel.">
 
 <!-- iMIP Bar (meeting support) -->
 <!ENTITY lightning.imipbar.btnAccept.label                                  "Osalen">
@@ -71,6 +82,13 @@
 <!ENTITY lightning.imipbar.btnUpdate.label                                  "Värskenda">
 <!ENTITY lightning.imipbar.btnUpdate.tooltiptext                            "Värskenda sündmust kalendris">
 <!ENTITY lightning.imipbar.description                                      "See kiri sisaldab kutset sündmusele.">
+
+<!ENTITY lightning.imipbar.btnSend.label                                    "Saada vastus kohe">
+<!ENTITY lightning.imipbar.btnSend.tooltiptext                              "Saada vastus korraldajale">
+<!ENTITY lightning.imipbar.btnSendSeries.tooltiptext                        "Saada korraldajale vastus korduva sündmuse kohta">
+<!ENTITY lightning.imipbar.btnDontSend.label                                "Ära saada vastust">
+<!ENTITY lightning.imipbar.btnDontSend.tooltiptext                          "Muuda enda osalemist korraldajale vastust saatmata">
+<!ENTITY lightning.imipbar.btnDontSendSeries.tooltiptext                    "Muuda enda osalemist korduval sündmusel korraldajale vastust saatmata">
 
 <!-- Lightning specific keybindings -->
 <!ENTITY lightning.keys.event.showCalendar.key "C">

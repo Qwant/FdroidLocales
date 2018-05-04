@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Az adatjelentést letiltották ehhez a binárishoz">
 
-<!ENTITY enableHealthReport1.label       "A &brandShortName; automatikusan technikai és interakciós adatokat küldhet a Mozillának">
-<!ENTITY enableHealthReport1.accesskey   "u">
+<!ENTITY enableHealthReport2.label       "Engedélyezés, hogy a &brandShortName; műszaki és interakciós adatokat küldjön a Mozillának">
+<!ENTITY enableHealthReport2.accesskey   "E">
 <!ENTITY healthReportLearnMore.label     "További tudnivalók">
 
 <!ENTITY dataCollection.label            "&brandShortName; adatgyűjtés és felhasználás">
@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Engedélyezés, hogy a &brandShortName; hibajelentéseket küldhessen a Mozillának">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "h">
+
+<!ENTITY collectBrowserErrors.label          "Engedélyezi a &brandShortName; számára, hogy böngésző hibajelentéseket (köztük hibaüzeneteket) küldjön a Mozilla számára">
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "További tudnivalók">
+
+<!ENTITY sendBackloggedCrashReports.label  "A &brandShortName; a háttérben küldhet összeomlási jelentéseket az Ön nevében">
+<!ENTITY sendBackloggedCrashReports.accesskey "j">
 <!ENTITY crashReporterLearnMore.label    "További tudnivalók">
 
 <!ENTITY networkTab.label                "Hálózat">
@@ -51,14 +58,17 @@ available. -->
 
 <!ENTITY httpCache.label                 "Gyorsítótárazott webtartalom">
 
-<!ENTITY offlineStorage2.label           "Offline webtartalom és felhasználói adatok">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Oldal adatai">
 <!ENTITY clearSiteData.label             "Minden adat törlése">
 <!ENTITY clearSiteData.accesskey         "d">
+<!ENTITY siteData1.label                 "Sütik és oldaladatok">
+<!ENTITY clearSiteData1.label            "Adatok törlése…">
+<!ENTITY clearSiteData1.accesskey        "t">
 <!ENTITY siteDataSettings.label          "Beállítások…">
 <!ENTITY siteDataSettings.accesskey      "B">
+<!ENTITY siteDataSettings1.label         "Adatok kezelése…">
+<!ENTITY siteDataSettings1.accesskey     "A">
 <!ENTITY siteDataLearnMoreLink.label     "További tudnivalók">
 
 <!-- LOCALIZATION NOTE:
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB">
 <!ENTITY clearCacheNow.label             "Törlés most">
 <!ENTITY clearCacheNow.accesskey         "T">
-<!ENTITY clearOfflineAppCacheNow.label   "Törlés most">
-<!ENTITY clearOfflineAppCacheNow.accesskey "m">
 <!ENTITY overrideSmartCacheSize.label    "Az automatikus gyorsítótár-kezelés felülbírálása">
 <!ENTITY overrideSmartCacheSize.accesskey "a">
 
@@ -96,7 +104,7 @@ available. -->
 <!ENTITY updateApplication.version.post  "">
 <!ENTITY updateApplication.description   "A következők engedélyezése a &brandShortName;nak:">
 <!ENTITY updateAuto3.label               "Frissítések automatikus telepítése (ajánlott)">
-<!ENTITY updateAuto3.accesskey           "a">
+<!ENTITY updateAuto3.accesskey           "A">
 <!ENTITY updateCheckChoose2.label        "Frissítések keresése, de a telepítés jóváhagyással történik">
 <!ENTITY updateCheckChoose2.accesskey    "k">
 <!ENTITY updateManual2.label             "Ne legyen frissítve (nem ajánlott)">
@@ -110,17 +118,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "Keresőszolgáltatások automatikus frissítése">
 <!ENTITY enableSearchUpdate2.accesskey   "u">
-
-<!ENTITY offlineStorageNotify.label               "Figyelmeztetés, ha a webhely adatokat akar tárolni kapcsolat nélküli használatra">
-<!ENTITY offlineStorageNotify.accesskey           "w">
-<!ENTITY offlineStorageNotifyExceptions.label     "Kivételek…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "K">
-
-<!ENTITY offlineAppsList2.label          "A következő webhelyek tárolhatnak adatokat kapcsolat nélküli használatra:">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Eltávolítás…">
-<!ENTITY offlineAppsListRemove.accesskey "E">
-<!ENTITY offlineAppRemove.confirm        "Kapcsolat nélküli adatok eltávolítása">
 
 <!ENTITY certificateTab.label            "Tanúsítványok">
 <!ENTITY certPersonal2.description       "Ha a kiszolgáló elkéri a személyes tanúsítványt">

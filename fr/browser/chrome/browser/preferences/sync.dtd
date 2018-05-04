@@ -7,18 +7,30 @@
 <!ENTITY engine.bookmarks.label     "Marque-pages">
 <!ENTITY engine.bookmarks.accesskey "M">
 <!ENTITY engine.tabs.label2         "Onglets ouverts">
+<!ENTITY engine.tabs.title          "Une liste de ce qui est actuellement ouvert sur tous vos appareils synchronisés">
 <!ENTITY engine.tabs.accesskey      "O">
 <!ENTITY engine.history.label       "Historique">
 <!ENTITY engine.history.accesskey   "r">
 <!ENTITY engine.logins.label        "Identifiants">
+<!ENTITY engine.logins.title        "Les noms d’utilisateurs et les mots de passe que vous avez enregistrés">
 <!ENTITY engine.logins.accesskey    "I">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "Options">
+<!ENTITY engine.prefsWin.accesskey  "s">
 <!ENTITY engine.prefs.label         "Préférences">
 <!ENTITY engine.prefs.accesskey     "s">
+<!ENTITY engine.prefs.title         "Les paramètres que vous avez modifiés dans les sections Général, Vie privée et Sécurité">
 <!ENTITY engine.addons.label        "Modules complémentaires">
+<!ENTITY engine.addons.title        "Extensions et thèmes pour Firefox sur ordinateur">
 <!ENTITY engine.addons.accesskey    "u">
 <!ENTITY engine.addresses.label     "Adresses">
+<!ENTITY engine.addresses.title     "Les adresses postales que vous avez enregistrées (uniquement sur ordinateur)">
 <!ENTITY engine.addresses.accesskey "A">
-<!ENTITY engine.creditcards.label   "Cartes de paiement">
+<!ENTITY engine.creditcards.label   "Cartes bancaires">
+<!ENTITY engine.creditcards.title   "Noms, numéros et dates d’expiration (uniquement sur ordinateur)">
 <!ENTITY engine.creditcards.accesskey "C">
 
 <!-- Device Settings -->
@@ -47,29 +59,32 @@ signedInLoginFailure.aftername.label): these two string are used respectively
 before and after the account email address. Localizers can use one of them, or
 both, to better adapt this sentence to their language.
 -->
-<!ENTITY signedInLoginFailure.beforename.label "Veuillez vous identifier pour vous reconnecter">
+<!ENTITY signedInLoginFailure.beforename.label "Veuillez vous identifier pour vous reconnecter via">
 <!ENTITY signedInLoginFailure.aftername.label "">
 
-<!ENTITY notSignedIn.label           "Votre compte n’est pas connecté.">
-<!ENTITY signIn.label                "Connexion">
-<!ENTITY signIn.accesskey            "x">
-<!ENTITY profilePicture.tooltip      "Changer la photo de profil">
-<!ENTITY verifiedManage.label        "Gérer le compte">
-<!ENTITY verifiedManage.accesskey    "G">
-<!ENTITY disconnect3.label           "Se déconnecter…">
-<!ENTITY disconnect3.accesskey       "d">
-<!ENTITY verify.label                "Vérifier l’adresse électronique">
-<!ENTITY verify.accesskey            "V">
-<!ENTITY forget.label                "Oublier cette adresse électronique">
-<!ENTITY forget.accesskey            "b">
+<!ENTITY notSignedIn.label            "Votre compte n’est pas connecté.">
+<!ENTITY signIn.label                 "Connexion">
+<!ENTITY signIn.accesskey             "x">
+<!ENTITY profilePicture.tooltip       "Changer la photo de profil">
+<!ENTITY verifiedManage.label         "Gérer le compte">
+<!ENTITY verifiedManage.accesskey     "G">
+<!ENTITY disconnect3.label            "Se déconnecter…">
+<!ENTITY disconnect3.accesskey        "d">
+<!ENTITY resendVerification.label     "Renvoyer la vérification">
+<!ENTITY resendVerification.accesskey "f">
+<!ENTITY cancelSetup.label            "Annuler la configuration">
+<!ENTITY cancelSetup.accesskey        "n">
+
+<!ENTITY removeAccount.label          "Supprimer le compte">
+<!ENTITY removeAccount.accesskey      "t">
 
 <!ENTITY signedOut.caption            "Emportez votre Web partout avec vous">
 <!ENTITY signedOut.description        "Synchronisez marque-pages, historique, onglets, mots de passe, modules complémentaires et préférences entre tous vos appareils.">
 <!ENTITY signedOut.accountBox.title   "Se connecter avec un &syncBrand.fxAccount.label;">
-<!ENTITY signedOut.accountBox.create  "Créer un compte">
-<!ENTITY signedOut.accountBox.create.accesskey  "C">
-<!ENTITY signedOut.accountBox.signin  "Se connecter">
-<!ENTITY signedOut.accountBox.signin.accesskey  "e">
+<!ENTITY signedOut.accountBox.create2 "Vous n’avez pas de compte ? Inscrivez-vous">
+<!ENTITY signedOut.accountBox.create2.accesskey "V">
+<!ENTITY signedOut.accountBox.signin2 "Se connecter…">
+<!ENTITY signedOut.accountBox.signin2.accesskey "S">
 
 <!ENTITY signedIn.settings.label       "Paramètres de synchronisation">
 <!ENTITY signedIn.settings.description "Sélectionnez les données à synchroniser entre vos appareils utilisant &brandShortName;.">
@@ -89,3 +104,6 @@ both, to better adapt this sentence to their language.
 <!ENTITY mobilePromo3.iOSLink          "iOS">
 
 <!ENTITY mobilePromo3.end              " afin de synchroniser vos données avec votre appareil mobile.">
+
+<!ENTITY mobilepromo.singledevice      "Connecter un autre appareil">
+<!ENTITY mobilepromo.multidevice       "Gérer les appareils">

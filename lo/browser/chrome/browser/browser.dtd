@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE : FILE This file contains the browser main menu items -->
-<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys --> 
+<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys -->
 
 <!-- LOCALIZATION NOTE (mainWindow.title): DONT_TRANSLATE -->
 <!ENTITY mainWindow.title "&brandFullName;">
@@ -13,16 +13,19 @@
 <!ENTITY mainWindow.titlemodifiermenuseparator " - ">
 <!-- LOCALIZATION NOTE (mainWindow.titlePrivateBrowsingSuffix): This will be appended to the window's title
                                                                 inside the private browsing mode -->
-<!ENTITY mainWindow.titlePrivateBrowsingSuffix "(ການຄົ້ນຫາແບບສ່ວນຕົວ)">
+<!ENTITY mainWindow.titlePrivateBrowsingSuffix "(ການທ່ອງເວັບແບບສ່ວນຕົວ)">
 
 <!ENTITY appmenu.tooltip                     "ເປີດເມນູ">
 <!ENTITY navbarOverflow.label                "ເຄື່ອງມືເພີ່ມເຕີມ…">
 
 <!-- Tab context menu -->
-<!ENTITY  reloadTab.label                    "ໂລດແທັບຄືນໃຫມ່">
+<!ENTITY  reloadTab.label                    "ໂຫລດແທັບໃຫມ່">
 <!ENTITY  reloadTab.accesskey                "R">
-<!ENTITY  reloadAllTabs.label                "ໂຫລດແທັບທັງຫມົດຄືນໃຫມ່">
+<!ENTITY  reloadAllTabs.label                "ໂຫລດແທັບທັງຫມົດໃຫມ່">
 <!ENTITY  reloadAllTabs.accesskey            "A​">
+<!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTab.accesskey             "D">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -36,9 +39,9 @@ used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
-<!ENTITY  pinTab.label                       "ປັກແທັບ">
+<!ENTITY  pinTab.label                       "ປັກຫມຸດແທັບ">
 <!ENTITY  pinTab.accesskey                   "P">
-<!ENTITY  unpinTab.label                     "ບໍ່ປັກແທັບ">
+<!ENTITY  unpinTab.label                     "ຖອນຫມຸດແທັບ">
 <!ENTITY  unpinTab.accesskey                 "b">
 <!ENTITY  sendTabToDevice.label              "ສົ່ງແທັບໄປຫາອຸປະກອນ">
 <!ENTITY  sendTabToDevice.accesskey          "D​">
@@ -46,14 +49,17 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "D​">
 <!ENTITY  sendLinkToDevice.label             "ສົ່ງລີ້ງໄປຫາອຸປະກອນ">
 <!ENTITY  sendLinkToDevice.accesskey         "D​">
+<!ENTITY  sendToDeviceFeedback.label         "ສົ່ງແລ້ວ!">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "ຢູ່ໃນຄິວ (ອອບລາຍ)">
 <!ENTITY  moveToNewWindow.label              "ຍ້າຍໄປຫນ້າຕ່າງໃຫມ່">
 <!ENTITY  moveToNewWindow.accesskey          "W">
 <!ENTITY  bookmarkAllTabs.label              "ບຸກມາກແທັບທັງຫມົດ...">
 <!ENTITY  bookmarkAllTabs.accesskey          "T">
-<!ENTITY  undoCloseTab.label                 "ເອີ້ນຄືນແທັບທີ່ຫາກະປິດ">
-<!ENTITY  undoCloseTab.accesskey             "​">
+<!ENTITY  undoCloseTab.label                 "ເອີ້ນຄືນແທັບທີ່ຫາກໍປິດ">
+<!ENTITY  undoCloseTab.accesskey             "U">
 <!ENTITY  closeTab.label                     "ປິດແທັບ">
 <!ENTITY  closeTab.accesskey                 "C">
+
 
 <!ENTITY  listAllTabs.label      "ສະແດງລາຍຊື່ແຖບທັງໝົດ">
 
@@ -64,10 +70,10 @@ can reach it easily. -->
 displayed on OS X, and only on windows that aren't main browser windows, or
 when there are no windows but Firefox is still running. -->
 <!ENTITY openLocationCmd.label "ເປີດຕຳແຫນ່ງທີ່ຕັ້ງ…">
-<!ENTITY openFileCmd.label "ເປີດ...">
+<!ENTITY openFileCmd.label "ເປີດໄຟລ໌...">
 <!ENTITY openFileCmd.accesskey "O">
 <!ENTITY openFileCmd.commandkey "o">
-<!ENTITY printSetupCmd.label "ການຕັ້ງຄ່າຫນ້ານີ້">
+<!ENTITY printSetupCmd.label "ການຕັ້ງຄ່າຫນ້າເຈ້ຍ…">
 <!ENTITY printSetupCmd.accesskey "u">
 <!ENTITY printPreviewCmd.label "ກວດເບິງຄືນກ່ອນການພິມ">
 <!ENTITY printPreviewCmd.accesskey "v">
@@ -75,56 +81,66 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.accesskey "P">
 <!ENTITY printCmd.commandkey "p">
 
-<!ENTITY goOfflineCmd.label "ເຮັກວຽກອອບໄລນ໌">
+<!ENTITY goOfflineCmd.label "ເຮັດວຽກອອບໄລນ໌">
 <!ENTITY goOfflineCmd.accesskey "k">
 
-<!ENTITY menubarCmd.label "ແຖບລາຍການ">
+<!ENTITY menubarCmd.label "ແຖບເມນູ">
 <!ENTITY menubarCmd.accesskey "M">
 <!ENTITY navbarCmd.label "ແຖບເຄື່ອງມືນຳທາງ">
 <!ENTITY personalbarCmd.label "ແຖບເຄື່ອງມືບຸກມາກ">
 <!ENTITY personalbarCmd.accesskey "B">
 <!ENTITY bookmarksToolbarItem.label "ລາຍການຂອງແຖບເຄື່ອງມືບຸກມາກ">
 
-<!ENTITY toolbarContextMenu.reloadAllTabs.label "ໂຫລດແທັບທັງຫມົດຄືນໃຫມ່">
+<!ENTITY toolbarContextMenu.reloadAllTabs.label "ໂຫລດແທັບທັງຫມົດໃຫມ່">
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "A​">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "ບຸກມາກແທັບທັງຫມົດ...">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "T">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "ເອີ້ນຄືນແທັບທີ່ຫາກະປິດ">
-<!ENTITY toolbarContextMenu.undoCloseTab.accesskey "​">
+<!ENTITY toolbarContextMenu.undoCloseTab.accesskey "U">
 
 <!ENTITY pageSourceCmd.label "ທີ່ມາຂອງຫນ້ານີ້">
 <!ENTITY pageSourceCmd.accesskey "o">
 <!ENTITY pageSourceCmd.commandkey "u">
+<!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
+Option+Command keyboard shortcut letter that Safari and Chrome use for "View
+Source" on macOS. pageSourceCmd.commandkey above is Firefox's official keyboard
+shortcut shown in the GUI. SafariCommandKey is an alias provided for the
+convenience of Safari and Chrome users on macOS. See bug 1398988. -->
+<!ENTITY pageSourceCmd.SafariCommandKey "u">
+
 <!ENTITY pageInfoCmd.label "ຂໍ້ມູນຂອງຫນ້ານີ້">
 <!ENTITY pageInfoCmd.accesskey "I">
 <!ENTITY pageInfoCmd.commandkey "i">
+<!ENTITY ldbCmd.accesskey "L">
 <!ENTITY mirrorTabCmd.label "ສະທ້ອນແທັບ">
 <!ENTITY mirrorTabCmd.accesskey "m">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
 These should match what Safari and other Apple applications use on OS X Lion. -->
-<!ENTITY enterFullScreenCmd.label "ເຂົ້າສູ່ໂມດເຕັມຫນ້າຈໍ">
+<!ENTITY enterFullScreenCmd.label "ເຂົ້າສູ່ໂຫມດເຕັມຫນ້າຈໍ">
 <!ENTITY enterFullScreenCmd.accesskey "F">
-<!ENTITY exitFullScreenCmd.label "ອອກຈາກໂມດເຕັມຫນ້າຈໍ">
+<!ENTITY exitFullScreenCmd.label "ອອກຈາກໂຫມດເຕັມຫນ້າຈໍ">
 <!ENTITY exitFullScreenCmd.accesskey "F">
-<!ENTITY fullScreenCmd.label "ໂມດເຕັມຫນ້າຈໍ">
+<!ENTITY fullScreenCmd.label "ໂຫມດເຕັມຫນ້າຈໍ">
 <!ENTITY fullScreenCmd.accesskey "F">
 <!ENTITY fullScreenCmd.macCommandKey "f">
-<!ENTITY showAllTabsCmd.label "ສະແດງທຸກໆແທັບ">
+<!ENTITY showAllTabsCmd.label "ສະແດງແທັບທັງຫມົດ">
 <!ENTITY showAllTabsCmd.accesskey "A">
 <!ENTITY toggleReaderMode.key "R">
 
-<!ENTITY fxaSignIn.label "ເຂົ້າສູ່ລະບົບເພື່ອ &syncBrand.shortName.label;">
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
+
+<!ENTITY fxaSignIn.label "ລົງຊື່ເຂົ້າໃຊ້ &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "ເປີດການຕັ້ງຄ່າ &syncBrand.shortName.label;">
 <!ENTITY fxaSignInError.label "ເຊື່ອມຕໍກັບ &syncBrand.shortName.label; ໃຫມ່">
 <!ENTITY fxaUnverified.label "ກວດສອບບັນຊີຂອງທ່ານ">
 
 
-<!ENTITY fullScreenMinimize.tooltip "ເຮັດໃຫ້ນ້ອຍລົງ">
+<!ENTITY fullScreenMinimize.tooltip "ຫຍໍ້ໃຫ້ນ້ອຍລົງ">
 <!ENTITY fullScreenRestore.tooltip "ກູ້ຄືນ">
 <!ENTITY fullScreenClose.tooltip "ປິດ">
 <!ENTITY fullScreenAutohide.label "ເຊື່ອງແຖບເຄືອງມື">
 <!ENTITY fullScreenAutohide.accesskey "H">
-<!ENTITY fullScreenExit.label "ອອກຈາກໂມດເຕັມຫນ້າຈໍ">
+<!ENTITY fullScreenExit.label "ອອກຈາກໂຫມດເຕັມຫນ້າຈໍ">
 <!ENTITY fullScreenExit.accesskey "F">
 
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
@@ -139,9 +155,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (exitDOMFullscreen.button,
      exitDOMFullscreenMac.button): the "escape" button on PC keyboards
      is uppercase, while on Mac keyboards it is lowercase -->
-<!ENTITY exitDOMFullscreen.button "ອອກຈາກໂມດເຕັມຫນ້າຈໍ (Esc)">
-<!ENTITY exitDOMFullscreenMac.button "ອອກຈາກໂມດເຕັມຫນ້າຈໍ (Esc)">
-<!ENTITY leaveDOMFullScreen.label "ອອກຈາກໂມດເຕັມຫນ້າຈໍ">
+<!ENTITY exitDOMFullscreen.button "ອອກຈາກໂຫມດເຕັມຫນ້າຈໍ (Esc)">
+<!ENTITY exitDOMFullscreenMac.button "ອອກຈາກໂຫມດເຕັມຫນ້າຈໍ (Esc)">
+<!ENTITY leaveDOMFullScreen.label "ອອກຈາກໂຫມດເຕັມຫນ້າຈໍ">
 <!ENTITY leaveDOMFullScreen.accesskey "u">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
@@ -156,60 +172,97 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "ບຸກມາກ">
 <!ENTITY bookmarksMenu.accesskey "B">
+<!ENTITY bookmarkThisPageCmd.label "ບຸກມາກໜ້ານີ້">
+<!ENTITY editThisBookmarkCmd.label "ແກ້ໄຂບຸກມາກນີ້">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
-<!-- LOCALIZATION NOTE (findShareServices.label):
-  -  Use the unicode ellipsis char, \u2026,
-  -  or use "..." if \u2026 doesn't suit traditions in your locale. -->
-<!-- LOCALIZATION NOTE (shareLink.accesskey): must be different than the following share access keys -->
-<!ENTITY subscribeToPageMenuitem.label "ເປັນສະມາຊິກຫນ້ານີ້...">
-<!ENTITY addCurPagesCmd.label "ບຸກມາກຂອງທຸກແຖບ...">
-<!ENTITY showAllBookmarks2.label "ສະແດງທຸກບຸກມາກ">
-<!ENTITY bookmarksToolbarChevron.tooltip "ສະແດງບຸກມາກເພີມເຕີມ">
 
-<!ENTITY backButton.tooltip           "ກັບກັບໄປໜ້າກ່ອນໜ້ານີ້">
-<!ENTITY forwardButton.tooltip        "ໄປໜ້າຖັດໄປ">
+<!ENTITY subscribeToPageMenupopup.label "ເປັນສະມາຊິກຫນ້ານີ້">
+<!ENTITY subscribeToPageMenuitem.label "ເປັນສະມາຊິກຫນ້ານີ້…">
+<!ENTITY addCurPagesCmd.label "ບຸກມາກແທັບທັງຫມົດ…">
+<!ENTITY showAllBookmarks2.label "ສະແດງບຸກມາກທັງຫມົດ">
+<!ENTITY recentBookmarks.label "ຫາກໍບຸກມາກມື້ກີ້ນີ້">
+<!ENTITY otherBookmarksCmd.label "ບຸກມາກອື່ນໆ">
+<!ENTITY mobileBookmarksCmd.label "ບຸກມາກມືຖື">
+<!ENTITY bookmarksToolbarChevron.tooltip "ສະແດງບຸກມາກເພີ່ມເຕີມ">
+<!ENTITY showRecentlyBookmarked.label     "ສະແດງຫາກໍບຸກມາກມື້ກີ້ນີ້">
+<!ENTITY showRecentlyBookmarked.accesskey "h">
+<!ENTITY hideRecentlyBookmarked.label     "ເຊື່ອງຫາກໍບຸກມາກມື້ກີ້ນີ້">
+<!ENTITY hideRecentlyBookmarked.accesskey "H">
+
+<!ENTITY backCmd.label                "ກັບຄືນ">
+<!ENTITY backCmd.accesskey            "B">
+<!ENTITY backButton.tooltip           "ກັບໄປຫນຶ່ງຫນ້າ">
+<!ENTITY forwardCmd.label             "ໄປຂ້າງຫນ້າ">
+<!ENTITY forwardCmd.accesskey         "F">
+<!ENTITY forwardButton.tooltip        "ໄປຫນ້າຖັດໄປ">
 <!ENTITY backForwardButtonMenu.tooltip "ຄິກຂວາ ຫລື ເລື່ອນເມົ້າລົງເພື່ອສະແດງປະຫວັດການໃຊ້ງານ">
 <!ENTITY backForwardButtonMenuMac.tooltip "ເລື່ອນເມົ້າລົງເພື່ອສະແດງປະຫວັດການໃຊ້ງານ">
+<!ENTITY reloadCmd.label              "ໂຫລດໃຫມ່">
+<!ENTITY reloadCmd.accesskey          "R">
+<!ENTITY stopCmd.label                "ຢຸດ">
+<!ENTITY stopCmd.accesskey            "S">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "ໄປຫາທີ່ຢູ່ໃນແຖບຕຳແຫນ່ງທີ່ຢູ່">
 <!ENTITY printButton.label            "ພິມ">
-<!ENTITY printButton.tooltip          "ພິມໜ້ານີ້">
+<!ENTITY printButton.tooltip          "ພິມຫນ້ານີ້">
+
+<!ENTITY urlbar.viewSiteInfo.label                      "ເບິ່ງຂໍ້ມູນເວັບໄຊທ໌">
+
+<!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "ຈັດການການໃຊ້ປັກອິນ">
+
+
+
+<!ENTITY urlbar.translateNotificationAnchor.tooltip       "ແປຫນ້ານີ້">
 
 
 
 
-
-
+<!ENTITY urlbar.openHistoryPopup.tooltip                "ສະແດງປະຫວັດການໃຊ້ງານ">
 
 <!ENTITY searchItem.title             "ຊອກຫາ">
 
 <!-- Toolbar items -->
+<!ENTITY homeButton.label             "ຫນ້າຫລັກ">
 
 <!ENTITY bookmarksButton.label          "ບຸກມາກ">
 <!ENTITY bookmarksCmd.commandkey "b">
 
-<!ENTITY bookmarksMenuButton.label          "ບຸກມາກ">
+<!ENTITY bookmarksSubview.label             "ບຸກມາກ">
+<!ENTITY bookmarksMenuButton2.label         "ເມນູບຸກມາກ">
+<!ENTITY bookmarksMenuButton.other.label    "ບຸກມາກອື່ນໆ">
+<!ENTITY bookmarksMenuButton.mobile.label   "ບຸກມາກມືຖື">
+<!ENTITY viewBookmarksSidebar2.label        "ເບິງແຖບຂ້າງບຸກມາກ">
+<!ENTITY hideBookmarksSidebar.label         "ເຊື່ອງແຖບຂ້າງບຸກມາກ">
 <!ENTITY viewBookmarksToolbar.label         "ເບິງແຖບເຄື່ອງມືບຸກມາກ">
+<!ENTITY hideBookmarksToolbar.label         "ເຊື່ອງແຖບເຄື່ອງມືບຸກມາກ">
+<!ENTITY searchBookmarks.label              "ຊອກຫາບຸກມາກ">
+<!ENTITY bookmarkingTools.label             "ເຄື່ອງມືບຸກມາກ">
+<!ENTITY addBookmarksMenu.label             "ເພີ່ມເມນູບຸກມາກລົງໃນແຖບເຄື່ອງມື">
+<!ENTITY removeBookmarksMenu.label          "ເອົາເມນູບຸກມາກອອກຈາກແຖບເຄື່ອງມື">
 
-
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
 <!ENTITY bookmarksWinCmd.commandkey "i">
 
+<!ENTITY historyButton.label            "ປະຫວັດ">
 <!ENTITY historySidebarCmd.commandKey   "h">
 
 <!ENTITY toolsMenu.label              "ເຄື່ອງມື">
-<!ENTITY toolsMenu.accesskey          "T"> 
+<!ENTITY toolsMenu.accesskey          "T">
 
 <!ENTITY keywordfield.label           "ປ້ອນຄຳທີ່ຕ້ອງການຄົ້ນຫາໃສ່...">
 <!ENTITY keywordfield.accesskey       "K">
 
-<!ENTITY downloads.label              "ດາວໂລດ">
+<!ENTITY downloads.label              "ດາວໂຫລດ">
+<!-- LOCALIZATION NOTE (libraryDownloads.label): This label is similar to
+  -  downloads.label, but used in the Library panel. -->
+<!ENTITY libraryDownloads.label       "ດາວໂຫລດ">
 <!ENTITY downloads.accesskey          "D">
 <!ENTITY downloads.commandkey         "j">
-<!ENTITY addons.label                 "ໂປຼແກຣມເສີມ">
+<!ENTITY downloadsUnix.commandkey     "y">
+<!ENTITY addons.label                 "ໂປຣແກຣມເສີມ">
 <!ENTITY addons.accesskey             "A">
 <!ENTITY addons.commandkey            "A">
 
@@ -219,53 +272,59 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY inspectContextMenu.label     "ກວດກາອົງປະກອບ">
 <!ENTITY inspectContextMenu.accesskey "Q">
 
-<!ENTITY fileMenu.label         "ໄຟລ໌"> 
+
+<!ENTITY fileMenu.label         "ໄຟລ໌">
 <!ENTITY fileMenu.accesskey       "F">
+<!ENTITY newUserContext.label             "ແທັບແຍກຂໍ້ມູນໃຫມ່">
+<!ENTITY newUserContext.accesskey         "B">
 <!ENTITY newNavigatorCmd.label        "ຫນ້າຕ່າງໃຫມ່">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "N">
-<!ENTITY newPrivateWindow.label     "ເປີດຫນ້າຕ່າງສວນຕົວຂື້ນມາໃຫມ່">
+<!ENTITY newPrivateWindow.label     "ເປີດຫນ້າຕ່າງສ່ວນຕົວໃຫມ່">
 <!ENTITY newPrivateWindow.accesskey "W">
 
-<!ENTITY editMenu.label         "ແກ້ໄຂ"> 
-<!ENTITY editMenu.accesskey       "E"> 
-  
-<!ENTITY undoCmd.key            "Z">  
- 
-<!ENTITY redoCmd.label            "ເຮັດຄືນໃຫມ່">  
-<!ENTITY redoCmd.key            "Y">  
-<!ENTITY redoCmd.accesskey          "R"> 
-<!ENTITY cutCmd.label           "ຕັດ">  
-<!ENTITY cutCmd.key             "X">  
-<!ENTITY cutCmd.accesskey         "t"> 
-  
-<!ENTITY copyCmd.key            "C">  
- 
-<!ENTITY pasteCmd.label           "ວາງ">  
-<!ENTITY pasteCmd.key           "V">  
-<!ENTITY pasteCmd.accesskey         "P"> 
-<!ENTITY deleteCmd.label          "ລຶບ">  
-<!ENTITY deleteCmd.key            "D">  
-<!ENTITY deleteCmd.accesskey        "D"> 
-<!ENTITY selectAllCmd.label         "ເລືອກທັ້ງຫມົດ">  
-<!ENTITY selectAllCmd.key         "A">  
-<!ENTITY selectAllCmd.accesskey       "A"> 
+<!ENTITY editMenu.label         "ແກ້ໄຂ">
+<!ENTITY editMenu.accesskey       "E">
+<!ENTITY undoCmd.label            "ກັບຄືນ">
+<!ENTITY undoCmd.key            "Z">
+<!ENTITY undoCmd.accesskey          "U">
+<!ENTITY redoCmd.label            "ເຮັດຄືນໃຫມ່">
+<!ENTITY redoCmd.key            "Y">
+<!ENTITY redoCmd.accesskey          "R">
+<!ENTITY cutCmd.label           "ຕັດ">
+<!ENTITY cutCmd.key             "X">
+<!ENTITY cutCmd.accesskey         "t">
+<!ENTITY copyCmd.label            "ສຳເນົາ">
+<!ENTITY copyCmd.key            "C">
+<!ENTITY copyCmd.accesskey          "C">
+<!ENTITY pasteCmd.label           "ວາງ">
+<!ENTITY pasteCmd.key           "V">
+<!ENTITY pasteCmd.accesskey         "P">
+<!ENTITY deleteCmd.label          "ລຶບ">
+<!ENTITY deleteCmd.key            "D">
+<!ENTITY deleteCmd.accesskey        "D">
+<!ENTITY selectAllCmd.label         "ເລືອກທັງຫມົດ">
+<!ENTITY selectAllCmd.key         "A">
+<!ENTITY selectAllCmd.accesskey       "A">
 <!ENTITY preferencesCmd2.label       "ຕົວເລືອກ">
 <!ENTITY preferencesCmd2.accesskey     "O">
-<!ENTITY preferencesCmdUnix.label       "ຕັ້ງຄ່າ">
-<!ENTITY preferencesCmdUnix.accesskey     "n"> 
+<!ENTITY preferencesCmdUnix.label       "ການຕັ້ງຄ່າ">
+<!ENTITY preferencesCmdUnix.accesskey     "n">
 
+<!ENTITY clearRecentHistory.label               "ລ້າງປະຫວັດການໃຊ້ງານລ່າສຸດ…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
 
-<!ENTITY viewMenu.label         "ມູມມອງ"> 
-<!ENTITY viewMenu.accesskey       "V"> 
-<!ENTITY viewToolbarsMenu.label       "ແຖບເຄືອງມື"> 
-<!ENTITY viewToolbarsMenu.accesskey     "T"> 
+<!ENTITY viewMenu.label         "ມູມມອງ">
+<!ENTITY viewMenu.accesskey       "V">
+<!ENTITY viewToolbarsMenu.label       "ແຖບເຄືອງມື">
+<!ENTITY viewToolbarsMenu.accesskey     "T">
 <!ENTITY viewSidebarMenu.label "ແຖບດ້ານຂ້າງ">
 <!ENTITY viewSidebarMenu.accesskey "e">
-<!ENTITY viewCustomizeToolbar.label       "ການດັດແກ້..."> 
+<!ENTITY viewCustomizeToolbar.label       "ປັບແຕ່ງ…">
 <!ENTITY viewCustomizeToolbar.accesskey     "C">
+<!ENTITY overflowCustomizeToolbar.label       "ປັບແຕ່ງແຖບເຄື່ອງມື…">
+<!ENTITY overflowCustomizeToolbar.accesskey   "C">
 
 <!ENTITY historyMenu.label "ປະຫວັດການໃຊ້ງານ">
 <!ENTITY historyMenu.accesskey "s">
@@ -273,45 +332,83 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (historyUndoWindowMenu): see bug 394759 -->
 <!ENTITY historyUndoWindowMenu.label "ຫນ້າຕ່າງທີ່ຫາກໍ່ປິດໄປມື້ກີ້ນີ້">
 
+<!ENTITY showAllHistoryCmd2.label "ສະແດງປະຫວັດການໃຊ້ງານທັງຫມົດ">
 <!ENTITY showAllHistoryCmd.commandkey "H">
 
-<!ENTITY appMenuCustomize.label "ດັດແກ້">
+<!ENTITY appMenuHistory.showAll.label "ສະແດງປະຫວັດການໃຊ້ງານທັງຫມົດ">
+<!ENTITY appMenuHistory.clearRecent.label "ລ້າງປະຫວັດການໃຊ້ງານລ່າສຸດ…">
+<!ENTITY appMenuHelp.label "ວິທີໃຊ້">
 
+<!ENTITY appMenuRemoteTabs.label "ແທັບທີ່ຊິງຄ໌ແລ້ວ">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.notabs.label): This is shown beneath
      the name of a device when that device has no open tabs -->
+<!ENTITY appMenuRemoteTabs.notabs.label "ບໍ່ມີແທັບທີ່ເປີດຢູ່">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.showMore.label, appMenuRemoteTabs.showMore.tooltip):
      This is shown after the tabs list if we can display more tabs by clicking on the button -->
+<!ENTITY appMenuRemoteTabs.showMore.label "ສະແດງເພີ່ມເຕີມ">
+<!ENTITY appMenuRemoteTabs.showMore.tooltip "ສະແດງແທັບເພີ່ມເຕີມຈາກອຸປະກອນນີ້">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.showAll.label, appMenuRemoteTabs.showAll.tooltip):
      This is shown after the tabs list if we can all the remaining tabs by clicking on the button -->
+<!ENTITY appMenuRemoteTabs.showAll.label "ສະແດງທັງໝົດ">
+<!ENTITY appMenuRemoteTabs.showAll.tooltip "ສະແດງແທັບທັງໝົດຈາກອຸປະກອນນີ້">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "ເປີດການຊິງຄ໌ແທັບເພື່ອເບິ່ງລາຍການແທັບທີ່ເປີດຢູ່ໃນອຸປະກອນອື່ນໆຂອງທ່ານ.">
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
+<!ENTITY appMenuRemoteTabs.noclients.subtitle "ຕ້ອງການໃຫ້ເຫັນແທັບທີ່ນີ້ຂອງທ່ານໄດ້ຈາກອຸປະກອນອື່ນໆບໍ່?">
+<!ENTITY appMenuRemoteTabs.openprefs.label "ການຕັ້ງຄ່າ Sync">
+<!ENTITY appMenuRemoteTabs.opensyncprefs.label "ເປີດການຕັ້ງຄ່າ Sync">
+<!ENTITY appMenuRemoteTabs.notsignedin.label "ລົງຊື່ເຂົ້າໃຊ້ເພື່ອເບິ່ງລາຍການແທັບທີ່ເປີດຢູ່ໃນອຸປະກອນອື່ນໆຂອງທ່ານ.">
+<!ENTITY appMenuRemoteTabs.unverified.label "ບັນຊີຂອງທ່ານຕ້ອງໄດ້ຮັບການຢືນຢັນ.">
+<!ENTITY appMenuRemoteTabs.signin.label "ລົງຊື່ເຂົ້າໃຊ້ເພື່ອ Sync">
+<!ENTITY appMenuRemoteTabs.managedevices.label "ຈັດການອຸປະກອນ...">
+<!ENTITY appMenuRemoteTabs.connectdevice.label "ເຊື່ອມຕໍ່ກັບອຸປະກອນອື່ນ">
 
+
+<!ENTITY customizeMenu.addToToolbar.label "ເພີ່ມລົງໃນແຖບເຄື່ອງມື">
+<!ENTITY customizeMenu.addToToolbar.accesskey "A">
+<!ENTITY customizeMenu.addToPanel.accesskey "M">
 <!-- LOCALIZATION NOTE (customizeMenu.addToOverflowMenu.label,
      customizeMenu.pinToOverflowMenu.label, customizeMenu.unpinFromOverflowMenu.label)
      The overflow menu is the menu that appears if you click the chevron (>> button)
      in the location bar. These labels are only used in Photon, where you can put
      items into this menu permanently (pinned). -->
+<!ENTITY customizeMenu.addToOverflowMenu.accesskey "M">
+<!ENTITY customizeMenu.moveToToolbar.label "ຍ້າຍໄປທີ່ແຖບເຄື່ອງມື">
+<!ENTITY customizeMenu.moveToToolbar.accesskey "o">
 <!-- LOCALIZATION NOTE (customizeMenu.moveToPanel.accesskey, customizeMenu.pinToOverflowMenu.accesskey)
      can appear on the same context menu as menubarCmd and personalbarCmd,
      so they should have different access keys. customizeMenu.moveToToolbar and
      customizeMenu.moveToPanel are mutually exclusive, so can share access
      keys.  -->
+<!ENTITY customizeMenu.moveToPanel.accesskey "o">
+<!ENTITY customizeMenu.pinToOverflowMenu.accesskey "P">
+<!ENTITY customizeMenu.unpinFromOverflowMenu.accesskey "U">
+<!ENTITY customizeMenu.removeFromToolbar.label "ເອົາອອກຈາກແຖບເຄື່ອງມື">
+<!ENTITY customizeMenu.removeFromToolbar.accesskey "R">
+<!ENTITY customizeMenu.removeFromMenu.accesskey "R">
+<!ENTITY customizeMenu.addMoreItems.accesskey "A">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
     secondary commands. -->
+<!ENTITY moreMenu.label "ເພີ່ມເຕີມ">
 
 <!ENTITY openCmd.commandkey           "l">
+<!ENTITY urlbar.placeholder2          "ຊອກຫາ ຫລື ປ້ອນທີ່ຢູ່ໃສ່">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
-<!ENTITY urlbar.switchToTab.label     "ຍ້າຍໄປແຖບ:">
-
+<!ENTITY urlbar.extension.label       "ສ່ວນຂະຫຍາຍ:">
+<!ENTITY urlbar.switchToTab.label     "ຍ້າຍໄປແທັບ:">
 
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hintPrefix): Shown just before the suggestions opt-out hint. -->
+<!ENTITY urlbar.searchSuggestionsNotification.hintPrefix "ເຄັດລັບ:">
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hint): &#x1F50E; is the magnifier icon emoji, please don't change it. -->
+<!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin.accesskey "C">
+<!ENTITY urlbar.searchSuggestionsNotification.changeSettingsUnix "ປ່ຽນແປງການຕັ້ງຄ່າ…">
+<!ENTITY urlbar.searchSuggestionsNotification.changeSettingsUnix.accesskey "C">
 
 <!--
   Comment duplicated from browser-sets.inc:
@@ -333,19 +430,26 @@ These should match what Safari and other Apple applications use on OS X Lion. --
   for people to switch to Linux.
 
  -->
+<!ENTITY searchFocus.commandkey       "k">
 <!ENTITY searchFocus.commandkey2      "e">
 <!ENTITY searchFocusUnix.commandkey   "j">
 
 <!-- LOCALIZATION NOTE (contentSearchInput.label):
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
+<!ENTITY contentSearchInput.label     "ຄຳຊອກຫາ">
+<!ENTITY contentSearchSubmit.tooltip  "ຊອກຫາ">
 
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
      This string is displayed in the search box when the input field is empty. -->
+<!ENTITY searchInput.placeholder      "ຊອກຫາ">
+<!ENTITY searchIcon.tooltip           "ຊອກຫາ">
 
 <!-- LOCALIZATION NOTE (searchFor.label, searchWith.label):
      These two strings are used to build the header above the list of one-click
      search providers:  "Search for <used typed keywords> with:" -->
+<!ENTITY searchFor.label              "ຊອກຫາສຳລັບ ">
+<!ENTITY searchWith.label             " ດ້ວຍ:">
 
 <!-- LOCALIZATION NOTE (search.label, searchAfter.label):
      This string is used to build the header above the list of one-click search
@@ -353,61 +457,79 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      intentionally left empty for en-US and can be used by other localizations to
      display a string after the search engine name.  This string will be displayed
      as:  "Search <selected engine name><searchAfter.label text>" -->
+<!ENTITY search.label                 "ຊອກຫາ">
 <!ENTITY searchAfter.label            "">
 
 <!-- LOCALIZATION NOTE (searchWithHeader.label):
      The wording of this string should be as close as possible to
      searchFor.label and searchWith.label. This string will be used instead of
      them when the user has not typed any keyword. -->
+<!ENTITY searchWithHeader.label       "ຊອກຫາດ້ວຍ:">
 <!-- LOCALIZATION NOTE (changeSearchSettings.button):
      This string won't wrap, so if the translated string is longer,
      consider translating it as if it said only "Search Settings". -->
+<!ENTITY changeSearchSettings.button  "ປ່ຽນການຕັ້ງຄ່າການຊອກຫາ">
+<!ENTITY changeSearchSettings.tooltip "ປ່ຽນການຕັ້ງຄ່າການຊອກຫາ">
 
+<!ENTITY searchInNewTab.label         "ຊອກຫາໃນແທັບໃຫມ່">
+<!ENTITY searchInNewTab.accesskey     "T">
+<!ENTITY searchSetAsDefault.label     "ຕັ້ງເປັນເຄື່ອງມືການຊອກຫາເລີ່ມຕົ້ນ">
+<!ENTITY searchSetAsDefault.accesskey "D">
 
 <!ENTITY openLinkCmdInTab.label       "ເປີດລີ້ງໃນແຖບໃຫມ່">
 <!ENTITY openLinkCmdInTab.accesskey   "T">
 <!ENTITY openLinkCmd.label            "ເປີດລີ້ງໃນຫນ້າຕ່າງໃຫມ່">
 <!ENTITY openLinkCmd.accesskey        "W">
+<!ENTITY openLinkInPrivateWindowCmd.label "ເປີດລິ້ງໃນຫນ້າຕ່າງສ່ວນຕົວໃຫມ່">
+<!ENTITY openLinkInPrivateWindowCmd.accesskey "P">
 <!ENTITY openLinkCmdInCurrent.label     "ເປີດລີ້ງ">
 <!ENTITY openLinkCmdInCurrent.accesskey "O">
 <!ENTITY openFrameCmdInTab.label      "ເປີດເຟຣມໃນແຖບໃຫມ່">
 <!ENTITY openFrameCmdInTab.accesskey  "T">
 <!ENTITY openFrameCmd.label           "ເປີດເຟຣມໃນຫນ້າຕ່າງໃຫມ່">
 <!ENTITY openFrameCmd.accesskey       "W">
+<!ENTITY openLinkCmdInContainerTab.label "ເປີດລີ້ງໃນແທັບແຍກຂໍ້ມູນໃຫມ່">
+<!ENTITY openLinkCmdInContainerTab.accesskey "b">
 <!ENTITY showOnlyThisFrameCmd.label     "ສະແດງພຽງເຟຣມນີ້ເທົ່ານັ້ນ">
 <!ENTITY showOnlyThisFrameCmd.accesskey "S">
 <!ENTITY reloadCmd.commandkey         "r">
-<!ENTITY reloadFrameCmd.label         "ໂລດເຟຣມບຄື່ນໃຫມ່">
+<!ENTITY reloadFrameCmd.label         "ໂຫລດເຟຣມຄື່ນໃຫມ່">
 <!ENTITY reloadFrameCmd.accesskey     "R">
 <!ENTITY viewPartialSourceForSelectionCmd.label "ເບິ່ງແຫລ່ງຂໍ້ມູນຂອງສິ່ງທີ່ເລືອກ">
 <!ENTITY viewPartialSourceForMathMLCmd.label    "ເບິງແຫລ່ງຂໍ້ມູນຂອງ MathML ">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both 
+<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
          viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "e">
 <!ENTITY viewPageSourceCmd.label      "ເບິງແຫລ່ງຂໍ້ມູນຂອງຫນ້ານີ້">
 <!ENTITY viewPageSourceCmd.accesskey  "V">
 <!ENTITY viewFrameSourceCmd.label     "ເບິງແຫລ່ງຂໍ້ມູນຂອງເຟຣມນີ້">
 <!ENTITY viewFrameSourceCmd.accesskey "V">
-<!ENTITY viewPageInfoCmd.label        "ເບິ່ງຂໍ້ມູນໜ້າເວັບ">
+<!ENTITY viewPageInfoCmd.label        "ເບິ່ງຂໍ້ມູນຫນ້າ">
 <!ENTITY viewPageInfoCmd.accesskey    "I">
 <!ENTITY viewFrameInfoCmd.label       "ເບິ່ງຂໍ້ມູນຂອງເຟຣມ">
 <!ENTITY viewFrameInfoCmd.accesskey   "I">
-<!ENTITY reloadImageCmd.label         "ໂລດຮູບພາບຄືນໃຫມ່">
+<!ENTITY reloadImageCmd.label         "ໂຫລດຮູບພາບໃຫມ່">
 <!ENTITY reloadImageCmd.accesskey     "R">
 <!ENTITY viewImageCmd.label           "ເບິ່ງຮູບພາບ">
 <!ENTITY viewImageCmd.accesskey       "I">
-<!ENTITY viewImageInfoCmd.label       "ເບິ່ງຂໍ້ມູນໜ້າເວັບ">
+<!ENTITY viewImageInfoCmd.label       "ເບິ່ງຂໍ້ມູນຫນ້າເວັບ">
 <!ENTITY viewImageInfoCmd.accesskey   "f">
+<!ENTITY viewImageDescCmd.label       "ເບິ່ງຄຳອະທິບາຍ">
+<!ENTITY viewImageDescCmd.accesskey   "D">
 <!ENTITY viewVideoCmd.label           "ເບິ່ງວີດີໂອ">
 <!ENTITY viewVideoCmd.accesskey       "i">
 <!ENTITY viewBGImageCmd.label         "ເບິ່ງພາບພື້ນຫຼັງ">
 <!ENTITY viewBGImageCmd.accesskey     "w">
-<!ENTITY setDesktopBackgroundCmd.label      "ກຳນົດໃຫ້ເປັນພາບພື້ນຫລັງເດສກ໌ທັອບ">
+<!ENTITY setDesktopBackgroundCmd.label      "ກຳນົດເປັນພາບພື້ນຫລັງເດສກ໌ທັອບ…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "S">
+<!ENTITY bookmarkPageCmd2.label       "ບຸກມາກຫນ້ານີ້">
+<!ENTITY bookmarkPageCmd2.accesskey   "m">
 <!ENTITY bookmarkThisLinkCmd.label      "ບຸກມາກລີ້ງນີ້">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "L">
 <!ENTITY bookmarkThisFrameCmd.label      "ບຸກມາກເຟຣມນີ້">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "m">
+<!ENTITY pageAction.copyLink.label    "ສຳເນົາທີ່ຢູ່ລິ້ງ">
+<!ENTITY copyURLFeedback.label        "ສຳເນົາແລ້ວ!">
 <!ENTITY emailPageCmd.label           "ລີ້ງຈົດຫມາຍ...">
 <!ENTITY emailPageCmd.accesskey       "E">
 <!ENTITY savePageCmd.label            "ບັນທຶກຫນ້ານີ້ໄວ້ທີ່...">
@@ -423,18 +545,25 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY saveLinkCmd.accesskey        "k">
 <!ENTITY saveImageCmd.label           "ບັນທຶກຮູບພາບນີ້ໄວ້ທີ່...">
 <!ENTITY saveImageCmd.accesskey       "v">
+<!ENTITY saveVideoCmd.label           "ບັນທຶກວີດີໂອນີ້ໄວ້ທີ່…">
+<!ENTITY saveVideoCmd.accesskey       "v">
 <!ENTITY saveAudioCmd.label           "ບັນທຶກສຽງນີ້ໄວ້ທີ່...">
 <!ENTITY saveAudioCmd.accesskey       "v">
 <!ENTITY emailImageCmd.label          "ຈົດຫມາຍ ຮູບພາບ...">
 <!ENTITY emailImageCmd.accesskey      "g">
 <!ENTITY emailVideoCmd.label          "ຈົດຫມາຍວິດີໂອ...">
 <!ENTITY emailVideoCmd.accesskey      "a">
+<!ENTITY emailAudioCmd.label          "ສົ່ງຈົດໝາຍສຽງ…">
+<!ENTITY emailAudioCmd.accesskey      "a">
+<!ENTITY playPluginCmd.label          "ເປີດໃຊ້ງານປັກອິນນີ້">
+<!ENTITY playPluginCmd.accesskey      "c">
+<!ENTITY hidePluginCmd.accesskey      "H">
 <!ENTITY copyLinkCmd.label            "ສຳເນົາທີ່ຢູ່ລີ້ງ">
 <!ENTITY copyLinkCmd.accesskey        "a">
 <!ENTITY copyImageCmd.label           "ສຳເນົາທີ່ຢູ່ຮູບພາບ">
 <!ENTITY copyImageCmd.accesskey       "o">
 <!ENTITY copyImageContentsCmd.label   "ສຳເນົາຮູບພາບ">
-<!ENTITY copyImageContentsCmd.accesskey  "y"> 
+<!ENTITY copyImageContentsCmd.accesskey  "y">
 <!ENTITY copyVideoURLCmd.label        "ສຳເນົາທີ່ຢູ່ວິດີໂອ">
 <!ENTITY copyVideoURLCmd.accesskey    "o">
 <!ENTITY copyAudioURLCmd.label        "ສຳເນົາທີ່ຢູ່ຂອງສຽງ">
@@ -459,17 +588,26 @@ items are mutually exclusive. -->
 <!ENTITY mediaMute.accesskey         "M">
 <!ENTITY mediaUnmute.label           "ເປີດສຽງ">
 <!ENTITY mediaUnmute.accesskey       "m">
+<!ENTITY mediaPlaybackRate2.accesskey "d">
+<!ENTITY mediaPlaybackRate050x2.accesskey "S">
+<!ENTITY mediaPlaybackRate100x2.label "ປົກກະຕິ">
+<!ENTITY mediaPlaybackRate100x2.accesskey "N">
+<!ENTITY mediaPlaybackRate125x2.accesskey "F">
+<!ENTITY mediaPlaybackRate150x2.accesskey "a">
 <!-- LOCALIZATION NOTE: "Ludicrous" is a reference to the
 movie "Space Balls" and is meant to say that this speed is very
 fast. -->
+<!ENTITY mediaPlaybackRate200x2.accesskey "L">
+<!ENTITY mediaLoop.label             "ວົນຮອບ">
+<!ENTITY mediaLoop.accesskey         "L">
 <!-- LOCALIZATION NOTE: The access keys for "Show Controls" and
 "Hide Controls" are the same because the two context-menu
 items are mutually exclusive. -->
-<!ENTITY mediaShowControls.label     "ສະແດງແຜງການຄວບຄຸ່ມ">
+<!ENTITY mediaShowControls.label     "ສະແດງປຸ່ມຄວບຄຸມ">
 <!ENTITY mediaShowControls.accesskey "C">
-<!ENTITY mediaHideControls.label     "ເຊື່ອງແຜງການຄວບຄຸ່ມ">
+<!ENTITY mediaHideControls.label     "ເຊື່ອງປຸ່ມຄວບຄຸມ">
 <!ENTITY mediaHideControls.accesskey "C">
-<!ENTITY videoFullScreen.label       "ເຕັມຈໍ">
+<!ENTITY videoFullScreen.label       "ເຕັມຫນ້າຈໍ">
 <!ENTITY videoFullScreen.accesskey   "F">
 <!ENTITY videoSaveImage.label        "ບັນທຶກຮູບທີ່ຖ່າຍໄວ້ທີ່...">
 <!ENTITY videoSaveImage.accesskey    "S">
@@ -487,13 +625,13 @@ fullZoomResetCmd.commandkey2 are alternative acceleration keys for zoom.
 If shift key is needed with your locale popular keyboard for them,
 you can use these alternative items. Otherwise, their values should be empty.  -->
 
-<!ENTITY fullZoomEnlargeCmd.label       "ເພີມການຂະຫຍາຍຂື້ນ">
+<!ENTITY fullZoomEnlargeCmd.label       "ຂະຫຍາຍເຂົ້າ">
 <!ENTITY fullZoomEnlargeCmd.accesskey   "I">
 <!ENTITY fullZoomEnlargeCmd.commandkey  "+">
 <!ENTITY fullZoomEnlargeCmd.commandkey2 "="> <!-- + is above this key on many keyboards -->
 <!ENTITY fullZoomEnlargeCmd.commandkey3 "">
 
-<!ENTITY fullZoomReduceCmd.label        "ລຸດການຂະຫຍາຍລົງ">
+<!ENTITY fullZoomReduceCmd.label        "ຂະຫຍາຍອອກ">
 <!ENTITY fullZoomReduceCmd.accesskey    "O">
 <!ENTITY fullZoomReduceCmd.commandkey   "-">
 <!ENTITY fullZoomReduceCmd.commandkey2  "">
@@ -508,20 +646,24 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY fullZoom.label                 "ຂະຫຍາຍ">
 <!ENTITY fullZoom.accesskey             "Z">
 
+<!ENTITY sidebarCloseButton.tooltip     "ປິດແຖບຂ້າງ">
+<!ENTITY sidebarMenuClose.label         "ປິດແຖບຂ້າງ">
 
 <!ENTITY quitApplicationCmdWin2.label       "ອອກ">
 <!ENTITY quitApplicationCmdWin2.accesskey   "x">
 <!ENTITY quitApplicationCmdWin2.tooltip     "ອອກ &brandShorterName;">
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goForwardCmd.commandKey "]">
-<!ENTITY quitApplicationCmd.label       "ອອກ"> 
+<!ENTITY quitApplicationCmd.label       "ອອກ">
 <!ENTITY quitApplicationCmd.accesskey   "Q">
 <!ENTITY quitApplicationCmdMac2.label   "ອອກ &brandShorterName;">
+<!ENTITY quitApplicationCmd.key         "Q">
 
-<!ENTITY closeCmd.label                 "ປິດ">  
-<!ENTITY closeCmd.key                   "W">  
+<!ENTITY closeCmd.label                 "ປິດ">
+<!ENTITY closeCmd.key                   "W">
 <!ENTITY closeCmd.accesskey             "C">
 
+<!ENTITY toggleMuteCmd.key              "M">
 
 <!ENTITY pageStyleMenu.label "ຮູບແບບຂອງຫນ້າ">
 <!ENTITY pageStyleMenu.accesskey "y">
@@ -529,8 +671,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageStyleNoStyle.accesskey "N">
 <!ENTITY pageStylePersistentOnly.label "ຮູບແບບຂອງຫນ້າແບບພື້ນຖານ">
 <!ENTITY pageStylePersistentOnly.accesskey "B">
-
-<!ENTITY pageReportIcon.tooltip            "ປ່ຽນການຕັ້ງຄ່າການປິດກັ້ນປັອບອັບສຳລັບເວັບໄຊຕ໌ນີ້">
 
 <!ENTITY allowPopups.accesskey "p">
 <!-- On Windows we use the term "Options" to describe settings, but
@@ -547,84 +687,160 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY bidiSwitchTextDirectionItem.accesskey    "w">
 <!ENTITY bidiSwitchTextDirectionItem.commandkey   "X">
 
-<!ENTITY findOnCmd.label     "ຊອກຫາໃນຫນ້ານີ້...">
+<!ENTITY findOnCmd.label     "ຄົ້ນຫາໃນຫນ້ານີ້…">
 <!ENTITY findOnCmd.accesskey "F">
 <!ENTITY findOnCmd.commandkey "f">
-<!ENTITY findAgainCmd.label  "ຊອກຫາອີກເທື່ອຫນຶງ">
+<!ENTITY findAgainCmd.label  "ຄົ້ນຫາອີກເທື່ອຫນຶ່ງ">
 <!ENTITY findAgainCmd.accesskey "g">
 <!ENTITY findAgainCmd.commandkey "g">
 <!ENTITY findAgainCmd.commandkey2 "VK_F3">
+<!ENTITY findSelectionCmd.commandkey "e">
 
-<!ENTITY spellAddDictionaries.label "ເພີ່ມດິກຊັນນາລີ...">
+<!ENTITY spellAddDictionaries.label "ເພີ່ມວັດຈະນານຸກົມ...">
 <!ENTITY spellAddDictionaries.accesskey "A">
 
 <!ENTITY editBookmark.done.label                     "ສຳເລັດ">
+<!ENTITY editBookmark.removeBookmark.accessKey       "R">
 
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "ຄວາມປອດໄພຂອງເວັບໄຊທ໌">
+
+<!ENTITY identity.connectionSecure "ການເຊື່ອມຕໍ່ທີ່ປອດໄພ">
+<!ENTITY identity.connectionInternal "ນີ້ເປັນຫນ້າ &brandShortName; ທີ່ປອດໄພ.">
+<!ENTITY identity.insecureLoginForms2 "ການປ້ອນຂໍ້ມູນການລັອກອິນທີ່ໃສ່ໄວ້ເທິງຫນ້ານີ້ອາດຈະຖືກບຸກລຸກໄດ້.">
 
 <!-- Strings for connection state warnings. -->
+<!ENTITY identity.passiveLoaded "ເນື້ອຫາບາງສ່ວນໃນຫນ້ານີ້ບໍ່ມີຄວາມປອດໄພ (ເຊັ່ນວ່າຮູບພາບ)">
 
 <!-- Strings for connection state warnings in the subview. -->
 
+<!ENTITY identity.enableMixedContentBlocking.label "ເປີດໃຊ້ການປ້ອງກັນ">
+<!ENTITY identity.enableMixedContentBlocking.accesskey "E">
+<!ENTITY identity.disableMixedContentBlocking.accesskey "D">
+<!ENTITY identity.learnMore "ຮຽນຮູ້ເພີ່ມເຕີມ">
 
+<!ENTITY identity.removeCertException.accesskey "R">
 
+<!ENTITY identity.moreInfoLinkText2 "ຂໍ້ມູນເພີ່ມເຕີມ">
 
+<!ENTITY identity.permissions "ການອະນຸຍາດ">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
-<!ENTITY tabsToolbar.label "ແຖບບຣາວເສີ">
+<!ENTITY tabsToolbar.label "ແທັບບຣາວເຊີ">
 
 <!-- LOCALIZATION NOTE (syncTabsMenu3.label): This appears in the history menu -->
+<!ENTITY syncTabsMenu3.label     "ແທັບທີ່ຊິງຄ໌ແລ້ວ">
 
+<!ENTITY syncedTabs.sidebar.label              "ແທັບທີ່ຊິງຄ໌ແລ້ວ">
+<!ENTITY syncedTabs.sidebar.noclients.subtitle "ຕ້ອງການໃຫ້ເຫັນແທັບທີ່ນີ້ຂອງທ່ານໄດ້ຈາກອຸປະກອນອື່ນໆບໍ່?">
+<!ENTITY syncedTabs.sidebar.notsignedin.label  "ລົງຊື່ເຂົ້າໃຊ້ເພື່ອເບິ່ງລາຍການແທັບທີ່ເປີດຢູ່ໃນອຸປະກອນອື່ນໆຂອງທ່ານ.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "ບັນຊີຂອງທ່ານຕ້ອງໄດ້ຮັບການຢືນຢັນ.">
+<!ENTITY syncedTabs.sidebar.notabs.label       "ບໍ່ມີແທັບທີ່ເປີດຢູ່">
+<!ENTITY syncedTabs.sidebar.openprefs.label    "ເປີດການຕັ້ງຄ່າ &syncBrand.shortName.label;">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
+<!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "ເປີດການຊິງຄ໌ແທັບເພື່ອເບິ່ງລາຍການແທັບທີ່ເປີດຢູ່ໃນອຸປະກອນອື່ນໆຂອງທ່ານ.">
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "ເຊື່ອມຕໍ່ກັບອຸປະກອນອື່ນ">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
      These access keys are identical because their associated menu items are
      mutually exclusive -->
+<!ENTITY syncedTabs.context.open.label                       "ເປີດ">
+<!ENTITY syncedTabs.context.open.accesskey                   "O">
+<!ENTITY syncedTabs.context.openInNewTab.label               "ເປີດໃນແທັບໃຫມ່">
+<!ENTITY syncedTabs.context.openInNewTab.accesskey           "w">
+<!ENTITY syncedTabs.context.openInNewWindow.label            "ເປີດໃນຫນ້າຕ່າງໃຫມ່">
+<!ENTITY syncedTabs.context.openInNewWindow.accesskey        "N">
+<!ENTITY syncedTabs.context.openInNewPrivateWindow.label     "ເປີດໃນຫນ້າຕ່າງສ່ວນຕົວໃຫມ່">
+<!ENTITY syncedTabs.context.openInNewPrivateWindow.accesskey "P">
+<!ENTITY syncedTabs.context.bookmarkSingleTab.label          "ບຸກມາກແທັບນີ້…">
+<!ENTITY syncedTabs.context.bookmarkSingleTab.accesskey      "B">
+<!ENTITY syncedTabs.context.copy.label                       "ສຳເນົາ">
+<!ENTITY syncedTabs.context.copy.accesskey                   "C">
 
+<!ENTITY syncedTabs.context.openAllInTabs.label              "ເປີດທັງຫມົດໃນແທັບ">
+<!ENTITY syncedTabs.context.openAllInTabs.accesskey          "O">
+<!ENTITY syncedTabs.context.managedevices.label              "ຈັດການອຸປະກອນ...">
+<!ENTITY syncedTabs.context.managedevices.accesskey          "D">
 
 
 <!ENTITY syncBrand.shortName.label    "Sync">
 
+<!ENTITY syncSignIn.label             "ລົງຊື່ເຂົ້າໃຊ້ &syncBrand.shortName.label;…">
+<!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "ເລີ່ມການເຊື່ອມຕໍ່ດຽວນີ້">
 <!ENTITY syncSyncNowItem.accesskey    "S">
+<!ENTITY syncReAuthItem.label         "ເຊື່ອມຕໍ່ກັບ &syncBrand.shortName.label; ໃຫມ່…">
+<!ENTITY syncReAuthItem.accesskey     "R">
 <!ENTITY syncToolbarButton.label      "Sync">
 
-
-
+<!ENTITY customizeMode.restoreDefaults "ກູ້ຄືນຄ່າເລີ່ມຕົ້ນ">
+<!ENTITY customizeMode.done "ສຳເລັດ">
+<!ENTITY customizeMode.toolbars2 "ແຖບເຄືອງມື">
+<!ENTITY customizeMode.lwthemes "ຊຸດຕົກແຕ່ງ">
+<!ENTITY customizeMode.lwthemes.recommended "ແນະນຳ">
 <!ENTITY customizeMode.lwthemes.menuManage "ຈັດການ">
+<!ENTITY customizeMode.lwthemes.menuManage.accessKey "M">
+<!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "G">
+<!ENTITY customizeMode.uidensity "ຄວາມ​ຫນາ​ແຫນ້ນ">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuNormal.*):
      “Normal” is displayed in the Customize screen, under the Density menu. -->
+<!ENTITY customizeMode.uidensity.menuNormal.label "ປົກກະຕິ">
+<!ENTITY customizeMode.uidensity.menuNormal.tooltip "ປົກກະຕິ">
+<!ENTITY customizeMode.uidensity.menuNormal.accessKey "N">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuCompact.*):
      “Compact” is displayed in the Customize screen, under the Density menu.
      It’s an adjective (Density -> Compact). -->
+<!ENTITY customizeMode.uidensity.menuCompact.label "ກະທັດຮັດ">
+<!ENTITY customizeMode.uidensity.menuCompact.tooltip "ກະທັດຮັດ">
+<!ENTITY customizeMode.uidensity.menuCompact.accessKey "C">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuTouch.*):
      “Touch” is displayed in the Customize screen, under the Density menu.
      It’s an adjective (Density -> Touch), and it means that control layout is
      optimized for touch devices. -->
+<!ENTITY customizeMode.uidensity.menuTouch.label "ສຳຜັດ">
+<!ENTITY customizeMode.uidensity.menuTouch.tooltip "ສຳຜັດ">
+<!ENTITY customizeMode.uidensity.menuTouch.accessKey "T">
 
+<!ENTITY customizeMode.autoHideDownloadsButton.label "ເຊື່ອງອັດຕະໂນມັດ">
 
+<!ENTITY getUserMedia.selectCamera.label "ກ້ອງຖ່າຍຮູບທີ່ແບ່ງປັນ:">
+<!ENTITY getUserMedia.selectCamera.accesskey "C">
+<!ENTITY getUserMedia.selectMicrophone.label "ໄມໂຄຣໂຟນທີ່ແບ່ງປັນ:">
+<!ENTITY getUserMedia.selectMicrophone.accesskey "M">
+
+<!ENTITY trackingProtection.title "ການປ້ອງກັນການຕິດຕາມ">
+<!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; ກຳລັງບັອກເນື້ອບາງສ່ວນຂອງຫນ້ານີ້ທີ່ອາດຈະເຮັດໃຫ້ການທ່ອງເວັບຂອງທ່ານຖືກຕິດຕາມ.">
 <!-- LOCALIZATION NOTE (trackingProtection.unblock.label, trackingProtection.unblock.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock.accesskey "D">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate.label, trackingProtection.unblockPrivate.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate.accesskey "D">
+<!ENTITY trackingProtection.block2.label "ເປີດໃຊ້ການປ້ອງກັນ">
+<!ENTITY trackingProtection.block2.accesskey "E">
 
-<!ENTITY trackingContentBlocked.message "ຕິດຕາມ">
-
+<!ENTITY pluginNotification.showAll.label "ສະແດງທັງຫມົດ">
+<!ENTITY pluginNotification.showAll.accesskey "S">
 
 <!-- LOCALIZATION NOTE (pluginActivateNow.label, pluginActivateAlways.label, pluginBlockNow.label): These should be the same as the matching strings in browser.properties -->
+<!ENTITY pluginActivateNow.label "ອະນຸຍາດດຽວນີ້">
+<!ENTITY pluginActivateAlways.label "ອະນຸຍາດແລະຈື່ຈຳ">
+<!ENTITY pluginBlockNow.label "ບັອກປັກອິນ">
 
 <!-- LOCALIZATION NOTE: (pluginNotification.width): This is used to determine the
      width of the plugin popup notification that can appear if a plugin has been
      blocked on a page. Should be wide enough to fit the pluginActivateNow.label
      and pluginActivateAlways.label strings above on a single line. This must be
      a CSS length value. -->
+<!ENTITY pluginNotification.width "28em">
 
-
-<!ENTITY appMenuSidebars.label         "ແຖບດ້ານຂ້າງ">
+<!ENTITY uiTour.infoPanel.close "ປິດ">
 
 <!-- LOCALIZATION NOTE: (panicButton.view.mainTimeframeDesc, panicButton.view.5min, panicButton.view.2hr, panicButton.view.day):
      The .mainTimeframeDesc string combined with any of the 3 others is meant to form a complete sentence, e.g. "Forget the last: Five minutes".
@@ -634,11 +850,62 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The .mainActionDesc string combined with any of the 4 others is meant to form a complete sentence, e.g. "Proceeding will: Delete Recent Cookies".
      Note also that the deleteCookies, deleteHistory and deleteTabsAndWindows strings include <html:strong> tags for emphasis on the words "Cookies", "History", "Tabs" and "Windows".
      The translation should do the same. -->
+<!ENTITY panicButton.view.openNewWindow           "ເປີດຫນ້າຕ່າງວ່າງໃຫມ່">
+
+<!ENTITY panicButton.view.forgetButton            "ລືມສາ!">
+
+<!ENTITY panicButton.thankyou.msg2                "ການທ່ອງເວັບປອດໄພ!">
+<!ENTITY panicButton.thankyou.buttonlabel         "ຂອບໃຈ!">
+
+<!ENTITY emeLearnMoreContextMenu.label            "ຮຽນຮູ້ເພີ່ມເຕີມກ່ຽວກັບ DRM…">
+<!ENTITY emeLearnMoreContextMenu.accesskey        "D">
+
+<!ENTITY updateAvailable.whatsnew.label "ເບິ່ງວ່າມີຫຍັງໃໝ່.">
+<!ENTITY updateAvailable.acceptButton.label "ດາວໂຫລດອັບເດດ">
+<!ENTITY updateAvailable.acceptButton.accesskey "D">
+<!ENTITY updateAvailable.cancelButton.label "ບໍ່ແມ່ນຕອນນີ້">
+<!ENTITY updateAvailable.cancelButton.accesskey "N">
+<!ENTITY updateAvailable.panelUI.label "ດາວໂຫລດອັບເດດ &brandShorterName;">
+
+<!ENTITY updateManual.whatsnew.label "ເບິ່ງວ່າມີຫຍັງໃໝ່.">
+<!ENTITY updateManual.acceptButton.label "ດາວໂຫລດ &brandShorterName;">
+<!ENTITY updateManual.acceptButton.accesskey "D">
+<!ENTITY updateManual.cancelButton.label "ບໍ່ແມ່ນຕອນນີ້">
+<!ENTITY updateManual.cancelButton.accesskey "N">
+
+<!ENTITY updateRestart.header.message2 "ເລີ່ມເຮັດວຽກໃຫມ່ເພື່ອອັບເດດ &brandShorterName;.">
+<!ENTITY updateRestart.acceptButton.label "ເລີ່ມເຮັດວຽກໃຫມ່ແລະກູ້ຄືນ">
+<!ENTITY updateRestart.acceptButton.accesskey "R">
+<!ENTITY updateRestart.cancelButton.label "ບໍ່ແມ່ນຕອນນີ້">
+<!ENTITY updateRestart.cancelButton.accesskey "N">
+<!ENTITY updateRestart.panelUI.label2 "ເລີ່ມການທຳງານໃຫມ່ເພື່ອອັບເດດ &brandShorterName;">
 
 
+<!ENTITY newTabControlled.keepButton.label "ເກັບການປ່ຽນແປງ">
+<!ENTITY newTabControlled.keepButton.accesskey "K">
+<!ENTITY newTabControlled.restoreButton.label "ກູ້ຄືນການຕັ້ງຄ່າ">
+<!ENTITY newTabControlled.restoreButton.accesskey "R">
+
+<!ENTITY newTabControlled.disableButton.label "ປິດໃຊ້ສ່ວນຂະຫຍາຍ">
+<!ENTITY newTabControlled.disableButton.accesskey "D">
+
+<!ENTITY homepageControlled.keepButton.label "ເກັບການປ່ຽນແປງ">
+<!ENTITY homepageControlled.keepButton.accesskey "K">
+<!ENTITY homepageControlled.disableButton.label "ປິດໃຊ້ສ່ວນຂະຫຍາຍ">
+<!ENTITY homepageControlled.disableButton.accesskey "D">
 
 
+<!ENTITY pageAction.sendTabToDevice.label "ສົ່ງແທັບໄປຫາອຸປະກອນ">
+<!ENTITY sendToDevice.syncNotReady.label "ກຳລັງ Sync ອຸປະກອນ…">
+
+<!ENTITY pageAction.shareUrl.label "ແບ່ງປັນ">
 
 
+<!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
+     display a tooltip for accessibility indicator in toolbar/tabbar. It is also
+     used as a textual label for the indicator used by assistive technology
+     users. -->
 
-
+<!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
+     The first <image> tag is replaced with the icon for the add-ons menu.
+     The second <image> tag is replaced with the icon for the toolbar menu. -->

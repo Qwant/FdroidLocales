@@ -12,12 +12,12 @@
 
 <!-- J-PAKE Key Screen -->
 <!ENTITY sync.subtitle.connect.label 'თქვენი ახალი მოწყობილობის გასააქტივებლად, მოწყობილობაზე შეარჩიეთ «&syncBrand.shortName.label;-ის გამართვა».'>
-<!ENTITY sync.subtitle.pair.label 'გასააქტივებლად შეარჩიეთ «შეწყვილება» თქვენს სხვა მოწყობილობაში.'>
+<!ENTITY sync.subtitle.pair.label 'ასამოქმედებლად, შეარჩიეთ “შეწყვილება” თქვენს მეორე მოწყობილობაში.'>
 <!ENTITY sync.pin.default.label '...\n...\n...\n'>
 <!ENTITY sync.link.nodevice.label 'I don\&apos;t have the device with me…'>
 
 <!-- Configure Engines -->
-<!ENTITY sync.configure.engines.title.passwords2 'შესვლები'>
+<!ENTITY sync.configure.engines.title.passwords2 'ანგარიშები'>
 <!ENTITY sync.configure.engines.title.history 'ისტორია'>
 <!ENTITY sync.configure.engines.title.tabs 'დაფები'>
 
@@ -29,13 +29,13 @@
 <!ENTITY sync.default.client.name '&formatS1; &formatS2; მოწყობილობაზე '>
 
 <!-- Bookmark folder strings -->
-<!ENTITY bookmarks.folder.menu.label 'სანიშნეების მენიუ'>
+<!ENTITY bookmarks.folder.menu.label 'სანიშნების მენიუ'>
 <!ENTITY bookmarks.folder.places.label ''>
 <!ENTITY bookmarks.folder.tags.label 'ჭდეები'>
-<!ENTITY bookmarks.folder.toolbar.label 'სანიშნეების ხელსაწყოები'>
-<!ENTITY bookmarks.folder.other.label 'სხვა სანიშნეები'>
-<!ENTITY bookmarks.folder.desktop.label 'კომპიუტერის სანიშნეები'>
-<!ENTITY bookmarks.folder.mobile.label 'მობილურის სანიშნეები'>
+<!ENTITY bookmarks.folder.toolbar.label 'სანიშნების ხელსაწყოები'>
+<!ENTITY bookmarks.folder.other.label 'სხვა სანიშნები'>
+<!ENTITY bookmarks.folder.desktop.label 'კომპიუტერის სანიშნები'>
+<!ENTITY bookmarks.folder.mobile.label 'მობილურის სანიშნები'>
 <!-- Pinned sites on about:home. This folder should never be shown to the user, but we have to give it a string name -->
 <!ENTITY bookmarks.folder.pinned.label 'დამაგრებული'>
 
@@ -47,29 +47,31 @@
 <!ENTITY fxaccount_back_to_browsing 'დათვალიერებაზე დაბრუნება'>
 
 <!ENTITY fxaccount_getting_started_welcome_to_sync 'მოგესალმებათ &syncBrand.shortName.label;'>
-<!ENTITY fxaccount_getting_started_description2 'შედით სისტემაში თქვენი ჩანართების, სანიშნეების, პაროლების და ა.შ. დასინქრონებისთვის.'>
+<!ENTITY fxaccount_getting_started_description2 'შედით სისტემაში თქვენი ჩანართების, სანიშნების, პაროლების და ა.შ. დასინქრონებისთვის.'>
 <!ENTITY fxaccount_getting_started_get_started 'დაიწყეთ'>
 <!ENTITY fxaccount_getting_started_old_firefox '&syncBrand.shortName.label;-ის ძველ ვერსიას იყენებთ?'>
 
-<!ENTITY fxaccount_status_signed_in_as 'შესული ხართ, როგორც'>
-<!ENTITY fxaccount_status_manage_account 'ანგარიშის მართვა'>
 <!ENTITY fxaccount_status_auth_server 'ანგარიშის სერვერი'>
 <!ENTITY fxaccount_status_sync_now 'სინქრონიზაცია ახლა'>
-<!ENTITY fxaccount_status_syncing2 'სინქრონირდება...'>
+<!ENTITY fxaccount_status_syncing2 'დასინქრონდება...'>
 <!ENTITY fxaccount_status_device_name 'მოწყობილობის სახელი'>
 <!ENTITY fxaccount_status_sync_server 'სინქრონიზციის სერვერი'>
-<!ENTITY fxaccount_status_sync '&syncBrand.shortName.label;'>
-<!ENTITY fxaccount_status_sync_enabled '&syncBrand.shortName.label; ჩართულია'>
 <!ENTITY fxaccount_status_needs_verification2 'თქვენს ანგარიშს დამოწმება სჭირდება. შეეხეთ, დასამოწმებელი წერილის ხელახლა გამოსაგზავნად.'>
 <!ENTITY fxaccount_status_needs_credentials 'დაკავშირება ვერ მოხერხდა. შეეხეთ შესასვლელად.'>
 <!ENTITY fxaccount_status_needs_upgrade 'შესასვლელად უნდა განაახლოთ &brandShortName;.'>
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled '&syncBrand.shortName.label; გამართულია, მაგრამ ავტომატურად არ სინქრონირდება. შეამოწმეთ \&quot;ავტომატური სინქრონიზაცია\&quot; მისამართზე Android-ის პარამეტრები &gt; მონაცემების გამოყენება.'>
 <!ENTITY fxaccount_status_needs_master_sync_automatically_enabled_v21 '&syncBrand.shortName.label; გამართულია, მაგრამ ავტომატურად არ სინქრონირდება. შეამოწმეთ \&quot;ავტომატური სინქრონიზაცია\&quot; მისამართზე Android-ის პარამეტრები &gt; ანგარიშები.'>
 <!ENTITY fxaccount_status_needs_finish_migrating 'შეეხეთ თქვენს Firefox ანგარიშში შესასვლელად.'>
-<!ENTITY fxaccount_status_bookmarks 'სანიშნეები'>
+<!ENTITY fxaccount_status_choose_what 'მიუთითეთ, რისი დასინქრონება გსურთ'>
+<!ENTITY fxaccount_status_bookmarks 'სანიშნები'>
 <!ENTITY fxaccount_status_history 'ისტორია'>
-<!ENTITY fxaccount_status_passwords2 'შესვლები'>
+<!ENTITY fxaccount_status_passwords2 'ანგარიშები'>
 <!ENTITY fxaccount_status_tabs 'გახსნილი ჩანართები'>
+<!ENTITY fxaccount_status_additional_settings 'დამატებითი პარამეტრები'>
+<!ENTITY fxaccount_pref_sync_use_metered2 'დასინქრონება მხოლოდ Wi-Fi-ით'>
+<!-- Localization note: Only affects background syncing, user initiated
+     syncs will still be done regardless of the connection -->
+<!ENTITY fxaccount_pref_sync_use_metered_summary2 '&brandShortName;-სთვის სინქრონიზაციის აკრძალვა, მობილური, ან ტარიფით შეზღუდული კავშირის პირობებში'>
 <!ENTITY fxaccount_status_legal 'იურიდიული ინფორმაცია' >
 <!-- Localization note: when tapped, the following two strings link to
      external web pages.  Compare fxaccount_policy_{linktos,linkprivacy}:
@@ -77,17 +79,16 @@
      the two uses differently. -->
 <!ENTITY fxaccount_status_linktos2 'მომსახურების პირობები'>
 <!ENTITY fxaccount_status_linkprivacy2 'პირადულობის ცნობება'>
-<!ENTITY fxaccount_status_more 'მეტი&ellipsis;'>
 <!ENTITY fxaccount_remove_account 'გამოთიშვა&ellipsis;'>
 
 <!ENTITY fxaccount_remove_account_dialog_title2 'შეწყდეს Sync-თან კავშირი?'>
 <!ENTITY fxaccount_remove_account_dialog_message2 'მონახულებული გვერდების მონაცემები ამ მოწყობილობაზე დარჩება, მაგრამ აღარ დასინქრონდება თქვენს ანგარიშთან.'>
 <!-- Localization note: format string below will be replaced
      with the Firefox Account's email address. -->
-<!ENTITY fxaccount_remove_account_toast2 '&formatS; Firefox ანგარიშთან კავშირი შეწყვეტილია.'>
+<!ENTITY fxaccount_remove_account_toast2 'Firefox ანგარიშთან &formatS; კავშირი გათიშულია.'>
 <!-- Localization note (fxaccount_remove_account_dialog_action_confirm): This is the label for the
  confirm button in the dialog that shows up when disconnecting from sync. -->
-<!ENTITY fxaccount_remove_account_dialog_action_confirm 'კავშირის შეწყვეტა'>
+<!ENTITY fxaccount_remove_account_dialog_action_confirm 'გათიშვა'>
 
 <!ENTITY fxaccount_enable_debug_mode 'გამართვის რეჟიმის ჩართვა'>
 
@@ -102,21 +103,6 @@
      Account. -->
 <!ENTITY fxaccount_options_title '&syncBrand.shortName.label; პარამეტრები'>
 <!ENTITY fxaccount_options_configure_title 'Configure &syncBrand.shortName.label; კონფიგურაცია'>
-
-<!-- Localization note: these error messages are shown after a request
-     has been made to the remote server, and an error of some type has
-     been returned. -->
-<!ENTITY fxaccount_remote_error_UPGRADE_REQUIRED 'თქვენ გჭირდებად Firefox-ის განახლება'>
-
-<!-- Localization note: the format string will be fxaccount_sign_in_button_label, linkified. -->
-<!ENTITY fxaccount_remote_error_ATTEMPT_TO_CREATE_AN_ACCOUNT_THAT_ALREADY_EXISTS_2 'ანგარიში უკვე არსებობს. &formatS1;'>
-<!ENTITY fxaccount_remote_error_ATTEMPT_TO_ACCESS_AN_ACCOUNT_THAT_DOES_NOT_EXIST 'არასწორი ელფოსტა ან პაროლი'>
-<!ENTITY fxaccount_remote_error_INCORRECT_PASSWORD 'არასწორი ელფოსტა ან პაროლი'>
-<!ENTITY fxaccount_remote_error_ATTEMPT_TO_OPERATE_ON_AN_UNVERIFIED_ACCOUNT 'ანგარიში არაა გადამოწმებული'>
-<!ENTITY fxaccount_remote_error_CLIENT_HAS_SENT_TOO_MANY_REQUESTS 'სერვერი დაკავებულია, სცადეთ ხელახლა მალე'>
-<!ENTITY fxaccount_remote_error_SERVICE_TEMPORARILY_UNAVAILABLE_TO_DUE_HIGH_LOAD 'სერვერი დაკავებულია, სცადეთ ხელახლა მალე'>
-<!ENTITY fxaccount_remote_error_UNKNOWN_ERROR 'დაფიქსირდა შეცდომა'>
-<!ENTITY fxaccount_remote_error_ACCOUNT_LOCKED 'ანგარიში ჩაკეტილია. &formatS1;'>
 
 <!ENTITY fxaccount_sync_sign_in_error_notification_title2 '&syncBrand.shortName.label; დაკავშირებული არაა'>
 <!-- Localization note: the format string below will be replaced

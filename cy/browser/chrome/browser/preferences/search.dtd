@@ -2,6 +2,18 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY searchBar.label                       "Bar Chwilio">
+
+<!ENTITY searchBar.hidden.label                "Defnyddiwch y bar cyfeiriadau ar gyfer chwilio a llywio">
+<!ENTITY searchBar.shown.label                 "Ychwanegu'r bar chwilio i'r bar offer">
+
+<!-- LOCALIZATION NOTE (showSearchSuggestionsAboveHistory.label): This string
+     describes what the user will observe when the system prioritizes search
+     suggestions over browsing history in the results that extend down from the
+     address bar. In the original English string, "ahead" refers to location
+     (appearing most proximate to), not time (appearing before). -->
+<!ENTITY showSearchSuggestionsAboveHistory.label "Dangos awgrymiadau chwilio o flaen hanes yng nghanlyniadau'r bar cyfeiriadau">
+
 <!ENTITY defaultSearchEngine.label             "Peiriant Chwilio Rhagosodedig">
 
 <!ENTITY chooseYourDefaultSearchEngine2.label   "Dewis y peiriant chwilio ragosodedig i'w ddefnyddio yn y bar cyfeiriad a'r bar chwilio.">

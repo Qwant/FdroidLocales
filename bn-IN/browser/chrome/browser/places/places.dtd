@@ -85,8 +85,8 @@
 <!ENTITY col.dateadded.label     "যোগ হওয়ার তারিখ">
 <!ENTITY col.lastmodified.label  "সর্বশেষ পরিবর্তনের সময়">
 
-<!ENTITY search.label                              "অনুসন্ধান:">
-<!ENTITY search.accesskey                          "S">
+<!ENTITY historySearch.placeholder  "ইতিহাস খুঁজুন">
+<!ENTITY bookmarksSearch.placeholder  "বুকমার্কগুলি খুঁজুন">
 
 <!ENTITY cmd.find.key  "f">
 
@@ -104,8 +104,6 @@
 <!ENTITY detailsPane.less.accesskey "আ">
 <!ENTITY detailsPane.selectAnItemText.description "কোনো বস্তু প্রদর্শন করার জন্য ও সেটির বৈশিষ্ট্য পরিবর্তের উদ্দেশ্যে নির্বাচন করুন">
 
-<!ENTITY find.label               "অনুসন্ধান:">
-<!ENTITY find.accesskey           "S">
 <!ENTITY view.label               "প্রদর্শন">
 <!ENTITY view.accesskey           "প">
 <!ENTITY byDate.label             "তারিখ অনুযায়ী">

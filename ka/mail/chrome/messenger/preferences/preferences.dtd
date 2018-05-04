@@ -2,8 +2,15 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY  windowClose.key                  "w">
+<!ENTITY  preferencesDefaultTitleMac.title "პარამეტრები">
+<!ENTITY  preferencesDefaultTitleWin.title "პარამეტრები">
+<!ENTITY  preferencesCloseButton.label     "დახურვა">
+<!ENTITY  preferencesCloseButton.accesskey "უ">
+
 <!ENTITY  prefWindow.titleWin     "პარამეტრები">
 <!ENTITY  prefWindow.titleGNOME   "&brandShortName; პარამეტრები">
+<!ENTITY  prefWindow.titleMAC     "პარამეტრები">
 <!ENTITY  prefWindow.styleWindows "width: 56em; min-height: 40em;">
 <!ENTITY  prefWindow.styleMac     "width: 560em;">
 <!ENTITY  prefWindow.styleGNOME   "width: 58em; min-height: 40em;">
@@ -12,6 +19,11 @@
 <!ENTITY paneDisplay.title        "ჩვენება">
 <!ENTITY paneComposition.title    "შექმნა">
 <!ENTITY paneChat.title           "ჩათი">
-<!ENTITY paneAttachments.title    "ჩანართები">
+<!ENTITY paneAttachments.title    "დანართები">
+<!ENTITY panePrivacy.title        "პირადულობა">
 <!ENTITY paneSecurity.title       "უსაფრთხოება">
 <!ENTITY paneAdvanced.title       "დეტალები">
+<!ENTITY paneAccount.title        "ანგარიშები">
+
+<!ENTITY okButton.title           "კარგი">
+<!ENTITY okButton.accesskey       "კ">

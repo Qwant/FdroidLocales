@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "Həmişə soruş">
 <!ENTITY  permAllow             "İcazə ver">
 <!ENTITY  permAllowSession      "Bu seans üçün icazə ver">
-<!ENTITY  permBlock             "Blokla">
+<!ENTITY  permHide              "Gizlət">
+<!ENTITY  permBlock             "Əngəllə">
 <!ENTITY  permissionsFor        "İcazələr:">
 <!ENTITY  permPlugins           "Qoşmaları Aktivləşdir">
-
-<!ENTITY  permClearStorage           "Saxlananları təmizlə">
-<!ENTITY  permClearStorage.accesskey "t">
 
 <!ENTITY  securityTab           "Təhlükəsizlik">
 <!ENTITY  securityTab.accesskey "G">
@@ -73,12 +71,16 @@
 <!ENTITY  securityView.identity.owner    "Sahibi:">
 <!ENTITY  securityView.identity.domain   "Web sayt:">
 <!ENTITY  securityView.identity.verifier "Təsdiqləyən:">
+<!ENTITY  securityView.identity.validity "Vaxtı çıxma:">
 
 <!ENTITY  securityView.privacy.header                   "Məxfilik və Tarixçə">
 <!ENTITY  securityView.privacy.history                  "Bu saytı daha əvvəl açmışam?">
 <!ENTITY  securityView.privacy.cookies                  "Bu sayt kompüterimdə məlumat (çərəzlər) saxlayırmı?">
 <!ENTITY  securityView.privacy.viewCookies              "Çərəzləri Gör">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "R">
+<!ENTITY  securityView.privacy.siteData                 "Bu sayt kompüterimdə məlumat saxlayırmı?">
+<!ENTITY  securityView.privacy.clearSiteData            "Çərəzlər və Sayt Məlumatlarını Təmizlə">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "C">
 <!ENTITY  securityView.privacy.passwords                "Bu sayta aid hər hansı bir parol saxlamışam?">
 <!ENTITY  securityView.privacy.viewPasswords            "Saxlanılmış Parolları Gör">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "P">

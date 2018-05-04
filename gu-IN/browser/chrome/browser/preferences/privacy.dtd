@@ -3,49 +3,61 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY  trackingProtectionHeader2.label      "ટ્રેકિંગ પ્રોટેક્શન">
+<!ENTITY  trackingProtection3.description      "ટ્રેકિંગ પ્રોટેક્શન ઓનલાઇન ટ્રેકર જે બહુવિધ વેબસાઇટ્સ પર તમારા બ્રાઉઝિંગ ડેટાને એકત્રિત કરે તેને અવરોધે છે.">
+<!ENTITY  trackingProtection3.radioGroupLabel  "જાણીતા ટ્રેકર્સને અવરોધિત કરવા માટે ટ્રેકિંગ પ્રોટેક્શનનો ઉપયોગ કરો">
 <!ENTITY  trackingProtectionAlways.label       "હંમેશા">
 <!ENTITY  trackingProtectionAlways.accesskey   "y">
 <!ENTITY  trackingProtectionPrivate.label      "ખાનગી વિન્ડો માં જ">
 <!ENTITY  trackingProtectionPrivate.accesskey  "I">
 <!ENTITY  trackingProtectionNever.label        "ક્યારેય નહિં">
 <!ENTITY  trackingProtectionNever.accesskey    "n">
-<!ENTITY  trackingProtectionLearnMore.label    "વધુ શીખો">
+<!ENTITY  trackingProtectionLearnMore2.label    "ટ્રેકિંગ સુરક્ષા અને તમારી ગોપનીયતા વિશે વધુ જાણો">
 <!ENTITY  trackingProtectionExceptions.label   "અપવાદો…">
 <!ENTITY  trackingProtectionExceptions.accesskey "x">
 
-<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
-<!ENTITY trackingProtectionPBM5.accesskey     "v">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
+<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
+<!ENTITY trackingProtectionPBM6.label         "જાણીતા ટ્રેકર્સને અવરોધિત કરવા માટે ખાનગી બ્રાઉઝિંગમાં ટ્રેકિંગ પ્રોટેક્શનનો ઉપયોગ કરો">
 <!ENTITY trackingProtectionPBM6.accesskey     "v">
 <!ENTITY trackingProtectionPBMLearnMore.label "વધુ શીખો">
+<!ENTITY changeBlockList2.label               "અવરોધિત સૂચિ બદલો…">
 <!ENTITY changeBlockList2.accesskey           "C">
-
-<!ENTITY  doNotTrack.learnMore.label    "વધુ શીખો">
-<!ENTITY  doNotTrack.always.label       "હંમેશા">
 
 <!ENTITY  history.label                 "ઇતિહાસ">
 <!ENTITY  permissions.label             "પરવાનગીઓ">
 
 <!ENTITY  addressBar.label              "સરનામા પટ્ટી">
+<!ENTITY  addressBar.suggest.label      "સરનામાં બારનો ઉપયોગ કરતી વખતે, સૂચન કરો">
+<!ENTITY  locbar.history2.label         "બ્રાઉઝિંગ ઇતિહાસ">
 <!ENTITY  locbar.history2.accesskey     "H">
 <!ENTITY  locbar.bookmarks.label        "બુકમાર્કો">
 <!ENTITY  locbar.bookmarks.accesskey    "k">
-<!ENTITY  locbar.openpage.label         "ટૅબ ખોલો">
+<!ENTITY  locbar.openpage.label         "ટૅબ્સ ખોલો">
 <!ENTITY  locbar.openpage.accesskey     "O">
+<!ENTITY  locbar.searches.label         "મૂળભૂત શોધ એંજીનથી સંબંધિત શોધ">
 <!ENTITY  locbar.searches.accesskey     "d">
 
+<!ENTITY  suggestionSettings2.label     "શોધ એન્જિન સૂચનો માટે પસંદગીઓ બદલો">
 
-<!ENTITY  acceptCookies.label           "સાઈટોમાંથી કુકીઓ સ્વીકારો">
-<!ENTITY  acceptCookies.accesskey       "A">
+<!ENTITY  acceptCookies2.label          "વેબસાઇટ્સની કૂકીઝને સ્વીકારો">
+<!ENTITY  acceptCookies2.accesskey      "A">
 
-<!ENTITY  acceptThirdParty.pre.label      "તૃતીય-પક્ષ કૂકીઝ સ્વીકારો:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "y">
+<!ENTITY  acceptThirdParty2.pre.label     "તૃતીય-પક્ષ કૂકીઝ સ્વીકારો">
+<!ENTITY  acceptThirdParty2.pre.accesskey "y">
+
+<!ENTITY  acceptCookies4.label          "વેબસાઇટ્સથી કૂકીઝ અને સાઇટ ડેટાને સ્વીકારો (ભલામણ કરેલ)">
+<!ENTITY  acceptCookies4.accesskey      "A">
+
+<!ENTITY  blockCookies.label            "કૂકીઝ અને સાઇટ ડેટાને અવરોધિત કરો (વેબસાઇટ્સને તોડી શકે છે)">
+<!ENTITY  blockCookies.accesskey        "B">
+
+<!ENTITY  acceptThirdParty3.pre.label     "તૃતીય-પક્ષ કૂકીઝ અને સાઇટ ડેટાને સ્વીકારો">
+<!ENTITY  acceptThirdParty3.pre.accesskey "y">
 <!ENTITY  acceptThirdParty.always.label   "હંમેશા">
 <!ENTITY  acceptThirdParty.never.label    "ક્યારેય નહિં">
 <!ENTITY  acceptThirdParty.visited.label  "મુલાકાત લીધેલ">
 
-<!ENTITY  keepUntil.label               "સાચવો:">
-<!ENTITY  keepUntil.accesskey           "u">
+<!ENTITY  keepUntil2.label              "ત્યાં સુધી રાખો">
+<!ENTITY  keepUntil2.accesskey          "u">
 
 <!ENTITY  expire.label                  "જ્યાં સુધી સમયસમાપ્ત નહિં થાય">
 <!ENTITY  close.label                   "હું &brandShortName; બંધ કરું છું">
@@ -74,6 +86,8 @@
 <!ENTITY  rememberActions.removeCookies.label "વ્યક્તિગત કુકીઓ દૂર કરવા માંગતા હશો">
 <!ENTITY  rememberActions.post.label          ".">
 
+<!ENTITY  rememberDescription1.label      "&brandShortName; તમારી બ્રાઉઝિંગ, ડાઉનલોડ, ફોર્મ અને શોધ ઇતિહાસ યાદ રાખશે.">
+
 <!ENTITY  dontrememberDescription.label  "&brandShortName; ખાનગી બ્રાઉઝીંગની જેમ જ સેટીંગ વાપરશે, અને તમે જેમ વેબ બ્રાઉઝ કરો તેમ ઇતિહાસ યાદ રાખશે નહિં.">
 
 <!-- LOCALIZATION NOTE (dontrememberActions.pre.label): include a trailing space as needed -->
@@ -81,6 +95,9 @@
 <!ENTITY  dontrememberActions.pre.label          "તમે ">
 <!ENTITY  dontrememberActions.clearHistory.label "બધો વર્તમાન ઇતિહાસ પણ સાફ કરવા માંગતા હશો">
 <!ENTITY  dontrememberActions.post.label         ".">
+
+<!ENTITY  clearHistoryButton.label       "ઇતિહાસ સાફ કરો…">
+<!ENTITY  clearHistoryButton.accesskey   "s">
 
 <!ENTITY  privateBrowsingPermanent2.label "હંમેશા ખાનગી બ્રાઉઝીંગ સ્થિતિ વાપરો">
 <!ENTITY  privateBrowsingPermanent2.accesskey "p">
@@ -102,3 +119,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "n">
 <!ENTITY  browserContainersSettings.label        "સેટીંગ…">
 <!ENTITY  browserContainersSettings.accesskey    "i">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "ઍક્સેસિબિલિટી સેવાઓને તમારા બ્રાઉઝરને ઍક્સેસ કરવાથી અટકાવો">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "a">
+<!ENTITY  a11yPrivacy.learnmore.label    "વધુ શીખો">
+<!ENTITY enableSafeBrowsingLearnMore.label "વધુ શીખો">

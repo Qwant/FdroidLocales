@@ -29,16 +29,23 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "El reporte de datos está deshabilitado para esta configuración de compilación">
 
-<!ENTITY enableHealthReport1.label       "Permitir que &brandShortName; envíe automáticamente información técnica y de interacción a Mozilla">
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.label       "Permitir que &brandShortName; envíe información técnica y de interacción a Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "Saber más">
 
 <!ENTITY dataCollection.label            "Recolección de datos y uso de &brandShortName;">
 <!ENTITY dataCollectionDesc.label        "Nos esforzamos en proporcionar opciones y recolectar solamente lo que necesitamos para proveer y mejorar &brandShortName; para todo el mundo. Siempre pedimos permiso antes de recibir información personal.">
-<!ENTITY dataCollectionPrivacyNotice.label    "Aviso de privacidad">
+<!ENTITY dataCollectionPrivacyNotice.label    "Política de privacidad">
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Permitir que &brandShortName; envíe reportes de fallos a Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "c">
+
+<!ENTITY collectBrowserErrors.label          "Permitir que &brandShortName; envíe reportes de errores (incluyendo mensajes de error) a Mozilla">
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "Saber más">
+
+<!ENTITY sendBackloggedCrashReports.label  "Permitir que &brandShortName; envíe los informes de fallos pendientes en tu nombre">
+<!ENTITY sendBackloggedCrashReports.accesskey "c">
 <!ENTITY crashReporterLearnMore.label    "Saber más">
 
 <!ENTITY networkTab.label                "Red">
@@ -51,14 +58,17 @@ available. -->
 
 <!ENTITY httpCache.label                 "Contenido web en caché">
 
-<!ENTITY offlineStorage2.label           "Contenido web sin conexión y datos de usuario">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Datos del sitio">
 <!ENTITY clearSiteData.label             "Eliminar todos los datos">
 <!ENTITY clearSiteData.accesskey         "I">
+<!ENTITY siteData1.label                 "Cookies y datos del sitio">
+<!ENTITY clearSiteData1.label            "Limpiar datos…">
+<!ENTITY clearSiteData1.accesskey        "l">
 <!ENTITY siteDataSettings.label          "Configuraciones…">
 <!ENTITY siteDataSettings.accesskey      "i">
+<!ENTITY siteDataSettings1.label         "Administrar datos…">
+<!ENTITY siteDataSettings1.accesskey     "M">
 <!ENTITY siteDataLearnMoreLink.label     "Aprender más">
 
 <!-- LOCALIZATION NOTE:
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB de espacio">
 <!ENTITY clearCacheNow.label             "Limpiar ahora">
 <!ENTITY clearCacheNow.accesskey         "L">
-<!ENTITY clearOfflineAppCacheNow.label   "Limpiar ahora">
-<!ENTITY clearOfflineAppCacheNow.accesskey "a">
 <!ENTITY overrideSmartCacheSize.label    "Anulación de administración de caché automático">
 <!ENTITY overrideSmartCacheSize.accesskey "o">
 
@@ -94,12 +102,12 @@ available. -->
                                          "Mantener &brandShortName; actualizado para el mejor rendimiento, estabilidad y seguridad.">
 <!ENTITY updateApplication.version.pre   "Versión ">
 <!ENTITY updateApplication.version.post  "">
-<!ENTITY updateApplication.description   "Permitir que &brandShortName;">
-<!ENTITY updateAuto3.label               "Instalar actualizaciones automáticamente (recomendado)">
-<!ENTITY updateAuto3.accesskey           "A">
-<!ENTITY updateCheckChoose2.label        "Busca actualizaciones pero te permite elegir si instalarlas o no">
-<!ENTITY updateCheckChoose2.accesskey    "C">
-<!ENTITY updateManual2.label             "No buscar nunca actualizaciones (no se recomienda)">
+<!ENTITY updateApplication.description   "Quiero que &brandShortName;">
+<!ENTITY updateAuto3.label               "Instale actualizaciones automáticamente (recomendado)">
+<!ENTITY updateAuto3.accesskey           "I">
+<!ENTITY updateCheckChoose2.label        "Busque actualizaciones pero me permita elegir si instalarlas o no">
+<!ENTITY updateCheckChoose2.accesskey    "B">
+<!ENTITY updateManual2.label             "Nunca busque actualizaciones (no recomendado)">
 <!ENTITY updateManual2.accesskey         "N">
 
 <!ENTITY updateHistory2.label            "Mostrar historial de actualizaciones…">
@@ -108,19 +116,8 @@ available. -->
 <!ENTITY useService.label                "Utilizar un servicio en segundo plano para instalar las actualizaciones">
 <!ENTITY useService.accesskey            "s">
 
-<!ENTITY enableSearchUpdate2.label       "Actualizar automáticamente los motores de búsqueda">
+<!ENTITY enableSearchUpdate2.label       "Actualice automáticamente los motores de búsqueda">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
-
-<!ENTITY offlineStorageNotify.label               "Te avisa cuando los sitios web te piden almacenar datos para utilizarlos fuera de línea">
-<!ENTITY offlineStorageNotify.accesskey           "T">
-<!ENTITY offlineStorageNotifyExceptions.label     "Excepciones…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "x">
-
-<!ENTITY offlineAppsList2.label          "Los siguientes sitios web tienen permitido almacenar datos para usarlos sin conexión:">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Eliminar…">
-<!ENTITY offlineAppsListRemove.accesskey "E">
-<!ENTITY offlineAppRemove.confirm        "Eliminar datos del modo sin conexión">
 
 <!ENTITY certificateTab.label            "Certificados">
 <!ENTITY certPersonal2.description       "Cuando un servidor te pide tu certificado personal">

@@ -249,14 +249,13 @@
    <nc:subheadings>
      <rdf:Seq><rdf:li>
        <rdf:Description ID="search:bookmarks"
-       <rdf:Description ID="search:bookmarks"
          nc:name="buscar en marcadores"
-	 nc:link="nav_help.xhtml#searching_the_bookmarks_or_history_list"/>
+         nc:link="nav_help.xhtml#searching_the_bookmarks_or_history_list"/>
      </rdf:li>
      <rdf:li>
        <rdf:Description ID="search:setting_preferences"
          nc:name="preferencias de b&#250;squeda"
-	 nc:link="nav_help.xhtml#setting_search_preferences"/>
+         nc:link="nav_help.xhtml#setting_search_preferences"/>
      </rdf:li></rdf:Seq>
    </nc:subheadings>
 </rdf:Description>
@@ -691,11 +690,6 @@
        <rdf:Description ID="passwords:remembering_automatically"
          nc:name="recordar autom&#225;ticamente"
 	 nc:link="using_priv_help.xhtml#using_the_password_manager"/>
-     </rdf:li>
-     <rdf:li>
-       <rdf:Description ID="passwords:timeout_for_master_password"
-         nc:name="caducidad de la contrase&#241;a maestra"
-	 nc:link="passwords_help.xhtml#master_password_timeout"/>
      </rdf:li></rdf:Seq>
    </nc:subheadings>
 </rdf:Description>
@@ -716,11 +710,6 @@
        <rdf:Description ID="master_password:preferences"
          nc:name="preferencias de contrase&#241;a maestra"
 	 nc:link="passwords_help.xhtml#master_passwords"/>
-     </rdf:li>
-     <rdf:li>
-       <rdf:Description ID="master_password:timeout"
-         nc:name="caducidad de la contrase&#241;a maestra"
-	 nc:link="passwords_help.xhtml#master_password_timeout"/>
      </rdf:li></rdf:Seq>
    </nc:subheadings>
 </rdf:Description>
@@ -2240,6 +2229,16 @@
        <rdf:Description ID="popup_windows:preferences"
          nc:name="preferencias de ventanas emergentes"
 	 nc:link="cs_priv_prefs_popup.xhtml#privacy_and_security_preferences_popup_windows"/>
+     </rdf:li></rdf:Seq>
+   </nc:subheadings>
+</rdf:Description>
+
+<rdf:Description about="help-indexAZ.rdf#w">
+   <nc:subheadings>
+     <rdf:Seq><rdf:li>
+       <rdf:Description ID="WebIDE"
+         nc:name="WebIDE"
+         nc:link="developer_tools.xhtml#webide"/>
      </rdf:li></rdf:Seq>
    </nc:subheadings>
 </rdf:Description>

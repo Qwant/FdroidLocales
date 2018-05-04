@@ -2,9 +2,21 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY defaultSearchEngine.label             "Standard søkjemotor">
+<!ENTITY searchBar.label                       "Søkjelinje">
 
-<!ENTITY chooseYourDefaultSearchEngine2.label   "Vel standardsøkemotor som skal brukast i adresselinja og søkelinja.">
+<!ENTITY searchBar.hidden.label                "Bruk adresselinja for søk og navigering">
+<!ENTITY searchBar.shown.label                 "Legg til søkjelinje i verktøylinja">
+
+<!-- LOCALIZATION NOTE (showSearchSuggestionsAboveHistory.label): This string
+     describes what the user will observe when the system prioritizes search
+     suggestions over browsing history in the results that extend down from the
+     address bar. In the original English string, "ahead" refers to location
+     (appearing most proximate to), not time (appearing before). -->
+<!ENTITY showSearchSuggestionsAboveHistory.label "Vis søkeforslag før nettlesarhistorikk i adressefeltresultata">
+
+<!ENTITY defaultSearchEngine.label             "Standard søkemotor">
+
+<!ENTITY chooseYourDefaultSearchEngine2.label   "Vel standard-søkemotor som skal brukast i adresselinja og søkelinja.">
 
 <!ENTITY provideSearchSuggestions.label        "Tilby søkeforslag">
 <!ENTITY provideSearchSuggestions.accesskey    "T">
@@ -20,10 +32,10 @@
 <!ENTITY engineNameColumn.label                "Søkemotor">
 <!ENTITY engineKeywordColumn.label             "Nykelord">
 
-<!ENTITY restoreDefaultSearchEngines.label     "Bygg oppatt standard søkjemotorar">
+<!ENTITY restoreDefaultSearchEngines.label     "Bygg oppatt standard søkemotorar">
 <!ENTITY restoreDefaultSearchEngines.accesskey "G">
 
 <!ENTITY removeEngine.label                    "Fjern">
 <!ENTITY removeEngine.accesskey                "F">
 
-<!ENTITY findMoreSearchEngines.label           "Finn fleire søkjemotorar">
+<!ENTITY findMoreSearchEngines.label           "Finn fleire søkemotorar">

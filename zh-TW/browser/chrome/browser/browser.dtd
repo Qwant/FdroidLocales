@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE : FILE This file contains the browser main menu items -->
-<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys --> 
+<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys -->
 
 <!-- LOCALIZATION NOTE (mainWindow.title): DONT_TRANSLATE -->
 <!ENTITY mainWindow.title "&brandFullName;">
@@ -23,6 +23,10 @@
 <!ENTITY  reloadTab.accesskey                "R">
 <!ENTITY  reloadAllTabs.label                "重新載入所有分頁">
 <!ENTITY  reloadAllTabs.accesskey            "A">
+<!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTab.label                 "複製分頁">
+<!ENTITY  duplicateTab.accesskey             "D">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -46,6 +50,8 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "D">
 <!ENTITY  sendLinkToDevice.label             "將鏈結傳送至裝置">
 <!ENTITY  sendLinkToDevice.accesskey         "D">
+<!ENTITY  sendToDeviceFeedback.label         "已送出！">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "已排入佇列（離線）">
 <!ENTITY  moveToNewWindow.label              "移動到新視窗">
 <!ENTITY  moveToNewWindow.accesskey          "W">
 <!ENTITY  bookmarkAllTabs.label              "將所有分頁加入書籤…">
@@ -54,6 +60,8 @@ can reach it easily. -->
 <!ENTITY  undoCloseTab.accesskey             "U">
 <!ENTITY  closeTab.label                     "關閉分頁">
 <!ENTITY  closeTab.accesskey                 "c">
+
+<!ENTITY  hiddenTabs.label                   "隱藏分頁">
 
 <!ENTITY  listAllTabs.label      "列出所有分頁">
 
@@ -95,9 +103,18 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY pageSourceCmd.label "頁面原始碼">
 <!ENTITY pageSourceCmd.accesskey "o">
 <!ENTITY pageSourceCmd.commandkey "u">
+<!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
+Option+Command keyboard shortcut letter that Safari and Chrome use for "View
+Source" on macOS. pageSourceCmd.commandkey above is Firefox's official keyboard
+shortcut shown in the GUI. SafariCommandKey is an alias provided for the
+convenience of Safari and Chrome users on macOS. See bug 1398988. -->
+<!ENTITY pageSourceCmd.SafariCommandKey "u">
+
 <!ENTITY pageInfoCmd.label "頁面資訊">
 <!ENTITY pageInfoCmd.accesskey "I">
 <!ENTITY pageInfoCmd.commandkey "i">
+<!ENTITY ldbCmd.label "版面除錯器">
+<!ENTITY ldbCmd.accesskey "L">
 <!ENTITY mirrorTabCmd.label "投放分頁">
 <!ENTITY mirrorTabCmd.accesskey "m">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -112,6 +129,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "顯示所有分頁">
 <!ENTITY showAllTabsCmd.accesskey "A">
 <!ENTITY toggleReaderMode.key "R">
+
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "登入至 &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "開啟 &syncBrand.shortName.label; 偏好設定">
@@ -161,23 +180,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisPageCmd.label "將本頁加入書籤">
 <!ENTITY editThisBookmarkCmd.label "編輯此書籤">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
-<!-- LOCALIZATION NOTE (findShareServices.label):
-  -  Use the unicode ellipsis char, \u2026,
-  -  or use "..." if \u2026 doesn't suit traditions in your locale. -->
-<!ENTITY findShareServices.label "尋找更多分享服務…">
-<!ENTITY sharePageCmd.label "分享此頁面">
-<!ENTITY sharePageCmd.commandkey "S">
-<!ENTITY sharePageCmd.accesskey "s">
-<!-- LOCALIZATION NOTE (shareLink.accesskey): must be different than the following share access keys -->
-<!ENTITY shareLink.label "分享此鏈結">
-<!ENTITY shareLink.accesskey "h">
-<!ENTITY shareImage.label "分享此圖片">
-<!ENTITY shareImage.accesskey "r">
-<!ENTITY shareSelect.label "分享選擇項目">
-<!ENTITY shareSelect.accesskey "r">
-<!ENTITY shareVideo.label "分享此影片">
-<!ENTITY shareVideo.accesskey "r">
-<!ENTITY feedsMenu2.label "訂閱此頁面">
+
 <!ENTITY subscribeToPageMenupopup.label "訂閱此頁面">
 <!ENTITY subscribeToPageMenuitem.label "訂閱此頁面…">
 <!ENTITY addCurPagesCmd.label "將所有分頁加入書籤…">
@@ -192,13 +195,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.accesskey "H">
 
 <!ENTITY backCmd.label                "上一頁">
+<!ENTITY backCmd.accesskey            "B">
 <!ENTITY backButton.tooltip           "回到上一頁">
 <!ENTITY forwardCmd.label             "下一頁">
+<!ENTITY forwardCmd.accesskey         "F">
 <!ENTITY forwardButton.tooltip        "前進下一頁">
-<!ENTITY backForwardButtonMenu.tooltip "按右鍵或向下拉以顯示歷史記錄">
-<!ENTITY backForwardButtonMenuMac.tooltip "向下拉以顯示歷史記錄">
+<!ENTITY backForwardButtonMenu.tooltip "按滑鼠右鍵或長按以顯示歷史記錄">
+<!ENTITY backForwardButtonMenuMac.tooltip "長按以顯示歷史記錄">
 <!ENTITY reloadCmd.label              "重新載入">
+<!ENTITY reloadCmd.accesskey          "R">
 <!ENTITY stopCmd.label                "停止">
+<!ENTITY stopCmd.accesskey            "S">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "按此前往網址列中的網址">
 <!ENTITY printButton.label            "列印">
@@ -209,12 +216,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "開啟訊息面板">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "開啟位置請求面板">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "開啟附加元件安裝訊息面板">
+<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "管理 canvas 資料取得權限">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "開啟離線儲存訊息面板">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "開啟儲存密碼訊息面板">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "管理附加元件使用情況">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "變更您是否要收到來自此網站的通知">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "將資料儲存於持續性儲存空間">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "瀏覽器正被遠端控制中">
+
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "開啟 Web 身份驗證面板">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "管理您是否要與網站分享攝影機及/或麥克風">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "管理您是否要與網站分享麥克風">
@@ -225,13 +235,19 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "管理頁面翻譯">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "管理 DRM 軟體使用">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "開啟 MIDI 面板">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "您已封鎖此網站的攝影機存取權限。">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "您已封鎖此網站存取您麥克風的權限。">
 <!ENTITY urlbar.screenBlocked.tooltip            "您已封鎖此網站分享您螢幕畫面的權限。">
 <!ENTITY urlbar.geolocationBlocked.tooltip       "您已封鎖此網站取得您所在位置資訊的權限。">
-<!ENTITY urlbar.indexedDBBlocked.tooltip         "您已封鎖此網站存取資料儲存空間的權限。">
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "您已封鎖此網站推送通知的權限。">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "您已封鎖此網站儲存資料至持續性儲存空間。">
+<!ENTITY urlbar.popupBlocked.tooltip             "您封鎖了此網站的彈出視窗。">
+<!ENTITY urlbar.canvasBlocked.tooltip            "您已封鎖此網站讀取 canvas 資料的權限。">
+
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "您已封鎖此網站執行 Adobe Flash 外掛程式。">
+<!ENTITY urlbar.midiBlocked.tooltip              "您已封鎖此網站的 MIDI 存取權限。">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "顯示瀏覽紀錄">
 
@@ -243,16 +259,20 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksButton.label          "書籤">
 <!ENTITY bookmarksCmd.commandkey "b">
 
-<!ENTITY bookmarksMenuButton.label          "書籤">
-<!ENTITY bookmarksMenuButton.other.label "其他書籤">
-<!ENTITY bookmarksMenuButton.mobile.label "行動書籤">
+<!ENTITY bookmarksSubview.label             "書籤">
+<!ENTITY bookmarksMenuButton2.label         "書籤選單">
+<!ENTITY bookmarksMenuButton.other.label    "其他書籤">
+<!ENTITY bookmarksMenuButton.mobile.label   "行動書籤">
 <!ENTITY viewBookmarksSidebar2.label        "檢視書籤欄">
+<!ENTITY hideBookmarksSidebar.label         "隱藏書籤側邊欄">
 <!ENTITY viewBookmarksToolbar.label         "檢視書籤工具列">
+<!ENTITY hideBookmarksToolbar.label         "隱藏書籤工具列">
 <!ENTITY searchBookmarks.label              "搜尋書籤">
+<!ENTITY bookmarkingTools.label             "書籤工具">
+<!ENTITY addBookmarksMenu.label             "在工具列中加入書籤選單">
+<!ENTITY removeBookmarksMenu.label          "從工具列移除書籤選單">
 
-<!ENTITY containersMenu.label "容器">
-
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -262,12 +282,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY historySidebarCmd.commandKey   "h">
 
 <!ENTITY toolsMenu.label              "工具">
-<!ENTITY toolsMenu.accesskey          "T"> 
+<!ENTITY toolsMenu.accesskey          "T">
 
 <!ENTITY keywordfield.label           "設為用關鍵字搜尋…">
 <!ENTITY keywordfield.accesskey       "K">
 
 <!ENTITY downloads.label              "下載">
+<!-- LOCALIZATION NOTE (libraryDownloads.label): This label is similar to
+  -  downloads.label, but used in the Library panel. -->
+<!ENTITY libraryDownloads.label       "下載項目">
 <!ENTITY downloads.accesskey          "D">
 <!ENTITY downloads.commandkey         "j">
 <!ENTITY downloadsUnix.commandkey     "y">
@@ -281,7 +304,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY inspectContextMenu.label     "檢測元素">
 <!ENTITY inspectContextMenu.accesskey "Q">
 
-<!ENTITY fileMenu.label         "檔案"> 
+<!ENTITY inspectA11YContextMenu.label     "檢測輔助功能環境屬性">
+
+<!ENTITY fileMenu.label         "檔案">
 <!ENTITY fileMenu.accesskey       "F">
 <!ENTITY newUserContext.label             "新增容器分頁">
 <!ENTITY newUserContext.accesskey         "B">
@@ -290,47 +315,46 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newNavigatorCmd.accesskey      "N">
 <!ENTITY newPrivateWindow.label     "新增隱私視窗">
 <!ENTITY newPrivateWindow.accesskey "W">
-<!ENTITY newNonRemoteWindow.label   "開新視窗（非 e10s）">
 
-<!ENTITY editMenu.label         "編輯"> 
-<!ENTITY editMenu.accesskey       "E"> 
-<!ENTITY undoCmd.label            "復原">  
-<!ENTITY undoCmd.key            "Z">  
-<!ENTITY undoCmd.accesskey          "U"> 
-<!ENTITY redoCmd.label            "取消「復原」">  
-<!ENTITY redoCmd.key            "Y">  
-<!ENTITY redoCmd.accesskey          "R"> 
-<!ENTITY cutCmd.label           "剪下">  
-<!ENTITY cutCmd.key             "X">  
-<!ENTITY cutCmd.accesskey         "t"> 
-<!ENTITY copyCmd.label            "複製">  
-<!ENTITY copyCmd.key            "C">  
-<!ENTITY copyCmd.accesskey          "C"> 
-<!ENTITY pasteCmd.label           "貼上">  
-<!ENTITY pasteCmd.key           "V">  
-<!ENTITY pasteCmd.accesskey         "P"> 
-<!ENTITY deleteCmd.label          "刪除">  
-<!ENTITY deleteCmd.key            "D">  
-<!ENTITY deleteCmd.accesskey        "D"> 
-<!ENTITY selectAllCmd.label         "全選">  
-<!ENTITY selectAllCmd.key         "A">  
-<!ENTITY selectAllCmd.accesskey       "A"> 
+<!ENTITY editMenu.label         "編輯">
+<!ENTITY editMenu.accesskey       "E">
+<!ENTITY undoCmd.label            "復原">
+<!ENTITY undoCmd.key            "Z">
+<!ENTITY undoCmd.accesskey          "U">
+<!ENTITY redoCmd.label            "取消「復原」">
+<!ENTITY redoCmd.key            "Y">
+<!ENTITY redoCmd.accesskey          "R">
+<!ENTITY cutCmd.label           "剪下">
+<!ENTITY cutCmd.key             "X">
+<!ENTITY cutCmd.accesskey         "t">
+<!ENTITY copyCmd.label            "複製">
+<!ENTITY copyCmd.key            "C">
+<!ENTITY copyCmd.accesskey          "C">
+<!ENTITY pasteCmd.label           "貼上">
+<!ENTITY pasteCmd.key           "V">
+<!ENTITY pasteCmd.accesskey         "P">
+<!ENTITY deleteCmd.label          "刪除">
+<!ENTITY deleteCmd.key            "D">
+<!ENTITY deleteCmd.accesskey        "D">
+<!ENTITY selectAllCmd.label         "全選">
+<!ENTITY selectAllCmd.key         "A">
+<!ENTITY selectAllCmd.accesskey       "A">
 <!ENTITY preferencesCmd2.label       "選項">
 <!ENTITY preferencesCmd2.accesskey     "O">
 <!ENTITY preferencesCmdUnix.label       "偏好設定">
-<!ENTITY preferencesCmdUnix.accesskey     "n"> 
+<!ENTITY preferencesCmdUnix.accesskey     "n">
 
 <!ENTITY clearRecentHistory.label               "清除最近的歷史記錄…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
 
-<!ENTITY viewMenu.label         "檢視"> 
-<!ENTITY viewMenu.accesskey       "V"> 
-<!ENTITY viewToolbarsMenu.label       "工具列"> 
-<!ENTITY viewToolbarsMenu.accesskey     "T"> 
+<!ENTITY viewMenu.label         "檢視">
+<!ENTITY viewMenu.accesskey       "V">
+<!ENTITY viewToolbarsMenu.label       "工具列">
+<!ENTITY viewToolbarsMenu.accesskey     "T">
 <!ENTITY viewSidebarMenu.label "側邊欄">
 <!ENTITY viewSidebarMenu.accesskey "e">
-<!ENTITY viewCustomizeToolbar.label       "自訂…"> 
+<!ENTITY viewCustomizeToolbar.label       "自訂…">
 <!ENTITY viewCustomizeToolbar.accesskey     "C">
 <!ENTITY overflowCustomizeToolbar.label       "自訂工具列…">
 <!ENTITY overflowCustomizeToolbar.accesskey   "C">
@@ -345,18 +369,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllHistoryCmd2.label "顯示所有瀏覽記錄">
 <!ENTITY showAllHistoryCmd.commandkey "H">
 
-<!ENTITY appMenuCustomize.label "自訂">
-<!ENTITY appMenuCustomize.tooltip "自訂選單與工具列">
-<!ENTITY appMenuCustomizeExit.label "結束自訂模式">
-<!ENTITY appMenuCustomizeExit.tooltip "完成自訂">
-<!ENTITY appMenuHistory.label "歷史">
 <!ENTITY appMenuHistory.showAll.label "顯示所有瀏覽記錄">
 <!ENTITY appMenuHistory.clearRecent.label "清除最近的歷史記錄…">
 <!ENTITY appMenuHistory.restoreSession.label "回復先前的瀏覽狀態">
 <!ENTITY appMenuHistory.viewSidebar.label "檢視歷史側邊欄">
 <!ENTITY appMenuHistory.recentHistory.label "最近紀錄">
 <!ENTITY appMenuHelp.label "說明">
-<!ENTITY appMenuHelp.tooltip "開啟說明選單">
 
 <!ENTITY appMenuRemoteTabs.label "已同步的分頁">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.notabs.label): This is shown beneath
@@ -368,21 +386,25 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.showMore.tooltip "顯示來自此裝置的更多分頁">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.showAll.label, appMenuRemoteTabs.showAll.tooltip):
      This is shown after the tabs list if we can all the remaining tabs by clicking on the button -->
-<!ENTITY appMenuRemoteTabs.showAll.label "顯示全部">
+<!ENTITY appMenuRemoteTabs.showAll.label "全部顯示">
 <!ENTITY appMenuRemoteTabs.showAll.tooltip "顯示來自此裝置的所有分頁">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "開啟分頁同步功能以檢視您其他裝置中的分頁清單。">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "還沒有同步過來的分頁！">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "想在這裡看到您其他裝置上開啟的分頁嗎？">
 <!ENTITY appMenuRemoteTabs.openprefs.label "同步偏好設定">
+<!ENTITY appMenuRemoteTabs.opensyncprefs.label "開啟 Sync 偏好設定">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "登入以檢視您其他裝置中的分頁清單。">
+<!ENTITY appMenuRemoteTabs.unverified.label "需要驗證您的帳號。">
 <!ENTITY appMenuRemoteTabs.signin.label "登入至 Sync">
 <!ENTITY appMenuRemoteTabs.managedevices.label "管理裝置…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "檢視「已同步的分頁」側邊欄">
+<!ENTITY appMenuRemoteTabs.connectdevice.label "連結其他裝置">
+
+<!ENTITY appMenuRecentHighlights.label "近期焦點">
 
 <!ENTITY customizeMenu.addToToolbar.label "新增至工具列">
 <!ENTITY customizeMenu.addToToolbar.accesskey "A">
@@ -422,18 +444,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "搜尋或輸入網址">
+<!ENTITY urlbar.placeholder3          "在此輸入搜尋詞彙或網址">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "擴充套件:">
 <!ENTITY urlbar.switchToTab.label     "切換到分頁:">
-
-<!ENTITY urlbar.searchSuggestionsNotification.question "想要開啟搜尋建議功能，以改善您的搜尋體驗嗎？">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore "更多資訊…">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore.accesskey "l">
-<!ENTITY urlbar.searchSuggestionsNotification.disable "不要">
-<!ENTITY urlbar.searchSuggestionsNotification.disable.accesskey "n">
-<!ENTITY urlbar.searchSuggestionsNotification.enable "好">
-<!ENTITY urlbar.searchSuggestionsNotification.enable.accesskey "y">
 
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hintPrefix): Shown just before the suggestions opt-out hint. -->
 <!ENTITY urlbar.searchSuggestionsNotification.hintPrefix "秘訣:">
@@ -482,7 +497,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (searchFor.label, searchWith.label):
      These two strings are used to build the header above the list of one-click
      search providers:  "Search for <used typed keywords> with:" -->
-<!ENTITY searchFor.label              "搜尋">
+<!ENTITY searchFor.label              "搜尋 ">
 <!ENTITY searchWith.label             "使用:">
 
 <!-- LOCALIZATION NOTE (search.label, searchAfter.label):
@@ -531,7 +546,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.accesskey     "R">
 <!ENTITY viewPartialSourceForSelectionCmd.label "檢視選取範圍原始碼">
 <!ENTITY viewPartialSourceForMathMLCmd.label    "檢視 MathML 原始碼">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both 
+<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
          viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "e">
 <!ENTITY viewPageSourceCmd.label      "檢視原始碼">
@@ -557,11 +572,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label      "設為桌布…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "S">
 <!ENTITY bookmarkPageCmd2.label       "將本頁加入書籤">
+<!ENTITY bookmarkPageCmd2.accesskey   "m">
 <!ENTITY bookmarkThisLinkCmd.label      "將此鏈結加入書籤">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "L">
 <!ENTITY bookmarkThisFrameCmd.label      "將此頁框加入書籤">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "m">
-<!ENTITY copyURLCmd.label             "複製網址">
+<!ENTITY pageAction.copyLink.label    "複製鏈結">
+<!ENTITY copyURLFeedback.label        "已複製！">
 <!ENTITY emailPageCmd.label           "郵寄鏈結…">
 <!ENTITY emailPageCmd.accesskey       "E">
 <!ENTITY savePageCmd.label            "另存新檔…">
@@ -585,8 +602,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY emailImageCmd.accesskey      "g">
 <!ENTITY emailVideoCmd.label          "郵寄視訊…">
 <!ENTITY emailVideoCmd.accesskey      "a">
-<!ENTITY castVideoCmd.label           "將影片傳送到裝置">
-<!ENTITY castVideoCmd.accesskey       "e">
 <!ENTITY emailAudioCmd.label          "郵寄音訊…">
 <!ENTITY emailAudioCmd.accesskey      "a">
 <!ENTITY playPluginCmd.label          "啟用此外掛程式">
@@ -598,7 +613,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyImageCmd.label           "複製圖片網址">
 <!ENTITY copyImageCmd.accesskey       "o">
 <!ENTITY copyImageContentsCmd.label   "複製圖片">
-<!ENTITY copyImageContentsCmd.accesskey  "y"> 
+<!ENTITY copyImageContentsCmd.accesskey  "y">
 <!ENTITY copyVideoURLCmd.label        "複製視訊檔案網址">
 <!ENTITY copyVideoURLCmd.accesskey    "o">
 <!ENTITY copyAudioURLCmd.label        "複製音訊檔案網址">
@@ -694,13 +709,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY quitApplicationCmdWin2.tooltip     "結束 &brandShorterName;">
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goForwardCmd.commandKey "]">
-<!ENTITY quitApplicationCmd.label       "離開"> 
+<!ENTITY quitApplicationCmd.label       "離開">
 <!ENTITY quitApplicationCmd.accesskey   "Q">
 <!ENTITY quitApplicationCmdMac2.label   "離開 &brandShorterName;">
 <!ENTITY quitApplicationCmd.key         "Q">
 
-<!ENTITY closeCmd.label                 "關閉">  
-<!ENTITY closeCmd.key                   "W">  
+<!ENTITY closeCmd.label                 "關閉">
+<!ENTITY closeCmd.key                   "W">
 <!ENTITY closeCmd.accesskey             "C">
 
 <!ENTITY toggleMuteCmd.key              "M">
@@ -711,8 +726,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageStyleNoStyle.accesskey "n">
 <!ENTITY pageStylePersistentOnly.label "基本頁面樣式">
 <!ENTITY pageStylePersistentOnly.accesskey "b">
-
-<!ENTITY pageReportIcon.tooltip            "變更此網站開啟彈出型視窗的設定">
 
 <!ENTITY allowPopups.accesskey "p">
 <!-- On Windows we use the term "Options" to describe settings, but
@@ -743,6 +756,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY editBookmark.done.label                     "完成">
 <!ENTITY editBookmark.removeBookmark.accessKey       "R">
+
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "網站安全性">
 
 <!ENTITY identity.connectionSecure "安全連線">
 <!ENTITY identity.connectionNotSecure "連線不安全">
@@ -794,14 +811,16 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "已同步的分頁">
 <!ENTITY syncedTabs.sidebar.noclients.label    "將您其他裝置也登入至 Firefox，在此檢視那些裝置中開啟的分頁。">
-<!ENTITY syncedTabs.sidebar.noclients.title    "還沒有同步過來的分頁！">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "想在這裡看到您其他裝置上開啟的分頁嗎？">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "登入以檢視您其他裝置中的分頁清單。">
+<!ENTITY syncedTabs.sidebar.unverified.label   "需要驗證您的帳號。">
 <!ENTITY syncedTabs.sidebar.notabs.label       "無已開啟的分頁">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "開啟 &syncBrand.shortName.label; 偏好設定">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "開啟分頁同步功能以檢視您其他裝置中的分頁清單。">
+<!ENTITY syncedTabs.sidebar.searchPlaceholder  "搜尋同步的分頁">
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "連結其他裝置">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -820,7 +839,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncedTabs.context.copy.label                       "複製">
 <!ENTITY syncedTabs.context.copy.accesskey                   "C">
 
-<!ENTITY syncedTabs.context.openAllInTabs.label              "全部以分頁開啟">
+<!ENTITY syncedTabs.context.openAllInTabs.label              "全部用分頁開啟">
 <!ENTITY syncedTabs.context.openAllInTabs.accesskey          "O">
 <!ENTITY syncedTabs.context.managedevices.label              "管理裝置…">
 <!ENTITY syncedTabs.context.managedevices.accesskey          "D">
@@ -836,20 +855,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncReAuthItem.accesskey     "R">
 <!ENTITY syncToolbarButton.label      "同步">
 
-<!ENTITY social.addons.label "管理服務…">
-
-<!ENTITY social.directory.label "可啟用項目">
-<!ENTITY social.directory.text "您可於目錄中啟用分享服務。">
-<!ENTITY social.directory.button "帶我到那邊去！">
-<!ENTITY social.directory.introText "點擊任一個服務以將其新增到 &brandShortName;。">
-<!ENTITY social.directory.viewmore.text "檢視更多">
-
-<!ENTITY customizeMode.menuAndToolbars.header2 "其他工具與功能">
-<!ENTITY customizeMode.menuAndToolbars.empty "想要更多工具？">
-<!ENTITY customizeMode.menuAndToolbars.emptyLink "自數以千計的附加元件中挑選">
+<!ENTITY customizeMode.menuAndToolbars.header3 "將您最愛的項目拖曳到工具列，或蓋過選單。">
 <!ENTITY customizeMode.restoreDefaults "回復為預設值">
 <!ENTITY customizeMode.done "完成">
 <!ENTITY customizeMode.titlebar "標題列">
+<!ENTITY customizeMode.extraDragSpace "拖曳空間">
 <!ENTITY customizeMode.toolbars2 "工具列">
 <!ENTITY customizeMode.lwthemes "佈景主題">
 <!ENTITY customizeMode.lwthemes.myThemes "我的佈景主題">
@@ -858,7 +868,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "M">
 <!ENTITY customizeMode.lwthemes.menuGetMore "下載更多佈景主題">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "G">
-<!ENTITY customizeMode.emptyOverflowList.description "將圖示拖曳到此處，讓您方便使用但不占用空間…">
+<!ENTITY customizeMode.overflowList.title2 "收藏選單">
+<!ENTITY customizeMode.overflowList.description "將項目拖曳到此處，方便使用又不佔空間…">
 <!ENTITY customizeMode.uidensity "密度">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuNormal.*):
      “Normal” is displayed in the Customize screen, under the Density menu. -->
@@ -879,6 +890,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.uidensity.menuTouch.tooltip "觸控">
 <!ENTITY customizeMode.uidensity.menuTouch.accessKey "T">
 <!ENTITY customizeMode.uidensity.autoTouchMode.checkbox.label "在平板電腦模式中使用觸控大小">
+
+<!ENTITY customizeMode.autoHideDownloadsButton.label "自動隱藏">
 
 <!ENTITY getUserMedia.selectCamera.label "要分享的攝影機:">
 <!ENTITY getUserMedia.selectCamera.accesskey "C">
@@ -904,16 +917,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.block2.label "啟用保護">
 <!ENTITY trackingProtection.block2.accesskey "E">
 
-<!ENTITY trackingContentBlocked.message "追蹤">
-<!ENTITY trackingContentBlocked.moreinfo "已封鎖本頁面中部分追蹤您線上行為的內容。">
-<!ENTITY trackingContentBlocked.learnMore "更多資訊">
-<!ENTITY trackingContentBlocked.options "選項">
-<!ENTITY trackingContentBlocked.unblock2.label "為此網站停用保護">
-<!ENTITY trackingContentBlocked.unblock2.accesskey "D">
-<!ENTITY trackingContentBlocked.block.label "啟用保護">
-<!ENTITY trackingContentBlocked.block.accesskey "E">
-<!ENTITY trackingContentBlocked.disabled.message "已停止追蹤保護">
-
 <!ENTITY pluginNotification.showAll.label "全部顯示">
 <!ENTITY pluginNotification.showAll.accesskey "S">
 
@@ -930,8 +933,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pluginNotification.width "28em">
 
 <!ENTITY uiTour.infoPanel.close "關閉">
-
-<!ENTITY appMenuSidebars.label         "側邊欄">
 
 <!-- LOCALIZATION NOTE: (panicButton.view.mainTimeframeDesc, panicButton.view.5min, panicButton.view.2hr, panicButton.view.day):
      The .mainTimeframeDesc string combined with any of the 3 others is meant to form a complete sentence, e.g. "Forget the last: Five minutes".
@@ -979,7 +980,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateManual.cancelButton.accesskey "N">
 <!ENTITY updateManual.panelUI.label "下載全新乾淨的 &brandShorterName;">
 
-<!ENTITY updateRestart.message "重新啟動後，&brandShorterName; 將還原您所有已開啟的分頁與視窗。">
+<!ENTITY updateRestart.message2 "快速重新啟動後，&brandShorterName; 將還原您所有不在隱私瀏覽模式中開啟的分頁與視窗。">
 <!ENTITY updateRestart.header.message2 "重新啟動以更新 &brandShorterName;。">
 <!ENTITY updateRestart.acceptButton.label "重新啟動並還原">
 <!ENTITY updateRestart.acceptButton.accesskey "R">
@@ -987,9 +988,45 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "N">
 <!ENTITY updateRestart.panelUI.label2 "重新啟動以更新 &brandShorterName;">
 
+<!ENTITY newTabControlled.message "有套擴充套件修改了開啟新分頁時會看到的頁面。若您不想要這個修改，可還原此設定。">
+
+<!ENTITY newTabControlled.header.message "您的「新分頁」已經變更。">
+<!ENTITY newTabControlled.keepButton.label "保留不變">
+<!ENTITY newTabControlled.keepButton.accesskey "K">
+<!ENTITY newTabControlled.restoreButton.label "還原設定">
+<!ENTITY newTabControlled.restoreButton.accesskey "R">
+
+<!ENTITY newTabControlled.disableButton.label "停用擴充套件">
+<!ENTITY newTabControlled.disableButton.accesskey "D">
+
+<!ENTITY homepageControlled.message "有套擴充套件修改了您的首頁。若您不想要這個修改，可還原此設定。">
+<!ENTITY homepageControlled.header.message "您的「新分頁」已經變更。">
+<!ENTITY homepageControlled.keepButton.label "保留變更">
+<!ENTITY homepageControlled.keepButton.accesskey "K">
+<!ENTITY homepageControlled.disableButton.label "停用擴充套件">
+<!ENTITY homepageControlled.disableButton.accesskey "D">
+
 <!ENTITY pageActionButton.tooltip "頁面操作">
 <!ENTITY pageAction.addToUrlbar.label "新增至網址列">
 <!ENTITY pageAction.removeFromUrlbar.label "從網址列移除">
+<!ENTITY pageAction.allowInUrlbar.label "在網址列顯示">
+<!ENTITY pageAction.disallowInUrlbar.label "不要在網址列顯示">
+<!ENTITY pageAction.manageExtension.label "管理擴充套件…">
 
-<!ENTITY sendToDevice.label2 "傳送到裝置">
+<!ENTITY pageAction.sendTabToDevice.label "將分頁傳送至裝置">
 <!ENTITY sendToDevice.syncNotReady.label "正在同步裝置…">
+
+<!ENTITY pageAction.shareUrl.label "分享">
+
+<!ENTITY libraryButton.tooltip "檢視瀏覽紀錄、已存書籤等資料">
+
+<!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
+     display a tooltip for accessibility indicator in toolbar/tabbar. It is also
+     used as a textual label for the indicator used by assistive technology
+     users. -->
+<!ENTITY accessibilityIndicator.tooltip "已開啟輔助功能">
+
+<!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
+     The first <image> tag is replaced with the icon for the add-ons menu.
+     The second <image> tag is replaced with the icon for the toolbar menu. -->
+<!ENTITY addonPostInstallMessage.label "請點擊 <image class='addon-toolbar-icon'/> 選單中的 <image class='addon-addon-icon'/> 來管理附加元件。">

@@ -25,6 +25,13 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionVersion "Različica">
 <!ENTITY aboutSupport.extensionId "ID">
 
+<!ENTITY aboutSupport.securitySoftwareTitle "Varnostna programska oprema">
+<!ENTITY aboutSupport.securitySoftwareType "Vrsta">
+<!ENTITY aboutSupport.securitySoftwareName "Ime">
+<!ENTITY aboutSupport.securitySoftwareAntivirus "Protivirusna zaščita">
+<!ENTITY aboutSupport.securitySoftwareAntiSpyware "Protivohunska programska oprema">
+<!ENTITY aboutSupport.securitySoftwareFirewall "Požarni zid">
+
 <!ENTITY aboutSupport.featuresTitle "Zmogljivosti &brandShortName;a">
 <!ENTITY aboutSupport.featureName "Ime">
 <!ENTITY aboutSupport.featureVersion "Različica">
@@ -72,6 +79,8 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsProcessCount "Procesi spletne vsebine">
 
+<!ENTITY aboutSupport.enterprisePolicies "Pravilniki za podjetja">
+
 <!ENTITY aboutSupport.appBasicsKeyGoogle "Ključ Google">
 <!ENTITY aboutSupport.appBasicsKeyMozilla "Ključ lokacijskih storitev Mozilla">
 
@@ -111,6 +120,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "Vključeno">
 <!ENTITY aboutSupport.a11yForceDisabled "Prepreči dostopnost">
 <!ENTITY aboutSupport.a11yHandlerUsed "Uporabljen upravljalec dostopnosti">
+<!ENTITY aboutSupport.a11yInstantiator "Uporabnik storitve dostopnosti">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Različice knjižnic">
 
@@ -154,3 +164,13 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceChannels "Kanali">
 <!ENTITY aboutSupport.mediaDeviceRate "Hitrost">
 <!ENTITY aboutSupport.mediaDeviceLatency "Zakasnitev">
+
+<!ENTITY aboutSupport.intlTitle "Jeziki in lokalizacija">
+<!ENTITY aboutSupport.intlAppTitle "Nastavitve programa">
+<!ENTITY aboutSupport.intlLocalesRequested "Zahtevani jeziki">
+<!ENTITY aboutSupport.intlLocalesAvailable "Jeziki na voljo">
+<!ENTITY aboutSupport.intlLocalesSupported "Jeziki programa">
+<!ENTITY aboutSupport.intlLocalesDefault "Privzeti jezik">
+<!ENTITY aboutSupport.intlOSTitle "Operacijski sistem">
+<!ENTITY aboutSupport.intlOSPrefsSystemLocales "Sistemski jeziki">
+<!ENTITY aboutSupport.intlRegionalPrefs "Območne nastavitve">

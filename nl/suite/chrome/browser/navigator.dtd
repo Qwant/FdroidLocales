@@ -8,9 +8,9 @@
 <!-- LOCALIZATION NOTE : FILE Do not translate commandkeys --> 
 
 <!-- LOCALIZATION NOTE (mainWindow.title): DONT_TRANSLATE --> 
-<!ENTITY mainWindow.title "&brandShortName;"> 
+<!ENTITY mainWindow.title "&brandShortName;">
 <!-- LOCALIZATION NOTE (mainWindow.titlemodifier) : DONT_TRANSLATE --> 
-<!ENTITY mainWindow.titlemodifier "&brandShortName;"> 
+<!ENTITY mainWindow.titlemodifier "&brandShortName;">
 <!-- LOCALIZATION NOTE (mainWindow.titlemodifiermenuseparator): DONT_TRANSLATE -->
 <!ENTITY mainWindow.titlemodifiermenuseparator " - ">
 
@@ -38,6 +38,10 @@
 <!ENTITY bookmarksToolbar.tooltip         "Bladwijzerwerkbalk">
 <!ENTITY navigationToolbar.tooltip        "Navigatiewerkbalk">
 
+<!ENTITY editBookmark.done.label "Gereed">
+<!ENTITY editBookmark.cancel.label "Annuleren">
+<!ENTITY editBookmark.removeBookmark.accessKey "v">
+
 <!-- Toolbar items --> 
 <!ENTITY backButton.label             "Terug">
 <!ENTITY backButton.tooltip           "Een pagina terug gaan">
@@ -59,7 +63,6 @@
 <!ENTITY locationBar.tooltip          "Voer een zoekterm, sleutelwoord of webadres in">
 <!ENTITY locationBar.accesskey        "d">
 <!ENTITY locationBar.title            "Locatie">
-
 <!ENTITY proxyIcon.tooltip            "Sleep dit pictogram om een koppeling naar deze pagina te maken">
 
 <!ENTITY searchItem.title             "Zoeken">
@@ -68,7 +71,7 @@
 <!ENTITY bookmarksButton.tooltip      "Bladwijzerlijst">
 <!ENTITY homeButton.label             "Startpagina">
 <!ENTITY bookmarksToolbarItem.label   "Bladwijzerwerkbalkitems">
-<!ENTITY  bookmarksToolbarChevron.tooltip "Meer bladwijzers tonen">
+<!ENTITY bookmarksToolbarChevron.tooltip "Meer bladwijzers tonen">
 
 <!-- Statusbar -->
 <!ENTITY  statusText.label            "Gereed">

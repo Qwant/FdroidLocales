@@ -3,9 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "Ütz apetik">
-
-<!ENTITY firstrun_urlbar_message "Ütz apetik pa &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext "Anin ke\&apos;awila\&apos; taq wachinäq rik\&apos;in kito\&apos;ik ri taq ruq\&apos;a\&apos; okem ichilab\&apos;en richin kanoxïk.">
+<!ENTITY firstrun_urlbar_message2 "Matyox ruma nacha\&apos; ri &brandShortName;">
+<!ENTITY firstrun_urlbar_subtext2 "Jun k\&apos;ak\&apos;a\&apos; oyonib\&apos;äl chi rokik\&apos;amaya\&apos;l Mozilla, ri majun ch\&apos;akoj rojqan chuqa\&apos; rujikib\&apos;an rutzij chi rij jun jamäl chuqa\&apos; jaqäl ajk\&apos;amaya\&apos;l.">
+<!ENTITY firstrun_panel_title_privacy "Ichinanem">
+<!ENTITY firstrun_privacy_message "Yatok pa k\&apos;amaya\&apos;l achi\&apos;el majun yatz\&apos;eto">
+<!ENTITY firstrun_privacy_subtext "Ichinan Okem pa k\&apos;amaya\&apos;l rik\&apos;in Chajinïk chuwäch Ojqanem yeruq\&apos;ät ri ojqanela\&apos; toq atokinäq pa k\&apos;amaya\&apos;l chuqa\&apos; man nunataj ta ri anatab\&apos;al toq yatel pa k\&apos;amaya\&apos;l.">
+<!ENTITY firstrun_panel_title_customize "Tichinäx">
+<!ENTITY firstrun_customize_message "Tab\&apos;ana\&apos; ri &brandShortName; nok awichin.">
+<!ENTITY firstrun_customize_subtext "Tawichinaj &brandShortName; rik\&apos;in taq tz\&apos;aqat. Yeq\&apos;at taq rutzijol, ye\&apos;atz\&apos;aqatisaj taq samaj, nacha\&apos; jun k\&apos;ak\&apos;a\&apos; wachinïk richin nak\&apos;üt ri ana\&apos;oj.">
 <!ENTITY firstrun_bookmarks_title "Natab\&apos;äl">
 <!ENTITY firstrun_bookmarks_message "Ri taq awajowab\&apos;äl, chuwäch chuqa\&apos; pa ya\&apos;on pa nik\&apos;aj">
 <!ENTITY firstrun_bookmarks_subtext "Tawila\&apos; taq retal ri taq ayaketal chuqa\&apos; kinatab\&apos;al toq yakanon.">
@@ -13,8 +18,8 @@
 <!ENTITY firstrun_data_message "Jub\&apos;a\&apos; taq tzij, janila echajin">
 <!ENTITY firstrun_data_subtext2 "Keq\&apos;at ri taq wachib\&apos;äl richin man k\&apos;ïy ta taq tzij yesach toq at k\&apos;o chupam jun ruxaq k\&apos;amaya\&apos;l.">
 <!ENTITY firstrun_sync_title "Sync">
-<!ENTITY firstrun_sync_message "&brandShortName;, junelïk chachi\&apos;">
-<!ENTITY firstrun_sync_subtext "Ke\&apos;axima\&apos; ri taq ruwi\&apos;, taq ewan tzij chuqa\&apos; ch\&apos;aqa\&apos; chik toq nawajo\&apos; nawokisaj.">
+<!ENTITY firstrun_sync_message2 "Tak\&apos;ama\&apos; el akuchi\&apos; xaya\&apos; wi kan.">
+<!ENTITY firstrun_sync_subtext2 "Tawokisaj Sync richin ye\&apos;awïl ri taq yaketal, ewan taq tzij, chuqa\&apos; ronojel ri nayäk pa &brandShortName; pa ronojel ri taq awokisaxel.">
 <!ENTITY firstrun_signin_message "Katok, tatikirisaj">
 <!ENTITY firstrun_signin_button "Tatikirisaj molojri\&apos;ïl pa Ximojri\&apos;ïl">
 <!ENTITY  onboard_start_button_browser "Tichap okem pa k\&apos;amaya\&apos;l">
@@ -87,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "&formatD; cholna\&apos;oj">
 <!ENTITY bookmark_folder_one_item "1 cholna\&apos;oj">
+<!ENTITY bookmark_folder_updated "K\&apos;exon yakwuj">
 <!ENTITY bookmark_parent_folder "Nimaläj molyakb\&apos;äl">
 <!ENTITY bookmark_add_folder "Titz\&apos;aqatisäx k\&apos;ak\&apos;a\&apos; molyakb\&apos;äl">
 
@@ -105,7 +111,7 @@
 <!ENTITY reload "Tisamajib\&apos;ëx">
 <!ENTITY forward "Jun chik">
 <!ENTITY menu "K\&apos;utüy samaj">
-<!ENTITY back "Chuwäch">
+<!ENTITY back "Chi rij">
 <!ENTITY stop "Tiq\&apos;at">
 <!ENTITY site_security "Ruchajixik ri ruxaq k\&apos;amaya\&apos;l">
 <!ENTITY edit_mode_cancel "Jumul tiq\&apos;at">
@@ -201,8 +207,6 @@
 <!ENTITY pref_category_advanced_summary3 "Kinuk\&apos;ik taq ruwi\&apos;, chajinel taq tzij, taq rusamajib\&apos;al b\&apos;anel">
 <!ENTITY pref_category_notifications "Taq rutzijol">
 <!ENTITY pref_category_notifications_summary "Ri k\&apos;ak\&apos;a\&apos; taq rub\&apos;anikil, taq k\&apos;exoj kiwäch taq ruxaq ajk\&apos;amaya\&apos;l">
-<!ENTITY pref_content_notifications "Taq k\&apos;exoj kiwäch taq ruxaq ajk\&apos;amaya\&apos;l">
-<!ENTITY pref_content_notifications_summary2 "Kilixik k\&apos;ak\&apos;a\&apos; taq kipam k\&apos;amonel taq ruxaq k\&apos;amaya\&apos;l">
 <!ENTITY pref_developer_remotedebugging_usb "Näj chojmirisanem pa USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Näj chojmirisanem pa Wi-Fi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Ri chojmirisanem pa Wi-Fi nrajo\&apos; chi chupam ri awokisaxel k\&apos;o chi k\&apos;o jun chokoy richin nusik\&apos;ij taq tzib QR.">
@@ -268,7 +272,6 @@
 <!ENTITY pref_show_web_fonts_summary2 "Keqasäx näj taq tz\&apos;ib\&apos; toq nitikirisäx jun ruxaq">
 
 <!ENTITY pref_tracking_protection_title2 "Chajinïk chuwäch Ojqanïk">
-<!ENTITY pref_tracking_protection_summary3 "Tzijïl pa Ichinan Okem pa K\&apos;amaya\&apos;l">
 <!ENTITY pref_donottrack_title "Mani nikanöx">
 <!ENTITY pref_donottrack_summary "&brandShortName; xtub\&apos;ij chi ke ri taq ruxaq k\&apos;amaya\&apos;l chi man ninwajo\&apos; ta chi kikanöx">
 
@@ -279,6 +282,13 @@
 <!ENTITY pref_whats_new_notification "Achike ri k\&apos;ak\&apos;a\&apos; k\&apos;o pa &brandShortName;">
 <!ENTITY pref_whats_new_notification_summary "Tawetamaj ri k\&apos;ak\&apos;a\&apos; taq samaj chi rij jun k\&apos;exoj ruwäch">
 
+<!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification"-->
+<!ENTITY pref_feature_tips_notification "Taq rupixa\&apos; chuqa\&apos; taq rusamaj ri tikojil">
+<!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification_summary"-->
+<!ENTITY pref_feature_tips_notification_summary "Tetamäx ch\&apos;aqa\&apos; chik chi rij rokisaxik ri &brandShortName; chuqa\&apos; ch\&apos;aqa\&apos; chik &vendorShortName; taq tikojil">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "Soltojtob\&apos;enel taq rub\&apos;anikil">
@@ -286,8 +296,9 @@
 <!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "Ichinan taq ruwi\&apos;">
-<!ENTITY pref_custom_tabs_summary3 "Tiya\&apos; q\&apos;ij chi ri taq chokoy kekijaqa\&apos; taq ruxaq k\&apos;amaya\&apos;l rik\&apos;in jun ichinan ruwäch &brandShortName;">
+<!ENTITY pref_custom_tabs2 "Ichinan taq Ruwi\&apos;">
+<!ENTITY pref_custom_tabs_summary4 "Tiya\&apos; q\&apos;ij chi ke ri taq chokoy chi kekijaqa\&apos; taq rupam ajk\&apos;amaya\&apos;l pa jun ichinan ruwi\&apos; richin aninäq kisamajib\&apos;exik.">
+
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "Tijaq pa &formatS;">
@@ -297,10 +308,6 @@
 
 <!ENTITY pref_pwa "K\&apos;iyirisanelal Ajk\&apos;amaya\&apos;l Chokoy">
 <!ENTITY pref_pwa_summary "Tiya\&apos; q\&apos;ij chi ke ri ajk\&apos;amaya\&apos;l taq chokoy chi ketz\&apos;aqatisäx pa ri ruwa tikirib\&apos;äl">
-
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-<!ENTITY pref_activity_stream "Ruk\&apos;isib\&apos;al taq samaj">
-<!ENTITY pref_activity_stream_summary "Jun jeb\&apos;ël b\&apos;anob\&apos;äl ütz chi re ri awäch chuqa\&apos; jun rutikirib\&apos;al ruxaq ri wachib\&apos;en nub\&apos;än chi man k\&apos;ayew ta nawïl ri tajin nakanoj pan etal chuqa\&apos; pa &brandShortName;.">
 
 <!ENTITY tracking_protection_prompt_title "Wakami rik\&apos;in Chajinïk chuwäch Ojqanïk">
 <!ENTITY tracking_protection_prompt_text "Q\&apos;aton wakami ruch\&apos;akulal kanoxïk, ruma ri\&apos; majun achike tamäy.">
@@ -334,23 +341,6 @@
      has been queued but we are missing the system permission to show an overlay. -->
 <!ENTITY tab_queue_notification_settings "Richin \&quot;Nijaq jalajöj taq ximonel\&quot;, tab\&apos;ana\&apos; utzil, tatzija\&apos; chi niya\&apos; q\&apos;ij \&apos;Tiwachib\&apos;ëx pa kiwi\&apos; ch\&apos;aqa\&apos; chik taq chokoy\&apos; richin &brandShortName;">
 
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY content_notification_title_plural "&formatD; taq ruxaq k\&apos;amaya\&apos;l k\&apos;exon kiwäch">
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "Taq nunuk\&apos;ulem">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "Tisik\&apos;ïx wakami">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
-<!ENTITY content_notification_updated_on "K\&apos;exon ruwäch pa &formatS;">
-
 <!ENTITY pref_char_encoding "Kicholajil taq tz\&apos;ib\&apos;">
 <!ENTITY pref_char_encoding_on "Tik\&apos;ut pe ri k\&apos;utüy samaj">
 <!ENTITY pref_char_encoding_off "Mani nik\&apos;ut pe ri k\&apos;utüy samaj">
@@ -380,6 +370,7 @@
 <!ENTITY pref_qrcode_enabled_summary2 "Tiya\&apos; q\&apos;ij tiwachib\&apos;ëx ri QR nimatz\&apos;ib\&apos; pa ri URL kajtz\&apos;ik">
 
 <!ENTITY pref_use_master_password "Tokisäx ri nimaläj ewan tzij">
+<!ENTITY pref_sync_default_title "Firefox Taqoya\&apos;l">
 <!ENTITY pref_sync2 "Titikirisäx molojri\&apos;ïl">
 <!ENTITY pref_sync_summary2 "Ke\&apos;axima\&apos; kiwäch ri taq awi\&apos;, taq yaketal, ewan taq tzij chuqa\&apos; natab\&apos;äl">
 <!ENTITY pref_search_suggestions "Kek\&apos;ut pe ri taq chilab\&apos;enïk richin yakanon">
@@ -409,6 +400,9 @@
 <!ENTITY pref_dialog_set_default "Tichap achi\&apos;el ri e k\&apos;o wi">
 <!ENTITY pref_dialog_default "K\&apos;o wi">
 <!ENTITY pref_dialog_remove "Tik\&apos;am el">
+<!ENTITY pref_dialog_activitystream_header_content "Rutz\&apos;aqat rupam">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "K\&apos;ak\&apos;a\&apos; taq Yaketal">
+<!ENTITY pref_dialog_activitystream_visited "Tz\&apos;eton">
 
 <!ENTITY pref_search_last_toast "Man tikirel ta nak\&apos;äm el o nachüp ri ruk\&apos;isib\&apos;al a samajinel kanonïk.">
 
@@ -435,7 +429,6 @@
      crashReporterDesc.label). -->
 <!ENTITY datareporting_fhr_title "Rutzijol Raxnaqil &brandShortName;">
 <!ENTITY datareporting_fhr_summary2 "Tikomonïx tzij rik\&apos;in ri &vendorShortName; chi rij rub\&apos;eyal ri awokik\&apos;amaya\&apos;l richin yatkito\&apos; chi niq\&apos;ax pan awi\&apos; ri rub\&apos;eyal nisamäj">
-<!ENTITY datareporting_abouthr_title "Tintz\&apos;eta\&apos; ri nutzijol richin rub\&apos;anikil">
 <!ENTITY datareporting_telemetry_title "Etataqonel">
 <!ENTITY datareporting_telemetry_summary "Takomonij ri na\&apos;oj pa ruwi\&apos; rub\&apos;eyal nisamäj, ri rokisaxik, ch\&apos;akulakem chuqa\&apos; richinaxik awokik\&apos;amaya\&apos;l rik\&apos;in &vendorShortName; richin chi ri &brandShortName; nel ütz">
 <!ENTITY datareporting_crashreporter_summary "&brandShortName; yerutäq kitzijol taq sachoj richin nuto\&apos; &vendorShortName; chi nub\&apos;än jun raxinäq chuqa\&apos; ütz awokik\&apos;amaya\&apos;l">
@@ -467,6 +460,7 @@
 <!ENTITY share_image_failed "Majun nitikïr ta nikomonïx re jun wachib\&apos;äl re\&apos;">
 <!ENTITY save_as_pdf "Tiyak achi\&apos;el jun PDF">
 <!ENTITY print "Titz\&apos;ajb\&apos;äx">
+<!ENTITY view_page_source "Titz\&apos;et Ruxe\&apos;el Ruxaq">
 <!ENTITY find_in_page "Tikanöx pa ruxaq">
 <!ENTITY desktop_mode "Tik\&apos;utüx jun ruk\&apos;ojlib\&apos;al ri kematz\&apos;ib\&apos;ab\&apos;äl">
 <!ENTITY page "Ruxaq">
@@ -498,7 +492,7 @@
 <!ENTITY contextmenu_open_new_tab "Tijaq pa jun k\&apos;ak\&apos;a\&apos; ruwi\&apos;">
 <!ENTITY contextmenu_open_private_tab "Tijaq pa jun ichinan ruwi\&apos;">
 <!ENTITY contextmenu_remove "Tiyuj el">
-<!ENTITY contextmenu_add_to_launcher "Titz\&apos;aqatisäx apo pa ruwäch tikirib\&apos;äl">
+<!ENTITY contextmenu_add_page_shortcut "Titz\&apos;aqatisäx Ruchojmin Okem ri Ruxaq">
 <!ENTITY contextmenu_set_as_homepage "Tichap achi\&apos;el Tikirisanel ruxaq">
 <!ENTITY contextmenu_share "Tikomonïx">
 <!ENTITY contextmenu_pasteandgo "Titz\&apos;ajb\&apos;äx chuqa\&apos; tib\&apos;e">
@@ -510,7 +504,17 @@
 <!ENTITY contextmenu_top_sites_edit "Tinuk\&apos;">
 <!ENTITY contextmenu_top_sites_pin "Rajilab\&apos;al ruxaq k\&apos;amaya\&apos;l">
 <!ENTITY contextmenu_top_sites_unpin "Unpin ruxaq k\&apos;amaya\&apos;l">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "Ketz\&apos;ajb\&apos;äx achi\&apos;el Yalan Etz\&apos;eton ri Ruxaq K\&apos;amaya\&apos;l">
+<!ENTITY contextmenu_unpin_from_top_sites "Ke\&apos;elesäx el pa ri Yalan Etz\&apos;eton ri Ruxaq K\&apos;amaya\&apos;l">
 <!ENTITY contextmenu_add_search_engine "Titz\&apos;aqatisäx jun kanob\&apos;äl">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "Xtz\&apos;ajb\&apos;äx ri ruxaq pa Yalan Etz\&apos;eton ri Ruxaq K\&apos;amaya\&apos;l">
+<!ENTITY unpinned_page_from_top_sites "Xelesäx el ri ruxaq pa Yalan Etz\&apos;eton ri Ruxaq K\&apos;amaya\&apos;l">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -542,6 +546,7 @@
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "Yujun ruxaq">
+<!ENTITY folder_removed "Yujun yakwuj">
 
 <!ENTITY bookmark_edit_title "Tinuk\&apos; ri yaketal">
 <!ENTITY bookmark_edit_folder_title "Tinuk\&apos; Molyakb\&apos;äl">
@@ -811,6 +816,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      replaced by the Android OS version (e.g., 14)-->
 <!ENTITY unsupported_sdk_version "¡Takuyu\&apos;! &brandShortName; man xtisamäj ta pa re okisaxel re\&apos; (&formatS1;, &formatS2;). Tab\&apos;ana\&apos; utzil taqasaj ri ütz ruwäch.">
 
+<!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
+<!ENTITY corrupt_apk "Man nijaqatäj ta ri &brandShortName;. Tayaka\&apos; chik qa k\&apos;a ri\&apos; tatojtob\&apos;ej chik.">
+
 <!ENTITY eol_notification_title2 "&brandShortName; mani chik nik\&apos;ex ruwäch">
 <!ENTITY eol_notification_summary "Tachapa\&apos; qa richin nawetamaj juley etamab\&apos;äl">
 
@@ -819,7 +827,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY whatsnew_notification_title "&brandShortName; jalon chik">
 <!ENTITY whatsnew_notification_summary "Tikanöx achike ri k\&apos;ak\&apos;a\&apos; k\&apos;o chupam re ruwäch re\&apos;">
 
-<!ENTITY promotion_add_to_homescreen "Titz\&apos;aqatisäx apo pa ruwäch tikirib\&apos;äl">
+<!ENTITY promotion_add_page_shortcut "Titz\&apos;aqatisäx ruchojmin okem ri ruxaq">
 
 <!ENTITY helper_first_offline_bookmark_title "Tisik\&apos;ïx pa k\&apos;amab\&apos;ey">
 <!ENTITY helper_first_offline_bookmark_message "Tawila\&apos; ri asik\&apos;inel Ketz\&apos;et taq ruch\&apos;akulal Yaketal, achi\&apos;el chuqa\&apos; toq majun okem pa k\&apos;amaya\&apos;l.">
@@ -830,7 +838,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_button "Tib\&apos;an b\&apos;enam pa taq Yaketal">
 
 <!ENTITY activity_stream_topsites "Utziläj taq ruxaq K\&apos;amaya\&apos;l">
-<!ENTITY activity_stream_highlights "Taq k\&apos;ewachinïk">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "Chilab\&apos;en ruma &brandPocket;">
+<!ENTITY activity_stream_highlights "Ya\&apos;on kiq\&apos;ij">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "MORE">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
@@ -838,13 +851,30 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "Tz\&apos;eton">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "K\&apos;o rajaw">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "Katok pa k\&apos;amaya\&apos;l richin niqak\&apos;üt chawäch jeb\&apos;ël taq cholna\&apos;oj, taq silowäch, chuqa\&apos; ch\&apos;aqa\&apos; chik taq ruxaq k\&apos;a b\&apos;a\&apos; ke\&apos;atz\&apos;ët o aya\&apos;on kan ketal wawe\&apos;.">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "Tichup ruwäch">
+<!ENTITY activity_stream_remove "Tiyuj">
 <!ENTITY activity_stream_delete_history "Tiyuj el pa k\&apos;ulwachinel">
 
-<!ENTITY activity_stream_welcome_title "Ütz apetik pa ri nima\&apos;q taq k\&apos;ojlemal">
-<!ENTITY activity_stream_welcome_content1 "&brandShortName; wakami tanuk\&apos;u\&apos; ri nïm taq wachinäq e\&apos;awilon pa ajk\&apos;amaya\&apos;l richin nawïl ri b\&apos;ey richin yatzolin pa ri rutzijol taq na\&apos;oj, taq silowachib\&apos;äl, taq yaketal chuqa\&apos; ch\&apos;aqa\&apos; chik ruxaq taq k\&apos;amaya\&apos;l.">
-<!ENTITY fullscreen_warning "Xok pa chijun ruwa">
+<!ENTITY private_tab_panel_title "Ichinan Okik\&apos;amaya\&apos;l + Chajinïk chuwäch Ojqanïk">
+<!ENTITY private_tab_panel_description "&brandShortName; yeruq\&apos;ät jujun taq peraj chi re ri ruxaq, ri yetikïr nikikanoj ri asamaj pa okik\&apos;amaya\&apos;l.">
+<!ENTITY private_tab_panel_description2 "Majun achike xtiqanataj ri k\&apos;o chupam ri anatab\&apos;al, xa xe chi ri taq yakb\&apos;äl xe\&apos;aqasaj chuqa\&apos; ri k\&apos;ak\&apos;a\&apos; taq yaketal xeyake\&apos; pa ri awokisaxel.">
+<!ENTITY private_tab_learn_more "¿La nawajo\&apos; nawetamaj juley chik?">
+
+<!ENTITY fullscreen_warning "Xatok pa chijun ruwa">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_confirm): The plus sign here is part of UI design -->
+<!ENTITY pwa_add_to_launcher_confirm "+ Titz\&apos;aqatisäx apo pa Ruwäch Tikirib\&apos;äl">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_badge2): Used as label in the page actions dropdown list,
+displayed when there are more than 3 actions available for a page.
+See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
+<!ENTITY pwa_add_to_launcher_badge2 "Titz\&apos;aqatisäx apo pa ruwäch tikirib\&apos;äl">
+<!ENTITY pwa_continue_to_website "Tik\&apos;oje\&apos; na chi ri Ajk\&apos;amaya\&apos;l Ruxaq">
+<!ENTITY pwa_onboarding_sumo "Yatikïr natz\&apos;aqatisaj re ajk\&apos;amaya\&apos;l ruxaq re\&apos; pa ri ruwäch Tikirib\&apos;äl richin nik\&apos;oje\&apos; aninäq awokem chuqa\&apos; aninäq yatok pa k\&apos;amaya\&apos;l, achi\&apos;el ta jun chokoy.">

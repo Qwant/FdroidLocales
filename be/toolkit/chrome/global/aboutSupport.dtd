@@ -25,6 +25,13 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionVersion "Версія">
 <!ENTITY aboutSupport.extensionId "ID">
 
+<!ENTITY aboutSupport.securitySoftwareTitle "Праграмы для бяспекі">
+<!ENTITY aboutSupport.securitySoftwareType "Тып">
+<!ENTITY aboutSupport.securitySoftwareName "Назва">
+<!ENTITY aboutSupport.securitySoftwareAntivirus "Антывірус">
+<!ENTITY aboutSupport.securitySoftwareAntiSpyware "Антышпіён">
+<!ENTITY aboutSupport.securitySoftwareFirewall "Міжсеткавы экран">
+
 <!ENTITY aboutSupport.featuresTitle "Магчымасці &brandShortName;">
 <!ENTITY aboutSupport.featureName "Імя">
 <!ENTITY aboutSupport.featureVersion "Версія">
@@ -72,6 +79,8 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsProcessCount "Працэсы вэб-кантэнту">
 
+<!ENTITY aboutSupport.enterprisePolicies "Карпаратыўная палітыка">
+
 <!ENTITY aboutSupport.appBasicsKeyGoogle "Ключ Google">
 <!ENTITY aboutSupport.appBasicsKeyMozilla "Ключ Службы вызначэння месцазнаходжання ад Mozilla">
 
@@ -111,6 +120,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "Задзейнічаны">
 <!ENTITY aboutSupport.a11yForceDisabled "Прадухіліць даступнасць">
 <!ENTITY aboutSupport.a11yHandlerUsed "Апрацоўшчык даступнасці. які выкарыстоўваецца">
+<!ENTITY aboutSupport.a11yInstantiator "Увасабляльнік даступнасці">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Версіі бібліятэк">
 
@@ -154,3 +164,13 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceChannels "Каналы">
 <!ENTITY aboutSupport.mediaDeviceRate "Частата">
 <!ENTITY aboutSupport.mediaDeviceLatency "Затрымка">
+
+<!ENTITY aboutSupport.intlTitle "Інтэрнацыяналізацыя і лакалізацыя">
+<!ENTITY aboutSupport.intlAppTitle "Налады праграмы">
+<!ENTITY aboutSupport.intlLocalesRequested "Запытаная лакалізацыі">
+<!ENTITY aboutSupport.intlLocalesAvailable "Даступныя лакалізацыі">
+<!ENTITY aboutSupport.intlLocalesSupported "Лакалізацыі праграмы">
+<!ENTITY aboutSupport.intlLocalesDefault "Прадвызначаная лакалізацыя">
+<!ENTITY aboutSupport.intlOSTitle "Аперацыйная сістэма">
+<!ENTITY aboutSupport.intlOSPrefsSystemLocales "Сістэмныя лакалізацыі">
+<!ENTITY aboutSupport.intlRegionalPrefs "Рэгіянальныя налады">

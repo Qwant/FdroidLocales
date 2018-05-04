@@ -21,6 +21,13 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionVersion "Verzió">
 <!ENTITY aboutSupport.extensionId "Azonosító">
 
+<!ENTITY aboutSupport.securitySoftwareTitle "Biztonsági szoftver">
+<!ENTITY aboutSupport.securitySoftwareType "Típus">
+<!ENTITY aboutSupport.securitySoftwareName "Név">
+<!ENTITY aboutSupport.securitySoftwareAntivirus "Antivírus">
+<!ENTITY aboutSupport.securitySoftwareAntiSpyware "Kémprogram-elhárító">
+<!ENTITY aboutSupport.securitySoftwareFirewall "Tűzfal">
+
 <!ENTITY aboutSupport.featuresTitle "A &brandShortName; szolgáltatásai">
 <!ENTITY aboutSupport.featureName "Név">
 <!ENTITY aboutSupport.featureVersion "Verzió">
@@ -54,7 +61,7 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsEnabledPlugins "Engedélyezett bővítmények">
 <!ENTITY aboutSupport.appBasicsBuildConfig "Build konfiguráció">
-<!ENTITY aboutSupport.appBasicsUserAgent "User Agent">
+<!ENTITY aboutSupport.appBasicsUserAgent "Felhasználói ügynök">
 <!ENTITY aboutSupport.appBasicsOS "OS">
 <!ENTITY aboutSupport.appBasicsMemoryUse "Memóriahasználat">
 <!ENTITY aboutSupport.appBasicsPerformance "Teljesítmény">
@@ -66,7 +73,9 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsMultiProcessSupport "Több folyamatú ablakok">
 
-<!ENTITY aboutSupport.appBasicsProcessCount "Webes tartalomfolyamatok">
+<!ENTITY aboutSupport.appBasicsProcessCount "Webes tartalomfolyamat">
+
+<!ENTITY aboutSupport.enterprisePolicies "Vállalati házirendek">
 
 <!ENTITY aboutSupport.appBasicsKeyGoogle "Google kulcs">
 <!ENTITY aboutSupport.appBasicsKeyMozilla "Mozilla helymeghatározási szolgáltatás kulcs">
@@ -107,6 +116,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "Aktiválva">
 <!ENTITY aboutSupport.a11yForceDisabled "Kisegítő lehetőségek letiltása">
 <!ENTITY aboutSupport.a11yHandlerUsed "Használt akadálymentesítés-kezelő">
+<!ENTITY aboutSupport.a11yInstantiator "Kisegítő lehetőségek kezdeményezője">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Könyvtárak verziói">
 
@@ -150,3 +160,13 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceChannels "Csatornák">
 <!ENTITY aboutSupport.mediaDeviceRate "Sebesség">
 <!ENTITY aboutSupport.mediaDeviceLatency "Késleltetés">
+
+<!ENTITY aboutSupport.intlTitle "Nemzetköziesítés és honosítás">
+<!ENTITY aboutSupport.intlAppTitle "Alkalmazásbeállítások">
+<!ENTITY aboutSupport.intlLocalesRequested "Kért területi beállítások">
+<!ENTITY aboutSupport.intlLocalesAvailable "Rendelkezésre álló területi beállítások">
+<!ENTITY aboutSupport.intlLocalesSupported "Alkalmazás területi beállításai">
+<!ENTITY aboutSupport.intlLocalesDefault "Alapértelmezett területi beállítás">
+<!ENTITY aboutSupport.intlOSTitle "Operációs rendszer">
+<!ENTITY aboutSupport.intlOSPrefsSystemLocales "Rendszer területi beállításai">
+<!ENTITY aboutSupport.intlRegionalPrefs "Területi beállítások">

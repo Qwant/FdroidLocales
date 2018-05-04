@@ -10,7 +10,7 @@
 <!ENTITY aboutNetworking.sockets               "Soket">
 <!ENTITY aboutNetworking.dns                   "DNS">
 <!ENTITY aboutNetworking.websockets            "WebSocket">
-<!ENTITY aboutNetworking.refresh               "Segarkan">
+<!ENTITY aboutNetworking.refresh               "Muat semula">
 <!ENTITY aboutNetworking.autoRefresh           "Segarkan secara automatik setiap 3 saat">
 <!ENTITY aboutNetworking.hostname              "Nama hos">
 <!ENTITY aboutNetworking.port                  "Port">
@@ -23,6 +23,7 @@
 <!ENTITY aboutNetworking.sent                  "Dihantar">
 <!ENTITY aboutNetworking.received              "Diterima">
 <!ENTITY aboutNetworking.family                "Keluarga">
+<!ENTITY aboutNetworking.trr                   "TRR">
 <!ENTITY aboutNetworking.addresses             "Alamat">
 <!ENTITY aboutNetworking.expires               "Luput (Saat)">
 <!ENTITY aboutNetworking.messagesSent          "Mesej Dihantar">
@@ -48,7 +49,7 @@
 <!ENTITY aboutNetworking.totalNetworkRequests  "Jumlah bilangan permintaan rangkaian">
 <!ENTITY aboutNetworking.rcwnOperation         "Operasi Cache">
 <!ENTITY aboutNetworking.rcwnPerfOpen          "Buka">
-<!ENTITY aboutNetworking.rcwnPerfRead          "Baca">
+<!ENTITY aboutNetworking.rcwnPerfRead          "Dibaca">
 <!ENTITY aboutNetworking.rcwnPerfWrite         "Tulis">
 <!ENTITY aboutNetworking.rcwnPerfEntryOpen     "Entri Terbuka">
 <!ENTITY aboutNetworking.rcwnAvgShort          "Purata Pendek">

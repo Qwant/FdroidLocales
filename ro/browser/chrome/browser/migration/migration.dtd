@@ -21,6 +21,10 @@
 <!ENTITY importFromCanary.accesskey     "n">
 <!ENTITY importFromChrome.label         "Chrome">
 <!ENTITY importFromChrome.accesskey     "C">
+<!ENTITY importFromChromeBeta.label     "Chrome Beta">
+<!ENTITY importFromChromeBeta.accesskey "B">
+<!ENTITY importFromChromeDev.label      "Chrome Dev">
+<!ENTITY importFromChromeDev.accesskey  "D">
 <!ENTITY importFromChromium.label       "Chromium">
 <!ENTITY importFromChromium.accesskey   "u">
 <!ENTITY importFromFirefox.label        "Firefox">
@@ -32,12 +36,12 @@
 
 <!ENTITY importSource.title             "Importă configurații și date">
 <!ENTITY importItems.title              "Elemente pentru importare">
-<!ENTITY importItems.label              "Selectați care elemente să se importe:">
+<!ENTITY importItems.label              "Selectează care elemente să se importe:">
 
 <!ENTITY migrating.title                "Se importă…">
 <!ENTITY migrating.label                "Următoarele elemente se importă în prezent…">
 
-<!ENTITY selectProfile.title            "Selectați profilul">
+<!ENTITY selectProfile.title            "Selectează profilul">
 <!ENTITY selectProfile.label            "Următoarele profiluri sunt disponibile pentru a se importa din acestea:">
 
 <!ENTITY done.title                     "Importare încheiată">

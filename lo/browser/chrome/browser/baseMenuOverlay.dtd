@@ -17,18 +17,16 @@
 <!ENTITY aboutProduct2.label      "About &brandShorterName;">
 <!ENTITY aboutProduct2.accesskey  "A">
 <!ENTITY productHelp2.label       "&brandShorterName; ຊ່ວຍເຫລືອ">
-<!ENTITY productHelp2.accesskey   "ຊ">
+<!ENTITY productHelp2.accesskey   "H">
 <!ENTITY helpMac.commandkey       "?">
 
+<!ENTITY helpKeyboardShortcuts.label     "ແປ້ນພີມລັດ">
+<!ENTITY helpKeyboardShortcuts.accesskey "K">
 
-
-<!ENTITY helpSafeMode.label       "ເລີມການເຮັດວຽກໃຫມ່ພ້ອມກັບໂປຼແກຣມເສີມທີ່ຖືກປິດໃຊ້ງານ...">
+<!ENTITY helpSafeMode.label       "ເລີ່ມເຮັດວຽກໃຫມ່ພ້ອມປິດໃຊ້ງານໂປຣແກຣມເສີມ…">
 <!ENTITY helpSafeMode.accesskey   "R">
-
-
-
-<!ENTITY healthReport2.label      "&brandShorterName; ລາຍງານສູຂະພາບ">
-<!ENTITY healthReport2.accesskey  "e">
+<!ENTITY helpSafeMode.stop.label       "ເລີ່ມເຮັດວຽກໃຫມ່ພ້ອມເປີດໃຊ້ງານໂປຣແກຣມເສີມ">
+<!ENTITY helpSafeMode.stop.accesskey   "R">
 
 <!ENTITY helpTroubleshootingInfo.label      "ຂໍ້ມູນຂອງການແກ້ໄຂບັນຫາ">
 <!ENTITY helpTroubleshootingInfo.accesskey  "T">

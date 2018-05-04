@@ -7,18 +7,30 @@
 <!ENTITY engine.bookmarks.label     "Əlfəcinlər">
 <!ENTITY engine.bookmarks.accesskey "c">
 <!ENTITY engine.tabs.label2         "Açıq Vərəqlər">
+<!ENTITY engine.tabs.title          "Sinxronlaşdırılmış cihazlarda açıq olanların siyahısı">
 <!ENTITY engine.tabs.accesskey      "V">
 <!ENTITY engine.history.label       "Keçmiș">
 <!ENTITY engine.history.accesskey   "i">
 <!ENTITY engine.logins.label        "Daxil olmalar">
+<!ENTITY engine.logins.title        "Saxladığınız istifadəçi adları və parollar">
 <!ENTITY engine.logins.accesskey    "L">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "Seçimlər">
+<!ENTITY engine.prefsWin.accesskey  "S">
 <!ENTITY engine.prefs.label         "Nizamlamalar">
 <!ENTITY engine.prefs.accesskey     "l">
+<!ENTITY engine.prefs.title         "Dəyişdirdiyiniz Ümumi, Məxfilik və Təhlükəsizlik tənzimləmələri">
 <!ENTITY engine.addons.label        "Əlavələr">
+<!ENTITY engine.addons.title        "Firefox masaüstü üçün uzantı və mövzular">
 <!ENTITY engine.addons.accesskey    "Ə">
 <!ENTITY engine.addresses.label     "Ünvanlar">
+<!ENTITY engine.addresses.title     "Saxladığınız poçt ünvanları (ancaq masaüstü)">
 <!ENTITY engine.addresses.accesskey "e">
 <!ENTITY engine.creditcards.label   "Kredit kartları">
+<!ENTITY engine.creditcards.title   "Adlar, nömrələr və vaxtı çıxma tarixləri (ancaq masaüstü)">
 <!ENTITY engine.creditcards.accesskey "C">
 
 <!-- Device Settings -->
@@ -50,26 +62,31 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedInLoginFailure.beforename.label "Yenidən qoşulmaq üçün daxil olun">
 <!ENTITY signedInLoginFailure.aftername.label "">
 
-<!ENTITY notSignedIn.label           "Siz daxil olmayıbsınız.">
-<!ENTITY signIn.label                "Daxil ol">
-<!ENTITY signIn.accesskey            "g">
-<!ENTITY profilePicture.tooltip      "Profil şəklini dəyiş">
-<!ENTITY verifiedManage.label        "Hesabı idarə et">
-<!ENTITY verifiedManage.accesskey    "o">
-<!ENTITY disconnect3.label           "Ayrıl…">
-<!ENTITY disconnect3.accesskey       "D">
+<!ENTITY notSignedIn.label            "Siz daxil olmayıbsınız.">
+<!ENTITY signIn.label                 "Daxil ol">
+<!ENTITY signIn.accesskey             "g">
+<!ENTITY profilePicture.tooltip       "Profil şəklini dəyiş">
+<!ENTITY verifiedManage.label         "Hesabı idarə et">
+<!ENTITY verifiedManage.accesskey     "o">
+<!ENTITY disconnect3.label            "Ayrıl…">
+<!ENTITY disconnect3.accesskey        "D">
 <!ENTITY verify.label                "E-poçtu təsdiqlə">
 <!ENTITY verify.accesskey            "V">
 <!ENTITY forget.label                "Bu e-poçtu yaddan çıxart">
 <!ENTITY forget.accesskey            "F">
 
+<!ENTITY resendVerification.label     "Təsdiqi təkrar göndər">
+<!ENTITY resendVerification.accesskey "d">
+<!ENTITY cancelSetup.label            "Quraşdırmanı ləğv et">
+<!ENTITY cancelSetup.accesskey        "p">
+
 <!ENTITY signedOut.caption            "Web-inizi özünüzlə gəzdirin">
 <!ENTITY signedOut.description        "Əlfəçin, keçmiş, vərəq, parol, əlavə və nizamlamalarınızı bütün cihazlarınız arasında sinxronlaşdırın.">
 <!ENTITY signedOut.accountBox.title   "&syncBrand.fxAccount.label; ilə qoşulun">
-<!ENTITY signedOut.accountBox.create  "Hesab Aç">
-<!ENTITY signedOut.accountBox.create.accesskey  "C">
-<!ENTITY signedOut.accountBox.signin  "Daxil ol">
-<!ENTITY signedOut.accountBox.signin.accesskey  "I">
+<!ENTITY signedOut.accountBox.create2 "Hesabınız yoxdur? Başlayın">
+<!ENTITY signedOut.accountBox.create2.accesskey "C">
+<!ENTITY signedOut.accountBox.signin2 "Daxil ol…">
+<!ENTITY signedOut.accountBox.signin2.accesskey "I">
 
 <!ENTITY signedIn.settings.label       "Sync Tənzimləmələri">
 <!ENTITY signedIn.settings.description "&brandShortName; işlədən cihazlarınızda nələrin sinxronlaşacağını seçin.">
@@ -89,3 +106,6 @@ both, to better adapt this sentence to their language.
 <!ENTITY mobilePromo3.iOSLink          "iOS">
 
 <!ENTITY mobilePromo3.end              " üçün Firefox endirin.">
+
+<!ENTITY mobilepromo.singledevice      "Digər cihazı qoş">
+<!ENTITY mobilepromo.multidevice       "Cihazları idarə et">

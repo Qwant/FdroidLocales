@@ -3,32 +3,24 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY  trackingProtectionHeader2.label      "Ochrana pred sledovaním">
-<!ENTITY  trackingProtection2.description      "Sledovanie je zhromažďovanie údajov o vašom prehliadaní na rôznych stránkach. Môže byť použité na vytvorenie profilu a zobrazovanie obsahu alebo reklám na základe vašich osobných údajov.">
-<!ENTITY  trackingProtection2.radioGroupLabel  "Blokovať sledovacie prvky pomocou Ochrany pred sledovaním">
+<!ENTITY  trackingProtection3.description      "Ochrana pred sledovaním blokuje sledovacie prvky, ktoré o vás zbierajú údaje naprieč webovými stránkami.">
+<!ENTITY  trackingProtection3.radioGroupLabel  "Blokovať známe sledovacie prvky pomocou Ochrany pred sledovaním">
 <!ENTITY  trackingProtectionAlways.label       "Vždy">
 <!ENTITY  trackingProtectionAlways.accesskey   "V">
 <!ENTITY  trackingProtectionPrivate.label      "Len v súkromných oknách">
 <!ENTITY  trackingProtectionPrivate.accesskey  "L">
 <!ENTITY  trackingProtectionNever.label        "Nikdy">
 <!ENTITY  trackingProtectionNever.accesskey    "N">
-<!ENTITY  trackingProtectionLearnMore.label    "Ďalšie informácie">
+<!ENTITY  trackingProtectionLearnMore2.label    "Ďalšie informácie o Ochrane pred sledovaním a o vašom súkromí">
 <!ENTITY  trackingProtectionExceptions.label   "Výnimky…">
 <!ENTITY  trackingProtectionExceptions.accesskey "m">
 
-<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
-<!ENTITY trackingProtectionPBM5.label         "Používať Ochranu pred sledovaním v režime Súkromné prehliadanie">
-<!ENTITY trackingProtectionPBM5.accesskey     "c">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
+<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM6.label         "Používať Ochranu pred sledovaním na blokovanie sledovacích prvkov v režime Súkromné prehliadanie">
 <!ENTITY trackingProtectionPBM6.accesskey     "v">
 <!ENTITY trackingProtectionPBMLearnMore.label "Ďalšie informácie">
 <!ENTITY changeBlockList2.label               "Zmeniť zoznam blokovania…">
 <!ENTITY changeBlockList2.accesskey           "Z">
-
-<!ENTITY  doNotTrack.description        "Požiadať webové stránky pomocou signálu “Do Not Track”, aby vás nesledovali">
-<!ENTITY  doNotTrack.learnMore.label    "Ďalšie informácie">
-<!ENTITY  doNotTrack.default.label      "Len pri použití Ochrany pred sledovaním">
-<!ENTITY  doNotTrack.always.label       "Vždy">
 
 <!ENTITY  history.label                 "História">
 <!ENTITY  permissions.label             "Povolenia">
@@ -49,17 +41,26 @@
 <!ENTITY  acceptCookies2.label          "Povoliť cookies webových stránok">
 <!ENTITY  acceptCookies2.accesskey      "o">
 
-<!ENTITY  acceptThirdParty.pre.label      "Povoliť cookies tretích strán:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "t">
+<!ENTITY  acceptThirdParty2.pre.label     "Povoliť cookies tretích strán">
+<!ENTITY  acceptThirdParty2.pre.accesskey "k">
+
+<!ENTITY  acceptCookies4.label          "Povoliť stránkam ukladať cookies a údaje stránok (odporúčané)">
+<!ENTITY  acceptCookies4.accesskey      "a">
+
+<!ENTITY  blockCookies.label            "Blokovať ukladanie cookies a údajov stránok (stránky nemusia správne fungovať)">
+<!ENTITY  blockCookies.accesskey        "B">
+
+<!ENTITY  acceptThirdParty3.pre.label     "Povoliť cookies a údaje stránok">
+<!ENTITY  acceptThirdParty3.pre.accesskey "k">
 <!ENTITY  acceptThirdParty.always.label   "vždy">
 <!ENTITY  acceptThirdParty.never.label    "nikdy">
 <!ENTITY  acceptThirdParty.visited.label  "len pre navštívené">
 
-<!ENTITY  keepUntil.label               "Uchovávať cookies do:">
-<!ENTITY  keepUntil.accesskey           "v">
+<!ENTITY  keepUntil2.label              "Uchovávať cookies do">
+<!ENTITY  keepUntil2.accesskey          "U">
 
 <!ENTITY  expire.label                  "vypršania platnosti">
-<!ENTITY  close.label                   "ukončenia prehliadača &brandShortName;">
+<!ENTITY  close.label                   "ukončenia aplikácie &brandShortName;">
 
 <!ENTITY  cookieExceptions.label        "Výnimky…">
 <!ENTITY  cookieExceptions.accesskey    "m">
@@ -85,6 +86,8 @@
 <!ENTITY  rememberActions.removeCookies.label "odstrániť jednotlivé súbory cookies">
 <!ENTITY  rememberActions.post.label          ".">
 
+<!ENTITY  rememberDescription1.label      "&brandShortName; si bude pamätať históriu vášho prehliadania, preberania, formulárov a vyhľadávania.">
+
 <!ENTITY  dontrememberDescription.label  "&brandShortName; použije totožné nastavenia s režimom Súkromné prehliadanie a nebude si pamätať žiadnu históriu prehliadania webu.">
 
 <!-- LOCALIZATION NOTE (dontrememberActions.pre.label): include a trailing space as needed -->
@@ -92,6 +95,9 @@
 <!ENTITY  dontrememberActions.pre.label          "Teraz môžete ">
 <!ENTITY  dontrememberActions.clearHistory.label "vymazať celú aktuálnu históriu">
 <!ENTITY  dontrememberActions.post.label         ".">
+
+<!ENTITY  clearHistoryButton.label       "Vymazať históriu…">
+<!ENTITY  clearHistoryButton.accesskey   "s">
 
 <!ENTITY  privateBrowsingPermanent2.label "Natrvalo zapnúť režim Súkromné prehliadanie">
 <!ENTITY  privateBrowsingPermanent2.accesskey "a">
@@ -113,3 +119,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "o">
 <!ENTITY  browserContainersSettings.label        "Nastavenia…">
 <!ENTITY  browserContainersSettings.accesskey    "i">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Zabrániť službám pre zjednodušenie ovládania prístup k prehliadaču">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "a">
+<!ENTITY  a11yPrivacy.learnmore.label    "Ďalšie informácie">
+<!ENTITY enableSafeBrowsingLearnMore.label "Ďalšie informácie">

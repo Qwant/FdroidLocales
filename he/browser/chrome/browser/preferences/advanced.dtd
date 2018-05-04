@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "דיווח נתונים מנוטרל עבור תצורת בנייה זו">
 
-<!ENTITY enableHealthReport1.label       "לאפשר ל־&brandShortName; לשלוח אל Mozilla נתונים טכניים ופעולות שבוצעו בדפדפן">
-<!ENTITY enableHealthReport1.accesskey   "ש">
+<!ENTITY enableHealthReport2.label       "האם לאפשר ל־&brandShortName; לשלוח אל Mozilla מידע טכני ופעולות שבוצעו בדפדפן">
+<!ENTITY enableHealthReport2.accesskey   "ד">
 <!ENTITY healthReportLearnMore.label     "מידע נוסף">
 
 <!ENTITY dataCollection.label            "איסוף המידע של &brandShortName;">
@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "לאפשר ל־&brandShortName; לשלוח דיווחי קריסה ל־Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "ד">
+
+<!ENTITY collectBrowserErrors.label          "לאפשר ל־&brandShortName; לשלוח דיווחי שגיאות בדפדפן (לרבות הודעות שגיאה) אל Mozilla">
+<!ENTITY collectBrowserErrors.accesskey      "ד">
+<!ENTITY collectBrowserErrorsLearnMore.label "מידע נוסף">
+
+<!ENTITY sendBackloggedCrashReports.label  "לאפשר ל־&brandShortName; לשלוח דיווחי קריסות שנשמרו בשמך">
+<!ENTITY sendBackloggedCrashReports.accesskey "ק">
 <!ENTITY crashReporterLearnMore.label    "מידע נוסף">
 
 <!ENTITY networkTab.label                "רשת">
@@ -51,14 +58,17 @@ available. -->
 
 <!ENTITY httpCache.label                 "תוכן רשת במטמון">
 
-<!ENTITY offlineStorage2.label           "תוכן רשת לא מקוון ונתוני משתמש">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "נתוני אתר">
 <!ENTITY clearSiteData.label             "מחיקת כל הנתונים">
 <!ENTITY clearSiteData.accesskey         "מ">
+<!ENTITY siteData1.label                 "עוגיות ונתוני אתרים">
+<!ENTITY clearSiteData1.label            "ניקוי נתונים…">
+<!ENTITY clearSiteData1.accesskey        "נ">
 <!ENTITY siteDataSettings.label          "הגדרות…">
 <!ENTITY siteDataSettings.accesskey      "ה">
+<!ENTITY siteDataSettings1.label         "ניהול נתונים…">
+<!ENTITY siteDataSettings1.accesskey     "נ">
 <!ENTITY siteDataLearnMoreLink.label     "מידע נוסף">
 
 <!-- LOCALIZATION NOTE:
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "מ״ב של מקום">
 <!ENTITY clearCacheNow.label             "מחיקה כעת">
 <!ENTITY clearCacheNow.accesskey         "מ">
-<!ENTITY clearOfflineAppCacheNow.label   "מחיקה כעת">
-<!ENTITY clearOfflineAppCacheNow.accesskey "ח">
 <!ENTITY overrideSmartCacheSize.label    "עקיפת ניהול המטמון האוטומטי">
 <!ENTITY overrideSmartCacheSize.accesskey "א">
 
@@ -110,17 +118,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "עדכון מנועי חיפוש באופן אוטומטי">
 <!ENTITY enableSearchUpdate2.accesskey   "ע">
-
-<!ENTITY offlineStorageNotify.label               "דיווח כאשר אתר מבקש לשמור נתונים לשימוש לא מקוון">
-<!ENTITY offlineStorageNotify.accesskey           "ד">
-<!ENTITY offlineStorageNotifyExceptions.label     "חריגות…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "ח">
-
-<!ENTITY offlineAppsList2.label          "האתרים הבאים מורשים לשמור נתונים לשימוש לא מקוון:">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "הסר...">
-<!ENTITY offlineAppsListRemove.accesskey "ה">
-<!ENTITY offlineAppRemove.confirm        "הסרת נתונים לא מקוונים">
 
 <!ENTITY certificateTab.label            "אישורים">
 <!ENTITY certPersonal2.description       "כאשר שרת מבקש את האישור האישי שלך">

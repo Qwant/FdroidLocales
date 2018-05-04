@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE : FILE This file contains the browser main menu items -->
-<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys --> 
+<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys -->
 
 <!-- LOCALIZATION NOTE (mainWindow.title): DONT_TRANSLATE -->
 <!ENTITY mainWindow.title "&brandFullName;">
@@ -23,6 +23,10 @@
 <!ENTITY  reloadTab.accesskey                "z">
 <!ENTITY  reloadAllTabs.label                "Tüm sekmeleri tazele">
 <!ENTITY  reloadAllTabs.accesskey            "T">
+<!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTab.label                 "Sekmeyi çoğalt">
+<!ENTITY  duplicateTab.accesskey             "S">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -46,6 +50,8 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "c">
 <!ENTITY  sendLinkToDevice.label             "Bağlantıyı cihaza gönder">
 <!ENTITY  sendLinkToDevice.accesskey         "c">
+<!ENTITY  sendToDeviceFeedback.label         "Gönderdi!">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "Sıraya alındı (çevrimdışı)">
 <!ENTITY  moveToNewWindow.label              "Yeni pencereye taşı">
 <!ENTITY  moveToNewWindow.accesskey          "Y">
 <!ENTITY  bookmarkAllTabs.label              "Tüm sekmeleri yer imlerine ekle…">
@@ -54,6 +60,8 @@ can reach it easily. -->
 <!ENTITY  undoCloseTab.accesskey             "K">
 <!ENTITY  closeTab.label                     "Sekmeyi kapat">
 <!ENTITY  closeTab.accesskey                 "e">
+
+<!ENTITY  hiddenTabs.label                   "Gizli sekmeler">
 
 <!ENTITY  listAllTabs.label      "Tüm sekmeleri listele">
 
@@ -95,9 +103,18 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY pageSourceCmd.label "Sayfa kaynağı">
 <!ENTITY pageSourceCmd.accesskey "a">
 <!ENTITY pageSourceCmd.commandkey "u">
+<!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
+Option+Command keyboard shortcut letter that Safari and Chrome use for "View
+Source" on macOS. pageSourceCmd.commandkey above is Firefox's official keyboard
+shortcut shown in the GUI. SafariCommandKey is an alias provided for the
+convenience of Safari and Chrome users on macOS. See bug 1398988. -->
+<!ENTITY pageSourceCmd.SafariCommandKey "u">
+
 <!ENTITY pageInfoCmd.label "Sayfa bilgileri">
 <!ENTITY pageInfoCmd.accesskey "b">
 <!ENTITY pageInfoCmd.commandkey "i">
+<!ENTITY ldbCmd.label "Düzen hata ayıklayıcısı">
+<!ENTITY ldbCmd.accesskey "D">
 <!ENTITY mirrorTabCmd.label "Sekmeyi yansıt">
 <!ENTITY mirrorTabCmd.accesskey "S">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -112,6 +129,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Tüm sekmeleri göster">
 <!ENTITY showAllTabsCmd.accesskey "s">
 <!ENTITY toggleReaderMode.key "R">
+
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "&syncBrand.shortName.label;’e giriş yap">
 <!ENTITY fxaSignedIn.tooltip "&syncBrand.shortName.label; tercihlerini aç">
@@ -161,23 +180,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisPageCmd.label "Bu sayfayı yer imlerine ekle">
 <!ENTITY editThisBookmarkCmd.label "Bu yer imini düzenle">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
-<!-- LOCALIZATION NOTE (findShareServices.label):
-  -  Use the unicode ellipsis char, \u2026,
-  -  or use "..." if \u2026 doesn't suit traditions in your locale. -->
-<!ENTITY findShareServices.label "Daha fazla paylaşım servisi bulun…">
-<!ENTITY sharePageCmd.label "Bu sayfayı paylaş">
-<!ENTITY sharePageCmd.commandkey "S">
-<!ENTITY sharePageCmd.accesskey "u">
-<!-- LOCALIZATION NOTE (shareLink.accesskey): must be different than the following share access keys -->
-<!ENTITY shareLink.label "Bu bağlantıyı paylaş">
-<!ENTITY shareLink.accesskey "a">
-<!ENTITY shareImage.label "Bu resmi paylaş">
-<!ENTITY shareImage.accesskey "s">
-<!ENTITY shareSelect.label "Seçimi paylaş">
-<!ENTITY shareSelect.accesskey "m">
-<!ENTITY shareVideo.label "Bu videoyu paylaş">
-<!ENTITY shareVideo.accesskey "v">
-<!ENTITY feedsMenu2.label "Bu sayfaya abone ol">
+
 <!ENTITY subscribeToPageMenupopup.label "Bu sayfaya abone ol">
 <!ENTITY subscribeToPageMenuitem.label "Bu sayfaya abone ol…">
 <!ENTITY addCurPagesCmd.label "Tüm sekmeleri yer imlerine ekle…">
@@ -192,13 +195,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.accesskey "z">
 
 <!ENTITY backCmd.label                "Geri">
+<!ENTITY backCmd.accesskey            "G">
 <!ENTITY backButton.tooltip           "Bir sayfa geriye">
 <!ENTITY forwardCmd.label             "İleri">
+<!ENTITY forwardCmd.accesskey         "e">
 <!ENTITY forwardButton.tooltip        "Bir sayfa ileriye">
 <!ENTITY backForwardButtonMenu.tooltip "Geçmişi göstermek için sağ tıklayın veya aşağı çekin">
 <!ENTITY backForwardButtonMenuMac.tooltip "Geçmişi göstermek için aşağı çekin">
 <!ENTITY reloadCmd.label              "Tazele">
+<!ENTITY reloadCmd.accesskey          "z">
 <!ENTITY stopCmd.label                "Durdur">
+<!ENTITY stopCmd.accesskey            "D">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "Konum çubuğundaki adrese git">
 <!ENTITY printButton.label            "Yazdır">
@@ -209,12 +216,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "Mesaj panelini aç">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "Konum isteği panelini aç">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Eklenti yükleme mesajı panelini aç">
+<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Kanvas çıkarma iznini yönetme">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Çevrimdışı depolama mesajı panelini aç">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "Parolayı kaydet mesajı panelini aç">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Yan uygulama kullanımını yönet">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Sitenin bildirim gönderip gönderemeyeceğini ayarlayın">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Kalıcı depolamada veri depola">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Tarayıcı uzaktan kontrol ediliyor">
+
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "Web kimlik doğrulaması panelini aç">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Siteyle kamera ve/veya mikrofonumu paylaşmayı yönet">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Siteyle mikrofonumu paylaşmayı yönet">
@@ -225,13 +235,19 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Sayfa çevirisini yönet">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "DRM yazılımı kullanımını yönet">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "MIDI panelini aç">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "Bu sitenin kameranızı kullanmasını engellediniz.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Bu sitenin mikrofonunuzu kullanmasını engellediniz.">
 <!ENTITY urlbar.screenBlocked.tooltip            "Bu sitenin ekranınızı paylaşmasını engellediniz.">
 <!ENTITY urlbar.geolocationBlocked.tooltip       "Bu sitenin konumunuzu öğrenmesini engellediniz.">
-<!ENTITY urlbar.indexedDBBlocked.tooltip         "Bu sitenin veri depolamasını engellediniz.">
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Bu sitenin bildirim göndermesini engellediniz.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Bu sitenin kalıcı veri depolamasını engellediniz.">
+<!ENTITY urlbar.popupBlocked.tooltip             "Bu sitedeki açılır pencereleri engellediniz.">
+<!ENTITY urlbar.canvasBlocked.tooltip            "Bu sitenin kanvastan veri ayıklamasını engellediniz.">
+
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "Bu web sitesinin Adobe Flash yan uygulamasını kullanmasını engellediniz.">
+<!ENTITY urlbar.midiBlocked.tooltip              "Bu sitenin MIDI erişimini engellediniz.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Geçmişi göster">
 
@@ -243,16 +259,20 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksButton.label          "Yer imleri">
 <!ENTITY bookmarksCmd.commandkey "b">
 
-<!ENTITY bookmarksMenuButton.label          "Yer imleri">
-<!ENTITY bookmarksMenuButton.other.label "Diğer yer imleri">
-<!ENTITY bookmarksMenuButton.mobile.label "Mobil yer imleri">
+<!ENTITY bookmarksSubview.label             "Yer imleri">
+<!ENTITY bookmarksMenuButton2.label         "Yer imleri menüsü">
+<!ENTITY bookmarksMenuButton.other.label    "Diğer yer imleri">
+<!ENTITY bookmarksMenuButton.mobile.label   "Mobil yer imleri">
 <!ENTITY viewBookmarksSidebar2.label        "Yer imleri kenar çubuğunu göster">
+<!ENTITY hideBookmarksSidebar.label         "Yer imleri kenar çubuğunu gizle">
 <!ENTITY viewBookmarksToolbar.label         "Yer imleri araç çubuğunu göster">
+<!ENTITY hideBookmarksToolbar.label         "Yer imleri kenar çubuğunu gizle">
 <!ENTITY searchBookmarks.label              "Yer imlerinde ara">
+<!ENTITY bookmarkingTools.label             "Yer imi araçları">
+<!ENTITY addBookmarksMenu.label             "Yer imleri menüsünü araç çubuğuna ekle">
+<!ENTITY removeBookmarksMenu.label          "Yer imleri menüsünü araç çubuğundan çıkar">
 
-<!ENTITY containersMenu.label "Kapsayıcılar">
-
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
 <!ENTITY bookmarksGtkCmd.commandkey "o">
@@ -262,12 +282,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY historySidebarCmd.commandKey   "h">
 
 <!ENTITY toolsMenu.label              "Araçlar">
-<!ENTITY toolsMenu.accesskey          "A"> 
+<!ENTITY toolsMenu.accesskey          "A">
 
 <!ENTITY keywordfield.label           "Bu arama için anahtar kelime ekle…">
 <!ENTITY keywordfield.accesskey       "k">
 
 <!ENTITY downloads.label              "İndirilenler">
+<!-- LOCALIZATION NOTE (libraryDownloads.label): This label is similar to
+  -  downloads.label, but used in the Library panel. -->
+<!ENTITY libraryDownloads.label       "İndirilenler">
 <!ENTITY downloads.accesskey          "d">
 <!ENTITY downloads.commandkey         "j">
 <!ENTITY downloadsUnix.commandkey     "y">
@@ -281,7 +304,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY inspectContextMenu.label     "Öğeyi incele">
 <!ENTITY inspectContextMenu.accesskey "c">
 
-<!ENTITY fileMenu.label         "Dosya"> 
+<!ENTITY inspectA11YContextMenu.label     "Erişilebilirlik özelliklerini denetle">
+
+<!ENTITY fileMenu.label         "Dosya">
 <!ENTITY fileMenu.accesskey       "D">
 <!ENTITY newUserContext.label             "Yeni kapsayıcı sekme">
 <!ENTITY newUserContext.accesskey         "k">
@@ -290,47 +315,46 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newNavigatorCmd.accesskey      "Y">
 <!ENTITY newPrivateWindow.label     "Yeni gizli pencere">
 <!ENTITY newPrivateWindow.accesskey "n">
-<!ENTITY newNonRemoteWindow.label   "Yeni e10s dışı pencere">
 
-<!ENTITY editMenu.label         "Düzen"> 
-<!ENTITY editMenu.accesskey       "z"> 
-<!ENTITY undoCmd.label            "Geri al">  
-<!ENTITY undoCmd.key            "Z">  
-<!ENTITY undoCmd.accesskey          "G"> 
-<!ENTITY redoCmd.label            "Yinele">  
-<!ENTITY redoCmd.key            "Y">  
-<!ENTITY redoCmd.accesskey          "n"> 
-<!ENTITY cutCmd.label           "Kes">  
-<!ENTITY cutCmd.key             "X">  
-<!ENTITY cutCmd.accesskey         "e"> 
-<!ENTITY copyCmd.label            "Kopyala">  
-<!ENTITY copyCmd.key            "C">  
-<!ENTITY copyCmd.accesskey          "K"> 
-<!ENTITY pasteCmd.label           "Yapıştır">  
-<!ENTITY pasteCmd.key           "V">  
-<!ENTITY pasteCmd.accesskey         "a"> 
-<!ENTITY deleteCmd.label          "Sil">  
-<!ENTITY deleteCmd.key            "D">  
-<!ENTITY deleteCmd.accesskey        "S"> 
-<!ENTITY selectAllCmd.label         "Tümünü seç">  
-<!ENTITY selectAllCmd.key         "A">  
-<!ENTITY selectAllCmd.accesskey       "ü"> 
+<!ENTITY editMenu.label         "Düzen">
+<!ENTITY editMenu.accesskey       "z">
+<!ENTITY undoCmd.label            "Geri al">
+<!ENTITY undoCmd.key            "Z">
+<!ENTITY undoCmd.accesskey          "G">
+<!ENTITY redoCmd.label            "Yinele">
+<!ENTITY redoCmd.key            "Y">
+<!ENTITY redoCmd.accesskey          "n">
+<!ENTITY cutCmd.label           "Kes">
+<!ENTITY cutCmd.key             "X">
+<!ENTITY cutCmd.accesskey         "e">
+<!ENTITY copyCmd.label            "Kopyala">
+<!ENTITY copyCmd.key            "C">
+<!ENTITY copyCmd.accesskey          "K">
+<!ENTITY pasteCmd.label           "Yapıştır">
+<!ENTITY pasteCmd.key           "V">
+<!ENTITY pasteCmd.accesskey         "a">
+<!ENTITY deleteCmd.label          "Sil">
+<!ENTITY deleteCmd.key            "D">
+<!ENTITY deleteCmd.accesskey        "S">
+<!ENTITY selectAllCmd.label         "Tümünü seç">
+<!ENTITY selectAllCmd.key         "A">
+<!ENTITY selectAllCmd.accesskey       "ü">
 <!ENTITY preferencesCmd2.label       "Seçenekler">
 <!ENTITY preferencesCmd2.accesskey     "S">
 <!ENTITY preferencesCmdUnix.label       "Tercihler">
-<!ENTITY preferencesCmdUnix.accesskey     "T"> 
+<!ENTITY preferencesCmdUnix.accesskey     "T">
 
 <!ENTITY clearRecentHistory.label               "Yakın geçmişi temizle…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
 
-<!ENTITY viewMenu.label         "Görünüm"> 
-<!ENTITY viewMenu.accesskey       "m"> 
-<!ENTITY viewToolbarsMenu.label       "Araç çubukları"> 
-<!ENTITY viewToolbarsMenu.accesskey     "A"> 
+<!ENTITY viewMenu.label         "Görünüm">
+<!ENTITY viewMenu.accesskey       "m">
+<!ENTITY viewToolbarsMenu.label       "Araç çubukları">
+<!ENTITY viewToolbarsMenu.accesskey     "A">
 <!ENTITY viewSidebarMenu.label "Kenar çubuğu">
 <!ENTITY viewSidebarMenu.accesskey "K">
-<!ENTITY viewCustomizeToolbar.label       "Özelleştir…"> 
+<!ENTITY viewCustomizeToolbar.label       "Özelleştir…">
 <!ENTITY viewCustomizeToolbar.accesskey     "Ö">
 <!ENTITY overflowCustomizeToolbar.label       "Araç çubuğunu özelleştir…">
 <!ENTITY overflowCustomizeToolbar.accesskey   "u">
@@ -345,18 +369,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllHistoryCmd2.label "Tüm geçmişi göster">
 <!ENTITY showAllHistoryCmd.commandkey "H">
 
-<!ENTITY appMenuCustomize.label "Özelleştir">
-<!ENTITY appMenuCustomize.tooltip "Menüyü ve araç çubuklarını özelleştir">
-<!ENTITY appMenuCustomizeExit.label "Özelleştirmeyi bitir">
-<!ENTITY appMenuCustomizeExit.tooltip "Özelleştirmeyi bitir">
-<!ENTITY appMenuHistory.label "Geçmiş">
 <!ENTITY appMenuHistory.showAll.label "Tüm geçmişi göster">
 <!ENTITY appMenuHistory.clearRecent.label "Yakın geçmişi temizle…">
 <!ENTITY appMenuHistory.restoreSession.label "Önceki oturumu geri yükle">
 <!ENTITY appMenuHistory.viewSidebar.label "Geçmiş kenar çubuğunu aç">
 <!ENTITY appMenuHistory.recentHistory.label "Yakın geçmiş">
 <!ENTITY appMenuHelp.label "Yardım">
-<!ENTITY appMenuHelp.tooltip "Yardım menüsünü aç">
 
 <!ENTITY appMenuRemoteTabs.label "Eşitlenmiş sekmeler">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.notabs.label): This is shown beneath
@@ -373,16 +391,20 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Diğer cihazlardaki sekmeleri görmek için sekme eşitlemeyi açın.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "Henüz eşitlenmiş bir sekme yok.">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Diğer cihazlarınızdaki sekmeleri burada görmek ister misiniz?">
 <!ENTITY appMenuRemoteTabs.openprefs.label "Eşitleme Tercihleri">
+<!ENTITY appMenuRemoteTabs.opensyncprefs.label "Sync tercihlerini aç">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Diğer cihazlarınızdaki sekmeleri görmek için giriş yapın.">
+<!ENTITY appMenuRemoteTabs.unverified.label "Hesabınızın doğrulanması gerekiyor.">
 <!ENTITY appMenuRemoteTabs.signin.label "Sync’e giriş yapın">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Cihazları yönet…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Kenar çubuğunda göster">
+<!ENTITY appMenuRemoteTabs.connectdevice.label "Başka bir cihaz bağla">
+
+<!ENTITY appMenuRecentHighlights.label "Öne çıkanlar">
 
 <!ENTITY customizeMenu.addToToolbar.label "Araç çubuğuna ekle">
 <!ENTITY customizeMenu.addToToolbar.accesskey "e">
@@ -422,23 +444,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "Arama yapın veya adres yazın">
+<!ENTITY urlbar.placeholder3          "Aranacak terimleri ve adresleri buraya yazın">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "Eklenti:">
 <!ENTITY urlbar.switchToTab.label     "Geçilecek sekme:">
 
-<!ENTITY urlbar.searchSuggestionsNotification.question "Arama deneyiminizi önerilerle geliştirmek ister misiniz?">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore "Daha fazla bilgi al…">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore.accesskey "D">
-<!ENTITY urlbar.searchSuggestionsNotification.disable "Hayır">
-<!ENTITY urlbar.searchSuggestionsNotification.disable.accesskey "H">
-<!ENTITY urlbar.searchSuggestionsNotification.enable "Evet">
-<!ENTITY urlbar.searchSuggestionsNotification.enable.accesskey "E">
-
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hintPrefix): Shown just before the suggestions opt-out hint. -->
 <!ENTITY urlbar.searchSuggestionsNotification.hintPrefix "İpucu:">
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hint): &#x1F50E; is the magnifier icon emoji, please don't change it. -->
-<!ENTITY urlbar.searchSuggestionsNotification.hint "Arama yaparken yardım alın! Arama önerilerinin yanındaki &#x1F50E; simgesine bakınç">
+<!ENTITY urlbar.searchSuggestionsNotification.hint "Arama yaparken yardım alın! Arama önerilerinin yanındaki &#x1F50E; simgesine bakın.">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin "Seçenekleri değiştir…">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin.accesskey "S">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsUnix "Tercihleri değiştir…">
@@ -531,7 +546,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.accesskey     "t">
 <!ENTITY viewPartialSourceForSelectionCmd.label "Seçimin kaynak kodunu göster">
 <!ENTITY viewPartialSourceForMathMLCmd.label    "MathML kaynağını göster">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both 
+<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
          viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "e">
 <!ENTITY viewPageSourceCmd.label      "Sayfa kaynağını göster">
@@ -557,12 +572,14 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label      "Masaüstü arka planı olarak ayarla…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "M">
 <!ENTITY bookmarkPageCmd2.label       "Bu sayfayı yer imlerine ekle">
+<!ENTITY bookmarkPageCmd2.accesskey   "m">
 <!ENTITY bookmarkThisLinkCmd.label      "Bu bağlantıyı yer imlerine ekle">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "u">
 <!ENTITY bookmarkThisFrameCmd.label      "Bu çerçeveyi yer imlerine ekle">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "m">
-<!ENTITY copyURLCmd.label             "Adresi kopyala">
-<!ENTITY emailPageCmd.label           "Bağlantıyı e-postala…">
+<!ENTITY pageAction.copyLink.label    "Bağlantıyı kopyala">
+<!ENTITY copyURLFeedback.label        "Kopyalandı!">
+<!ENTITY emailPageCmd.label           "Bağlantıyı e-postayla gönder…">
 <!ENTITY emailPageCmd.accesskey       "e">
 <!ENTITY savePageCmd.label            "Sayfayı farklı kaydet…">
 <!ENTITY savePageCmd.accesskey        "f">
@@ -585,8 +602,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY emailImageCmd.accesskey      "ö">
 <!ENTITY emailVideoCmd.label          "Videoyu e-posta ile gönder…">
 <!ENTITY emailVideoCmd.accesskey      "u">
-<!ENTITY castVideoCmd.label           "Videoyu cihaza gönder">
-<!ENTITY castVideoCmd.accesskey       "n">
 <!ENTITY emailAudioCmd.label          "Sesi e-posta ile gönder…">
 <!ENTITY emailAudioCmd.accesskey      "ö">
 <!ENTITY playPluginCmd.label          "Bu yan uygulamayı etkinleştir">
@@ -598,7 +613,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyImageCmd.label           "Resim konumunu kopyala">
 <!ENTITY copyImageCmd.accesskey       "k">
 <!ENTITY copyImageContentsCmd.label   "Resmi kopyala">
-<!ENTITY copyImageContentsCmd.accesskey  "o"> 
+<!ENTITY copyImageContentsCmd.accesskey  "o">
 <!ENTITY copyVideoURLCmd.label        "Video konumunu kopyala">
 <!ENTITY copyVideoURLCmd.accesskey    "k">
 <!ENTITY copyAudioURLCmd.label        "Ses konumunu kopyala">
@@ -694,13 +709,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY quitApplicationCmdWin2.tooltip     "&brandShorterName; tarayıcısından çık">
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goForwardCmd.commandKey "]">
-<!ENTITY quitApplicationCmd.label       "Çık"> 
+<!ENTITY quitApplicationCmd.label       "Çık">
 <!ENTITY quitApplicationCmd.accesskey   "k">
 <!ENTITY quitApplicationCmdMac2.label   "&brandShorterName; uygulamasından çık">
 <!ENTITY quitApplicationCmd.key         "Q">
 
-<!ENTITY closeCmd.label                 "Kapat">  
-<!ENTITY closeCmd.key                   "W">  
+<!ENTITY closeCmd.label                 "Kapat">
+<!ENTITY closeCmd.key                   "W">
 <!ENTITY closeCmd.accesskey             "K">
 
 <!ENTITY toggleMuteCmd.key              "M">
@@ -711,8 +726,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageStyleNoStyle.accesskey "S">
 <!ENTITY pageStylePersistentOnly.label "Temel sayfa stili">
 <!ENTITY pageStylePersistentOnly.accesskey "T">
-
-<!ENTITY pageReportIcon.tooltip            "Bu site için açılır pencere engelleme ayarlarını değiştir">
 
 <!ENTITY allowPopups.accesskey "p">
 <!-- On Windows we use the term "Options" to describe settings, but
@@ -743,6 +756,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY editBookmark.done.label                     "Tamam">
 <!ENTITY editBookmark.removeBookmark.accessKey       "s">
+
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "Site Güvenliği">
 
 <!ENTITY identity.connectionSecure "Güvenli bağlantı">
 <!ENTITY identity.connectionNotSecure "Bağlantı güvenli değil">
@@ -794,14 +811,16 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Eşitlenmiş sekmeler">
 <!ENTITY syncedTabs.sidebar.noclients.label    "Diğer cihazlardaki sekmelerinizi burada görmek için o cihazlardan Firefox’a giriş yapın.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "Henüz eşitlenmiş bir sekme yok.">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "Diğer cihazlarınızdaki sekmeleri burada görmek ister misiniz?">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "Diğer cihazlarınızdaki sekmeleri görmek için giriş yapın.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "Hesabınızın doğrulanması gerekiyor.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "Açık sekme yok">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "&syncBrand.shortName.label; tercihlerini aç">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "Diğer cihazlardaki sekmeleri görmek için sekme eşitlemeyi açın.">
+<!ENTITY syncedTabs.sidebar.searchPlaceholder  "Eşitlenmiş sekmelerde ara">
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "Başka bir cihaz bağla">
 
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
@@ -836,20 +855,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncReAuthItem.accesskey     "R">
 <!ENTITY syncToolbarButton.label      "Sync">
 
-<!ENTITY social.addons.label "Servisleri yönet…">
-
-<!ENTITY social.directory.label "Etkinleştirme dizini">
-<!ENTITY social.directory.text "Share servislerini dizinden etkinleştirebilirsiniz.">
-<!ENTITY social.directory.button "Dizine git!">
-<!ENTITY social.directory.introText "&brandShortName; tarayıcısına eklemek istediğiniz servise tıklayın.">
-<!ENTITY social.directory.viewmore.text "Daha fazla göster">
-
-<!ENTITY customizeMode.menuAndToolbars.header2 "Ek araçlar ve özellikler">
-<!ENTITY customizeMode.menuAndToolbars.empty "Daha fazla araç mı istiyorsunuz?">
-<!ENTITY customizeMode.menuAndToolbars.emptyLink "Binlerce eklenti arasından seçim yapın">
+<!ENTITY customizeMode.menuAndToolbars.header3 "Sevdiğiniz öğeleri araç çubuğuna veya adres çubuğu menüsüne sürükleyin.">
 <!ENTITY customizeMode.restoreDefaults "Varsayılanları geri yükle">
 <!ENTITY customizeMode.done "Tamam">
 <!ENTITY customizeMode.titlebar "Başlık çubuğu">
+<!ENTITY customizeMode.extraDragSpace "Sürükleme alanı">
 <!ENTITY customizeMode.toolbars2 "Araç çubukları">
 <!ENTITY customizeMode.lwthemes "Temalar">
 <!ENTITY customizeMode.lwthemes.myThemes "Temalarım">
@@ -858,7 +868,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "Y">
 <!ENTITY customizeMode.lwthemes.menuGetMore "Daha fazla tema indirin">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "D">
-<!ENTITY customizeMode.emptyOverflowList.description "Araç çubuğunda görmek istemediğiniz ama kolayca ulaşmak istediğiniz öğeleri sürükleyip buraya bırakın.">
+<!ENTITY customizeMode.overflowList.title2 "Taşma menüsü">
+<!ENTITY customizeMode.overflowList.description "Araç çubuğunda görmek istemediğiniz ama kolayca ulaşmak istediğiniz öğeleri sürükleyip buraya bırakın.">
 <!ENTITY customizeMode.uidensity "Yoğunluk">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuNormal.*):
      “Normal” is displayed in the Customize screen, under the Density menu. -->
@@ -879,6 +890,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.uidensity.menuTouch.tooltip "Dokunmatik">
 <!ENTITY customizeMode.uidensity.menuTouch.accessKey "D">
 <!ENTITY customizeMode.uidensity.autoTouchMode.checkbox.label "Tablet modundayken Dokunmatik’i kullan">
+
+<!ENTITY customizeMode.autoHideDownloadsButton.label "Kendiliğinden gizle">
 
 <!ENTITY getUserMedia.selectCamera.label "Paylaşılacak kamera:">
 <!ENTITY getUserMedia.selectCamera.accesskey "k">
@@ -904,16 +917,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.block2.label "Korumayı etkinleştir">
 <!ENTITY trackingProtection.block2.accesskey "e">
 
-<!ENTITY trackingContentBlocked.message "İzleme">
-<!ENTITY trackingContentBlocked.moreinfo "Sayfadaki çevrimiçi etkinliklerinizi izleyen kısımlar engellenmiştir.">
-<!ENTITY trackingContentBlocked.learnMore "Daha fazla bilgi al">
-<!ENTITY trackingContentBlocked.options "Seçenekler">
-<!ENTITY trackingContentBlocked.unblock2.label "Bu sitede korumayı devre dışı bırak">
-<!ENTITY trackingContentBlocked.unblock2.accesskey "d">
-<!ENTITY trackingContentBlocked.block.label "Korumayı etkinleştir">
-<!ENTITY trackingContentBlocked.block.accesskey "e">
-<!ENTITY trackingContentBlocked.disabled.message "İzlenme koruması devre dışı">
-
 <!ENTITY pluginNotification.showAll.label "Tümünü göster">
 <!ENTITY pluginNotification.showAll.accesskey "T">
 
@@ -930,8 +933,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pluginNotification.width "28em">
 
 <!ENTITY uiTour.infoPanel.close "Kapat">
-
-<!ENTITY appMenuSidebars.label         "Kenar çubukları">
 
 <!-- LOCALIZATION NOTE: (panicButton.view.mainTimeframeDesc, panicButton.view.5min, panicButton.view.2hr, panicButton.view.day):
      The .mainTimeframeDesc string combined with any of the 3 others is meant to form a complete sentence, e.g. "Forget the last: Five minutes".
@@ -979,7 +980,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateManual.cancelButton.accesskey "a">
 <!ENTITY updateManual.panelUI.label "&brandShorterName; tarayıcısının yeni bir kopyasını indir">
 
-<!ENTITY updateRestart.message "Yeniden başladıktan &brandShorterName; tüm açık sekmelerinizi ve pencerelerinizi geri yükleyecek.">
+<!ENTITY updateRestart.message2 "Yeniden başlatmanın ardından &brandShorterName; tüm açık sekme ve pencerelerinizi geri yükleyecek (Gizli Gezinti modundakiler hariç).">
 <!ENTITY updateRestart.header.message2 "&brandShorterName; tarayıcısını güncellemek için yeniden başlatın.">
 <!ENTITY updateRestart.acceptButton.label "Yeniden başlat ve geri yükle">
 <!ENTITY updateRestart.acceptButton.accesskey "b">
@@ -987,9 +988,45 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "D">
 <!ENTITY updateRestart.panelUI.label2 "&brandShorterName; tarayıcısını güncellemek için yeniden başlat">
 
+<!ENTITY newTabControlled.message "Bir eklenti, yeni bir sekme açtığınızda gördüğünüz sayfayı değiştirdi. Bu değişikliği istemiyorsanız önceki ayarlarınızı geri yükleyebilirsiniz.">
+
+<!ENTITY newTabControlled.header.message "Yeni Sekme’niz değişti.">
+<!ENTITY newTabControlled.keepButton.label "Değişiklikleri koru">
+<!ENTITY newTabControlled.keepButton.accesskey "D">
+<!ENTITY newTabControlled.restoreButton.label "Ayarları geri yükle">
+<!ENTITY newTabControlled.restoreButton.accesskey "A">
+
+<!ENTITY newTabControlled.disableButton.label "Eklentiyi etkisizleştir">
+<!ENTITY newTabControlled.disableButton.accesskey "E">
+
+<!ENTITY homepageControlled.message "Bir eklenti, giriş sayfanızı değiştirdi. Bu değişikliği istemiyorsanız önceki ayarlarınızı geri yükleyebilirsiniz.">
+<!ENTITY homepageControlled.header.message "Giriş sayfanız değişti.">
+<!ENTITY homepageControlled.keepButton.label "Değişiklikleri koru">
+<!ENTITY homepageControlled.keepButton.accesskey "D">
+<!ENTITY homepageControlled.disableButton.label "Eklentiyi etkisizleştir">
+<!ENTITY homepageControlled.disableButton.accesskey "E">
+
 <!ENTITY pageActionButton.tooltip "Sayfa eylemleri">
 <!ENTITY pageAction.addToUrlbar.label "Adres çubuğuna ekle">
 <!ENTITY pageAction.removeFromUrlbar.label "Adres çubuğundan kaldır">
+<!ENTITY pageAction.allowInUrlbar.label "Adres çubuğunda göster">
+<!ENTITY pageAction.disallowInUrlbar.label "Adres çubuğunda gösterme">
+<!ENTITY pageAction.manageExtension.label "Eklentiyi yönet…">
 
-<!ENTITY sendToDevice.label2 "Cihaza gönder">
+<!ENTITY pageAction.sendTabToDevice.label "Sekmeyi cihaza gönder">
 <!ENTITY sendToDevice.syncNotReady.label "Cihazlar eşitleniyor…">
+
+<!ENTITY pageAction.shareUrl.label "Paylaş">
+
+<!ENTITY libraryButton.tooltip "Geçmişinize, kayıtlı yer imlerinize ve daha fazlasına bakın">
+
+<!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
+     display a tooltip for accessibility indicator in toolbar/tabbar. It is also
+     used as a textual label for the indicator used by assistive technology
+     users. -->
+<!ENTITY accessibilityIndicator.tooltip "Erişilebilirlik özellikleri açık">
+
+<!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
+     The first <image> tag is replaced with the icon for the add-ons menu.
+     The second <image> tag is replaced with the icon for the toolbar menu. -->
+<!ENTITY addonPostInstallMessage.label "Eklentilerinizi yönetmek için <image class='addon-toolbar-icon'/> menüdeki <image class='addon-addon-icon'/> simgesine tıklayabilirsiniz.">

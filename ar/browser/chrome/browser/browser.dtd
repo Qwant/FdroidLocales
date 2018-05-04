@@ -1,11 +1,11 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
 <!-- LOCALIZATION NOTE : FILE This file contains the browser main menu items -->
-<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys --> 
+<!-- LOCALIZATION NOTE : FILE Do not translate commandkeys -->
+
 <!-- LOCALIZATION NOTE (mainWindow.title): DONT_TRANSLATE -->
-
-
 <!ENTITY mainWindow.title "&brandFullName;">
 <!-- LOCALIZATION NOTE (mainWindow.titlemodifier) : DONT_TRANSLATE -->
 <!ENTITY mainWindow.titlemodifier "&brandFullName;">
@@ -17,12 +17,16 @@
 
 <!ENTITY appmenu.tooltip                     "افتح القائمة">
 <!ENTITY navbarOverflow.label                "المزيد من الأدوات…">
-<!-- Tab context menu -->
 
+<!-- Tab context menu -->
 <!ENTITY  reloadTab.label                    "أعِد تحميل اللسان">
 <!ENTITY  reloadTab.accesskey                "ح">
 <!ENTITY  reloadAllTabs.label                "أعِد تحميل كل الألسنة">
 <!ENTITY  reloadAllTabs.accesskey            "ك">
+<!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
+a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTab.label                 "كرّر اللسان">
+<!ENTITY  duplicateTab.accesskey             "ك">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -30,12 +34,12 @@ left instead of right. -->
 <!ENTITY  closeTabsToTheEnd.accesskey        "س">
 <!ENTITY  closeOtherTabs.label               "أغلق الألسنة الأخرى">
 <!ENTITY  closeOtherTabs.accesskey           "خ">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
-
 <!ENTITY  pinTab.label                       "ثبّت اللسان">
 <!ENTITY  pinTab.accesskey                   "ث">
 <!ENTITY  unpinTab.label                     "أفلِت اللسان">
@@ -46,6 +50,8 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "ه">
 <!ENTITY  sendLinkToDevice.label             "أرسل الرابط إلى جهاز">
 <!ENTITY  sendLinkToDevice.accesskey         "ه">
+<!ENTITY  sendToDeviceFeedback.label         "تم الإرسال">
+<!ENTITY  sendToDeviceOfflineFeedback.label  "مصطف (غير متصل)">
 <!ENTITY  moveToNewWindow.label              "انقل إلى نافذة جديدة">
 <!ENTITY  moveToNewWindow.accesskey          "ذ">
 <!ENTITY  bookmarkAllTabs.label              "علّم كل الألسنة…">
@@ -54,6 +60,8 @@ can reach it easily. -->
 <!ENTITY  undoCloseTab.accesskey             "د">
 <!ENTITY  closeTab.label                     "أغلِق اللسان">
 <!ENTITY  closeTab.accesskey                 "غ">
+
+<!ENTITY  hiddenTabs.label                   "الألسنة المخفية">
 
 <!ENTITY  listAllTabs.label      "اسرد كل الألسنة">
 
@@ -95,9 +103,18 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY pageSourceCmd.label "مصدر الصفحة">
 <!ENTITY pageSourceCmd.accesskey "ح">
 <!ENTITY pageSourceCmd.commandkey "u">
+<!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
+Option+Command keyboard shortcut letter that Safari and Chrome use for "View
+Source" on macOS. pageSourceCmd.commandkey above is Firefox's official keyboard
+shortcut shown in the GUI. SafariCommandKey is an alias provided for the
+convenience of Safari and Chrome users on macOS. See bug 1398988. -->
+<!ENTITY pageSourceCmd.SafariCommandKey "u">
+
 <!ENTITY pageInfoCmd.label "معلومات الصفحة">
 <!ENTITY pageInfoCmd.accesskey "م">
 <!ENTITY pageInfoCmd.commandkey "i">
+<!ENTITY ldbCmd.label "منقح تخطيط الصفحة">
+<!ENTITY ldbCmd.accesskey "م">
 <!ENTITY mirrorTabCmd.label "أذع اللسان">
 <!ENTITY mirrorTabCmd.accesskey "ذ">
 <!-- LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
@@ -111,7 +128,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenCmd.macCommandKey "f">
 <!ENTITY showAllTabsCmd.label "أظهِر كل الألسنة">
 <!ENTITY showAllTabsCmd.accesskey "ك">
-<!ENTITY toggleReaderMode.key "ق">
+<!ENTITY toggleReaderMode.key "R">
+
+<!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "لِج إلى &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "افتح تفضيلات &syncBrand.shortName.label;">
@@ -126,29 +145,29 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fullScreenAutohide.accesskey "خ">
 <!ENTITY fullScreenExit.label "اخرج من وضع ملء الشاشة">
 <!ENTITY fullScreenExit.accesskey "و">
+
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring fullscreen.
      Localizers can use one of them, or both, to better adapt this
      sentence to their language. -->
-
-<!ENTITY fullscreenWarning.beforeDomain.label "​">
+<!ENTITY fullscreenWarning.beforeDomain.label "">
 <!ENTITY fullscreenWarning.afterDomain.label "يملأ الشاشة الآن">
 <!ENTITY fullscreenWarning.generic.label "يملأ هذا المستند الشاشة الآن">
+
 <!-- LOCALIZATION NOTE (exitDOMFullscreen.button,
      exitDOMFullscreenMac.button): the "escape" button on PC keyboards
      is uppercase, while on Mac keyboards it is lowercase -->
-
 <!ENTITY exitDOMFullscreen.button "غادر ملء الشاشة (Esc)">
 <!ENTITY exitDOMFullscreenMac.button "غادر ملء الشاشة (esc)">
 <!ENTITY leaveDOMFullScreen.label "غادر ملء الشاشة">
 <!ENTITY leaveDOMFullScreen.accesskey "م">
+
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
      pointerlockWarning.afterDomain.label): these two strings are used
      respectively before and after the domain requiring pointerlock.
      Localizers can use one of them, or both, to better adapt this
      sentence to their language. -->
-
 <!ENTITY pointerlockWarning.beforeDomain.label "يتحكم ">
 <!ENTITY pointerlockWarning.afterDomain.label "في مؤشرك. اضغط Esc لتستعيد التحكم.">
 <!ENTITY pointerlockWarning.generic.label "يتحكم هذا المستند في مؤشرك. اضغط Esc لتستعيد التحكم.">
@@ -161,23 +180,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisPageCmd.label "علّم هذه الصفحة">
 <!ENTITY editThisBookmarkCmd.label "حرّر هذه العلامة">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
-<!-- LOCALIZATION NOTE (findShareServices.label):
-  -  Use the unicode ellipsis char, \u2026,
-  -  or use "..." if \u2026 doesn't suit traditions in your locale. -->
-<!ENTITY findShareServices.label "ابحث عن المزيد من خدمات المشاركة…">
-<!ENTITY sharePageCmd.label "شارك هذه الصفحة">
-<!ENTITY sharePageCmd.commandkey "S">
-<!ENTITY sharePageCmd.accesskey "ش">
-<!-- LOCALIZATION NOTE (shareLink.accesskey): must be different than the following share access keys -->
-<!ENTITY shareLink.label "شارك هذا الرابط">
-<!ENTITY shareLink.accesskey "ش">
-<!ENTITY shareImage.label "شارك هذه الصورة">
-<!ENTITY shareImage.accesskey "ش">
-<!ENTITY shareSelect.label "شارك هذا التحديد">
-<!ENTITY shareSelect.accesskey "ش">
-<!ENTITY shareVideo.label "شارك هذا الڤديو">
-<!ENTITY shareVideo.accesskey "ش">
-<!ENTITY feedsMenu2.label "اشترك بهذه الصفحة">
+
 <!ENTITY subscribeToPageMenupopup.label "اشترك بهذه الصفحة">
 <!ENTITY subscribeToPageMenuitem.label "اشترك في هذه الصفحة…">
 <!ENTITY addCurPagesCmd.label "علّم كل الألسنة…">
@@ -192,13 +195,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideRecentlyBookmarked.accesskey "خ">
 
 <!ENTITY backCmd.label                "السابق">
+<!ENTITY backCmd.accesskey            "س">
 <!ENTITY backButton.tooltip           "عُد للخلف صفحة واحدة">
 <!ENTITY forwardCmd.label             "التالي">
+<!ENTITY forwardCmd.accesskey         "ت">
 <!ENTITY forwardButton.tooltip        "اذهب للأمام صفحة واحدة">
 <!ENTITY backForwardButtonMenu.tooltip "انقر بالزر الأيمن أو اسحب للأسفل لإظهار التأريخ">
 <!ENTITY backForwardButtonMenuMac.tooltip "اسحب للأسفل لإظهار التأريخ">
 <!ENTITY reloadCmd.label              "أعد التحميل">
+<!ENTITY reloadCmd.accesskey          "ع">
 <!ENTITY stopCmd.label                "أوقف">
+<!ENTITY stopCmd.accesskey            "ق">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "اذهب للعنوان في شريط الموقع">
 <!ENTITY printButton.label            "اطبع">
@@ -209,12 +216,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "افتح لوحة الرسائل">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "افتح لوحة طلب المكان">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "افتح لوحة رسائل تنصيب الإضافات">
+<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "أدِر تصاريح استخراج ألواح الرسم">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "افتح لوحة رسائل مساحة التخزين دون اتصال">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "افتح لوحة رسائل حفظ كلمة السر">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "أدر الملحقات المستخدمة">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "غيّر ما إذا ما كنت تسمح باستلام تنبيهات من الموقع">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "حفظ البيانات في مساحة تخزين دائمة">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "يخضع المتصفح للتحكم عن بعد">
+
+<!ENTITY urlbar.webAuthnAnchor.tooltip                    "افتح لوحة استيثاق الوِب">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "أدر مشاركة كمرتك و ميكروفونك مع هذا الموقع">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "أدر مشاركة ميكروفونك مع هذا الموقع">
@@ -225,36 +235,46 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "أدِر ترجمة الصفحة">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "أدِر استخدام برمجيات إدارة الحقوق الرقمية">
 
+<!ENTITY urlbar.midiNotificationAnchor.tooltip            "افتح لوحة MIDI">
+
 <!ENTITY urlbar.cameraBlocked.tooltip            "لقد حجبت كمرتك عن هذا الموقع.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "لقد حجبت ميكروفونك عن هذا الموقع.">
 <!ENTITY urlbar.screenBlocked.tooltip            "لقد حجبت هذا الموقع من مشاركة شاشتك.">
 <!ENTITY urlbar.geolocationBlocked.tooltip       "لقد حجبت معلومات مكانك عن هذا الموقع.">
-<!ENTITY urlbar.indexedDBBlocked.tooltip         "لقد حجبت تخزين البيانات عن هذا الموقع.">
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "لقد حجبت التنبيهات عن هذا الموقع.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "لقد حجبت الحفظ الدائم للبيانات عن هذا الموقع.">
+<!ENTITY urlbar.popupBlocked.tooltip             "لقد حجبت المنبثقات من هذا الموقع.">
+<!ENTITY urlbar.canvasBlocked.tooltip            "لقد منعت استخراج بيانات رقعة الرسم في هذا الموقع.">
+
+<!ENTITY urlbar.flashPluginBlocked.tooltip       "لقد حجبت هذا الموقع من استخدام ملحقة أدوبي فلاش.">
+<!ENTITY urlbar.midiBlocked.tooltip              "لقد حجبنا عن هذا الموقع الوصول إلى MIDI.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "اعرض التأريخ">
 
 <!ENTITY searchItem.title             "ابحث">
-<!-- Toolbar items -->
 
+<!-- Toolbar items -->
 <!ENTITY homeButton.label             "البداية">
 
 <!ENTITY bookmarksButton.label          "العلامات">
 <!ENTITY bookmarksCmd.commandkey "b">
 
-<!ENTITY bookmarksMenuButton.label          "العلامات">
-<!ENTITY bookmarksMenuButton.other.label "العلامات الأخرى">
-<!ENTITY bookmarksMenuButton.mobile.label "علامات المحمول">
+<!ENTITY bookmarksSubview.label             "العلامات">
+<!ENTITY bookmarksMenuButton2.label         "قائمة العلامات">
+<!ENTITY bookmarksMenuButton.other.label    "العلامات الأخرى">
+<!ENTITY bookmarksMenuButton.mobile.label   "علامات المحمول">
 <!ENTITY viewBookmarksSidebar2.label        "أظهِر شريط العلامات الجانبي">
+<!ENTITY hideBookmarksSidebar.label         "أخفِ شريط العلامات الجانبي">
 <!ENTITY viewBookmarksToolbar.label         "أظهِر شريط أدوات العلامات">
+<!ENTITY hideBookmarksToolbar.label         "أخفِ شريط أدوات العلامات">
 <!ENTITY searchBookmarks.label              "ابحث في العلامات">
+<!ENTITY bookmarkingTools.label             "أدوات العلامات">
+<!ENTITY addBookmarksMenu.label             "أضِف قائمة العلامات إلى شريط الأدوات">
+<!ENTITY removeBookmarksMenu.label          "أزِل قائمة العلامات من شريط الأدوات">
 
-<!ENTITY containersMenu.label "الحاويات">
-<!-- LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+<!-- LOCALIZATION NOTE (bookmarksGtkCmd.commandkey): This command
   -  key should not contain the letters A-F, since these are reserved
   -  shortcut keys on Linux. -->
-
 <!ENTITY bookmarksGtkCmd.commandkey "o">
 <!ENTITY bookmarksWinCmd.commandkey "i">
 
@@ -262,12 +282,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY historySidebarCmd.commandKey   "h">
 
 <!ENTITY toolsMenu.label              "أدوات">
-<!ENTITY toolsMenu.accesskey          "د"> 
+<!ENTITY toolsMenu.accesskey          "د">
 
 <!ENTITY keywordfield.label           "أضِف كلمة رئيسية لهذا البحث…">
 <!ENTITY keywordfield.accesskey       "ك">
 
 <!ENTITY downloads.label              "التنزيلات">
+<!-- LOCALIZATION NOTE (libraryDownloads.label): This label is similar to
+  -  downloads.label, but used in the Library panel. -->
+<!ENTITY libraryDownloads.label       "التنزيلات">
 <!ENTITY downloads.accesskey          "ز">
 <!ENTITY downloads.commandkey         "j">
 <!ENTITY downloadsUnix.commandkey     "y">
@@ -281,7 +304,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY inspectContextMenu.label     "افحص العنصر">
 <!ENTITY inspectContextMenu.accesskey "ح">
 
-<!ENTITY fileMenu.label         "ملف"> 
+<!ENTITY inspectA11YContextMenu.label     "افحص خصائص الإتاحة">
+
+<!ENTITY fileMenu.label         "ملف">
 <!ENTITY fileMenu.accesskey       "م">
 <!ENTITY newUserContext.label             "لسان حاوٍ جديد">
 <!ENTITY newUserContext.accesskey         "ح">
@@ -290,47 +315,46 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newNavigatorCmd.accesskey      "ج">
 <!ENTITY newPrivateWindow.label     "نافذة خاصة جديدة">
 <!ENTITY newPrivateWindow.accesskey "ن">
-<!ENTITY newNonRemoteWindow.label   "نافذة جديدة غير متعددة السيرورات">
 
-<!ENTITY editMenu.label         "حرّر"> 
-<!ENTITY editMenu.accesskey       "ح"> 
-<!ENTITY undoCmd.label            "تراجع">  
-<!ENTITY undoCmd.key            "Z">  
-<!ENTITY undoCmd.accesskey          "ت"> 
-<!ENTITY redoCmd.label            "أعِد">  
-<!ENTITY redoCmd.key            "Y">  
-<!ENTITY redoCmd.accesskey          "ع"> 
-<!ENTITY cutCmd.label           "قصّ">  
-<!ENTITY cutCmd.key             "X">  
-<!ENTITY cutCmd.accesskey         "ق"> 
-<!ENTITY copyCmd.label            "انسخ">  
-<!ENTITY copyCmd.key            "C">  
-<!ENTITY copyCmd.accesskey          "ن"> 
-<!ENTITY pasteCmd.label           "ألصق">  
-<!ENTITY pasteCmd.key           "V">  
-<!ENTITY pasteCmd.accesskey         "ل"> 
-<!ENTITY deleteCmd.label          "احذف">  
-<!ENTITY deleteCmd.key            "D">  
-<!ENTITY deleteCmd.accesskey        "ذ"> 
-<!ENTITY selectAllCmd.label         "اختر الكل">  
-<!ENTITY selectAllCmd.key         "A">  
-<!ENTITY selectAllCmd.accesskey       "ك"> 
+<!ENTITY editMenu.label         "حرّر">
+<!ENTITY editMenu.accesskey       "ح">
+<!ENTITY undoCmd.label            "تراجع">
+<!ENTITY undoCmd.key            "Z">
+<!ENTITY undoCmd.accesskey          "ت">
+<!ENTITY redoCmd.label            "أعِد">
+<!ENTITY redoCmd.key            "Y">
+<!ENTITY redoCmd.accesskey          "ع">
+<!ENTITY cutCmd.label           "قصّ">
+<!ENTITY cutCmd.key             "X">
+<!ENTITY cutCmd.accesskey         "ق">
+<!ENTITY copyCmd.label            "انسخ">
+<!ENTITY copyCmd.key            "C">
+<!ENTITY copyCmd.accesskey          "ن">
+<!ENTITY pasteCmd.label           "ألصق">
+<!ENTITY pasteCmd.key           "V">
+<!ENTITY pasteCmd.accesskey         "ل">
+<!ENTITY deleteCmd.label          "احذف">
+<!ENTITY deleteCmd.key            "D">
+<!ENTITY deleteCmd.accesskey        "ذ">
+<!ENTITY selectAllCmd.label         "اختر الكل">
+<!ENTITY selectAllCmd.key         "A">
+<!ENTITY selectAllCmd.accesskey       "ك">
 <!ENTITY preferencesCmd2.label       "خيارات">
 <!ENTITY preferencesCmd2.accesskey     "خ">
 <!ENTITY preferencesCmdUnix.label       "التفضيلات">
-<!ENTITY preferencesCmdUnix.accesskey     "ف"> 
+<!ENTITY preferencesCmdUnix.accesskey     "ف">
 
 <!ENTITY clearRecentHistory.label               "امسح التأريخ الحالي…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
 
-<!ENTITY viewMenu.label         "عرض"> 
-<!ENTITY viewMenu.accesskey       "ع"> 
-<!ENTITY viewToolbarsMenu.label       "أشرطة الأدوات"> 
-<!ENTITY viewToolbarsMenu.accesskey     "ش"> 
+<!ENTITY viewMenu.label         "عرض">
+<!ENTITY viewMenu.accesskey       "ع">
+<!ENTITY viewToolbarsMenu.label       "أشرطة الأدوات">
+<!ENTITY viewToolbarsMenu.accesskey     "ش">
 <!ENTITY viewSidebarMenu.label "الشريط الجانبي">
 <!ENTITY viewSidebarMenu.accesskey "ط">
-<!ENTITY viewCustomizeToolbar.label       "خصص…"> 
+<!ENTITY viewCustomizeToolbar.label       "خصّص…">
 <!ENTITY viewCustomizeToolbar.accesskey     "ص">
 <!ENTITY overflowCustomizeToolbar.label       "خصّص شريط الأدوات…">
 <!ENTITY overflowCustomizeToolbar.accesskey   "ش">
@@ -345,18 +369,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllHistoryCmd2.label "أظهر كل التأريخ">
 <!ENTITY showAllHistoryCmd.commandkey "H">
 
-<!ENTITY appMenuCustomize.label "خصّص">
-<!ENTITY appMenuCustomize.tooltip "خصّص القائمة و أشرطة الأدوات">
-<!ENTITY appMenuCustomizeExit.label "أغلق التخصيص">
-<!ENTITY appMenuCustomizeExit.tooltip "أنهِ التخصيص">
-<!ENTITY appMenuHistory.label "التأريخ">
 <!ENTITY appMenuHistory.showAll.label "أظهر كل التأريخ">
 <!ENTITY appMenuHistory.clearRecent.label "امسح التأريخ الحالي…">
 <!ENTITY appMenuHistory.restoreSession.label "استعد الجلسة السابقة">
 <!ENTITY appMenuHistory.viewSidebar.label "أظهر شريط التأريخ الجانبي">
 <!ENTITY appMenuHistory.recentHistory.label "التأريخ القريب">
 <!ENTITY appMenuHelp.label "مساعدة">
-<!ENTITY appMenuHelp.tooltip "افتح قائمة المساعدة">
 
 <!ENTITY appMenuRemoteTabs.label "الألسنة المُزامنة">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.notabs.label): This is shown beneath
@@ -368,21 +386,25 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.showMore.tooltip "اعرض المزيد من الألسنة من هذا الجهاز">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.showAll.label, appMenuRemoteTabs.showAll.tooltip):
      This is shown after the tabs list if we can all the remaining tabs by clicking on the button -->
-<!ENTITY appMenuRemoteTabs.showAll.label "اعرض الكل">
+<!ENTITY appMenuRemoteTabs.showAll.label "أظهر الكل">
 <!ENTITY appMenuRemoteTabs.showAll.tooltip "اعرض كل الألسنة من هذا الجهاز">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "فعّل مزامنة الألسنة لعرض قائمة بالألسنة من أجهزتك الأخرى.">
-<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.label): This is shown
+<!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.title "لم تُزامَن أي ألسنة… بعد">
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "أتريد رؤية ألسنتك من الأجهزة الأخرى هنا؟">
 <!ENTITY appMenuRemoteTabs.openprefs.label "تفضيلات المزامنة">
+<!ENTITY appMenuRemoteTabs.opensyncprefs.label "افتح تفضيلات «تزامُن»">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "لِج لعرض قائمة بالألسنة من أجهزتك الأخرى.">
+<!ENTITY appMenuRemoteTabs.unverified.label "يجب تأكيد حسابك.">
 <!ENTITY appMenuRemoteTabs.signin.label "لِج إلى «المزامنة»">
 <!ENTITY appMenuRemoteTabs.managedevices.label "أدِر الأجهزة…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "أظهر شريط الألسنة المزامَنة الجانبي">
+<!ENTITY appMenuRemoteTabs.connectdevice.label "صِلْ جهازا آخر">
+
+<!ENTITY appMenuRecentHighlights.label "آخر الأخبار المهمة">
 
 <!ENTITY customizeMenu.addToToolbar.label "أضف إلى شريط الأدوات">
 <!ENTITY customizeMenu.addToToolbar.accesskey "ض">
@@ -414,28 +436,21 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.removeFromMenu.accesskey "ح">
 <!ENTITY customizeMenu.addMoreItems.label "أضف المزيد من العناصر…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "ض">
+
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
     secondary commands. -->
-
 <!ENTITY moreMenu.label "المزيد">
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "ابحث أو أدخل عنوانا">
+<!ENTITY urlbar.placeholder3          "أدخِل مصطلحات البحث والعناوين هنا">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "الامتداد:">
 <!ENTITY urlbar.switchToTab.label     "انتقل إلى اللسان:">
 
-<!ENTITY urlbar.searchSuggestionsNotification.question "أتريد تحسين نتائج بالبحث بالاقتراحات؟">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore "اطّلع على المزيد…">
-<!ENTITY urlbar.searchSuggestionsNotification.learnMore.accesskey "ط">
-<!ENTITY urlbar.searchSuggestionsNotification.disable "لا">
-<!ENTITY urlbar.searchSuggestionsNotification.disable.accesskey "ل">
-<!ENTITY urlbar.searchSuggestionsNotification.enable "نعم">
-<!ENTITY urlbar.searchSuggestionsNotification.enable.accesskey "ن">
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hintPrefix): Shown just before the suggestions opt-out hint. -->
-
 <!ENTITY urlbar.searchSuggestionsNotification.hintPrefix "فائدة:">
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hint): &#x1F50E; is the magnifier icon emoji, please don't change it. -->
 <!ENTITY urlbar.searchSuggestionsNotification.hint "اعثر على الأشياء أسرع. ابحث عن &#x1F50E; بجوار نتائج البحث.">
@@ -443,6 +458,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsWin.accesskey "غ">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsUnix "غيّر التفضيلات…">
 <!ENTITY urlbar.searchSuggestionsNotification.changeSettingsUnix.accesskey "غ">
+
 <!--
   Comment duplicated from browser-sets.inc:
 
@@ -463,41 +479,40 @@ These should match what Safari and other Apple applications use on OS X Lion. --
   for people to switch to Linux.
 
  -->
-
 <!ENTITY searchFocus.commandkey       "k">
 <!ENTITY searchFocus.commandkey2      "e">
 <!ENTITY searchFocusUnix.commandkey   "j">
+
 <!-- LOCALIZATION NOTE (contentSearchInput.label):
      This is set as the aria-label attribute for the search input box in the
      in-content search UI, to be used by screen readers. -->
-
 <!ENTITY contentSearchInput.label     "استعلام بحث">
 <!ENTITY contentSearchSubmit.tooltip  "أرسل البحث">
+
 <!-- LOCALIZATION NOTE (searchInput.placeholder):
      This string is displayed in the search box when the input field is empty. -->
-
 <!ENTITY searchInput.placeholder      "ابحث">
 <!ENTITY searchIcon.tooltip           "ابحث">
+
 <!-- LOCALIZATION NOTE (searchFor.label, searchWith.label):
      These two strings are used to build the header above the list of one-click
      search providers:  "Search for <used typed keywords> with:" -->
-
 <!ENTITY searchFor.label              "ابحث عن ">
 <!ENTITY searchWith.label             " مستخدمًا:">
+
 <!-- LOCALIZATION NOTE (search.label, searchAfter.label):
      This string is used to build the header above the list of one-click search
      providers when a one off engine has been selected.  The searchAfter text is
      intentionally left empty for en-US and can be used by other localizations to
      display a string after the search engine name.  This string will be displayed
      as:  "Search <selected engine name><searchAfter.label text>" -->
-
 <!ENTITY search.label                 "ابحث ">
-<!ENTITY searchAfter.label            "​">
+<!ENTITY searchAfter.label            "">
+
 <!-- LOCALIZATION NOTE (searchWithHeader.label):
      The wording of this string should be as close as possible to
      searchFor.label and searchWith.label. This string will be used instead of
      them when the user has not typed any keyword. -->
-
 <!ENTITY searchWithHeader.label       "ابحث مستخدمًا:">
 <!-- LOCALIZATION NOTE (changeSearchSettings.button):
      This string won't wrap, so if the translated string is longer,
@@ -531,7 +546,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.accesskey     "ت">
 <!ENTITY viewPartialSourceForSelectionCmd.label "اعرض مصدر التحديد">
 <!ENTITY viewPartialSourceForMathMLCmd.label    "اعرض مصدر MathML">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both 
+<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
          viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "ص">
 <!ENTITY viewPageSourceCmd.label      "اعرض مصدر هذه الصفحة">
@@ -557,11 +572,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY setDesktopBackgroundCmd.label      "اجعلها خلفية سطح المكتب…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "ج">
 <!ENTITY bookmarkPageCmd2.label       "علّم هذه الصفحة">
+<!ENTITY bookmarkPageCmd2.accesskey   "ه">
 <!ENTITY bookmarkThisLinkCmd.label      "علِّم هذا الرابط">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "ر">
 <!ENTITY bookmarkThisFrameCmd.label      "علِّم هذا الإطار">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "ط">
-<!ENTITY copyURLCmd.label             "انسخ المسار">
+<!ENTITY pageAction.copyLink.label    "انسخ الرابط">
+<!ENTITY copyURLFeedback.label        "تم النسخ">
 <!ENTITY emailPageCmd.label           "أرسل الرابط بالبريد…">
 <!ENTITY emailPageCmd.accesskey       "س">
 <!ENTITY savePageCmd.label            "احفظ الصفحة باسم…">
@@ -585,8 +602,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY emailImageCmd.accesskey      "ص">
 <!ENTITY emailVideoCmd.label          "أرسل الڤديو بالبريد…">
 <!ENTITY emailVideoCmd.accesskey      "ڤ">
-<!ENTITY castVideoCmd.label           "أرسل الڤديو إلى جهاز">
-<!ENTITY castVideoCmd.accesskey       "ڤ">
 <!ENTITY emailAudioCmd.label          "أرسل الصوت بالبريد…">
 <!ENTITY emailAudioCmd.accesskey      "ت">
 <!ENTITY playPluginCmd.label          "فعّل هذه المُلحقة">
@@ -598,7 +613,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyImageCmd.label           "انسخ مكان الصورة">
 <!ENTITY copyImageCmd.accesskey       "س">
 <!ENTITY copyImageContentsCmd.label   "انسخ الصورة">
-<!ENTITY copyImageContentsCmd.accesskey  "خ"> 
+<!ENTITY copyImageContentsCmd.accesskey  "خ">
 <!ENTITY copyVideoURLCmd.label        "انسخ مكان الفديو">
 <!ENTITY copyVideoURLCmd.accesskey    "ف">
 <!ENTITY copyAudioURLCmd.label        "انسخ مكان الصوت">
@@ -607,11 +622,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY copyEmailCmd.accesskey       "خ">
 <!ENTITY thisFrameMenu.label              "هذا الإطار">
 <!ENTITY thisFrameMenu.accesskey          "ه">
+
 <!-- Media (video/audio) controls -->
 <!-- LOCALIZATION NOTE: The access keys for "Play" and
 "Pause" are the same because the two context-menu
 items are mutually exclusive. -->
-
 <!ENTITY mediaPlay.label             "شغّل">
 <!ENTITY mediaPlay.accesskey         "ش">
 <!ENTITY mediaPause.label            "ألبِث">
@@ -658,18 +673,17 @@ items are mutually exclusive. -->
 <!ENTITY videoShowStats.accesskey    "ح">
 <!ENTITY videoHideStats.label        "أخفِ الإحصائيات">
 <!ENTITY videoHideStats.accesskey    "خ">
+
 <!-- LOCALIZATION NOTE :
 fullZoomEnlargeCmd.commandkey3, fullZoomReduceCmd.commandkey2 and
 fullZoomResetCmd.commandkey2 are alternative acceleration keys for zoom.
 If shift key is needed with your locale popular keyboard for them,
 you can use these alternative items. Otherwise, their values should be empty.  -->
 
-
 <!ENTITY fullZoomEnlargeCmd.label       "قرّب">
 <!ENTITY fullZoomEnlargeCmd.accesskey   "ق">
 <!ENTITY fullZoomEnlargeCmd.commandkey  "+">
-<!-- + is above this key on many keyboards -->
-<!ENTITY fullZoomEnlargeCmd.commandkey2 "="> 
+<!ENTITY fullZoomEnlargeCmd.commandkey2 "="> <!-- + is above this key on many keyboards -->
 <!ENTITY fullZoomEnlargeCmd.commandkey3 "">
 
 <!ENTITY fullZoomReduceCmd.label        "بعّد">
@@ -695,13 +709,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY quitApplicationCmdWin2.tooltip     "أغلق &brandShorterName;">
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goForwardCmd.commandKey "]">
-<!ENTITY quitApplicationCmd.label       "أغلق"> 
+<!ENTITY quitApplicationCmd.label       "أغلق">
 <!ENTITY quitApplicationCmd.accesskey   "غ">
 <!ENTITY quitApplicationCmdMac2.label   "أغلق &brandShorterName;">
 <!ENTITY quitApplicationCmd.key         "Q">
 
-<!ENTITY closeCmd.label                 "أغلق">  
-<!ENTITY closeCmd.key                   "W">  
+<!ENTITY closeCmd.label                 "أغلق">
+<!ENTITY closeCmd.key                   "W">
 <!ENTITY closeCmd.accesskey             "غ">
 
 <!ENTITY toggleMuteCmd.key              "M">
@@ -712,8 +726,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageStyleNoStyle.accesskey "ل">
 <!ENTITY pageStylePersistentOnly.label "طراز صفحة بسيط">
 <!ENTITY pageStylePersistentOnly.accesskey "ص">
-
-<!ENTITY pageReportIcon.tooltip            "غيّر إعدادات حجب النوافذ المنبثقة لهذا الموقع">
 
 <!ENTITY allowPopups.accesskey "ن">
 <!-- On Windows we use the term "Options" to describe settings, but
@@ -745,6 +757,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY editBookmark.done.label                     "تمّ">
 <!ENTITY editBookmark.removeBookmark.accessKey       "ع">
 
+<!-- LOCALIZATION NOTE (identity.securityView.label)
+     This is the header of the security subview in the Site Identity panel. -->
+<!ENTITY identity.securityView.label "أمن الموقع">
+
 <!ENTITY identity.connectionSecure "اتصال آمن">
 <!ENTITY identity.connectionNotSecure "الاتصال غير آمن">
 <!ENTITY identity.connectionFile "هذه الصفحة مخزنة على حاسوبك.">
@@ -752,14 +768,14 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.connectionInternal "هذه صفحة &brandShortName; آمنة.">
 <!ENTITY identity.extensionPage "حمِّلت هذه الصفحة من امتداد.">
 <!ENTITY identity.insecureLoginForms2 "معلومات الولوج التي تُدخلها في هذه الصفحة قد تكون مخترقة.">
-<!-- Strings for connection state warnings. -->
 
-<!ENTITY identity.activeBlocked "حجب &brandShortName; الأجزاء غير الآمنة من هذه الصفحة.">
+<!-- Strings for connection state warnings. -->
+<!ENTITY identity.activeBlocked "حجب &brandShortName; الأجزاء غير الآمنة في هذه الصفحة.">
 <!ENTITY identity.passiveLoaded "بعض أجزاء هذه الصفحة غير آمنة (مثل الصور).">
 <!ENTITY identity.activeLoaded "لقد أوقفت الحماية على هذه الصفحة.">
 <!ENTITY identity.weakEncryption "تستخدم هذه الصفحة تعمية ضعيفة.">
-<!-- Strings for connection state warnings in the subview. -->
 
+<!-- Strings for connection state warnings in the subview. -->
 <!ENTITY identity.description.insecure "اتصالك بهذا الموقع ليس خاصًّا. يمكن للآخرين مطالعة المعلومات التي ترسلها (مثل كلمات السر، و الرسائل، و بطاقات الائتمان و غيرها).">
 <!ENTITY identity.description.insecureLoginForms "معلومات الولوج التي تُدخلها في هذه الصفحة ليست مُؤمّنة و قد تكون مخترقة.">
 <!ENTITY identity.description.weakCipher "اتصالك بهذا الموقع يستخدم تعمية ضعيفة وليس خاصًّا أيضًا.">
@@ -785,29 +801,31 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissions "التّصاريح">
 <!ENTITY identity.permissionsEmpty "لم تمنح هذا الموقع أي صلاحيات خاصة.">
 <!ENTITY identity.permissionsReloadHint "قد تحتاج إعادة تحميل الصفحة لتطبيق التغييرات.">
+
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
-
 <!ENTITY tabsToolbar.label "ألسنة المتصفح">
-<!-- LOCALIZATION NOTE (syncTabsMenu3.label): This appears in the history menu -->
 
+<!-- LOCALIZATION NOTE (syncTabsMenu3.label): This appears in the history menu -->
 <!ENTITY syncTabsMenu3.label     "الألسنة المُزامنة">
 
 <!ENTITY syncedTabs.sidebar.label              "الألسنة المُزامنة">
 <!ENTITY syncedTabs.sidebar.noclients.label    "لِج إلى فيَرفُكس من أجهزتك الأخرى لعرض ألسنتهم هنا.">
-<!ENTITY syncedTabs.sidebar.noclients.title    "لم تُزامَن أي ألسنة… بعد">
 <!ENTITY syncedTabs.sidebar.noclients.subtitle "أتريد رؤية ألسنتك من الأجهزة الأخرى هنا؟">
 <!ENTITY syncedTabs.sidebar.notsignedin.label  "لِج لعرض قائمة بالألسنة من أجهزتك الأخرى.">
+<!ENTITY syncedTabs.sidebar.unverified.label   "يجب تأكيد حسابك.">
 <!ENTITY syncedTabs.sidebar.notabs.label       "لا ألسنة مفتوحة">
 <!ENTITY syncedTabs.sidebar.openprefs.label    "افتح تفضيلات &syncBrand.shortName.label;">
 <!-- LOCALIZATION NOTE (syncedTabs.sidebar.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
 <!ENTITY syncedTabs.sidebar.tabsnotsyncing.label       "فعّل مزامنة الألسنة لعرض قائمة بالألسنة من أجهزتك الأخرى.">
+<!ENTITY syncedTabs.sidebar.searchPlaceholder  "ابحث في الألسنة المُزامنة">
+<!ENTITY syncedTabs.sidebar.connectAnotherDevice  "صِلْ جهازا آخر">
+
 <!-- LOCALIZATION NOTE (syncedTabs.context.open.accesskey,
                         syncedTabs.context.openAllInTabs.accesskey):
      These access keys are identical because their associated menu items are
      mutually exclusive -->
-
 <!ENTITY syncedTabs.context.open.label                       "افتح">
 <!ENTITY syncedTabs.context.open.accesskey                   "ف">
 <!ENTITY syncedTabs.context.openInNewTab.label               "افتح في لسان جديد">
@@ -837,20 +855,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncReAuthItem.accesskey     "ع">
 <!ENTITY syncToolbarButton.label      "زامن">
 
-<!ENTITY social.addons.label "أدِر الخدمات…">
-
-<!ENTITY social.directory.label "دليل التفعيل">
-<!ENTITY social.directory.text "يمكنك تفعيل خدمات المشاركة من هذا الدليل.">
-<!ENTITY social.directory.button "خذني إلى هناك!">
-<!ENTITY social.directory.introText "انقر على خدمة لتضيفها إلى &brandShortName;.">
-<!ENTITY social.directory.viewmore.text "اعرض المزيد">
-
-<!ENTITY customizeMode.menuAndToolbars.header2 "أدوات و خصائص إضافية">
-<!ENTITY customizeMode.menuAndToolbars.empty "أتريد المزيد من الأدوات؟">
-<!ENTITY customizeMode.menuAndToolbars.emptyLink "اختر من آلاف الإضافات">
+<!ENTITY customizeMode.menuAndToolbars.header3 "اسحب العناصر المفضلة لديك إلى شريط الأدوات أو قائمة الزيادة.">
 <!ENTITY customizeMode.restoreDefaults "استعد الإعدادات المبدئية">
 <!ENTITY customizeMode.done "تمّ">
 <!ENTITY customizeMode.titlebar "شريط العنوان">
+<!ENTITY customizeMode.extraDragSpace "مساحة للسحب">
 <!ENTITY customizeMode.toolbars2 "أشرطة الأدوات">
 <!ENTITY customizeMode.lwthemes "السِمات">
 <!ENTITY customizeMode.lwthemes.myThemes "سِماتي">
@@ -859,7 +868,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "ر">
 <!ENTITY customizeMode.lwthemes.menuGetMore "احصل على مزيد من السِمات">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "ح">
-<!ENTITY customizeMode.emptyOverflowList.description "اسحب و أفلت العناصر هنا لإبقائهم في متناول يدك لكن خارج شريط الأدوات…">
+<!ENTITY customizeMode.overflowList.title2 "قائمة الزيادة">
+<!ENTITY customizeMode.overflowList.description "اسحب وأسقِط العناصر هنا لتبقيها قريبة منك ولكن خارج شريط الأدوات…">
 <!ENTITY customizeMode.uidensity "الكثافة">
 <!-- LOCALIZATION NOTE (customizeMode.uidensity.menuNormal.*):
      “Normal” is displayed in the Customize screen, under the Density menu. -->
@@ -880,6 +890,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.uidensity.menuTouch.tooltip "لمس">
 <!ENTITY customizeMode.uidensity.menuTouch.accessKey "ل">
 <!ENTITY customizeMode.uidensity.autoTouchMode.checkbox.label "استخدم كثافة اللمس لنمط اللوح">
+
+<!ENTITY customizeMode.autoHideDownloadsButton.label "إخفاء آلي">
 
 <!ENTITY getUserMedia.selectCamera.label "الكمرة التي ستُشارك:">
 <!ENTITY getUserMedia.selectCamera.accesskey "م">
@@ -905,47 +917,35 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.block2.label "فعّل الحماية">
 <!ENTITY trackingProtection.block2.accesskey "ف">
 
-<!ENTITY trackingContentBlocked.message "التعقب">
-<!ENTITY trackingContentBlocked.moreinfo "حجبت بعض أجزاء من الصفحة تحاول تتبع نشاطك على الإنترنت.">
-<!ENTITY trackingContentBlocked.learnMore "اطّلع على المزيد">
-<!ENTITY trackingContentBlocked.options "الخيارات">
-<!ENTITY trackingContentBlocked.unblock2.label "أوقف الحماية لهذا الموقع">
-<!ENTITY trackingContentBlocked.unblock2.accesskey "ق">
-<!ENTITY trackingContentBlocked.block.label "فعّل الحماية">
-<!ENTITY trackingContentBlocked.block.accesskey "ف">
-<!ENTITY trackingContentBlocked.disabled.message "عُطلت حماية التتبع">
-
 <!ENTITY pluginNotification.showAll.label "أظهر الكل">
 <!ENTITY pluginNotification.showAll.accesskey "ظ">
-<!-- LOCALIZATION NOTE (pluginActivateNow.label, pluginActivateAlways.label, pluginBlockNow.label): These should be the same as the matching strings in browser.properties -->
 
+<!-- LOCALIZATION NOTE (pluginActivateNow.label, pluginActivateAlways.label, pluginBlockNow.label): These should be the same as the matching strings in browser.properties -->
 <!ENTITY pluginActivateNow.label "اسمح الآن">
 <!ENTITY pluginActivateAlways.label "اسمح و تذكّر">
 <!ENTITY pluginBlockNow.label "احجب الملحقة">
+
 <!-- LOCALIZATION NOTE: (pluginNotification.width): This is used to determine the
      width of the plugin popup notification that can appear if a plugin has been
      blocked on a page. Should be wide enough to fit the pluginActivateNow.label
      and pluginActivateAlways.label strings above on a single line. This must be
      a CSS length value. -->
-
 <!ENTITY pluginNotification.width "32em">
 
 <!ENTITY uiTour.infoPanel.close "أغلق">
 
-<!ENTITY appMenuSidebars.label         "الأشرطة الجانبية">
 <!-- LOCALIZATION NOTE: (panicButton.view.mainTimeframeDesc, panicButton.view.5min, panicButton.view.2hr, panicButton.view.day):
      The .mainTimeframeDesc string combined with any of the 3 others is meant to form a complete sentence, e.g. "Forget the last: Five minutes".
      Please ensure that this remains the case in the translation. -->
-
 <!ENTITY panicButton.view.mainTimeframeDesc       "انسَ الأخير:">
 <!ENTITY panicButton.view.5min                    "خمس دقائق">
 <!ENTITY panicButton.view.2hr                     "ساعتين">
 <!ENTITY panicButton.view.day                     "24 ساعة">
+
 <!-- LOCALIZATION NOTE: (panicButton.view.mainLabel, panicButton.view.deleteCookies, panicButton.view.deleteHistory, panicButton.view.deleteTabsAndWindows, panicButton.view.openNewWindow):
      The .mainActionDesc string combined with any of the 4 others is meant to form a complete sentence, e.g. "Proceeding will: Delete Recent Cookies".
      Note also that the deleteCookies, deleteHistory and deleteTabsAndWindows strings include <html:strong> tags for emphasis on the words "Cookies", "History", "Tabs" and "Windows".
      The translation should do the same. -->
-
 <!ENTITY panicButton.view.mainActionDesc          "المتابعة سوف:">
 <!ENTITY panicButton.view.deleteCookies           "تحذف <html:strong>الكعكات</html:strong> الحديثة">
 <!ENTITY panicButton.view.deleteHistory           "تحذف <html:strong>السجل</html:strong> الحديث">
@@ -980,7 +980,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateManual.cancelButton.accesskey "ل">
 <!ENTITY updateManual.panelUI.label "نزّل نسخة جديدة من &brandShorterName;">
 
-<!ENTITY updateRestart.message "بعد إعادة تشغيل سريعة، سيستعيد &brandShorterName; ألسنتك و نوافذك المفتوحة.">
+<!ENTITY updateRestart.message2 "بعد إعادة تشغيل سريعة سيستعيد &brandShorterName; جميع ألسنتك و نوافذك المفتوحة التي ليست في وضع التصفح الخاص.">
 <!ENTITY updateRestart.header.message2 "أعد التشغيل لتحديث &brandShorterName;.">
 <!ENTITY updateRestart.acceptButton.label "أعد التشغيل و استعد">
 <!ENTITY updateRestart.acceptButton.accesskey "ع">
@@ -988,9 +988,45 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "ل">
 <!ENTITY updateRestart.panelUI.label2 "أعد التشغيل لتحديث &brandShorterName;">
 
+<!ENTITY newTabControlled.message "ثمة امتداد غيّر الصفحة التي تراها عند فتح لسان جديد. يمكنك استعادة الإعداد السابق إن لم تقبل بهذا التغيير.">
+
+<!ENTITY newTabControlled.header.message "لقد تغيرت صفحة اللسان الجديد.">
+<!ENTITY newTabControlled.keepButton.label "أبقِ التغييرات">
+<!ENTITY newTabControlled.keepButton.accesskey "غ">
+<!ENTITY newTabControlled.restoreButton.label "استعد ما كان">
+<!ENTITY newTabControlled.restoreButton.accesskey "ك">
+
+<!ENTITY newTabControlled.disableButton.label "عطّل الامتداد">
+<!ENTITY newTabControlled.disableButton.accesskey "ط">
+
+<!ENTITY homepageControlled.message "ثمة امتداد غيّر ما تراه في صفحة البداية. يمكنك استعادة الإعداد السابق إن لم تقبل بهذا التغيير.">
+<!ENTITY homepageControlled.header.message "لقد تغيرت صفحة البداية.">
+<!ENTITY homepageControlled.keepButton.label "أبقِ التغييرات">
+<!ENTITY homepageControlled.keepButton.accesskey "غ">
+<!ENTITY homepageControlled.disableButton.label "عطّل الامتداد">
+<!ENTITY homepageControlled.disableButton.accesskey "ط">
+
 <!ENTITY pageActionButton.tooltip "إجراءات الصفحة">
 <!ENTITY pageAction.addToUrlbar.label "أضف إلى شريط العناوين">
 <!ENTITY pageAction.removeFromUrlbar.label "أزل من شريط العناوين">
+<!ENTITY pageAction.allowInUrlbar.label "اعرض في شريط العنوان">
+<!ENTITY pageAction.disallowInUrlbar.label "لا تعرض في شريط العنوان">
+<!ENTITY pageAction.manageExtension.label "أدِر الامتدادات…">
 
-<!ENTITY sendToDevice.label2 "أرسِل إلى جهاز">
+<!ENTITY pageAction.sendTabToDevice.label "أرسِل اللسان إلى جهاز">
 <!ENTITY sendToDevice.syncNotReady.label "يُزامن الأجهزة…">
+
+<!ENTITY pageAction.shareUrl.label "شارِك">
+
+<!ENTITY libraryButton.tooltip "اعرض التأريخ، والعلامات المحفوظة وغيرها">
+
+<!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
+     display a tooltip for accessibility indicator in toolbar/tabbar. It is also
+     used as a textual label for the indicator used by assistive technology
+     users. -->
+<!ENTITY accessibilityIndicator.tooltip "مزايا الإتاحة مفعّلة">
+
+<!-- LOCALIZATION NOTE: (addonPostInstallMessage.label):
+     The first <image> tag is replaced with the icon for the add-ons menu.
+     The second <image> tag is replaced with the icon for the toolbar menu. -->
+<!ENTITY addonPostInstallMessage.label "أدِر إضافاتك بنقر <image class='addon-addon-icon'/> في قائمة <image class='addon-toolbar-icon'/>.">

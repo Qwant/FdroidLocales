@@ -29,16 +29,23 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "El reporte de datos está deshabilitado para esta configuración de compilación">
 
-<!ENTITY enableHealthReport1.label       "Permitir a &brandShortName; enviar automáticamente datos técnicos y de interacción a Mozilla">
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.label       "Permitir a &brandShortName; enviar datos técnicos y de interacción a Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "Aprender más">
 
 <!ENTITY dataCollection.label            "Recolección y uso de datos de &brandShortName;">
 <!ENTITY dataCollectionDesc.label        "Nos esforzamos por proveerte con opciones y recolectar solo lo que necesitamos para proveer y mejorar &brandShortName; para todos. Siempre solicitamos permiso antes de recibir información personal.">
-<!ENTITY dataCollectionPrivacyNotice.label    "Aviso de privacidad">
+<!ENTITY dataCollectionPrivacyNotice.label    "Política de privacidad">
 
-<!ENTITY alwaysSubmitCrashReports1.label  "Permitir a &brandShortName; enviar reportes de fallos a Mozilla">
+<!ENTITY alwaysSubmitCrashReports1.label  "Permitir a &brandShortName; enviar informes de fallos a Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "c">
+
+<!ENTITY collectBrowserErrors.label          "Permitir a &brandShortName; enviar reportes de errores (incluyendo mensajes de error) a Mozilla">
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "Aprender más">
+
+<!ENTITY sendBackloggedCrashReports.label  "Permitir a &brandShortName; enviar reportes de fallos acumulados a tu nombre">
+<!ENTITY sendBackloggedCrashReports.accesskey "c">
 <!ENTITY crashReporterLearnMore.label    "Aprender más">
 
 <!ENTITY networkTab.label                "Red">
@@ -51,14 +58,17 @@ available. -->
 
 <!ENTITY httpCache.label                 "Contenido web en caché">
 
-<!ENTITY offlineStorage2.label           "Contenido web y datos de usuario sin conexión">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Datos de sitio">
 <!ENTITY clearSiteData.label             "Limpiar todos los datos">
 <!ENTITY clearSiteData.accesskey         "l">
 <!ENTITY siteDataSettings.label          "Ajustes…">
 <!ENTITY siteDataSettings.accesskey      "i">
+<!ENTITY siteData1.label                 "Cookies y datos de sitio">
+<!ENTITY clearSiteData1.label            "Limpiar datos…">
+<!ENTITY clearSiteData1.accesskey        "l">
+<!ENTITY siteDataSettings1.label         "Gestionar datos…">
+<!ENTITY siteDataSettings1.accesskey     "M">
 <!ENTITY siteDataLearnMoreLink.label     "Aprender más">
 
 <!-- LOCALIZATION NOTE:
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB de espacio">
 <!ENTITY clearCacheNow.label             "Limpiar ahora">
 <!ENTITY clearCacheNow.accesskey         "h">
-<!ENTITY clearOfflineAppCacheNow.label   "Limpiar ahora">
-<!ENTITY clearOfflineAppCacheNow.accesskey "i">
 <!ENTITY overrideSmartCacheSize.label    "Anular administración automática de caché">
 <!ENTITY overrideSmartCacheSize.accesskey "o">
 
@@ -110,17 +118,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "Actualizar motores de búsqueda automáticamente">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
-
-<!ENTITY offlineStorageNotify.label               "Avisarte cuando un sitio solicite almacenar datos para uso sin conexión">
-<!ENTITY offlineStorageNotify.accesskey           "T">
-<!ENTITY offlineStorageNotifyExceptions.label     "Excepciones…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "x">
-
-<!ENTITY offlineAppsList2.label          "Los siguientes sitios web tienen permitido guardar datos para uso sin conexión:">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Eliminar…">
-<!ENTITY offlineAppsListRemove.accesskey "r">
-<!ENTITY offlineAppRemove.confirm        "Eliminar datos sin conexión">
 
 <!ENTITY certificateTab.label            "Certificados">
 <!ENTITY certPersonal2.description       "Cuando un servidor solicita tu certificado personal">

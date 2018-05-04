@@ -25,6 +25,11 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionVersion "Έκδοση">
 <!ENTITY aboutSupport.extensionId "ID">
 
+<!ENTITY aboutSupport.securitySoftwareTitle "Λογισμικό ασφαλείας">
+<!ENTITY aboutSupport.securitySoftwareType "Τύπος">
+<!ENTITY aboutSupport.securitySoftwareName "Όνομα">
+<!ENTITY aboutSupport.securitySoftwareFirewall "Τείχος προστασίας">
+
 <!ENTITY aboutSupport.featuresTitle "Χαρακτηριστικά του &brandShortName;">
 <!ENTITY aboutSupport.featureName "Όνομα">
 <!ENTITY aboutSupport.featureVersion "Έκδοση">
@@ -56,7 +61,7 @@ This is the Windows- and Mac-specific variant of aboutSupport.appBasicsProfileDi
 Windows/Mac use the term "Folder" instead of "Directory" -->
 <!ENTITY aboutSupport.appBasicsProfileDirWinMac "Φάκελος προφίλ">
 
-<!ENTITY aboutSupport.appBasicsEnabledPlugins "Ενεργές πρόσθετες λειτουργίες">
+<!ENTITY aboutSupport.appBasicsEnabledPlugins "Ενεργά αρθρώματα">
 <!ENTITY aboutSupport.appBasicsBuildConfig "Ρύθμιση δομής">
 <!ENTITY aboutSupport.appBasicsUserAgent "Λειτουργία χρήσης">
 <!ENTITY aboutSupport.appBasicsOS "ΛΣ">
@@ -71,6 +76,7 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 <!ENTITY aboutSupport.appBasicsMultiProcessSupport "Παράθυρα πολυδιεργασιών">
 
 <!ENTITY aboutSupport.appBasicsProcessCount "Διεργασίες διαδικτυακού περιεχομένου">
+
 
 <!ENTITY aboutSupport.appBasicsKeyGoogle "Κλειδί Google">
 <!ENTITY aboutSupport.appBasicsKeyMozilla "Κλειδί υπηρεσίας τοποθεσίας Mozilla">
@@ -111,6 +117,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "Ενεργοποιήθηκε">
 <!ENTITY aboutSupport.a11yForceDisabled "Να μην επιτρέπεται η προσιτότητα">
 <!ENTITY aboutSupport.a11yHandlerUsed "Προσβάσιμο όνομα χρήστη σε χρήση">
+<!ENTITY aboutSupport.a11yInstantiator "Ενεργοποιητής προσβασιμότητας">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Εκδόσεις βιβλιοθήκης">
 
@@ -154,3 +161,9 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceChannels "Κανάλια">
 <!ENTITY aboutSupport.mediaDeviceRate "Ρυθμός">
 <!ENTITY aboutSupport.mediaDeviceLatency "Καθυστέρηση">
+
+<!ENTITY aboutSupport.intlAppTitle "Ρυθμίσεις εφαρμογής">
+<!ENTITY aboutSupport.intlLocalesDefault "Προεπιλεγμένη γλώσσα">
+<!ENTITY aboutSupport.intlOSTitle "Λειτουργικό σύστημα">
+<!ENTITY aboutSupport.intlOSPrefsSystemLocales "Γλώσσες συστήματος">
+<!ENTITY aboutSupport.intlRegionalPrefs "Προτιμήσεις περιοχής">

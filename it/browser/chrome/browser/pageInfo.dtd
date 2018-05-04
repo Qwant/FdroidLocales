@@ -42,19 +42,9 @@
 <!ENTITY mediaPreview "Anteprima contenuto multimediale:">
 <!ENTITY feedTab "Feed">
 <!ENTITY feedTab.accesskey "F">
-<!ENTITY feedSubscribe "Abbonati">
-<!ENTITY feedSubscribe.accesskey "b">
 <!ENTITY permTab "Permessi">
 <!ENTITY permTab.accesskey "P">
-<!ENTITY permUseDefault "Utilizza predefiniti">
-<!ENTITY permAskAlways "Chiedi ogni volta">
-<!ENTITY permAllow "Consenti">
-<!ENTITY permAllowSession "Consenti per la sessione">
-<!ENTITY permBlock "Blocca">
 <!ENTITY permissionsFor "Permessi per:">
-<!ENTITY permPlugins "Attivare plugin">
-<!ENTITY permClearStorage "Cancella i dati">
-<!ENTITY permClearStorage.accesskey "C">
 <!ENTITY securityTab "Sicurezza">
 <!ENTITY securityTab.accesskey "S">
 <!ENTITY securityView.certView "Visualizza certificato">
@@ -70,6 +60,9 @@
 <!ENTITY securityView.privacy.cookies "Questo sito web sta memorizzando informazioni (cookie) sul computer?">
 <!ENTITY securityView.privacy.viewCookies "Mostra cookie">
 <!ENTITY securityView.privacy.viewCookies.accessKey "k">
+<!ENTITY securityView.privacy.siteData "Questo sito web sta memorizzando informazioni sul computer?">
+<!ENTITY securityView.privacy.clearSiteData "Elimina cookie e dati dei siti web">
+<!ENTITY securityView.privacy.clearSiteData.accessKey "E">
 <!ENTITY securityView.privacy.passwords "Esistono password memorizzate per questo sito web?">
 <!ENTITY securityView.privacy.viewPasswords "Mostra password">
 <!ENTITY securityView.privacy.viewPasswords.accessKey "w">

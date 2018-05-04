@@ -25,6 +25,13 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionVersion "Verzia">
 <!ENTITY aboutSupport.extensionId "ID">
 
+<!ENTITY aboutSupport.securitySoftwareTitle "Bezpečnostný softvér">
+<!ENTITY aboutSupport.securitySoftwareType "Typ">
+<!ENTITY aboutSupport.securitySoftwareName "Názov">
+<!ENTITY aboutSupport.securitySoftwareAntivirus "Antivírus">
+<!ENTITY aboutSupport.securitySoftwareAntiSpyware "Antispajvér">
+<!ENTITY aboutSupport.securitySoftwareFirewall "Firewall">
+
 <!ENTITY aboutSupport.featuresTitle "Funkcie aplikácie &brandShortName;">
 <!ENTITY aboutSupport.featureName "Názov">
 <!ENTITY aboutSupport.featureVersion "Verzia">
@@ -72,6 +79,8 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsProcessCount "Procesy pre webový obsah">
 
+<!ENTITY aboutSupport.enterprisePolicies "Podnikové pravidlá">
+
 <!ENTITY aboutSupport.appBasicsKeyGoogle "Kľúč Google">
 <!ENTITY aboutSupport.appBasicsKeyMozilla "Kľúč Mozilla Location Service">
 
@@ -111,6 +120,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "Aktivované">
 <!ENTITY aboutSupport.a11yForceDisabled "Zabrániť zapnutiu funkcie Zjednodušenie ovládania">
 <!ENTITY aboutSupport.a11yHandlerUsed "Použité ovládanie prístupnosti">
+<!ENTITY aboutSupport.a11yInstantiator "Zavádzač pre prístupnosť (Accessibility Instantiator)">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Verzie knižníc">
 
@@ -154,3 +164,13 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceChannels "Kanále">
 <!ENTITY aboutSupport.mediaDeviceRate "Miera">
 <!ENTITY aboutSupport.mediaDeviceLatency "Oneskorenie">
+
+<!ENTITY aboutSupport.intlTitle "Internacionalizácia a lokalizácia">
+<!ENTITY aboutSupport.intlAppTitle "Nastavenia aplikácie">
+<!ENTITY aboutSupport.intlLocalesRequested "Požadované jazyky">
+<!ENTITY aboutSupport.intlLocalesAvailable "Dostupné jazyky">
+<!ENTITY aboutSupport.intlLocalesSupported "Jazyky aplikácie">
+<!ENTITY aboutSupport.intlLocalesDefault "Predvolený jazyk">
+<!ENTITY aboutSupport.intlOSTitle "Operačný systém">
+<!ENTITY aboutSupport.intlOSPrefsSystemLocales "Jazyky systému">
+<!ENTITY aboutSupport.intlRegionalPrefs "Miestne nastavenia">

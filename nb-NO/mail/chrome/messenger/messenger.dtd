@@ -36,6 +36,12 @@
 <!ENTITY newFeedAccountCmd.accesskey "d">
 <!ENTITY newIMContactCmd.label "Nettpratkontakt …">
 <!ENTITY newIMContactCmd.accesskey "t">
+<!ENTITY  newMessageCmd2.key "N">
+<!ENTITY  newMessageCmd.key "M">
+<!ENTITY  newMessageCmd.label "Melding">
+<!ENTITY  newMessageCmd.accesskey "m">
+<!ENTITY  newContactCmd.label "Adressebokkontakt…">
+<!ENTITY  newContactCmd.accesskey "k">
 <!ENTITY openMessageFileCmd.label "Åpne lagret melding …">
 <!ENTITY openMessageFileCmd.accesskey "Å">
 <!ENTITY saveAsMenu.label "Lagre som">
@@ -317,7 +323,7 @@
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goChatCmd.label "Nettprat">
 <!ENTITY goChatCmd.accesskey "e">
-<!ENTITY goChatCmd.key "I">
+<!ENTITY goChatCmd2.key "H">
 <!ENTITY prevStarredMsgCmd.label "Melding med stjerne">
 <!ENTITY prevStarredMsgCmd.accesskey "M">
 <!ENTITY folderMenu.label "Mappe">
@@ -366,6 +372,10 @@
 <!ENTITY editAsNewMsgCmd.key "e">
 <!ENTITY editDraftMsgCmd.label "Rediger meldingskladd">
 <!ENTITY editDraftMsgCmd.accesskey "m">
+<!ENTITY editTemplateMsgCmd.label "Rediger mal">
+<!ENTITY editTemplateMsgCmd.accesskey "m">
+<!ENTITY newMsgFromTemplateCmd.label "Ny melding fra mal">
+<!ENTITY newMsgFromTemplateCmd.keycode "VK_RETURN"><!-- do not change "VK_RETURN" -->
 <!ENTITY createFilter.label "Lag filter fra melding">
 <!ENTITY createFilter.accesskey "L">
 <!ENTITY moveMsgToMenu.label "Flytt til">
@@ -457,6 +467,11 @@
 <!ENTITY addressBookCmd.key "B">
 <!ENTITY addons.label "Utvidelser">
 <!ENTITY addons.accesskey "U">
+<!ENTITY addonPrefs.label "Innstillinger for utvidelse">
+<!ENTITY addonPrefs.accesskey "o">
+<!ENTITY addonPrefsUnix.label "Innstillinger for utvidelse">
+<!ENTITY addonPrefsUnix.accesskey "o">
+<!ENTITY addonNoPrefs.label "Ingen innstillinger for utvidelse funnet.">
 <!ENTITY activitymanager.label "Aktiviteter">
 <!ENTITY activitymanager.accesskey "v">
 <!ENTITY imAccountsStatus.label "Nettpratstatus">
@@ -500,8 +515,8 @@
 <!ENTITY devToolboxCmd.label "Verktøykasse for utviklere">
 <!ENTITY devToolboxCmd.accesskey "V">
 <!ENTITY devToolboxCmd.commandkey "i">
-<!ENTITY addonDebugCmd.label "Feilsøking for utvidelser">
-<!ENTITY addonDebugCmd.accesskey "F">
+<!ENTITY debugAddonsCmd.label "Feilsøk utvidelser">
+<!ENTITY debugAddonsCmd.accesskey "F">
 <!ENTITY tabsDebugCmd.label "Feilsøking for innholdsramme">
 <!ENTITY tabsDebugCmd.accesskey "i">
 <!ENTITY errorConsoleCmd.label "Feilmeldinger">
@@ -634,6 +649,7 @@
 <!-- Folder Pane Context Menu -->
 <!ENTITY folderContextGetMessages.label "Hent meldinger">
 <!ENTITY folderContextGetMessages.accesskey "H">
+<!ENTITY folderContextMarkAllFoldersRead.label "Merk alle mapper som lest">
 <!ENTITY folderContextPauseAllUpdates.label "Sett alle oppdateringer på pause">
 <!ENTITY folderContextPauseUpdates.label "Sett oppdateringer på pause">
 <!ENTITY folderContextPauseUpdates.accesskey "o">
@@ -734,12 +750,13 @@
 <!ENTITY attachmentColumn2.tooltip "Sorter etter vedlegg">
 
 <!-- Thread Pane Context Menu -->
+<!ENTITY contextNewMsgFromTemplate.label "Ny melding fra mal">
 <!ENTITY contextOpenNewWindow.label "Åpne melding i nytt vindu">
 <!ENTITY contextOpenNewWindow.accesskey "Å">
-<!-- The key potentially conflicts with cutCmd.accessKey which is defined in
-     textcontext.dtd from toolkit. Right now, both menu items can't be visible
-     at the same time, but should someone enable copy/paste of message, this key
-     would probably need to be changed. -->
+<!-- The contextOpenNewTab.accesskey ("T") potentially conflicts with
+     cutCmd.accessKey which is defined in textcontext.dtd from toolkit. Right
+     now, both menu items can't be visible at the same time, but should someone
+     enable copy/paste of message, this key would probably need to be changed. -->
 <!ENTITY contextOpenNewTab.label "Åpne melding i ny fane">
 <!ENTITY contextOpenNewTab.accesskey "n">
 <!ENTITY contextOpenConversation.label "Åpne melding i samtale">
@@ -749,6 +766,8 @@
 <!ENTITY contextEditMsgAsNew.label "Rediger som ny melding">
 <!ENTITY contextEditMsgAsNew.accesskey "R">
 <!ENTITY contextEditDraftMsg.label "Rediger meldingskladd">
+<!ENTITY contextEditTemplate.label "Rediger mal">
+<!ENTITY contextEditTemplate.accesskey "R">
 <!ENTITY contextArchive.label "Arkiver">
 <!ENTITY contextArchive.accesskey "A">
 <!ENTITY contextReplySender.label "Svar til avsender">

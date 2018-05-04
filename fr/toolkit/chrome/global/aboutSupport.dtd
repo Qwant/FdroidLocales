@@ -25,6 +25,13 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionVersion "Version">
 <!ENTITY aboutSupport.extensionId "ID">
 
+<!ENTITY aboutSupport.securitySoftwareTitle "Logiciel de sécurité">
+<!ENTITY aboutSupport.securitySoftwareType "Type">
+<!ENTITY aboutSupport.securitySoftwareName "Nom">
+<!ENTITY aboutSupport.securitySoftwareAntivirus "Antivirus">
+<!ENTITY aboutSupport.securitySoftwareAntiSpyware "Logiciel anti-espion">
+<!ENTITY aboutSupport.securitySoftwareFirewall "Pare-feu">
+
 <!ENTITY aboutSupport.featuresTitle "Fonctionnalités de &brandShortName;">
 <!ENTITY aboutSupport.featureName "Nom">
 <!ENTITY aboutSupport.featureVersion "Version">
@@ -68,9 +75,11 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsProfiles "Profils">
 
-<!ENTITY aboutSupport.appBasicsMultiProcessSupport "Fenêtres multi-processus">
+<!ENTITY aboutSupport.appBasicsMultiProcessSupport "Fenêtres multiprocessus">
 
 <!ENTITY aboutSupport.appBasicsProcessCount "Processus de contenu web">
+
+<!ENTITY aboutSupport.enterprisePolicies "Stratégies d’entreprise">
 
 <!ENTITY aboutSupport.appBasicsKeyGoogle "Clé Google">
 <!ENTITY aboutSupport.appBasicsKeyMozilla "Clé du service de localisation de Mozilla">
@@ -111,6 +120,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "Activée">
 <!ENTITY aboutSupport.a11yForceDisabled "Empêcher l’accessibilité">
 <!ENTITY aboutSupport.a11yHandlerUsed "Utilisation d’un gestionnaire accessible">
+<!ENTITY aboutSupport.a11yInstantiator "Générateur d’accessibilité">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Versions des bibliothèques">
 
@@ -154,3 +164,13 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceChannels "Canaux">
 <!ENTITY aboutSupport.mediaDeviceRate "Fréquence">
 <!ENTITY aboutSupport.mediaDeviceLatency "Latence">
+
+<!ENTITY aboutSupport.intlTitle "Langue et internationalisation">
+<!ENTITY aboutSupport.intlAppTitle "Paramètres d’application">
+<!ENTITY aboutSupport.intlLocalesRequested "Langues demandées">
+<!ENTITY aboutSupport.intlLocalesAvailable "Langues disponibles">
+<!ENTITY aboutSupport.intlLocalesSupported "Langues de l’application">
+<!ENTITY aboutSupport.intlLocalesDefault "Langue par défaut">
+<!ENTITY aboutSupport.intlOSTitle "Système d’exploitation">
+<!ENTITY aboutSupport.intlOSPrefsSystemLocales "Langues du système">
+<!ENTITY aboutSupport.intlRegionalPrefs "Préférences régionales">

@@ -52,7 +52,7 @@
 <!ENTITY cmd.open_private_window.accesskey "п">
 <!ENTITY cmd.open_tab.label              "Адкрыць у новай картцы">
 <!ENTITY cmd.open_tab.accesskey          "в">
-<!ENTITY cmd.open_all_in_tabs.label      "Адкрыць усё ў картках">
+<!ENTITY cmd.open_all_in_tabs.label      "Адкрыць усе ў картках">
 <!ENTITY cmd.open_all_in_tabs.accesskey  "у">
 
 <!ENTITY cmd.properties.label      "Уласцівасці">
@@ -85,7 +85,8 @@
 <!ENTITY col.dateadded.label     "Дададзена">
 <!ENTITY col.lastmodified.label  "Апошняе змяненне">
 
-<!ENTITY search.placeholder  "Пошук">
+<!ENTITY historySearch.placeholder  "Шукаць у гісторыі">
+<!ENTITY bookmarksSearch.placeholder  "Шукаць у закладках">
 
 <!ENTITY cmd.find.key  "f">
 

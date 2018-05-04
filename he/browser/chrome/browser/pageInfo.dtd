@@ -52,15 +52,13 @@
 <!ENTITY  permTab               "הרשאות">
 <!ENTITY  permTab.accesskey     "ר">
 <!ENTITY  permUseDefault        "בררת מחדל">
-<!ENTITY  permAskAlways         "שאל תמיד">
+<!ENTITY  permAskAlways         "לשאול תמיד">
 <!ENTITY  permAllow             "אפשר">
 <!ENTITY  permAllowSession      "אפשר להפעלה זו">
+<!ENTITY  permHide              "הסתרה">
 <!ENTITY  permBlock             "חסום">
 <!ENTITY  permissionsFor        "הרשאות עבור:">
 <!ENTITY  permPlugins           "הפעלת תוספים חיצוניים">
-
-<!ENTITY  permClearStorage           "מחיקת אחסון">
-<!ENTITY  permClearStorage.accesskey "מ">
 
 <!ENTITY  securityTab           "אבטחה">
 <!ENTITY  securityTab.accesskey "א">
@@ -73,12 +71,16 @@
 <!ENTITY  securityView.identity.owner    "בעלים: ">
 <!ENTITY  securityView.identity.domain   "אתר: ">
 <!ENTITY  securityView.identity.verifier "גורם מאמת: ">
+<!ENTITY  securityView.identity.validity "מועד תפוגה:">
 
 <!ENTITY  securityView.privacy.header                   "פרטיות והיסטוריה">
 <!ENTITY  securityView.privacy.history                  "האם ביקרתי באתר זה בעבר?">
 <!ENTITY  securityView.privacy.cookies                  "האם אתר זה שומר מידע (עוגיות) על המחשב שלי?">
 <!ENTITY  securityView.privacy.viewCookies              "הצגת עוגיות">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "ע">
+<!ENTITY  securityView.privacy.siteData                 "האם אתר זה מאחסן מידע על המחשב שלי?">
+<!ENTITY  securityView.privacy.clearSiteData            "ניקוי עוגיות ונתוני אתרים">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "נ">
 <!ENTITY  securityView.privacy.passwords                "האם שמרתי ססמאות עבור אתר זה?">
 <!ENTITY  securityView.privacy.viewPasswords            "הצגת ססמאות שמורות">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "ס">

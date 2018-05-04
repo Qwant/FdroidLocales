@@ -46,7 +46,7 @@
 <!ENTITY event.dialog.new.event.key2              "I">
 <!ENTITY event.dialog.new.task.key2               "D">
 <!ENTITY event.dialog.new.message.key2            "N">
-<!ENTITY event.dialog.close.key                   "f">
+<!ENTITY event.dialog.close.key                   "W">
 <!ENTITY event.dialog.save.key                    "S">
 <!ENTITY event.dialog.saveandclose.key            "L">
 <!ENTITY event.dialog.print.key                   "P">
@@ -55,7 +55,7 @@
 <!ENTITY event.dialog.cut.key                     "X">
 <!ENTITY event.dialog.copy.key                    "C">
 <!ENTITY event.dialog.paste.key                   "V">
-<!ENTITY event.dialog.select.all.key              "t">
+<!ENTITY event.dialog.select.all.key              "A">
 
 <!-- Menubar -->
 <!ENTITY  event.menu.item.new.label                       "Novo">
@@ -398,6 +398,7 @@
 <!-- Read-Only dialog -->
 <!ENTITY read.only.general.label         "Geral">
 <!ENTITY read.only.title.label           "Título:">
+<!ENTITY read.only.calendar.label        "Calendário:">
 <!ENTITY read.only.event.start.label     "Data inicial:">
 <!ENTITY read.only.task.start.label      "Data inicial:">
 <!ENTITY read.only.event.end.label       "Data final:">
@@ -416,3 +417,17 @@
 <!ENTITY read.only.attendees.label       "Participantes">
 <!ENTITY read.only.description.label     "Descrição">
 <!ENTITY read.only.link.label            "Atalho relacionado">
+
+<!-- Summary dialog -->
+<!ENTITY summary.dialog.saveclose.label         "Salvar e fechar">
+<!ENTITY summary.dialog.saveclose.tooltiptext   "Salvar as alterações e fechar a janela sem alterar o estado de participação e enviar uma resposta">
+<!ENTITY summary.dialog.accept.label            "Aceitar">
+<!ENTITY summary.dialog.accept.tooltiptext      "Aceitar o convite">
+<!ENTITY summary.dialog.tentative.label         "Provisório">
+<!ENTITY summary.dialog.tentative.tooltiptext   "Aceitar o convite provisoriamente">
+<!ENTITY summary.dialog.decline.label           "Recusar">
+<!ENTITY summary.dialog.decline.tooltiptext     "Recusar o convite">
+<!ENTITY summary.dialog.dontsend.label          "Não enviar uma resposta">
+<!ENTITY summary.dialog.dontsend.tooltiptext    "Altere o seu estado de participação sem enviar uma resposta ao organizador e fechar a janela">
+<!ENTITY summary.dialog.send.label              "Enviar a resposta agora">
+<!ENTITY summary.dialog.send.tooltiptext        "Envia uma resposta ao organizador e fecha a janela">

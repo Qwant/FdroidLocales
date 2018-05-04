@@ -11,7 +11,6 @@
 <!ENTITY contactPropertiesMenu.accesskey "i">
 <!ENTITY mailingListPropertiesMenu.label "Eiginleikar póstlista">
 <!ENTITY mailingListPropertiesMenu.accesskey "i">
-<!ENTITY abContextMenuButton.tooltip "Birta samhengisvalmynd nafnabókar">
 <!ENTITY addressbookPicker.label "Nafnaskrá:">
 <!ENTITY addressbookPicker.accesskey "k">
 <!ENTITY searchContacts.label "Leita að tengiliði:">
@@ -33,10 +32,6 @@
 <!ENTITY editContactContext.accesskey "e">
 <!ENTITY editMailingListContext.label "Breyta póstlista">
 <!ENTITY editMailingListContext.accesskey "e">
-<!ENTITY newContactAbContext.label "Nýr tengiliður">
-<!ENTITY newContactAbContext.accesskey "t">
-<!ENTITY newListAbContext.label "Nýr listi">
-<!ENTITY newListAbContext.accesskey "l">
 <!ENTITY toButton.label "Bæta við í Til:">
 <!ENTITY toButton.accesskey "a">
 <!ENTITY ccButton.label "Bæta við í Afrit:">

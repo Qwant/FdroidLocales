@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "이 빌드 설정에서는 데이타 보고가 비활성화 되어 있음">
 
-<!ENTITY enableHealthReport1.label       "&brandShortName;가 자동으로 기술과 상호작용 데이터를 Mozilla로 전송하도록 허용">
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.label       "&brandShortName;가 기술과 상호 작용 정보를 Mozilla에 전송하도록 허용">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "더 알아보기">
 
 <!ENTITY dataCollection.label            "&brandShortName; 데이터 수집과 사용">
@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "&brandShortName;가 Mozilla에 충돌 보고를 보내도록 허용">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "c">
+
+<!ENTITY collectBrowserErrors.label          "&brandShortName;가 Mozilla에 브라우저 오류 보고서(오류 메시지 포함)를 보내도록 허용">
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "자세히 보기">
+
+<!ENTITY sendBackloggedCrashReports.label  "&brandShortName;가 사용자를 대신해서 백로그 충돌 보고서를 보낼 수 있게 함">
+<!ENTITY sendBackloggedCrashReports.accesskey "c">
 <!ENTITY crashReporterLearnMore.label    "더 알아보기">
 
 <!ENTITY networkTab.label                "네트워크">
@@ -51,15 +58,18 @@ available. -->
 
 <!ENTITY httpCache.label                 "캐쉬된 웹 페이지">
 
-<!ENTITY offlineStorage2.label           "오프라인 웹 페이지 및 사용자 데이터">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "사이트 데이터">
 <!ENTITY clearSiteData.label             "모든 데이터 삭제">
 <!ENTITY clearSiteData.accesskey         "l">
 <!ENTITY siteDataSettings.label          "설정…">
 <!ENTITY siteDataSettings.accesskey      "i">
-<!ENTITY siteDataLearnMoreLink.label     "자세히 알아보기">
+<!ENTITY siteData1.label                 "쿠키와 사이트 데이타">
+<!ENTITY clearSiteData1.label            "데이타 삭제…">
+<!ENTITY clearSiteData1.accesskey        "l">
+<!ENTITY siteDataSettings1.label         "데이타 관리…">
+<!ENTITY siteDataSettings1.accesskey     "M">
+<!ENTITY siteDataLearnMoreLink.label     "더 알아보기">
 
 <!-- LOCALIZATION NOTE:
   The entities limitCacheSizeBefore.label and limitCacheSizeAfter.label appear on a single
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB 공간">
 <!ENTITY clearCacheNow.label             "삭제">
 <!ENTITY clearCacheNow.accesskey         "C">
-<!ENTITY clearOfflineAppCacheNow.label   "지금 삭제">
-<!ENTITY clearOfflineAppCacheNow.accesskey "N">
 <!ENTITY overrideSmartCacheSize.label    "자동 캐시 크기 관리">
 <!ENTITY overrideSmartCacheSize.accesskey "O">
 
@@ -110,17 +118,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "검색 엔진 자동 업데이트">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
-
-<!ENTITY offlineStorageNotify.label               "웹사이트가 오프라인 상태일 때 데이터를 저장하려하면 물어봄">
-<!ENTITY offlineStorageNotify.accesskey           "T">
-<!ENTITY offlineStorageNotifyExceptions.label     "예외…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "x">
-
-<!ENTITY offlineAppsList2.label          "오프라인용 데이터를 저장하는 웹 사이트 목록:">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "삭제…">
-<!ENTITY offlineAppsListRemove.accesskey "R">
-<!ENTITY offlineAppRemove.confirm        "오프라인 자료 삭제">
 
 <!ENTITY certificateTab.label            "인증서">
 <!ENTITY certPersonal2.description       "서버가 인증 정보를 요구할 때">

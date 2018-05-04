@@ -10,11 +10,6 @@
 <!ENTITY certmgr.tab.ca                       "అధారిటీలు">
 <!ENTITY certmgr.tab.orphan2                  "ఇతరులు">
 
-<!ENTITY certmgr.mine                         "మిమ్ముల్ని గుర్తించిన ఈ వ్యవస్థల నుండి మీరు ధృవీకరణపత్రాలను కలిగివున్నారు:">
-<!ENTITY certmgr.others                       "వీరు గుర్తించినటువంటి ఆ ఫైల్ పై మీరు ధృవీకరణపత్రాలను కలిగిఉన్నారు:">
-<!ENTITY certmgr.websites2                    "ఈ సేవికలను గుర్తించే ధృవీకరణపత్రాలను మీరు ఫైల్‌నందు కలిగివున్నారు:">
-<!ENTITY certmgr.cas                          "ఈ ధృవీకరణపత్ర అధారిటీలు గుర్తించినటువంటి ఆ ఫైల్ పై మీరు ధృవీకరణపత్రాలను కలిగివున్నారు:">
-<!ENTITY certmgr.orphans                      "వేరే ఏఇతర వర్గములతోను సరిపోని ధృవీకరణపత్రములను మీరు ఫైల్‌నందు కలిగివున్నారు:">
 
 <!ENTITY certmgr.detail.general_tab.title     "సాధారణం">
 <!ENTITY certmgr.detail.general_tab.accesskey "G">
@@ -25,7 +20,7 @@
 <!ENTITY certmgr.subjectinfo.label            "వీరికి జారీఅయింది">
 <!ENTITY certmgr.issuerinfo.label             "జారీచేసినవారు">
 <!ENTITY certmgr.periodofvalidity.label       "చెల్లుబాటు కాలం" >
-<!ENTITY certmgr.fingerprints.label           "వేలుముద్రలు">
+<!ENTITY certmgr.fingerprints.label           "వేలిముద్రలు">
 <!ENTITY certmgr.certdetail.title             "ధృవీకరణపత్రం వివరాలు">
 <!ENTITY certmgr.certdetail.cn                "సామూహికమైన నామము (CN)">
 <!ENTITY certmgr.certdetail.o                 "వ్యవస్థ">
@@ -53,7 +48,7 @@
 
 <!ENTITY certmgr.close.label                  "మూయి">
 <!ENTITY certmgr.close.accesskey              "C">
-<!ENTITY certmgr.view2.label                  "దర్శనం…">
+<!ENTITY certmgr.view2.label                  "చూడండి…">
 <!ENTITY certmgr.view2.accesskey              "V">
 <!ENTITY certmgr.edit3.label                  "నమ్మికను సరికూర్చు…">
 <!ENTITY certmgr.edit3.accesskey              "E">
@@ -65,7 +60,7 @@
 <!ENTITY certmgr.delete_builtin.accesskey     "D">
 <!ENTITY certmgr.backup2.label                "బ్యాక్అప్…">
 <!ENTITY certmgr.backup2.accesskey            "B">
-<!ENTITY certmgr.backupall2.label             "అన్నిటిని బ్యాక్అప్ తీయుము…">
+<!ENTITY certmgr.backupall2.label             "అన్నిటిని బ్యాక్అప్ తీయి…">
 <!ENTITY certmgr.backupall2.accesskey         "k">
 <!ENTITY certmgr.restore2.label               "దిగుమతి…">
 <!ENTITY certmgr.restore2.accesskey           "m">
@@ -84,10 +79,10 @@
 <!ENTITY exceptionMgr.supplementalWarning     "చట్టబద్దమైన బ్యాంకులు, దుకాణాలు, మరియు ఇతర పబ్లిక్ సైటులు ఇదిచేయమని మిమ్ములను అడగవు.">
 <!ENTITY exceptionMgr.certlocation.caption2   "సేవిక">
 <!ENTITY exceptionMgr.certlocation.url        "స్థానము:">
-<!ENTITY exceptionMgr.certlocation.download   "ధృవీకరణపత్రంను పొందుము">
+<!ENTITY exceptionMgr.certlocation.download   "ధృవీకరణపత్రాన్ని తెచ్చుకో">
 <!ENTITY exceptionMgr.certlocation.accesskey  "G">
 <!ENTITY exceptionMgr.certstatus.caption      "ధృవీకరణపత్రం స్థితి">
-<!ENTITY exceptionMgr.certstatus.viewCert     "దర్శనం…">
+<!ENTITY exceptionMgr.certstatus.viewCert     "చూడండి…">
 <!ENTITY exceptionMgr.certstatus.accesskey    "V">
 <!ENTITY exceptionMgr.permanent.label         "ఈ ఆక్షేపణను శాశ్వతంగా నిల్వవుంచు">
 <!ENTITY exceptionMgr.permanent.accesskey     "P">

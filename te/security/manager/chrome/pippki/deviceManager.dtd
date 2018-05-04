@@ -9,7 +9,7 @@
 <!ENTITY devmgr.style2                          "width: 67em; height: 32em;">
 
 <!ENTITY devmgr.devlist.label                   "రక్షణ మాడ్యూళ్ళు మరియు సాధనాలు">
-<!ENTITY devmgr.details.title                   "వివరములు">
+<!ENTITY devmgr.details.title                   "వివరాలు">
 <!ENTITY devmgr.details.title2                  "విలువ">
 
 <!ENTITY devmgr.button.login.label              "లాగ్ ఇన్">
@@ -25,11 +25,11 @@
 <!ENTITY devmgr.button.fips.accesskey           "F">
 
 <!ENTITY loaddevice.info                        "మీరు కలపాలనుకొంటున్న మాడ్యూల్ సమాచారాన్ని ప్రవేశపెట్టండి.">
-<!ENTITY loaddevice.modname                     "మాడ్యూల్ పేరు:">
-<!ENTITY loaddevice.modname.accesskey           "M">
+<!ENTITY loaddevice.modname2                    "మాడ్యూల్ పేరు">
+<!ENTITY loaddevice.modname2.accesskey          "M">
 <!ENTITY loaddevice.modname.default             "కొత్త PKCS#11 మాడ్యూల్">
-<!ENTITY loaddevice.filename                    "మాడ్యూల్ ఫైల్ నామము:">
-<!ENTITY loaddevice.filename.accesskey          "f">
+<!ENTITY loaddevice.filename2                   "మాడ్యూల్ ఫైలుపేరు">
+<!ENTITY loaddevice.filename2.accesskey         "f">
 <!ENTITY loaddevice.browse                      "అన్వేషించు...">
 <!ENTITY loaddevice.browse.accesskey            "B">
 

@@ -25,4 +25,3 @@
 <!ENTITY backgroundImage.label "Bakgrunnsmynd:">
 <!ENTITY backgroundImage.accessKey "m">
 <!ENTITY backgroundImage.tooltip "Nota mynd sem bakgrunn fyrir síðuna">
-<!ENTITY backgroundImage.shortenedDataURI "Minnkað gagna URI (afritun setur fulla slóð á klemmuspjald)">

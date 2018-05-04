@@ -3,7 +3,11 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY addons.windowTitle                   "Tilføjelser">
+
 <!ENTITY search.placeholder                   "Søg i alle tilføjelser">
+
+<!ENTITY search.placeholder2                  "Søg på addons.mozilla.org">
+
 <!ENTITY search.buttonlabel                   "Søg">
 <!-- LOCALIZATION NOTE (search.commandKey):
      The search command key should match findOnCmd.commandkey from browser.dtd -->
@@ -12,7 +16,7 @@
 <!ENTITY loading.label                        "Henter…">
 <!ENTITY listEmpty.installed.label            "Du har ikke nogen tilføjelser af denne type installeret">
 <!ENTITY listEmpty.availableUpdates.label     "Ingen opdateringer fundet">
-<!ENTITY listEmpty.recentUpdates.label        "Du har ikke opdateret nogle tilføjelser for nyligt">
+<!ENTITY listEmpty.recentUpdates.label        "Du har ikke opdateret nogen tilføjelser for nyligt">
 <!ENTITY listEmpty.findUpdates.label          "Søg efter opdateringer">
 <!ENTITY listEmpty.search.label               "Ingen matchende tilføjelser">
 <!ENTITY listEmpty.button.label               "Lær mere om tilføjelser">
@@ -258,7 +262,6 @@
 <!ENTITY pluginDeprecation.description "Mangler du noget? Nogle plugins er ikke længere understøttet af &brandShortName;.">
 <!ENTITY pluginDeprecation.learnMore "Læs mere.">
 
-<!ENTITY legacyWarning.description "Mangler der noget? Nogle udvidelser understøttes ikke længere af &brandShortName;.">
 <!ENTITY legacyWarning.showLegacy "Vis forældede udvidelser">
 <!ENTITY legacyExtensions.title "Forældede udvidelser">
 <!ENTITY legacyExtensions.description "Disse udvidelser møder ikke de nuværende &brandShortName;- standarder, så de er blevet deaktiveret.">

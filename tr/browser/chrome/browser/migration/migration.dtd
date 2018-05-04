@@ -5,8 +5,8 @@
 
 <!ENTITY migrationWizard.title          "İçe aktarma sihirbazı">
 
-<!ENTITY importFrom.label               "Seçenekleri, yer imlerini, geçmiş bilgisini, parolaları ve diğer verileri buradan içe aktar:">
-<!ENTITY importFromUnix.label           "Tercihleri, yer imlerini, geçmiş bilgisini, parolaları ve diğer verileri buradan içe aktar:">
+<!ENTITY importFrom.label               "Seçenekleri, yer imlerini, gezinti geçmişini, parolaları ve diğer verileri şu tarayıcıdan aktar:">
+<!ENTITY importFromUnix.label           "Tercihleri, yer imlerini, gezinti geçmişini, parolaları ve diğer verileri şu tarayıcıdan aktar:">
 <!ENTITY importFromBookmarks.label      "Yer imlerini buradan içe aktar:">
 
 <!ENTITY importFromIE.label             "Microsoft Internet Explorer">
@@ -21,6 +21,10 @@
 <!ENTITY importFromCanary.accesskey     "n">
 <!ENTITY importFromChrome.label         "Chrome">
 <!ENTITY importFromChrome.accesskey     "C">
+<!ENTITY importFromChromeBeta.label     "Chrome Beta">
+<!ENTITY importFromChromeBeta.accesskey "B">
+<!ENTITY importFromChromeDev.label      "Chrome Dev">
+<!ENTITY importFromChromeDev.accesskey  "D">
 <!ENTITY importFromChromium.label       "Chromium">
 <!ENTITY importFromChromium.accesskey   "u">
 <!ENTITY importFromFirefox.label        "Firefox">
@@ -28,14 +32,14 @@
 <!ENTITY importFrom360se.label          "360 Secure Browser">
 <!ENTITY importFrom360se.accesskey      "3">
 
-<!ENTITY noMigrationSources.label       "Yer imlerinin, geçmişin veya parola verisinin kayıtlı olduğu hiçbir program bulunamadı.">
+<!ENTITY noMigrationSources.label       "Yer imlerinin, geçmişin veya parola verilerinin kayıtlı olduğu hiçbir program bulunamadı.">
 
 <!ENTITY importSource.title             "Ayarları ve verileri içe aktarma">
 <!ENTITY importItems.title              "İçe aktarılacak öğeler">
 <!ENTITY importItems.label              "İçe aktarılacak öğeleri seçin:">
 
 <!ENTITY migrating.title                "İçe aktarılıyor…">
-<!ENTITY migrating.label                "Aşağıdaki öğeler başarılı bir şekilde içe aktarıldı…">
+<!ENTITY migrating.label                "Aşağıdaki öğeler şu anda içe aktarılıyor…">
 
 <!ENTITY selectProfile.title            "Profil seçin">
 <!ENTITY selectProfile.label            "Aşağıdaki profiller buradan içe aktarılabilir:">
@@ -43,4 +47,4 @@
 <!ENTITY done.title                     "İçe aktarma tamamlandı">
 <!ENTITY done.label                     "Aşağıdaki öğeler başarılı şekilde içe aktarıldı:">
 
-<!ENTITY closeSourceBrowser.label       "Devam etmeden önce lütfen seçilen tarayıcının kapalı olduğundan emin olun.">
+<!ENTITY closeSourceBrowser.label       "Devam etmeden önce lütfen seçtiğiniz tarayıcının kapalı olduğundan emin olun.">

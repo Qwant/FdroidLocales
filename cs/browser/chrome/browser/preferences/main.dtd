@@ -6,9 +6,9 @@
 
 <!ENTITY startupPage2.label        "Při startu aplikace &brandShortName;">
 <!ENTITY startupPage2.accesskey    "s">
-<!ENTITY startupUserHomePage.label "zobrazit vaši domovskou stránku">
-<!ENTITY startupBlankPage.label    "zobrazit prázdnou stránku">
-<!ENTITY startupPrevSession.label  "zobrazit okna a panely z minula">
+<!ENTITY startupUserHomePage.label "Zobrazit vaši domovskou stránku">
+<!ENTITY startupBlankPage.label    "Zobrazit prázdnou stránku">
+<!ENTITY startupPrevSession.label  "Zobrazit okna a panely z minula">
 
 <!ENTITY homepage2.label           "Domovská stránka">
 <!ENTITY homepage2.accesskey       "m">
@@ -19,6 +19,8 @@
 <!ENTITY chooseBookmark.accesskey  "z">
 <!ENTITY restoreDefault.label      "Obnovit výchozí">
 <!ENTITY restoreDefault.accesskey  "b">
+
+<!ENTITY disableExtension.label    "Zakázat rozšíření">
 
 <!ENTITY downloads.label     "Stahování">
 
@@ -42,5 +44,3 @@
 <!ENTITY useFirefoxSync.label             "Tip: Budou použity oddělené uživatelské profily. Pro sdílení dat mezi nimi můžete použít službu Sync.">
 <!ENTITY getStarted.notloggedin.label     "Přihlášení k &syncBrand.shortName.label;…">
 <!ENTITY getStarted.configured.label      "Otevřít předvolby služby &syncBrand.shortName.label;">
-
-<!ENTITY e10sEnabled.label                "Povolit aplikaci &brandShortName; používat více procesů">

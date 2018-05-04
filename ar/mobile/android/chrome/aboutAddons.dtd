@@ -7,8 +7,9 @@
 
 <!ENTITY addonAction.enable                     "فعّل">
 <!ENTITY addonAction.disable                    "عطّل">
-<!ENTITY addonAction.uninstall                  "أزِل">
-<!ENTITY addonAction.undo                       "تراجَع">
+<!ENTITY addonAction.uninstall                  "أزل">
+<!ENTITY addonAction.undo                       "تراجع">
+<!ENTITY addonAction.update                     "حدّث">
 
 <!ENTITY addonUnsigned.message                  "تعذر على &brandShortName; التحقق من هذه الإضافة.">
 <!ENTITY addonUnsigned.learnMore                "اطّلع على المزيد">

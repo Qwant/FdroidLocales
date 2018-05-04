@@ -5,9 +5,9 @@
 
 <!ENTITY migrationWizard.title          "მონაცემთა გადმოტანა">
 
-<!ENTITY importFrom.label               "გადმოიტანეთ პარამეტრები, სანიშნეები, ისტორია, პაროლები და სხვა მონაცემები ბრაუზერიდან:">
-<!ENTITY importFromUnix.label           "გადმოიტანეთ პარამეტრები, სანიშნეები, ისტორია, პაროლები და სხვა მონაცემები ბრაუზერიდან:">
-<!ENTITY importFromBookmarks.label      "სანიშნეთა გადმოტანა:">
+<!ENTITY importFrom.label               "გადმოიტანეთ პარამეტრები, სანიშნები, ისტორია, პაროლები და სხვა მონაცემები ბრაუზერიდან:">
+<!ENTITY importFromUnix.label           "გადმოიტანეთ პარამეტრები, სანიშნები, ისტორია, პაროლები და სხვა მონაცემები ბრაუზერიდან:">
+<!ENTITY importFromBookmarks.label      "სანიშნების გადმოტანა:">
 
 <!ENTITY importFromIE.label             "Microsoft Internet Explorer">
 <!ENTITY importFromIE.accesskey         "M">
@@ -21,6 +21,10 @@
 <!ENTITY importFromCanary.accesskey     "n">
 <!ENTITY importFromChrome.label         "Chrome">
 <!ENTITY importFromChrome.accesskey     "C">
+<!ENTITY importFromChromeBeta.label     "Chrome Beta">
+<!ENTITY importFromChromeBeta.accesskey "B">
+<!ENTITY importFromChromeDev.label      "Chrome Dev">
+<!ENTITY importFromChromeDev.accesskey  "D">
 <!ENTITY importFromChromium.label       "Chromium">
 <!ENTITY importFromChromium.accesskey   "u">
 <!ENTITY importFromFirefox.label        "Firefox">
@@ -28,7 +32,7 @@
 <!ENTITY importFrom360se.label          "360 Secure Browser">
 <!ENTITY importFrom360se.accesskey      "3">
 
-<!ENTITY noMigrationSources.label       "სანიშნეების, ისტორიის ან პაროლის მონაცემთა შემცველი პროგრამები ვერ მოიძებნა.">
+<!ENTITY noMigrationSources.label       "სანიშნების, ისტორიის ან პაროლის მონაცემთა შემცველი პროგრამები ვერ მოიძებნა.">
 
 <!ENTITY importSource.title             "პარამეტრებისა და მონაცემთა გადმოტანა">
 <!ENTITY importItems.title              "გადმოსატანი მონაცემები">

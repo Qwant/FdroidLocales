@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <!-- rights.locale-direction instead of the usual local.dir entity, so RTL can skip translating page. -->
 <!ENTITY rights.locale-direction "ltr">
-<!ENTITY rights.title "O vašich právech">
+<!ENTITY rights.title "Vaše práva">
 <!ENTITY rights.intro "&brandFullName; je svobodný software s otevřeným zdrojovým kódem, který je vytvářen tisíci dobrovolníky z celého světa. Je zde ale několik věcí, které byste měli vědět:">
 
 <!-- Note on pointa / pointb / pointc form:
@@ -27,11 +27,11 @@
 
 <!-- point 3 text for official branded builds -->
 <!ENTITY rights2.intro-point3a "Způsoby užití osobních informací a zpětné vazby odeslané organizaci &vendorShortName; pomocí aplikace &brandShortName; jsou popsány v ">
-<!ENTITY rights2.intro-point3b "pravidlech ochrany soukromí aplikace &brandShortName;">
+<!ENTITY rights2.intro-point3b "zásadách aplikace &brandShortName; pro ochranu osobních údajů">
 <!ENTITY rights.intro-point3c ".">
 
 <!-- point 3 text for unbranded builds -->
-<!ENTITY rights.intro-point3-unbranded "Zásady ochrany soukromí nejsou pro neznačkové verze produktů k dispozici.">
+<!ENTITY rights.intro-point3-unbranded "Zásady ochrany osobních údajů nejsou pro neznačkové verze produktů k dispozici.">
 
 <!-- point 4 text for official branded builds -->
 <!ENTITY rights2.intro-point4a "Některé funkce aplikace &brandShortName; využívají webových informačních služeb. U těchto služeb není možno garantovat jejich 100&#37; správnost a bezchybnost. Více podrobností, včetně informací jak tyto služby zakázat, lze nalézt v ">

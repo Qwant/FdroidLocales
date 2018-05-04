@@ -38,5 +38,3 @@
 <!ENTITY smtpName.label "Póstþjónn út (SMTP):">
 <!ENTITY smtpName.accesskey "P">
 <!ENTITY smtpDefaultServer.label "Nota sjálfgefin póstþjón">
-<!ENTITY smtpServerEdit.label "Breyta SMTP þjóni…">
-<!ENTITY smtpServerEdit.accesskey "P">

@@ -317,7 +317,7 @@
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goChatCmd.label "Kiirsuhtlus">
 <!ENTITY goChatCmd.accesskey "r">
-<!ENTITY goChatCmd.key "I">
+<!ENTITY goChatCmd2.key "H">
 <!ENTITY prevStarredMsgCmd.label "Tähistatud kiri">
 <!ENTITY prevStarredMsgCmd.accesskey "T">
 <!ENTITY folderMenu.label "Kaust">
@@ -366,6 +366,10 @@
 <!ENTITY editAsNewMsgCmd.key "e">
 <!ENTITY editDraftMsgCmd.label "Muuda mustandit">
 <!ENTITY editDraftMsgCmd.accesskey "u">
+<!ENTITY editTemplateMsgCmd.label "Muuda malli">
+<!ENTITY editTemplateMsgCmd.accesskey "u">
+<!ENTITY newMsgFromTemplateCmd.label "Uus kiri mallist">
+<!ENTITY newMsgFromTemplateCmd.keycode "VK_RETURN"><!-- do not change "VK_RETURN" -->
 <!ENTITY createFilter.label "Loo kirja põhjal filter...">
 <!ENTITY createFilter.accesskey "a">
 <!ENTITY moveMsgToMenu.label "Liigutamine">
@@ -457,6 +461,11 @@
 <!ENTITY addressBookCmd.key "B">
 <!ENTITY addons.label "Lisad">
 <!ENTITY addons.accesskey "d">
+<!ENTITY addonPrefs.label "Lisa sätted">
+<!ENTITY addonPrefs.accesskey "ä">
+<!ENTITY addonPrefsUnix.label "Lisa eelistused">
+<!ENTITY addonPrefsUnix.accesskey "e">
+<!ENTITY addonNoPrefs.label "Lisal puuduvad sätted.">
 <!ENTITY activitymanager.label "Tegevuste haldur">
 <!ENTITY activitymanager.accesskey "v">
 <!ENTITY imAccountsStatus.label "Kiirsuhtlus olek">
@@ -500,8 +509,8 @@
 <!ENTITY devToolboxCmd.label "Developer Toolbox">
 <!ENTITY devToolboxCmd.accesskey "T">
 <!ENTITY devToolboxCmd.commandkey "i">
-<!ENTITY addonDebugCmd.label "Add-on Debugger">
-<!ENTITY addonDebugCmd.accesskey "A">
+<!ENTITY debugAddonsCmd.label "Debugi lisasid">
+<!ENTITY debugAddonsCmd.accesskey "D">
 <!ENTITY tabsDebugCmd.label "Content Frame Debugger">
 <!ENTITY tabsDebugCmd.accesskey "C">
 <!ENTITY errorConsoleCmd.label "Vigade konsool">
@@ -734,12 +743,13 @@
 <!ENTITY attachmentColumn2.tooltip "Sordi manuste järgi">
 
 <!-- Thread Pane Context Menu -->
+<!ENTITY contextNewMsgFromTemplate.label "Uus kiri mallist">
 <!ENTITY contextOpenNewWindow.label "Ava kiri uues aknas">
 <!ENTITY contextOpenNewWindow.accesskey "A">
-<!-- The key potentially conflicts with cutCmd.accessKey which is defined in
-     textcontext.dtd from toolkit. Right now, both menu items can't be visible
-     at the same time, but should someone enable copy/paste of message, this key
-     would probably need to be changed. -->
+<!-- The contextOpenNewTab.accesskey ("T") potentially conflicts with
+     cutCmd.accessKey which is defined in textcontext.dtd from toolkit. Right
+     now, both menu items can't be visible at the same time, but should someone
+     enable copy/paste of message, this key would probably need to be changed. -->
 <!ENTITY contextOpenNewTab.label "Ava kiri uuel kaardil">
 <!ENTITY contextOpenNewTab.accesskey "k">
 <!ENTITY contextOpenConversation.label "Ava kiri vestlusena">
@@ -749,6 +759,8 @@
 <!ENTITY contextEditMsgAsNew.label "Redigeeri uue kirjana">
 <!ENTITY contextEditMsgAsNew.accesskey "R">
 <!ENTITY contextEditDraftMsg.label "Muuda mustandit">
+<!ENTITY contextEditTemplate.label "Muuda malli">
+<!ENTITY contextEditTemplate.accesskey "M">
 <!ENTITY contextArchive.label "Arhiveeri">
 <!ENTITY contextArchive.accesskey "h">
 <!ENTITY contextReplySender.label "Vasta ainult saatjale">
@@ -953,3 +965,4 @@
 <!-- Mac OS X Dock Icon pop-up menu -->
 <!ENTITY dockOptions.label              "Rakenduse ikooni sätted…">
 <!ENTITY writeNewMessageDock.label      "Kirjuta uus kiri">
+<!ENTITY openAddressBookDock.label      "Ava aadressiraamat">

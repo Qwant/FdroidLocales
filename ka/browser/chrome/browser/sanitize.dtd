@@ -21,12 +21,14 @@
 <!-- LOCALIZATION NOTE (sanitizeDialog2.width): width of the Clear Recent History dialog -->
 <!ENTITY sanitizeDialog2.width         "34em">
 
-<!ENTITY clearDataSettings2.label     "&brandShortName; სეანსის დასრულებისას ავტომატურად წაიშალოს ყველა:">
+<!ENTITY clearDataSettings2.label     "&brandShortName;-ის დახურვისას, ავტომატურად წაიშალოს:">
+
+<!ENTITY clearDataSettings3.label     "&brandShortName;-ის დახურვისას, ავტომატურად წაიშალოს">
 
 <!-- XXX rearrange entities to match physical layout when l10n isn't an issue -->
 <!-- LOCALIZATION NOTE (clearTimeDuration.*): "Time range to clear" dropdown.
      See UI mockup at bug 480169 -->
-<!ENTITY clearTimeDuration.label          "გასასუფთავებელი დროის პერიოდი:">
+<!ENTITY clearTimeDuration.label          "გასასუფთავებელი დროის შუალედი:">
 <!ENTITY clearTimeDuration.accesskey      "გ">
 <!ENTITY clearTimeDuration.lastHour       "ბოლო საათი">
 <!ENTITY clearTimeDuration.last2Hours     "ბოლო 2 საათი">
@@ -56,7 +58,7 @@ that require it.  -->
 <!ENTITY itemCache.accesskey               "კ">
 <!ENTITY itemOfflineApps.label             "ვებსაიტის შენახული მონაცემები">
 <!ENTITY itemOfflineApps.accesskey         "მ">
-<!ENTITY itemActiveLogins.label            "მიმდინარე შესვლები">
+<!ENTITY itemActiveLogins.label            "მოქმედი ანგარიშები">
 <!ENTITY itemActiveLogins.accesskey        "შ">
 <!ENTITY itemSitePreferences.label         "საიტის პარამეტრები">
 <!ENTITY itemSitePreferences.accesskey     "პ">

@@ -23,13 +23,15 @@
 <!ENTITY biffStart.label "ახალი წერილის შემოწმება ყოველ ">
 <!ENTITY biffStart.accesskey "y">
 <!ENTITY biffEnd.label "წუთში">
+<!ENTITY useIdleNotifications.label "მყისიერი შეტყობინების დაშვება, წერილის მიღებისას">
+<!ENTITY useIdleNotifications.accesskey "დ">
 <!ENTITY connectionSecurity.label " კავშირის უსაფრთხოება:">
 <!ENTITY connectionSecurity.accesskey "u">
 <!ENTITY connectionSecurityType-0.label "არა">
 <!ENTITY connectionSecurityType-1.label "STARTTLS, თუ მისაწვდომია">
 <!ENTITY connectionSecurityType-2.label "STARTTLS">
 <!ENTITY connectionSecurityType-3.label "SSL/TLS">
-<!ENTITY authMethod.label "უსაფრთხო აუთენტიფიკაციის გამოყენება">
+<!ENTITY authMethod.label "ანგარიშზე შესვლის მეთოდი:">
 <!ENTITY authMethod.accesskey "i">
 <!ENTITY leaveOnServer.label "წერილების დატოვება სერვერზე">
 <!ENTITY leaveOnServer.accesskey "g">
@@ -38,7 +40,7 @@
 <!ENTITY deleteByAgeFromServer.label "არა უმეტეს">
 <!ENTITY deleteByAgeFromServer.accesskey "o">
 <!ENTITY daysEnd.label "დღისა">
-<!ENTITY deleteOnServer2.label "წაშლამდე ან 'შემოსული'-დან გადმოტანამდე">
+<!ENTITY deleteOnServer2.label "წაშლამდე ან მიღებულებიდან გადმოტანამდე">
 <!ENTITY deleteOnServer2.accesskey "d">
 <!ENTITY downloadOnBiff.label "ახალი წერილების ავტომატურად ჩატვირთვა">
 <!ENTITY downloadOnBiff.accesskey "m">
@@ -51,13 +53,13 @@
 <!ENTITY modelDeleteImmediately.label "მყისვე ამოშლა">
 <!ENTITY modelDeleteImmediately.accesskey "d">
 <!-- LOCALIZATION NOTE (expungeOnExit.label) : do not translate two of "&quot;" in below line -->
-<!ENTITY expungeOnExit.label "&quot;შემოსული&quot; დასტის გაწმენდა გასვლისას">
+<!ENTITY expungeOnExit.label "მიღებული წერილების საქაღალდის გასუფთავება (&quot;წაშლა&quot;) გასვლისას">
 <!ENTITY expungeOnExit.accesskey "E">
 <!ENTITY emptyTrashOnExit.label "&quot;ურნის გასუფთავება&quot; გასვლისას">
 <!ENTITY emptyTrashOnExit.accesskey "x">
-<!ENTITY loginAtStartup.label "ახალი წერილის შემოწმება დაწყებისას"> 
+<!ENTITY loginAtStartup.label "ახალი წერილის შემოწმება დაწყებისას">
 <!ENTITY loginAtStartup.accesskey "C">
-<!-- LOCALIZATION NOTE (maxMessagesStart.label) : translate below 2 lines with grammar dependency 
+<!-- LOCALIZATION NOTE (maxMessagesStart.label) : translate below 2 lines with grammar dependency
     maxMessengerStart.label will be followed by maxMessagesEnd.label with the number
 	 of messages between them
 -->
@@ -65,7 +67,7 @@
 <!ENTITY maxMessagesStart.accesskey "m">
 <!-- LOCALIZATION NOTE (maxMessagesEnd.label) : see note for maxMessagesStart.label -->
 <!ENTITY maxMessagesEnd.label "-ზე მეტ წერილს">
-<!ENTITY alwaysAuthenticate.label "ამ სერვერთან დაკავშირებისას აუთენტიფიცირების ყოველთვის მოთხოვნა">
+<!ENTITY alwaysAuthenticate.label "ამ სერვერთან დაკავშირებისას, ანგარიშზე შესვლის მოთხოვნა ყოველთვის">
 <!ENTITY alwaysAuthenticate.accesskey "w">
 <!ENTITY newsrcFilePath.label "ჯგუფების ფაილი:">
 <!ENTITY newsrcPicker.label "ჯგუფების ფაილის არჩევა">
@@ -73,8 +75,8 @@
 <!ENTITY abbreviateOn.label "სრული სახით (მაგალითად, 'netscape.public.mozilla.mail-news')">
 <!ENTITY abbreviateOff.label "შემოკლებულად (მაგალითად, 'n.p.m.mail-news')">
 <!ENTITY advancedButton.label "დეტალები…">
+<!ENTITY serverDefaultCharset2.label "ტექსტის ნაგულისხმევი კოდირება:">
 <!ENTITY advancedButton.accesskey "v">
-<!ENTITY serverDefaultCharset.label "ნაგულისხმები კოდირება:">
 <!ENTITY localPath.label "ლოკალური დასტა:">
 <!ENTITY localFolderPicker.label "ადგილობრივი დასტის არჩევა">
 <!ENTITY browseFolder.label "ნუსხა…">
@@ -84,3 +86,7 @@
 
 <!ENTITY accountTitle.label "ანგარიშის პარამეტრები">
 <!ENTITY accountSettingsDesc.label "ეს სპეციალური ანგარიშია.  იგი პიროვნულად არავის ეკუთვნის.">
+<!ENTITY storeType.label "წერილის შენახვის სახე:">
+<!ENTITY storeType.accesskey "ხ">
+<!ENTITY mboxStore2.label "თითოეული საქაღალდე ფაილში (mbox)">
+<!ENTITY maildirStore.label "თითოეული წერილი ფაილში (maildir)">

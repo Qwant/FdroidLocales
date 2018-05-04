@@ -13,7 +13,7 @@
 <!ENTITY useOnScreenKeyboard.label       "అవసరమైనప్పుడు స్పర్శా కీ బోర్డు చూపించు">
 <!ENTITY useOnScreenKeyboard.accesskey   "k">
 
-<!ENTITY browsing.label                  "బ్రౌజింగ్">
+<!ENTITY browsing.label                  "విహారణ">
 
 <!ENTITY useAutoScroll.label             "స్వయంచాలక స్క్రోలింగ్ వాడు">
 <!ENTITY useAutoScroll.accesskey         "a">
@@ -29,7 +29,7 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "ఈ బిల్డ్ కాన్ఫిగరేషన్ కోసం డేటా రిపోర్టింగ్ నిలిపివేయబడింది">
 
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "ఇంకా తెలుసుకోండి">
 
 <!ENTITY dataCollection.label            "&brandShortName; డేటా సేకరణ మరియు ఉపయోగం">
@@ -37,19 +37,22 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "&brandShortName; ను అనుమతించు Mozillaకు క్రాష్ నివేదికలను పంపటానికి">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "c">
+
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "ఇంకా తెలుసుకోండి">
+
+<!ENTITY sendBackloggedCrashReports.accesskey "c">
 <!ENTITY crashReporterLearnMore.label    "ఇంకా తెలుసుకోండి">
 
 <!ENTITY networkTab.label                "నెట్‌వర్క్">
 
-<!ENTITY networkProxy.label              "నెట్‌వర్క్ ప్రోక్సీ">
+<!ENTITY networkProxy.label              "నెట్‌వర్క్ ప్రాక్సీ">
 
 <!ENTITY connectionDesc.label            "&brandShortName; ఎలా అంతర్జాలముకు అనుసంధానించబడుతోందో ఆకృతీకరించు">
 <!ENTITY connectionSettings.label        "అమరికలు…">
 <!ENTITY connectionSettings.accesskey    "e">
 
-<!ENTITY httpCache.label                 "క్యాచీ చేసిన వెబ్ విషయం">
-
-<!ENTITY offlineStorage2.label           "ఆఫ్‌లైన్ వెబ్ విషయం మరియు వాడుకరి దత్తాంశం">
+<!ENTITY httpCache.label                 "క్యాషేచేసిన వెబ్ విషయం">
 
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "సైటు డేటా">
@@ -57,6 +60,11 @@ available. -->
 <!ENTITY clearSiteData.accesskey         "l">
 <!ENTITY siteDataSettings.label          "అమరికలు…">
 <!ENTITY siteDataSettings.accesskey      "i">
+<!ENTITY siteData1.label                 "కుకీలు మరియు సైటు డేటా">
+<!ENTITY clearSiteData1.label            "డేటాను తుడిచివేయి…">
+<!ENTITY clearSiteData1.accesskey        "l">
+<!ENTITY siteDataSettings1.label         "డేటాని నిర్వహించండి…">
+<!ENTITY siteDataSettings1.accesskey     "M">
 <!ENTITY siteDataLearnMoreLink.label     "మరింత తెలుసుకోండి">
 
 <!-- LOCALIZATION NOTE:
@@ -70,9 +78,7 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB జాగాకు">
 <!ENTITY clearCacheNow.label             "ఇప్పుడు శుభ్రపరచు">
 <!ENTITY clearCacheNow.accesskey         "C">
-<!ENTITY clearOfflineAppCacheNow.label   "ఇప్పుడు శుభ్రంచేయి">
-<!ENTITY clearOfflineAppCacheNow.accesskey "N">
-<!ENTITY overrideSmartCacheSize.label    "స్వయంచాలక క్యాచీ నిర్వహణను వోవర్‌రైడ్ చేయి">
+<!ENTITY overrideSmartCacheSize.label    "స్వయంచాలక క్యాషె నిర్వహణను వోవర్‌రైడ్ చేయి">
 <!ENTITY overrideSmartCacheSize.accesskey "O">
 
 <!ENTITY updateTab.label                 "నవీకరణ">
@@ -101,24 +107,14 @@ available. -->
 <!ENTITY updateHistory2.label            "తాజాకరణ చరిత్రను చూపించు…">
 <!ENTITY updateHistory2.accesskey        "p">
 
-<!ENTITY useService.label                "నవీకరణలను సంస్థాపించుటకు బ్యాక్‌గ్రౌండ్ సేవను ఉపయోగించు">
+<!ENTITY useService.label                "తాజాకరణలను స్థాపించడానికి బ్యాక్‌గ్రౌండ్ సేవను వాడు">
 <!ENTITY useService.accesskey            "b">
 
 <!ENTITY enableSearchUpdate2.label       "సెర్చింజన్లను స్వయంచాలకంగా తాజాకరించు">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
 
-<!ENTITY offlineStorageNotify.label               "వెబ్‌ సైటు ఆఫ్‌లైన్ ఉపయోగం కొరకు డాటాను నిల్వచేయుటకు అడిగినప్పుడు మీకు తెలియజేయును">
-<!ENTITY offlineStorageNotify.accesskey           "T">
-<!ENTITY offlineStorageNotifyExceptions.label     "మినహాయింపులు…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "x">
-
-<!ENTITY offlineAppsList2.label          "కింది వెబ్‌ సైట్ల దత్తాంశము దాచి ఆఫ్‌లైన్ వాడుక కొరకు ఉపయోగించుటకు అనుమతి కలిగి ఉన్నది:">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "తీసివేయి…">
-<!ENTITY offlineAppsListRemove.accesskey "R">
-<!ENTITY offlineAppRemove.confirm        "ఆఫ్‌లైన్ డాటాను తీసివేయి">
-
 <!ENTITY certificateTab.label            "ధృవీకరణ పత్రాలు">
+<!ENTITY certPersonal2.description       "సెర్వెర్ మీ వ్యక్తగిత ధృవీకరణపత్రం అభ్యర్ధించినప్పుడు">
 <!ENTITY selectCerts.auto                "స్వయంచాలకంగా ఒక దానిని ఎంపికచేయి">
 <!ENTITY selectCerts.auto.accesskey      "S">
 <!ENTITY selectCerts.ask                 "ప్రతిసారీ మిమ్మల్ని అడుగును">
@@ -131,10 +127,17 @@ available. -->
 <!ENTITY viewSecurityDevices2.accesskey  "D">
 
 <!ENTITY performance.label               "పనితనం">
+<!ENTITY useRecommendedPerformanceSettings2.label
+                                         "సిఫారసు చేయబడిన పనితనపు అమరికలను వాడండి">
+<!ENTITY useRecommendedPerformanceSettings2.description
+                                         "ఈ సెట్టింగులు మీ కంప్యూటర్ హార్డ్వేర్ మరియు ఆపరేటింగ్ సిస్టంకు అనుగుణంగా ఉంటాయి.">
 <!ENTITY useRecommendedPerformanceSettings2.accesskey
                                          "U">
 <!ENTITY performanceSettingsLearnMore.label
                                          "ఇంకా తెలుసుకోండి">
+<!ENTITY limitContentProcessOption.label "కంటెంట్ ప్రాసెస్ పరిమితి">
+<!ENTITY limitContentProcessOption.description
+                                         "బహుళ ట్యాబ్లను ఉపయోగిస్తున్నప్పుడు అదనపు కంటెంట్ ప్రాసెస్లు పనితీరును మెరుగుపరుస్తాయి, అయితే మరింత మెమరీని కూడా ఉపయోగిస్తాయి.">
 <!ENTITY limitContentProcessOption.accesskey   "L">
 <!ENTITY allowHWAccel.label              "అందుబాటులో ఉన్నప్పుడు హార్డువేర్ యాక్సెలరేషన్ ఉపయోగించు">
 <!ENTITY allowHWAccel.accesskey          "r">

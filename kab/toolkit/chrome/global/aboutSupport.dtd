@@ -5,7 +5,7 @@
 <!ENTITY aboutSupport.pageTitle "Talɣut n usellek">
 
 <!-- LOCALIZATION NOTE (aboutSupport.pageSubtitle): don't change the 'supportLink' id. -->
-<!ENTITY aboutSupport.pageSubtitle "  Asebter-agi igber talɣut tatiknikant ig zemren attwulem ticki tettaɛraḍeḍ ad tefruḍ ugur. Ma yella tettnadiḍ tiririt ɣef isteqsiyen n &brandShortName;,senqed <a id='supportLink'> asmel nneɣ Web</a>.">
+<!ENTITY aboutSupport.pageSubtitle "  Asebter-agi igber talɣut tatiknikant i izemren ahat ticki tettaɛraḍeḍ ad tefruḍ ugur. Ma yella tettnadiḍ tiririt ɣef isteqsiyen n &brandShortName;,senqed <a id='supportLink'> asmel-nneɣ Web</a>.">
 
 <!ENTITY aboutSupport.crashes.title "Ineqqisen n uɣelluy">
 <!-- LOCALIZATION NOTE (aboutSupport.crashes.id):
@@ -20,6 +20,13 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionEnabled "Yettwarmed">
 <!ENTITY aboutSupport.extensionVersion "Lqem">
 <!ENTITY aboutSupport.extensionId "Asulay">
+
+<!ENTITY aboutSupport.securitySoftwareTitle "Aseγzan n taγlist">
+<!ENTITY aboutSupport.securitySoftwareType "Tawsit">
+<!ENTITY aboutSupport.securitySoftwareName "Isem">
+<!ENTITY aboutSupport.securitySoftwareAntivirus "Amgal ivirusen">
+<!ENTITY aboutSupport.securitySoftwareAntiSpyware "Amgal aneḍfer">
+<!ENTITY aboutSupport.securitySoftwareFirewall "Aɣrab n tmes">
 
 <!ENTITY aboutSupport.featuresTitle "&brandShortName; Timahilin">
 <!ENTITY aboutSupport.featureName "Isem">
@@ -68,6 +75,8 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsProcessCount "Ikalan n ugbur web">
 
+<!ENTITY aboutSupport.enterprisePolicies "Tasertit n tkebbanit">
+
 <!ENTITY aboutSupport.appBasicsKeyGoogle "Tasarut Google">
 <!ENTITY aboutSupport.appBasicsKeyMozilla "Tasarutt n umeẓlu n wadi Mozilla">
 
@@ -107,6 +116,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "Irmed">
 <!ENTITY aboutSupport.a11yForceDisabled "Sewḥel tuffart">
 <!ENTITY aboutSupport.a11yHandlerUsed "Accessible Handler ittwaseqdec">
+<!ENTITY aboutSupport.a11yInstantiator "Amaraw n tnekcumt">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Ileqman n temkarḍiyin">
 
@@ -150,3 +160,13 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceChannels "Ibuda">
 <!ENTITY aboutSupport.mediaDeviceRate "Afmiḍi">
 <!ENTITY aboutSupport.mediaDeviceLatency "Akud n ugani">
+
+<!ENTITY aboutSupport.intlTitle "Asegreɣlen &amp; Asideg">
+<!ENTITY aboutSupport.intlAppTitle "Iɣewwaṛen n usnas">
+<!ENTITY aboutSupport.intlLocalesRequested "Tutlayin ittwasutren">
+<!ENTITY aboutSupport.intlLocalesAvailable "Tutlayin yellan">
+<!ENTITY aboutSupport.intlLocalesSupported "Tutlayin n usnas">
+<!ENTITY aboutSupport.intlLocalesDefault "Tutlayt tamezwert">
+<!ENTITY aboutSupport.intlOSTitle "Anagraw n wammud">
+<!ENTITY aboutSupport.intlOSPrefsSystemLocales "Tutlayin n unagraw">
+<!ENTITY aboutSupport.intlRegionalPrefs "Ismenyifen n temnaḍt">

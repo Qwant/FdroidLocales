@@ -3,9 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "مرحبا">
-
-<!ENTITY firstrun_urlbar_message "مرحبًا بك مع &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext "ابحث عمَّ تريد بسرعة مستخدمًا اقتراحات البحث المفيدة.">
+<!ENTITY firstrun_urlbar_message2 "شكرا على اختيارك &brandShortName;">
+<!ENTITY firstrun_urlbar_subtext2 "متصفّح هواتف حديث من موزيلا، المؤسسة غير الربحية الملتزمة تجاه وِب حر ومفتوح.">
+<!ENTITY firstrun_panel_title_privacy "الخصوصية">
+<!ENTITY firstrun_privacy_message "تصفح و لا أحد يراقبك">
+<!ENTITY firstrun_privacy_subtext "التّصفّح الخاص مع الحماية من التّعقّب يحجب المتعقبات وأنت تتصفّح ولا يتذكر التأريخ عندما تنتهي من التصفح.">
+<!ENTITY firstrun_panel_title_customize "خصّص">
+<!ENTITY firstrun_customize_message "اجعل &brandShortName; ينتمي إليك.">
+<!ENTITY firstrun_customize_subtext "خصِّص &brandShortName; مستخدمًا الإضافات. احجب الإعلانات، أو أضف مزايا أو اختر سمة جديدة تعكس شخصيتك.">
 <!ENTITY firstrun_bookmarks_title "التأريخ">
 <!ENTITY firstrun_bookmarks_message "مفضلاتك، في الأمام و الوسط">
 <!ENTITY firstrun_bookmarks_subtext "اجلب النتائج من العلامات و التّأريخ عندما تبحث.">
@@ -13,8 +18,8 @@
 <!ENTITY firstrun_data_message "بيانات أقل، توفير أكبر">
 <!ENTITY firstrun_data_subtext2 "عطّل الصور لتوفير البيانات في كل موقع تزوره.">
 <!ENTITY firstrun_sync_title "تزامُن">
-<!ENTITY firstrun_sync_message "&brandShortName;، معك دائما">
-<!ENTITY firstrun_sync_subtext "زامن ألسنتك، و كلمات السر و غيرهم المزيد أينما استخدمتها.">
+<!ENTITY firstrun_sync_message2 "أكمل من حيث انتهيت.">
+<!ENTITY firstrun_sync_subtext2 "استعمل «تزامن» لتجد العلامات، وكلمات السر وغيرها من الأمور التي تحفظها في &brandShortName; على أجهزتك.">
 <!ENTITY firstrun_signin_message "اتصل لتبدأ">
 <!ENTITY firstrun_signin_button "لِج إلى «المزامنة»">
 <!ENTITY  onboard_start_button_browser "ابدأ التصفح">
@@ -26,7 +31,7 @@
 <!ENTITY firstrun_tabqueue_message_off "فعّل طابور الألسنة">
 <!ENTITY firstrun_tabqueue_subtext_off "احفظ الروابط لقراءتها لاحقا في &brandShortName; عند الضغط عليها في التطبيقات الأخرى.">
 
-<!ENTITY firstrun_tabqueue_message_on "نجاح!">
+<!ENTITY firstrun_tabqueue_message_on "تم">
 <!ENTITY firstrun_tabqueue_subtext_on "يمكنك متى ما أحببت تعطيل هذا في &settings; تحت &pref_category_general;.">
 
 <!ENTITY firstrun_readerview_title "المقالات">
@@ -60,7 +65,7 @@
 <!ENTITY  crash_email "بريدك الإلكتروني">
 <!ENTITY  crash_closing_alert "أأخرج بدون إرسال بلاغ الانهيار؟">
 <!ENTITY  sending_crash_report "يرسل بلاغ الانهيار\u2026">
-<!ENTITY  crash_close_label "أغلِق">
+<!ENTITY  crash_close_label "أغلق">
 <!ENTITY  crash_restart_label "أعِد تشغيل &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "ابحث أو أدخل عنوانا">
@@ -87,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "&formatD; من العناصر">
 <!ENTITY bookmark_folder_one_item "عنصر واحد">
+<!ENTITY bookmark_folder_updated "حُدّث المجلد">
 <!ENTITY bookmark_parent_folder "المجلد الأب">
 <!ENTITY bookmark_add_folder "أضِف مجلدا جديدا">
 
@@ -201,8 +207,6 @@
 <!ENTITY pref_category_advanced_summary3 "استعادة الألسنة، و حافظ البيانات، و أدوات المطوّرين">
 <!ENTITY pref_category_notifications "التنبيهات">
 <!ENTITY pref_category_notifications_summary "المزايا الجديدة، و تحديثات الموقع">
-<!ENTITY pref_content_notifications "تحديثات الموقع">
-<!ENTITY pref_content_notifications_summary2 "اكتشف محتوى جديد من المواقع المدعومة">
 <!ENTITY pref_developer_remotedebugging_usb "التنقيح عن بعد عبر USB">
 <!ENTITY pref_developer_remotedebugging_wifi "التنقيح عن بعد عبر واي-فاي">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "يتطلّب التنقيح عبر واي-فاي تنصيب برنامج لقراءة رموز QR على جهازك.">
@@ -268,7 +272,6 @@
 <!ENTITY pref_show_web_fonts_summary2 "نزّل الخطوط عن بعد عند تحميل الصفحة">
 
 <!ENTITY pref_tracking_protection_title2 "الحماية من التعقّب">
-<!ENTITY pref_tracking_protection_summary3 "مفعّل في التصفح الخاص">
 <!ENTITY pref_donottrack_title "لا تتعقبني">
 <!ENTITY pref_donottrack_summary "سيُخبر &brandShortName; المواقع أنك لا تريدها أن تتعقبك">
 
@@ -279,6 +282,13 @@
 <!ENTITY pref_whats_new_notification "ما الجديد في &brandShortName;">
 <!ENTITY pref_whats_new_notification_summary "تعرف على الميزات الجديدة بعد التحديث">
 
+<!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification"-->
+<!ENTITY pref_feature_tips_notification "فوائد عن المنتجات والمزايا">
+<!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification_summary"-->
+<!ENTITY pref_feature_tips_notification_summary "اطّلع على المزيد حول &brandShortName; ومنتجات &vendorShortName; الأخرى">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "المزايا التجريبية">
@@ -286,8 +296,9 @@
 <!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "ألسنة مخصصة">
-<!ENTITY pref_custom_tabs_summary3 "اسمح للتطبيقات بفتح المواقع مستخدمة نسخة مخصصة من &brandShortName;">
+<!ENTITY pref_custom_tabs2 "الألسنة المخصصة">
+<!ENTITY pref_custom_tabs_summary4 "تسمح للتطبيقات بفتح محتوى الوِب في لسان مخصص يُحمَّل بسرعة.">
+
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "افتح في &formatS;">
@@ -298,14 +309,10 @@
 <!ENTITY pref_pwa "تطبيقات الوِب التدريجية">
 <!ENTITY pref_pwa_summary "اسمح بإضافة التطبيقات إلى شاشة البداية">
 
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-<!ENTITY pref_activity_stream "تيار النشاطات">
-<!ENTITY pref_activity_stream_summary "تلقيمات غنية من تأريخ التصفح و إعادة تصور لصفحة البداية تجعل العثور على ما تبحث عنه في &brandShortName; أسهل من أي وقت كان.">
-
 <!ENTITY tracking_protection_prompt_title "الآن مع حماية من التعقّب">
 <!ENTITY tracking_protection_prompt_text "يحجب عناصر التعقب لئلا تقلق بشأنها.">
 <!ENTITY tracking_protection_prompt_tip_text "طالع إعدادات الخصوصية للاطلاع على المزيد">
-<!ENTITY tracking_protection_prompt_action_button "فهمت!">
+<!ENTITY tracking_protection_prompt_action_button "فهمت">
 
 <!ENTITY tab_queue_toast_message3 "حُفظ اللسان في &brandShortName;">
 <!ENTITY tab_queue_toast_action "افتح الآن">
@@ -333,23 +340,6 @@
 <!-- Localization note (tab_queue_notification_settings): This notification text is shown if a tab
      has been queued but we are missing the system permission to show an overlay. -->
 <!ENTITY tab_queue_notification_settings "لإمكانية \&quot;فتح عدة روابط\&quot; تحتاج لإعطاء &brandShortName; صلاحية \&apos;الرسم فوق التطبيقات الأخرى\&apos;">
-
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY content_notification_title_plural "حُدثت &formatD; من المواقع">
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "الإعدادات">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "اقرأ الآن">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
-<!ENTITY content_notification_updated_on "حُدّثت في &formatS;">
 
 <!ENTITY pref_char_encoding "ترميز المحارف">
 <!ENTITY pref_char_encoding_on "أظهر القائمة">
@@ -380,6 +370,7 @@
 <!ENTITY pref_qrcode_enabled_summary2 "اسمح بماسح باركود في شريط المسار">
 
 <!ENTITY pref_use_master_password "استخدم كلمة سر رئيسة">
+<!ENTITY pref_sync_default_title "حساب فَيَرفُكس">
 <!ENTITY pref_sync2 "لِج">
 <!ENTITY pref_sync_summary2 "زامن الألسنة، و العلامات، و جلسات الولوج و التأريخ">
 <!ENTITY pref_search_suggestions "اعرض اقتراحات البحث">
@@ -409,6 +400,9 @@
 <!ENTITY pref_dialog_set_default "اجعله المبدئي">
 <!ENTITY pref_dialog_default "المبدئي">
 <!ENTITY pref_dialog_remove "أزِل">
+<!ENTITY pref_dialog_activitystream_header_content "المحتوى الإضافي">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "العلامات الحديثة">
+<!ENTITY pref_dialog_activitystream_visited "المُزارة">
 
 <!ENTITY pref_search_last_toast "لا تستطيع إزالة أو تعطيل آخر محرك بحث.">
 
@@ -435,7 +429,6 @@
      crashReporterDesc.label). -->
 <!ENTITY datareporting_fhr_title "تقرير حالة &brandShortName;">
 <!ENTITY datareporting_fhr_summary2 "يشارك بيانات مع &vendorShortName; عن حالة المتصفح و يساعدك في فهم أدائه">
-<!ENTITY datareporting_abouthr_title "اعرض تقرير الحالة">
 <!ENTITY datareporting_telemetry_title "تليمتري">
 <!ENTITY datareporting_telemetry_summary "شارك بيانات المتصفح فيما يتعلق بالأداء و الاستخدام و العتاد و التخصيصات مع &vendorShortName; لمساعدتنا في جعل &brandShortName; أفضل">
 <!ENTITY datareporting_crashreporter_summary "يُرسل &brandShortName; بلاغات الانهيار إلى &vendorShortName; للمساعدة في تحسين أداء متصفحك و استقراره">
@@ -462,11 +455,12 @@
 <!ENTITY downloads "التنزيلات">
 <!ENTITY char_encoding "ترميز المحارف">
 
-<!ENTITY share "شارك">
+<!ENTITY share "شارِك">
 <!ENTITY share_title "شارك عبر">
 <!ENTITY share_image_failed "تعّذرت مشاركة هذا الموقع">
 <!ENTITY save_as_pdf "احفظ ك‍ PDF">
 <!ENTITY print "اطبع">
+<!ENTITY view_page_source "اعرض مصدر الصفحة">
 <!ENTITY find_in_page "ابحث في الصفحة">
 <!ENTITY desktop_mode "اطلب موقع سطح مكتب">
 <!ENTITY page "الصفحة">
@@ -498,19 +492,29 @@
 <!ENTITY contextmenu_open_new_tab "افتح في لسان جديد">
 <!ENTITY contextmenu_open_private_tab "افتح في لسان خاص">
 <!ENTITY contextmenu_remove "أزِل">
-<!ENTITY contextmenu_add_to_launcher "أضِف إلى شاشة البداية">
+<!ENTITY contextmenu_add_page_shortcut "أضِف اختصارا للصفحة">
 <!ENTITY contextmenu_set_as_homepage "اجعلها صفحة البداية">
 <!ENTITY contextmenu_share "شارِك">
 <!ENTITY contextmenu_pasteandgo "ألصق و اذهب">
 <!ENTITY contextmenu_paste "لصق">
 <!ENTITY contextmenu_copyurl "انسخ العنوان">
-<!ENTITY contextmenu_edit_bookmark "حرِّر">
+<!ENTITY contextmenu_edit_bookmark "حرّر">
 <!ENTITY contextmenu_subscribe "اشترك بهذه الصفحة">
 <!ENTITY contextmenu_site_settings "حرر إعدادات الموقع">
-<!ENTITY contextmenu_top_sites_edit "حرِّر">
+<!ENTITY contextmenu_top_sites_edit "حرّر">
 <!ENTITY contextmenu_top_sites_pin "ثبّت الموقع">
 <!ENTITY contextmenu_top_sites_unpin "افصل الموقع">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "ثبّت في المواقع الأكثر زيارة">
+<!ENTITY contextmenu_unpin_from_top_sites "أزِل التثبيت من المواقع الأكثر زيارة">
 <!ENTITY contextmenu_add_search_engine "أضِف محرك بحث">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "ثُبّتت الصفحة في المواقع الأكثر زيارة">
+<!ENTITY unpinned_page_from_top_sites "أُزيل تثبيت الصفحة من المواقع الأكثر زيارة">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -519,7 +523,7 @@
 <!ENTITY doorhanger_login_edit_title "حرّر الولوج">
 <!ENTITY doorhanger_login_edit_username_hint "اسم المستخدم">
 <!ENTITY doorhanger_login_edit_password_hint "كلمة السر">
-<!ENTITY doorhanger_login_edit_toggle "أظهِر كلمة السر">
+<!ENTITY doorhanger_login_edit_toggle "أظهر كلمة السر">
 <!ENTITY doorhanger_login_select_message "أأنسخ كلمة السر من &formatS;؟">
 <!ENTITY doorhanger_login_select_toast_copy "نُسخت كلمة السر إلى الحافظة">
 <!ENTITY doorhanger_login_select_action_text "اختر ولوجا آخر">
@@ -542,6 +546,7 @@
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "أزِيلت الصفحة">
+<!ENTITY folder_removed "أُزيل المجلد">
 
 <!ENTITY bookmark_edit_title "حرّر العلامة">
 <!ENTITY bookmark_edit_folder_title "حرّر المجلد">
@@ -811,6 +816,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      replaced by the Android OS version (e.g., 14)-->
 <!ENTITY unsupported_sdk_version "للأسف لا يعمل &brandShortName; على هذا الجهاز (&formatS2;، &formatS1;). يرجى تثبيت الإصدار الصحيح.">
 
+<!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
+<!ENTITY corrupt_apk "تعذّر فتح &brandShortName;. رجاء أعِد تنصيبه ثم جرب مرة أخرى.">
+
 <!ENTITY eol_notification_title2 "لن يُحدث &brandShortName; بعد الآن">
 <!ENTITY eol_notification_summary "انقر لتطلع على المزيد">
 
@@ -819,7 +827,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY whatsnew_notification_title "&brandShortName; مُحدَّث">
 <!ENTITY whatsnew_notification_summary "اعرف ما الجديد في هذا الإصدار">
 
-<!ENTITY promotion_add_to_homescreen "أضِف إلى شاشة البداية">
+<!ENTITY promotion_add_page_shortcut "أضِف اختصارا للصفحة">
 
 <!ENTITY helper_first_offline_bookmark_title "اقرأ دون اتصال">
 <!ENTITY helper_first_offline_bookmark_message "اعثر على عناصر منظور القارئ في العلامات حتى بدون اتّصال.">
@@ -830,7 +838,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_button "أضِف إلى العلامات">
 
 <!ENTITY activity_stream_topsites "المواقع الأكثر زيارة">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "يستحسنه &brandPocket;">
 <!ENTITY activity_stream_highlights "أهم الأحداث">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "أكثر">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
@@ -838,13 +851,30 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "مُزار">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "مُتداول">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "ابدأ التصفح وسنعرض أمامك بعض المقالات والفيديوهات والمواقع الأخرى التي زرتها حديثا أو أضفتها إلى العلامات هنا.">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "أزل">
+<!ENTITY activity_stream_remove "أزِل">
 <!ENTITY activity_stream_delete_history "احذف من التأريخ">
 
-<!ENTITY activity_stream_welcome_title "مرحبًا مع أهم الأحداث">
-<!ENTITY activity_stream_welcome_content1 "يسلط &brandShortName; الآن الضوء على أهم الأحداث التي تمر عليها أثناء تصفحك للوب، لتستطيع العودة إلى المقالات أو العلامات أو الصفحات المهمة الأخرى التي مررت عليها.">
-<!ENTITY fullscreen_warning "دخل وضع ملء الشاشة">
+<!ENTITY private_tab_panel_title "التصفح الخاص مع الحماية من التعقب">
+<!ENTITY private_tab_panel_description "يحجب &brandShortName; أجزاء الصفحة التي قد تتعقّب نشاط التصفح.">
+<!ENTITY private_tab_panel_description2 "لن نتذكّر أيّا من التأريخ، إلا أن الملفات المنزّلة و العلامات الجديدة ستبقى تُحفظ على الجهاز.">
+<!ENTITY private_tab_learn_more "هل تريد معرفة المزيد؟">
+
+<!ENTITY fullscreen_warning "دخلتَ وضع ملء الشاشة">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_confirm): The plus sign here is part of UI design -->
+<!ENTITY pwa_add_to_launcher_confirm "+ أضِف إلى شاشة البداية">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_badge2): Used as label in the page actions dropdown list,
+displayed when there are more than 3 actions available for a page.
+See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
+<!ENTITY pwa_add_to_launcher_badge2 "أضِف إلى شاشة البداية">
+<!ENTITY pwa_continue_to_website "تابِع نحو الموقع">
+<!ENTITY pwa_onboarding_sumo "يمكنك إضافة هذا الموقع إلى شاشة البداية لتصل إليه بسرعة وتتصفّحه كأي تطبيق آخر.">

@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Η αναφορά δεδομένων είναι ανενεργή για αυτή την έκδοση">
 
-<!ENTITY enableHealthReport1.label       "Να επιτρέπεται στο &brandShortName; η αυτόματη αποστολή τεχνικών και διαδραστικών δεδομένων στη Mozilla">
-<!ENTITY enableHealthReport1.accesskey   "δ">
+<!ENTITY enableHealthReport2.label       "Να επιτρέπεται στο &brandShortName; η αποστολή τεχνικών και διαδραστικών δεδομένων στη Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "δ">
 <!ENTITY healthReportLearnMore.label     "Μάθετε περισσότερα">
 
 <!ENTITY dataCollection.label            "Συλλογή και χρήση δεδομένων &brandShortName;">
@@ -39,6 +39,8 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Να επιτρέπεται στο &brandShortName; η αποστολή αναφορών κατάρρευσης στη Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "κ">
+
+
 <!ENTITY crashReporterLearnMore.label    "Μάθετε περισσότερα">
 
 <!ENTITY networkTab.label                "Δίκτυο">
@@ -51,14 +53,14 @@ available. -->
 
 <!ENTITY httpCache.label                 "Προσωρινό περιεχόμενο ιστού">
 
-<!ENTITY offlineStorage2.label           "Περιεχόμενο εργασίας χωρίς σύνδεση και δεδομένα χρήστη">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Δεδομένα ιστοσελίδας">
 <!ENTITY clearSiteData.label             "Εκκαθάριση όλων των δεδομένων">
 <!ENTITY clearSiteData.accesskey         "κ">
 <!ENTITY siteDataSettings.label          "Ρυθμίσεις…">
 <!ENTITY siteDataSettings.accesskey      "ι">
+<!ENTITY siteDataSettings1.label         "Διαχείριση δεδομένων…">
+<!ENTITY siteDataSettings1.accesskey     "Δ">
 <!ENTITY siteDataLearnMoreLink.label     "Μάθετε περισσότερα">
 
 <!-- LOCALIZATION NOTE:
@@ -72,8 +74,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB χώρου">
 <!ENTITY clearCacheNow.label             "Εκκαθάριση τώρα">
 <!ENTITY clearCacheNow.accesskey         "Ε">
-<!ENTITY clearOfflineAppCacheNow.label   "Εκκαθάριση τώρα">
-<!ENTITY clearOfflineAppCacheNow.accesskey "Τ">
 <!ENTITY overrideSmartCacheSize.label    "Παράκαμψη αυτόματης διαχείρισης cache">
 <!ENTITY overrideSmartCacheSize.accesskey "Π">
 
@@ -111,26 +111,15 @@ available. -->
 <!ENTITY enableSearchUpdate2.label       "Αυτόματη ενημέρωση μηχανών αναζήτησης">
 <!ENTITY enableSearchUpdate2.accesskey   "μ">
 
-<!ENTITY offlineStorageNotify.label               "Ειδοποίηση όταν μια ιστοσελίδα ζητά να αποθηκεύσει δεδομένα για χρήση εκτός σύνδεσης">
-<!ENTITY offlineStorageNotify.accesskey           "Ε">
-<!ENTITY offlineStorageNotifyExceptions.label     "Εξαιρέσεις…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "ξ">
-
-<!ENTITY offlineAppsList2.label          "Στις παρακάτω ιστοσελίδες επιτρέπεται η αποθήκευση δεδομένων για χρήση χωρίς σύνδεση:">
-<!ENTITY offlineAppsList.height          "10em">
-<!ENTITY offlineAppsListRemove.label     "Αφαίρεση…">
-<!ENTITY offlineAppsListRemove.accesskey "ρ">
-<!ENTITY offlineAppRemove.confirm        "Αφαίρεση δεδομένων εκτός σύνδεσης">
-
 <!ENTITY certificateTab.label            "Πιστοποιητικά">
 <!ENTITY certPersonal2.description       "Όταν ένας διακομιστής απαιτεί το προσωπικό σας πιστοποιητικό">
 <!ENTITY selectCerts.auto                "Αυτόματη επιλογή">
 <!ENTITY selectCerts.auto.accesskey      "Α">
 <!ENTITY selectCerts.ask                 "Ερώτηση κάθε φορά">
 <!ENTITY selectCerts.ask.accesskey       "Ε">
-<!ENTITY enableOCSP.label                "Ερώτηση στους διακομιστές για OCSP ανταπόκριση ώστε να επιβεβαιωθεί η τρέχουσα εγκυρότητα των πιστοποιητικών">
+<!ENTITY enableOCSP.label                "Ερώτηση στους διακομιστές για OCSP ανταπόκριση, ώστε να επιβεβαιωθεί η τρέχουσα εγκυρότητα των πιστοποιητικών">
 <!ENTITY enableOCSP.accesskey            "Ρ">
-<!ENTITY viewCerts2.label                "Προβολή Πιστοποιητικών…">
+<!ENTITY viewCerts2.label                "Προβολή πιστοποιητικών…">
 <!ENTITY viewCerts2.accesskey            "Π">
 <!ENTITY viewSecurityDevices2.label      "Συσκευές ασφαλείας…">
 <!ENTITY viewSecurityDevices2.accesskey  "Σ">

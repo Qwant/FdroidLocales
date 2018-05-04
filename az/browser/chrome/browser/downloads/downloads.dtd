@@ -56,6 +56,7 @@
 <!ENTITY cmd.show.accesskey               "Q">
 <!ENTITY cmd.showMac.label                "Finderdə göstər">
 <!ENTITY cmd.showMac.accesskey            "F">
+<!ENTITY cmd.showDownloads.label          "Endirmələr Qovluğunu Göstər">
 <!ENTITY cmd.retry.label                  "Təkrar yoxla">
 <!ENTITY cmd.goToDownloadPage.label       "Endirmə səhifəsinə get">
 <!ENTITY cmd.goToDownloadPage.accesskey   "g">
@@ -65,7 +66,7 @@
 <!ENTITY cmd.removeFromHistory.accesskey  "S">
 <!ENTITY cmd.clearList2.label             "Ön baxış panelini təmizlə">
 <!ENTITY cmd.clearList2.accesskey         "a">
-<!ENTITY cmd.clearDownloads.label         "Yüklənənləri təmizlə">
+<!ENTITY cmd.clearDownloads.label         "Endirmələri Təmizlə">
 <!ENTITY cmd.clearDownloads.accesskey     "t">
 <!-- LOCALIZATION NOTE (cmd.unblock2.label):
      This command is shown in the context menu when downloads are blocked.
@@ -76,13 +77,13 @@
      This is the tooltip of the action button shown when malware is blocked.
      -->
 <!ENTITY cmd.removeFile.label             "Faylı sil">
-<!-- LOCALIZATION NOTE (cmd.chooseUnblock.tooltip):
+<!-- LOCALIZATION NOTE (cmd.chooseUnblock.label):
      This is the tooltip of the action button shown when potentially unwanted
      downloads are blocked. This opens a dialog where the user can choose
      whether to unblock or remove the download. Removing is the default option.
      -->
 <!ENTITY cmd.chooseUnblock.label          "Faylı sil və ya Endirməyə icazə ver">
-<!-- LOCALIZATION NOTE (cmd.chooseOpen.tooltip):
+<!-- LOCALIZATION NOTE (cmd.chooseOpen.label):
      This is the tooltip of the action button shown when uncommon downloads are
      blocked.This opens a dialog where the user can choose whether to open the
      file or remove the download. Opening is the default option.
@@ -117,7 +118,7 @@
      Shown as a tag before the file name for some types of blocked downloads.
      Note: This string doesn't exist in the UI yet.  See bug 1053890.
      -->
-<!ENTITY blocked.label                    "BLOKLANDI">
+<!ENTITY blocked.label                    "ƏNGƏLLƏNDİ">
 
 <!-- LOCALIZATION NOTE (learnMore.label):
      Shown as a text link for some types of blocked downloads, for example
@@ -134,9 +135,19 @@
 <!ENTITY downloadsHistory.label           "Bütün endirmələri göstər">
 <!ENTITY downloadsHistory.accesskey       "s">
 
-<!ENTITY openDownloadsFolder.label       "Endirmələr Qovluğunu Aç">
+<!-- LOCALIZATION NOTE (downloadDetails.label):
+     This string is shown at the top of the Download Details Panel, to indicate
+     that we are showing the details of a single download.
+     -->
+<!ENTITY downloadDetails.label            "Endirmə Məlumatları">
 
-<!ENTITY clearDownloadsButton.label       "Yüklənənləri təmizlə">
+<!-- LOCALIZATION NOTE (openDownloadsFolder.label):
+     This command is not currently available in the user interface, but the
+     string was preserved by bug 1362207 to be used in a future version.
+     -->
+<!ENTITY openDownloadsFolder.label        "Endirmələr Qovluğunu Aç">
+
+<!ENTITY clearDownloadsButton.label       "Endirmələri Təmizlə">
 <!ENTITY clearDownloadsButton.tooltip     "Tamamlanan, ləğv edilən və uğursuz olan endirmələr təmizləyir">
 
 <!-- LOCALIZATION NOTE (downloadsListEmpty.label):

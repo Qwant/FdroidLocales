@@ -5,7 +5,7 @@
 <!ENTITY aboutSupport.pageTitle "Feilsøking">
 
 <!-- LOCALIZATION NOTE (aboutSupport.pageSubtitle): don't change the 'supportLink' id. -->
-<!ENTITY aboutSupport.pageSubtitle "  Denne sida inneheld teknisk informasjon som kan vere nyttig når du prøver å løyse eit problem. Besøk også <a id='supportLink'>brukarstøttenettstaden</a> for å få svar på ofte stilte spørsmål om &brandShortName;.">
+<!ENTITY aboutSupport.pageSubtitle "  Denne sida inneheld teknisk informasjon som kan vere nyttig når du prøver å løyse eit problem. Gå til <a id='supportLink'>brukarstøttenettsida</a> for å få svar på ofte stilte spørsmål om &brandShortName;.">
 
 <!ENTITY aboutSupport.crashes.title "Krasjrapportar">
 <!-- LOCALIZATION NOTE (aboutSupport.crashes.id):
@@ -20,6 +20,13 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionEnabled "Påslått">
 <!ENTITY aboutSupport.extensionVersion "Versjon">
 <!ENTITY aboutSupport.extensionId "ID">
+
+<!ENTITY aboutSupport.securitySoftwareTitle "Sikkerheitsprogram">
+<!ENTITY aboutSupport.securitySoftwareType "Type">
+<!ENTITY aboutSupport.securitySoftwareName "Namn">
+<!ENTITY aboutSupport.securitySoftwareAntivirus "Antivirus">
+<!ENTITY aboutSupport.securitySoftwareAntiSpyware "Antispionprogram">
+<!ENTITY aboutSupport.securitySoftwareFirewall "Brannmur">
 
 <!ENTITY aboutSupport.featuresTitle "&brandShortName;-funksjonar">
 <!ENTITY aboutSupport.featureName "Namn">
@@ -68,19 +75,21 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsProcessCount "Nettinnhaldsprosessar">
 
+<!ENTITY aboutSupport.enterprisePolicies "Bedriftspolitikk">
+
 <!ENTITY aboutSupport.appBasicsKeyGoogle "Google-nykel">
 <!ENTITY aboutSupport.appBasicsKeyMozilla "Mozilla Location Service-nykel">
 
 <!ENTITY aboutSupport.appBasicsSafeMode "Trygg modus">
 
-<!ENTITY aboutSupport.showDir.label "Opna mappe">
+<!ENTITY aboutSupport.showDir.label "Opne mappe">
 <!-- LOCALIZATION NOTE (aboutSupport.showMac.label): This is the Mac-specific
 variant of aboutSupport.showDir.label.  This allows us to use the preferred
 "Finder" terminology on Mac. -->
 <!ENTITY aboutSupport.showMac.label "Vis i Finder">
 <!-- LOCALIZATION NOTE (aboutSupport.showWin2.label): This is the Windows-specific
 variant of aboutSupport.showDir.label. -->
-<!ENTITY aboutSupport.showWin2.label "Opna mappe">
+<!ENTITY aboutSupport.showWin2.label "Opne mappe">
 
 <!ENTITY aboutSupport.modifiedKeyPrefsTitle "Viktige endra innstillingar">
 <!ENTITY aboutSupport.modifiedPrefsName "Namn">
@@ -106,7 +115,8 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yTitle "Tilgjenge">
 <!ENTITY aboutSupport.a11yActivated "Aktivert">
 <!ENTITY aboutSupport.a11yForceDisabled "Hindra tilgjenge">
-<!ENTITY aboutSupport.a11yHandlerUsed "Tilgjengeleg handsamar brukt">
+<!ENTITY aboutSupport.a11yHandlerUsed "Tilgjengeleg handterar brukt">
+<!ENTITY aboutSupport.a11yInstantiator "Tilgjenge-instantiator">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Bibliotekversjonar">
 
@@ -150,3 +160,13 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceChannels "Kanalar">
 <!ENTITY aboutSupport.mediaDeviceRate "Fart">
 <!ENTITY aboutSupport.mediaDeviceLatency "Forseinking">
+
+<!ENTITY aboutSupport.intlTitle "Internasjonalisering og lokalisering">
+<!ENTITY aboutSupport.intlAppTitle "Programinnstillingar">
+<!ENTITY aboutSupport.intlLocalesRequested "Førespurde språkversjonar">
+<!ENTITY aboutSupport.intlLocalesAvailable "Tilgjengelege språkversjonar">
+<!ENTITY aboutSupport.intlLocalesSupported "App-språkversjonar">
+<!ENTITY aboutSupport.intlLocalesDefault "Standardspråk">
+<!ENTITY aboutSupport.intlOSTitle "Operativsystem">
+<!ENTITY aboutSupport.intlOSPrefsSystemLocales "System-språkversjonar">
+<!ENTITY aboutSupport.intlRegionalPrefs "Regionale innstillingar">

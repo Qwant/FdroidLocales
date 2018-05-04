@@ -3,17 +3,17 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY window.title                     "Exceções - Tradução">
-<!ENTITY window.width                     "40em">
+<!ENTITY window.width                     "36em">
 <!ENTITY windowClose.key                  "w">
 
-<!ENTITY noTranslationForLanguages.label  "Os idiomas seguintes não serão traduzidos:">
+<!ENTITY noTranslationForLanguages2.label "Tradução não será oferecida para os seguintes idiomas">
 <!ENTITY treehead.languageName.label      "Idiomas">
 <!ENTITY removeLanguage.label             "Remover idioma">
 <!ENTITY removeLanguage.accesskey         "R">
 <!ENTITY removeAllLanguages.label         "Remover todos os idiomas">
 <!ENTITY removeAllLanguages.accesskey     "e">
 
-<!ENTITY noTranslationForSites.label      "Os seguintes sites não serão traduzidos:">
+<!ENTITY noTranslationForSites2.label     "Tradução não será oferecida para os seguintes sites">
 <!ENTITY treehead.siteName2.label         "Websites">
 <!ENTITY removeSite.label                 "Remover site">
 <!ENTITY removeSite.accesskey             "s">

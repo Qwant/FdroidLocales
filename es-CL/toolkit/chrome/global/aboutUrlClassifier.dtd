@@ -3,7 +3,8 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE the term "url-classifier" should not be translated. -->
-<!ENTITY aboutUrlClassifier.pageTitle                   "Información sobre el clasificador de url">
+<!ENTITY aboutUrlClassifier.pageTitle                   "Información sobre el url-classifier">
+<!ENTITY aboutUrlClassifier.title                       "Información sobre el clasificador de URL">
 <!ENTITY aboutUrlClassifier.providerTitle               "Proveedor">
 <!ENTITY aboutUrlClassifier.provider                    "Proveedor">
 <!ENTITY aboutUrlClassifier.providerLastUpdateTime      "Última actualización">
@@ -24,8 +25,8 @@
 <!ENTITY aboutUrlClassifier.cacheFullhash               "Hash completo">
 <!ENTITY aboutUrlClassifier.cachePCacheExpiry           "Expiración de caché positivo">
 <!ENTITY aboutUrlClassifier.debugTitle                  "Depuración">
-<!ENTITY aboutUrlClassifier.debugModuleBtn              "Ajustar módulos de registro">
-<!ENTITY aboutUrlClassifier.debugFileBtn                "Ajustar archivo de registro">
+<!ENTITY aboutUrlClassifier.debugModuleBtn              "Establecer módulos de registro">
+<!ENTITY aboutUrlClassifier.debugFileBtn                "Establecer archivo de registro">
 <!ENTITY aboutUrlClassifier.debugJSLogChk               "Ajustar registro JS">
 <!ENTITY aboutUrlClassifier.debugSBModules              "Módulos de registro de navegación segura">
 <!ENTITY aboutUrlClassifier.debugModules                "Módulos de registro actuales">

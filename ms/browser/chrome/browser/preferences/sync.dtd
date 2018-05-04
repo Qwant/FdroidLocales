@@ -7,18 +7,30 @@
 <!ENTITY engine.bookmarks.label     "Tandabuku">
 <!ENTITY engine.bookmarks.accesskey "a">
 <!ENTITY engine.tabs.label2         "Buka tab">
+<!ENTITY engine.tabs.title          "Senarai laman yang dibuka dalam semua peranti yang diselaraskan">
 <!ENTITY engine.tabs.accesskey      "T">
 <!ENTITY engine.history.label       "Sejarah">
 <!ENTITY engine.history.accesskey   "r">
 <!ENTITY engine.logins.label        "Log masuk">
+<!ENTITY engine.logins.title        "Nama pengguna dan kata laluan yang anda sudah simpan">
 <!ENTITY engine.logins.accesskey    "L">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "Pilihan">
+<!ENTITY engine.prefsWin.accesskey  "P">
 <!ENTITY engine.prefs.label         "Keutamaan">
 <!ENTITY engine.prefs.accesskey     "a">
+<!ENTITY engine.prefs.title         "Tetapan Umum, Privasi dan Keselamatan yang anda sudah ubah">
 <!ENTITY engine.addons.label        "Add-ons">
+<!ENTITY engine.addons.title        "Ekstensi dan tema untuk Firefox desktop">
 <!ENTITY engine.addons.accesskey    "A">
 <!ENTITY engine.addresses.label     "Alamat">
+<!ENTITY engine.addresses.title     "Alamat pos yang anda sudah simpan (desktop sahaja)">
 <!ENTITY engine.addresses.accesskey "a">
 <!ENTITY engine.creditcards.label   "Kad kredit">
+<!ENTITY engine.creditcards.title   "Nama, nombor dan tarikh luput (desktop sahaja)">
 <!ENTITY engine.creditcards.accesskey "K">
 
 <!-- Device Settings -->
@@ -28,10 +40,10 @@
 <!ENTITY cancelChangeSyncDeviceName.label "Batal">
 <!ENTITY cancelChangeSyncDeviceName.accesskey "t">
 <!ENTITY saveChangeSyncDeviceName.label "Simpan">
-<!ENTITY saveChangeSyncDeviceName.accesskey "n">
+<!ENTITY saveChangeSyncDeviceName.accesskey "p">
 
 <!-- Footer stuff -->
-<!ENTITY prefs.tosLink.label        "Terma dan Syarat Perkhidmatan">
+<!ENTITY prefs.tosLink.label        "Terma Perkhidmatan">
 <!ENTITY fxaPrivacyNotice.link.label "Notis Privasi">
 
 <!-- LOCALIZATION NOTE (signedInUnverified.beforename.label,
@@ -50,26 +62,29 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedInLoginFailure.beforename.label "Sila daftar masuk untuk menyambung semula">
 <!ENTITY signedInLoginFailure.aftername.label "">
 
-<!ENTITY notSignedIn.label           "Anda tidak mendaftar masuk.">
-<!ENTITY signIn.label                "Daftar masuk">
-<!ENTITY signIn.accesskey            "d">
-<!ENTITY profilePicture.tooltip      "Tukar gambar profil">
-<!ENTITY verifiedManage.label        "Urus Akaun">
-<!ENTITY verifiedManage.accesskey    "s">
-<!ENTITY disconnect3.label           "Memutuskan…">
-<!ENTITY disconnect3.accesskey       "M">
-<!ENTITY verify.label                "Sahkan E-mel">
-<!ENTITY verify.accesskey            "S">
-<!ENTITY forget.label                "Lupakan E-mel ini">
-<!ENTITY forget.accesskey            "A">
+<!ENTITY notSignedIn.label            "Anda tidak mendaftar masuk.">
+<!ENTITY signIn.label                 "Daftar masuk">
+<!ENTITY signIn.accesskey             "d">
+<!ENTITY profilePicture.tooltip       "Tukar gambar profil">
+<!ENTITY verifiedManage.label         "Urus Akaun">
+<!ENTITY verifiedManage.accesskey     "s">
+<!ENTITY disconnect3.label            "Memutuskan…">
+<!ENTITY disconnect3.accesskey        "M">
+<!ENTITY resendVerification.label     "Hantar semula Pengesahan">
+<!ENTITY resendVerification.accesskey "t">
+<!ENTITY cancelSetup.label            "Batal Penetapan">
+<!ENTITY cancelSetup.accesskey        "p">
+
+<!ENTITY removeAccount.label          "Buang Akaun">
+<!ENTITY removeAccount.accesskey      "k">
 
 <!ENTITY signedOut.caption            "Bawa Web dengan anda">
 <!ENTITY signedOut.description        "Sync tandabuku, sejarah, tab, kata laluan, add-ons dan pilihan anda pada semua peranti anda.">
 <!ENTITY signedOut.accountBox.title   "Sambung dengan &syncBrand.fxAccount.label;">
-<!ENTITY signedOut.accountBox.create  "Cipta Akaun">
-<!ENTITY signedOut.accountBox.create.accesskey  "B">
-<!ENTITY signedOut.accountBox.signin  "Daftar Masuk">
-<!ENTITY signedOut.accountBox.signin.accesskey  "M">
+<!ENTITY signedOut.accountBox.create2 "Belum ada akaun? Daftar">
+<!ENTITY signedOut.accountBox.create2.accesskey "D">
+<!ENTITY signedOut.accountBox.signin2 "Daftar Masuk…">
+<!ENTITY signedOut.accountBox.signin2.accesskey "M">
 
 <!ENTITY signedIn.settings.label       "Tetapan Sync">
 <!ENTITY signedIn.settings.description "Pilih ciri yang mahu anda sync pada peranti menggunakan &brandShortName;.">
@@ -84,8 +99,11 @@ both, to better adapt this sentence to their language.
 <!ENTITY mobilePromo3.androidLink      "Android">
 
 <!-- LOCALIZATION NOTE (mobilePromo3.iOSBefore): This is text displayed between mobilePromo3.androidLink and mobilePromo3.iosLink -->
-<!ENTITY mobilePromo3.iOSBefore         " atau ">
+<!ENTITY mobilePromo3.iOSBefore         " atau ">
 <!-- LOCALIZATION NOTE (mobilePromo3.iOSLink): This is a link title that links to https://www.mozilla.org/firefox/ios/ -->
 <!ENTITY mobilePromo3.iOSLink          "iOS">
 
 <!ENTITY mobilePromo3.end              " untuk sync dengan peranti mudah alih anda.">
+
+<!ENTITY mobilepromo.singledevice      "Sambungkan peranti lain">
+<!ENTITY mobilepromo.multidevice       "Urus peranti">

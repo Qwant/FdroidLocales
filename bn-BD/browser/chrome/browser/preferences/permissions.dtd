@@ -7,12 +7,12 @@
 
 <!ENTITY treehead.sitename2.label     "ওয়েবসাইট">
 <!ENTITY treehead.status.label        "অবস্থা">
-<!ENTITY removepermission2.label      "সাইট অপসারণ">
+<!ENTITY removepermission2.label      "ওয়েবসাইট অপসারণ">
 <!ENTITY removepermission2.accesskey  "R">
 <!ENTITY removeallpermissions2.label  "সব ওয়েবসাইট অপসারণ কর">
 <!ENTITY removeallpermissions2.accesskey "e">
-<!ENTITY address.label                "ওয়েবসাইটের ঠিকানা:">
-<!ENTITY address.accesskey            "d">
+<!ENTITY address2.label               "ওয়েবসাইটের ঠিকানা">
+<!ENTITY address2.accesskey           "d">
 <!ENTITY block.label                  "প্রতিরোধ করা হবে">
 <!ENTITY block.accesskey              "B">
 <!ENTITY session.label                "সেশনের জন্য অনুমোদন করা হবে">
@@ -26,3 +26,4 @@
 <!ENTITY button.ok.label              "পরিবর্তন সংরক্ষণ">
 <!ENTITY button.ok.accesskey          "S">
 
+<!ENTITY searchbox.placeholder        "ওয়েবসাইট খুঁজুন">

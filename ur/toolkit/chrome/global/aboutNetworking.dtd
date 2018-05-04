@@ -14,7 +14,7 @@
 <!ENTITY aboutNetworking.autoRefresh           "خودبخود, ہر ٣ سیکنڈ کے بعد تازہ کریں     ">
 <!ENTITY aboutNetworking.hostname              "ہوسٹ نیم">
 <!ENTITY aboutNetworking.port                  "پورٹ">
-
+<!ENTITY aboutNetworking.http2                 "HTTP/2">
 <!ENTITY aboutNetworking.ssl                   "ایس ایس ایل">
 <!ENTITY aboutNetworking.active                "فعال">
 <!ENTITY aboutNetworking.idle                  "بیکار">
@@ -23,6 +23,7 @@
 <!ENTITY aboutNetworking.sent                  "بھیجا گیا">
 <!ENTITY aboutNetworking.received              "وصولا گیا">
 <!ENTITY aboutNetworking.family                "خاندان">
+<!ENTITY aboutNetworking.trr                   "TRR">
 <!ENTITY aboutNetworking.addresses             "پتے">
 <!ENTITY aboutNetworking.expires               "مدت ختم ہوتی ہے (سیکنڈ)">
 <!ENTITY aboutNetworking.messagesSent          "پیغامات بھیج دئیے گیے">
@@ -41,18 +42,6 @@
 <!ENTITY aboutNetworking.dnsLookupButton       "حل کریں">
 <!ENTITY aboutNetworking.dnsDomain             "عمل داری">
 <!ENTITY aboutNetworking.dnsLookupTableColumn  "IPs">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!ENTITY aboutNetworking.rcwnPerfOpen          "کھولیں">
+<!ENTITY aboutNetworking.rcwnPerfRead          "پڑھيں">
+<!ENTITY aboutNetworking.rcwnPerfWrite         "لکھیں">

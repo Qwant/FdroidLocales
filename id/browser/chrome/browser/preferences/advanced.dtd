@@ -29,11 +29,23 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Pelaporan data dinonaktifkan untuk konfigurasi build ini">
 
-<!ENTITY enableHealthReport1.label       "Izinkan &brandShortName; agar secara otomatis mengirim data teknis dan interaksi ke Mozilla">
+<!ENTITY enableHealthReport2.label       "Izinkan &brandShortName; mengirim data teknis dan interaksi ke Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "Pelajari Lebih Lanjut">
 
+<!ENTITY dataCollection.label            "&brandShortName; Pengumpulan dan Penggunaan Data">
+<!ENTITY dataCollectionDesc.label        "Kami berusaha memberi Anda pilihan dan mengumpulkan hanya apa yang kami butuhkan untuk menyediakan dan meningkatkan &brandShortName; bagi semua orang. Kami selalu meminta izin sebelum menerima informasi pribadi.">
 <!ENTITY dataCollectionPrivacyNotice.label    "Pemberitahuan Privasi">
 
+<!ENTITY alwaysSubmitCrashReports1.label  "Izinkan &brandShortName; untuk mengirim laporan mogok ke Mozilla">
+<!ENTITY alwaysSubmitCrashReports1.accesskey "r">
+
+<!ENTITY collectBrowserErrors.label          "Izinkan &brandShortName; mengirim laporan galat peramban (termasuk pesan galat) ke Mozilla">
+<!ENTITY collectBrowserErrors.accesskey      "p">
+<!ENTITY collectBrowserErrorsLearnMore.label "Pelajari lebih lanjut">
+
+<!ENTITY sendBackloggedCrashReports.label  "Izinkan &brandShortName; mengirim tumpukan laporan kerusakan atas nama Anda">
+<!ENTITY sendBackloggedCrashReports.accesskey "r">
 <!ENTITY crashReporterLearnMore.label    "Pelajari Lebih Lanjut">
 
 <!ENTITY networkTab.label                "Jaringan">
@@ -42,11 +54,9 @@ available. -->
 
 <!ENTITY connectionDesc.label            "Atur cara &brandShortName; tersambung ke Internet">
 <!ENTITY connectionSettings.label        "Setelan…">
-<!ENTITY connectionSettings.accesskey    "u">
+<!ENTITY connectionSettings.accesskey    "S">
 
 <!ENTITY httpCache.label                 "Konten Web Tembolok">
-
-<!ENTITY offlineStorage2.label           "Konten Web Luring dan Data Pengguna">
 
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Data Situs">
@@ -54,6 +64,11 @@ available. -->
 <!ENTITY clearSiteData.accesskey         "B">
 <!ENTITY siteDataSettings.label          "Pengaturan…">
 <!ENTITY siteDataSettings.accesskey      "u">
+<!ENTITY siteData1.label                 "Kuki dan Data Situs">
+<!ENTITY clearSiteData1.label            "Hapus Data…">
+<!ENTITY clearSiteData1.accesskey        "l">
+<!ENTITY siteDataSettings1.label         "Kelola Data…">
+<!ENTITY siteDataSettings1.accesskey     "K">
 <!ENTITY siteDataLearnMoreLink.label     "Pelajari lebih lanjut">
 
 <!-- LOCALIZATION NOTE:
@@ -67,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB">
 <!ENTITY clearCacheNow.label             "Bersihkan Sekarang">
 <!ENTITY clearCacheNow.accesskey         "g">
-<!ENTITY clearOfflineAppCacheNow.label   "Bersihkan Sekarang">
-<!ENTITY clearOfflineAppCacheNow.accesskey "a">
 <!ENTITY overrideSmartCacheSize.label    "Gunakan pengaturan tembolok manual">
 <!ENTITY overrideSmartCacheSize.accesskey "o">
 
@@ -85,6 +98,8 @@ available. -->
 # after the version number, and is empty on purpose for English. You can use it
 # if required by your language.
  -->
+<!ENTITY updateApplicationDescription.label
+                                         "Pastikan &brandShortName; selalu mutakhir demi kinerja, stabilitas, dan keamanan terbaik.">
 <!ENTITY updateApplication.version.pre   "Versi ">
 <!ENTITY updateApplication.version.post  "">
 <!ENTITY updateApplication.description   "Izinkan &brandShortName; untuk">
@@ -104,25 +119,18 @@ available. -->
 <!ENTITY enableSearchUpdate2.label       "Mutakhirkan mesin pencari secara otomatis">
 <!ENTITY enableSearchUpdate2.accesskey   "m">
 
-<!ENTITY offlineStorageNotify.label               "Beritahukan jika situs web meminta untuk menyimpan data untuk penggunaan luring">
-<!ENTITY offlineStorageNotify.accesskey           "l">
-<!ENTITY offlineStorageNotifyExceptions.label     "Pengecualian…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "c">
-
-<!ENTITY offlineAppsList2.label          "Situs web berikut telah diizinkan untuk menyimpan data untuk penggunaan luring:">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Hapus…">
-<!ENTITY offlineAppsListRemove.accesskey "H">
-<!ENTITY offlineAppRemove.confirm        "Hapus data luring">
-
 <!ENTITY certificateTab.label            "Sertifikat">
 <!ENTITY certPersonal2.description       "Saat peladen meminta sertifikat pribadi Anda">
 <!ENTITY selectCerts.auto                "Pilih satu secara otomatis">
 <!ENTITY selectCerts.auto.accesskey      "s">
 <!ENTITY selectCerts.ask                 "Tanyakan setiap saat">
 <!ENTITY selectCerts.ask.accesskey       "T">
-<!ENTITY enableOCSP.label                "Kueri server penjawab OCSP untuk mengonfirmasukan validitas sertifikat">
+<!ENTITY enableOCSP.label                "Kueri peladen penjawab OCSP untuk mengonfirmasikan validitas sertifikat">
 <!ENTITY enableOCSP.accesskey            "v">
+<!ENTITY viewCerts2.label                "Tampilkan Sertifikat…">
+<!ENTITY viewCerts2.accesskey            "S">
+<!ENTITY viewSecurityDevices2.label      "Peranti Keamanan…">
+<!ENTITY viewSecurityDevices2.accesskey  "P">
 
 <!ENTITY performance.label               "Kinerja">
 <!ENTITY useRecommendedPerformanceSettings2.label

@@ -3,12 +3,9 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <!ENTITY aboutPage.title                        "เกี่ยวกับ &brandShortName;">
 <!ENTITY aboutPage.warningVersion               "&brandShortName; เป็นรุ่นทดลองและอาจไม่เสถียร">
-<!ENTITY aboutPage.telemetryStart               " จะส่งข้อมูลเกี่ยวกับประสิทธิภาพ, ฮาร์ดแวร์, การใช้งาน และการปรับแต่งกลับไปยัง ">
-<!ENTITY aboutPage.telemetryMozillaLink         "&vendorShortName;">
-<!ENTITY aboutPage.telemetryEnd                 " โดยอัตโนมัติ เพื่อช่วยทำ &brandShortName; ให้ดียิ่งขึ้น">
 <!ENTITY aboutPage.checkForUpdates.link         "ตรวจสอบการอัปเดต »">
 <!ENTITY aboutPage.checkForUpdates.checking     "กำลังมองหาการอัปเดต…">
-<!ENTITY aboutPage.checkForUpdates.none         "ไม่มีการอัปเดตที่ใช้งานได้">
+<!ENTITY aboutPage.checkForUpdates.none         "ไม่มีการอัปเดต">
 <!ENTITY aboutPage.checkForUpdates.available2   "ดาวน์โหลดการอัปเดต">
 <!ENTITY aboutPage.checkForUpdates.downloading  "กำลังดาวน์โหลดการอัปเดต…">
 <!ENTITY aboutPage.checkForUpdates.downloaded2  "ติดตั้งการอัปเดต">
@@ -21,4 +18,4 @@
 <!ENTITY aboutPage.license.label                "ข้อมูลสัญญาอนุญาต">
 
 <!-- LOCALIZATION NOTE (aboutPage.logoTrademark): The message is explicitly about the word "Firefox" being trademarked, that's why we use it, instead of brandShortName. -->
-<!ENTITY aboutPage.logoTrademark                "Firefox และตราสัญลักษณ์ Firefox เป็นเครื่องหมายการค้าของ Mozilla Foundation">
+<!ENTITY aboutPage.logoTrademark                "Firefox และโลโก้ Firefox เป็นเครื่องหมายการค้าของมูลนิธิ Mozilla">

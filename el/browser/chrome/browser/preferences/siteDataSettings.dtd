@@ -3,8 +3,10 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY     window.title                  "Ρυθμίσεις - Δεδομένα Ιστοτόπου">
+
 <!ENTITY     hostCol.label                 "Ιστοτόπος">
 <!ENTITY     statusCol.label               "Κατάσταση">
+<!ENTITY     cookiesCol.label              "Cookies">
 <!ENTITY     usageCol.label                "Αποθήκευση">
 <!ENTITY     searchTextboxPlaceHolder             "Αναζήτηση ιστοσελίδων">
 <!ENTITY     searchTextboxPlaceHolder.accesskey   "Α">
@@ -16,4 +18,4 @@
 <!ENTITY     cancel.accesskey              "Α">
 <!ENTITY     removingDialog.title          "Αφαίρεση δεδομένων ιστοσελίδας">
 <!ENTITY     removingSelected.description  "Η αφαίρεση δεδομένων ιστοσελίδων θα διαγράψει, επίσης, τα σχετικά cookies και το διαδικτυακό περιεχόμενο εκτός σύνδεσης. Αυτό ενδέχεται να σάς αποσυνδέσει από ιστοσελίδες. Θέλετε σίγουρα να πραγματοποιήσετε τις αλλαγές;">
-<!ENTITY     siteTree.label                "Θα αφαιρεθούν τα ακόλουθα cookies ιστοσελίδων:">
+<!ENTITY     siteTree2.label               "Τα ακόλουθα cookies ιστοσελίδων θα αφαιρεθούν">

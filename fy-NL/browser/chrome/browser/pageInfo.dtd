@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "Altyd freegje">
 <!ENTITY  permAllow             "Tastean">
 <!ENTITY  permAllowSession      "Tastean foar sesje">
+<!ENTITY  permHide              "Ferstopje">
 <!ENTITY  permBlock             "Blokkearje">
 <!ENTITY  permissionsFor        "Tastimmingen foar:">
 <!ENTITY  permPlugins           "Ynstekkers aktivearje">
-
-<!ENTITY  permClearStorage           "Wiskje opslach">
-<!ENTITY  permClearStorage.accesskey "W">
 
 <!ENTITY  securityTab           "Befeiliging">
 <!ENTITY  securityTab.accesskey "B">
@@ -80,6 +78,9 @@
 <!ENTITY  securityView.privacy.cookies                  "Bewarret dizze website ynformaasje (cookies) op myn kompjûter?">
 <!ENTITY  securityView.privacy.viewCookies              "Cookies besjen">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "k">
+<!ENTITY  securityView.privacy.siteData                 "Bewarret dizze website ynformaasje op myn kompjûter?">
+<!ENTITY  securityView.privacy.clearSiteData            "Cookies en websitegegevens wiskje">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "C">
 <!ENTITY  securityView.privacy.passwords                "Haw ik wachtwurden bewarre foar dizze website?">
 <!ENTITY  securityView.privacy.viewPasswords            "Bewarre wachtwurden besjen">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "w">

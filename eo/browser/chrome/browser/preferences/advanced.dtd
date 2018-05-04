@@ -13,7 +13,7 @@
 <!ENTITY useOnScreenKeyboard.label       "Montri tuŝklavaron se necesas">
 <!ENTITY useOnScreenKeyboard.accesskey   "k">
 
-<!ENTITY browsing.label                  "Retumado">
+<!ENTITY browsing.label                  "Retumo">
 
 <!ENTITY useAutoScroll.label             "Uzi aŭtomatan ŝovadon">
 <!ENTITY useAutoScroll.accesskey         "a">
@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "La raporto de datumoj estas malŝaltita pro la agordoj de konstruo">
 
-<!ENTITY enableHealthReport1.label       "Permesi al &brandShortName; aŭtomate sendi teĥnikajn kaj interagajn datumojn al Mozilla">
-<!ENTITY enableHealthReport1.accesskey   "A">
+<!ENTITY enableHealthReport2.label       "Permesi al &brandShortName; sendi teĥnikajn kaj interagajn datumojn al Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "P">
 <!ENTITY healthReportLearnMore.label     "Pli da informo">
 
 <!ENTITY dataCollection.label            "Kolekto kaj uzo de datumojn de &brandShortName;">
@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Permesi al &brandShortName; sendi al Mozilla raportojn pri paneo">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "p">
+
+<!ENTITY collectBrowserErrors.label          "Permesi al &brandShortName; sendi retumilajn raportojn pri eraroj (tio inkuzivas erarmesaĝojn) al Mozilla">
+<!ENTITY collectBrowserErrors.accesskey      "e">
+<!ENTITY collectBrowserErrorsLearnMore.label "Pli da informo">
+
+<!ENTITY sendBackloggedCrashReports.label  "Permesi al &brandShortName; sendi nome via antaŭe registritajn raportojn pri paneo">
+<!ENTITY sendBackloggedCrashReports.accesskey "P">
 <!ENTITY crashReporterLearnMore.label    "Pli da informo">
 
 <!ENTITY networkTab.label                "Reto">
@@ -51,14 +58,17 @@ available. -->
 
 <!ENTITY httpCache.label                 "Teksaĵa enhavo en staplo">
 
-<!ENTITY offlineStorage2.label           "Deponejo por malkonektitaĵoj, de teksaĵa enhavo kaj de datumoj de uzanto">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Retejaj datumoj">
 <!ENTITY clearSiteData.label             "Viŝi ĉiujn datumojn">
 <!ENTITY clearSiteData.accesskey         "V">
 <!ENTITY siteDataSettings.label          "Agordoj…">
 <!ENTITY siteDataSettings.accesskey      "A">
+<!ENTITY siteData1.label                 "Kuketoj kaj retejaj datumoj">
+<!ENTITY clearSiteData1.label            "Viŝi datumojn…">
+<!ENTITY clearSiteData1.accesskey        "V">
+<!ENTITY siteDataSettings1.label         "Administri datumojn…">
+<!ENTITY siteDataSettings1.accesskey     "A">
 <!ENTITY siteDataLearnMoreLink.label     "Pli da informo">
 
 <!-- LOCALIZATION NOTE:
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MO de spaco">
 <!ENTITY clearCacheNow.label             "Viŝi nun">
 <!ENTITY clearCacheNow.accesskey         "V">
-<!ENTITY clearOfflineAppCacheNow.label   "Viŝi nun">
-<!ENTITY clearOfflineAppCacheNow.accesskey "V">
 <!ENTITY overrideSmartCacheSize.label    "Superregi la aŭtomatan administradon de staplo">
 <!ENTITY overrideSmartCacheSize.accesskey "O">
 
@@ -111,17 +119,6 @@ available. -->
 <!ENTITY enableSearchUpdate2.label       "Aŭtomate ĝisdatigi serĉilojn">
 <!ENTITY enableSearchUpdate2.accesskey   "t">
 
-<!ENTITY offlineStorageNotify.label               "Diri al mi kiam retejoj petas konservi datumojn por uzi malkonektite">
-<!ENTITY offlineStorageNotify.accesskey           "r">
-<!ENTITY offlineStorageNotifyExceptions.label     "Esceptoj…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "E">
-
-<!ENTITY offlineAppsList2.label          "La jenaj retejoj rajtas konservi datumojn por uzi malkonektite:">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Forigi…">
-<!ENTITY offlineAppsListRemove.accesskey "F">
-<!ENTITY offlineAppRemove.confirm        "Forigi malkonektitaĵojn">
-
 <!ENTITY certificateTab.label            "Atestiloj">
 <!ENTITY certPersonal2.description       "Kiam servilo petas vian personan atestilon">
 <!ENTITY selectCerts.auto                "Aŭtomate elekti unu">
@@ -131,7 +128,7 @@ available. -->
 <!ENTITY enableOCSP.label                "Peti al OCSP respondaj serviloj konfirmon pri la nuna valideco de atestiloj">
 <!ENTITY enableOCSP.accesskey            "P">
 <!ENTITY viewCerts2.label                "Vidi atestilojn…">
-<!ENTITY viewCerts2.accesskey            "a">
+<!ENTITY viewCerts2.accesskey            "A">
 <!ENTITY viewSecurityDevices2.label      "Sekurecaj aparatoj…">
 <!ENTITY viewSecurityDevices2.accesskey  "S">
 
@@ -141,7 +138,7 @@ available. -->
 <!ENTITY useRecommendedPerformanceSettings2.description
                                          "Tiuj ĉi agordoj estas alĝustigitaj al la mastruma sistemo kaj aparataro de via komputilo.">
 <!ENTITY useRecommendedPerformanceSettings2.accesskey
-                                         "k">
+                                         "K">
 <!ENTITY performanceSettingsLearnMore.label
                                          "Pli da informo">
 <!ENTITY limitContentProcessOption.label "Maksimuma nombro de enhavaj taskoj">

@@ -51,7 +51,7 @@
 
 # LOCALIZATION NOTE (mdn):
 # Nightly builds only, link title for https://developer.mozilla.org/
-#define mdn Reto de programistoj de Mozilla
+#define mdn Mozilla Reto de programistoj
 
 # LOCALIZATION NOTE (nightly_tester_tools):
 # Nightly builds only, link title for https://addons.mozilla.org/en-US/firefox/addon/nightly-tester-tools/
@@ -63,7 +63,7 @@
 
 # LOCALIZATION NOTE (irc):
 # Nightly builds only, link title for ircs://irc.mozilla.org/nightly
-#define irc Pridiskuti Nightly en IRC
+#define irc Discuss Nightly en IRC
 
 # LOCALIZATION NOTE (planet):
 # Nightly builds only, link title for https://planet.mozilla.org/

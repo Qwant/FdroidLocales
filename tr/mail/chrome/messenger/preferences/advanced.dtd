@@ -47,7 +47,7 @@
 <!ENTITY telemetryLearnMore.label        "Daha fazla bilgi alın">
 
 <!ENTITY crashReporterSection.label      "Çökme Habercisi">
-<!ENTITY crashReporterDesc.label         "&brandShortName;, e-posta istemcinizi daha kararlı ve güvenli hâle getirmemize yardımcı olmak için çökme raporlarını &vendorShortName; sunucularına gönderir">
+<!ENTITY crashReporterDesc.label         "&brandShortName;, e-posta istemcinizi daha kararlı ve güvenli hale getirmemize yardımcı olmak için çökme raporlarını &vendorShortName; sunucularına gönderir">
 <!ENTITY enableCrashReporter.label       "Çökme Habercisi'ni etkinleştir">
 <!ENTITY enableCrashReporter.accesskey   "Ç">
 <!ENTITY crashReporterLearnMore.label    "Daha fazla bilgi alın">
@@ -64,6 +64,8 @@
   the version number, and is empty on purpose for English. You can use it
   if required by your language.
  -->
+<!ENTITY updateApp.version.pre           "Sürüm ">
+<!ENTITY updateApp.version.post          "">
 <!ENTITY updateAuto.label                "Güncellemeleri otomatik olarak kur (önerilir: artırılmış güvenlik)">
 <!ENTITY updateAuto.accesskey            "o">
 <!ENTITY updateCheck.label               "Güncellemeleri denetle, ama onları kurma kararını bana bırak">

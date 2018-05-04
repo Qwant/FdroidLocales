@@ -6,9 +6,10 @@
 <!ENTITY aboutAddons.header2                    "Taq rutz'aqat">
 
 <!ENTITY addonAction.enable                     "Titzij">
-<!ENTITY addonAction.disable                    "Ruchupik">
+<!ENTITY addonAction.disable                    "Tichup">
 <!ENTITY addonAction.uninstall                  "Telesäx el">
 <!ENTITY addonAction.undo                       "Titzolïx">
+<!ENTITY addonAction.update                     "Tik'ex">
 
 <!ENTITY addonUnsigned.message                  "Re jun add-on man tikirel nijikib'äx ruma &brandShortName;.">
 <!ENTITY addonUnsigned.learnMore                "Tetamäx ch'aqa' chik">

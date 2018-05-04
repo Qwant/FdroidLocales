@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "Selalu tanyakan">
 <!ENTITY  permAllow             "Izinkan">
 <!ENTITY  permAllowSession      "Izinkan selama Sesi">
+<!ENTITY  permHide              "Sembunyikan">
 <!ENTITY  permBlock             "Blokir">
 <!ENTITY  permissionsFor        "Hak akses untuk:">
 <!ENTITY  permPlugins           "Aktifkan Plugin">
-
-<!ENTITY  permClearStorage           "Bersihkan Penyimpanan">
-<!ENTITY  permClearStorage.accesskey "h">
 
 <!ENTITY  securityTab           "Keamanan">
 <!ENTITY  securityTab.accesskey "K">
@@ -80,6 +78,9 @@
 <!ENTITY  securityView.privacy.cookies                  "Apakah situs web ini menyimpan informasi (kuki) dalam komputer saya?">
 <!ENTITY  securityView.privacy.viewCookies              "Tampilkan Kuki">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "k">
+<!ENTITY  securityView.privacy.siteData                 "Apakah situs web ini menyimpan informasi dalam komputer saya?">
+<!ENTITY  securityView.privacy.clearSiteData            "Bersihkan Kuki dan Data Situs">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "B">
 <!ENTITY  securityView.privacy.passwords                "Pernahkah sandi untuk situs web ini disimpan?">
 <!ENTITY  securityView.privacy.viewPasswords            "Sandi Tersimpan">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "s">

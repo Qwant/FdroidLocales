@@ -3,36 +3,32 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY  trackingProtectionHeader2.label      "Perlindungan Pelacakan">
-<!ENTITY  trackingProtection2.description      "Pelacakan adalah kumpulan data penjelajahan Anda dari banyak situs Web. Pelacakan dapat digunakan untuk membentuk profil atau menampilkan konten berbasis pada informasi pribadi dan penjelajahan Anda.">
-<!ENTITY  trackingProtection2.radioGroupLabel  "Gunakan Perlindungan Pelacakan untuk memblokir pelacak yang diketahui">
+<!ENTITY  trackingProtection3.description      "Perlindungan pelacakan memblokir pelacak daring yang mengumpulkan data penjelajahan Anda lintas berbagai situs web.">
+<!ENTITY  trackingProtection3.radioGroupLabel  "Gunakan Perlindungan Pelacakan untuk memblokir pelacak yang diketahui">
 <!ENTITY  trackingProtectionAlways.label       "Selalu">
 <!ENTITY  trackingProtectionAlways.accesskey   "S">
 <!ENTITY  trackingProtectionPrivate.label      "Hanya di jendela pribadi">
 <!ENTITY  trackingProtectionPrivate.accesskey  "p">
 <!ENTITY  trackingProtectionNever.label        "Tidak Pernah">
 <!ENTITY  trackingProtectionNever.accesskey    "P">
-<!ENTITY  trackingProtectionLearnMore.label    "Pelajari lebih lanjut">
+<!ENTITY  trackingProtectionLearnMore2.label    "Pelajari lebih lanjut tentang Perlindungan Pelacakan dan privasi Anda">
 <!ENTITY  trackingProtectionExceptions.label   "Pengecualian…">
 <!ENTITY  trackingProtectionExceptions.accesskey "e">
 
-<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
-<!ENTITY trackingProtectionPBM5.label         "Gunakan Perlindungan Pelacakan di Jendela Pribadi">
-<!ENTITY trackingProtectionPBM5.accesskey     "b">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
+<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM6.label         "Gunakan Perlindungan Pelacakan di mode Penjelajahan Pribadi untuk memblokir pelacak yang diketahui">
 <!ENTITY trackingProtectionPBM6.accesskey     "v">
 <!ENTITY trackingProtectionPBMLearnMore.label "Pelajari lebih lanjut">
 <!ENTITY changeBlockList2.label               "Ubah Daftar Blokir…">
-
-<!ENTITY  doNotTrack.description        "Kirim sinyal “Jangan Lacak” ke situs web bahwa Anda tidak ingin dilacak">
-<!ENTITY  doNotTrack.learnMore.label    "Pelajari lebih lanjut">
-<!ENTITY  doNotTrack.default.label      "Hanya saat menggunakan Perlindungan Pelacakan">
-<!ENTITY  doNotTrack.always.label       "Selalu">
+<!ENTITY changeBlockList2.accesskey           "U">
 
 <!ENTITY  history.label                 "Riwayat">
 <!ENTITY  permissions.label             "Hak Akses">
 
 <!ENTITY  addressBar.label              "Bilah Alamat">
+<!ENTITY  addressBar.suggest.label      "Saat menggunakan bilah alamat, sarankan">
+<!ENTITY  locbar.history2.label         "Riwayat penjelajahan">
+<!ENTITY  locbar.history2.accesskey     "R">
 <!ENTITY  locbar.bookmarks.label        "Markah">
 <!ENTITY  locbar.bookmarks.accesskey    "M">
 <!ENTITY  locbar.openpage.label         "Tab terbuka">
@@ -40,19 +36,28 @@
 <!ENTITY  locbar.searches.label         "Pencarian terkait dari mesin pencari baku.">
 <!ENTITY  locbar.searches.accesskey     "d">
 
-<!ENTITY  suggestionSettings2.label     "Ubah preferensi untuk penyaranan mesin pencari">
+<!ENTITY  suggestionSettings2.label     "Ubah preferensi untuk saran mesin pencari">
 
-<!ENTITY  acceptCookies.label           "Terima kuki dari situs web">
-<!ENTITY  acceptCookies.accesskey       "w">
+<!ENTITY  acceptCookies2.label          "Terima kuki dari situs web">
+<!ENTITY  acceptCookies2.accesskey      "T">
 
-<!ENTITY  acceptThirdParty.pre.label      "Terima kuki dari pihak ketiga:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "t">
+<!ENTITY  acceptThirdParty2.pre.label     "Terima kuki dari pihak ketiga">
+<!ENTITY  acceptThirdParty2.pre.accesskey "k">
+
+<!ENTITY  acceptCookies4.label          "Terima kuki dan data situs dari situs web (direkomendasikan)">
+<!ENTITY  acceptCookies4.accesskey      "T">
+
+<!ENTITY  blockCookies.label            "Blokir kuki dan data situs (bisa menyebabkan situs web macet)">
+<!ENTITY  blockCookies.accesskey        "B">
+
+<!ENTITY  acceptThirdParty3.pre.label     "Menerima kuki dan data situs pihak ketiga">
+<!ENTITY  acceptThirdParty3.pre.accesskey "y">
 <!ENTITY  acceptThirdParty.always.label   "Selalu">
 <!ENTITY  acceptThirdParty.never.label    "Tidak Pernah">
 <!ENTITY  acceptThirdParty.visited.label  "Dari yang Pernah Dikunjungi">
 
-<!ENTITY  keepUntil.label               "Simpan hingga:">
-<!ENTITY  keepUntil.accesskey           "a">
+<!ENTITY  keepUntil2.label              "Simpan hingga">
+<!ENTITY  keepUntil2.accesskey          "h">
 
 <!ENTITY  expire.label                  "kedaluwarsa">
 <!ENTITY  close.label                   "&brandShortName; ditutup">
@@ -81,6 +86,8 @@
 <!ENTITY  rememberActions.removeCookies.label "menghapus kuki satu-persatu">
 <!ENTITY  rememberActions.post.label          ".">
 
+<!ENTITY  rememberDescription1.label      "&brandShortName; akan mengingat penjelajahan, unduhan, formulir dan riwayat pencarian Anda.">
+
 <!ENTITY  dontrememberDescription.label  "&brandShortName; akan menggunakan pengaturan seperti halnya pengaturan mode penjelajahan pribadi dan tidak akan menyimpan riwayat apa pun ketika Anda menjelajah Web.">
 
 <!-- LOCALIZATION NOTE (dontrememberActions.pre.label): include a trailing space as needed -->
@@ -88,6 +95,9 @@
 <!ENTITY  dontrememberActions.pre.label          "Anda juga dapat ">
 <!ENTITY  dontrememberActions.clearHistory.label "membersihkan riwayat terkini">
 <!ENTITY  dontrememberActions.post.label         ".">
+
+<!ENTITY  clearHistoryButton.label       "Hapus riwayat…">
+<!ENTITY  clearHistoryButton.accesskey   "r">
 
 <!ENTITY  privateBrowsingPermanent2.label "Selalu gunakan mode penjelajahan pribadi">
 <!ENTITY  privateBrowsingPermanent2.accesskey "p">
@@ -109,3 +119,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "k">
 <!ENTITY  browserContainersSettings.label        "Pengaturan…">
 <!ENTITY  browserContainersSettings.accesskey    "p">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "Cegah layanan aksesibilitas dari mengakses peramban Anda">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "a">
+<!ENTITY  a11yPrivacy.learnmore.label    "Pelajari lebih lanjut">
+<!ENTITY enableSafeBrowsingLearnMore.label "Pelajari lebih lanjut">

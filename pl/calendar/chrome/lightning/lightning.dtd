@@ -26,7 +26,11 @@
 <!ENTITY lightning.menu.eventtask.label       "Wydarzenia i zadania">
 <!ENTITY lightning.menu.eventtask.accesskey   "a">
 
-<!ENTITY lightning.calendarproperties.email.label               "E-mail:">
+<!ENTITY lightning.calendarproperties.email.label "E-mail:">
+
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.label "Preferuj harmonogram pocztowy po stronie klienta">
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext1 "Na razie można włączyć tę opcję tylko po ustawieniu tego kalendarza w jego oknie właściwości, jeśli serwer kalendarza obsługuje harmonogram.">
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext2 "Ta opcja jest dostępna tylko, jeśli serwer kalendarza obsługuje harmonogram. Włączenie umożliwi użycie standardowego harmonogramu pocztowego, zamiast pozostawiać to serwerowi.">
 
 <!ENTITY lightning.imipbar.btnAccept.label "Zaakceptuj">
 <!ENTITY lightning.imipbar.btnAccept2.tooltiptext "Zaakceptuj zaproszenie na wydarzenie">
@@ -59,6 +63,13 @@
 <!ENTITY lightning.imipbar.btnUpdate.label "Uaktualnij">
 <!ENTITY lightning.imipbar.btnUpdate.tooltiptext "Uaktualnij wydarzenie w kalendarzu">
 <!ENTITY lightning.imipbar.description "Wiadomość zawiera zaproszenie na wydarzenie.">
+
+<!ENTITY lightning.imipbar.btnSend.label "Wyślij odpowiedź teraz">
+<!ENTITY lightning.imipbar.btnSend.tooltiptext "Wyślij odpowiedź do organizatora">
+<!ENTITY lightning.imipbar.btnSendSeries.tooltiptext "Wyślij odpowiedź na całą serię do organizatora">
+<!ENTITY lightning.imipbar.btnDontSend.label "Nie wysyłaj odpowiedzi">
+<!ENTITY lightning.imipbar.btnDontSend.tooltiptext "Zmień stan uczestnictwa bez wysyłania odpowiedzi do organizatora">
+<!ENTITY lightning.imipbar.btnDontSendSeries.tooltiptext "Zmień stan uczestnictwa w serii bez wysyłania odpowiedzi do organizatora">
 
 <!ENTITY lightning.keys.event.showCalendar.key "C">
 <!ENTITY lightning.keys.event.showTasks.key "D">

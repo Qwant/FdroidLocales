@@ -2,6 +2,18 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY searchBar.label                       "Arama çubuğu">
+
+<!ENTITY searchBar.hidden.label                "Hem arama hem de gezinti için adres çubuğunu kullan">
+<!ENTITY searchBar.shown.label                 "Araç çubuğuna arama çubuğunu ekle">
+
+<!-- LOCALIZATION NOTE (showSearchSuggestionsAboveHistory.label): This string
+     describes what the user will observe when the system prioritizes search
+     suggestions over browsing history in the results that extend down from the
+     address bar. In the original English string, "ahead" refers to location
+     (appearing most proximate to), not time (appearing before). -->
+<!ENTITY showSearchSuggestionsAboveHistory.label "Adres çubuğu sonuçlarında arama önerilerini gezinti geçmişinden önce göster">
+
 <!ENTITY defaultSearchEngine.label             "Varsayılan arama motoru">
 
 <!ENTITY chooseYourDefaultSearchEngine2.label   "Adres çubuğunda ve arama çubuğunda kullanılacak varsayılan arama motorunu seçin.">
@@ -15,7 +27,7 @@
 
 <!ENTITY oneClickSearchEngines.label           "Tek tıklamalı arama motorları">
 
-<!ENTITY chooseWhichOneToDisplay2.label         "Anahtar kelimeleri yazmaya başladığınızda adres çubuğunun ve arama çubuğunun altında görünen alternatif arama motorlarını seçin.">
+<!ENTITY chooseWhichOneToDisplay2.label         "Anahtar kelimeleri yazmaya başladığınızda adres çubuğunun ve arama çubuğunun altında görünecek alternatif arama motorlarını seçin.">
 
 <!ENTITY engineNameColumn.label                "Arama motoru">
 <!ENTITY engineKeywordColumn.label             "Anahtar kelime">

@@ -5,7 +5,7 @@
 <!ENTITY pageInfoWindow.width "650">
 <!ENTITY pageInfoWindow.height "525">
 
-<!ENTITY  copy.key              "K">
+<!ENTITY copy.key "C">
 <!ENTITY  copy.label            "Kopiuj">
 <!ENTITY  copy.accesskey        "K">
 <!ENTITY  selectall.key         "a">
@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "Zawsze pytaj">
 <!ENTITY  permAllow             "Zezwalaj">
 <!ENTITY  permAllowSession      "Zezwalaj na czas sesji">
+<!ENTITY permHide "Ukrywaj">
 <!ENTITY  permBlock             "Blokuj">
 <!ENTITY  permissionsFor        "Uprawnienia dla:">
 <!ENTITY  permPlugins "Aktywowanie wtyczek">
-
-<!ENTITY  permClearStorage           "Wyczyść dane offline">
-<!ENTITY  permClearStorage.accesskey "d">
 
 <!ENTITY  securityTab           "Bezpieczeństwo">
 <!ENTITY  securityTab.accesskey "B">
@@ -80,6 +78,9 @@
 <!ENTITY  securityView.privacy.cookies                  "Czy ta witryna przechowuje informacje na tym komputerze (ciasteczka)?">
 <!ENTITY  securityView.privacy.viewCookies              "Wyświetl ciasteczka">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "a">
+<!ENTITY securityView.privacy.siteData "Czy ta witryna przechowuje informacje na tym komputerze?">
+<!ENTITY securityView.privacy.clearSiteData "Wyczyść ciasteczka i dane stron">
+<!ENTITY securityView.privacy.clearSiteData.accessKey "n">
 <!ENTITY securityView.privacy.passwords "Czy hasła użyte na tej witrynie zostały zachowane?">
 <!ENTITY securityView.privacy.viewPasswords "Wyświetl zachowane hasła">
 <!ENTITY securityView.privacy.viewPasswords.accessKey "h">

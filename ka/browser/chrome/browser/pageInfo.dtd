@@ -17,9 +17,9 @@
 <!ENTITY  generalTab.accesskey  "ზ">
 <!ENTITY  generalTitle          "სათაური:">
 <!ENTITY  generalURL            "მისამართი:">
-<!ENTITY  generalType           "ტიპი:">
+<!ENTITY  generalType           "სახეობა:">
 <!ENTITY  generalMode           "ასახვის რეჟიმი:">
-<!ENTITY  generalSize           "ზომა:">
+<!ENTITY  generalSize           "მოცულობა:">
 <!ENTITY  generalReferrer       "დამოწმების URL:">
 <!ENTITY  generalSource         "კეშის წყარო:">
 <!ENTITY  generalModified       "ბოლო ცვლილება:">
@@ -27,25 +27,25 @@
 <!ENTITY  generalMetaName       "სახელი">
 <!ENTITY  generalMetaContent    "შიგთავსი">
 
-<!ENTITY  mediaTab              "მედია">
-<!ENTITY  mediaTab.accesskey    "მ">
+<!ENTITY  mediaTab              "ფაილები">
+<!ENTITY  mediaTab.accesskey    "ფ">
 <!ENTITY  mediaLocation         "მდებარეობა:">
-<!ENTITY  mediaText             "ასოცირებული ტექსტი:">
+<!ENTITY  mediaText             "დართული ტექსტი:">
 <!ENTITY  mediaAltHeader        "ალტერნატული ტექსტი">
 <!ENTITY  mediaAddress          "მისამართი">
-<!ENTITY  mediaType             "ტიპი">
-<!ENTITY  mediaSize             "ზომა">
+<!ENTITY  mediaType             "სახეობა">
+<!ENTITY  mediaSize             "მოცულობა">
 <!ENTITY  mediaCount            "რაოდენობა">
-<!ENTITY  mediaDimension        "სიგრძე/სიგანე:">
+<!ENTITY  mediaDimension        "ზომები:">
 <!ENTITY  mediaLongdesc         "ვრცელი აღწერა:">
 <!ENTITY  mediaBlockImage.accesskey "ბ">
 <!ENTITY  mediaSaveAs           "შენახვა როგორც…">
 <!ENTITY  mediaSaveAs.accesskey "რ">
 <!ENTITY  mediaSaveAs2.accesskey "ე">
-<!ENTITY  mediaPreview          "გამოსახულების გადახედვა:">
+<!ENTITY  mediaPreview          "გამოსახულების შეთვალიერება:">
 
-<!ENTITY  feedTab               "ლენტები">
-<!ENTITY  feedTab.accesskey     "ლ">
+<!ENTITY  feedTab               "არხები">
+<!ENTITY  feedTab.accesskey     "ა">
 <!ENTITY  feedSubscribe         "გამოწერა">
 <!ENTITY  feedSubscribe.accesskey "გ">
 
@@ -55,16 +55,14 @@
 <!ENTITY  permAskAlways         "შეკითხვა ყოველ ჯერზე">
 <!ENTITY  permAllow             "დაშვება">
 <!ENTITY  permAllowSession      "დაშვება სეანსზე">
+<!ENTITY  permHide              "დამალვა">
 <!ENTITY  permBlock             "აკრძალვა">
-<!ENTITY  permissionsFor        "უფლებები საიტისთვის:">
-<!ENTITY  permPlugins           "მოდულების გააქტიურება">
-
-<!ENTITY  permClearStorage           "საცავის გასუფთავება">
-<!ENTITY  permClearStorage.accesskey "გ">
+<!ENTITY  permissionsFor        "ნებართვები საიტისთვის:">
+<!ENTITY  permPlugins           "მოდულების ამოქმედება">
 
 <!ENTITY  securityTab           "უსაფრთხოება">
 <!ENTITY  securityTab.accesskey "უ">
-<!ENTITY  securityView.certView "სერთიფიკატის ნახვა">
+<!ENTITY  securityView.certView "სერტიფიკატის ნახვა">
 <!ENTITY  securityView.accesskey "ნ">
 <!ENTITY  securityView.unknown   "უცნობია">
 
@@ -80,6 +78,9 @@
 <!ENTITY  securityView.privacy.cookies                  "ინახავს ეს საიტი ჩემს კომპიუტერში მონაცემებს (ფუნთუშებს)?">
 <!ENTITY  securityView.privacy.viewCookies              "ფუნთუშების ნახვა">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "ფ">
+<!ENTITY  securityView.privacy.siteData                 "ინახავს ეს საიტი ჩემს კომპიუტერში მონაცემებს?">
+<!ENTITY  securityView.privacy.clearSiteData            "ფუნთუშებისა და საიტის მონაცემების გასუფთავება">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "გ">
 <!ENTITY  securityView.privacy.passwords                "ამ საიტისთვის პაროლები შენახული მაქვს?">
 <!ENTITY  securityView.privacy.viewPasswords            "შენახული პაროლების ნახვა">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "პ">

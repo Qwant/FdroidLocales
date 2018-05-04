@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "La información de datos está deshabilitado para esta configuración de compilación">
 
-<!ENTITY enableHealthReport1.label       "Permitir que &brandShortName; envíe automáticamente datos técnicos y de interacción a Mozilla">
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.label       "Permitir que &brandShortName; envíe información técnica y de interacción a Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "Conocer más">
 
 <!ENTITY dataCollection.label            "Recolección de datos y uso de &brandShortName;">
@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Permitir que &brandShortName; envíe informes de fallos a Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "P">
+
+<!ENTITY collectBrowserErrors.label          "Permitir que &brandShortName; envíe informes de error del navegador (incluyendo mensajes de error) a Mozilla">
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "Conocer más">
+
+<!ENTITY sendBackloggedCrashReports.label  "Permitir que &brandShortName; envíe informes de fallos pendientes en su nombre">
+<!ENTITY sendBackloggedCrashReports.accesskey "c">
 <!ENTITY crashReporterLearnMore.label    "Conocer más">
 
 <!ENTITY networkTab.label                "Red">
@@ -51,14 +58,17 @@ available. -->
 
 <!ENTITY httpCache.label                 "Contenido web en caché">
 
-<!ENTITY offlineStorage2.label           "Contenido web y datos de usuario sin conexión">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Datos del sitio">
 <!ENTITY clearSiteData.label             "Limpiar todos los datos">
 <!ENTITY clearSiteData.accesskey         "L">
+<!ENTITY siteData1.label                 "Cookies y datos del sitio">
+<!ENTITY clearSiteData1.label            "Limpiar datos…">
+<!ENTITY clearSiteData1.accesskey        "L">
 <!ENTITY siteDataSettings.label          "Configuración…">
 <!ENTITY siteDataSettings.accesskey      "C">
+<!ENTITY siteDataSettings1.label         "Administrar datos…">
+<!ENTITY siteDataSettings1.accesskey     "M">
 <!ENTITY siteDataLearnMoreLink.label     "Conocer más">
 
 <!-- LOCALIZATION NOTE:
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB de espacio">
 <!ENTITY clearCacheNow.label             "Limpiar ahora">
 <!ENTITY clearCacheNow.accesskey         "h">
-<!ENTITY clearOfflineAppCacheNow.label   "Limpiar ahora">
-<!ENTITY clearOfflineAppCacheNow.accesskey "i">
 <!ENTITY overrideSmartCacheSize.label    "Anular administración automática de caché">
 <!ENTITY overrideSmartCacheSize.accesskey "o">
 
@@ -99,7 +107,7 @@ available. -->
 <!ENTITY updateAuto3.accesskey           "a">
 <!ENTITY updateCheckChoose2.label        "Busque actualizaciones pero dejarme elegir si las instalo">
 <!ENTITY updateCheckChoose2.accesskey    "C">
-<!ENTITY updateManual2.label             "Nunca busqie actualizaciones (no recomendado)">
+<!ENTITY updateManual2.label             "No buscar actualizaciones (no recomendado)">
 <!ENTITY updateManual2.accesskey         "N">
 
 <!ENTITY updateHistory2.label            "Mostrar historial de actualizaciones…">
@@ -111,24 +119,13 @@ available. -->
 <!ENTITY enableSearchUpdate2.label       "Actualizar automáticamente los buscadores">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
 
-<!ENTITY offlineStorageNotify.label               "Avisarme cuando un sitio pida guardar datos para usar sin conexión">
-<!ENTITY offlineStorageNotify.accesskey           "t">
-<!ENTITY offlineStorageNotifyExceptions.label     "Excepciones…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "x">
-
-<!ENTITY offlineAppsList2.label          "Los siguientes sitios tienen permitido guardar datos para uso sin conexión:">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Eliminar…">
-<!ENTITY offlineAppsListRemove.accesskey "r">
-<!ENTITY offlineAppRemove.confirm        "Eliminar datos sin conexión">
-
 <!ENTITY certificateTab.label            "Certificados">
-<!ENTITY certPersonal2.description       "Cuando un servidor solicite el certificado personal">
+<!ENTITY certPersonal2.description       "Cuando un servidor solicite su certificado personal">
 <!ENTITY selectCerts.auto                "Seleccionar uno automáticamente">
 <!ENTITY selectCerts.auto.accesskey      "S">
 <!ENTITY selectCerts.ask                 "Preguntarme cada vez">
 <!ENTITY selectCerts.ask.accesskey       "a">
-<!ENTITY enableOCSP.label                "Solicitar a los servidores respondedores de OCSP que confirmen la validez actual de los certificados">
+<!ENTITY enableOCSP.label                "Solicitar a los servidores de respuesta de OCSP que confirmen la validez actual de los certificados">
 <!ENTITY enableOCSP.accesskey            "O">
 <!ENTITY viewCerts2.label                "Ver certificados…">
 <!ENTITY viewCerts2.accesskey            "c">

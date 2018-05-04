@@ -2,10 +2,14 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY     window.title                  "Iɣewwaṛen - isefka n usmel">
+<!ENTITY     window.title                  "Iɣewwaṛen - Isefka n Usmel">
+
+<!ENTITY     window2.title                 "Sefrek inagan n tuqna akked isefka n usmel">
 <!ENTITY     hostCol.label                 "Asmel">
 <!ENTITY     statusCol.label               "addad">
+<!ENTITY     cookiesCol.label              "Inagan n tuqqna">
 <!ENTITY     usageCol.label                "Aklas">
+<!ENTITY     lastAccessedCol.label                "Aseqdec anneggaru">
 <!ENTITY     searchTextboxPlaceHolder             "Nadi ismal web">
 <!ENTITY     searchTextboxPlaceHolder.accesskey   "R">
 <!ENTITY     removeSelected.label          "Kkes tafrant">
@@ -15,5 +19,8 @@
 <!ENTITY     cancel.label                  "Sefsex">
 <!ENTITY     cancel.accesskey              "S">
 <!ENTITY     removingDialog.title          "Tuksa n isefka n usmel">
-<!ENTITY     removingSelected.description  "S tuksa n isefka n usmel ad ikkes daγen inagan n tuqna akked ugbur n war tuqna. aya izmer ad k-d-isufeγ seg ismal. tebγiḍ ad tkemleḍ?">
-<!ENTITY     siteTree.label                "Inagan n usmel-a web ad ttwakksen:">
+<!ENTITY     removingSelected.description  "S tuksa n isefka n usmel ad ikkes daɣen inagan n tuqna akked ugbur n war tuqna. Aya izmer ad k-d-isufeɣ seg ismal. tebɣiḍ ad tkemleḍ?">
+<!ENTITY     siteTree2.label               "Inagan n usmel-a web ad ttwakksen">
+<!ENTITY     removingDialog1.title         "Kkes Inagan n tuqna akked isefka n usmel">
+<!ENTITY     removingSelected1.description "Tuksa n inagan n tuqna akked isefka n usmel tezmer ad k-tsufeγ seg ismal. Tebγiḍ asenfel-a?">
+<!ENTITY     siteTree3.label               "Inagan n tuqna akked isefka n usmel n ismal-a ad ttwaksen">

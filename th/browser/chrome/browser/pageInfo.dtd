@@ -21,7 +21,7 @@
 <!ENTITY  generalMode           "โหมดการเรนเดอร์:">
 <!ENTITY  generalSize           "ขนาด:">
 <!ENTITY  generalReferrer       "URL อ้างอิง:">
-<!ENTITY  generalSource         "ที่มาแคช:">
+<!ENTITY  generalSource         "แหล่งที่มาแคช:">
 <!ENTITY  generalModified       "เปลี่ยนแปลงเมื่อ:">
 <!ENTITY  generalEncoding2      "รหัสอักขระ:">
 <!ENTITY  generalMetaName       "ชื่อ">
@@ -42,7 +42,7 @@
 <!ENTITY  mediaSaveAs           "บันทึกเป็น…">
 <!ENTITY  mediaSaveAs.accesskey "บ">
 <!ENTITY  mediaSaveAs2.accesskey "บ">
-<!ENTITY  mediaPreview          "แสดงตัวอย่างสื่อ:">
+<!ENTITY  mediaPreview          "ตัวอย่างสื่อ:">
 
 <!ENTITY  feedTab               "ฟีด">
 <!ENTITY  feedTab.accesskey     "ฟ">
@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "ถามเสมอ">
 <!ENTITY  permAllow             "อนุญาต">
 <!ENTITY  permAllowSession      "อนุญาตในวาระ">
+<!ENTITY  permHide              "ซ่อน">
 <!ENTITY  permBlock             "ปิดกั้น">
 <!ENTITY  permissionsFor        "การอนุญาตสำหรับ:">
 <!ENTITY  permPlugins           "เปิดใช้งานปลั๊กอิน">
-
-<!ENTITY  permClearStorage           "ล้างที่เก็บข้อมูล">
-<!ENTITY  permClearStorage.accesskey "ล">
 
 <!ENTITY  securityTab           "ความปลอดภัย">
 <!ENTITY  securityTab.accesskey "ค">
@@ -69,7 +67,7 @@
 <!ENTITY  securityView.unknown   "ไม่ทราบ">
 
 
-<!ENTITY  securityView.identity.header   "อัตลักษณ์เว็บไซต์">
+<!ENTITY  securityView.identity.header   "ข้อมูลประจำตัวเว็บไซต์">
 <!ENTITY  securityView.identity.owner    "เจ้าของ:">
 <!ENTITY  securityView.identity.domain   "เว็บไซต์:">
 <!ENTITY  securityView.identity.verifier "ยืนยันโดย:">
@@ -80,6 +78,9 @@
 <!ENTITY  securityView.privacy.cookies                  "เว็บไซต์นี้จัดเก็บข้อมูล (คุกกี้) ลงในคอมพิวเตอร์ของฉันหรือไม่?">
 <!ENTITY  securityView.privacy.viewCookies              "ดูคุกกี้">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "ด">
+<!ENTITY  securityView.privacy.siteData                 "เว็บไซต์นี้จัดเก็บข้อมูลลงในคอมพิวเตอร์ของฉันหรือไม่?">
+<!ENTITY  securityView.privacy.clearSiteData            "ล้างคุกกี้และข้อมูลไซต์">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "ล">
 <!ENTITY  securityView.privacy.passwords                "ฉันเคยบันทึกรหัสผ่านใด ๆ สำหรับเว็บไซต์นี้หรือไม่?">
 <!ENTITY  securityView.privacy.viewPasswords            "ดูรหัสผ่านที่บันทึกไว้">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "ร">

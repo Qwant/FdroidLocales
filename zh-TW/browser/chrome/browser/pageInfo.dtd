@@ -54,13 +54,11 @@
 <!ENTITY  permUseDefault        "使用預設值">
 <!ENTITY  permAskAlways         "每次詢問">
 <!ENTITY  permAllow             "允許">
-<!ENTITY  permAllowSession      "此瀏覽階段中允許">
+<!ENTITY  permAllowSession      "此次瀏覽階段允許">
+<!ENTITY  permHide              "隱藏">
 <!ENTITY  permBlock             "封鎖">
 <!ENTITY  permissionsFor        "此網站權限設定:">
 <!ENTITY  permPlugins           "啟用外掛程式">
-
-<!ENTITY  permClearStorage           "清除儲存空間">
-<!ENTITY  permClearStorage.accesskey "C">
 
 <!ENTITY  securityTab           "安全">
 <!ENTITY  securityTab.accesskey "S">
@@ -69,7 +67,7 @@
 <!ENTITY  securityView.unknown   "未知">
 
 
-<!ENTITY  securityView.identity.header   "網站身分">
+<!ENTITY  securityView.identity.header   "網站身份">
 <!ENTITY  securityView.identity.owner    "擁有者:">
 <!ENTITY  securityView.identity.domain   "網站:">
 <!ENTITY  securityView.identity.verifier "驗證機構:">
@@ -80,6 +78,9 @@
 <!ENTITY  securityView.privacy.cookies                  "此網站有在我的電腦中儲存資訊 (Cookie) 嗎？">
 <!ENTITY  securityView.privacy.viewCookies              "檢視 Cookie">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "k">
+<!ENTITY  securityView.privacy.siteData                 "此網站有在我的電腦中儲存資訊嗎？">
+<!ENTITY  securityView.privacy.clearSiteData            "清除 Cookie 與網站資料">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "C">
 <!ENTITY  securityView.privacy.passwords                "我有在此網站儲存任何密碼嗎？">
 <!ENTITY  securityView.privacy.viewPasswords            "檢視已存密碼">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "w">

@@ -4,12 +4,12 @@
 
 <!ENTITY window.width                       "36em">
 
-<!ENTITY     cookiesonsystem.label          "নিম্নলিখিত কুকিগুলি আপনার কম্পিউটারে সংরক্ষিত আছে:">
+<!ENTITY     cookiesonsystem2.label         "নিম্নোক্ত কুকি গুলি আপনার কম্পিউটারে সংরক্ষিত আছে">
 <!ENTITY     cookiename.label               "কুকির নাম">
 <!ENTITY     cookiedomain.label             "সাইট">
 
 <!ENTITY     props.name.label               "নাম:">
-<!ENTITY     props.value.label              "বিষয়বস্তু:">
+<!ENTITY     props.value.label              "কন্টেন্ট:">
 <!ENTITY     props.domain.label             "হোস্ট:">
 <!ENTITY     props.path.label               "পাথ:">
 <!ENTITY     props.secure.label             "ব্যবহৃত সংযোগ:">
@@ -19,7 +19,6 @@
 <!ENTITY     window.title                   "কুকি">
 <!ENTITY     windowClose.key                "w">
 <!ENTITY     focusSearch1.key               "f">
-<!ENTITY     focusSearch2.key               "k">
 
 <!ENTITY     searchFilter.label             "অনুসন্ধান:">
 <!ENTITY     searchFilter.accesskey         "S">

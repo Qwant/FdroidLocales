@@ -12,7 +12,8 @@
 <!ENTITY mailingListPropertiesMenu.label    "E-posta listesi özellikleri">
 <!ENTITY mailingListPropertiesMenu.accesskey "i">
 
-<!ENTITY addressbookPicker.label            "Adres Defteri:">
+<!ENTITY abContextMenuButton.tooltip        "Adres defteri bağlam menüsünü göster">
+<!ENTITY addressbookPicker.label            "Adres defteri:">
 <!ENTITY addressbookPicker.accesskey        "t">
 <!ENTITY searchContacts.label               "Kişilerde ara:">
 <!ENTITY searchContacts.accesskey           "a">
@@ -20,9 +21,9 @@
 
 <!ENTITY addtoToFieldMenu.label             "Kime alanına ekle">
 <!ENTITY addtoToFieldMenu.accesskey         "e">
-<!ENTITY addtoCcFieldMenu.label             "Bilgi alanına ekle">
+<!ENTITY addtoCcFieldMenu.label             "Cc alanına ekle">
 <!ENTITY addtoCcFieldMenu.accesskey         "B">
-<!ENTITY addtoBccFieldMenu.label            "Gizli Alıcı alanına ekle">
+<!ENTITY addtoBccFieldMenu.label            "Bcc alanına ekle">
 <!ENTITY addtoBccFieldMenu.accesskey        "G">
 <!ENTITY deleteAddrBookCard.label           "Sil">
 <!ENTITY deleteAddrBookCard.accesskey       "S">
@@ -35,9 +36,14 @@
 <!ENTITY editMailingListContext.label       "Listeyi düzenle">
 <!ENTITY editMailingListContext.accesskey   "e">
 
+<!ENTITY newContactAbContext.label          "Yeni kişi">
+<!ENTITY newContactAbContext.accesskey      "k">
+<!ENTITY newListAbContext.label             "Yeni liste">
+<!ENTITY newListAbContext.accesskey         "L">
+
 <!ENTITY toButton.label                     "Kime alanına ekle:">
 <!ENTITY toButton.accesskey                 "e">
-<!ENTITY ccButton.label                     "Bilgi alanına ekle:">
-<!ENTITY ccButton.accesskey                 "B">
-<!ENTITY bccButton.label                    "Gizli Alıcı alanına ekle:">
-<!ENTITY bccButton.accesskey                "G">
+<!ENTITY ccButton.label                     "Cc alanına ekle:">
+<!ENTITY ccButton.accesskey                 "C">
+<!ENTITY bccButton.label                    "Bcc alanına ekle:">
+<!ENTITY bccButton.accesskey                "B">

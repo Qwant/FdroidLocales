@@ -24,6 +24,13 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionVersion "版本">
 <!ENTITY aboutSupport.extensionId "ID">
 
+<!ENTITY aboutSupport.securitySoftwareTitle "安全软件">
+<!ENTITY aboutSupport.securitySoftwareType "类型">
+<!ENTITY aboutSupport.securitySoftwareName "名称">
+<!ENTITY aboutSupport.securitySoftwareAntivirus "防病毒软件">
+<!ENTITY aboutSupport.securitySoftwareAntiSpyware "反间谍软件">
+<!ENTITY aboutSupport.securitySoftwareFirewall "防火墙">
+
 <!ENTITY aboutSupport.featuresTitle "&brandShortName; 功能">
 <!ENTITY aboutSupport.featureName "名称">
 <!ENTITY aboutSupport.featureVersion "版本">
@@ -71,6 +78,8 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsProcessCount "网页内容处理进程">
 
+<!ENTITY aboutSupport.enterprisePolicies "企业策略">
+
 <!ENTITY aboutSupport.appBasicsKeyGoogle "Google 密钥">
 <!ENTITY aboutSupport.appBasicsKeyMozilla "Mozilla 位置服务密钥">
 
@@ -110,6 +119,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "已激活">
 <!ENTITY aboutSupport.a11yForceDisabled "强制停用无障碍环境">
 <!ENTITY aboutSupport.a11yHandlerUsed "采用无障碍处理程序">
+<!ENTITY aboutSupport.a11yInstantiator "无障碍环境实例化器（Accessibility Instantiator）">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "库版本">
 
@@ -153,3 +163,13 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceChannels "声道">
 <!ENTITY aboutSupport.mediaDeviceRate "采样率">
 <!ENTITY aboutSupport.mediaDeviceLatency "延迟">
+
+<!ENTITY aboutSupport.intlTitle "国际化与本地化">
+<!ENTITY aboutSupport.intlAppTitle "应用程序设置">
+<!ENTITY aboutSupport.intlLocalesRequested "要求的语言环境">
+<!ENTITY aboutSupport.intlLocalesAvailable "可用的语言环境">
+<!ENTITY aboutSupport.intlLocalesSupported "应用程序语言环境">
+<!ENTITY aboutSupport.intlLocalesDefault "默认语言环境">
+<!ENTITY aboutSupport.intlOSTitle "操作系统">
+<!ENTITY aboutSupport.intlOSPrefsSystemLocales "系统语言环境">
+<!ENTITY aboutSupport.intlRegionalPrefs "地区偏好">

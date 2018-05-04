@@ -8,13 +8,16 @@
 <!ENTITY newWindowsAsTabs.label       "Mở cửa sổ mới trong một thẻ mới thay thế">
 <!ENTITY newWindowsAsTabs.accesskey   "w">
 
-<!ENTITY warnOnCloseMultipleTabs.label      "Cảnh báo khi bạn đóng nhiều thẻ một lúc">
+<!ENTITY newWindowsAsTabs3.label       "Mở đường dẫn ở thẻ thay vì ở cửa sổ mới">
+<!ENTITY newWindowsAsTabs3.accesskey   "w">
+
+<!ENTITY warnOnCloseMultipleTabs.label      "Cảnh báo bạn khi đóng nhiều thẻ một lúc">
 <!ENTITY warnOnCloseMultipleTabs.accesskey  "m">
 
-<!ENTITY warnOnOpenManyTabs.label       "Cảnh báo khi bạn mở nhiều thẻ một lúc có thể làm chậm &brandShortName;">
+<!ENTITY warnOnOpenManyTabs.label       "Cảnh báo bạn khi mở nhiều thẻ có thể làm chậm &brandShortName;">
 <!ENTITY warnOnOpenManyTabs.accesskey   "d">
 
-<!ENTITY switchLinksToNewTabs.label        "Khi bạn mở một liên kết trong thẻ mới, chuyển sang thẻ đó ngay">
+<!ENTITY switchLinksToNewTabs.label        "Khi bạn mở một liên kết trong thẻ mới, chuyển sang tab đó ngay">
 <!ENTITY switchLinksToNewTabs.accesskey    "h">
 
 <!ENTITY showTabsInTaskbar.label          "Hiển thị hình ảnh xem trước thẻ trong thanh tác vụ Windows">

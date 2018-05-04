@@ -49,8 +49,8 @@
 <!ENTITY getAllNewMsgCmdPopupMenu.accesskey "A">
 <!ENTITY getNewMsgCurrentAccountCmdPopupMenu.label "Núverandi reikning">
 <!ENTITY getNewMsgCurrentAccountCmdPopupMenu.accesskey "N">
-<!ENTITY getNextNMsgCmd2.label "Ná í næstu fréttapósta">
-<!ENTITY getNextNMsgCmd2.accesskey "t">
+<!ENTITY getNextNMsgCmd.label "Ná í næstu 500 fréttagreinar">
+<!ENTITY getNextNMsgCmd.accesskey "t">
 <!ENTITY sendUnsentCmd.label "Senda ósendan póst">
 <!ENTITY sendUnsentCmd.accesskey "d">
 <!ENTITY subscribeCmd.label "Gerast áskrifandi…">
@@ -304,7 +304,7 @@
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goChatCmd.label "Spjall">
 <!ENTITY goChatCmd.accesskey "S">
-<!ENTITY goChatCmd2.key "H">
+<!ENTITY goChatCmd.key "I">
 <!ENTITY prevStarredMsgCmd.label "Stjörnumerktur póstur">
 <!ENTITY prevStarredMsgCmd.accesskey "S">
 <!ENTITY folderMenu.label "Mappa">
@@ -352,9 +352,6 @@
 <!ENTITY editAsNewMsgCmd.key "e">
 <!ENTITY editDraftMsgCmd.label "Breyta drögum">
 <!ENTITY editDraftMsgCmd.accesskey "d">
-<!ENTITY newMsgFromTemplateCmd.label "Ný skilaboð frá sniðmáti">
-<!ENTITY newMsgFromTemplateCmd.keycode "VK_RETURN">
-<!-- do not change "VK_RETURN" -->
 <!ENTITY createFilter.label "Búa til síu út frá pósti…">
 <!ENTITY createFilter.accesskey "u">
 <!ENTITY moveMsgToMenu.label "Færa í">
@@ -610,9 +607,6 @@
 <!-- Folder Pane Context Menu -->
 <!ENTITY folderContextGetMessages.label "Ná í póst">
 <!ENTITY folderContextGetMessages.accesskey "N">
-<!ENTITY folderContextPauseAllUpdates.label "Stöðva allar uppfærslur">
-<!ENTITY folderContextPauseUpdates.label "Stöðva uppfærslu">
-<!ENTITY folderContextPauseUpdates.accesskey "u">
 <!ENTITY folderContextOpenInNewWindow.label "Opna í nýjum glugga">
 <!ENTITY folderContextOpenInNewWindow.accesskey "O">
 <!ENTITY folderContextOpenNewTab.label "Opna í nýjum flipa">
@@ -704,13 +698,12 @@
 <!ENTITY idColumn2.tooltip "Raða eftir móttekinni röð">
 <!ENTITY attachmentColumn2.tooltip "Raða eftir viðhengjum">
 <!-- Thread Pane Context Menu -->
-<!ENTITY contextNewMsgFromTemplate.label "Ný skilaboð frá sniðmáti">
 <!ENTITY contextOpenNewWindow.label "Opna póst í nýjum glugga">
 <!ENTITY contextOpenNewWindow.accesskey "O">
-<!-- The contextOpenNewTab.accesskey ("T") potentially conflicts with
-     cutCmd.accessKey which is defined in textcontext.dtd from toolkit. Right
-     now, both menu items can't be visible at the same time, but should someone
-     enable copy/paste of message, this key would probably need to be changed. -->
+<!-- The key potentially conflicts with cutCmd.accessKey which is defined in
+     textcontext.dtd from toolkit. Right now, both menu items can't be visible
+     at the same time, but should someone enable copy/paste of message, this key
+     would probably need to be changed. -->
 <!ENTITY contextOpenNewTab.label "Opna póst í nýjum flipa">
 <!ENTITY contextOpenNewTab.accesskey "t">
 <!ENTITY contextOpenConversation.label "Opna póst í samtali">
@@ -912,5 +905,3 @@
 <!ENTITY showAllAppsCmdMac.label "Sýna allt">
 <!-- Mac OS X Dock Icon pop-up menu -->
 <!ENTITY dockOptions.label "App Icon valkostir…">
-<!ENTITY writeNewMessageDock.label "Skrifa nýjan póst">
-<!ENTITY openAddressBookDock.label "Opna nafnaskrá">

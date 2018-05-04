@@ -8,6 +8,9 @@
 <!ENTITY newWindowsAsTabs.label       "Nova okna odpiraj v novih zavihkih">
 <!ENTITY newWindowsAsTabs.accesskey   "n">
 
+<!ENTITY newWindowsAsTabs3.label       "Odpiraj povezave v zavihkih namesto v novih oknih">
+<!ENTITY newWindowsAsTabs3.accesskey   "d">
+
 <!ENTITY warnOnCloseMultipleTabs.label      "Opozori ob zapiranju več zavihkov hkrati">
 <!ENTITY warnOnCloseMultipleTabs.accesskey  "z">
 
@@ -15,8 +18,8 @@
 <!ENTITY warnOnOpenManyTabs.accesskey   "v">
 
 <!ENTITY switchLinksToNewTabs.label        "Ko odprete povezavo v novem zavihku, takoj preklopi nanj">
-<!ENTITY switchLinksToNewTabs.accesskey    "t">
+<!ENTITY switchLinksToNewTabs.accesskey    "o">
 
 <!ENTITY showTabsInTaskbar.label          "Prikaži predoglede zavihkov v opravilni vrstici Windows">
-<!ENTITY showTabsInTaskbar.accesskey      "k">
+<!ENTITY showTabsInTaskbar.accesskey      "ž">
 <!ENTITY tabsGroup.label          "Zavihki">

@@ -15,6 +15,6 @@
 <!ENTITY ListDescription.accesskey "s">
 <!-- See bug 58485, when we implement drag and drop, add 'or drag addresses' back in -->
 <!ENTITY AddressTitle.label "Sláðu inn tölvupóstfang til að bæta við í póstlistann:">
-<!ENTITY AddressTitle.accesskey "ö">
+<!ENTITY AddressTitle.accesskey "">
 <!ENTITY UpButton.label "Færa upp">
 <!ENTITY DownButton.label "Færa niður">

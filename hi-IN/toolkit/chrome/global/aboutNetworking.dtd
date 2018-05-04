@@ -16,13 +16,14 @@
 <!ENTITY aboutNetworking.port                  "पोर्ट">
 <!ENTITY aboutNetworking.http2                 "HTTP/2">
 <!ENTITY aboutNetworking.ssl                   "SSL">
-<!ENTITY aboutNetworking.active                "सक्रिय करें">
+<!ENTITY aboutNetworking.active                "सक्रिय">
 <!ENTITY aboutNetworking.idle                  "निष्क्रिय">
 <!ENTITY aboutNetworking.host                  "मेजबान">
 <!ENTITY aboutNetworking.tcp                   "TCP">
 <!ENTITY aboutNetworking.sent                  "भेजें">
 <!ENTITY aboutNetworking.received              "हस्तगत">
 <!ENTITY aboutNetworking.family                "परिवार">
+<!ENTITY aboutNetworking.trr                   "TRR">
 <!ENTITY aboutNetworking.addresses             "पता">
 <!ENTITY aboutNetworking.expires               "समय समाप्त (सेकेंड)">
 <!ENTITY aboutNetworking.messagesSent          "संदेश प्रेषित">
@@ -43,6 +44,8 @@
 <!ENTITY aboutNetworking.dnsLookupTableColumn  "IPs">
 <!ENTITY aboutNetworking.rcwn                  "RCWN आँकड़े">
 <!ENTITY aboutNetworking.rcwnStatus            "RCWN स्थिति">
+<!ENTITY aboutNetworking.rcwnCacheWonCount     "कैश विजय गणना">
+<!ENTITY aboutNetworking.rcwnNetWonCount       "अंतिम विजय गणना">
 <!ENTITY aboutNetworking.totalNetworkRequests  "कुल नेटवर्क अनुरोध गणना">
 <!ENTITY aboutNetworking.rcwnOperation         "कैश कार्रवाई">
 <!ENTITY aboutNetworking.rcwnPerfOpen          "खोलें">
@@ -51,3 +54,6 @@
 <!ENTITY aboutNetworking.rcwnPerfEntryOpen     "प्रविष्टि खोलें">
 <!ENTITY aboutNetworking.rcwnAvgShort          "कम औसत">
 <!ENTITY aboutNetworking.rcwnAvgLong           "लंबे औसत">
+<!ENTITY aboutNetworking.rcwnStddevLong        "लंबा मानक विचलन">
+<!ENTITY aboutNetworking.rcwnCacheSlow         "कैश सुस्ती गणना">
+<!ENTITY aboutNetworking.rcwnCacheNotSlow      "कैश असुस्ती गणना">

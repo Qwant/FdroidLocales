@@ -30,14 +30,14 @@
 <!ENTITY  mediaTab              "Multimédia">
 <!ENTITY  mediaTab.accesskey    "M">
 <!ENTITY  mediaLocation         "Localização:">
-<!ENTITY  mediaText             "Texto Associado:">
+<!ENTITY  mediaText             "Texto associado:">
 <!ENTITY  mediaAltHeader        "Texto alternativo">
 <!ENTITY  mediaAddress          "Endereço">
 <!ENTITY  mediaType             "Tipo">
 <!ENTITY  mediaSize             "Tamanho">
 <!ENTITY  mediaCount            "Contador">
 <!ENTITY  mediaDimension        "Dimensões:">
-<!ENTITY  mediaLongdesc         "Descrição Longa:">
+<!ENTITY  mediaLongdesc         "Descrição longa:">
 <!ENTITY  mediaBlockImage.accesskey "B">
 <!ENTITY  mediaSaveAs           "Guardar como…">
 <!ENTITY  mediaSaveAs.accesskey "G">
@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "Perguntar sempre">
 <!ENTITY  permAllow             "Permitir">
 <!ENTITY  permAllowSession      "Permitir para a sessão">
+<!ENTITY  permHide              "Ocultar">
 <!ENTITY  permBlock             "Bloquear">
 <!ENTITY  permissionsFor        "Permissões para:">
 <!ENTITY  permPlugins           "Ativar plugins">
-
-<!ENTITY  permClearStorage           "Limpar armazenamento">
-<!ENTITY  permClearStorage.accesskey "z">
 
 <!ENTITY  securityTab           "Segurança">
 <!ENTITY  securityTab.accesskey "S">
@@ -69,18 +67,21 @@
 <!ENTITY  securityView.unknown   "Desconhecido">
 
 
-<!ENTITY  securityView.identity.header   "Identidade do site">
+<!ENTITY  securityView.identity.header   "Identidade do website">
 <!ENTITY  securityView.identity.owner    "Proprietário:">
-<!ENTITY  securityView.identity.domain   "Site:">
+<!ENTITY  securityView.identity.domain   "Website:">
 <!ENTITY  securityView.identity.verifier "Verificado por:">
-<!ENTITY  securityView.identity.validity "Expira a:">
+<!ENTITY  securityView.identity.validity "Expira em:">
 
 <!ENTITY  securityView.privacy.header                   "Privacidade e histórico">
-<!ENTITY  securityView.privacy.history                  "Já visitei este site no passado?">
-<!ENTITY  securityView.privacy.cookies                  "Este site está a guardar informação (cookies) no meu computador?">
+<!ENTITY  securityView.privacy.history                  "Já visitei este website no passado?">
+<!ENTITY  securityView.privacy.cookies                  "Este website está a armazenar informação (cookies) no meu computador?">
 <!ENTITY  securityView.privacy.viewCookies              "Ver cookies">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "k">
-<!ENTITY  securityView.privacy.passwords                "Guardei alguma palavra-passe para este site?">
+<!ENTITY  securityView.privacy.siteData                 "Este website está a armazenar informação no meu computador?">
+<!ENTITY  securityView.privacy.clearSiteData            "Limpar cookies e dados de sites">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "c">
+<!ENTITY  securityView.privacy.passwords                "Guardei alguma palavra-passe para este website?">
 <!ENTITY  securityView.privacy.viewPasswords            "Ver palavras-passe guardadas">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "s">
 

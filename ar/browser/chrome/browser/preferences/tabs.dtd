@@ -8,6 +8,9 @@
 <!ENTITY newWindowsAsTabs.label       "افتح النوافذ الجديدة في ألسنة بدل النوافذ">
 <!ENTITY newWindowsAsTabs.accesskey   "ذ">
 
+<!ENTITY newWindowsAsTabs3.label       "افتح الروابط في ألسنة بدل فتح نوافذ جديدة">
+<!ENTITY newWindowsAsTabs3.accesskey   "ن">
+
 <!ENTITY warnOnCloseMultipleTabs.label      "نبّهني عند محاولة إغلاق عدّة ألسنة">
 <!ENTITY warnOnCloseMultipleTabs.accesskey  "ة">
 

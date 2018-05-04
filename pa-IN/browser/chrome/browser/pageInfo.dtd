@@ -1,9 +1,6 @@
-<!--
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
--->
-
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY  pageInfoWindow.width  "600">
 <!ENTITY  pageInfoWindow.height "500">
@@ -39,8 +36,7 @@
 <!ENTITY  mediaType             "ਟਾਈਪ">
 <!ENTITY  mediaSize             "ਆਕਾਰ">
 <!ENTITY  mediaCount            "ਗਿਣਤੀ">
-<!ENTITY  mediaDimension       "ਮਾਪ:">
-
+<!ENTITY  mediaDimension        "ਮਾਪ:">
 <!ENTITY  mediaLongdesc         "ਲੰਮਾ ਵੇਰਵਾ:">
 <!ENTITY  mediaBlockImage.accesskey "B">
 <!ENTITY  mediaSaveAs           "… ਵਜੋਂ ਸੰਭਾਲੋ">
@@ -59,12 +55,10 @@
 <!ENTITY  permAskAlways         "ਹਮੇਸ਼ਾ ਪੁੱਛੋ">
 <!ENTITY  permAllow             "ਮਨਜ਼ੂਰ">
 <!ENTITY  permAllowSession      "ਸ਼ੈਸ਼ਨ ਲਈ ਮਨਜ਼ੂਰ ਕਰੋ">
+<!ENTITY  permHide              "ਲੁਕਾਓ">
 <!ENTITY  permBlock             "ਪਾਬੰਦੀ ਲਾਓ">
 <!ENTITY  permissionsFor        "ਅਧਿਕਾਰ:">
 <!ENTITY  permPlugins           "ਪਲੱਗਇਨ ਐਕਟੀਵੇਟ ਕਰੋ">
-
-<!ENTITY  permClearStorage           "ਸਟੋਰੇਜ਼ ਸਾਫ਼ ਕਰੋ">
-<!ENTITY  permClearStorage.accesskey "C">
 
 <!ENTITY  securityTab           "ਸੁਰੱਖਿਆ">
 <!ENTITY  securityTab.accesskey "S">
@@ -77,6 +71,7 @@
 <!ENTITY  securityView.identity.owner    "ਮਾਲਕ: ">
 <!ENTITY  securityView.identity.domain   "ਵੈੱਬ ਸਾਇਟ: ">
 <!ENTITY  securityView.identity.verifier "ਜਾਂਚ ਕਰਤਾ: ">
+<!ENTITY  securityView.identity.validity "ਮਿਆਦ ਪੁੱਗੇਗੀ:">
 
 <!ENTITY  securityView.privacy.header                   "ਪਰਦੇਦਾਰੀ ਤੇ ਅਤੀਤ">
 <!ENTITY  securityView.privacy.history                  "ਕੀ ਮੈਂ ਇਹ ਵੈੱਬਸਾਇਟ ਅੱਜ ਤੋਂ ਪਹਿਲਾਂ ਵੇਖੀ ਹੈ?">

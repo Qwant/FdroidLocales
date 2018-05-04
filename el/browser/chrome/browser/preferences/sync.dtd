@@ -11,7 +11,13 @@
 <!ENTITY engine.history.label       "Ιστορικό">
 <!ENTITY engine.history.accesskey   "ρ">
 <!ENTITY engine.logins.label        "Συνδέσεις">
+<!ENTITY engine.logins.title        "Ονόματα χρήστη και κωδικοί πρόσβασης που έχετε αποθηκεύσει">
 <!ENTITY engine.logins.accesskey    "Σ">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "Επιλογές">
 <!ENTITY engine.prefs.label         "Προτιμήσεις">
 <!ENTITY engine.prefs.accesskey     "ρ">
 <!ENTITY engine.addons.label        "Πρόσθετα">
@@ -19,6 +25,7 @@
 <!ENTITY engine.addresses.label     "Διευθύνσεις">
 <!ENTITY engine.addresses.accesskey "Δ">
 <!ENTITY engine.creditcards.label   "Πιστωτικές κάρτες">
+<!ENTITY engine.creditcards.title   "Ονόματα, αριθμοί και ημερομηνίες λήξης (μόνο για υπολογιστές)">
 <!ENTITY engine.creditcards.accesskey "Π">
 
 <!-- Device Settings -->
@@ -50,26 +57,24 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedInLoginFailure.beforename.label "Παρακαλούμε συνδεθείτε ξανά για επανασύνδεση">
 <!ENTITY signedInLoginFailure.aftername.label "">
 
-<!ENTITY notSignedIn.label           "Δεν έχετε συνδεθεί.">
-<!ENTITY signIn.label                "Σύνδεση">
-<!ENTITY signIn.accesskey            "σ">
-<!ENTITY profilePicture.tooltip      "Αλλαγή εικόνας προφίλ">
-<!ENTITY verifiedManage.label        "Διαχείριση λογαριασμού">
-<!ENTITY verifiedManage.accesskey    "η">
-<!ENTITY disconnect3.label           "Αποσύνδεση…">
-<!ENTITY disconnect3.accesskey       "Α">
-<!ENTITY verify.label                "Επαλήθευση email">
-<!ENTITY verify.accesskey            "Ε">
-<!ENTITY forget.label                "Διαγραφή email">
-<!ENTITY forget.accesskey            "Γ">
+<!ENTITY notSignedIn.label            "Δεν έχετε συνδεθεί.">
+<!ENTITY signIn.label                 "Σύνδεση">
+<!ENTITY signIn.accesskey             "σ">
+<!ENTITY profilePicture.tooltip       "Αλλαγή εικόνας προφίλ">
+<!ENTITY verifiedManage.label         "Διαχείριση λογαριασμού">
+<!ENTITY verifiedManage.accesskey     "η">
+<!ENTITY disconnect3.label            "Αποσύνδεση…">
+<!ENTITY disconnect3.accesskey        "Α">
+<!ENTITY cancelSetup.label            "Ακύρωση ρύθμισης">
+<!ENTITY cancelSetup.accesskey        "ρ">
 
 <!ENTITY signedOut.caption            "Πάρτε μαζί σας το διαδίκτυο">
-<!ENTITY signedOut.description        "Συγχρονίστε τους σελιδοδείκτες, το ιστορικό, τις καρτέλες, τους κωδικούς πρόσβασης, τα πρόσθετα και τις προτιμήσεις σας σε όλες τις συσκευές σας.">
+<!ENTITY signedOut.description        "Συγχρονίστε τους σελιδοδείκτες, το ιστορικό, τις καρτέλες, τους κωδικούς πρόσβασης, τα πρόσθετα, καθώς και τις προτιμήσεις σας σε όλες τις συσκευές σας.">
 <!ENTITY signedOut.accountBox.title   "Σύνδεση με ένα λογαριασμό Firefox">
-<!ENTITY signedOut.accountBox.create  "Δημιουργία λογαριασμού">
-<!ENTITY signedOut.accountBox.create.accesskey  "Π">
-<!ENTITY signedOut.accountBox.signin  "Σύνδεση">
-<!ENTITY signedOut.accountBox.signin.accesskey  "Σ">
+<!ENTITY signedOut.accountBox.create2 "Δεν έχετε λογαριασμό; Ξεκινήστε">
+<!ENTITY signedOut.accountBox.create2.accesskey "Γ">
+<!ENTITY signedOut.accountBox.signin2 "Σύνδεση…">
+<!ENTITY signedOut.accountBox.signin2.accesskey "Σ">
 
 <!ENTITY signedIn.settings.label       "Ρυθμίσεις Sync">
 <!ENTITY signedIn.settings.description "Επιλέξτε τι θα συγχρονίζεται στις συσκευές σας με το &brandShortName;.">
@@ -89,3 +94,6 @@ both, to better adapt this sentence to their language.
 <!ENTITY mobilePromo3.iOSLink          "iOS">
 
 <!ENTITY mobilePromo3.end              " για συγχρονισμό με την κινητή σας συσκευή.">
+
+<!ENTITY mobilepromo.singledevice      "Σύνδεση άλλης συσκευής">
+<!ENTITY mobilepromo.multidevice       "Διαχείριση συσκευών">

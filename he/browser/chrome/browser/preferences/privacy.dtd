@@ -3,32 +3,24 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY  trackingProtectionHeader2.label      "הגנת מעקב">
-<!ENTITY  trackingProtection2.description      "מעקב הוא איסוף של נתוני הגלישה שלך ממגוון אתרים. ניתן להשתמש במעקב כדי להרכיב פרופיל ולהציג עבורך תוכן בהתבסס על הפרטים האישיים ונתוני הגלישה שלך.">
-<!ENTITY  trackingProtection2.radioGroupLabel  "שימוש בהגנת מעקב לחסימת רכיבי מעקב ידועים">
+<!ENTITY  trackingProtection3.description      "הגנת מעקב חוסמת רכיבי מעקב מקוונים שאוספים את נתוני הגלישה שלך ממגוון אתרים.">
+<!ENTITY  trackingProtection3.radioGroupLabel  "שימוש בהגנת מעקב לחסימת רכיבי מעקב ידועים">
 <!ENTITY  trackingProtectionAlways.label       "תמיד">
 <!ENTITY  trackingProtectionAlways.accesskey   "ת">
 <!ENTITY  trackingProtectionPrivate.label      "רק בחלונות פרטיים">
 <!ENTITY  trackingProtectionPrivate.accesskey  "ר">
 <!ENTITY  trackingProtectionNever.label        "לעולם לא">
 <!ENTITY  trackingProtectionNever.accesskey    "ל">
-<!ENTITY  trackingProtectionLearnMore.label    "מידע נוסף">
+<!ENTITY  trackingProtectionLearnMore2.label    "מידע נוסף על הגנת מעקב ועל הפרטיות שלך">
 <!ENTITY  trackingProtectionExceptions.label   "חריגות…">
 <!ENTITY  trackingProtectionExceptions.accesskey "ח">
 
-<!-- LOCALIZATION NOTE (trackingProtectionPBM5.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel. -->
-<!ENTITY trackingProtectionPBM5.label         "שימוש בהגנת מעקב בחלונות פרטיים">
-<!ENTITY trackingProtectionPBM5.accesskey     "ה">
-<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel. -->
+<!-- LOCALIZATION NOTE (trackingProtectionPBM6.label): This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the release and beta channel. -->
 <!ENTITY trackingProtectionPBM6.label         "שימוש בהגנת מעקב בגלישה פרטית לחסימת רכיבי מעקב ידועים">
 <!ENTITY trackingProtectionPBM6.accesskey     "ט">
 <!ENTITY trackingProtectionPBMLearnMore.label "מידע נוסף">
 <!ENTITY changeBlockList2.label               "שינוי רשימת חסימות…">
 <!ENTITY changeBlockList2.accesskey           "ר">
-
-<!ENTITY  doNotTrack.description        "שליחת חיווי ”נא לא לעקוב” לאתרים שאין ברצונך שיעקבו אחריך">
-<!ENTITY  doNotTrack.learnMore.label    "מידע נוסף">
-<!ENTITY  doNotTrack.default.label      "רק בעת שימוש בהגנת מעקב">
-<!ENTITY  doNotTrack.always.label       "תמיד">
 
 <!ENTITY  history.label                 "היסטוריה">
 <!ENTITY  permissions.label             "הרשאות">
@@ -46,17 +38,26 @@
 
 <!ENTITY  suggestionSettings2.label     "שינוי העדפות של הצעות מנועי חיפוש">
 
-<!ENTITY  acceptCookies.label           "קבלת עוגיות מאתרים">
-<!ENTITY  acceptCookies.accesskey       "ק">
+<!ENTITY  acceptCookies2.label          "קבלת עוגיות מאתרים">
+<!ENTITY  acceptCookies2.accesskey      "ק">
 
-<!ENTITY  acceptThirdParty.pre.label      "קבלת עוגיות צד שלישי:">
-<!ENTITY  acceptThirdParty.pre.accesskey  "ש">
+<!ENTITY  acceptThirdParty2.pre.label     "קבלת עוגיות צד שלישי">
+<!ENTITY  acceptThirdParty2.pre.accesskey "ש">
+
+<!ENTITY  acceptCookies4.label          "קבלת עוגיות ונתוני אתרים מאתרי אינטרנט (מומלץ)">
+<!ENTITY  acceptCookies4.accesskey      "ק">
+
+<!ENTITY  blockCookies.label            "חסימת עוגיות ונתוני אתרים (עשוי לגרום לשיבוש באתרי אינטרנט)">
+<!ENTITY  blockCookies.accesskey        "ח">
+
+<!ENTITY  acceptThirdParty3.pre.label     "קבלת עוגיות ונתוני אתרים מצד שלישי">
+<!ENTITY  acceptThirdParty3.pre.accesskey "ש">
 <!ENTITY  acceptThirdParty.always.label   "תמיד">
 <!ENTITY  acceptThirdParty.never.label    "לעולם לא">
 <!ENTITY  acceptThirdParty.visited.label  "מאתרים בהם ביקרנו בעבר">
 
-<!ENTITY  keepUntil.label               "שמירה עד ש:">
-<!ENTITY  keepUntil.accesskey           "מ">
+<!ENTITY  keepUntil2.label              "שמירה עד ש:">
+<!ENTITY  keepUntil2.accesskey          "מ">
 
 <!ENTITY  expire.label                  "הן פגות">
 <!ENTITY  close.label                   "אני סוגר את &brandShortName;">
@@ -85,6 +86,8 @@
 <!ENTITY  rememberActions.removeCookies.label "למחוק עוגיות בודדות">
 <!ENTITY  rememberActions.post.label          ".">
 
+<!ENTITY  rememberDescription1.label      "‏&brandShortName; יזכור את היסטורית הגלישה, ההורדות, הטפסים והחיפוש שלך.">
+
 <!ENTITY  dontrememberDescription.label  "&brandShortName; ישתמש באותן ההגדרות לגלישה פרטית, ולא יזכור היסטוריה כלשהי במהלך הגלישה שלך ברשת.">
 
 <!-- LOCALIZATION NOTE (dontrememberActions.pre.label): include a trailing space as needed -->
@@ -92,6 +95,9 @@
 <!ENTITY  dontrememberActions.pre.label          "ייתכן שתרצה גם ">
 <!ENTITY  dontrememberActions.clearHistory.label "לנקות את כל ההיסטוריה הנוכחית">
 <!ENTITY  dontrememberActions.post.label         ".">
+
+<!ENTITY  clearHistoryButton.label       "ניקוי היסטוריה…">
+<!ENTITY  clearHistoryButton.accesskey   "ה">
 
 <!ENTITY  privateBrowsingPermanent2.label "שימוש תמידי במצב גלישה פרטית">
 <!ENTITY  privateBrowsingPermanent2.accesskey "ה">
@@ -113,3 +119,8 @@
 <!ENTITY  browserContainersEnabled.accesskey    "מ">
 <!ENTITY  browserContainersSettings.label        "הגדרות…">
 <!ENTITY  browserContainersSettings.accesskey    "ג">
+
+<!ENTITY  a11yPrivacy.checkbox.label     "מניעת שירותי נגישות מקבלת גישה לדפדפן שלך">
+<!ENTITY  a11yPrivacy.checkbox.accesskey "נ">
+<!ENTITY  a11yPrivacy.learnmore.label    "מידע נוסף">
+<!ENTITY enableSafeBrowsingLearnMore.label "מידע נוסף">

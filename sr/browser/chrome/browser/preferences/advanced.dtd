@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Слање података је онемогућено за ову конфигурацију за изградњу">
 
-<!ENTITY enableHealthReport1.label       "Дозволи &brandShortName;-у да аутоматски шаље техничке податке и податке о коришћењу Mozilla-и">
-<!ENTITY enableHealthReport1.accesskey   "з">
+<!ENTITY enableHealthReport2.label       "Дозволи &brandShortName;-у да шаље техничке и интерактивне податке Mozilla-и">
+<!ENTITY enableHealthReport2.accesskey   "р">
 <!ENTITY healthReportLearnMore.label     "Сазнајте више">
 
 <!ENTITY dataCollection.label            "&brandShortName; сакупљање и коришћење података">
@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Дозволи &brandShortName;-у да шаље Mozilla-и извештаје о рушењу">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "л">
+
+<!ENTITY collectBrowserErrors.label          "Дозволи &brandShortName;-у да шаље извештаје о грешкама унутар прегледача (укључујући и поруке грешке) Mozilla-и">
+<!ENTITY collectBrowserErrors.accesskey      "Д">
+<!ENTITY collectBrowserErrorsLearnMore.label "Сазнајте више">
+
+<!ENTITY sendBackloggedCrashReports.label  "Дозволи &brandShortName;-у да шаље извештаје о рушењу у ваше име">
+<!ENTITY sendBackloggedCrashReports.accesskey "и">
 <!ENTITY crashReporterLearnMore.label    "Сазнајте више">
 
 <!ENTITY networkTab.label                "Мрежа">
@@ -51,14 +58,17 @@ available. -->
 
 <!ENTITY httpCache.label                 "Кеширан веб садржај">
 
-<!ENTITY offlineStorage2.label           "Ванмрежни веб садржај и кориснички подаци">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Подаци сајта">
 <!ENTITY clearSiteData.label             "Обриши податке">
 <!ENTITY clearSiteData.accesskey         "О">
 <!ENTITY siteDataSettings.label          "Поставке…">
 <!ENTITY siteDataSettings.accesskey      "П">
+<!ENTITY siteData1.label                 "Колачићи и подаци сајта">
+<!ENTITY clearSiteData1.label            "Обриши податке…">
+<!ENTITY clearSiteData1.accesskey        "б">
+<!ENTITY siteDataSettings1.label         "Управљај подацима…">
+<!ENTITY siteDataSettings1.accesskey     "У">
 <!ENTITY siteDataLearnMoreLink.label     "Сазнајте више">
 
 <!-- LOCALIZATION NOTE:
@@ -72,12 +82,10 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB простора">
 <!ENTITY clearCacheNow.label             "Очисти сад">
 <!ENTITY clearCacheNow.accesskey         "с">
-<!ENTITY clearOfflineAppCacheNow.label   "Очисти сад">
-<!ENTITY clearOfflineAppCacheNow.accesskey "т">
 <!ENTITY overrideSmartCacheSize.label    "Занемари аутоматско управљање кешом">
 <!ENTITY overrideSmartCacheSize.accesskey "З">
 
-<!ENTITY updateTab.label                 "Надоградње">
+<!ENTITY updateTab.label                 "Ажурирања">
 
 <!-- LOCALIZATION NOTE (updateApplication.label):
   Strings from aboutDialog.dtd are displayed in this section of the preferences.
@@ -95,11 +103,11 @@ available. -->
 <!ENTITY updateApplication.version.pre   "Верзија ">
 <!ENTITY updateApplication.version.post  "">
 <!ENTITY updateApplication.description   "Дозволи &brandShortName;-у да">
-<!ENTITY updateAuto3.label               "Аутоматски инсталирај ажурирања (препоручено)">
+<!ENTITY updateAuto3.label               "Аутоматски ажурира (препоручено)">
 <!ENTITY updateAuto3.accesskey           "А">
-<!ENTITY updateCheckChoose2.label        "Проверава надоградње али ме питај да ли да их инсталирам">
+<!ENTITY updateCheckChoose2.label        "Проверава ажурирања али ме питај да ли да их инсталирам">
 <!ENTITY updateCheckChoose2.accesskey    "и">
-<!ENTITY updateManual2.label             "Никадa не проверава надоградње (не препоручује се)">
+<!ENTITY updateManual2.label             "Никадa не проверава ажурирања (не препоручује се)">
 <!ENTITY updateManual2.accesskey         "Н">
 
 <!ENTITY updateHistory2.label            "Прикажи историјат ажурирања…">
@@ -111,17 +119,6 @@ available. -->
 <!ENTITY enableSearchUpdate2.label       "Аутоматски ажурирај претраживаче">
 <!ENTITY enableSearchUpdate2.accesskey   "п">
 
-<!ENTITY offlineStorageNotify.label               "Обавести ме када веб сајт затражи да смести податке за коришћење ван мреже">
-<!ENTITY offlineStorageNotify.accesskey           "ж">
-<!ENTITY offlineStorageNotifyExceptions.label     "Изузеци">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "И">
-
-<!ENTITY offlineAppsList2.label          "Следећи сајтови смеју да складиште податке за коришћење ван мреже:">
-<!ENTITY offlineAppsList.height          "9em">
-<!ENTITY offlineAppsListRemove.label     "Уклони…">
-<!ENTITY offlineAppsListRemove.accesskey "У">
-<!ENTITY offlineAppRemove.confirm        "Уклони податке о сајту">
-
 <!ENTITY certificateTab.label            "Сертификати">
 <!ENTITY certPersonal2.description       "Када сервер затражи ваш лични сертификат">
 <!ENTITY selectCerts.auto                "Изабери један аутоматски">
@@ -130,10 +127,10 @@ available. -->
 <!ENTITY selectCerts.ask.accesskey       "с">
 <!ENTITY enableOCSP.label                "Упит OCSP сервера да бисте проверили тренутну валидност сертификата">
 <!ENTITY enableOCSP.accesskey            "л">
-<!ENTITY viewCerts.label                 "Преглед сертификата">
-<!ENTITY viewCerts.accesskey             "ф">
-<!ENTITY viewSecurityDevices.label       "Безбедносни уређаји">
-<!ENTITY viewSecurityDevices.accesskey   "Б">
+<!ENTITY viewCerts2.label                "Погледај сертификате…">
+<!ENTITY viewCerts2.accesskey            "с">
+<!ENTITY viewSecurityDevices2.label      "Безбедносни уређаји…">
+<!ENTITY viewSecurityDevices2.accesskey  "Б">
 
 <!ENTITY performance.label               "Перформансе">
 <!ENTITY useRecommendedPerformanceSettings2.label

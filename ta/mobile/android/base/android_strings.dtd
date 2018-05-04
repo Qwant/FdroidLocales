@@ -2,10 +2,15 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY firstrun_panel_title_welcome "நல்வரவு!">
-
-<!ENTITY firstrun_urlbar_message "&brandShortName; வருக">
-<!ENTITY firstrun_urlbar_subtext "உதவும் தேடல் பரிந்துரைகளுடன் எளிதில் கண்டுபிடியுங்கள்.">
+<!ENTITY firstrun_panel_title_welcome "நல்வரவு">
+<!ENTITY firstrun_urlbar_message2 "&brandShortName; உலாவியைத் தேர்ந்தமைக்கு நன்றி">
+<!ENTITY firstrun_urlbar_subtext2 "சுதந்திர மற்றும் திறந்த இணையத்திற்காக அர்பணிக்கப்பட்ட இலாபநோக்கற்ற, மொசில்லாவிலிருந்து ஒரு நவீன கைபேசி உலாவி.">
+<!ENTITY firstrun_panel_title_privacy "அந்தரங்கம்">
+<!ENTITY firstrun_privacy_message "யாரும் காண வண்ணம் உலாவுங்கள்">
+<!ENTITY firstrun_privacy_subtext "பின்தொடரல் பாதுகாப்புடன் கூடிய தனிப்பட்ட உலாவல் நீங்கள் உலாவும்போது பின்தொடரிகளை தடுக்கிறது மேலும் நீங்கள் உலாவலை முடித்தபின் உங்கள் வரலாற்றை நினைவில் கொள்ளாது.">
+<!ENTITY firstrun_panel_title_customize "விருப்பமை">
+<!ENTITY firstrun_customize_message "&brandShortName; உங்களுடையதாக மாற்றுங்கள்.">
+<!ENTITY firstrun_customize_subtext "&brandShortName; உலாவியை மேற்சேர்க்கைகளுடன் தனிப்பயனாக்கவும். விளம்பரங்களைத் தடுக்கவும், அம்சங்களைச் சேர்க்கவும், அல்லது உங்கள் தோற்றத்தை பிரதிபலிக்கும் ஒரு புதிய கருப்பொருளைத் தேர்ந்தெடுக்கவும்.">
 <!ENTITY firstrun_bookmarks_title "வரலாறு">
 <!ENTITY firstrun_bookmarks_message "உங்கள் விருப்பமானவை, முன் மற்றும் நடுவே">
 <!ENTITY firstrun_bookmarks_subtext "நீங்கள் தேடுகையில் உங்கள் புத்தகக்குறிகளிலிருந்தும் வரலாறிலிருந்தும் முடிவுகளைப் பெறுங்கள்.">
@@ -13,8 +18,8 @@
 <!ENTITY firstrun_data_message "குறைந்த தரவு, நிறைய சேமிப்பு">
 <!ENTITY firstrun_data_subtext2 "நீங்கள் எல்லா தளங்களிலும் குறைந்த தரவை செலவிட படங்களை அணையுங்கள்.">
 <!ENTITY firstrun_sync_title "ஒத்திசை">
-<!ENTITY firstrun_sync_message "&brandShortName;, எப்போதும் உங்கள் பக்கம்">
-<!ENTITY firstrun_sync_subtext "உங்கள் கீற்றுகள், கடவுச்சொற்கள், மேலும் பலவற்றை நீங்கள் பயன்படுத்தும் எல்லா இடங்களிலும் ஒத்திசையுங்கள்.">
+<!ENTITY firstrun_sync_message2 "நீங்கள் விட்டுவிட்ட இடத்தில் எடு.">
+<!ENTITY firstrun_sync_subtext2 "&brandShortName; உலாவியில் நீங்கள் சேமிக்கும் புத்தகக்குறிகள், கடவுச்சொற்கள், பிறவற்றை உங்கள் எல்லா கருவிகளிலும் எடுக்க ஒத்திசைவைப் பயன்படுத்தவும்.">
 <!ENTITY firstrun_signin_message "இணையுங்கள், தொடங்குங்கள்">
 <!ENTITY firstrun_signin_button "ஒத்திசைக்க உள்நுழை">
 <!ENTITY  onboard_start_button_browser "உலாவத் தொடங்குக">
@@ -87,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "&formatD; உருப்படிகள்">
 <!ENTITY bookmark_folder_one_item "1 உருப்படி">
+<!ENTITY bookmark_folder_updated "அடைவு புதுப்பிக்கப்பட்டது">
 <!ENTITY bookmark_parent_folder "நடப்பிலுள்ள அடைவு">
 <!ENTITY bookmark_add_folder "புதிய அடைவைச் சேர்">
 
@@ -201,8 +207,6 @@
 <!ENTITY pref_category_advanced_summary3 "கீற்றுகளை மீட்டமை, தரவு சேமி, உருவாக்குநர் கருவிகள்">
 <!ENTITY pref_category_notifications "அறிவிப்புகள்">
 <!ENTITY pref_category_notifications_summary "புதிய வசதிகள், வலைத்தள புதுப்பிப்புகள்">
-<!ENTITY pref_content_notifications "வலைத்தள புதுப்பிப்புகள்">
-<!ENTITY pref_content_notifications_summary2 "ஆதரவுள்ள தளங்களிலிருந்து புதிய உள்ளடக்கத்தை கண்டுபிடி">
 <!ENTITY pref_developer_remotedebugging_usb "USB மூலமாக தொலைநிலை வழுநீக்கல்">
 <!ENTITY pref_developer_remotedebugging_wifi "அருகலை வழி வழுநீக்கம்">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "அருகலை ஊடாக வழுநீக்க உங்கள் கருவியில் QR குறி படிக்கும் செயலி நிறுவப்பட்டிருக்க வேண்டும்.">
@@ -268,7 +272,6 @@
 <!ENTITY pref_show_web_fonts_summary2 "ஒரு பக்கத்தை ஏற்றும்போது தொலை எழுத்துருவை பதிவிறக்குக">
 
 <!ENTITY pref_tracking_protection_title2 "தடமறியல் பாதுகாப்பு">
-<!ENTITY pref_tracking_protection_summary3 "தனிப்பட்ட உலாவு முறையில் உள்ளது">
 <!ENTITY pref_donottrack_title "தடமறிய வேண்டாம்">
 <!ENTITY pref_donottrack_summary "&brandShortName; தளங்களிடம் உங்களை தடமறிய வேண்டாம் என தெரிவிக்கும்">
 
@@ -279,6 +282,13 @@
 <!ENTITY pref_whats_new_notification "&brandShortName; இதில் புதியது என்ன">
 <!ENTITY pref_whats_new_notification_summary "புதுப்பித்தப் பின் புதிய வசதிகளைப் பற்றி வாசிக்கவும்">
 
+<!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification"-->
+<!ENTITY pref_feature_tips_notification "தயாரிப்பு மற்றும் வசதிக் குறிப்புகள்">
+<!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification_summary"-->
+<!ENTITY pref_feature_tips_notification_summary "&brandShortName; மற்றும் பிற &vendorShortName; தயாரிப்புகளைப் பயன்படுத்துவது பற்றி மேலும் அறிய">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "பரிசோதனையிலுள்ள வசதிகள்">
@@ -286,8 +296,9 @@
 <!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "தனிபயன் கீற்றுகள்">
-<!ENTITY pref_custom_tabs_summary3 "தனிப்பயனாக்கப்பட்ட &brandShortName; என்ற பதிப்பைப் பயன்படுத்தி வலைத்தளங்களைத் திறக்கச் செயலியை அனுமதி">
+<!ENTITY pref_custom_tabs2 "தனிபயன் கீற்றுகள்">
+<!ENTITY pref_custom_tabs_summary4 "விரைவாக ஏற்றும் தனிப்பயன் கீற்றில் வலை உள்ளடக்கங்களைத் திறக்க செயலிகளை அனுமதிக்கவும்">
+
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "&formatS; உலாவியில் திறக்கவும்">
@@ -297,10 +308,6 @@
 
 <!ENTITY pref_pwa "முற்போக்கு வலைச் செயலிகள்">
 <!ENTITY pref_pwa_summary "முகப்பு திரையில் சேர்க்க வலைச் செயலிகளை அனுமதி">
-
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-<!ENTITY pref_activity_stream "செயல்பாட்டு ஓடை">
-<!ENTITY pref_activity_stream_summary "சிறந்த காட்சி வரலாற்றுத் தரவும் மறுகற்பனையிட்ட முகப்பு பக்கமும் &brandShortName; இல் நீங்கள் எதிர்பார்த்தவை எளிதாக கிடைக்கிறது.">
 
 <!ENTITY tracking_protection_prompt_title "தடமறியல் பாதுகாப்புடன் உள்ளது">
 <!ENTITY tracking_protection_prompt_text "நீங்கள் கவலை கொள்ள வேண்டாம் தடமறிதல் உடனடியாக முடக்கப்படுகிறது.">
@@ -332,24 +339,7 @@
 
 <!-- Localization note (tab_queue_notification_settings): This notification text is shown if a tab
      has been queued but we are missing the system permission to show an overlay. -->
-<!ENTITY tab_queue_notification_settings "\&quot;பல தொடுப்புகளை திறக்க\&quot;, \&quot;பிற செயலிகளின் மேல் வரை\&quot; அனுமதியை &brandShortName; என்பதற்கு வழங்கவும்">
-
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY content_notification_title_plural "&formatD; வலைத்தளம் புதுப்பிக்கப்பட்டது">
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "அமைவுகள்">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "இப்போது வாசிக்கவும்">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
-<!ENTITY content_notification_updated_on "&formatS; அன்று புதுப்பிக்கப்பட்டது">
+<!ENTITY tab_queue_notification_settings "\&quot;பல தொடுப்புகளை திறக்க\&quot;, \&apos;பிற செயலிகளின் மேல் வரை\&apos; அனுமதியை &brandShortName; என்பதற்கு வழங்கவும்">
 
 <!ENTITY pref_char_encoding "எழுத்து குறிமுறை">
 <!ENTITY pref_char_encoding_on "பட்டியலை காட்டு">
@@ -380,6 +370,7 @@
 <!ENTITY pref_qrcode_enabled_summary2 "உரல் பட்டையில் QR வருடியை அனுமதி">
 
 <!ENTITY pref_use_master_password "முதன்மை கடவுச்சொல்லை பயன்படுத்து">
+<!ENTITY pref_sync_default_title "பயர்பாக்ஸ் கணக்கு">
 <!ENTITY pref_sync2 "புகுபதிகை">
 <!ENTITY pref_sync_summary2 "உங்கள் கீற்றுகளை, புத்தகக்குறிகளை, கடவுச்சொற்களை, வரலாற்றை ஒத்திசை">
 <!ENTITY pref_search_suggestions "தேடல் பரிந்துரைகளைக் காட்டு">
@@ -409,6 +400,9 @@
 <!ENTITY pref_dialog_set_default "முன்னிருப்பாக அமை">
 <!ENTITY pref_dialog_default "முன்னிருப்பு">
 <!ENTITY pref_dialog_remove "நீக்கு">
+<!ENTITY pref_dialog_activitystream_header_content "கூடுதல் உள்ளடக்கம்">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "சமீபத்திய புத்தகக்குறிகள்">
+<!ENTITY pref_dialog_activitystream_visited "பார்வையிட்டது">
 
 <!ENTITY pref_search_last_toast "நீங்கள் இறுதியாகப் பயன்படுத்திய தேடல் பொறியை முடக்கவோ நீக்கவோ முடியாது.">
 
@@ -435,7 +429,6 @@
      crashReporterDesc.label). -->
 <!ENTITY datareporting_fhr_title "&brandShortName; சுகாதார அறிக்கை">
 <!ENTITY datareporting_fhr_summary2 "&vendorShortName; உடன் தரவை பகிர்வது உங்களுடைய உலாவியின் உடல்நிலைப்பற்றியும் உலாவியின் செயற்ப்பாட்டை புரிந்துக்கொள்ளவும் உதவுகிறது">
-<!ENTITY datareporting_abouthr_title "என் சுகாதார அறிக்கையை பார்">
 <!ENTITY datareporting_telemetry_title "தொலைத்தொடர்பு">
 <!ENTITY datareporting_telemetry_summary "&brandShortName; ஐ சிறந்ததாக்க உங்களுடைய உலாவி பற்றிய செயல்திறன், பயனளவு, வன்பொருள் மற்றும் தனிப்பயனாக்க தரவு &vendorShortName; உடன் பகிர்கிறது">
 <!ENTITY datareporting_crashreporter_summary "&vendorShortName; க்கு உதவி செய்ய செயலிழப்பு அறிக்கையை &brandShortName; செலுத்தி உங்களுடைய உலாவியை உறுதியாக்கவும் பாதுகாப்பாக இருக்கவும் செய்கிறது">
@@ -443,7 +436,7 @@
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
 <!ENTITY datareporting_crashreporter_title_short "நொறுக்கு அறிக்கையாளர்">
 <!ENTITY datareporting_wifi_title2 "&vendorShortName;வின் இடமறியும் சேவை">
-<!ENTITY datareporting_wifi_geolocation_summary4 "&vendorShortName; என்பதற்கு உதவுவதன் மூலம் உலக வரைபடத்தை வரையலாம்! எங்களின் புவியிடம் வழங்கும் சேவை செம்மைப்படுத்த உங்கள் கருவியின் தோராயமான இடத்தை அருகலை மற்றும் செல்லுலார் மூலம் பகிரவும்">
+<!ENTITY datareporting_wifi_geolocation_summary4 "&vendorShortName; என்பதற்கு உதவுவதன் மூலம் உலக வரைபடத்தை வரையலாம்! எங்களின் புவியிடம் வழங்கும் சேவை செம்மைப்படுத்த உங்கள் கருவியின் தோராயமான இடத்தை அருகலை மற்றும் செல்லுலார் மூலம் பகிரவும்.">
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -467,6 +460,7 @@
 <!ENTITY share_image_failed "இந்த படத்தை பகிரமுடியவில்லை">
 <!ENTITY save_as_pdf "பிடிஎப் ஆக சேமி">
 <!ENTITY print "அச்சிடு">
+<!ENTITY view_page_source "பக்க மூலத்தைக் காட்டு">
 <!ENTITY find_in_page "பக்கத்தில் கண்டுபிடி">
 <!ENTITY desktop_mode "கணினி பக்கத்தைக் கேள்">
 <!ENTITY page "பக்கம்">
@@ -498,7 +492,7 @@
 <!ENTITY contextmenu_open_new_tab "புதிய கீற்றில் திறக்கவும்">
 <!ENTITY contextmenu_open_private_tab "தனியார் தாவலில் திறக்கவும்">
 <!ENTITY contextmenu_remove "நீக்கு">
-<!ENTITY contextmenu_add_to_launcher "முகப்பு திரையில் சேர்">
+<!ENTITY contextmenu_add_page_shortcut "பக்கத்தின் குறுக்குவழியை சேர்">
 <!ENTITY contextmenu_set_as_homepage "முகப்பு பக்கமாக்குக">
 <!ENTITY contextmenu_share "பகிர்">
 <!ENTITY contextmenu_pasteandgo "ஒட்டி செல்">
@@ -510,7 +504,17 @@
 <!ENTITY contextmenu_top_sites_edit "திருத்து">
 <!ENTITY contextmenu_top_sites_pin "இணையத்தளத்தை சொருகு">
 <!ENTITY contextmenu_top_sites_unpin "இணையத்தள சொருகலை நீக்கு">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "முக்கியத் தளங்கள்">
+<!ENTITY contextmenu_unpin_from_top_sites "முக்கியத் தளத்திலிருந்து நீக்கு">
 <!ENTITY contextmenu_add_search_engine "தேடும் பொறியைச் சேர்">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "முக்கியத் தளங்களில் பக்கத்தைப் பொருத்து">
+<!ENTITY unpinned_page_from_top_sites "முக்கிய தளங்களில் பக்கத்தை நீக்கு">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -531,7 +535,7 @@
 <!ENTITY pref_scroll_title_bar_summary2 "ஒரு பக்கத்தை கீழே உருட்டும் போது &brandShortName; தலைப்பு பட்டையை மறை">
 
 <!ENTITY pref_tab_queue_title3 "கீற்று வரிசை">
-<!ENTITY pref_tab_queue_summary4 "அடுத்த முறை &brandShortName; திறக்கும் வரை இணைப்புகளைச் சேமி.">
+<!ENTITY pref_tab_queue_summary4 "அடுத்த முறை &brandShortName; திறக்கும் வரை இணைப்புகளைச் சேமி">
 
 <!-- Localization note (pref_compact_tabs): Label for setting that controls whether 1 wide column or
      2 narrower (compact) columns are used for tabs in the tabs tray in portrait mode on phones. -->
@@ -542,6 +546,7 @@
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "பக்கம் நீக்கப்பட்டது">
+<!ENTITY folder_removed "அடைவு நீக்கப்பட்டது">
 
 <!ENTITY bookmark_edit_title "புத்தகக்குறியை திருத்து">
 <!ENTITY bookmark_edit_folder_title "அடைத் தொகு">
@@ -658,14 +663,14 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- Mixed content notifications in site identity popup -->
 <!ENTITY mixed_content_blocked_all1 "இப்பக்கத்தில் &brandShortName; பாதுகாப்பற்ற உள்ளடக்கங்களை முடக்கியது.">
 <!ENTITY mixed_content_blocked_some1 "&brandShortName; சில பாதுகாப்பற்ற உள்ளடக்கங்களை இப்பக்கத்தில் முடக்கியது.">
-<!ENTITY mixed_content_display_loaded1 "இந்த பக்கத்தின் சில பகுதிகள் பாதுகாப்பற்றது (படங்கள் போன்றவை)">
+<!ENTITY mixed_content_display_loaded1 "இந்த பக்கத்தின் சில பகுதிகள் பாதுகாப்பற்றது (படங்கள் போன்றவை).">
 <!ENTITY mixed_content_protection_disabled1 "பாதுகாப்பற்ற உள்ளடக்கத் தடையை முடக்கியுள்ளீர்கள்.">
 
 <!-- Tracking content notifications in site identity popup -->
 <!ENTITY doorhanger_tracking_title2 "தடமறியல் பாதுகாப்பு">
 <!ENTITY doorhanger_tracking_state_enabled "செயலில்">
 <!ENTITY doorhanger_tracking_state_disabled "முடக்கம்">
-<!ENTITY doorhanger_tracking_message_enabled1 "உங்கள் இணைய செயல்பாடுகளை கண்காணிக்கும் முயற்சி தடுக்கப்பட்டது">
+<!ENTITY doorhanger_tracking_message_enabled1 "உங்கள் இணைய செயல்பாடுகளை கண்காணிக்கும் முயற்சி தடுக்கப்பட்டது.">
 <!ENTITY doorhanger_tracking_message_disabled2 "இந்த வலைபக்கத்திலுள்ள சில உறுப்புகள் உங்கள் செயல்களை கண்காணிக்க கூடும்.">
 
 <!-- Common mixed and tracking content strings in site identity popup -->
@@ -723,7 +728,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY guest_session_dialog_continue "தொடரவும்">
 <!ENTITY guest_session_dialog_cancel "ரத்து">
 <!ENTITY new_guest_session_title "&brandShortName; இப்போது மீள்துவக்கம் செய்கிறது">
-<!ENTITY new_guest_session_text2 "இதை பயன்படுத்தும் நபர் உங்களுடைய தனிப்பட்ட உலாவின் தரவுகளை(அதாவது சேமித்த கடவுச்சொல், வரலாறு அல்லது புத்தகக்குறிகள்) பார்க்க முடியாது.\n\nவிருந்தினர் அமர்விற்கு பிறகு, அவர்களுடைய தரவுகள் நீக்கப்பட்டு உங்களுடைய அமர்வு மீட்டமைக்கப்படும்.">
+<!ENTITY new_guest_session_text2 "இதைப் பயன்படுத்தும் நபர் உங்களுடைய தனிப்பட்ட உலாவின் தரவுகளை (அதாவது சேமித்த கடவுச்சொல், வரலாறு அல்லது புத்தகக்குறிகள்) பார்க்க முடியாது.\n\nவிருந்தினர் அமர்விற்கு பிறகு, அவர்களுடைய தரவுகள் நீக்கப்பட்டு உங்களுடைய அமர்வு மீட்டமைக்கப்படும்.">
 <!ENTITY guest_browsing_notification_title "விருந்தினர் உலாவல் செயலிலுள்ளது">
 <!ENTITY guest_browsing_notification_text "வெளியேற தொடு">
 
@@ -734,7 +739,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE (ellipsis): This text is appended to a piece of text that does not fit in the
      designated space. Use the unicode ellipsis char, \u2026, or use "..." if \u2026 doesn't suit
      traditions in your locale. -->
-<!ENTITY ellipsis "...">
+<!ENTITY ellipsis "…">
 
 <!ENTITY colon ":">
 
@@ -811,6 +816,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      replaced by the Android OS version (e.g., 14)-->
 <!ENTITY unsupported_sdk_version "மன்னிக்கவும்! &brandShortName; இது கருவிகளில் (&formatS1;, &formatS2;) வேலை செய்யாது. சரியான பதிப்பைத் பதிவிறக்குக.">
 
+<!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
+<!ENTITY corrupt_apk "&brandShortName; உலாவியைத் திறக்க முடியவில்லை. மீண்டும் நிறுவி முயற்சிக்கவும்.">
+
 <!ENTITY eol_notification_title2 "&brandShortName; இனி புதுப்பிக்காது">
 <!ENTITY eol_notification_summary "மேலும் அறிய தட்டுங்கள்">
 
@@ -819,10 +827,10 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY whatsnew_notification_title "&brandShortName; இற்றைப்படுத்தப்பட்டுள்ளது">
 <!ENTITY whatsnew_notification_summary "இந்த பதிப்பில் என்ன புதியது என காண்">
 
-<!ENTITY promotion_add_to_homescreen "முகப்பு திரையில் சேர்">
+<!ENTITY promotion_add_page_shortcut "பக்கத்தின் குறுக்குவழியை சேர்">
 
 <!ENTITY helper_first_offline_bookmark_title "இணையம் இல்லாமல் வாசி">
-<!ENTITY helper_first_offline_bookmark_message "இணையமற்ற நிலையிலும் வாசிப்பு பட்டியலை புத்தகக்குறிகளில் காணலாம்">
+<!ENTITY helper_first_offline_bookmark_message "இணையமற்ற நிலையிலும் வாசிப்பு பட்டியலை புத்தகக்குறிகளில் காணலாம்.">
 <!ENTITY helper_first_offline_bookmark_button "புத்தகக்குறிக்குச் செல்">
 
 <!ENTITY helper_triple_readerview_open_title "இணைப்பின்றி கிடைக்கிறது">
@@ -830,7 +838,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_button "புத்தக்குறிகளில் சேர்">
 
 <!ENTITY activity_stream_topsites "பார்த்தவை">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "&brandPocket; பரிந்துரைத்தது">
 <!ENTITY activity_stream_highlights "மிளிர்ப்புகள்">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "மேலும்">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
@@ -838,13 +851,30 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "பார்வையிட்டது">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "பிரபலமான">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "உலாவலைத் தொடங்கவும், மேலும் நாங்கள் சில சிறந்த கட்டுரைகள், காணொளிகள், மற்றும் நீங்கள் சமீபத்தில் பார்த்த பிற பக்கங்கள் அல்லது இங்கே புத்தகக்குறியிட்டவற்றைக் காட்டுவோம்.">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "நிராகரி">
+<!ENTITY activity_stream_remove "நீக்கு">
 <!ENTITY activity_stream_delete_history "வரலாற்றிலிருந்து அழி">
 
-<!ENTITY activity_stream_welcome_title "உங்களது சிறப்பம்சங்களுக்கு வரவேற்கிறோம்">
-<!ENTITY activity_stream_welcome_content1 "&brandShortName; என்பது நீங்கள் இணையத்தில் தேடிப் பார்த்தவற்றை சிறப்புக் கூறுகளாக உருவாக்கி உயரிய கட்டுரைகள, காணொளிகள், புத்தகக்குறிகள் பிற பக்கங்கள் ஆகியவற்றை காண வழிச் செய்கிறது.">
+<!ENTITY private_tab_panel_title "அந்தரங்க உலாவல் + தடமறி பாதுகாப்பு">
+<!ENTITY private_tab_panel_description "&brandShortName; உங்கள் உலாவல் செயல்பாடைத் தடமறியும் பக்கத்தின் பகுதிகள் முடக்குகிறது.">
+<!ENTITY private_tab_panel_description2 "நாங்கள் எந்த வரலாற்றையும் நினைவில் கொள்ள மாட்டோம், ஆனால் பதிவிறக்கப்பட்ட கோப்புகள் மற்றும் புதிய புத்தககுறிகள் கருவியில் சேமிக்கப்படும்.">
+<!ENTITY private_tab_learn_more "அதிகம் கற்க வேண்டுமா?">
+
 <!ENTITY fullscreen_warning "முழுத்திரைக்குச் செல்">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_confirm): The plus sign here is part of UI design -->
+<!ENTITY pwa_add_to_launcher_confirm "+முகப்பு திரையில் சேர்">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_badge2): Used as label in the page actions dropdown list,
+displayed when there are more than 3 actions available for a page.
+See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
+<!ENTITY pwa_add_to_launcher_badge2 "முகப்பு திரையில் சேர்">
+<!ENTITY pwa_continue_to_website "இணையத்தளத்தில் தொடர்">
+<!ENTITY pwa_onboarding_sumo "விரைவான அணுகல் மற்றும் செயலி போன்ற அனுபவத்துடன் விரைவாக உலாவ நீங்கள் இந்த வலைப்பக்கத்தை உங்கள் முகப்பு திரையில் எளிதில் சேர்க்கலாம்.">

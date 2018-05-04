@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "Spyrja alltaf">
 <!ENTITY  permAllow             "Leyfa">
 <!ENTITY  permAllowSession      "Leyfa í þessari vafralotu">
+<!ENTITY  permHide              "Fela">
 <!ENTITY  permBlock             "Loka á">
 <!ENTITY  permissionsFor        "Heimildir fyrir:">
 <!ENTITY  permPlugins           "Virkja viðbætur">
-
-<!ENTITY  permClearStorage           "Hreinsa geymslu">
-<!ENTITY  permClearStorage.accesskey "H">
 
 <!ENTITY  securityTab           "Öryggi">
 <!ENTITY  securityTab.accesskey "Ö">
@@ -73,13 +71,15 @@
 <!ENTITY  securityView.identity.owner    "Eigandi:">
 <!ENTITY  securityView.identity.domain   "Vefsetur:">
 <!ENTITY  securityView.identity.verifier "Staðfest af:">
-
+<!ENTITY  securityView.identity.validity "Rennur út:">
 
 <!ENTITY  securityView.privacy.header                   "Friðhelgi og ferill">
 <!ENTITY  securityView.privacy.history                  "Hef ég skoðað þetta vefsvæði áður?">
 <!ENTITY  securityView.privacy.cookies                  "Geymir þetta vefsvæði upplýsingar (smákökur) á tölvunni minni?">
 <!ENTITY  securityView.privacy.viewCookies              "Skoða smákökur">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "k">
+<!ENTITY  securityView.privacy.clearSiteData            "Hreinsa smákökur og gögn vefsvæðis">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "ö">
 <!ENTITY  securityView.privacy.passwords                "Hef ég vistað eitthvað lykilorð fyrir þetta vefsvæði?">
 <!ENTITY  securityView.privacy.viewPasswords            "Skoða vistuð lykilorð">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "S">

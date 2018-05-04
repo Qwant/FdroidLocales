@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "Fråga alltid">
 <!ENTITY  permAllow             "Tillåt">
 <!ENTITY  permAllowSession      "Tillåt för sessionen">
+<!ENTITY  permHide              "Dölj">
 <!ENTITY  permBlock             "Blockera">
 <!ENTITY  permissionsFor        "Rättigheter för:">
 <!ENTITY  permPlugins           "Aktivera insticksmoduler">
-
-<!ENTITY  permClearStorage           "Rensa lagring">
-<!ENTITY  permClearStorage.accesskey "R">
 
 <!ENTITY  securityTab           "Säkerhet">
 <!ENTITY  securityTab.accesskey "ä">
@@ -75,11 +73,14 @@
 <!ENTITY  securityView.identity.verifier "Verifierad av:">
 <!ENTITY  securityView.identity.validity "Upphör:">
 
-<!ENTITY  securityView.privacy.header                   "Sekretess och historik">
+<!ENTITY  securityView.privacy.header                   "Sekretess &amp; historik">
 <!ENTITY  securityView.privacy.history                  "Har jag besökt den här webbplatsen tidigare dagar?">
 <!ENTITY  securityView.privacy.cookies                  "Lagrar den här webbplatsen information (kakor) på min dator?">
 <!ENTITY  securityView.privacy.viewCookies              "Visa kakor">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "k">
+<!ENTITY  securityView.privacy.siteData                 "Lagrar denna webbplats information på min dator?">
+<!ENTITY  securityView.privacy.clearSiteData            "Rensa kakor och webbplatsdata">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "R">
 <!ENTITY  securityView.privacy.passwords                "Har jag sparat några lösenord för den här webbplatsen?">
 <!ENTITY  securityView.privacy.viewPasswords            "Visa sparade lösenord">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "ö">

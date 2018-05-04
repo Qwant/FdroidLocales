@@ -21,7 +21,7 @@
 <!ENTITY  generalMode           "Gjengivelsesmodus:">
 <!ENTITY  generalSize           "Størrelse:">
 <!ENTITY  generalReferrer       "Refererende URL:">
-<!ENTITY  generalSource         "Kilde:">
+<!ENTITY  generalSource         "Hurtiglagerkilde:">
 <!ENTITY  generalModified       "Sist endret:">
 <!ENTITY  generalEncoding2      "Tekstkoding:">
 <!ENTITY  generalMetaName       "Navn">
@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "Spør alltid">
 <!ENTITY  permAllow             "Tillat">
 <!ENTITY  permAllowSession      "Tillat for programøkten">
+<!ENTITY  permHide              "Skjul">
 <!ENTITY  permBlock             "Blokker">
 <!ENTITY  permissionsFor        "Tillatelser for:">
 <!ENTITY  permPlugins           "Aktiver programtillegg">
-
-<!ENTITY  permClearStorage           "Tøm lager">
-<!ENTITY  permClearStorage.accesskey "T">
 
 <!ENTITY  securityTab           "Sikkerhet">
 <!ENTITY  securityTab.accesskey "S">
@@ -80,6 +78,9 @@
 <!ENTITY  securityView.privacy.cookies                  "Lagrer nettstedet informasjon (cookies) på datamaskinen?">
 <!ENTITY  securityView.privacy.viewCookies              "Vis infokapsler">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "V">
+<!ENTITY  securityView.privacy.siteData                 "Lagrer dette nettstedet informasjon på datamaskinen min?">
+<!ENTITY  securityView.privacy.clearSiteData            "Fjern infokapsler og nettstedsdata">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "k">
 <!ENTITY  securityView.privacy.passwords                "Har jeg lagret passord for dette nettstedet?">
 <!ENTITY  securityView.privacy.viewPasswords            "Vis lagrede passord">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "s">

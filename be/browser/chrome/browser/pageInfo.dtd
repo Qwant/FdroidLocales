@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "Заўсёды пытаць">
 <!ENTITY  permAllow             "Дазволіць">
 <!ENTITY  permAllowSession      "Дазволіць на час сеансу">
+<!ENTITY  permHide              "Схаваць">
 <!ENTITY  permBlock             "Блакаваць">
 <!ENTITY  permissionsFor        "Дазволы для:">
 <!ENTITY  permPlugins           "Задзейнічаць плагіны">
-
-<!ENTITY  permClearStorage           "Ачысціць сховішча">
-<!ENTITY  permClearStorage.accesskey "ч">
 
 <!ENTITY  securityTab           "Бяспека">
 <!ENTITY  securityTab.accesskey "Б">
@@ -76,11 +74,14 @@
 <!ENTITY  securityView.identity.validity "Канчаецца:">
 
 <!ENTITY  securityView.privacy.header                   "Прыватнасць і бяспека">
-<!ENTITY  securityView.privacy.history                  "Я наведваў гэты вэб-сайт напярэдадні?">
-<!ENTITY  securityView.privacy.cookies                  "Захоўвае гэты вэб-сайт звесткі (кукі) на маім камп'ютары?">
+<!ENTITY  securityView.privacy.history                  "Ці я наведваў гэты вэб-сайт раней?">
+<!ENTITY  securityView.privacy.cookies                  "Ці захоўвае гэты вэб-сайт звесткі (кукі) на маім камп'ютары?">
 <!ENTITY  securityView.privacy.viewCookies              "Прагледзець кукі">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "к">
-<!ENTITY  securityView.privacy.passwords                "Захаваў я які-небудзь пароль для гэтага вэб-сайта?">
+<!ENTITY  securityView.privacy.siteData                 "Ці захоўвае гэты вэб-сайт звесткі на маім камп'ютары?">
+<!ENTITY  securityView.privacy.clearSiteData            "Выдаліць кукі і дадзеныя сайтаў">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "В">
+<!ENTITY  securityView.privacy.passwords                "Ці я захаваў які-небудзь пароль для гэтага вэб-сайта?">
 <!ENTITY  securityView.privacy.viewPasswords            "Прагледзець захаваныя паролі">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "п">
 

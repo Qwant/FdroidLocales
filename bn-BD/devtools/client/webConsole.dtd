@@ -9,7 +9,7 @@
 <!ENTITY window.title "ওয়েব কনসোল">
 <!-- LOCALIZATION NOTE (openURL.label): You can see this string in the Web
    - Console context menu. -->
-<!ENTITY openURL.label     "নতুন ট্যাবে URL লিংক খোলা হবে T">
+<!ENTITY openURL.label     "URL নতুন ট্যাবে খুলুন">
 <!ENTITY openURL.accesskey "T">
 <!-- LOCALIZATION NOTE (btnPageNet.label): This string is used for the menu
   -  button that allows users to toggle the network logging output.
@@ -33,11 +33,11 @@
 <!ENTITY btnPageSecurity.label "নিরাপত্তা u">
 <!ENTITY btnPageSecurity.tooltip "লগ নিরাপত্তা ত্রুটি ও সতর্কীকরণ">
 <!ENTITY btnPageSecurity.accesskey "u">
+
 <!-- LOCALIZATION NOTE (btnPageLogging): This is used as the text of the
   -  the toolbar. It shows or hides messages that the web developer inserted on
   -  the page for debugging purposes, using calls such console.log() and
   -  console.error(). -->
-
 <!ENTITY btnPageLogging.label   "লগিং">
 <!ENTITY btnPageLogging.tooltip "উইন্ডোতে লগ বার্তা প্রেরণ করা হয়েছে।কনসোল অবজেক্ট">
 <!ENTITY btnPageLogging.accesskey3 "L">
@@ -47,10 +47,10 @@
 <!ENTITY btnConsoleLog          "লগ">
 <!ENTITY btnConsoleXhr          "XHR">
 <!ENTITY btnConsoleReflows      "পুনঃপ্রবাহ">
+
 <!-- LOCALIZATION NOTE (btnServerLogging): This is used as the text of the
   -  the toolbar. It shows or hides messages that the web developer inserted on
   -  the page for debugging purposes, using calls on the HTTP server. -->
-
 <!ENTITY btnServerLogging.label       "সার্ভার S">
 <!ENTITY btnServerLogging.tooltip     "একটি ওয়েব সার্ভার থেকে লগ বার্তা গৃহীত">
 <!ENTITY btnServerLogging.accesskey   "S">
@@ -58,9 +58,9 @@
 <!ENTITY btnServerInfo                "তথ্য">
 <!ENTITY btnServerWarnings            "সতর্কবার্তা">
 <!ENTITY btnServerLog                 "লগ">
+
 <!-- LOCALIZATION NODE (btnConsoleSharedWorkers) the term "Shared Workers"
   -  should not be translated. -->
-
 <!ENTITY btnConsoleSharedWorkers "শেয়ার্ড ওয়ার্কার্স">
 <!-- LOCALIZATION NODE (btnConsoleServiceWorkers) the term "Service Workers"
   -  should not be translated. -->
@@ -75,17 +75,16 @@
 <!ENTITY btnClear.accesskey    "r">
 
 <!ENTITY fullZoomEnlargeCmd.commandkey  "+">
-<!-- + is above this key on many keyboards -->
-<!ENTITY fullZoomEnlargeCmd.commandkey2 "="> 
-<!ENTITY fullZoomEnlargeCmd.commandkey3 "‍">
+<!ENTITY fullZoomEnlargeCmd.commandkey2 "="> <!-- + is above this key on many keyboards -->
+<!ENTITY fullZoomEnlargeCmd.commandkey3 "">
 
 <!ENTITY fullZoomReduceCmd.commandkey   "-">
-<!ENTITY fullZoomReduceCmd.commandkey2  "বড়-ছোট">
+<!ENTITY fullZoomReduceCmd.commandkey2  "">
 
 <!ENTITY fullZoomResetCmd.commandkey    "0">
-<!ENTITY fullZoomResetCmd.commandkey2   "পূর্বাবস্থা">
+<!ENTITY fullZoomResetCmd.commandkey2   "">
 
-<!ENTITY copyURLCmd.label     "লিংকের ঠিকানা অনুলিপি (a)">
+<!ENTITY copyURLCmd.label     "লিঙ্কের ঠিকানা অনুলিপি">
 <!ENTITY copyURLCmd.accesskey "a">
 
 <!ENTITY closeCmd.key         "W">
@@ -93,5 +92,5 @@
 <!ENTITY clearOutputCtrl.key  "L">
 <!ENTITY openInVarViewCmd.label "Variables প্রদর্শনীতে খুলুন">
 <!ENTITY openInVarViewCmd.accesskey "V">
-<!ENTITY storeAsGlobalVar.label "গ্লোবাল ভেরিয়েবল হিসেবে সংরক্ষণ S">
+<!ENTITY storeAsGlobalVar.label "গ্লোবাল ভেরিয়েবল হিসেবে সংরক্ষণ">
 <!ENTITY storeAsGlobalVar.accesskey "S">

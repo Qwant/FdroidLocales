@@ -73,9 +73,6 @@
 <!ENTITY cmd.reloadLivebookmark.label      "Livebladwijzer opnieuw laden">
 <!ENTITY cmd.reloadLivebookmark.accesskey  "L">
 
-<!ENTITY cmd.moveBookmarks.label                 "Verplaatsen…">
-<!ENTITY cmd.moveBookmarks.accesskey             "V">
-
 <!ENTITY col.name.label          "Naam">
 <!ENTITY col.tags.label          "Labels">
 <!ENTITY col.url.label           "Locatie">
@@ -85,7 +82,8 @@
 <!ENTITY col.dateadded.label     "Toegevoegd">
 <!ENTITY col.lastmodified.label  "Laatst gewijzigd">
 
-<!ENTITY search.placeholder  "Zoeken">
+<!ENTITY historySearch.placeholder  "Geschiedenis doorzoeken">
+<!ENTITY bookmarksSearch.placeholder  "Bladwijzers doorzoeken">
 
 <!ENTITY cmd.find.key  "f">
 

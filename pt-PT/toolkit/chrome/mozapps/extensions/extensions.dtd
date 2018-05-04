@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 <!ENTITY addons.windowTitle                   "Gestor de extras">
 
-<!ENTITY search.placeholder                   "Pesquisar todos os extras">
+<!ENTITY search.placeholder2                  "Pesquisar em addons.mozilla.org">
 <!ENTITY search.buttonlabel                   "Pesquisar">
 <!-- LOCALIZATION NOTE (search.commandKey):
      The search command key should match findOnCmd.commandkey from browser.dtd -->
@@ -12,9 +12,8 @@
 <!ENTITY loading.label                        "A carregar…">
 <!ENTITY listEmpty.installed.label            "Não tem instalado qualquer extra deste tipo">
 <!ENTITY listEmpty.availableUpdates.label     "Nenhuma atualização encontrada">
-<!ENTITY listEmpty.recentUpdates.label        "Não possui extras atualizados recentemente">
+<!ENTITY listEmpty.recentUpdates.label        "Não atualizou quaisquer extras recentemente">
 <!ENTITY listEmpty.findUpdates.label          "Procurar atualizações">
-<!ENTITY listEmpty.search.label               "Não foram encontrados extras correspondentes">
 <!ENTITY listEmpty.button.label               "Saber mais acerca dos extras">
 <!ENTITY installAddonFromFile.label           "Instalar extra a partir de ficheiro…">
 <!ENTITY installAddonFromFile.accesskey       "I">
@@ -23,8 +22,6 @@
 <!ENTITY getThemes.description                "À procura de personalizar o seu navegador?">
 <!ENTITY getThemes.learnMore                  "Escolha de entre milhares de temas.">
 
-<!ENTITY cmd.back.tooltip                     "Retroceder uma página">
-<!ENTITY cmd.forward.tooltip                  "Avançar uma página">
 
 <!ENTITY showUnsignedExtensions.button.label  "Algumas extensões não foram verificadas">
 <!ENTITY showAllExtensions.button.label       "Mostrar todas as extensões">
@@ -41,7 +38,6 @@
 <!ENTITY warning.updatesecurity.enable.tooltip     "Ativar verificação de segurança de atualização do extra">
 
 <!-- categories / views -->
-<!ENTITY view.search.label                    "Pesquisar">
 <!ENTITY view.discover.label                  "Obter extras">
 <!ENTITY view.recentUpdates.label             "Atualizações recentes">
 <!ENTITY view.availableUpdates.label          "Atualizações disponíveis">
@@ -68,7 +64,7 @@
 <!ENTITY updates.resetUpdatesToManual.accesskey      "R">
 <!ENTITY updates.updating.label               "A atualizar extras">
 <!ENTITY updates.installed.label              "Os seus extras foram atualizados.">
-<!ENTITY updates.downloaded.label             "As atualizações dos seus extras foram descarregadas.">
+<!ENTITY updates.downloaded.label             "As atualizações dos seus extras foram transferidas.">
 <!ENTITY updates.restart.label                "Reiniciar agora para completar a instalação">
 <!ENTITY updates.noneFound.label              "Nenhuma atualização encontrada">
 <!ENTITY updates.manualUpdatesFound.label     "Ver atualizações disponíveis">
@@ -125,14 +121,15 @@
      Displayed in the center of the Get Add-ons view, see bug 601143 for mockups. -->
 <!ENTITY discover.title                       "O que são extras?">
 <!ENTITY discover.description2                "Os extras são aplicações que permitem personalizar o &brandShortName; com funcionalidades ou estilos. Experimente uma barra lateral, um notificador meteorológico ou um tema para ajustar o &brandShortName; ao seu gosto.">
-<!ENTITY discover.footer                      "Quando estiver ligado à Internet, este painel mostrará alguns dos melhores e mais populares extras para que os possa experimentar.">
+<!ENTITY discover.footer                      "Quando estiver ligado(a) à Internet, este painel irá mostrar
+  alguns dos melhores e mais populares extras para que os possa experimentar.">
 
 <!-- detail view -->
 <!ENTITY detail.version.label                 "Versão">
 <!ENTITY detail.lastupdated.label             "Última atualização">
 <!ENTITY detail.creator.label                 "Programador">
 <!ENTITY detail.homepage.label                "Página inicial">
-<!ENTITY detail.numberOfDownloads.label       "Descargas">
+<!ENTITY detail.numberOfDownloads.label       "Transferências">
 
 <!ENTITY detail.contributions.description     "O programador deste extra pede para o ajudar no desenvolvimento com uma pequena contribuição.">
 
@@ -162,7 +159,7 @@
 <!ENTITY rating2.label                        "Avaliação">
 
 <!-- download/install progress -->
-<!ENTITY progress.pause.tooltip               "Pausa">
+<!ENTITY progress.pause.tooltip               "Pausar">
 <!ENTITY progress.cancel.tooltip              "Cancelar">
 
 
@@ -171,16 +168,6 @@
 <!ENTITY sort.name.tooltip                    "Ordenar por nome">
 <!ENTITY sort.dateUpdated.label               "Última atualização">
 <!ENTITY sort.dateUpdated.tooltip             "Ordenar por data de atualização">
-<!ENTITY sort.relevance.label                 "Melhor correspondência">
-<!ENTITY sort.relevance.tooltip               "Ordenar por relevância">
-<!ENTITY sort.price.label                     "Preço">
-<!ENTITY sort.price.tooltip                   "Ordenar por preço">
-
-<!ENTITY search.filter2.label                 "Pesquisar:">
-<!ENTITY search.filter2.installed.label       "Os meus extras">
-<!ENTITY search.filter2.installed.tooltip     "Mostra os extras instalados">
-<!ENTITY search.filter2.available.label       "Extras disponíveis">
-<!ENTITY search.filter2.available.tooltip     "Mostra os extras disponíveis para instalação">
 
 <!ENTITY addon.homepage                       "Página inicial">
 <!ENTITY addon.details.label                  "Mais">
@@ -255,7 +242,6 @@
 <!ENTITY pluginDeprecation.description "Falta alguma coisa? Alguns plugins deixaram de ser suportados pelo &brandShortName;.">
 <!ENTITY pluginDeprecation.learnMore "Saber mais.">
 
-<!ENTITY legacyWarning.description "Falta alguma coisa? Algumas extensões deixaram de ser suportadas pelo &brandShortName;.">
 <!ENTITY legacyWarning.showLegacy "Mostrar extensões de legado">
 <!ENTITY legacyExtensions.title "Extensões de legado">
 <!ENTITY legacyExtensions.description "Estas extensões não atendem aos padrões atuais do &brandShortName; por isso foram desativadas">

@@ -5,13 +5,13 @@
 <!ENTITY  pageInfoWindow.width  "600">
 <!ENTITY  pageInfoWindow.height "550">
 
-<!ENTITY  copy.key              "س">
+<!ENTITY  copy.key              "C">
 <!ENTITY  copy.label            "نقل کریں ">
 <!ENTITY  copy.accesskey        "ن">
-<!ENTITY  selectall.key         "آ">
+<!ENTITY  selectall.key         "A">
 <!ENTITY  selectall.label       "تمام منتخب کریں">
 <!ENTITY  selectall.accesskey   "ت">
-<!ENTITY  closeWindow.key       "و">
+<!ENTITY  closeWindow.key       "w">
 
 <!ENTITY  generalTab            "عمومی">
 <!ENTITY  generalTab.accesskey  "ج">
@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "ہمیشہ پوچھیں">
 <!ENTITY  permAllow             "اجازت دیں">
 <!ENTITY  permAllowSession      "سیشن کے لیے اجازت دیں">
+<!ENTITY  permHide              "چھپائیں">
 <!ENTITY  permBlock             "بلاک کریں">
 <!ENTITY  permissionsFor        "اجازتیں بر:">
 <!ENTITY  permPlugins           "پلگ ان متحرک کریں">
-
-<!ENTITY  permClearStorage           "ذخیرہ خالی کریں">
-<!ENTITY  permClearStorage.accesskey "س">
 
 <!ENTITY  securityTab           "سلامتی">
 <!ENTITY  securityTab.accesskey "س">
@@ -73,7 +71,7 @@
 <!ENTITY  securityView.identity.owner    "مالک:">
 <!ENTITY  securityView.identity.domain   "ویب سائٹ:">
 <!ENTITY  securityView.identity.verifier "توثیق کردہ برائے:">
-
+<!ENTITY  securityView.identity.validity "اختتامی میعاد:">
 
 <!ENTITY  securityView.privacy.header                   "نجی نوعیت &amp; سابقات">
 <!ENTITY  securityView.privacy.history                  "میں نے آج سے پہلے یہ ویب سائٹ دیکھی ہے؟">

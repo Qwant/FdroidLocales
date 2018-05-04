@@ -23,6 +23,7 @@
 <!ENTITY aboutNetworking.sent                  "Göndərildi">
 <!ENTITY aboutNetworking.received              "Alındı">
 <!ENTITY aboutNetworking.family                "Ailə">
+<!ENTITY aboutNetworking.trr                   "TRR">
 <!ENTITY aboutNetworking.addresses             "Ünvanlar">
 <!ENTITY aboutNetworking.expires               "Vaxtı keçir (saniyələr)">
 <!ENTITY aboutNetworking.messagesSent          "Göndərilən mesajlar">
@@ -31,8 +32,8 @@
 <!ENTITY aboutNetworking.bytesReceived         "Bayt qəbul edildi">
 <!ENTITY aboutNetworking.logging               "Qeydiyyat">
 <!ENTITY aboutNetworking.logTutorial           "Bu aləti necə istifadə edəcəyinizi öyrənmək üçün <a href='https://developer.mozilla.org/docs/Mozilla/Debugging/HTTP_logging'>HTTP Qeyd Aparma</a> səhifəsinə baxın.">
-<!ENTITY aboutNetworking.currentLogFile        "Hazırki Qeydiyyat Faylı:">
-<!ENTITY aboutNetworking.currentLogModules     "Hazırki Qeydiyyat Modulları:">
+<!ENTITY aboutNetworking.currentLogFile        "Hazırkı Qeydiyyat Faylı:">
+<!ENTITY aboutNetworking.currentLogModules     "Hazırkı Qeydiyyat Modulları:">
 <!ENTITY aboutNetworking.setLogFile            "Qeydiyyat Faylını Qur">
 <!ENTITY aboutNetworking.setLogModules         "Qeydiyyat Modullarını Qur">
 <!ENTITY aboutNetworking.startLogging          "Qeydiyyatı Başlat">
@@ -46,6 +47,13 @@
 <!ENTITY aboutNetworking.rcwnCacheWonCount     "Keşin qazanma sayısı">
 <!ENTITY aboutNetworking.rcwnNetWonCount       "Şəbəkənin qazanma sayısı">
 <!ENTITY aboutNetworking.totalNetworkRequests  "Toplam şəbəkə istək sayısı">
+<!ENTITY aboutNetworking.rcwnOperation         "Keş əməliyyatı">
 <!ENTITY aboutNetworking.rcwnPerfOpen          "Aç">
 <!ENTITY aboutNetworking.rcwnPerfRead          "Oxu">
 <!ENTITY aboutNetworking.rcwnPerfWrite         "Yaz">
+<!ENTITY aboutNetworking.rcwnPerfEntryOpen     "Yazma açılışı">
+<!ENTITY aboutNetworking.rcwnAvgShort          "Qısa ortalama">
+<!ENTITY aboutNetworking.rcwnAvgLong           "Uzun ortalama">
+<!ENTITY aboutNetworking.rcwnStddevLong        "Uzun standart yayınma">
+<!ENTITY aboutNetworking.rcwnCacheSlow         "Yavaş keş sayısı">
+<!ENTITY aboutNetworking.rcwnCacheNotSlow      "Yavaş olmayan keş sayısı">

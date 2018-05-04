@@ -7,18 +7,30 @@
 <!ENTITY engine.bookmarks.label     "Bogmærker">
 <!ENTITY engine.bookmarks.accesskey "B">
 <!ENTITY engine.tabs.label2         "Åbne faneblade">
+<!ENTITY engine.tabs.title          "En liste over åbne faneblade på alle synkroniserede enheder">
 <!ENTITY engine.tabs.accesskey      "f">
 <!ENTITY engine.history.label       "Historik">
 <!ENTITY engine.history.accesskey   "H">
 <!ENTITY engine.logins.label        "Logins">
+<!ENTITY engine.logins.title        "Gemte brugernavne og adgangskoder">
 <!ENTITY engine.logins.accesskey    "L">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "Indstillinger">
+<!ENTITY engine.prefsWin.accesskey  "I">
 <!ENTITY engine.prefs.label         "Indstillinger">
 <!ENTITY engine.prefs.accesskey     "I">
+<!ENTITY engine.prefs.title         "Generelle indstillinger samt indstillinger for privatliv og sikkerhed">
 <!ENTITY engine.addons.label        "Tilføjelser">
+<!ENTITY engine.addons.title        "Tilføjelser og temaer til Firefox til computer">
 <!ENTITY engine.addons.accesskey    "T">
 <!ENTITY engine.addresses.label     "Adresser">
+<!ENTITY engine.addresses.title     "Gemte postadresser (kun til computer)">
 <!ENTITY engine.addresses.accesskey "A">
 <!ENTITY engine.creditcards.label   "Betalingskort">
+<!ENTITY engine.creditcards.title   "Navne, numre og udløbsdatoer (kun til computer)">
 <!ENTITY engine.creditcards.accesskey "e">
 
 <!-- Device Settings -->
@@ -63,13 +75,18 @@ both, to better adapt this sentence to their language.
 <!ENTITY forget.label                "Glem denne mailadresse">
 <!ENTITY forget.accesskey            "G">
 
+<!ENTITY resendVerification.label     "Send verifikation igen">
+<!ENTITY resendVerification.accesskey "d">
+<!ENTITY cancelSetup.label            "Annuller opsætning">
+<!ENTITY cancelSetup.accesskey        "p">
+
 <!ENTITY signedOut.caption            "Tag dit net med dig">
 <!ENTITY signedOut.description        "Synkroniser dine bogmærker, historik, faneblade, adgangskoder, tilføjelser og indstillinger mellem alle dine enheder.">
 <!ENTITY signedOut.accountBox.title   "Opret forbindelse med en &syncBrand.fxAccount.label;">
-<!ENTITY signedOut.accountBox.create  "Opret en konto">
-<!ENTITY signedOut.accountBox.create.accesskey  "O">
-<!ENTITY signedOut.accountBox.signin  "Log ind">
-<!ENTITY signedOut.accountBox.signin.accesskey  "i">
+<!ENTITY signedOut.accountBox.create2 "Har du ingen konto? Opret én her">
+<!ENTITY signedOut.accountBox.create2.accesskey  "O">
+<!ENTITY signedOut.accountBox.signin2 "Log ind…">
+<!ENTITY signedOut.accountBox.signin2.accesskey "i">
 
 <!ENTITY signedIn.settings.label       "Indstillinger for synkronisering">
 <!ENTITY signedIn.settings.description "Vælg, hvad der skal synkroniseres på dine enheder med &brandShortName; installeret.">
@@ -89,3 +106,6 @@ both, to better adapt this sentence to their language.
 <!ENTITY mobilePromo3.iOSLink          "iOS">
 
 <!ENTITY mobilePromo3.end              " for at synkronisere med din mobil-enhed">
+
+<!ENTITY mobilepromo.singledevice      "Opret forbindelse til en ny enhed">
+<!ENTITY mobilepromo.multidevice       "Håndter enheder">

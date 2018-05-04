@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "सधै सोध्नुहोस्">
 <!ENTITY  permAllow             "अनुमति दिनुहोस्">
 <!ENTITY  permAllowSession      "यससत्रका लागि अनुमति">
+<!ENTITY  permHide              "लुकाउनुहोस्">
 <!ENTITY  permBlock             "छेक्नु">
 <!ENTITY  permissionsFor        "यसका लागि अनुमतिहरूः">
 <!ENTITY  permPlugins           "प्लगइनहरू सक्रिय पार्नुहोस्">
-
-<!ENTITY  permClearStorage           "भण्डारन खाली गर्नु">
-<!ENTITY  permClearStorage.accesskey "C">
 
 <!ENTITY  securityTab           "सुरक्षा">
 <!ENTITY  securityTab.accesskey "S">
@@ -73,14 +71,14 @@
 <!ENTITY  securityView.identity.owner    "मालिक:">
 <!ENTITY  securityView.identity.domain   "Web site:">
 <!ENTITY  securityView.identity.verifier "रुजू गरिएको:">
+<!ENTITY  securityView.identity.validity "म्याद समाप्त हुने:">
 
-
-<!ENTITY  securityView.privacy.header                   "गोपनीयता तथा इतिहास">
+<!ENTITY  securityView.privacy.header                   "गोपनीयता &amp; इतिहास">
 <!ENTITY  securityView.privacy.history                  "Have I visited this web site prior to today?">
 <!ENTITY  securityView.privacy.cookies                  "Is this web site storing information (cookies) on my computer?">
 <!ENTITY  securityView.privacy.viewCookies              "कुकीहरू हेर्नुहोस्">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "k">
-<!ENTITY  securityView.privacy.passwords                "के मैले कुनै गोप्यशब्दहरू यस वेबसाइटका लागि बचत गरेको छु?">
+<!ENTITY  securityView.privacy.passwords                "के मैले यस वेबसाइटको लागि कुनै गोप्यशब्दहरू सङ्ग्रह गरेको छु ?">
 <!ENTITY  securityView.privacy.viewPasswords            "संरक्षित गोप्यशब्दहरू हेर्नुहोस्">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "w">
 

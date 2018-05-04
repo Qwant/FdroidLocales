@@ -13,5 +13,5 @@
 <!ENTITY makeUrlRelative.accessKey "r">
 <!ENTITY makeUrlRelative.tooltip "Breyta á milli tilvísunar og raunverulegs URL. Til að geta breytt þessu verðurðu að vista síðuna fyrst.">
 <!-- Shared by Link and Image dialogs -->
-<!ENTITY LinkURLEditField2.label "Sláðu inn slóð vefsíðu, eða slóð staðbundinnar skráar, eða veldu nefndan festipunkt eða haus frá samhengisvalmynd svæðis:">
-<!ENTITY LinkURLEditField2.accessKey "ð">
+<!ENTITY LinkURLEditField.label "Sláðu inn staðsetningu vefsíðu, staðbundinnar skráar, eða veldu markstiklu eða haus frá flettilista:">
+<!ENTITY LinkURLEditField.accessKey "l">

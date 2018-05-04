@@ -25,7 +25,7 @@
 
 <!ENTITY documentButton.label "დოკუმენტი">
 
-<!ENTITY tocButton.label "შინაარსი">
+<!ENTITY tocButton.label "სარჩევი">
 <!ENTITY chapterButton.label "თავები">
 <!ENTITY sectionButton.label "სექციები">
 <!ENTITY subSectionButton.label "ქვესექციები">
@@ -35,13 +35,13 @@
 
 <!ENTITY moreButton.label "დამატებით">
 
-<!ENTITY helpButton.label "კარნახი">
+<!ENTITY helpButton.label "დახმარება">
 <!ENTITY searchButton.label "ძიება">
 
 <!ENTITY authorButton.label "ავტორ(ებ)ი">
 <!ENTITY copyrightButton.label "საავტორო უფლება">
 
-<!ENTITY bookmarkButton.label "სანიშნეები">
+<!ENTITY bookmarkButton.label "სანიშნები">
 
 <!ENTITY alternateButton.label "სხვა ვერსიები">
 

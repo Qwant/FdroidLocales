@@ -28,5 +28,5 @@
 <!ENTITY radioAutoDownload.accesskey "i">
 <!ENTITY radioNotDownload.label "Não">
 <!ENTITY radioNotDownload.accesskey "o">
-<!ENTITY radioAskDownload.label "Perguntar">
+<!ENTITY radioAskDownload.label "Perguntar-me">
 <!ENTITY radioAskDownload.accesskey "e">

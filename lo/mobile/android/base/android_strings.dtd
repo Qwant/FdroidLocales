@@ -3,9 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "ຍິນດີຕ້ອນຮັບ">
-
-<!ENTITY firstrun_urlbar_message "ຍິນດີຕ້ອນຮັບສູ່ &brandShortName;">
-<!ENTITY firstrun_urlbar_subtext "ຄົ້ນຫາສິ່ງຕ່າງໆໄດ້ໄວຂື້ນດ້ວຍການນຳໃຊ້ທາງລັດຄຳແນະນຳການຄົ້ນຫາທີ່ເປັນປະໂຫຍດ.">
+<!ENTITY firstrun_urlbar_message2 "ຂອບໃຈທີ່ເລືອກໃຊ້ &brandShortName;">
+<!ENTITY firstrun_urlbar_subtext2 "ເປັນຫນຶ່ງເວັບບຣາວເຊີທີ່ທັນສະໄຫມສຳລັບໂທລະສັບຂອງ Mozilla ທີ່ເປັນອົງກອນບໍ່ຫວັງຜົນກຳໄລ ມຸ່ງຫມັ້ນເພື່ອສ້າງເວັບຟຣີ ແລະ ເປີດກ້ວາງ.">
+<!ENTITY firstrun_panel_title_privacy "ຄວາມເປັນສ່ວນຕົວ">
+<!ENTITY firstrun_privacy_message "ທ່ອງເວັບແບບບໍ່ມີໃຜມາຫລັກເຝົ້າຕິດຕາມ.">
+<!ENTITY firstrun_privacy_subtext "ການທ່ອງເວັບແບບສ່ວນຕົວພ້ອມກັບຕົວບັອກການປ້ອງກັນການຕິດຕາມໃນຂະນະທີ່ທ່ານທ່ອງເວັບ ແລະ ມັນຈະບໍ່ບັນທຶກປະຫວັດການທ່ອງເວັບຂອງທ່ານໄວ້.">
+<!ENTITY firstrun_panel_title_customize "ປັບແຕ່ງ">
+<!ENTITY firstrun_customize_message "ເຮັດໃຫ້ &brandShortName; ເປັນຂອງທ່ານເອງ.">
+<!ENTITY firstrun_customize_subtext "ປັບແຕ່ງ &brandShortName; ໂດຍ add-ons. ບັອກການໂຄສະນາ, ເພີ່ມຄຸນລັກສະນະ ຫລື ເລືອກເທມໃຫມ່ເພື່ອສະທ້ອນເຖິງບຸກຄະລິກຂອງທ່ານ.">
 <!ENTITY firstrun_bookmarks_title "ປະຫວັດການໃຊ້ງານ">
 <!ENTITY firstrun_bookmarks_message "ສິງທີ່ທ່ານມັກ, ທາງຫນ້າ ແລະ ສູນກາງ">
 <!ENTITY firstrun_bookmarks_subtext "ນຳເອົາຜົນລັບມາຈາກບຸກມາກສ໌ ແລະ ປະຫວັດການໃຊ້ງານຂອງທ່ານເມື່ອທ່ານຄົ້ນຫາ.">
@@ -13,8 +18,8 @@
 <!ENTITY firstrun_data_message "ນຳໃຊ້ຂໍ້ມູນນ້ອຍລົງ ປະຫຍັດຫລາຍຂື້ນກ່ວາເກົ່າ">
 <!ENTITY firstrun_data_subtext2 "ປິດຮູບພາບເພື່ອໃຫ້ຂະຫນາດຂໍ້ມູນຂອງເວັບໄຊທ໌ທີ່ທ່ານເຂົ້າໄປເບິງມີຂະຫນາດນ້ອຍລົງ.">
 <!ENTITY firstrun_sync_title "Sync">
-<!ENTITY firstrun_sync_message "&brandShortName;, ຢູ່ຄຽງຂ້າງທ່ານສະເຫມີ">
-<!ENTITY firstrun_sync_subtext "Sync ແທັບ, ລະຫັດຜ່ານຂອງທ່ານ ແລະ ໃນທຸກໆບ່ອນທີ່ທ່ານນຳໃຊ້ມັນ.">
+<!ENTITY firstrun_sync_message2 "ຮັບເອົາຈາກບ່ອນທີ່ທ່ານໄດ້ປະເອົາໄວ້.">
+<!ENTITY firstrun_sync_subtext2 "ໃຊ້ Sync ເພື່ອຊອກຫາບຸກມາກ, ລະຫັດຜ່ານ, ແລະ ສິ່ງອື່ນໆທີ່ທ່ານໄດ້ບັນທຶກໄວ້ທີ່ &brandShortName; ໃນອຸປະກອນທັງຫມົດຂອງທ່ານ.">
 <!ENTITY firstrun_signin_message "ຮັບການເຊື່ອມຕໍ່ ເລີມຕົ້ນເຮັດວຽກ">
 <!ENTITY firstrun_signin_button "ເຂົ້າສູ່ລະບົບເພື່ອ Sync">
 <!ENTITY  onboard_start_button_browser "ເລີ່ມການທ່ອງເວັບ">
@@ -87,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "&formatD; ລາຍການ">
 <!ENTITY bookmark_folder_one_item "1 ລາຍການ">
+<!ENTITY bookmark_folder_updated "ອັບເດດໂຟລເດີແລ້ວ">
 <!ENTITY bookmark_parent_folder "ໂຟ​ລ​ເດີ​ຫລັກ">
 <!ENTITY bookmark_add_folder "ເພີ່ມໂຟນເດີໃຫມ່">
 
@@ -201,8 +207,6 @@
 <!ENTITY pref_category_advanced_summary3 "ກູ້ຄືນແທັບ, ຜູ້ຝາກຂໍ້ມູນ, ເຄື່ອງມືສຳລັບນັກພັດທະນາ">
 <!ENTITY pref_category_notifications "ການແຈ້ງເຕືອນ">
 <!ENTITY pref_category_notifications_summary "ຄຸນລັກສະນະໃຫມ່, ການອັບເດດເວັບໄຊທ໌">
-<!ENTITY pref_content_notifications "ການອັບເດດເວັບໄຊທ໌">
-<!ENTITY pref_content_notifications_summary2 "ຄົ້ນພົບເນື້ອຫາໃຫມ່ຈາກເວັບທີ່ໄດ້ຮັບການຮັບຮອງ">
 <!ENTITY pref_developer_remotedebugging_usb "ການດີບັກທາງໄກຜ່ານທາງ USB">
 <!ENTITY pref_developer_remotedebugging_wifi "ການດີບັກທາງໄກຜ່ານທາງ Wi-Fi">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "ການດີບັກ Wi-Fi ຕ້ອງການໃຫ້ອຸປະກອນຂອງທ່ານໄດ້ຮັບການຕິດຕັ້ງແອັບອ່ານລະຫັດ QR.">
@@ -268,7 +272,6 @@
 <!ENTITY pref_show_web_fonts_summary2 "ດາວໂຫລດຟັອນຈາກທີ່ອື່ນເມື່ອມີການໂຫລດຫນ້າເວັບ">
 
 <!ENTITY pref_tracking_protection_title2 "ການປ້ອງກັນການຕິດຕາມ">
-<!ENTITY pref_tracking_protection_summary3 "ເປີດໃຫ້ໃຊ້ງານໃນການຄົ້ນຫາແບບສ່ວນຕົວ">
 <!ENTITY pref_donottrack_title "ບໍ່ຕິດຕາມ">
 <!ENTITY pref_donottrack_summary "&brandShortName; ຈະບອກເວັບໄຊທ໌ທີ່ທ່ານບໍ່ຕ້ອງການໃຫ້ຖືກຕິດຕາມ">
 
@@ -279,6 +282,13 @@
 <!ENTITY pref_whats_new_notification "ມີສິ່ງໃຫມ່ໆໃນ &brandShortName;">
 <!ENTITY pref_whats_new_notification_summary "ຮຽນຮູ້ກ່ຽວກັບຄຸນລັກສະນະໃຫມ່ຫລັງຈາກອັບເດດແລ້ວ">
 
+<!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification"-->
+<!ENTITY pref_feature_tips_notification "ເຄັດລັບກ່ຽວກັບຜະລິດຕະພັນ ແລະ ຈຸດເດັ່ນຕ່າງໆ">
+<!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
+     Similar to the already existing "pref_whats_new_notification_summary"-->
+<!ENTITY pref_feature_tips_notification_summary "ຮຽນຮູ້ເພີ່ມເຕີມກ່ຽວກັບການນຳໃຊ້ &brandShortName; ແລະ ຜະລິດຕະພັນ &vendorShortName; ອື່ນໆ">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "ຄຸນລັກສະນະການທົດລອງ">
@@ -286,8 +296,9 @@
 <!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "ການປັບແຕ່ງແທັບ">
-<!ENTITY pref_custom_tabs_summary3 "ອະນຸຍາດໃຫ້ແອັບເປີດເວັບໄຊທ໌ໂດຍນຳໃຊ້ລຸ້ນທີ່ປັບແຕ່ງຂອງ &brandShortName;">
+<!ENTITY pref_custom_tabs2 "ປັບແຕ່ງແທັບ">
+<!ENTITY pref_custom_tabs_summary4 "ອະນຸຍາດໃຫ້ແອັບເປີດເນື້ອຫາຂອງເວັບໃນການໂຫລດປັບແຕ່ງແທັບໄດ້ຢ່າງວ່ອງໄວ.">
+
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "ເປີດຢູ່ໃນ &formatS;">
@@ -297,10 +308,6 @@
 
 <!ENTITY pref_pwa "Progressive Web Apps">
 <!ENTITY pref_pwa_summary "ອະນູຍາດໃຫ້ເພີ່ມເວັບແອັບເຂົ້າໄປຫນ້າຈໍຫລັກ">
-
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-<!ENTITY pref_activity_stream "ກິດຈະກຳສະຕຣີມ">
-<!ENTITY pref_activity_stream_summary "ດ້ວຍຄວາມອຸດົມສົມບູນໄປດ້ວຍຄວາມສາມາດໃນການຄົ້ນຫາທີ່ຫລາກຫລາຍ ແລະ ຫນ້າລັກຮູບແບບໃຫມ່ທີ່ເຮັດໃຫ້ທ່ານສາມາດຊອກຫາສິ່ງທີ່ທ່ານຕ້ອງການຄົ້ນຫາໄດ້ຢ່າງງ່າຍດາຍ &brandShortName;.">
 
 <!ENTITY tracking_protection_prompt_title "ຂະນະນີ້ມີການປ້ອງກັນການຕິດຕາມ">
 <!ENTITY tracking_protection_prompt_text "ບັອກອົງປະກອບການຕິດຕາມເພື່ອເຮັດໃຫ້ທ່ານບໍ່ຕ້ອງກັງວົນ.">
@@ -334,23 +341,6 @@
      has been queued but we are missing the system permission to show an overlay. -->
 <!ENTITY tab_queue_notification_settings "ເພື່ອ \&quot;ເປີດຫຼາຍໆລີ້ງພ້ອມກັນ\&quot;, ກະລຸນາອະນຸຍາດສິດທິໃຫ້ແກ່ \&apos;ແຕ້ມໄດ້ໃນ apps ອື່ນໆ\&apos; ສຳລັບ &brandShortName;">
 
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY content_notification_title_plural "ອັບເດດເວັບໄຊທ໌ &formatD;">
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "ການຕັ້ງຄ່າ">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "ອ່ານຕອນນີ້">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
-<!ENTITY content_notification_updated_on "ອັບເດດໃນ &formatS;">
-
 <!ENTITY pref_char_encoding "ການເຂົ້າລະຫັດຕົວອັກສອນ">
 <!ENTITY pref_char_encoding_on "ສະແດງລາຍການ">
 <!ENTITY pref_char_encoding_off "ບໍ່ຕ້ອງສະແດງລາຍການ">
@@ -380,6 +370,7 @@
 <!ENTITY pref_qrcode_enabled_summary2 "ອະນຸຍາດຕົວສະແກນ QR ໃນແຖບ URL">
 
 <!ENTITY pref_use_master_password "ໃຊ້ລະຫັດຜ່ານຫລັກ">
+<!ENTITY pref_sync_default_title "ບັນຊີ Firefox">
 <!ENTITY pref_sync2 "ເຂົ້າສູ່ລະບົບ">
 <!ENTITY pref_sync_summary2 "Sync ແທັບ, ບຸກມາກ, ການເຂົ້າສູ່ລະບົບ ແລະ ປະຫວັດການນຳໃຊ້ຂອງທ່ານ">
 <!ENTITY pref_search_suggestions "ສະແດງຜົນການແນະນຳການຊອກຫາ">
@@ -409,6 +400,9 @@
 <!ENTITY pref_dialog_set_default "ຕັ້ງໄວ້ເປັນຄ່າພື້ນຖານ">
 <!ENTITY pref_dialog_default "ຄ່າພື້ນຖານ">
 <!ENTITY pref_dialog_remove "ລຶບ">
+<!ENTITY pref_dialog_activitystream_header_content "ເນື້ອຫາເພີ່ມເຕີມ">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "ບຸກມາກມື້ກີ້ນີ້">
+<!ENTITY pref_dialog_activitystream_visited "ເຂົ້າໄປເບິງມາແລ້ວ">
 
 <!ENTITY pref_search_last_toast "ທ່ານບໍສາມາດລຶບ ຫລື ປິດໃຊ້ງານຕົວຊອກຫາຫລ້າສຸດຂອງທ່ານ.">
 
@@ -435,7 +429,6 @@
      crashReporterDesc.label). -->
 <!ENTITY datareporting_fhr_title "ລາຍງານສະຖານະການໃຊ້ງານ &brandShortName;">
 <!ENTITY datareporting_fhr_summary2 "ແບ່ງປັນຂໍ້ມູນການໃຊ້ງານຂອງທ່ານກັບ &vendorShortName; ກ່ຽວກັບສະຖານະພາບຕົວທ່ອງເວັບຂອງທ່ານ ແລະ ເພື່ອຊ່ວຍໃຫ້ທ່ານຮູ້ຈັກປະສິດທິພາບການເຮັດວຽກຂອງຕົວທ່ອງເວັບຂອງທ່ານ.">
-<!ENTITY datareporting_abouthr_title "ເບິງລາຍງານສະຖານະການໃຊ້ງານຂອງທ່ານ">
 <!ENTITY datareporting_telemetry_title "ການວັດແທກໄລຍະໄກ">
 <!ENTITY datareporting_telemetry_summary "ແບ່ງປັນຂໍ້ມູນປະສິດທິພາບການເຮັດວຽກ, ອຸປະກອນ ແລະ ການປັບແຕ່ງຕົວທ່ອງເວັບຂອງທ່ານກັບ &vendorShortName; ເພື່ອຊ່ວຍພວກເຮົາເຮັດໃຫ້ &brandShortName; ດີຂື້ກ່ວາເກົາ">
 <!ENTITY datareporting_crashreporter_summary "&brandShortName; ສົ່ງລາຍງານຄວາມຜິດພາດທີ່ຈະຊ່ວຍໃຫ້ &vendorShortName; ເພື່ອເຮັດໃຫ້ຕົວທ່ອງເວັບຂອງທ່ານມີຄວາມສະຖຽນ ແລະ ປອດໄພຫລາຍຂື້ນ.">
@@ -467,6 +460,7 @@
 <!ENTITY share_image_failed "ບໍ່ສາມາດແບ່ງປັນຮູບພາບນີ້ໄດ້">
 <!ENTITY save_as_pdf "ບັກທຶກເປັນ PDF">
 <!ENTITY print "ພິມ">
+<!ENTITY view_page_source "ເບິງແຫລ່ງທີມາຂອງຫນ້ານີ້">
 <!ENTITY find_in_page "ຄົ້ນຫາໃນຫນ້ານີ້">
 <!ENTITY desktop_mode "ຂໍນຳໃຊ້ເວັບໄຊທ໌ສຳລັບເດສກ໌ທັອບ">
 <!ENTITY page "ຫນ້າ">
@@ -498,7 +492,7 @@
 <!ENTITY contextmenu_open_new_tab "ເປີດໃນແທັບໃຫມ່">
 <!ENTITY contextmenu_open_private_tab "ເປີດໃນແທັບສ່ວນຕົວ">
 <!ENTITY contextmenu_remove "ລຶບ">
-<!ENTITY contextmenu_add_to_launcher "ເພີ່ມໃສ່ໜ້າທໍາອິດ">
+<!ENTITY contextmenu_add_page_shortcut "ເພີ່ມຫນ້າຊັອດຄັດ">
 <!ENTITY contextmenu_set_as_homepage "ຕັ້ງໃຫ້ເປັນຫນ້າທຳອິດ">
 <!ENTITY contextmenu_share "ແບ່ງປັນ">
 <!ENTITY contextmenu_pasteandgo "ວາງ &amp; ໄປ">
@@ -508,9 +502,19 @@
 <!ENTITY contextmenu_subscribe "ເປັນສະມາຊິກຫນ້ານີ້">
 <!ENTITY contextmenu_site_settings "ແກ້ໄຂການຕັ້ງຄ່າເວັບໄຊທ໌">
 <!ENTITY contextmenu_top_sites_edit "ແກ້ໄຂ">
-<!ENTITY contextmenu_top_sites_pin "Pin ເວັບໄຊທ໌">
-<!ENTITY contextmenu_top_sites_unpin "Unpin ເວັບໄຊທ໌">
+<!ENTITY contextmenu_top_sites_pin "ປັກຫມຸດເວັບໄຊທ໌">
+<!ENTITY contextmenu_top_sites_unpin "ຖອນຫມຸດເວັບໄຊທ໌">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "ປັກຫມຸດໄປທີ່ເວັບໄຊທ໌ຍອດນິຍົມ">
+<!ENTITY contextmenu_unpin_from_top_sites "ຖອນຫມຸດອອກຈາກເວັບໄຊທ໌ຍອດນິຍົມ">
 <!ENTITY contextmenu_add_search_engine "ເພີ່ມລະບົບການຊອກຫາ">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "ປັກຫມຸດຫນ້າເວັບໄປທີ່ເວັບໄຊທ໌ຍອດນິຍົມ">
+<!ENTITY unpinned_page_from_top_sites "ຖອນຫມຸດຫນ້າເວັບອອກຈາກເວັບໄຊທ໌ຍອດນິຍົມ">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -542,6 +546,7 @@
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "ຫນ້າເວັບໄຊທ໌ໄດ້ຖືກລົບອອກແລ້ວ">
+<!ENTITY folder_removed "ໂຟລເດີຖືກລຶບແລ້ວ">
 
 <!ENTITY bookmark_edit_title "ແກ້ໄຂບຸກມາກສ໌">
 <!ENTITY bookmark_edit_folder_title "ແກ້ໄຂໂຟນເດີ">
@@ -624,8 +629,8 @@
 
 <!-- Localization note (home_pinned_site) : This is a snackbar label displayed after
     a site is pinned or unpinned. -->
-<!ENTITY home_pinned_site "Pin ເວັບໄຊຕ໌ແລ້ວ">
-<!ENTITY home_unpinned_site "Unpin ເວັບໄຊຕ໌ແລ້ວ">
+<!ENTITY home_pinned_site "ປັກຫມຸດເວັບໄຊຕ໌ແລ້ວ">
+<!ENTITY home_unpinned_site "ຖອນຫມຸດເວັບໄຊຕ໌ແລ້ວ">
 
 <!ENTITY remote_tabs_panel_moved_title "ແທັບຂອງຂ້ອຍຫາຍໄປໃສແລ້ວ?">
 <!ENTITY remote_tabs_panel_moved_desc "ພວກເຮົາໄດ້ຍ້າຍແທັບຂອງທ່ານຈາກອຸປະກອນອື່ນມາໄວ້ຢູ່ໃນຫນ້າກະດານທຳອິດເພື່ອເຮັດໃຫ້ທ່ານສາມາດເຂົ້າໃຊ້ໄດ້ຢ່າງສະດວກສະບາຍໃນເວລາທີ່ທ່ານເປີດແທັບໃຫມ່ທຸກໆຄັ້ງ.">
@@ -813,6 +818,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      replaced by the Android OS version (e.g., 14)-->
 <!ENTITY unsupported_sdk_version "ຂໍອະໄພ! &brandShortName; ນີ້ຈະບໍ່ເຮັດວຽກຢູ່ໃນອຸປະກອນນີ້ (&formatS1;, &formatS2;). ກະລຸນາໂຫລດໃຫມ່.">
 
+<!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
+<!ENTITY corrupt_apk "ບໍ່ສາມາດເປີດ &brandShortName;. ກະລຸນາຕິດຕັ້ງໃຫມ່ ແລະ ລອງເປິດເບິງອີກເທື່ອຫນຶ່ງ.">
+
 <!ENTITY eol_notification_title2 "&brandShortName; ຈະບໍ່ມີການອັບເດດອີກຕໍ່ໄປ">
 <!ENTITY eol_notification_summary "ແຕະເພື່ອຮຽນຮູ້ເພີ່ມເຕີມ">
 
@@ -821,7 +829,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY whatsnew_notification_title "&brandShortName; ແມ່ນລຸ້ນລ່າສຸດແລ້ວ">
 <!ENTITY whatsnew_notification_summary "ຊອກເບິງວ່າມີຫຍັງໃຫມ່ໃນລຸ້ນນີ້">
 
-<!ENTITY promotion_add_to_homescreen "ເພີ່ມໃສ່ໜ້າທໍາອິດ">
+<!ENTITY promotion_add_page_shortcut "ເພີ່ມຫນ້າຊັອດຄັດ">
 
 <!ENTITY helper_first_offline_bookmark_title "ອ່ານອັອບລາຍ">
 <!ENTITY helper_first_offline_bookmark_message "ຄົ້ນຫາຕົວອ່ານຂອງທ່ານໃນບຸກມາກ ເຖິງວ່າມັນຈະອັອບລາຍກໍ່ຕາມ.">
@@ -832,7 +840,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_button "ເພີ່ມເຂົ້າໄປໃນບຸກມາກສ໌">
 
 <!ENTITY activity_stream_topsites "ເວັບໄຊທ໌ຍອດນິຍົມ">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "ແນະນຳໂດຍ &brandPocket;">
 <!ENTITY activity_stream_highlights "ຈຸດເດັ່ນ">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "ເພີ່ມເຕີມ">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
@@ -840,13 +853,30 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "ເຂົ້າໄປເບິງມາແລ້ວ">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "ເລີ່ມການທ່ອງເວັບ ແລະ ພວກເຮົາຈະສະແດງເນື້ອຫາ, ວິດີໂອ ແລະ ຫນ້າອື່ນໆບາງສ່ວນທີ່ທ່ານຫາກໍເຂົ້າໄປເບິງມາ ຫລື ຫາກໍໄດ້ບຸກມາກໄວ້ທີ່ນີ້.">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "ຍົກເລີກ">
+<!ENTITY activity_stream_remove "ລຶບ">
 <!ENTITY activity_stream_delete_history "ລຶບອອກຈາກປະຫວັດການນຳໃຊ້">
 
-<!ENTITY activity_stream_welcome_title "ຍິນດີຕ້ອນຮັບສູ່ລາຍການເດັ່ນຂອງທ່ານ">
-<!ENTITY activity_stream_welcome_content1 "&brandShortName; ສ້າງລາຍການເດັ່ນຂອງສິງທີ່ທ່ານໄດ້ຄົ້ນພົບໃນເວັບເພື່ອເຮັດໃຫ້ທ່ານສາມາດກັບມາເບິງບົດຄວາມ, ວິດີໂອ, ບຸກມາກ ແລະ ຫນ້າອື່ນໆໄດ້">
+<!ENTITY private_tab_panel_title "ການທ່ອງເວັບແບບສ່ວນຕົວ + ກັບການປ້ອງກັນການຕິດຕາມ">
+<!ENTITY private_tab_panel_description "&brandShortName; ບັອກເນື້ອບາງສ່ວນຂອງຫນ້ານີ້ທີ່ອາດຈະເຮັດໃຫ້ການທອງເວັບຂອງທ່ານຖືກຕິດຕາມ.">
+<!ENTITY private_tab_panel_description2 "ພວກເຮົາຈະບໍ່ບັນທຶກປະຫວັດການໃຊ້ງານຂອງທ່ານ, ແຕ່ວ່າໄຟລ໌ຂໍ້ມູນທີ່ໄດ້ຮັບການດາວໂຫລດແລ້ວ ແລະ ບຸກມາກໃຫມ່ຈະໄດ້ຮັບການບັນທຶກໄວ້ໃນອຸປະກອນຂອງທ່ານ.">
+<!ENTITY private_tab_learn_more "ຕ້ອງການທີ່ຈະຮຽນຮູ້ເພີ່ມເຕີມອີກບໍ່?">
+
 <!ENTITY fullscreen_warning "ເຂົ້າສູ່ໂມດເຕັມຫນ້າຈໍແລ້ວ">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_confirm): The plus sign here is part of UI design -->
+<!ENTITY pwa_add_to_launcher_confirm "+ ເພີ່ມໃສ່ໜ້າທໍາອິດ">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_badge2): Used as label in the page actions dropdown list,
+displayed when there are more than 3 actions available for a page.
+See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
+<!ENTITY pwa_add_to_launcher_badge2 "ເພີ່ມໃສ່ໜ້າທໍາອິດ">
+<!ENTITY pwa_continue_to_website "ດຳເນີນການຕໍ່ໄປທີ່ເວັບໄຊທ">
+<!ENTITY pwa_onboarding_sumo "ທ່ານສາມາດເພີ່ມເວັບໄຊທນີ້ໄປທີ່ຫນ້າທຳອິດໄດ້ຢ່າງງ່າຍດາຍເພື່ອໃຫ້ສາມາດນຳເຂົ້າໄປໃຊ້ໄດ້ງ່າຍ ແລະ ທ່ອງເວັບໄດ້ໄວຂື້ນ.">

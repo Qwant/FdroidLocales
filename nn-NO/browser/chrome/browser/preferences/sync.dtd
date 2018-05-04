@@ -7,22 +7,34 @@
 <!ENTITY engine.bookmarks.label     "Bokmerke">
 <!ENTITY engine.bookmarks.accesskey "B">
 <!ENTITY engine.tabs.label2         "Opne faner">
+<!ENTITY engine.tabs.title          "Ei liste over kva som er ope på alle synkroniserte einingar">
 <!ENTITY engine.tabs.accesskey      "f">
 <!ENTITY engine.history.label       "Historikk">
 <!ENTITY engine.history.accesskey   "H">
 <!ENTITY engine.logins.label        "Innloggingar">
+<!ENTITY engine.logins.title        "Brukarnamn og passord du har lagra">
 <!ENTITY engine.logins.accesskey    "l">
+<!-- On Windows we use the term "Options" to describe settings, but
+     on Linux and Mac OS X we use "Preferences" - carry that distinction
+     over into this string, used as the checkbox which indicates if prefs are synced
+-->
+<!ENTITY engine.prefsWin.label      "Innstillingar">
+<!ENTITY engine.prefsWin.accesskey  "I">
 <!ENTITY engine.prefs.label         "Innstillingar">
 <!ENTITY engine.prefs.accesskey     "n">
+<!ENTITY engine.prefs.title         "Generelle, personvern og sikkerheitsinnstillingar du har endra">
 <!ENTITY engine.addons.label        "Utvidingar">
+<!ENTITY engine.addons.title        "Utvidingar og tema for Firefox desktop">
 <!ENTITY engine.addons.accesskey    "U">
 <!ENTITY engine.addresses.label     "Adresser">
+<!ENTITY engine.addresses.title     "Postadresser du har lagra (berre skrivebord)">
 <!ENTITY engine.addresses.accesskey "e">
 <!ENTITY engine.creditcards.label   "Kredittkort">
+<!ENTITY engine.creditcards.title   "Namn, nummer og forfallsdato (berre skrivebord)">
 <!ENTITY engine.creditcards.accesskey "K">
 
 <!-- Device Settings -->
-<!ENTITY fxaSyncDeviceName.label       "Einingsnamn">
+<!ENTITY fxaSyncDeviceName.label       "Namn på eininga">
 <!ENTITY changeSyncDeviceName2.label "Endre namn på eininga…">
 <!ENTITY changeSyncDeviceName2.accesskey "E">
 <!ENTITY cancelChangeSyncDeviceName.label "Avbryt">
@@ -32,7 +44,7 @@
 
 <!-- Footer stuff -->
 <!ENTITY prefs.tosLink.label        "Tenestevilkår">
-<!ENTITY fxaPrivacyNotice.link.label "Personvern">
+<!ENTITY fxaPrivacyNotice.link.label "Personvernerklæring">
 
 <!-- LOCALIZATION NOTE (signedInUnverified.beforename.label,
 signedInUnverified.aftername.label): these two string are used respectively
@@ -50,26 +62,29 @@ both, to better adapt this sentence to their language.
 <!ENTITY signedInLoginFailure.beforename.label "Logg inn for å kople til på nytt">
 <!ENTITY signedInLoginFailure.aftername.label "">
 
-<!ENTITY notSignedIn.label           "Du er ikkje innlogga.">
-<!ENTITY signIn.label                "Logg inn">
-<!ENTITY signIn.accesskey            "g">
-<!ENTITY profilePicture.tooltip      "Endre profilbilde">
-<!ENTITY verifiedManage.label        "Handter kontoen">
-<!ENTITY verifiedManage.accesskey    "k">
-<!ENTITY disconnect3.label           "Kople frå…">
-<!ENTITY disconnect3.accesskey       "f">
-<!ENTITY verify.label                "Stadfest e-post">
-<!ENTITY verify.accesskey            "S">
-<!ENTITY forget.label                "Gløym denne e-posten">
-<!ENTITY forget.accesskey            "G">
+<!ENTITY notSignedIn.label            "Du er ikkje innlogga.">
+<!ENTITY signIn.label                 "Logg inn">
+<!ENTITY signIn.accesskey             "g">
+<!ENTITY profilePicture.tooltip       "Endre profilbilde">
+<!ENTITY verifiedManage.label         "Handter kontoen">
+<!ENTITY verifiedManage.accesskey     "k">
+<!ENTITY disconnect3.label            "Kople frå…">
+<!ENTITY disconnect3.accesskey        "f">
+<!ENTITY resendVerification.label     "Send stadfesting på nytt">
+<!ENTITY resendVerification.accesskey "S">
+<!ENTITY cancelSetup.label            "Avbryt oppsett">
+<!ENTITY cancelSetup.accesskey        "A">
+
+<!ENTITY removeAccount.label          "Fjern konto">
+<!ENTITY removeAccount.accesskey      "k">
 
 <!ENTITY signedOut.caption            "Ta med deg nettet">
 <!ENTITY signedOut.description        "Synkroniser bokmerke, historikk, faner, passord, utvidingar og innstillingar på tvers av alle einingane dine.">
 <!ENTITY signedOut.accountBox.title   "Kople til ein &syncBrand.fxAccount.label;">
-<!ENTITY signedOut.accountBox.create  "Lag konto">
-<!ENTITY signedOut.accountBox.create.accesskey  "L">
-<!ENTITY signedOut.accountBox.signin  "Logg inn">
-<!ENTITY signedOut.accountBox.signin.accesskey  "I">
+<!ENTITY signedOut.accountBox.create2 "Har du ikkje ein konto? Kom i gang">
+<!ENTITY signedOut.accountBox.create2.accesskey "H">
+<!ENTITY signedOut.accountBox.signin2 "Logg inn…">
+<!ENTITY signedOut.accountBox.signin2.accesskey "i">
 
 <!ENTITY signedIn.settings.label       "Sync-innstillingar">
 <!ENTITY signedIn.settings.description "Vel kva du vil synkronisere på einingane dine med &brandShortName;.">
@@ -89,3 +104,6 @@ both, to better adapt this sentence to their language.
 <!ENTITY mobilePromo3.iOSLink          "iOS">
 
 <!ENTITY mobilePromo3.end              " for å synkronisere med mobileininga di.">
+
+<!ENTITY mobilepromo.singledevice      "Kople til ei anna eining">
+<!ENTITY mobilepromo.multidevice       "Handter einingar">

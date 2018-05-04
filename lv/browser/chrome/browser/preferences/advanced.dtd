@@ -29,16 +29,23 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Datu ziņošana ir atspējota šajā būvējuma konfigurācija">
 
-<!ENTITY enableHealthReport1.label       "Atļaut &brandShortName; automātiski sūtīt tehnisku un mijiedarbību informāciju Mozilla">
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.label       "Atļaut &brandShortName; automātiski sūtīt tehnisku un mijiedarbību informāciju Mozilla">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "Uzzināt vairāk">
 
 <!ENTITY dataCollection.label            "&brandShortName; datu vākšana un izmantošana">
-<!ENTITY dataCollectionDesc.label        "Mēs cenšamies sniegt jums izvēli un vācam tikai to, kas mums ir nepieciešams, lai uzlabotu &brandShortName; ikvienam. Mēs vienmēr lūgsim atļauju, pirms personiskas informācijas apkopošanas.">
+<!ENTITY dataCollectionDesc.label        "Mēs cenšamies piedāvāt jums izvēles iespēju un vācam tikai tos datus, kas ir nepieciešami, lai uzlabotu &brandShortName;. Mēs vienmēr jautāsim atļauju pirms privātu datu ievākšanas.">
 <!ENTITY dataCollectionPrivacyNotice.label    "Privātuma piezīme">
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Ļaut &brandShortName; sūtīt avārijas ziņojumus Mozilla">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "c">
+
+<!ENTITY collectBrowserErrors.label          "Atļaut &brandShortName; nosūtīt Mozilla pārlūka kļūdu ziņojumus (ieskaitot kļūdas)">
+<!ENTITY collectBrowserErrors.accesskey      "n">
+<!ENTITY collectBrowserErrorsLearnMore.label "Uzzināt vairāk">
+
+<!ENTITY sendBackloggedCrashReports.label  "Atļaut &brandShortName; sūtīt uzkrātos avāriju ziņojumus jūsu vārdā">
+<!ENTITY sendBackloggedCrashReports.accesskey "t">
 <!ENTITY crashReporterLearnMore.label    "Uzzināt vairāk">
 
 <!ENTITY networkTab.label                "Tīkls">
@@ -51,14 +58,17 @@ available. -->
 
 <!ENTITY httpCache.label                 "Saglabātais tīmekļa saturs">
 
-<!ENTITY offlineStorage2.label           "Nesaistes tīmekļa saturs un lietotāja dati">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Lapas dati">
 <!ENTITY clearSiteData.label             "Izdzēst visus datus">
 <!ENTITY clearSiteData.accesskey         "v">
 <!ENTITY siteDataSettings.label          "Iestatījumi...">
 <!ENTITY siteDataSettings.accesskey      "i">
+<!ENTITY siteData1.label                 "Sīkdatnes un lapu dati">
+<!ENTITY clearSiteData1.label            "Notīrīt datus…">
+<!ENTITY clearSiteData1.accesskey        "n">
+<!ENTITY siteDataSettings1.label         "Pārvaldīt datus…">
+<!ENTITY siteDataSettings1.accesskey     "P">
 <!ENTITY siteDataLearnMoreLink.label     "Uzzināt vairāk">
 
 <!-- LOCALIZATION NOTE:
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB">
 <!ENTITY clearCacheNow.label             "Iztīrīt">
 <!ENTITY clearCacheNow.accesskey         "I">
-<!ENTITY clearOfflineAppCacheNow.label   "Iztīrīt">
-<!ENTITY clearOfflineAppCacheNow.accesskey "z">
 <!ENTITY overrideSmartCacheSize.label    "Ignorēt automātisko kešatmņas pārvaldību">
 <!ENTITY overrideSmartCacheSize.accesskey "o">
 
@@ -111,17 +119,6 @@ available. -->
 <!ENTITY enableSearchUpdate2.label       "Automātiski atjaunināt meklētājus">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
 
-<!ENTITY offlineStorageNotify.label               "Ziņot man, kad mājas lapa grib saglabāt datus izmantošanai nesaistē">
-<!ENTITY offlineStorageNotify.accesskey           "Z">
-<!ENTITY offlineStorageNotifyExceptions.label     "Izņēmumi...">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "z">
-
-<!ENTITY offlineAppsList2.label          "Šīm mājas lapām ir atļauts glabāt datus izmantošanai nesaistē:">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Aizvākt...">
-<!ENTITY offlineAppsListRemove.accesskey "A">
-<!ENTITY offlineAppRemove.confirm        "Aizvākt nesaistes datus">
-
 <!ENTITY certificateTab.label            "Sertifikāti">
 <!ENTITY certPersonal2.description       "Kad serveris pieprasa manu personīgo sertifikātu">
 <!ENTITY selectCerts.auto                "Izvēlēties automātiski">
@@ -131,7 +128,7 @@ available. -->
 <!ENTITY enableOCSP.label                "Vaicāt OCSP atbildes serveriem, lai pārbaudītu pašreizējo sertifikātu derīgumu">
 <!ENTITY enableOCSP.accesskey            "V">
 <!ENTITY viewCerts2.label                "Aplūkot sertifikātus…">
-<!ENTITY viewCerts2.accesskey            "S">
+<!ENTITY viewCerts2.accesskey            "C">
 <!ENTITY viewSecurityDevices2.label      "Drošības ierīces…">
 <!ENTITY viewSecurityDevices2.accesskey  "D">
 

@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Tietojen kerääminen ei ole käytössä tässä koostamiskokoonpanossa">
 
-<!ENTITY enableHealthReport1.label       "Salli, että &brandShortName; lähettää teknisiä ja käyttötilastoja Mozillalle automaattisesti">
-<!ENTITY enableHealthReport1.accesskey   "ö">
+<!ENTITY enableHealthReport2.label       "Salli, että &brandShortName; lähettää teknisiä ja käyttötilastoja Mozillalle">
+<!ENTITY enableHealthReport2.accesskey   "S">
 <!ENTITY healthReportLearnMore.label     "Lue lisää">
 
 <!ENTITY dataCollection.label            "&brandShortName;in tietojen keräys ja käyttö">
@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "Salli, että &brandShortName; lähettää kaatumisilmoitukset Mozillalle">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "e">
+
+<!ENTITY collectBrowserErrors.label          "Salli, että &brandShortName; lähettää selaimen virheraportit (virheilmoitukset mukaan lukien) Mozillalle">
+<!ENTITY collectBrowserErrors.accesskey      "v">
+<!ENTITY collectBrowserErrorsLearnMore.label "Lue lisää">
+
+<!ENTITY sendBackloggedCrashReports.label  "Salli, että &brandShortName; lähettää lähettämättömät kaatumisilmoitukset puolestasi">
+<!ENTITY sendBackloggedCrashReports.accesskey "e">
 <!ENTITY crashReporterLearnMore.label    "Lue lisää">
 
 <!ENTITY networkTab.label                "Verkko">
@@ -51,14 +58,17 @@ available. -->
 
 <!ENTITY httpCache.label                 "Välimuistissa oleva verkkosisältö">
 
-<!ENTITY offlineStorage2.label           "Yhteydetöntä tilaa varten tallennetut tiedot">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
-<!ENTITY siteData.label                  "Sivustojen tallentamat tiedot">
+<!ENTITY siteData.label                  "Sivustotiedot">
 <!ENTITY clearSiteData.label             "Tyhjennä kaikki tiedot">
 <!ENTITY clearSiteData.accesskey         "k">
 <!ENTITY siteDataSettings.label          "Asetukset…">
 <!ENTITY siteDataSettings.accesskey      "e">
+<!ENTITY siteData1.label                 "Evästeet ja sivustotiedot">
+<!ENTITY clearSiteData1.label            "Tyhjennä tiedot…">
+<!ENTITY clearSiteData1.accesskey        "y">
+<!ENTITY siteDataSettings1.label         "Hallitse tietoja…">
+<!ENTITY siteDataSettings1.accesskey     "H">
 <!ENTITY siteDataLearnMoreLink.label     "Lue lisää">
 
 <!-- LOCALIZATION NOTE:
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "megatavuun">
 <!ENTITY clearCacheNow.label             "Tyhjennä heti">
 <!ENTITY clearCacheNow.accesskey         "T">
-<!ENTITY clearOfflineAppCacheNow.label   "Tyhjennä heti">
-<!ENTITY clearOfflineAppCacheNow.accesskey "y">
 <!ENTITY overrideSmartCacheSize.label    "Ohita automaattinen väliaikatiedostojen hallinta">
 <!ENTITY overrideSmartCacheSize.accesskey "h">
 
@@ -110,17 +118,6 @@ available. -->
 
 <!ENTITY enableSearchUpdate2.label       "Päivitä hakukoneet automaattisesti">
 <!ENTITY enableSearchUpdate2.accesskey   "k">
-
-<!ENTITY offlineStorageNotify.label               "Näytä ilmoitus, kun sivusto pyytää lupaa tallentaa tietoa yhteydetöntä tilaa varten">
-<!ENTITY offlineStorageNotify.accesskey           "N">
-<!ENTITY offlineStorageNotifyExceptions.label     "Poikkeukset…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "P">
-
-<!ENTITY offlineAppsList2.label          "Seuraavilla sivustoilla on lupa tallentaa tietoja yhteydetöntä tilaa varten:">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Poista…">
-<!ENTITY offlineAppsListRemove.accesskey "s">
-<!ENTITY offlineAppRemove.confirm        "Poista yhteydetöntä tilaa varten tallennetut tiedot">
 
 <!ENTITY certificateTab.label            "Varmenteet">
 <!ENTITY certPersonal2.description       "Sivuston pyytäessä varmennettasi">

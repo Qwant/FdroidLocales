@@ -29,3 +29,4 @@
 <!ENTITY plugin.file                                         "ਫਾਈਲ">
 <!ENTITY plugin.mimeTypes                                    "MIME ਕਿਸਮਾਂ">
 <!ENTITY plugin.flashProtectedMode.label                     "Adobe Flash ਸੁਰੱਖਿਅਤ ਮੋਡ ਨੂੰ ਚਾਲੂ ਕਰੋ">
+<!ENTITY plugin.enableBlocklists.label                       "ਖ਼ਤਰਨਾਕ ਅਤੇ ਅੜੰਗਾ ਪਾਉਣ ਵਾਲੀ ਫਲੈਸ਼ ਸਮੱਗਰੀ 'ਤੇ ਪਾਬੰਦੀ ਲਗਾਓ">

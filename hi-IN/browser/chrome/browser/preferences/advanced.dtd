@@ -27,13 +27,24 @@
 <!-- LOCALIZATION NOTE (healthReportingDisabled.label): This message is displayed above
 disabled data sharing options in developer builds or builds with no Telemetry support
 available. -->
+<!ENTITY healthReportingDisabled.label   "इस निर्मित विन्यास के लिए डेटा रिपोर्टिंग को असक्रिय किया हैं">
 
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.label       "&brandShortName; को मोज़िला को तकनीकी और इंटरैक्शन डेटा भेजने की अनुमति दें">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "अधिक जानें">
 
-<!ENTITY dataCollectionPrivacyNotice.label    "गोपनीयता नीति">
+<!ENTITY dataCollection.label            "&brandShortName; डेटा संकलन और उपयोग">
+<!ENTITY dataCollectionDesc.label        "हम आपको हमेशा विकल्प देने का प्रयास करते हैं और केवल आवश्यक सूचनाएँ एकत्रित करते हैं ताकि &brandShortName; सबके लिए व बेहतर हो. हम व्यक्तिगत जानकारी लेने से पहले हमेशा अनुमति मांगते हैं.">
+<!ENTITY dataCollectionPrivacyNotice.label    "गोपनीयता सूचना">
 
+<!ENTITY alwaysSubmitCrashReports1.label  "&brandShortName; को स्वतः क्रैश रिपोर्ट Mozilla को भेजने की अनुमति दें">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "c">
+
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "अधिक जानें">
+
+<!ENTITY sendBackloggedCrashReports.label  "आपके निमित्त कार्यसंचित क्रेश विवरण भेजने हेतु &brandShortName; को अनुमति दें">
+<!ENTITY sendBackloggedCrashReports.accesskey "c">
 <!ENTITY crashReporterLearnMore.label    "अधिक जानें">
 
 <!ENTITY networkTab.label                "संजाल">
@@ -46,14 +57,17 @@ available. -->
 
 <!ENTITY httpCache.label                 "कैश्च वेब कंटेंट">
 
-<!ENTITY offlineStorage2.label           "ऑफ़ाइल वेबकंटेंट और उपयोक्ता आँकड़े">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "साइट आँकड़ा">
 <!ENTITY clearSiteData.label             "सभी आँकड़े साफ करें">
 <!ENTITY clearSiteData.accesskey         "l">
 <!ENTITY siteDataSettings.label          "सेटिंग…">
 <!ENTITY siteDataSettings.accesskey      "i">
+<!ENTITY siteData1.label                 "कुकीज़ और साइट डेटा">
+<!ENTITY clearSiteData1.label            "डेटा मिटायें...">
+<!ENTITY clearSiteData1.accesskey        "I">
+<!ENTITY siteDataSettings1.label         "डेटा प्रबंधित करें...">
+<!ENTITY siteDataSettings1.accesskey     "M">
 <!ENTITY siteDataLearnMoreLink.label     "अधिक जानें">
 
 <!-- LOCALIZATION NOTE:
@@ -67,8 +81,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB स्थान">
 <!ENTITY clearCacheNow.label             "अब साफ करें">
 <!ENTITY clearCacheNow.accesskey         "C">
-<!ENTITY clearOfflineAppCacheNow.label   "अभी साफ करें">
-<!ENTITY clearOfflineAppCacheNow.accesskey "N">
 <!ENTITY overrideSmartCacheSize.label    "स्वचालित कैश प्रबंधन को अधिरोहित करें">
 <!ENTITY overrideSmartCacheSize.accesskey "O">
 
@@ -85,9 +97,12 @@ available. -->
 # after the version number, and is empty on purpose for English. You can use it
 # if required by your language.
  -->
-<!ENTITY updateApplication.version.pre   "संस्करण">
-<!ENTITY updateApplication.version.post  "‌">
+<!ENTITY updateApplicationDescription.label
+                                         "सर्वोत्तम प्रदर्शन, स्थिरता और सुरक्षा के लिए &brandShortName; को नवीनतम रखें.">
+<!ENTITY updateApplication.version.pre   "संस्करण ">
+<!ENTITY updateApplication.version.post  "">
 <!ENTITY updateApplication.description   "के लिए &brandShortName; को अनुमति दें">
+<!ENTITY updateAuto3.label               "स्वचालित रूप से (अनुशंसित) अद्यतन स्थापित करें">
 <!ENTITY updateAuto3.accesskey           "A">
 <!ENTITY updateCheckChoose2.label        "अद्यतन हेतु जाँचें; लेकिन आपको उन्हें संस्थापित करने के लिए चुनने दें">
 <!ENTITY updateCheckChoose2.accesskey    "C">
@@ -103,17 +118,6 @@ available. -->
 <!ENTITY enableSearchUpdate2.label       "स्वचालित रूप से खोज इंजन का अद्यतन करें">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
 
-<!ENTITY offlineStorageNotify.label               "आपको बताएँ कि कब वेबसाइट ऑफ़लाइन प्रयोग के लिए आँकड़ा जमा करने के लिए पूछता है">
-<!ENTITY offlineStorageNotify.accesskey           "T">
-<!ENTITY offlineStorageNotifyExceptions.label     "अपवाद…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "x">
-
-<!ENTITY offlineAppsList2.label          "निम्नलिखित वेबसाइट ऑफलाइन उपयोग के लिए आँकड़ा जमा करने में सक्षम है:">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "हटाएँ…">
-<!ENTITY offlineAppsListRemove.accesskey "R">
-<!ENTITY offlineAppRemove.confirm        "ऑफ़लाइन आँकड़ा हटाएँ">
-
 <!ENTITY certificateTab.label            "प्रमाणपत्र">
 <!ENTITY certPersonal2.description       "जब एक सर्वर आपके निजी प्रमाणपत्र का आग्रह करता है">
 <!ENTITY selectCerts.auto                "कोई एक स्वतः चुनें">
@@ -122,21 +126,27 @@ available. -->
 <!ENTITY selectCerts.ask.accesskey       "A">
 <!ENTITY enableOCSP.label                "Query OCSP responder servers to confirm the current validity of certificates">
 <!ENTITY enableOCSP.accesskey            "Q">
-<!ENTITY viewCerts2.label                "प्रमाणपत्र देखें...">
+<!ENTITY viewCerts2.label                "सर्टिफ़िकेट देखें…">
 <!ENTITY viewCerts2.accesskey            "C">
-<!ENTITY viewSecurityDevices2.label      "सुरक्षा उपकरण...">
+<!ENTITY viewSecurityDevices2.label      "सुरक्षा उपकरण…">
 <!ENTITY viewSecurityDevices2.accesskey  "D">
 
 <!ENTITY performance.label               "प्रदर्शन">
 <!ENTITY useRecommendedPerformanceSettings2.label
                                          "अनुशंसित प्रदर्शन सेटिंग्स का उपयोग करें">
+<!ENTITY useRecommendedPerformanceSettings2.description
+                                         "ये सेटिंग्स आपके कंप्यूटर के हार्डवेयर और ऑपरेटिंग सिस्टम के अनुरूप हैं.">
 <!ENTITY useRecommendedPerformanceSettings2.accesskey
                                          "U">
 <!ENTITY performanceSettingsLearnMore.label
                                          "और जानें">
 <!ENTITY limitContentProcessOption.label "सामग्री प्रक्रिया सीमा">
 <!ENTITY limitContentProcessOption.description
-                                         "एक से अधिक टैब का उपयोग करते समय अतिरिक्त सामग्री प्रक्रियाओं के प्रदर्शन में सुधार हो सकता है, लेकिन यह अधिक मेमोरी का भी उपयोग करेगा.">
+                                         "एकाधिक टैब का उपयोग करते समय अतिरिक्त सामग्री प्रक्रियाओं में सुधार हो सक हैं, लेकिन इससे अधिक मेमोरी का उपयोग होगा.">
 <!ENTITY limitContentProcessOption.accesskey   "l">
+<!ENTITY limitContentProcessOption.disabledDescription
+                                         "कंटेंट प्रक्रियाओं की संख्या केवल मल्टीप्रासेस &brandShortName; के साथ बदली जा सकती है.">
+<!ENTITY limitContentProcessOption.disabledDescriptionLink
+                                         "जाँचना सीखें कि क्या मल्टीप्रासेस सक्रिय है">
 <!ENTITY allowHWAccel.label              "उपलब्ध होने पर हार्ड त्वरण का उपयोग करें">
 <!ENTITY allowHWAccel.accesskey          "r">

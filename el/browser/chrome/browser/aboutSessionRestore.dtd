@@ -6,16 +6,17 @@
 
 <!-- LOCALIZATION NOTE: The title is intended to be apologetic and disarming, expressing dismay
      and regret that we are unable to restore the session for the user -->
-<!ENTITY restorepage.errorTitle     "Φαίνεται ότι κάτι δεν πάει καλά.">
-<!ENTITY restorepage.problemDesc    "Το &brandShortName; δεν μπορεί να ανακτήσει τα παράθυρα και τις καρτέλες σας. Αυτό συνήθως συμβαίνει λόγω του ανοίγματος μιας πρόσφατης ιστοσελίδας.">
-<!ENTITY restorepage.tryThis        "Δοκιμάστε να:">
-<!ENTITY restorepage.restoreSome    "Απομακρύνετε μια ή περισσότερες καρτέλες που νομίζετε ότι δημιουργούν το πρόβλημα">
-<!ENTITY restorepage.startNew       "Ξεκινήσετε μια ολοκαίνουρια συνεδρία περιήγησης">
+<!ENTITY restorepage.errorTitle2    "Συγγνώμη. Έχουμε πρόβλημα στην επαναφορά των σελίδων σας.">
+<!ENTITY restorepage.problemDesc2   'Αντιμετωπίζουμε προβλήματα με την επαναφορά της τελευταίας σας συνεδρίας περιήγησης. Επιλέξτε το "Επαναφορά συνεδρίας" για να δοκιμάσετε ξανά.'>
+<!ENTITY restorepage.tryThis2       "Δεν είστε ακόμα σε θέση να επαναφέρετε την συνεδρία σας; Μερικές φορές μια καρτέλα προκαλεί αυτό το πρόβλημα. Προβάλετε προηγούμενες καρτέλες, καταργήστε το σημάδι ελέγχου από τις καρτέλες που δεν χρειάζεται να ανακτήσετε και στη συνέχεια επαναφέρετε.">
 
-<!ENTITY restorepage.tryagainButton "Επαναφορά">
-<!ENTITY restorepage.restore.access "ρ">
-<!ENTITY restorepage.closeButton    "Κλείσιμο">
-<!ENTITY restorepage.close.access   "Κ">
+<!ENTITY restorepage.hideTabs       "Απόκρυψη προηγούμενων καρτελών">
+<!ENTITY restorepage.showTabs       "Προβολή προηγούμενων καρτελών">
+
+<!ENTITY restorepage.tryagainButton2 "Επαναφορά συνεδρίας">
+<!ENTITY restorepage.restore.access2 "Ε">
+<!ENTITY restorepage.closeButton2    "Έναρξη νέας συνεδρίας">
+<!ENTITY restorepage.close.access2   "ν">
 
 <!ENTITY restorepage.restoreHeader  "Επαναφορά">
 <!ENTITY restorepage.listHeader     "Παραθύρων και καρτελών">

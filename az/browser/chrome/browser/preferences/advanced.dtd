@@ -29,8 +29,8 @@ disabled data sharing options in developer builds or builds with no Telemetry su
 available. -->
 <!ENTITY healthReportingDisabled.label   "Bu quraşdırmanın konfiqurasiyasında məlumat xəbərdarlığı söndürülüb">
 
-<!ENTITY enableHealthReport1.label       "&brandShortName; səyyahına avtomatik Mozillaya texniki və qarşılıqlı əlaqə məlumatlarını göndərməyə icazə ver">
-<!ENTITY enableHealthReport1.accesskey   "r">
+<!ENTITY enableHealthReport2.label       "&brandShortName; səyyahına Mozillaya texniki və qarşılıqlı əlaqə məlumatlarını göndərməyə icazə ver">
+<!ENTITY enableHealthReport2.accesskey   "r">
 <!ENTITY healthReportLearnMore.label     "Ətraflı">
 
 <!ENTITY dataCollection.label            "&brandShortName; məlumat toplama və istifadəsi">
@@ -39,6 +39,13 @@ available. -->
 
 <!ENTITY alwaysSubmitCrashReports1.label  "&brandShortName; səyyahına Mozillaya xəta hesabatlarını göndərməyə icazə ver">
 <!ENTITY alwaysSubmitCrashReports1.accesskey "c">
+
+<!ENTITY collectBrowserErrors.label          "&brandShortName; səyyahına xəta hesabatlarını (xəta mesajları da daxil olmaqla) Mozillaya göndərməsinə icazə ver">
+<!ENTITY collectBrowserErrors.accesskey      "b">
+<!ENTITY collectBrowserErrorsLearnMore.label "Ətraflı öyrən">
+
+<!ENTITY sendBackloggedCrashReports.label  "&brandShortName; səyyahına sizin adınıza yığılmış çəkmə hesabatlarını göndərməyə icazə ver">
+<!ENTITY sendBackloggedCrashReports.accesskey "c">
 <!ENTITY crashReporterLearnMore.label    "Daha Ətraflı">
 
 <!ENTITY networkTab.label                "Şəbəkə">
@@ -51,14 +58,17 @@ available. -->
 
 <!ENTITY httpCache.label                 "Yaddaşda saxlanılmış web məzmunu">
 
-<!ENTITY offlineStorage2.label           "Oflayn Web Məzmunu və İstifadəçi Məlumatları">
-
 <!--  Site Data section manages sites using Storage API and is under Network -->
 <!ENTITY siteData.label                  "Sayt Məlumatları">
 <!ENTITY clearSiteData.label             "Bütün Məlumatları təmizlə">
 <!ENTITY clearSiteData.accesskey         "l">
 <!ENTITY siteDataSettings.label          "Tənzimləmələr…">
 <!ENTITY siteDataSettings.accesskey      "i">
+<!ENTITY siteData1.label                 "Çərəzlər və Sayt Məlumatları">
+<!ENTITY clearSiteData1.label            "Məlumatları təmizlə…">
+<!ENTITY clearSiteData1.accesskey        "l">
+<!ENTITY siteDataSettings1.label         "Məlumatları idarə et…">
+<!ENTITY siteDataSettings1.accesskey     "M">
 <!ENTITY siteDataLearnMoreLink.label     "Ətraflı öyrən">
 
 <!-- LOCALIZATION NOTE:
@@ -72,8 +82,6 @@ available. -->
 <!ENTITY limitCacheSizeAfter.label       "MB yer">
 <!ENTITY clearCacheNow.label             "İndi təmizlə">
 <!ENTITY clearCacheNow.accesskey         "z">
-<!ENTITY clearOfflineAppCacheNow.label   "İndi təmizlə">
-<!ENTITY clearOfflineAppCacheNow.accesskey "t">
 <!ENTITY overrideSmartCacheSize.label    "Avtomatik saxlama yaddaşı nəzarətini söndür">
 <!ENTITY overrideSmartCacheSize.accesskey "o">
 
@@ -90,11 +98,13 @@ available. -->
 # after the version number, and is empty on purpose for English. You can use it
 # if required by your language.
  -->
+<!ENTITY updateApplicationDescription.label
+                                         "Yaxşı məhsuldarlıq, sabitlik və təhlükəsizlik üçün &brandShortName; səyyahını daima yeni tutun.">
 <!ENTITY updateApplication.version.pre   "Buraxılış ">
 <!ENTITY updateApplication.version.post  "">
 <!ENTITY updateApplication.description   "&brandShortName; səyyahı">
-<!ENTITY updateAuto2.label               "Yeniləmələri avtomatik olaraq qursun (təhlükəsizlik üçün məsləhətlidir)">
-<!ENTITY updateAuto2.accesskey           "A">
+<!ENTITY updateAuto3.label               "Yeniləmələri avtomatik qur (məsləhət görülür)">
+<!ENTITY updateAuto3.accesskey           "A">
 <!ENTITY updateCheckChoose2.label        "Yeniləmələri yoxlasın amma qurma qərasını sizə versin">
 <!ENTITY updateCheckChoose2.accesskey    "C">
 <!ENTITY updateManual2.label             "Yeniləmələri heç vaxt yoxlamasın (məsləhətli deyil)">
@@ -109,17 +119,6 @@ available. -->
 <!ENTITY enableSearchUpdate2.label       "Axtarış mühərriklərini avtomatik yenilə">
 <!ENTITY enableSearchUpdate2.accesskey   "e">
 
-<!ENTITY offlineStorageNotify.label               "Sayt oflayn istifadə üçün məlumat saxlamaq istədiyində mənə bildir">
-<!ENTITY offlineStorageNotify.accesskey           "T">
-<!ENTITY offlineStorageNotifyExceptions.label     "İstisnalar…">
-<!ENTITY offlineStorageNotifyExceptions.accesskey "x">
-
-<!ENTITY offlineAppsList2.label          "Aşağıdakı saytlara oflayn istifadə üçün məlumat saxlamağa icazə verilib:">
-<!ENTITY offlineAppsList.height          "7em">
-<!ENTITY offlineAppsListRemove.label     "Sil…">
-<!ENTITY offlineAppsListRemove.accesskey "S">
-<!ENTITY offlineAppRemove.confirm        "Oflayn məlumatlarını sil">
-
 <!ENTITY certificateTab.label            "Sertifikatlar">
 <!ENTITY certPersonal2.description       "Hər hansı bir server şəxsi sertifikatınızı istədikdə">
 <!ENTITY selectCerts.auto                "Birini avtomatik seç">
@@ -128,10 +127,10 @@ available. -->
 <!ENTITY selectCerts.ask.accesskey       "A">
 <!ENTITY enableOCSP.label                "Sertifikatların keçərliliyini təsdiqləmək üçün OCSP cavabdehlik serverlərinə Sorğu göndər">
 <!ENTITY enableOCSP.accesskey            "S">
-<!ENTITY viewCerts.label                 "Sertifikatları göstər">
-<!ENTITY viewCerts.accesskey             "S">
-<!ENTITY viewSecurityDevices.label       "Təhlükəsizlik Cihazları">
-<!ENTITY viewSecurityDevices.accesskey   "C">
+<!ENTITY viewCerts2.label                "Sertifikatları göstər…">
+<!ENTITY viewCerts2.accesskey            "C">
+<!ENTITY viewSecurityDevices2.label      "Təhlükəsizlik cihazları…">
+<!ENTITY viewSecurityDevices2.accesskey  "D">
 
 <!ENTITY performance.label               "Məhsuldarlıq">
 <!ENTITY useRecommendedPerformanceSettings2.label

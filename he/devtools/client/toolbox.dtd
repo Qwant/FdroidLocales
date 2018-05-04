@@ -12,7 +12,12 @@
 
 <!-- LOCALIZATION NOTE (browserToolboxErrorMessage): This is the label
   -  shown next to error details when the Browser Toolbox is unable to open. -->
-<!ENTITY browserToolboxErrorMessage          "שגיאה בפתיחת ערכת הכלים של הדפדפן:">
+<!ENTITY browserToolboxErrorMessage          "שגיאה בפתיחת ארגז הכלים של הדפדפן:">
+
+<!-- LOCALIZATION NOTE (browserToolboxStatusMessage): This is the label
+  -  shown next to status details when the Browser Toolbox fails to connect or
+  -  appears to be taking a while to do so. -->
+<!ENTITY browserToolboxStatusMessage "מצב חיבור לארגז הכלים של הדפדפן:">
 
 <!-- LOCALIZATION NOTE (options.context.advancedSettings): This is the label for
   -  the heading of the advanced settings group in the options panel. -->
@@ -32,6 +37,7 @@
   -  for the checkbox option to enable collapse attributes in the Inspector
   -  panel. -->
 <!ENTITY options.collapseAttrs.label "חיתוך רכיבי DOM">
+<!ENTITY options.collapseAttrs.tooltip "קיצור תכונות ארוכות במפקח">
 
 <!-- LOCALIZATION NOTE (options.defaultColorUnit.label): This is the label for a
   -  dropdown list that controls the default color unit used in the inspector.
@@ -45,6 +51,7 @@
 
 <!-- LOCALIZATION NOTE (options.defaultColorUnit.authored): This is used in the
   -  'Default color unit' dropdown list and is visible in the options panel. -->
+<!ENTITY options.defaultColorUnit.authored "כפי שהוגדר מראש">
 
 <!-- LOCALIZATION NOTE (options.defaultColorUnit.hex): This is used in the
   -  'Default color unit' dropdown list and is visible in the options panel. -->
@@ -68,19 +75,16 @@
   -  options panel and is used for settings that trigger page reload. -->
 <!ENTITY options.context.triggersPageRefresh  "* הפעלה נוכחית בלבד, יש לטעון מחדש את הדף">
 
-<!-- LOCALIZATION NOTE (options.enableChrome.label4): This is the label for the
+<!-- LOCALIZATION NOTE (options.enableChrome.label5): This is the label for the
   -  checkbox that toggles chrome debugging, i.e. devtools.chrome.enabled
   -  boolean preference in about:config, in the options panel. -->
+<!ENTITY options.enableChrome.tooltip3  "הפעלת אפשרות זו תאפשר לך להשתמש במגוון כלי פיתוח בהקשר הדפדפן (דרך כלים -> כלי פיתוח -> ארגז הכלים של הדפדפן) ולנפות שגיאות בתוספות ממנהל התוספות">
 
 <!-- LOCALIZATION NOTE (options.enableRemote.label3): This is the label for the
   -  checkbox that toggles remote debugging, i.e. devtools.debugger.remote-enabled
   -  boolean preference in about:config, in the options panel. -->
 <!ENTITY options.enableRemote.label3    "הפעלת מנפה שגיאות מרוחק">
 <!ENTITY options.enableRemote.tooltip2  "הפעלת אפשרות זו תאפשר לכלי המפתחים לנפות שגיאות במערכת מרוחקת כגון Firefox OS">
-
-<!-- LOCALIZATION NOTE (options.enableWorkers.label): This is the label for the
-  -  checkbox that toggles worker debugging, i.e. devtools.debugger.workers
-  -  boolean preference in about:config, in the options panel. -->
 
 <!-- LOCALIZATION NOTE (options.disableJavaScript.label,
   -  options.disableJavaScript.tooltip): This is the options panel label and
@@ -92,6 +96,7 @@
   -  options.disableHTTPCache.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles the HTTP cache on or off. -->
 <!ENTITY options.disableHTTPCache.label     "נטרול מטמון HTTP (כשארגז הכלים פתוח)">
+<!ENTITY options.disableHTTPCache.tooltip   "הפעלת אפשרות זו תשבית את מטמון ה־HTTP עבור כל הלשוניות בהן פתוח ארגז הכלים. Service Workers אינם מושפעים מאפשרות זו.">
 
 <!-- LOCALIZATION NOTE (options.enableServiceWorkersHTTP.label,
   -  options.enableServiceWorkersHTTP.tooltip): This is the options panel label and
@@ -126,6 +131,7 @@
 <!-- LOCALIZATION NOTE (options.usedeveditiontheme.*) Options under the
   -  toolbox for enabling and disabling the Developer Edition browser theme. -->
 <!ENTITY options.usedeveditiontheme.label   "שימוש בערכת הנושא של Developer Edition">
+<!ENTITY options.usedeveditiontheme.tooltip "ניטרול או הפעלת ערכת הנושא של גרסת המפתחים.">
 
 <!-- LOCALIZATION NOTE (options.webconsole.label): This is the label for the
   -  heading of the group of Web Console preferences in the options panel. -->
@@ -140,20 +146,15 @@
   -  heading of the group of Debugger preferences in the options panel. -->
 <!ENTITY options.debugger.label            "מנפה שגיאות">
 
-<!-- LOCALIZATION NOTE (options.sourceMap.label): This is the
-   - label for the checkbox that toggles source maps in the Debugger -->
+<!-- LOCALIZATION NOTE (options.sourceMaps.label): This is the
+   - label for the checkbox that toggles source maps in all tools -->
 <!ENTITY options.sourceMaps.label      "הפעלת מפות מקור">
-<!ENTITY options.sourceMaps.tooltip    "הפעלת אפשרות זו תגרום לכך שהמקורות ימופו במנפה השגיאות ובמסוף.">
+<!ENTITY options.sourceMaps.tooltip1   "אם אפשרות זו תופעל המקורות ימופו בכלים.">
 
 <!-- LOCALIZATION NOTE (options.styleeditor.label): This is the label for the
   -  heading of the group of Style Editor preferences in the options
   -  panel. -->
 <!ENTITY options.styleeditor.label            "עורך סגנון">
-
-<!-- LOCALIZATION NOTE (options.stylesheetSourceMaps.label): This is the
-   - label for the checkbox that toggles showing original sources in the Style Editor -->
-<!ENTITY options.stylesheetSourceMaps.label      "הצגת מקור">
-<!ENTITY options.stylesheetSourceMaps.tooltip    "הצגת קובצי המקור (למשל קובצי Sass) בעורך הסגנון ובמפקח">
 
 <!-- LOCALIZATION NOTE (options.stylesheetAutocompletion.label): This is the
    - label for the checkbox that toggles autocompletion of css in the Style Editor -->
@@ -174,18 +175,6 @@
    - label for the checkbox that toggles the camera shutter audio for screenshot tool -->
 <!ENTITY options.screenshot.audio.label      "השמעת צליל צמצם המצלמה">
 <!ENTITY options.screenshot.audio.tooltip    "הפעלת צליל המצלמה בעת צילום המסך">
-
-<!-- LOCALIZATION NOTE (options.commonprefs): This is the label for the heading
-      of all preferences that affect both the Web Console and the Network
-      Monitor -->
-<!ENTITY options.commonPrefs.label           "העדפות כלליות">
-
-<!-- LOCALIZATION NOTE (options.enablePersistentLogs.label): This is the
-  -  label for the checkbox that toggles persistent logs in the Web Console and
-  -  network monitor,  i.e. devtools.webconsole.persistlog a boolean preference in
-  -  about:config, in the options panel. -->
-<!ENTITY options.enablePersistentLogs.label    "לאפשר רישום קבוע">
-<!ENTITY options.enablePersistentLogs.tooltip  "אפשרות זו תגרום למסוף הרשת ולצג הרשת לא למחוק את הפלט בכל פעם שהדפדפן עובר לדף חדש">
 
 <!-- LOCALIZATION NOTE (options.showPlatformData.label): This is the
   -  label for the checkbox that toggles the display of the platform data in the,

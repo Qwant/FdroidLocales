@@ -16,7 +16,7 @@
 <!ENTITY  generalTab            "常规">
 <!ENTITY  generalTab.accesskey  "G">
 <!ENTITY  generalTitle          "标题：">
-<!ENTITY  generalURL            "地址：">
+<!ENTITY  generalURL            "网址：">
 <!ENTITY  generalType           "类型：">
 <!ENTITY  generalMode           "渲染模式：">
 <!ENTITY  generalSize           "大小：">
@@ -29,10 +29,10 @@
 
 <!ENTITY  mediaTab              "媒体">
 <!ENTITY  mediaTab.accesskey    "M">
-<!ENTITY  mediaLocation         "地址：">
+<!ENTITY  mediaLocation         "位置：">
 <!ENTITY  mediaText             "候补文本：">
 <!ENTITY  mediaAltHeader        "备用文字">
-<!ENTITY  mediaAddress          "地址">
+<!ENTITY  mediaAddress          "网址">
 <!ENTITY  mediaType             "类型">
 <!ENTITY  mediaSize             "大小">
 <!ENTITY  mediaCount            "数量">
@@ -54,13 +54,11 @@
 <!ENTITY  permUseDefault        "使用默认设置">
 <!ENTITY  permAskAlways         "总是询问">
 <!ENTITY  permAllow             "允许">
-<!ENTITY  permAllowSession      "在当前会话中允许">
+<!ENTITY  permAllowSession      "在这次浏览期间允许">
+<!ENTITY  permHide              "隐藏">
 <!ENTITY  permBlock             "阻止">
 <!ENTITY  permissionsFor        "权限，对于:">
 <!ENTITY  permPlugins           "激活插件">
-
-<!ENTITY  permClearStorage           "清除存储">
-<!ENTITY  permClearStorage.accesskey "C">
 
 <!ENTITY  securityTab           "安全">
 <!ENTITY  securityTab.accesskey "S">
@@ -80,6 +78,9 @@
 <!ENTITY  securityView.privacy.cookies                  "此网站在我的计算机上存储了 Cookie 信息吗？ ">
 <!ENTITY  securityView.privacy.viewCookies              "查看 Cookie">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "k">
+<!ENTITY  securityView.privacy.siteData                 "此网站在我的计算机上存储了信息吗？">
+<!ENTITY  securityView.privacy.clearSiteData            "清除 Cookie 和网站数据">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "C">
 <!ENTITY  securityView.privacy.passwords                "我保存过该网站的任何密码吗？ ">
 <!ENTITY  securityView.privacy.viewPasswords            "查看已保存的密码">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "w">

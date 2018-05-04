@@ -5,7 +5,7 @@
 <!ENTITY  pageInfoWindow.width  "600">
 <!ENTITY  pageInfoWindow.height "550">
 
-<!ENTITY  copy.key              "K">
+<!ENTITY  copy.key              "C">
 <!ENTITY  copy.label            "Wachib'exïk">
 <!ENTITY  copy.accesskey        "c">
 <!ENTITY  selectall.key         "A">
@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "Junelïk tik'utüx pe">
 <!ENTITY  permAllow             "Tiya' q'ij">
 <!ENTITY  permAllowSession      "Tiya' q'ij pa re molojri'ïl re'">
+<!ENTITY  permHide              "Tewäx">
 <!ENTITY  permBlock             "Tiq'eleb'ëx">
 <!ENTITY  permissionsFor        "Taq ruya'ik q'ij richin:">
 <!ENTITY  permPlugins           "Titzij ri nak'ab'äl">
-
-<!ENTITY  permClearStorage           "Tijosq'ïx ri yakonem">
-<!ENTITY  permClearStorage.accesskey "K">
 
 <!ENTITY  securityTab           "Chajinïk">
 <!ENTITY  securityTab.accesskey "S">
@@ -80,10 +78,13 @@
 <!ENTITY  securityView.privacy.cookies                  "¿Re ruxaq k'amaya'l re' tajin nuyäk taq na'oj (taq kaxlanwey) pa re kematz'ib' re'?">
 <!ENTITY  securityView.privacy.viewCookies              "Ketz'et Taq kaxlanwey">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "k">
+<!ENTITY  securityView.privacy.siteData                 "¿La yeruyäk na'oj pa nukematz'ib' re ajk'amaya'l ruxaq re'?">
+<!ENTITY  securityView.privacy.clearSiteData            "Keyuj ri taq Kaxlanwäy chuqa' Kitzij Ruxaq K'amaya'l">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "K">
 <!ENTITY  securityView.privacy.passwords                "¿La xeyak ewan taq rutzij re ruxaq k'amaya'l re'?">
 <!ENTITY  securityView.privacy.viewPasswords            "Ketz'et ri yakäl ewan taq tzij">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "w">
 
 <!ENTITY  securityView.technical.header                 "Retal ajsamajel">
 
-<!ENTITY  helpButton.label                              "To'ïk">
+<!ENTITY  helpButton.label                              "Tob'äl">

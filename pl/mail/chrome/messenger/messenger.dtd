@@ -31,6 +31,12 @@
 <!ENTITY newFeedAccountCmd.accesskey "a">
 <!ENTITY newIMContactCmd.label "Wizytówkę dla kontaktu z komunikatora…">
 <!ENTITY newIMContactCmd.accesskey "t">
+<!ENTITY newMessageCmd2.key "N">
+<!ENTITY newMessageCmd.key "M">
+<!ENTITY newMessageCmd.label "Wiadomość">
+<!ENTITY newMessageCmd.accesskey "W">
+<!ENTITY newContactCmd.label "Wizytówkę…">
+<!ENTITY newContactCmd.accesskey "z">
 <!ENTITY newOtherAccountsCmd.label "Konfigurację innego konta…">
 <!ENTITY newOtherAccountsCmd.accesskey "o">
 
@@ -222,7 +228,7 @@
 <!ENTITY expandAllThreadsCmd.key "*">
 <!ENTITY collapseAllThreadsCmd.label "Zwijaj wszystkie wątki">
 <!ENTITY collapseAllThreadsCmd.accesskey "Z">
-<!ENTITY collapseAllThreadsCmd.key "/">
+<!ENTITY collapseAllThreadsCmd.key "\">
 <!ENTITY unreadMsgsCmd.label "Nieprzeczytane">
 <!ENTITY unreadMsgsCmd.accesskey "N">
 <!ENTITY threadsWithUnreadCmd.label "Przeczytane z nowymi wiadomościami">
@@ -315,7 +321,7 @@
 <!ENTITY goBackCmd.commandKey "[">
 <!ENTITY goChatCmd.label "Komunikator">
 <!ENTITY goChatCmd.accesskey "K">
-<!ENTITY goChatCmd.key "I">
+<!ENTITY goChatCmd2.key "H">
 <!ENTITY prevStarredMsgCmd.label "Wiadomość oznaczona gwiazdką">
 <!ENTITY prevStarredMsgCmd.accesskey "O">
 <!ENTITY folderMenu.label "Folder">
@@ -361,6 +367,10 @@
 <!ENTITY editAsNewMsgCmd.key "e">
 <!ENTITY editDraftMsgCmd.label "Edytuj szkic">
 <!ENTITY editDraftMsgCmd.accesskey "s">
+<!ENTITY editTemplateMsgCmd.label "Edytuj szablon">
+<!ENTITY editTemplateMsgCmd.accesskey "b">
+<!ENTITY newMsgFromTemplateCmd.label "Nowa wiadomość z szablonu">
+<!ENTITY newMsgFromTemplateCmd.keycode "VK_RETURN">
 <!ENTITY createFilter.label "Utwórz filtr na podstawie wiadomości…">
 <!ENTITY createFilter.accesskey "U">
 <!ENTITY moveMsgToMenu.label "Przenieś do">
@@ -413,7 +423,7 @@
 <!ENTITY markAllReadCmd.key "c">
 <!ENTITY markStarredCmd.label "Oznacz gwiazdką">
 <!ENTITY markStarredCmd.accesskey "O">
-<!ENTITY markStarredCmd.key "i">
+<!ENTITY markStarredCmd.key "S">
 <!ENTITY markAsJunkCmd.label "Jako niechcianą">
 <!ENTITY markAsJunkCmd.accesskey "J">
 <!ENTITY markAsJunkCmd.key "j">
@@ -445,6 +455,11 @@
 <!ENTITY tasksMenu.accesskey "N">
 <!ENTITY addons.label "Dodatki">
 <!ENTITY addons.accesskey "D">
+<!ENTITY addonPrefs.label "Opcje dodatku">
+<!ENTITY addonPrefs.accesskey "O">
+<!ENTITY addonPrefsUnix.label "Preferencje dodatku">
+<!ENTITY addonPrefsUnix.accesskey "P">
+<!ENTITY addonNoPrefs.label "Nie odnaleziono ustawień dodatku.">
 <!ENTITY activitymanager.label "Monitor aktywności">
 <!ENTITY activitymanager.accesskey "M">
 <!ENTITY imAccountsStatus.label "Status komunikatora">
@@ -483,8 +498,8 @@
 <!ENTITY devToolboxCmd.label "Zestaw narzędzi dla programistów">
 <!ENTITY devToolboxCmd.accesskey "Z">
 <!ENTITY devToolboxCmd.commandkey "i">
-<!ENTITY addonDebugCmd.label "Debuger dodatków">
-<!ENTITY addonDebugCmd.accesskey "D">
+<!ENTITY debugAddonsCmd.label "Debuguj dodatki">
+<!ENTITY debugAddonsCmd.accesskey "D">
 <!ENTITY tabsDebugCmd.label "Debuger ramek treści">
 <!ENTITY tabsDebugCmd.accesskey "r">
 <!ENTITY errorConsoleCmd.label "Konsola błędów">
@@ -602,6 +617,7 @@
 
 <!ENTITY folderContextGetMessages.label "Pobierz wiadomości">
 <!ENTITY folderContextGetMessages.accesskey "P">
+<!ENTITY folderContextMarkAllFoldersRead.label "Oznacz wszystkie foldery jako przeczytane">
 <!ENTITY folderContextPauseAllUpdates.label "Wstrzymaj wszystkie aktualizacje">
 <!ENTITY folderContextPauseUpdates.label "Wstrzymaj aktualizacje">
 <!ENTITY folderContextPauseUpdates.accesskey "s">
@@ -699,6 +715,7 @@
 <!ENTITY idColumn2.tooltip "Sortowanie według kolejności otrzymania">
 <!ENTITY attachmentColumn2.tooltip "Sortowanie według załącznika">
 
+<!ENTITY contextNewMsgFromTemplate.label "Nowa wiadomość z szablonu">
 <!ENTITY contextOpenNewWindow.label "Otwórz wiadomość w nowym oknie">
 <!ENTITY contextOpenNewWindow.accesskey "O">
 <!ENTITY contextOpenNewTab.label "Otwórz wiadomość w nowej karcie">
@@ -706,6 +723,8 @@
 <!ENTITY contextEditMsgAsNew.label "Edytuj jako nową wiadomość">
 <!ENTITY contextEditMsgAsNew.accesskey "E">
 <!ENTITY contextEditDraftMsg.label "Edytuj szkic">
+<!ENTITY contextEditTemplate.label "Edytuj szablon">
+<!ENTITY contextEditTemplate.accesskey "b">
 <!ENTITY contextArchive.label "Archiwizuj">
 <!ENTITY contextArchive.accesskey "A">
 <!ENTITY contextReplySender.label "Odpowiedz tylko nadawcy">

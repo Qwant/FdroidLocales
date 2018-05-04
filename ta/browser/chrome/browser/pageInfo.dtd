@@ -55,6 +55,7 @@
 <!ENTITY  permAskAlways         "எப்போதும் கேள்">
 <!ENTITY  permAllow             "அனுமதி">
 <!ENTITY  permAllowSession      "அமர்வுக்கு அனுமதி">
+<!ENTITY  permHide              "மறை">
 <!ENTITY  permBlock             "தடு">
 <!ENTITY  permissionsFor        "அனுமதி:">
 <!ENTITY  permPlugins           "செருகுநிரல்களைச் செயல்படுத்து">
@@ -73,7 +74,7 @@
 <!ENTITY  securityView.identity.owner    "உரிமையாளர்:">
 <!ENTITY  securityView.identity.domain   "இணையத்தளம்:">
 <!ENTITY  securityView.identity.verifier "சரிபார்த்தவர்:">
-
+<!ENTITY  securityView.identity.validity "காலாவதியாகிறது:">
 
 <!ENTITY  securityView.privacy.header                   "தனியுரிமை &amp; வரலாறு">
 <!ENTITY  securityView.privacy.history                  "இன்று நான் இந்த இணையதளத்தை முன்பு பார்த்தேனா?">

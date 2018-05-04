@@ -3,9 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY firstrun_panel_title_welcome "ကြိုဆိုပါသည်">
-
-<!ENTITY firstrun_urlbar_message "&brandShortName; မှ ကြိုဆိုပါသည်။">
-<!ENTITY firstrun_urlbar_subtext "အကူအညီရသောရှာဖွေမှုအကြံပြုချက်ဆိုင်ရာ အလွယ်ခလုတ်များကို အသုံးပြုပြီး ပိုမိုလျင်မြန်စွာ ရှာဖွေပါ။">
+<!ENTITY firstrun_urlbar_message2 "&brandShortName; ကိုရွေးချယ်သည့်အတွက် ကျေးဇူးတင်ပါသည်">
+<!ENTITY firstrun_urlbar_subtext2 "လွတ်လပ်ပွင့်လင်းသော ဝဘ်ဖြစ်စေရန် ဆောင်ရွက်နေသော အကျိုးအမြတ်အတွက်မဟုတ်သော အဖွဲ့အစည်း Mozilla ထံမှ ခေတ်မီဆန်းသစ်သော မိုဘိုင်းဘရောင်ဇာ။">
+<!ENTITY firstrun_panel_title_privacy "ကိုယ်ပိုင်လွတ်လပ်ခွင့်">
+<!ENTITY firstrun_privacy_message "မည်သူမျှစောင့်ကြည့်မနေသကဲ့သို့ အသုံးပြုပါ">
+<!ENTITY firstrun_privacy_subtext "နောက်ယောင်ခံ ကာကွယ်မှု ပါဝင်သော သီးသန့်ကြည့်ရှုခြင်းသည် အင်တာနက်တွင် လည်ပတ်နေစဉ် နောက်ယောင်ခံများကို တားဆီးပါသည်။ ထို့ပြင် လည်ပတ်မှုပြီးဆုံးပါက လည်ပတ်မှတ်တမ်းကို မှတ်သားမထားပါ။">
+<!ENTITY firstrun_panel_title_customize "စိတ်ကြိုက်ပြင်ဆင်ရန်">
+<!ENTITY firstrun_customize_message "&brandShortName; ကို ကိုယ်ပိုင်ဘရောင်ဇာ ဖြစ်စေပါ။">
+<!ENTITY firstrun_customize_subtext "အတ်အွန်များအသုံးပြုပြီး &brandShortName; ကို စိတ်ကြိုက်ပြုပြင်ပါ။ ကြော်ငြာများကို တားဆီးပါ၊ စွမ်းရည်အသစ်များကို ပေါင်းထည့်ပါ သို့မဟုတ် မိမိ၏ပုံရိပ်ကို ထင်ဟပ်စေမည့် အခင်းအကျင်းတစ်ခုကို ရွေးချယ်ပါ။">
 <!ENTITY firstrun_bookmarks_title "မှတ်တမ်း">
 <!ENTITY firstrun_bookmarks_message "ရှေ့နောက်ဝဲယာရှိ သင့်နှစ်သက်မှုများ">
 <!ENTITY firstrun_bookmarks_subtext "သင်ရှာဖွေသည့်အခါ စာမှတ်များနှင့် မှတ်တမ်းများမှ ရလဒ်များကို ရယူပါ။">
@@ -13,8 +18,8 @@
 <!ENTITY firstrun_data_message "ဒေတာအသုံးပြုမှုနည်းသည့်အတွက် ပိုမိုချွေတာနိုင်ပါသည်">
 <!ENTITY firstrun_data_subtext2 "သင်ကြည့်ရှုသည့် ဝဘ်ဆိုက်များ မိုဘိုင်းဒေတာ သုံးစွဲမှုနည်းစေရန် ရုပ်ပုံများကို ပိတ်ပါ။">
 <!ENTITY firstrun_sync_title "ထပ်တူပြုပြိုင်တူအသုံးပြုခြင်း">
-<!ENTITY firstrun_sync_message "&brandShortName; သည် သင့်ဘေးတွင် အမြဲရှိသည်">
-<!ENTITY firstrun_sync_subtext "သင့်တပ်ဗ်များ၊ စကားဝှက်များနှင့် အသုံးပြုသည့်အရာတိုင်းကို Sync လုပ်ဆောင်ပါ။">
+<!ENTITY firstrun_sync_message2 "သင်ထွက်ခွာသွားသည့်နေရာကနေ စတင်အသုံးပြုပါ။">
+<!ENTITY firstrun_sync_subtext2 "ကိရိယာများရှိ &brandShortName; တွင် သိမ်းထားသော စာမှတ်များ၊ စကားဝှက်များနှင့် အခြားအရာများကို ရှာဖွေရန် Sync ကို အသုံးပြုပါ။">
 <!ENTITY firstrun_signin_message "ချိတ်ဆက်ပါ။ စတင်အသုံးပြုပါ။">
 <!ENTITY firstrun_signin_button "Sync လုပ်ဆောင်ရန် ဝင်ရောက်ပါ">
 <!ENTITY  onboard_start_button_browser "စတင် ကြည့်ရှုရှာဖွေရန်">
@@ -45,7 +50,7 @@
 <!ENTITY  bookmarks_title "မှတ်တမ်းမှတ်ရာများ">
 <!ENTITY  history_title "မှတ်တမ်း">
 
-<!ENTITY  switch_to_tab "မျက်နှာစာ ပြောင်းကြည့်ပါ">
+<!ENTITY  switch_to_tab "တပ်ဗ်သို့ ပြောင်းကြည့်ပါ">
 
 <!-- Localization note: Shown in a snackbar when tab is loaded from cache while device was offline. -->
 <!ENTITY  tab_offline_version "အော့ဖ်လိုင်းဗားရှင်းကို ပြနေသည်">
@@ -54,10 +59,10 @@
 <!ENTITY  crash_message2 "&brandShortName; တွင့် ပြဿနာ နှင့် အပျက်အစီးအချို့ရှိခဲ့သည်။ ဖွင့်ထားသော စာမျက်နှာကို သင်ပြန်ဖွင့်သော အချိန်တွင် &brandShortName; အစ စာမျက်နှာ၌ စာရင်းပြုပေးထားပါမည်။">
 <!ENTITY  crash_send_report_message3 "&vendorShortName;အား ယခုဖြစ်ရပ်အတွက် ပြင်ဆင်နိုင်စေရန် ဆက်သွယ်ပြောကြားပါ။">
 <!ENTITY  crash_include_url2 "ကျွန်ုပ်ရောက်နေသော စာမျက်နှာလိပ်စာကိုပါ ထည့်ပေးလိုက်မည်။">
-<!ENTITY  crash_sorry "ဝမ်းနည်းပါတယ်။">
+<!ENTITY  crash_sorry "တောင်းပန်ပါသည်။">
 <!ENTITY  crash_comment "မှတ်ချက်ပေးပါ (ဤမှတ်ချက်များကို အများပြည်သူက မြင်ရလိမ့်မည်)">
 <!ENTITY  crash_allow_contact2 "&vendorShortName;ကို ကျွန်ုပ်အား ဆက်သွယ်ခွင့် ပေးထားမည်">
-<!ENTITY  crash_email "သင့် အီးမေးလ်">
+<!ENTITY  crash_email "အီးမေးလ်">
 <!ENTITY  crash_closing_alert "ပျက်စီးမှုအကြောင်း သတင်းမပို့တော့ဘဲ ထွက်မည်လား?">
 <!ENTITY  sending_crash_report "ပျက်စီးမှုကို သတင်းပို့နေသည်\u2026">
 <!ENTITY  crash_close_label "ပိတ်ပါ">
@@ -65,15 +70,15 @@
 
 <!ENTITY url_bar_default_text2 "ရှာဖွေ (သို့) လိပ်စာ ထည့်သွင်းပါ">
 
-<!ENTITY bookmark "စာညှပ်">
+<!ENTITY bookmark "စာမှတ်">
 <!ENTITY bookmark_remove "စာမှတ်ကို ဖျက်ရန်">
-<!ENTITY bookmark_added "စာညှပ် ထည့်ပြီး">
+<!ENTITY bookmark_added "စာမှတ် မှတ်ပြီး">
 <!-- Localization note (bookmark_already_added) : This string is
      used as a label in a toast. It is the verb "to bookmark", not
      the noun "a bookmark". -->
 <!ENTITY bookmark_already_added "စာမှတ်လုပ်ထားပြီး">
-<!ENTITY bookmark_removed "စာညှပ်ကို ဖယ်ရှားပြီး။">
-<!ENTITY bookmark_updated "စာညှပ်ကို ပြင်ဆင်သတ်မှတ်ပြီး">
+<!ENTITY bookmark_removed "စာမှတ်ကို ဖျက်ပြီး">
+<!ENTITY bookmark_updated "စာမှတ်ကို ပြင်ဆင်ပြီး">
 <!ENTITY bookmark_options "ရွေးစရာများ">
 <!ENTITY bookmark_save "သိမ်းပါ">
 <!ENTITY screenshot_added_to_bookmarks "မျက်နှာပြင်ပုံရိပ်ဖမ်းချက်ကို စာမှတ်များထဲသို့ ထည့်ပြီးပါပြီ">
@@ -87,6 +92,7 @@
      in the folder. -->
 <!ENTITY bookmark_folder_items "&formatD; ခု">
 <!ENTITY bookmark_folder_one_item "1 ခု">
+<!ENTITY bookmark_folder_updated "စာတွဲကို မွမ်းမံပြီးပြီ">
 <!ENTITY bookmark_parent_folder "အထက်ဖိုင်တွဲ">
 <!ENTITY bookmark_add_folder "ဖိုင်တွဲအသစ်ထည့်ရန်">
 
@@ -201,8 +207,6 @@
 <!ENTITY pref_category_advanced_summary3 "တပ်ဗ်များ၊ ဒေတာချွေတာစနစ်၊ ဖန်တီးသူများသုံး ကိရိယာများကို ပြန်လည်ထုတ်သုံးပါ">
 <!ENTITY pref_category_notifications "အသိပေးချက်များ">
 <!ENTITY pref_category_notifications_summary "စွမ်းဆောင်ချက်အသစ်များ၊ ဝဘ်ဆိုက် မြှင့်တင်မှုများ">
-<!ENTITY pref_content_notifications "ဝဘ်ဆိုက် မြှင့်တင်မှုများ">
-<!ENTITY pref_content_notifications_summary2 "ထောက်ပံ့ပေးထားသည့် ဝဘ်ဆိုက်များထံမှ အကြောင်းအရာသစ်များကို ရှာဖွေကြည့်ရှုပါ။">
 <!ENTITY pref_developer_remotedebugging_usb "USB မှတဆင့် Remote debugging">
 <!ENTITY pref_developer_remotedebugging_wifi "Wi-Fi မှတဆင့် Remote debugging">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "Wi-Fi debugging ကို ဆောင်ရွက်မည်ဆိုလျှင် သင့်ကိရိယာတွင် QR ကုဒ်ဖတ်အက်ပ် ထည့်သွင်းထားရန် လိုသည်။">
@@ -268,7 +272,6 @@
 <!ENTITY pref_show_web_fonts_summary2 "စာမျက်နှာကို ခေါ်ယူသောအခါ လိုအပ်သောဖောင့်များကို ဆွဲယူပါ">
 
 <!ENTITY pref_tracking_protection_title2 "ခြေရာခံခြင်း ကာကွယ်မှု">
-<!ENTITY pref_tracking_protection_summary3 "သီးသန့် ရှာဖွေကြည့်ရှုခြင်းတွင် ဖွင့်ထားသည်">
 <!ENTITY pref_donottrack_title "ခြေရာမခံပါနှင့်">
 <!ENTITY pref_donottrack_summary "&brandShortName; သှ် ဝတ်ဆိုဒ်များအား သင့်ကို ခြေရာမခံရန် ပြောပေးထားမည်ဖြစ်သှ်">
 
@@ -286,8 +289,9 @@
 <!-- Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
      Instead of switching to the browser it appears as if the user stays in the third-party app.
      For more see: https://developer.chrome.com/multidevice/android/customtabs -->
-<!ENTITY pref_custom_tabs "စိတ်ကြိုက်တပ်ဗ်များ">
-<!ENTITY pref_custom_tabs_summary3 "ဝဘ်ဆိုက်များကို ဖွင့်ရာတွင် &brandShortName; ၏ စိတ်ကြိုက်ပြင်ဆင်ထားသော ဗားရှင်းကို အသုံးပြုရန် အက်ပ်များကို ခွင့်ပြုပါ">
+<!ENTITY pref_custom_tabs2 "စိတ်ကြိုက်တပ်ဗ်များ">
+<!ENTITY pref_custom_tabs_summary4 "လျင်မြန်စွာ ဖွင့်နေသော စိတ်ကြိုက်တပ်ဗ်ရှိ ဝဘ်ဆိုက်ပါအကြောင်းအရာများကို ပြသရန် အက်ပ်များကို ခွင့်ပေးပါ">
+
 <!-- Localization note (custom_tabs_menu_item_open_in): The variable is replaced by the name of
      default browser from user's preference, such as "Open in Firefox" -->
 <!ENTITY custom_tabs_menu_item_open_in "&formatS; ဖြင့်ဖွင့်ပါ">
@@ -295,9 +299,8 @@
 <!-- Long-click title of CustomTabsActivity will copy URL to clipboard and display this hint -->
 <!ENTITY custom_tabs_hint_url_copy "URL ကူးပြီး">
 
-<!-- Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream  -->
-<!ENTITY pref_activity_stream "ကိစ္စအဖုံဖုံ">
-<!ENTITY pref_activity_stream_summary "&brandShortName; တွင် သင်ရှာဖွေလိုသည်ကို ပိုမိုတိကျစွာ ရှာဖွေနိုင်ရန် အမြင်ပိုင်းပိုမိုကောင်းမွန်သော မှတ်တမ်းသတင်းနှင့် ပြန်လည်ပုံဖော်ထားသော မူလစာမျက်နှာတို့ကို ယခင်ကထက် အသုံးပြုရပိုမိုလွယ်ကူစေရန် ပြုလုပ်ထားသည်။">
+<!ENTITY pref_pwa "Progressive ဝဘ်အက်ပ်များ">
+<!ENTITY pref_pwa_summary "မူလစာမျက်နှာတွင် ဝဘ်အက်ပ်များကို ထည့်ရန် ခွင့်ပြုပါ">
 
 <!ENTITY tracking_protection_prompt_title "ယခု ခြေရာခံ ကာကွယ်မှုစနစ် ပါဝင်ပါသည်">
 <!ENTITY tracking_protection_prompt_text "ခြေရာခံအစိတ်အပိုင်းများကို နိုးကြားတက်ကြွစွာ ပိတ်ပင်တားဆီးနေသည့်အတွက် စိုးရိမ်ပူပန်စရာ မလိုပါ။">
@@ -329,24 +332,7 @@
 
 <!-- Localization note (tab_queue_notification_settings): This notification text is shown if a tab
      has been queued but we are missing the system permission to show an overlay. -->
-<!ENTITY tab_queue_notification_settings "လင့်အများအပြားကို ဖွင့်ရန်၊ &brandShortName; အတွက် \u0027အခြားအက်ပ်များပေါ်တွင် ဖိဆွဲ၍ရွှေ့ခြင်း\u0027 ကို ဆောင်ရွက်ခွင့်ပေးပါ။">
-
-<!ENTITY content_notification_summary "&brandShortName;">
-<!-- Localization note (content_notification_title_plural): &formatD; will be replaced with the number of websites that
-     have been updated (new content is available). The number of websites is always more than one (>= 2). For a single
-     update the website title is used instead of this string.
-     We can't use Android plural forms, sadly. See Bug #753859. -->
-<!ENTITY content_notification_title_plural "ဝဘ်ဆိုက် &formatD; ခု မြှင့်တင်ပြီးပြီ">
-<!-- Localization note (content_notification_action_settings2): This label will be shown as an action in a content notification.
-     Clicking the action will jump to the notification settings of the app. -->
-<!ENTITY content_notification_action_settings2 "အပြင်အဆင်များ">
-<!-- Localization note(content_notification_action_read_now): This label will be shown as an action in a content notification.
-     Clicking the action will open all new content in the browser. -->
-<!ENTITY content_notification_action_read_now "ယခုပင် ဖတ်ရှုပါ">
-<!-- Localization note (content_notification_updated_on): &formatS; will be replaced with a medium sized version of the
-     date, depending on locale. For en_US this is for example: Feb 24, 2016. For more details see the Android developer
-     documentation for DateFormat.getMediumDateFormat(). -->
-<!ENTITY content_notification_updated_on "&formatS; တွင် မြှင်တင်ခဲ့သည်">
+<!ENTITY tab_queue_notification_settings "လင့်အများအပြားကို ဖွင့်ရန်၊ &brandShortName; အတွက် \&apos;အခြားအက်ပ်များပေါ်တွင် ဖိဆွဲ၍ရွှေ့ခြင်း\&apos; ကို ဆောင်ရွက်ခွင့်ပေးပါ။">
 
 <!ENTITY pref_char_encoding "အက္ခရာ စာဝှက်ရေးသားခြင်း">
 <!ENTITY pref_char_encoding_on "မီနူး စာရင်းပြပါ">
@@ -356,12 +342,8 @@
      The action is shown below a header saying "Clear private data"; See pref_clear_private_data -->
 <!ENTITY pref_clear_private_data_now_tablet "အခုရှင်းပါ">
 <!ENTITY pref_clear_on_exit_title3 "ထွက်သည့်အချိန်တွင် တစ်ကိုယ်ရေသုံး အချက်အလက်များကို ရှင်းလင်းပါ">
-<!ENTITY pref_clear_on_exit_summary2 "&brandShortName; မူလ မီနူး မှ \u0022Quit\u0022 အားရွေးထားပါက အချက်အလက်များအား အလိုအလျောက် ဖျက်သွားလိမ့်မည်">
+<!ENTITY pref_clear_on_exit_summary2 "&brandShortName; မူလ မီနူး မှ \&quot;Quit\&quot; အားရွေးထားပါက အချက်အလက်များအား အလိုအလျောက် ဖျက်သွားလိမ့်မည်">
 <!ENTITY pref_clear_on_exit_dialog_title "ရှင်းလင်းလိုသည့် အချက်အလက်ကို ရွေးပါ">
-<!ENTITY pref_plugins "ပလပ်အင်များ">
-<!ENTITY pref_plugins_enabled "ဖွင့်ထားသည်">
-<!ENTITY pref_plugins_tap_to_play2 "ဖွင့်ရန် ထိပါ">
-<!ENTITY pref_plugins_disabled "ပိတ်ထားသည်">
 <!ENTITY pref_restore_tabs "တပ်ဗ်များကို ပြန်လည်အသုံးပြုရန်">
 <!ENTITY pref_restore_always "အမြဲ ပြန်ဖွင့်ပါ">
 <!ENTITY pref_restore_quit "&brandShortName; ပိတ်လိုက်ပါက အရင်ဖွင့်ထားသော အရာများ ပြန်မခေါ်ပါ">
@@ -381,6 +363,7 @@
 <!ENTITY pref_qrcode_enabled_summary2 "URL ဘားရှိ QR ရှာဖွေသူကို ခွင့်ပြုပါ">
 
 <!ENTITY pref_use_master_password "ပင်မ စကားဝှက်တခု သုံးစွဲပါ။">
+<!ENTITY pref_sync_default_title "Firefox အကောင့်">
 <!ENTITY pref_sync2 "၀င်ပါ">
 <!ENTITY pref_sync_summary2 "သင်၏ တပ်ဗ်များ၊ စာအမှတ်များ၊ စကားဝှက်များ နှင့် မှတ်တမ်းများကို ထပ်တူပြုဆောင်ရွက်ပါ">
 <!ENTITY pref_search_suggestions "ရှာဖွေရေး အကြံပြုချက်များကို ဖေါ်ပြပါ">
@@ -410,6 +393,9 @@
 <!ENTITY pref_dialog_set_default "မူလအဖြစ်ထားပါ">
 <!ENTITY pref_dialog_default "မူရင်းအခြေအနေ">
 <!ENTITY pref_dialog_remove "ဖယ်ရှားပါ">
+<!ENTITY pref_dialog_activitystream_header_content "အခြားအကြောင်းအရာ">
+<!ENTITY pref_dialog_activitystream_recentBookmarks "လတ်တလော စာမှတ်များ">
+<!ENTITY pref_dialog_activitystream_visited "လည်ပတ်ထားသော">
 
 <!ENTITY pref_search_last_toast "သင်၏ နောက်ဆုံးသုံးခဲ့သော ရှာဖွေရေး ဝန်ဆောင်မှုအား ပိတ် သို့ မဖယ်နိုင်ပါ">
 
@@ -436,7 +422,6 @@
      crashReporterDesc.label). -->
 <!ENTITY datareporting_fhr_title "&brandShortName; ကျန်းမာရေးအစီရင်ခံစာ">
 <!ENTITY datareporting_fhr_summary2 "&vendorShortName; နှင့် အချက်အလက်မျှဝေခြင်းဖြင့် ဘယောက်ဆာကိုပိုကောင်းအောင်ပြုလုပ်ရာတွင် ကူညီပါ">
-<!ENTITY datareporting_abouthr_title "ကျန်းမာရေးအစီရင်ခံစာ အားကြည့်မည်">
 <!ENTITY datareporting_telemetry_title "တယ်လီမန်ထရီ">
 <!ENTITY datareporting_telemetry_summary "လုပ်ဆောင်ချက်များ ၊ ဟတ်ဒ်ဝဲနှင့် ပြင်ဆင်မှူအချက်အလက်များအား &vendorShortName; အားမျှဝေပေးခြင်း အားဖြင့် &brandShortName; အားပိုကောင်းအောင်လုပ်ရန်ကူညီပါ။">
 <!ENTITY datareporting_crashreporter_summary "&brandShortName; သည် ပျက်ဆီးမှု ဆိုင်ရာအချက်အလက်များကို &vendorShortName; အား ပေးပို့ခြင်းဖြင့် သင်၏ သုံးဆွဲမှုကို ပိုမိုတည်ငြိမ်လုံခြုံအောင် ပြုလုပ်ရာတွင် ကူညီပါ။">
@@ -468,6 +453,7 @@
 <!ENTITY share_image_failed "ယခုရုပ်ပုံကို မမျှဝေနိုင်ပါ">
 <!ENTITY save_as_pdf "PDF အနေဖြင့်သိမ်း">
 <!ENTITY print "ပုံနှိပ်ရန်">
+<!ENTITY view_page_source "စာမျက်နှာရင်း မြစ်ကို ကြည့်ပါ">
 <!ENTITY find_in_page "စာမျက်နှာထဲတွင် ရှာပါ">
 <!ENTITY desktop_mode "ဝဘ်ဆိုက်အကြီးကို ပြသပါ">
 <!ENTITY page "စာမျက်နှာ">
@@ -499,7 +485,7 @@
 <!ENTITY contextmenu_open_new_tab "တပ်ဗ်အသစ်တစ်ခုဖွင့်ပါ">
 <!ENTITY contextmenu_open_private_tab "တစ်ကိုယ်ရေသုံးတပ်ဗ်ဖွင့်">
 <!ENTITY contextmenu_remove "ဖယ်ရှားပါ">
-<!ENTITY contextmenu_add_to_launcher "ပင်မစာမျက်နှာသို့ ထည့်ပါ">
+<!ENTITY contextmenu_add_page_shortcut "စာမျက်နှာအမြန်ဖွင့်ခလုတ် ထည့်ပါ">
 <!ENTITY contextmenu_set_as_homepage "ပင်မစာမျက်နှာအဖြစ် သတ်မှတ်ပါ">
 <!ENTITY contextmenu_share "မျှ​ဝေရန်">
 <!ENTITY contextmenu_pasteandgo "ကူးထားပြီးနောက်သွားမည်။">
@@ -511,7 +497,17 @@
 <!ENTITY contextmenu_top_sites_edit "တည်းဖြတ်">
 <!ENTITY contextmenu_top_sites_pin "ဆိုဒ်ကို တွယ်ချိတ်ပါ">
 <!ENTITY contextmenu_top_sites_unpin "ဆိုဒ်ကို တွယ်ချိတ်မှုကနေ ဖြုတ်ပါ">
+<!-- Localization note (contextmenu_pin_to_top_sites, contextmenu_unpin_from_top_sites): These strings are used to
+     pin/unpin items from top sites when the user is not on the top sites screen so they'd be missing context on what
+     just "Pin Site" or "Unpin Site" would mean. -->
+<!ENTITY contextmenu_pin_to_top_sites "ထိပ်တန်းဆိုက်များစာရင်းတွင် တွဲပါ">
+<!ENTITY contextmenu_unpin_from_top_sites "ထိပ်တန်းဆိုက်များစာရင်းမှ ဖြုတ်ပါ">
 <!ENTITY contextmenu_add_search_engine "ရှာဖွေရေး ဝန်ဆောင်မှုကို ထည့်သွင်းပါ">
+
+<!-- Localization note (pinned_page_to_top_sites, unpinned_page_from_top_sites): These strings are shown in a snackbar
+     after the user pins/unpins the currently displayed page from top sites. -->
+<!ENTITY pinned_page_to_top_sites "ထိပ်တန်းဆိုက်များစာရင်းတွင် တွဲထားသည့်စာမျက်နှာ">
+<!ENTITY unpinned_page_from_top_sites "ထိပ်တန်းဆိုက်များစာရင်းမှ ဖြုတ်ထားသည့်စာမျက်နှာ">
 
 <!-- Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
      where normally a username would be displayed. In this case, no username was found, and this placeholder
@@ -543,8 +539,10 @@
      any page is removed frome about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "စာမျက်နှာကို ဖယ်ရှားပြီး">
+<!ENTITY folder_removed "စာတွဲကို ဖယ်ရှားပြီးပြီ">
 
 <!ENTITY bookmark_edit_title "စာမှတ်ကို ပြင်ရန်">
+<!ENTITY bookmark_edit_folder_title "ဖိုင်တွဲကို တည်းဖြတ်ရန်">
 <!ENTITY bookmark_edit_name "အမည်">
 <!ENTITY bookmark_edit_location "တည်နေရာ">
 <!ENTITY bookmark_edit_keyword "သော့ချက် စာလုံး">
@@ -621,6 +619,11 @@
 <!-- Localization note (home_remote_tabs_unhide_selected_devices) : This is
      the text of a button; we expect more than one device. -->
 <!ENTITY home_remote_tabs_unhide_selected_devices "ရွေးထားသော ပစ္စည်းများအားဖွင့်ထားပါ">
+
+<!-- Localization note (home_pinned_site) : This is a snackbar label displayed after
+    a site is pinned or unpinned. -->
+<!ENTITY home_pinned_site "တွဲထားသော ဆိုက်">
+<!ENTITY home_unpinned_site "ဖြုတ်ထားသော ဆိုက်">
 
 <!ENTITY remote_tabs_panel_moved_title "တပ်ဗ်တွေဘယ်မှာလဲ?">
 <!ENTITY remote_tabs_panel_moved_desc "သင်၏ အခြားဖုန်းမှ တပ်ဗ်များကို လွယ်လွယ်ကူကူ သုံးစွဲနိုင်ရန် သင့်ပင်မစာမျက်နှာရှိ ရင်ပြင်တစ်ခုပေါ်သို့ ပို့ပေးလိုက်သည်။">
@@ -806,6 +809,9 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      replaced by the Android OS version (e.g., 14)-->
 <!ENTITY unsupported_sdk_version "တောင်းပန်ပါသည်။ &brandShortName; သည် ဒီကိရိယာ (&formatS1;, &formatS2;) ပေါ်တွင် လုပ်ဆောင်မည် မဟုတ်ပါ။ ကျေးဇူးပြု၍ မှန်ကန်သည့်ဗားရှင်းကို ဆွဲယူပါ။">
 
+<!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
+<!ENTITY corrupt_apk "&brandShortName; အား မဖွင့်နိုင်ပါ  ကျေးဇူးပြုပြီး ပြန်လည်တပ်ဆင်ပါ">
+
 <!ENTITY eol_notification_title2 "&brandShortName; ကို အဆင့်မြှင့်လိမ့်မည် မဟုတ်ပါ">
 <!ENTITY eol_notification_summary "ဆက်လက်လေ့လာရန် ထိပါ">
 
@@ -814,7 +820,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY whatsnew_notification_title "&brandShortName; သည် နောက်ဆုံးပေါ် ဖြစ်သည်">
 <!ENTITY whatsnew_notification_summary "ဒီဗားရှင်းမှာ ဘာတွေအသစ်ပါလာလဲဆိုတာကို ကြည့်ရှုပါ">
 
-<!ENTITY promotion_add_to_homescreen "ပင်မစာမျက်နှာသို့ ထည့်ပါ">
+<!ENTITY promotion_add_page_shortcut "စာမျက်နှာအမြန်ဖွင့်ခလုတ် ထည့်ပါ">
 
 <!ENTITY helper_first_offline_bookmark_title "အော့ဖ်လိုင်းတွင် ဖတ်ပါ">
 <!ENTITY helper_first_offline_bookmark_message "အင်တာနက်မရှိပဲနှင့်လည်း စာဖတ်အမြင်ထဲရှိ အကြောင်းအရာတို့ကို စာမှတ်များထဲတွင် ရှာနိုင်သည်။">
@@ -825,7 +831,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_button "စာအမှတ်များထဲသို့ ထည့်ပါ">
 
 <!ENTITY activity_stream_topsites "လူကြည့်အများဆုံးဆိုဒ်များ">
+<!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
+<!ENTITY activity_stream_topstories "&brandPocket;က အကြံပြုထားသည်">
 <!ENTITY activity_stream_highlights "ဦးစားပေးအကြောင်းအရာများ">
+
+<!-- LOCALIZATION NOTE (activity_stream_link_more1): Link-like text displayed to take user to a website with more content from Pocket. -->
+<!ENTITY activity_stream_link_more1 "ပို၍">
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
@@ -833,12 +844,30 @@ Stream list for highlights sourced from th user's bookmarks. -->
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
 <!ENTITY activity_stream_highlight_label_visited "ကြည့်ရှုထားသော">
+<!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
+<!ENTITY activity_stream_highlight_label_trending "လူကြိုက်များနေသော">
+<!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
+<!ENTITY activity_stream_highlights_empty "စတင်လည်ပတ်ကြည့်ရှုပါ။ ဆောင်းပါးကောင်းများ၊ ဗီဒီယိုများနှင့် လတ်တလော လည်ပတ်ကြည့်ရှုထားသော သို့မဟုတ် မှတ်သားထားသော အခြားစာမျက်နှာများကို ယခုနေရာတွင် ပြပါမည်။">
 
-<!-- LOCALIZATION NOTE (activity_stream_dismiss): This label is shown in the Activity Stream context menu,
+<!-- LOCALIZATION NOTE (activity_stream_remove): This label is shown in the Activity Stream context menu,
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
-<!ENTITY activity_stream_dismiss "ပိတ်ပါ">
+<!ENTITY activity_stream_remove "ဖယ်ရှားပါ">
 <!ENTITY activity_stream_delete_history "မှတ်တမ်းမှ ဖျက်ပါ">
 
-<!ENTITY activity_stream_welcome_title "ဦးစားပေးအကြောင်းအရာများကနေ ကြိုဆိုပါသည်">
-<!ENTITY activity_stream_welcome_content1 "&brandShortName; သည် ဝဘ်တွင် သင်ရှာဖွေတွေ့ရှိထားသော အကြောင်းအရာများထဲမှ အထူးဖော်ပြလိုသော အကြောင်းအရာများကို ယခုပင် ဖန်တီးလိုက်သည်။ ထို့အတွက်ကြောင့် သင်ဖတ်ရှုလေ့ရှိသော ဆောင်းပါးများ၊ ဗီဒီယိုများ၊ စာမှတ်များနှင့် အခြားစာမျက်နှာများကို တွေ့မြင်နိုင်သည်။">
+<!ENTITY private_tab_panel_title "သီးသန့်ကြည့်ရှုခြင်း + နောက်ယောင်ခံကာကွယ်မှု">
+<!ENTITY private_tab_panel_description "&brandShortName; သည် သင့်လှုပ်ရှားမှုကို ခြေရာခံနိုင်သည်ဟု ထင်ရသော ဝဘ်စာမျက်နှာများ၏ အစိတ်အပိုင်းများကို တားဆီးထားသည်။">
+<!ENTITY private_tab_panel_description2 "ကျွန်ုပ်တို့သည် မည်သည့်မှတ်တမ်းမျှ မှတ်ထားမည် မဟုတ်သော်လည်း ဆွဲယူထားသည့်ဖိုင်များနှင့် စာမှတ်အသစ်များကို သင့်ကိရိယာထဲတွင် သိမ်းဆည်းထားပါမည်။">
+<!ENTITY private_tab_learn_more "ပိုမိုသိရှိလိုပါသလား။">
+
+<!ENTITY fullscreen_warning "ဖန်သားပြင်အပြည့် ကြည့်နေသည်">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_confirm): The plus sign here is part of UI design -->
+<!ENTITY pwa_add_to_launcher_confirm "+ အဖွင့်စာမျက်နှာတွင် ထားပါ">
+
+<!-- LOCALIZATION NOTE (pwa_add_to_launcher_badge2): Used as label in the page actions dropdown list,
+displayed when there are more than 3 actions available for a page.
+See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
+<!ENTITY pwa_add_to_launcher_badge2 "အဖွင့်စာမျက်နှာတွင် ထားပါ">
+<!ENTITY pwa_continue_to_website "ဝဘ်ဆိုက်သို့ ဆက်သွားပါ">
+<!ENTITY pwa_onboarding_sumo "အက်ပ်ကဲ့သို့ အတွေ့အကြုံရရှိရန်နှင့် လျင်မြန်စွာ အသုံးပြုရန် ယခုဝဘ်ဆိုက်ကို အဖွင့်စာမျက်နှာတွင် လွယ်ကူစွာ ထားနိုင်သည်။">

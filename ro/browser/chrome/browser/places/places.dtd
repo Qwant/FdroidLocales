@@ -1,8 +1,8 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
-<!-- LOCALIZATION NOTE (places.library.title): use "Library", "Archive" or "Repository" -->
 
+<!-- LOCALIZATION NOTE (places.library.title): use "Library", "Archive" or "Repository" -->
 <!ENTITY places.library.title  "Colecție">
 <!ENTITY places.library.width  "700">
 <!ENTITY places.library.height "500">
@@ -36,7 +36,7 @@
 
 <!ENTITY cmd.backup.label               "Copie de siguranță…">
 <!ENTITY cmd.backup.accesskey           "g">
-<!ENTITY cmd.restore2.label             "Restaurează">
+<!ENTITY cmd.restore2.label             "Restabilește">
 <!ENTITY cmd.restore2.accesskey         "R">
 <!ENTITY cmd.restoreFromFile.label      "Alege fișierul…">
 <!ENTITY cmd.restoreFromFile.accesskey  "l">
@@ -70,7 +70,7 @@
 <!ENTITY cmd.new_separator.label           "Separator nou">
 <!ENTITY cmd.new_separator.accesskey       "S">
 
-<!ENTITY cmd.reloadLivebookmark.label      "Reîncarcă semnul actualizabil">
+<!ENTITY cmd.reloadLivebookmark.label      "Reîncarcă marcajul actualizabil">
 <!ENTITY cmd.reloadLivebookmark.accesskey  "R">
 
 <!ENTITY cmd.moveBookmarks.label                  "Mută…">
@@ -85,7 +85,8 @@
 <!ENTITY col.dateadded.label     "Adăugat">
 <!ENTITY col.lastmodified.label  "Ultima modificare">
 
-<!ENTITY search.placeholder  "Caută">
+<!ENTITY historySearch.placeholder  "Caută în istoric">
+<!ENTITY bookmarksSearch.placeholder  "Caută marcaje">
 
 <!ENTITY cmd.find.key  "f">
 
@@ -93,15 +94,15 @@
 <!ENTITY maintenance.accesskey  "I">
 <!ENTITY maintenance.tooltip    "Importă și fă copie de siguranță marcajelor">
 
-<!ENTITY backButton.tooltip  "Mergi înapoi">
+<!ENTITY backButton.tooltip  "Navighează înapoi">
 
-<!ENTITY forwardButton.tooltip  "Mergi înainte">
+<!ENTITY forwardButton.tooltip  "Navighează înainte">
 
 <!ENTITY detailsPane.more.label "Mai mult">
 <!ENTITY detailsPane.more.accesskey "M">
 <!ENTITY detailsPane.less.label "Mai puțin">
 <!ENTITY detailsPane.less.accesskey "M">
-<!ENTITY detailsPane.selectAnItemText.description "Selectați un element pentru a-l vedea și a-i edita proprietățile">
+<!ENTITY detailsPane.selectAnItemText.description "Selectează un element pentru a-l vedea și a-i edita proprietățile">
 
 <!ENTITY view.label               "Vizualizare">
 <!ENTITY view.accesskey           "V">

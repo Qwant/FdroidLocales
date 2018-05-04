@@ -4,6 +4,8 @@
 <!ENTITY addons.windowTitle                   "Gestionnaire de modules complémentaires">
 
 <!ENTITY search.placeholder                   "Rechercher dans tous les modules">
+
+<!ENTITY search.placeholder2                  "Rechercher sur addons.mozilla.org">
 <!ENTITY search.buttonlabel                   "Rechercher">
 <!-- LOCALIZATION NOTE (search.commandKey):
      The search command key should match findOnCmd.commandkey from browser.dtd -->
@@ -25,6 +27,7 @@
 
 <!ENTITY cmd.back.tooltip                     "Reculer d’une page">
 <!ENTITY cmd.forward.tooltip                  "Avancer d’une page">
+
 
 <!ENTITY showUnsignedExtensions.button.label  "Certaines extensions n’ont pas pu être vérifiées">
 <!ENTITY showAllExtensions.button.label       "Afficher toutes les extensions">
@@ -124,9 +127,7 @@
 <!-- LOCALIZATION NOTE (discover.title,discover.description,discover.footer):
      Displayed in the center of the Get Add-ons view, see bug 601143 for mockups. -->
 <!ENTITY discover.title                       "Que sont les modules complémentaires ?">
-<!ENTITY discover.description2                "Les modules complémentaires sont des applications permettant de personnaliser &brandShortName;
-  avec des fonctionnalités ou des styles supplémentaires. Gagnez du temps avec un panneau latéral, surveillez la météo ou changez l’apparence de &brandShortName;
-  à votre guise.">
+<!ENTITY discover.description2                "Les modules complémentaires sont des applications permettant de personnaliser &brandShortName; avec des fonctionnalités ou des styles supplémentaires. Gagnez du temps avec un panneau latéral, surveillez la météo ou changez l’apparence de &brandShortName; à votre guise.">
 <!ENTITY discover.footer                      "Lorsque votre connexion Internet sera active, ce panneau vous permettra de découvrir
   certains des meilleurs modules complémentaires ainsi que les plus populaires.">
 
@@ -258,7 +259,6 @@
 <!ENTITY pluginDeprecation.description "Quelque chose semble manquer ? Certains plugins ne sont plus pris en charge par &brandShortName;.">
 <!ENTITY pluginDeprecation.learnMore "En savoir plus.">
 
-<!ENTITY legacyWarning.description "Quelque chose semble manquer ? Certaines extensions ne sont plus pris en charge par &brandShortName;.">
 <!ENTITY legacyWarning.showLegacy "Afficher les extensions obsolètes">
 <!ENTITY legacyExtensions.title "Extensions obsolètes">
 <!ENTITY legacyExtensions.description "Ces extensions ne répondent pas aux exigences actuelles de &brandShortName;. Elles ont été désactivées.">

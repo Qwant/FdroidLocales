@@ -10,7 +10,6 @@
 <!-- General Settings -->
 <!ENTITY enableGlodaSearch.label "Virkja víðtæka leit og atriðaskrá">
 <!ENTITY enableGlodaSearch.accesskey "i">
-<!ENTITY dateTimeFormatting.label "Snið dags og tíma">
 <!ENTITY allowHWAccel.label "Nota vélbúnaðarhröðun ef mögulegt">
 <!ENTITY allowHWAccel.accesskey "h">
 <!ENTITY storeType.label "Tegund geymslu fyrir nýja reikninga:">
@@ -47,19 +46,7 @@
 <!ENTITY enableCrashReporter.accesskey "V">
 <!ENTITY crashReporterLearnMore.label "Fræðast meira">
 <!-- Update -->
-<!-- LOCALIZATION NOTE (updateApp.label):
-  Strings from aboutDialog.dtd are displayed in this section of the preferences.
-  Please check for possible accesskey conflicts.
--->
-<!ENTITY updateApp2.label "&brandShortName; uppfærslur">
-<!-- LOCALIZATION NOTE (updateApp.version.*): updateApp.version.pre is
-  followed by a version number, keep the trailing space or replace it with
-  a different character as needed. updateApp.version.post is displayed after
-  the version number, and is empty on purpose for English. You can use it
-  if required by your language.
- -->
-<!ENTITY updateApp.version.pre "Útgáfa ">
-<!ENTITY updateApp.version.post "">
+<!ENTITY updateApp.label "&brandShortName; uppfærslur:">
 <!ENTITY updateAuto.label "Setja sjálfvirkt inn uppfærslur (mælt með: eykur öryggi)">
 <!ENTITY updateAuto.accesskey "a">
 <!ENTITY updateCheck.label "Athuga með uppfærslur, en leyfa mér að velja hvenær á að setja þær upp">
@@ -92,8 +79,6 @@
 <!ENTITY useCacheBefore.label "Nota að hámarki">
 <!ENTITY useCacheBefore.accesskey "o">
 <!ENTITY useCacheAfter.label "MB af plássi fyrir flýtiminni">
-<!ENTITY overrideSmartCacheSize.label "Hunsa sjálfvirka umsýslu skyndiminnis">
-<!ENTITY overrideSmartCacheSize.accesskey "v">
 <!ENTITY clearCacheNow.label "Hreinsa núna">
 <!ENTITY clearCacheNow.accesskey "H">
 <!-- Certificates -->

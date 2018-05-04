@@ -25,6 +25,13 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionVersion "Ferzje">
 <!ENTITY aboutSupport.extensionId "ID">
 
+<!ENTITY aboutSupport.securitySoftwareTitle "Befeiligingssoftware">
+<!ENTITY aboutSupport.securitySoftwareType "Type">
+<!ENTITY aboutSupport.securitySoftwareName "Namme">
+<!ENTITY aboutSupport.securitySoftwareAntivirus "Antifirus">
+<!ENTITY aboutSupport.securitySoftwareAntiSpyware "Antispyware">
+<!ENTITY aboutSupport.securitySoftwareFirewall "Firewall">
+
 <!ENTITY aboutSupport.featuresTitle "&brandShortName;-funksjes">
 <!ENTITY aboutSupport.featureName "Namme">
 <!ENTITY aboutSupport.featureVersion "Ferzje">
@@ -72,6 +79,8 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsProcessCount "Webynhâldsproses">
 
+<!ENTITY aboutSupport.enterprisePolicies "Bedriuwsbelied">
+
 <!ENTITY aboutSupport.appBasicsKeyGoogle "Google-kaai">
 <!ENTITY aboutSupport.appBasicsKeyMozilla "Mozilla-lokaasjetsjinstkaai">
 
@@ -105,12 +114,13 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.placeDatabaseVerifyIntegrity "Yntegriteit ferifearje">
 
 <!ENTITY aboutSupport.jsTitle "JavaScript">
-<!ENTITY aboutSupport.jsIncrementalGC "Ynkrementele GC">
+<!ENTITY aboutSupport.jsIncrementalGC "Ynkremintele GC">
 
 <!ENTITY aboutSupport.a11yTitle "Tagonklikheid">
 <!ENTITY aboutSupport.a11yActivated "Aktivearre">
 <!ENTITY aboutSupport.a11yForceDisabled "Tagonklikheid tsjingean">
 <!ENTITY aboutSupport.a11yHandlerUsed "Accessible-handler brûkt">
+<!ENTITY aboutSupport.a11yInstantiator "Tagonklikheids-ynstansjator">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Biblioteekferzje">
 
@@ -154,3 +164,13 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceChannels "Kanalen">
 <!ENTITY aboutSupport.mediaDeviceRate "Wurdearrring">
 <!ENTITY aboutSupport.mediaDeviceLatency "Latintens">
+
+<!ENTITY aboutSupport.intlTitle "Ynternasjonalisaasje &amp; lokalisaasje">
+<!ENTITY aboutSupport.intlAppTitle "Applikaasjeynstellingen">
+<!ENTITY aboutSupport.intlLocalesRequested "Fersochte talen">
+<!ENTITY aboutSupport.intlLocalesAvailable "Beskikbere talen">
+<!ENTITY aboutSupport.intlLocalesSupported "App-talen">
+<!ENTITY aboutSupport.intlLocalesDefault "Standerttaal">
+<!ENTITY aboutSupport.intlOSTitle "Bestjoeringssysteem">
+<!ENTITY aboutSupport.intlOSPrefsSystemLocales "Systeemtalen">
+<!ENTITY aboutSupport.intlRegionalPrefs "Regionale foarkarren">

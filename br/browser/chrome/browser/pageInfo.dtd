@@ -47,7 +47,7 @@
 <!ENTITY  feedTab               "Lanvioù">
 <!ENTITY  feedTab.accesskey     "n">
 <!ENTITY  feedSubscribe         "Koumanantiñ">
-<!ENTITY  feedSubscribe.accesskey "e">
+<!ENTITY  feedSubscribe.accesskey "K">
 
 <!ENTITY  permTab               "Aotreoù">
 <!ENTITY  permTab.accesskey     "t">
@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "Goulenn bewech">
 <!ENTITY  permAllow             "Aotren">
 <!ENTITY  permAllowSession      "Aotren evit an estez">
+<!ENTITY  permHide              "Kuzhat">
 <!ENTITY  permBlock             "Herzel">
 <!ENTITY  permissionsFor        "Aotreoù evit :">
 <!ENTITY  permPlugins           "Gweredekaat an enlugelladoù">
-
-<!ENTITY  permClearStorage           "Skarzhañ ar c'hadaviñ">
-<!ENTITY  permClearStorage.accesskey "c">
 
 <!ENTITY  securityTab           "Diogelroez">
 <!ENTITY  securityTab.accesskey "g">
@@ -73,7 +71,7 @@
 <!ENTITY  securityView.identity.owner    "Perc'henn : ">
 <!ENTITY  securityView.identity.domain   "Lec'hienn internet :">
 <!ENTITY  securityView.identity.verifier "Gwiriet gant :">
-
+<!ENTITY  securityView.identity.validity "Diamzeret e vo d'an/ar:">
 
 <!ENTITY  securityView.privacy.header                   "Buhez prevez ha Roll istor">
 <!ENTITY  securityView.privacy.history                  "Ha gweladennet em befe al lec'hienn-mañ a-raok hiziv ?">

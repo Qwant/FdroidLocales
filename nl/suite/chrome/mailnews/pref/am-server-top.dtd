@@ -59,7 +59,7 @@
 <!ENTITY emptyTrashOnExit.accesskey "f">
 <!ENTITY loginAtStartup.label "Op nieuwe berichten controleren bij opstarten">
 <!ENTITY loginAtStartup.accesskey "n">
-<!-- LOCALIZATION NOTE (maxMessagesStart.label) : translate below 2 lines with grammar dependency 
+<!-- LOCALIZATION NOTE (maxMessagesStart.label) : translate below 2 lines with grammar dependency
     maxMessengerStart.label will be followed by maxMessagesEnd.label with the number
     of messages between them
 -->
@@ -75,8 +75,8 @@
 <!ENTITY abbreviateOn.label "Volledige namen (bijvoorbeeld ‘netscape.public.mozilla.mail-news’)">
 <!ENTITY abbreviateOff.label "Afgekorte namen (bijvoorbeeld ‘n.p.m.mail-news’)">
 <!ENTITY advancedButton.label "Geavanceerd…">
-<!ENTITY advancedButton.accesskey "G">
 <!ENTITY serverDefaultCharset2.label "Standaard tekstcodering:">
+<!ENTITY advancedButton.accesskey "G">
 <!ENTITY localPath.label "Lokale map:">
 <!ENTITY localFolderPicker.label "Lokale map selecteren">
 <!ENTITY browseFolder.label "Bladeren…">

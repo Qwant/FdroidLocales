@@ -37,7 +37,7 @@
 <!ENTITY printPreviewAddressBook.accesskey              "u">
 <!ENTITY printContactCmd.label                          "Stampa contatto…">
 <!ENTITY printContactCmd.accesskey                      "S">
-<!ENTITY printContactCmd.key                            "S">
+<!ENTITY printContactCmd.key                            "P">
 <!ENTITY printAddressBook.label                         "Stampa rubrica indirizzi…">
 <!ENTITY printAddressBook.accesskey                     "m">
 
@@ -124,6 +124,9 @@ because displayed names don't have the comma in between. -->
 <!ENTITY messengerCmd.label                             "Posta e gruppi di discussione">
 <!ENTITY messengerCmd.accesskey                         "g">
 <!ENTITY messengerCmd.commandkey                        "1">
+<!ENTITY addressBookCmd.label                           "Rubrica">
+<!ENTITY addressBookCmd.accesskey                       "R">
+<!ENTITY addressBookCmd.key                             "B">
 <!ENTITY searchAddressesCmd.label                       "Cerca indirizzi…">
 <!ENTITY searchAddressesCmd.accesskey                   "C">
 <!ENTITY importCmd.label                                "Importa…">
@@ -141,7 +144,7 @@ because displayed names don't have the comma in between. -->
 <!ENTITY newlistButton.label                            "Nuova lista">
 <!ENTITY newlistButton.accesskey                        "L">
 <!ENTITY showAsDefault.label                            "Directory di avvio predefinita">
-<!ENTITY showAsDefault.accesskey                        "S">
+<!ENTITY showAsDefault.accesskey                        "a">
 <!ENTITY editPropertiesButton.label                     "Modifica">
 <!ENTITY propertiesContext.label                        "Proprietà">
 <!ENTITY propertiesContext.accesskey                    "i">

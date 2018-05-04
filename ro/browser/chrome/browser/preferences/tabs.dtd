@@ -8,6 +8,9 @@
 <!ENTITY newWindowsAsTabs.label       "Deschide ferestrele noi mai degrabă într-o filă nouă">
 <!ENTITY newWindowsAsTabs.accesskey   "w">
 
+<!ENTITY newWindowsAsTabs3.label       "Deschide linkuri în file în loc de ferestre noi">
+<!ENTITY newWindowsAsTabs3.accesskey   "w">
+
 <!ENTITY warnOnCloseMultipleTabs.label      "Avertizează la închiderea filelor multiple">
 <!ENTITY warnOnCloseMultipleTabs.accesskey  "m">
 
@@ -17,6 +20,6 @@
 <!ENTITY switchLinksToNewTabs.label        "Când se deschide un link într-o nouă filă, comută la aceasta imediat">
 <!ENTITY switchLinksToNewTabs.accesskey    "C">
 
-<!ENTITY showTabsInTaskbar.label          "Arată miniaturi ale filelor în bara de activități din Windows">
-<!ENTITY showTabsInTaskbar.accesskey      "A">
+<!ENTITY showTabsInTaskbar.label          "Afișează miniaturi ale filelor în bara de activități Windows">
+<!ENTITY showTabsInTaskbar.accesskey      "k">
 <!ENTITY tabsGroup.label          "File">

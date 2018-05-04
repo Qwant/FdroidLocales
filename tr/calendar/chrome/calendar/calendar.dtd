@@ -172,12 +172,22 @@
 <!ENTITY calendar.context.copyevent.accesskey         "o">
 <!ENTITY calendar.context.pasteevent.label            "Yapıştır">
 <!ENTITY calendar.context.pasteevent.accesskey        "Y">
-<!ENTITY calendar.context.button.label                "Bugün paneli" >
-<!ENTITY calendar.context.button.accesskey            "B" >
-<!ENTITY calendar.context.attendance.menu.label       "Katılım" >
-<!ENTITY calendar.context.attendance.menu.accesskey   "ı" >
-<!ENTITY calendar.context.attendance.occurrence.label "Bu sefer" >
+<!ENTITY calendar.context.button.label                "Bugün paneli">
+<!ENTITY calendar.context.button.accesskey            "B">
+
+<!ENTITY calendar.context.attendance.menu.label                 "Katılım">
+<!ENTITY calendar.context.attendance.menu.accesskey             "ı">
+<!ENTITY calendar.context.attendance.occurrence.label           "Bu sefer">
 <!ENTITY calendar.context.attendance.all.label        "Her sefer" >
+
+<!ENTITY calendar.context.attendance.send.label                 "Şimdi bildirim gönder">
+<!ENTITY calendar.context.attendance.dontsend.label             "Bildirim gönderme">
+<!ENTITY calendar.context.attendance.dontsend.accesskey         "m">
+
+
+<!ENTITY calendar.context.attendance.all.accepted.label         "Kabul edildi">
+<!ENTITY calendar.context.attendance.all.declined.label         "Reddedildi">
+<!ENTITY calendar.context.attendance.all.completed.label        "Tamamlandı">
 
 <!-- Task Context Menu -->
 <!ENTITY calendar.context.progress.label              "İlerleme">
@@ -210,7 +220,7 @@
 <!ENTITY priority.level.normal              "Normal">
 <!ENTITY priority.level.normal.accesskey    "N">
 <!ENTITY priority.level.high                "Yüksek">
-<!ENTITY priority.level.high.accesskey      "H">
+<!ENTITY priority.level.high.accesskey      "Y">
 
 <!ENTITY calendar.context.postpone.1hour.label      "1 saat">
 <!ENTITY calendar.context.postpone.1hour.accesskey  "s">
@@ -254,6 +264,7 @@
 
 <!-- LOCALIZATION NOTE (calendar.context.showcalendar.accesskey)
      This is the access key used for the showCalendar string -->
+<!ENTITY calendar.context.showcalendar.accesskey      "h">
 
 <!-- LOCALIZATION NOTE (calendar.context.hidecalendar.accesskey)
      This is the access key used for the hideCalendar string -->
@@ -261,6 +272,7 @@
 
 <!-- LOCALIZATION NOTE (calendar.context.showonly.accesskey)
      This is the access key used for the showOnlyCalendar string -->
+<!ENTITY calendar.context.showonly.accesskey           "O">
 <!ENTITY calendar.context.showall.label                "Tüm takvimleri göster">
 <!ENTITY calendar.context.showall.accesskey            "ü">
 

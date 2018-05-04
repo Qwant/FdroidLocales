@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE the term "url-classifier" should not be translated. -->
-<!ENTITY aboutUrlClassifier.pageTitle                   "url-classifier గురించి సమాచారం">
+<!ENTITY aboutUrlClassifier.title                       "URL Classifier సమాచారం">
 <!ENTITY aboutUrlClassifier.providerTitle               "సమర్పకులు">
 <!ENTITY aboutUrlClassifier.provider                    "ప్రొవైడర్">
 <!ENTITY aboutUrlClassifier.providerLastUpdateTime      "చివరిగా నవీకరించిన సమయం">
@@ -15,7 +15,10 @@
 <!ENTITY aboutUrlClassifier.cacheRefreshBtn             "తాజాపరుచు">
 <!ENTITY aboutUrlClassifier.cacheClearBtn               "శుభ్రపరుచు">
 <!ENTITY aboutUrlClassifier.cacheTableName              "పట్టిక పేరు">
+<!ENTITY aboutUrlClassifier.cacheShowEntries            "ఎంట్రీలను చూపించు">
+<!ENTITY aboutUrlClassifier.cacheEntries                "క్యాషె ఎంట్రీలు">
 <!ENTITY aboutUrlClassifier.cachePrefix                 "ఉపసర్గ">
+<!ENTITY aboutUrlClassifier.cacheNCacheExpiry           "ప్రతికూల క్యాషె గడువు పూర్తి">
 <!ENTITY aboutUrlClassifier.cacheFullhash               "Full hash">
 <!ENTITY aboutUrlClassifier.cachePCacheExpiry           "అనుకూల క్యాషె గడువు పూర్తి">
 <!ENTITY aboutUrlClassifier.debugTitle                  "డీబగ్">

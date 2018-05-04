@@ -21,6 +21,10 @@
 <!ENTITY importFromCanary.accesskey     "n">
 <!ENTITY importFromChrome.label         "Chrome">
 <!ENTITY importFromChrome.accesskey     "C">
+<!ENTITY importFromChromeBeta.label     "Chrome Beta">
+<!ENTITY importFromChromeBeta.accesskey "B">
+<!ENTITY importFromChromeDev.label      "Chrome Dev">
+<!ENTITY importFromChromeDev.accesskey  "D">
 <!ENTITY importFromChromium.label       "Chromium">
 <!ENTITY importFromChromium.accesskey   "u">
 <!ENTITY importFromFirefox.label        "Firefox">
@@ -43,4 +47,4 @@
 <!ENTITY done.title                     "Import fullført">
 <!ENTITY done.label                     "Følgjande element er importerte:">
 
-<!ENTITY closeSourceBrowser.label       "Kontroller at den valde nettlesaren er lukka før du held fram.">
+<!ENTITY closeSourceBrowser.label       "Kontroller at den valde nettlesaren er attlaten før du held fram.">

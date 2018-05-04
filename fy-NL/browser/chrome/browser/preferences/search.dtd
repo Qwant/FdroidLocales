@@ -2,6 +2,18 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY searchBar.label                       "Sykbalke">
+
+<!ENTITY searchBar.hidden.label                "Brûk de adresbalke foar sykjen en navigearjen">
+<!ENTITY searchBar.shown.label                 "Sykbalke yn arkbalke tafoegje">
+
+<!-- LOCALIZATION NOTE (showSearchSuggestionsAboveHistory.label): This string
+     describes what the user will observe when the system prioritizes search
+     suggestions over browsing history in the results that extend down from the
+     address bar. In the original English string, "ahead" refers to location
+     (appearing most proximate to), not time (appearing before). -->
+<!ENTITY showSearchSuggestionsAboveHistory.label "Syksuggestjes boppe browserskiednis toane yn adresbalkeresultaten">
+
 <!ENTITY defaultSearchEngine.label             "Standertsykmasine">
 
 <!ENTITY chooseYourDefaultSearchEngine2.label   "Kies de standert sykmasine foar gebrûk yn de adresbalke en sykbalke.">

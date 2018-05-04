@@ -2,23 +2,25 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY startup.label             "გაშვება">
+<!ENTITY startup.label             "ჩართვისას">
 
-<!ENTITY startupPage2.label        "როცა &brandShortName; გაეშვება">
-<!ENTITY startupPage2.accesskey    "ე">
-<!ENTITY startupUserHomePage.label "მთავარი გვერდის ჩვენება">
+<!ENTITY startupPage2.label        "&brandShortName;-ის გაშვებისას">
+<!ENTITY startupPage2.accesskey    "ვ">
+<!ENTITY startupUserHomePage.label "საწყისი გვერდის ჩვენება">
 <!ENTITY startupBlankPage.label    "ცარიელი გვერდის ჩვენება">
 <!ENTITY startupPrevSession.label  "ბოლოს დახურული ფანჯრებისა და ჩანართების ჩვენება">
 
-<!ENTITY homepage2.label           "მთავარი გვერდი">
+<!ENTITY homepage2.label           "საწყისი გვერდი">
 <!ENTITY homepage2.accesskey       "გ">
 <!ENTITY useCurrentPage.label      "მიმდინარე გვერდის გამოყენება">
 <!ENTITY useCurrentPage.accesskey  "მ">
 <!ENTITY useMultiple.label         "მიმდინარე გვერდების გამოყენება">
 <!ENTITY chooseBookmark.label      "სანიშნის გამოყენება…">
 <!ENTITY chooseBookmark.accesskey  "ს">
-<!ENTITY restoreDefault.label      "ნაგულისხმევის აღდგენა">
+<!ENTITY restoreDefault.label      "ნაგულისხმევი">
 <!ENTITY restoreDefault.accesskey  "ა">
+
+<!ENTITY disableExtension.label    "გაფართოების ამორთვა">
 
 <!ENTITY downloads.label     "ჩამოტვირთვები">
 
@@ -42,5 +44,3 @@
 <!ENTITY useFirefoxSync.label             "რჩევა: ეს სხვადასხვა პროფილებს იყენებს. მათ შორის მონაცემების გასაზიარებლად Sync გამოიყენეთ.">
 <!ENTITY getStarted.notloggedin.label     "&syncBrand.shortName.label;-ში შესვლა…">
 <!ENTITY getStarted.configured.label      "&syncBrand.shortName.label;-ის პარამეტრების გახსნა">
-
-<!ENTITY e10sEnabled.label                "მრავალპროცესიანი &brandShortName;">

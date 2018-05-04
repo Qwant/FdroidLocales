@@ -52,7 +52,7 @@
 <!ENTITY cmd.open_private_window.accesskey "P">
 <!ENTITY cmd.open_tab.label              "નવી ટૅબમાં ખોલો">
 <!ENTITY cmd.open_tab.accesskey          "w">
-<!ENTITY cmd.open_all_in_tabs.label      "બધું ટૅબમાં ખોલો">
+<!ENTITY cmd.open_all_in_tabs.label      "બધું ટૅબ્સમાં ખોલો">
 <!ENTITY cmd.open_all_in_tabs.accesskey  "O">
 
 <!ENTITY cmd.properties.label      "ગુણધર્મો">
@@ -85,7 +85,8 @@
 <!ENTITY col.dateadded.label     "એડ-ઓનયું">
 <!ENTITY col.lastmodified.label  "છેલ્લે સુધારાયું">
 
-<!ENTITY search.placeholder  "શોધો">
+<!ENTITY historySearch.placeholder  "શોધ ઇતિહાસ">
+<!ENTITY bookmarksSearch.placeholder  "બુકમાર્ક્સ શોધો">
 
 <!ENTITY cmd.find.key  "f">
 

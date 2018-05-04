@@ -22,6 +22,9 @@
 <!ENTITY lightning.menu.eventtask.label "Eventos y tareas">
 <!ENTITY lightning.menu.eventtask.accesskey "n">
 <!ENTITY lightning.calendarproperties.email.label "Correo-e:">
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.label "Preferir planificación de correo en el lado del cliente">
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext1 "Desde ahora, solo puede activar esto tras configurar este calendario en su diálogo de propiedades si el servidor del calendario maneja planificaciones.">
+<!ENTITY lightning.calendarproperties.forceEmailScheduling.tooltiptext2 "Esta opción solo está disponible si el servidor de calendario gestiona planificaciones. Activarlo le permitirá recurrir a la planificación estándar basada en correo electrónico en lugar de dejarla en manos del servidor.">
 <!ENTITY lightning.imipbar.btnAccept.label "Aceptar">
 <!ENTITY lightning.imipbar.btnAccept2.tooltiptext "Aceptar invitación al evento">
 <!ENTITY lightning.imipbar.btnAcceptRecurrences.label "Aceptar todo">
@@ -53,6 +56,12 @@
 <!ENTITY lightning.imipbar.btnUpdate.label "Actualizar">
 <!ENTITY lightning.imipbar.btnUpdate.tooltiptext "Actualizar evento en el calendario">
 <!ENTITY lightning.imipbar.description "Este mensaje contiene una invitación a un evento.">
+<!ENTITY lightning.imipbar.btnSend.label "Enviar respuesta ahora">
+<!ENTITY lightning.imipbar.btnSend.tooltiptext "Enviar respuesta al organizador">
+<!ENTITY lightning.imipbar.btnSendSeries.tooltiptext "Enviar respuesta para la serie completa al organizador">
+<!ENTITY lightning.imipbar.btnDontSend.label "No enviar respuesta">
+<!ENTITY lightning.imipbar.btnDontSend.tooltiptext "Cambiar su estado de participación sin enviar respuesta al organizador">
+<!ENTITY lightning.imipbar.btnDontSendSeries.tooltiptext "Cambiar su estado de participación para toda la serie sin enviar respuesta al organizador">
 <!ENTITY lightning.keys.event.showCalendar.key "C">
 <!ENTITY lightning.keys.event.showTasks.key "D">
 <!ENTITY lightning.keys.event.new "I">

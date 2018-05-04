@@ -46,7 +46,7 @@
 
 <!ENTITY  feedTab               "Fluxuri">
 <!ENTITY  feedTab.accesskey     "F">
-<!ENTITY  feedSubscribe         "Abonare">
+<!ENTITY  feedSubscribe         "Abonează-te">
 <!ENTITY  feedSubscribe.accesskey "A">
 
 <!ENTITY  permTab               "Permisiuni">
@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "Întreabă întotdeauna">
 <!ENTITY  permAllow             "Permite">
 <!ENTITY  permAllowSession      "Permite pentru sesiune">
+<!ENTITY  permHide              "Ascunde">
 <!ENTITY  permBlock             "Blochează">
 <!ENTITY  permissionsFor        "Permisiuni pentru:">
 <!ENTITY  permPlugins           "Activează pluginurile">
-
-<!ENTITY  permClearStorage           "Șterge stocarea">
-<!ENTITY  permClearStorage.accesskey "C">
 
 <!ENTITY  securityTab           "Securitate">
 <!ENTITY  securityTab.accesskey "S">
@@ -73,13 +71,16 @@
 <!ENTITY  securityView.identity.owner    "Proprietar:">
 <!ENTITY  securityView.identity.domain   "Site web:">
 <!ENTITY  securityView.identity.verifier "Verificat de:">
-<!ENTITY  securityView.identity.validity "Expiră la:">
+<!ENTITY  securityView.identity.validity "Expiră:">
 
 <!ENTITY  securityView.privacy.header                   "Confidențialitate și istoric">
 <!ENTITY  securityView.privacy.history                  "Am vizitat acest site web înainte de azi?">
 <!ENTITY  securityView.privacy.cookies                  "Acest site web stochează informații (cookie-uri) pe calculatorul meu?">
 <!ENTITY  securityView.privacy.viewCookies              "Vezi cookie-urile">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "k">
+<!ENTITY  securityView.privacy.siteData                 "Acest site web stochează informații pe calculatorul meu?">
+<!ENTITY  securityView.privacy.clearSiteData            "Șterge cookie-urile și datele site-urilor">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "C">
 <!ENTITY  securityView.privacy.passwords                "Am salvat vreo parolă pentru acest site web?">
 <!ENTITY  securityView.privacy.viewPasswords            "Vezi parolele salvate">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "p">

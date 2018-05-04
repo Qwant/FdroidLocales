@@ -6,11 +6,12 @@
 
 <!ENTITY startupPage2.label        "Երբ &brandShortName;-ը մեկնարկում է">
 <!ENTITY startupPage2.accesskey    "մ">
-<!ENTITY startupUserHomePage.label "Ցուցադրել ձեր սկզբնական էջը">
+<!ENTITY startupUserHomePage.label "Ցուցադրել տնային էջը">
 <!ENTITY startupBlankPage.label    "Ցուցադրել դատարկ էջ">
 <!ENTITY startupPrevSession.label  "Ցուցադրել ձեր նախորդ պատուհանները և ներդիրները">
 
-
+<!ENTITY homepage2.label           "Տնային էջ">
+<!ENTITY homepage2.accesskey       "P">
 <!ENTITY useCurrentPage.label      "Օգտագործել ընթացիկ էջը">
 <!ENTITY useCurrentPage.accesskey  "ը">
 <!ENTITY useMultiple.label         "Օգտագործել ընթացիկ էջերը">
@@ -19,9 +20,11 @@
 <!ENTITY restoreDefault.label      "Վերականգնել լռելայնը">
 <!ENTITY restoreDefault.accesskey  "Վ">
 
+<!ENTITY disableExtension.label    "Անջատել ընդլայնումը">
+
 <!ENTITY downloads.label     "Ներբեռնումներ">
 
-<!ENTITY saveTo.label "Ֆայլերը պահելու տեղը՝">
+<!ENTITY saveTo.label "Ֆայլերը պահպանել`">
 <!ENTITY saveTo.accesskey "ե">
 <!ENTITY chooseFolderWin.label        "Ընտրել…">
 <!ENTITY chooseFolderWin.accesskey    "տ">
@@ -32,8 +35,8 @@
 
 <!ENTITY alwaysCheckDefault2.label        "Միշտ ստուգել, թե արդյոք &brandShortName;-ը ձեր հիմնական դիտարկիչն է">
 <!ENTITY alwaysCheckDefault2.accesskey    "շ">
-
-
+<!ENTITY setAsMyDefaultBrowser3.label     "Դարձնել լռելյայն...">
+<!ENTITY setAsMyDefaultBrowser3.accesskey "D">
 <!ENTITY isDefault.label                  "&brandShortName;-ը այժմ ձեր հիմնական դիտարկիչն է">
 <!ENTITY isNotDefault.label               "&brandShortName;-ը այժմ ձեր հիմնական դիտարկիչը չէ">
 
@@ -41,5 +44,3 @@
 <!ENTITY useFirefoxSync.label             "Հուշում. Օգտագործում են առանձին պրոֆիլներ: Սինքի միջոցով կարող եք համօգտագործել տվյալները:">
 <!ENTITY getStarted.notloggedin.label     "Մուտք գործել &syncBrand.shortName.label;...">
 <!ENTITY getStarted.configured.label      "Բացել &syncBrand.shortName.label;-ի կարգավորումները">
-
-<!ENTITY e10sEnabled.label                "Միացնել բազմընթաց &brandShortName;">

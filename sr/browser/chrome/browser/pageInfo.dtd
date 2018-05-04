@@ -11,7 +11,7 @@
 <!ENTITY  selectall.key         "A">
 <!ENTITY  selectall.label       "Изабери све">
 <!ENTITY  selectall.accesskey   "И">
-<!ENTITY  closeWindow.key       "З">
+<!ENTITY  closeWindow.key       "w">
 
 <!ENTITY  generalTab            "Опште">
 <!ENTITY  generalTab.accesskey  "О">
@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "Увек питај">
 <!ENTITY  permAllow             "Дозволи">
 <!ENTITY  permAllowSession      "Дозволи за ову сесију">
+<!ENTITY  permHide              "Сакриј">
 <!ENTITY  permBlock             "Блокирај">
 <!ENTITY  permissionsFor        "Дозволе за:">
 <!ENTITY  permPlugins           "Активирај прикључке">
-
-<!ENTITY  permClearStorage           "Очисти складиште">
-<!ENTITY  permClearStorage.accesskey "ч">
 
 <!ENTITY  securityTab           "Безбедност">
 <!ENTITY  securityTab.accesskey "Б">
@@ -73,12 +71,16 @@
 <!ENTITY  securityView.identity.owner    "Власник:">
 <!ENTITY  securityView.identity.domain   "Веб сајт:">
 <!ENTITY  securityView.identity.verifier "Проверио:">
+<!ENTITY  securityView.identity.validity "Истиче:">
 
 <!ENTITY  securityView.privacy.header                   "Приватност и историјат">
 <!ENTITY  securityView.privacy.history                  "Да ли сте раније посетили овај сајт?">
 <!ENTITY  securityView.privacy.cookies                  "Да ли овај сајт чува колачиће на мом рачунару?">
 <!ENTITY  securityView.privacy.viewCookies              "Преглед колачића">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "П">
+<!ENTITY  securityView.privacy.siteData                 "Да ли овај веб сајт складишти информације на мој рачунар?">
+<!ENTITY  securityView.privacy.clearSiteData            "Обриши колачиће и податке сајта">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "О">
 <!ENTITY  securityView.privacy.passwords                "Да ли чувам неку лозинку за овај сајт?">
 <!ENTITY  securityView.privacy.viewPasswords            "Преглед сачуваних лозинки">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "л">

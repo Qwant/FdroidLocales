@@ -5,9 +5,9 @@
 
 <!ENTITY migrationWizard.title          "విజార్డు దిగుమతిచేయి">
 
-<!ENTITY importFrom.label               "ఎంపికలు, బుక్మార్క్లు, చరిత్ర, పాస్వర్డ్లు మరియు ఇతర డేటాను దిగుమతి చేయండి:">
+<!ENTITY importFrom.label               "ఎంపికలను, ఇష్టాంశాలను, చరిత్రను, సంకేతపదాలను మరియు ఇతర డేటాను దిగుమతి చేయండి:">
 <!ENTITY importFromUnix.label           "అభిరుచులను, ఇష్టాంశాలను, చరిత్రను, సంకేతపదాలను, ఇతర డాటాను దిగుమతి చేయి:">
-<!ENTITY importFromBookmarks.label      "ఇష్టాంశములను నుండి దిగుమతిచేయి:">
+<!ENTITY importFromBookmarks.label      "ఇష్టాంశాలను దిగుమతిచేయి:">
 
 <!ENTITY importFromIE.label             "మైక్రోసాఫ్ట్ ఇంటర్నెట్‌ ఎక్స్‌ప్లోరర్">
 <!ENTITY importFromIE.accesskey         "M">
@@ -21,11 +21,15 @@
 <!ENTITY importFromCanary.accesskey     "n">
 <!ENTITY importFromChrome.label         "Chrome">
 <!ENTITY importFromChrome.accesskey     "C">
+<!ENTITY importFromChromeBeta.label     "క్రోమ్ బీటా">
+<!ENTITY importFromChromeBeta.accesskey "B">
+<!ENTITY importFromChromeDev.label      "క్రోమ్ డెవ్">
+<!ENTITY importFromChromeDev.accesskey  "D">
 <!ENTITY importFromChromium.label       "Chromium">
 <!ENTITY importFromChromium.accesskey   "u">
 <!ENTITY importFromFirefox.label        "Firefox">
 <!ENTITY importFromFirefox.accesskey    "x">
-<!ENTITY importFrom360se.label          "360 సెక్యూర్ బ్రౌజర్">
+<!ENTITY importFrom360se.label          "360 సురక్షిత విహారిణి">
 <!ENTITY importFrom360se.accesskey      "3">
 
 <!ENTITY noMigrationSources.label       "ఇష్టాంశములు, చరిత్ర లేదా సంకేతపద డాటాను కలిగివున్న ప్రొగ్రాము కనుగొనబడలేదు.">

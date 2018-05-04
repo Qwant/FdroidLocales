@@ -25,6 +25,13 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionVersion "Версія">
 <!ENTITY aboutSupport.extensionId "ID">
 
+<!ENTITY aboutSupport.securitySoftwareTitle "Програмне забезпечення для захисту">
+<!ENTITY aboutSupport.securitySoftwareType "Тип">
+<!ENTITY aboutSupport.securitySoftwareName "Назва">
+<!ENTITY aboutSupport.securitySoftwareAntivirus "Антивірус">
+<!ENTITY aboutSupport.securitySoftwareAntiSpyware "Захист від шпигунства">
+<!ENTITY aboutSupport.securitySoftwareFirewall "Мережевий екран">
+
 <!ENTITY aboutSupport.featuresTitle "Можливості &brandShortName;">
 <!ENTITY aboutSupport.featureName "Назва">
 <!ENTITY aboutSupport.featureVersion "Версія">
@@ -72,6 +79,8 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsProcessCount "Процеси веб-вмісту">
 
+<!ENTITY aboutSupport.enterprisePolicies "Корпоративні правила">
+
 <!ENTITY aboutSupport.appBasicsKeyGoogle "Ключ Google">
 <!ENTITY aboutSupport.appBasicsKeyMozilla "Ключ Служби визначення розташування від Mozilla">
 
@@ -111,6 +120,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "Активовано">
 <!ENTITY aboutSupport.a11yForceDisabled "Блокувати можливості доступності">
 <!ENTITY aboutSupport.a11yHandlerUsed "Використовується обробник доступності">
+<!ENTITY aboutSupport.a11yInstantiator "Виконуваний файл доступності">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Версії бібліотек">
 
@@ -154,3 +164,13 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceChannels "Канали">
 <!ENTITY aboutSupport.mediaDeviceRate "Частота">
 <!ENTITY aboutSupport.mediaDeviceLatency "Затримка">
+
+<!ENTITY aboutSupport.intlTitle "Інтернаціоналізація та локалізація">
+<!ENTITY aboutSupport.intlAppTitle "Налаштування програми">
+<!ENTITY aboutSupport.intlLocalesRequested "Запитані локалі">
+<!ENTITY aboutSupport.intlLocalesAvailable "Доступні локалі">
+<!ENTITY aboutSupport.intlLocalesSupported "Локалі програми">
+<!ENTITY aboutSupport.intlLocalesDefault "Типова локаль">
+<!ENTITY aboutSupport.intlOSTitle "Операційна система">
+<!ENTITY aboutSupport.intlOSPrefsSystemLocales "Системні локалі">
+<!ENTITY aboutSupport.intlRegionalPrefs "Регіональні налаштування">

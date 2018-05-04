@@ -55,12 +55,10 @@
 <!ENTITY  permAskAlways         "Preguntar siempre">
 <!ENTITY  permAllow             "Permitir">
 <!ENTITY  permAllowSession      "Permitir en esta sesión">
+<!ENTITY  permHide              "Ocultar">
 <!ENTITY  permBlock             "Bloquear">
 <!ENTITY  permissionsFor        "Permisos para:">
 <!ENTITY  permPlugins           "Activar plugins">
-
-<!ENTITY  permClearStorage           "Limpiar almacenamiento">
-<!ENTITY  permClearStorage.accesskey "C">
 
 <!ENTITY  securityTab           "Seguridad">
 <!ENTITY  securityTab.accesskey "S">
@@ -80,6 +78,9 @@
 <!ENTITY  securityView.privacy.cookies                  "¿Este sitio web está almacenando información (cookies) en mi equipo?">
 <!ENTITY  securityView.privacy.viewCookies              "Ver cookies">
 <!ENTITY  securityView.privacy.viewCookies.accessKey    "k">
+<!ENTITY  securityView.privacy.siteData                 "¿Este sitio web está almacenando información en mi computadora?">
+<!ENTITY  securityView.privacy.clearSiteData            "Limpiar cookies y datos del sitio">
+<!ENTITY  securityView.privacy.clearSiteData.accessKey  "C">
 <!ENTITY  securityView.privacy.passwords                "¿He guardado contraseñas de este sitio web?">
 <!ENTITY  securityView.privacy.viewPasswords            "Ver contraseñas guardadas">
 <!ENTITY  securityView.privacy.viewPasswords.accessKey  "w">

@@ -4,7 +4,7 @@
 
 <!ENTITY aboutPrivateBrowsing.notPrivate                 "Ko'ag̃aite nereiméi peteĩ ovetã ñemíme.">
 <!ENTITY privatebrowsingpage.openPrivateWindow.label     "Eike Window ovetã Ñemíme">
-<!ENTITY privatebrowsingpage.openPrivateWindow.accesskey "Ñ">
+<!ENTITY privatebrowsingpage.openPrivateWindow.accesskey "P">
 
 <!ENTITY privateBrowsing.title                           "Kundaha ñemi">
 <!ENTITY privateBrowsing.title.tracking                  "Kundahára ñemi jehekaha mo'ãha ndive">

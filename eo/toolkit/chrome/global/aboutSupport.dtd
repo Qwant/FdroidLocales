@@ -23,6 +23,13 @@ This is likely the same like id.heading in crashes.dtd. -->
 <!ENTITY aboutSupport.extensionVersion "Versio">
 <!ENTITY aboutSupport.extensionId "ID">
 
+<!ENTITY aboutSupport.securitySoftwareTitle "Sekureca programaro">
+<!ENTITY aboutSupport.securitySoftwareType "Tipo">
+<!ENTITY aboutSupport.securitySoftwareName "Nomo">
+<!ENTITY aboutSupport.securitySoftwareAntivirus "Kontraŭvirusa programo">
+<!ENTITY aboutSupport.securitySoftwareAntiSpyware "Kontraŭspiona programo">
+<!ENTITY aboutSupport.securitySoftwareFirewall "Retbarilo">
+
 <!ENTITY aboutSupport.featuresTitle "Trajtoj de &brandShortName;">
 <!ENTITY aboutSupport.featureName "Nomo">
 <!ENTITY aboutSupport.featureVersion "Versio">
@@ -70,6 +77,8 @@ Windows/Mac use the term "Folder" instead of "Directory" -->
 
 <!ENTITY aboutSupport.appBasicsProcessCount "Teksaĵaj enhavaj taskoj">
 
+<!ENTITY aboutSupport.enterprisePolicies "Kompaniaj politikoj">
+
 <!ENTITY aboutSupport.appBasicsKeyGoogle "Ŝlosilo de Google">
 <!ENTITY aboutSupport.appBasicsKeyMozilla "Ŝlosilo de la servo de pozicio de Mozilla">
 
@@ -109,6 +118,7 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.a11yActivated "Aktiva">
 <!ENTITY aboutSupport.a11yForceDisabled "Eviti alireblon">
 <!ENTITY aboutSupport.a11yHandlerUsed "Alirebleca pelilo uzita">
+<!ENTITY aboutSupport.a11yInstantiator "Produkti alireblon">
 
 <!ENTITY aboutSupport.libraryVersionsTitle "Versioj de bibliotekoj">
 
@@ -152,3 +162,13 @@ variant of aboutSupport.showDir.label. -->
 <!ENTITY aboutSupport.mediaDeviceChannels "Kanaloj">
 <!ENTITY aboutSupport.mediaDeviceRate "Frekvenco">
 <!ENTITY aboutSupport.mediaDeviceLatency "Prokrasto">
+
+<!ENTITY aboutSupport.intlTitle "Lingvo kaj internacieco">
+<!ENTITY aboutSupport.intlAppTitle "Agordoj de programo">
+<!ENTITY aboutSupport.intlLocalesRequested "Petitaj lingvoj">
+<!ENTITY aboutSupport.intlLocalesAvailable "Disponeblaj lingvoj">
+<!ENTITY aboutSupport.intlLocalesSupported "Lingvoj de la programo">
+<!ENTITY aboutSupport.intlLocalesDefault "Norma lingvo">
+<!ENTITY aboutSupport.intlOSTitle "Mastruma sistemo">
+<!ENTITY aboutSupport.intlOSPrefsSystemLocales "Lingvoj de la sistemo">
+<!ENTITY aboutSupport.intlRegionalPrefs "Regionaj preferoj">
