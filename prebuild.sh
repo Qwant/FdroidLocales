@@ -47,36 +47,9 @@ rm -R xpcom/tests/
 cp -f $REPO/.mozconfig ./
 cp -f $REPO/used-locales ./
 
-#Remove references to deleted test files
-sed -i -e '/BROWSER_CHROME_MANIFESTS/s/ManifestparserManifestList/OrderedStringList/' python/mozbuild/mozbuild/frontend/context.py
-sed -i -e '/PYTHON_UNITTEST_MANIFESTS/s/ManifestparserManifestList/OrderedStringList/' python/mozbuild/mozbuild/frontend/context.py
-sed -i -e "/'testing\/mochitest'/d" python/mozbuild/mozbuild/testing.py
-sed -i -e '/PYTHON_UNITTEST/d' python/mozbuild/mozbuild/testing.py
-
-sed -i -e '/tests\//d' accessible/moz.build
-sed -i -e '/testing\/web-platform\/mach_commands.py/d' build/mach_bootstrap.py
-sed -i -e '/TESTS_MANIFESTS/,+36d' docshell/moz.build
-sed -i -e '/TEST_MANIFESTS/,+9d' dom/canvas/moz.build
-sed -i -e '/tests\//d' dom/file/moz.build
-sed -i -e '/test\//d' dom/html/moz.build
-sed -i -e '/TEST_MANIFESTS/,+12d' dom/indexedDB/moz.build
-sed -i -e '/tests/d' dom/xhr/moz.build
-sed -i -e '/MOCHITEST/d' layout/generic/moz.build
-sed -i -e '/reftest/d'  -e '/crashtest/d' layout/moz.build
-sed -i -e '/classycle_jar/,+7d' -e 's/.geckoview.deps ././g' -e 's/PROGUARD_PASSES=1/PROGUARD_PASSES=3/g' mobile/android/base/Makefile.in
-sed -i -e '/TEST/d' modules/libjar/moz.build
-sed -i -e '/TEST/d' modules/libjar/zipwriter/moz.build
-sed -i -e '/TEST_HARNESS_FILES/,+3d' toolkit/moz.build
-sed -i -e '/xpcshell.ini/d' toolkit/components/downloads/moz.build
-sed -i -e '/xpcshell.ini/d' toolkit/components/mediasniffer/moz.build
-sed -i -e '/xpcshell.ini/d' toolkit/components/search/moz.build
-sed -i -e '/xpcshell.ini/d' -e '/TESTING/,+3d' toolkit/components/telemetry/moz.build
-sed -i -e '/Files(.tests/,+2d'  -e '/tests\//d' toolkit/modules/moz.build
-sed -i -e '/tests/d' toolkit/mozapps/update/moz.build
-
-sed -i -e '/dom\//d' dom/media/test/mochitest.ini
-sed -i -e '/dom\//d' dom/workers/test/browser.ini
-sed -i -e '/dom\//d' dom/workers/test/mochitest.ini
+#Dont fail for missing files
+sed -i -e 's/raise MissingFileError(/self.logger.log(logging.INFO, "IGNORED: "+/g' python/mach/mach/main.py
+patch -p1 <$REPO/ignore.patch
 
 echo "mk_add_options 'export MOZ_CHROME_MULTILOCALE=$(tr '\n' ' ' <  $REPO/used-locales)'" >> .mozconfig
 echo "mk_add_options 'export L10NBASEDIR=$REPO'" >> .mozconfig
