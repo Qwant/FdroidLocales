@@ -63,18 +63,14 @@ rm -R third_party/rust/winapi-*-pc-windows-gnu/lib/*.a
 ##Option 1: Completely remove FHR
 rm mobile/android/base/java/org/mozilla/gecko/health/*
 patch -p1 <$REPO/Remove_FHR.patch
-###Option 2: Make the default pref false if not value present - Not tested
+###Option 2: Make the default pref false if not value present
 #sed -i -e 's/HEALTHREPORT_UPLOAD_ENABLED, true/HEALTHREPORT_UPLOAD_ENABLED, false/g' mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java
-###Option 3: Force the pref to be false - Not tested
+###Option 3: Force the pref to be false
 #sed -i -e 's/getBooleanPref(context, PREFS_HEALTHREPORT_UPLOAD_ENABLED, true)/false/g' mmobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java
 
-#Telemetry
-sed -i -e 's/AppConstants.MOZILLA_OFFICIAL/false/g' mobile/android/base/java/org/mozilla/gecko/telemetry/TelemetryConstants.java
-##Option 2: Completely remove Telemetry
-#rm mobile/android/base/java/org/mozilla/gecko/Telemetry*
-#rm -R mobile/android/base/java/org/mozilla/gecko/telemetry/
-#rm -R mobile/android/services/src/main/java/org/mozilla/gecko/background/common/telemetry/
-#patch -p1 <$REPO/Remove_Telemetry.patch
+## F-Droid builds don't have MOZILLA_OFFICIAL defined, so it's not necessary
+#Disable Telemetry
+#sed -i -e 's/AppConstants.MOZILLA_OFFICIAL/false/g' mobile/android/base/java/org/mozilla/gecko/telemetry/TelemetryConstants.java
 
 ##Fix Gradle for fdroid
 echo "ac_add_options --with-gradle=$(which gradle)" >> .mozconfig
