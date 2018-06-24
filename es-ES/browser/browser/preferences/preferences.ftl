@@ -579,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Recordar mi historial de descargas y navegación
     .accesskey = R
+history-remember-browser-option =
+    .label = Recordar historial de navegación y descargas
+    .accesskey = h
 history-remember-search-option =
     .label = Recordar el historial de formularios y búsquedas
     .accesskey = f
@@ -595,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies y datos del sitio
+sitedata-total-size-calculating = Calculando el tamaño de los datos del sitio y del caché…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Sus cookies, datos del sitio y caché almacenados ocupan actualmente un { $value } { $unit } del espacio en disco.
 sitedata-learn-more = Saber más
 sitedata-accept-cookies-option =
     .label = Aceptar cookies y datos de los sitios web (recomendado)
@@ -689,6 +697,12 @@ permissions-notification-link = Saber más
 permissions-notification-pause =
     .label = Pausar notificaciones hasta que { -brand-short-name } se reinicie
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Bloquear en los sitios web la reproducción automática de medios con sonido
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = Excepciones…
+    .accesskey = E
 permissions-block-popups =
     .label = Bloquear ventanas emergentes
     .accesskey = B
@@ -715,6 +729,9 @@ collection-health-report =
     .label = Permitir a { -brand-short-name } enviar datos técnicos y de interacción a { -vendor-short-name }
     .accesskey = P
 collection-health-report-link = Saber más
+collection-studies =
+    .label = Permitir que { -brand-short-name } instale y ejecute estudios
+collection-studies-link = Ver los estudios de { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = La recopilación de datos está deshabilitada en esta configuración de compilación

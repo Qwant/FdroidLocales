@@ -591,6 +591,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Cofio fy hanes pori a hanes llwytho i lawr
     .accesskey = o
+history-remember-browser-option =
+    .label = Cofio hanes pori a llwytho i lawr
+    .accesskey = h
 history-remember-search-option =
     .label = Cofio hanes chwilio a ffurflen
     .accesskey = C
@@ -607,6 +610,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cwcis a Data Gwefan
+sitedata-total-size-calculating = Cyfrifo maint data gwefan…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Mae'r cwcis, data gwefan a storfa yn defnyddio { $value } { $unit } o le ar ddisg ar hyn o bryd.
 sitedata-learn-more = Dysgu rhagor
 sitedata-accept-cookies-option =
     .label = Derbyn cwcis a data gwefan gan wefannau (argymell)
@@ -701,6 +709,12 @@ permissions-notification-link = Dysgu rhagor
 permissions-notification-pause =
     .label = Oedi fy hysbysiadau tan { -brand-short-name } ailgychwyn
     .accesskey = O
+permissions-block-autoplay-media =
+    .label = Rhwystro gwefannau rhag chwarae cyfrwng gyda sain yn awtomatig 
+    .accesskey = R
+permissions-block-autoplay-media-exceptions =
+    .label = Eithriadau...
+    .accesskey = E
 permissions-block-popups =
     .label = Rhwystro ffenestri llamlen
     .accesskey = R
@@ -727,6 +741,9 @@ collection-health-report =
     .label = Caniatáu i { -brand-short-name } anfon data technegol a rhyngweithio i { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Dysgu rhagor
+collection-studies =
+    .label = Caniatáu i { -brand-short-name } osod a rhedeg astudiaethau
+collection-studies-link = Gweld astudiaethau { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Mae adrodd ar ddata wedi ei analluogi ar gyfer ffurfweddiad yr adeiledd hwn

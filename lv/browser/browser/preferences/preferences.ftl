@@ -145,6 +145,9 @@ startup-blank-page =
     .label = Parādīt tukšu lapu
 startup-prev-session =
     .label = Parādīt manus logus un cilnes no iepriekšējās reizes
+startup-restore-previous-session =
+    .label = Atjaunot iepriekšējo sesiju
+    .accesskey = s
 disable-extension =
     .label = Deaktivēt paplašinājumu
 home-page-header = Mājas lapa
@@ -405,7 +408,7 @@ search-show-suggestions-above-history-option =
     .label = Rādīt meklēšanas ieteikumus pirms pārlūkošanas vēstures adreses joslā
 search-suggestions-cant-show = Meklēšanas ieteikumi netiks parādīti adreses joslā, jo { -brand-short-name } ir nokonfigurēts neatcerēties vēsturi.
 search-one-click-header = Viena klikšķa meklētāji
-search-one-click-desc = Izvēlieties papildu meklētāju, kas parādīsies adrešu joslā un meklēšanas joslā, kad sāksiet rakstīt.{ " " }
+search-one-click-desc = Izvēlieties papildu meklētāju, kas parādīsies adrešu joslā un meklēšanas joslā, kad sāksiet rakstīt.
 search-choose-engine-column =
     .label = Meklētāji
 search-choose-keyword-column =
@@ -535,6 +538,9 @@ privacy-header = Pārlūka privātums
 ## Privacy Section - Forms
 
 forms-header = Formas un paroles
+forms-ask-to-save-logins =
+    .label = Lūgt, lai saglabātu lietotājvārdu un paroles vietnēm
+    .accesskey = r
 forms-exceptions =
     .label = Izņēmumi...
     .accesskey = z
@@ -576,6 +582,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Atcerēties manu pārlūkošanas un lejupielāžu vēsturi
     .accesskey = c
+history-remember-browser-option =
+    .label = Atcerēties manu pārlūkošanas un lejupielāžu vēsturi
+    .accesskey = a
 history-remember-search-option =
     .label = Atcerēties meklēšanas un formu vēsturi
     .accesskey = v
@@ -592,6 +601,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Sīkdatnes un lapu dati
+sitedata-total-size-calculating = Aprēķina izmantotās vietas apjomu…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Jūsu saglabātās sīkdatnes un kešatmiņa šobrīd aizņem { $value } { $unit } vietas.
 sitedata-learn-more = Uzzināt vairāk
 sitedata-accept-cookies-option =
     .label = Pieņemt sīkdatnes un kešatmiņu no lapām (ieteicams)
@@ -712,6 +726,9 @@ collection-health-report =
     .label = Atļaut { -brand-short-name } automātiski sūtīt tehnisku un mijiedarbību informāciju { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Uzzināt vairāk
+collection-studies =
+    .label = Ļaut { -brand-short-name } instalēt un palaist pētījumus
+collection-studies-link = Aplūkot { -brand-short-name } pētījumus
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datu ziņošana ir atspējota šajā būvējuma konfigurācija

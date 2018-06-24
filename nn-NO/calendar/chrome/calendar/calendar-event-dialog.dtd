@@ -165,14 +165,14 @@
 <!ENTITY event.remove.attendee.accesskey                  "e">
 
 <!-- Toolbar -->
-<!ENTITY  event.toolbar.save.label2                       "Lagre">
-<!ENTITY  event.toolbar.saveandclose.label                "Lagre og lat att">
+<!ENTITY  event.toolbar.save.label2                       "Lagra">
+<!ENTITY  event.toolbar.saveandclose.label                "Lagra og lat att">
 <!ENTITY  event.toolbar.delete.label                      "Slett">
 <!ENTITY  event.toolbar.attendees.label                   "Inviter deltakarar">
 <!ENTITY  event.toolbar.privacy.label                     "Personvern">
 
-<!ENTITY  event.toolbar.save.tooltip2                     "Lagre">
-<!ENTITY  event.toolbar.saveandclose.tooltip              "Lagre og lat att">
+<!ENTITY  event.toolbar.save.tooltip2                     "Lagra">
+<!ENTITY  event.toolbar.saveandclose.tooltip              "Lagra og lat att">
 <!ENTITY  event.toolbar.delete.tooltip                    "Slett">
 <!ENTITY  event.toolbar.attendees.tooltip                 "Inviter deltakarar">
 <!ENTITY  event.toolbar.attachments.tooltip               "Nytt vedlegg">
@@ -235,7 +235,7 @@
 <!ENTITY event.attachments.url.accesskey                  "N">
 <!ENTITY event.attachments.popup.remove.label             "Fjern" >
 <!ENTITY event.attachments.popup.remove.accesskey         "F" >
-<!ENTITY event.attachments.popup.open.label               "Opne" >
+<!ENTITY event.attachments.popup.open.label               "Opna" >
 <!ENTITY event.attachments.popup.open.accesskey           "O" >
 <!ENTITY event.attachments.popup.removeAll.label          "Fjern alle" >
 <!ENTITY event.attachments.popup.removeAll.accesskey      "a" >
@@ -407,11 +407,6 @@
 <!ENTITY read.only.location.label        "Stad:">
 <!ENTITY read.only.category.label        "Kategori:">
 <!ENTITY read.only.organizer.label       "Organisert av:">
-<!ENTITY read.only.reply.label           "Svar:">
-<!ENTITY read.only.accept.label          "Eg deltek">
-<!ENTITY read.only.decline.label         "Eg deltek ikkje">
-<!ENTITY read.only.tentative.label       "Eg deltek kanskje">
-<!ENTITY read.only.needs.action.label    "Eg vil stadfeste seinare">
 <!ENTITY read.only.reminder.label        "Påminning:">
 <!ENTITY read.only.attachments.label     "Vedlegg:">
 <!ENTITY read.only.attendees.label       "Deltakarar">
@@ -419,7 +414,15 @@
 <!ENTITY read.only.link.label            "Relatert lenke">
 
 <!-- Summary dialog -->
-<!ENTITY summary.dialog.saveclose.label         "Lagre og lat att">
+<!ENTITY summary.dialog.saveclose.label         "Lagra og lat att">
+<!ENTITY summary.dialog.saveclose.tooltiptext   "Lagra endringar og lat att vindauget utan å endra deltakingsstatus og utan å senda eit svar">
 <!ENTITY summary.dialog.accept.label            "Aksepter">
 <!ENTITY summary.dialog.accept.tooltiptext      "Aksepter invitasjonen">
-<!ENTITY summary.dialog.tentative.tooltiptext   "Aksepter invitasjonen førebels">
+<!ENTITY summary.dialog.tentative.label         "Med atterhald">
+<!ENTITY summary.dialog.tentative.tooltiptext   "Godta invitasjonen med atterhald">
+<!ENTITY summary.dialog.decline.label           "Avvis">
+<!ENTITY summary.dialog.decline.tooltiptext     "Avvis invitasjonen">
+<!ENTITY summary.dialog.dontsend.label          "Ikkje send eit svar">
+<!ENTITY summary.dialog.dontsend.tooltiptext    "Endre deltakingsstatusen din utan å sende eit svar til arrangøren og lat att vindauget">
+<!ENTITY summary.dialog.send.label              "Send eit svar no">
+<!ENTITY summary.dialog.send.tooltiptext        "Send eit svar til arrangøren,  og lat att vinduet">

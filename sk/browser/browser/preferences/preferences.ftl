@@ -512,10 +512,10 @@ sync-engine-prefs =
     .label =
         { PLATFORM() ->
             [windows] Možnosti
-           *[other] Nastavenia
+           *[other] Možnosti
         }
     .tooltiptext = Možnosti v sekciách Všeobecné, Súkromie a bezpečnosť, ktoré boli zmenené
-    .accesskey = N
+    .accesskey = s
 sync-device-name-header = Názov zariadenia
 sync-device-name-change =
     .label = Zmeniť názov zariadenia…
@@ -582,6 +582,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Pamätať si históriu prehliadania a prevzatých súborov
     .accesskey = h
+history-remember-browser-option =
+    .label = Pamätať si históriu prehliadania a prevzatých súborov
+    .accesskey = b
 history-remember-search-option =
     .label = Pamätať si údaje zadané do formulárov a vyhľadávacieho panela
     .accesskey = f
@@ -598,6 +601,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies a údaje stránok
+sitedata-total-size-calculating = Výpočet veľkosti údajov stránky a vyrovnávacej pamäte…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Uložené cookies, údaje stránok a vyrovnávacia pamäť zaberajú { $value } { $unit } priestoru na disku.
 sitedata-learn-more = Ďalšie informácie
 sitedata-accept-cookies-option =
     .label = Povoliť stránkam ukladať cookies a údaje stránok (odporúčané)
@@ -692,6 +700,12 @@ permissions-notification-link = Ďalšie informácie
 permissions-notification-pause =
     .label = Pozastaviť upozornenia do reštartu aplikácie { -brand-short-name }
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Zabrániť stránkam automaticky prehrávať médiá so zvukom
+    .accesskey = Z
+permissions-block-autoplay-media-exceptions =
+    .label = Výnimky…
+    .accesskey = V
 permissions-block-popups =
     .label = Blokovať nevyžiadané vyskakovacie okná
     .accesskey = B
@@ -718,6 +732,9 @@ collection-health-report =
     .label = Povoliť aplikácii { -brand-short-name } odosielať Mozille technické údaje a údaje o interakciách
     .accesskey = o
 collection-health-report-link = Ďalšie informácie
+collection-studies =
+    .label = Povoliť aplikácii { -brand-short-name } inštalovať a spúšťať štúdie
+collection-studies-link = Zobraziť štúdie aplikácie { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Odosielanie údajov je v konfigurácii tohto zostavenia zakázané

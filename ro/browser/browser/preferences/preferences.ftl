@@ -146,7 +146,7 @@ startup-blank-page =
 startup-prev-session =
     .label = Afișează ferestrele și filele de data trecută
 startup-restore-previous-session =
-    .label = Restabilește sesiunea anterioară
+    .label = Restaurează sesiunea anterioară
     .accesskey = s
 disable-extension =
     .label = Dezactivează extensia
@@ -287,7 +287,7 @@ update-application-check-choose =
     .accesskey = C
 update-application-manual =
     .label = Să nu caute niciodată actualizări (nerecomandat)
-    .accesskey = n
+    .accesskey = N
 update-application-use-service =
     .label = Folosește un serviciu în fundal pentru a instala actualizări
     .accesskey = b
@@ -381,8 +381,8 @@ choose-bookmark =
     .label = Folosește un marcaj…
     .accesskey = B
 restore-default =
-    .label = Restabilește la opțiunile implicite
-    .accesskey = F
+    .label = Restaurează la valorile implicite
+    .accesskey = R
 
 ## Search Section
 
@@ -414,8 +414,8 @@ search-choose-engine-column =
 search-choose-keyword-column =
     .label = Cuvânt cheie
 search-restore-default =
-    .label = Restabilește motoarele de căutare implicite
-    .accesskey = d
+    .label = Restaurează motoarele de căutare implicite
+    .accesskey = D
 search-remove-engine =
     .label = Elimină
     .accesskey = R
@@ -566,22 +566,25 @@ history-header = Istoric
 #   - Simply as "Firefox", moving the verb into each option.
 #     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
-history-remember-label = { -brand-short-name }:
+history-remember-label = { -brand-short-name }
     .accesskey = w
 history-remember-option-all =
     .label = Va memora istoricul
 history-remember-option-never =
-    .label = Nu memora istoricul
+    .label = Nu va memora istoricul niciodată
 history-remember-option-custom =
     .label = Va folosi setări personalizate pentru istoric
-history-remember-description = { -brand-short-name } va memora istoricul navigării, descărcărilor, formularelor și căutărilor.
-history-dontremember-description = { -brand-short-name } va folosi aceleași setări ca navigarea privată și nu va memora niciun istoric pe măsură ce navighezi pe web.
+history-remember-description = { -brand-short-name } îți va memora istoricul navigării, descărcărilor, formularelor și căutărilor.
+history-dontremember-description = { -brand-short-name } va folosi aceleași setări ca navigarea privată și nu va memora istoricul în timp ce navighezi pe web.
 history-private-browsing-permanent =
     .label = Folosește mereu modul de navigare privată
     .accesskey = m
 history-remember-option =
+    .label = Memorează-mi istoricul navigării și al descărcărilor
+    .accesskey = b
+history-remember-browser-option =
     .label = Memorează istoricul navigării și al descărcărilor
-    .accesskey = g
+    .accesskey = b
 history-remember-search-option =
     .label = Memorează istoricul formularelor și al căutărilor
     .accesskey = f
@@ -598,6 +601,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookie-uri și date ale site-urilor
+sitedata-total-size-calculating = Se calculează datele site-urilor și dimensiunea cache-ului…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Cookie-urile stocate, datele site-urilor și cache-ul folosesc în prezent { $value } { $unit } din spațiul de pe disc.
 sitedata-learn-more = Află mai multe
 sitedata-accept-cookies-option =
     .label = Acceptă cookie-urile și datele site-urilor de la site-uri web (recomandat)
@@ -718,6 +726,9 @@ collection-health-report =
     .label = Permite-i lui { -brand-short-name } să trimită informații tehnice și interactive către { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Află mai multe
+collection-studies =
+    .label = Permite-i lui { -brand-short-name } să instaleze și să realizeze studii
+collection-studies-link = Vezi studiile { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Raportarea datelor este dezactivată în configurația folosită

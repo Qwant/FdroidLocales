@@ -588,6 +588,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = تذكر تأريخ تصفحي و تنزيلاتي
     .accesskey = ص
+history-remember-browser-option =
+    .label = تذكر تأريخ التصفح و التنزيل
+    .accesskey = ت
 history-remember-search-option =
     .label = تذكّر تأريخ النماذج والبحث
     .accesskey = ث
@@ -604,6 +607,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = الكعكات و بيانات المواقع
+sitedata-total-size-calculating = يحسب حجم بيانات الموقع و الخبيئة…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = تستخدم الكعكات، و بيانات الموقع، و الخبيئة المحفوظة حاليًا { $value }‏ { $unit } من مساحة القرص.
 sitedata-learn-more = اطّلع على المزيد
 sitedata-accept-cookies-option =
     .label = اقبل الكعكات و بيانات المواقع من المواقع (مستحسن)
@@ -698,6 +706,12 @@ permissions-notification-link = اطّلع على المزيد
 permissions-notification-pause =
     .label = ألبِث التنبيهات حتى يُعاد تشغيل { -brand-short-name }
     .accesskey = ث
+permissions-block-autoplay-media =
+    .label = امنع المواقع من تشغيل الوسائط المحتوية على صوت تلقائيا
+    .accesskey = م
+permissions-block-autoplay-media-exceptions =
+    .label = الاستثناءات…
+    .accesskey = س
 permissions-block-popups =
     .label = احجب النوافذ المنبثقة
     .accesskey = ذ
@@ -724,6 +738,9 @@ collection-health-report =
     .label = اسمح أن يُرسل { -brand-short-name } بيانات تقنية و بيانات التفاعل إلى موزيلا
     .accesskey = ح
 collection-health-report-link = اطّلع على المزيد
+collection-studies =
+    .label = اسمح أن ينصّب { -brand-short-name } ويشغل الدراسات
+collection-studies-link = اعرض دراسات { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = الإبلاغ عن البيانات معطّل في إعدادات البناء

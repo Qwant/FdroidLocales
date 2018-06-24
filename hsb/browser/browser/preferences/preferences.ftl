@@ -585,6 +585,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Sej přehladowansku a sćehnjensku historiju spomjatkować
     .accesskey = h
+history-remember-browser-option =
+    .label = Sej přehladowansku a sćehnjensku historiju spomjatkować
+    .accesskey = m
 history-remember-search-option =
     .label = Pytansku a formularnu historiju sej spomjatkować
     .accesskey = f
@@ -601,6 +604,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Placki a sydłowe daty
+sitedata-total-size-calculating = Wulkosć sydłowych datow a pufrowaka so wuličuje…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Waše składowane placki, sydłowe daty a pufrowak so tuchwilu { $value } { $unit } tačeloweho ruma wužiwaja.
 sitedata-learn-more = Dalše informacije
 sitedata-accept-cookies-option =
     .label = Placki a sydłowe daty z websydłow akceptować (doporučene)
@@ -611,9 +619,9 @@ sitedata-block-cookies-option =
 sitedata-keep-until = Wobchować
     .accesskey = c
 sitedata-keep-until-expire =
-    .label = Spadnu
+    .label = doniž njespadnu
 sitedata-keep-until-closed =
-    .label = { -brand-short-name } je začinjeny
+    .label = { -brand-short-name } so njezačini
 sitedata-accept-third-party-desc = Placki a sydłowe daty třećich poskićowarjow akceptować
     .accesskey = t
 sitedata-accept-third-party-always-option =
@@ -695,6 +703,12 @@ permissions-notification-link = Dalše informacije
 permissions-notification-pause =
     .label = Zdźělenja zastajić, doniž so { -brand-short-name } znowa njestartuje
     .accesskey = z
+permissions-block-autoplay-media =
+    .label = Websydłam zakazać, medije ze zynkom wothrać
+    .accesskey = z
+permissions-block-autoplay-media-exceptions =
+    .label = Wuwzaća…
+    .accesskey = u
 permissions-block-popups =
     .label = Wuskakowace wokno blokować
     .accesskey = k
@@ -721,6 +735,9 @@ collection-health-report =
     .label = { -brand-short-name } zmóžnić, techniske a interakciske daty na { -vendor-short-name } pósłać
     .accesskey = t
 collection-health-report-link = Dalše informacije
+collection-studies =
+    .label = { -brand-short-name } dowolić, studije instalować a přewjesć
+collection-studies-link = Studije { -brand-short-name } pokazać
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datowe rozprawjenje je znjemóžnjene za tutu programowu konfiguraciju

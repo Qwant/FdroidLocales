@@ -145,6 +145,9 @@ startup-blank-page =
     .label = יוצג דף ריק
 startup-prev-session =
     .label = יוצגו החלונות והלשוניות מהפעם האחרונה
+startup-restore-previous-session =
+    .label = שחזור הפעלה קודמת
+    .accesskey = ש
 disable-extension =
     .label = נטרול הרחבה
 home-page-header = דף הבית
@@ -335,7 +338,7 @@ network-proxy-title = מתווך רשת
 network-proxy-connection-description = הגדרת אופן החיבור של { -brand-short-name } לאינטרנט.
 network-proxy-connection-learn-more = מידע נוסף
 network-proxy-connection-settings =
-    .label = הגדרות...
+    .label = הגדרות…
     .accesskey = ה
 
 ## Home Section
@@ -420,7 +423,7 @@ search-keyword-warning-title = מילת מפתח כפולה
 # Variables:
 #   $name (String) - Name of a search engine.
 search-keyword-warning-engine = בחרת להשתמש במילת מפתח שנמצאת כרגע בשימוש עבור "{ $name }". אנא בחר במילה אחרת.
-search-keyword-warning-bookmark = בחרת להשתמש במילת מפתח שנמצאת כרגע בשימוש של סימנייה. אנא בחר במילה אחרת.
+search-keyword-warning-bookmark = בחרת להשתמש במילת מפתח שנמצאת כרגע בשימוש על ידי סימנייה. נא לבחור במילה אחרת.
 
 ## Containers Section
 
@@ -483,7 +486,7 @@ sync-engine-history =
     .label = היסטוריה
     .accesskey = ה
 sync-engine-tabs =
-    .label = פתיחת לשוניות
+    .label = לשוניות פתוחות
     .tooltiptext = רשימה של מה שפתוח בכל ההתקנים המסונכרנים
     .accesskey = ל
 sync-engine-logins =
@@ -509,7 +512,7 @@ sync-engine-prefs =
            *[other] העדפות
         }
     .tooltiptext = הגדרות כלליות, פרטיות ואבטחה ששינית
-    .accesskey = ה
+    .accesskey = ת
 sync-device-name-header = שם התקן
 sync-device-name-change =
     .label = שינוי שם התקן…
@@ -576,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = שמירת היסטורית גלישה והורדות
     .accesskey = ג
+history-remember-browser-option =
+    .label = שמירת היסטורית גלישה והורדות
+    .accesskey = ש
 history-remember-search-option =
     .label = שמירת חיפושים והיסטורית טפסים
     .accesskey = ט
@@ -592,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = עוגיות ונתוני אתרים
+sitedata-total-size-calculating = חישוב גודל נתוני אתרים ומטמון…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = העוגיות, נתוני האתרים והמטמון השמורים שלך משתמשים כרגע ב־{ $value } { $unit } משטח הדיסק.
 sitedata-learn-more = מידע נוסף
 sitedata-accept-cookies-option =
     .label = קבלת עוגיות ונתוני אתרים מאתרי אינטרנט (מומלץ)
@@ -602,9 +613,9 @@ sitedata-block-cookies-option =
 sitedata-keep-until = שמירה עד ש:
     .accesskey = מ
 sitedata-keep-until-expire =
-    .label = התפוגה שלהם
+    .label = פג תוקפם
 sitedata-keep-until-closed =
-    .label = ‏{ -brand-short-name } סגור
+    .label = ‏{ -brand-short-name } ייסגר
 sitedata-accept-third-party-desc = קבלת עוגיות ונתוני אתרים מצד שלישי
     .accesskey = ש
 sitedata-accept-third-party-always-option =
@@ -669,23 +680,29 @@ permissions-header = הרשאות
 permissions-location = מיקום
 permissions-location-settings =
     .label = הגדרות…
-    .accesskey = מ
+    .accesskey = ה
 permissions-camera = מצלמה
 permissions-camera-settings =
     .label = הגדרות…
-    .accesskey = צ
+    .accesskey = ה
 permissions-microphone = מיקרופון
 permissions-microphone-settings =
     .label = הגדרות…
-    .accesskey = ק
+    .accesskey = ה
 permissions-notification = התרעות
 permissions-notification-settings =
     .label = הגדרות…
-    .accesskey = ע
+    .accesskey = ה
 permissions-notification-link = מידע נוסף
 permissions-notification-pause =
     .label = השהיית התרעות עד להפעלה מחדש של { -brand-short-name }
     .accesskey = ה
+permissions-block-autoplay-media =
+    .label = חסימת אתרים מניגון מדיה עם קול באופן אוטומטי
+    .accesskey = מ
+permissions-block-autoplay-media-exceptions =
+    .label = חריגות…
+    .accesskey = ח
 permissions-block-popups =
     .label = חסימת חלונות קופצים
     .accesskey = ח
@@ -712,6 +729,9 @@ collection-health-report =
     .label = האם לאפשר ל־{ -brand-short-name } לשלוח אל { -vendor-short-name } מידע טכני ופעולות שבוצעו בדפדפן
     .accesskey = ד
 collection-health-report-link = מידע נוסף
+collection-studies =
+    .label = לאפשר ל־{ -brand-short-name } להתקין ולהריץ מחקרים
+collection-studies-link = הצגת המחקרים של { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = דיווח נתונים מנוטרל עבור תצורת בנייה זו

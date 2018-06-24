@@ -582,6 +582,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Памятаць гісторыю маіх аглядання і сцягванняў
     .accesskey = а
+history-remember-browser-option =
+    .label = Памятаць гісторыю аглядання і сцягванняў
+    .accesskey = П
 history-remember-search-option =
     .label = Памятаць гісторыю пошуку і запаўнення формаў
     .accesskey = ш
@@ -598,6 +601,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Кукі і дадзеныя сайтаў
+sitedata-total-size-calculating = Падлік памеру дадзеных сайтаў і кэша…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Вашы захаваныя кукі, дадзеныя сайтаў і кэш зараз займаюць { $value } { $unit } на дыску.
 sitedata-learn-more = Даведацца больш
 sitedata-accept-cookies-option =
     .label = Прымаць кукі і дадзеныя з вэб-сайтаў (рэкамендуецца)
@@ -692,6 +700,12 @@ permissions-notification-link = Падрабязней
 permissions-notification-pause =
     .label = Прыпыніць апавяшчэнні да перазапуску { -brand-short-name }
     .accesskey = а
+permissions-block-autoplay-media =
+    .label = Забараніць вэб-сайтам аўтаматычна прайграваць медыя з гукам
+    .accesskey = З
+permissions-block-autoplay-media-exceptions =
+    .label = Выключэнні…
+    .accesskey = к
 permissions-block-popups =
     .label = Блакаваць выплыўныя вокны
     .accesskey = Б
@@ -718,6 +732,9 @@ collection-health-report =
     .label = Дазволіць { -brand-short-name } адпраўляць тэхнічныя звесткі і звесткі ўзаемадзеяння ў { -vendor-short-name }
     .accesskey = к
 collection-health-report-link = Даведацца больш
+collection-studies =
+    .label = Дазволіць { -brand-short-name } усталёўваць і выконваць даследаванні
+collection-studies-link = Прагляд даследаванняў { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Адпраўка дадзеных адключана для гэтай канфігурацыі зборкі

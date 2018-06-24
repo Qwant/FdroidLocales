@@ -278,8 +278,8 @@ translate-web-pages =
 
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
-translate-attribution = Vertalingen door <img data-l10n-name="logo"/>
 
+translate-attribution = Vertalingen door <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Uitzonderingen…
     .accesskey = z
@@ -428,9 +428,9 @@ browsing-search-on-start-typing =
 
 network-proxy-title = Netwerkproxy
 
-network-proxy-connection-learn-more = Meer info
-
 network-proxy-connection-description = Configureren hoe { -brand-short-name } verbinding maakt met het internet.
+
+network-proxy-connection-learn-more = Meer info
 
 network-proxy-connection-settings =
     .label = Instellingen…
@@ -729,6 +729,10 @@ history-remember-option =
     .label = Mijn navigatie- en downloadgeschiedenis onthouden
     .accesskey = v
 
+history-remember-browser-option =
+    .label = Navigatie- en downloadgeschiedenis onthouden
+    .accesskey = v
+
 history-remember-search-option =
     .label = Zoek- en formuliergeschiedenis onthouden
     .accesskey = f
@@ -748,6 +752,13 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies en websitegegevens
+
+sitedata-total-size-calculating = Grootte van websitegegevens en buffer berekenen…
+
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Uw opgeslagen cookies, websitegegevens en buffer gebruiken momenteel { $value } { $unit } aan schijfruimte.
 
 sitedata-learn-more = Meer info
 
@@ -867,6 +878,14 @@ permissions-notification-pause =
     .label = Notificaties pauzeren totdat { -brand-short-name } wordt herstart
     .accesskey = N
 
+permissions-block-autoplay-media =
+    .label = Automatisch afspelen van media met geluid door websites blokkeren
+    .accesskey = s
+
+permissions-block-autoplay-media-exceptions =
+    .label = Uitzonderingen…
+    .accesskey = U
+
 permissions-block-popups =
     .label = Pop-upvensters blokkeren
     .accesskey = P
@@ -900,6 +919,10 @@ collection-health-report =
     .label = { -brand-short-name } toestaan om technische en interactiegegevens naar { -vendor-short-name } te verzenden
     .accesskey = r
 collection-health-report-link = Meer info
+
+collection-studies =
+    .label = { -brand-short-name } toestaan om onderzoeken te installeren en uit te voeren
+collection-studies-link = { -brand-short-name }-onderzoeken weergeven
 
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.

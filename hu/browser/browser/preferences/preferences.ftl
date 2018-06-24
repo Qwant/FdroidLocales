@@ -579,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Böngészési és letöltési előzmények megőrzése
     .accesskey = l
+history-remember-browser-option =
+    .label = Böngészési és letöltési előzmények megőrzése
+    .accesskey = b
 history-remember-search-option =
     .label = Keresőmezők és űrlapmezők előzményeinek megőrzése
     .accesskey = K
@@ -595,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Sütik és oldaladatok
+sitedata-total-size-calculating = Az oldaladatok és a gyorsítótár méretének kiszámítása…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = A tárolt sütik, oldaladatok és a gyorsítótár jelenleg { $value } { $unit } területet foglal el a lemezen.
 sitedata-learn-more = További tudnivalók
 sitedata-accept-cookies-option =
     .label = Sütik és oldaladatok elfogadása a webhelyektől (ajánlott)
@@ -689,6 +697,12 @@ permissions-notification-link = További tudnivalók
 permissions-notification-pause =
     .label = Értesítések kikapcsolása a { -brand-short-name } újraindulásáig
     .accesskey = e
+permissions-block-autoplay-media =
+    .label = Webhelyek blokkolása, hogy automatikusan ne játszhassanak le médiát hanggal.
+    .accesskey = b
+permissions-block-autoplay-media-exceptions =
+    .label = Kivételek…
+    .accesskey = K
 permissions-block-popups =
     .label = Felugró ablakok tiltása
     .accesskey = F
@@ -715,6 +729,9 @@ collection-health-report =
     .label = Engedélyezés, hogy a { -brand-short-name } műszaki és interakciós adatokat küldjön a Mozillának
     .accesskey = E
 collection-health-report-link = További tudnivalók
+collection-studies =
+    .label = Engedélyezés, hogy a { -brand-short-name } tanulmányokat telepítsen és futasson
+collection-studies-link = { -brand-short-name } tanulmányok megtekintése
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Az adatjelentést letiltották ehhez a binárishoz

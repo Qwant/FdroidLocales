@@ -585,6 +585,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Cuimhnich an eachdraidh brabhsaidh 's luchdaidh agam
     .accesskey = b
+history-remember-browser-option =
+    .label = Cuimhnich an eachdraidh brabhsaidh 's luchdaidh
+    .accesskey = b
 history-remember-search-option =
     .label = Cuimhnich eachdraidh nan lorg is nam foirmichean
     .accesskey = f
@@ -601,6 +604,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Briosgaidean is dàta làraichean
+sitedata-total-size-calculating = Ag àireamhachadh meud dàta na làraich is an tasgadain...
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Tha na tha de bhriosgaidean, dàta làraichean is an tasgadan a’ cleachdadh { $value } { $unit } de dh’àite air an diosg an-dràsta.
 sitedata-learn-more = Barrachd fiosrachaidh
 sitedata-accept-cookies-option =
     .label = Gabh ri briosgaidean is dàta làraich o làraichean-lìn (mholamaid seo)
@@ -695,6 +703,12 @@ permissions-notification-link = Barrachd fiosrachaidh
 permissions-notification-pause =
     .label = Cuir am brath ’na stad gus an ath-thòisich { -brand-short-name }
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Na leig le làraichean-lìn meadhanan a chluich sa bheil fuaim
+    .accesskey = N
+permissions-block-autoplay-media-exceptions =
+    .label = Eisgeachdan...
+    .accesskey = E
 permissions-block-popups =
     .label = Cuir bacadh air priob-uinneagan
     .accesskey = b
@@ -721,6 +735,9 @@ collection-health-report =
     .label = Leig le { -brand-short-name } dàta teicnigeach is dàta mu eadar-ghabhail a chur gu { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Barrachd fiosrachaidh
+collection-studies =
+    .label = Leig le { -brand-short-name } obair-rannsachaidh a stàladh is a ruith
+collection-studies-link = Seall obair-rannsachaidh { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Tha aithriseadh dàta à comas airson rèiteachadh a’ bhuild seo

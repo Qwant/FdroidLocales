@@ -582,6 +582,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Пам’ятати історію переглядів та завантажень
     .accesskey = і
+history-remember-browser-option =
+    .label = Пам’ятати історію переглядів та завантажень
+    .accesskey = П
 history-remember-search-option =
     .label = Пам’ятати історію пошуків та форм
     .accesskey = м
@@ -598,6 +601,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Куки і дані сайтів
+sitedata-total-size-calculating = Обчислення розміру даних сайтів і кешу…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Ваші збережені куки, дані сайтів і кеш використовують { $value } { $unit } дискового простору.
 sitedata-learn-more = Докладніше
 sitedata-accept-cookies-option =
     .label = Приймати куки і дані з веб-сайтів (рекомендовано)
@@ -648,7 +656,7 @@ addressbar-suggestions-settings = Змінити налаштування про
 
 tracking-header = Захист від стеження
 tracking-desc = Захист від стеження блокує елементи, що збирають ваші дані під час перегляду на багатьох веб-сайтах. <a data-l10n-name="learn-more">Дізнайтеся більше про захист від стеження і вашу приватність</a>
-tracking-mode-label = Використовуйте захист від стеження для блокування відомих елементів стеження
+tracking-mode-label = Використовувати захист від стеження
 tracking-mode-always =
     .label = Завжди
     .accesskey = З
@@ -692,6 +700,12 @@ permissions-notification-link = Докладніше
 permissions-notification-pause =
     .label = Призупинити сповіщення до перезапуску { -brand-short-name }
     .accesskey = П
+permissions-block-autoplay-media =
+    .label = Заборонити веб-сайтам автоматично відтворювати медіа зі звуком
+    .accesskey = З
+permissions-block-autoplay-media-exceptions =
+    .label = Винятки…
+    .accesskey = и
 permissions-block-popups =
     .label = Блокувати виринаючі вікна
     .accesskey = Б
@@ -718,6 +732,9 @@ collection-health-report =
     .label = Дозволити { -brand-short-name } надсилати технічні та користувацькі дані в { -vendor-short-name }
     .accesskey = к
 collection-health-report-link = Докладніше
+collection-studies =
+    .label = Дозволити { -brand-short-name } встановлювати й виконувати дослідження
+collection-studies-link = Переглянути дослідження { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Відправлення даних вимкнено для цієї конфігурації збірки

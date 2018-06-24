@@ -35,6 +35,9 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "Tutup Tab Lain">
 <!ENTITY  closeOtherTabs.accesskey           "u">
 
+<!ENTITY  closeSelectedTabs.label            "Tutup Tab Yang Dipilih">
+<!ENTITY  closeSelectedTabs.accesskey        "D">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -54,13 +57,14 @@ can reach it easily. -->
 <!ENTITY  sendToDeviceOfflineFeedback.label  "Susunan (luar talian)">
 <!ENTITY  moveToNewWindow.label              "Pindah ke Tetingkap Baru">
 <!ENTITY  moveToNewWindow.accesskey          "T">
+<!ENTITY  reopenInContainer.label            "Buka semula dalam Penyimpan">
+<!ENTITY  reopenInContainer.accesskey        "k">
 <!ENTITY  bookmarkAllTabs.label              "Tandabuku Semua Tab…">
 <!ENTITY  bookmarkAllTabs.accesskey          "T">
 <!ENTITY  undoCloseTab.label                 "Batal Tutup Tab">
 <!ENTITY  undoCloseTab.accesskey             "B">
 <!ENTITY  closeTab.label                     "Tutup Tab">
 <!ENTITY  closeTab.accesskey                 "b">
-
 <!ENTITY  hiddenTabs.label                   "Tab Tersorok">
 
 <!ENTITY  listAllTabs.label      "Senarai semua tab">
@@ -129,7 +133,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "Papar Semua Tab">
 <!ENTITY showAllTabsCmd.accesskey "P">
 <!ENTITY toggleReaderMode.key "R">
-
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "Daftar masuk ke &syncBrand.shortName.label;">
@@ -189,17 +192,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY otherBookmarksCmd.label "Tandabuku Lain">
 <!ENTITY mobileBookmarksCmd.label "Tandabuku Telefon">
 <!ENTITY bookmarksToolbarChevron.tooltip "Papar tandabuku selanjutnya">
-<!ENTITY showRecentlyBookmarked.label     "Papar Tandabuku Terkini">
-<!ENTITY showRecentlyBookmarked.accesskey "p">
-<!ENTITY hideRecentlyBookmarked.label     "Sorok Tandabuku Terkini">
-<!ENTITY hideRecentlyBookmarked.accesskey "S">
 
 <!ENTITY backCmd.label                "Undur">
 <!ENTITY backCmd.accesskey            "U">
 <!ENTITY backButton.tooltip           "Undur satu halaman">
 <!ENTITY forwardCmd.label             "Maju">
 <!ENTITY forwardCmd.accesskey         "M">
-<!ENTITY forwardButton.tooltip        "Langkau satu halaman">
+<!ENTITY forwardButton.tooltip        "Maju satu halaman">
 <!ENTITY backForwardButtonMenu.tooltip "Klik-kanan atau tarik turun untuk papar sejarah">
 <!ENTITY backForwardButtonMenuMac.tooltip "Tarik turun untuk papar sejarah">
 <!ENTITY reloadCmd.label              "Muat semula">
@@ -215,6 +214,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY urlbar.defaultNotificationAnchor.tooltip         "Buka panel mesej">
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "Buka lokasi panel permintaan">
+<!ENTITY urlbar.autoplayNotificationAnchor.tooltip        "Buka panel automain">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Buka panel mesej pemasangan add-on">
 <!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Urus izin ekstrak kanvas">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Buka panel mesej storan luar talian">
@@ -223,7 +223,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Tukar pilihan samada anda boleh menerima notifikasi dari laman">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Simpan data Persistent Storage">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Pelayar berada dalam kawalan jauh">
-
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Buka panel Pengesahan Web">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Urus perkongsian kamera dan/atau mikrofon anda dengan laman">
@@ -234,7 +233,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translateNotificationAnchor.tooltip       "Terjemahkan halaman ini">
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "Urus terjemahan halaman">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Urus penggunaan perisian DRM">
-
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Buka panel MIDI">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Anda telah menyekat kamera anda untuk laman web ini.">
@@ -244,8 +242,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Anda telah menyekat notifikasi untuk laman web ini.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Anda telah menghalang storan gigih untuk laman web ini.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Anda telah menyekat pop-up untuk laman web ini.">
+<!ENTITY urlbar.autoplayMediaBlocked.tooltip     "Anda telah menyekat media automain dengan suara untuk laman web ini.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "Anda telah menyekat ekstraksi data kanvas untuk laman web ini.">
-
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Anda telah menyekat laman web ini daripada menggunakan plugin Adobe Flash.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Anda telah menyekat akses MIDI untuk laman web ini.">
 
@@ -255,6 +253,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "Laman">
+
+<!ENTITY homeButton.defaultPage.tooltip "Laman &brandShortName;">
 
 <!ENTITY bookmarksButton.label          "Tandabuku">
 <!ENTITY bookmarksCmd.commandkey "b">
@@ -395,7 +395,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "Mahu melihat tab anda daripada peranti lain di sini?">
-<!ENTITY appMenuRemoteTabs.openprefs.label "Sync keutamaan">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Buka Keutamaan Sync">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Daftar masuk untuk papar senarai tab dari peranti anda yang lain.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Akaun anda perlu disahkan.">
@@ -436,6 +435,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.removeFromMenu.accesskey "B">
 <!ENTITY customizeMenu.addMoreItems.label "Tambah Lagi Item… ">
 <!ENTITY customizeMenu.addMoreItems.accesskey "A">
+
+<!ENTITY customizeMenu.autoHideDownloadsButton.label "Auto-sorok di Bar Alatan">
+<!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
+<!ENTITY customizeMenu.manageExtension.label "Urus Ekstensi">
+<!ENTITY customizeMenu.manageExtension.accesskey "E">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
@@ -797,9 +801,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.moreInfoLinkText2 "Maklumat Lanjut">
 
+<!ENTITY identity.clearSiteData "Buang Kuki dan Data Laman…">
+
 <!ENTITY identity.permissions "Keizinan">
 <!ENTITY identity.permissionsEmpty "Anda tidak memberikan laman ini sebarang keizinan khas.">
 <!ENTITY identity.permissionsReloadHint "Anda mungkin perlu memuat semula halaman supaya perubahan ini dilaksanakan.">
+
+<!ENTITY identity.permissionsPreferences.tooltip "Buka Keutamaan Keizinan">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -899,15 +907,23 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "Audio dari tab akan dikongsi.">
 <!ENTITY getUserMedia.allWindowsShared.message "Semua tetingkap yang kelihatan pada skrin anda akan dikongsi.">
 
+<!ENTITY trackingProtection.on "Perlindungan Penjejakan: AKTIF">
+<!ENTITY trackingProtection.off "Perlindungan Penjejakan: NYAHAKTIF">
 <!ENTITY trackingProtection.title "Perlindungan Penjejakan">
+<!ENTITY trackingProtection.tooltip "Buka Keutamaan Perlindungan Penjejakan">
 <!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; sedang menyekat sebahagian halaman yang mungkin menjejaki pelayaran anda.">
 <!ENTITY trackingProtection.detectedNotBlocked3 "Laman ini mengandungi elemen yang boleh menjejaki pelayaran anda. Anda telah melumpuhkan perlindungan.">
 <!ENTITY trackingProtection.notDetected3 "Tiada elemen penjejak yang dikesan dalam halaman ini.">
+<!ENTITY trackingProtection.detectedNotBlocked4 "Penjejak telah dikesan dalam halaman web ini.">
+<!ENTITY trackingProtection.notDetected4 "Tiada penjejak dikesan dalam halaman ini.">
+<!ENTITY trackingProtection.reloadRequired "Anda telah dayakan Perlindungan Penjejakan. Untuk menyekat semua penjejak, sila muat semula halaman web.">
 <!-- LOCALIZATION NOTE (trackingProtection.unblock.label, trackingProtection.unblock.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
 <!ENTITY trackingProtection.unblock.label "Nyahdayakan perlindungan untuk laman ini">
 <!ENTITY trackingProtection.unblock.accesskey "N">
+<!ENTITY trackingProtection.unblock2.label "Percayai laman ini">
+<!ENTITY trackingProtection.unblock2.accesskey "P">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate.label, trackingProtection.unblockPrivate.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
@@ -915,6 +931,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY trackingProtection.unblockPrivate.accesskey "N">
 <!ENTITY trackingProtection.block2.label "Dayakan perlindungan">
 <!ENTITY trackingProtection.block2.accesskey "D">
+
+<!ENTITY trackingProtection.unblockPrivate2.label "Percayai laman ini untuk sesi ini">
+<!ENTITY trackingProtection.unblockPrivate2.accesskey "P">
+<!ENTITY trackingProtection.block3.label "AKTIFKAN Perlindungan Penjejakan">
+<!ENTITY trackingProtection.block3.accesskey "A">
+<!ENTITY trackingProtection.reload.label "Muat semula Halaman Ini">
+<!ENTITY trackingProtection.reload.accesskey "M">
 
 <!ENTITY pluginNotification.showAll.label "Papar Semua">
 <!ENTITY pluginNotification.showAll.accesskey "S">
@@ -987,14 +1010,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "B">
 <!ENTITY updateRestart.panelUI.label2 "Mula semula untuk mengemaskini &brandShorterName;">
 
-<!ENTITY newTabControlled.message "Ekstensi telah mengubah halaman yang anda lihat apabila membuka Tab Baru. Anda boleh pulihkan tetapan jika tidak mahu perubahan ini.">
-
 <!ENTITY newTabControlled.header.message "Tab Baru anda telah berubah.">
 <!ENTITY newTabControlled.keepButton.label "Simpan Perubahan">
 <!ENTITY newTabControlled.keepButton.accesskey "S">
-<!ENTITY newTabControlled.restoreButton.label "Pulih Tetapan">
-<!ENTITY newTabControlled.restoreButton.accesskey "P">
-
 <!ENTITY newTabControlled.disableButton.label "Nyahdayakan Ekstensi">
 <!ENTITY newTabControlled.disableButton.accesskey "N">
 
@@ -1004,6 +1022,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY homepageControlled.keepButton.accesskey "S">
 <!ENTITY homepageControlled.disableButton.label "Nyahdayakan Ekstensi">
 <!ENTITY homepageControlled.disableButton.accesskey "N">
+
+<!ENTITY tabHideControlled.header.message "Akses Tab Tersorok Anda">
+<!ENTITY tabHideControlled.keepButton.label "Terus Sorok Tab">
+<!ENTITY tabHideControlled.keepButton.accesskey "T">
+<!ENTITY tabHideControlled.disableButton.label "Nyahdayakan Ekstensi">
+<!ENTITY tabHideControlled.disableButton.accesskey "N">
 
 <!ENTITY pageActionButton.tooltip "Tindakan halaman">
 <!ENTITY pageAction.addToUrlbar.label "Tambah ke Bar Alamat">

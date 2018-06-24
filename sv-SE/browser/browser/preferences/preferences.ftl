@@ -488,7 +488,7 @@ sync-engine-history =
 sync-engine-tabs =
     .label = Öppna flikar
     .tooltiptext = En lista över vad som är öppet på alla synkroniserade enheter
-    .accesskey = t
+    .accesskey = f
 sync-engine-logins =
     .label = Inloggningar
     .tooltiptext = Användarnamn och lösenord du har sparat
@@ -579,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Spara historik över besökta sidor och filhämtningar
     .accesskey = S
+history-remember-browser-option =
+    .label = Kom ihåg surf- och nedladdningshistorik
+    .accesskey = m
 history-remember-search-option =
     .label = Spara sök- och formulärhistorik
     .accesskey = ö
@@ -595,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Kakor och webbplatsdata
+sitedata-total-size-calculating = Beräkning av webbplatsdata och cachestorlek…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Dina lagrade kakor, webbplatsdata och cache använder för tillfället { $value } { $unit } diskutrymme.
 sitedata-learn-more = Läs mer
 sitedata-accept-cookies-option =
     .label = Tillåt kakor och webbplatsdata från webbplatser (rekommenderas)
@@ -689,6 +697,12 @@ permissions-notification-link = Läs mer
 permissions-notification-pause =
     .label = Pausa aviseringar tills { -brand-short-name } startar om
     .accesskey = v
+permissions-block-autoplay-media =
+    .label = Blockera hemsidor från att automatiskt spela upp media med ljud
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = Undantag
+    .accesskey = U
 permissions-block-popups =
     .label = Blockera popup-fönster
     .accesskey = B
@@ -715,6 +729,9 @@ collection-health-report =
     .label = Tillåt { -brand-short-name } att automatiskt skicka teknisk och interaktionsdata till { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Läs mer
+collection-studies =
+    .label = Tillåt { -brand-short-name } att installera och köra studier
+collection-studies-link = Visa { -brand-short-name }-studier
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datarapportering är inaktiverad för den här byggkonfigurationen

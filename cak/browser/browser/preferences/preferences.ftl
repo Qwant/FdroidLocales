@@ -579,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Tinatäx ri nunatab'al richin taq qasanïk chuqa' okik'amaya'l
     .accesskey = T
+history-remember-browser-option =
+    .label = Tinatäx ri runatab'al okem pa k'amaya'l chuqa' ri qasanïk
+    .accesskey = k
 history-remember-search-option =
     .label = Tinatäx ri runatab'al kanob'äl chuqa' taq nojwuj
     .accesskey = n
@@ -595,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Taq Kaxlanwey chuqa' Rutzij K'amaya'l
+sitedata-total-size-calculating = Tajin nipaj kinimilem taq rutzij chuqa' rujumejyak ruxaq k'amaya'l…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Ri yakon taq kaxlanwey, rutzij ruxaq chuqa' ri rutzatzq'or taq jumejyak nikokisaj { $value } { $unit } chi re ri rupam nimayakb'äl.
 sitedata-learn-more = Tetamäx ch'aqa' chik
 sitedata-accept-cookies-option =
     .label = Kek'ul taq kaxlanwey chuqa' kitzij ruxaq kichin ajk'amaya'l taq ruxaq (chilab'en)
@@ -687,8 +695,14 @@ permissions-notification-settings =
     .accesskey = r
 permissions-notification-link = Tetamäx ch'aqa' chik
 permissions-notification-pause =
-    .label = Keqa't ri taq rutzijol k'a toq ri { -brand-short-name } titikïr chik
+    .label = Keq'at ri taq rutzijol k'a toq ri { -brand-short-name } nitikïr chik
     .accesskey = r
+permissions-block-autoplay-media =
+    .label = Keq'at ajk'amaya'l taq ruxaq richin man kerutzïj ruyonil taq tob'äl k'o kik'oxom
+    .accesskey = q
+permissions-block-autoplay-media-exceptions =
+    .label = Taq man relik ta…
+    .accesskey = E
 permissions-block-popups =
     .label = Keq'at elenel taq tzuwäch
     .accesskey = K
@@ -715,6 +729,9 @@ collection-health-report =
     .label = Tiya' q'ij chi re { -brand-short-name } richin nitaq etamatel taq tzij chuqa' jutzijonem chi re ri { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Tetamäx ch'aqa' chik
+collection-studies =
+    .label = Tiya' q'ij chi re ri { -brand-short-name } niyakon chuqa' nusamajij tijonïk
+collection-studies-link = Ketz'et taq rutijonik { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Chupül ri kitzijol taq tzij richin nib'an kinuk'ulem re taq alk'walaxinem re'

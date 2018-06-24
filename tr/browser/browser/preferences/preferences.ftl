@@ -496,7 +496,7 @@ sync-engine-logins =
 sync-engine-addresses =
     .label = Adresler
     .tooltiptext = Kaydettiğiniz posta adresleri (yalnızca masaüstü)
-    .accesskey = e
+    .accesskey = A
 sync-engine-creditcards =
     .label = Kredi kartları
     .tooltiptext = Adlar, numaralar ve son kullanma tarihleri (yalnızca masaüstü)
@@ -504,7 +504,7 @@ sync-engine-creditcards =
 sync-engine-addons =
     .label = Eklentiler
     .tooltiptext = Masaüstü Firefox eklentileri ve temaları
-    .accesskey = E
+    .accesskey = t
 sync-engine-prefs =
     .label =
         { PLATFORM() ->
@@ -512,7 +512,7 @@ sync-engine-prefs =
            *[other] Tercihler
         }
     .tooltiptext = Değiştirdiğiniz Genel, Gizlilik ve Güvenlik ayarları
-    .accesskey = T
+    .accesskey = e
 sync-device-name-header = Cihaz adı
 sync-device-name-change =
     .label = Cihaz adını değiştir…
@@ -579,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Gezinti ve indirme geçmişimi hatırla
     .accesskey = h
+history-remember-browser-option =
+    .label = Tarama ve indirme geçmişini hatırla
+    .accesskey = T
 history-remember-search-option =
     .label = Arama ve form geçmişini hatırla
     .accesskey = f
@@ -595,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Çerezler ve site verileri
+sitedata-total-size-calculating = Site verilerinin ve önbelleğin boyutu hesaplanıyor…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Depolanmış site verileriniz ve önbelleğiniz şu anda { $value } { $unit } disk alanı kullanıyor.
 sitedata-learn-more = Daha fazla bilgi al
 sitedata-accept-cookies-option =
     .label = Web sitelerinden gelen çerezleri ve site verilerini kabul et (Önerilir)
@@ -689,6 +697,12 @@ permissions-notification-link = Daha fazlası
 permissions-notification-pause =
     .label = { -brand-short-name } yeniden başlatılana dek bildirimleri duraklat
     .accesskey = b
+permissions-block-autoplay-media =
+    .label = Web sitelerinin sesli içerikleri otomatik olarak oynatmasını engelle
+    .accesskey = o
+permissions-block-autoplay-media-exceptions =
+    .label = İstisnalar…
+    .accesskey = s
 permissions-block-popups =
     .label = Açılır pencereleri engelle
     .accesskey = n
@@ -715,6 +729,9 @@ collection-health-report =
     .label = { -brand-short-name }, teknik ve etkileşim verilerimi { -vendor-short-name }’ya gönderebilir
     .accesskey = r
 collection-health-report-link = Daha fazla bilgi al
+collection-studies =
+    .label = { -brand-short-name }, araştırmalar yükleyip çalıştırabilir
+collection-studies-link = { -brand-short-name } araştırmalarını göster
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Bu yapılandırma için veri raporlama devre dışı bırakılmış

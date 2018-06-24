@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -132,25 +124,16 @@ get-started-configured = Opne innstillingar for { -sync-brand-short-name }
 always-check-default =
     .label = Kontroller alltid om { -brand-short-name } er standard-nettlesar
     .accesskey = a
-is-default = { -brand-short-name } er standard nettlesar
+is-default = { -brand-short-name } er allereie standard nettlesar
 is-not-default = { -brand-short-name } er ikkje standard nettlesar
 set-as-my-default-browser =
     .label = Bruk som standard…
     .accesskey = S
-startup-page = Når { -brand-short-name } startar
-    .accesskey = s
-startup-user-homepage =
-    .label = Vis startsida
-startup-blank-page =
-    .label = Vis ei tom side
-startup-prev-session =
-    .label = Vis vindauge og faner som vart brukte sist
 startup-restore-previous-session =
     .label = Bygg oppatt siste programøkt
     .accesskey = B
 disable-extension =
     .label = Slå av utviding
-home-page-header = Startside
 tabs-group-header = Faner
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab vekslar mellom faner i nyleg brukt-rekkjefølgje
@@ -270,7 +253,6 @@ play-drm-content =
 play-drm-content-learn-more = Les meir
 update-application-title = { -brand-short-name }-oppdateringar
 update-application-description = Hald { -brand-short-name } oppdatert for beste yting, stabilitet og sikkerheit.
-update-application-info = Versjon { $version } <a>Kva er nytt</a>
 update-application-version = Versjon { $version } <a data-l10n-name="learn-more">Kva er nytt</a>
 update-history =
     .label = Vis oppdateringshistorikk…
@@ -306,7 +288,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Grense for innhaldsprosessar
     .accesskey = G
 performance-limit-content-process-enabled-desc = Ytterlegere innhaldsprosessar kan forbetre ytinga når du brukar fleire faner, men vil også bruke meir minne.
-performance-limit-content-process-disabled-desc = Endring av talet på innhaldsprosessar kan berre gjerast med multiprosess { -brand-short-name }. <a>Lær deg korleis du kontrollerer om multiprosess er slått på</a>
 performance-limit-content-process-blocked-desc = Endring av talet på innhaldsprosessar kan berre gjerast med multiprosess { -brand-short-name }. <a data-l10n-name="learn-more">Lær deg korleis du kontrollerer om multiprosess er slått på</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -377,9 +358,6 @@ use-current-pages =
 choose-bookmark =
     .label = Bruk bokmerke…
     .accesskey = u
-restore-default =
-    .label = Still tilbake til standard
-    .accesskey = s
 
 ## Search Section
 
@@ -502,8 +480,8 @@ sync-engine-creditcards =
     .tooltiptext = Namn, nummer og forfallsdato (berre skrivebord)
     .accesskey = K
 sync-engine-addons =
-    .label = Utvidingar
-    .tooltiptext = Utvidingar og tema for Firefox desktop
+    .label = Tillegg
+    .tooltiptext = Tillegg og tema for Firefox desktop
     .accesskey = U
 sync-engine-prefs =
     .label =
@@ -579,6 +557,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Hugse nettlesar- og nedlastingshistorikk
     .accesskey = H
+history-remember-browser-option =
+    .label = Hugs nettlesing- og nedlastingshistorikk
+    .accesskey = H
 history-remember-search-option =
     .label = Hugse søke- og skjemahistorikk
     .accesskey = ø
@@ -595,6 +576,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Infokapslar og sidedata
+sitedata-total-size-calculating = Reknar ut storleik på nettstad-data og snøgglager…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Dei lagra infokapslane dine, nettstaddata og hurtiglager brukar for tida { $value } { $unit } diskplass.
 sitedata-learn-more = Les meir
 sitedata-accept-cookies-option =
     .label = Tillat infokapslar og nettsidedata frå nettstadar (tilrådd)
@@ -644,7 +630,7 @@ addressbar-suggestions-settings = Endre innstillingar for søkeforslag
 ## Privacy Section - Tracking
 
 tracking-header = Sporingsvern
-tracking-desc = Sporingsvernet blokkerer sporarar på nettet som samlar inn dine nettlesardata dine på fleire nettsider. <a data-l10n-name="learn-more">Les meir om sporingsvern og ditt personvern</a>
+tracking-desc = Sporingsvernet blokkerer sporfølgjarar på nettet som samlar inn dine nettlesardata dine på fleire nettsider. <a data-l10n-name="learn-more">Les meir om sporingsvern og ditt personvern</a>
 tracking-mode-label = Bruk sporingsvern for å blokkere kjende sporfølgjarar
 tracking-mode-always =
     .label = Alltid
@@ -689,6 +675,12 @@ permissions-notification-link = Les meir
 permissions-notification-pause =
     .label = Set varsel på pause til { -brand-short-name } startar på nytt
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Blokker nettsider frå automatisk å spele media med lyd
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = Unntak…
+    .accesskey = U
 permissions-block-popups =
     .label = Blokker sprettoppvindauge
     .accesskey = B
@@ -696,7 +688,7 @@ permissions-block-popups-exceptions =
     .label = Unntak…
     .accesskey = U
 permissions-addon-install-warning =
-    .label = Åtvar meg når netsider vil installere utvidingar
+    .label = Åtvar meg når netsider vil installere tillegg
     .accesskey = Å
 permissions-addon-exceptions =
     .label = Unntak…
@@ -715,6 +707,9 @@ collection-health-report =
     .label = Tillat { -brand-short-name } å sende teknisk- og interaksjonsdata til { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Les meir
+collection-studies =
+    .label = Tillat { -brand-short-name } å installere og køyre studium
+collection-studies-link = Vis { -brand-short-name }-studium
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datarapportering er deaktivert for denne byggekonfigurasjonen

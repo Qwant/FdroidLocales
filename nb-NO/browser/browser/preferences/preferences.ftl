@@ -579,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Husk nettleser- og nedlastingshistorikk
     .accesskey = d
+history-remember-browser-option =
+    .label = Husk nettleser- og nedlastingshistorikk
+    .accesskey = n
 history-remember-search-option =
     .label = Husk søke- og skjemahistorikk
     .accesskey = ø
@@ -595,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Infokapsler og nettstedsdata
+sitedata-total-size-calculating = Regner ut størrelse på nettstedsdata og hurtiglager…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Dine lagrede infokapsler, nettstedsdata og hurtiglager bruker for øyeblikket { $value } { $unit } diskplass.
 sitedata-learn-more = Les mer
 sitedata-accept-cookies-option =
     .label = Tillat infokapsler og nettsidedata fra nettsteder (anbefalt)
@@ -689,6 +697,12 @@ permissions-notification-link = Les mer
 permissions-notification-pause =
     .label = Sett varsler på pause til { -brand-short-name } starter på nytt
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Blokker nettsteder fra automatisk å spille av media med lyd
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = Unntak…
+    .accesskey = U
 permissions-block-popups =
     .label = Blokker sprettoppvinduer
     .accesskey = B
@@ -715,6 +729,9 @@ collection-health-report =
     .label = Tillat { -brand-short-name } å sende teknisk- og interaksjonsdata til { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Les mer
+collection-studies =
+    .label = Tillat { -brand-short-name } å installere og kjøre studier
+collection-studies-link = Vis { -brand-short-name }-studier
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datarapportering er deaktivert for denne byggekonfigurasjonen

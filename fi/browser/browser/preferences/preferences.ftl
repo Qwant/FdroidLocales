@@ -145,6 +145,9 @@ startup-blank-page =
     .label = Avaa tyhjä sivu
 startup-prev-session =
     .label = Avaa viime istunnon ikkunat ja välilehdet
+startup-restore-previous-session =
+    .label = Palauta edellinen istunto
+    .accesskey = P
 disable-extension =
     .label = Poista laajennus käytöstä
 home-page-header = Aloitussivu
@@ -400,7 +403,7 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Näytä hakuehdotukset osoitepalkin tuloksissa ennen selaushistoriaa
-search-suggestions-cant-show = Hakuehdotuksia ei näytetä osoitepalkista tehtävistä hauista, koska olet kieltänyt sivuhistorian tallentamisen.
+search-suggestions-cant-show = Hakuehdotuksia ei näytetä osoitepalkista tehtävistä hauista, koska olet valinnut, että { -brand-short-name } ei muista historiaa.
 search-one-click-header = Hakukoneet pikavalikossa
 search-one-click-desc = Valitse vaihtoehtoiset hakukoneet, jotka ilmestyvät osoite- ja hakupalkin alalaitaan, kun alat kirjoittaa hakusanoja.
 search-choose-engine-column =
@@ -533,7 +536,7 @@ privacy-header = Selaimen tietosuoja
 
 forms-header = Lomakkeet ja salasanat
 forms-ask-to-save-logins =
-    .label = Ehdota verkkosivustojen käyttäjätunnusten ja salasanojen tallentamista
+    .label = Ehdota sivustojen käyttäjätunnusten ja salasanojen tallentamista
     .accesskey = v
 forms-exceptions =
     .label = Poikkeukset…
@@ -576,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Säilytä selaushistoria ja tieto latauksista
     .accesskey = ä
+history-remember-browser-option =
+    .label = Säilytä selaushistoria ja tieto latauksista
+    .accesskey = ä
 history-remember-search-option =
     .label = Säilytä lomakkeiden ja hakupalkin tiedot
     .accesskey = d
@@ -592,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Evästeet ja sivustotiedot
+sitedata-total-size-calculating = Lasketaan sivustotietojen ja välimuistin kokoa…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Evästeet, sivustotiedot ja välimuisti vievät tällä hetkellä { $value } { $unit } levytilaa.
 sitedata-learn-more = Lue lisää
 sitedata-accept-cookies-option =
     .label = Hyväksy evästeet ja sivustotiedot sivustoilta (suositus)
@@ -686,6 +697,12 @@ permissions-notification-link = Lue lisää
 permissions-notification-pause =
     .label = Älä näytä ilmoituksia ennen kuin { -brand-short-name } uudelleenkäynnistetään
     .accesskey = k
+permissions-block-autoplay-media =
+    .label = Estä sivustot toistamasta äänellistä mediaa automaattisesti
+    .accesskey = E
+permissions-block-autoplay-media-exceptions =
+    .label = Poikkeukset…
+    .accesskey = P
 permissions-block-popups =
     .label = Estä ponnahdusikkunat
     .accesskey = E
@@ -712,6 +729,9 @@ collection-health-report =
     .label = Salli, että { -brand-short-name } lähettää teknisiä ja käyttötilastoja { -vendor-short-name }lle
     .accesskey = S
 collection-health-report-link = Lue lisää
+collection-studies =
+    .label = Salli, että { -brand-short-name } asentaa ja suorittaa tutkimuksia
+collection-studies-link = Näytä { -brand-short-name }-tutkimukset
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Tietojen kerääminen ei ole käytössä tässä koostamiskokoonpanossa

@@ -25,6 +25,19 @@ site-data-button-cancel =
 site-data-button-save =
     .label = ບັນທຶກການປ່ຽນແປງ
     .accesskey = a
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+site-usage-pattern = { $value } { $unit }
+site-data-remove-all =
+    .label = ລຶບທັງໝົດອອກ
+    .accesskey = ທ
+site-data-remove-shown =
+    .label = ລຶບທີ່ສະແດງທັງຫມົດອອກ
+    .accesskey = ທ
 
 ## Removing
 
+site-data-removing-dialog =
+    .title = { site-data-removing-header }
+    .buttonlabelaccept = ລຶບອອກ

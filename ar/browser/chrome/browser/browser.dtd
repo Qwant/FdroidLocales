@@ -35,6 +35,9 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "أغلق الألسنة الأخرى">
 <!ENTITY  closeOtherTabs.accesskey           "خ">
 
+<!ENTITY  closeSelectedTabs.label            "أغلق الألسنة المنتقاة">
+<!ENTITY  closeSelectedTabs.accesskey        "غ">
+
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
 used as a metaphor for expressing the fact that these tabs are "pinned" to the
 left edge of the tabstrip. Really we just want the string to express the idea
@@ -54,6 +57,8 @@ can reach it easily. -->
 <!ENTITY  sendToDeviceOfflineFeedback.label  "مصطف (غير متصل)">
 <!ENTITY  moveToNewWindow.label              "انقل إلى نافذة جديدة">
 <!ENTITY  moveToNewWindow.accesskey          "ذ">
+<!ENTITY  reopenInContainer.label            "أعِد فتحها في الحاوية">
+<!ENTITY  reopenInContainer.accesskey        "ع">
 <!ENTITY  bookmarkAllTabs.label              "علّم كل الألسنة…">
 <!ENTITY  bookmarkAllTabs.accesskey          "س">
 <!ENTITY  undoCloseTab.label                 "أعِد فتح اللسان">
@@ -129,7 +134,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllTabsCmd.label "أظهِر كل الألسنة">
 <!ENTITY showAllTabsCmd.accesskey "ك">
 <!ENTITY toggleReaderMode.key "R">
-
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
 <!ENTITY fxaSignIn.label "لِج إلى &syncBrand.shortName.label;">
@@ -189,10 +193,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY otherBookmarksCmd.label "العلامات الأخرى">
 <!ENTITY mobileBookmarksCmd.label "علامات المحمول">
 <!ENTITY bookmarksToolbarChevron.tooltip "أظهِر المزيد من العلامات">
-<!ENTITY showRecentlyBookmarked.label     "أظهر المعلّم حديثا">
-<!ENTITY showRecentlyBookmarked.accesskey "ظ">
-<!ENTITY hideRecentlyBookmarked.label     "أخفِ المعلّم حديثا">
-<!ENTITY hideRecentlyBookmarked.accesskey "خ">
 
 <!ENTITY backCmd.label                "السابق">
 <!ENTITY backCmd.accesskey            "س">
@@ -234,7 +234,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translateNotificationAnchor.tooltip       "ترجم هذه الصفحة">
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "أدِر ترجمة الصفحة">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "أدِر استخدام برمجيات إدارة الحقوق الرقمية">
-
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "افتح لوحة MIDI">
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "لقد حجبت كمرتك عن هذا الموقع.">
@@ -245,7 +244,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "لقد حجبت الحفظ الدائم للبيانات عن هذا الموقع.">
 <!ENTITY urlbar.popupBlocked.tooltip             "لقد حجبت المنبثقات من هذا الموقع.">
 <!ENTITY urlbar.canvasBlocked.tooltip            "لقد منعت استخراج بيانات رقعة الرسم في هذا الموقع.">
-
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "لقد حجبت هذا الموقع من استخدام ملحقة أدوبي فلاش.">
 <!ENTITY urlbar.midiBlocked.tooltip              "لقد حجبنا عن هذا الموقع الوصول إلى MIDI.">
 
@@ -255,6 +253,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "البداية">
+
+<!ENTITY homeButton.defaultPage.tooltip "صفحة &brandShortName; الرئيسية">
 
 <!ENTITY bookmarksButton.label          "العلامات">
 <!ENTITY bookmarksCmd.commandkey "b">
@@ -395,7 +395,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "أتريد رؤية ألسنتك من الأجهزة الأخرى هنا؟">
-<!ENTITY appMenuRemoteTabs.openprefs.label "تفضيلات المزامنة">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "افتح تفضيلات «تزامُن»">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "لِج لعرض قائمة بالألسنة من أجهزتك الأخرى.">
 <!ENTITY appMenuRemoteTabs.unverified.label "يجب تأكيد حسابك.">
@@ -437,6 +436,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.addMoreItems.label "أضف المزيد من العناصر…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "ض">
 
+<!ENTITY customizeMenu.autoHideDownloadsButton.label "أخفِ تلقائيا في شريط الأدوات">
+<!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "خ">
+<!ENTITY customizeMenu.manageExtension.label "أدِر الامتداد">
+<!ENTITY customizeMenu.manageExtension.accesskey "د">
+
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
     secondary commands. -->
@@ -444,7 +448,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY openCmd.commandkey           "l">
 <!ENTITY urlbar.placeholder2          "ابحث أو أدخل عنوانا">
-<!ENTITY urlbar.placeholder3          "أدخِل مصطلحات البحث والعناوين هنا">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "الامتداد:">
@@ -798,6 +801,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.moreInfoLinkText2 "المزيد من المعلومات">
 
+<!ENTITY identity.clearSiteData "امسح الكعكات و بيانات المواقع…">
+
 <!ENTITY identity.permissions "التّصاريح">
 <!ENTITY identity.permissionsEmpty "لم تمنح هذا الموقع أي صلاحيات خاصة.">
 <!ENTITY identity.permissionsReloadHint "قد تحتاج إعادة تحميل الصفحة لتطبيق التغييرات.">
@@ -901,6 +906,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.allWindowsShared.message "ستُشارك كل النوافذ الظاهرة على شاشتك.">
 
 <!ENTITY trackingProtection.title "الحماية من التعقّب">
+<!ENTITY trackingProtection.tooltip "افتح تفضيلات الحماية من التعقّب">
 <!ENTITY trackingProtection.detectedBlocked3 "يحجب &brandShortName; أجزاءً من الصفحة ربما تتعقب تصفّحك.">
 <!ENTITY trackingProtection.detectedNotBlocked3 "في هذا الموقع عناصر قد تتعقّب تصفّحك. لقد عطّلتَ الحماية.">
 <!ENTITY trackingProtection.notDetected3 "لم تُكتشف أيّة عناصر تعقّب في هذه الصفحة.">
@@ -988,14 +994,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateRestart.cancelButton.accesskey "ل">
 <!ENTITY updateRestart.panelUI.label2 "أعد التشغيل لتحديث &brandShorterName;">
 
-<!ENTITY newTabControlled.message "ثمة امتداد غيّر الصفحة التي تراها عند فتح لسان جديد. يمكنك استعادة الإعداد السابق إن لم تقبل بهذا التغيير.">
-
 <!ENTITY newTabControlled.header.message "لقد تغيرت صفحة اللسان الجديد.">
 <!ENTITY newTabControlled.keepButton.label "أبقِ التغييرات">
 <!ENTITY newTabControlled.keepButton.accesskey "غ">
-<!ENTITY newTabControlled.restoreButton.label "استعد ما كان">
-<!ENTITY newTabControlled.restoreButton.accesskey "ك">
-
 <!ENTITY newTabControlled.disableButton.label "عطّل الامتداد">
 <!ENTITY newTabControlled.disableButton.accesskey "ط">
 
@@ -1005,6 +1006,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY homepageControlled.keepButton.accesskey "غ">
 <!ENTITY homepageControlled.disableButton.label "عطّل الامتداد">
 <!ENTITY homepageControlled.disableButton.accesskey "ط">
+
+<!ENTITY tabHideControlled.header.message "توصّل إلى الألسنة المخفية">
+<!ENTITY tabHideControlled.keepButton.label "أبقِ الألسنة مخفية">
+<!ENTITY tabHideControlled.keepButton.accesskey "ق">
+<!ENTITY tabHideControlled.disableButton.label "عطّل الامتداد">
+<!ENTITY tabHideControlled.disableButton.accesskey "ع">
 
 <!ENTITY pageActionButton.tooltip "إجراءات الصفحة">
 <!ENTITY pageAction.addToUrlbar.label "أضف إلى شريط العناوين">

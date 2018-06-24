@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 16em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } non è il browser predefinito
 set-as-my-default-browser =
     .label = Imposta come browser predefinito…
     .accesskey = o
-startup-page = Quando si avvia { -brand-short-name }
-    .accesskey = Q
-startup-user-homepage =
-    .label = Mostra la pagina iniziale
-startup-blank-page =
-    .label = Mostra una pagina vuota
-startup-prev-session =
-    .label = Mostra le finestre e le schede dell’ultima sessione
 startup-restore-previous-session =
     .label = Ripristina la sessione precedente
     .accesskey = R
 disable-extension =
     .label = Disattiva estensione
-home-page-header = Pagina iniziale
 tabs-group-header = Schede
 ctrl-tab-recently-used-order =
     .label = Scorri le schede con Ctrl+Tab ordinandole in base all’utilizzo più recente
@@ -270,7 +253,6 @@ play-drm-content =
 play-drm-content-learn-more = Ulteriori informazioni
 update-application-title = Aggiornamenti di { -brand-short-name }
 update-application-description = Mantieni { -brand-short-name } aggiornato per garantire il massimo in termini di prestazioni, stabilità e sicurezza.
-update-application-info = Versione { $version } <a>Novità</a>
 update-application-version = Versione { $version } <a data-l10n-name="learn-more">Novità</a>
 update-history =
     .label = Mostra cronologia aggiornamenti…
@@ -306,7 +288,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Numero massimo di processi per i contenuti
     .accesskey = o
 performance-limit-content-process-enabled-desc = Un numero maggiore di processi per la gestione dei contenuti può migliorare le prestazioni quando si utilizzano molte schede, comportando però un maggiore utilizzo di memoria.
-performance-limit-content-process-disabled-desc = È possibile modificare il numero di processi per i contenuti solo se è attiva la modalità multiprocesso di { -brand-short-name }. <a>Scopri come verificare se la modalità multiprocesso è attiva</a>
 performance-limit-content-process-blocked-desc = È possibile modificare il numero di processi per i contenuti solo se è attiva la modalità multiprocesso di { -brand-short-name }. <a data-l10n-name="learn-more">Scopri come verificare se la modalità multiprocesso è attiva</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -377,9 +358,6 @@ use-current-pages =
 choose-bookmark =
     .label = Usa un segnalibro…
     .accesskey = b
-restore-default =
-    .label = Ripristina la pagina predefinita
-    .accesskey = f
 
 ## Search Section
 
@@ -579,6 +557,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Conserva la cronologia di navigazione e dei download
     .accesskey = d
+history-remember-browser-option =
+    .label = Conserva la cronologia di navigazione e dei download
+    .accesskey = d
 history-remember-search-option =
     .label = Conserva la cronologia delle ricerche e dei moduli
     .accesskey = g
@@ -595,6 +576,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookie e dati dei siti web
+sitedata-total-size-calculating = Calcolo dimensioni…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = I cookie, i dati salvati dai siti web e la cache stanno utilizzando { $value } { $unit } di spazio su disco
 sitedata-learn-more = Ulteriori informazioni
 sitedata-accept-cookies-option =
     .label = Accetta cookie e dati dai siti web (consigliato)
@@ -689,6 +675,12 @@ permissions-notification-link = Ulteriori informazioni
 permissions-notification-pause =
     .label = Sospendi notifiche fino al riavvio di { -brand-short-name }
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Impedisci ai siti web di riprodurre automaticamente contenuti multimediali con audio
+    .accesskey = m
+permissions-block-autoplay-media-exceptions =
+    .label = Eccezioni…
+    .accesskey = E
 permissions-block-popups =
     .label = Blocca le finestre pop-up
     .accesskey = B
@@ -715,6 +707,9 @@ collection-health-report =
     .label = Consenti a { -brand-short-name } di inviare a { -vendor-short-name } dati tecnici e relativi all’interazione con il browser
     .accesskey = v
 collection-health-report-link = Ulteriori informazioni
+collection-studies =
+    .label = Consenti a { -brand-short-name } di installare e condurre studi
+collection-studies-link = Visualizza studi di { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = L’invio dei dati è stato disattivato nella configurazione utilizzata per questa build

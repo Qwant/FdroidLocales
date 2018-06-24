@@ -344,6 +344,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Finestres i pestanyes noves
+home-new-windows-tabs-description2 = Trieu què voleu veure en obrir la pàgina d'inici, finestres noves i pestanyes noves.
 
 ## Home Section - Home Page Customization
 
@@ -534,6 +535,9 @@ privacy-header = Privadesa del navegador
 ## Privacy Section - Forms
 
 forms-header = Formularis i contrasenyes
+forms-ask-to-save-logins =
+    .label = Demana si vull desar les dades d'inici de sessió i contrasenyes dels llocs web
+    .accesskey = d
 forms-exceptions =
     .label = Excepcions…
     .accesskey = x
@@ -575,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Recorda el meu historial de navegació i de baixades
     .accesskey = b
+history-remember-browser-option =
+    .label = Recorda l'historial de navegació i de baixades
+    .accesskey = b
 history-remember-search-option =
     .label = Recorda l'historial de cerques i de formularis
     .accesskey = f
@@ -591,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Galetes i dades dels llocs
+sitedata-total-size-calculating = S'està calculant la mida de les dades dels llocs i de la memòria cau…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Les galetes, les dades dels llocs i la memòria cau actualment ocupen { $value } { $unit } d'espai de disc.
 sitedata-learn-more = Més informació
 sitedata-accept-cookies-option =
     .label = Accepta les galetes i dades dels llocs web (recomanat)
@@ -711,6 +723,9 @@ collection-health-report =
     .label = Permet que el { -brand-short-name } enviï dades tècniques i d'interacció a { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Més informació
+collection-studies =
+    .label = Permet al { -brand-short-name } instal·lar i executar estudis
+collection-studies-link = Mostra els estudis del { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = L'informe de dades està desactivat en la configuració d'aquesta versió

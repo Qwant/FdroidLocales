@@ -473,7 +473,7 @@ sync-resend-verification =
     .accesskey = r
 sync-remove-account =
     .label = Remover conta
-    .accesskey = p
+    .accesskey = R
 sync-sign-in =
     .label = Iniciar sessão
     .accesskey = c
@@ -579,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Memorizar o meu histórico de navegação e de transferências
     .accesskey = h
+history-remember-browser-option =
+    .label = Memorizar histórico de navegação e de transferências
+    .accesskey = z
 history-remember-search-option =
     .label = Memorizar histórico de pesquisas e de formulários
     .accesskey = f
@@ -595,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies e dados de sites
+sitedata-total-size-calculating = A calcular tamanho dos dados de sites e cache…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Os seus cookies, dados de sites e cache estão atualmente a utilizar { $value } { $unit } de espaço em disco.
 sitedata-learn-more = Saber mais
 sitedata-accept-cookies-option =
     .label = Aceitar cookies e dados de sites de websites (recomendado)
@@ -689,6 +697,12 @@ permissions-notification-link = Saber mais
 permissions-notification-pause =
     .label = Pausar notificações até o { -brand-short-name } reiniciar
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Bloquear websites de reproduzir multimédia automaticamente com som
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = Exceções…
+    .accesskey = E
 permissions-block-popups =
     .label = Bloquear janelas pop-up
     .accesskey = B
@@ -715,6 +729,9 @@ collection-health-report =
     .label = Permitir ao { -brand-short-name } enviar dados técnicos e de interação para a { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Saber mais
+collection-studies =
+    .label = Permitir ao { -brand-short-name } instalar e executar estudos
+collection-studies-link = Ver estudos do { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Relato de dados está desativado para a configuração desta compilação

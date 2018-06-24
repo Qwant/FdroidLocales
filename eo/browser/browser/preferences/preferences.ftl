@@ -145,6 +145,9 @@ startup-blank-page =
     .label = Montri malplenan paĝon
 startup-prev-session =
     .label = Montri viajn lastajn fenestrojn kaj langetojn
+startup-restore-previous-session =
+    .label = Restarigi antaŭan seancon
+    .accesskey = R
 disable-extension =
     .label = Malaktivigi etendaĵon
 home-page-header = Eka paĝo
@@ -576,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Memori mian historion de retumo kaj elŝutoj
     .accesskey = h
+history-remember-browser-option =
+    .label = Memori retuman kaj elŝutan historiojn
+    .accesskey = r
 history-remember-search-option =
     .label = Memori historion de serĉadoj kaj formularoj
     .accesskey = s
@@ -592,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Kuketoj kaj retejaj datumoj
+sitedata-total-size-calculating = Kalkulo de datuma kaj stapla grando de retejo…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Viaj konservitaj kuketoj, retejaj datumoj kaj staplo uzas nuntempe { $value } { $unit } da diska spaco.
 sitedata-learn-more = Pli da informo
 sitedata-accept-cookies-option =
     .label = Akcepti kuketojn kaj retejajn datumon de retejoj (rekomendita)
@@ -712,6 +723,9 @@ collection-health-report =
     .label = Permesi al { -brand-short-name } sendi teĥnikajn kaj interagajn datumojn al { -vendor-short-name }
     .accesskey = P
 collection-health-report-link = Pli da informo
+collection-studies =
+    .label = Permesi al { -brand-short-name } instali kaj fari studojn
+collection-studies-link = Vidi studojn de { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = La raporto de datumoj estas malŝaltita pro la agordoj de konstruo

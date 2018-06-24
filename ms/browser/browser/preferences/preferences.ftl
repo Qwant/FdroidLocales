@@ -567,6 +567,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Ingat semua lawan sesawang yang telah dikunjungi dan segala benda yang telah dimuat turun
     .accesskey = b
+history-remember-browser-option =
+    .label = Ingat sejarah pelayaran dan muat turun
+    .accesskey = p
 history-remember-search-option =
     .label = Ingat sejarah dan borang sejarah
     .accesskey = h
@@ -583,6 +586,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Kuki dan Data Laman
+sitedata-total-size-calculating = Mengira saiz data dan cache laman…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Kuki, data laman dan cache yang disimpan kini menggunakan { $value } { $unit } daripada ruang cakera.
 sitedata-learn-more = Ketahui selanjutnya
 sitedata-accept-cookies-option =
     .label = Terima kuki dan data laman dari laman web (disyorkan)
@@ -677,6 +685,12 @@ permissions-notification-link = Ketahui selanjutnya
 permissions-notification-pause =
     .label = Jeda notifikasi hingga { -brand-short-name } mula semula
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Sekat laman web daripada secara automatik memainkan media beserta muzik
+    .accesskey = S
+permissions-block-autoplay-media-exceptions =
+    .label = Pengecualian…
+    .accesskey = P
 permissions-block-popups =
     .label = Sekat tetingkap popup
     .accesskey = S
@@ -703,6 +717,9 @@ collection-health-report =
     .label = Izinkan{ -brand-short-name } supaya secara automatik akan menghantarkan data teknikal dan interaksi kepada { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Ketahui selanjutnya
+collection-studies =
+    .label = Izinkan { -brand-short-name } untuk memasang dan melaksanakan kajian
+collection-studies-link = Papar kajian { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Laporan data dinyahdayakan bagi konfigurasi binaan ini

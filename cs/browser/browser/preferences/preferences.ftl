@@ -582,6 +582,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Pamatovat si historii stránek a stahování
     .accesskey = s
+history-remember-browser-option =
+    .label = Pamatovat si historii stránek a stahování
+    .accesskey = s
 history-remember-search-option =
     .label = Pamatovat si historii hledání a formulářů
     .accesskey = f
@@ -598,6 +601,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies a data stránek
+sitedata-total-size-calculating = Výpočet velikosti mezipaměti a dat stránek…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Velikost cookies, dat uložených stránkami a mezipaměti je { $value } { $unit }.
 sitedata-learn-more = Zjistit více
 sitedata-accept-cookies-option =
     .label = Povolit serverům ukládat cookies a data stránek (doporučeno)
@@ -692,6 +700,12 @@ permissions-notification-link = Zjistit více
 permissions-notification-pause =
     .label = Zakázat oznámení do restartu aplikace { -brand-short-name }
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Zabránit stránkám v automatickém přehrávání médií se zvukem
+    .accesskey = b
+permissions-block-autoplay-media-exceptions =
+    .label = Výjimky…
+    .accesskey = y
 permissions-block-popups =
     .label = Blokovat vyskakovací okna
     .accesskey = B
@@ -718,6 +732,9 @@ collection-health-report =
     .label = Povolit aplikaci { -brand-short-name } odesílat Mozille technická data a data o interakcích
     .accesskey = z
 collection-health-report-link = Zjistit více
+collection-studies =
+    .label = Povolit aplikaci { -brand-short-name } instalovat studie
+collection-studies-link = Zobrazit studie aplikace { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Odesílání dat je zakázáno konfigurací tohoto sestavení

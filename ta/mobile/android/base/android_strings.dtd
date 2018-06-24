@@ -70,6 +70,15 @@
 
 <!ENTITY url_bar_default_text2 "தேடு/முகவரியை உள்ளிடு">
 
+<!-- Localization note (url_bar_qrcode_text2) : This text will be
+     heard by non-visual users when the focus is on the QR Code
+     icon in the url bar. -->
+<!ENTITY url_bar_qrcode_text2 "முகவரியைத் தேட அல்லது உள்ளிட கியூஆர் படிப்பானைப் பயன்படுத்துங்கள்">
+<!-- Localization note (url_bar_mic_text2) : This text will be
+     heard by non-visual users when the focus is on the Microphone
+     icon in the url bar. -->
+<!ENTITY url_bar_mic_text2 "முகவரியைத் தேட அல்லது உள்ளிட ஒலிவாங்கியைப் பயன்படுத்துங்கள்">
+
 <!ENTITY bookmark "புத்தகக்குறி">
 <!ENTITY bookmark_remove "புத்தகக்குறியை நீக்கு">
 <!ENTITY bookmark_added "புத்தகக்குறி சேர்க்கப்பட்டது">
@@ -207,6 +216,7 @@
 <!ENTITY pref_category_advanced_summary3 "கீற்றுகளை மீட்டமை, தரவு சேமி, உருவாக்குநர் கருவிகள்">
 <!ENTITY pref_category_notifications "அறிவிப்புகள்">
 <!ENTITY pref_category_notifications_summary "புதிய வசதிகள், வலைத்தள புதுப்பிப்புகள்">
+<!ENTITY pref_category_notifications_summary2 "புதிய அம்சங்கள், தயாரிப்பு குறிப்புகள்">
 <!ENTITY pref_developer_remotedebugging_usb "USB மூலமாக தொலைநிலை வழுநீக்கல்">
 <!ENTITY pref_developer_remotedebugging_wifi "அருகலை வழி வழுநீக்கம்">
 <!ENTITY pref_developer_remotedebugging_wifi_disabled_summary "அருகலை ஊடாக வழுநீக்க உங்கள் கருவியில் QR குறி படிக்கும் செயலி நிறுவப்பட்டிருக்க வேண்டும்.">
@@ -543,7 +553,7 @@
 <!ENTITY pref_compact_tabs_summary2 "உருவப்பட முறையில் இரண்டு பத்திகளில் கீற்றுகளை ஏற்பாடு செய்">
 
 <!-- Localization note (page_removed): This string appears in a toast message when
-     any page is removed frome about:home. This includes pages that are in history,
+     any page is removed from about:home. This includes pages that are in history,
      bookmarks, or reading list. -->
 <!ENTITY page_removed "பக்கம் நீக்கப்பட்டது">
 <!ENTITY folder_removed "அடைவு நீக்கப்பட்டது">
@@ -758,7 +768,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
      "Last synced" is one of the user's other Sync clients, typically Firefox on
      their desktop or laptop.-->
 <!ENTITY remote_tabs_last_synced "கடைசி ஒத்தசைவு: &formatS;">
-<!-- Localization note: Used when the sync has not happend yet, showed in place of a date -->
+<!-- Localization note: Used when the sync has not happened yet, showed in place of a date -->
 <!ENTITY remote_tabs_never_synced "கடைசி ஒத்திசைவு: இல்லை">
 
 <!-- LOCALIZATION NOTE (intent_uri_private_browsing_prompt): This string will
@@ -876,5 +886,5 @@ is simply hidden from the Activity Stream panel. -->
 displayed when there are more than 3 actions available for a page.
 See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "முகப்பு திரையில் சேர்">
-<!ENTITY pwa_continue_to_website "இணையத்தளத்தில் தொடர்">
+<!ENTITY pwa_continue_to_website "தளத்திற்குத் தொடர்">
 <!ENTITY pwa_onboarding_sumo "விரைவான அணுகல் மற்றும் செயலி போன்ற அனுபவத்துடன் விரைவாக உலாவ நீங்கள் இந்த வலைப்பக்கத்தை உங்கள் முகப்பு திரையில் எளிதில் சேர்க்கலாம்.">

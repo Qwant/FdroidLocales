@@ -579,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Conserver l’historique de navigation et des téléchargements
     .accesskey = C
+history-remember-browser-option =
+    .label = Conserver l’historique de navigation et des téléchargements
+    .accesskey = C
 history-remember-search-option =
     .label = Conserver l’historique des recherches et des formulaires
     .accesskey = n
@@ -595,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies et données de sites
+sitedata-total-size-calculating = Calcul du volume des données de sites et du cache…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Le stockage des cookies, du cache et des données de sites utilise actuellement { $value } { $unit } d’espace disque.
 sitedata-learn-more = En savoir plus
 sitedata-accept-cookies-option =
     .label = Accepter les cookies et les données de sites (recommandé)
@@ -689,6 +697,12 @@ permissions-notification-link = En savoir plus
 permissions-notification-pause =
     .label = Arrêter les notifications jusqu’au redémarrage de { -brand-short-name }
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Empêcher les sites web de lancer automatiquement la lecture d’éléments multimédia avec du son
+    .accesskey = E
+permissions-block-autoplay-media-exceptions =
+    .label = Exceptions…
+    .accesskey = x
 permissions-block-popups =
     .label = Bloquer les fenêtres popup
     .accesskey = B
@@ -709,12 +723,15 @@ permissions-a11y-privacy-link = En savoir plus
 ## Privacy Section - Data Collection
 
 collection-header = Collecte de données par { -brand-short-name } et utilisation
-collection-description = Nous nous efforçons de vous laisser le choix et de recueillir uniquement les informations dont nous avons besoin pour proposer et améliorer { -brand-short-name } pour tout le monde. Nous demandons toujours votre permission avant de recevoir des données personnelles.
+collection-description = Nous nous efforçons de vous laisser le choix et de recueillir uniquement les informations dont nous avons besoin pour proposer { -brand-short-name } et l’améliorer pour tout le monde. Nous demandons toujours votre permission avant de recevoir des données personnelles.
 collection-privacy-notice = Politique de confidentialité
 collection-health-report =
     .label = Autoriser { -brand-short-name } à envoyer des données techniques et des données d’interaction à { -vendor-short-name }
     .accesskey = A
 collection-health-report-link = En savoir plus
+collection-studies =
+    .label = Autoriser { -brand-short-name } à installer et à lancer des études
+collection-studies-link = Consulter les études de { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = L’envoi de données est désactivé pour cette configuration de compilation

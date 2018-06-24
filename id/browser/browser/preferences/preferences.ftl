@@ -146,8 +146,8 @@ startup-blank-page =
 startup-prev-session =
     .label = Tampilkan jendela dan tab dari sesi terakhir Anda
 startup-restore-previous-session =
-    .label = Memulihkan sesi sebelumnya
-    .accesskey = s
+    .label = Pulihkan sesi sebelumnya
+    .accesskey = P
 disable-extension =
     .label = Nonaktifkan Ekstensi
 home-page-header = Beranda
@@ -197,8 +197,8 @@ default-font = Fon baku
 default-font-size = Ukuran
     .accesskey = U
 advanced-fonts =
-    .label = Canggih…
-    .accesskey = g
+    .label = Lebih lanjut…
+    .accesskey = L
 colors-settings =
     .label = Warna…
     .accesskey = W
@@ -567,6 +567,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Ingat riwayat penjelajahan dan unduhan saya
     .accesskey = r
+history-remember-browser-option =
+    .label = Ingat riwayat penjelajahan dan unduhan
+    .accesskey = r
 history-remember-search-option =
     .label = Simpan riwayat pencarian dan isian form
     .accesskey = i
@@ -583,6 +586,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Kuki dan Data Situs
+sitedata-total-size-calculating = Menghitung ukuran data situs dan tembolok…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Kuki, data situs tersimpan, dan tembolok Anda saat ini menggunakan ruang penyimpanan { $value } { $unit }.
 sitedata-learn-more = Pelajari lebih lanjut
 sitedata-accept-cookies-option =
     .label = Terima kuki dan situs data dari situs web (direkomendasikan)
@@ -677,6 +685,12 @@ permissions-notification-link = Pelajari lebih lanjut
 permissions-notification-pause =
     .label = Jeda notifikasi hingga { -brand-short-name } dimulai ulang
     .accesskey = J
+permissions-block-autoplay-media =
+    .label = Blokir situs web untuk memainkan media dengan suara secara otomatis
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = Pengecualian…
+    .accesskey = l
 permissions-block-popups =
     .label = Blokir jendela pop-up
     .accesskey = B
@@ -703,6 +717,9 @@ collection-health-report =
     .label = Izinkan { -brand-short-name } mengirim data teknis dan interaksi ke { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Pelajari Lebih Lanjut
+collection-studies =
+    .label = Izinkan { -brand-short-name } untuk memasang dan menjalankan kajian
+collection-studies-link = Lihat kajian { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Pelaporan data dinonaktifkan untuk konfigurasi build ini

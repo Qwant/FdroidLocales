@@ -145,6 +145,9 @@ startup-blank-page =
     .label = rodyti tuščią puslapį
 startup-prev-session =
     .label = atverti paskiausio seanso langus ir korteles
+startup-restore-previous-session =
+    .label = Atkurti paskiausiąjį seansą
+    .accesskey = r
 disable-extension =
     .label = Išjungti priedą
 home-page-header = Pradžios tinklalapis
@@ -579,6 +582,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Įsiminti lankytus tinklalapius ir parsiųstus failus
     .accesskey = m
+history-remember-browser-option =
+    .label = Įsiminti lankytus tinklalapius ir parsiųstus failus
+    .accesskey = m
 history-remember-search-option =
     .label = Įsiminti įvestas formų ir paieškos laukų reiškmes
     .accesskey = o
@@ -595,6 +601,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Slapukai ir svetainių duomenys
+sitedata-total-size-calculating = Skaičiuojamas svetainių duomenų ir podėlio dydis…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Saugomi slapukai, svetainių duomenys ir podėlis šiuo metu užima { $value } { $unit } disko vietos.
 sitedata-learn-more = Sužinoti daugiau
 sitedata-accept-cookies-option =
     .label = Leisti įrašyti slapukus ir svetainių duomenis (rekomenduojama)
@@ -689,6 +700,12 @@ permissions-notification-link = Sužinoti daugiau
 permissions-notification-pause =
     .label = Nerodyti pranešimų iki kito „{ -brand-short-name }“ paleidimo
     .accesskey = p
+permissions-block-autoplay-media =
+    .label = Drausti svetainėms automatiškai groti medijas su garsu
+    .accesskey = D
+permissions-block-autoplay-media-exceptions =
+    .label = Išimtys…
+    .accesskey = I
 permissions-block-popups =
     .label = Neleisti iškylančiųjų langų
     .accesskey = N
@@ -715,6 +732,9 @@ collection-health-report =
     .label = Leisti „{ -brand-short-name }“ siųsti techninius ir naudojimosi duomenis „{ -vendor-short-name }i“
     .accesskey = t
 collection-health-report-link = Sužinoti daugiau
+collection-studies =
+    .label = Leisti „{ -brand-short-name }“ diegti ir atlikti tyrimus
+collection-studies-link = Peržiūrėti „{ -brand-short-name }“ tyrimus
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Duomenų siuntimas šiai darinio sąrankai yra išjungtas

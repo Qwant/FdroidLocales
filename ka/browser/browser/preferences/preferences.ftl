@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -42,7 +34,7 @@ policies-notice =
         [windows] თქვენს ორგანიზაციას შეზღუდული აქვს გარკვეული პარამეტრების შეცვლის შესაძლებლობა.
        *[other] თქვენს ორგანიზაციას შეზღუდული აქვს გარკვეული პარამეტრების შეცვლის შესაძლებლობა.
     }
-pane-general-title = მთავარი 
+pane-general-title = მთავარი
 category-general =
     .tooltiptext = { pane-general-title }
 pane-home-title = საწყისი გვერდი
@@ -128,7 +120,7 @@ separate-profile-mode =
     .label = { -brand-short-name }-ის და Firefox-ის ერთად გაშვების ნების დართვა
 use-firefox-sync = რჩევა: ეს სხვადასხვა პროფილებს იყენებს. მათ შორის მონაცემების გასაზიარებლად { -sync-brand-short-name } გამოიყენეთ.
 get-started-not-logged-in = { -sync-brand-short-name }-ში შესვლა…
-get-started-configured = { -sync-brand-short-name }-ის პარამეტრების გახსნა
+get-started-configured = სინქრონიზაციის პარამეტრების გახსნა
 always-check-default =
     .label = ყოველთვის შემოწმდეს, არის თუ არა { -brand-short-name } ნაგულისხმევი ბრაუზერი
     .accesskey = ვ
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } ნაგულისხმევი ბ�
 set-as-my-default-browser =
     .label = ნაგულისხმევად მითითება…
     .accesskey = ნ
-startup-page = { -brand-short-name }-ის გაშვებისას
-    .accesskey = ვ
-startup-user-homepage =
-    .label = საწყისი გვერდის ჩვენება
-startup-blank-page =
-    .label = ცარიელი გვერდის ჩვენება
-startup-prev-session =
-    .label = ბოლოს დახურული ფანჯრებისა და ჩანართების ჩვენება
 startup-restore-previous-session =
     .label = წინა სეანსის აღდგენა
     .accesskey = წ
 disable-extension =
     .label = გაფართოების ამორთვა
-home-page-header = საწყისი გვერდი
 tabs-group-header = ჩანართები
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab წრიულად გადართვა ჩანართებზე, ბოლო გამოყენების რიგითობით.
@@ -270,7 +253,6 @@ play-drm-content =
 play-drm-content-learn-more = იხილეთ ვრცლად
 update-application-title = { -brand-short-name }-ის განახლებები
 update-application-description = მუდმივად განაახლეთ { -brand-short-name }, რომ შეინარჩუნოთ წარმადობა, მდგრადობა და უსაფრთხოება.
-update-application-info = ვერსია { $version } <a>რა არის ახალი</a>
 update-application-version = ვერსია { $version } <a data-l10n-name="learn-more">რა არის ახალი</a>
 update-history =
     .label = განახლებების ისტორიის ჩვენება…
@@ -306,7 +288,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = შიგთავსის პროცესების შეზღუდვა
     .accesskey = ზ
 performance-limit-content-process-enabled-desc = შიგთავსის დამატებით პროცესებს, ბევრი ჩანართით სარგებლობისას, შეუძლია წარმადობის გაუმჯობესება, მაგრამ ასევე გამოიყენებს მეტ მეხსიერებას.
-performance-limit-content-process-disabled-desc = შიგთავსის პროცესების რაოდენობის შეცვლა, მხოლოდ მრავალპროცესიან { -brand-short-name }-შია შესაძლებელი. <a>შეიტყვეთ, თუ როგორ უნდა შემოწმდეს ჩართულია თუ არა მრავალპროცესიანობა</a>
 performance-limit-content-process-blocked-desc = შიგთავსის პროცესების რაოდენობის შეცვლა, მხოლოდ მრავალპროცესიან { -brand-short-name }-შია შესაძლებელი. <a data-l10n-name="learn-more">შეიტყვეთ, თუ როგორ უნდა შემოწმდეს ჩართულია თუ არა მრავალპროცესიანობა</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -377,9 +358,6 @@ use-current-pages =
 choose-bookmark =
     .label = სანიშნის გამოყენება…
     .accesskey = ს
-restore-default =
-    .label = ნაგულისხმევი
-    .accesskey = ა
 
 ## Search Section
 
@@ -414,7 +392,7 @@ search-restore-default =
     .label = ნაგულისხმევი საძიებო სისტემების აღდგენა
     .accesskey = ნ
 search-remove-engine =
-    .label = ამოღება
+    .label = ამოშლა
     .accesskey = ა
 search-find-more-link = სხვა საძიებო სისტემების მონახვა
 # This warning is displayed when the chosen keyword is already in use
@@ -435,7 +413,7 @@ containers-add-button =
 containers-preferences-button =
     .label = პარამეტრები
 containers-remove-button =
-    .label = ამოღება
+    .label = წაშლა
 
 ## Sync Section - Signed out
 
@@ -462,8 +440,8 @@ sync-mobile-promo = ჩამოტვირთეთ Firefox <img data-l10n-nam
 sync-profile-picture =
     .tooltiptext = პროფილის სურათის შეცვლა
 sync-disconnect =
-    .label = კავშირის გაწყვეტა…
-    .accesskey = წ
+    .label = გამოთიშვა…
+    .accesskey = გ
 sync-manage-account = ანგარიშის მართვა
     .accesskey = მ
 sync-signedin-unverified = { $email } გადამოწმებული არაა.
@@ -496,7 +474,7 @@ sync-engine-logins =
 sync-engine-addresses =
     .label = მისამართები
     .tooltiptext = შენახული საფოსტო მისამართები (კომპიუტერზე მხოლოდ)
-    .accesskey = ფ
+    .accesskey = მ
 sync-engine-creditcards =
     .label = საკრედიტო ბარათები
     .tooltiptext = სახელები, ნომრები და ვადები (კომპიუტერზე მხოლოდ)
@@ -579,6 +557,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = მონახულებული გვერდებისა და ჩამოტვირთვების ისტორიის დამახსოვრება
     .accesskey = მ
+history-remember-browser-option =
+    .label = გვერდებისა და ჩამოტვირთვების ისტორიის დამახსოვრება
+    .accesskey = გ
 history-remember-search-option =
     .label = ძიებისა და ველების ისტორიის დამახსოვრება
     .accesskey = ვ
@@ -595,6 +576,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = ფუნთუშები და საიტის მონაცემები
+sitedata-total-size-calculating = საიტის მონაცემებისა და კეშის მოცულობის გამოთვლა…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = თქვენ მიერ შენახული ფუნთუშები, საიტის მონაცემები და კეში, ამჟამად დისკზე იკავებს { $value } { $unit } მოცულობას.
 sitedata-learn-more = ვრცლად
 sitedata-accept-cookies-option =
     .label = ფუნთუშებისა და საიტის მონაცემების მიღება (სასურველია)
@@ -689,6 +675,12 @@ permissions-notification-link = ვრცლად
 permissions-notification-pause =
     .label = შეტყობინებების შეჩერება { -brand-short-name }-ის ხელახლა გაშვებამდე
     .accesskey = ჩ
+permissions-block-autoplay-media =
+    .label = ვებსაიტებისთვის, ხმოვანი ვიდეოფაილების თვითგაშვების შეზღუდვა
+    .accesskey = ზ
+permissions-block-autoplay-media-exceptions =
+    .label = გამონაკლისები…
+    .accesskey = ო
 permissions-block-popups =
     .label = ამომხტომი ფირნიშების შეზღუდვა
     .accesskey = დ
@@ -715,6 +707,9 @@ collection-health-report =
     .label = { -brand-short-name }-ისთვის ნების დართვა, გადაუგზავნოს ტექნიკური მონაცემები { -vendor-short-name }-ს
     .accesskey = რ
 collection-health-report-link = იხილეთ ვრცლად
+collection-studies =
+    .label = { -brand-short-name }-ისთვის ნების დართვა, კვლევების დაყენებასა და გამართვაზე
+collection-studies-link = იხილეთ { -brand-short-name } კვლევები
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = მოხსენებები გამორთულია ანაწყობის ამ კონფიგურაციისთვის

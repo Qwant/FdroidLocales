@@ -375,9 +375,9 @@ search-bar-header = 搜尋列
 search-bar-hidden =
     .label = 使用網址列搜尋與上網
 search-bar-shown =
-    .label = 在工具列新增搜尋列
+    .label = 在工具列加入搜尋列
 search-engine-default-header = 預設搜尋引擎
-search-engine-default-desc = 選擇在網址列與搜尋列搜尋時預設使用的搜尋引擎。
+search-engine-default-desc = 請選擇在網址列或搜尋列進行搜尋時，預設要使用的搜尋引擎。
 search-suggestions-option =
     .label = 提供搜尋建議
     .accesskey = s
@@ -466,7 +466,7 @@ sync-sign-in =
     .label = 登入
     .accesskey = g
 sync-signedin-settings-header = 同步設定
-sync-signedin-settings-desc = 選擇要同步哪些資料到您其他使用 { -brand-short-name } 的裝置上。
+sync-signedin-settings-desc = 請選擇要同步哪些資料到您其他使用 { -brand-short-name } 的裝置上。
 sync-engine-bookmarks =
     .label = 書籤
     .accesskey = m
@@ -567,6 +567,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = 保留我的瀏覽與下載記錄
     .accesskey = b
+history-remember-browser-option =
+    .label = 保留瀏覽與下載記錄
+    .accesskey = b
 history-remember-search-option =
     .label = 保留我的搜尋列與表單輸入的內容
     .accesskey = f
@@ -583,6 +586,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookie 與網站資料
+sitedata-total-size-calculating = 正在計算網站資料與快取大小…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = 您儲存的 Cookie、網站資料與快取目前使用了 { $value } { $unit } 磁碟空間
 sitedata-learn-more = 了解更多
 sitedata-accept-cookies-option =
     .label = 接受網站設定的 Cookie 與網站資料（建議）
@@ -677,6 +685,12 @@ permissions-notification-link = 了解更多
 permissions-notification-pause =
     .label = 暫停通知到 { -brand-short-name } 重新啟動後
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = 防止網站自動播放有聲音的媒體內容
+    .accesskey = B
+permissions-block-autoplay-media-exceptions =
+    .label = 例外網站…
+    .accesskey = E
 permissions-block-popups =
     .label = 封鎖彈出型視窗
     .accesskey = B
@@ -703,6 +717,9 @@ collection-health-report =
     .label = 允許 { -brand-short-name } 傳送技術與互動資料給 { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = 更多資訊
+collection-studies =
+    .label = 允許 { -brand-short-name } 安裝並進行研究
+collection-studies-link = 檢視 { -brand-short-name } 所進行的研究
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = 進行編譯設定時，已停用了資料回報功能

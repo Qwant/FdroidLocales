@@ -2,6 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+do-not-track-description = నన్ను వెంబడించవద్దని ఆశిస్తున్నానని వెబ్‌సైట్లకు తెలిసేలా “ట్రాక్ చెయ్యవద్దు” అనే సూచనను పంపించు
 do-not-track-learn-more = ఇంకా తెలుసుకోండి
 do-not-track-option-default =
     .label = ట్రాకింగ్ సంరక్షణ వాడుతున్నప్పుడు మాత్రమే
@@ -13,14 +14,6 @@ pref-page =
             [windows] ఎంపికలు
            *[other] అభిరుచులు
         }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -124,17 +117,11 @@ is-not-default = { -brand-short-name } ప్రస్తుతం మీ అప
 set-as-my-default-browser =
     .label = అప్రమేయం చేయి…
     .accesskey = D
-startup-page = { -brand-short-name } మొదలైనప్పుడు
+startup-restore-previous-session =
+    .label = మునుపటి సెషన్ను పునరుద్ధరించు
     .accesskey = s
-startup-user-homepage =
-    .label = నా ముంగిలి పేజీని చూపించు
-startup-blank-page =
-    .label = ఖాళీ పేజీని చూపించు
-startup-prev-session =
-    .label = చివరిగా మీరు చూసిన విండోలను ట్యాబులను చూపించు
 disable-extension =
     .label = పొడగింతను అచేతనించు
-home-page-header = ముంగిలి పేజీ
 tabs-group-header = ట్యాబులు
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab ట్యాబులను వరుసగా కాకుండా వాటిని ఇటీవల వాడిన క్రమంలో చుట్టుతిప్పుతుంది
@@ -248,7 +235,6 @@ applications-action-column =
     .accesskey = A
 play-drm-content-learn-more = ఇంకా తెలుసుకోండి
 update-application-title = { -brand-short-name } తాజాకరణలు
-update-application-info = సంచిక { $version } <a>కొత్తవి ఏమిటి</a>
 update-application-version = సంచిక { $version } <a data-l10n-name="learn-more">కొత్తవి ఏమిటి</a>
 update-history =
     .label = తాజాకరణ చరిత్రను చూపించు…
@@ -351,9 +337,6 @@ use-current-pages =
 choose-bookmark =
     .label = ఇష్టాంశాన్ని వాడు…
     .accesskey = B
-restore-default =
-    .label = అప్రమేయాలను పునరుద్ధరించు
-    .accesskey = R
 
 ## Search Section
 
@@ -366,6 +349,9 @@ search-engine-default-header = అప్రమేయ శోధన యంత్�
 search-suggestions-option =
     .label = వెతుకుడు సలహాలను చూపించు
     .accesskey = s
+search-show-suggestions-url-bar-option =
+    .label = వెతుకుడు సూచనలను చిరునామా పట్టీ ఫలితాలలో చూపించు
+    .accesskey = l
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
 # that extend down from the address bar. In the original English string,
@@ -458,7 +444,7 @@ sync-engine-tabs =
     .tooltiptext = సింకైన అన్ని పరికరాల్లో తెరిచివున్న వాటి జాబితా
     .accesskey = T
 sync-engine-logins =
-    .label = లాగిన్ లు
+    .label = ప్రవేశాలు
     .tooltiptext = మీరు భద్రపరచుకున్న వాడుకరి పేర్లూ, సంకేతపదాలు
     .accesskey = L
 sync-engine-addresses =
@@ -546,6 +532,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = నా విహరణ, దింపుకోలు చరిత్రను గుర్తుంచుకో
     .accesskey = b
+history-remember-browser-option =
+    .label = విహరణ, దింపుకోలు చరిత్రను గుర్తుపెట్టుకో
+    .accesskey = b
 history-remember-search-option =
     .label = నా శోధన, ఫారాల చరిత్రని గుర్తుపెట్టుకో
     .accesskey = f
@@ -562,6 +551,7 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = కుకీలు మరియు సైటు డేటా
+sitedata-total-size-calculating = సైటు దత్తాంశం, కాషెల పరిమాణాన్ని లెక్కిస్తున్నాం…
 sitedata-learn-more = మరింత తెలుసుకోండి
 sitedata-accept-cookies-option =
     .label = వెబ్‌సైట్ల నుండి కుకీలు, సైటు దత్తాంశాన్ని అంగీకరించు (సిఫార్సు చేయబడింది)
@@ -652,6 +642,9 @@ permissions-notification-settings =
     .label = అమరికలు…
     .accesskey = n
 permissions-notification-link = ఇంకా తెలుసుకోండి
+permissions-block-autoplay-media-exceptions =
+    .label = మినహాయింపులు…
+    .accesskey = E
 permissions-block-popups =
     .label = పాప్-అప్ విండోలను నిరోధించు
     .accesskey = B

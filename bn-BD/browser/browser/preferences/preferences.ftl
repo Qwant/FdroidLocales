@@ -145,6 +145,9 @@ startup-blank-page =
     .label = ফাঁকা পাতা দেখাও
 startup-prev-session =
     .label = শেষবারের উইন্ডো ও ট্যাব দেখাবে
+startup-restore-previous-session =
+    .label = পূর্ববর্তী সেশন পুনরুদ্ধার
+    .accesskey = s
 disable-extension =
     .label = এক্সটেনশনটি নিষ্ক্রিয় করুন
 home-page-header = নীড় পাতা
@@ -592,6 +595,7 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = কুকি এবং সাইট ডাটা
+sitedata-total-size-calculating = সাইট ডাটা এবং ক্যাশ সাইজ গণনা করা হচ্ছে…
 sitedata-learn-more = আরও জানুন
 sitedata-accept-cookies-option =
     .label = ওয়েবসাইট থেকে কুকি ও সাইট ডাটা গ্রহণ করুন (সুপারিশকৃত)
@@ -686,6 +690,9 @@ permissions-notification-link = আরও জানুন
 permissions-notification-pause =
     .label = নোটিফিকেশন বন্ধ রাখো যতক্ষণ না { -brand-short-name } রিস্টার্ট হয়
     .accesskey = n
+permissions-block-autoplay-media-exceptions =
+    .label = ব্যতিক্রম…
+    .accesskey = E
 permissions-block-popups =
     .label = পপ-আপ উইন্ডো ব্লক করা হবে B
     .accesskey = B

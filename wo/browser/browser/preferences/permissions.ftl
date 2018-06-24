@@ -18,3 +18,41 @@ permissions-status =
 permissions-button-cancel =
     .label = Neenal
     .accesskey = N
+permissions-capabilities-allow =
+    .label = May
+permissions-capabilities-block =
+    .label = Boloke
+
+## Invalid Hostname Dialog
+
+permissions-invalid-uri-title = Tur bu jaaduwul
+permissions-invalid-uri-label = Dugalal tur bu jaadu
+
+## Exceptions - Tracking Protection
+
+
+## Exceptions - Cookies
+
+
+## Exceptions - Pop-ups
+
+permissions-exceptions-popup-desc = Mën nga wone dalub web yi ñu may ñu ubbi ay palanteeru popup. Roofal màkaanu dal bi nga bëgg may te nga cuq ci may.
+
+## Exceptions - Saved Logins
+
+
+## Exceptions - Add-ons
+
+permissions-exceptions-addons-desc = Mën nga wone dalub web yi ñu may ñu samp ay modili mottali. Roofal màkaanu dal bi nga bëgg may te nga cuq ci may.
+
+## Site Permissions - Notifications
+
+
+## Site Permissions - Location
+
+
+## Site Permissions - Camera
+
+
+## Site Permissions - Microphone
+

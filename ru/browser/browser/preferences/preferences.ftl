@@ -582,6 +582,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Помнить историю посещений и загрузок
     .accesskey = с
+history-remember-browser-option =
+    .label = Помнить историю посещений и загрузок
+    .accesskey = и
 history-remember-search-option =
     .label = Помнить историю поиска и данных форм
     .accesskey = и
@@ -598,6 +601,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Куки и данные сайтов
+sitedata-total-size-calculating = Вычисление объема данных сайтов и кэша…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Ваши сохранённые куки, данные сайтов и кэш сейчас занимают на диске { $value } { $unit }.
 sitedata-learn-more = Подробнее
 sitedata-accept-cookies-option =
     .label = Принимать куки и данные сайтов с веб-сайтов (рекомендуется)
@@ -692,6 +700,12 @@ permissions-notification-link = Подробнее
 permissions-notification-pause =
     .label = Отключить уведомления до перезапуска { -brand-short-name }
     .accesskey = ю
+permissions-block-autoplay-media =
+    .label = Не разрешать веб-сайтам автоматически воспроизводить медиа со звуком
+    .accesskey = ш
+permissions-block-autoplay-media-exceptions =
+    .label = Исключения…
+    .accesskey = ю
 permissions-block-popups =
     .label = Блокировать всплывающие окна
     .accesskey = о
@@ -718,6 +732,9 @@ collection-health-report =
     .label = Разрешить { -brand-short-name } отправлять технические данные и данные взаимодействия в { -vendor-short-name }
     .accesskey = е
 collection-health-report-link = Подробнее
+collection-studies =
+    .label = Разрешить { -brand-short-name } устанавливать и проводить исследования
+collection-studies-link = Просмотреть исследования { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Для этой конфигурации сборки отправка данных отключена

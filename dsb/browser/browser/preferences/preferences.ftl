@@ -585,6 +585,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Se pśeglědowańsku a ześěgnjeńsku historiju spomnjeś
     .accesskey = l
+history-remember-browser-option =
+    .label = Se pśeglědowańsku a ześěgnjeńsku historiju spomnjeś
+    .accesskey = m
 history-remember-search-option =
     .label = Pytańsku a formularnu historiju se spomnjeś
     .accesskey = f
@@ -601,6 +604,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookieje a sedłowe daty
+sitedata-total-size-calculating = Wjelikosć sedłowych datow a purfowaka se wulicijo…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Waše skłaźone cookieje, sedłowe daty a pufrowak se tuchylu { $value } { $unit } platowego ruma wužywaju.
 sitedata-learn-more = Dalšne informacije
 sitedata-accept-cookies-option =
     .label = Cookieje a sedłowe daty z websedłow akceptěrowaś (dopórucone)
@@ -611,9 +619,9 @@ sitedata-block-cookies-option =
 sitedata-keep-until = Wobchowaś
     .accesskey = b
 sitedata-keep-until-expire =
-    .label = Pśepadnu
+    .label = až njepśepadnu
 sitedata-keep-until-closed =
-    .label = { -brand-short-name } jo zacynjony
+    .label = { -brand-short-name } se njezacynijo
 sitedata-accept-third-party-desc = Cookieje a sedłowe daty tśeśich póbitowarjow akceptěrowaś
     .accesskey = t
 sitedata-accept-third-party-always-option =
@@ -695,6 +703,12 @@ permissions-notification-link = Dalšne informacije
 permissions-notification-pause =
     .label = Z powěźeńkami pśestaś, daniž se { -brand-short-name } znowego njestartujo
     .accesskey = z
+permissions-block-autoplay-media =
+    .label = Websedłam zakazaś, medije ze zukom wótgraś
+    .accesskey = z
+permissions-block-autoplay-media-exceptions =
+    .label = Wuwześa…
+    .accesskey = u
 permissions-block-popups =
     .label = Wuskokujuce wokno blokěrowaś
     .accesskey = k
@@ -721,6 +735,9 @@ collection-health-report =
     .label = { -brand-short-name } zmóžniś, techniske a interakciske daty na { -vendor-short-name } pósłaś
     .accesskey = t
 collection-health-report-link = Dalšne informacije
+collection-studies =
+    .label = { -brand-short-name } dowóliś, studije instalěrowaś a pśewjasć
+collection-studies-link = Studije { -brand-short-name } pokazaś
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datowe rozpšawjenje jo znjemóžnjone za toś tu programowu konfiguraciju

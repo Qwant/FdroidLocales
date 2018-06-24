@@ -582,6 +582,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Запамти мој историјат прегледања и преузимања
     .accesskey = З
+history-remember-browser-option =
+    .label = Бележи историјат прегледања и преузимања
+    .accesskey = Б
 history-remember-search-option =
     .label = Запамти историјат образаца и претраге
     .accesskey = р
@@ -598,6 +601,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Колачићи и подаци сајта
+sitedata-total-size-calculating = Рачунам податке сајта и кеш меморију…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Ваши складиштени колачићи, подаци сајта и кеш тренутно заузимају { $value } { $unit } простора.
 sitedata-learn-more = Сазнајте више
 sitedata-accept-cookies-option =
     .label = Прихватај колачиће и податке сајта (препоручено)
@@ -692,6 +700,12 @@ permissions-notification-link = Сазнајте више
 permissions-notification-pause =
     .label = Паузирај обавештења док се { -brand-short-name } не рестартује
     .accesskey = о
+permissions-block-autoplay-media =
+    .label = Блокирај аутоматско пуштање медија са звуком
+    .accesskey = Б
+permissions-block-autoplay-media-exceptions =
+    .label = Изузеци...
+    .accesskey = И
 permissions-block-popups =
     .label = Блокирај искачуће прозоре
     .accesskey = ч
@@ -718,6 +732,9 @@ collection-health-report =
     .label = Дозволи { -brand-short-name }-у да шаље техничке и интерактивне податке { -vendor-short-name }-и
     .accesskey = р
 collection-health-report-link = Сазнајте више
+collection-studies =
+    .label = Дозволи { -brand-short-name }-у да инсталира и покрене студије
+collection-studies-link = Погледајте { -brand-short-name } студије
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Слање података је онемогућено за ову конфигурацију за изградњу

@@ -579,6 +579,9 @@ history-private-browsing-permanent =
 history-remember-option =
     .label = Менің шолу тарихымды және жүктемелер тарихын сақтау
     .accesskey = М
+history-remember-browser-option =
+    .label = Шолу және жүктемелер тарихын сақтау
+    .accesskey = т
 history-remember-search-option =
     .label = Іздеу және формалар тарих сақтау
     .accesskey = з
@@ -595,6 +598,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = Cookies файлдары және сайт деректері
+sitedata-total-size-calculating = Сайттар деректері және кэш өлшемін есептеу…
+# Variables:
+#   $value (Number) - Value of the unit (for example: 4.6, 500)
+#   $unit (String) - Name of the unit (for example: "bytes", "KB")
+sitedata-total-size = Сізде сақталған cookies файлдары, сайт деректері және кэш қазір { $value } { $unit } диск орнын қолдануда.
 sitedata-learn-more = Көбірек білу
 sitedata-accept-cookies-option =
     .label = Веб-сайттардан cookies файлдарын және сайттар деректерін қабылдау (ұсынылады)
@@ -689,6 +697,12 @@ permissions-notification-link = Көбірек білу
 permissions-notification-pause =
     .label = Хабарламаларды { -brand-short-name } қайта іске қосылғанша дейін аялдату
     .accesskey = д
+permissions-block-autoplay-media =
+    .label = Веб-сайттарға дыбысы бар медианы автоойнатуды бұғаттау
+    .accesskey = б
+permissions-block-autoplay-media-exceptions =
+    .label = Ережелерден бөлек…
+    .accesskey = Е
 permissions-block-popups =
     .label = "Атып шығатын" терезелерді болдырмау
     .accesskey = б
@@ -715,6 +729,9 @@ collection-health-report =
     .label = { -brand-short-name } үшін { -vendor-short-name } адресіне техникалық және әрекеттесу деректерін жіберуді рұқсат ету
     .accesskey = р
 collection-health-report-link = Көбірек білу
+collection-studies =
+    .label = { -brand-short-name } үшін зерттеулерді орнатып, орындауды рұқсат ету
+collection-studies-link = { -brand-short-name } зерттеулерін қарау
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Деректер есептемесін беру бұл жинақта сөндірілген
