@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } ไม่ได้เป็นเบร�
 set-as-my-default-browser =
     .label = ทำให้เป็นค่าเริ่มต้น…
     .accesskey = ค
-startup-page = เมื่อ { -brand-short-name } เริ่ม
-    .accesskey = ม
-startup-user-homepage =
-    .label = แสดงหน้าแรกของคุณ
-startup-blank-page =
-    .label = แสดงหน้าว่าง
-startup-prev-session =
-    .label = แสดงหน้าต่างและแท็บของคุณจากครั้งล่าสุด
 startup-restore-previous-session =
     .label = เรียกคืนวาระก่อนหน้า
     .accesskey = ร
 disable-extension =
     .label = ปิดใช้งานส่วนขยาย
-home-page-header = หน้าแรก
 tabs-group-header = แท็บ
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab เพื่อสลับเปลี่ยนแท็บตามลำดับที่ใช้ล่าสุด
@@ -207,6 +190,9 @@ choose-language-description = เลือกภาษาที่คุณต�
 choose-button =
     .label = เลือก…
     .accesskey = ล
+choose-browser-language-description = เลือกภาษาที่ใช้แสดงผลเมนู, ข้อความ และการแจ้งเตือนจาก { -brand-short-name }
+confirm-browser-language-change-description = เริ่มการทำงาน { -brand-short-name } ใหม่เพื่อใช้การเปลี่ยนแปลงเหล่านี้
+confirm-browser-language-change-button = นำไปใช้และเริ่มการทำงานใหม่
 translate-web-pages =
     .label = แปลเนื้อหาเว็บ
     .accesskey = ป
@@ -258,7 +244,6 @@ play-drm-content =
 play-drm-content-learn-more = เรียนรู้เพิ่มเติม
 update-application-title = การอัปเดต { -brand-short-name }
 update-application-description = คง { -brand-short-name } ให้เป็นรุ่นล่าสุดเพื่อประสิทธิภาพ, เสถียรภาพ และความปลอดภัยที่ดีที่สุด
-update-application-info = รุ่น { $version } <a>มีอะไรใหม่</a>
 update-application-version = รุ่น { $version } <a data-l10n-name="learn-more">มีอะไรใหม่</a>
 update-history =
     .label = แสดงประวัติการอัปเดต…
@@ -294,7 +279,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = ขีดจำกัดโปรเซสเนื้อหา
     .accesskey = ข
 performance-limit-content-process-enabled-desc = โปรเซสเนื้อหาที่เพิ่มขึ้นสามารถปรับปรุงประสิทธิภาพเมื่อใช้หลายแท็บ แต่จะใช้หน่วยความจำมากขึ้นเช่นกัน
-performance-limit-content-process-disabled-desc = การเปลี่ยนแปลงจำนวนโปรเซสเนื้อหาทำได้เฉพาะกับ { -brand-short-name } แบบหลายโปรเซส <a>เรียนรู้วิธีตรวจสอบว่าการทำงานหลายโปรเซสถูกเปิดใช้งานอยู่หรือไม่</a>
 performance-limit-content-process-blocked-desc = การเปลี่ยนแปลงจำนวนโปรเซสเนื้อหาทำได้เฉพาะกับ { -brand-short-name } แบบหลายโปรเซส <a data-l10n-name="learn-more">เรียนรู้วิธีตรวจสอบว่าการทำงานหลายโปรเซสถูกเปิดใช้งานอยู่หรือไม่</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -323,6 +307,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = พร็อกซีเครือข่าย
+network-settings-title = การตั้งค่าเครือข่าย
 network-proxy-connection-description = กำหนดค่าวิธีที่ { -brand-short-name } เชื่อมต่อกับอินเทอร์เน็ต
 network-proxy-connection-learn-more = เรียนรู้เพิ่มเติม
 network-proxy-connection-settings =
@@ -365,9 +350,6 @@ use-current-pages =
 choose-bookmark =
     .label = ใช้ที่คั่นหน้า…
     .accesskey = ท
-restore-default =
-    .label = เรียกคืนค่าเริ่มต้น
-    .accesskey = ร
 
 ## Search Section
 
@@ -564,9 +546,6 @@ history-dontremember-description = { -brand-short-name } จะใช้กา�
 history-private-browsing-permanent =
     .label = ใช้โหมดการท่องเว็บแบบส่วนตัวเสมอ
     .accesskey = ช
-history-remember-option =
-    .label = จดจำประวัติการท่องเว็บและการดาวน์โหลดของฉัน
-    .accesskey = จ
 history-remember-browser-option =
     .label = จดจำประวัติการท่องเว็บและการดาวน์โหลด
     .accesskey = จ
@@ -612,6 +591,30 @@ sitedata-accept-third-party-visited-option =
     .label = จากที่เยี่ยมชม
 sitedata-accept-third-party-never-option =
     .label = ไม่เลย
+sitedata-allow-cookies-option =
+    .label = ยอมรับคุกกี้และข้อมูลไซต์
+    .accesskey = ย
+sitedata-disallow-cookies-option =
+    .label = ปิดกั้นคุกกี้และข้อมูลไซต์
+    .accesskey = ป
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = ชนิดที่ถูกปิดกั้น
+    .accesskey = ช
+sitedata-block-trackers-option-recommended =
+    .label = ตัวติดตามจากบุคคลที่สาม (แนะนำ)
+sitedata-block-trackers-option =
+    .label = ตัวติดตามจากบุคคลที่สาม
+sitedata-block-unvisited-option =
+    .label = คุกกี้จากเว็บไซต์ที่ไม่ได้เยี่ยมชม
+sitedata-block-all-third-parties-option =
+    .label = คุกกี้จากบุคคลที่สามทั้งหมด
+sitedata-block-always-option =
+    .label = คุกกี้ทั้งหมด (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)
+sitedata-block-all-third-party-option =
+    .label = คุกกี้จากบุคคลที่สามทั้งหมด (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)
+sitedata-block-all-option =
+    .label = คุกกี้ทั้งหมด (จะส่งผลให้เว็บไซต์ไม่สมบูรณ์)
 sitedata-clear =
     .label = ล้างข้อมูล…
     .accesskey = ล
@@ -636,6 +639,71 @@ addressbar-locbar-openpage-option =
     .label = แท็บที่เปิดอยู่
     .accesskey = บ
 addressbar-suggestions-settings = เปลี่ยนค่ากำหนดข้อเสนอแนะจากเครื่องมือค้นหา
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = การปิดกั้นเนื้อหา
+content-blocking-learn-more = เรียนรู้เพิ่มเติม
+content-blocking-restore-defaults =
+    .label = เรียกคืนค่าเริ่มต้น
+    .accesskey = ร
+content-blocking-toggle-on =
+    .tooltiptext = ปิดการปิดกั้นเนื้อหา
+content-blocking-toggle-off =
+    .tooltiptext = เปิดการปิดกั้นเนื้อหา
+content-blocking-toggle-label-on = เปิด
+    .accesskey = ป
+content-blocking-toggle-label-off = ปิด
+    .accesskey = ป
+content-blocking-category-label = เลือกสิ่งที่จะปิดกั้น
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = องค์ประกอบติดตามที่ช้า
+    .accesskey = อ
+content-blocking-fastblock-description = ปิดกั้นเนื้อหาจากบุคคลที่สามที่ใช้เวลานานกว่า 5 วินาทีในการโหลด
+content-blocking-fastblock-option-enabled =
+    .label = ปิดกั้นเสมอ
+content-blocking-fastblock-option-disabled =
+    .label = ไม่ปิดกั้นเสมอ
+content-blocking-tracking-protection-label = ตัวติดตาม
+    .accesskey = ต
+content-blocking-tracking-protection-description = ปิดกั้นตัวติดตามที่รู้จักทั้งหมด (หมายเหตุ: อาจทำให้ไม่สามารถโหลดบางหน้า)
+content-blocking-tracking-protection-option-enabled =
+    .label = ปิดกั้นเสมอ
+content-blocking-tracking-protection-option-pbm =
+    .label = ปิดกั้นเฉพาะในหน้าต่างส่วนตัว
+content-blocking-tracking-protection-option-disabled =
+    .label = ไม่ปิดกั้นเสมอ
+content-blocking-tracking-protection-change-blocklist = เปลี่ยนรายการปิดกั้น…
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-label = ตัวติดตามที่โหลดช้า
+    .accesskey = ต
+content-blocking-tracking-protection-all-label = ตัวติดตามที่ตรวจพบทั้งหมด
+    .accesskey = ว
+content-blocking-tracking-protection-option-always =
+    .label = เสมอ
+    .accesskey = ส
+content-blocking-tracking-protection-option-private =
+    .label = เฉพาะในหน้าต่างส่วนตัว
+    .accesskey = พ
+content-blocking-tracking-protection-change-block-list = เปลี่ยนรายการปิดกั้น
+content-blocking-reject-trackers-label = คุกกี้จากบุคคลที่สาม
+    .accesskey = ค
+content-blocking-change-cookie-settings =
+    .label = เปลี่ยนการตั้งค่าคุกกี้
+    .accesskey = ป
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = ตัวติดตาม (แนะนำ)
+    .accesskey = ต
+content-blocking-reject-trackers-block-trackers-option =
+    .label = ตัวติดตาม
+    .accesskey = ต
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = คุกกี้จากบุคคลที่สามทั้งหมด (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)
+    .accesskey = ค
 
 ## Privacy Section - Tracking
 
@@ -688,9 +756,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = ปิดกั้นเว็บไซต์จากการเล่นสื่อพร้อมเสียงโดยอัตโนมัติ
     .accesskey = ป
+permissions-block-autoplay-media-menu = สำหรับเว็บไซต์ที่เล่นเสียงโดยอัตโนมัติ
 permissions-block-autoplay-media-exceptions =
     .label = ข้อยกเว้น…
     .accesskey = ข
+autoplay-option-ask =
+    .label = ถามเสมอ
+autoplay-option-allow =
+    .label = อนุญาตการเล่นอัตโนมัติ
+autoplay-option-dont =
+    .label = ไม่เล่นโดยอัตโนมัติ
+permissions-autoplay-link = เรียนรู้เพิ่มเติม
 permissions-block-popups =
     .label = ปิดกั้นหน้าต่างป๊อปอัป
     .accesskey = ป
@@ -711,7 +787,7 @@ permissions-a11y-privacy-link = เรียนรู้เพิ่มเติ
 ## Privacy Section - Data Collection
 
 collection-header = การเก็บรวบรวมและใช้ข้อมูล { -brand-short-name }
-collection-description = เรามุ่งมั่นที่จะให้ทางเลือกกับคุณและเก็บรวบรวมเฉพาะสิ่งที่เราจำเป็นต้องจัดหาและปรับปรุง { -brand-short-name } สำหรับทุกคน เราขออนุญาตก่อนที่จะรับข้อมูลส่วนบุคคลเสมอ
+collection-description = เรามุ่งมั่นที่จะให้ทางเลือกกับคุณและเก็บรวบรวมเฉพาะสิ่งที่เราจำเป็นต้องให้บริการและปรับปรุง { -brand-short-name } สำหรับทุกคน เราขออนุญาตก่อนที่จะรับข้อมูลส่วนบุคคลเสมอ
 collection-privacy-notice = ประกาศความเป็นส่วนตัว
 collection-health-report =
     .label = อนุญาตให้ { -brand-short-name } ส่งข้อมูลทางเทคนิคและการโต้ตอบไปยัง { -vendor-short-name }

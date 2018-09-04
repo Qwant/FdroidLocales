@@ -5,6 +5,9 @@
 languages-window =
     .title = ภาษา
     .style = width: 30em
+webpage-languages-window =
+    .title = การตั้งค่าภาษาของหน้าเว็บ
+    .style = width: 40em
 languages-close-key =
     .key = w
 languages-description = บางครั้งหน้าเว็บอาจนำเสนอมากกว่าหนึ่งภาษา เลือกภาษาสำหรับแสดงผลหน้าเว็บเหล่านี้ตามลำดับที่ต้องการ
@@ -36,3 +39,8 @@ languages-customize-add =
 #   $code (String) - Locale code of the locale (for example: "is", "es-CL")
 languages-code-format =
     .label = { $locale }  [{ $code }]
+languages-active-code-format =
+    .value = { languages-code-format.label }
+browser-languages-window =
+    .title = การตั้งค่าภาษาของ { -brand-short-name }
+    .style = width: 40em

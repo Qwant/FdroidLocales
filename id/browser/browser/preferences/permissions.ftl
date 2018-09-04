@@ -60,7 +60,7 @@ permissions-exceptions-tracking-protection-desc = Anda telah menonaktifkan Perli
 permissions-exceptions-cookie-window =
     .title = Pengecualian - Kuki dan Data Situs
     .style = { permissions-window.style }
-permissions-exceptions-cookie-desc = Anda dapat menentukan situs web mana saja yang boleh atau tidak boleh menggunakan kuki dan data situs. Ketik alamat situs secara persis yang ingin dikelola, kemudian klik Blokir, Izinkan untuk Sesi, atau Izinkan.
+permissions-exceptions-cookie-desc = Anda dapat menentukan situs web mana saja yang diizinkan atau tidak diizinkan untuk menggunakan kuki dan data situs. Ketik alamat situs secara persis yang ingin dikelola, kemudian klik Blokir, Izinkan untuk Sesi, atau Izinkan.
 
 ## Exceptions - Pop-ups
 
@@ -89,6 +89,10 @@ permissions-exceptions-autoplay-media-window =
     .title = Situs yang Diizinkan - Putar Otomatis
     .style = { permissions-window.style }
 permissions-exceptions-autoplay-media-desc = Anda dapat menentukan situs web mana saja yang diizinkan untuk memainkan elemen media secara otomatis. Ketik alamat situs secara persis yang akan diizinkan, lalu klik Izinkan.
+permissions-exceptions-autoplay-media-window2 =
+    .title = Kekecualian - Putar Otomatis
+    .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-desc2 = Anda dapat menentukan situs web mana saja yang selalu atau tidak diizinkan memutar otomatis media dengan suara. Ketik alamat situs yang akan diatur, lalu klik Blokir atau Izinkan.
 
 ## Site Permissions - Notifications
 

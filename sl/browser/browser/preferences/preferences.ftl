@@ -208,6 +208,9 @@ choose-language-description = Izberite prednosten jezik za prikazovanje strani
 choose-button =
     .label = Izberi …
     .accesskey = e
+choose-browser-language-description = Izberite jezike, v katerih naj bodo prikazani meniji, sporočila in obvestila { -brand-short-name }a.
+confirm-browser-language-change-description = Ponovno zaženite { -brand-short-name } za uveljavitev sprememb
+confirm-browser-language-change-button = Uveljavi in ponovno zaženi
 translate-web-pages =
     .label = Prevajanje spletne vsebine
     .accesskey = T
@@ -608,6 +611,14 @@ sitedata-accept-third-party-visited-option =
     .label = Izmed obiskanih
 sitedata-accept-third-party-never-option =
     .label = Nikoli
+sitedata-block-trackers-option-recommended =
+    .label = Sledilce tretjih strani (priporočeno)
+sitedata-block-trackers-option =
+    .label = Sledilce tretjih strani
+sitedata-block-unvisited-option =
+    .label = Piškotke neobiskanih spletnih strani
+sitedata-block-all-third-parties-option =
+    .label = Vse piškotke tretjih strani
 sitedata-clear =
     .label = Počisti podatke …
     .accesskey = č
@@ -632,6 +643,44 @@ addressbar-locbar-openpage-option =
     .label = odprte zavihke
     .accesskey = O
 addressbar-suggestions-settings = Spremeni nastavitve predlogov iskanja
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Zavračanje vsebine
+content-blocking-desc = Zavračajte vsebino tretjih strani, kot so oglasi in koda, ki lahko upočasnjuje vaše brskanje in vam sledi po spletu. Prilagodite nastavitve za najboljše razmerje med zaščito in učinkovitostjo delovanja.
+content-blocking-learn-more = Več o tem
+content-blocking-restore-defaults =
+    .label = Ponastavi privzeto
+    .accesskey = P
+content-blocking-toggle-on =
+    .tooltiptext = Izključi zavračanje vsebine
+content-blocking-toggle-off =
+    .tooltiptext = Vključi zavračanje vsebine
+content-blocking-toggle-label-on = VKLJUČENO
+    .accesskey = V
+content-blocking-toggle-label-off = IZKLJUČENO
+    .accesskey = I
+content-blocking-category-label = Izberite, kaj želite zavračati
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Počasni elementi sledenja
+    .accesskey = P
+content-blocking-fastblock-description = Zavrača vsebino tretjih strani, ki se nalaga več kot 5 sekund.
+content-blocking-fastblock-option-enabled =
+    .label = Vedno zavračaj
+content-blocking-fastblock-option-disabled =
+    .label = Nikoli ne zavračaj
+content-blocking-tracking-protection-label = Sledilci
+    .accesskey = S
+content-blocking-tracking-protection-description = Zavrača vse znane sledilce (pozor: lahko tudi prepreči nalaganje nekaterih strani).
+content-blocking-tracking-protection-option-enabled =
+    .label = Vedno zavračaj
+content-blocking-tracking-protection-option-pbm =
+    .label = Zavračaj samo v zasebnih oknih
+content-blocking-tracking-protection-option-disabled =
+    .label = Nikoli ne zavračaj
+content-blocking-tracking-protection-change-blocklist = Zamenjaj seznam za zavračanje …
 
 ## Privacy Section - Tracking
 
@@ -682,11 +731,19 @@ permissions-notification-pause =
     .label = Ne prikazuj obvestil do naslednjega zagona { -brand-short-name }a
     .accesskey = u
 permissions-block-autoplay-media =
-    .label = Prepreči spletnim stranem samodejno predvajanje predstavnosti z zvokom
+    .label = Prepreči spletnim stranem samodejno predvajanje zvočnih vsebin
     .accesskey = z
+permissions-block-autoplay-media-menu = Za spletne strani, ki samodejno predvajajo zvok
 permissions-block-autoplay-media-exceptions =
     .label = Izjeme …
     .accesskey = I
+autoplay-option-ask =
+    .label = Vedno vprašaj
+autoplay-option-allow =
+    .label = Dovoli samodejno predvajanje
+autoplay-option-dont =
+    .label = Ne predvajaj samodejno
+permissions-autoplay-link = Več o tem
 permissions-block-popups =
     .label = Prepovej pojavna okna
     .accesskey = r

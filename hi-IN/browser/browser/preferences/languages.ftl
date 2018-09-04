@@ -5,6 +5,9 @@
 languages-window =
     .title = भाषा
     .style = width: 30em
+webpage-languages-window =
+    .title = वेबपृष्ठ भाषा सेटिंग
+    .style = width: 40em
 languages-close-key =
     .key = w
 languages-description = वेब पृष्ठ कभी-कभी एकाधिक भाषाओं में प्रस्तुत किए जाते है. इनको प्रदर्शित करने के लिए वरीयता क्रम में भाषाओं को चुनें
@@ -36,3 +39,9 @@ languages-customize-add =
 #   $code (String) - Locale code of the locale (for example: "is", "es-CL")
 languages-code-format =
     .label = { $locale }  [{ $code }]
+languages-active-code-format =
+    .value = { languages-code-format.label }
+browser-languages-window =
+    .title = { -brand-short-name } भाषा सेटिंग
+    .style = width: 40em
+browser-languages-description = { -brand-short-name } पहली भाषा को आपके तयशुदा के रूप में प्रदर्शित करेगा और यदि वे दिखाई देने वाले क्रम में आवश्यक हों तो वैकल्पिक भाषाएँ प्रदर्शित करेगा।

@@ -27,12 +27,6 @@
 <!ENTITY firstrun_button_next "Seguent">
 
 <!ENTITY firstrun_tabqueue_title "Ligams">
-<!-- Localization note (firstrun_tabqueue_message): 'Tab queue' is a feature that allows users to queue up or save links from outside of Firefox (without switching apps) - these links will be loaded in Firefox the next time Firefox is opened. -->
-<!ENTITY firstrun_tabqueue_message_off "Activatz la lista d’onglets">
-<!ENTITY firstrun_tabqueue_subtext_off "Salvar los ligams per mai tard dins &brandShortName; en los marcant dins las autras aplicacions.">
-
-<!ENTITY firstrun_tabqueue_message_on "Succès !">
-<!ENTITY firstrun_tabqueue_subtext_on "Sempre podètz lo desactivar suls &settings; jos &pref_category_general;.">
 
 <!ENTITY firstrun_readerview_title "Articles">
 <!-- Localization note (firstrun_readerview_message): This is a casual way of describing getting rid of unnecessary things, and is referring to simplifying websites so only the article text and images are visible, removing unnecessary headers or ads. -->
@@ -69,7 +63,6 @@
 <!ENTITY  crash_restart_label "Reaviar &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "Picar un tèrme de recercar o una adreça">
-
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -215,7 +208,6 @@
      “storing data”. -->
 <!ENTITY pref_category_advanced_summary3 "Restauracion d’onglets, estalvis de donadas, aisinas pels desvolopaires">
 <!ENTITY pref_category_notifications "Notificacions">
-<!ENTITY pref_category_notifications_summary "Foncions novèlas, mesas a jorn del site web">
 <!ENTITY pref_category_notifications_summary2 "Nòvas foncionalitats, astúcias">
 <!ENTITY pref_developer_remotedebugging_usb "Desbugatge distant per USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Desbugatge distant per Wi-Fi">
@@ -372,6 +364,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Permetre la lectura automatica">
 <!ENTITY pref_media_autoplay_enabled_summary "Regular los sites web que pòdon legir automaticament e d\&apos;autres contenguts mèdia">
+<!ENTITY pref_media_autoplay_allow "Permetre la lectura automatica">
+<!ENTITY pref_media_autoplay_block "Blocar la lectura automatica">
 <!ENTITY pref_zoom_force_enabled "Zoom permanent">
 <!ENTITY pref_zoom_force_enabled_summary "Forçar las paginas a totjorn vos permetre de zoomar">
 <!ENTITY pref_voice_input "Sasida vocala">
@@ -447,6 +441,11 @@
 <!ENTITY datareporting_crashreporter_title_short "Raportador de plantatge">
 <!ENTITY datareporting_wifi_title2 "Servici de localizacion &vendorShortName;">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Ajuda &vendorShortName; a mapar lo monde. Parteja la localizacion aproximativa de rets Wi-Fi e mobils de vòstres periferics per melhorar nòstre servici de geolocalizacion.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "Servici de localizacion &vendorShortName; lançat">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -891,3 +890,20 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Apondre a l’ecran d’acuèlh">
 <!ENTITY pwa_continue_to_website "Contunhar cap al site web">
 <!ENTITY pwa_onboarding_sumo "Podètz facilament apondre aqueste site a vòstre ecran d’acuèlh per i accedir e navegar mai rapidament coma se foguèssetz dins l’aplicacion.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Lectura">
+<!ENTITY pip_play_button_description "Reprendre la lectura">
+<!ENTITY pip_pause_button_title "Pausa">
+<!ENTITY pip_pause_button_description "Pausar">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "Servici de localizacion &vendorShortName;">
+<!ENTITY download_notification_channel "Telecargaments">
+<!ENTITY media_notification_channel "Lectura multimèdia">
+<!-- These push notifications come without a specific channel and/or name from Leanplum -->
+<!ENTITY leanplum_default_notifications_channel "Notificacions Push de &brandShortName;">
+<!ENTITY updater_notification_channel "Mesas a jorn de l’aplicacion">
+<!ENTITY synced_tabs_notification_channel "Onglets sincronizats">

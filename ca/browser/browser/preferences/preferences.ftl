@@ -6,6 +6,8 @@ do-not-track-description = Envia als llocs web el senyal «No vull ser seguit» 
 do-not-track-learn-more = Més informació
 do-not-track-option-default =
     .label = Només en utilitzar la protecció contra el seguiment
+do-not-track-option-default-content-blocking =
+    .label = Només si el { -brand-short-name } està configurat per blocar els elements de seguiment detectats
 do-not-track-option-always =
     .label = Sempre
 pref-page =
@@ -14,14 +16,6 @@ pref-page =
             [windows] Opcions
            *[other] Preferències
         }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -40,7 +34,7 @@ search-input-box =
 policies-notice =
     { PLATFORM() ->
         [windows] La vostra organització ha inhabilitat la possibilitat de canviar algunes opcions.
-       *[other] La vostra organització ha inhabilitat la possibilitat de canviar algunes preferències. 
+       *[other] La vostra organització ha inhabilitat la possibilitat de canviar algunes preferències.
     }
 pane-general-title = General
 category-general =
@@ -137,20 +131,11 @@ is-not-default = El { -brand-short-name } no és el navegador per defecte
 set-as-my-default-browser =
     .label = Fes que sigui el navegador per defecte…
     .accesskey = d
-startup-page = En iniciar el { -brand-short-name }
-    .accesskey = i
-startup-user-homepage =
-    .label = Mostra la pàgina d'inici
-startup-blank-page =
-    .label = Mostra una pàgina en blanc
-startup-prev-session =
-    .label = Mostra les finestres i pestanyes de la darrera vegada
 startup-restore-previous-session =
     .label = Restaura la sessió anterior
     .accesskey = s
 disable-extension =
     .label = Inhabilita l'extensió
-home-page-header = Pàgina d'inici
 tabs-group-header = Pestanyes
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab canvia de pestanya en ordre d'ús recent
@@ -219,6 +204,12 @@ choose-language-description = Trieu la llengua en què es mostraran preferentmen
 choose-button =
     .label = Trieu…
     .accesskey = T
+choose-browser-language-description = Trieu la llengua en què es mostraran els menús, els missatges i les notificacions del { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Defineix alternatives…
+    .accesskey = l
+confirm-browser-language-change-description = Reinicieu el { -brand-short-name } per aplicar aquests canvis
+confirm-browser-language-change-button = Aplica i reinicia
 translate-web-pages =
     .label = Tradueix el contingut web
     .accesskey = T
@@ -270,7 +261,6 @@ play-drm-content =
 play-drm-content-learn-more = Més informació
 update-application-title = Actualitzacions del { -brand-short-name }
 update-application-description = Manteniu el { -brand-short-name } actualitzat per obtenir el millor rendiment, estabilitat i seguretat.
-update-application-info = Versió { $version } <a>Novetats</a>
 update-application-version = Versió { $version } <a data-l10n-name="learn-more">Novetats</a>
 update-history =
     .label = Mostra l'historial d'actualitzacions…
@@ -306,7 +296,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Límit de processos de contingut
     .accesskey = L
 performance-limit-content-process-enabled-desc = Més processos de contingut poden millorar el rendiment quan utilitzeu diverses pestanyes, però també utilitzaran més memòria.
-performance-limit-content-process-disabled-desc = El nombre de processos de contingut només es pot modificar amb el { -brand-short-name } multiprocés. <a>Més informació sobre com comprovar si el multiprocés està activat.</a>
 performance-limit-content-process-blocked-desc = El nombre de processos de contingut només es pot modificar amb el { -brand-short-name } multiprocés. <a data-l10n-name="learn-more">Més informació sobre com comprovar si el multiprocés està activat.</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -335,6 +324,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Servidor intermediari de xarxa
+network-settings-title = Paràmetres de xarxa
 network-proxy-connection-description = Configureu com el { -brand-short-name } es connecta a Internet.
 network-proxy-connection-learn-more = Més informació
 network-proxy-connection-settings =
@@ -377,9 +367,6 @@ use-current-pages =
 choose-bookmark =
     .label = Utilitza una adreça d'interès…
     .accesskey = z
-restore-default =
-    .label = Restaura les pàgines per defecte
-    .accesskey = R
 
 ## Search Section
 
@@ -435,7 +422,7 @@ containers-add-button =
 containers-preferences-button =
     .label = Preferències
 containers-remove-button =
-    .label = Suprimeix
+    .label = Elimina
 
 ## Sync Section - Signed out
 
@@ -472,8 +459,8 @@ sync-resend-verification =
     .label = Torna a enviar la verificació
     .accesskey = v
 sync-remove-account =
-    .label = Suprimeix el compte
-    .accesskey = r
+    .label = Elimina el compte
+    .accesskey = E
 sync-sign-in =
     .label = Inicia la sessió
     .accesskey = I
@@ -576,9 +563,6 @@ history-dontremember-description = El { -brand-short-name } utilitzarà els mate
 history-private-browsing-permanent =
     .label = Utilitza sempre el mode de navegació privada
     .accesskey = p
-history-remember-option =
-    .label = Recorda el meu historial de navegació i de baixades
-    .accesskey = b
 history-remember-browser-option =
     .label = Recorda l'historial de navegació i de baixades
     .accesskey = b
@@ -624,6 +608,30 @@ sitedata-accept-third-party-visited-option =
     .label = De llocs visitats
 sitedata-accept-third-party-never-option =
     .label = Mai
+sitedata-allow-cookies-option =
+    .label = Accepta les galetes i dades dels llocs web
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = Bloca les galetes i dades dels llocs
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Tipus de contingut blocat
+    .accesskey = T
+sitedata-block-trackers-option-recommended =
+    .label = Elements de seguiment de tercers (recomanat)
+sitedata-block-trackers-option =
+    .label = Elements de seguiment de tercers
+sitedata-block-unvisited-option =
+    .label = Galetes de llocs webs no visitats
+sitedata-block-all-third-parties-option =
+    .label = Totes les galetes de tercers
+sitedata-block-always-option =
+    .label = Totes les galetes (pot fer que alguns llocs web no funcionin)
+sitedata-block-all-third-party-option =
+    .label = Totes les galetes de tercers (pot fer que alguns llocs web no funcionin)
+sitedata-block-all-option =
+    .label = Totes les galetes (farà que alguns llocs web no funcionin)
 sitedata-clear =
     .label = Neteja les dades…
     .accesskey = l
@@ -648,6 +656,80 @@ addressbar-locbar-openpage-option =
     .label = Pestanyes obertes
     .accesskey = P
 addressbar-suggestions-settings = Canvia les preferències dels suggeriments de motors de cerca
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Bloqueig de contingut
+content-blocking-desc = Bloqueu el contingut de tercers, com anuncis o codi, que podria alentir la navegació i fer el seguiment dels llocs que visiteu. Personalitzeu els paràmetres per trobar el millor l'equilibri entre protecció i rendiment.
+content-blocking-learn-more = Més informació
+content-blocking-restore-defaults =
+    .label = Restaura els valors per defecte
+    .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = Desactiva el bloqueig de contingut
+content-blocking-toggle-off =
+    .tooltiptext = Activa el bloqueig de contingut
+content-blocking-toggle-label-on = Activat
+    .accesskey = v
+content-blocking-toggle-label-off = Desactivat
+    .accesskey = v
+content-blocking-category-label = Trieu què voleu blocar
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Elements de seguiment lents
+    .accesskey = s
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-label = Elements de seguiment que triguen a carregar-se
+    .accesskey = s
+content-blocking-fastblock-description = Bloca el contingut de tercers que triga més de 5 segons a carregar.
+content-blocking-fastblock-option-enabled =
+    .label = Bloca sempre
+content-blocking-fastblock-option-disabled =
+    .label = No bloquis mai
+content-blocking-tracking-protection-label = Elements de seguiment
+    .accesskey = t
+content-blocking-tracking-protection-all-label = Tots els elements de seguiment detectats
+    .accesskey = T
+content-blocking-tracking-protection-description = Bloca tots els elements de seguiment coneguts (i també pot fer que algunes pàgines no es carreguin).
+content-blocking-tracking-protection-option-enabled =
+    .label = Bloca sempre
+content-blocking-tracking-protection-option-pbm =
+    .label = Bloca només en finestres privades
+content-blocking-tracking-protection-option-disabled =
+    .label = No bloquis mai
+content-blocking-tracking-protection-option-always =
+    .label = Sempre
+    .accesskey = S
+content-blocking-tracking-protection-option-private =
+    .label = Només en finestres privades
+    .accesskey = N
+content-blocking-tracking-protection-change-blocklist = Canvia la llista de bloquejos…
+content-blocking-reject-trackers-label = Galetes de tercers
+    .accesskey = G
+content-blocking-reject-trackers-description = Bloca totes les galetes de tercers o només les que creen els elements de seguiment.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the "All cookies" option
+# being selected in the Cookies and Site Data section of the UI.
+content-blocking-reject-trackers-warning-all-cookies-blocked = Actualment totes les galetes estan blocades.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the "Cookies from unvisited websites"
+# option being selected in the Cookies and Site Data section of the UI.
+content-blocking-reject-trackers-warning-from-unvisited-cookies-blocked = Actualment les galetes de llocs webs no visitats estan blocades.
+content-blocking-change-cookie-settings =
+    .label = Canvi de paràmetres de galetes
+    .accesskey = s
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Elements de seguiment (recomanat)
+    .accesskey = E
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Elements de seguiment
+    .accesskey = E
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Totes les galetes de tercers (pot fer que alguns llocs web no funcionin)
+    .accesskey = T
 
 ## Privacy Section - Tracking
 
@@ -697,6 +779,20 @@ permissions-notification-link = Més informació
 permissions-notification-pause =
     .label = Posa en pausa les notificacions fins que es reiniciï el { -brand-short-name }
     .accesskey = n
+permissions-block-autoplay-media =
+    .label = Bloca la reproducció automàtica de so dels llocs web
+    .accesskey = B
+permissions-block-autoplay-media-menu = Per als llocs web que reprodueixen so automàticament
+permissions-block-autoplay-media-exceptions =
+    .label = Excepcions…
+    .accesskey = E
+autoplay-option-ask =
+    .label = Demana-m'ho sempre
+autoplay-option-allow =
+    .label = Permet la reproducció automàtica
+autoplay-option-dont =
+    .label = No permetis la reproducció automàtica
+permissions-autoplay-link = Més informació
 permissions-block-popups =
     .label = Bloca les finestres emergents
     .accesskey = B

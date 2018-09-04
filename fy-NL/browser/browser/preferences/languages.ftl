@@ -5,6 +5,9 @@
 languages-window =
     .title = Talen
     .style = width: 34em
+webpage-languages-window =
+    .title = Taalynstellingen website
+    .style = width: 40em
 languages-close-key =
     .key = w
 languages-description = Websiden binne somtiden beskikber yn mear as ien taal. Kies de talen foar it toanen fan dizze websiden, yn folchoarder fan foarkar
@@ -36,3 +39,9 @@ languages-customize-add =
 #   $code (String) - Locale code of the locale (for example: "is", "es-CL")
 languages-code-format =
     .label = { $locale }  [{ $code }]
+languages-active-code-format =
+    .value = { languages-code-format.label }
+browser-languages-window =
+    .title = { -brand-short-name }-taalynstellingen
+    .style = width: 40em
+browser-languages-description = { -brand-short-name } sil de earste taal as jo standerttaal werjaan en sa nedich alternative talen werjaan yn de folchoarder wêryn se fershine.

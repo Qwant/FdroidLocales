@@ -131,6 +131,7 @@ because displayed names don't have the comma in between. -->
 <!ENTITY newmsgButton.accesskey                         "T">
 <!ENTITY newIM.label                                    "Pesan Instan">
 <!ENTITY newIM.accesskey                                "I">
+<!ENTITY printButton.label                              "Cetak…">
 <!ENTITY deleteButton2.label                            "Hapus">
 <!ENTITY deleteButton2.accesskey                        "H">
 
@@ -157,6 +158,7 @@ because displayed names don't have the comma in between. -->
 <!ENTITY GeneratedName.accesskey                        "N">
 <!ENTITY PrimaryEmail.label                             "Email">
 <!ENTITY PrimaryEmail.accesskey                         "E">
+<!ENTITY ChatName.label                                 "Nama Obrolan">
 <!ENTITY Company.label                                  "Organisasi">
 <!ENTITY Company.accesskey                              "O">
 <!ENTITY NickName.label                                 "Nama alias">

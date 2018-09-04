@@ -6,6 +6,8 @@ do-not-track-description = Skicka webbplatser en “Spåra inte”-signal att du
 do-not-track-learn-more = Läs mer
 do-not-track-option-default =
     .label = Bara när du använder spårningsskydd
+do-not-track-option-default-content-blocking =
+    .label = Endast när { -brand-short-name } är inställt för att blockera upptäckta trackers
 do-not-track-option-always =
     .label = Alltid
 pref-page =
@@ -14,14 +16,6 @@ pref-page =
             [windows] Inställningar
            *[other] Inställningar
         }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -98,6 +92,9 @@ extension-controlled-privacy-containers = Ett tillägg, <img data-l10n-name="ico
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Ett tillägg, <img data-l10n-name="icon"/> { $name }, styr spårningsskydd.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Ett tillägg, <img data-l10n-name="icon"/> { $name }, styr denna inställning.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Ett tillägg, <img data-l10n-name="icon"/> { $name }, styr hur { -brand-short-name } ansluter till internet.
@@ -137,20 +134,11 @@ is-not-default = { -brand-short-name } är redan standardwebbläsare
 set-as-my-default-browser =
     .label = Ange som standard…
     .accesskey = s
-startup-page = När { -brand-short-name } startar
-    .accesskey = s
-startup-user-homepage =
-    .label = Visa din startsida
-startup-blank-page =
-    .label = Visa en tom sida
-startup-prev-session =
-    .label = Visa dina fönster och flikar från förra gången
 startup-restore-previous-session =
     .label = Återställ föregående session
     .accesskey = s
 disable-extension =
     .label = Inaktivera tillägg
-home-page-header = Startsida
 tabs-group-header = Flikar
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab växlar mellan flikarna i nyligen använd ordning
@@ -219,6 +207,12 @@ choose-language-description = Välj språk som webbsidor ska visas i
 choose-button =
     .label = Välj…
     .accesskey = V
+choose-browser-language-description = Välj språk som används för att visa menyer, meddelanden och avisering från { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Ange alternativ…
+    .accesskey = A
+confirm-browser-language-change-description = Starta om { -brand-short-name } för att tillämpa ändringarna
+confirm-browser-language-change-button = Tillämpa och starta om
 translate-web-pages =
     .label = Översätt webbinnehåll
     .accesskey = Ö
@@ -268,9 +262,8 @@ play-drm-content =
     .label = Spela DRM-kontrollerat innehåll
     .accesskey = S
 play-drm-content-learn-more = Lär dig mer
-update-application-title = { -brand-short-name } uppdaterar
+update-application-title = Uppdateringar för { -brand-short-name }
 update-application-description = Håll { -brand-short-name } uppdaterad för bästa prestanda, stabilitet och säkerhet.
-update-application-info = Version { $version } <a>Vad är nytt</a>
 update-application-version = Version { $version } <a data-l10n-name="learn-more">Vad är nytt</a>
 update-history =
     .label = Visa uppdateringshistorik…
@@ -306,7 +299,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Gräns för innehållsprocesser
     .accesskey = G
 performance-limit-content-process-enabled-desc = Ytterligare innehållsprocesser kan förbättra prestanda när du använder flera flikar, men kommer också att använda mer minne.
-performance-limit-content-process-disabled-desc = Ändring av antalet innehållsprocesser är endast möjligt med multiprocess { -brand-short-name }. <a>Lär dig hur du kontrollerar om multiprocess är aktiverat</a>
 performance-limit-content-process-blocked-desc = Ändring av antalet innehållsprocesser är endast möjligt med multiprocess { -brand-short-name }. <a data-l10n-name="learn-more">Lär dig hur du kontrollerar om multiprocess är aktiverat</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -335,6 +327,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Nätverksproxy
+network-settings-title = Nätverksinställningar
 network-proxy-connection-description = Konfigurera hur { -brand-short-name } ansluter till internet.
 network-proxy-connection-learn-more = Läs mer
 network-proxy-connection-settings =
@@ -377,9 +370,6 @@ use-current-pages =
 choose-bookmark =
     .label = Använd bokmärke…
     .accesskey = d
-restore-default =
-    .label = Återställ standard
-    .accesskey = Å
 
 ## Search Section
 
@@ -576,9 +566,6 @@ history-dontremember-description = { -brand-short-name } kommer att använda sam
 history-private-browsing-permanent =
     .label = Använd alltid läget privat surfning
     .accesskey = A
-history-remember-option =
-    .label = Spara historik över besökta sidor och filhämtningar
-    .accesskey = S
 history-remember-browser-option =
     .label = Kom ihåg surf- och nedladdningshistorik
     .accesskey = m
@@ -624,6 +611,30 @@ sitedata-accept-third-party-visited-option =
     .label = från platser jag besökt
 sitedata-accept-third-party-never-option =
     .label = aldrig
+sitedata-allow-cookies-option =
+    .label = Tillåt kakor och webbplatsdata
+    .accesskey = T
+sitedata-disallow-cookies-option =
+    .label = Blockera kakor och webbplatsdata
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Typ blockerad
+    .accesskey = T
+sitedata-block-trackers-option-recommended =
+    .label = Trackers från tredje part (rekommenderas)
+sitedata-block-trackers-option =
+    .label = Trackers från tredje part
+sitedata-block-unvisited-option =
+    .label = Kakor från obesökta webbplatser
+sitedata-block-all-third-parties-option =
+    .label = Alla kakor från tredje part
+sitedata-block-always-option =
+    .label = Alla kakor (kan orsaka fel på webbplatser)
+sitedata-block-all-third-party-option =
+    .label = Alla kakor från tredje part (kan orsaka fel på webbplatser)
+sitedata-block-all-option =
+    .label = Alla kakor (kommer att orsaka fel på webbplatser)
 sitedata-clear =
     .label = Rensa data…
     .accesskey = R
@@ -633,6 +644,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Undantag…
     .accesskey = U
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Dina inställningar i innehållsblockering hindrar ändringar i inställningar för kakor och webbplatsdata.
 
 ## Privacy Section - Address Bar
 
@@ -648,6 +663,80 @@ addressbar-locbar-openpage-option =
     .label = Öppna flikar
     .accesskey = Ö
 addressbar-suggestions-settings = Ändra inställningar för förslag från sökmotorn
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Innehållsblockering
+content-blocking-desc = Blockera innehåll från tredje part, som annonser eller kod, som kan slöa ner din webbläsning och spåra dig på webben. Anpassa dina inställningar för bästa balans mellan skydd och prestanda.
+content-blocking-learn-more = Läs mer
+content-blocking-restore-defaults =
+    .label = Återställ standard
+    .accesskey = r
+content-blocking-toggle-on =
+    .tooltiptext = Stäng av innehållsblockering
+content-blocking-toggle-off =
+    .tooltiptext = Slå på innehållsblockning
+content-blocking-toggle-label-on = PÅ
+    .accesskey = P
+content-blocking-toggle-label-off = AV
+    .accesskey = A
+content-blocking-category-label = Välj vad som ska blockeras
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Långsamma spårningselement
+    .accesskey = L
+content-blocking-fastblock-description = Blockerar innehåll från tredje part som tar längre tid än 5 sekunder att ladda.
+content-blocking-fastblock-option-enabled =
+    .label = Blockera alltid
+content-blocking-fastblock-option-disabled =
+    .label = Blockera aldrig
+content-blocking-tracking-protection-label = Trackers
+    .accesskey = T
+content-blocking-tracking-protection-description = Blockerar alla kända trackers (Obs: kan också hindra att vissa sidor laddas).
+content-blocking-tracking-protection-option-enabled =
+    .label = Blockera alltid
+content-blocking-tracking-protection-option-pbm =
+    .label = Blockera endast i privata fönster
+content-blocking-tracking-protection-option-disabled =
+    .label = Blockera aldrig
+content-blocking-tracking-protection-change-blocklist = Ändra blockeringslista…
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-label = Långsamma trackers
+    .accesskey = L
+content-blocking-fastblock-new-description = Blockera endast trackers som gör sidor långsammare.
+content-blocking-tracking-protection-all-label = Alla upptäckta trackers
+    .accesskey = A
+content-blocking-tracking-protection-new-description = Blockera alla kända trackers. (Kan förhindra att vissa sidor laddas.)
+content-blocking-tracking-protection-option-always =
+    .label = Alltid
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = Endast i privata fönster
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Ändra blockeringslista
+content-blocking-reject-trackers-label = Kakor från tredje part
+    .accesskey = C
+content-blocking-reject-trackers-description = Blockera alla kakor från tredje part eller endast de som använts av trackers
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Dina inställningar i kakor och webbplatsdata förhindrar ändringar i inställningar för kakor från tredje part.
+content-blocking-change-cookie-settings =
+    .label = Ändra kakinställningar
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Trackers (rekommenderas)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Trackers
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Alla kakor från tredje part (kan orsaka fel på webbplatser)
+    .accesskey = A
 
 ## Privacy Section - Tracking
 
@@ -700,9 +789,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Blockera hemsidor från att automatiskt spela upp media med ljud
     .accesskey = B
+permissions-block-autoplay-media-menu = För webbplatser som automatiskt spelar ljud
 permissions-block-autoplay-media-exceptions =
     .label = Undantag
     .accesskey = U
+autoplay-option-ask =
+    .label = Fråga alltid
+autoplay-option-allow =
+    .label = Tillåt automatisk uppspelning
+autoplay-option-dont =
+    .label = Spela inte automatiskt
+permissions-autoplay-link = Läs mer
 permissions-block-popups =
     .label = Blockera popup-fönster
     .accesskey = B

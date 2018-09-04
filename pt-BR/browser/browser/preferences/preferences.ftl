@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } não é o seu navegador padrão
 set-as-my-default-browser =
     .label = Tornar padrão…
     .accesskey = D
-startup-page = Ao iniciar o { -brand-short-name }
-    .accesskey = i
-startup-user-homepage =
-    .label = Mostrar sua página inicial
-startup-blank-page =
-    .label = Mostrar uma página em branco
-startup-prev-session =
-    .label = Mostrar suas janelas e abas anteriores
 startup-restore-previous-session =
     .label = Restaurar a sessão anterior
     .accesskey = R
 disable-extension =
     .label = Desativar extensão
-home-page-header = Página inicial
 tabs-group-header = Abas
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab alterna entre as abas por ordem de uso
@@ -219,6 +202,9 @@ choose-language-description = Escolha o idioma preferido para exibir páginas
 choose-button =
     .label = Selecionar…
     .accesskey = S
+choose-browser-language-description = Escolha o idioma usado para exibir os menus, mensagens e notificações do { -brand-short-name }
+confirm-browser-language-change-description = Reiniciar o { -brand-short-name } para aplicar estas alterações
+confirm-browser-language-change-button = Aplicar e reiniciar
 translate-web-pages =
     .label = Traduzir conteúdo da web
     .accesskey = r
@@ -270,11 +256,10 @@ play-drm-content =
 play-drm-content-learn-more = Saiba mais
 update-application-title = Atualização do { -brand-short-name }
 update-application-description = Mantenha o { -brand-short-name } atualizado para melhor desempenho, estabilidade e segurança.
-update-application-info = Versão { $version } <a>Novidades</a>
 update-application-version = Versão { $version } <a data-l10n-name="learn-more">Novidades</a>
 update-history =
     .label = Mostrar histórico de atualizações…
-    .accesskey = p
+    .accesskey = h
 update-application-allow-description = Permitir que o { -brand-short-name }
 update-application-auto =
     .label = Instale atualizações automaticamente (recomendado)
@@ -306,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Limite de processos de conteúdo
     .accesskey = L
 performance-limit-content-process-enabled-desc = Processos de conteúdo adicionais podem melhorar o desempenho ao usar várias abas, mas também usam mais memória.
-performance-limit-content-process-disabled-desc = Modificar o número de processos de conteúdo só é possível com o multiprocessamento do { -brand-short-name }. <a>Saiba como verificar se o multiprocessamento está ativado</a>
 performance-limit-content-process-blocked-desc = Modificar o número de processos de conteúdo só é possível com o multiprocessamento do { -brand-short-name }. <a data-l10n-name="learn-more">Saiba como verificar se o multiprocessamento está ativado</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -344,7 +328,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Novas janelas e abas
-home-new-windows-tabs-description2 = Escolha o que você vê quando abrir sua página inicial, novas janelas e novas abas.
+home-new-windows-tabs-description2 = Escolha o que ver quando abrir sua página inicial, novas janelas e novas abas.
 
 ## Home Section - Home Page Customization
 
@@ -377,9 +361,6 @@ use-current-pages =
 choose-bookmark =
     .label = Usar favorito…
     .accesskey = f
-restore-default =
-    .label = Restaurar o padrão
-    .accesskey = R
 
 ## Search Section
 
@@ -402,7 +383,7 @@ search-show-suggestions-url-bar-option =
 # "ahead" refers to location (appearing most proximate to), not time
 # (appearing before).
 search-show-suggestions-above-history-option =
-    .label = Mostrar sugestões de pesquisa antes do histórico de navegação nos resultados da barra de endereço
+    .label = Mostrar sugestões de pesquisa antes do histórico de navegação nos resultados da barra de endereços
 search-suggestions-cant-show = As sugestões de pesquisa não serão mostradas nos resultados da barra de endereço, porque você configurou o { -brand-short-name } para nunca lembrar o histórico.
 search-one-click-header = Mecanismos de pesquisa em um clique
 search-one-click-desc = Escolha os mecanismos de pesquisa alternativos que aparecem abaixo da barra de endereços e da barra de pesquisa quando você começa a inserir uma palavra-chave.
@@ -422,8 +403,8 @@ search-find-more-link = Procurar mais mecanismos de pesquisa
 search-keyword-warning-title = Palavra-chave duplicada
 # Variables:
 #   $name (String) - Name of a search engine.
-search-keyword-warning-engine = A palavra-chave escolhida já é usada por “{ $name }”. Por favor, selecione outra.
-search-keyword-warning-bookmark = A palavra-chave escolhida já é usada por um favorito. Por favor, selecione outra.
+search-keyword-warning-engine = A palavra-chave escolhida já é usada por “{ $name }”. Selecione outra.
+search-keyword-warning-bookmark = A palavra-chave escolhida já é usada por um favorito. Selecione outra.
 
 ## Containers Section
 
@@ -446,7 +427,7 @@ sync-signedout-account-create = Não tem uma conta? Inscreva-se agora
     .accesskey = C
 sync-signedout-account-signin =
     .label = Entrar…
-    .accesskey = I
+    .accesskey = E
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -455,7 +436,7 @@ sync-signedout-account-signin =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Baixar o Firefox para <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> ou <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> para sincronizar com o seu dispositivo móvel.
+sync-mobile-promo = Baixe o Firefox para <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> ou <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> para sincronizar com o seu dispositivo móvel.
 
 ## Sync Section - Signed in
 
@@ -536,7 +517,7 @@ privacy-header = Privacidade do navegador
 
 forms-header = Formulários e Senhas
 forms-ask-to-save-logins =
-    .label = Perguntar para contas de acesso e senhas de sites
+    .label = Perguntar se deve salvar contas e senhas de acesso de sites
     .accesskey = r
 forms-exceptions =
     .label = Exceções…
@@ -564,7 +545,7 @@ history-header = Histórico
 #     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = O { -brand-short-name } irá
-    .accesskey = w
+    .accesskey = i
 history-remember-option-all =
     .label = Memorizar tudo
 history-remember-option-never =
@@ -576,9 +557,6 @@ history-dontremember-description = O { -brand-short-name } usará as mesmas conf
 history-private-browsing-permanent =
     .label = Sempre usar o modo de navegação privativa
     .accesskey = v
-history-remember-option =
-    .label = Memorizar histórico de navegação e downloads
-    .accesskey = M
 history-remember-browser-option =
     .label = Memorizar histórico de navegação e downloads
     .accesskey = h
@@ -624,6 +602,26 @@ sitedata-accept-third-party-visited-option =
     .label = De sites visitados
 sitedata-accept-third-party-never-option =
     .label = Nunca
+sitedata-allow-cookies-option =
+    .label = Aceitar cookies e dados de sites
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = Bloquear cookies e dados de sites
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Tipo bloqueado
+    .accesskey = T
+sitedata-block-trackers-option-recommended =
+    .label = Rastreadores de terceiros (recomendado)
+sitedata-block-trackers-option =
+    .label = Rastreadores de terceiros
+sitedata-block-unvisited-option =
+    .label = Cookies de sites não visitados
+sitedata-block-all-third-parties-option =
+    .label = Todos os cookies de terceiros
+sitedata-block-always-option =
+    .label = Todos os cookies (pode atrapalhar o funcionamento de sites)
 sitedata-clear =
     .label = Limpar dados…
     .accesskey = L
@@ -649,6 +647,44 @@ addressbar-locbar-openpage-option =
     .accesskey = A
 addressbar-suggestions-settings = Alterar preferências das sugestões do mecanismo de pesquisa
 
+## Privacy Section - Content Blocking
+
+content-blocking-header = Bloqueio de conteúdo
+content-blocking-desc = Bloqueie conteúdo de terceiros, como propaganda ou código que podem tornar sua navegação mais lenta e rastreá-lo através da Web. Personalize suas configurações para uma proteção e desempenho balanceados.
+content-blocking-learn-more = Saiba mais
+content-blocking-restore-defaults =
+    .label = Restaurar padrões
+    .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = Desativar bloqueio de conteúdo
+content-blocking-toggle-off =
+    .tooltiptext = Ativar bloqueio de conteúdo
+content-blocking-toggle-label-on = ATIVAR
+    .accesskey = A
+content-blocking-toggle-label-off = DESATIVAR
+    .accesskey = D
+content-blocking-category-label = Escolher o que bloquear
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Elementos lentos de rastreio
+    .accesskey = s
+content-blocking-fastblock-description = Bloqueia conteúdo de terceiros que levam mais de 5 segundos para carregar.
+content-blocking-fastblock-option-enabled =
+    .label = Sempre bloquear
+content-blocking-fastblock-option-disabled =
+    .label = Nunca bloquear
+content-blocking-tracking-protection-label = Rastreadores
+    .accesskey = t
+content-blocking-tracking-protection-description = Bloqueia todos os rastreadores conhecidos (obs.: também pode impedir o carregamento de algumas páginas).
+content-blocking-tracking-protection-option-enabled =
+    .label = Sempre bloquear
+content-blocking-tracking-protection-option-pbm =
+    .label = Bloquear somente em janelas privativas
+content-blocking-tracking-protection-option-disabled =
+    .label = Nunca bloquear
+content-blocking-tracking-protection-change-blocklist = Mudar lista de bloqueio...
+
 ## Privacy Section - Tracking
 
 tracking-header = Proteção contra rastreamento
@@ -656,7 +692,7 @@ tracking-desc = A proteção contra rastreamento bloqueia rastreadores on-line q
 tracking-mode-label = Use a proteção contra rastreamento para bloquear rastreadores conhecidos
 tracking-mode-always =
     .label = Sempre
-    .accesskey = y
+    .accesskey = m
 tracking-mode-private =
     .label = Só em janelas privativas
     .accesskey = l
@@ -700,9 +736,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Bloquear reprodução automática de mídia com som em sites
     .accesskey = B
+permissions-block-autoplay-media-menu = Para sites que reproduzem som automaticamente
 permissions-block-autoplay-media-exceptions =
     .label = Exceções…
     .accesskey = E
+autoplay-option-ask =
+    .label = Sempre perguntar
+autoplay-option-allow =
+    .label = Permitir reprodução automática
+autoplay-option-dont =
+    .label = Não reproduzir automaticamente
+permissions-autoplay-link = Saiba mais
 permissions-block-popups =
     .label = Bloquear janelas popup
     .accesskey = B

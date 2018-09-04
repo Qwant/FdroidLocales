@@ -17,14 +17,6 @@ pref-page =
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
 # Please keep the placeholder string short to avoid truncation.
 #
 # Notice: The value of the `.style` attribute is a CSS string, and the `width`
@@ -137,20 +129,11 @@ is-not-default = { -brand-short-name } man ja ta ri awokik'amaya'l kan k'o wi
 set-as-my-default-browser =
     .label = Tib'an chi K'o wi…
     .accesskey = K
-startup-page = Toq { -brand-short-name } tatikirisaj
-    .accesskey = t
-startup-user-homepage =
-    .label = Tik'ut pe ri tikirib'äl ruxaq ruk'amaya'l
-startup-blank-page =
-    .label = Tik'ut pe jun kowöl ruxaq
-startup-prev-session =
-    .label = Kek'ut ri taq rutzuwäch chuqa' taq ruwi' ruk'isib'äl rumolojri'ïl
 startup-restore-previous-session =
     .label = Titzolin pa ri molojri'ïl xik'o
     .accesskey = m
 disable-extension =
     .label = Tichup ri K'amal
-home-page-header = Tikirib'äl ruxaq
 tabs-group-header = Taq ruwi'
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab mejaj pa taq ruwi' pa k'ak'a' kokisaxik kicholajem
@@ -219,6 +202,9 @@ choose-language-description = Ticha' ri ch'ab'äl nawajo' richin yek'ut pe ri ta
 choose-button =
     .label = Ticha'…
     .accesskey = c
+choose-browser-language-description = Kecha' ri taq ch'ab'äl e'okisan richin yek'ut taq molsamajib'äl, taq rutzijol taqoj, taq rutzijol { -brand-short-name }.
+confirm-browser-language-change-description = Titikirisäx chik { -brand-short-name } richin ye'okisäx ri taq k'exoj
+confirm-browser-language-change-button = Tisamajïx chuqa' Titikirisäx chik
 translate-web-pages =
     .label = Titzalq'omïx rupam ajk'amaya'l
     .accesskey = T
@@ -270,7 +256,6 @@ play-drm-content =
 play-drm-content-learn-more = Tetamäx ch'aqa' chik
 update-application-title = { -brand-short-name } Taq k'exoj ruwäch
 update-application-description = Junelïk tik'ex ri { -brand-short-name } richin ütz nisamäj, jikïl, chuqa' jikon.
-update-application-info = Ruwäch { $version } <a>Achike natzijoj</a>
 update-application-version = Ruwäch { $version } <a data-l10n-name="learn-more">Achike natzijoj</a>
 update-history =
     .label = Tik'ut pe ri runatab'al K'exoj ruwäch…
@@ -306,7 +291,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = ruchi' rutajinik rupam
     .accesskey = r
 performance-limit-content-process-enabled-desc = Ri taq ruxenab'al rutz'aqat rupam yetikïr nikutzilaj rub'eyal nisamäj toq nrokisaj k'ïy taq ruwi', xa chuqa' xtrokisaj k'ïy rutzatzq'ob'al.
-performance-limit-content-process-disabled-desc = Ri rujalwachinik rajilab'al rutajinik rupam xa okel rik'in ri k'ïy tajinïk { -brand-short-name }. <a>Tawetamaj nanik'oj we tzijïl ri k'ïy tajinïk</a>
 performance-limit-content-process-blocked-desc = Ri rujalwachinik rajilab'al rutajinik rupam xa okel rik'in ri k'ïy tajinïk { -brand-short-name }. <a data-l10n-name="learn-more">Tawetamaj nanik'oj we tzijïl ri k'ïy tajinïk</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -335,6 +319,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Ruproxi K'amab'ey
+network-settings-title = Runuk'ulem Okem
 network-proxy-connection-description = Tib'an runuk'ulem rub'eyal { -brand-short-name } nok pa k'amaya'l.
 network-proxy-connection-learn-more = Tetamäx ch'aqa' chik
 network-proxy-connection-settings =
@@ -377,9 +362,6 @@ use-current-pages =
 choose-bookmark =
     .label = Tokisäx yaketal…
     .accesskey = y
-restore-default =
-    .label = Titzolïx ruwäch ri rajil achi'el ruk'amon pe
-    .accesskey = T
 
 ## Search Section
 
@@ -576,9 +558,6 @@ history-dontremember-description = { -brand-short-name } xtrokisaj ri junam runu
 history-private-browsing-permanent =
     .label = Junelïk tokisäx pa rub'eyal ichinan okem pa k'amaya'l
     .accesskey = i
-history-remember-option =
-    .label = Tinatäx ri nunatab'al richin taq qasanïk chuqa' okik'amaya'l
-    .accesskey = T
 history-remember-browser-option =
     .label = Tinatäx ri runatab'al okem pa k'amaya'l chuqa' ri qasanïk
     .accesskey = k
@@ -624,6 +603,26 @@ sitedata-accept-third-party-visited-option =
     .label = Etz'eton
 sitedata-accept-third-party-never-option =
     .label = Majub'ey
+sitedata-allow-cookies-option =
+    .label = Kek'ulutäj taq rukaxlanway chuqa' taq rutzij k'amaya'l
+    .accesskey = K
+sitedata-disallow-cookies-option =
+    .label = Keq'at taq rukaxlanwäy chuqa' Rutzij K'amaya'l
+    .accesskey = K
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Q'aton ruwäch
+    .accesskey = r
+sitedata-block-trackers-option-recommended =
+    .label = Aj rox winäq taq ojqanela' (chilab'en)
+sitedata-block-trackers-option =
+    .label = Aj rox winäq taq ojqanela'
+sitedata-block-unvisited-option =
+    .label = Kikaxlanwey ajk'amaya'l taq ruxaq man etz'eton ta
+sitedata-block-all-third-parties-option =
+    .label = Ronojel ri kikaxlanway aj rox winaqi'
+sitedata-block-always-option =
+    .label = Ronojel kaxlanwäy (yetikïr nikiya' sachoj pa taq ajk'amaya'l ruxaq)
 sitedata-clear =
     .label = Tijosq'ïx Tzij…
     .accesskey = j
@@ -648,6 +647,66 @@ addressbar-locbar-openpage-option =
     .label = Kejaq taq ruwi'
     .accesskey = K
 addressbar-suggestions-settings = Kek'ex ri taq kajowab'al ri taq kichilab'enik kisamajinel taq kanob'äl
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Ruq'atik Rupam
+content-blocking-desc = Ke'aq'ata' taq rupam ketamab'al aj rox winäq, achi'el taq rutzijol o b'itz'ib', ri nitikïr nuyokob'a' ri okem pa ka'amaya'l chuqa' yerutzeqelb'ej ri taq ruxaq k'amaya'l ye'atz'ët. Tawichinaj ri anuk'ulem richin choj napäj ri chajinïk chuqa' ri rub'eyal nisamäj.
+content-blocking-learn-more = Tetamäx Ch'aqa' Chik
+content-blocking-restore-defaults =
+    .label = Ketzolij ri taq Wachinel e K'o Wi
+    .accesskey = t
+content-blocking-toggle-on =
+    .tooltiptext = Tichup ri Ruq'atik Rupam
+content-blocking-toggle-off =
+    .tooltiptext = Titzij ri Ruq'atik Rupam
+content-blocking-toggle-label-on = TZIJÏL
+    .accesskey = O
+content-blocking-toggle-label-off = CHUPÜL
+    .accesskey = O
+content-blocking-category-label = Tacha' achike naq'ät
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Taq Ruch'akul Eqal Ojqanem
+    .accesskey = E
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-label = Eqal-Yesamajib'ëx Ojqanela'
+    .accesskey = E
+content-blocking-fastblock-description = Taq'ata' ri kipam aj rox winäq, ri niyoke' jotöl chi re ri 5 nich'ramaj richin nusamajib'ej.
+content-blocking-fastblock-option-enabled =
+    .label = Junelïk tiq'at
+content-blocking-fastblock-option-disabled =
+    .label = Majub'ey tiq'at
+content-blocking-tracking-protection-label = Ojqanela'
+    .accesskey = O
+content-blocking-tracking-protection-description = Ke'aq'ata' ronojel ri taq ojqanela' etaman kiwa (Ch'utitzijol: chuqa' yatikïr ye'aq'ät chi kesamajib'ëx ri taq ruxaq).
+content-blocking-tracking-protection-option-enabled =
+    .label = Junelïk tiq'at
+content-blocking-tracking-protection-option-pbm =
+    .label = Tiq'at xa xe pa ichinan taq tzuwäch
+content-blocking-tracking-protection-option-disabled =
+    .label = Majub'ey tiq'at
+content-blocking-tracking-protection-option-always =
+    .label = Junelïk
+    .accesskey = J
+content-blocking-tracking-protection-option-private =
+    .label = Xa xe pa ichinan taq tzuwäch
+    .accesskey = i
+content-blocking-tracking-protection-change-blocklist = Tijal Rucholajem Q'atoj…
+content-blocking-reject-trackers-label = Kikaxlanwäy Aj Rox Winäq
+    .accesskey = K
+content-blocking-change-cookie-settings =
+    .label = Kek'ëx ri taq Runuk'ulem Kaxlanwäy
+    .accesskey = R
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Ojqanela' (chilab'en)
+    .accesskey = n
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Ojqanela'
+    .accesskey = n
 
 ## Privacy Section - Tracking
 
@@ -700,9 +759,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Keq'at ajk'amaya'l taq ruxaq richin man kerutzïj ruyonil taq tob'äl k'o kik'oxom
     .accesskey = q
+permissions-block-autoplay-media-menu = Kichin taq ajk'amaya'l ruxaq pa kiyonil nikitzïj taq k'oxom
 permissions-block-autoplay-media-exceptions =
     .label = Taq man relik ta…
     .accesskey = E
+autoplay-option-ask =
+    .label = Jutaqil Tik'utüx
+autoplay-option-allow =
+    .label = Tiya' q'ij Ri Ruyon Nitzij
+autoplay-option-dont =
+    .label = Mani Ruyonil Nitzijon
+permissions-autoplay-link = Tetamäx ch'aqa' chik
 permissions-block-popups =
     .label = Keq'at elenel taq tzuwäch
     .accesskey = K

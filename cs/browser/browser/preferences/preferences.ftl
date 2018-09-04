@@ -6,6 +6,8 @@ do-not-track-description = Říci webovým stránkám pomocí signálu Do Not Tr
 do-not-track-learn-more = Zjistit více
 do-not-track-option-default =
     .label = Pouze při použití ochrany proti sledování
+do-not-track-option-default-content-blocking =
+    .label = Jen pokud je zapnuto blokování nalezených sledovacích prvků
 do-not-track-option-always =
     .label = Vždy
 pref-page =
@@ -14,14 +16,6 @@ pref-page =
             [windows] Možnosti
            *[other] Předvolby
         }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -98,6 +92,9 @@ extension-controlled-privacy-containers = Rozšíření <img data-l10n-name="ico
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Ochranu proti sledování spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Toto nastavení spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Připojení aplikace { -brand-short-name } k internetu spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
@@ -132,25 +129,16 @@ get-started-configured = Otevřít předvolby služby { -sync-brand-short-name }
 always-check-default =
     .label = Kontrolovat, jestli je { -brand-short-name } výchozím webovým prohlížečem
     .accesskey = w
-is-default = { -brand-short-name } je aktuálně výchozím prohlížečem
+is-default = { -brand-short-name } je vaším výchozím prohlížečem
 is-not-default = { -brand-short-name } aktuálně není výchozím prohlížečem
 set-as-my-default-browser =
     .label = Nastavit jako výchozí…
     .accesskey = i
-startup-page = Při startu aplikace { -brand-short-name }
-    .accesskey = s
-startup-user-homepage =
-    .label = Zobrazit vaši domovskou stránku
-startup-blank-page =
-    .label = Zobrazit prázdnou stránku
-startup-prev-session =
-    .label = Zobrazit okna a panely z minula
 startup-restore-previous-session =
-    .label = Obnovit předchozí relaci
+    .label = Otevřít panely z minula
     .accesskey = O
 disable-extension =
     .label = Zakázat rozšíření
-home-page-header = Domovská stránka
 tabs-group-header = Panely
 ctrl-tab-recently-used-order =
     .label = Přepínat panely pomocí Ctrl+Tab v pořadí podle posledního otevření
@@ -222,6 +210,12 @@ choose-language-description = Vyberte jazyky pro zobrazování webových stráne
 choose-button =
     .label = Vybrat jazyky…
     .accesskey = j
+choose-browser-language-description = Vyberte požadovaný jazyk uživatelského rozhraní aplikace { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Vybrat alternativy…
+    .accesskey = l
+confirm-browser-language-change-description = Aby se změny projevily, restartujte aplikaci { -brand-short-name }
+confirm-browser-language-change-button = Restartovat
 translate-web-pages =
     .label = Překládat webové stránky
     .accesskey = T
@@ -273,7 +267,6 @@ play-drm-content =
 play-drm-content-learn-more = Zjistit více
 update-application-title = Aktualizace aplikace { -brand-short-name }
 update-application-description = Pro nejvyšší rychlost, stabilitu a bezpečnost udržujte aplikaci { -brand-short-name } stále aktuální.
-update-application-info = Verze { $version } <a>Co je nového</a>
 update-application-version = Verze { $version } <a data-l10n-name="learn-more">Co je nového</a>
 update-history =
     .label = Zobrazit historii aktualizací…
@@ -309,7 +302,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Omezit počet procesů pro obsah na
     .accesskey = b
 performance-limit-content-process-enabled-desc = Další procesy pro obsah mohou zlepšit výkon s více otevřenými panely, ale potřebují více paměti.
-performance-limit-content-process-disabled-desc = Počet procesů pro obsah lze upravit pouze při použití multiprocesového režimu aplikace { -brand-short-name }. <a>Podívejte se, jak stav multiprocesového režimu zkontrolovat</a>
 performance-limit-content-process-blocked-desc = Počet procesů pro obsah lze upravit pouze při použití multiprocesového režimu aplikace { -brand-short-name }. <a data-l10n-name="learn-more">Podívejte se, jak stav multiprocesového režimu zkontrolovat</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -338,6 +330,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Nastavení připojení
+network-settings-title = Nastavení sítě
 network-proxy-connection-description = Konfigurovat připojení aplikace { -brand-short-name } k internetu.
 network-proxy-connection-learn-more = Zjistit více
 network-proxy-connection-settings =
@@ -380,9 +373,6 @@ use-current-pages =
 choose-bookmark =
     .label = Použít záložku…
     .accesskey = z
-restore-default =
-    .label = Obnovit výchozí
-    .accesskey = b
 
 ## Search Section
 
@@ -515,11 +505,15 @@ sync-engine-prefs =
            *[other] Předvolby
         }
     .tooltiptext = Nastavení v sekcích Obecné a Soukromí a zabezpečení
-    .accesskey = P
+    .accesskey =
+        { PLATFORM() ->
+            [windows] M
+           *[other] P
+        }
 sync-device-name-header = Název zařízení
 sync-device-name-change =
-    .label = Změnit název zařízení…
-    .accesskey = m
+    .label = Přejmenovat toto zařízení…
+    .accesskey = j
 sync-device-name-cancel =
     .label = Zrušit
     .accesskey = u
@@ -579,9 +573,6 @@ history-dontremember-description = { -brand-short-name } použije stejné nastav
 history-private-browsing-permanent =
     .label = Vždy použít režim anonymního prohlížení
     .accesskey = p
-history-remember-option =
-    .label = Pamatovat si historii stránek a stahování
-    .accesskey = s
 history-remember-browser-option =
     .label = Pamatovat si historii stránek a stahování
     .accesskey = s
@@ -627,6 +618,30 @@ sitedata-accept-third-party-visited-option =
     .label = povolit pouze navštívené
 sitedata-accept-third-party-never-option =
     .label = nikdy nepovolovat
+sitedata-allow-cookies-option =
+    .label = Ukládat všechny cookies a data stránek
+    .accesskey = a
+sitedata-disallow-cookies-option =
+    .label = Blokovat cookies a data některých stránek
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Blokovat
+    .accesskey = t
+sitedata-block-trackers-option-recommended =
+    .label = cookies a data sledovacích prvků třetích stran (doporučeno)
+sitedata-block-trackers-option =
+    .label = cookies a data sledovacích prvků třetích stran
+sitedata-block-unvisited-option =
+    .label = cookies a data dosud nenavštívených stránek
+sitedata-block-all-third-parties-option =
+    .label = cookies a data všech třetích stran
+sitedata-block-always-option =
+    .label = všechny cookies a data (může omezit fungování některých stránek)
+sitedata-block-all-third-party-option =
+    .label = všechny cookies třetích stran (může omezit fungování některých stránek)
+sitedata-block-all-option =
+    .label = všechny cookies (omezí fungování některých stránek)
 sitedata-clear =
     .label = Vymazat data…
     .accesskey = V
@@ -636,6 +651,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Výjimky…
     .accesskey = k
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Vaše nastavení blokování obsahu brání změnám nastavení cookies a dat stránek.
 
 ## Privacy Section - Address Bar
 
@@ -650,7 +669,84 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Otevřené panely
     .accesskey = O
-addressbar-suggestions-settings = Změnit předvolby našeptávání vyhledávače
+addressbar-suggestions-settings = Nastavit našeptávání vyhledávače
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Blokování obsahu a ochrana proti sledování
+content-blocking-desc = Zablokujte obsah třetích stran, jako jsou reklamy nebo kód, který zpomaluje načítání stránek a sleduje vaše aktivity na internetu. Úroveň blokování můžete upravit podle vlastních nároků na rychlost načítání i ochranu soukromí.
+content-blocking-learn-more = Zjistit více
+content-blocking-restore-defaults =
+    .label = Obnovit výchozí nastavení
+    .accesskey = O
+content-blocking-toggle-on =
+    .tooltiptext = Vypnout blokování obsahu
+content-blocking-toggle-off =
+    .tooltiptext = Zapnout blokování obsahu
+content-blocking-toggle-label-on = ZAPNUTO
+    .accesskey = Z
+content-blocking-toggle-label-off = VYPNUTO
+    .accesskey = V
+content-blocking-category-label = Vyberte, co chcete blokovat
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Pomalé prvky třetích stran
+    .accesskey = t
+content-blocking-fastblock-description = Obsah třetích stran, který se načítá déle než 5 vteřin
+content-blocking-fastblock-option-enabled =
+    .label = Blokovat
+content-blocking-fastblock-option-disabled =
+    .label = Neblokovat
+content-blocking-tracking-protection-label = Známé sledovací prvky
+    .accesskey = S
+content-blocking-tracking-protection-description = Jejich blokování může omezit fungování některých stránek
+content-blocking-tracking-protection-option-enabled =
+    .label = Blokovat
+content-blocking-tracking-protection-option-pbm =
+    .label = Blokovat v anonymním prohlížení
+content-blocking-tracking-protection-option-disabled =
+    .label = Neblokovat
+content-blocking-tracking-protection-change-blocklist = Změnit seznam blokací…
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Zpomalující sledovací prvky
+    .accesskey = s
+content-blocking-fastblock-new-description = Blokovat jen sledovací prvky, které zpomalují načítání stránek.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Všechny nalezené sledovací prvky
+    .accesskey = s
+content-blocking-tracking-protection-new-description = Blokovat všechny známe sledovací prvky (může omezit fungování některých stránek).
+content-blocking-tracking-protection-option-always =
+    .label = Vždy
+    .accesskey = V
+content-blocking-tracking-protection-option-private =
+    .label = Pouze v anonymních oknech
+    .accesskey = P
+content-blocking-tracking-protection-change-block-list = Změnit seznam blokací
+content-blocking-third-party-cookies-label =
+    .label = Cookies třetích stran
+    .accesskey = C
+content-blocking-reject-trackers-description = Nastavení blokování cookies všech třetích stran nebo jen od sledovacích prvků.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Vaše nastavení cookies a dat stránek brání změnám nastavení cookies třetích stran.
+content-blocking-change-cookie-settings =
+    .label = Změnit nastavení cookies
+    .accesskey = Z
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Cookies sledovacích prvků (doporučeno)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Cookies sledovacích prvků
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Všechny cookies třetích stran (může omezit fungování některých stránek)
+    .accesskey = a
 
 ## Privacy Section - Tracking
 
@@ -703,9 +799,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Zabránit stránkám v automatickém přehrávání médií se zvukem
     .accesskey = b
+permissions-block-autoplay-media-menu = Při pokusu o automatické přehrání médií se zvukem
 permissions-block-autoplay-media-exceptions =
     .label = Výjimky…
     .accesskey = y
+autoplay-option-ask =
+    .label = se zeptat
+autoplay-option-allow =
+    .label = spustit přehrávání
+autoplay-option-dont =
+    .label = nic nepřehrávat
+permissions-autoplay-link = Zjistit více
 permissions-block-popups =
     .label = Blokovat vyskakovací okna
     .accesskey = B
@@ -726,7 +830,7 @@ permissions-a11y-privacy-link = Zjistit více
 ## Privacy Section - Data Collection
 
 collection-header = Sběr a používání dat o aplikaci { -brand-short-name }
-collection-description = Co se týče dat, dáváme vám vždy na výběr. Také sbíráme jen ta data, která nám pomohou aplikaci { -brand-short-name } dále zlepšovat. Před odesíláním osobních dat vždy žádáme o váš souhlas.
+collection-description = Co se týče dat, dáváme vám vždy na výběr. Také sbíráme jen data potřebná pro vylepšování aplikace { -brand-short-name }. Před odesíláním osobních dat vždy žádáme o váš souhlas.
 collection-privacy-notice = Zásady ochrany osobních údajů
 collection-health-report =
     .label = Povolit aplikaci { -brand-short-name } odesílat Mozille technická data a data o interakcích

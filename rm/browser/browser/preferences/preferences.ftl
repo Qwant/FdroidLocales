@@ -6,6 +6,8 @@ do-not-track-description = Trametter a websites il signal «Do Not Track» per i
 do-not-track-learn-more = Ulteriuras infurmaziuns
 do-not-track-option-default =
     .label = Mo sche la protecziun encunter il fastizar è activada
+do-not-track-option-default-content-blocking =
+    .label = Mo sche { -brand-short-name } è configurà per bloccar fastizaders chattads
 do-not-track-option-always =
     .label = Adina
 pref-page =
@@ -14,14 +16,6 @@ pref-page =
             [windows] Preferenzas
            *[other] Preferenzas
         }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 16.4em
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -137,20 +131,11 @@ is-not-default = { -brand-short-name } n'è betg il navigatur da standard
 set-as-my-default-browser =
     .label = Definir sco standard…
     .accesskey = s
-startup-page = Cura che { -brand-short-name } vegn avià
-    .accesskey = a
-startup-user-homepage =
-    .label = Mussar la pagina da partenza
-startup-blank-page =
-    .label = Mussar ina pagina vida
-startup-prev-session =
-    .label = Mussar las fanestras ed ils tabs da l'ultima sesida
 startup-restore-previous-session =
     .label = Restaurar l'ultima sesida
     .accesskey = s
 disable-extension =
     .label = Deactivar l'extensiun
-home-page-header = Pagina da partenza
 tabs-group-header = Tabs
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab siglia dad in tab a l'auter en la successiun da l'ultima utilisaziun
@@ -219,6 +204,12 @@ choose-language-description = Tscherna tia lingua preferida per la visualisaziun
 choose-button =
     .label = Tscherner…
     .accesskey = T
+choose-browser-language-description = Tscherna la lingua da menus, messadis ed avis da { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Definir las alternativas…
+    .accesskey = l
+confirm-browser-language-change-description = Reaviar { -brand-short-name } per applitgar questas midadas
+confirm-browser-language-change-button = Applitgar e reaviar
 translate-web-pages =
     .label = Translatar cuntegn da web
     .accesskey = T
@@ -270,7 +261,6 @@ play-drm-content =
 play-drm-content-learn-more = Ulteriuras infurmaziuns
 update-application-title = Actualisaziuns da { -brand-short-name }
 update-application-description = Actualisescha { -brand-short-name } per prestaziun, stabilitad e segirezza maximala.
-update-application-info = Versiun { $version } <a>Novaziuns</a>
 update-application-version = Versiun { $version } <a data-l10n-name="learn-more">Novaziuns</a>
 update-history =
     .label = Mussar la cronologia da las actualisaziuns…
@@ -306,7 +296,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Limita da process da cuntegn
     .accesskey = p
 performance-limit-content-process-enabled-desc = Process da cuntegn supplementars pon augmentar la prestaziun sche ti utiliseschas plirs tabs, ma els dovran era dapli memoria.
-performance-limit-content-process-disabled-desc = Igl è mo pussaivel da midar il dumber da process da cuntegn cun versiuns da { -brand-short-name } che sustegnan plirs process. <a>Ve a savair co che ti pos controllar sche la funcziun da plirs process è activada</a>
 performance-limit-content-process-blocked-desc = Igl è mo pussaivel da midar il dumber da process da cuntegn cun versiuns da { -brand-short-name } che sustegnan plirs process. <a data-l10n-name="learn-more">Ve a savair co che ti pos controllar sche la funcziun da plirs process è activada</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -335,6 +324,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Proxy da la rait
+network-settings-title = Parameters da la rait
 network-proxy-connection-description = Configurar la moda da connexiun cun l'internet da { -brand-short-name }.
 network-proxy-connection-learn-more = Ulteriuras infurmaziuns
 network-proxy-connection-settings =
@@ -377,9 +367,6 @@ use-current-pages =
 choose-bookmark =
     .label = Utilisar segnapaginas…
     .accesskey = l
-restore-default =
-    .label = Restaurar il standard
-    .accesskey = R
 
 ## Search Section
 
@@ -576,9 +563,6 @@ history-dontremember-description = { -brand-short-name } vegn ad utilisar las me
 history-private-browsing-permanent =
     .label = Adina navigar en il modus privat
     .accesskey = p
-history-remember-option =
-    .label = Memorisar la cronologia dal navigar e da las telechargiadas
-    .accesskey = r
 history-remember-browser-option =
     .label = Memorisar la cronologia da navigaziun e da las telechargiadas
     .accesskey = M
@@ -624,6 +608,30 @@ sitedata-accept-third-party-visited-option =
     .label = Da visitads
 sitedata-accept-third-party-never-option =
     .label = Mai
+sitedata-allow-cookies-option =
+    .label = Acceptar cookies e datas da website
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = Bloccar cookies e datas da website
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Tip da cuntegn bloccà
+    .accesskey = T
+sitedata-block-trackers-option-recommended =
+    .label = Fastizaders da terzas partidas (recumandà)
+sitedata-block-trackers-option =
+    .label = Fastizaders da terzas partidas
+sitedata-block-unvisited-option =
+    .label = Cookies da websites betg visitadas
+sitedata-block-all-third-parties-option =
+    .label = Tut ils cookies da terzas partidas
+sitedata-block-always-option =
+    .label = Tut ils cookies (po chaschunar problems cun tschertas paginas)
+sitedata-block-all-third-party-option =
+    .label = Tut ils cookies da terzas partidas (po chaschunar problems cun websites)
+sitedata-block-all-option =
+    .label = Tut ils cookies (chaschuna problems cun websites)
 sitedata-clear =
     .label = Stizzar las datas…
     .accesskey = l
@@ -648,6 +656,80 @@ addressbar-locbar-openpage-option =
     .label = Tabs averts
     .accesskey = b
 addressbar-suggestions-settings = Midar las preferenzas per propostas da maschinas da tschertgar
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Bloccada da cuntegn
+content-blocking-desc = Blochescha cuntegn da terzas partidas sco reclamas u code che po ralentar la navigaziun e ta fastizar en il web. Adattescha las preferenzas per chattar l'equiliber ideal tranter protecziun e performanza.
+content-blocking-learn-more = Ulteriuras infurmaziuns
+content-blocking-restore-defaults =
+    .label = Restaurar il standard
+    .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = Deactivar la bloccada da cuntegn
+content-blocking-toggle-off =
+    .tooltiptext = Activar la bloccada da cuntegn
+content-blocking-toggle-label-on = ACTIVÀ
+    .accesskey = A
+content-blocking-toggle-label-off = DEACTIVÀ
+    .accesskey = D
+content-blocking-category-label = Tscherna tge bloccar
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Elements plauns che fastizeschan
+    .accesskey = s
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-label = Fastizaders che chargian plaun
+    .accesskey = p
+content-blocking-fastblock-description = Blochescha cuntegn da terzas partidas che dovra dapli che 5 secundas per chargiar.
+content-blocking-fastblock-option-enabled =
+    .label = Adina bloccar
+content-blocking-fastblock-option-disabled =
+    .label = Mai bloccar
+content-blocking-tracking-protection-label = Fastizaders
+    .accesskey = t
+content-blocking-tracking-protection-all-label = Tut ils fastizaders chattads
+    .accesskey = T
+content-blocking-tracking-protection-description = Blochescha tut ils fastizaders enconuschents (Remartga: impedescha eventualmain che tschertas paginas chargian)
+content-blocking-tracking-protection-option-enabled =
+    .label = Adina bloccar
+content-blocking-tracking-protection-option-pbm =
+    .label = Mo bloccar en fanestras privatas
+content-blocking-tracking-protection-option-disabled =
+    .label = Mai bloccar
+content-blocking-tracking-protection-option-always =
+    .label = Adina
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = Mo en fanestras privatas
+    .accesskey = p
+content-blocking-tracking-protection-change-blocklist = Modifitgar la glista da bloccada…
+content-blocking-reject-trackers-label = Cookies da terzas partidas
+    .accesskey = C
+content-blocking-reject-trackers-description = Bloccar tut ils cookies da terzas partidas u mo quels ch'èn definids da fastizaders.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the "All cookies" option
+# being selected in the Cookies and Site Data section of the UI.
+content-blocking-reject-trackers-warning-all-cookies-blocked = Actualmain vegnan tut ils cookies bloccads.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the "Cookies from unvisited websites"
+# option being selected in the Cookies and Site Data section of the UI.
+content-blocking-reject-trackers-warning-from-unvisited-cookies-blocked = Actualmain vegnan bloccads ils cookies da websites betg visitadas.
+content-blocking-change-cookie-settings =
+    .label = Modifitgar ils parameters per ils cookies
+    .accesskey = s
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Fastizaders (recumandà)
+    .accesskey = z
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Fastizaders
+    .accesskey = z
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Tut ils cookies da terzas partidas (po chaschunar problems cun websites)
+    .accesskey = T
 
 ## Privacy Section - Tracking
 
@@ -698,11 +780,19 @@ permissions-notification-pause =
     .label = Modus da pausa per las communicaziuns enfin che { -brand-short-name } vegn reavià
     .accesskey = n
 permissions-block-autoplay-media =
-    .label = Impedir che websites reproduceschian automaticamain medias cun tun 
+    .label = Impedir che websites reproduceschian automaticamain medias cun tun
     .accesskey = I
+permissions-block-autoplay-media-menu = Per websites che reproduceschan automaticamain tun
 permissions-block-autoplay-media-exceptions =
     .label = Excepziuns…
     .accesskey = E
+autoplay-option-ask =
+    .label = Adina dumandar
+autoplay-option-allow =
+    .label = Lubir da reproducir
+autoplay-option-dont =
+    .label = Betg far ir automaticamain
+permissions-autoplay-link = Ulteriuras infurmaziuns
 permissions-block-popups =
     .label = Bloccar fanestras pop-up
     .accesskey = p

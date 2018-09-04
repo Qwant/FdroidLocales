@@ -15,6 +15,7 @@
 
 <!ENTITY clearDataSettings3.label     "నేను &brandShortName; నుండి నిష్క్రమించినప్పుడు, అది స్వయంచాలకంగా వీటన్నింటినీ తుడిచివేయాలి">
 
+<!ENTITY clearDataSettings4.label     "మూసివేసినప్పుడు, &brandShortName; ఆటోమెటిగ్గా వీటిని చెరిపివేస్తుంది">
 
 <!-- XXX rearrange entities to match physical layout when l10n isn't an issue -->
 <!-- LOCALIZATION NOTE (clearTimeDuration.*): "Time range to clear" dropdown.
@@ -39,9 +40,9 @@ that require it.  -->
 <!ENTITY historySection.label         "చరిత్ర">
 <!ENTITY dataSection.label            "దత్తాంశము">
 
-<!ENTITY itemHistoryAndDownloads.label     "విహారణ మరియు దింపుకోలు చరిత్ర">
+<!ENTITY itemHistoryAndDownloads.label     "విహారణ &amp; దింపుకోలు చరిత్ర">
 <!ENTITY itemHistoryAndDownloads.accesskey "B">
-<!ENTITY itemFormSearchHistory.label       "ఫారమ్ మరియు శోధన చరిత్ర">
+<!ENTITY itemFormSearchHistory.label       "ఫారాలు &amp; వెతుకుడు చరిత్ర">
 <!ENTITY itemFormSearchHistory.accesskey   "F">
 <!ENTITY itemCookies.label                 "కుకీలు">
 <!ENTITY itemCookies.accesskey             "C">

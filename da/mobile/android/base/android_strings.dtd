@@ -27,12 +27,6 @@
 <!ENTITY firstrun_button_next "Næste">
 
 <!ENTITY firstrun_tabqueue_title "Links">
-<!-- Localization note (firstrun_tabqueue_message): 'Tab queue' is a feature that allows users to queue up or save links from outside of Firefox (without switching apps) - these links will be loaded in Firefox the next time Firefox is opened. -->
-<!ENTITY firstrun_tabqueue_message_off "Aktiver fanebladskø">
-<!ENTITY firstrun_tabqueue_subtext_off "Gem links til senere åbning i &brandShortName;, når du vælger dem i andre apps.">
-
-<!ENTITY firstrun_tabqueue_message_on "Succes!">
-<!ENTITY firstrun_tabqueue_subtext_on "Du kan altid deaktivere igen i &settings; under &pref_category_general;.">
 
 <!ENTITY firstrun_readerview_title "Artikler">
 <!-- Localization note (firstrun_readerview_message): This is a casual way of describing getting rid of unnecessary things, and is referring to simplifying websites so only the article text and images are visible, removing unnecessary headers or ads. -->
@@ -69,7 +63,6 @@
 <!ENTITY  crash_restart_label "Genstart &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "Indtast søgeord eller adresse">
-
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -215,7 +208,6 @@
      “storing data”. -->
 <!ENTITY pref_category_advanced_summary3 "Gendan faneblade, data-sparer, Udviklerværktøj">
 <!ENTITY pref_category_notifications "Beskeder">
-<!ENTITY pref_category_notifications_summary "Nye funktioner, opdatering af websteder">
 <!ENTITY pref_category_notifications_summary2 "Nye funktioner og tips">
 <!ENTITY pref_developer_remotedebugging_usb "Ekstern debugging via USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Ekstern debugging via wi-fi">
@@ -372,6 +364,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Tillad automatisk afspilning">
 <!ENTITY pref_media_autoplay_enabled_summary "Bestemmer om websteder kan starte afspilning af video og andet medieindhold automatisk">
+<!ENTITY pref_media_autoplay_allow "Tillad automatisk afspilning">
+<!ENTITY pref_media_autoplay_block "Afspil ikke automatisk">
 <!ENTITY pref_zoom_force_enabled "Aktiver altid zoom">
 <!ENTITY pref_zoom_force_enabled_summary "Gennemtving zoom, så du kan zoome på alle websider">
 <!ENTITY pref_voice_input "Stemme-input">
@@ -447,6 +441,11 @@
 <!ENTITY datareporting_crashreporter_title_short "Fejlrapportering">
 <!ENTITY datareporting_wifi_title2 "&vendorShortName; Positionstjeneste">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Hjælp &vendorShortName; med at kortlægge hele verden! Del din enheds tilnærmelsesvise position ud fra wi-fi og mobilmaster, så vi kan forbedre vores positionstjeneste.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "&vendorShortName;s positionstjeneste kører">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -891,3 +890,16 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Føj til startskærm">
 <!ENTITY pwa_continue_to_website "Fortsæt til websted">
 <!ENTITY pwa_onboarding_sumo "Du kan nemt føje dette websted til din startskærm for at have hurtig adgang til det og browse hurtigere med en app-lignende oplevelse.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Afspil">
+<!ENTITY pip_play_button_description "Fortsæt afspilning">
+<!ENTITY pip_pause_button_title "Pause">
+<!ENTITY pip_pause_button_description "Sæt afspilning på pause">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "&vendorShortName;s positionstjeneste">
+<!ENTITY download_notification_channel "Hentede filer">
+<!ENTITY media_notification_channel "Medieafspilning">

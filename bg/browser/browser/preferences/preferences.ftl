@@ -57,7 +57,7 @@ close-button =
 
 ## Browser Restart Dialog
 
-feature-enable-requires-restart = Приожението { -brand-short-name } трябва да бъде рестартирано, за да бъде включена тази възможност.
+feature-enable-requires-restart = Приложението { -brand-short-name } трябва да бъде рестартирано, за да бъде включена тази възможност.
 feature-disable-requires-restart = Приложението { -brand-short-name } трябва да бъде рестартирано, за да бъде изключена тази възможност.
 should-restart-title = Рестартиране на { -brand-short-name }
 should-restart-ok = Рестартиране на { -brand-short-name }
@@ -201,6 +201,9 @@ choose-language-description = Избор на език при показване
 choose-button =
     .label = Избиране…
     .accesskey = И
+choose-browser-language-description = Изберете езиците, на които да бъдат показвани менютата, съобщенията и известията от { -brand-short-name }.
+confirm-browser-language-change-description = Рестартирайте { -brand-short-name }, за да бъдат приложени промените
+confirm-browser-language-change-button = Прилагане и рестартиране
 translate-web-pages =
     .label = Превеждане на съдържанието на страниците
     .accesskey = П
@@ -328,7 +331,7 @@ home-new-windows-tabs-description2 = Изберете какво да вижда
 
 ## Home Section - Home Page Customization
 
-home-homepage-mode-label = Началната страница и нови прозорци
+home-homepage-mode-label = Начална страница и нови прозорци
 home-newtabs-mode-label = Нов раздел
 home-restore-defaults =
     .label = Стандартни настройки
@@ -585,8 +588,8 @@ sitedata-accept-cookies-option =
     .label = Приемане на бисквитки и данни на страници (препоръчително)
     .accesskey = П
 sitedata-block-cookies-option =
-    .label = Забраняване на бисквитки и данни на страници (може е да доведе до неработещи страници)
-    .accesskey = З
+    .label = Ограничаване на бисквитки и данни на страници (може е да доведе до неработещи страници)
+    .accesskey = о
 sitedata-keep-until = Пазене до
     .accesskey = а
 sitedata-keep-until-expire =
@@ -601,6 +604,26 @@ sitedata-accept-third-party-visited-option =
     .label = От посетените
 sitedata-accept-third-party-never-option =
     .label = Никога
+sitedata-allow-cookies-option =
+    .label = Разрешаване на бисквитки и данни
+    .accesskey = р
+sitedata-disallow-cookies-option =
+    .label = Ограничаване на бисквитки и данни
+    .accesskey = о
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Вид на ограничения ресурс
+    .accesskey = в
+sitedata-block-trackers-option-recommended =
+    .label = Проследявания от трети страни (препоръчително)
+sitedata-block-trackers-option =
+    .label = Проследявания от трети страни
+sitedata-block-unvisited-option =
+    .label = Бисквитки от непосетени страници
+sitedata-block-all-third-parties-option =
+    .label = Всички бисквитки от трети страни
+sitedata-block-always-option =
+    .label = Всички бисквитки (може да доведе до неработещи страници)
 sitedata-clear =
     .label = Изчистване на данни…
     .accesskey = т
@@ -625,6 +648,44 @@ addressbar-locbar-openpage-option =
     .label = Отворени раздели
     .accesskey = р
 addressbar-suggestions-settings = Настройки на предложенията от търсещите машини
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Ограничаване на съдържание
+content-blocking-desc = Ограничаване на съдържание от трети страни като реклами или друг код, който би могъл да забави разглеждането или да ви проследява из Мрежата. Изберете настройките, които са най-добрия баланс между защита и производителност.
+content-blocking-learn-more = Научете повече
+content-blocking-restore-defaults =
+    .label = Стандартни настройки
+    .accesskey = д
+content-blocking-toggle-on =
+    .tooltiptext = Изключване ограничаването на съдържание
+content-blocking-toggle-off =
+    .tooltiptext = Включване ограничаването на съдържание
+content-blocking-toggle-label-on = ВКЛ
+    .accesskey = в
+content-blocking-toggle-label-off = ИЗКЛ
+    .accesskey = и
+content-blocking-category-label = Изберете какво да бъде спирано
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Бавни проследяващи елементи
+    .accesskey = б
+content-blocking-fastblock-description = Спиране на съдържание от трети страни, което зарежда повече от 5 секунди.
+content-blocking-fastblock-option-enabled =
+    .label = Винаги да бъде спирано
+content-blocking-fastblock-option-disabled =
+    .label = Никога да не бъде спирано
+content-blocking-tracking-protection-label = Проследяващи елементи
+    .accesskey = п
+content-blocking-tracking-protection-description = Спира всички известни проследявания (Заб.: може да попречи на някои страници да заредят).
+content-blocking-tracking-protection-option-enabled =
+    .label = Винаги да бъдат спирани
+content-blocking-tracking-protection-option-pbm =
+    .label = Спиране само в поверителни прозорци
+content-blocking-tracking-protection-option-disabled =
+    .label = Никога да не бъдат спирани
+content-blocking-tracking-protection-change-blocklist = Промяна на списъка…
 
 ## Privacy Section - Tracking
 
@@ -674,9 +735,20 @@ permissions-notification-link = Научете повече
 permissions-notification-pause =
     .label = Спиране на известията до рестарт на { -brand-short-name }
     .accesskey = з
+permissions-block-autoplay-media =
+    .label = Забраняване на страниците автоматично да възпроизвеждат медия със звук
+    .accesskey = я
+permissions-block-autoplay-media-menu = За страниците, автоматично изпълняващи звук
 permissions-block-autoplay-media-exceptions =
     .label = Изключения…
     .accesskey = ю
+autoplay-option-ask =
+    .label = Винаги да пита
+autoplay-option-allow =
+    .label = Автоматично изпълняване
+autoplay-option-dont =
+    .label = Забрана на автоматичното изпълняване
+permissions-autoplay-link = Научете повече
 permissions-block-popups =
     .label = Спиране на изскачащите прозорци
     .accesskey = С

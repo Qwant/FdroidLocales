@@ -27,12 +27,6 @@
 <!ENTITY firstrun_button_next "Seuraava">
 
 <!ENTITY firstrun_tabqueue_title "Linkit">
-<!-- Localization note (firstrun_tabqueue_message): 'Tab queue' is a feature that allows users to queue up or save links from outside of Firefox (without switching apps) - these links will be loaded in Firefox the next time Firefox is opened. -->
-<!ENTITY firstrun_tabqueue_message_off "Ota välilehtijono käyttöön">
-<!ENTITY firstrun_tabqueue_subtext_off "Tallenna linkit &brandShortName;iin myöhempää käyttöä varten muissa sovelluksissa.">
-
-<!ENTITY firstrun_tabqueue_message_on "Valmista!">
-<!ENTITY firstrun_tabqueue_subtext_on "Voit aina ottaa tämän pois käytöstä kohdasta &settings; -> &pref_category_general;.">
 
 <!ENTITY firstrun_readerview_title "Artikkelit">
 <!-- Localization note (firstrun_readerview_message): This is a casual way of describing getting rid of unnecessary things, and is referring to simplifying websites so only the article text and images are visible, removing unnecessary headers or ads. -->
@@ -69,7 +63,6 @@
 <!ENTITY  crash_restart_label "Käynnistä &brandShortName; uudestaan">
 
 <!ENTITY url_bar_default_text2 "Kirjoita haku tai osoite">
-
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -215,7 +208,6 @@
      “storing data”. -->
 <!ENTITY pref_category_advanced_summary3 "Välilehtien palauttaminen, datan säästäminen, kehittäjien työkalut">
 <!ENTITY pref_category_notifications "Ilmoitukset">
-<!ENTITY pref_category_notifications_summary "Uudet ominaisuudet, sivustojen päivitykset">
 <!ENTITY pref_category_notifications_summary2 "Uudet ominaisuudet, tuotevinkit">
 <!ENTITY pref_developer_remotedebugging_usb "Remote debugging via USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Remote debugging via Wi-Fi">
@@ -372,6 +364,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Salli automaattinen toisto">
 <!ENTITY pref_media_autoplay_enabled_summary "Voivatko verkkosivustot toistaa automaattisesti videoita ja muuta sisältöä">
+<!ENTITY pref_media_autoplay_allow "Salli automaattinen toisto">
+<!ENTITY pref_media_autoplay_block "Estä automaattinen toisto">
 <!ENTITY pref_zoom_force_enabled "Sivun suurennus sallittu aina">
 <!ENTITY pref_zoom_force_enabled_summary "Sivun lähennys ja loitonnus on mahdollista kaikilla sivuilla">
 <!ENTITY pref_voice_input "Puhesyöte">
@@ -447,6 +441,11 @@
 <!ENTITY datareporting_crashreporter_title_short "Kaatumisilmoitukset">
 <!ENTITY datareporting_wifi_title2 "&vendorShortName;n paikannuspalvelut">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Auta  &vendorShortName;a kartoittamaan maailma! Jaa Wi-Fi- ja matkapuhelinverkoista saatava arvioitu sijaintitietosi parantaaksesi paikannuspalvelujamme.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "&vendorShortName;-paikannuspalvelu käynnissä">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -707,7 +706,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
       via the search engine that uses the icon they clicked. This text is used
       for screen reader users when they hover each icon - &formatS; will be
       replaced with the name of the currently highlighted icon. -->
-<!ENTITY search_bar_item_desc "Etsi palvelusta &formatS;">
+<!ENTITY search_bar_item_desc "Hae hakukoneella &formatS;">
 
 <!-- Localization note (suggestion_for_engine): The placeholder &formatS1; will be
      replaced with the name of the search engine. The placeholder &formatS2; will be
@@ -891,3 +890,17 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Lisää aloitusnäytölle">
 <!ENTITY pwa_continue_to_website "Jatka sivustolle">
 <!ENTITY pwa_onboarding_sumo "Voit lisätä tämän sivuston helposti aloitusnäytölle saadaksesi nopean, sovelluksen kaltaisen käyttökokemuksen.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Toista">
+<!ENTITY pip_play_button_description "Jatka toistoa">
+<!ENTITY pip_pause_button_title "Keskeytä">
+<!ENTITY pip_pause_button_description "Keskeytä toisto">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "&vendorShortName;n paikannuspalvelut">
+<!ENTITY download_notification_channel "Lataukset">
+<!ENTITY media_notification_channel "Median toisto">
+<!ENTITY updater_notification_channel "Ohjelmapäivitykset">

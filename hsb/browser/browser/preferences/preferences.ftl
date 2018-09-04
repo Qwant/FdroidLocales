@@ -6,6 +6,8 @@ do-not-track-description = Websydłam signal “Njeslědować” pósłać, zo n
 do-not-track-learn-more = Dalše informacije
 do-not-track-option-default =
     .label = Jenož, hdyž so slědowanski škit wužiwa
+do-not-track-option-default-content-blocking =
+    .label = Jenož, hdyž je w { -brand-short-name } nastajene, zo so wotkryte přesćěhowaki blokuja.
 do-not-track-option-always =
     .label = Přeco
 pref-page =
@@ -14,14 +16,6 @@ pref-page =
             [windows] Nastajenja
            *[other] Nastajenja
         }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -98,6 +92,9 @@ extension-controlled-privacy-containers = Rozšěrjenje, <img data-l10n-name="ic
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Rozšěrjenje, <img data-l10n-name="icon"/> { $name }, slědowanski škit kontroluje.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Rozšěrjenje, <img data-l10n-name="icon"/> { $name }, tute nastajenje kontroluje.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Rozšěrjenje <img data-l10n-name="icon"/> { $name } wodźi, kak { -brand-short-name } z internetom zwjazuje.
@@ -137,20 +134,11 @@ is-not-default = { -brand-short-name } tuchwilu waš standardny wobhladowak njej
 set-as-my-default-browser =
     .label = K standardej činić…
     .accesskey = t
-startup-page = Hdyž { -brand-short-name } so startuje
-    .accesskey = H
-startup-user-homepage =
-    .label = Wašu startowu stronu pokazać
-startup-blank-page =
-    .label = Prózdnu stronu pokazać
-startup-prev-session =
-    .label = Wokna a rajtarki wot poslednjeho raza pokazać
 startup-restore-previous-session =
     .label = Předchadne posedźenje wobnowić
     .accesskey = b
 disable-extension =
     .label = Rozšěrjenje znjemóžnić
-home-page-header = Startowa strona
 tabs-group-header = Rajtarki
 ctrl-tab-recently-used-order =
     .label = Strg+Tab přeběži rajtarki po tuchwilu postajenym porjedźe
@@ -225,6 +213,12 @@ choose-language-description = Wubjerće swoju preferowanu rěč za zwobraznjenje
 choose-button =
     .label = Wubrać…
     .accesskey = u
+choose-browser-language-description = Wubjerće rěče, kotrež so wužiwaja, zo bychu menije, powěsće a zdźělenki z { -brand-short-name } pokazali.
+manage-browser-languages-button =
+    .label = Alternatiwy nastajić…
+    .accesskey = l
+confirm-browser-language-change-description = Startujće { -brand-short-name } znowa, zo byšće tute změny nałožił
+confirm-browser-language-change-button = Nałožić a znowa startować
 translate-web-pages =
     .label = Webwobsah přełožować
     .accesskey = W
@@ -276,7 +270,6 @@ play-drm-content =
 play-drm-content-learn-more = Dalše informacije
 update-application-title = Aktualizacije { -brand-short-name }
 update-application-description = Dźeržće { -brand-short-name } aktualny, za najlěpši wukon, stabilnosć a wěstotu.
-update-application-info = Wersija { $version } <a>Nowe funkcije a změny</a>
 update-application-version = Wersija { $version } <a data-l10n-name="learn-more">Nowe funkcije a změny</a>
 update-history =
     .label = Aktualizacisku historiju pokazać…
@@ -312,7 +305,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Mjeza wobsahoweho procesa
     .accesskey = M
 performance-limit-content-process-enabled-desc = Wjace wobsahowych procesow móže wukon polěpšować, hdyž so wjacore rajtarki wužiwaja, budźe wšak tež wjace składa přetrjebować.
-performance-limit-content-process-disabled-desc = Ličba wobsahowych procesow da so jenož z wjaceprocesowym { -brand-short-name } změnić. <a>Zhońće, kak móžeće kontrolować, hač wjaceprocesowa funkcija je zmóžnjena</a>
 performance-limit-content-process-blocked-desc = Ličba wobsahowych procesow da so jenož z wjaceprocesowym { -brand-short-name } změnić. <a data-l10n-name="learn-more">Zhońće, kak móžeće kontrolować, hač wjaceprocesowa funkcija je zmóžnjena</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -341,6 +333,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Syćowy proksy
+network-settings-title = Syćowe nastajenja
 network-proxy-connection-description = Konfigurować, kak { -brand-short-name } z internetom zwjazuje.
 network-proxy-connection-learn-more = Dalše informacije
 network-proxy-connection-settings =
@@ -383,9 +376,6 @@ use-current-pages =
 choose-bookmark =
     .label = Zapołožku wužiwać…
     .accesskey = Z
-restore-default =
-    .label = Standard wobnowić
-    .accesskey = b
 
 ## Search Section
 
@@ -582,9 +572,6 @@ history-dontremember-description = { -brand-short-name } budźe samsne nastajenj
 history-private-browsing-permanent =
     .label = Přeco priwatny modus wužiwać
     .accesskey = P
-history-remember-option =
-    .label = Sej přehladowansku a sćehnjensku historiju spomjatkować
-    .accesskey = h
 history-remember-browser-option =
     .label = Sej přehladowansku a sćehnjensku historiju spomjatkować
     .accesskey = m
@@ -630,6 +617,30 @@ sitedata-accept-third-party-visited-option =
     .label = Jenož wot wopytanych třećich
 sitedata-accept-third-party-never-option =
     .label = Ženje
+sitedata-allow-cookies-option =
+    .label = Placki a sydłowe daty akceptować
+    .accesskey = P
+sitedata-disallow-cookies-option =
+    .label = Placki a sydłowe daty blokować
+    .accesskey = b
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Zablokowany typ
+    .accesskey = Z
+sitedata-block-trackers-option-recommended =
+    .label = Přesćěhowaki třećich (doporučene)
+sitedata-block-trackers-option =
+    .label = Přesćěhowaki třećich
+sitedata-block-unvisited-option =
+    .label = Placki z njewopytanych websydłow
+sitedata-block-all-third-parties-option =
+    .label = Wšě placki třećich
+sitedata-block-always-option =
+    .label = Wšě placki (móže zawinować, zo websydła njefunguja)
+sitedata-block-all-third-party-option =
+    .label = Wšě placki třećich (móže zawinować, zo websydła njefunguja)
+sitedata-block-all-option =
+    .label = Wšě placki (budźe zawinować, zo websydła njefunguja)
 sitedata-clear =
     .label = Daty zhašeć…
     .accesskey = z
@@ -639,6 +650,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Wuwzaća…
     .accesskey = W
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Waše nastajenja blokowanja wobsaha změnam na nastajenjach plackow a sydłowych datow zadźěwa.
 
 ## Privacy Section - Address Bar
 
@@ -654,6 +669,83 @@ addressbar-locbar-openpage-option =
     .label = Wočinjene rajtarki
     .accesskey = o
 addressbar-suggestions-settings = Nastajenja za namjety pytawy změnić
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Blokowanje wobsaha
+content-blocking-desc = Blokujće wobsah třećich poskićowarjow kaž wabjenje abo kod, kotryž móže waše přehladowanje spomalić a was přez web přesćěhować. Přiměrće swoje nastajenja za najlěpšu balansu mjez škitom a wukonom.
+content-blocking-learn-more = Dalše informacije
+content-blocking-restore-defaults =
+    .label = Standard wobnowić
+    .accesskey = S
+content-blocking-toggle-on =
+    .tooltiptext = Blokowanje wobsaha wupinać
+content-blocking-toggle-off =
+    .tooltiptext = Blokowanje wobsaha zapinać
+content-blocking-toggle-label-on = ZAPINJENE
+    .accesskey = Z
+content-blocking-toggle-label-off = WUPINJENE
+    .accesskey = U
+content-blocking-category-label = Wubjerće, štož ma so blokować
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Pomałe slědowace elementy
+    .accesskey = P
+content-blocking-fastblock-description = Blokuje wobsah třećich poskićowarjow, kotryž trjeba wjace hač 5 sekundow, zo by so začitał.
+content-blocking-fastblock-option-enabled =
+    .label = Přeco blokować
+content-blocking-fastblock-option-disabled =
+    .label = Ženje njeblokować
+content-blocking-tracking-protection-label = Přesćěhowaki
+    .accesskey = P
+content-blocking-tracking-protection-description = Blokuje wšě znate přesćěhowaki (Kedźbu: móže tež začitanju někotrych stronow zadźěwać)
+content-blocking-tracking-protection-option-enabled =
+    .label = Přeco blokować
+content-blocking-tracking-protection-option-pbm =
+    .label = Jenož w priwatnych woknach blokować
+content-blocking-tracking-protection-option-disabled =
+    .label = Ženje njeblokować
+content-blocking-tracking-protection-change-blocklist = Lisćinu blokowanjow změnić…
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Pomału čitace přesćěhowaki
+    .accesskey = P
+content-blocking-fastblock-new-description = Jenož přesćěhowaki blokować, kotrež strony při spěšnym začitanju haća.
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Wšě wotkryte přesćěhowaki
+    .accesskey = h
+content-blocking-tracking-protection-new-description = Wšě znate přesćěhowaki blokować. (Móže někotre strony při začitanju haćić.)
+content-blocking-tracking-protection-option-always =
+    .label = Přeco
+    .accesskey = P
+content-blocking-tracking-protection-option-private =
+    .label = Jenož w priwatnych woknach
+    .accesskey = J
+content-blocking-tracking-protection-change-block-list = Blokowansku lisćinu změnić
+content-blocking-third-party-cookies-label =
+    .label = Placki třećich poskićowarjow
+    .accesskey = c
+content-blocking-reject-trackers-description = Wšě placki třećich blokować abo jenož te, kotrež přesćěhowaki su stajili.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Waše nastajenja plackow a sydłowych datow změnam na nastajenjam plackow třećich zadźěwaja.
+content-blocking-change-cookie-settings =
+    .label = Nastajenja plackow změnić
+    .accesskey = N
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Přesćěhowaki (doporučene)
+    .accesskey = h
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Přesćěhowaki
+    .accesskey = h
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Wšě placki třećich (móže zawinować, zo websydła njefunguja)
+    .accesskey = t
 
 ## Privacy Section - Tracking
 
@@ -706,9 +798,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Websydłam zakazać, medije ze zynkom wothrać
     .accesskey = z
+permissions-block-autoplay-media-menu = Za websydła, kotrež zynk awtomatisce wothrawaja
 permissions-block-autoplay-media-exceptions =
     .label = Wuwzaća…
     .accesskey = u
+autoplay-option-ask =
+    .label = Přeco so prašeć
+autoplay-option-allow =
+    .label = Awtomatiske wothrawanje dowolić
+autoplay-option-dont =
+    .label = Awtomatisce njewothrać
+permissions-autoplay-link = Dalše informacije
 permissions-block-popups =
     .label = Wuskakowace wokno blokować
     .accesskey = k

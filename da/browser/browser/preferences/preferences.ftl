@@ -6,6 +6,8 @@ do-not-track-description = Send websteder signalet 'Spor mig ikke' ('Do not trac
 do-not-track-learn-more = Læs mere
 do-not-track-option-default =
     .label = Kun når jeg bruger beskyttelse mod sporing
+do-not-track-option-default-content-blocking =
+    .label = Kun når { -brand-short-name } er indstillet til at blokere fundne sporings-elementer
 do-not-track-option-always =
     .label = Altid
 pref-page =
@@ -106,7 +108,7 @@ extension-controlled-proxy-config = Udvidelsen <img data-l10n-name="icon"/> { $n
 #
 # <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
 # <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
-extension-controlled-enable = Gå til tilføjelsen <img data-l10n-name="addons-icon"/> i <img data-l10n-name="menu-icon"/>-menuen for at aktivere udvidelsen.
+extension-controlled-enable = Klik på Tilføjelser <img data-l10n-name="addons-icon"/> i menuen <img data-l10n-name="menu-icon"/> for at aktivere udvidelsen.
 
 ## Preferences UI Search Results
 
@@ -219,6 +221,14 @@ choose-language-description = Vælg dit fortrukne sprog at få vist sider i
 choose-button =
     .label = Vælg…
     .accesskey = æ
+
+choose-browser-language-description = Vælg det sprog, der skal bruges i brugerfladen i { -brand-short-name }
+manage-browser-languages-button =
+  .label = Vælg alternativer…
+  .accesskey = l
+confirm-browser-language-change-description = Genstart { -brand-short-name } for at anvende ændringerne
+confirm-browser-language-change-button = Genstart
+
 translate-web-pages =
     .label = Oversæt webindhold
     .accesskey = O
@@ -296,7 +306,7 @@ update-enable-search-update =
 
 performance-title = Ydelse
 performance-use-recommended-settings-checkbox =
-    .label = Brug de anbefalede ydelses-indstillinger
+    .label = Brug de anbefalede indstillinger for ydelse
     .accesskey = a
 performance-use-recommended-settings-desc = Disse indstillinger er skræddersyede til din computers hardware og operativsystem
 performance-settings-learn-more = Læs mere
@@ -335,6 +345,9 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Netværks-proxy
+
+network-settings-title = Forbindelsesindstillinger
+
 network-proxy-connection-description = Indstil hvordan { -brand-short-name } skal oprette forbindelse til internettet.
 network-proxy-connection-learn-more = Læs mere
 network-proxy-connection-settings =
@@ -626,6 +639,36 @@ sitedata-accept-third-party-visited-option =
     .label = Fra besøgte
 sitedata-accept-third-party-never-option =
     .label = Aldrig
+
+sitedata-allow-cookies-option =
+    .label = Accepter cookies og websteds-data
+    .accesskey = A
+
+sitedata-disallow-cookies-option =
+    .label = Bloker cookies og websteds-data
+    .accesskey = B
+
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Type blokeret
+    .accesskey = T
+
+sitedata-block-trackers-option-recommended =
+    .label =  Tredjeparts sporings-tjenester (anbefalet)
+sitedata-block-trackers-option =
+    .label = Tredjeparts sporings-tjenester
+sitedata-block-unvisited-option =
+    .label = Cookies fra ikke-besøgte websteder
+sitedata-block-all-third-parties-option =
+    .label = Alle tredjeparts-cookies
+sitedata-block-always-option =
+    .label = Alle cookies (kan forhindre websteder i at fungere)
+
+sitedata-block-all-third-party-option =
+    .label = Alle tredjeparts-cookies (kan forhindre websteder i at fungere)
+sitedata-block-all-option =
+    .label = Alle cookies (vil forhindre websteder i at fungere)
+
 sitedata-clear =
     .label = Ryd data…
     .accesskey = R
@@ -651,6 +694,85 @@ addressbar-locbar-openpage-option =
     .accesskey = f
 addressbar-suggestions-settings = Skift indstillinger for søgeforslag
 
+## Privacy Section - Content Blocking
+
+content-blocking-header = Blokering af indhold
+
+content-blocking-desc = Bloker indhold fra tredjepart, fx reklamer eller kode, der kan gøre din browsing langsommere og som kan spore dig rundt på nettet. Tilpas dine indstillinger for at få den bedste balance mellem beskyttelse og ydelse.
+
+content-blocking-learn-more = Læs mere
+content-blocking-restore-defaults =
+  .label = Gendan standard
+  .accesskey = G
+
+content-blocking-toggle-on =
+  .tooltiptext = Slå blokering af indhold fra
+content-blocking-toggle-off =
+  .tooltiptext = Slå blokering af indhold til
+
+content-blocking-toggle-label-on = TIL
+  .accesskey = T
+content-blocking-toggle-label-off = FRA
+  .accesskey = F
+
+content-blocking-category-label = Vælg hvad der skal blokeres
+
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Langsomme sporings-elementer
+  .accesskey = L
+content-blocking-fastblock-slow-loading-label = Langsomt indlæste sporings-elementer
+  .accesskey = L
+content-blocking-fastblock-description = Bloker indhold fra tredjepart, hvis det tager længere end fem sekunder at indlæse
+content-blocking-fastblock-option-enabled =
+  .label = Bloker altid
+content-blocking-fastblock-option-disabled =
+  .label = Bloker aldrig
+
+content-blocking-tracking-protection-label = Sporings-tjenester
+  .accesskey = p
+content-blocking-tracking-protection-all-label = Alle fundne sporings-tjenester
+  .accesskey = p
+content-blocking-tracking-protection-description = Bloker alle kendte sporings-tjenester (NB: Kan forhindre nogle sider i at blive indlæst).
+content-blocking-tracking-protection-option-enabled =
+  .label = Bloker altid
+content-blocking-tracking-protection-option-pbm =
+  .label = Bloker kun i private vinduer
+content-blocking-tracking-protection-option-disabled =
+  .label = Bloker aldrig
+content-blocking-tracking-protection-option-always =
+  .label = Altid
+  .accesskey = A
+content-blocking-tracking-protection-option-private =
+  .label = Kun i private vinduer
+  .accesskey = p
+content-blocking-tracking-protection-change-blocklist = Skift blokeringsliste…
+
+content-blocking-reject-trackers-label = Tredjeparts-cookies
+  .accesskey = c
+content-blocking-reject-trackers-description = Bloker alle tredjeparts-cookies eller kun cookies sat af sporings-tjenester
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the "All cookies" option
+# being selected in the Cookies and Site Data section of the UI.
+content-blocking-reject-trackers-warning-all-cookies-blocked = I øjeblikket blokeres alle cookies
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the "Cookies from unvisited websites"
+# option being selected in the Cookies and Site Data section of the UI.
+content-blocking-reject-trackers-warning-from-unvisited-cookies-blocked = I øjeblikket blokeres cookies fra ikke besøgte websteder.
+content-blocking-change-cookie-settings =
+  .label = Skift indstillinger for cookies
+  .accesskey = i
+content-blocking-reject-trackers-block-trackers-option-recommended =
+  .label = Sporings-elementer (anbefalet)
+  .accesskey = p
+content-blocking-reject-trackers-block-trackers-option =
+  .label = Sporings-elementer
+  .accesskey = p
+content-blocking-reject-trackers-all-third-parties-option =
+  .label = Alle tredjeparts-cookies (kan forhindre websteder i at fungere)
+  .accesskey = A
+
 ## Privacy Section - Tracking
 
 tracking-header = Beskyttelse mod sporing
@@ -673,7 +795,7 @@ tracking-exceptions =
     .label = Undtagelser…
     .accesskey = u
 tracking-change-block-list =
-    .label = Skift blokerings-liste
+    .label = Skift blokeringsliste
     .accesskey = S
 
 ## Privacy Section - Permissions
@@ -696,6 +818,28 @@ permissions-notification-settings =
     .label = Indstillinger…
     .accesskey = I
 permissions-notification-link = Læs mere
+
+permissions-block-autoplay-media =
+    .label = Lad ikke websteder starte automatisk afspilning af mediefiler med lyd
+    .accesskey = l
+
+permissions-block-autoplay-media-menu = For websteder, der automatisk afspiller lyd
+
+permissions-block-autoplay-media-exceptions =
+    .label = Undtagelser…
+    .accesskey = U
+
+autoplay-option-ask =
+    .label = Spørg altid
+autoplay-option-allow =
+    .label = Tillad automatisk afspilning
+autoplay-option-block =
+    .label = Bloker automatisk afspilning
+autoplay-option-dont =
+    .label = Afspil ikke automatisk
+
+permissions-autoplay-link = Læs mere
+
 permissions-notification-pause =
     .label = Sæt beskeder på pause, indtil { -brand-short-name } starter igen
     .accesskey = b
@@ -727,8 +871,8 @@ collection-health-report =
 collection-health-report-link = Læs mere
 
 collection-studies =
-    .label = Tillad at { -brand-short-name } installerer og afvikler studier
-collection-studies-link = Vis { -brand-short-name }-studier
+    .label = Tillad at { -brand-short-name } installerer og afvikler undersøgelser
+collection-studies-link = Vis { -brand-short-name }-undersøgelser
 
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.

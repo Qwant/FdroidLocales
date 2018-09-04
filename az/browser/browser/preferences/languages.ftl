@@ -5,6 +5,9 @@
 languages-window =
     .title = Dillər
     .style = width: 30em
+webpage-languages-window =
+    .title = Səhifə Dili Tənzimləmələri
+    .style = width: 40em
 languages-close-key =
     .key = w
 languages-description = Bəzi səhifələr birdən çox dil dəstəyi verə bilər. Göstəriləcək dil sıralamasını aşağıdakı pəncərədən seçə bilərsiniz
@@ -36,3 +39,9 @@ languages-customize-add =
 #   $code (String) - Locale code of the locale (for example: "is", "es-CL")
 languages-code-format =
     .label = { $locale } [{ $code }]
+languages-active-code-format =
+    .value = { languages-code-format.label }
+browser-languages-window =
+    .title = { -brand-short-name } Dil Tənzimləmələri
+    .style = width: 40em
+browser-languages-description = { -brand-short-name } ilkin dilinizi əsas dil olaraq, əgər lazım olsa, alternativ dilləri göründükləri sırada göstərəcək.

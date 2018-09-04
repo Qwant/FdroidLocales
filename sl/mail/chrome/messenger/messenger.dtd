@@ -28,7 +28,7 @@
 <!ENTITY newOtherAccountsCmd.accesskey "r">
 <!ENTITY newCreateEmailAccountCmd.label "Odpri nov poštni račun …">
 <!ENTITY newCreateEmailAccountCmd.accesskey "n">
-<!ENTITY newExistingEmailAccountCmd.label "Obstoječi poštni račun …">
+<!ENTITY newExistingEmailAccountCmd.label "Poveži obstoječ poštni račun …">
 <!ENTITY newExistingEmailAccountCmd.accesskey "b">
 <!ENTITY newIMAccountCmd.label "Račun za klepet …">
 <!ENTITY newIMAccountCmd.accesskey "e">
@@ -351,7 +351,7 @@
 <!ENTITY replySenderCmd.label "Odgovori samo pošiljatelju">
 <!ENTITY replySenderCmd.accesskey "š">
 <!ENTITY replyNewsgroupCmd2.label "Nadaljuj za novičarsko skupino">
-<!ENTITY replyNewsgroupCmd2.accesskey "g">
+<!ENTITY replyNewsgroupCmd2.accesskey "v">
 <!ENTITY replyToAllMsgCmd.label "Odgovori vsem">
 <!ENTITY replyToAllMsgCmd.accesskey "e">
 <!ENTITY replyToAllMsgCmd.key "r">

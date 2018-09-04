@@ -6,6 +6,8 @@ do-not-track-description = Web sitelerine izlenmek istemediğimi bildiren “Do 
 do-not-track-learn-more = Daha fazla bilgi al
 do-not-track-option-default =
     .label = Yalnızca İzlenme Koruması’nı kullanırken
+do-not-track-option-default-content-blocking =
+    .label = Yalnızca { -brand-short-name } bulunan takipçileri engellemeye ayarlandığında
 do-not-track-option-always =
     .label = Her zaman
 pref-page =
@@ -14,14 +16,6 @@ pref-page =
             [windows] Seçenekler
            *[other] Tercihler
         }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -98,6 +92,9 @@ extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name }
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = İzlenme korumasını <img data-l10n-name="icon"/> { $name } adlı eklenti kontrol ediyor.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Bu ayarı <img data-l10n-name="icon"/> { $name } adlı eklenti yönetiyor.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = { -brand-short-name } tarayıcınızın internete nasıl bağlanacağını <img data-l10n-name="icon"/> { $name } adlı eklenti kontrol ediyor.
@@ -137,20 +134,11 @@ is-not-default = { -brand-short-name } varsayılan tarayıcınız değil
 set-as-my-default-browser =
     .label = Varsayılan yap…
     .accesskey = a
-startup-page = { -brand-short-name } açıldığında
-    .accesskey = a
-startup-user-homepage =
-    .label = Giriş sayfamı göster
-startup-blank-page =
-    .label = Boş bir sayfa göster
-startup-prev-session =
-    .label = Son oturumdaki pencereleri ve sekmeleri göster
 startup-restore-previous-session =
     .label = Önceki oturumu geri yükle
     .accesskey = o
 disable-extension =
     .label = Eklentiyi etkisizleştir
-home-page-header = Giriş sayfası
 tabs-group-header = Sekmeler
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab, sekmeler arasında son kullanıldıkları sırayla atlasın
@@ -219,6 +207,12 @@ choose-language-description = Sayfaları hangi dilde görmeyi tercih ettiğinizi
 choose-button =
     .label = Seç…
     .accesskey = S
+choose-browser-language-description = { -brand-short-name } menülerini, iletilerini ve bildirimlerini gösterirken kullanılacak dilleri seçin.
+manage-browser-languages-button =
+    .label = Alternatifleri ayarla…
+    .accesskey = l
+confirm-browser-language-change-description = Bu değişiklikleri uygulamak için { -brand-short-name } tarayıcısını yeniden başlatın
+confirm-browser-language-change-button = Uygula ve yeniden başlat
 translate-web-pages =
     .label = Web içeriğini çevir
     .accesskey = W
@@ -270,7 +264,6 @@ play-drm-content =
 play-drm-content-learn-more = Daha fazla bilgi al
 update-application-title = { -brand-short-name } güncellemeleri
 update-application-description = En yüksek performans, güvenilirlik ve güvenlik için { -brand-short-name } tarayıcınızı güncel tutmalısınız.
-update-application-info = Sürüm { $version } <a>Yeni neler var?</a>
 update-application-version = Sürüm { $version } <a data-l10n-name="learn-more">Yeni neler var?</a>
 update-history =
     .label = Güncelleme geçmişini göster…
@@ -306,7 +299,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = İçerik işlemi sınırı
     .accesskey = L
 performance-limit-content-process-enabled-desc = Daha fazla içerik işlemine izin verdiğinizde, çok sayıda sekme açıkken performans artar ama daha fazla bellek kullanılır.
-performance-limit-content-process-disabled-desc = İçerik işlemi sayısını değiştirmek yalnızca çok işlemli { -brand-short-name } ile mümkündür. <a>Çok işlemin etkin olmadığını kontrol etmeyi öğrenin</a>
 performance-limit-content-process-blocked-desc = İçerik işlemi sayısını değiştirmek yalnızca çok işlemli { -brand-short-name } ile mümkündür. <a data-l10n-name="learn-more">Çok işlemin etkin olmadığını kontrol etmeyi öğrenin</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -335,6 +327,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Ağ vekil sunucusu
+network-settings-title = Ağ ayarları
 network-proxy-connection-description = { -brand-short-name } tarayıcınızın internete nasıl bağlanacağını yapılandırın.
 network-proxy-connection-learn-more = Daha fazla bilgi al
 network-proxy-connection-settings =
@@ -377,9 +370,6 @@ use-current-pages =
 choose-bookmark =
     .label = Yer imi kullan…
     .accesskey = m
-restore-default =
-    .label = Varsayılanı geri getir
-    .accesskey = r
 
 ## Search Section
 
@@ -576,9 +566,6 @@ history-dontremember-description = { -brand-short-name } Gizli Gezinti ile aynı
 history-private-browsing-permanent =
     .label = Her zaman gizli gezinti kipini kullan
     .accesskey = m
-history-remember-option =
-    .label = Gezinti ve indirme geçmişimi hatırla
-    .accesskey = h
 history-remember-browser-option =
     .label = Tarama ve indirme geçmişini hatırla
     .accesskey = T
@@ -624,6 +611,30 @@ sitedata-accept-third-party-visited-option =
     .label = Ziyaret edilenlerden
 sitedata-accept-third-party-never-option =
     .label = Asla
+sitedata-allow-cookies-option =
+    .label = Çerezleri ve site verilerini kabul et
+    .accesskey = z
+sitedata-disallow-cookies-option =
+    .label = Çerezleri ve site verilerini engelle
+    .accesskey = s
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Engellenecek tür
+    .accesskey = ü
+sitedata-block-trackers-option-recommended =
+    .label = Üçüncü taraf takipçileri (önerilir)
+sitedata-block-trackers-option =
+    .label = Üçüncü taraf takipçileri
+sitedata-block-unvisited-option =
+    .label = Ziyaret etmediğim sitelerin çerezleri
+sitedata-block-all-third-parties-option =
+    .label = Tüm üçüncü taraf çerezleri
+sitedata-block-always-option =
+    .label = Tüm çerezler (Bazı siteler düzgün çalışmayabilir)
+sitedata-block-all-third-party-option =
+    .label = Tüm üçüncü taraf çerezleri (Bazı web siteleri bozulabilir.)
+sitedata-block-all-option =
+    .label = Tüm çerezler (Bazı web siteleri bozulabilir.)
 sitedata-clear =
     .label = Verileri temizle…
     .accesskey = l
@@ -648,6 +659,76 @@ addressbar-locbar-openpage-option =
     .label = Açık sekmeler
     .accesskey = s
 addressbar-suggestions-settings = Arama motoru önerileri için tercihleri değiştir
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = İçerik engelleme
+content-blocking-desc = Gezintinizi yavaşlatabilecek ve web’de sizi izleyebilecek reklamlar, kodlar gibi üçüncü taraf içeriklerini engelleyebilirsiniz. Koruma ve performans dengesini sağlamak için ayarlarınızı özelleştirebilirsiniz.
+content-blocking-learn-more = Daha fazla bilgi al
+content-blocking-restore-defaults =
+    .label = Varsayılanları geri yükle
+    .accesskey = r
+content-blocking-toggle-on =
+    .tooltiptext = İçerik engellemeyi kapat
+content-blocking-toggle-off =
+    .tooltiptext = İçerik engellemeyi aç
+content-blocking-toggle-label-on = AÇIK
+    .accesskey = A
+content-blocking-toggle-label-off = KAPALI
+    .accesskey = K
+content-blocking-category-label = Nelerin engelleneceğini seçin
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Yavaş takipçi öğeleri
+    .accesskey = Y
+content-blocking-fastblock-description = Yüklenmesi 5 saniyeden uzun süren üçüncü taraf içeriklerini engeller.
+content-blocking-fastblock-option-enabled =
+    .label = Her zaman engelle
+content-blocking-fastblock-option-disabled =
+    .label = Asla engelleme
+content-blocking-tracking-protection-label = Takipçiler
+    .accesskey = T
+content-blocking-tracking-protection-description = Bilinen tüm takipçileri engeller (Not: Bazı sayfaların yüklenmesini de engelleyebilir.)
+content-blocking-tracking-protection-option-enabled =
+    .label = Her zaman engelle
+content-blocking-tracking-protection-option-pbm =
+    .label = Yalnızca gizli pencerelerde engelle
+content-blocking-tracking-protection-option-disabled =
+    .label = Asla engelleme
+content-blocking-tracking-protection-change-blocklist = Engelleme listesini değiştir…
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Yavaş yüklenen takipçiler
+    .accesskey = Y
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Bulunan tüm takipçiler
+    .accesskey = B
+content-blocking-tracking-protection-option-always =
+    .label = Her zaman
+    .accesskey = H
+content-blocking-tracking-protection-option-private =
+    .label = Yalnızca gizli pencerelerde
+    .accesskey = z
+content-blocking-tracking-protection-change-block-list = Engelleme listesini değiştir
+content-blocking-third-party-cookies-label =
+    .label = Üçüncü taraf çerezleri
+    .accesskey = Ü
+content-blocking-reject-trackers-description = Tüm üçüncü taraf çerezlerini veya yalnızca takipçilerin oluşturduğu çerezleri engelleyebilirsiniz.
+content-blocking-change-cookie-settings =
+    .label = Çerez ayarlarını değiştir
+    .accesskey = z
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Takipçiler (önerilen)
+    .accesskey = T
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Takipçiler
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Tüm üçüncü taraf çerezleri (Bazı siteler bozulabilir.)
+    .accesskey = ü
 
 ## Privacy Section - Tracking
 
@@ -693,16 +774,24 @@ permissions-notification = Bildirimler
 permissions-notification-settings =
     .label = Ayarlar…
     .accesskey = r
-permissions-notification-link = Daha fazlası
+permissions-notification-link = Daha fazla bilgi al
 permissions-notification-pause =
     .label = { -brand-short-name } yeniden başlatılana dek bildirimleri duraklat
     .accesskey = b
 permissions-block-autoplay-media =
     .label = Web sitelerinin sesli içerikleri otomatik olarak oynatmasını engelle
     .accesskey = o
+permissions-block-autoplay-media-menu = Siteler otomatik olarak ses çalmak istediğinde
 permissions-block-autoplay-media-exceptions =
     .label = İstisnalar…
     .accesskey = s
+autoplay-option-ask =
+    .label = Her zaman sor
+autoplay-option-allow =
+    .label = Otomatik oynatmaya izin ver
+autoplay-option-dont =
+    .label = Otomatik oynatma
+permissions-autoplay-link = Daha fazla bilgi al
 permissions-block-popups =
     .label = Açılır pencereleri engelle
     .accesskey = n

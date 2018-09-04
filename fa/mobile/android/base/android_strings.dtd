@@ -372,6 +372,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "اجازه پخش خودکار">
 <!ENTITY pref_media_autoplay_enabled_summary "بررسی قابلیت پخش خودکار ویدئو و دیگر محتوای رسانه بر روی پایگاه‌های وب">
+<!ENTITY pref_media_autoplay_allow "اجازه دادن نمایش به صورت خودکار">
+<!ENTITY pref_media_autoplay_block "بستن نمایش خودکار">
 <!ENTITY pref_zoom_force_enabled "همیشه زوم فعال باشد">
 <!ENTITY pref_zoom_force_enabled_summary "اجبار کردن این امکان تا شما بتوانید هر صفحه‌ای را زوم کنید">
 <!ENTITY pref_voice_input "ورودی صدا">
@@ -447,6 +449,11 @@
 <!ENTITY datareporting_crashreporter_title_short "گزارش‌گر فروپاشی">
 <!ENTITY datareporting_wifi_title2 "خدمات مبتنی بر موقعیت &vendorShortName;">
 <!ENTITY datareporting_wifi_geolocation_summary4 "کمک کنید تا &vendorShortName; نقشه دنیا را بکشد! محل تقریبی Wi-Fi و آنتن مخابراتی دستگاه خود را به اشتراک بگذارید، تا به بهبود سرویس مکان‌یابی ما کمک کنید.">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "&vendorShortName; سرویس مکان‌یابی در حال اجراست">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -888,3 +895,16 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "اضافه کردن به صفحه خانگی">
 <!ENTITY pwa_continue_to_website "ادامه به این پایگاه اینترنتی">
 <!ENTITY pwa_onboarding_sumo "شما به راحتی می‌توانید این پایگاه اینترنتی را به صفحه خانگی خود اضافه کنید تا دسترسی مستقیم به آن داشته باشید و مرور سریعتی را مانند تجربه کردن یک برنامه داشته باشید.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "پخش">
+<!ENTITY pip_play_button_description "از سرگیری پخش">
+<!ENTITY pip_pause_button_title "مکث">
+<!ENTITY pip_pause_button_description "توقف پخش">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "&vendorShortName; خدمات بر اساس موقعیت">
+<!ENTITY download_notification_channel "دریافت‌ها">
+<!ENTITY media_notification_channel "بازپخش رسانه">

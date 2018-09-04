@@ -2,10 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = Saytlara "Məni İzləmə" siqnalı göndərərək izlənmək istəmədiyinizi bildirin
+do-not-track-description = Saytlara “Məni İzləmə” siqnalı göndərərək izlənmək istəmədiyinizi bildirin
 do-not-track-learn-more = Ətraflı öyrən
 do-not-track-option-default =
     .label = Ancaq İzlənmə Qoruması işlədərkən
+do-not-track-option-default-content-blocking =
+    .label = Ancaq { -brand-short-name } Tapılan İzləyiciləri əngəlləmək üçün tənzimləndiyində
 do-not-track-option-always =
     .label = Həmişə
 pref-page =
@@ -14,14 +16,6 @@ pref-page =
             [windows] Seçimlər
            *[other] Nizamlamalar
         }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -98,6 +92,9 @@ extension-controlled-privacy-containers = Uzantı, <img data-l10n-name="icon"/> 
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Uzantı, <img data-l10n-name="icon"/> { $name }, izlənmə qorumasını idarə edir.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Bu tənzimləməni uzantı, <img data-l10n-name="icon"/> { $name }, idarə edir.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Uzantı, <img data-l10n-name="icon"/> { $name }, { -brand-short-name } səyyahının internetə necə qoşulduğunu idarə edir.
@@ -137,20 +134,11 @@ is-not-default = { -brand-short-name } əsas səyyahınız deyil
 set-as-my-default-browser =
     .label = Əsas səyyahım et…
     .accesskey = D
-startup-page = { -brand-short-name } başladığında
-    .accesskey = s
-startup-user-homepage =
-    .label = Ana səhifəni göstər
-startup-blank-page =
-    .label = Boş səhifəni göstər
-startup-prev-session =
-    .label = Son seansdan olan pəncərə və vərəqləri göstər
 startup-restore-previous-session =
     .label = Əvvəlki sessiyanı bərpa et
     .accesskey = s
 disable-extension =
     .label = Uzantını söndür
-home-page-header = Ana Səhifə
 tabs-group-header = Vərəqlər
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab son istifadə etmə sırasına görə vərəqlər arasında dönsün
@@ -219,6 +207,12 @@ choose-language-description = Səhifələrin göstəriləcəyi dili seçin
 choose-button =
     .label = Seçin…
     .accesskey = S
+choose-browser-language-description = Menyu, mesaj və bildirişlərin { -brand-short-name } səyyahında göstərildiyi dilləri seçin.
+manage-browser-languages-button =
+    .label = Alternativləri seç
+    .accesskey = l
+confirm-browser-language-change-description = Dəyişiklikləri tətbiq etmək üçün { -brand-short-name } səyyahını yenidən başladın
+confirm-browser-language-change-button = Tətbiq et və Yenidən başlat
 translate-web-pages =
     .label = Web məzmunu tərcümə et
     .accesskey = t
@@ -270,7 +264,6 @@ play-drm-content =
 play-drm-content-learn-more = Ətraflı öyrən
 update-application-title = { -brand-short-name } yeniləmələri
 update-application-description = Yaxşı məhsuldarlıq, sabitlik və təhlükəsizlik üçün { -brand-short-name } səyyahını daima yeni tutun.
-update-application-info = Buraxılış { $version } <a>Yeniliklər</a>
 update-application-version = Buraxılış { $version } <a data-l10n-name="learn-more">Yeniliklər</a>
 update-history =
     .label = Yeniləmə tarixçəsini göstər…
@@ -306,7 +299,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Məzmun proses limiti
     .accesskey = L
 performance-limit-content-process-enabled-desc = Əlavə məzmun prosesləri çox vərəq işlətdikdə məhsuldarlığı artıra bilərlər, amma daha çox yaddaş işlədəcəklər.
-performance-limit-content-process-disabled-desc = Məzmun proseslərinin sayısının dəyişdirilməsi ancaq çox-prosesli { -brand-short-name } ilə mümkündür. <a>Çox-prosesliliyin aktiv olmasını necə yoxlayacağınızı görün</a>
 performance-limit-content-process-blocked-desc = Məzmun proseslərinin sayısının dəyişdirilməsi ancaq çox-prosesli { -brand-short-name } ilə mümkündür. <a data-l10n-name="learn-more">Çox-prosesliliyin aktiv olmasını necə yoxlayacağınızı görün</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -335,6 +327,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Şəbəkə Proksisi
+network-settings-title = Şəbəkə Tənzimləmələri
 network-proxy-connection-description = { -brand-short-name } səyyahının internetə necə qoşulduğunu idarə et.
 network-proxy-connection-learn-more = Ətraflı öyrən
 network-proxy-connection-settings =
@@ -377,9 +370,6 @@ use-current-pages =
 choose-bookmark =
     .label = Əlfəcin istifadə et…
     .accesskey = Ə
-restore-default =
-    .label = İlkin vəziyyətə qaytar
-    .accesskey = S
 
 ## Search Section
 
@@ -576,9 +566,6 @@ history-dontremember-description = { -brand-short-name } gizli baxışdakı niza
 history-private-browsing-permanent =
     .label = Həmişə gizli baxış rejimindən istifadə et
     .accesskey = g
-history-remember-option =
-    .label = Endirmə və Tarixçəmi yadda saxla
-    .accesskey = l
 history-remember-browser-option =
     .label = Səyahət və endirmə tarixini yadda saxla
     .accesskey = b
@@ -624,6 +611,30 @@ sitedata-accept-third-party-visited-option =
     .label = Baxılanlardan
 sitedata-accept-third-party-never-option =
     .label = Heç vaxt
+sitedata-allow-cookies-option =
+    .label = Çərəz və sayt məlumatlarını qəbul et
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = Çərəz və sayt məlumatlarını əngəllə
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Əngəllənən növ
+    .accesskey = T
+sitedata-block-trackers-option-recommended =
+    .label = Üçüncü tərəf izləyicilər (məsləhətlidir)
+sitedata-block-trackers-option =
+    .label = Üçüncü tərəf izləyicilər
+sitedata-block-unvisited-option =
+    .label = Ziyarət edilməmiş saytlardan olan çərəzlər
+sitedata-block-all-third-parties-option =
+    .label = Bütün üçüncü tərəf çərəzlər
+sitedata-block-always-option =
+    .label = Bütün çərəzlər (saytlar səhv işləyə bilər)
+sitedata-block-all-third-party-option =
+    .label = Bütün üçüncü-tərəf çərəzləri (bəzi saytlar səhv işləyə bilər)
+sitedata-block-all-option =
+    .label = Bütün çərəzləri (əksər səhifələr səhv işləyəcəklər)
 sitedata-clear =
     .label = Məlumatları təmizlə…
     .accesskey = l
@@ -633,6 +644,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = İstisnalar…
     .accesskey = a
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Məzmun Əngəlləmə tənzimləmələriniz Çərəzlər və Sayt Məlumatları tənzimləmələrini dəyişdirməyə imkan vermirlər.
 
 ## Privacy Section - Address Bar
 
@@ -648,6 +663,80 @@ addressbar-locbar-openpage-option =
     .label = Açıq vərəqlər
     .accesskey = A
 addressbar-suggestions-settings = Axtarış mühərriyi təklifləri üçün nizamlamaları dəyiş
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Məzmun Əngəlləmə
+content-blocking-desc = Səyahətinizi yavaşladacaq və sizi internetdə izləyəcək reklam və kod kimi üçüncü tərəf məzmunları əngəllə. Tənzimləmələrinizi qoruma və məhsuldarlıq arasında ehtiyyacınıza görə tarazlaşdırın.
+content-blocking-learn-more = Ətraflı Öyrən
+content-blocking-restore-defaults =
+    .label = İlkin Seçənəkləri bərpa et
+    .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = Məzmun Əngəlləməni söndür
+content-blocking-toggle-off =
+    .tooltiptext = Məzmun Əngəlləməni aktivləşdir
+content-blocking-toggle-label-on = AÇIQ
+    .accesskey = O
+content-blocking-toggle-label-off = QAPALI
+    .accesskey = O
+content-blocking-category-label = Nələrin əngəllənəcəyini seçin
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = İzləmə elementlərini göstər
+    .accesskey = S
+content-blocking-fastblock-description = Yüklənməyi 5 saniyədən çox çəkən üçüncü tərəf məzmunlarını əngəllə.
+content-blocking-fastblock-option-enabled =
+    .label = Həmişə əngəllə
+content-blocking-fastblock-option-disabled =
+    .label = Heç vaxt əngəlləmə
+content-blocking-tracking-protection-label = İzləyicilər
+    .accesskey = T
+content-blocking-tracking-protection-description = Bilinən bütün izləyiciləri əngəllə (Qeyd: bəzi səhifələrin yüklənməsinə mane ola bilər).
+content-blocking-tracking-protection-option-enabled =
+    .label = Həmişə əngəllə
+content-blocking-tracking-protection-option-pbm =
+    .label = Ancaq Məxfi Pəncərələrdə əngəllə
+content-blocking-tracking-protection-option-disabled =
+    .label = Heç vaxt əngəlləmə
+content-blocking-tracking-protection-change-blocklist = Qara Siyahını Dəyiş…
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-label = Yavaş Yüklənən İzləyicilər
+    .accesskey = S
+content-blocking-fastblock-new-description = Ancaq səhifənin tez yüklənməsini əngəlləyən izləyiciləri əngəllə.
+content-blocking-tracking-protection-all-label = Bütün Aşkarlanmış İzləyicilər
+    .accesskey = T
+content-blocking-tracking-protection-new-description = Bütün bilinən izləyiciləri əngəllə. (Bəzi səhifələr yüklənməyə bilər.)
+content-blocking-tracking-protection-option-always =
+    .label = Həmişə
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = Ancaq məxfi pəncərələrdə
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Qara siyahını dəyişdir
+content-blocking-reject-trackers-label = Üçüncü tərəf çərəzlər
+    .accesskey = C
+content-blocking-reject-trackers-description = Bütün üçüncü-tərəf çərəzləri və ya ancaq izləyicilər tərəfindən olanları əngəllə.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Çərəzlər və Sayt Məlumatları tənzimləmələriniz Üçüncü-Tərəf Çərəzləri tənzimləmələrini dəyişdirməyə imkan vermirlər.
+content-blocking-change-cookie-settings =
+    .label = Çərəz Tənzimləmələrini Dəyişdir
+    .accesskey = S
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = İzləyicilər (məsləhətlidir)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = İzləyicilər
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Bütün üçüncü-tərəf çərəzlər (bəzi saytlar düz işləməyə bilər)
+    .accesskey = A
 
 ## Privacy Section - Tracking
 
@@ -700,9 +789,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Saytların səsli medianı avtomatik oxutmalarını əngəllə
     .accesskey = B
+permissions-block-autoplay-media-menu = Səsi avtomatik oxudan saytlar üçün
 permissions-block-autoplay-media-exceptions =
     .label = İstisnalar…
     .accesskey = E
+autoplay-option-ask =
+    .label = Həmişə soruş
+autoplay-option-allow =
+    .label = Avto oxutmaya icazə ver
+autoplay-option-dont =
+    .label = Avtomatik oxutma
+permissions-autoplay-link = Ətraflı öyrən
 permissions-block-popups =
     .label = Peyda olan pəncərələri blokla
     .accesskey = b

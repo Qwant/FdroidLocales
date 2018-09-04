@@ -27,12 +27,6 @@
 <!ENTITY firstrun_button_next "Folgjende">
 
 <!ENTITY firstrun_tabqueue_title "Keppelingen">
-<!-- Localization note (firstrun_tabqueue_message): 'Tab queue' is a feature that allows users to queue up or save links from outside of Firefox (without switching apps) - these links will be loaded in Firefox the next time Firefox is opened. -->
-<!ENTITY firstrun_tabqueue_message_off "Ljepblêdwachtrige ynskeakelje">
-<!ENTITY firstrun_tabqueue_subtext_off "Bewarje keppelingen foar letter yn &brandShortName; by derop tikke yn oare apps.">
-
-<!ENTITY firstrun_tabqueue_message_on "Slagge!">
-<!ENTITY firstrun_tabqueue_subtext_on "Jo kinne dit altyd útskeakelje yn &settings; ûnder &pref_category_general;.">
 
 <!ENTITY firstrun_readerview_title "Artikelen">
 <!-- Localization note (firstrun_readerview_message): This is a casual way of describing getting rid of unnecessary things, and is referring to simplifying websites so only the article text and images are visible, removing unnecessary headers or ads. -->
@@ -69,7 +63,6 @@
 <!ENTITY  crash_restart_label "&brandShortName; werstarte">
 
 <!ENTITY url_bar_default_text2 "Sykje of fier adres yn">
-
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -215,7 +208,6 @@
      “storing data”. -->
 <!ENTITY pref_category_advanced_summary3 "Ljepblêden werombringe, gegevensbesparring, ûntwikkelersark">
 <!ENTITY pref_category_notifications "Notifikaasjes">
-<!ENTITY pref_category_notifications_summary "Nije funksjes, website-fernijingen">
 <!ENTITY pref_category_notifications_summary2 "Nije funksjes, produkttips">
 <!ENTITY pref_developer_remotedebugging_usb "Remote debugging fia USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Remote debugging fia wifi">
@@ -372,6 +364,8 @@
 
 <!ENTITY pref_media_autoplay_enabled "Automatysk ôfspylje tastean">
 <!ENTITY pref_media_autoplay_enabled_summary "Automatysk ôfspylje fan fideo’s en oare mediaynhâld troch websites beheare">
+<!ENTITY pref_media_autoplay_allow "Automatysk ôfspylje tastean">
+<!ENTITY pref_media_autoplay_block "Automatysk ôfspylje blokkearje">
 <!ENTITY pref_zoom_force_enabled "Zoom altyd ynskeakelje">
 <!ENTITY pref_zoom_force_enabled_summary "Oerskriuwe forsearje, sadat jo elke side zoome kinne">
 <!ENTITY pref_voice_input "Spraakynfier">
@@ -447,6 +441,11 @@
 <!ENTITY datareporting_crashreporter_title_short "Ungelokrapportearder">
 <!ENTITY datareporting_wifi_title2 "&vendorShortName;-lokaasjetsjinst">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Help &vendorShortName; de wrâld yn kaart te bringen! Diel de globale wifi- en gsm-lokaasje fan jo apparaat om ús geolokaasjetsjinst te ferbetterjen">
+<!-- Localization note (datareporting_notification_title ) : This will be the title
+     of the notification shown whenever the user has enabled data reporting and the stumbler
+     service is running. -->
+<!ENTITY datareporting_stumbler_notification_title "&vendorShortName;-lokaasjetsjinst aktyf">
+
 <!-- Localization note (pref_update_autodownload2) : This should mention downloading
      specifically, since the pref only prevents automatic downloads and not the
      actual notification that an update is available. -->
@@ -891,3 +890,17 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 <!ENTITY pwa_add_to_launcher_badge2 "Tafoegje oan startskerm">
 <!ENTITY pwa_continue_to_website "Trochgean nei website">
 <!ENTITY pwa_onboarding_sumo "Jo kinne dizze website ienfâldichwei oan jo startskerm tafoegje foar dalikse tagong en flugger surfe mei in app-eftige ûnderfining.">
+
+<!-- Used by accessibility services to identify the play/pause buttons shown in the
+Picture-in-picture mini window -->
+<!ENTITY pip_play_button_title "Ofspylje">
+<!ENTITY pip_play_button_description "Ofspyljen ferfetsje">
+<!ENTITY pip_pause_button_title "Pauzearje">
+<!ENTITY pip_pause_button_description "Ofspyljen pauzearje">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY mls_notification_channel "&vendorShortName;-lokaasjetsjinst">
+<!ENTITY download_notification_channel "Downloads">
+<!ENTITY media_notification_channel "Media ôfspylje">
+<!ENTITY updater_notification_channel "App-fernijingen">

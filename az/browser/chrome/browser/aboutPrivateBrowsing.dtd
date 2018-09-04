@@ -30,3 +30,6 @@
 <!ENTITY trackingProtection.title                        "İzlənmə Qoruması">
 <!ENTITY trackingProtection.description2                 "Bəzi web saytlar, İnternetdə səyahət edərkən fəaliyyətinizi izləyə biləcək izləyicilərdən istifadə edirlər. Firefox-un İzlənmə Qoruması, fəalliyətiniz haqqında məlumat toplaya biləcək izləyicilərin çoxunu əngəlləyə bilər.">
 <!ENTITY trackingProtection.startTour1                   "Necə işlədiyini görün">
+
+<!ENTITY contentBlocking.title                           "Məzmun Əngəlləmə">
+<!ENTITY contentBlocking.description                     "Bəzi saytlar sizin internetdəki aktivliyinizə nəzarət edəcək izləyicilər işlədirlər. Məxfi pəncərələrdə Firefox Məzmun Əngəlləyicisi haqqınızda məlumat yığan əksər izləyiciləri avtomatik əngəlləyir.">

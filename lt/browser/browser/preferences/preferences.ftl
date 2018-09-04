@@ -6,6 +6,8 @@ do-not-track-description = Siųsti svetainėms „Do Not Track“ signalą, nuro
 do-not-track-learn-more = Sužinoti daugiau
 do-not-track-option-default =
     .label = Tik naudojant apsaugą nuo stebėjimo
+do-not-track-option-default-content-blocking =
+    .label = Tik kai „{ -brand-short-name }“ nustatyta blokuoti žinomus stebėjimo elementus
 do-not-track-option-always =
     .label = Visada
 pref-page =
@@ -14,14 +16,6 @@ pref-page =
             [windows] Nuostatos
            *[other] Nuostatos
         }
-# This is used to determine the width of the search field in about:preferences,
-# in order to make the entire placeholder string visible
-#
-# Notice: The value of the `.style` attribute is a CSS string, and the `width`
-# is the name of the CSS property. It is intended only to adjust the element's width.
-# Do not translate.
-search-input =
-    .style = width: 15.4em
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -137,20 +131,11 @@ is-not-default = „{ -brand-short-name }“ šiuo metu nėra numatytoji naršyk
 set-as-my-default-browser =
     .label = Paskirti numatytąja…
     .accesskey = n
-startup-page = Paleidžiant „{ -brand-short-name }“:
-    .accesskey = l
-startup-user-homepage =
-    .label = rodyti pradžios tinklalapį
-startup-blank-page =
-    .label = rodyti tuščią puslapį
-startup-prev-session =
-    .label = atverti paskiausio seanso langus ir korteles
 startup-restore-previous-session =
     .label = Atkurti paskiausiąjį seansą
     .accesskey = r
 disable-extension =
     .label = Išjungti priedą
-home-page-header = Pradžios tinklalapis
 tabs-group-header = Kortelės
 ctrl-tab-recently-used-order =
     .label = Vald+Tab perjungia korteles paskiausiai naudotų eiliškumu
@@ -222,6 +207,12 @@ choose-language-description = Pasirinkite kalbą, kuria pageidaujate matyti tink
 choose-button =
     .label = Pasirinkti…
     .accesskey = P
+choose-browser-language-description = Pasirinkite kalbas, kurios bus naudojamos atvaizduojant meniu, žinutes, pranešimus iš „{ -brand-short-name }“.
+manage-browser-languages-button =
+    .label = Nustatyti kitas…
+    .accesskey = k
+confirm-browser-language-change-description = Norėdami pritaikyti pakeitimus, paleiskite „{ -brand-short-name }“ iš naujo
+confirm-browser-language-change-button = Pritaikyti ir perleisti
 translate-web-pages =
     .label = Versti tinklalapių turinį
     .accesskey = V
@@ -273,7 +264,6 @@ play-drm-content =
 play-drm-content-learn-more = Sužinoti daugiau
 update-application-title = „{ -brand-short-name }“ naujinimai
 update-application-description = Laiku atnaujinkite „{ -brand-short-name }“ didesniam našumui, stabilumui bei saugumui užtikrinti.
-update-application-info = Laida { $version } <a>Kas naujo</a>
 update-application-version = Laida { $version } <a data-l10n-name="learn-more">Kas naujo</a>
 update-history =
     .label = Rodyti naujinimų žurnalą…
@@ -309,7 +299,6 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Turinio procesų riba
     .accesskey = r
 performance-limit-content-process-enabled-desc = Papildomi turinio procesai gali paspartinti veikimą kai naudojama daugiau kortelių, tačiau taip pat naudos daugiau atminties.
-performance-limit-content-process-disabled-desc = Turinio procesų skaičiaus keitimas galimas tik daugiaprocesėje „{ -brand-short-name }“. <a>Sužinokite kaip patikrinti, ar daugiaprocesė veiksena įjungta</a>
 performance-limit-content-process-blocked-desc = Turinio procesų skaičiaus keitimas galimas tik daugiaprocesėje „{ -brand-short-name }“. <a data-l10n-name="learn-more">Sužinokite kaip patikrinti, ar daugiaprocesė veiksena įjungta</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -338,6 +327,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Tinklo įgaliotasis serveris
+network-settings-title = Tinklo nuostatos
 network-proxy-connection-description = Nustatykite, kaip „{ -brand-short-name }“ jungiasi prie interneto.
 network-proxy-connection-learn-more = Sužinoti daugiau
 network-proxy-connection-settings =
@@ -380,9 +370,6 @@ use-current-pages =
 choose-bookmark =
     .label = Tinklalapis iš adresyno…
     .accesskey = T
-restore-default =
-    .label = Atstatyti numatytąjį
-    .accesskey = A
 
 ## Search Section
 
@@ -579,9 +566,6 @@ history-dontremember-description = „{ -brand-short-name }“ visą laiką laik
 history-private-browsing-permanent =
     .label = Visada naršyti privačiojo naršymo veiksenoje
     .accesskey = V
-history-remember-option =
-    .label = Įsiminti lankytus tinklalapius ir parsiųstus failus
-    .accesskey = m
 history-remember-browser-option =
     .label = Įsiminti lankytus tinklalapius ir parsiųstus failus
     .accesskey = m
@@ -627,6 +611,30 @@ sitedata-accept-third-party-visited-option =
     .label = tik lankytoms svetainėms
 sitedata-accept-third-party-never-option =
     .label = niekada
+sitedata-allow-cookies-option =
+    .label = Priimti slapukus ir svetainių duomenis
+    .accesskey = P
+sitedata-disallow-cookies-option =
+    .label = Blokuoti slapukus ir svetainių duomenis
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Blokuojamas tipas
+    .accesskey = t
+sitedata-block-trackers-option-recommended =
+    .label = Trečiųjų šalių stebėjimo elementai (rekomenduojama)
+sitedata-block-trackers-option =
+    .label = Trečiųjų šalių stebėjimo elementai
+sitedata-block-unvisited-option =
+    .label = Slapukai iš neaplankytų svetainių
+sitedata-block-all-third-parties-option =
+    .label = Visi trečiųjų šalių slapukai
+sitedata-block-always-option =
+    .label = Visi slapukai (gali sutrikti svetainių veikimas)
+sitedata-block-all-third-party-option =
+    .label = Visi trečiųjų šalių slapukai (gali sutrikti svetainių veikimas)
+sitedata-block-all-option =
+    .label = Visi slapukai (sutriks svetainių veikimas)
 sitedata-clear =
     .label = Išvalyti duomenis…
     .accesskey = v
@@ -651,6 +659,80 @@ addressbar-locbar-openpage-option =
     .label = atvertų kortelių
     .accesskey = v
 addressbar-suggestions-settings = Keisti ieškyklių siūlymų nuostatas
+
+## Privacy Section - Content Blocking
+
+content-blocking-header = Turinio blokavimas
+content-blocking-desc = Blokuokite trečiųjų šalių turinį, pvz., reklamas ir kodą, galintį sulėtinti jūsų naršymą ir stebėti jūsų naršymo įpročius. Pritaikykite nuostatas sau, kad pasiektumėte geriausią saugumo ir našumo balansą.
+content-blocking-learn-more = Sužinoti daugiau
+content-blocking-restore-defaults =
+    .label = Atstatyti numatytąsias
+    .accesskey = A
+content-blocking-toggle-on =
+    .tooltiptext = Išjungti turinio blokavimą
+content-blocking-toggle-off =
+    .tooltiptext = Įjungti turinio blokavimą
+content-blocking-toggle-label-on = ĮJUNGTA
+    .accesskey = J
+content-blocking-toggle-label-off = IŠJUNGTA
+    .accesskey = I
+content-blocking-category-label = Pasirinkite, ką blokuoti
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-label = Lėti stebėjimo elementai
+    .accesskey = L
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-label = Lėtai įkeliami stebėjimo elementai
+    .accesskey = L
+content-blocking-fastblock-description = Blokuoja trečiųjų šalių turinį, kurio įkėlimas trunka ilgiau nei 5 sekundes.
+content-blocking-fastblock-option-enabled =
+    .label = Visada blokuoti
+content-blocking-fastblock-option-disabled =
+    .label = Niekada neblokuoti
+content-blocking-tracking-protection-label = Stebėjimo elementai
+    .accesskey = S
+content-blocking-tracking-protection-all-label = Visi aptikti stebėjimo elementai
+    .accesskey = t
+content-blocking-tracking-protection-description = Blokuoja visus žinomus stebėjimo elementus (gali sutrikti kai kurių tinklalapių įkėlimas).
+content-blocking-tracking-protection-option-enabled =
+    .label = Visada blokuoti
+content-blocking-tracking-protection-option-pbm =
+    .label = Blokuoti tik privačiojo naršymo languose
+content-blocking-tracking-protection-option-disabled =
+    .label = Niekada neblokuoti
+content-blocking-tracking-protection-option-always =
+    .label = Visada
+    .accesskey = V
+content-blocking-tracking-protection-option-private =
+    .label = Tik privačiojo naršymo languose
+    .accesskey = p
+content-blocking-tracking-protection-change-blocklist = Keisti blokavimo sąrašą…
+content-blocking-reject-trackers-label = Trečiųjų šalių slapukai
+    .accesskey = s
+content-blocking-reject-trackers-description = Blokuoja visus trečiųjų šalių slapukus, arba tik nustatytus stebėjimo elementų.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the "All cookies" option
+# being selected in the Cookies and Site Data section of the UI.
+content-blocking-reject-trackers-warning-all-cookies-blocked = Dabar blokuojami visi slapukai.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the "Cookies from unvisited websites"
+# option being selected in the Cookies and Site Data section of the UI.
+content-blocking-reject-trackers-warning-from-unvisited-cookies-blocked = Dabar blokuojami neaplankytų svetainių slapukai.
+content-blocking-change-cookie-settings =
+    .label = Keisti slapukų nuostatas
+    .accesskey = n
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Stebėjimo elementai (rekomenduojama)
+    .accesskey = b
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Stebėjimo elementai
+    .accesskey = b
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Visi trečiųjų šalių slapukai (gali sutrikti svetainių veikimas)
+    .accesskey = V
 
 ## Privacy Section - Tracking
 
@@ -703,9 +785,17 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = Drausti svetainėms automatiškai groti medijas su garsu
     .accesskey = D
+permissions-block-autoplay-media-menu = Svetainėms, kurios automatiškai groja garsą
 permissions-block-autoplay-media-exceptions =
     .label = Išimtys…
     .accesskey = I
+autoplay-option-ask =
+    .label = Visada klausti
+autoplay-option-allow =
+    .label = Leisti automatinį grojimą
+autoplay-option-dont =
+    .label = Negroti automatiškai
+permissions-autoplay-link = Sužinoti daugiau
 permissions-block-popups =
     .label = Neleisti iškylančiųjų langų
     .accesskey = N
