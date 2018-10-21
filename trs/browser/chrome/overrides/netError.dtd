@@ -5,53 +5,110 @@
 <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd">
 %brandDTD;
 
-
+<!ENTITY loadError.label "Na'ué gana'nin ñanj nan">
+<!ENTITY retry.label "A'ngô ñû">
+<!ENTITY returnToPreviousPage.label "Nanikàj rukù">
+<!ENTITY returnToPreviousPage1.label "Nanikàj ruku' (Sa sā' huin)">
+<!ENTITY advanced.label "Sa huaj ñaa">
+<!ENTITY continue2.label "Doj…">
+<!ENTITY moreInformation.label "Doj nuguan' a'min rayi'î nan">
 
 <!-- Specific error messages -->
 
+<!ENTITY connectionFailure.title "Na'ue gatu riña internet ma">
+<!ENTITY connectionFailure.longDesc "&sharedLongDesc;">
 
+<!ENTITY deniedPortAccess.title "Hua arán riña sitiô na">
 <!ENTITY deniedPortAccess.longDesc "">
 
+<!ENTITY dnsNotFound.pageTitle "Nu narì'ij serbidor">
+<!-- Localization note (dnsNotFound.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
+<!ENTITY dnsNotFound.title1 "Mmmm. Na'ue nari' ma sitio na ma.">
+<!ENTITY dnsNotFound.longDesc1 "
+<strong>Si hua hue'ê direksiôn na ni ga'ue garahuet 'ngà nej sa 'na' na:</strong>
+<ul>
+  <li>Garahue ñu nàna doj.</li>
+  <li>Ni'iaj si hua internet.</li>
+  <li>Si rajsunt firewall, ni ni'iaj &brandShortName; a'nine ma gatu't riña web.</li>
+</ul>">
 
+<!ENTITY fileNotFound.title "Nu narì'ij archivo">
+<!ENTITY fileNotFound.longDesc "<ul> <li>Natsij ni ni'iajt si nu gachrun a'na't si yugui archivo.</li> <li>Natsij ni ni'iajt si nu narè' archivo, gisikij asi nadunâ si yugui.</li> </ul>">
 
+<!ENTITY fileAccessDenied.title "Nun raj yinaj gun' aa atû'">
+<!ENTITY fileAccessDenied.longDesc "<ul> 
+<li> ga'ue si ganare'ej nej si guisikïj dadin' na'ue gun ña atû'.</li> 
+</ul>">
 
+<!ENTITY generic.title "'Uà'">
+<!ENTITY generic.longDesc "<p>&brandShortName; hua nuj huin saj na'ue na'nïn página na.</p>">
 
+<!ENTITY captivePortal.title "Gayi'i' sesion riña red">
+<!ENTITY captivePortal.longDesc2 "<p>Da'uit gayi'ìt sesiôn asij gachrin gatut riña internet.</p>">
 
+<!ENTITY openPortalLoginPage.label2 "Nanïn' pajinâ riña Ayi'i' sesiôn riña red">
 
+<!ENTITY malformedURI.pageTitle "Nitaj si ni'ñanj URL">
+<!-- Localization note (malformedURI.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
+<!ENTITY malformedURI.title1 "Mmm. Nitaj si ra'nga' hue'ê direksiôn na.">
 
+<!ENTITY netInterrupt.title "Giyichin' ngè conexión">
+<!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
 
+<!ENTITY notCached.title "Ngà gire' ñanj na">
+<!ENTITY notCached.longDesc "<p>Nitaj si nu ñaj nana'ui't riña cache &brandShortName;.</p><ul><li>Guenda ga yitiïnj, &brandShortName; ni si gachín da' nana'ui' ma'an ma ñaj hua ahi</li><li>Ga'ui' riña taj garahue ñu' da' gachinjt ñaj na riña sitio web.</li></ul>">
 
+<!ENTITY netOffline.title "Si gida'aj internet">
 
+<!ENTITY contentEncodingError.title "Gire' 'ngo chrej nana'uij sa gachrûnt">
+<!ENTITY contentEncodingError.longDesc "<ul>
+ <li>Gi'iaj 'ngo sunnuj ni, nanà'uì' ahui si si'iaj huin sitiô na ni gachinj na'anjt nuj huin saj gire'ej.</li>
+</ul>">
 
+<!ENTITY unsafeContentType.title "'Ngo archivo hua ahii huin">
+<!ENTITY unsafeContentType.longDesc "<ul>
+ <li>Gi'iaj 'ngo sunnuj ni, nanà'uì' ahui si si'iaj huin sitiô na ni gachinj na'anjt nuj huin saj gire'ej.</li>
+ </ul>">
 
+<!ENTITY netReset.title "Nayi'ì ñû conexión">
+<!ENTITY netReset.longDesc "&sharedLongDesc;">
 
+<!ENTITY netTimeout.title "Ganahuij diû ana'uijt">
+<!ENTITY netTimeout.longDesc "&sharedLongDesc;">
 
+<!ENTITY unknownProtocolFound.title "Nu gachrun hue'êt direksiôn">
+<!ENTITY unknownProtocolFound.longDesc "<ul>
+ <li>Da'uît ni ga'nïnjt a'ngô programa da' nu nayi'nïj riña dirección na.</li>
+ </ul>">
 
+<!ENTITY proxyConnectFailure.title "Nu a'nïnj servidor proxy gatut riña internet">
+<!ENTITY proxyConnectFailure.longDesc "<ul> 
+<li>Ni'iaj si nagi'iaj hue'êt riña proxy a.</li> 
+<li>Ga'min ngà sô' 'nïnj ra'a red na da' gini'in yangà't sisi proxy  'iaj sun hue'ê a.</li> 
+</ul>">
 
+<!ENTITY proxyResolveFailure.title "Na'ue nari'ìj proxy ma">
 
+<!ENTITY redirectLoop.title "Nitaj si 'iaj redireksionando hue'ê pajinâ nan">
+<!ENTITY redirectLoop.longDesc "<ul>
+ <li>'Iaj chì' riña aga' na si guruhuaj dadin ga'nèjt nej cookies.</li> 
+</ul>">
 
+<!ENTITY unknownSocketType.title "Se 'ngo nuguan' hue'ê nariki servidor">
+<!ENTITY unknownSocketType.longDesc "<ul>
+ <li>Natsij ni ni'iajt sisi nikaj si aga't 'ngo sa narán riña nej nuguan'  a'min rayi'î ra.</li> 
+<li>Sa nagi'iaj nakàt ni se 'ngo sa aran' dugui' ngà servidor huin yi'ì dan 'iaj chíj a.</li>
+ </ul>">
 
+<!ENTITY nssFailure2.title "Gire' conexión hia">
+<!ENTITY nssFailure2.longDesc2 "
+<ul>
+ <li>Ñaj ni'iaj ruat ni si ga'ue nayi'ni ma dadi' nuni'in' si hua sa' ma, nitaj ni'in daj huaj. </li>
+<li>Gi'iaj suntuj ni ga'ninj nuguan' riña nej dugui' nikaj ñu'unj sitio web na.</li>
+</ul>">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Localization note (certerror.introPara) - The text content of the span tag
+<!ENTITY certerror.longpagetitle1 "Nitaj si gua hue'e si conexion re'">
+<!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
 
@@ -65,17 +122,23 @@ was trying to connect. -->
 
 
 
+<!ENTITY errorReporting.learnMore "Gahuin chrūn doj...">
+
+<!ENTITY remoteXUL.title "XUL nagi'iaj mun'ûn'">
+<!ENTITY remoteXUL.longDesc "<p><ul><li>Gachinj ni'ia riñan nin nana'ui' ahuin si si'iaj huin sitio nan da' nata' nuin si gahuin an.</li></ul></p>">
+
+<!ENTITY sslv3Used.title "Si ga'ue guida'a hue'e man ">
 <!-- LOCALIZATION NOTE (sslv3Used.longDesc2) - Do not translate
      "SSL_ERROR_UNSUPPORTED_VERSION". -->
+<!ENTITY sslv3Used.longDesc2 "Nuguan' nga huaj ne'ñan an: SSL_ERROR_UNSUPPORTED_VERSION">
+
 <!-- LOCALIZATION NOTE (certerror.wrongSystemTime2,
                         certerror.wrongSystemTimeWithoutReference) - The <span id='..' />
      tags will be injected with actual values, please leave them unchanged. -->
 
 
-
-
-
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
+
 
 

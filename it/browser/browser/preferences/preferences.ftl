@@ -53,6 +53,7 @@ pane-sync-title = Account Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Supporto a { -brand-short-name }
+addons-button-label = Estensioni e temi
 focus-search =
     .key = f
 close-button =
@@ -83,6 +84,9 @@ extension-controlled-homepage-override = La pagina iniziale è attualmente gesti
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = La pagina Nuova scheda è attualmente gestita da un’estensione (<img data-l10n-name="icon"/> { $name }).
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications= Questa impostazione è attualmente gestita da un’estensione (<img data-l10n-name="icon"/> { $name }).
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Il motore di ricerca predefinito è attualmente impostato da un’estensione (<img data-l10n-name="icon"/> { $name }).
@@ -324,9 +328,14 @@ browsing-search-on-start-typing =
     .label = Cerca nel testo quando si digita qualcosa
     .accesskey = e
 
+browsing-cfr-recommendations =
+    .label = Suggerisci estensioni durante la navigazione
+    .accesskey = S
+
+browsing-cfr-recommendations-learn-more = Ulteriori informazioni
+
 ## General Section - Proxy
 
-network-proxy-title = Server proxy
 network-settings-title = Impostazioni di rete
 network-proxy-connection-description = Determina come { -brand-short-name } si collega a Internet.
 network-proxy-connection-learn-more = Ulteriori informazioni
@@ -425,7 +434,7 @@ containers-add-button =
 containers-preferences-button =
     .label = Preferenze
 containers-remove-button =
-    .label = Elimina
+    .label = Rimuovi
 
 ## Sync Section - Signed out
 
@@ -462,7 +471,7 @@ sync-resend-verification =
     .label = Invia di nuovo email di verifica
     .accesskey = n
 sync-remove-account =
-    .label = Elimina account
+    .label = Rimuovi account
     .accesskey = n
 sync-sign-in =
     .label = Accedi
@@ -525,6 +534,7 @@ privacy-header = Privacy del browser
 ## Privacy Section - Forms
 
 forms-header = Moduli e password
+logins-header = Accessi e password
 forms-ask-to-save-logins =
     .label = Chiedi se salvare le credenziali di accesso ai siti web
     .accesskey = C
@@ -591,26 +601,12 @@ sitedata-total-size-calculating = Calcolo dimensioni…
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = I cookie, i dati salvati dai siti web e la cache stanno utilizzando { $value } { $unit } di spazio su disco
 sitedata-learn-more = Ulteriori informazioni
-sitedata-accept-cookies-option =
-    .label = Accetta cookie e dati dai siti web (consigliato)
-    .accesskey = k
-sitedata-block-cookies-option =
-    .label = Blocca cookie e dati dei siti web (alcuni siti potrebbero non funzionare correttamente)
-    .accesskey = B
 sitedata-keep-until = Conservali fino
     .accesskey = v
 sitedata-keep-until-expire =
     .label = alla loro scadenza
 sitedata-keep-until-closed =
     .label = alla chiusura di { -brand-short-name }
-sitedata-accept-third-party-desc = Accetta cookie e dati da siti di terze parti
-    .accesskey = t
-sitedata-accept-third-party-always-option =
-    .label = sempre
-sitedata-accept-third-party-visited-option =
-    .label = dai siti visitati
-sitedata-accept-third-party-never-option =
-    .label = mai
 
 sitedata-allow-cookies-option =
     .label = Accetta cookie e dati dei siti web
@@ -622,23 +618,19 @@ sitedata-disallow-cookies-option =
 
 # This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
 # The list items are the strings named sitedata-block-*-option*.
-sitedata-block-desc = Contenuti bloccati
+sitedata-block-desc = Contenuti bloccati:
     .accesskey = C
 
 sitedata-block-trackers-option-recommended =
-    .label = Elementi traccianti di terze parti (consigliato)
+    .label = elementi traccianti di terze parti (consigliato)
 sitedata-block-trackers-option =
-    .label = Elementi traccianti di terze parti
+    .label = elementi traccianti di terze parti
 sitedata-block-unvisited-option =
-    .label = Cookie da siti web non visitati
-sitedata-block-all-third-parties-option =
-    .label = Tutti i cookie di terze parti
-sitedata-block-always-option =
-    .label = Tutti i cookie (alcuni siti potrebbero non funzionare correttamente)
+    .label = cookie da siti web non visitati
 sitedata-block-all-third-party-option =
-    .label = Tutti i cookie di terze parti (alcuni siti potrebbero non funzionare correttamente)
+    .label = tutti i cookie di terze parti (alcuni siti potrebbero non funzionare correttamente)
 sitedata-block-all-option =
-    .label = Tutti i cookie (alcuni siti non funzioneranno correttamente)
+    .label = tutti i cookie (alcuni siti non funzioneranno correttamente)
 
 sitedata-clear =
     .label = Elimina dati…
@@ -692,38 +684,24 @@ content-blocking-category-label = Scegli che cosa bloccare
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Elementi traccianti lenti
-  .accesskey = m
 content-blocking-fastblock-slow-loading-trackers-label =
   .label = Elementi traccianti lenti a caricarsi
   .accesskey = m
-content-blocking-fastblock-description = Blocca contenuti di terze parti che richiedono più di 5 secondi per essere caricati.
 content-blocking-fastblock-new-description = Blocca solo gli elementi traccianti che impediscono alla pagina di caricarsi velocemente.
-content-blocking-fastblock-option-enabled =
-  .label = Blocca sempre
-content-blocking-fastblock-option-disabled =
-  .label = Non bloccare
 
-content-blocking-tracking-protection-label = Elementi traccianti
+content-blocking-tracking-protection-trackers-label =
+  .label = Elementi traccianti
   .accesskey = E
 content-blocking-tracking-protection-all-detected-trackers-label =
   .label = Tutti gli elementi traccianti rilevati
   .accesskey = T
-content-blocking-tracking-protection-description = Blocca tutti gli elementi traccianti conosciuti (nota: alcune pagine web potrebbero non caricarsi correttamente).
 content-blocking-tracking-protection-new-description = Blocca tutti gli elementi traccianti conosciuti (alcune pagine web potrebbero non caricarsi correttamente).
-content-blocking-tracking-protection-option-enabled =
-  .label = Blocca sempre
-content-blocking-tracking-protection-option-pbm =
-  .label = Blocca solo in navigazione anonima
-content-blocking-tracking-protection-option-disabled =
-  .label = Non bloccare
 content-blocking-tracking-protection-option-always =
   .label = Sempre
   .accesskey = S
 content-blocking-tracking-protection-option-private =
-  .label = Solo in navigazione anonima
+  .label = Solo in Navigazione anonima
   .accesskey = a
-content-blocking-tracking-protection-change-blocklist = Cambia elenco per blocco contenuti…
 content-blocking-tracking-protection-change-block-list = Cambia elenco per blocco contenuti
 
 content-blocking-third-party-cookies-label =
@@ -753,15 +731,11 @@ tracking-mode-always =
     .label = Sempre
     .accesskey = p
 tracking-mode-private =
-    .label = Solo in navigazione anonima
+    .label = Solo in Navigazione anonima
     .accesskey = m
 tracking-mode-never =
     .label = Mai
     .accesskey = a
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Attiva la protezione antitracciamento in modalità Navigazione anonima per bloccare i tracciatori conosciuti
-    .accesskey = g
 tracking-exceptions =
     .label = Eccezioni…
     .accesskey = E

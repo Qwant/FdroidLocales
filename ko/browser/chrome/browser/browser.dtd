@@ -23,10 +23,14 @@
 <!ENTITY  reloadTab.accesskey                "R">
 <!ENTITY  reloadAllTabs.label                "모든 탭 새로 고침">
 <!ENTITY  reloadAllTabs.accesskey            "A">
+<!ENTITY  selectAllTabs.label                "모든 탭 선택">
+<!ENTITY  selectAllTabs.accesskey            "S">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
 <!ENTITY  duplicateTab.label                 "탭 복제">
 <!ENTITY  duplicateTab.accesskey             "D">
+<!ENTITY  closeTabOptions.label              "탭 설정 닫기">
+<!ENTITY  closeTabOptions.accesskey          "O">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -38,19 +42,29 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "선택한 탭 닫기">
 <!ENTITY  closeSelectedTabs.accesskey        "S">
 
+<!ENTITY  closeTabs.label                    "탭 닫기">
+<!ENTITY  closeTabs.accesskey                "S">
 <!ENTITY  pinSelectedTabs.label              "탭 고정">
-<!-- Pin Tab and Pin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinSelectedTabs.accesskey          "P">
 <!ENTITY  unpinSelectedTabs.label            "탭 고정 해제">
-<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "b">
 <!-- Reload Tab and Reload Selected Tabs have the same accesskey
 but will never be visible at the same time. -->
 <!ENTITY  reloadSelectedTabs.label           "선택한 탭 새로고침">
 <!ENTITY  reloadSelectedTabs.accesskey       "R">
+<!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadTabs.label                   "탭 새로 고침">
+<!ENTITY  reloadTabs.accesskey               "R">
 <!ENTITY  bookmarkSelectedTabs.label         "탭 북마크…">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "k">
 
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
@@ -59,8 +73,14 @@ left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
 <!ENTITY  pinTab.label                       "탭 고정">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinTab.accesskey                   "P">
 <!ENTITY  unpinTab.label                     "일반 탭으로">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "b">
 <!ENTITY  sendTabToDevice.label              "탭을 기기로 보내기">
 <!ENTITY  sendTabToDevice.accesskey          "D">
@@ -68,12 +88,26 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "D">
 <!ENTITY  sendLinkToDevice.label             "링크를 기기로 보내기">
 <!ENTITY  sendLinkToDevice.accesskey         "D">
+<!-- LOCALIZATION NOTE (moveTabOptions.label and moveSelectedTabOptions.label):
+These two items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  moveTabOptions.label               "탭 이동">
+<!ENTITY  moveTabOptions.accesskey           "v">
+<!ENTITY  moveSelectedTabOptions.label       "탭 이동">
+<!ENTITY  moveSelectedTabOptions.accesskey   "v">
+<!ENTITY  moveToStart.label                  "처음으로 이동">
+<!ENTITY  moveToStart.accesskey              "S">
+<!ENTITY  moveToEnd.label                    "끝으로 이동">
+<!ENTITY  moveToEnd.accesskey                "E">
 <!ENTITY  moveToNewWindow.label              "새 창으로 이동">
 <!ENTITY  moveToNewWindow.accesskey          "W">
 <!ENTITY  reopenInContainer.label            "컨테이너에서 다시 열기">
 <!ENTITY  reopenInContainer.accesskey        "e">
 <!ENTITY  bookmarkAllTabs.label              "모든 탭 북마크…">
 <!ENTITY  bookmarkAllTabs.accesskey          "T">
+<!ENTITY  bookmarkTab.label                  "탭 북마크">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  bookmarkTab.accesskey              "B">
 <!ENTITY  undoCloseTab.label                 "닫았던 탭 다시 열기">
 <!ENTITY  undoCloseTab.accesskey             "U">
 <!ENTITY  closeTab.label                     "탭 닫기">
@@ -114,6 +148,29 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "A">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "모든 탭 북마크…">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "T">
+
+<!ENTITY toolbarContextMenu.reloadSelectedTab.label "선택한 탭 새로고침">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTab.accesskey "R">
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.label "선택한 탭 새로고침">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.accesskey "R">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.label "선택한 탭 북마크하기…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.accesskey "T">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.label "선택한 탭 북마크하기…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.accesskey "T">
+<!ENTITY toolbarContextMenu.selectAllTabs.label "모든 탭 선택">
+<!ENTITY toolbarContextMenu.selectAllTabs.accesskey "S">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "닫은 탭 다시 열기">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "U">
 
@@ -199,6 +256,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY subscribeToPageMenupopup.label "현재 페이지 구독하기">
 <!ENTITY subscribeToPageMenuitem.label "현재 페이지 구독하기…">
+
 <!ENTITY addCurPagesCmd.label "모든 탭 북마크 추가…">
 <!ENTITY showAllBookmarks2.label "모든 북마크 보기">
 <!ENTITY recentBookmarks.label "최근 북마크됨">
@@ -447,6 +505,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.manageExtension.label "부가 기능 관리">
 <!ENTITY customizeMenu.manageExtension.accesskey "E">
 
+<!ENTITY customizeMenu.removeExtension.label "부가기능 제거">
+<!ENTITY customizeMenu.removeExtension.accesskey "v">
+
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
     secondary commands. -->
@@ -554,9 +615,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.label         "프레임 새로 고침">
 <!ENTITY reloadFrameCmd.accesskey     "R">
 <!ENTITY viewPartialSourceForSelectionCmd.label "선택한 소스 보기">
-<!ENTITY viewPartialSourceForMathMLCmd.label    "MathML 소스">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
-         viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "e">
 <!ENTITY viewPageSourceCmd.label      "페이지 소스">
 <!ENTITY viewPageSourceCmd.accesskey  "V">
@@ -773,7 +831,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      Remove Bookmark buttons. -->
 <!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "완료">
-
 <!ENTITY editBookmark.showForNewBookmarks.label       "저장할 때 에디터 보이기">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "S">
 
@@ -781,6 +838,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      This is the header of the security subview in the Site Identity panel. -->
 <!ENTITY identity.securityView.label "사이트 보안">
 
+<!ENTITY identity.connection "연결">
 <!ENTITY identity.connectionSecure "안전한 연결">
 <!ENTITY identity.connectionNotSecure "안전하지 않은 연결">
 <!ENTITY identity.connectionFile "이 페이지는 사용자의 컴퓨터에 저장됩니다.">
@@ -923,9 +981,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "탭의 소리는 공유됩니다.">
 <!ENTITY getUserMedia.allWindowsShared.message "화면에 표시되어 있는 모든 창을 공유합니다.">
 
-<!ENTITY trackingProtection.on "추적 방지: ON">
-<!ENTITY trackingProtection.off "추적 방지: OFF">
-
 <!ENTITY contentBlocking.title "콘텐츠 차단">
 <!ENTITY contentBlocking.detected "이 사이트에서 차단할 수 있는 콘텐츠가 감지되었습니다.">
 <!ENTITY contentBlocking.notDetected "이 페이지에서 차단할 수 있는 콘텐츠가 감지되지 않았습니다.">
@@ -947,6 +1002,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.fastBlock.add.label "차단 추가…">
 
 <!ENTITY contentBlocking.trackingProtection2.label "모든 감지된 추적기">
+<!ENTITY contentBlocking.trackingProtection3.label "추적기">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking tracker content, so this is
@@ -983,28 +1039,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY trackingProtection.title "추적 보호">
 <!ENTITY trackingProtection.tooltip "추적 보호 설정 열기">
-<!ENTITY trackingProtection.detectedBlocked4 "&brandShortName;가 사용자의 탐색을 추적할 수 있는 이 페이지의 부분을 차단하였습니다.">
-<!ENTITY trackingProtection.detectedNotBlocked5 "&brandShortName;가 브라우징 활동을 추적하는 요소를 감지하였습니다.">
-<!ENTITY trackingProtection.detectedException "&brandShortName;가 사용자의 탐색을 추적할 수 있는 요소를 감지하였습니다. 이 사이트에 대한 보호 기능이 꺼져 있습니다.">
-<!ENTITY trackingProtection.notDetected5 "페이지에서 추적을 하는 요소를 발견하지 못했습니다.">
-<!ENTITY trackingProtection.notDetectedException "이 페이지에서 추적을 하는 요소가 감지되지 않았습니다. 이 사이트에 대한 보호 기능이 꺼져 있습니다.">
-
-<!ENTITY trackingProtection.reloadRequired2 "추적 방지 기능을 활성화 하였습니다. 모든 추적을 차단하기 위해서 페이지를 새로고침 해 주세요.">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock3.label "이 사이트에서 비활성화">
-<!ENTITY trackingProtection.unblock3.accesskey "D">
 <!ENTITY trackingProtection.unblock4.label "이 사이트의 차단 비활성화">
 <!ENTITY trackingProtection.unblock4.accesskey "D">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate3.label "이 세션에서 비활성화">
-<!ENTITY trackingProtection.unblockPrivate3.accesskey "D">
-<!ENTITY trackingProtection.block4.label "이 사이트에서 활성화">
-<!ENTITY trackingProtection.block4.accesskey "E">
 <!ENTITY trackingProtection.unblockPrivate4.label "일시적으로 차단 해제">
 <!ENTITY trackingProtection.unblockPrivate4.accesskey "D">
 <!ENTITY trackingProtection.block5.label "이 사이트의 차단 활성화">
@@ -1110,10 +1153,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageAction.manageExtension.label "확장 프로그램 관리…">
 
 <!ENTITY pageAction.sendTabToDevice.label "기기로 탭 보내기">
+
 <!ENTITY sendToDevice.syncNotReady.label "기기를 동기화하고 있습니다…">
 
 <!ENTITY pageAction.shareUrl.label "공유">
-
 <!ENTITY pageAction.shareMore.label "더보기…">
 
 <!ENTITY libraryButton.tooltip "방문 목록, 즐겨찾기 등 보기">

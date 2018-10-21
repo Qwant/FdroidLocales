@@ -53,6 +53,7 @@ pane-sync-title = Firefox खाता
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } समर्थन
+addons-button-label = एक्सटेंशन और थीम
 focus-search =
     .key = f
 close-button =
@@ -120,7 +121,6 @@ startup-header = आरंभन
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = { -brand-short-name } और Firefox को एक ही समय में चलने के लिए स्वीकारें
-use-firefox-sync = संकेत: यह अलग प्रोफाइल का उपयोग करता है. उनके बीच आँकड़ा साझा करने के लिए सिंक का उपयोग करें.
 get-started-not-logged-in = { -sync-brand-short-name } में साइन इन करें…
 get-started-configured = { -sync-brand-short-name } वरीयताएँ खोलें
 always-check-default =
@@ -323,7 +323,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = नेटवर्क प्रॉक्सी
 network-settings-title = नेटवर्क सेटिंग
 network-proxy-connection-description = विन्यस्त करें की { -brand-short-name } कैसे इंटरनेट से जुड़ेगा.
 network-proxy-connection-learn-more = अधिक जानें
@@ -522,6 +521,7 @@ privacy-header = ब्राउज़र गोपनीयता
 ## Privacy Section - Forms
 
 forms-header = फ़ॉर्म व कूटशब्द
+logins-header = लॉगिन और पासवर्ड
 forms-ask-to-save-logins =
     .label = वेबसाइटों के लिए लॉग इन और पासवर्ड सहेजने के लिए पूछें
     .accesskey = r
@@ -588,26 +588,12 @@ sitedata-total-size-calculating = साइट डेटा और कैश आ
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = आपकी संग्रहीत कुकीज़, साइट डेटा और कैश वर्तमान में डिस्क स्थान के { $value } { $unit } का उपयोग कर रहे हैं।
 sitedata-learn-more = अधिक जानें
-sitedata-accept-cookies-option =
-    .label = वेबसाइट से कूकीज और साइट डाटा स्वीकार करें (अनुशंसित)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = कुकीज़ और साइट डेटा को ब्लॉक करें (इसके कारण वेबसाइट टूट सकती है)
-    .accesskey = B
 sitedata-keep-until = तब तक रखें जब तक
     .accesskey = u
 sitedata-keep-until-expire =
     .label = उनकी समय सीमा समाप्त
 sitedata-keep-until-closed =
     .label = { -brand-short-name } बंद हो चूका है
-sitedata-accept-third-party-desc = तृतीय पक्ष कूकीज और साइट डाटा स्वीकार करें
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = हमेशा
-sitedata-accept-third-party-visited-option =
-    .label = भ्रमण किए हुए से
-sitedata-accept-third-party-never-option =
-    .label = कभी नहीं
 sitedata-allow-cookies-option =
     .label = कुकीज़ और साइट डेटा स्वीकार करें
     .accesskey = A
@@ -620,10 +606,6 @@ sitedata-block-trackers-option =
     .label = तृतीय-पक्ष ट्रैकर
 sitedata-block-unvisited-option =
     .label = नहीं देखे वेबसाइटों से कुकीज़
-sitedata-block-all-third-parties-option =
-    .label = सभी तृतीय-पक्ष कुकीज़
-sitedata-block-always-option =
-    .label = सभी कुकीज़ (वेबसाइटों को तोड़ने का कारण हो सकते हैं)
 sitedata-block-all-third-party-option =
     .label = सभी तृतीय-पक्ष कुकीज़ (वेबसाइटों को तोड़ने का कारण हो सकते हैं)
 sitedata-block-all-option =
@@ -672,50 +654,20 @@ content-blocking-toggle-label-on = चालू
 content-blocking-toggle-label-off = बंद
     .accesskey = O
 content-blocking-category-label = चुनें कि क्या ब्लॉक करना है
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = धीमी ट्रैकिंग तत्व
-    .accesskey = S
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-label = धीमी गति से लोड होने वाले ट्रैकर
-    .accesskey = S
-content-blocking-fastblock-description = लोड होने में 5 सेकंड से अधिक समय लेने वाले तृतीय-पार्टी सामग्री को ब्लॉक करता है.
-content-blocking-fastblock-option-enabled =
-    .label = हमेशा ब्लॉक करें
-content-blocking-fastblock-option-disabled =
-    .label = कभी ब्लॉक ना करें
-content-blocking-tracking-protection-label = ट्रैकर
+content-blocking-tracking-protection-trackers-label =
+    .label = ट्रैकर
     .accesskey = T
-content-blocking-tracking-protection-all-label = सभी ज्ञात ट्रैकर
-    .accesskey = T
-content-blocking-tracking-protection-description = सभी ज्ञात ट्रैकर ब्लॉक करें (नोट: कुछ पृष्ठों को लोड होने से रोका जा सकता है).
-content-blocking-tracking-protection-option-enabled =
-    .label = हमेशा ब्लॉक करें
-content-blocking-tracking-protection-option-pbm =
-    .label = केवल निजी विंडो में ब्लॉक करें
-content-blocking-tracking-protection-option-disabled =
-    .label = कभी ब्लॉक ना करें
 content-blocking-tracking-protection-option-always =
     .label = हमेशा
     .accesskey = A
 content-blocking-tracking-protection-option-private =
     .label = केवल निजी विंडो में
     .accesskey = p
-content-blocking-tracking-protection-change-blocklist = ब्लॉक सूची बदलें
-content-blocking-reject-trackers-label = तृतीय-पक्ष कुकीज़
+content-blocking-tracking-protection-change-block-list = ब्लॉक सूची बदलें
+content-blocking-third-party-cookies-label =
+    .label = थर्ड-पार्टी कूकीज़
     .accesskey = C
 content-blocking-reject-trackers-description = सभी तृतीय-पक्ष कुकीज़ को प्रतिबंधित करें या केवल उन्हें जो ट्रैकरों द्वारा सेट किए गये हैं।
-# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the "All cookies" option
-# being selected in the Cookies and Site Data section of the UI.
-content-blocking-reject-trackers-warning-all-cookies-blocked = सभी कुकीज़ वर्तमान में प्रतिबंधित किए गए हैं।
-# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the "Cookies from unvisited websites"
-# option being selected in the Cookies and Site Data section of the UI.
-content-blocking-reject-trackers-warning-from-unvisited-cookies-blocked = नहीं देखे वेबसाइटों से कुकीज़ वर्तमान में अवरुद्ध हैं।
 content-blocking-change-cookie-settings =
     .label = कुकी सेटिंग बदलें
     .accesskey = S
@@ -743,10 +695,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = कभी नहीं
     .accesskey = N
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = निजी ब्राउज़िंग में ज्ञात ट्रैकर्स को ब्लॉक करने के लिए ट्रैकिंग प्रोटैक्शन का उपयोग करें
-    .accesskey = v
 tracking-exceptions =
     .label = अपवाद…
     .accesskey = x
@@ -813,9 +761,6 @@ permissions-a11y-privacy-link = और अधिक जानें
 collection-header = { -brand-short-name } डेटा संकलन और उपयोग
 collection-description = हम आपको हमेशा विकल्प देने का प्रयास करते हैं और केवल आवश्यक सूचनाएँ एकत्रित करते हैं ताकि { -brand-short-name } सबके लिए व बेहतर हो. हम व्यक्तिगत जानकारी लेने से पहले हमेशा अनुमति मांगते हैं.
 collection-privacy-notice = गोपनीयता सूचना
-collection-health-report =
-    .label = { -brand-short-name } को मोज़िला को तकनीकी और इंटरैक्शन डेटा भेजने की अनुमति दें
-    .accesskey = r
 collection-health-report-link = अधिक जानें
 collection-studies =
     .label = { -brand-short-name } को संस्थापित करने और अध्ययन चलाने की अनुमति दें

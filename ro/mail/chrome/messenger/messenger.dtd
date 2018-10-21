@@ -170,7 +170,7 @@
 <!ENTITY recentFolders.accesskey "R">
 <!ENTITY compactVersion.label "Mod afișare compact">
 <!ENTITY compactVersion.accesskey "c">
-<!ENTITY folderPaneBar.label "Bara de unelte a panoului dosar">
+<!ENTITY folderPaneBar.label "Bară de unelte în panoul de dosare">
 <!ENTITY folderPaneBar.accesskey "F">
 <!ENTITY folderModeSelector.label "Vizualizări dosare">
 
@@ -443,6 +443,9 @@
 <!ENTITY openConversationCmd.label "Deschide în conversație">
 <!ENTITY openConversationCmd.accesskey "s">
 <!ENTITY openConversationCmd.key "e">
+<!ENTITY openInConversationCmd.label "Deschide în conversație">
+<!ENTITY openInConversationCmd.accesskey "s">
+<!ENTITY openInConversationCmd.key "o">
 <!ENTITY openAttachmentListCmd.label "Atașamente">
 <!ENTITY openAttachmentListCmd.accesskey "t">
 <!ENTITY openFeedMessage1.label "Când deschideți mesajele fluxului">
@@ -472,7 +475,7 @@
 <!ENTITY addonPrefsUnix.label "Preferințe suplimente">
 <!ENTITY addonPrefsUnix.accesskey "P">
 <!ENTITY addonNoPrefs.label "Nu au fost găsite setările de supliment.">
-<!ENTITY activitymanager.label "Gestionar de activitate">
+<!ENTITY activitymanager.label "Manager de activitate">
 <!ENTITY activitymanager.accesskey "a">
 <!ENTITY imAccountsStatus.label "Stare chat">
 <!ENTITY imAccountsStatus.accesskey "S">
@@ -522,7 +525,7 @@
 <!ENTITY errorConsoleCmd.label "Consolă de erori">
 <!ENTITY errorConsoleCmd.accesskey "e">
 <!ENTITY errorConsoleCmd.commandkey "j">
-<!ENTITY scratchpadCmd.label "Ciornă">
+<!ENTITY scratchpadCmd.label "Panou de probe">
 <!ENTITY scratchpadCmd.accesskey "S">
 
 <!--LOCALIZATION NOTE (scratchpadCmd.keycode):
@@ -621,9 +624,9 @@
 <!-- Phishing Button Popup -->
 <!ENTITY phishingOptionIgnore.label "Ignoră avertismentul pentru acest mesaj">
 <!ENTITY phishingOptionIgnore.accesskey "n">
-<!ENTITY phishingOptionSettings.label "Editează opțiunile pentru detectarea de înșelătorii…">
+<!ENTITY phishingOptionSettings.label "Editează opțiunile de detectare a înșelăciunii prin e-mail…">
 <!ENTITY phishingOptionSettings.accesskey "d">
-<!ENTITY phishingOptionSettingsUnix.label "Editează preferințele pentru detectarea de înșelătorii…">
+<!ENTITY phishingOptionSettingsUnix.label "Editează preferințele pentru detectarea înșelăciunii prin e-mail…">
 <!ENTITY phishingOptionSettingsUnix.accesskey "d">
 
 <!-- AppMenu Popup -->
@@ -631,7 +634,7 @@
 <!ENTITY appmenuNewContactCmd.label "Contact în agendă…">
 <!ENTITY appmenuEditMenu.label "Editare">
 <!ENTITY appmenuToolbarLayout.label "Aranjamentul barei de unelte…">
-<!ENTITY appmenuSelectThread.label "Selectează firul">
+<!ENTITY appmenuSelectThread.label "Selectează conversația">
 <!ENTITY appmenuSelectFlagged.label "Selectează mesajele cu steluță">
 
 <!-- Tags Menu Popup -->
@@ -728,7 +731,7 @@
 
 <!-- Thread Pane Tooltips -->
 <!ENTITY columnChooser2.tooltip "Selectează coloanele de afișat">
-<!ENTITY threadColumn2.tooltip "Afișează mesajele grupate">
+<!ENTITY threadColumn2.tooltip "Afișează conversațiile">
 <!ENTITY fromColumn2.tooltip "Sortează după expeditor">
 <!ENTITY recipientColumn2.tooltip "Sortează după destinatar">
 <!ENTITY correspondentColumn2.tooltip "Sortare după corespondenți">
@@ -740,8 +743,8 @@
 <!ENTITY statusColumn2.tooltip "Sortează după stare">
 <!ENTITY sizeColumn2.tooltip "Sortează după dimensiune">
 <!ENTITY junkStatusColumn2.tooltip "Sortează după nesolicitate">
-<!ENTITY unreadColumn2.tooltip "Numărul de mesaje necitite în șir">
-<!ENTITY totalColumn2.tooltip "Numărul total de mesaje în șir">
+<!ENTITY unreadColumn2.tooltip "Numărul de mesaje necitite din conversație">
+<!ENTITY totalColumn2.tooltip "Numărul total de mesaje din conversație">
 <!ENTITY readColumn2.tooltip "Sortare după citire">
 <!ENTITY receivedColumn2.tooltip "Sortează după data primirii">
 <!ENTITY starredColumn2.tooltip "Sortează după stea">
@@ -843,7 +846,7 @@
      of its descendents. The user selects the folder using the same widget as the
      move to/copy to mechanism (via a series of popups).
   -->
-<!ENTITY columnPicker.applyToFolderAndChildren.label "Dosar și copiii lui…">
+<!ENTITY columnPicker.applyToFolderAndChildren.label "Dosar și elemente conținute…">
 <!-- LOCALIZATION NOTE (columnPicker.thisFolder.label):
      This is used in the folder selection widget for the
      "columnPicker.applyToFolder.label" and
@@ -920,7 +923,7 @@
 <!ENTITY CopyNewsgroupURL.accesskey "U">
 <!ENTITY CreateFilterFrom.label "Creează filtru din…">
 <!ENTITY CreateFilterFrom.accesskey "f">
-<!ENTITY reportPhishingURL.label "Raportează înșelătorie prin e-mail">
+<!ENTITY reportPhishingURL.label "Raportează o înșelăciune prin e-mail">
 <!ENTITY reportPhishingURL.accesskey "o">
 
 <!-- Spell checker context menu items -->

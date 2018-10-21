@@ -25,6 +25,8 @@ policy-Bookmarks = Bladwijzers maken in de Bladwijzerwerkbalk, het menu Bladwijz
 
 policy-Certificates = Of ingebouwde certificaten wel of niet worden gebruikt. Deze beleidsregel geldt op dit moment alleen voor Windows.
 
+policy-CertificatesDescription = Certificaten toevoegen of ingebouwde certificaten gebruiken.
+
 policy-Cookies = Toestaan of weigeren dat websites cookies instellen.
 
 policy-DisableAppUpdate = Voorkomen dat de browser wordt bijgewerkt.
@@ -62,6 +64,8 @@ policy-DisableSecurityBypass = Voorkomen dat de gebruiker bepaalde beveiligingsi
 
 policy-DisableSetDesktopBackground = De menuopdracht Als bureaubladachtergrond instellen uitschakelen.
 
+policy-DisableSetAsDesktopBackground = De menuopdracht Als bureaubladachtergrond instellen voor afbeeldingen uitschakelen.
+
 policy-DisableSystemAddonUpdate = Voorkomen dat de browser systeemadd-ons installeert en bijwerkt.
 
 policy-DisableTelemetry = Telemetry uitschakelen.
@@ -70,16 +74,24 @@ policy-DisplayBookmarksToolbar = Standaard de Bladwijzerwerkbalk weergeven.
 
 policy-DisplayMenuBar = Standaard de Menubalk weergeven.
 
+policy-DNSOverHTTPS = DNS over HTTPS configureren.
+
 policy-DontCheckDefaultBrowser = Controle op standaardbrowser bij opstarten uitschakelen.
 
+# “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Inhoudsblokkering inschakelen of uitschakelen en optioneel vergrendelen.
 
+# A “locked” extension can’t be disabled or removed by the user. This policy
+# takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
+# English or translate them as verbs. See also:
+# https://github.com/mozilla/policy-templates/blob/master/README.md#extensions-machine-only
 policy-Extensions = Extensies installeren, verwijderen of vergrendelen. De optie voor installeren gebruikt URL’s of paden als parameters. De opties voor verwijderen en vergrendelen gebruiken extensie-ID’s.
 
 policy-FlashPlugin = Gebruik van de Flash-plug-in toestaan of weigeren.
 
 policy-HardwareAcceleration = Wanneer false, hardwareversnelling uitschakelen.
 
+# “lock” means that the user won’t be able to change this setting
 policy-Homepage = De startpagina instellen en optioneel vergrendelen.
 
 policy-InstallAddonsPermission = Toestaan dat bepaalde websites add-ons installeren.
@@ -98,10 +110,17 @@ policy-PopupBlocking = Toestaan dat bepaalde websites standaard pop-ups weergeve
 
 policy-Proxy = Proxyinstellingen configureren.
 
+policy-RequestedLocales = De lijst van gevraagde locales voor de toepassing instellen, op volgorde van voorkeur.
+
 policy-SanitizeOnShutdown = Alle navigatiegegevens wissen bij afsluiten.
 
 policy-SearchBar = De standaardlocatie van de zoekbalk instellen. De gebruiker mag deze nog steeds aanpassen.
 
 policy-SearchEngines = Instellingen voor zoekmachines configureren. Deze beleidsregel is alleen beschikbaar in de Extended Support Release (ESR)-versie.
 
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = PKCS #11-modules installeren.
+
+# “format” refers to the format used for the value of this policy. See also:
+# https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
 policy-WebsiteFilter = Het bezoeken van websites blokkeren. Zie de documentatie voor meer informatie over de notatie.

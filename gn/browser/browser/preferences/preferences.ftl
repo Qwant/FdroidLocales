@@ -6,6 +6,8 @@ do-not-track-description = Emondo ñanduti rendápe peteĩ kuaaharã “Jehapyku
 do-not-track-learn-more = Kuaave
 do-not-track-option-default =
     .label = Eipuru jave añónte tapykueho ñemo'ã
+do-not-track-option-default-content-blocking =
+    .label = { -brand-short-name } oñembohekórõ añoite ojokokuaa umi jehapykuehoha juhupyre
 do-not-track-option-always =
     .label = Katui
 pref-page =
@@ -51,6 +53,7 @@ pane-sync-title = Firefox mba'ete
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } mombytaha
+addons-button-label = Jepysokue ha téma
 focus-search =
     .key = f
 close-button =
@@ -90,6 +93,9 @@ extension-controlled-privacy-containers = Peteĩ moĩmbaha, <img data-l10n-name=
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, oma'ẽag̃ui temiñemi ñemo'ã rehe.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, ohechahína ko ñemboheko.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, oma'ẽag̃ui { -brand-short-name } ramo ojuajúvo ñanduti rehe.
@@ -203,6 +209,9 @@ choose-button =
     .label = Poravo…
     .accesskey = o
 choose-browser-language-description = Eiporavo ñe’ẽ ojepurúva ehechauka hag̃ua poravorã, ñe’ẽmondo ha momarandu { -brand-short-name } rehegua.
+manage-browser-languages-button =
+    .label = Emopyenda mokõiháva
+    .accesskey = l
 confirm-browser-language-change-description = Emoñepyrũjey { -brand-short-name } oñemboheko hag̃ua ko’ã moambuepyre
 confirm-browser-language-change-button = Mohembiapo ha ñepyrũjey
 translate-web-pages =
@@ -318,7 +327,7 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Proxy ñanduti rehegua
+network-settings-title = Jeike ñemboheko
 network-proxy-connection-description = Emboheko { -brand-short-name } ramo ojuajúvo ñanduti rehe.
 network-proxy-connection-learn-more = Kuaave
 network-proxy-connection-settings =
@@ -516,6 +525,7 @@ privacy-header = Kundahára Ñemigua
 ## Privacy Section - Forms
 
 forms-header = Ysaja ha ñe'ẽnemi
+logins-header = Tembiapo ñepyrũ ha ñe’ẽñemi
 forms-ask-to-save-logins =
     .label = Eporandu eñongatu hag̃ua tembiapo ñepyrũ ha ñe’ẽñemi ñandutípe
     .accesskey = E
@@ -557,9 +567,6 @@ history-dontremember-description = { -brand-short-name } oipurujeýta pe ñemboh
 history-private-browsing-permanent =
     .label = Kundaha ñemi jepuru tapia
     .accesskey = p
-history-remember-option =
-    .label = Tembiasakue mboguejy ha kundaha rehegua Mandu'a
-    .accesskey = M
 history-remember-browser-option =
     .label = Kundaha rembiasakue ha ñemboguejy mandu’a
     .accesskey = b
@@ -585,26 +592,12 @@ sitedata-total-size-calculating = Eikuaase tenda mba'ekuaarã ha kache tuichakue
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Umi kookie ñembyytpyre, tenda mba'ekuaarã ha kache mandu'arenda oipuru porã ko'ag̃aite { $value } { $unit } pe disco pegua pa'ũ.
 sitedata-learn-more = Kuaave
-sitedata-accept-cookies-option =
-    .label = Emoñeĩ kookie ha ñanduti renda mba'ekuaarã (jeroviapyrãva)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = Ejoko umi kookie ha tenda mba'ekuaarã (ikatu ombyai ñanduti renda)
-    .accesskey = B
 sitedata-keep-until = Eñongati ag̃ave
     .accesskey = u
 sitedata-keep-until-expire =
     .label = opátama
 sitedata-keep-until-closed =
     .label = { -brand-short-name } oñembotýma
-sitedata-accept-third-party-desc = Emoñeĩ kookie ambueguáva ha tenda mba'ekuaarã
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = Katui
-sitedata-accept-third-party-visited-option =
-    .label = Jehopyre
-sitedata-accept-third-party-never-option =
-    .label = Araka'eve
 sitedata-allow-cookies-option =
     .label = Emoneĩ kookie ha tenda mba’ekuaarã
     .accesskey = A
@@ -621,10 +614,10 @@ sitedata-block-trackers-option =
     .label = Jehekaha mbohapyháva
 sitedata-block-unvisited-option =
     .label = Ñanduti renda kookie eike’ỹhague
-sitedata-block-all-third-parties-option =
-    .label = Opaite kookie mbohapyhagua
-sitedata-block-always-option =
-    .label = Opaite umi kookie (ikatu ojavyka ñanduti rendápe)
+sitedata-block-all-third-party-option =
+    .label = Opaite kookie mohapyguáva (ikatu ombojavy ñanduti rendápe)
+sitedata-block-all-option =
+    .label = Opaite kookie (ombojavykuaa ñanduti rendápe)
 sitedata-clear =
     .label = Mba'ekuaarã mopotĩ…
     .accesskey = l
@@ -634,6 +627,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Oĩ'ỹva…
     .accesskey = E
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Ne ñemboheko pe tetepy jejokópe ojokohína kookie ñemboheko ñemoambue ha avei tenda mba’ekuaarä.
 
 ## Privacy Section - Address Bar
 
@@ -670,23 +667,45 @@ content-blocking-category-label = Eiporavo mba’épa ejokóta
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Mba’epuru jehekaha imbegue
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Ñemyanyhẽ mbegue rapykuehoha
     .accesskey = S
-content-blocking-fastblock-description = Ejoko tetepy mbopyguáva hi’arevéva 5 aravo’ivégui henyhẽ hag̃ua.
-content-blocking-fastblock-option-enabled =
-    .label = Ejoko tapiaite
-content-blocking-fastblock-option-disabled =
-    .label = Ani ejoko araka’eve
-content-blocking-tracking-protection-label = Jehekaha
+content-blocking-fastblock-new-description = Ejoko tapykuehoha añoite omoapañuãiva kuatiarogue ñemyanyhẽ pya’e.
+content-blocking-tracking-protection-trackers-label =
+    .label = Tapykuehohára
     .accesskey = T
-content-blocking-tracking-protection-description = Ejoko opaite jehekaha eikuaáva (Kuaarã: Ikatu avei ojoko kuatiarogue ñemyenyhẽ).
-content-blocking-tracking-protection-option-enabled =
-    .label = Ejoko tapiaite
-content-blocking-tracking-protection-option-pbm =
-    .label = Ejoko ovetã ñemiguápe añoite
-content-blocking-tracking-protection-option-disabled =
-    .label = Ani ejoko araka’eve
-content-blocking-tracking-protection-change-blocklist = Emoambue jejokoha rysýi...
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Opaite tapykuehoha juhupyre
+    .accesskey = T
+content-blocking-tracking-protection-new-description = Ejoko opaite jehapykuehoha kuaapyre. (Ikatu ojoko peteĩa kuatiarogue ani heñyhẽ).
+content-blocking-tracking-protection-option-always =
+    .label = Tapiaite
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = Ovetã ñemíme añoite
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Emoambue jokoha rysýi
+content-blocking-third-party-cookies-label =
+    .label = Kookie mbohapyguáva
+    .accesskey = C
+content-blocking-reject-trackers-description = Ejoko opaite kookie mbohapyguáva térã umi jehapykuehoha moĩmbyre añoite.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Ne ñemboheko kookiepe ha tenda mba’ekuaarã ojokohína ñemoambue ha kokie mba’ekuaarã mbohapyguávape.
+content-blocking-change-cookie-settings =
+    .label = Emoambue kookie ñemboheko
+    .accesskey = S
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Tapykuehohára (je'epyre)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Tapykuehoha
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Opaite kookie mbohapyguáva (ikatu ombojavy ñanduti rendápe)
+    .accesskey = A
 
 ## Privacy Section - Tracking
 
@@ -702,10 +721,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Araka'eve
     .accesskey = N
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Eipuru tapykueho ñemo'ã kundaha ñemigua ejoko hag̃ua jeporekeha kuaapyréva
-    .accesskey = v
 tracking-exceptions =
     .label = Oĩ'ỹva…
     .accesskey = v

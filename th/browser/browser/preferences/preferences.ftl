@@ -6,6 +6,8 @@ do-not-track-description = ส่งสัญญาณ “ไม่ติดต�
 do-not-track-learn-more = เรียนรู้เพิ่มเติม
 do-not-track-option-default =
     .label = เฉพาะเมื่อใช้การป้องกันการติดตาม
+do-not-track-option-default-content-blocking =
+    .label = เฉพาะเมื่อ { -brand-short-name } ถูกตั้งให้ปิดกั้นตัวติดตามที่ตรวจพบ
 do-not-track-option-always =
     .label = เสมอ
 pref-page =
@@ -51,6 +53,7 @@ pane-sync-title = บัญชี Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = การสนับสนุนของ { -brand-short-name }
+addons-button-label = ส่วนขยายและชุดตกแต่ง
 focus-search =
     .key = f
 close-button =
@@ -90,6 +93,9 @@ extension-controlled-privacy-containers = ส่วนขยาย <img data-l10
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = ส่วนขยาย <img data-l10n-name="icon"/> { $name } กำลังควบคุมการป้องกันการติดตาม
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = ส่วนขยาย <img data-l10n-name="icon"/> { $name } กำลังควบคุมการตั้งค่านี้
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = ส่วนขยาย <img data-l10n-name="icon"/> { $name } กำลังควบคุมวิธีที่ { -brand-short-name } เชื่อมต่อกับอินเทอร์เน็ต
@@ -306,7 +312,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = พร็อกซีเครือข่าย
 network-settings-title = การตั้งค่าเครือข่าย
 network-proxy-connection-description = กำหนดค่าวิธีที่ { -brand-short-name } เชื่อมต่อกับอินเทอร์เน็ต
 network-proxy-connection-learn-more = เรียนรู้เพิ่มเติม
@@ -505,6 +510,7 @@ privacy-header = ความเป็นส่วนตัวเบราว์
 ## Privacy Section - Forms
 
 forms-header = แบบฟอร์มและรหัสผ่าน
+logins-header = การเข้าสู่ระบบและรหัสผ่าน
 forms-ask-to-save-logins =
     .label = ถามเพื่อบันทึกการเข้าสู่ระบบและรหัสผ่านสำหรับเว็บไซต์
     .accesskey = ถ
@@ -571,26 +577,12 @@ sitedata-total-size-calculating = กำลังคำนวณขนาดข�
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = คุกกี้, ข้อมูลไซต์ และแคชที่ถูกจัดเก็บไว้ของคุณใช้พื้นที่ดิสก์ไป { $value } { $unit }
 sitedata-learn-more = เรียนรู้เพิ่มเติม
-sitedata-accept-cookies-option =
-    .label = ยอมรับคุกกี้และข้อมูลไซต์จากเว็บไซต์ (แนะนำ)
-    .accesskey = ย
-sitedata-block-cookies-option =
-    .label = ปิดกั้นคุกกี้และข้อมูลไซต์ (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)
-    .accesskey = ป
 sitedata-keep-until = เก็บจนกระทั่ง
     .accesskey = ก
 sitedata-keep-until-expire =
     .label = คุกกี้หมดอายุ
 sitedata-keep-until-closed =
     .label = { -brand-short-name } ถูกปิด
-sitedata-accept-third-party-desc = ยอมรับคุกกี้และข้อมูลไซต์จากบุคคลที่สาม
-    .accesskey = อ
-sitedata-accept-third-party-always-option =
-    .label = เสมอ
-sitedata-accept-third-party-visited-option =
-    .label = จากที่เยี่ยมชม
-sitedata-accept-third-party-never-option =
-    .label = ไม่เลย
 sitedata-allow-cookies-option =
     .label = ยอมรับคุกกี้และข้อมูลไซต์
     .accesskey = ย
@@ -607,10 +599,6 @@ sitedata-block-trackers-option =
     .label = ตัวติดตามจากบุคคลที่สาม
 sitedata-block-unvisited-option =
     .label = คุกกี้จากเว็บไซต์ที่ไม่ได้เยี่ยมชม
-sitedata-block-all-third-parties-option =
-    .label = คุกกี้จากบุคคลที่สามทั้งหมด
-sitedata-block-always-option =
-    .label = คุกกี้ทั้งหมด (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)
 sitedata-block-all-third-party-option =
     .label = คุกกี้จากบุคคลที่สามทั้งหมด (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)
 sitedata-block-all-option =
@@ -659,29 +647,14 @@ content-blocking-category-label = เลือกสิ่งที่จะป�
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = องค์ประกอบติดตามที่ช้า
-    .accesskey = อ
-content-blocking-fastblock-description = ปิดกั้นเนื้อหาจากบุคคลที่สามที่ใช้เวลานานกว่า 5 วินาทีในการโหลด
-content-blocking-fastblock-option-enabled =
-    .label = ปิดกั้นเสมอ
-content-blocking-fastblock-option-disabled =
-    .label = ไม่ปิดกั้นเสมอ
-content-blocking-tracking-protection-label = ตัวติดตาม
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = ตัวติดตามที่โหลดช้า
     .accesskey = ต
-content-blocking-tracking-protection-description = ปิดกั้นตัวติดตามที่รู้จักทั้งหมด (หมายเหตุ: อาจทำให้ไม่สามารถโหลดบางหน้า)
-content-blocking-tracking-protection-option-enabled =
-    .label = ปิดกั้นเสมอ
-content-blocking-tracking-protection-option-pbm =
-    .label = ปิดกั้นเฉพาะในหน้าต่างส่วนตัว
-content-blocking-tracking-protection-option-disabled =
-    .label = ไม่ปิดกั้นเสมอ
-content-blocking-tracking-protection-change-blocklist = เปลี่ยนรายการปิดกั้น…
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-label = ตัวติดตามที่โหลดช้า
-    .accesskey = ต
-content-blocking-tracking-protection-all-label = ตัวติดตามที่ตรวจพบทั้งหมด
+content-blocking-tracking-protection-trackers-label =
+    .label = ตัวติดตาม
+    .accesskey = ว
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = ตัวติดตามที่ตรวจพบทั้งหมด
     .accesskey = ว
 content-blocking-tracking-protection-option-always =
     .label = เสมอ
@@ -690,20 +663,21 @@ content-blocking-tracking-protection-option-private =
     .label = เฉพาะในหน้าต่างส่วนตัว
     .accesskey = พ
 content-blocking-tracking-protection-change-block-list = เปลี่ยนรายการปิดกั้น
-content-blocking-reject-trackers-label = คุกกี้จากบุคคลที่สาม
+content-blocking-third-party-cookies-label =
+    .label = คุกกี้จากบุคคลที่สาม
     .accesskey = ค
 content-blocking-change-cookie-settings =
     .label = เปลี่ยนการตั้งค่าคุกกี้
     .accesskey = ป
 content-blocking-reject-trackers-block-trackers-option-recommended =
     .label = ตัวติดตาม (แนะนำ)
-    .accesskey = ต
+    .accesskey = ด
 content-blocking-reject-trackers-block-trackers-option =
     .label = ตัวติดตาม
     .accesskey = ต
 content-blocking-reject-trackers-all-third-parties-option =
     .label = คุกกี้จากบุคคลที่สามทั้งหมด (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)
-    .accesskey = ค
+    .accesskey = ก
 
 ## Privacy Section - Tracking
 
@@ -719,10 +693,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = ไม่เลย
     .accesskey = ม
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = ใช้การป้องกันการติดตามในการท่องเว็บแบบส่วนตัวเพื่อปิดกั้นตัวติดตามที่รู้จัก
-    .accesskey = ช
 tracking-exceptions =
     .label = ข้อยกเว้น…
     .accesskey = อ

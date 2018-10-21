@@ -53,6 +53,7 @@ pane-sync-title = Firefox 账户
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } 帮助
+addons-button-label = 扩展和主题
 focus-search =
     .key = f
 close-button =
@@ -123,8 +124,8 @@ startup-header = 启动
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = 允许 { -brand-short-name } 和 Firefox 同时运行
-use-firefox-sync = 提示：这将使用单独的配置文件。使用“同步”在它们之间同步数据。
-get-started-not-logged-in = 登录到 { -sync-brand-short-name }…
+use-firefox-sync = 提示：这将使用单独的配置文件，可使用“{ -sync-brand-short-name }”在两套浏览器间共享数据。
+get-started-not-logged-in = 登录到{ -sync-brand-short-name }…
 get-started-configured = 打开{ -sync-brand-short-name }服务首选项
 always-check-default =
     .label = 始终检查 { -brand-short-name } 是否是您的默认浏览器
@@ -322,7 +323,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = 网络代理
 network-settings-title = 网络设置
 network-proxy-connection-description = 配置 { -brand-short-name } 如何连接互联网。
 network-proxy-connection-learn-more = 详细了解
@@ -521,6 +521,7 @@ privacy-header = 浏览器隐私
 ## Privacy Section - Forms
 
 forms-header = 表单与密码
+logins-header = 登录信息与密码
 forms-ask-to-save-logins =
     .label = 向您询问是否要记住网站的登录账号和密码
     .accesskey = r
@@ -587,26 +588,12 @@ sitedata-total-size-calculating = 正在计算网站数据和缓存的大小…
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = 您已存储的 Cookie、网站数据和缓存目前使用了 { $value } { $unit } 磁盘空间。
 sitedata-learn-more = 详细了解
-sitedata-accept-cookies-option =
-    .label = 接受来自网站的 Cookie 和网站数据（推荐）
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = 屏蔽 Cookie 和网站数据（可能导致网站故障）
-    .accesskey = B
 sitedata-keep-until = 保存，直到
     .accesskey = u
 sitedata-keep-until-expire =
     .label = 它们过期
 sitedata-keep-until-closed =
     .label = { -brand-short-name } 关闭
-sitedata-accept-third-party-desc = 接受第三方 Cookie 和网站数据:
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = 始终接受
-sitedata-accept-third-party-visited-option =
-    .label = 来自访问过的网站
-sitedata-accept-third-party-never-option =
-    .label = 不接受
 sitedata-allow-cookies-option =
     .label = 接受 Cookie 和网站数据
     .accesskey = A
@@ -623,10 +610,6 @@ sitedata-block-trackers-option =
     .label = 第三方跟踪器
 sitedata-block-unvisited-option =
     .label = 未访问网站的 Cookie
-sitedata-block-all-third-parties-option =
-    .label = 所有第三方 Cookie
-sitedata-block-always-option =
-    .label = 所有 Cookie（可能导致网站异常）
 sitedata-block-all-third-party-option =
     .label = 所有第三方 Cookie（可能导致网站异常）
 sitedata-block-all-option =
@@ -680,30 +663,15 @@ content-blocking-category-label = 选择要拦截的内容
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = 减慢加载的跟踪元素
-    .accesskey = S
-content-blocking-fastblock-description = 拦截加载时间超过 5 秒的第三方内容。
-content-blocking-fastblock-option-enabled =
-    .label = 始终拦截
-content-blocking-fastblock-option-disabled =
-    .label = 永不拦截
-content-blocking-tracking-protection-label = 跟踪器
-    .accesskey = T
-content-blocking-tracking-protection-description = 拦截已知的所有跟踪器（注意：可能影响某些页面的加载）。
-content-blocking-tracking-protection-option-enabled =
-    .label = 始终拦截
-content-blocking-tracking-protection-option-pbm =
-    .label = 仅在隐私浏览窗口中拦截
-content-blocking-tracking-protection-option-disabled =
-    .label = 永不拦截
-content-blocking-tracking-protection-change-blocklist = 更换拦截列表…
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-label = 减慢加载的跟踪器
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = 减慢加载的跟踪器
     .accesskey = S
 content-blocking-fastblock-new-description = 拦截减慢页面加载速度的跟踪器。
-content-blocking-tracking-protection-all-label = 检测到的所有跟踪器
+content-blocking-tracking-protection-trackers-label =
+    .label = 跟踪器
+    .accesskey = T
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = 检测到的所有跟踪器
     .accesskey = T
 content-blocking-tracking-protection-new-description = 拦截已知的所有跟踪器。（可能影响某些页面的加载。）
 content-blocking-tracking-protection-option-always =
@@ -713,7 +681,8 @@ content-blocking-tracking-protection-option-private =
     .label = 仅在隐私窗口中
     .accesskey = P
 content-blocking-tracking-protection-change-block-list = 更换拦截列表
-content-blocking-reject-trackers-label = 第三方 Cookie
+content-blocking-third-party-cookies-label =
+    .label = 第三方 Cookie
     .accesskey = C
 content-blocking-reject-trackers-description = 拦截所有第三方 Cookie，或只拦截跟踪器设置的 Cookie。
 # This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
@@ -748,10 +717,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = 永不
     .accesskey = n
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = 在隐私浏览模式中使用跟踪保护拦截已知的跟踪器
-    .accesskey = v
 tracking-exceptions =
     .label = 例外…
     .accesskey = x

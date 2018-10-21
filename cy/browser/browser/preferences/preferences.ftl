@@ -53,6 +53,7 @@ pane-sync-title = Cyfrif Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Cefnogaeth { -brand-short-name }
+addons-button-label = Estyniadau a Themâu
 focus-search =
     .key = f
 close-button =
@@ -338,7 +339,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Dirprwy Rhwydwaith
 network-settings-title = Gosodiadau Rhwydwaith
 network-proxy-connection-description = Ffurfweddu sut mae { -brand-short-name } yn cysylltu â'r rhyngrwyd.
 network-proxy-connection-learn-more = Dysgu rhagor
@@ -537,6 +537,7 @@ privacy-header = Preifatrwydd y Porwr
 ## Privacy Section - Forms
 
 forms-header = Ffurflenni a Chyfrineiriau
+logins-header = Mewngofnodion a Chyfrineiriau
 forms-ask-to-save-logins =
     .label = Gofyn i gadw mewngofnodion a chyfrineiriau ar gyfer gwefannau
     .accesskey = G
@@ -603,26 +604,12 @@ sitedata-total-size-calculating = Cyfrifo maint data gwefan…
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Mae'r cwcis, data gwefan a storfa yn defnyddio { $value } { $unit } o le ar ddisg ar hyn o bryd.
 sitedata-learn-more = Dysgu rhagor
-sitedata-accept-cookies-option =
-    .label = Derbyn cwcis a data gwefan gan wefannau (argymell)
-    .accesskey = D
-sitedata-block-cookies-option =
-    .label = Rhwystro cwcis a data gwefan (gall achosi i wefannau dorri)
-    .accesskey = R
 sitedata-keep-until = Cadw tan
     .accesskey = C
 sitedata-keep-until-expire =
     .label = Yn dod i ben
 sitedata-keep-until-closed =
     .label = Mae { -brand-short-name } wedi cau
-sitedata-accept-third-party-desc = Derbyn gwcis trydydd parti a data gwefan
-    .accesskey = g
-sitedata-accept-third-party-always-option =
-    .label = Bob tro
-sitedata-accept-third-party-visited-option =
-    .label = O'r ymwelwyd
-sitedata-accept-third-party-never-option =
-    .label = Byth
 sitedata-allow-cookies-option =
     .label = Derbyn cwcis a data gan wefannau
     .accesskey = D
@@ -639,10 +626,6 @@ sitedata-block-trackers-option =
     .label = Tracwyr trydydd parti
 sitedata-block-unvisited-option =
     .label = Cwcis gwefannau heb ymweld â nhw
-sitedata-block-all-third-parties-option =
-    .label = Holl gwcis trydydd parti
-sitedata-block-always-option =
-    .label = Pob cwci (gall achosi i wefannau dorri)
 sitedata-block-all-third-party-option =
     .label = Holl gwcis trydydd parti (gall achosi i'r wefan dorri)
 sitedata-block-all-option =
@@ -696,30 +679,13 @@ content-blocking-category-label = Dewis beth i'w rwystro
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Elfennau Tracio Araf
-    .accesskey = E
-content-blocking-fastblock-description = Yn rhwystro cynnwys trydydd parti sy'n cymryd mwy na 5 eiliad i lwytho.
-content-blocking-fastblock-option-enabled =
-    .label = Rhwystro bob tro
-content-blocking-fastblock-option-disabled =
-    .label = Byth rhwystro
-content-blocking-tracking-protection-label = Tracwyr
-    .accesskey = T
-content-blocking-tracking-protection-description = Rhwystro pob traciwr hysbys (Sylw: gall rwystro rhai tudalennau rhag llwytho).
-content-blocking-tracking-protection-option-enabled =
-    .label = Rhwystro bob tro
-content-blocking-tracking-protection-option-pbm =
-    .label = Rhwystro mewn ffenestri preifat yn unig
-content-blocking-tracking-protection-option-disabled =
-    .label = Byth rhwystro
-content-blocking-tracking-protection-change-blocklist = Newid y Rhestr Rhwystro...
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
 content-blocking-fastblock-slow-loading-trackers-label =
     .label = Tracwyr Llwytho'n Araf
     .accesskey = A
 content-blocking-fastblock-new-description = Rhwystro dim ond y tracwyr sy'n atal tudalennau rhag llwytho'n gyflym.
+content-blocking-tracking-protection-trackers-label =
+    .label = Tracwyr
+    .accesskey = T
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Pob Traciwr wedi ei Ganfod
     .accesskey = P
@@ -767,10 +733,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Byth
     .accesskey = y
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Defnyddio Diogelwch rhag Tracio yn Pori Preifat i rwystro tracwyr hysbys
-    .accesskey = P
 tracking-exceptions =
     .label = Eithriadau…
     .accesskey = E

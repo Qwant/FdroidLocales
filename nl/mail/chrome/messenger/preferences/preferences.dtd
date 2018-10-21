@@ -11,9 +11,6 @@
 <!ENTITY  prefWindow.titleWin     "Opties">
 <!ENTITY  prefWindow.titleGNOME   "&brandShortName;-voorkeuren">
 <!ENTITY  prefWindow.titleMAC     "Voorkeuren">
-<!ENTITY  prefWindow.styleWindows "width: 55em; min-height: 41em;">
-<!ENTITY  prefWindow.styleMac     "width: 56em;">
-<!ENTITY  prefWindow.styleGNOME   "width: 60em; min-height: 38em;">
 
 <!ENTITY paneGeneral.title        "Algemeen">
 <!ENTITY paneDisplay.title        "Weergave">
@@ -22,6 +19,7 @@
 <!ENTITY paneAttachments.title    "Bijlagen">
 <!ENTITY panePrivacy.title        "Privacy">
 <!ENTITY paneSecurity.title       "Beveiliging">
+<!ENTITY paneLightning.title      "Agenda">
 <!ENTITY paneAdvanced.title       "Geavanceerd">
 <!ENTITY paneAccount.title        "Accounts">
 

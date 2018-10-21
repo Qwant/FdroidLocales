@@ -53,6 +53,7 @@ pane-sync-title = Účet Firefoxu
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Nápověda
+addons-button-label = Rozšíření a vzhledy
 focus-search =
     .key = f
 close-button =
@@ -329,7 +330,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Nastavení připojení
 network-settings-title = Nastavení sítě
 network-proxy-connection-description = Konfigurovat připojení aplikace { -brand-short-name } k internetu.
 network-proxy-connection-learn-more = Zjistit více
@@ -532,6 +532,7 @@ privacy-header = Nastavení soukromí
 ## Privacy Section - Forms
 
 forms-header = Formuláře a hesla
+logins-header = Přihlašovací údaje
 forms-ask-to-save-logins =
     .label = Ptát se na ukládání přihlašovacích údajů
     .accesskey = P
@@ -598,31 +599,17 @@ sitedata-total-size-calculating = Výpočet velikosti mezipaměti a dat stránek
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Velikost cookies, dat uložených stránkami a mezipaměti je { $value } { $unit }.
 sitedata-learn-more = Zjistit více
-sitedata-accept-cookies-option =
-    .label = Povolit serverům ukládat cookies a data stránek (doporučeno)
-    .accesskey = a
-sitedata-block-cookies-option =
-    .label = Blokovat ukládání cookies a dat (stránky nemusí fungovat správně)
-    .accesskey = B
 sitedata-keep-until = Cookies ponechat do
     .accesskey = d
 sitedata-keep-until-expire =
     .label = konce doby platnosti
 sitedata-keep-until-closed =
     .label = ukončení aplikace { -brand-short-name }
-sitedata-accept-third-party-desc = Cookies a data třetích stran
-    .accesskey = t
-sitedata-accept-third-party-always-option =
-    .label = povolit vždy
-sitedata-accept-third-party-visited-option =
-    .label = povolit pouze navštívené
-sitedata-accept-third-party-never-option =
-    .label = nikdy nepovolovat
 sitedata-allow-cookies-option =
     .label = Ukládat všechny cookies a data stránek
     .accesskey = a
 sitedata-disallow-cookies-option =
-    .label = Blokovat cookies a data některých stránek
+    .label = Blokovat cookies a data stránek
     .accesskey = B
 # This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
 # The list items are the strings named sitedata-block-*-option*.
@@ -634,10 +621,6 @@ sitedata-block-trackers-option =
     .label = cookies a data sledovacích prvků třetích stran
 sitedata-block-unvisited-option =
     .label = cookies a data dosud nenavštívených stránek
-sitedata-block-all-third-parties-option =
-    .label = cookies a data všech třetích stran
-sitedata-block-always-option =
-    .label = všechny cookies a data (může omezit fungování některých stránek)
 sitedata-block-all-third-party-option =
     .label = všechny cookies třetích stran (může omezit fungování některých stránek)
 sitedata-block-all-option =
@@ -673,7 +656,7 @@ addressbar-suggestions-settings = Nastavit našeptávání vyhledávače
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Blokování obsahu a ochrana proti sledování
+content-blocking-header = Blokování obsahu
 content-blocking-desc = Zablokujte obsah třetích stran, jako jsou reklamy nebo kód, který zpomaluje načítání stránek a sleduje vaše aktivity na internetu. Úroveň blokování můžete upravit podle vlastních nároků na rychlost načítání i ochranu soukromí.
 content-blocking-learn-more = Zjistit více
 content-blocking-restore-defaults =
@@ -691,30 +674,13 @@ content-blocking-category-label = Vyberte, co chcete blokovat
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Pomalé prvky třetích stran
-    .accesskey = t
-content-blocking-fastblock-description = Obsah třetích stran, který se načítá déle než 5 vteřin
-content-blocking-fastblock-option-enabled =
-    .label = Blokovat
-content-blocking-fastblock-option-disabled =
-    .label = Neblokovat
-content-blocking-tracking-protection-label = Známé sledovací prvky
-    .accesskey = S
-content-blocking-tracking-protection-description = Jejich blokování může omezit fungování některých stránek
-content-blocking-tracking-protection-option-enabled =
-    .label = Blokovat
-content-blocking-tracking-protection-option-pbm =
-    .label = Blokovat v anonymním prohlížení
-content-blocking-tracking-protection-option-disabled =
-    .label = Neblokovat
-content-blocking-tracking-protection-change-blocklist = Změnit seznam blokací…
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
 content-blocking-fastblock-slow-loading-trackers-label =
     .label = Zpomalující sledovací prvky
-    .accesskey = s
+    .accesskey = Z
 content-blocking-fastblock-new-description = Blokovat jen sledovací prvky, které zpomalují načítání stránek.
+content-blocking-tracking-protection-trackers-label =
+    .label = Sledovací prvky
+    .accesskey = S
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Všechny nalezené sledovací prvky
     .accesskey = s
@@ -729,7 +695,7 @@ content-blocking-tracking-protection-change-block-list = Změnit seznam blokací
 content-blocking-third-party-cookies-label =
     .label = Cookies třetích stran
     .accesskey = C
-content-blocking-reject-trackers-description = Nastavení blokování cookies všech třetích stran nebo jen od sledovacích prvků.
+content-blocking-reject-trackers-description = Blokovat cookies všech třetích stran nebo jen od sledovacích prvků.
 # This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
 # of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
 # or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
@@ -762,10 +728,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Nikdy
     .accesskey = n
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Používat ochranu proti sledování známými sledovacími prvky při anonymním prohlížení
-    .accesskey = v
 tracking-exceptions =
     .label = Výjimky…
     .accesskey = j
@@ -830,24 +792,24 @@ permissions-a11y-privacy-link = Zjistit více
 ## Privacy Section - Data Collection
 
 collection-header = Sběr a používání dat o aplikaci { -brand-short-name }
-collection-description = Co se týče dat, dáváme vám vždy na výběr. Také sbíráme jen data potřebná pro vylepšování aplikace { -brand-short-name }. Před odesíláním osobních dat vždy žádáme o váš souhlas.
+collection-description = S daty vám dáváme vždy na výběr a sbíráme jen data potřebná pro vylepšování aplikace { -brand-short-name }. Před odesíláním osobních dat vždy žádáme o váš souhlas.
 collection-privacy-notice = Zásady ochrany osobních údajů
 collection-health-report =
-    .label = Povolit aplikaci { -brand-short-name } odesílat Mozille technická data a data o interakcích
-    .accesskey = z
+    .label = Odesílat technická data a data o interakcích
+    .accesskey = r
 collection-health-report-link = Zjistit více
 collection-studies =
-    .label = Povolit aplikaci { -brand-short-name } instalovat studie
+    .label = Povolit instalaci studií
 collection-studies-link = Zobrazit studie aplikace { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Odesílání dat je zakázáno konfigurací tohoto sestavení
 collection-browser-errors =
-    .label = Povolit aplikaci { -brand-short-name } odesílat Mozille hlášení o chybách a chybové zprávy.
+    .label = Odesílat hlášení o chybách a chybové zprávy
     .accesskey = b
 collection-browser-errors-link = Zjistit více
 collection-backlogged-crash-reports =
-    .label = Povolit aplikaci { -brand-short-name } odesílat nevyřízená hlášení o pádech za vás
+    .label = Odesílat nevyřízená hlášení o pádech za vás
     .accesskey = c
 collection-backlogged-crash-reports-link = Zjistit více
 

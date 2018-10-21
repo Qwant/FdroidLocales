@@ -37,21 +37,38 @@ policy-DisableProfileRefresh = Tłóčatko { -brand-short-name } wobnowić na st
 policy-DisableSafeMode = Funkciju za znowastartowanje we wěstym modusu znjemóžnić. Kedźbu: Tasta Umsch, z kotrejž k wěstemu modusej přeńdźeće, da so jenož pod Windowsom z pomocu skupinskich prawidłow znjemóžnić.
 policy-DisableSecurityBypass = Wužiwarjej zakazać, wěste wěstotne warnowanja wobeńć.
 policy-DisableSetDesktopBackground = Menijowy přikaz Wobraz jako desktopowy pozadk nastajić znjemóžnić.
+policy-DisableSetAsDesktopBackground = Menijowy přikaz Jako desktopowy pozadk za wobrazy nastajić znjemóžnić.
 policy-DisableSystemAddonUpdate = Wobhladowak při instalowanju a aktualizowanju systemowych přidatkow haćić.
 policy-DisableTelemetry = Telemetriju znjemóžnić.
 policy-DisplayBookmarksToolbar = Lajstu zapołožkow po standardźe pokazać.
 policy-DisplayMenuBar = Menijowu lajstu po standardźe pokazać.
+policy-DNSOverHTTPS = DNS přez HTTPS konfigurować
 policy-DontCheckDefaultBrowser = Kontrolu za standardnym wobhladowakom při starće znjemóžnić.
+# “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Blokowanje wobsaha zmóžnić abo znjemóžnić a jo na přeće zawrěć.
-policy-Extensions = Rozšěrjenja instaloać, wotinstalować abo zawrěć. Instalaciska opcija ma URL abo šćežki jako parametry. Opciji Wotinstalować a Zawrěć ID wužiwatej.
+# A “locked” extension can’t be disabled or removed by the user. This policy
+# takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
+# English or translate them as verbs. See also:
+# https://github.com/mozilla/policy-templates/blob/master/README.md#extensions-machine-only
+policy-Extensions = Rozšěrjenja instalować, wotinstalować abo zawrěć. Instalaciska opcija ma URL abo šćežki jako parametry. Opciji Wotinstalować a Zawrěć ID wužiwatej.
 policy-FlashPlugin = Wužiwanje tykača Flash dowolić abo zakazać.
-policy-HardwareAcceleration = Jeli njewěrno, hardwarowe popsěšenje znjemóžnić.
+policy-HardwareAcceleration = Jeli njewěrno, hardwarowe pospěšenje znjemóžnić.
+# “lock” means that the user won’t be able to change this setting
 policy-Homepage = Startowu stronu nastajić a na přeće zawrěć.
 policy-InstallAddonsPermission = Wěstym websydłam dowolić, přidatki instalować.
+policy-NoDefaultBookmarks = Wutworjenje standardnych zapołožkow { -brand-short-name } znjemóžnić, a inteligentnych zapołožkow (najhusćišo wopytane, tuchwilne znački). Kedźbu: Tute prawidło so jenož wuskutkuje, hdyž jo před prěnim startom profila wužiwaće.
+policy-OfferToSaveLogins = Nastajenje wunuzować, kotrež { -brand-short-name } zmóžnja, sej składowane přizjewjenja a hesła spomjatkować. True kaž tež false so akceptujetej.
+policy-OverrideFirstRunPage = Stronu přepisać, kotraž so při prěnim starće jewi. Stajće tute prawidło na prózdne, jeli chceće tutu stronu znjemóžnić.
+policy-OverridePostUpdatePage = Stronu Nowe funkcije a změny po aktualizaciji přepisać. Stajće tute prawidło na prózdne, jeli chceće tutu stronu znjemóžnić.
 policy-Permissions = Prawa za kameru, mikrofon, stejnišćo a zdźělenki konfigurować.
 policy-PopupBlocking = Wěstym websydłam dowolić, wuskakowace wokna po standardźe pokazać.
 policy-Proxy = Nastajenja proksy konfigurować.
+policy-RequestedLocales = Podajće lisćinu požadanych rěčow za nałoženje w preferowanym porjedźe.
 policy-SanitizeOnShutdown = Nawigaciske daty při skónčenju zhašeć.
 policy-SearchBar = Standardne městno pytanskeho pola nastajić. Wužiwar móže jo hišće přiměrić.
 policy-SearchEngines = Nastajenja pytawow konfigurować. Tute prawidło je jenož za wersiju Extended Support Release (ESR) k dispoziciji.
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = Module PKCS #11 instalować.
+# “format” refers to the format used for the value of this policy. See also:
+# https://github.com/mozilla/policy-templates/blob/master/README.md#websitefilter-machine-only
 policy-WebsiteFilter = Wopytowanju websydłow zadźěwać. Hlejće dokumentaciju za dalše podrobnosće wo formaće.

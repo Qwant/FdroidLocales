@@ -20,10 +20,10 @@ site-data-column-last-used =
     .label = آخری استعمال
 site-data-remove-selected =
     .label = نبتخب شدہ ہٹائیں
-    .accesskey = ر
+    .accesskey = R
 site-data-button-cancel =
     .label = منسوخ کریں
-    .accesskey = م
+    .accesskey = C
 site-data-button-save =
     .label = تبدیلیاں محفوظ کریں
     .accesskey = a
@@ -31,14 +31,16 @@ site-data-button-save =
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 site-usage-pattern = { $value } { $unit }
+site-usage-persistent = { site-usage-pattern }(مسلسل)
 site-data-remove-all =
     .label = تمام ہٹائیں
+    .accesskey = e
+site-data-remove-shown =
+    .label = تمام دکھایا ہوا ہٹائیں
     .accesskey = e
 
 ## Removing
 
-site-data-removing-window =
-    .title = { site-data-removing-header }
 site-data-removing-dialog =
     .title = { site-data-removing-header }
     .buttonlabelaccept = ہٹائیں

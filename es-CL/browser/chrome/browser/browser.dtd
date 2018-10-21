@@ -23,10 +23,14 @@
 <!ENTITY  reloadTab.accesskey                "r">
 <!ENTITY  reloadAllTabs.label                "Recargar todas las pestañas">
 <!ENTITY  reloadAllTabs.accesskey            "A">
+<!ENTITY  selectAllTabs.label                "Seleccionar todas las pestañas">
+<!ENTITY  selectAllTabs.accesskey            "S">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
 <!ENTITY  duplicateTab.label                 "Pestaña duplicada">
 <!ENTITY  duplicateTab.accesskey             "D">
+<!ENTITY  closeTabOptions.label              "Opciones de cierre de pestaña">
+<!ENTITY  closeTabOptions.accesskey          "O">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -38,19 +42,29 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "Cerrar pestañas seleccionadas">
 <!ENTITY  closeSelectedTabs.accesskey        "S">
 
+<!ENTITY  closeTabs.label                    "Cerrar pestañas">
+<!ENTITY  closeTabs.accesskey                "S">
 <!ENTITY  pinSelectedTabs.label              "Fijar pestañas">
-<!-- Pin Tab and Pin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinSelectedTabs.accesskey          "P">
 <!ENTITY  unpinSelectedTabs.label            "Soltar pestañas">
-<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "b">
 <!-- Reload Tab and Reload Selected Tabs have the same accesskey
 but will never be visible at the same time. -->
 <!ENTITY  reloadSelectedTabs.label           "Recargar pestañas seleccionadas">
 <!ENTITY  reloadSelectedTabs.accesskey       "R">
-<!ENTITY  bookmarkSelectedTabs.label         "Marcar pestañas…">
+<!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadTabs.label                   "Recargar pestañas">
+<!ENTITY  reloadTabs.accesskey               "R">
+<!ENTITY  bookmarkSelectedTabs.label         "Guardar pestañas en marcadores…">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "k">
 
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
@@ -59,8 +73,14 @@ left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
 <!ENTITY  pinTab.label                       "Fijar pestaña">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinTab.accesskey                   "P">
 <!ENTITY  unpinTab.label                     "Soltar pestaña">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "b">
 <!ENTITY  sendTabToDevice.label              "Enviar pestaña a dispositivo">
 <!ENTITY  sendTabToDevice.accesskey          "D">
@@ -68,12 +88,26 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "D">
 <!ENTITY  sendLinkToDevice.label             "Enviar enlace a dispositivo">
 <!ENTITY  sendLinkToDevice.accesskey         "D">
+<!-- LOCALIZATION NOTE (moveTabOptions.label and moveSelectedTabOptions.label):
+These two items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  moveTabOptions.label               "Mover pestaña">
+<!ENTITY  moveTabOptions.accesskey           "v">
+<!ENTITY  moveSelectedTabOptions.label       "Mover pestañas">
+<!ENTITY  moveSelectedTabOptions.accesskey   "v">
+<!ENTITY  moveToStart.label                  "Mover al inicio">
+<!ENTITY  moveToStart.accesskey              "S">
+<!ENTITY  moveToEnd.label                    "Mover al final">
+<!ENTITY  moveToEnd.accesskey                "E">
 <!ENTITY  moveToNewWindow.label              "Mover a una nueva ventana">
 <!ENTITY  moveToNewWindow.accesskey          "v">
 <!ENTITY  reopenInContainer.label            "Reabrir en contenedor">
 <!ENTITY  reopenInContainer.accesskey        "e">
 <!ENTITY  bookmarkAllTabs.label              "Guardar todas las pestañas en marcadores…">
 <!ENTITY  bookmarkAllTabs.accesskey          "t">
+<!ENTITY  bookmarkTab.label                  "Marcar pestaña">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  bookmarkTab.accesskey              "B">
 <!ENTITY  undoCloseTab.label                 "Deshacer cierre de pestaña">
 <!ENTITY  undoCloseTab.accesskey             "h">
 <!ENTITY  closeTab.label                     "Cerrar pestaña">
@@ -114,6 +148,29 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "A">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Guardar todas las pestañas en marcadores…">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "T">
+
+<!ENTITY toolbarContextMenu.reloadSelectedTab.label "Recargar pestaña seleccionada">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTab.accesskey "R">
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.label "Restaurar pestañas seleccionadas">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.accesskey "R">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.label "Guardar pestaña seleccionada en marcadores…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.accesskey "T">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.label "Guardar pestañas seleccionadas en marcadores…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.accesskey "T">
+<!ENTITY toolbarContextMenu.selectAllTabs.label "Seleccionar todas las pestañas">
+<!ENTITY toolbarContextMenu.selectAllTabs.accesskey "S">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "Deshacer cierre de pestaña">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "U">
 
@@ -199,6 +256,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY subscribeToPageMenupopup.label "Suscribirse a esta página">
 <!ENTITY subscribeToPageMenuitem.label "Suscribirse a esta página…">
+
 <!ENTITY addCurPagesCmd.label "Guardar todas las pestañas en marcadores…">
 <!ENTITY showAllBookmarks2.label "Mostrar todos los marcadores">
 <!ENTITY recentBookmarks.label "Añadidos recientemente">
@@ -447,6 +505,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.manageExtension.label "Gestionar extensión">
 <!ENTITY customizeMenu.manageExtension.accesskey "E">
 
+<!ENTITY customizeMenu.removeExtension.label "Eliminar extensión">
+<!ENTITY customizeMenu.removeExtension.accesskey "v">
+
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
     secondary commands. -->
@@ -554,9 +615,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.label         "Recargar marco">
 <!ENTITY reloadFrameCmd.accesskey     "R">
 <!ENTITY viewPartialSourceForSelectionCmd.label "Ver código fuente de la selección">
-<!ENTITY viewPartialSourceForMathMLCmd.label    "Ver código fuente MathML">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
-         viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "e">
 <!ENTITY viewPageSourceCmd.label      "Ver código fuente de la página">
 <!ENTITY viewPageSourceCmd.accesskey  "V">
@@ -773,7 +831,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      Remove Bookmark buttons. -->
 <!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "Listo">
-
 <!ENTITY editBookmark.showForNewBookmarks.label       "Mostrar editor al guardar">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "S">
 
@@ -781,6 +838,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      This is the header of the security subview in the Site Identity panel. -->
 <!ENTITY identity.securityView.label "Seguridad del sitio">
 
+<!ENTITY identity.connection "Conexión">
 <!ENTITY identity.connectionSecure "Conexión segura">
 <!ENTITY identity.connectionNotSecure "Conexión no segura">
 <!ENTITY identity.connectionFile "Esta página está almacenada en tu computador.">
@@ -923,9 +981,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "El audio de la pestaña será compartido.">
 <!ENTITY getUserMedia.allWindowsShared.message "Todas las ventanas visibles en tu pantalla serán compartidas.">
 
-<!ENTITY trackingProtection.on "Protección de seguimiento: ACTIVADA">
-<!ENTITY trackingProtection.off "Protección de seguimiento: DESACTIVADA">
-
 <!ENTITY contentBlocking.title "Bloqueo de contenido">
 <!ENTITY contentBlocking.detected "Se ha detectado contenido bloqueable en este sitio.">
 <!ENTITY contentBlocking.notDetected "No se ha detectado contenido bloqueable en este sitio.">
@@ -947,6 +1002,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.fastBlock.add.label "Añadir bloqueo…">
 
 <!ENTITY contentBlocking.trackingProtection2.label "Todos los rastreadores detectados">
+<!ENTITY contentBlocking.trackingProtection3.label "Rastreadores">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking tracker content, so this is
@@ -983,28 +1039,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY trackingProtection.title "Protección de seguimiento">
 <!ENTITY trackingProtection.tooltip "Abrir preferencias de protección de seguimiento">
-<!ENTITY trackingProtection.detectedBlocked4 "&brandShortName; está bloqueando partes de esta página que pueden seguir tu navegación.">
-<!ENTITY trackingProtection.detectedNotBlocked5 "&brandShortName; ha detectado elementos que pueden rastrear tu navegación.">
-<!ENTITY trackingProtection.detectedException "&brandShortName; ha detectado elementos que pueden rastrear tu navegación. Has desactivado la protección.">
-<!ENTITY trackingProtection.notDetected5 "No se detectaron elementos de seguimiento en esta página.">
-<!ENTITY trackingProtection.notDetectedException "No se detectaron elementos de seguimiento en esta página. Has desactivado la protección para este sitio.">
-
-<!ENTITY trackingProtection.reloadRequired2 "Has activado la protección de seguimiento. Recarga esta página para bloquear todos los rastreadores.">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock3.label "Desactivar para este sitio">
-<!ENTITY trackingProtection.unblock3.accesskey "D">
 <!ENTITY trackingProtection.unblock4.label "Desactivar bloqueo para este sitio">
 <!ENTITY trackingProtection.unblock4.accesskey "D">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate3.label "Desactivar para esta sesión">
-<!ENTITY trackingProtection.unblockPrivate3.accesskey "D">
-<!ENTITY trackingProtection.block4.label "Activar para este sitio">
-<!ENTITY trackingProtection.block4.accesskey "E">
 <!ENTITY trackingProtection.unblockPrivate4.label "Desactivar bloqueo temporalmente">
 <!ENTITY trackingProtection.unblockPrivate4.accesskey "D">
 <!ENTITY trackingProtection.block5.label "Activar bloqueo para este sitio">
@@ -1110,10 +1153,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageAction.manageExtension.label "Gestionar extensión…">
 
 <!ENTITY pageAction.sendTabToDevice.label "Enviar pestaña a un dispositivo">
+
 <!ENTITY sendToDevice.syncNotReady.label "Sincronizando dispositivos…">
 
 <!ENTITY pageAction.shareUrl.label "Compartir">
-
 <!ENTITY pageAction.shareMore.label "Más…">
 
 <!ENTITY libraryButton.tooltip "Ver historial, marcadores guardados y más">

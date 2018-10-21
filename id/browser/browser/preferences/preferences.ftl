@@ -6,6 +6,8 @@ do-not-track-description = Kirim sinyal “Jangan Lacak” ke situs web bahwa An
 do-not-track-learn-more = Pelajari lebih lanjut
 do-not-track-option-default =
     .label = Hanya saat menggunakan Perlindungan Pelacakan
+do-not-track-option-default-content-blocking =
+    .label = Hanya saat { -brand-short-name } disetel untuk memblokir Pelacak Terdeteksi
 do-not-track-option-always =
     .label = Selalu
 pref-page =
@@ -51,6 +53,7 @@ pane-sync-title = Akun Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Dukungan { -brand-short-name }
+addons-button-label = Ekstensi & Tema
 focus-search =
     .key = f
 close-button =
@@ -90,6 +93,9 @@ extension-controlled-privacy-containers = Ekstensi <img data-l10n-name="icon"/> 
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Ekstensi <img data-l10n-name="icon"/> { $name } mengendalikan perlindungan pelacakan.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Ekstensi <img data-l10n-name="icon"/> { $name } mengontrol setelan ini.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Ekstensi <img data-l10n-name="icon"/> { $name } mengendalikan cara { -brand-short-name } tersambung ke internet.
@@ -191,6 +197,9 @@ choose-button =
     .label = Pilih…
     .accesskey = P
 choose-browser-language-description = Pilih bahasa yang digunakan untuk menampilkan menu, pesan, dan notifikasi dari { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Setel Alternatif…
+    .accesskey = S
 confirm-browser-language-change-description = Mulai ulang { -brand-short-name } untuk menerapkan perubahan
 confirm-browser-language-change-button = Terapkan dan Mulai Ulang
 translate-web-pages =
@@ -306,7 +315,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Proksi Jaringan
 network-settings-title = Setelan Jaringan
 network-proxy-connection-description = Atur bagaimana { -brand-short-name } tersambung ke internet.
 network-proxy-connection-learn-more = Pelajari lebih lanjut
@@ -505,6 +513,7 @@ privacy-header = Privasi Peramban
 ## Privacy Section - Forms
 
 forms-header = Formulir & Sandi
+logins-header = Info Masuk & Sandi
 forms-ask-to-save-logins =
     .label = Minta untuk menyimpan info masuk dan kata sandi untuk situs web
     .accesskey = M
@@ -571,26 +580,12 @@ sitedata-total-size-calculating = Menghitung ukuran data situs dan tembolok…
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Kuki, data situs tersimpan, dan tembolok Anda saat ini menggunakan ruang penyimpanan { $value } { $unit }.
 sitedata-learn-more = Pelajari lebih lanjut
-sitedata-accept-cookies-option =
-    .label = Terima kuki dan data situs dari situs web (disarankan)
-    .accesskey = a
-sitedata-block-cookies-option =
-    .label = Blokir kuki dan data situs (bisa menyebabkan situs web macet)
-    .accesskey = B
 sitedata-keep-until = Simpan hingga
     .accesskey = h
 sitedata-keep-until-expire =
     .label = Kedaluwarsa
 sitedata-keep-until-closed =
     .label = { -brand-short-name } ditutup
-sitedata-accept-third-party-desc = Terima kuki dan data situs dari pihak ketiga
-    .accesskey = T
-sitedata-accept-third-party-always-option =
-    .label = Selalu
-sitedata-accept-third-party-visited-option =
-    .label = Dari yang Pernah Dikunjungi
-sitedata-accept-third-party-never-option =
-    .label = Tidak Pernah
 sitedata-allow-cookies-option =
     .label = Terima kuki dan data situs
     .accesskey = T
@@ -607,10 +602,10 @@ sitedata-block-trackers-option =
     .label = Pelacak pihak ketiga
 sitedata-block-unvisited-option =
     .label = Kuki dari situs web yang belum dikunjungi
-sitedata-block-all-third-parties-option =
-    .label = Seluruh kuki pihak ketiga
-sitedata-block-always-option =
-    .label = Semua kuki (mungkin menyebabkan situs tidak berfungsi)
+sitedata-block-all-third-party-option =
+    .label = Semua kuki pihak ketiga (mungkin menyebabkan situs tidak bekerja)
+sitedata-block-all-option =
+    .label = Semua kuki (akan menyebabkan situs tidak bekerja)
 sitedata-clear =
     .label = Hapus Data…
     .accesskey = H
@@ -620,6 +615,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Pengecualian…
     .accesskey = e
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Setelan Anda di Pemblokiran Konten mencegah perubahan atas setelan Kuki dan Data Situs.
 
 ## Privacy Section - Address Bar
 
@@ -656,23 +655,45 @@ content-blocking-category-label = Pilih yang ingin diblokir
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Elemen Pelacakan yang Lambat
-    .accesskey = e
-content-blocking-fastblock-description = Blokir konten pihak ketiga yang membutuhkan waktu lebih dari 5 detik untuk dimuat.
-content-blocking-fastblock-option-enabled =
-    .label = Selalu blokir
-content-blocking-fastblock-option-disabled =
-    .label = Jangan pernah blokir
-content-blocking-tracking-protection-label = Pelacak
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Pelacak yang Dimuat Lambat
+    .accesskey = L
+content-blocking-fastblock-new-description = Hanya blokir pelacak yang membuat laman lambat dimuat.
+content-blocking-tracking-protection-trackers-label =
+    .label = Pelacak
     .accesskey = P
-content-blocking-tracking-protection-description = Blokir semua pelacak dikenal (Catatan: juga dapat mencegah beberapa laman untuk dimuat).
-content-blocking-tracking-protection-option-enabled =
-    .label = Selalu blokir
-content-blocking-tracking-protection-option-pbm =
-    .label = Hanya blokir di jendela pribadi
-content-blocking-tracking-protection-option-disabled =
-    .label = Jangan pernah blokir
-content-blocking-tracking-protection-change-blocklist = Ubah Daftar Blokir…
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Semua Pelacak Terdeteksi
+    .accesskey = P
+content-blocking-tracking-protection-new-description = Blokir semua pelacak diketahui (mungkin mencegah beberapa laman dimuat).
+content-blocking-tracking-protection-option-always =
+    .label = Selalu
+    .accesskey = e
+content-blocking-tracking-protection-option-private =
+    .label = Hanya di jendela pribadi
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Ubah daftar blokir
+content-blocking-third-party-cookies-label =
+    .label = Kuki Pihak Ketiga
+    .accesskey = K
+content-blocking-reject-trackers-description = Blokir semua kuki pihak ketiga atau hanya yang diatur oleh pelacak.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Setelan Anda di Kuki dan Data Situs mencegah perubahan pada setelan Kuki Pihak Ketiga.
+content-blocking-change-cookie-settings =
+    .label = Ubah Setelan Kuki
+    .accesskey = U
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Pelacak (direkomendasikan)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Pelacak
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Semua kuki pihak ketiga (mungkin menyebabkan situs tidak bekerja)
+    .accesskey = a
 
 ## Privacy Section - Tracking
 
@@ -688,10 +709,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Tidak Pernah
     .accesskey = P
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Gunakan Perlindungan Pelacakan di mode Penjelajahan Pribadi untuk memblokir pelacak yang diketahui
-    .accesskey = v
 tracking-exceptions =
     .label = Pengecualian…
     .accesskey = e

@@ -52,7 +52,8 @@ category-privacy =
 pane-sync-title = Akaun Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
-help-button-label = { -brand-short-name } Sokongan
+help-button-label = Sokongan { -brand-short-name }
+addons-button-label = Ekstensi & Tema
 focus-search =
     .key = f
 close-button =
@@ -62,7 +63,7 @@ close-button =
 
 feature-enable-requires-restart = { -brand-short-name } perlu mula semula untuk dayakan ciri ini.
 feature-disable-requires-restart = { -brand-short-name } perlu mula semula untuk nyahdayakan ciri ini.
-should-restart-title = Mula semula { -brand-short-name }
+should-restart-title = Mula Semula { -brand-short-name }
 should-restart-ok = Mulakan { -brand-short-name } sekarang
 cancel-no-restart-button = Batal
 restart-later = Mula semula Kemudian
@@ -314,7 +315,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Proksi Rangkaian
 network-settings-title = Tetapan Rangkaian
 network-proxy-connection-description = Tetapkan cara { -brand-short-name } menyambung ke internet.
 network-proxy-connection-learn-more = Ketahui Selanjutnya
@@ -513,6 +513,7 @@ privacy-header = Privasi Pelayar
 ## Privacy Section - Forms
 
 forms-header = Borang & Kata laluan
+logins-header = Log masuk & Kata laluan
 forms-ask-to-save-logins =
     .label = Tanya untuk simpan log masuk dan kata laluan laman web
     .accesskey = l
@@ -526,7 +527,7 @@ forms-master-pw-use =
     .label = Guna kata laluan induk
     .accesskey = U
 forms-master-pw-change =
-    .label = Tukar Katalaluan Induk
+    .label = Tukar Kata laluan Induk…
     .accesskey = T
 
 ## Privacy Section - History
@@ -579,26 +580,12 @@ sitedata-total-size-calculating = Mengira saiz data dan cache laman…
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Kuki, data laman dan cache yang disimpan kini menggunakan { $value } { $unit } daripada ruang cakera.
 sitedata-learn-more = Ketahui selanjutnya
-sitedata-accept-cookies-option =
-    .label = Terima kuki dan data laman dari laman web (disyorkan)
-    .accesskey = T
-sitedata-block-cookies-option =
-    .label = Sekat kuki dan data laman (boleh menyebabkan laman web tidak lengkap)
-    .accesskey = S
 sitedata-keep-until = Kekalkan sehingga
     .accesskey = s
 sitedata-keep-until-expire =
     .label = Sudah luput
 sitedata-keep-until-closed =
     .label = { -brand-short-name } ditutup
-sitedata-accept-third-party-desc = Terima kuki dan data laman pihak ketiga
-    .accesskey = k
-sitedata-accept-third-party-always-option =
-    .label = Sentiasa
-sitedata-accept-third-party-visited-option =
-    .label = Daripada yang dilawati
-sitedata-accept-third-party-never-option =
-    .label = Jangan sesekali
 sitedata-allow-cookies-option =
     .label = Terima kuki dan data laman
     .accesskey = T
@@ -615,10 +602,6 @@ sitedata-block-trackers-option =
     .label = Penjejak pihak ketiga
 sitedata-block-unvisited-option =
     .label = Kuki daripada laman web yang tidak dilawati
-sitedata-block-all-third-parties-option =
-    .label = Semua kuki pihak ketiga
-sitedata-block-always-option =
-    .label = Semua kuki (boleh menyebabkan laman web ranap)
 sitedata-block-all-third-party-option =
     .label = Semua kuki pihak ketiga (boleh menyebabkan laman web pecah)
 sitedata-block-all-option =
@@ -672,30 +655,15 @@ content-blocking-category-label = Pilih apa yang disekat
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Memperlahankan Elemen Penjejak
-    .accesskey = M
-content-blocking-fastblock-description = Sekat kandungan pihak ketiga yang lebih daripada 5 saat untuk dimuatkan.
-content-blocking-fastblock-option-enabled =
-    .label = Sentiasa sekat
-content-blocking-fastblock-option-disabled =
-    .label = Jangan sekat
-content-blocking-tracking-protection-label = Penjejak
-    .accesskey = P
-content-blocking-tracking-protection-description = Sekat semua penjejak yang diketahui (Nota: mungkin menghalang sesetengah halaman daripada dimuatkan).
-content-blocking-tracking-protection-option-enabled =
-    .label = Sentiasa sekat
-content-blocking-tracking-protection-option-pbm =
-    .label = Sekat hanya dalam tertingkap peribadi
-content-blocking-tracking-protection-option-disabled =
-    .label = Jangan sekat
-content-blocking-tracking-protection-change-blocklist = Tukar Senarai Sekatan…
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-label = Penjejak Pemuatan-Lambat
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Penjejak Pemuatan-Lambat
     .accesskey = L
 content-blocking-fastblock-new-description = Cuma sekat penjejak yang membuatkan halaman tidak dimuatkan dengan cepat.
-content-blocking-tracking-protection-all-label = Semua Penjejak Yang Dikesan
+content-blocking-tracking-protection-trackers-label =
+    .label = Penjejak
+    .accesskey = P
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Semua Penjejak Yang Dikesan
     .accesskey = P
 content-blocking-tracking-protection-new-description = Sekat semua penjejak yang diketahui. (Boleh menghalang sesetengah halaman daripada dimuatkan.)
 content-blocking-tracking-protection-option-always =
@@ -705,7 +673,8 @@ content-blocking-tracking-protection-option-private =
     .label = Hanya dalam tetingkap peribadi
     .accesskey = p
 content-blocking-tracking-protection-change-block-list = Tukar senarai sekatan
-content-blocking-reject-trackers-label = Kuki Pihak-Ketiga
+content-blocking-third-party-cookies-label =
+    .label = Kuki Pihak-Ketiga
     .accesskey = K
 content-blocking-reject-trackers-description = Sekat semua kuki pihak ketiga atau hanya yang ditetapkan oleh penjejak.
 # This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
@@ -740,10 +709,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Jangan sesekali
     .accesskey = k
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Gunakan Perlindungan Penjejakan dalam Pelayaran Peribadi untuk menyekat penjejak dikenali
-    .accesskey = b
 tracking-exceptions =
     .label = Pengecualian…
     .accesskey = g
@@ -811,7 +776,7 @@ collection-header = Pengumpulan dan penggunaan data { -brand-short-name }
 collection-description = Kami berusaha untuk menyediakan anda dengan pilihan dan hanya mengumpulkan apa yang kami perlukan, dan memajukan { -brand-short-name } untuk semua orang. Kami sentiasa meminta izin sebelum menerima maklumat peribadi.
 collection-privacy-notice = Notis Privasi
 collection-health-report =
-    .label = Izinkan{ -brand-short-name } supaya secara automatik akan menghantarkan data teknikal dan interaksi kepada { -vendor-short-name }
+    .label = Izinkan { -brand-short-name } supaya secara automatik akan menghantarkan data teknikal dan interaksi kepada { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Ketahui selanjutnya
 collection-studies =

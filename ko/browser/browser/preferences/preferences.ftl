@@ -53,6 +53,7 @@ pane-sync-title = Firefox 계정
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } 도움말
+addons-button-label = 확장기능과 테마
 focus-search =
     .key = f
 close-button =
@@ -314,7 +315,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = 네트워크 프록시
 network-settings-title = 네트워크 설정
 network-proxy-connection-description = { -brand-short-name }가 인터넷에 접근하는 방법을 설정하세요.
 network-proxy-connection-learn-more = 자세히 보기
@@ -513,6 +513,7 @@ privacy-header = 브라우저 개인정보
 ## Privacy Section - Forms
 
 forms-header = 서식과 비밀번호
+logins-header = 로그인과 비밀번호
 forms-ask-to-save-logins =
     .label = 웹사이트의 로그인과 비밀번호를 기억할지 묻기
     .accesskey = r
@@ -579,26 +580,12 @@ sitedata-total-size-calculating = 사이트 데이타와 캐시 크기 계산중
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = 현재 저장된 쿠키와 사이트 데이타, 캐시가 { $value } { $unit }의 디스크를 사용하고 있습니다.
 sitedata-learn-more = 더 알아보기
-sitedata-accept-cookies-option =
-    .label = 웹사이트의 쿠키와 사이트 데이타 허용(권장)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = 쿠키와 사이트 데이타 차단(웹사이트가 깨질 수 있음)
-    .accesskey = B
 sitedata-keep-until = 유지 기간
     .accesskey = u
 sitedata-keep-until-expire =
     .label = 만료 될 때까지
 sitedata-keep-until-closed =
     .label = { -brand-short-name }가 닫힐때 까지
-sitedata-accept-third-party-desc = 제 3자 쿠키와 사이트 데이타 허용
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = 항상 허용
-sitedata-accept-third-party-visited-option =
-    .label = 방문한 곳만
-sitedata-accept-third-party-never-option =
-    .label = 허용 안함
 sitedata-allow-cookies-option =
     .label = 쿠키와 사이트 데이타 허용
     .accesskey = A
@@ -615,10 +602,6 @@ sitedata-block-trackers-option =
     .label = 제3자 추적기
 sitedata-block-unvisited-option =
     .label = 방문하지 않은 웹사이트의 쿠키
-sitedata-block-all-third-parties-option =
-    .label = 모든 제3자 쿠키
-sitedata-block-always-option =
-    .label = 모든 쿠키(웹사이트가 작동하지 않을 수 있음)
 sitedata-block-all-third-party-option =
     .label = 모든 제3자 쿠키(웹사이트가 작동하지 않을 수 있음)
 sitedata-block-all-option =
@@ -672,30 +655,15 @@ content-blocking-category-label = 차단할 대상 선택
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = 느린 추적 요소
-    .accesskey = S
-content-blocking-fastblock-description = 읽는데 5초이상 걸리는 제3자 콘텐츠를 차단합니다.
-content-blocking-fastblock-option-enabled =
-    .label = 항상 차단
-content-blocking-fastblock-option-disabled =
-    .label = 차단하지 않음
-content-blocking-tracking-protection-label = 추적자
-    .accesskey = T
-content-blocking-tracking-protection-description = 알려진 모든 추적자를 차단합니다(참고: 일부 페이지가 로드되지 않을 수 있습니다).
-content-blocking-tracking-protection-option-enabled =
-    .label = 항상 차단
-content-blocking-tracking-protection-option-pbm =
-    .label = 사생활 보호 창에서만 차단
-content-blocking-tracking-protection-option-disabled =
-    .label = 차단하지 않음
-content-blocking-tracking-protection-change-blocklist = 차단 목록 변경…
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-label = 느리게 로딩되는 추적기
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = 느리게 로딩되는 추적기
     .accesskey = S
 content-blocking-fastblock-new-description = 페이지가 더 빨리 뜰 수 있도록 추적기를 차단해보세요.
-content-blocking-tracking-protection-all-label = 모든 감지된 추적기
+content-blocking-tracking-protection-trackers-label =
+    .label = 추적기
+    .accesskey = T
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = 모든 감지된 추적기
     .accesskey = T
 content-blocking-tracking-protection-new-description = 알려진 모든 추적기를 차단합니다. (몇몇 페이지가 로딩되지 않을 수 있습니다.)
 content-blocking-tracking-protection-option-always =
@@ -705,7 +673,8 @@ content-blocking-tracking-protection-option-private =
     .label = 사생활 보호 창에서만
     .accesskey = P
 content-blocking-tracking-protection-change-block-list = 차단 목록 변경
-content-blocking-reject-trackers-label = 제3자 쿠키
+content-blocking-third-party-cookies-label =
+    .label = 제3자 쿠키
     .accesskey = C
 content-blocking-reject-trackers-description = 모든 제3자 쿠키나 추적기에 의해 설정된 쿠기를 차단합니다.
 # This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
@@ -740,10 +709,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = 항상 사용하지 않기
     .accesskey = n
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = 사생활 보호 모드에서 추적 방지를 사용해 알려진 추적기관을 차단
-    .accesskey = v
 tracking-exceptions =
     .label = 예외…
     .accesskey = x

@@ -6,6 +6,8 @@ do-not-track-description = Požiadať webové stránky pomocou signálu “Do No
 do-not-track-learn-more = Ďalšie informácie
 do-not-track-option-default =
     .label = Len pri použití Ochrany pred sledovaním
+do-not-track-option-default-content-blocking =
+    .label = Len ak je zapnuté blokovanie nájdených sledovacích prvkov
 do-not-track-option-always =
     .label = Vždy
 pref-page =
@@ -526,6 +528,7 @@ privacy-header = Súkromie
 ## Privacy Section - Forms
 
 forms-header = Formuláre a heslá
+logins-header = Prihlasovacie údaje
 forms-ask-to-save-logins =
     .label = Ponúkať uloženie prihlasovacích údajov na webových stránkach
     .accesskey = r
@@ -622,6 +625,16 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Blokovať
     .accesskey = l
+sitedata-block-trackers-option-recommended =
+    .label = sledovacie prvky tretích strán (odporúča sa)
+sitedata-block-trackers-option =
+    .label = sledovacie prvky tretích strán
+sitedata-block-unvisited-option =
+    .label = cookies z nenavštívených stránok
+sitedata-block-all-third-party-option =
+    .label = všetky cookies tretích strán (môže obmedziť fungovanie niektorých stránok)
+sitedata-block-all-option =
+    .label = všetky cookies (obmedzí fungovanie niektorých stránok)
 sitedata-clear =
     .label = Vymazať údaje…
     .accesskey = m
@@ -631,6 +644,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Výnimky…
     .accesskey = m
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Vaše nastavenia blokovania obsahu bránia zmenám nastavenia cookies a údajov stránok.
 
 ## Privacy Section - Address Bar
 
@@ -667,23 +684,45 @@ content-blocking-category-label = Vyberte si, čo chcete blokovať
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Pomalé sledovacie prvky
-    .accesskey = P
-content-blocking-fastblock-description = Blokuje obsah tretích strán, ktorý sa načítava dlhšie než 5 sekúnd.
-content-blocking-fastblock-option-enabled =
-    .label = Vždy blokovať
-content-blocking-fastblock-option-disabled =
-    .label = Nikdy neblokovať
-content-blocking-tracking-protection-label = Sledovacie prvky
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Spomaľovacie sledovacie prvky
     .accesskey = S
-content-blocking-tracking-protection-description = Blokuje všetky známe sledovacie prvky (niektoré stránky sa nemusia načítať).
-content-blocking-tracking-protection-option-enabled =
-    .label = Vždy blokovať
-content-blocking-tracking-protection-option-pbm =
-    .label = Blokovať v súkromných oknách
-content-blocking-tracking-protection-option-disabled =
-    .label = Nikdy neblokovať
-content-blocking-tracking-protection-change-blocklist = Zmeniť zoznam blokovania…
+content-blocking-fastblock-new-description = Blokované budú len sledovacie prvky, ktoré spomaľujú načítanie stránok.
+content-blocking-tracking-protection-trackers-label =
+    .label = Sledovacie prvky
+    .accesskey = l
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Všetky nájdené sledovacie prvky
+    .accesskey = t
+content-blocking-tracking-protection-new-description = Blokované budú všetky známe sledovacie prvky. (Toto môže obmedziť fungovanie niektorých stránok.)
+content-blocking-tracking-protection-option-always =
+    .label = Vždy
+    .accesskey = V
+content-blocking-tracking-protection-option-private =
+    .label = Len v súkromných oknách
+    .accesskey = s
+content-blocking-tracking-protection-change-block-list = Zmeniť zoznam blokovania
+content-blocking-third-party-cookies-label =
+    .label = Cookies tretích strán
+    .accesskey = C
+content-blocking-reject-trackers-description = Blokovať všetky cookies tretích strán alebo len sledovacích prvkov.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Vaše nastavenie cookies a údajov stránok bránia zmenám nastavenia cookies tretích strán.
+content-blocking-change-cookie-settings =
+    .label = Zmeniť nastavenia cookies
+    .accesskey = s
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Sledovacie prvky (odporúča sa)
+    .accesskey = v
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Sledovacie prvky
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Všetky cookies tretích strán (môže obmedziť fungovanie niektorých stránok)
+    .accesskey = V
 
 ## Privacy Section - Tracking
 

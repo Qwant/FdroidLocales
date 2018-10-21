@@ -20,6 +20,7 @@
 <!ENTITY aboutPrivateBrowsing.info.saved.after2          " :">
 <!ENTITY aboutPrivateBrowsing.info.downloads             "Les téléchargements">
 <!ENTITY aboutPrivateBrowsing.info.bookmarks             "Les marque-pages">
+<!ENTITY aboutPrivateBrowsing.info.clipboard             "Le texte copié">
 <!ENTITY aboutPrivateBrowsing.note.before                "La navigation privée ">
 <!ENTITY aboutPrivateBrowsing.note.emphasize             "ne vous rend pas anonyme">
 <!ENTITY aboutPrivateBrowsing.note.after                 " sur Internet. Votre fournisseur d’accès à Internet ou votre employeur peuvent toujours connaître les pages que vous visitez.">
@@ -32,3 +33,4 @@
 <!ENTITY trackingProtection.startTour1                   "Principes de fonctionnement">
 
 <!ENTITY contentBlocking.title                           "Blocage de contenu">
+<!ENTITY contentBlocking.description                     "Certains sites utilisent des traqueurs qui peuvent pister votre activité sur Internet. Dans les fenêtres de navigation privée, le blocage de contenu de Firefox bloque automatiquement de nombreux traqueurs qui peuvent collecter des informations sur votre comportement de navigation.">

@@ -27,21 +27,21 @@ cfr-doorhanger-extension-notification = Argymhelliad
 cfr-doorhanger-extension-rating =
     .tooltiptext =
         { $total ->
-            [zero] seren
-            [one] seren
-            [two] seren
-            [few] seren
-            [many] seren
-           *[other] seren
+            [zero] { $total } seren
+            [one] { $total } seren
+            [two] { $total } seren
+            [few] { $total } seren
+            [many] { $total } seren
+           *[other] { $total } seren
         }
 # Variables:
 #   $total (Number) - The total number of users using the add-on
 cfr-doorhanger-extension-total-users =
     { $total ->
-        [zero] defnyddiwr
-        [one] defnyddiwr
-        [two] ddefnyddiwr
-        [few] defnyddiwr
-        [many] defnyddiwr
-       *[other] defnyddiwr
+        [zero] { $total } defnyddiwr
+        [one] { $total } defnyddiwr
+        [two] { $total } ddefnyddiwr
+        [few] { $total } defnyddiwr
+        [many] { $total } defnyddiwr
+       *[other] { $total } defnyddiwr
     }

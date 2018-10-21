@@ -53,6 +53,7 @@ pane-sync-title = Firefox Account
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Soporte de { -brand-short-name }
+addons-button-label = Extensiones y temas
 focus-search =
     .key = f
 close-button =
@@ -114,7 +115,7 @@ search-results-empty-message =
         [windows] ¡Lo sentimos! No hay resultados en Opciones para “<span data-l10n-name="query"></span>”.
        *[other] ¡Lo sentimos! No hay resultados en Preferencias para “<span data-l10n-name="query"></span>”.
     }
-search-results-help-link = ¿Necesita ayuda? Visita <a data-l10n-name="url">Ayuda de { -brand-short-name }</a>
+search-results-help-link = ¿Necesitas ayuda? Visita la <a data-l10n-name="url">Ayuda de { -brand-short-name }</a>
 
 ## General Section
 
@@ -326,7 +327,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Proxy de red
 network-settings-title = Ajustes de conexión
 network-proxy-connection-description = Configura cómo { -brand-short-name } se conecta a internet
 network-proxy-connection-learn-more = Aprender más
@@ -375,11 +375,11 @@ choose-bookmark =
 
 search-bar-header = Barra de búsqueda
 search-bar-hidden =
-    .label = Usa la barra de direcciones para buscar y navegar
+    .label = Usar la barra de direcciones para buscar y navegar
 search-bar-shown =
     .label = Añadir barra de búsqueda a la barra de herramientas
 search-engine-default-header = Motor de búsqueda predeterminado
-search-engine-default-desc = Elegir el motor de búsqueda predeterminado a usar en la barra de direcciones y en la barra de búsqueda.
+search-engine-default-desc = Elige el motor de búsqueda predeterminado a usar en la barra de direcciones y en la barra de búsqueda.
 search-suggestions-option =
     .label = Proveer sugerencias de búsqueda
     .accesskey = s
@@ -525,6 +525,7 @@ privacy-header = Privacidad del navegador
 ## Privacy Section - Forms
 
 forms-header = Formularios y contraseñas
+logins-header = Conexiones y contraseñas
 forms-ask-to-save-logins =
     .label = Preguntar para guardar conexiones y contraseñas para sitios web
     .accesskey = r
@@ -591,26 +592,12 @@ sitedata-total-size-calculating = Calculando el tamaño de los datos del sitio y
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Tus cookies, datos de sitio y caché almacenados están usando actualmente { $value } { $unit } de espacio en disco.
 sitedata-learn-more = Aprender más
-sitedata-accept-cookies-option =
-    .label = Aceptar cookies y datos de sitios (recomendado)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = Bloquear cookies y datos de sitios (puede hacer que algunos sitios no funcionen)
-    .accesskey = B
 sitedata-keep-until = Mantener hasta
     .accesskey = u
 sitedata-keep-until-expire =
     .label = que expiren
 sitedata-keep-until-closed =
     .label = que { -brand-short-name } sea cerrado
-sitedata-accept-third-party-desc = Aceptar cookies y datos de sitio de terceros
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = Siempre
-sitedata-accept-third-party-visited-option =
-    .label = De los visitados
-sitedata-accept-third-party-never-option =
-    .label = Nunca
 sitedata-allow-cookies-option =
     .label = Aceptar cookies y datos de sitio
     .accesskey = A
@@ -627,10 +614,6 @@ sitedata-block-trackers-option =
     .label = Rastreadores de terceros
 sitedata-block-unvisited-option =
     .label = Cookies de sitios web no visitados
-sitedata-block-all-third-parties-option =
-    .label = Todas las cookies de terceros
-sitedata-block-always-option =
-    .label = Todas las cookies (puede causar errores en los sitios web)
 sitedata-block-all-third-party-option =
     .label = Todas las cookies de terceros (esto puede causar errores en los sitios web)
 sitedata-block-all-option =
@@ -644,6 +627,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Excepciones…
     .accesskey = E
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Tus ajustes en el bloqueo de contenido previenen cambios a los ajustes de cookies y datos de sitio.
 
 ## Privacy Section - Address Bar
 
@@ -680,25 +667,44 @@ content-blocking-category-label = Elige qué bloquear
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Elementos de seguimiento lentos
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Rastreadores de carga lenta
     .accesskey = S
-content-blocking-fastblock-description = Bloquea el contenido de terceros que tarda más de 5 segundos en cargarse.
-content-blocking-fastblock-option-enabled =
-    .label = Bloquear siempre
-content-blocking-fastblock-option-disabled =
-    .label = Nunca bloquear
-content-blocking-tracking-protection-label = Rastreadores
+content-blocking-fastblock-new-description = Bloquea solo los rastreadores que impiden que las páginas carguen rápido.
+content-blocking-tracking-protection-trackers-label =
+    .label = Rastreadores
     .accesskey = T
-content-blocking-tracking-protection-description = Bloquea todos los rastreadores conocidos (Nota: también puede impedir que se carguen algunas páginas).
-content-blocking-tracking-protection-option-enabled =
-    .label = Siempre bloquear
-content-blocking-tracking-protection-option-pbm =
-    .label = Bloquear solo en ventanas privadas
-content-blocking-tracking-protection-option-disabled =
-    .label = Nunca bloquear
-content-blocking-tracking-protection-change-blocklist = Cambiar la lista de bloqueo…
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Todos los rastreadores detectados
+    .accesskey = T
+content-blocking-tracking-protection-new-description = Bloquear todos los rastreadores conocidos. (Puede impedir que se carguen algunas páginas).
 content-blocking-tracking-protection-option-always =
     .label = Siempre
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = Solo en ventanas privadas
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Cambiar lista de bloqueo
+content-blocking-third-party-cookies-label =
+    .label = Cookies de terceros
+    .accesskey = C
+content-blocking-reject-trackers-description = Bloquear todas las cookies de terceros o solo aquellas establecidas por los rastreadores.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Tus ajustes en cookies y datos de sitio están impidiendo cambios en los ajustes de las cookies de terceros.
+content-blocking-change-cookie-settings =
+    .label = Cambiar ajustes de cookies
+    .accesskey = S
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Rastreadores (recomendado)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Rastreadores
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Todas las cookies de terceros (puede causar errores en los sitios web)
     .accesskey = A
 
 ## Privacy Section - Tracking
@@ -715,10 +721,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Nunca
     .accesskey = n
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Usar protección de rastreo en navegación privada para bloquear los rastreadores conocidos
-    .accesskey = v
 tracking-exceptions =
     .label = Excepciones…
     .accesskey = x

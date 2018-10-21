@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-learn-more = اور سیکھیں
+do-not-track-learn-more = مزید سیکھیں
 do-not-track-option-default =
     .label = صرف جب سراغ کاری حفاظت استعمال کر رہے ہوں
 do-not-track-option-always =
@@ -45,6 +45,7 @@ pane-sync-title = Firefox اکاؤنٹس
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } تعاون
+addons-button-label = ایکسٹینشن اور تھیم
 focus-search =
     .key = f
 close-button =
@@ -88,19 +89,20 @@ startup-header = سٹارٹ اپ
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = { -brand-short-name } اور Firefox کو ہم وقت چلنے کی اجازت دے
-use-firefox-sync = ٹوٹکا: یہ علیحدہ پروفائلز استعمال کرتا ہے. ان کے درمیان ڈیٹا کا اشتراک کرنے کی مطابقت پذیری کا استعمال کریں.
+use-firefox-sync = تجاویز: یہ الگ الگ پروفائل استعمال کرتا ہے۔ ان کے درمیان ڈیٹا کا اشتراک کرنے کے لئے { -sync-brand-short-name } استعمال کریں۔
 get-started-not-logged-in = { -sync-brand-short-name } میں سائن ان کریں
+get-started-configured = { -sync-brand-short-name } ترجیحات کھولیں
 always-check-default =
     .label = ہمیشہ جانچ پڑتال کریں کہ { -brand-short-name } آپ کا پہلے سے طے شدہ براؤزر ہے
-    .accesskey = ی
+    .accesskey = y
 is-default = { -brand-short-name } اس وقت آپ کا طےشدہ براؤزر ہے
-is-not-default = { -brand-short-name } اس وقت آپ کا طےشدہ  براؤزر نھیں ہے
+is-not-default = { -brand-short-name } اس وقت آپ کا طےشدہ براؤزر نھیں ہے
 set-as-my-default-browser =
     .label = طے شدہ بنائیں…
     .accesskey = D
 startup-restore-previous-session =
     .label = پچھلا سیشن بحال کریں
-    .accesskey = س
+    .accesskey = s
 disable-extension =
     .label = توسیعات نا اہل بنائیں
 tabs-group-header = ٹیبس
@@ -109,23 +111,23 @@ ctrl-tab-recently-used-order =
     .accesskey = T
 warn-on-close-multiple-tabs =
     .label = متعدد ٹیب ایک ساتھ بند کرنے پر مجھے تنبیح کیجیئے
-    .accesskey = م
+    .accesskey = m
 warn-on-open-many-tabs =
     .label = متعدد ٹیب کھولنے پر شاید { -brand-short-name } آہستہ ہو تو منتبہ کریں
-    .accesskey = ہ
+    .accesskey = d
 switch-links-to-new-tabs =
     .label = جب میں ایک ربط نئے ٹیب میں کھولوں، تو فوراً اسی کی طرف سوئچ ہو جائیں
-    .accesskey = ج
+    .accesskey = h
 show-tabs-in-taskbar =
     .label = Windows ٹاسک بار میں ٹیب پیش نظارے دکھائیں
-    .accesskey = ٹ
+    .accesskey = k
 browser-containers-enabled =
     .label = حامل ٹہن بحال کریں
-    .accesskey = ح
+    .accesskey = n
 browser-containers-learn-more = مزید سیکھیں
 browser-containers-settings =
-    .label = سیٹنگیں…
-    .accesskey = س
+    .label = ترتیبات…
+    .accesskey = i
 containers-disable-alert-title = تمام  حامل ٹیبس بند کریں
 containers-disable-alert-ok-button =
     { $tabCount ->
@@ -154,27 +156,32 @@ default-font-size = ماپ
     .accesskey = S
 advanced-fonts =
     .label = اعلٰی…
-    .accesskey = ا
+    .accesskey = A
 colors-settings =
     .label = رنگ…
-    .accesskey = ر
+    .accesskey = C
 language-header = زبان
 choose-language-description = صفحہ دکھانے کے لیے اپنی زبان چنیں
 choose-button =
     .label = انتخاب کریں…
-    .accesskey = ا
+    .accesskey = o
+manage-browser-languages-button =
+    .label = متبادل سیٹ کریں...
+    .accesskey = I
+confirm-browser-language-change-description = { -brand-short-name } دوبارہ شروع کریں ان تبدیلیوں کو لاگو کرنے کے لیے
+confirm-browser-language-change-button = لاگو کرے اور دوبارہ شروع کریں
 translate-web-pages =
     .label = ترجمہ کریں ویب کے مواد کا
-    .accesskey = ت
+    .accesskey = T
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
 translate-attribution = کی طرف سے ترجمے <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = استثنیات ...
-    .accesskey = س
+    .accesskey = x
 check-user-spelling =
     .label = ٹائپ کرتے وقت اپنی املا کی پڑتال کریں
-    .accesskey = ٹ
+    .accesskey = t
 
 ## General Section - Files and Applications
 
@@ -182,7 +189,7 @@ files-and-applications-title = مسلیں اور ایپلی کیشن
 download-header = ڈاؤن لوڈ
 download-save-to =
     .label = مسل محفوظ کریں بر
-    .accesskey = م
+    .accesskey = v
 download-choose-folder =
     .label =
         { PLATFORM() ->
@@ -191,31 +198,35 @@ download-choose-folder =
         }
     .accesskey =
         { PLATFORM() ->
-            [macos] ا
-           *[other] ا
+            [macos] e
+           *[other] o
         }
 download-always-ask-where =
     .label = مجھ سے ہمیشہ پوچھیں کہ مسل کہاں محفوظ کرنی ہے
-    .accesskey = ہ
+    .accesskey = A
 applications-header = ایپلی کیشنیں
 applications-filter =
     .placeholder = مسل کی اقسام یا ایپلی کیشنز تلاش کریں
 applications-type-column =
     .label = مواد قسم
-    .accesskey = م
+    .accesskey = T
 applications-action-column =
     .label = عمل
-    .accesskey = ع
-drm-content-header = عددی حقوق بندرستگی(DRM)  مواد
+    .accesskey = A
+drm-content-header = عددی حقوق بندرستگی(DRM) مواد
 play-drm-content-learn-more = مزید سیکھیں
 update-application-title = { -brand-short-name } تازہ کاریاں:
 update-application-version = ورژن{ $version } <a data-l10n-name="learn-more">نیا کیا ہے</a>
+update-history =
+    .label = تازہ ترین تاریخ دکھائیں
+    .accesskey = p
+update-application-allow-description = { -brand-short-name } کو اجازت دیں
 update-application-manual =
     .label = کبھی بھی تازہ کاری کی پڑتال نہیں کریں
     .accesskey = N
 update-application-use-service =
     .label = تازہ کاریاں تنصیب کرنے کے لیے پس منظر سروس استعمال کریں
-    .accesskey = پ
+    .accesskey = b
 
 ## General Section - Performance
 
@@ -223,7 +234,7 @@ performance-title = کارکردگی
 performance-settings-learn-more = مزید سیکھیں
 performance-allow-hw-accel =
     .label = جب دستیاب ہو تو ہارڈ ویئر سرعت کاری استعمال کریں
-    .accesskey = ہ
+    .accesskey = r
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
@@ -233,28 +244,28 @@ performance-default-content-process-count =
 
 browsing-title = براؤزنگ
 browsing-use-autoscroll =
-    .label = خودکار طومار استعمال کریں
-    .accesskey = خ
+    .label = خودبخود سکرولنگ کااستعمال کریں
+    .accesskey = a
 browsing-use-smooth-scrolling =
     .label = ہموار طومار استعمال کریں
-    .accesskey = ہ
+    .accesskey = m
 browsing-use-onscreen-keyboard =
     .label = ضرورت کے وقت ٹچ کی بورڈ دکھایں
-    .accesskey = ک
+    .accesskey = c
 browsing-use-cursor-navigation =
     .label = صفحات میں آگے پیچھے جانے کے لیے ہمیشہ کرسر کلیدیں استعمال کریں
-    .accesskey = ک
+    .accesskey = k
 browsing-search-on-start-typing =
     .label = میرے ٹائپ کرنے پر متن کے لیے تلاش شروع کریں
-    .accesskey = م
+    .accesskey = x
 
 ## General Section - Proxy
 
-network-proxy-title = نیٹ ورک پراکسی
+network-settings-title = نیٹ ورک ترتیبات
 network-proxy-connection-learn-more = مزید سیکھیں
 network-proxy-connection-settings =
-    .label = سیٹنگیں…
-    .accesskey = س
+    .label = ترتیبات…
+    .accesskey = e
 
 ## Home Section
 
@@ -262,6 +273,7 @@ home-new-windows-tabs-header = نئے دریچے اور ٹیبس
 
 ## Home Section - Home Page Customization
 
+home-homepage-mode-label = ابتدائی صفحہ اور نیا ونڈوں
 home-newtabs-mode-label = نئے ٹیبس
 home-restore-defaults =
     .label = طےشدہ بحال کریں
@@ -284,18 +296,20 @@ use-current-pages =
             [1] حالیہ صفحہ برتیں
            *[other] حالیہ صفحے استعمال کریں
         }
-    .accesskey = ح
+    .accesskey = C
 choose-bookmark =
-    .label = نشانی استعمال کریں…
-    .accesskey = ن
+    .label = بک مارک استعمال کریں…
+    .accesskey = B
 
 ## Search Section
 
 search-bar-header = تلاش بار
+search-bar-shown =
+    .label = سرچ بار کا ٹولبار مے ا ضافہ کریں۔
 search-engine-default-header = طےشدہ تلاش انجن
 search-suggestions-option =
     .label = تلاش تجاویز مہیا کریں
-    .accesskey = ت
+    .accesskey = s
 search-suggestions-cant-show = تلاش کردہ تجاویز محل وقوع کے بار کے نتائج میں دکھاءی نھیں جائنگے کیونکہ { -brand-short-name } تاریخ کبھی یاد نہیں رکھنے پر تشکیل کردہ ہے۔
 search-one-click-header = ایک کلک تلاش انجن
 search-choose-engine-column =
@@ -304,10 +318,10 @@ search-choose-keyword-column =
     .label = کلیدی لفظ
 search-restore-default =
     .label = طےشدہ تلاش انجن بحال کریں
-    .accesskey = ط
+    .accesskey = D
 search-remove-engine =
     .label = ہٹائیں
-    .accesskey = ہ
+    .accesskey = R
 search-find-more-link = مزید تلاش انجن تلاش کریں
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -323,7 +337,7 @@ containers-back-link = «  واہس جائیں
 containers-header = حامل ٹیبز
 containers-add-button =
     .label = نئے حامل کا اضافہ کریں
-    .accesskey = ا
+    .accesskey = A
 containers-preferences-button =
     .label = ترجیحات
 containers-remove-button =
@@ -335,7 +349,7 @@ sync-signedout-caption = اپنی ویب اپنے ساتھ رکھیں
 sync-signedout-description = اپنے تمام ڈیوائس اپنے بک مارکس، تاریخ، ٹیب، پاس ورڈ، ایڈ اون، اور ترجیحات کو ہم وقت ساز کریں۔
 sync-signedout-account-title = کسی { -fxaccount-brand-name } کے ساتھ جڑیں
 sync-signedout-account-create = اکائونٹ نہیں ہے؟ شروع کریں
-    .accesskey = C
+    .accesskey = c
 sync-signedout-account-signin =
     .label = سائن ان…
     .accesskey = I
@@ -369,13 +383,13 @@ sync-remove-account =
 sync-sign-in =
     .label = سائن ان کریں
     .accesskey = g
-sync-signedin-settings-header = ہمہ وقت ساز سیٹنگیں
+sync-signedin-settings-header = ہمہ وقت ساز ترتیبات
 sync-engine-bookmarks =
-    .label = نشانیاں
-    .accesskey = ن
+    .label = بک مارک
+    .accesskey = m
 sync-engine-history =
     .label = سابقات
-    .accesskey = س
+    .accesskey = r
 sync-engine-tabs =
     .label = ٹیبس کھولیں
     .tooltiptext = تمام ہمہ وقت ساز آلات میں  کیا کھلا ہے اس کی فہرست
@@ -383,14 +397,14 @@ sync-engine-tabs =
 sync-engine-logins =
     .label = لاگانز
     .tooltiptext = صارف کا نام اور پاسورڈ حو آپ نے نحفوظ کیئے
-    .accesskey = ل
+    .accesskey = L
 sync-engine-creditcards =
     .label = کریڈٹ کارڈز
     .tooltiptext = نام،نمبر اور اختتام کی تاریخ (صرف ڈیسک ٹاپ کے لیئے)
     .accesskey = C
 sync-engine-addons =
-    .label = اظافہ-جات
-    .tooltiptext = توسیعات اور خیالہ برائے Firefox  ڈیسک ٹاپ
+    .label = ایڈ-اون
+    .tooltiptext = Firefox ڈیسک ٹاپ کے لئے ایکسٹینشن اور تھیم
     .accesskey = A
 sync-engine-prefs =
     .label =
@@ -422,18 +436,19 @@ privacy-header = براؤزر رازداری
 ## Privacy Section - Forms
 
 forms-header = فارم اور پاس ورڈ
+logins-header = لاگ ان & پاس ورڈ
 forms-exceptions =
     .label = استثنیات…
-    .accesskey = ا
+    .accesskey = x
 forms-saved-logins =
     .label = محفوظ شدہ لاگ ان…
-    .accesskey = ل
+    .accesskey = L
 forms-master-pw-use =
     .label = ماسٹر پاس ورڈ استعمال کریں
-    .accesskey = ا
+    .accesskey = U
 forms-master-pw-change =
     .label = ماسٹر پاس ورڈ تبدیل کریں…
-    .accesskey = م
+    .accesskey = M
 
 ## Privacy Section - History
 
@@ -443,21 +458,24 @@ history-remember-option-all =
 history-remember-option-never =
     .label = کبھی سابقات نہ یاد رکھے
 history-remember-option-custom =
-    .label = سابقات کے لیے مخصوص ترتیب استعمال کریں
+    .label = سابقات کے لیے مخصوص ترتیبات استعمال کریں
 history-remember-description = { -brand-short-name } آپکی برائوزنگ ڈائونلوڈ اور تلاش سابقات یاد رکھے گا۔
-history-dontremember-description = { -brand-short-name } نجی براؤزنگ کی سیٹگنگیں استعمال کرے گا، اور آپ کے براوز کرتے وقت کوئی سابقات نہیں یاد رکھے گا۔
+history-dontremember-description = { -brand-short-name } نجی براؤزنگ کی ترتیبات استعمال کرے گا، اور آپ کے براوز کرتے وقت کوئی سابقات نہیں یاد رکھے گا۔
 history-private-browsing-permanent =
     .label = ہمیشہ نجی براوزنگ موڈ استعمال کریں
-    .accesskey = ن
+    .accesskey = p
+history-remember-browser-option =
+    .label = براؤزنگ اور ڈاؤن لوڈ سابقات یاد رکھیں
+    .accesskey = b
 history-remember-search-option =
     .label = تلاش اور فارم سابقات یاد رکھیں
-    .accesskey = ف
+    .accesskey = f
 history-clear-on-close-option =
     .label = { -brand-short-name } کے بند ہونے پر سابقات صاف کریں
-    .accesskey = ص
+    .accesskey = r
 history-clear-on-close-settings =
-    .label = سیٹنگیں…
-    .accesskey = س
+    .label = ترتیبات…
+    .accesskey = t
 history-clear-button =
     .label = سابقات صاف کریں
     .accesskey = s
@@ -472,21 +490,27 @@ sitedata-keep-until-expire =
     .label = وہ ختم ہو تے ہیں
 sitedata-keep-until-closed =
     .label = { -brand-short-name } بند ہے
-sitedata-accept-third-party-always-option =
-    .label = ہمیشہ
-sitedata-accept-third-party-visited-option =
-    .label = ملاحظہ شدہ سے
-sitedata-accept-third-party-never-option =
-    .label = کبھی نہیں
+sitedata-allow-cookies-option =
+    .label = کوکیز اور سائٹ کا ڈیٹا قبول کریں
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = کوکیز اور سائٹ کا ڈیٹا روکیں
+    .accesskey = B
+sitedata-block-trackers-option-recommended =
+    .label = تیسری تنظیم کے ٹریکرس (سفارش شدا)
+sitedata-block-trackers-option =
+    .label = تیسری تنظیم کے ٹریکرس
+sitedata-block-all-third-party-option =
+    .label = سارے تیسری تنظیم کے کوکیز(ویب سائٹس توڑنے کا سبب بن سکتا ہے)
 sitedata-clear =
     .label = کوائف… خالی کریں
     .accesskey = l
 sitedata-settings =
     .label = کوائف… بندرست کریں
-    .accesskey = م
+    .accesskey = M
 sitedata-cookies-exceptions =
     .label = استثنیات…
-    .accesskey = ا
+    .accesskey = E
 
 ## Privacy Section - Address Bar
 
@@ -494,85 +518,125 @@ addressbar-header = پتہ کی بار
 addressbar-suggest = ہتہ کی بار استعمال کرتے وقت، تجویز دیں
 addressbar-locbar-history-option =
     .label = براؤزنگ سابقات
-    .accesskey = H
+    .accesskey = h
 addressbar-locbar-bookmarks-option =
-    .label = نشانیاں
-    .accesskey = ن
+    .label = بک مارک
+    .accesskey = k
 addressbar-locbar-openpage-option =
     .label = ٹیب کھولیے
-    .accesskey = ک
+    .accesskey = O
 
 ## Privacy Section - Content Blocking
 
+content-blocking-header = مواد روکنا
 content-blocking-learn-more = مزید سیکھیں
 content-blocking-restore-defaults =
     .label = طےشدہ بحال کریں
     .accesskey = R
+content-blocking-toggle-on =
+    .tooltiptext = مواد روکنابند کریں
+content-blocking-toggle-off =
+    .tooltiptext = مواد روکناشرو کریں
 content-blocking-toggle-label-on = چالو
     .accesskey = O
 content-blocking-toggle-label-off = بند
     .accesskey = O
 content-blocking-category-label = چنیں کیا بلاک کرنا ہے
-content-blocking-fastblock-option-enabled =
-    .label = ہمیشہ بلاک کریں
-content-blocking-fastblock-option-disabled =
-    .label = کبھی بلاک نا کریں
-content-blocking-tracking-protection-option-disabled =
-    .label = کبھی بلاک نا کریں
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = آہستہ لوڈ ہونے والے ٹریکرس
+    .accesskey = S
+content-blocking-tracking-protection-trackers-label =
+    .label = ٹریکرس
+    .accesskey = T
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = تمام ٹریکرس کا پتا لگا
+    .accesskey = T
+content-blocking-tracking-protection-option-always =
+    .label = ہمیشہ
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = صرف نجی ونڈوں میں
+    .accesskey = p
+content-blocking-third-party-cookies-label =
+    .label = تیسری تنظیم کے کوکیز
+    .accesskey = C
+content-blocking-change-cookie-settings =
+    .label = کوکی ترتیبات تبدیل کریں
+    .accesskey = S
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = ٹریکرس (سفارش شدا)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = ٹریکرس
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = سارے تیسری تنظیم کے کوکیز(ویب سائٹس توڑنے کا سبب بن سکتا ہے)
+    .accesskey = A
 
 ## Privacy Section - Tracking
 
 tracking-header = سراغ کاری حفاظت
 tracking-mode-always =
     .label = ہمیشہ
-    .accesskey = ہ
+    .accesskey = y
 tracking-mode-private =
     .label = صرف نجی ونڈوں میں
-    .accesskey = ف
+    .accesskey = I
 tracking-mode-never =
     .label = کبھی نہیں
-    .accesskey = ک
+    .accesskey = N
 tracking-exceptions =
     .label = استثنیات…
-    .accesskey = ا
+    .accesskey = x
+tracking-change-block-list =
+    .label = بلاک فہرست تبدیل کریں۔۔۔
+    .accesskey = C
 
 ## Privacy Section - Permissions
 
 permissions-header = اجازتیں
 permissions-location = محل وقوع
 permissions-location-settings =
-    .label = سیٹنگیں…
+    .label = ترتیبات…
     .accesskey = t
 permissions-camera = کیمرہ
 permissions-camera-settings =
-    .label = سیٹنگیں…
+    .label = ترتیبات…
     .accesskey = t
 permissions-microphone = مائیکروفون
 permissions-microphone-settings =
-    .label = سیٹنگیں…
+    .label = ترتیبات…
     .accesskey = t
 permissions-notification = اعلانات
 permissions-notification-settings =
-    .label = سیٹنگیں…
+    .label = ترتیبات…
     .accesskey = t
 permissions-notification-link = مزید سیکھیں
 permissions-block-autoplay-media-exceptions =
     .label = استثنیات…
-    .accesskey = ع
+    .accesskey = E
 autoplay-option-ask =
     .label = ہمیشہ پوچھیں
+autoplay-option-allow =
+    .label = خودبخود چلنے کی اجازت دیں
+autoplay-option-dont =
+    .label = خودبخود چلنے کی اجازت نادیں
+permissions-autoplay-link = مزید سیکھیں
 permissions-block-popups =
     .label = پوپ اپ دریچے بلاک کیجیے
-    .accesskey = ب
+    .accesskey = B
 permissions-block-popups-exceptions =
     .label = استثنیات…
-    .accesskey = ا
+    .accesskey = E
 permissions-addon-install-warning =
     .label = متنبہ کریں  جب ویب سائٹس اظافہ جات تنصیب کرنے کی کوشش کریں
     .accesskey = W
 permissions-addon-exceptions =
     .label = استثنیات…
-    .accesskey = ا
+    .accesskey = E
 permissions-a11y-privacy-link = مزید سیکھیں
 
 ## Privacy Section - Data Collection
@@ -590,14 +654,14 @@ collection-backlogged-crash-reports-link = مزید سیکھیں
 security-header = سلامتی
 security-enable-safe-browsing =
     .label = خطرناک اور دھوکہ دینے والے مواد کو بلاک کریں
-    .accesskey = ب
+    .accesskey = B
 security-enable-safe-browsing-link = مزید سیکھیں
 security-block-downloads =
     .label = خطرناک ڈاؤن لوڈز کو بلاک کریں
-    .accesskey = خ
+    .accesskey = d
 security-block-uncommon-software =
     .label = غیر عمومی سافٹ ویئر کے متعلق مجھیں خبردار کریں
-    .accesskey = و
+    .accesskey = c
 
 ## Privacy Section - Certificates
 
@@ -611,7 +675,7 @@ certs-select-ask-option =
     .accesskey = A
 certs-enable-ocsp =
     .label = سوال OCSP ریسپانڈر سرور کی موجودہ سرٹیفکیٹ کی تصدیق کرتی ہے
-    .accesskey = س
+    .accesskey = Q
 certs-view =
     .label = تصدیق نامہ دیکھیں
     .accesskey = C

@@ -6,6 +6,8 @@ do-not-track-description = Bidali webguneei "Do Not Track" seinalea zure jarraip
 do-not-track-learn-more = Argibide gehiago
 do-not-track-option-default =
     .label = Jarraipenaren babesa erabiltzean soilik
+do-not-track-option-default-content-blocking =
+    .label = { -brand-short-name } antzemandako jarraipen-elementuak blokeatzeako konfiguratuta dagoenean soilik
 do-not-track-option-always =
     .label = Beti
 pref-page =
@@ -51,6 +53,7 @@ pane-sync-title = Firefox kontua
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } laguntza
+addons-button-label = Hedapenak eta gaiak
 focus-search =
     .key = f
 close-button =
@@ -90,6 +93,9 @@ extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name }
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = <img data-l10n-name="icon"/> { $name } hedapenak jarraipenaren babesa kontrolatzen du.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Hedapen bat, <img data-l10n-name="icon"/> { $name }, ezarpen hau kontrolatzen ari da.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = <img data-l10n-name="icon"/> { $name } hedapenak { -brand-short-name } Internetera nola konektatzen den kontrolatzen du.
@@ -203,6 +209,9 @@ choose-button =
     .label = Aukeratu…
     .accesskey = A
 choose-browser-language-description = Aukeratu { -brand-short-name }(r)en menuak, mezuak eta jakinarazpenak bistaratzeko hizkuntzak.
+manage-browser-languages-button =
+    .label = Ezarri ordezkoak…
+    .accesskey = d
 confirm-browser-language-change-description = Berrabiarazi { -brand-short-name } aldaketa hauek aplikatzeko
 confirm-browser-language-change-button = Aplikatu eta berrabiarazi
 translate-web-pages =
@@ -318,7 +327,7 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Sareko proxy-a
+network-settings-title = Sareko ezarpenak
 network-proxy-connection-description = Konfiguratu { -brand-short-name } nola konektatzen den Internetera.
 network-proxy-connection-learn-more = Argibide gehiago
 network-proxy-connection-settings =
@@ -516,6 +525,7 @@ privacy-header = Nabigatzailearen pribatutasuna
 ## Privacy Section - Forms
 
 forms-header = Inprimakiak eta pasahitzak
+logins-header = Saio-hasierak eta pasahitzak
 forms-ask-to-save-logins =
     .label = Galdetu webguneetako saio-hasierak eta pasahitzak gordetzeko
     .accesskey = G
@@ -557,9 +567,6 @@ history-dontremember-description = { -brand-short-name }(e)k nabigatze pribatuar
 history-private-browsing-permanent =
     .label = Erabili beti nabigatze pribatuko modua
     .accesskey = a
-history-remember-option =
-    .label = Gogoratu nire nabigazioaren eta deskargen historia
-    .accesskey = G
 history-remember-browser-option =
     .label = Gogoratu nabigazioaren eta deskargen historia
     .accesskey = n
@@ -585,26 +592,32 @@ sitedata-total-size-calculating = Gunearen datuen eta cachearen tamaina kalkulat
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Gordetako zure cookiek, gunearen datuek eta cacheak une honetan { $value } { $unit } hartzen dute diskoan.
 sitedata-learn-more = Argibide gehiago
-sitedata-accept-cookies-option =
-    .label = Onartu webguneetako cookie eta datuak (gomendatua)
-    .accesskey = O
-sitedata-block-cookies-option =
-    .label = Blokeatu webguneetako cookie eta datuak (webguneak haustea eragin lezake)
-    .accesskey = B
 sitedata-keep-until = Mantentze-epea
     .accesskey = M
 sitedata-keep-until-expire =
     .label = Iraungitzea
 sitedata-keep-until-closed =
     .label = { -brand-short-name } itxi arte
-sitedata-accept-third-party-desc = Onartu hirugarren guneetako cookie eta datuak
-    .accesskey = h
-sitedata-accept-third-party-always-option =
-    .label = Beti
-sitedata-accept-third-party-visited-option =
-    .label = Bisitatutako guneetatik
-sitedata-accept-third-party-never-option =
-    .label = Inoiz ez
+sitedata-allow-cookies-option =
+    .label = Onartu cookieak eta guneetako datuak
+    .accesskey = O
+sitedata-disallow-cookies-option =
+    .label = Blokeatu cookieak eta guneetako datuak
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Mota blokeatuta
+    .accesskey = M
+sitedata-block-trackers-option-recommended =
+    .label = Hirugarrenen jarraipen-elementuak (gomendatua)
+sitedata-block-trackers-option =
+    .label = Hirugarrenen jarraipen-elementuak
+sitedata-block-unvisited-option =
+    .label = Bisitatu gabeko guneetako cookieak
+sitedata-block-all-third-party-option =
+    .label = Hirugarrenen cookie guztiak (webguneak apur litzake)
+sitedata-block-all-option =
+    .label = Cookie guztiak (webguneak apurtuko ditu)
 sitedata-clear =
     .label = Garbitu datuak…
     .accesskey = G
@@ -614,6 +627,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Salbuespenak…
     .accesskey = S
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Edukia blokeatzeko zure ezarpenek eragotzi egiten dute cookie eta guneetako datuen ezarpenak aldatzea.
 
 ## Privacy Section - Address Bar
 
@@ -650,23 +667,45 @@ content-blocking-category-label = Aukeratu zer blokeatu
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Jarraipena egiten duten elementu motelak
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Karga moteltzen duten jarraipen-elementuak
     .accesskey = m
-content-blocking-fastblock-description = Kargatzeko 5 segundo edo gehiago behar duen hirugarrenen edukia blokeatzen du.
-content-blocking-fastblock-option-enabled =
-    .label = Blokeatu beti
-content-blocking-fastblock-option-disabled =
-    .label = Inoiz ez blokeatu
-content-blocking-tracking-protection-label = Jarraipen-elementuak
-    .accesskey = J
-content-blocking-tracking-protection-description = Jarraipen-elementu ezagunak blokeatzen du (oharra: zenbait orri kargatzea eragotz lezake)
-content-blocking-tracking-protection-option-enabled =
-    .label = Blokeatu beti
-content-blocking-tracking-protection-option-pbm =
-    .label = Blokeatu soilik leiho pribatuetan
-content-blocking-tracking-protection-option-disabled =
-    .label = Inoiz ez blokeatu
-content-blocking-tracking-protection-change-blocklist = Aldatu blokeo-zerrenda…
+content-blocking-fastblock-new-description = Blokeatu soilik orrien karga moteltzen duten jarraipen-elementuak.
+content-blocking-tracking-protection-trackers-label =
+    .label = Jarraipen-elementuak
+    .accesskey = r
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Antzemandako jarraipen-elementu guztiak
+    .accesskey = A
+content-blocking-tracking-protection-new-description = Blokeatu jarraipen-elementu ezagunak. (Zenbait orriren karga eragotz lezake).
+content-blocking-tracking-protection-option-always =
+    .label = Beti
+    .accesskey = B
+content-blocking-tracking-protection-option-private =
+    .label = Leiho pribatuetan soilik
+    .accesskey = h
+content-blocking-tracking-protection-change-block-list = Aldatu blokeo-zerrenda
+content-blocking-third-party-cookies-label =
+    .label = Hirugarrenen cookieak
+    .accesskey = c
+content-blocking-reject-trackers-description = Blokeatu hirugarrenen cookie guztiak edo jarraipen-elementuek ezarritakoak soilik.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Cookie eta guneetako datuen zure ezarpenek hirugarrenen cookie-ezarpenak aldatzea eragozten dute.
+content-blocking-change-cookie-settings =
+    .label = Aldatu cookie-ezarpenak
+    .accesskey = z
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Jarraipen-elementuak (gomendatua)
+    .accesskey = r
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Jarraipen-elementuak
+    .accesskey = r
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Hirugarrenen cookie guztiak (webguneak apur litzake)
+    .accesskey = H
 
 ## Privacy Section - Tracking
 
@@ -682,10 +721,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Inoiz ez
     .accesskey = I
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Babestu jarraipena egiteaz ezagunak diren guneetatik nabigatze pribatuan
-    .accesskey = b
 tracking-exceptions =
     .label = Salbuespenak…
     .accesskey = S

@@ -2,9 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-languages-window =
-    .title = Valodas
-    .style = width: 30em
+webpage-languages-window =
+    .title = Lapas valodu iestatījumi
+    .style = width: 40em
 languages-close-key =
     .key = w
 languages-description = Tīmekļa lappuses dažreiz tiek piedāvātas vairākās valodās. Izvēlēties šo tīmekļa lappušu rādīšanas valodu izvēles kārtību
@@ -38,3 +38,18 @@ languages-code-format =
     .label = { $locale }  [{ $code }]
 languages-active-code-format =
     .value = { languages-code-format.label }
+browser-languages-window =
+    .title = { -brand-short-name } valodu iestatījumi
+    .style = width: 40em
+browser-languages-description = { -brand-short-name } attēlos pirmo valodu kā noklusēto un pārējās valodas, ja nepieciešams tādā secībā, kādā tās būs sarakstā.
+browser-languages-search = Meklē citas valodas...
+browser-languages-searching =
+    .label = Meklē valodas...
+browser-languages-downloading =
+    .label = Lejupielādē…
+browser-languages-select-language =
+    .label = Izvēlieties valodu, kuru pievienot ...
+    .placeholder = Izvēlieties valodu, kuru pievienot ...
+browser-languages-installed-label = Instalētās valodas
+browser-languages-available-label = Pieejamās valodas
+browser-languages-error = { -brand-short-name } pašlaik nevar atjaunināt valodas. Pārbaudiet, vai ir izveidots savienojums ar internetu un mēģiniet vēlreiz.

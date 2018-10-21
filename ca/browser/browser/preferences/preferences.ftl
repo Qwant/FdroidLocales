@@ -92,6 +92,9 @@ extension-controlled-privacy-containers = L'extensió «<img data-l10n-name="ico
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = L'extensió «<img data-l10n-name="icon"/> { $name }» controla la protecció contra el seguiment.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Una extensió,  <img data-l10n-name="icon"/> { $name }, està controlant aquest paràmetre.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = L'extensió «<img data-l10n-name="icon"/> { $name }» controla la forma com el { -brand-short-name } es connecta a Internet.
@@ -522,6 +525,7 @@ privacy-header = Privadesa del navegador
 ## Privacy Section - Forms
 
 forms-header = Formularis i contrasenyes
+logins-header = Inicis de sessió i contrasenyes
 forms-ask-to-save-logins =
     .label = Demana si vull desar les dades d'inici de sessió i contrasenyes dels llocs web
     .accesskey = d
@@ -624,10 +628,6 @@ sitedata-block-trackers-option =
     .label = Elements de seguiment de tercers
 sitedata-block-unvisited-option =
     .label = Galetes de llocs webs no visitats
-sitedata-block-all-third-parties-option =
-    .label = Totes les galetes de tercers
-sitedata-block-always-option =
-    .label = Totes les galetes (pot fer que alguns llocs web no funcionin)
 sitedata-block-all-third-party-option =
     .label = Totes les galetes de tercers (pot fer que alguns llocs web no funcionin)
 sitedata-block-all-option =
@@ -641,6 +641,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Excepcions…
     .accesskey = E
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Els paràmetres de «Bloqueig de contingut» impedeixen fer canvis en els paràmetres de «Galetes i dades dels llocs».
 
 ## Privacy Section - Address Bar
 
@@ -677,47 +681,33 @@ content-blocking-category-label = Trieu què voleu blocar
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Elements de seguiment lents
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Elements de seguiment lents
     .accesskey = s
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-label = Elements de seguiment que triguen a carregar-se
-    .accesskey = s
-content-blocking-fastblock-description = Bloca el contingut de tercers que triga més de 5 segons a carregar.
-content-blocking-fastblock-option-enabled =
-    .label = Bloca sempre
-content-blocking-fastblock-option-disabled =
-    .label = No bloquis mai
-content-blocking-tracking-protection-label = Elements de seguiment
+content-blocking-fastblock-new-description = Bloca només els elements de seguiment que alenteixen la càrrega de les pàgines.
+content-blocking-tracking-protection-trackers-label =
+    .label = Elements de seguiment
     .accesskey = t
-content-blocking-tracking-protection-all-label = Tots els elements de seguiment detectats
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Tots els elements de seguiment detectats
     .accesskey = T
-content-blocking-tracking-protection-description = Bloca tots els elements de seguiment coneguts (i també pot fer que algunes pàgines no es carreguin).
-content-blocking-tracking-protection-option-enabled =
-    .label = Bloca sempre
-content-blocking-tracking-protection-option-pbm =
-    .label = Bloca només en finestres privades
-content-blocking-tracking-protection-option-disabled =
-    .label = No bloquis mai
+content-blocking-tracking-protection-new-description = Bloca tots els elements de seguiment coneguts (pot fer que algunes pàgines no es carreguin).
 content-blocking-tracking-protection-option-always =
     .label = Sempre
     .accesskey = S
 content-blocking-tracking-protection-option-private =
     .label = Només en finestres privades
     .accesskey = N
-content-blocking-tracking-protection-change-blocklist = Canvia la llista de bloquejos…
-content-blocking-reject-trackers-label = Galetes de tercers
+content-blocking-tracking-protection-change-block-list = Canvia la llista de bloquejos
+content-blocking-third-party-cookies-label =
+    .label = Galetes de tercers
     .accesskey = G
 content-blocking-reject-trackers-description = Bloca totes les galetes de tercers o només les que creen els elements de seguiment.
 # This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the "All cookies" option
-# being selected in the Cookies and Site Data section of the UI.
-content-blocking-reject-trackers-warning-all-cookies-blocked = Actualment totes les galetes estan blocades.
-# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the "Cookies from unvisited websites"
-# option being selected in the Cookies and Site Data section of the UI.
-content-blocking-reject-trackers-warning-from-unvisited-cookies-blocked = Actualment les galetes de llocs webs no visitats estan blocades.
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Els paràmetres de «Galetes i dades dels llocs» impedeixen fer canvis en els paràmetres de «Galetes de tercers».
 content-blocking-change-cookie-settings =
     .label = Canvi de paràmetres de galetes
     .accesskey = s

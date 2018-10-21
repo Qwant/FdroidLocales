@@ -5,7 +5,9 @@
 do-not-track-description = Trimite site-urilor web un semnal „Nu urmări” prin care nu vrei să fii urmărit
 do-not-track-learn-more = Află mai multe
 do-not-track-option-default =
-    .label = Doar când se folosește protecția față de urmărire
+    .label = Doar când se folosește protecția împotriva urmăririi
+do-not-track-option-default-content-blocking =
+    .label = Numai când { -brand-short-name } este setat să blocheze urmăritorii detectați
 do-not-track-option-always =
     .label = Întotdeauna
 pref-page =
@@ -51,6 +53,7 @@ pane-sync-title = Cont Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Suport { -brand-short-name }
+addons-button-label = Extensii și teme
 focus-search =
     .key = f
 close-button =
@@ -89,7 +92,10 @@ extension-controlled-default-search = O extensie, <img data-l10n-name="icon"/> {
 extension-controlled-privacy-containers = O extensie, <img data-l10n-name="icon"/> { $name }, necesită file container.
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = O extensie, <img data-l10n-name="icon"/> { $name }, controlează protecția față de urmărire.
+extension-controlled-websites-tracking-protection-mode = O extensie, <img data-l10n-name="icon"/> { $name }, controlează protecția împotriva urmăririi.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = O extensie, <img data-l10n-name="icon"/> { $name }, controlează setarea.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = O extensie, <img data-l10n-name="icon"/> { $name }, controlează modul în care { -brand-short-name } se conectează la internet.
@@ -205,11 +211,11 @@ choose-language-description = Alege limba în care preferi să vezi paginile
 choose-button =
     .label = Alege…
     .accesskey = o
-choose-browser-language-description = Alege limbile folosite pentru a afișa meniuri, mesaje și notificari de la { -brand-short-name }.
+choose-browser-language-description = Alege limbile folosite pentru afișarea meniurilor, mesajelor și notificărilor de la { -brand-short-name }.
 manage-browser-languages-button =
     .label = Setează alternative...
     .accesskey = l
-confirm-browser-language-change-description = Repornește { -brand-short-name } pentru a aplica aceste schimbări
+confirm-browser-language-change-description = Repornește { -brand-short-name } pentru aplicarea modificărilor
 confirm-browser-language-change-button = Aplică și repornește
 translate-web-pages =
     .label = Tradu conținutul web
@@ -266,7 +272,7 @@ update-application-version = Versiunea { $version } <a data-l10n-name="learn-mor
 update-history =
     .label = Afișează istoricul actualizărilor…
     .accesskey = p
-update-application-allow-description = Permite-i lui { -brand-short-name }
+update-application-allow-description = Permite ca { -brand-short-name }
 update-application-auto =
     .label = Să instaleze automat actualizări (recomandat)
     .accesskey = A
@@ -297,7 +303,7 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Limita proceselor pentru conținut
     .accesskey = L
 performance-limit-content-process-enabled-desc = Procesele adiționale pentru conținut pot îmbunătăți performanța atunci când se folosesc mai multe file, însă va consuma și mai multă memorie.
-performance-limit-content-process-blocked-desc = Modificarea numărului de procese pentru conținut este posibilă doar cu funcția de multiprocese din { -brand-short-name }. <a data-l10n-name="learn-more">Învaţă cum să verifici dacă funcția de multiprocese este activată</a>
+performance-limit-content-process-blocked-desc = Modificarea numărului de procese pentru conținut este posibilă doar cu funcția de multiprocese din { -brand-short-name }. <a data-l10n-name="learn-more">Învață cum să verifici dacă funcția de multiprocese este activată</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
@@ -324,7 +330,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Proxy pentru rețea
 network-settings-title = Setări de rețea
 network-proxy-connection-description = Configurează modul în care { -brand-short-name } se conectează la internet.
 network-proxy-connection-learn-more = Află mai multe
@@ -335,7 +340,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Ferestre și file noi
-home-new-windows-tabs-description2 = Alege ceea ce vezi când deschizi pagina de start, ferestre noi sau file noi.
+home-new-windows-tabs-description2 = Alege ce vezi când deschizi pagina de start, ferestre noi și file noi.
 
 ## Home Section - Home Page Customization
 
@@ -375,7 +380,7 @@ search-bar-header = Bară de căutare
 search-bar-hidden =
     .label = Folosește bara de adresă pentru căutare și navigare
 search-bar-shown =
-    .label = Adaugă bara de căutare în bara de instrumente
+    .label = Adaugă bara de căutare în bara de unelte
 search-engine-default-header = Motor de căutare implicit
 search-engine-default-desc = Alege motorul de căutare implicit pentru a fi folosit în bara de adresă și în bara de căutare.
 search-suggestions-option =
@@ -523,6 +528,7 @@ privacy-header = Confidențialitate în browser
 ## Privacy Section - Forms
 
 forms-header = Formulare și parole
+logins-header = Autentificări și parole
 forms-ask-to-save-logins =
     .label = Solicită salvarea autentificărilor și parolelor pentru site-urile web
     .accesskey = r
@@ -589,26 +595,12 @@ sitedata-total-size-calculating = Se calculează datele site-urilor și dimensiu
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Cookie-urile stocate, datele site-urilor și cache-ul folosesc în prezent { $value } { $unit } din spațiul de pe disc.
 sitedata-learn-more = Află mai multe
-sitedata-accept-cookies-option =
-    .label = Acceptă cookie-urile și datele site-urilor de la site-uri web (recomandat)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = Blochează cookie-urile și datele site-urilor (poate provoca afectarea aspectului site-urilor web)
-    .accesskey = B
 sitedata-keep-until = Păstrează-le până când
     .accesskey = u
 sitedata-keep-until-expire =
     .label = Expiră
 sitedata-keep-until-closed =
     .label = { -brand-short-name } este închis
-sitedata-accept-third-party-desc = Acceptă cookie-urile de la terți și datele site-urilor
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = Întotdeauna
-sitedata-accept-third-party-visited-option =
-    .label = De la site-urile vizitate
-sitedata-accept-third-party-never-option =
-    .label = Niciodată
 sitedata-allow-cookies-option =
     .label = Acceptă cookie-uri și datele site-urilor
     .accesskey = A
@@ -619,12 +611,16 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Tipul conținutului blocat
     .accesskey = T
+sitedata-block-trackers-option-recommended =
+    .label = Urmăritori de la terți (recomandat)
+sitedata-block-trackers-option =
+    .label = Urmăritori de la terți
 sitedata-block-unvisited-option =
     .label = Cookie-uri de la site-urile web nevizitate
-sitedata-block-all-third-parties-option =
-    .label = Toate cookie-urile de la terți
-sitedata-block-always-option =
-    .label = Toate cookie-urile (poate provoca afectarea aspectului site-urilor web)
+sitedata-block-all-third-party-option =
+    .label = Toate cookie-urile de la terți (poate împiedica funcționarea site-urilor web)
+sitedata-block-all-option =
+    .label = Toate cookie-urile (va împiedica funcționarea site-urilor web)
 sitedata-clear =
     .label = Șterge datele…
     .accesskey = l
@@ -634,6 +630,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Excepții…
     .accesskey = E
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Setările din blocarea de conținut împiedică modificările din setările pentru cookie-uri și datele site-urilor.
 
 ## Privacy Section - Address Bar
 
@@ -670,29 +670,51 @@ content-blocking-category-label = Alege ceea ce să blochezi
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Afișează elementele de urmărire
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Urmăritori cu încărcare lentă
     .accesskey = S
-content-blocking-fastblock-description = Blochează conținutul de la terți care durează mai mult de 5 secunde să încarce.
-content-blocking-fastblock-option-enabled =
-    .label = Blochează întotdeauna
-content-blocking-fastblock-option-disabled =
-    .label = Nu bloca niciodată
-content-blocking-tracking-protection-label = Urmăritori
+content-blocking-fastblock-new-description = Blochează numai urmăritorii care împiedică încărcarea rapidă a paginilor.
+content-blocking-tracking-protection-trackers-label =
+    .label = Mecanisme de urmărire
+    .accesskey = U
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Toți urmăritorii detectați
     .accesskey = T
-content-blocking-tracking-protection-description = Blochează toți urmăritorii cunoscuți (Notă: ar putea și să împiedice încărcarea unor pagini).
-content-blocking-tracking-protection-option-enabled =
-    .label = Blochează întotdeauna
-content-blocking-tracking-protection-option-pbm =
-    .label = Blochează doar în ferestrele private
-content-blocking-tracking-protection-option-disabled =
-    .label = Nu bloca niciodată
-content-blocking-tracking-protection-change-blocklist = Schimbă lista de blocări…
+content-blocking-tracking-protection-new-description = Blochează toți urmăritorii cunoscuți. (Poate împiedica încărcarea anumitor pagini.)
+content-blocking-tracking-protection-option-always =
+    .label = Întotdeauna
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = Doar în ferestre private
+    .accesskey = P
+content-blocking-tracking-protection-change-block-list = Modifică lista de blocare
+content-blocking-third-party-cookies-label =
+    .label = Cookie-uri de la terți
+    .accesskey = C
+content-blocking-reject-trackers-description = Blochează toate cookie-urile de la terți sau numai pe cele instalate de urmăritori.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Setările pentru cookie-uri și datele site-urilor împiedică modificările din setările pentru cookie-uri de la terți.
+content-blocking-change-cookie-settings =
+    .label = Modifică setările pentru cookie-uri
+    .accesskey = S
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Urmăritori (recomandat)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Urmăritori
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Toate cookie-urile de la terți (poate împiedica funcționarea site-urilor web)
+    .accesskey = A
 
 ## Privacy Section - Tracking
 
-tracking-header = Protecția față de urmărire
-tracking-desc = Protecția față de urmărire blochează urmăritorii online care îți colectează datele de navigare pe mai multe site-uri web. <a data-l10n-name="learn-more">Află mai multe despre protecția față de urmărire și confidențialitate</a>
-tracking-mode-label = Folosește protecția față de urmărire pentru a bloca urmăritorii cunoscuți
+tracking-header = Protecția împotriva urmăririi
+tracking-desc = Protecția împotriva urmăririi blochează urmăritorii online care îți colectează datele de navigare pe mai multe site-uri web. <a data-l10n-name="learn-more">Află mai multe despre protecția împotriva urmăririi și confidențialitate</a>
+tracking-mode-label = Folosește protecția împotriva urmăririi pentru a bloca urmăritorii cunoscuți
 tracking-mode-always =
     .label = Întotdeauna
     .accesskey = y
@@ -702,10 +724,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Niciodată
     .accesskey = N
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Folosește protecția față de urmărire pentru a bloca urmăritorii cunoscuți
-    .accesskey = v
 tracking-exceptions =
     .label = Excepții…
     .accesskey = x
@@ -770,14 +788,14 @@ permissions-a11y-privacy-link = Află mai multe
 ## Privacy Section - Data Collection
 
 collection-header = Colectarea și utilizarea de date din { -brand-short-name }
-collection-description = Ne străduim să îți oferim posibilitatea de a face alegeri și colectăm doar ceea ce avem nevoie ca să furnizăm și să îmbunătățim { -brand-short-name } pentru toată lumea. Întotdeauna solicităm permisiunea înainte de a primi informații personale.
+collection-description = Ne străduim să îți oferim posibilitatea de a face alegeri și colectăm doar ceea ce avem nevoie ca să furnizăm și să îmbunătățim { -brand-short-name } pentru toată lumea. Întotdeauna solicităm permisiunea înainte de a primi informații cu caracter personal.
 collection-privacy-notice = Politica de confidențialitate
 collection-health-report =
     .label = Permite-i lui { -brand-short-name } să trimită informații tehnice și interactive către { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Află mai multe
 collection-studies =
-    .label = Permite-i lui { -brand-short-name } să instaleze și să realizeze studii
+    .label = Permite ca { -brand-short-name } să instaleze și să realizeze studii
 collection-studies-link = Vezi studiile { -brand-short-name }
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
@@ -797,7 +815,7 @@ collection-backlogged-crash-reports-link = Află mai multe
 ## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 
 security-header = Securitate
-security-browsing-protection = Protecție privind conținutul înșelător și programele periculoase
+security-browsing-protection = Protecție împotriva conținutului înșelător și a programelor periculoase
 security-enable-safe-browsing =
     .label = Blochează conținutul periculos și înșelător
     .accesskey = B
@@ -806,7 +824,7 @@ security-block-downloads =
     .label = Blochează descărcările periculoase
     .accesskey = d
 security-block-uncommon-software =
-    .label = Avertizează despre programe nedorite sau suspecte
+    .label = Avertizează despre programe nedorite sau neobișnuite
     .accesskey = c
 
 ## Privacy Section - Certificates

@@ -123,9 +123,9 @@ startup-header = Запуск
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = Разрешить одновременный запуск { -brand-short-name } и Firefox
-use-firefox-sync = Совет: При этом используются отдельные профили. Используйте Синхронизацию для обмена между ними данными.
-get-started-not-logged-in = Войти в Синхронизацию…
-get-started-configured = Открыть настройки Синхронизации
+use-firefox-sync = Совет: При этом используются отдельные профили. Используйте { -sync-brand-short-name[accusative] } для обмена между ними данными.
+get-started-not-logged-in = Войти в { -sync-brand-short-name[accusative] }…
+get-started-configured = Открыть настройки { -sync-brand-short-name[genitive] }
 always-check-default =
     .label = Всегда проверять, является ли { -brand-short-name } вашим браузером по умолчанию
     .accesskey = а
@@ -211,6 +211,9 @@ choose-button =
     .label = Выбрать…
     .accesskey = ы
 choose-browser-language-description = Выберите язык отображения меню, сообщений и уведомлений от { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Выбрать альтернативные…
+    .accesskey = ы
 confirm-browser-language-change-description = Перезапустите { -brand-short-name } для применения этих изменений
 confirm-browser-language-change-button = Применить и перезапустить
 translate-web-pages =
@@ -431,7 +434,7 @@ containers-remove-button =
 
 sync-signedout-caption = Возьмите свой Интернет с собой
 sync-signedout-description = Синхронизируйте свои закладки, историю, вкладки, пароли, дополнения и настройки на всех ваших устройствах.
-sync-signedout-account-title = Соединитесь с Аккаунтом Firefox
+sync-signedout-account-title = Соединитесь с { -fxaccount-brand-name[instrumental] }
 sync-signedout-account-create = Нет аккаунта? Давайте его создадим
     .accesskey = е
 sync-signedout-account-signin =
@@ -525,6 +528,7 @@ privacy-header = Приватность браузера
 ## Privacy Section - Forms
 
 forms-header = Формы и Пароли
+logins-header = Логины и пароли
 forms-ask-to-save-logins =
     .label = Запрашивать сохранение логинов и паролей для веб-сайтов
     .accesskey = ш
@@ -627,10 +631,6 @@ sitedata-block-trackers-option =
     .label = Сторонние трекеры
 sitedata-block-unvisited-option =
     .label = Куки с непосещённых сайтов
-sitedata-block-all-third-parties-option =
-    .label = Все сторонние куки
-sitedata-block-always-option =
-    .label = Все куки (может нарушить работу веб-сайтов)
 sitedata-block-all-third-party-option =
     .label = Все сторонние куки (может нарушить работу веб-сайтов)
 sitedata-block-all-option =
@@ -644,6 +644,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Исключения…
     .accesskey = ю
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Ваши настройки в Блокировке содержимого не дают произвести изменения настроек в Куки и данные сайтов.
 
 ## Privacy Section - Address Bar
 
@@ -680,30 +684,17 @@ content-blocking-category-label = Выберите, что блокироват�
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Медленные трекеры
-    .accesskey = л
-content-blocking-fastblock-description = Блокирует стороннее содержимое, загружающееся более 5 секунд.
-content-blocking-fastblock-option-enabled =
-    .label = Всегда блокировать
-content-blocking-fastblock-option-disabled =
-    .label = Никогда не блокировать
-content-blocking-tracking-protection-label = Все трекеры
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Медленные трекеры
+    .accesskey = н
+content-blocking-fastblock-new-description = Блокировать только трекеры, не дающие страницам быстро загружаться.
+content-blocking-tracking-protection-trackers-label =
+    .label = Трекеры
+    .accesskey = к
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Все обнаруженные трекеры
     .accesskey = е
-content-blocking-tracking-protection-description = Блокирует все известные трекеры (Примечание: может также предотвратить загрузку некоторых страниц).
-content-blocking-tracking-protection-option-enabled =
-    .label = Всегда блокировать
-content-blocking-tracking-protection-option-pbm =
-    .label = Блокировать только в приватных окнах
-content-blocking-tracking-protection-option-disabled =
-    .label = Никогда не блокировать
-content-blocking-tracking-protection-change-blocklist = Сменить список блокировки…
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-label = Медленные трекеры
-    .accesskey = е
-content-blocking-tracking-protection-all-label = Все обнаруженные трекеры
-    .accesskey = ж
+content-blocking-tracking-protection-new-description = Блокировать все известные трекеры (Некоторые страницы могут не открыться).
 content-blocking-tracking-protection-option-always =
     .label = Всегда
     .accesskey = а
@@ -711,14 +702,20 @@ content-blocking-tracking-protection-option-private =
     .label = Только в приватных окнах
     .accesskey = и
 content-blocking-tracking-protection-change-block-list = Сменить список блокировки
-content-blocking-reject-trackers-label = Сторонние куки
-    .accesskey = н
+content-blocking-third-party-cookies-label =
+    .label = Сторонние куки
+    .accesskey = о
 content-blocking-reject-trackers-description = Блокировать все сторонние куки или только установленные трекерами.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Ваши настройки в Куки и данные сайтов не дают произвести изменения настроек в Сторонние куки.
 content-blocking-change-cookie-settings =
     .label = Изменить параметры куков
     .accesskey = м
 content-blocking-reject-trackers-block-trackers-option-recommended =
-    .label = Трекеры (рекомендуемые)
+    .label = Трекеры (рекомендуется)
     .accesskey = ы
 content-blocking-reject-trackers-block-trackers-option =
     .label = Все трекеры

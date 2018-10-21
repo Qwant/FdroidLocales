@@ -53,6 +53,7 @@ pane-sync-title = Firefox ખાતુ
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } આધાર
+addons-button-label = એક્સ્ટેન્શન્સ અને થીમ્સ
 focus-search =
     .key = f
 close-button =
@@ -326,7 +327,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = નેટવર્ક પ્રોક્સી
 network-settings-title = નેટવર્ક સેટિંગ્સ
 network-proxy-connection-description = કેવી રીતે { -brand-short-name } ઇન્ટરનેટ સાથે જોડાય છે તે ગોઠવો.
 network-proxy-connection-learn-more = વધુ શીખો
@@ -525,6 +525,7 @@ privacy-header = બ્રાઉઝર ગોપનીયતા
 ## Privacy Section - Forms
 
 forms-header = ફોર્મ્સ & પાસવર્ડ્સ
+logins-header = લૉગ-ઇન્સ અને પાસવર્ડ્સ
 forms-ask-to-save-logins =
     .label = વેબસાઇટ્સ માટે લૉગિન અને પાસવર્ડ્સ સાચવવા માટે પૂછો
     .accesskey = r
@@ -591,26 +592,12 @@ sitedata-total-size-calculating = સાઇટ ડેટા અને કેશ 
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = તમારી સંગ્રહિત કૂકીઝ, સાઇટ ડેટા અને કેશ હાલમાં { $value } { $unit } જગ્યા નો ઉપયોગ કરી રહ્યાં છે.
 sitedata-learn-more = વધુ શીખો
-sitedata-accept-cookies-option =
-    .label = વેબસાઇટ્સથી કૂકીઝ અને સાઇટ ડેટાને સ્વીકારો (ભલામણ કરેલ).
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = કૂકીઝ અને સાઇટ ડેટાને અવરોધિત કરો (વેબસાઇટ્સને બંધ કરવા કારણ બની શકે છે)
-    .accesskey = B
 sitedata-keep-until = ત્યાં સુધી રાખો
     .accesskey = u
 sitedata-keep-until-expire =
     .label = સમાપ્ત થાયા
 sitedata-keep-until-closed =
     .label = { -brand-short-name } બંધ છે
-sitedata-accept-third-party-desc = તૃતીય-પક્ષ કૂકીઝ અને સાઇટ ડેટાને સ્વીકારો
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = હંમેશા
-sitedata-accept-third-party-visited-option =
-    .label = મુલાકાત લીધેલ
-sitedata-accept-third-party-never-option =
-    .label = ક્યારેય નહિં
 sitedata-allow-cookies-option =
     .label = કૂકીઝ અને સાઇટ ડેટાને સ્વીકારો
     .accesskey = A
@@ -627,10 +614,6 @@ sitedata-block-trackers-option =
     .label = તૃતીય-પક્ષ ટ્રેકર્સ
 sitedata-block-unvisited-option =
     .label = મુલાકાત લીધેલી વેબસાઇટ્સ પરથી કૂકીઝ
-sitedata-block-all-third-parties-option =
-    .label = બધી તૃતીય-પક્ષ કૂકીઝ
-sitedata-block-always-option =
-    .label = બધી કૂકીઝ (વેબસાઇટ્સને બંધ કરવા કારણ બની શકે છે)
 sitedata-block-all-third-party-option =
     .label = બધી તૃતીય-પક્ષ કૂકીઝ (વેબસાઇટ્સને બંધ કરવા કારણ બની શકે છે)
 sitedata-block-all-option =
@@ -684,30 +667,15 @@ content-blocking-category-label = શું અવરોધ કરવું ત�
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = ધીમા ટ્રેકિંગ તત્વો
-    .accesskey = S
-content-blocking-fastblock-description = તૃતીય-પક્ષની સામગ્રીને અવરોધ કરે છે જે લોડ થવામાં 5 સેકંડથી વધુ સમય લે છે.
-content-blocking-fastblock-option-enabled =
-    .label = હંમેશા અવરોધિત કરો
-content-blocking-fastblock-option-disabled =
-    .label = ક્યારેય અવરોધિત કરશો નહીં
-content-blocking-tracking-protection-label = ટ્રેકર્સ
-    .accesskey = T
-content-blocking-tracking-protection-description = બધા જાણીતા ટ્રેકર્સને અવરોધ કરે છે
-content-blocking-tracking-protection-option-enabled =
-    .label = હંમેશા અવરોધિત કરો
-content-blocking-tracking-protection-option-pbm =
-    .label = ફક્ત ખાનગી વિંડોઝમાં અવરોધિત કરો
-content-blocking-tracking-protection-option-disabled =
-    .label = ક્યારેય અવરોધિત કરશો નહીં
-content-blocking-tracking-protection-change-blocklist = અવરોધ સૂચિ બદલો...
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-label = ધીમો-લોડિંગ ટ્રેકર
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = ધીરેથી લોડ થતાં ટ્રેકર્સ
     .accesskey = S
 content-blocking-fastblock-new-description = ફક્ત એજ ટ્રેકર્સને અવરોધિત કરો કે જે પાનાંને ઝડપથી ખોલવાથી અટકાવે છે.
-content-blocking-tracking-protection-all-label = બધા શોધાયેલા ટ્રેકર્સ
+content-blocking-tracking-protection-trackers-label =
+    .label = ટ્રેકર્સ
+    .accesskey = T
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = શોધી કાઢેલાં બધાં ટ્રેકર્સ
     .accesskey = T
 content-blocking-tracking-protection-new-description = તમામ જાણીતા ટ્રેકર્સને અવરોધિત કરો. (કેટલાક પાનાંને લોડ થવાથી અટકાવી શકે છે.)
 content-blocking-tracking-protection-option-always =
@@ -717,7 +685,8 @@ content-blocking-tracking-protection-option-private =
     .label = ફકત ખાનગી વિંડોઝમાં જ
     .accesskey = P
 content-blocking-tracking-protection-change-block-list = અવરોધ સૂચિ બદલો
-content-blocking-reject-trackers-label = તૃતીય-પક્ષ કૂકીઝ
+content-blocking-third-party-cookies-label =
+    .label = તૃતીય-પક્ષ કૂકીઝ
     .accesskey = C
 content-blocking-reject-trackers-description = તમામ તૃતીય-પક્ષની કૂકીઝને અથવા ફક્ત ટ્રેકર્સ દ્વારા સેટ કરેલ કૂકીઝને અવરોધિત કરો.
 # This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
@@ -752,10 +721,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = ક્યારેય નહિં
     .accesskey = n
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = જાણીતા ટ્રેકર્સને અવરોધિત કરવા માટે ખાનગી બ્રાઉઝિંગમાં ટ્રેકિંગ પ્રોટેક્શનનો ઉપયોગ કરો
-    .accesskey = v
 tracking-exceptions =
     .label = અપવાદો…
     .accesskey = x

@@ -53,6 +53,7 @@ pane-sync-title = Firefox-tili
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name }-tuki
+addons-button-label = Laajennukset ja teemat
 focus-search =
     .key = f
 close-button =
@@ -326,7 +327,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Verkon välityspalvelin
 network-settings-title = Verkkoasetukset
 network-proxy-connection-description = Muokkaa { -brand-short-name }in verkkoyhteysasetuksia.
 network-proxy-connection-learn-more = Lue lisää
@@ -525,6 +525,7 @@ privacy-header = Selaimen tietosuoja
 ## Privacy Section - Forms
 
 forms-header = Lomakkeet ja salasanat
+logins-header = Käyttäjätunnukset ja salasanat
 forms-ask-to-save-logins =
     .label = Ehdota sivustojen käyttäjätunnusten ja salasanojen tallentamista
     .accesskey = v
@@ -591,26 +592,12 @@ sitedata-total-size-calculating = Lasketaan sivustotietojen ja välimuistin koko
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Evästeet, sivustotiedot ja välimuisti vievät tällä hetkellä { $value } { $unit } levytilaa.
 sitedata-learn-more = Lue lisää
-sitedata-accept-cookies-option =
-    .label = Hyväksy evästeet ja sivustotiedot sivustoilta (suositus)
-    .accesskey = H
-sitedata-block-cookies-option =
-    .label = Estä evästeet ja sivustotiedot (voi aiheuttaa sivustojen toimimattomuutta)
-    .accesskey = E
 sitedata-keep-until = Säilytä evästeet
     .accesskey = t
 sitedata-keep-until-expire =
     .label = kunnes ne vanhenevat
 sitedata-keep-until-closed =
     .label = kunnes { -brand-short-name } suljetaan
-sitedata-accept-third-party-desc = Hyväksy kolmannen osapuolen evästeet ja sivustotiedot
-    .accesskey = k
-sitedata-accept-third-party-always-option =
-    .label = Aina
-sitedata-accept-third-party-visited-option =
-    .label = Vierailluilta sivustoilta
-sitedata-accept-third-party-never-option =
-    .label = Ei milloinkaan
 sitedata-allow-cookies-option =
     .label = Hyväksy evästeet ja sivustotiedot
     .accesskey = H
@@ -627,14 +614,10 @@ sitedata-block-trackers-option =
     .label = Kolmannen osapuolen seuraimet
 sitedata-block-unvisited-option =
     .label = Evästeet vierailemattomilta sivustoilta
-sitedata-block-all-third-parties-option =
-    .label = Kaikki kolmannen osapuolen evästeet
-sitedata-block-always-option =
-    .label = Kaikki evästeet (voi aiheuttaa sivustojen toimimattomuutta)
 sitedata-block-all-third-party-option =
-    .label = Kaikki 3. osapuolen evästeet (voi aiheuttaa sivustojen toimimattomuutta)
+    .label = Kaikki 3. osapuolen evästeet (voi aiheuttaa sivustovirheitä)
 sitedata-block-all-option =
-    .label = Kaikki evästeet (aiheuttaa sivustojen toimimattomutta)
+    .label = Kaikki evästeet (aiheuttaa sivustovirheitä)
 sitedata-clear =
     .label = Tyhjennä tiedot…
     .accesskey = y
@@ -684,31 +667,16 @@ content-blocking-category-label = Valitse, mitä estetään
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Hitaat seurantaelementit
-    .accesskey = H
-content-blocking-fastblock-description = Estää kolmannen osapuolen sisällön, jonka latautumisessa kestää pidempään kuin 5 sekuntia.
-content-blocking-fastblock-option-enabled =
-    .label = Estä aina
-content-blocking-fastblock-option-disabled =
-    .label = Älä estä koskaan
-content-blocking-tracking-protection-label = Seuraimet
-    .accesskey = S
-content-blocking-tracking-protection-description = Estää tunnetut seuraimet (huomaa: voi estää joitain sivuja latautumasta).
-content-blocking-tracking-protection-option-enabled =
-    .label = Estä aina
-content-blocking-tracking-protection-option-pbm =
-    .label = Estä vain yksityisissä ikkunoissa
-content-blocking-tracking-protection-option-disabled =
-    .label = Älä estä koskaan
-content-blocking-tracking-protection-change-blocklist = Muuta estolistaa…
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-label = Hitaasti latautuvat seuraimet
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Hitaasti latautuvat seuraimet
     .accesskey = H
 content-blocking-fastblock-new-description = Estää vain seuraimet, jotka estävät sivuja latautumasta nopeasti.
-content-blocking-tracking-protection-all-label = Kaikki havaitut seuraimet
-    .accesskey = s
+content-blocking-tracking-protection-trackers-label =
+    .label = Seuraimet
+    .accesskey = t
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Kaikki havaitut seuraimet
+    .accesskey = K
 content-blocking-tracking-protection-new-description = Estää kaikki tunnetut seuraimet. (Saattaa estää joitain sivuja latautumasta.)
 content-blocking-tracking-protection-option-always =
     .label = Aina
@@ -717,8 +685,9 @@ content-blocking-tracking-protection-option-private =
     .label = Vain yksityisissä ikkunoissa
     .accesskey = y
 content-blocking-tracking-protection-change-block-list = Muuta estolistaa
-content-blocking-reject-trackers-label = Kolmannen osapuolen evästeet
-    .accesskey = K
+content-blocking-third-party-cookies-label =
+    .label = Kolmannen osapuolen evästeet
+    .accesskey = E
 content-blocking-reject-trackers-description = Estää kaikki kolmannen osapuolen evästeet tai vain seurainten asettamat evästeet.
 # This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
 # of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
@@ -752,10 +721,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Ei koskaan
     .accesskey = E
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Käytä seurannan suojausta yksityisessä selauksessa estämään tunnettuja seuraimia
-    .accesskey = m
 tracking-exceptions =
     .label = Poikkeukset…
     .accesskey = P

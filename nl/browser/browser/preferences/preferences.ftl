@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = Websites een ‘Niet volgen’-signaal sturen om te laten weten dat u niet wilt worden gevolgd
+do-not-track-description = Websites een ‘Niet volgen’-signaal sturen om te laten weten dat u niet gevolgd wilt worden
 do-not-track-learn-more = Meer info
 do-not-track-option-default =
     .label = Alleen bij gebruik van Bescherming tegen volgen
@@ -63,6 +63,8 @@ category-sync =
 
 help-button-label = { -brand-short-name } Support
 
+addons-button-label = Extensies & Thema’s
+
 focus-search =
     .key = f
 
@@ -90,11 +92,15 @@ restart-later = Later herstarten
 
 # This string is shown to notify the user that their home page
 # is being controlled by an extension.
-extension-controlled-homepage-override = Een extensie, <img data-l10n-name="icon"/> { $name }, beheert uw startpagina.
+extension-controlled-homepage-override = Een extensie, <img data-l10n-name="icon"/> { $name }, heeft beheer over uw startpagina.
 
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
-extension-controlled-new-tab-url = Een extensie, <img data-l10n-name="icon"/> { $name }, beheert uw nieuw-tabbladpagina.
+extension-controlled-new-tab-url = Een extensie, <img data-l10n-name="icon"/> { $name }, heeft beheer over uw nieuw-tabbladpagina.
+
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications= Een extensie, <img data-l10n-name="icon"/> { $name }, heeft beheer over deze instelling.
 
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
@@ -414,8 +420,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Netwerkproxy
-
 network-settings-title = Netwerkinstellingen
 
 network-proxy-connection-description = Configureren hoe { -brand-short-name } verbinding maakt met het internet.
@@ -665,6 +669,8 @@ privacy-header = Browserprivacy
 ## Privacy Section - Forms
 
 forms-header = Formulieren & Wachtwoorden
+
+logins-header = Aanmeldingen & Wachtwoorden
 forms-ask-to-save-logins =
     .label = Vragen voor opslaan van aanmeldingen en wachtwoorden voor websites
     .accesskey = r
@@ -744,14 +750,6 @@ sitedata-total-size = Uw opgeslagen cookies, websitegegevens en buffer gebruiken
 
 sitedata-learn-more = Meer info
 
-sitedata-accept-cookies-option =
-    .label = Cookies en websitegegevens van websites accepteren (aanbevolen)
-    .accesskey = C
-
-sitedata-block-cookies-option =
-    .label = Cookies en websitegegevens blokkeren (kan ervoor zorgen dat websites niet goed werken)
-    .accesskey = b
-
 sitedata-keep-until = Bewaren totdat
     .accesskey = B
 
@@ -759,16 +757,6 @@ sitedata-keep-until-expire =
     .label = Ze verlopen
 sitedata-keep-until-closed =
     .label = { -brand-short-name } wordt afgesloten
-
-sitedata-accept-third-party-desc = Cookies van derden en websitegegevens accepteren
-    .accesskey = d
-
-sitedata-accept-third-party-always-option =
-    .label = Altijd
-sitedata-accept-third-party-visited-option =
-    .label = Van bezochte
-sitedata-accept-third-party-never-option =
-    .label = Nooit
 
 sitedata-allow-cookies-option =
     .label = Cookies en websitegegevens accepteren
@@ -789,11 +777,6 @@ sitedata-block-trackers-option =
     .label = Trackers van derden
 sitedata-block-unvisited-option =
     .label = Cookies van niet-bezochte websites
-sitedata-block-all-third-parties-option =
-    .label = Alle cookies van derden
-sitedata-block-always-option =
-    .label = Alle cookies (kan ervoor zorgen dat websites niet goed werken)
-
 sitedata-block-all-third-party-option =
     .label = Alle cookies van derden (kan ervoor zorgen dat websites niet goed werken)
 sitedata-block-all-option =
@@ -860,32 +843,13 @@ content-blocking-category-label = Kiezen wat er wordt geblokkeerd
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Trage tracking-elementen
-  .accesskey = T
-content-blocking-fastblock-description = Blokkeert inhoud van derden die langer dan 5 seconden doet over het laden.
-content-blocking-fastblock-option-enabled =
-  .label = Altijd blokkeren
-content-blocking-fastblock-option-disabled =
-  .label = Nooit blokkeren
-
-content-blocking-tracking-protection-label = Trackers
-  .accesskey = T
-content-blocking-tracking-protection-description = Blokkeert alle bekende trackers (Let op: kan ook het laden van bepaalde pagina’s tegengaan).
-content-blocking-tracking-protection-option-enabled =
-  .label = Altijd blokkeren
-content-blocking-tracking-protection-option-pbm =
-  .label = Alleen blokkeren in privévensters
-content-blocking-tracking-protection-option-disabled =
-  .label = Nooit blokkeren
-content-blocking-tracking-protection-change-blocklist = Blokkeerlijst wijzigen…
-
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
 content-blocking-fastblock-slow-loading-trackers-label =
   .label = Traag ladende trackers
   .accesskey = T
 content-blocking-fastblock-new-description = Alleen de trackers blokkeren die snel laden van pagina’s tegengaan.
+content-blocking-tracking-protection-trackers-label =
+  .label = Trackers
+    .accesskey = T
 content-blocking-tracking-protection-all-detected-trackers-label =
   .label = Alle gedetecteerde trackers
   .accesskey = d
@@ -937,11 +901,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Nooit
     .accesskey = N
-
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Bescherming tegen volgen gebruiken in Privénavigatie om bekende trackers te blokkeren
-    .accesskey = v
 
 tracking-exceptions =
     .label = Uitzonderingen…

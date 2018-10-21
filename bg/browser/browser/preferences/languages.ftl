@@ -2,8 +2,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-languages-window =
-    .title = Езици
+webpage-languages-window =
+    .title = Настройки на езика на страницата
     .style = width: 40em
 languages-close-key =
     .key = w
@@ -38,3 +38,18 @@ languages-code-format =
     .label = { $locale } [{ $code }]
 languages-active-code-format =
     .value = { languages-code-format.label }
+browser-languages-window =
+    .title = Настройки на езика на { -brand-short-name }
+    .style = width: 40em
+browser-languages-description = { -brand-short-name } ще използва първия език от списъка като език по подразбиране, а останалите при необходимост в зададения ред.
+browser-languages-search = Търсене на други езици…
+browser-languages-searching =
+    .label = Търсене на езици…
+browser-languages-downloading =
+    .label = Изтегляне…
+browser-languages-select-language =
+    .label = Изберете език, който да бъде добавен…
+    .placeholder = Изберете език, който да бъде добавен…
+browser-languages-installed-label = Инсталирани езици
+browser-languages-available-label = Достъпни езици
+browser-languages-error = { -brand-short-name } в момента не може да обнови езиците. Проверете връзката с интернет или опитайте отново.

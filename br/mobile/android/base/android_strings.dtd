@@ -27,12 +27,6 @@
 <!ENTITY firstrun_button_next "War-lerc\&apos;h">
 
 <!ENTITY firstrun_tabqueue_title "Ereoù">
-<!-- Localization note (firstrun_tabqueue_message): 'Tab queue' is a feature that allows users to queue up or save links from outside of Firefox (without switching apps) - these links will be loaded in Firefox the next time Firefox is opened. -->
-<!ENTITY firstrun_tabqueue_message_off "Gweredekaat al lost ivinelloù">
-<!ENTITY firstrun_tabqueue_subtext_off "Enrollit ereoù e &brandShortName; en ur stekiñ anezho en arloadoù all.">
-
-<!ENTITY firstrun_tabqueue_message_on "Taol berzh !">
-<!ENTITY firstrun_tabqueue_subtext_on "Gallout a rit diweredekaat an dra-mañ en &settings;, &pref_category_general;.">
 
 <!ENTITY firstrun_readerview_title "Pennadoù">
 <!-- Localization note (firstrun_readerview_message): This is a casual way of describing getting rid of unnecessary things, and is referring to simplifying websites so only the article text and images are visible, removing unnecessary headers or ads. -->
@@ -69,7 +63,6 @@
 <!ENTITY  crash_restart_label "Adloc\&apos;hañ &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "Bizskrivit un termen da glask pe ur chomlec\&apos;h">
-
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -215,7 +208,6 @@
      “storing data”. -->
 <!ENTITY pref_category_advanced_summary3 "Assav an ivinelloù, esperner roadennoù, ostilhoù diorroer">
 <!ENTITY pref_category_notifications "Rebuziñ">
-<!ENTITY pref_category_notifications_summary "Keweriusterioù nevez, hizivadennoù lec\&apos;hienn">
 <!ENTITY pref_category_notifications_summary2 "Keweriusterioù nevez, tunioù evit ar meziant">
 <!ENTITY pref_developer_remotedebugging_usb "Diveugañ a-bell dre USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Diveugañ a-bell dre Wi-Fi">
@@ -371,7 +363,6 @@
 <!ENTITY pref_use_system_font_size_summary "Skeuliadañ an endalc\&apos;had web e-keñver ment nodrezh ar reizhiad">
 
 <!ENTITY pref_media_autoplay_enabled "Aotre al lenn emgefreek">
-<!ENTITY pref_media_autoplay_enabled_summary "Mestroniañ lenn emgefreek ar videoioù ha ar mediaoù all gant al lec\&apos;hiennoù ">
 <!ENTITY pref_media_autoplay_allow "Aotren an emlenn">
 <!ENTITY pref_media_autoplay_block "Paouez an emlenn">
 <!ENTITY pref_zoom_force_enabled "Gweredekaat ar zoum bepred">
@@ -836,9 +827,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
 <!ENTITY corrupt_apk "N\&apos;haller ket digeriñ &brandShortName;. Stailhit anezhañ en-dro hag adklaskit.">
 
-<!ENTITY eol_notification_title2 "Ne vo ket hizivaet &brandShortName; ken">
-<!ENTITY eol_notification_summary "Stokit da c\&apos;houzout hiroc\&apos;h">
-
 <!-- LOCALIZATION NOTE (whatsnew_notification_title, whatsnew_notification_summary): These strings
      are used for a system notification that's shown to users after the app updates. -->
 <!ENTITY whatsnew_notification_title "Hizivaet eo &brandShortName;">
@@ -906,3 +894,12 @@ Picture-in-picture mini window -->
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel "&brandShortName;">
 <!ENTITY mls_notification_channel "&vendorShortName; Servij lec\&apos;heladur">
+<!ENTITY download_notification_channel "Pellgargadennoù">
+<!ENTITY media_notification_channel "Lennadur media">
+<!-- These push notifications come without a specific channel and/or name from Leanplum -->
+<!ENTITY leanplum_default_notifications_channel "Rebuzadurioù Push &brandShortName;">
+<!ENTITY updater_notification_channel "Hizivadennoù an arload">
+<!ENTITY synced_tabs_notification_channel "Ivinelloù goubredet">
+<!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
+web sites through the HTML Notifications API. -->
+<!ENTITY site_notifications_channel "Rebuzadurioù al lec\&apos;hienn">

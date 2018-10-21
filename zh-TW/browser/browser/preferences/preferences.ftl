@@ -53,6 +53,7 @@ pane-sync-title = Firefox 帳號
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } 技術支援
+addons-button-label = 擴充套件與佈景主題
 focus-search =
     .key = f
 close-button =
@@ -314,7 +315,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = 網路代理伺服器
 network-settings-title = 網路設定
 network-proxy-connection-description = 設定 { -brand-short-name } 要如何連線至網際網路。
 network-proxy-connection-learn-more = 了解更多
@@ -513,6 +513,7 @@ privacy-header = 瀏覽器隱私權
 ## Privacy Section - Forms
 
 forms-header = 表單與密碼
+logins-header = 登入資訊與密碼
 forms-ask-to-save-logins =
     .label = 向您詢問是否要記住網站的登入帳號與密碼
     .accesskey = r
@@ -579,26 +580,12 @@ sitedata-total-size-calculating = 正在計算網站資料與快取大小…
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = 您儲存的 Cookie、網站資料與快取目前使用了 { $value } { $unit } 磁碟空間
 sitedata-learn-more = 了解更多
-sitedata-accept-cookies-option =
-    .label = 接受網站設定的 Cookie 與網站資料（建議）
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = 封鎖 Cookie 與網站資料（可能會造成某些網站運作不正常）
-    .accesskey = B
 sitedata-keep-until = 保留 Cookie 直到
     .accesskey = u
 sitedata-keep-until-expire =
     .label = Cookie 過期
 sitedata-keep-until-closed =
     .label = 關閉 { -brand-short-name }
-sitedata-accept-third-party-desc = 接受第三方 Cookie 與網站資料
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = 總是
-sitedata-accept-third-party-visited-option =
-    .label = 造訪過的網站
-sitedata-accept-third-party-never-option =
-    .label = 永不
 sitedata-allow-cookies-option =
     .label = 允許網站設定 Cookie 與網站資料
     .accesskey = A
@@ -615,10 +602,6 @@ sitedata-block-trackers-option =
     .label = 第三方追蹤器
 sitedata-block-unvisited-option =
     .label = 未造訪過的網站的 Cookie
-sitedata-block-all-third-parties-option =
-    .label = 所有第三方追蹤器
-sitedata-block-always-option =
-    .label = 所有 Cookie（可能會造成網站運作不正常）
 sitedata-block-all-third-party-option =
     .label = 所有第三方 Cookie（可能會造成某些網站不正常）
 sitedata-block-all-option =
@@ -672,30 +655,13 @@ content-blocking-category-label = 選擇要封鎖的內容
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = 很慢才載入的追蹤元素
-    .accesskey = S
-content-blocking-fastblock-description = 封鎖超過 5 秒仍未載入完成的第三方內容。
-content-blocking-fastblock-option-enabled =
-    .label = 總是封鎖
-content-blocking-fastblock-option-disabled =
-    .label = 永不封鎖
-content-blocking-tracking-protection-label = 追蹤器
-    .accesskey = T
-content-blocking-tracking-protection-description = 封鎖所有已知的追蹤器（可能也會無法載入某些頁面）。
-content-blocking-tracking-protection-option-enabled =
-    .label = 總是封鎖
-content-blocking-tracking-protection-option-pbm =
-    .label = 僅在隱私瀏覽視窗封鎖
-content-blocking-tracking-protection-option-disabled =
-    .label = 永不封鎖
-content-blocking-tracking-protection-change-blocklist = 變更封鎖清單…
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
 content-blocking-fastblock-slow-loading-trackers-label =
     .label = 慢速載入的追蹤器
     .accesskey = S
 content-blocking-fastblock-new-description = 只封鎖會影響頁面載入速度的追蹤器。
+content-blocking-tracking-protection-trackers-label =
+    .label = 追蹤器
+    .accesskey = T
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = 所有偵測到的追蹤器
     .accesskey = T
@@ -743,10 +709,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = 永不
     .accesskey = n
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = 在隱私瀏覽模式使用追蹤保護功能，封鎖已知的追蹤器
-    .accesskey = v
 tracking-exceptions =
     .label = 例外網站…
     .accesskey = x

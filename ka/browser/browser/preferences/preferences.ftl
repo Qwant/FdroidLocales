@@ -2,10 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = საიტებისთვის “არ მითვალთვალო” მოთხოვნის გაგზავნა
+do-not-track-description = საიტებისთვის „არ მითვალთვალო“ მოთხოვნის გაგზავნა
 do-not-track-learn-more = იხილეთ ვრცლად
 do-not-track-option-default =
     .label = მხოლოდ, თვალთვალისგან დაცვის დროს
+do-not-track-option-default-content-blocking =
+    .label = მხოლოდ მაშინ, როცა { -brand-short-name } ზღუდავს აღმოჩენილ მეთვალყურეებს
 do-not-track-option-always =
     .label = ყოველთვის
 pref-page =
@@ -51,6 +53,7 @@ pane-sync-title = Firefox-ანგარიში
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } დახმარება
+addons-button-label = გაფართოებები და თემები
 focus-search =
     .key = f
 close-button =
@@ -61,7 +64,7 @@ close-button =
 feature-enable-requires-restart = ამ ფუნქციის ჩასართავად, ხელახლა გაუშვით { -brand-short-name }
 feature-disable-requires-restart = ამ ფუნქციის გამოსართავად, ხელახლა გაუშვით { -brand-short-name }
 should-restart-title = { -brand-short-name }-ის ხელახლა გაშვება
-should-restart-ok = { -brand-short-name } ხელახლა გაშვება ახლავე
+should-restart-ok = გაუშვით ხელახლა { -brand-short-name } ახლავე
 cancel-no-restart-button = გაუქმება
 restart-later = მოგვიანებით გაშვება
 
@@ -90,6 +93,9 @@ extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name }
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = თვალთვალისგან დაცვის რეჟიმს მართავს <img data-l10n-name="icon"/> { $name } გაფართოება.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = გაფართოება <img data-l10n-name="icon"/> { $name } მართავს ამ პარამეტრებს.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = { -brand-short-name }-ის ინტერნეტთან კავშირის პარამეტრებს განსაზღვრავს <img data-l10n-name="icon"/> { $name } გაფართოება.
@@ -120,7 +126,7 @@ separate-profile-mode =
     .label = { -brand-short-name }-ის და Firefox-ის ერთად გაშვების ნების დართვა
 use-firefox-sync = რჩევა: ეს სხვადასხვა პროფილებს იყენებს. მათ შორის მონაცემების გასაზიარებლად { -sync-brand-short-name } გამოიყენეთ.
 get-started-not-logged-in = { -sync-brand-short-name }-ში შესვლა…
-get-started-configured = სინქრონიზაციის პარამეტრების გახსნა
+get-started-configured = { -sync-brand-short-name }-პარამეტრების გახსნა
 always-check-default =
     .label = ყოველთვის შემოწმდეს, არის თუ არა { -brand-short-name } ნაგულისხმევი ბრაუზერი
     .accesskey = ვ
@@ -203,6 +209,9 @@ choose-button =
     .label = არჩევა…
     .accesskey = ა
 choose-browser-language-description = მიუთითეთ ენა, რომლითაც იხილავთ მენიუს, შეტყობინებებსა და ცნობებს { -brand-short-name }-ისგან.
+manage-browser-languages-button =
+    .label = დამატებითის მითითება...
+    .accesskey = დ
 confirm-browser-language-change-description = გაუშვით { -brand-short-name } ხელახლა, ცვლილებების ასახვისთვის
 confirm-browser-language-change-button = მიღება და ხელახლა გაშვება
 translate-web-pages =
@@ -242,7 +251,7 @@ download-always-ask-where =
 applications-header = პროგრამები
 applications-description = აირჩიეთ, როგორ მოეპყრას { -brand-short-name } ინტერნეტიდან ჩამოტვირთულ ფაილებს ან იმ პროგრამებს, რომელთაც გვერდების მონახულებისას იყენებთ.
 applications-filter =
-    .placeholder = ფაილის ტიპების ან პროგრამების ძიება
+    .placeholder = ფაილის სახეობების ან პროგრამების ძიება
 applications-type-column =
     .label = შიგთავსის სახეობა
     .accesskey = ტ
@@ -318,7 +327,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = ქსელის პროქსი
 network-settings-title = ქსელის პარამეტრები
 network-proxy-connection-description = { -brand-short-name }-ის ინტერნეტთან წვდომის პარამეტრების გამართვა.
 network-proxy-connection-learn-more = ვრცლად
@@ -517,6 +525,7 @@ privacy-header = ბრაუზერის პირადულობა
 ## Privacy Section - Forms
 
 forms-header = ველები და პაროლები
+logins-header = ანგარიშის სახელები და პაროლები
 forms-ask-to-save-logins =
     .label = საიტებზე შესვლის მონაცემების დამახსოვრების მოთხოვნა
     .accesskey = შ
@@ -583,31 +592,17 @@ sitedata-total-size-calculating = საიტის მონაცემებ
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = თქვენ მიერ შენახული ფუნთუშები, საიტის მონაცემები და კეში, ამჟამად დისკზე იკავებს { $value } { $unit } მოცულობას.
 sitedata-learn-more = ვრცლად
-sitedata-accept-cookies-option =
-    .label = ფუნთუშებისა და საიტის მონაცემების მიღება (სასურველია)
-    .accesskey = დ
-sitedata-block-cookies-option =
-    .label = ფუნთუშებისა და საიტის მონაცემების აკრძალვა (შესაძლოა ვებსაიტებმა ხარვეზებით იმუშაოს)
-    .accesskey = კ
 sitedata-keep-until = შენახვა სანამ
     .accesskey = ს
 sitedata-keep-until-expire =
     .label = ვადა გაუვა
 sitedata-keep-until-closed =
     .label = { -brand-short-name } დაიხურება
-sitedata-accept-third-party-desc = მესამე მხარის ფუნთუშებისა და საიტის მონაცემის მიღება
-    .accesskey = ღ
-sitedata-accept-third-party-always-option =
-    .label = ყოველთვის
-sitedata-accept-third-party-visited-option =
-    .label = მხოლოდ მონახულებულიდან
-sitedata-accept-third-party-never-option =
-    .label = არასდროს
 sitedata-allow-cookies-option =
     .label = ფუნთუშებისა და საიტის მონაცემები მიღება
     .accesskey = ღ
 sitedata-disallow-cookies-option =
-    .label = ფუნთუშები და საიტის მონაცემების შეზღუდვა
+    .label = ფუნთუშებისა და საიტის მონაცემების შეზღუდვა
     .accesskey = ზ
 # This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
 # The list items are the strings named sitedata-block-*-option*.
@@ -619,10 +614,10 @@ sitedata-block-trackers-option =
     .label = ცალკეული მეთვალყურეები
 sitedata-block-unvisited-option =
     .label = ფუნთუშები მოუნახულებელი გვერდებიდან
-sitedata-block-all-third-parties-option =
-    .label = მესამე მხარის ყველა ფუნთუშა
-sitedata-block-always-option =
-    .label = ყველა ფუნთუშა (შესაძლოა საიტებმა ვერ იმუშაოს გამართულად)
+sitedata-block-all-third-party-option =
+    .label = ყველა მესამე მხარის ფუნთუშა (შესაძლოა ხარვეზები გამოიწვიოს საიტზე)
+sitedata-block-all-option =
+    .label = ყველა ფუნთუშა (შესაძლოა ხარვეზები გამოიწვიოს საიტზე)
 sitedata-clear =
     .label = მონაცემთა გასუფთავება…
     .accesskey = მ
@@ -632,6 +627,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = გამონაკლისები…
     .accesskey = გ
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = შიგთავსის შეზღუდვის თქვენი პარამეტრები, არ იძლევა ფუნთუშებისა და საიტის მონაცემების პარამეტრების შეცვლის საშუალებას.
 
 ## Privacy Section - Address Bar
 
@@ -668,23 +667,45 @@ content-blocking-category-label = მიუთითეთ, რა შეიზ�
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = ნელი თვალყურისმდევნელი ელემენტები
-    .accesskey = ნ
-content-blocking-fastblock-description = შეზღუდავს არასასურველ შიგთავსს, რომლის ჩატვირთვაც 5 წამზე დიდხანს გასტანს.
-content-blocking-fastblock-option-enabled =
-    .label = ყოველთვის შეიზღუდოს
-content-blocking-fastblock-option-disabled =
-    .label = არასდროს შეიზღუდოს
-content-blocking-tracking-protection-label = მეთვალყურეები
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = ჩატვირთვის შემნელებელი
+    .accesskey = შ
+content-blocking-fastblock-new-description = მხოლოდ იმ მეთვალყურეების შეზღუდვა, რომლებიც ანელებს გვერდის ჩატვირთვას.
+content-blocking-tracking-protection-trackers-label =
+    .label = მეთვალყურეები
     .accesskey = მ
-content-blocking-tracking-protection-description = შეზღუდავს ყველა ცნობილ მეთვალყურეს (შენიშვნა: შესაძლოა ზოგიერთი გვერდი ვერ ჩაიტვირთოს).
-content-blocking-tracking-protection-option-enabled =
-    .label = ყოველთვის შეიზღუდოს
-content-blocking-tracking-protection-option-pbm =
-    .label = შეიზღუდოს მხოლოდ პირად ფანჯრებში
-content-blocking-tracking-protection-option-disabled =
-    .label = არასდროს შეიზღუდოს
-content-blocking-tracking-protection-change-blocklist = შეზღუდულთა სიის შეცვლა…
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = აღმოჩენილი მეთვალყურეები
+    .accesskey = თ
+content-blocking-tracking-protection-new-description = ყველა ცნობილი მეთვალყურის შეზღუდვა. (შესაძლოა ზოგიერთი ვებგვერდი ვერ ჩაიტვირთოს.)
+content-blocking-tracking-protection-option-always =
+    .label = ყოველთვის
+    .accesskey = ყ
+content-blocking-tracking-protection-option-private =
+    .label = მხოლოდ პირად ფანჯრებში
+    .accesskey = პ
+content-blocking-tracking-protection-change-block-list = შეზღუდულთა სიის ჩასწორება
+content-blocking-third-party-cookies-label =
+    .label = ცალკეული ფუნთუშები
+    .accesskey = ც
+content-blocking-reject-trackers-description = ყველა მესამე მხარის ფუნთუშის შეზღუდვა ან მხოლოდ მეთვალყურეების.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = ფუნთუშებისა და საიტის მონაცემების თქვენი პარამეტრები, არ იძლევა მესამე მხარის ფუნთუშების პარამეტრების შეცვლის საშუალებას.
+content-blocking-change-cookie-settings =
+    .label = ფუნთუშების პარამეტრების შეცვლა
+    .accesskey = ფ
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = მეთვალყურეები (სასურველია)
+    .accesskey = ვ
+content-blocking-reject-trackers-block-trackers-option =
+    .label = მეთვალყურეები
+    .accesskey = ვ
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = ყველა მესამე მხარის ფუნთუშა (შესაძლოა ხარვეზები გამოიწვიოს საიტზე)
+    .accesskey = ყ
 
 ## Privacy Section - Tracking
 
@@ -700,10 +721,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = არასდროს
     .accesskey = ა
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = თვალთვალისგან დაცვის საშუალებით, პირადი თვალიერებისას, შეგიძლიათ ცნობილი მეთვალყურე ელემენტების შეზღუდვა
-    .accesskey = თ
 tracking-exceptions =
     .label = გამონაკლისები…
     .accesskey = კ

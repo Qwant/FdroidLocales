@@ -23,6 +23,7 @@
 <!ENTITY aboutPrivateBrowsing.info.saved.after2 ":">
 <!ENTITY aboutPrivateBrowsing.info.downloads "pobrane pliki">
 <!ENTITY aboutPrivateBrowsing.info.bookmarks "dodane zakładki">
+<!ENTITY aboutPrivateBrowsing.info.clipboard "skopiowany tekst">
 <!ENTITY aboutPrivateBrowsing.note.before "Przeglądanie prywatne ">
 <!ENTITY aboutPrivateBrowsing.note.emphasize "nie czyni użytkownika anonimowym">
 <!ENTITY aboutPrivateBrowsing.note.after " w Internecie. Pracodawca lub dostawca usług internetowych może w dalszym ciągu monitorować odwiedzane strony.">
@@ -33,3 +34,6 @@
 <!ENTITY trackingProtection.title "Ochrona przed śledzeniem">
 <!ENTITY trackingProtection.description2 "Niektóre strony używają elementów mogących śledzić aktywność użytkownika w Internecie. Dzięki ochronie przed śledzeniem, Firefox zablokuje wiele z elementów mogących zbierać informacje o przeglądaniu.">
 <!ENTITY trackingProtection.startTour1 "Przeczytaj o tym, jak to działa">
+
+<!ENTITY contentBlocking.title "Blokowanie treści">
+<!ENTITY contentBlocking.description "Niektóre strony używają elementów mogących śledzić aktywność użytkownika w Internecie. W oknach przeglądania prywatnego przeglądarka automatycznie zablokuje wiele z elementów mogących zbierać informacje o przeglądaniu.">

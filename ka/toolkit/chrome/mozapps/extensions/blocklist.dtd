@@ -10,8 +10,8 @@
 <!ENTITY blocklist.softandhard       "დამატებები, რომლებიც უსაფრთხოებას და მდგრადობას საფრთხეს უქმნიან, შეზღუდულია. დანარჩენები, ნაკლებად სახიფათოა, მაგრამ მკაცრად რეკომენდებულია მათი გამორთვა და პროგრამის ხელახლა გაშვება.">
 <!ENTITY blocklist.moreinfo          "ვრცლად">
 
-<!ENTITY blocklist.accept.label      "&brandShortName;-ს ხელახლა გაშვება">
-<!ENTITY blocklist.accept.accesskey  "R">
+<!ENTITY blocklist.accept.label      "გაუშვით ხელახლა &brandShortName;">
+<!ENTITY blocklist.accept.accesskey  "ხ">
 
 <!ENTITY blocklist.blocked.label     "შეზღუდულია">
 <!ENTITY blocklist.checkbox.label    "ამორთვა">

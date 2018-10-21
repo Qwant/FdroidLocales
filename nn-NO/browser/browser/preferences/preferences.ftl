@@ -6,6 +6,8 @@ do-not-track-description = Send nettsider eit «Ikkje spor»-signal om at du ikk
 do-not-track-learn-more = Les meir
 do-not-track-option-default =
     .label = Berre når eg brukar Sporingsvern
+do-not-track-option-default-content-blocking =
+    .label = Berre når { -brand-short-name } er sett til å blokkere oppdaga sporfølgjarar
 do-not-track-option-always =
     .label = Alltid
 pref-page =
@@ -50,7 +52,8 @@ category-privacy =
 pane-sync-title = Firefox-konto
 category-sync =
     .tooltiptext = { pane-sync-title }
-help-button-label = { -brand-short-name } brukarstøtte
+help-button-label = Brukarstøtte for { -brand-short-name }
+addons-button-label = Utvidingar og tema
 focus-search =
     .key = f
 close-button =
@@ -90,6 +93,9 @@ extension-controlled-privacy-containers = Ei utviding, <img data-l10n-name="icon
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Ei utviding, <img data-l10n-name="icon"/> { $name }, styrer sporingsvernet.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Eit tillegg, <img data-l10n-name="icon"/> { $name }, styrer denne innstillinga.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Ei utviding, <img data-l10n-name="icon"/> { $name }, styrer korleis { -brand-short-name } koplar seg til internett.
@@ -109,7 +115,7 @@ search-results-empty-message =
         [windows] Beklagar! Ingen resultat i Innstillingar for “<span data-l10n-name="query"></span>”.
        *[other] Beklagar! Ingen resultat i Innstillingar for “<span data-l10n-name="query"></span>”.
     }
-search-results-help-link = Treng du hjelp? Gå til <a data-l10n-name="url">{ -brand-short-name } Brukarstøtte</a>
+search-results-help-link = Treng du hjelp? Gå til <a data-l10n-name="url">{ -brand-short-name } brukarstøtte</a>
 
 ## General Section
 
@@ -203,6 +209,9 @@ choose-button =
     .label = Vel…
     .accesskey = V
 choose-browser-language-description = Vel språka som som skal brukast til å vise menyar, meldingar og varsel frå { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Vel alternativ…
+    .accesskey = l
 confirm-browser-language-change-description = Start om { -brand-short-name } for å bruke disse endringene
 confirm-browser-language-change-button = Bruk og start på nytt
 translate-web-pages =
@@ -318,7 +327,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Nettverksproxy
 network-settings-title = Nettverksinnstillingar
 network-proxy-connection-description = Konfigurer korleis { -brand-short-name } koplar seg til internett.
 network-proxy-connection-learn-more = Les meir
@@ -517,6 +525,7 @@ privacy-header = Nettlesarpersonvern
 ## Privacy Section - Forms
 
 forms-header = Skjema og passord
+logins-header = Innloggingar og passord
 forms-ask-to-save-logins =
     .label = Spør om å lagre innloggingar og passord for nettsider
     .accesskey = i
@@ -583,26 +592,12 @@ sitedata-total-size-calculating = Reknar ut storleik på nettstad-data og snøgg
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Dei lagra infokapslane dine, nettstaddata og hurtiglager brukar for tida { $value } { $unit } diskplass.
 sitedata-learn-more = Les meir
-sitedata-accept-cookies-option =
-    .label = Tillat infokapslar og nettsidedata frå nettstadar (tilrådd)
-    .accesskey = T
-sitedata-block-cookies-option =
-    .label = Blokker infokapslar og nettsidedata frå nettstadar (kan skape feil på nettstaden)
-    .accesskey = B
 sitedata-keep-until = Behald til
     .accesskey = B
 sitedata-keep-until-expire =
     .label = Dei går ut
 sitedata-keep-until-closed =
     .label = { -brand-short-name } er lukka
-sitedata-accept-third-party-desc = Tillat infokapslar frå tredjepart og nettsidedata
-    .accesskey = e
-sitedata-accept-third-party-always-option =
-    .label = Alltid
-sitedata-accept-third-party-visited-option =
-    .label = Frå besøkte
-sitedata-accept-third-party-never-option =
-    .label = Aldri
 sitedata-allow-cookies-option =
     .label = Tillat infokapslar og nettsidedata
     .accesskey = a
@@ -619,10 +614,10 @@ sitedata-block-trackers-option =
     .label = Tredjeparts-sporfølgjarar
 sitedata-block-unvisited-option =
     .label = Infokapslar frå ubesøkte nettsider
-sitedata-block-all-third-parties-option =
-    .label = Alle tredjeparts infokapslar
-sitedata-block-always-option =
-    .label = Alle infokapslar (kan føre til at nettsider ikkje fungerer)
+sitedata-block-all-third-party-option =
+    .label = Alle tredjeparts-infokapslar (kan lage feil på nettsider)
+sitedata-block-all-option =
+    .label = Alle infokapslar (vil føre til at nettstider sluttar å fungere)
 sitedata-clear =
     .label = Tøm data…
     .accesskey = T
@@ -632,6 +627,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Unntak…
     .accesskey = U
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Innstillingane dine i Innhaldsblokkering hindrar endringar i innstillingar for Infokapslar og nettsidedata.
 
 ## Privacy Section - Address Bar
 
@@ -668,36 +667,45 @@ content-blocking-category-label = Vel kva som skal blokkerast
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Trege sporingselement
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Treglastande sporfølgjarar
     .accesskey = s
-content-blocking-fastblock-description = Blokkerer tredjepartsinnhald som tek lenger tid enn 5 sekund å laste inn.
-content-blocking-fastblock-option-enabled =
-    .label = Blokker alltid
-content-blocking-fastblock-option-disabled =
-    .label = Blokker aldri
-content-blocking-tracking-protection-label = Sporfølgjarar
+content-blocking-fastblock-new-description = Blokker berre sporfølgjarar som gjer at sider lastar tregare.
+content-blocking-tracking-protection-trackers-label =
+    .label = Sporfølgjarar
     .accesskey = S
-content-blocking-tracking-protection-all-label = Alltid oppdag sporfølgjarar
-    .accesskey = A
-content-blocking-tracking-protection-description = Blokkerer alle kjende sporfølgjarar (Merk: kan òg hindre at nokre sider vert lasta inn).
-content-blocking-tracking-protection-option-enabled =
-    .label = Alltid blokker
-content-blocking-tracking-protection-option-pbm =
-    .label = Blokker berre i private vindauge
-content-blocking-tracking-protection-option-disabled =
-    .label = Blokker aldri
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Alle oppdaga sporfølgjarar
+    .accesskey = e
+content-blocking-tracking-protection-new-description = Blokker alle kjende sporfølgjarar. (Kan hindre at enkelte nettsider vert lasta inn inn.)
 content-blocking-tracking-protection-option-always =
     .label = Alltid
     .accesskey = A
 content-blocking-tracking-protection-option-private =
     .label = Berre i private vindauge
     .accesskey = B
-content-blocking-tracking-protection-change-blocklist = Endre blokkeringsliste…
-content-blocking-reject-trackers-label = Infokapslar frå tredjepart
+content-blocking-tracking-protection-change-block-list = Endre blokkeringsliste
+content-blocking-third-party-cookies-label =
+    .label = Infokapslar frå tredjepart
     .accesskey = I
+content-blocking-reject-trackers-description = Blokker alle tredjeparts infokapslar eller berre dei som er brukte av sporfølgjarar.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Innstillingane dine i Infokapsler og nettsidedata hindrar endringar i Instillingar for tredjeparts-infokapslar
+content-blocking-change-cookie-settings =
+    .label = Endre innstillingar for infokapslar
+    .accesskey = s
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Sporfølgjarar (tilrådde)
+    .accesskey = S
 content-blocking-reject-trackers-block-trackers-option =
     .label = Sporfølgjarar
     .accesskey = S
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Alle tredjeparts infokapslar (kan føre til at nettsider sluttar å fungere)
+    .accesskey = A
 
 ## Privacy Section - Tracking
 
@@ -713,10 +721,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Aldri
     .accesskey = A
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Bruk sporingsvern i Privat nettlesing for å blokkere kjende sporfølgjarar
-    .accesskey = v
 tracking-exceptions =
     .label = Unntak…
     .accesskey = U

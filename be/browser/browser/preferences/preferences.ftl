@@ -6,6 +6,8 @@ do-not-track-description = Адсылаць вэб-сайтам сігнал “
 do-not-track-learn-more = Даведацца больш
 do-not-track-option-default =
     .label = Толькі калі ўключана ахова ад сачэння
+do-not-track-option-default-content-blocking =
+    .label = Толькі калі { -brand-short-name } настаўлены блакаваць выяўленыя трэкеры.
 do-not-track-option-always =
     .label = Заўсёды
 pref-page =
@@ -51,6 +53,7 @@ pane-sync-title = Уліковы запіс Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Падтрымка { -brand-short-name }
+addons-button-label = Пашырэнні & Тэмы
 focus-search =
     .key = f
 close-button =
@@ -90,6 +93,9 @@ extension-controlled-privacy-containers = Пашырэнне <img data-l10n-name
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Пашырэнне, <img data-l10n-name="icon"/> { $name }, кантралюе ахову ад сачэння.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Пашырэнне <img data-l10n-name="icon"/> { $name } кантралюе гэты параметр.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Пашырэнне <img data-l10n-name="icon"/> { $name } кантралюе спосаб злучэння { -brand-short-name } з Інтэрнэтам.
@@ -206,6 +212,9 @@ choose-button =
     .label = Выбраць…
     .accesskey = В
 choose-browser-language-description = Выберыце мовы для адлюстравання меню, паведамленняў і наменак { -brand-short-name }.
+manage-browser-languages-button =
+    .label = Устанавіць альтэрнатывы…
+    .accesskey = э
 confirm-browser-language-change-description = Перазапусціць { -brand-short-name } для прымянення змен
 confirm-browser-language-change-button = Прымяніць і перастартаваць
 translate-web-pages =
@@ -218,7 +227,7 @@ translate-exceptions =
     .label = Выключэнні…
     .accesskey = ч
 check-user-spelling =
-    .label = Правяраць арфаграфію пад час набору
+    .label = Правяраць арфаграфію ў час набору
     .accesskey = н
 
 ## General Section - Files and Applications
@@ -321,7 +330,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Проксі-сервер
 network-settings-title = Налады сеткі
 network-proxy-connection-description = Наладзіць спосаб злучэння { -brand-short-name } з Інтэрнэтам.
 network-proxy-connection-learn-more = Падрабязней
@@ -520,6 +528,7 @@ privacy-header = Прыватнасць браўзера
 ## Privacy Section - Forms
 
 forms-header = Формы & паролі
+logins-header = Лагіны & Паролі
 forms-ask-to-save-logins =
     .label = Прапаноўваць захаваць лагіны і паролі для вэб-сайтаў
     .accesskey = р
@@ -586,26 +595,12 @@ sitedata-total-size-calculating = Падлік памеру дадзеных с�
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Вашы захаваныя кукі, дадзеныя сайтаў і кэш зараз займаюць { $value } { $unit } на дыску.
 sitedata-learn-more = Даведацца больш
-sitedata-accept-cookies-option =
-    .label = Прымаць кукі і дадзеныя з вэб-сайтаў (рэкамендуецца)
-    .accesskey = П
-sitedata-block-cookies-option =
-    .label = Блакаваць кукі і дадзеныя з сайтаў (можа прывесці да памылак адлюстравання вэб-сайта)
-    .accesskey = Б
 sitedata-keep-until = Трымаць пакуль
     .accesskey = п
 sitedata-keep-until-expire =
     .label = Тэрмін канчаецца
 sitedata-keep-until-closed =
     .label = да закрыцця { -brand-short-name }
-sitedata-accept-third-party-desc = Прымаць кукі і дадзеныя з пабочных сайтаў
-    .accesskey = ы
-sitedata-accept-third-party-always-option =
-    .label = заўсёды
-sitedata-accept-third-party-visited-option =
-    .label = з наведаных
-sitedata-accept-third-party-never-option =
-    .label = ніколі
 sitedata-allow-cookies-option =
     .label = Прымаць кукі і звесткі сайтаў
     .accesskey = П
@@ -622,10 +617,10 @@ sitedata-block-trackers-option =
     .label = Трэкеры трэцяга боку
 sitedata-block-unvisited-option =
     .label = Кукі з ненаведаных сайтаў
-sitedata-block-all-third-parties-option =
-    .label = Усе кукі трэцяга боку
-sitedata-block-always-option =
-    .label = Усе кукі (можа парушыць працу вэб-сайтаў)
+sitedata-block-all-third-party-option =
+    .label = Усе кукі трэцяга боку (можа парушыць працу вэб-сайтаў)
+sitedata-block-all-option =
+    .label = Усе кукі (парушыць працу вэб-сайтаў)
 sitedata-clear =
     .label = Выдаліць дадзеныя…
     .accesskey = ы
@@ -635,6 +630,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Выключэнні…
     .accesskey = В
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Вашы налады блакавання змесціва не дазваляюць змяняць налады для кукаў і дадзеных сайтаў.
 
 ## Privacy Section - Address Bar
 
@@ -671,23 +670,45 @@ content-blocking-category-label = Выберыце, што блакаваць
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Марудныя элементы сачэння
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Марудныя элементы сачэння
     .accesskey = ы
-content-blocking-fastblock-description = Блакаваць пабочнае змесціва, загрузка якога цягнецца больш за 5 секунд.
-content-blocking-fastblock-option-enabled =
-    .label = Заўсёды блакаваць
-content-blocking-fastblock-option-disabled =
-    .label = Ніколі не блакаваць
-content-blocking-tracking-protection-label = Трэкеры
+content-blocking-fastblock-new-description = Блакаваць толькі тыя трэкеры, што замінаюць хуткай загрузцы старонак.
+content-blocking-tracking-protection-trackers-label =
+    .label = Трэкеры
+    .accesskey = е
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Усе выяўленыя трэкеры
+    .accesskey = е
+content-blocking-tracking-protection-new-description = Блакаваць усе вядомыя трэкеры. (Можа перашкодзіць загрузцы некаторых старонак).
+content-blocking-tracking-protection-option-always =
+    .label = Заўсёды
+    .accesskey = З
+content-blocking-tracking-protection-option-private =
+    .label = Толькі ў прыватных вокнах
+    .accesskey = ў
+content-blocking-tracking-protection-change-block-list = Змяніць спіс блакавання
+content-blocking-third-party-cookies-label =
+    .label = Кукі трэцяга боку
+    .accesskey = К
+content-blocking-reject-trackers-description = Блакаваць усе кукі трэцяга боку, або толькі ўстаноўленыя трэкерамі.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Вашы налады для кукаў і дадзеных сайтаў не дазваляюць мяняць налады для кукаў трэцяга боку.
+content-blocking-change-cookie-settings =
+    .label = Змяніць налады кукаў
+    .accesskey = ы
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Трэкеры (рэкамендуецца)
     .accesskey = Т
-content-blocking-tracking-protection-description = Блакаваць усе вядомыя трэкеры. (Заўвага: можа заблакаваць загрузку некаторых старонак).
-content-blocking-tracking-protection-option-enabled =
-    .label = Заўсёды блакаваць
-content-blocking-tracking-protection-option-pbm =
-    .label = Блакаваць толькі ў прыватных вокнах
-content-blocking-tracking-protection-option-disabled =
-    .label = Ніколі не блакаваць
-content-blocking-tracking-protection-change-blocklist = Змяніць спіс блакавання…
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Трэкеры
+    .accesskey = Т
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Усе кукі трэцяга боку (можа парушыць працу вэб-сайтаў)
+    .accesskey = У
 
 ## Privacy Section - Tracking
 
@@ -703,10 +724,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Ніколі
     .accesskey = н
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Блакіраваць вядомыя элементы сачэння ў рэжыме прыватнага аглядання
-    .accesskey = м
 tracking-exceptions =
     .label = Выключэнні…
     .accesskey = ч
@@ -729,13 +746,13 @@ permissions-microphone = Мікрафон
 permissions-microphone-settings =
     .label = Налады…
     .accesskey = а
-permissions-notification = Апавяшчэнні
+permissions-notification = Абвесткі
 permissions-notification-settings =
     .label = Налады…
     .accesskey = а
 permissions-notification-link = Падрабязней
 permissions-notification-pause =
-    .label = Прыпыніць апавяшчэнні да перазапуску { -brand-short-name }
+    .label = Прыпыніць абвесткі да перазапуску { -brand-short-name }
     .accesskey = а
 permissions-block-autoplay-media =
     .label = Забараніць вэб-сайтам аўтаматычна прайграваць медыя з гукам

@@ -36,12 +36,13 @@
 <!ENTITY runtimeMenu_takeScreenshot_accesskey "S">
 <!ENTITY runtimeMenu_showDetails_label "રનટાઈમ માહિતી">
 <!ENTITY runtimeMenu_showDetails_accesskey "E">
-<!ENTITY runtimeMenu_showMonitor_label "મોનિટર">
-<!ENTITY runtimeMenu_showMonitor_accesskey "M">
 <!ENTITY runtimeMenu_showDevicePrefs_label "ઉપકરણ પસંદગીઓ">
 <!ENTITY runtimeMenu_showDevicePrefs_accesskey "D">
 <!ENTITY runtimeMenu_showSettings_label "ઉપકરણ સુયોજનો">
 <!ENTITY runtimeMenu_showSettings_accesskey "s">
+
+<!ENTITY runtimeMenu_showPerformancePanel_label "દેખાવ">
+<!ENTITY runtimeMenu_showPerformancePanel_accesskey "p">
 
 <!ENTITY viewMenu_label "જુઓ">
 <!ENTITY viewMenu_accesskey "V">
@@ -146,10 +147,6 @@
 <!ENTITY devicesetting_newname "નવું સેટિંગ નામ">
 <!ENTITY devicesetting_newtext "કિંમત સુયોજિત કરી રહ્યા છે">
 <!ENTITY devicesetting_addnew "નવી સેટિંગ ઉમેરો">
-
-<!-- Monitor -->
-<!ENTITY monitor_title "વિનિયમનકર્તા">
-<!ENTITY monitor_help "મદદ">
 
 <!-- WiFi Authentication -->
 <!-- LOCALIZATION NOTE (wifi_auth_header): The header displayed on the dialog

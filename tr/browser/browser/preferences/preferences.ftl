@@ -53,6 +53,7 @@ pane-sync-title = Firefox Hesabı
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } Desteği
+addons-button-label = Eklentiler ve temalar
 focus-search =
     .key = f
 close-button =
@@ -326,7 +327,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Ağ vekil sunucusu
 network-settings-title = Ağ ayarları
 network-proxy-connection-description = { -brand-short-name } tarayıcınızın internete nasıl bağlanacağını yapılandırın.
 network-proxy-connection-learn-more = Daha fazla bilgi al
@@ -525,6 +525,7 @@ privacy-header = Tarayıcı gizliliği
 ## Privacy Section - Forms
 
 forms-header = Formlar ve parolalar
+logins-header = Hesaplar ve parolalar
 forms-ask-to-save-logins =
     .label = Sitelerdeki kullanıcı adı ve parolalarımı kaydetmeyi öner
     .accesskey = r
@@ -591,26 +592,12 @@ sitedata-total-size-calculating = Site verilerinin ve önbelleğin boyutu hesapl
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Depolanmış site verileriniz ve önbelleğiniz şu anda { $value } { $unit } disk alanı kullanıyor.
 sitedata-learn-more = Daha fazla bilgi al
-sitedata-accept-cookies-option =
-    .label = Web sitelerinden gelen çerezleri ve site verilerini kabul et (Önerilir)
-    .accesskey = k
-sitedata-block-cookies-option =
-    .label = Çerezleri ve site verilerini engelle (Bazı siteler düzgün çalışmayabilir)
-    .accesskey = z
 sitedata-keep-until = Tutma sınırı
     .accesskey = u
 sitedata-keep-until-expire =
     .label = Süresi dolana dek
 sitedata-keep-until-closed =
     .label = { -brand-short-name } kapatılana dek
-sitedata-accept-third-party-desc = Üçüncü taraf çerezlerini ve site verilerini kabul et
-    .accesskey = ü
-sitedata-accept-third-party-always-option =
-    .label = Her zaman
-sitedata-accept-third-party-visited-option =
-    .label = Ziyaret edilenlerden
-sitedata-accept-third-party-never-option =
-    .label = Asla
 sitedata-allow-cookies-option =
     .label = Çerezleri ve site verilerini kabul et
     .accesskey = z
@@ -627,10 +614,6 @@ sitedata-block-trackers-option =
     .label = Üçüncü taraf takipçileri
 sitedata-block-unvisited-option =
     .label = Ziyaret etmediğim sitelerin çerezleri
-sitedata-block-all-third-parties-option =
-    .label = Tüm üçüncü taraf çerezleri
-sitedata-block-always-option =
-    .label = Tüm çerezler (Bazı siteler düzgün çalışmayabilir)
 sitedata-block-all-third-party-option =
     .label = Tüm üçüncü taraf çerezleri (Bazı web siteleri bozulabilir.)
 sitedata-block-all-option =
@@ -644,6 +627,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = İstisnalar…
     .accesskey = r
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = “İçerik engelleme” ayarlarınız, “çerezler ve site verileri” ayarlarının değiştirilmesini engelliyor.
 
 ## Privacy Section - Address Bar
 
@@ -680,32 +667,17 @@ content-blocking-category-label = Nelerin engelleneceğini seçin
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Yavaş takipçi öğeleri
-    .accesskey = Y
-content-blocking-fastblock-description = Yüklenmesi 5 saniyeden uzun süren üçüncü taraf içeriklerini engeller.
-content-blocking-fastblock-option-enabled =
-    .label = Her zaman engelle
-content-blocking-fastblock-option-disabled =
-    .label = Asla engelleme
-content-blocking-tracking-protection-label = Takipçiler
-    .accesskey = T
-content-blocking-tracking-protection-description = Bilinen tüm takipçileri engeller (Not: Bazı sayfaların yüklenmesini de engelleyebilir.)
-content-blocking-tracking-protection-option-enabled =
-    .label = Her zaman engelle
-content-blocking-tracking-protection-option-pbm =
-    .label = Yalnızca gizli pencerelerde engelle
-content-blocking-tracking-protection-option-disabled =
-    .label = Asla engelleme
-content-blocking-tracking-protection-change-blocklist = Engelleme listesini değiştir…
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
 content-blocking-fastblock-slow-loading-trackers-label =
     .label = Yavaş yüklenen takipçiler
     .accesskey = Y
+content-blocking-fastblock-new-description = Yalnızca sayfaların çabuk yüklenmesini önleyen takipçileri engeller.
+content-blocking-tracking-protection-trackers-label =
+    .label = Takipçiler
+    .accesskey = T
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Bulunan tüm takipçiler
     .accesskey = B
+content-blocking-tracking-protection-new-description = Bilinen tüm takipçileri engeller. (Bazı sayfalar düzgün yüklenmeyebilir.)
 content-blocking-tracking-protection-option-always =
     .label = Her zaman
     .accesskey = H
@@ -717,6 +689,11 @@ content-blocking-third-party-cookies-label =
     .label = Üçüncü taraf çerezleri
     .accesskey = Ü
 content-blocking-reject-trackers-description = Tüm üçüncü taraf çerezlerini veya yalnızca takipçilerin oluşturduğu çerezleri engelleyebilirsiniz.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = “Çerezler ve site verileri” ayarlarınız, “üçüncü taraf çerezleri” ayarlarının değiştirilmesini engelliyor.
 content-blocking-change-cookie-settings =
     .label = Çerez ayarlarını değiştir
     .accesskey = z
@@ -744,13 +721,9 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Asla
     .accesskey = A
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Gizli Gezinti’de bilinen takipçileri engellemek için İzlenme Koruması’nı kullan
-    .accesskey = G
 tracking-exceptions =
     .label = İstisnalar…
-    .accesskey = r
+    .accesskey = t
 tracking-change-block-list =
     .label = Engelleme listesini değiştir…
     .accesskey = E

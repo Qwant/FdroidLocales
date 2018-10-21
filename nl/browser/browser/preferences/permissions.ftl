@@ -68,6 +68,11 @@ permissions-exceptions-tracking-protection-window =
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = U hebt Bescherming tegen volgen uitgeschakeld op deze websites.
 
+permissions-exceptions-content-blocking-window =
+    .title = Uitzonderingen - Inhoudsblokkering
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = U hebt inhoudsblokkering uitgeschakeld op deze websites.
+
 ## Exceptions - Cookies
 
 permissions-exceptions-cookie-window =
@@ -97,11 +102,6 @@ permissions-exceptions-addons-window =
 permissions-exceptions-addons-desc = U kunt opgeven welke websites toestemming hebben om add-ons te installeren. Typ het exacte adres van de website die u toestemming wilt geven en klik vervolgens op Toestaan.
 
 ## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window =
-    .title = Websites met toestemming - Automatisch afspelen
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = U kunt opgeven welke websites toestemming hebben om automatisch media-elementen af te spelen. Typ het exacte adres van de website die u toestemming wilt geven en klik vervolgens op Toestaan.
 
 permissions-exceptions-autoplay-media-window2 =
     .title = Uitzonderingen - Automatisch afspelen

@@ -53,6 +53,7 @@ pane-sync-title = Konto Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Pomoc { -brand-short-name }
+addons-button-label = Rozšěrjenja a drasty
 focus-search =
     .key = f
 close-button =
@@ -332,7 +333,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Syćowy proksy
 network-settings-title = Syćowe nastajenja
 network-proxy-connection-description = Konfigurować, kak { -brand-short-name } z internetom zwjazuje.
 network-proxy-connection-learn-more = Dalše informacije
@@ -531,6 +531,7 @@ privacy-header = Priwatnosć wobhladowaka
 ## Privacy Section - Forms
 
 forms-header = Formulary a hesła
+logins-header = Přizjewjenja a hesła
 forms-ask-to-save-logins =
     .label = Prašeć so, hač so maja přizjewjenja a hesła składować
     .accesskey = r
@@ -597,26 +598,12 @@ sitedata-total-size-calculating = Wulkosć sydłowych datow a pufrowaka so wuli�
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Waše składowane placki, sydłowe daty a pufrowak so tuchwilu { $value } { $unit } tačeloweho ruma wužiwaja.
 sitedata-learn-more = Dalše informacije
-sitedata-accept-cookies-option =
-    .label = Placki a sydłowe daty z websydłow akceptować (doporučene)
-    .accesskey = P
-sitedata-block-cookies-option =
-    .label = Placki a sydłowe daty blokować (móže zawinować, zo websydła njefunguja)
-    .accesskey = b
-sitedata-keep-until = Wobchować
+sitedata-keep-until = Wobchować doniž
     .accesskey = c
 sitedata-keep-until-expire =
-    .label = doniž njespadnu
+    .label = njespadnu
 sitedata-keep-until-closed =
     .label = { -brand-short-name } so njezačini
-sitedata-accept-third-party-desc = Placki a sydłowe daty třećich poskićowarjow akceptować
-    .accesskey = t
-sitedata-accept-third-party-always-option =
-    .label = Přeco
-sitedata-accept-third-party-visited-option =
-    .label = Jenož wot wopytanych třećich
-sitedata-accept-third-party-never-option =
-    .label = Ženje
 sitedata-allow-cookies-option =
     .label = Placki a sydłowe daty akceptować
     .accesskey = P
@@ -633,10 +620,6 @@ sitedata-block-trackers-option =
     .label = Přesćěhowaki třećich
 sitedata-block-unvisited-option =
     .label = Placki z njewopytanych websydłow
-sitedata-block-all-third-parties-option =
-    .label = Wšě placki třećich
-sitedata-block-always-option =
-    .label = Wšě placki (móže zawinować, zo websydła njefunguja)
 sitedata-block-all-third-party-option =
     .label = Wšě placki třećich (móže zawinować, zo websydła njefunguja)
 sitedata-block-all-option =
@@ -690,30 +673,13 @@ content-blocking-category-label = Wubjerće, štož ma so blokować
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Pomałe slědowace elementy
-    .accesskey = P
-content-blocking-fastblock-description = Blokuje wobsah třećich poskićowarjow, kotryž trjeba wjace hač 5 sekundow, zo by so začitał.
-content-blocking-fastblock-option-enabled =
-    .label = Přeco blokować
-content-blocking-fastblock-option-disabled =
-    .label = Ženje njeblokować
-content-blocking-tracking-protection-label = Přesćěhowaki
-    .accesskey = P
-content-blocking-tracking-protection-description = Blokuje wšě znate přesćěhowaki (Kedźbu: móže tež začitanju někotrych stronow zadźěwać)
-content-blocking-tracking-protection-option-enabled =
-    .label = Přeco blokować
-content-blocking-tracking-protection-option-pbm =
-    .label = Jenož w priwatnych woknach blokować
-content-blocking-tracking-protection-option-disabled =
-    .label = Ženje njeblokować
-content-blocking-tracking-protection-change-blocklist = Lisćinu blokowanjow změnić…
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
 content-blocking-fastblock-slow-loading-trackers-label =
     .label = Pomału čitace přesćěhowaki
     .accesskey = P
 content-blocking-fastblock-new-description = Jenož přesćěhowaki blokować, kotrež strony při spěšnym začitanju haća.
+content-blocking-tracking-protection-trackers-label =
+    .label = Přesćěhowaki
+    .accesskey = P
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = Wšě wotkryte přesćěhowaki
     .accesskey = h
@@ -761,10 +727,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Ženje
     .accesskey = n
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Slědowanski škit w priwatnym modusu wužiwać, zo by znate přesćěhowaki blokował
-    .accesskey = r
 tracking-exceptions =
     .label = Wuwzaća…
     .accesskey = u

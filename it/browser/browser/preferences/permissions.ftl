@@ -54,6 +54,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Eccezioni - Protezione antitracciamento
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = La protezione antitracciamento è stata disattivata per i seguenti siti web.
+permissions-exceptions-content-blocking-window =
+    .title = Eccezioni - Blocco contenuti
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Il blocco contenuti è stato disattivato per i seguenti siti web.
 
 ## Exceptions - Cookies
 
@@ -85,13 +89,9 @@ permissions-exceptions-addons-desc = È possibile specificare quali siti web avr
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Siti web con permesso - Riproduzione automatica
-    .style = { permissions-window.style }
 permissions-exceptions-autoplay-media-window2 =
     .title = Eccezioni - Riproduzione automatica
     .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = È possibile specificare quali siti web avranno il permesso di riprodurre automaticamente contenuti sonori. Inserire l’indirizzo esatto del sito web a cui dare il permesso e fare clic su Consenti.
 permissions-exceptions-autoplay-media-desc2 = È possibile specificare quali siti web avranno sempre il permesso di riprodurre automaticamente contenuti sonori e quali verranno bloccati. Inserire l’indirizzo esatto del sito web da gestire e fare clic su Blocca o Consenti.
 
 ## Site Permissions - Notifications

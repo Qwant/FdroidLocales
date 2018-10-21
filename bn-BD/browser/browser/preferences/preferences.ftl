@@ -118,7 +118,7 @@ startup-header = শুরুতে
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = অনুমতি দিন { -brand-short-name } এবং ফায়ারফক্স একই সময়ে চালানোর জন্য
-use-firefox-sync = টিপ: এটি পৃথক প্রোফাইল ব্যাবহার করে। তাদের মধ্যে তথ্য শেয়ার করার জন্য সিঙ্ক ব্যবহার করুন।
+use-firefox-sync = টিপ: এটি পৃথক প্রোফাইল ব্যাবহার করে। তাদের মধ্যে তথ্য শেয়ার করার জন্য { -sync-brand-short-name } ব্যবহার করুন।
 get-started-not-logged-in = { -sync-brand-short-name } এ সাইন ইন করুন…
 get-started-configured = { -sync-brand-short-name } এর পছন্দসমূহ খুলুন
 always-check-default =
@@ -318,7 +318,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = নেটওয়ার্ক প্রক্সি
 network-proxy-connection-description = কিভাবে { -brand-short-name } ইন্টারেনেটে সংযোগ করে তা কনফিগার করুন।
 network-proxy-connection-learn-more = আরও জানুন
 network-proxy-connection-settings =
@@ -557,9 +556,6 @@ history-dontremember-description = { -brand-short-name } একান্ত ব�
 history-private-browsing-permanent =
     .label = সবসময় একান্ত ব্রাউজিং মোড ব্যবহার করুন p
     .accesskey = p
-history-remember-option =
-    .label = আমার ব্রাউজিং এবং ডাউনলোড ইতিহাস মনে রাখুন b
-    .accesskey = b
 history-remember-browser-option =
     .label = ব্রাউজিং এবং ডাউনলোড ইতিহাস মনে রাখবে
     .accesskey = b
@@ -585,26 +581,12 @@ sitedata-total-size-calculating = সাইট ডাটা এবং ক্য�
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = আপনার সংরক্ষিত কুকিজ, সাইট ডেটা এবং ক্যাশে বর্তমানে { $value } { $unit } ডিস্ক স্পেস ব্যবহার করছে।
 sitedata-learn-more = আরও জানুন
-sitedata-accept-cookies-option =
-    .label = ওয়েবসাইট থেকে কুকি ও সাইট ডাটা গ্রহণ করুন (সুপারিশকৃত)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = কুকি এবং সাইট ডাটা ব্লক করুন (ওয়েবসাইট ভাঙ্গতে পারে)
-    .accesskey = B
 sitedata-keep-until = সংরক্ষণের সময়কাল
     .accesskey = u
 sitedata-keep-until-expire =
     .label = তাদের মেয়াদ উত্তীর্ণ
 sitedata-keep-until-closed =
     .label = { -brand-short-name } বন্ধ হয়ে গেছে
-sitedata-accept-third-party-desc = তৃতীয়-পক্ষের কুকি এবং সাইট ডাটা গ্রহণ করুন
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = সর্বদা
-sitedata-accept-third-party-visited-option =
-    .label = প্রদর্শিত হতে
-sitedata-accept-third-party-never-option =
-    .label = কখনো নয়
 sitedata-clear =
     .label = ডাটা পরিষ্কার করুন…
     .accesskey = l
@@ -647,26 +629,9 @@ content-blocking-toggle-label-on = চালু করুন
 content-blocking-toggle-label-off = বন্ধ
     .accesskey = O
 content-blocking-category-label = কি ব্লক করতে চান বলুন
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = স্লো ট্র্যাকিং উপাদানসমূহ
-    .accesskey = S
-content-blocking-fastblock-description = তৃতীয় পক্ষের কনটেন্ট অবরোধ করে যা লোড হতে ৫ সেকেন্ডের বেশি সময় নেয়।
-content-blocking-fastblock-option-enabled =
-    .label = সর্বদা ব্লক করুন
-content-blocking-fastblock-option-disabled =
-    .label = কখনও ব্লক করবেন  না
-content-blocking-tracking-protection-label = ট্রাকার
-    .accesskey = T
-content-blocking-tracking-protection-description = সমস্ত পরিচিত ট্র্যাকার ব্লক করে (নোট: লোড হতে কিছু পৃষ্ঠা আটকাতে পারে)
-content-blocking-tracking-protection-option-enabled =
-    .label = সর্বদা ব্লক করুন
-content-blocking-tracking-protection-option-pbm =
-    .label = শুধুমাত্র ব্যক্তিগত উইন্ডোতে ব্লক করুন
-content-blocking-tracking-protection-option-disabled =
-    .label = কখনও ব্লক করবে না
-content-blocking-tracking-protection-change-blocklist = ব্লক তালিকা পরিবর্তন করুন...
+content-blocking-tracking-protection-option-always =
+    .label = সর্বদা
+    .accesskey = A
 
 ## Privacy Section - Tracking
 
@@ -682,10 +647,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = কখনো নয় N
     .accesskey = N
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = ব্যক্তিগত ব্রাউজিং এ জানা ট্র্যাকার ব্লক করতে ট্র্যাকিং সুরক্ষা ব্যবহার করুন
-    .accesskey = v
 tracking-exceptions =
     .label = ব্যতিক্রম… E
     .accesskey = E
@@ -729,6 +690,7 @@ autoplay-option-allow =
     .label = অটোপ্লে কে অনুমতি দিন
 autoplay-option-dont =
     .label = অটোপ্লে করবেন না
+permissions-autoplay-link = আরও জানুন
 permissions-block-popups =
     .label = পপ-আপ উইন্ডো ব্লক করা হবে B
     .accesskey = B

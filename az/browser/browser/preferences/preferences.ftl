@@ -53,6 +53,7 @@ pane-sync-title = Firefox Hesabı
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } Dəstək
+addons-button-label = Uzantılar və Mövzular
 focus-search =
     .key = f
 close-button =
@@ -326,7 +327,6 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Şəbəkə Proksisi
 network-settings-title = Şəbəkə Tənzimləmələri
 network-proxy-connection-description = { -brand-short-name } səyyahının internetə necə qoşulduğunu idarə et.
 network-proxy-connection-learn-more = Ətraflı öyrən
@@ -525,6 +525,7 @@ privacy-header = Səyahər Məxfiliyi
 ## Privacy Section - Forms
 
 forms-header = Formlar və Parollar
+logins-header = Hesablar və Parollar
 forms-ask-to-save-logins =
     .label = Daxil olma və parolları saxlamaq üçün soruş
     .accesskey = r
@@ -591,26 +592,12 @@ sitedata-total-size-calculating = Sayt məlumatları və keş ölçüsü hesabla
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Saxlanılan çərəz, sayt məlumatları və keşləriniz hazırda { $value } { $unit } disk işlədirlər.
 sitedata-learn-more = Ətraflı öyrən
-sitedata-accept-cookies-option =
-    .label = Saytların çərəz və sayt məlumatlarını qəbul et (məsləhət görülür)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = Çərəz və sayt məlumatlarını əngəllə (bəzi saytlar işləməyə bilər)
-    .accesskey = B
 sitedata-keep-until = Saxlama limiti
     .accesskey = u
 sitedata-keep-until-expire =
     .label = Vaxtı bitənə qədər
 sitedata-keep-until-closed =
     .label = { -brand-short-name } qapatılana qədər
-sitedata-accept-third-party-desc = Üçüncü tərəf çərəz və sayt məlumatlarını qəbul et
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = Həmişə
-sitedata-accept-third-party-visited-option =
-    .label = Baxılanlardan
-sitedata-accept-third-party-never-option =
-    .label = Heç vaxt
 sitedata-allow-cookies-option =
     .label = Çərəz və sayt məlumatlarını qəbul et
     .accesskey = A
@@ -627,10 +614,6 @@ sitedata-block-trackers-option =
     .label = Üçüncü tərəf izləyicilər
 sitedata-block-unvisited-option =
     .label = Ziyarət edilməmiş saytlardan olan çərəzlər
-sitedata-block-all-third-parties-option =
-    .label = Bütün üçüncü tərəf çərəzlər
-sitedata-block-always-option =
-    .label = Bütün çərəzlər (saytlar səhv işləyə bilər)
 sitedata-block-all-third-party-option =
     .label = Bütün üçüncü-tərəf çərəzləri (bəzi saytlar səhv işləyə bilər)
 sitedata-block-all-option =
@@ -684,30 +667,15 @@ content-blocking-category-label = Nələrin əngəllənəcəyini seçin
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = İzləmə elementlərini göstər
-    .accesskey = S
-content-blocking-fastblock-description = Yüklənməyi 5 saniyədən çox çəkən üçüncü tərəf məzmunlarını əngəllə.
-content-blocking-fastblock-option-enabled =
-    .label = Həmişə əngəllə
-content-blocking-fastblock-option-disabled =
-    .label = Heç vaxt əngəlləmə
-content-blocking-tracking-protection-label = İzləyicilər
-    .accesskey = T
-content-blocking-tracking-protection-description = Bilinən bütün izləyiciləri əngəllə (Qeyd: bəzi səhifələrin yüklənməsinə mane ola bilər).
-content-blocking-tracking-protection-option-enabled =
-    .label = Həmişə əngəllə
-content-blocking-tracking-protection-option-pbm =
-    .label = Ancaq Məxfi Pəncərələrdə əngəllə
-content-blocking-tracking-protection-option-disabled =
-    .label = Heç vaxt əngəlləmə
-content-blocking-tracking-protection-change-blocklist = Qara Siyahını Dəyiş…
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-label = Yavaş Yüklənən İzləyicilər
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Yavaş yüklənən izləyicilər
     .accesskey = S
 content-blocking-fastblock-new-description = Ancaq səhifənin tez yüklənməsini əngəlləyən izləyiciləri əngəllə.
-content-blocking-tracking-protection-all-label = Bütün Aşkarlanmış İzləyicilər
+content-blocking-tracking-protection-trackers-label =
+    .label = İzləyicilər
+    .accesskey = T
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Bütün aşkarlanan izləyicilər
     .accesskey = T
 content-blocking-tracking-protection-new-description = Bütün bilinən izləyiciləri əngəllə. (Bəzi səhifələr yüklənməyə bilər.)
 content-blocking-tracking-protection-option-always =
@@ -717,7 +685,8 @@ content-blocking-tracking-protection-option-private =
     .label = Ancaq məxfi pəncərələrdə
     .accesskey = p
 content-blocking-tracking-protection-change-block-list = Qara siyahını dəyişdir
-content-blocking-reject-trackers-label = Üçüncü tərəf çərəzlər
+content-blocking-third-party-cookies-label =
+    .label = Üçüncü-tərəf çərəzlər
     .accesskey = C
 content-blocking-reject-trackers-description = Bütün üçüncü-tərəf çərəzləri və ya ancaq izləyicilər tərəfindən olanları əngəllə.
 # This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
@@ -751,10 +720,6 @@ tracking-mode-private =
     .accesskey = n
 tracking-mode-never =
     .label = Heç vaxt
-    .accesskey = v
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Bilinən izləyiciləri bloklamaq üçün Məxfi Səyahətdə İzlənmə Qorumasını işlədin
     .accesskey = v
 tracking-exceptions =
     .label = İstisnalar…

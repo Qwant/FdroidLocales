@@ -27,12 +27,6 @@
 <!ENTITY firstrun_button_next "Próximo">
 
 <!ENTITY firstrun_tabqueue_title "Links">
-<!-- Localization note (firstrun_tabqueue_message): 'Tab queue' is a feature that allows users to queue up or save links from outside of Firefox (without switching apps) - these links will be loaded in Firefox the next time Firefox is opened. -->
-<!ENTITY firstrun_tabqueue_message_off "Ligar fila de abas">
-<!ENTITY firstrun_tabqueue_subtext_off "Salvar links para mais tarde no &brandShortName; quando tocar-los em outros aplicativos.">
-
-<!ENTITY firstrun_tabqueue_message_on "Sucesso!">
-<!ENTITY firstrun_tabqueue_subtext_on "Você sempre pode desligar isso nas &settings; no &pref_category_general;.">
 
 <!ENTITY firstrun_readerview_title "Artigos">
 <!-- Localization note (firstrun_readerview_message): This is a casual way of describing getting rid of unnecessary things, and is referring to simplifying websites so only the article text and images are visible, removing unnecessary headers or ads. -->
@@ -69,7 +63,6 @@
 <!ENTITY  crash_restart_label "Reiniciar o &brandShortName;">
 
 <!ENTITY url_bar_default_text2 "Pesquise ou digite um endereço">
-
 <!-- Localization note (url_bar_qrcode_text2) : This text will be
      heard by non-visual users when the focus is on the QR Code
      icon in the url bar. -->
@@ -215,7 +208,6 @@
      “storing data”. -->
 <!ENTITY pref_category_advanced_summary3 "Restaurar abas, economia de dados, ferramentas do desenvolvedor">
 <!ENTITY pref_category_notifications "Notificações">
-<!ENTITY pref_category_notifications_summary "Novas funcionalidades, atualizações de sites">
 <!ENTITY pref_category_notifications_summary2 "Novas funcionalidades, dicas de produtos">
 <!ENTITY pref_developer_remotedebugging_usb "Depuração remota via USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Depuração remota via Wi-Fi">
@@ -371,7 +363,6 @@
 <!ENTITY pref_use_system_font_size_summary "Redimensionar o conteúdo de acordo com o tamanho da fonte do sistema">
 
 <!ENTITY pref_media_autoplay_enabled "Permitir reprodução automática">
-<!ENTITY pref_media_autoplay_enabled_summary "Controlar a reprodução de vídeos e outras mídias automaticamente">
 <!ENTITY pref_media_autoplay_allow "Permitir reprodução automática">
 <!ENTITY pref_media_autoplay_block "Bloquear reprodução automática">
 <!ENTITY pref_zoom_force_enabled "Sempre ativar o zoom">
@@ -839,9 +830,6 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE(corrupt_apk): This notification is shown if corruption has been detected on startup and the user has to reinstall Firefox -->
 <!ENTITY corrupt_apk "Não foi possível abrir o &brandShortName;. Reinstale e tente novamente.">
 
-<!ENTITY eol_notification_title2 "&brandShortName; não irá atualizar">
-<!ENTITY eol_notification_summary "Toque para saber mais">
-
 <!-- LOCALIZATION NOTE (whatsnew_notification_title, whatsnew_notification_summary): These strings
      are used for a system notification that's shown to users after the app updates. -->
 <!ENTITY whatsnew_notification_title "O &brandShortName; está atualizado">
@@ -911,3 +899,10 @@ Picture-in-picture mini window -->
 <!ENTITY mls_notification_channel "Serviço de localização do &vendorShortName;">
 <!ENTITY download_notification_channel "Downloads">
 <!ENTITY media_notification_channel "Reprodução de mídia">
+<!-- These push notifications come without a specific channel and/or name from Leanplum -->
+<!ENTITY leanplum_default_notifications_channel "Notificações push do &brandShortName;">
+<!ENTITY updater_notification_channel "Atualizações do aplicativo">
+<!ENTITY synced_tabs_notification_channel "Abas sincronizadas">
+<!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
+web sites through the HTML Notifications API. -->
+<!ENTITY site_notifications_channel "Notificações do site">

@@ -11,3 +11,6 @@ documentation-tab=Dokumentacja
 policy-name=Nazwa
 policy-value=Wartość
 policy-errors=Błędy
+
+gpo-machine-only=
+  .title=Podczas używania zasad grupy, te zasady mogą być ustawione wyłącznie na poziomie komputera.

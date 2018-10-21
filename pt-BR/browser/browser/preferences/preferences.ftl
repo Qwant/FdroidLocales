@@ -6,6 +6,8 @@ do-not-track-description = Enviar aos sites um sinal de “Não rastrear” info
 do-not-track-learn-more = Saiba mais
 do-not-track-option-default =
     .label = Somente quando usar a proteção contra rastreamento
+do-not-track-option-default-content-blocking =
+    .label = Apenas quando o { -brand-short-name } está configurado para bloquear rastreadores detectados
 do-not-track-option-always =
     .label = Sempre
 pref-page =
@@ -58,7 +60,7 @@ close-button =
 
 ## Browser Restart Dialog
 
-feature-enable-requires-restart = O { -brand-short-name } deve ser reiniciado para habilitar esta funcionalidade.
+feature-enable-requires-restart = O { -brand-short-name } deve ser reiniciado para ativar esta funcionalidade.
 feature-disable-requires-restart = O { -brand-short-name } deve ser reiniciado para desativar esta funcionalidade.
 should-restart-title = Reiniciar o { -brand-short-name }
 should-restart-ok = Reiniciar o { -brand-short-name } agora
@@ -90,6 +92,9 @@ extension-controlled-privacy-containers = Uma extensão requer abas contêiner: 
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Uma extensão, <img data-l10n-name="icon"/> { $name }, está controlando sua proteção contra rastreamento.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = Uma extensão, <img data-l10n-name="icon"/> { $name }, está controlando esta configuração.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Uma extensão, <img data-l10n-name="icon"/> { $name }, está controlando como o { -brand-short-name } se conecta à Internet.
@@ -98,7 +103,7 @@ extension-controlled-proxy-config = Uma extensão, <img data-l10n-name="icon"/> 
 #
 # <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
 # <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
-extension-controlled-enable = Para habilitar esta extensão vá para <img data-l10n-name="addons-icon"/> Extensões no menu <img data-l10n-name="menu-icon"/>.
+extension-controlled-enable = Para ativar esta extensão vá para <img data-l10n-name="addons-icon"/> Extensões no menu <img data-l10n-name="menu-icon"/>.
 
 ## Preferences UI Search Results
 
@@ -148,13 +153,13 @@ warn-on-open-many-tabs =
     .label = Avisar que quando abrir muitas abas, o { -brand-short-name } pode ficar lento
     .accesskey = d
 switch-links-to-new-tabs =
-    .label = Quando abrir um link em uma nova aba, alterne para ela imediatamente
+    .label = Quando abrir um link em uma nova aba, alternar para ela imediatamente
     .accesskey = u
 show-tabs-in-taskbar =
     .label = Mostrar a visualização das abas na barra de tarefas do Windows
     .accesskey = v
 browser-containers-enabled =
-    .label = Habilitar abas contêiner
+    .label = Ativar abas contêiner
     .accesskey = n
 browser-containers-learn-more = Saiba mais
 browser-containers-settings =
@@ -171,7 +176,7 @@ containers-disable-alert-ok-button =
         [one] Fechar { $tabCount } aba contêiner
        *[other] Fechar { $tabCount } abas contêiner
     }
-containers-disable-alert-cancel-button = Manter habilitado
+containers-disable-alert-cancel-button = Manter ativado
 containers-remove-alert-title = Remover este contêiner?
 # Variables:
 #   $count (Number) - Number of tabs that will be closed.
@@ -203,6 +208,9 @@ choose-button =
     .label = Selecionar…
     .accesskey = S
 choose-browser-language-description = Escolha o idioma usado para exibir os menus, mensagens e notificações do { -brand-short-name }
+manage-browser-languages-button =
+    .label = Definir alternativas…
+    .accesskey = l
 confirm-browser-language-change-description = Reiniciar o { -brand-short-name } para aplicar estas alterações
 confirm-browser-language-change-button = Aplicar e reiniciar
 translate-web-pages =
@@ -319,6 +327,7 @@ browsing-search-on-start-typing =
 ## General Section - Proxy
 
 network-proxy-title = Proxy de Rede
+network-settings-title = Configurações de rede
 network-proxy-connection-description = Configure como o { -brand-short-name } se conecta à Internet.
 network-proxy-connection-learn-more = Saiba mais
 network-proxy-connection-settings =
@@ -516,6 +525,7 @@ privacy-header = Privacidade do navegador
 ## Privacy Section - Forms
 
 forms-header = Formulários e Senhas
+logins-header = Logins e Senhas
 forms-ask-to-save-logins =
     .label = Perguntar se deve salvar contas e senhas de acesso de sites
     .accesskey = r
@@ -618,10 +628,10 @@ sitedata-block-trackers-option =
     .label = Rastreadores de terceiros
 sitedata-block-unvisited-option =
     .label = Cookies de sites não visitados
-sitedata-block-all-third-parties-option =
-    .label = Todos os cookies de terceiros
-sitedata-block-always-option =
-    .label = Todos os cookies (pode atrapalhar o funcionamento de sites)
+sitedata-block-all-third-party-option =
+    .label = Todos os cookies de terceiros (pode atrapalhar sites)
+sitedata-block-all-option =
+    .label = Todos os cookies (irá atrapalhar sites)
 sitedata-clear =
     .label = Limpar dados…
     .accesskey = L
@@ -631,6 +641,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Exceções…
     .accesskey = E
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Suas configurações de bloqueio de conteúdo estão impedindo mudanças nas configurações de Cookies e Dados de sites.
 
 ## Privacy Section - Address Bar
 
@@ -667,23 +681,45 @@ content-blocking-category-label = Escolher o que bloquear
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Elementos lentos de rastreio
-    .accesskey = s
-content-blocking-fastblock-description = Bloqueia conteúdo de terceiros que levam mais de 5 segundos para carregar.
-content-blocking-fastblock-option-enabled =
-    .label = Sempre bloquear
-content-blocking-fastblock-option-disabled =
-    .label = Nunca bloquear
-content-blocking-tracking-protection-label = Rastreadores
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Rastreadores que atrasam o carregamento
+    .accesskey = a
+content-blocking-fastblock-new-description = Bloqueia somente os rastreadores que impedem que páginas sejam carregadas rapidamente.
+content-blocking-tracking-protection-trackers-label =
+    .label = Rastreadores
     .accesskey = t
-content-blocking-tracking-protection-description = Bloqueia todos os rastreadores conhecidos (obs.: também pode impedir o carregamento de algumas páginas).
-content-blocking-tracking-protection-option-enabled =
-    .label = Sempre bloquear
-content-blocking-tracking-protection-option-pbm =
-    .label = Bloquear somente em janelas privativas
-content-blocking-tracking-protection-option-disabled =
-    .label = Nunca bloquear
-content-blocking-tracking-protection-change-blocklist = Mudar lista de bloqueio...
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Todos os rastreadores detectados
+    .accesskey = T
+content-blocking-tracking-protection-new-description = Bloqueia todos os rastreadores conhecidos (pode impedir que algumas páginas sejam carregadas).
+content-blocking-tracking-protection-option-always =
+    .label = Sempre
+    .accesskey = S
+content-blocking-tracking-protection-option-private =
+    .label = Apenas em janelas privativas
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Alterar lista de bloqueio
+content-blocking-third-party-cookies-label =
+    .label = Cookies de terceiros
+    .accesskey = C
+content-blocking-reject-trackers-description = Bloqueia todos os cookies de terceiros ou apenas aqueles definidos por rastreadores.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Suas configurações em Cookies e Dados de Sites está impedindo alterações nas configurações de Cookies de terceiros.
+content-blocking-change-cookie-settings =
+    .label = Alterar configurações de cookies
+    .accesskey = s
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Rastreadores (recomendado)
+    .accesskey = R
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Rastreadores
+    .accesskey = R
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Todos os cookies de terceiros (pode atrapalhar sites)
+    .accesskey = a
 
 ## Privacy Section - Tracking
 

@@ -2,10 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = S signalom “Brez sledenja” sporočaj spletnim stranem, naj vam ne sledijo
+do-not-track-description = Spletnim stranem pošiljajte signal “Brez sledenja”, torej da vam naj ne sledijo
 do-not-track-learn-more = Več o tem
 do-not-track-option-default =
     .label = Samo pri uporabi zaščite pred sledenjem
+do-not-track-option-default-content-blocking =
+    .label = Samo, ko je { -brand-short-name } nastavljen na zavračanje zaznanih sledilcev
 do-not-track-option-always =
     .label = Vedno
 pref-page =
@@ -51,6 +53,7 @@ pane-sync-title = Firefox Račun
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Podpora za { -brand-short-name }
+addons-button-label = Razširitve in teme
 focus-search =
     .key = f
 close-button =
@@ -90,6 +93,9 @@ extension-controlled-privacy-containers = Razširitev <img data-l10n-name="icon"
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = Razširitev <img data-l10n-name="icon"/> { $name } nadzoruje zaščito pred sledenjem.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = To nastavitev nadzira razširitev <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Razširitev <img data-l10n-name="icon"/> { $name } nadzira, kako { -brand-short-name } vzpostavi povezavo z internetom.
@@ -209,6 +215,9 @@ choose-button =
     .label = Izberi …
     .accesskey = e
 choose-browser-language-description = Izberite jezike, v katerih naj bodo prikazani meniji, sporočila in obvestila { -brand-short-name }a.
+manage-browser-languages-button =
+    .label = Nastavi pomožne jezike …
+    .accesskey = m
 confirm-browser-language-change-description = Ponovno zaženite { -brand-short-name } za uveljavitev sprememb
 confirm-browser-language-change-button = Uveljavi in ponovno zaženi
 translate-web-pages =
@@ -324,7 +333,7 @@ browsing-search-on-start-typing =
 
 ## General Section - Proxy
 
-network-proxy-title = Omrežni posrednik
+network-settings-title = Nastavitve omrežja
 network-proxy-connection-description = Nastavite, kako se { -brand-short-name } poveže z internetom.
 network-proxy-connection-learn-more = Več o tem
 network-proxy-connection-settings =
@@ -522,6 +531,7 @@ privacy-header = Zasebnost brskalnika
 ## Privacy Section - Forms
 
 forms-header = Obrazci in gesla
+logins-header = Prijave in gesla
 forms-ask-to-save-logins =
     .label = Ponujaj shranjevanje prijav in gesel za spletne strani
     .accesskey = g
@@ -563,9 +573,6 @@ history-dontremember-description = { -brand-short-name } bo uporabljal enake nas
 history-private-browsing-permanent =
     .label = Vedno uporabljaj zasebno brskanje
     .accesskey = S
-history-remember-option =
-    .label = Shranjuj zgodovino brskanja in prenosov
-    .accesskey = b
 history-remember-browser-option =
     .label = Shranjuj zgodovino brskanja in prenosov
     .accesskey = b
@@ -591,34 +598,32 @@ sitedata-total-size-calculating = Računanje velikosti podatkov strani in predpo
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Shranjeni piškotki, podatki strani in predpomnilnik trenutno zavzemajo { $value } { $unit } prostora na disku.
 sitedata-learn-more = Več o tem
-sitedata-accept-cookies-option =
-    .label = Sprejemaj piškotke in podatke spletnih strani (priporočeno)
-    .accesskey = S
-sitedata-block-cookies-option =
-    .label = Zavračaj piškotke in podatke spletnih strani (lahko povzroči nepravilno delovanje strani)
-    .accesskey = Z
 sitedata-keep-until = Obdrži jih,
     .accesskey = j
 sitedata-keep-until-expire =
     .label = dokler ne pretečejo
 sitedata-keep-until-closed =
     .label = dokler se { -brand-short-name } ne zapre
-sitedata-accept-third-party-desc = Sprejemaj piškotke in podatke tretjih strani
-    .accesskey = t
-sitedata-accept-third-party-always-option =
-    .label = Vedno
-sitedata-accept-third-party-visited-option =
-    .label = Izmed obiskanih
-sitedata-accept-third-party-never-option =
-    .label = Nikoli
+sitedata-allow-cookies-option =
+    .label = Sprejemaj piškotke in podatke strani
+    .accesskey = S
+sitedata-disallow-cookies-option =
+    .label = Zavračaj piškotke in podatke strani
+    .accesskey = Z
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Zavračaj
+    .accesskey = Z
 sitedata-block-trackers-option-recommended =
     .label = Sledilce tretjih strani (priporočeno)
 sitedata-block-trackers-option =
     .label = Sledilce tretjih strani
 sitedata-block-unvisited-option =
     .label = Piškotke neobiskanih spletnih strani
-sitedata-block-all-third-parties-option =
-    .label = Vse piškotke tretjih strani
+sitedata-block-all-third-party-option =
+    .label = Vse piškotke tretjih strani (lahko povzroči nedelovanje spletnih strani)
+sitedata-block-all-option =
+    .label = Vse piškotke (povzroči nedelovanje spletnih strani)
 sitedata-clear =
     .label = Počisti podatke …
     .accesskey = č
@@ -628,6 +633,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Izjeme …
     .accesskey = Z
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Vaše nastavitve zavračanja vsebine preprečujejo spremembe nastavitev piškotkov in podatkov strani.
 
 ## Privacy Section - Address Bar
 
@@ -664,28 +673,50 @@ content-blocking-category-label = Izberite, kaj želite zavračati
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Počasni elementi sledenja
-    .accesskey = P
-content-blocking-fastblock-description = Zavrača vsebino tretjih strani, ki se nalaga več kot 5 sekund.
-content-blocking-fastblock-option-enabled =
-    .label = Vedno zavračaj
-content-blocking-fastblock-option-disabled =
-    .label = Nikoli ne zavračaj
-content-blocking-tracking-protection-label = Sledilci
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Počasne sledilce
+    .accesskey = č
+content-blocking-fastblock-new-description = Zavračaj samo sledilce, ki upočasnjujejo nalaganje strani.
+content-blocking-tracking-protection-trackers-label =
+    .label = Sledilce
     .accesskey = S
-content-blocking-tracking-protection-description = Zavrača vse znane sledilce (pozor: lahko tudi prepreči nalaganje nekaterih strani).
-content-blocking-tracking-protection-option-enabled =
-    .label = Vedno zavračaj
-content-blocking-tracking-protection-option-pbm =
-    .label = Zavračaj samo v zasebnih oknih
-content-blocking-tracking-protection-option-disabled =
-    .label = Nikoli ne zavračaj
-content-blocking-tracking-protection-change-blocklist = Zamenjaj seznam za zavračanje …
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Vse zaznane sledilce
+    .accesskey = V
+content-blocking-tracking-protection-new-description = Zavračaj vse znane sledilce. (Lahko prepreči nalaganje nekaterih strani.)
+content-blocking-tracking-protection-option-always =
+    .label = Vedno
+    .accesskey = V
+content-blocking-tracking-protection-option-private =
+    .label = Le v zasebnih oknih
+    .accesskey = s
+content-blocking-tracking-protection-change-block-list = Zamenjaj seznam za zavračanje
+content-blocking-third-party-cookies-label =
+    .label = Piškotke tretjih strani
+    .accesskey = t
+content-blocking-reject-trackers-description = Zavračaj vse piškotke tretjih strani ali samo tiste, ki jih nastavijo sledilci.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Vaše nastavitve piškotkov in podatkov strani preprečujejo spremembe nastavitev piškotkov tretjih strani.
+content-blocking-change-cookie-settings =
+    .label = Spremeni nastavitve piškotkov
+    .accesskey = S
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Ki jih nastavijo sledilci (priporočeno)
+    .accesskey = d
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Sledilce
+    .accesskey = d
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Vse piškotke tretjih strani (lahko povzroči nedelovanje spletnih strani)
+    .accesskey = V
 
 ## Privacy Section - Tracking
 
 tracking-header = Zaščita pred sledenjem
-tracking-desc = Zaščita pred sledenjem zavrača spletne sledilce, ki zbirajo podatke brskanja po spletnih straneh. <a data-l10n-name="learn-more">Več o zaščiti pred sledenjem in vaši zasebnost</a>
+tracking-desc = Zaščita pred sledenjem zavrača spletne sledilce, ki zbirajo podatke brskanja po spletnih straneh. <a data-l10n-name="learn-more">Več o zaščiti pred sledenjem in vaši zasebnosti</a>
 tracking-mode-label = Uporabljaj zaščito pred sledenjem za zavračanje znanih sledilcev
 tracking-mode-always =
     .label = Vedno
@@ -696,10 +727,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Nikoli
     .accesskey = o
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Uporabljaj zaščito pred sledenjem v zasebnem brskanju za zavračanje znanih sledilcev
-    .accesskey = r
 tracking-exceptions =
     .label = Izjeme …
     .accesskey = j

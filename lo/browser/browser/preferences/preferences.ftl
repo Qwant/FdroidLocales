@@ -6,6 +6,8 @@ do-not-track-description = ສົ່ງສັນຍານ “ບໍ່ຕິດ�
 do-not-track-learn-more = ຮຽນຮູ້ເພີ່ມເຕີມ
 do-not-track-option-default =
     .label = ສະເພາະເມື່ອມີການນຳໃຊ້ການປ້ອງກັນການຕິດຕາມ
+do-not-track-option-default-content-blocking =
+    .label = ສະເພາະໃນເວລາທີ່ { -brand-short-name } ຖືກຕັ້ງຄ່າໃຫ້ປິດກັ້ນຕົວຕິດຕາມທີ່ກວດພົບ
 do-not-track-option-always =
     .label = ຕະຫຼອດເວລາ
 pref-page =
@@ -29,6 +31,11 @@ search-input-box =
             [windows] ຄົ້ນຫາໃນ ທາງເລືອກ
            *[other] ຄົ້ນຫາໃນ ຕັ້ງຄ່າ
         }
+policies-notice =
+    { PLATFORM() ->
+        [windows] ອົງກອນຂອງທ່ານໄດ້ປິດການໃຊ້ງານຄວາມສາມາດໃນການປ່ຽນຕົວເລືອກບາງຢ່າງ
+       *[other] ອົງກອນຂອງທ່ານໄດ້ປິດການໃຊ້ງານຄວາມສາມາດໃນການປ່ຽນຄ່າກຳນົດບາງຢ່າງ
+    }
 pane-general-title = ທົ່ວໄປ
 category-general =
     .tooltiptext = { pane-general-title }
@@ -76,6 +83,13 @@ search-results-header = ຜົນການຊອກຫາ
 ## General Section
 
 startup-header = ເລີ່ມເຮັດວຽກ
+get-started-not-logged-in = ລົງທະບຽນເຂົ້າສູ່{ -sync-brand-short-name }...
+get-started-configured = ເປີດການຕັ້ງຄ່າ { -sync-brand-short-name }
+always-check-default =
+    .label = ກວດສອບທຸກຄັ້ງວ່າ { -brand-short-name } ແມ່ນບຣາວເຊີເລີ່ມຕົ້ນຂອງທ່ານຫລືບໍ່
+    .accesskey = ກ
+is-default = { -brand-short-name } ແມ່ນບຣາວເຊີເລີ່ມຕົ້ນຂອງທ່ານໃນຂະນະນີ້
+is-not-default = { -brand-short-name } ບໍ່ແມ່ນບຣາວເຊີເລີ່ມຕົ້ນຂອງທ່ານ
 set-as-my-default-browser =
     .label = ເຮັດໃຫ້ເປັນຄ່າເລີ່ມຕົ້ນ…
     .accesskey = ຄ
@@ -95,6 +109,8 @@ browser-containers-learn-more = ຮຽນຮູ້ເພີ່ມເຕີມ
 browser-containers-settings =
     .label = ການຕັ້ງຄ່າ…
     .accesskey = ຕ
+containers-disable-alert-cancel-button = ເປີດໃຊ້ງານຕໍ່ໄປ
+containers-remove-alert-title = ເອົາການແຍກຂໍ້ມູນນີ້ອອກ?
 
 ## General Section - Language & Appearance
 
@@ -116,6 +132,9 @@ choose-button =
     .label = ເລືອກ...
     .accesskey = o
 confirm-browser-language-change-button = ນຳໃຊ້ ແລະ ເລີ່ມເຮັດວຽກໃໝ່
+translate-web-pages =
+    .label = ແປເນື້ອຫາເວັບ
+    .accesskey = T
 translate-exceptions =
     .label = ຍົກເວັ້ນ...
     .accesskey = x
@@ -174,6 +193,8 @@ update-enable-search-update =
 
 performance-title = ປະສິດທິພາບ
 performance-settings-learn-more = ຮຽນຮູ້ເພີ່ມເຕີມ
+performance-limit-content-process-option = ຂີດຈຳກັດໂປຣເຊດເນື້ອຫາ
+    .accesskey = l
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
@@ -205,7 +226,7 @@ home-new-windows-tabs-description2 = ເລືອກສິ່ງທີ່ທ່�
 
 ## Home Section - Home Page Customization
 
-home-homepage-mode-label = ຫນ້າຫລັກແລະຫນ້າຕ່າງໃຫມ່
+home-homepage-mode-label = ໜ້າທຳອິດແລະວິນໂດໃຫມ່
 home-newtabs-mode-label = ແທັບໃຫມ່
 home-restore-defaults =
     .label = ກູ້ຄືນຄ່າເລີ່ມຕົ້ນ
@@ -353,11 +374,11 @@ sync-engine-addons =
 sync-engine-prefs =
     .label =
         { PLATFORM() ->
-            [windows] ທາງເລືອກ
-           *[other] ຕັ້ງຄ່າ
+            [windows] ຕົວເລືອກ
+           *[other] ການຕັ້ງຄ່າ
         }
     .tooltiptext = ການຄັ້ງຄ່າທົ່ວໄປ, ສ່ວນໂຕ, ແລະຄວາມປອດໄພທີ່ທ່ານໄດ້ປ່ຽນແປງ
-    .accesskey = s
+    .accesskey = ຕ
 sync-device-name-header = ຊື່ອຸປະກອນ
 sync-device-name-change =
     .label = ປ່ຽນຊື່ອຸປະກອນ…
@@ -466,6 +487,10 @@ sitedata-accept-third-party-visited-option =
     .label = ຈາກການຢ້ຽມຊົມ
 sitedata-accept-third-party-never-option =
     .label = ບໍ່ເຄີຍ
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = ປະເພດທີ່ຖືກປິດກັ້ນ
+    .accesskey = ປ
 sitedata-clear =
     .label = ລ້າງຂໍ້ມູນ…
     .accesskey = l
@@ -492,8 +517,42 @@ addressbar-locbar-openpage-option =
 
 ## Privacy Section - Content Blocking
 
-content-blocking-tracking-protection-label = ຕິດຕາມ
-    .accesskey = T
+content-blocking-header = ການປິດກັ້ນເນື້ອຫາ
+content-blocking-learn-more = ຮຽນຮູ້ເພີ່ມເຕີມ
+content-blocking-restore-defaults =
+    .label = ກູ້ຄືນສູ່ຄ່າເລີ່ມຕົ້ນ
+    .accesskey = ກ
+content-blocking-toggle-on =
+    .tooltiptext = ປິດການປິດກັ້ນເນື້ອຫາ
+content-blocking-toggle-off =
+    .tooltiptext = ເປີດການປິດກັ້ນເນື້ອຫາ
+content-blocking-toggle-label-on = ເປີດ
+    .accesskey = ປ
+content-blocking-toggle-label-off = ປິດ
+    .accesskey = ດ
+content-blocking-category-label = ເລືອກສິ່ງທີ່ຕ້ອງການປິດກັ້ນ
+content-blocking-tracking-protection-option-always =
+    .label = ສະເໝີ
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = ສະເພາະໃນວິນໂດສ່ວນຕົວ
+    .accesskey = ສ
+content-blocking-tracking-protection-change-block-list = ປ່ຽນລາຍການທີ່ຖືກລະງັບ
+content-blocking-third-party-cookies-label =
+    .label = ຄຸກກີ້ນອກ
+    .accesskey = C
+content-blocking-change-cookie-settings =
+    .label = ປ່ຽນການຕັ້ງຄ່າຄຸກກີ້
+    .accesskey = s
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = ໂຕຕິດຕາມ(ແນະນຳ)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = ຕິດຕາມ
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = ຄຸກກີ້ນອກທັງໝົດ(ອາດເຮັດໃຫ້ເວັບໄຊມີບັນຫາ)
+    .accesskey = A
 
 ## Privacy Section - Tracking
 
@@ -504,7 +563,7 @@ tracking-mode-always =
     .label = ຕະຫລອດເວລາ
     .accesskey = ຕ
 tracking-mode-private =
-    .label = ສະເພາະໃນຫນ້າຕ່າງແບບສ່ວນຕົວເທົ່ານັ້ນ
+    .label = ສະເພາະໃນວິນໂດສ່ວນຕົວ
     .accesskey = ສ
 tracking-mode-never =
     .label = ບໍ່ເຄີຍ
@@ -546,12 +605,20 @@ permissions-notification-pause =
 permissions-block-autoplay-media =
     .label = ບັອກເວັບໄຊບໍ່ໃຫ້ຫລິ້ນສື່ທີ່ມີສຽງໂດຍອັດຕະໂນມັດ
     .accesskey = B
+permissions-block-autoplay-media-menu = ສຳລັບເວັບໄຊທີ່ມີການຫຼິ້ນສຽງແບບອັດຕະໂນມັດ
 permissions-block-autoplay-media-exceptions =
     .label = ຂໍ້ຍົກເວັ້ນ…
     .accesskey = E
+autoplay-option-ask =
+    .label = ຖາມຢູ່ສະເໝີ
+autoplay-option-allow =
+    .label = ອະນຸຍາດໃຫ້ຫຼິ້ນແບບອັດຕະໂນມັດ
+autoplay-option-dont =
+    .label = ບໍ່ຕ້ອງຫຼິ້ນແບບອັດຕະໂນມັດ
+permissions-autoplay-link = ຮຽນຮູ້ເພີມຕື່ມ
 permissions-block-popups =
-    .label = ກັນຫນ້າຕ່າງປັອບອັບ
-    .accesskey = ກ
+    .label = ປິດກັ້ນວິນໂດປັອບອັບ
+    .accesskey = ປ
 permissions-block-popups-exceptions =
     .label = ຂໍ້ຍົກເວັ້ນ…
     .accesskey = ຍ
@@ -571,6 +638,9 @@ permissions-a11y-privacy-link = ຮຽນຮູ້ເພີ່ມເຕີມ
 collection-header = ການເກັບລວບລວມແລະໃຊ້ຂໍ້ມູນ { -brand-short-name }
 collection-privacy-notice = ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ
 collection-health-report-link = ຮຽນຮູ້ເພີ່ມເຕີມ
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled = ການລາຍງານຂໍ້ມູນຖືກປິດໃຊ້ງານສຳລັບການກຳນົດຄ່າການສ້າງນີ້
 collection-browser-errors-link = ຮຽນຮູ້ເພີ່ມເຕີມ
 collection-backlogged-crash-reports-link = ຮຽນຮູ້ເພີ່ມເຕີມ
 
@@ -582,8 +652,8 @@ collection-backlogged-crash-reports-link = ຮຽນຮູ້ເພີ່ມເ�
 security-header = ຄວາມປອດໄພ
 security-browsing-protection = ການປ້ອງກັນເນື້ອຫາຫລອກລວງແລະຊອບແວທີ່ເປັນອັນຕະລາຍ
 security-enable-safe-browsing =
-    .label = ບັອກເນື້ອຫາທີ່ເປັນອັນຕະລາຍແລະຫລອກລວງ
-    .accesskey = B
+    .label = ປິດກັ້ນເນື້ອຫາທີ່ເປັນອັນຕະລາຍແລະຫລອກລວງ
+    .accesskey = ປ
 security-enable-safe-browsing-link = ຮຽນຮູ້ເພີ່ມເຕີມ
 security-block-downloads =
     .label = ບັອກການດາວໂຫລດທີ່ເປັນອັນຕະລາຍ

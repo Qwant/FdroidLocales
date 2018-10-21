@@ -23,10 +23,14 @@
 <!ENTITY  reloadTab.accesskey                "R">
 <!ENTITY  reloadAllTabs.label                "Embohekopyahu opaite tendayke">
 <!ENTITY  reloadAllTabs.accesskey            "A">
+<!ENTITY  selectAllTabs.label                "Eiporavopaite tendayke">
+<!ENTITY  selectAllTabs.accesskey            "S">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
 <!ENTITY  duplicateTab.label                 "Embojoyvy Tendayke">
 <!ENTITY  duplicateTab.accesskey             "D">
+<!ENTITY  closeTabOptions.label              "Emboty tendayke jeporavorã">
+<!ENTITY  closeTabOptions.accesskey          "O">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -38,19 +42,29 @@ left instead of right. -->
 <!ENTITY  closeSelectedTabs.label            "Emboty tendayke poravopyre">
 <!ENTITY  closeSelectedTabs.accesskey        "S">
 
+<!ENTITY  closeTabs.label                    "Emboty tendayke">
+<!ENTITY  closeTabs.accesskey                "S">
 <!ENTITY  pinSelectedTabs.label              "Tendayke mboja">
-<!-- Pin Tab and Pin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinSelectedTabs.accesskey          "P">
 <!ENTITY  unpinSelectedTabs.label            "Tendayke pe'a">
-<!-- Unpin Tab and Unpin Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "b">
 <!-- Reload Tab and Reload Selected Tabs have the same accesskey
 but will never be visible at the same time. -->
 <!ENTITY  reloadSelectedTabs.label           "Tendayke poravopyre myanyhẽjey">
 <!ENTITY  reloadSelectedTabs.accesskey       "R">
+<!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
+but will never be visible at the same time. -->
+<!ENTITY  reloadTabs.label                   "Emyanyhẽjey tendayke">
+<!ENTITY  reloadTabs.accesskey               "R">
 <!ENTITY  bookmarkSelectedTabs.label         "Emongurusu tendayke…">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "k">
 
 <!-- LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
@@ -59,8 +73,14 @@ left edge of the tabstrip. Really we just want the string to express the idea
 that this is a lightweight and reversible action that keeps your tab where you
 can reach it easily. -->
 <!ENTITY  pinTab.label                       "Tendayke mombytapy">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  pinTab.accesskey                   "P">
 <!ENTITY  unpinTab.label                     "Tendayke mombytapy mbogue">
+<!-- LOCALIZATION NOTE(pinTab.accesskey, pinSelectedTabs.accesskey,
+unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "b">
 <!ENTITY  sendTabToDevice.label              "Emondo Tendayke Mba'e'okápe">
 <!ENTITY  sendTabToDevice.accesskey          "M">
@@ -68,14 +88,26 @@ can reach it easily. -->
 <!ENTITY  sendPageToDevice.accesskey         "M">
 <!ENTITY  sendLinkToDevice.label             "Emondo Juajuha Mba'e'okápe">
 <!ENTITY  sendLinkToDevice.accesskey         "M">
-<!ENTITY  sendToDeviceFeedback.label         "¡Oñemondóma!">
-<!ENTITY  sendToDeviceOfflineFeedback.label  "Ñeha'ãrõme (joaju'ỹre)">
+<!-- LOCALIZATION NOTE (moveTabOptions.label and moveSelectedTabOptions.label):
+These two items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  moveTabOptions.label               "Eguerova tendayke">
+<!ENTITY  moveTabOptions.accesskey           "v">
+<!ENTITY  moveSelectedTabOptions.label       "Eguerova tendayke">
+<!ENTITY  moveSelectedTabOptions.accesskey   "v">
+<!ENTITY  moveToStart.label                  "Eguerova Ñepyrũme">
+<!ENTITY  moveToStart.accesskey              "S">
+<!ENTITY  moveToEnd.label                    "Eguerova ipahápe">
+<!ENTITY  moveToEnd.accesskey                "E">
 <!ENTITY  moveToNewWindow.label              "Ovetã pyahúpe jegueraha">
 <!ENTITY  moveToNewWindow.accesskey          "W">
 <!ENTITY  reopenInContainer.label            "Embojurujajey guerekohápe">
 <!ENTITY  reopenInContainer.accesskey        "e">
 <!ENTITY  bookmarkAllTabs.label              "Opaite tendayke mbojoapy…">
 <!ENTITY  bookmarkAllTabs.accesskey          "T">
+<!ENTITY  bookmarkTab.label                  "Techaukaha rendayke">
+<!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
+These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  bookmarkTab.accesskey              "B">
 <!ENTITY  undoCloseTab.label                 "Emboguevi ha emboty tendayke">
 <!ENTITY  undoCloseTab.accesskey             "U">
 <!ENTITY  closeTab.label                     "Tendayke mboty">
@@ -116,6 +148,29 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "A">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Embojoapy opaite tendayke…">
 <!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "T">
+
+<!ENTITY toolbarContextMenu.reloadSelectedTab.label "Emyenyhẽjey tendayke poravopyre">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTab.accesskey "R">
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.label "Emyenyhẽjey umi tendayke poravopyre">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
+toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.reloadSelectedTabs.accesskey "R">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.label "Emongurusu tendayke poravopyre…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.accesskey "T">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.label "Embojuaju techaukaha tendayke poravopyrére…">
+<!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
+toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
+same accesskey but will never be visible at the same time. -->
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.accesskey "T">
+<!ENTITY toolbarContextMenu.selectAllTabs.label "Eiporavo opaite tendayke">
+<!ENTITY toolbarContextMenu.selectAllTabs.accesskey "S">
 <!ENTITY toolbarContextMenu.undoCloseTab.label "Emboguevi tendayke ñemboty ">
 <!ENTITY toolbarContextMenu.undoCloseTab.accesskey "U">
 
@@ -201,6 +256,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY subscribeToPageMenupopup.label "Ko ñandutiroguépe ñemboheraguapy">
 <!ENTITY subscribeToPageMenuitem.label "Ko ñandutiroguépe ñemboheraguapy…">
+
 <!ENTITY addCurPagesCmd.label "Tendayke mbojoapy techaukaháre…">
 <!ENTITY showAllBookmarks2.label "Opaite techaukaha jehechauka">
 <!ENTITY recentBookmarks.label "Oñembokurusu ramóva">
@@ -268,7 +324,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "Ñepyrũ">
-
 <!ENTITY homeButton.defaultPage.tooltip "Kuatiarogue ñepyrũ &brandShortName; mba'éva">
 
 <!ENTITY bookmarksButton.label          "Techaukaha">
@@ -428,23 +483,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY customizeMenu.addToToolbar.label "Tembipuru rendáre mbojoapy">
 <!ENTITY customizeMenu.addToToolbar.accesskey "A">
-<!ENTITY customizeMenu.addToPanel.label "Poravorãre mbojoapy">
-<!ENTITY customizeMenu.addToPanel.accesskey "M">
 <!-- LOCALIZATION NOTE (customizeMenu.addToOverflowMenu.label,
      customizeMenu.pinToOverflowMenu.label, customizeMenu.unpinFromOverflowMenu.label)
      The overflow menu is the menu that appears if you click the chevron (>> button)
      in the location bar. -->
 <!ENTITY customizeMenu.addToOverflowMenu.label "Embojuaju poravorã hembypáva rehegua">
 <!ENTITY customizeMenu.addToOverflowMenu.accesskey "M">
-<!ENTITY customizeMenu.moveToToolbar.label "Tembipuru rendápe jegueraha">
-<!ENTITY customizeMenu.moveToToolbar.accesskey "o">
-<!-- LOCALIZATION NOTE (customizeMenu.moveToPanel.accesskey, customizeMenu.pinToOverflowMenu.accesskey)
-     can appear on the same context menu as menubarCmd and personalbarCmd,
-     so they should have different access keys. customizeMenu.moveToToolbar and
-     customizeMenu.moveToPanel are mutually exclusive, so can share access
-     keys.  -->
-<!ENTITY customizeMenu.moveToPanel.label "Poravorã rupápe jegueraha">
-<!ENTITY customizeMenu.moveToPanel.accesskey "o">
 <!-- LOCALIZATION NOTE (customizeMenu.pinToOverflowMenu.accesskey)
      can appear on the same context menu as menubarCmd and personalbarCmd,
      so they should have different access keys.  -->
@@ -454,15 +498,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.unpinFromOverflowMenu.accesskey "U">
 <!ENTITY customizeMenu.removeFromToolbar.label "Tembipuru rendágui mboguete">
 <!ENTITY customizeMenu.removeFromToolbar.accesskey "R">
-<!ENTITY customizeMenu.removeFromMenu.label "Poravorã rupágui mboguete">
-<!ENTITY customizeMenu.removeFromMenu.accesskey "R">
 <!ENTITY customizeMenu.addMoreItems.label "Mba'epuruve mbojoapy…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "A">
-
 <!ENTITY customizeMenu.autoHideDownloadsButton.label "Emokañy ijehegui tembipuru rendápe">
 <!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
 <!ENTITY customizeMenu.manageExtension.label "Emongu’e jepysokue">
 <!ENTITY customizeMenu.manageExtension.accesskey "E">
+
+<!ENTITY customizeMenu.removeExtension.label "Emboguete pe jepysokue">
+<!ENTITY customizeMenu.removeExtension.accesskey "v">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
     app (hamburger) menu. When clicked, it opens a subview that contains
@@ -571,9 +615,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadFrameCmd.label         "Kora myenyhẽjey">
 <!ENTITY reloadFrameCmd.accesskey     "R">
 <!ENTITY viewPartialSourceForSelectionCmd.label "Ayvu reñoiha poravopyre jehecha">
-<!ENTITY viewPartialSourceForMathMLCmd.label    "Ayvu reñoiha MathML jehecha">
-<!-- LOCALIZATION NOTE (viewPartialSourceCmd.accesskey): This accesskey is used for both
-         viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label -->
 <!ENTITY viewPartialSourceCmd.accesskey "e">
 <!ENTITY viewPageSourceCmd.label      "Kuatiarogue ayvu reñoiha jehecha">
 <!ENTITY viewPageSourceCmd.accesskey  "V">
@@ -604,7 +645,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "Ko ovetã'i techaukaháre mbojoapy">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "m">
 <!ENTITY pageAction.copyLink.label    "Link Mbohasarã">
-<!ENTITY copyURLFeedback.label        "¡Ojekopiáma!">
 <!ENTITY emailPageCmd.label           "Joajuha mondo…">
 <!ENTITY emailPageCmd.accesskey       "E">
 <!ENTITY savePageCmd.label            "Ñongatu pyahu…">
@@ -791,8 +831,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      Remove Bookmark buttons. -->
 <!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "Mohu'ã">
-<!ENTITY editBookmark.removeBookmark.accessKey       "R">
-
 <!ENTITY editBookmark.showForNewBookmarks.label       "Ehechauka mbosako'iha eñongatúvo">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "S">
 
@@ -800,6 +838,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      This is the header of the security subview in the Site Identity panel. -->
 <!ENTITY identity.securityView.label "Tenda Rekorosãrã">
 
+<!ENTITY identity.connection "Jeike">
 <!ENTITY identity.connectionSecure "Jeikekatu">
 <!ENTITY identity.connectionNotSecure "Jeikekatu'ỹre">
 <!ENTITY identity.connectionFile "Ko kuatiarogue oñeñongatu mohendahápe.">
@@ -842,7 +881,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissions "Moneĩ">
 <!ENTITY identity.permissionsEmpty "Nome'ẽi ko tenda ñemoneĩ ha'etéva.">
 <!ENTITY identity.permissionsReloadHint "Ikatu hína kuatiarogue emyanyhẽjey umi moambuepyre oñemboheko hag̃ua.">
-
 <!ENTITY identity.permissionsPreferences.tooltip "Oĩ moneĩ jeguerohoryvéva">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -943,9 +981,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.audioCapture.label "Tenda'i mba'epu oñemosarambíta.">
 <!ENTITY getUserMedia.allWindowsShared.message "Oñemosarambíta opaite ovetã ojehecháva mba'erechahápe.">
 
-<!ENTITY trackingProtection.on "Jeheka mo’ãha: MYANDYPYRE">
-<!ENTITY trackingProtection.off "Jeheka mo’ãha: MBOGUEPYRE">
-
 <!ENTITY contentBlocking.title "Tetepy jejoko">
 <!ENTITY contentBlocking.detected "Ojejuhu ko tendápe tetepy ojejokokuaáva.">
 <!ENTITY contentBlocking.notDetected "Ndojejuhúi ko tendápe tetepy ojejokokuaáva.">
@@ -966,10 +1001,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      the type of content blocking is currently not enabled. -->
 <!ENTITY contentBlocking.fastBlock.add.label "Embojuaju jejoko…">
 
-<!ENTITY contentBlocking.trackingProtection.label "Jehekaha">
+<!ENTITY contentBlocking.trackingProtection2.label "Opaite tapykuehoha juhupyre">
+<!ENTITY contentBlocking.trackingProtection3.label "Tapykuehohára">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
-     ON and is successfully blocking malicious/slow content, so this is
+     ON and is successfully blocking tracker content, so this is
      a positive thing. It forms the end of the (imaginary) sentence
      "Trackers [are] Blocked"-->
 <!ENTITY contentBlocking.trackingProtection.blocked.label "Jokopyre">
@@ -979,56 +1015,39 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      the type of content blocking is currently not enabled. -->
 <!ENTITY contentBlocking.trackingProtection.add.label "Embojuaju jejoko…">
 
-<!ENTITY contentBlocking.openBreakageReportView.label "Emombe’u apañuãi">
+<!ENTITY contentBlocking.3rdPartyCookies.label "Kookie mbohapyhagua">
+<!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.blocked.label):
+     This label signals that this type of content blocking is turned
+     ON and is successfully blocking third-party cookies, so this is
+     a positive thing. It forms the end of the (imaginary) sentence
+     "Third-Party Cookies [are] Blocked"-->
+<!ENTITY contentBlocking.3rdPartyCookies.blocked.label "Jokopyre">
+<!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.add.label):
+     This is displayed as a link to preferences, where the user can add
+     this specific type of content blocking. When this text is shown
+     the type of content blocking is currently not enabled. -->
+<!ENTITY contentBlocking.3rdPartyCookies.add.label "Embojuaju jokoha…">
+
+<!ENTITY contentBlocking.openBreakageReportView2.label "Emomarandu apañuãi rehegua">
 <!ENTITY contentBlocking.breakageReportView.label "Emombe’u apañuãi">
-<!ENTITY contentBlocking.breakageReportView.description "Tetepy jejoko ikatu omoapañuãi heta ñanduti renda. Emomarandúvo apañuãi rehegua, eipytyvõta &brandShortName; iporãve hag̃ua opavavépe. (Ko apopy omondóta Mozilla-pe URL ha pe marandu iñemboheko ñemigua ha jejoko rehegua).">
+<!ENTITY contentBlocking.breakageReportView2.description "Pe tetepy jejoko ikatu omoapañuãi tendápe. Oñemomarandúvo apañuãi, oipytyvõ &brandShortName; opavavépe g̃uarã. (Kóva oguerahaukáta URL Mozilla-pe ha péicha avei marandu’i kundahára ñemboheko rehegua).">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Kuaave">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "URL">
-<!ENTITY contentBlocking.breakageReportView.collection.userAgent.label "&brandShortName; Peteĩchagua papapy">
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "¿Mba’e apañuãipa eguereko? (Poravokuaáva)">
 <!ENTITY contentBlocking.breakageReportView.sendReport.label "Emondo ñemombe'u">
 <!ENTITY contentBlocking.breakageReportView.cancel.label "Heja">
 
 <!ENTITY trackingProtection.title "Tapykueho ñemo'ã">
-<!ENTITY trackingProtection.detectedBlocked3 "&brandShortName; ojokohína kuatiarogue pehẽ ikatúva ohapykueho nekundaha.">
-<!ENTITY trackingProtection.detectedNotBlocked3 "Ko tenda oguereko mba'epuru ikatúva ohapykueho nekundaha. Nde reguereko neñemo'ã oguepyréva.">
-<!ENTITY trackingProtection.notDetected3 "Ndaipóri tapykueho mba'epuru ojejuhúva ko kuatiaroguépe.">
-<!-- LOCALIZATION NOTE (trackingProtection.unblock.label, trackingProtection.unblock.accesskey):
-     The associated button with this label and accesskey is only shown when opening the control
-     center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock.label "Emonge ñemo'ã ko tendágui">
-<!ENTITY trackingProtection.unblock.accesskey "D">
-<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate.label, trackingProtection.unblockPrivate.accesskey):
-     The associated button with this label and accesskey is only shown when opening the control
-     center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate.label "Emonge ñemo'ã ko tendápe g̃uarã">
-<!ENTITY trackingProtection.unblockPrivate.accesskey "D">
-<!ENTITY trackingProtection.block2.label "Ñemo'ã myandy">
-<!ENTITY trackingProtection.block2.accesskey "E">
-
 <!ENTITY trackingProtection.tooltip "Embojuruja jeguerohoryvéva tapykuere mo'ãhápe">
-<!ENTITY trackingProtection.detectedBlocked4 "&brandShortName; ojokohína ko kuatiarogue vore ikatúva ohapykueho ñekundaha rapykuere.">
-<!ENTITY trackingProtection.detectedNotBlocked5 "&brandShortName; ojuhu mba’epuru ikatúva ohapykueho ñekundaha rapykuere.">
-<!ENTITY trackingProtection.detectedException "&brandShortName; ojuhu mba’epuru ikatúva ohapykueho ñekundaha rapykuere. Pe ñemo’ãha ojepe’a.">
-<!ENTITY trackingProtection.notDetected5 "Ndojejuhúi mba’epuru jehekaha ko kuatiaroguépe.">
-<!ENTITY trackingProtection.notDetectedException "Ndojejuhúi mba’epuru jehekaha ko kuatiaroguépe. Ojepe’áma ko tendápe g̃uarã ñemo’ã.">
-
-<!ENTITY trackingProtection.reloadRequired2 "Ijurujáma jehekaha ñemo’ã. Emyenehẽjey ko kuatiarogue ejoko hag̃ua opaite ojehekaha.">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock3.label "Eipe'aite ko tendágui">
-<!ENTITY trackingProtection.unblock3.accesskey "D">
 <!ENTITY trackingProtection.unblock4.label "Eipe’a jejoko ko tendápe g̃uarã">
 <!ENTITY trackingProtection.unblock4.accesskey "D">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate3.label "Eipe'aite ko tembiapópe g̃uarã">
-<!ENTITY trackingProtection.unblockPrivate3.accesskey "D">
-<!ENTITY trackingProtection.block4.label "Embojuruja ko tendápe g̃uarã">
-<!ENTITY trackingProtection.block4.accesskey "E">
 <!ENTITY trackingProtection.unblockPrivate4.label "Eipe’a jejoko sapy’agua">
 <!ENTITY trackingProtection.unblockPrivate4.accesskey "D">
 <!ENTITY trackingProtection.block5.label "Emyandy jejoko ko tendápe g̃uarã">
@@ -1134,10 +1153,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageAction.manageExtension.label "Moĩmbaháre Ñangareko…">
 
 <!ENTITY pageAction.sendTabToDevice.label "Emondo Tendayke Mba'e'okápe">
+
 <!ENTITY sendToDevice.syncNotReady.label "Mba'e'oka ñembojuehe…">
 
 <!ENTITY pageAction.shareUrl.label "Moherakuã">
-
 <!ENTITY pageAction.shareMore.label "Hetave…">
 
 <!ENTITY libraryButton.tooltip "Ehecha tembiasakue, ñongatupyre ha ambueve">

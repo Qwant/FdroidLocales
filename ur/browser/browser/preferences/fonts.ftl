@@ -80,22 +80,22 @@ fonts-default-serif =
 fonts-default-sans-serif =
     .label = سینس سیرف
 fonts-proportional-size = ماپ
-    .accesskey = س
+    .accesskey = z
 fonts-serif = سیرف
     .accesskey = S
 fonts-sans-serif = سینس-سیرف
     .accesskey = n
 fonts-monospace = مونو سپیس
-    .accesskey = م
+    .accesskey = M
 fonts-monospace-size = ماپ
-    .accesskey = م
+    .accesskey = e
 fonts-minsize = کم سے کم فانٹ کا ماپ
     .accesskey = o
 fonts-minsize-none =
     .label = کوئی نہیں
 fonts-allow-own =
     .label = آپکے اوپر انتخاب بجائے، صفحات کو اپنے خود کے فونٹ چننے دے
-    .accesskey = ص
+    .accesskey = A
 
 ## Text Encodings
 ##
@@ -104,6 +104,8 @@ fonts-allow-own =
 
 fonts-languages-fallback-header = ورثہ مواد کے لیے متن کی ضابطہ بندی
 fonts-languages-fallback-desc = یہ کریکٹر ضابطہ بندی اس ورثہ مواد کے لیے استعمال کی جاتی ہے جو اپنی ضابطہ بندی نہیں بتاتا۔
+fonts-languages-fallback-label = فال بیک ٹیکسٹ انکوڈنگ
+    .accesskey = T
 fonts-languages-fallback-name-auto =
     .label = موجودہ محل وقوع کے لیے طےشدہ
 fonts-languages-fallback-name-arabic =
