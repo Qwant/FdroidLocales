@@ -2,10 +2,12 @@
 REPO=$( echo $( cd `dirname $0`; pwd ) )
 
 #Make sure that crashreporter code is not used (just the dummy implementation), and remove test files
-find toolkit/crashreporter/ -mindepth 1 -maxdepth 1 ! -name "jar.mn" ! -name "ns*Utils.cpp" ! -name "nsDummy*.cpp" ! -name "ns*.h" ! -name "*Annotation.h" ! -name "*build" ! -name "google*" -exec rm -R '{}' \;
+find toolkit/crashreporter/ -mindepth 1 -maxdepth 1 ! -name "jar.mn" ! -name "ns*Utils.cpp" ! -name "nsDummy*.cpp" ! -name "ns*.h" ! -name "*Annotation.h" ! -name "*Annotations*" ! -name "generate*.py" ! -name "*build" ! -name "google*" -exec rm -R '{}' \;
 find toolkit/crashreporter/google-breakpad/ -mindepth 1 -maxdepth 1 ! -name "src" -exec rm -R '{}' \;
 rm -R toolkit/crashreporter/google-breakpad/src/tools/
 rm -R toolkit/crashreporter/google-breakpad/src/third_party/linux/
+sed -i -e '/crashreporter/d' Cargo.toml
+sed -i -e '/breakpad-client/d' toolkit/recordreplay/moz.build
 
 #Remove test files that make the fdroid scanner fail
 rm -R browser/branding/*/dsstore
@@ -30,8 +32,8 @@ rm -R netwerk/test/unit/data/signed_win.exe
 rm -R security/nss/cmd/bltest/tests/
 rm -R security/nss/cmd/samples/
 rm -R security/nss/tests/
-rm -R servo/components/net/tests/parsable_mime/
 rm -R other-licenses/nsis/nsisui.exe
+rm -R other-licenses/7zstub/src/bin
 rm -R testing/talos/talos/
 rm -R testing/web-platform/
 rm -R third_party/python/pipenv/pipenv/patched/notpip/_vendor/distlib/*.exe
@@ -81,8 +83,8 @@ sed -i -e '/{app.variant.name}AndroidTest/d' mobile/android/gradle.configure
 # fennec generates the repo list at build time, but it makes the scanner fail
 patch -p1 <$REPO/Gradle.patch
 # the google play dependencies are not pulled without MOZ_ANDROID_GCM, but the scanner detects them and fails
-sed -i -e '/gms/d' mobile/android/app/build.gradle
-sed -i -e '/gms/d' mobile/android/thirdparty/build.gradle
+sed -i -e '/play-services/d' mobile/android/app/build.gradle
+sed -i -e '/play-services/d' mobile/android/thirdparty/build.gradle
 sed -i -e 's/mozconfig.substs.MOZILLA_OFFICIAL/true/g' mobile/android/app/build.gradle
 
 ##Disable Gecko Media Pluggins support 
