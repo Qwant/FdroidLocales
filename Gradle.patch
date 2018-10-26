@@ -10,10 +10,10 @@ diff -r cb9a0bfe28ea build.gradle
 -                url repository
 -            }
 +        maven {
-+            url "https://jcenter.bintray.com/"
++            url "https://maven.google.com/"
 +        }
 +        maven {
-+            url "https://maven.google.com/"
++            url "https://jcenter.bintray.com/"
          }
      }
  }
@@ -26,12 +26,12 @@ diff -r cb9a0bfe28ea build.gradle
 -                url repository
 -            }
 +        maven {
-+            url "https://jcenter.bintray.com/"
++            url "https://maven.google.com/"
          }
 -        // For in tree plugins.
          maven {
 -            url "file://${gradle.mozconfig.topsrcdir}/mobile/android/gradle/m2repo"
-+            url "https://maven.google.com/"
++            url "https://jcenter.bintray.com/"
          }
      }
  
