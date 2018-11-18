@@ -102,7 +102,9 @@ for dir in extensions/gnu/*; do
     popd
 done
 
+##Add duckduckgo
+mkdir -p fdroid/assets/distribution/searchplugins/common
+cp mobile/locales/searchplugins/duckduckgo.xml fdroid/assets/distribution/searchplugins/common/duckduckgo.xml
+
 ##Mark duckduckgo as the default
 cp $REPO/preferences.json fdroid/assets/distribution/preferences.json
-
-sed -i -e 's/return 1/return 0/g' python/mozbuild/mozbuild/action/generate_suggestedsites.py
