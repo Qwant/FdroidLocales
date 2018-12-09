@@ -38,6 +38,7 @@ rm -R testing/talos/talos/
 rm -R testing/web-platform/
 rm -R third_party/python/pipenv/pipenv/patched/notpip/_vendor/distlib/*.exe
 rm -R third_party/python/pipenv/pipenv/vendor/pip9/_vendor/distlib/*.exe
+rm -R third_party/rust/sha2/tests/
 rm -R third_party/rust/term/tests/
 rm -R tools/update-packaging/test/
 rm -R toolkit/components/mediasniffer/test/unit/
