@@ -291,6 +291,18 @@
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Zhońće wjace wo wužiwanju &brandShortName; a druhich produktow &vendorShortName;">
 
+<!-- Localization note (pref_feature_tips_notification_enabling_hint):
+     Describe the action the user should do to enable this preference
+     Will be used in the context "<Turn on> ... to enable this feature" -->
+<!ENTITY pref_feature_tips_notification_enabling_hint "Zmóžnić">
+
+<!-- Localization note (pref_feature_tips_notification_enabling_path):
+     Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
+<!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
+<!-- Localization note (pref_feature_tips_notification_enabling_hint):
+     Describe the action the user should do to enable this preference. -->
+<!ENTITY pref_feature_tips_notification_enabling_hint2 "(Zo by so tute nastajenje zmóžniło, dyrbi &pref_feature_tips_notification_enabling_path; hižo zmóžnjeny być.)">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "Eksperimentelne funkcije">
@@ -801,7 +813,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY restrictable_feature_clear_history "Historiju zhašeć">
 <!ENTITY restrictable_feature_clear_history_description "Zmóžnja swójbnym, informacije wo sydłach a stronach zhašeć, kotrež su wopytali.">
 <!ENTITY restrictable_feature_advanced_settings "Rozšěrjene nastajenja">
-<!ENTITY restrictable_feature_advanced_settings_description "To zapřijima importowanje zapołožkow, wobnowjenje rajtarkow a awtomatiske aktualizacije. Wupińće to, zo byšće zjednorjene nastajenja zmóžnił, kotrež su za swójbneho přihódne.">
+<!ENTITY restrictable_feature_advanced_settings_description "To importowanje zapołožkow, wobnowjenje rajtarkow a awtomatiske aktualizacije zapřijima. Wupińće to, zo byšće zjednorjene nastajenja zmóžnił, kotrež su za swójbneho přihódne.">
 <!ENTITY restrictable_feature_camera_microphone "Kamera a mikrofon">
 <!ENTITY restrictable_feature_camera_microphone_description "Zmóžnja swójbnym, komunikaciju na websydłach we woprawdźitym času wobhospodarić.">
 <!ENTITY restrictable_feature_block_list "Blokowanska lisćina">
@@ -893,11 +905,17 @@ Picture-in-picture mini window -->
 
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel "&brandShortName;">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel2 "Wobhladowak">
 <!ENTITY mls_notification_channel "Stejnišćowa słužba &vendorShortName;">
 <!ENTITY download_notification_channel "Sćehnjenja">
 <!ENTITY media_notification_channel "Wothraće medijow">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel "Eksterne powěsće &brandShortName;">
+<!ENTITY media_notification_channel2 "Zynka a widejo">
+<!-- These push notifications come without a specific channel and/or name from Leanplum -->
+<!ENTITY leanplum_default_notifications_channel2 "Pokiwy a triki &vendorShortName;">
 <!ENTITY updater_notification_channel "Aktualizacije nałoženjow">
 <!ENTITY synced_tabs_notification_channel "Synchronizowane rajtarki">
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by

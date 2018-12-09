@@ -84,6 +84,9 @@ extension-controlled-homepage-override = Mae estyniad, <img data-l10n-name="icon
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Mae estyniad, <img data-l10n-name="icon"/> { $name }, yn rheoli eich tudalen Tab Newydd.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Mae estyniad, <img data-l10n-name="icon"/> { $name }, yn rheoli'r gosodiad hwn.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Mae'r estyniad, <img data-l10n-name="icon"/> { $name }, wedi gosod eich peiriant chwilio ragosodedig.
@@ -138,6 +141,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Adfer sesiwn flaenorol
     .accesskey = A
+startup-restore-warn-on-quit =
+    .label = Rhybuddio wrth adael y porwr
 disable-extension =
     .label = Analluogi Estyniad
 tabs-group-header = Tabiau
@@ -150,6 +155,9 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Rhybuddio wrth gau mwy nag un tab
     .accesskey = g
+warn-on-quit-close-multiple-tabs =
+    .label = Eich rhybuddio wrth adael a chau tabiau lluosog
+    .accesskey = E
 warn-on-open-many-tabs =
     .label = Rhybuddio y gall agor mwy nag un tab arafu { -brand-short-name }
     .accesskey = a
@@ -297,6 +305,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Diweddaru peiriannau chwilio yn awtomatig
     .accesskey = p
+update-pref-write-failure-title = Methiant Ysgrifennu
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Methu cadw'r dewisiadau. Methu ysgrifnenu i ffeil: { $path }
 
 ## General Section - Performance
 
@@ -336,6 +348,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Chwilio am destun wrth i mi gychwyn teipio
     .accesskey = d
+browsing-cfr-recommendations =
+    .label = Argymell estyniadau wrth i chi bori
+    .accesskey = A
+browsing-cfr-recommendations-learn-more = Dysgu Rhagor
 
 ## General Section - Proxy
 
@@ -536,7 +552,6 @@ privacy-header = Preifatrwydd y Porwr
 
 ## Privacy Section - Forms
 
-forms-header = Ffurflenni a Chyfrineiriau
 logins-header = Mewngofnodion a Chyfrineiriau
 forms-ask-to-save-logins =
     .label = Gofyn i gadw mewngofnodion a chyfrineiriau ar gyfer gwefannau
@@ -610,6 +625,9 @@ sitedata-keep-until-expire =
     .label = Yn dod i ben
 sitedata-keep-until-closed =
     .label = Mae { -brand-short-name } wedi cau
+sitedata-delete-on-close =
+    .label = Dileu cwcis a data'r wefan pan fydd { -brand-short-name } ar gau
+    .accesskey = D
 sitedata-allow-cookies-option =
     .label = Derbyn cwcis a data gan wefannau
     .accesskey = D
@@ -630,6 +648,14 @@ sitedata-block-all-third-party-option =
     .label = Holl gwcis trydydd parti (gall achosi i'r wefan dorri)
 sitedata-block-all-option =
     .label = Pob cwci (bydd yn achosi i wefannau dorri)
+sitedata-option-block-trackers =
+    .label = Tracwyr trydydd parti
+sitedata-option-block-unvisited =
+    .label = Cwcis o wefannau heb ymweld â nhw
+sitedata-option-block-all-third-party =
+    .label = Pob cwci trydydd parti (gall achosi i wefannau i dorri)
+sitedata-option-block-all =
+    .label = Bydd pob cwci (bydd yn achosi i wefannau dorri)
 sitedata-clear =
     .label = Clirio Data…
     .accesskey = l
@@ -643,6 +669,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Mae eich gosodiadau yn Rhwystro Cynnwys yn atal newidiadau i osodiadau Cwcis a Data Gwefan.
+sitedata-cookies-permissions =
+    .label = Rheoli Caniatad...
+    .accesskey = R
 
 ## Privacy Section - Address Bar
 
@@ -663,6 +692,7 @@ addressbar-suggestions-settings = Newid dewisiadau am awgrymiadau peiriannau chw
 
 content-blocking-header = Rhwystro Cynnwys
 content-blocking-desc = Rhwystrwch gynnwys trydydd parti, fel hysbysebion a chod, sy'n gallu arafu eich pori neu eich tracio o amgylch y we. Cyfaddaswch eich gosodiadau am y dewis gorau o ddiogelwch a perfformiad.
+content-blocking-description = Rhwystro cynnwys trydydd parti sy'n eich dilyn o amgylch y we. Rheolwch faint o'ch gweithgaredd ar-lein sy'n cael ei storio a'i rannu rhwng gwefannau.
 content-blocking-learn-more = Dysgu Rhagor
 content-blocking-restore-defaults =
     .label = Adfer y Rhagosodiadau
@@ -696,6 +726,37 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = Dim ond mewn ffenestri preifat
     .accesskey = D
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Safonol
+    .accesskey = S
+content-blocking-setting-strict =
+    .label = Llym
+    .accesskey = L
+content-blocking-setting-custom =
+    .label = Cyfaddasu
+    .accesskey = C
+content-blocking-standard-description = Dim ond rhwystro tracwyr hysbys mewn Ffenestri Preifat.
+content-blocking-standard-desc = Cymantoledd rhwng diogelwch a pherfformiad. Yn caniatáu rhai tracwyr fel bod gwefannau'n gweithio'n iawn.
+content-blocking-strict-desc = Rhwystro pob traciwr mae { -brand-short-name } yn ei canfod. Gall achosi rhai gwefannau i dorri.
+content-blocking-custom-desc = Dewis beth i'w rhwystro.
+content-blocking-private-trackers = Tracwyr hysbys mewn Ffenestri Preifat yn unig.
+content-blocking-third-party-cookies = Cwcis tracio trydydd parti
+content-blocking-all-windows-trackers = Tracwyr hysbys ymhob ffenestr
+content-blocking-all-third-party-cookies = Pob cwci trydydd parti
+content-blocking-warning-title = Rhybudd!
+content-blocking-warning-desc = Gall rwystro cwcis a thracwyr achosi i rai gwefannau i dorri. Mae'n hawdd i analluogi rhwystro ar wefannau rydych yn ymddiried ynddyn nhw.
+content-blocking-learn-how = Dysgu sut
+content-blocking-trackers-label =
+    .label = Tracwyr
+    .accesskey = T
+content-blocking-tracking-protection-option-all-windows =
+    .label = Ym mhob ffenestr
+    .accesskey = f
+content-blocking-option-private =
+    .label = Dim ond mewn Ffenestri Preifat
+    .accesskey = P
 content-blocking-tracking-protection-change-block-list = Newid y rhestr rhwystro
 content-blocking-third-party-cookies-label =
     .label = Cwcis Trydydd Parti
@@ -718,6 +779,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Pob cwci trydydd parti (gall achosi i wefannau dorri)
     .accesskey = P
+content-blocking-cookies-label =
+    .label = Cwcis
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -739,6 +803,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = Newid y Rhestr Rhwystro…
     .accesskey = N
+tracking-manage-exceptions =
+    .label = Rheoli Eithriadau…
+    .accesskey = R
 
 ## Privacy Section - Permissions
 
@@ -806,6 +873,9 @@ collection-health-report-link = Dysgu rhagor
 collection-studies =
     .label = Caniatáu i { -brand-short-name } osod a rhedeg astudiaethau
 collection-studies-link = Gweld astudiaethau { -brand-short-name }
+addon-recommendations =
+    .label = Caniatáu i { -brand-short-name } wneud argymhellion personol am estyniadau
+addon-recommendations-link = Dysgu rhagor
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Mae adrodd ar ddata wedi ei analluogi ar gyfer ffurfweddiad yr adeiledd hwn
@@ -855,3 +925,36 @@ certs-view =
 certs-devices =
     .label = Dyfeisiau Diogelwch…
     .accesskey = y
+space-alert-learn-more-button =
+    .label = Dysgu Rhagor
+    .accesskey = D
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Dewisiadau Agor
+           *[other] Dewisiadau Agored
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] g
+           *[other] A
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] Mae { -brand-short-name } yn brin o le ar ddisg. Efallai na fydd cynnwys gwefan yn cael ei ddangos yn iawn. Mae modd i chi glirio data wedi ei storio yn Dewisiadau > Preifatrwydd a Diogelwch > Cwcis a Data Gwefan.
+       *[other] Mae { -brand-short-name } yn brin o le ar ddisg. Efallai na fydd cynnwys gwefan yn cael ei ddangos yn iawn. Mae modd i chi glirio data wedi ei storio yn Dewisiadau > Preifatrwydd a Diogelwch > Cwcis a Data Gwefan.
+    }
+space-alert-under-5gb-ok-button =
+    .label = Iawn
+    .accesskey = I
+space-alert-under-5gb-message = Mae { -brand-short-name } yn brin o le ar ddisg. Efallai na fydd cynnwys gwefan yn cael ei ddangos yn iawn. Ewch i “Learn More” i wella'r defnydd o'r disg ar gyfer gwell profiad pori.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Bwrdd Gwaith
+downloads-folder-name = Llwythi
+choose-download-folder-title = Dewis Ffolder Llwytho i Lawr:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Cadw ffeiliau i { $service-name }

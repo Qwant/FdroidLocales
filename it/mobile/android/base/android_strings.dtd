@@ -177,6 +177,8 @@
 <!ENTITY pref_feature_tips_notification "Suggerimenti relativi a prodotti e caratteristiche">
 <!ENTITY pref_feature_tips_notification_summary "Informazioni relative all’utilizzo di &brandShortName; e altri prodotti di &vendorShortName;">
 <!ENTITY pref_feature_tips_notification_enabling_hint "Attiva">
+<!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
+<!ENTITY pref_feature_tips_notification_enabling_hint2 "(Per attivare questa opzione, &pref_feature_tips_notification_enabling_path; deve essere già attivo.)">
 <!ENTITY pref_category_experimental "Caratteristiche sperimentali">
 <!ENTITY pref_custom_tabs2 "Schede personalizzate">
 <!ENTITY pref_custom_tabs_summary4 "Consenti alle app di aprire contenuti web in schede personalizzate">
@@ -480,7 +482,6 @@
 <!ENTITY corrupt_apk "Impossibile aprire &brandShortName;. Reinstallarlo e riprovare.">
 <!ENTITY whatsnew_notification_title "&brandShortName; è aggiornato">
 <!ENTITY whatsnew_notification_summary "Scopri le novità in questa versione">
-<!ENTITY promotion_add_page_shortcut "Agg. scorciatoia alla pagina">
 <!ENTITY helper_first_offline_bookmark_title "Lettura non in linea">
 <!ENTITY helper_first_offline_bookmark_message "Gli elementi salvati in Elenco lettura sono disponibili nei segnalibri, anche non in linea.">
 <!ENTITY helper_first_offline_bookmark_button "Vai ai segnalibri">
@@ -511,10 +512,13 @@
 <!ENTITY pip_pause_button_title "Pausa">
 <!ENTITY pip_pause_button_description "Metti in pausa riproduzione">
 <!ENTITY default_notification_channel "&brandShortName;">
+<!ENTITY default_notification_channel2 "Browser">
 <!ENTITY mls_notification_channel "Georilevazione di &vendorShortName;">
 <!ENTITY download_notification_channel "Download">
 <!ENTITY media_notification_channel "Riproduzione file multimediali">
+<!ENTITY media_notification_channel2 "Audio e video">
 <!ENTITY leanplum_default_notifications_channel "Notifiche push di &brandShortName;">
+<!ENTITY leanplum_default_notifications_channel2 "Consigli e suggerimenti da &vendorShortName;">
 <!ENTITY updater_notification_channel "Aggiornamenti app">
 <!ENTITY synced_tabs_notification_channel "Schede sincronizzate">
 <!ENTITY site_notifications_channel "Notifiche siti">

@@ -4,13 +4,13 @@
 
 <!-- extracted from am-server-top.xul -->
 
-<!ENTITY messageStorage.label "Stocare mesaje">
+<!ENTITY messageStorage.label "Stocare de mesaje">
 <!ENTITY securitySettings.label "Setări de securitate">
 <!ENTITY serverSettings.label "Setările serverului">
 <!ENTITY serverType.label "Tip server:">
-<!ENTITY serverName.label "Nume server:">
+<!ENTITY serverName.label "Denumire server:">
 <!ENTITY serverName.accesskey "s">
-<!ENTITY userName.label "Nume utilizator:">
+<!ENTITY userName.label "Nume de utilizator:">
 <!ENTITY userName.accesskey "u">
 <!ENTITY port.label "Port:">
 <!ENTITY port.accesskey "P">
@@ -44,13 +44,13 @@
 <!ENTITY deleteOnServer2.accesskey "P">
 <!ENTITY downloadOnBiff.label "Descarcă automat mesajele noi">
 <!ENTITY downloadOnBiff.accesskey "D">
-<!ENTITY username.label "Numele de autentificare">
+<!ENTITY username.label "Numele tău de autentificare">
 <!ENTITY deleteMessagePrefix.label "Când șterg un mesaj:">
 <!ENTITY modelMoveToTrash.label "Mută-l în coșul de gunoi">
 <!ENTITY modelMoveToTrash.accesskey "M">
 <!ENTITY modelMarkDeleted.label "Marchează-l ca șters">
 <!ENTITY modelMarkDeleted.accesskey "M">
-<!ENTITY modelDeleteImmediately.label "Șterge-l imediat">
+<!ENTITY modelDeleteImmediately.label "Elimină-l imediat">
 <!ENTITY modelDeleteImmediately.accesskey "t">
 <!-- LOCALIZATION NOTE (expungeOnExit.label) : do not translate two of "&quot;" in below line -->
 <!ENTITY expungeOnExit.label "Golește dosarul „Primite” la ieșire">
@@ -70,15 +70,15 @@
 <!ENTITY alwaysAuthenticate.label "Solicită întotdeauna autentificare la conectarea la acest server">
 <!ENTITY alwaysAuthenticate.accesskey "a">
 <!ENTITY newsrcFilePath.label "Fișier newsrc:">
-<!ENTITY newsrcPicker.label "Selectați fișierul newsrc">
-<!ENTITY abbreviate.label "Arată numele grupurilor de discuții în panoul cu dosare ca:">
+<!ENTITY newsrcPicker.label "Selectează fișierul newsrc">
+<!ENTITY abbreviate.label "Arată denumirile grupurilor de discuții în panoul cu dosare de poștă electronică ca:">
 <!ENTITY abbreviateOn.label "Nume complete (ex: „netscape.public.mozilla.mail-news”)">
 <!ENTITY abbreviateOff.label "Nume abreviate (ex: „n.p.m.mail-news”)">
 <!ENTITY advancedButton.label "Avansat…">
 <!ENTITY advancedButton.accesskey "v">
 <!ENTITY serverDefaultCharset2.label "Codarea implicită pentru text:">
 <!ENTITY localPath.label "Director local:">
-<!ENTITY localFolderPicker.label "Selectați directorul local">
+<!ENTITY localFolderPicker.label "Selectează directorul local">
 <!ENTITY browseFolder.label "Răsfoiește…">
 <!ENTITY browseFolder.accesskey "f">
 <!ENTITY browseNewsrc.label "Răsfoiește…">

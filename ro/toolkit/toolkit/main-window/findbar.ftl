@@ -13,12 +13,20 @@ findbar-find-button-close =
     .tooltiptext = Închide bara de căutare
 findbar-highlight-all =
     .label = Evidențiază toate
-    .accesskey = a
+    .accesskey = l
+    .tooltiptext = Evidențiază toate aparițiile textului
+findbar-highlight-all2 =
+    .label = Evidențiază toate
+    .accesskey =
+        { PLATFORM() ->
+            [macos] l
+           *[other] a
+        }
     .tooltiptext = Evidențiază toate aparițiile textului
 findbar-case-sensitive =
-    .label = Potrivește literele mari și mici
+    .label = Distingerea scrierii cu litere mari și mici
     .accesskey = c
-    .tooltiptext = Caută cu potrivirea literelor mari și mici
+    .tooltiptext = Căutare cu respectarea scrierii cu majuscule și minuscule
 findbar-entire-word =
     .label = Cuvinte întregi
     .accesskey = W

@@ -9,13 +9,15 @@
 <!ENTITY setColor2.label "insira uma string de cor HTML">
 <!ENTITY setColor2.accessKey "c">
 <!ENTITY chooseColor1.label "Escolha uma cor:">
+<!ENTITY chooseColor2.label "insira uma string de cor em HTML">
+<!ENTITY chooseColor2.accessKey "H">
 <!ENTITY setColorExample.label "(ex.: &quot;#0000ff&quot; ou &quot;blue&quot;):">
 <!ENTITY default.label "Padrão">
 <!ENTITY default.accessKey "d">
 <!ENTITY palette.label "Paleta:">
 <!ENTITY standardPalette.label "Padrão">
 <!ENTITY webPalette.label "Todas as cores web">
-<!ENTITY background.label "Plano de fundo para:">
+<!ENTITY background.label "Fundo para:">
 <!ENTITY background.accessKey "u">
 <!ENTITY table.label "Tabela">
 <!ENTITY table.accessKey "T">

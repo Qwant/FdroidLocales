@@ -35,7 +35,7 @@
 
 <!-- point 4 text for official branded builds -->
 <!ENTITY rights2.intro-point4a "Unele funcționalități din &brandShortName; folosesc servicii de informații bazate pe web, totuși, nu le putem garanta 100&#037; acuratețea sau lipsa erorilor. Pentru detalii suplimentare, inclusiv informații despre dezactivarea funcționalităților care folosesc aceste servicii, vezi ">
-<!ENTITY rights.intro-point4b "termenii de utilizare a serviciilor">
+<!ENTITY rights.intro-point4b "Termenii de utilizare a serviciilor">
 <!ENTITY rights.intro-point4c ".">
 
 <!-- point 4 text for unbranded builds -->
@@ -66,13 +66,13 @@
 <!ENTITY rights.safebrowsing-term4 "Navigarea în siguranță este acum dezactivată">
 
 <!-- location aware browsing points for branded builds -->
-<!ENTITY rights.locationawarebrowsing-a "Navigare conștientă de locație: ">
+<!ENTITY rights.locationawarebrowsing-a "Navigare în funcție de locație: ">
 <!ENTITY rights.locationawarebrowsing-b "este întotdeauna opțională.  Informațiile despre locație nu sunt niciodată transmise fără permisiunea dumneavoastră.  Dacă doriți să dezactivați complet această funcționalitate, urmați pașii de mai jos:">
 <!ENTITY rights.locationawarebrowsing-term1a "Scrie în bara de adrese ">
 <!ENTITY rights.locationawarebrowsing-term1b "about:config">
-<!ENTITY rights.locationawarebrowsing-term2 "Scrie geo.enabled în câmpul de căutare">
+<!ENTITY rights.locationawarebrowsing-term2 "Scrie geo.enabled">
 <!ENTITY rights.locationawarebrowsing-term3 "Dă clic dublu pe preferința geo.enabled">
-<!ENTITY rights.locationawarebrowsing-term4 "Navigarea conștientă de locație este acum dezactivată">
+<!ENTITY rights.locationawarebrowsing-term4 "Navigarea în funcție de locație este acum dezactivată">
 
 <!-- intro paragraph for unbranded builds -->
 <!ENTITY rights.webservices-unbranded "Aici trebuie incluse prezentarea generală a serviciilor înglobate în produs pentru site-uri web și instrucțiunile aferente de dezactivare, dacă este cazul.">
@@ -83,7 +83,7 @@
 <!-- points 1-7 text for branded builds -->
 <!ENTITY rights2.webservices-term1 "&vendorShortName; și colaboratorii, licențiatorii și partenerii săi lucrează pentru a oferi Servicii actualizate de cea mai mare acuratețe.  Totuși, nu putem garanta că informațiile sunt complete sau lipsite de erori. De exemplu, se poate ca serviciul de Navigare în siguranță să nu identifice unele site-uri riscante și ar putea identifica greșit unele site-uri sigure ca fiind riscante, iar în Serviciul conștient de locație, locațiile primite de la furnizorii noștri de servicii sunt doar estimative și nici noi, nici furnizorii noștri de servicii nu garantăm acuratețea locațiilor oferite.">
 <!ENTITY rights.webservices-term2 "&vendorShortName; poate întrerupe sau modifica Serviciile la libera sa apreciere.">
-<!ENTITY rights2.webservices-term3 "Ești binevenit să folosești aceste Servicii împreună cu versiunea însoțită de &brandShortName;, iar &vendorShortName; oferă acest drept.  &vendorShortName; și licențiatorii își rezervă toate drepturile asupra Serviciilor.  Acești termeni nu au ca scop limitarea oricăror drepturi garantate de licențele cu sursă deschisă aplicabile pentru &brandShortName; sau versiunilor corespunzătoare de cod sursă ale &brandShortName;.">
+<!ENTITY rights2.webservices-term3 "Sunteți bineveniți să folosiți aceste Servicii și versiunea asociată de &brandShortName;, iar &vendorShortName; vă oferă drepturi în acest sens.  &vendorShortName; și licențiatorii săi își rezervă toate celelalte drepturi asupra Serviciilor.  Acești termeni nu sunt destinați să limiteze drepturi acordate sub licențe cu sursă deschisă aplicabile  &brandShortName; sau versiunilor corespunzătoare de cod sursă ale &brandShortName;.">
 <!ENTITY rights.webservices-term4 "Serviciile sunt furnizate „ca atare”.  &vendorShortName;, colaboratorii, licențiatorii și distribuitorii săi declină toate garanțiile, exprese ori implicite, inclusiv, fără a se limita la, garanții de vandabilitate sau de adecvare a Serviciilor pentru un scop anume.  Veți suporta integral riscul legat de selectarea Serviciilor pentru scopurile dumneavoastră și cel implicat de calitatea și performanța Serviciilor. Unele jurisdicții nu permit excluderea sau limitarea garanțiilor implicite, și atunci este posibil ca prezenta declinare a responsabilității să nu se aplice în cazul dumneavoastră.">
 <!ENTITY rights.webservices-term5 "Cu excepția situațiilor prevăzute în legislație, &vendorShortName;, colaboratorii, licențiatorii și distribuitorii săi nu vor fi trași la răspundere pentru orice daune indirecte, speciale, ocazionale, derivate, punitive sau exemplare izvorâte din sau legate în orice fel de utilizarea &brandShortName; și a Serviciilor.  Răspunderea colectivă în baza prezenților termeni nu va depăși 500 $ (cinci sute de dolari). Unele jurisdicții nu permit excluderea sau limitarea anumitor daune, astfel încât este posibil ca această excludere și limitare să nu se aplice în cazul dumneavoastră.">
 <!ENTITY rights.webservices-term6 "&vendorShortName; poate actualiza periodic acești termeni, după caz. Prezenții termeni nu pot fi modificați sau anulați fără acordul scris al &vendorShortName;.">

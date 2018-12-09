@@ -6,6 +6,7 @@
 ## UI strings for the simplified onboarding modal
 
 onboarding-button-label-try-now = 立刻試試
+onboarding-button-label-get-started = 開始使用
 onboarding-welcome-header = 歡迎使用 { -brand-short-name }
 onboarding-start-browsing-button-label = 開始瀏覽
 
@@ -24,3 +25,17 @@ onboarding-addons-title = 附加元件
 onboarding-addons-text = 擴充 { -brand-short-name } 內建的功能，讓瀏覽器更好用。您可以用附加元件來比價、查天氣，或是自訂佈景主題展現自我。
 onboarding-ghostery-title = Ghostery
 onboarding-ghostery-text = 使用 Ghostery 封鎖討人厭的廣告，讓您上網更快、更聰明、更安全。
+# Note: "Sync" in this case is a generic verb, as in "to synchronize"
+onboarding-fxa-title = 同步
+onboarding-fxa-text = 註冊 { -fxaccount-brand-name } 後，即可在任何使用 { -brand-short-name } 的地方同步您的書籤、密碼、開啟的分頁。
+
+## Message strings belonging to the Return to AMO flow
+
+return-to-amo-sub-header = 恭喜，您已經安裝好 { -brand-short-name }
+# <icon></icon> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-header = 現在來安裝 <icon></icon><b>{ $addon-name }</b> 吧。
+return-to-amo-extension-button = 安裝擴充套件
+return-to-amo-get-started-button = { -brand-short-name } 使用入門

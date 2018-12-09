@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Blocca
 permissions-capabilities-prompt =
     .label = Chiedi sempre
+permissions-capabilities-listitem-allow =
+    .value = Consenti
+permissions-capabilities-listitem-block =
+    .value = Blocca
+permissions-capabilities-listitem-allow-first-party =
+    .value = Consenti solo se generati dal sito
+permissions-capabilities-listitem-allow-session =
+    .value = Consenti per la sessione
 
 ## Invalid Hostname Dialog
 
@@ -50,10 +58,6 @@ permissions-invalid-uri-label = Inserire un nome valido per il server
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-tracking-protection-window =
-    .title = Eccezioni - Protezione antitracciamento
-    .style = { permissions-window.style }
-permissions-exceptions-tracking-protection-desc = La protezione antitracciamento è stata disattivata per i seguenti siti web.
 permissions-exceptions-content-blocking-window =
     .title = Eccezioni - Blocco contenuti
     .style = { permissions-window.style }

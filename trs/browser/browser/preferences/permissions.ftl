@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Si ga'nïn'
 permissions-capabilities-prompt =
     .label = Gachinj na'anj yitïnj
+permissions-capabilities-listitem-allow =
+    .value = Ga'nïn'
+permissions-capabilities-listitem-block =
+    .value = Garun'
+permissions-capabilities-listitem-allow-first-party =
+    .value = Ga'nïn' ma sa asinìin
+permissions-capabilities-listitem-allow-session =
+    .value = Ga'nïn' riña sesiôn na
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Se sa yakaj guendo' - Sa arán rastreo
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Nu nachrut sa arán da' si nari' nej dugui' so' riña sitio web na.
+permissions-exceptions-content-blocking-window =
+    .title = Sa si gi'iaj guendô' - Sa narán riña sa màn
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Guxun ngèt sa narán riña sa yi'ìi guendâ nej sitiô nan.
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = Ga'ue gatajt ahuin sitio web dugutuj comple
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = Sitio hua ni'ninj - Nanū ma'ān ma
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = Ga'ue gatajt ahuin sitio web ga'ue nanū ma'ān nej sa gīni'io' . Gachrun direksion sitio ruhuat ga'nïnt ni ga'uit klik riña taj ga'nïn'
 permissions-exceptions-autoplay-media-window2 =
     .title = Sā taj a - Gayi'ì ma'an ma
     .style = { permissions-window.style }

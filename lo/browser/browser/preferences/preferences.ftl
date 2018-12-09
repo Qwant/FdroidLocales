@@ -53,6 +53,7 @@ pane-sync-title = ບັນຊີ Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = ການສະຫນັບສະຫນູນ { -brand-short-name }
+addons-button-label = ສ່ວນເສີມ ແລະ ຊຸກຕົກແຕ່ງ
 focus-search =
     .key = f
 close-button =
@@ -60,6 +61,8 @@ close-button =
 
 ## Browser Restart Dialog
 
+feature-enable-requires-restart = { -brand-short-name } ຕ້ອງໄດ້ລີສະຕາດເພື່ອເປີດໃຊ້ feature ນີ້.
+feature-disable-requires-restart = { -brand-short-name } ຕ້ອງໄດ້ລີສະຕາດເພື່ອປິດໃຊ້ feature ນີ້.
 should-restart-title = ເລີ່ມເຮັດວຽກ { -brand-short-name } ໃຫມ່
 should-restart-ok = ເລີ່ມເຮັດວຽກ { -brand-short-name } ໃຫມ່ດຽວນີ້
 cancel-no-restart-button = ຍົກເລີກ
@@ -212,7 +215,6 @@ browsing-use-smooth-scrolling =
 
 ## General Section - Proxy
 
-network-proxy-title = ພຣັອກຊີເຄືອຂ່າຍ
 network-settings-title = ຕັ້ງຄ່າເຄື່ອຂ່າຍ
 network-proxy-connection-learn-more = ຮຽນຮູ້ເພີ່ມເຕີມ
 network-proxy-connection-settings =
@@ -467,26 +469,12 @@ sitedata-total-size-calculating = ກຳລັງຄຳນວນຂໍ້ມູ�
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = ຄຸກກີ້, ຂໍ້ມູນເວັບໄຊ ແລະແຄຊທີ່ຖືກຈັດເກັບໄວ້ຂອງທ່ານໃຊ້ພື້ນທີ່ດິສກ໌ { $value } { $unit }.
 sitedata-learn-more = ຮຽນຮູ້ເພີ່ມເຕີມ
-sitedata-accept-cookies-option =
-    .label = ຍອມຮັບຄຸກກີ້ແລະຂໍ້ມູນເວັບໄຊຈາກເວັບໄຊ (ແນະນຳ)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = ບັອກຄຸກກີ້ແລະຂໍ້ມູນເວັບໄຊ (ອາດສົ່ງຜົນໃຫ້ເວັບໄຊບໍ່ສົມບູນ)
-    .accesskey = B
 sitedata-keep-until = ເກັບຈົນກວ່າ
     .accesskey = u
 sitedata-keep-until-expire =
     .label = ພວກມັນໝົດອາຍຸ
 sitedata-keep-until-closed =
     .label = { -brand-short-name } ຖືກປິດ
-sitedata-accept-third-party-desc = ຍອມຮັບຄຸກກີ້ແລະຂໍ້ມູນເວັບໄຊຈາກບຸກຄົນທີ່ສາມ
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = ຕະຫລອດເວລາ
-sitedata-accept-third-party-visited-option =
-    .label = ຈາກການຢ້ຽມຊົມ
-sitedata-accept-third-party-never-option =
-    .label = ບໍ່ເຄີຍ
 # This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = ປະເພດທີ່ຖືກປິດກັ້ນ
@@ -568,10 +556,6 @@ tracking-mode-private =
 tracking-mode-never =
     .label = ບໍ່ເຄີຍ
     .accesskey = ບ
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = ໃຊ້ການປ້ອງກັນການຕິດຕາມໃນການທ່ອງເວັບແບບສ່ວນຕົວເພື່ອບັອກຕົວຕິດຕາມທີ່ຮູ້ຈັກ
-    .accesskey = v
 tracking-exceptions =
     .label = ຂໍ້ຍົກເວັ້ນ…
     .accesskey = x
@@ -681,3 +665,32 @@ certs-view =
 certs-devices =
     .label = ອຸປະກອນຄວາມປອດໄພ…
     .accesskey = D
+space-alert-learn-more-button =
+    .label = ຮຽນຮູ້ເພີ່ມເຕີມ
+    .accesskey = ຮ
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] ເປີດຕົວເລືອກ
+           *[other] ເປີດການຕັ້ງຄ່າ
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] ປ
+           *[other] ປ
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] ພື້ນທີ່ຂອງດີດ { -brand-short-name } ກຳລັງຈະເຕັມ. ເນື້ອຫາເວັບໄຊອາດຈະສະແດງບໍ່ຖືກຕ້ອງ. ທ່ານສາມາດລ້າງຂໍ້ມູນທີ່ຖືກຈັດເກັບໃນ ຕົວເລືອກ > ຄວາມເປັນສ່ວນຕົວ ແລະ ຄວາມປອດໄພ > ຄຸກກີ້ ແລະ ຂໍ້ມູນໄຊ.
+       *[other] ພື້ນທີ່ຂອງດີດ { -brand-short-name } ກຳລັງຈະເຕັມ. ເນື້ອຫາເວັບໄຊອາດຈະສະແດງບໍ່ຖືກຕ້ອງ. ທ່ານສາມາດລ້າງຂໍ້ມູນທີ່ຖືກຈັດເກັບໃນ ຄ່າກຳນົດ > ຄວາມເປັນສ່ວນຕົວ ແລະ ຄວາມປອດໄພ > ຄຸກກີ້ ແລະ ຂໍ້ມູນໄຊ.
+    }
+space-alert-under-5gb-ok-button =
+    .label = ຕົກລົງ, ເຂົ້າໃຈແລ້ວ
+    .accesskey = ຕ
+space-alert-under-5gb-message = ພື້ນທີດີດຂອງ { -brand-short-name } ກຳລັງຈະເຕັມ. ເນື້ອຫາເວັບໄຊອາດສະແດງຜົນບໍ່ຖືກຕ້ອງ. ຢ້ຽມຢາມ “ຮຽນຮູ້ເພີ່ມເຕີມ” ເພື່ອເພີ່ມປະສິດທິພາບການໃຊ້ງານດີດຂອງທ່ານສຳລັບປະສົບການທ່ອງເວັບທີ່ດີຂຶ້ນ
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = ເດສກ໌ທັອບ
+downloads-folder-name = ດາວໂຫລດ
+choose-download-folder-title = ເລືອກໂຟນເດີດາວໂຫລດ:

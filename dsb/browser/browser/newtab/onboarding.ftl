@@ -6,6 +6,7 @@
 ## UI strings for the simplified onboarding modal
 
 onboarding-button-label-try-now = Wopytajśo něnto
+onboarding-button-label-get-started = Prědne kšace
 onboarding-welcome-header = Witajśo k { -brand-short-name }
 onboarding-start-browsing-button-label = Pśeglědowanje startowaś
 
@@ -24,3 +25,17 @@ onboarding-addons-title = Dodanki
 onboarding-addons-text = Pśidajśo dalšne funkcije, aby { -brand-short-name } źurnjej za was źěłał. Pśirownajśo płaśizny, wobgóńśo se za wjedrom abo zwurazniśo swóju wósobinu ze swójskeju drastwu.
 onboarding-ghostery-title = Ghostery
 onboarding-ghostery-text = Pśeglědujśo malsnjej, wěcej inteligentnje abo wěsćej z rozšyrjenjami ako Ghostery, kótarež wam zmóžnja, gramne wabjenje blokěrowaś.
+# Note: "Sync" in this case is a generic verb, as in "to synchronize"
+onboarding-fxa-title = Snychronizěrowaś
+onboarding-fxa-text = Registrěrujśo se za { -fxaccount-brand-name } a synchronizěrujśo swóje cytańske znamjenja, gronidła a wócynjone rejtarki, źožkuli { -brand-short-name } wužywaśo.
+
+## Message strings belonging to the Return to AMO flow
+
+return-to-amo-sub-header = Wjelicnje, maśo { -brand-short-name }
+# <icon></icon> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-header = Wobstarajśo se něnto <icon></icon><b>{ $addon-name }.</b>
+return-to-amo-extension-button = Rozšyrjenje pśidaś
+return-to-amo-get-started-button = Prědne kšace z { -brand-short-name }

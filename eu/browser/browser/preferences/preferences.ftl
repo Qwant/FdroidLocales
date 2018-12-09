@@ -53,7 +53,7 @@ pane-sync-title = Firefox kontua
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = { -brand-short-name } laguntza
-addons-button-label = Hedapenak eta gaiak
+addons-button-label = Hedapenak eta itxurak
 focus-search =
     .key = f
 close-button =
@@ -324,6 +324,7 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Bilatu testua idazten hasi bezain laster
     .accesskey = B
+browsing-cfr-recommendations-learn-more = Argibide gehiago
 
 ## General Section - Proxy
 
@@ -631,6 +632,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Edukia blokeatzeko zure ezarpenek eragotzi egiten dute cookie eta guneetako datuen ezarpenak aldatzea.
+sitedata-cookies-permissions =
+    .label = Kudeatu baimenak
+    .accesskey = b
 
 ## Privacy Section - Address Bar
 
@@ -684,6 +688,18 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = Leiho pribatuetan soilik
     .accesskey = h
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Oinarrizkoa
+    .accesskey = O
+content-blocking-setting-strict =
+    .label = Zorrotza
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = Pertsonalizatua
+    .accesskey = s
+content-blocking-custom-desc = Aukeratu zer blokeatu.
 content-blocking-tracking-protection-change-block-list = Aldatu blokeo-zerrenda
 content-blocking-third-party-cookies-label =
     .label = Hirugarrenen cookieak
@@ -706,6 +722,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Hirugarrenen cookie guztiak (webguneak apur litzake)
     .accesskey = H
+content-blocking-cookies-label =
+    .label = Cookieak
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -727,6 +746,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = Aldatu blokeo-zerrenda…
     .accesskey = A
+tracking-manage-exceptions =
+    .label = Kudeatu salbuespenak…
+    .accesskey = s
 
 ## Privacy Section - Permissions
 
@@ -843,3 +865,32 @@ certs-view =
 certs-devices =
     .label = Segurtasun-gailuak…
     .accesskey = S
+space-alert-learn-more-button =
+    .label = Argibide gehiago
+    .accesskey = A
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Ireki aukerak
+           *[other] Ireki hobespenak
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] I
+           *[other] I
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } leku erabilgarririk gabe gelditzen ari da diskoan. Webgunearen edukiak agian ez dira ondo bistaratuko. Biltegiratutako gunearen datuak Aukerak > Pribatutasuna eta segurtasuna > Cookieak eta guneetako datuak atalean garbi ditzakezu.
+       *[other] { -brand-short-name } leku erabilgarririk gabe gelditzen ari da diskoan. Webgunearen edukiak agian ez dira ondo bistaratuko. Biltegiratutako gunearen datuak Hobespenak > Pribatutasuna eta segurtasuna > Cookieak eta guneetako datuak atalean garbi ditzakezu.
+    }
+space-alert-under-5gb-ok-button =
+    .label = Ados, ulertu dut
+    .accesskey = A
+space-alert-under-5gb-message = { -brand-short-name } leku erabilgarririk gabe gelditzen ari da diskoan. Webgunearen edukiak agian ez dira ondo bistaratuko. Bisitatu "Argibide gehiago" diskoaren erabilpena optimizatu eta nabigatze-esperientzia hobetzeko.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Mahaigaina
+downloads-folder-name = Deskargak
+choose-download-folder-title = Aukeratu deskarga-karpeta:

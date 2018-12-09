@@ -101,3 +101,6 @@ functionality specific to thunderbird. -->
 <!ENTITY inadequateSecurityError.longDesc "<p><span class='hostname'></span> zaharkitua dagoen eta erasokorra den segurtasun teknologia darabil. Erasotzaile batek erraz lortu dezake zuk salbu dagoela uste duzun informazioa. Webgune administratzaileak zerbitzaria konpondu beharko luke zuk gunea bisitatu aurretik.</p><p>Errore kodea: NS_ERROR_NET_INADEQUATE_SECURITY</p>">
 
 <!ENTITY blockedByPolicy.title "Blokeatutako orria">
+
+<!ENTITY networkProtocolError.title "Sare-protokoloaren errorea">
+<!ENTITY networkProtocolError.longDesc "<p>Ikusten saiatzen ari zaren orria ezin da erakutsi sare protokoloan errore bat detektatu delako.</p><ul><li>Jarri harremanetan gunearen arduradunarekin arazo honen berri emateko.</li></ul>">

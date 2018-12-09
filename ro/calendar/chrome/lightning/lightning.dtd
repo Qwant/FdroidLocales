@@ -54,19 +54,19 @@
 <!ENTITY lightning.imipbar.btnAccept.label                                  "Acceptă">
 <!ENTITY lightning.imipbar.btnAccept2.tooltiptext                           "Acceptarea invitației la eveniment">
 <!ENTITY lightning.imipbar.btnAcceptRecurrences.label                       "Acceptă toate">
-<!ENTITY lightning.imipbar.btnAcceptRecurrences2.tooltiptext                "Acceptați invitația la eveniment pentru toate aparițiile evenimentului">
+<!ENTITY lightning.imipbar.btnAcceptRecurrences2.tooltiptext                "Acceptă invitația la eveniment pentru toate ocurențele evenimentului">
 <!ENTITY lightning.imipbar.btnAdd.label                                     "Adaugă">
 <!ENTITY lightning.imipbar.btnAdd.tooltiptext                               "Adaugă evenimentul în calendar">
 <!ENTITY lightning.imipbar.btnDecline.label                                 "Refuză">
 <!ENTITY lightning.imipbar.btnDecline2.tooltiptext                          "Refuză invitația la eveniment">
 <!ENTITY lightning.imipbar.btnDeclineRecurrences.label                      "Refuză tot">
-<!ENTITY lightning.imipbar.btnDeclineRecurrences2.tooltiptext               "Refuză invitația la eveniment pentru toate aparițiile evenimentului">
+<!ENTITY lightning.imipbar.btnDeclineRecurrences2.tooltiptext               "Refuză invitația la eveniment pentru toate ocurențele evenimentului">
 <!ENTITY lightning.imipbar.btnDeclineCounter.label                          "Refuză">
 <!ENTITY lightning.imipbar.btnDeclineCounter.tooltiptext                    "Refuză contrapropunerea">
 <!ENTITY lightning.imipbar.btnDelete.label                                  "Șterge">
 <!ENTITY lightning.imipbar.btnDelete.tooltiptext                            "Șterge din calendar">
 <!ENTITY lightning.imipbar.btnDetails.label                                 "Detalii…">
-<!ENTITY lightning.imipbar.btnDetails.tooltiptext                           "Arată detaliile evenimentului">
+<!ENTITY lightning.imipbar.btnDetails.tooltiptext                           "Afișează detaliile evenimentului">
 <!ENTITY lightning.imipbar.btnMore.label                                    "Mai mult">
 <!ENTITY lightning.imipbar.btnMore.tooltiptext                              "Clic pentru a se afișa mai multe opțiuni">
 <!ENTITY lightning.imipbar.btnReconfirm2.label                              "Reconfirmare">
@@ -75,10 +75,10 @@
 <!ENTITY lightning.imipbar.btnReschedule.tooltiptext                        "Reprogramează evenimentul">
 <!ENTITY lightning.imipbar.btnSaveCopy.label                                "Salvează o copie">
 <!ENTITY lightning.imipbar.btnSaveCopy.tooltiptext                          "Salvați o copie a evenimentului din calendar în mod independent de răspunsul de la organizator. Lista de participanți va fi ștearsă.">
-<!ENTITY lightning.imipbar.btnTentative.label                               "Tentativă">
+<!ENTITY lightning.imipbar.btnTentative.label                               "Provizoriu">
 <!ENTITY lightning.imipbar.btnTentative2.tooltiptext                        "Acceptă provizoriu invitația la eveniment">
 <!ENTITY lightning.imipbar.btnTentativeRecurrences.label                    "Acceptă toate provizoriu">
-<!ENTITY lightning.imipbar.btnTentativeRecurrences2.tooltiptext             "Acceptați invitația la eveniment în mod provizoriu pentru toate aparițiile evenimentului">
+<!ENTITY lightning.imipbar.btnTentativeRecurrences2.tooltiptext             "Acceptă provizoriu invitația la eveniment pentru toate ocurențele evenimentului">
 <!ENTITY lightning.imipbar.btnUpdate.label                                  "Actualizare">
 <!ENTITY lightning.imipbar.btnUpdate.tooltiptext                            "Actualizare eveniment în calendar">
 <!ENTITY lightning.imipbar.description                                      "Mesajul conține o invitație la un eveniment.">
@@ -100,12 +100,12 @@
 <!ENTITY lightning.acctCentral.newCalendar.label "Creează un calendar nou">
 
 <!-- today-pane-specific -->
-<!ENTITY todaypane.showMinimonth.label "Arată miniluna">
+<!ENTITY todaypane.showMinimonth.label "Afișează mini-luna">
 <!ENTITY todaypane.showMinimonth.accesskey "m">
-<!ENTITY todaypane.showMiniday.label "Arată miniziua">
+<!ENTITY todaypane.showMiniday.label "Afișează mini-ziua">
 <!ENTITY todaypane.showMiniday.accesskey  "A">
 <!ENTITY todaypane.showNone.label "Nu arăta nimic">
 <!ENTITY todaypane.showNone.accesskey "N">
-<!ENTITY todaypane.showTodayPane.label "Arată panoul de azi">
+<!ENTITY todaypane.showTodayPane.label "Afișează panoul cu ziua de astăzi">
 <!ENTITY todaypane.showTodayPane.accesskey "o">
 <!ENTITY todaypane.statusButton.label "Panoul zilei de azi">

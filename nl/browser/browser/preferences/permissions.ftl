@@ -56,17 +56,21 @@ permissions-capabilities-block =
 permissions-capabilities-prompt =
     .label = Altijd vragen
 
+permissions-capabilities-listitem-allow =
+    .value = Toestaan
+permissions-capabilities-listitem-block =
+    .value = Blokkeren
+permissions-capabilities-listitem-allow-first-party =
+    .value = Van derden blokkeren
+permissions-capabilities-listitem-allow-session =
+    .value = Toestaan voor sessie
+
 ## Invalid Hostname Dialog
 
 permissions-invalid-uri-title = Ongeldige hostnaam ingevoerd
 permissions-invalid-uri-label = Voer een geldige hostnaam in
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-tracking-protection-window =
-    .title = Uitzonderingen - Bescherming tegen volgen
-    .style = { permissions-window.style }
-permissions-exceptions-tracking-protection-desc = U hebt Bescherming tegen volgen uitgeschakeld op deze websites.
 
 permissions-exceptions-content-blocking-window =
     .title = Uitzonderingen - Inhoudsblokkering

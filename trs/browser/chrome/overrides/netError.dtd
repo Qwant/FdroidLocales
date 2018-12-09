@@ -13,6 +13,8 @@
 <!ENTITY continue2.label "Doj…">
 <!ENTITY moreInformation.label "Doj nuguan' a'min rayi'î nan">
 
+<!ENTITY viewCertificate.label "Ni'io' sertifikado">
+
 <!-- Specific error messages -->
 
 <!ENTITY connectionFailure.title "Na'ue gatu riña internet ma">
@@ -59,6 +61,7 @@
 <!ENTITY notCached.longDesc "<p>Nitaj si nu ñaj nana'ui't riña cache &brandShortName;.</p><ul><li>Guenda ga yitiïnj, &brandShortName; ni si gachín da' nana'ui' ma'an ma ñaj hua ahi</li><li>Ga'ui' riña taj garahue ñu' da' gachinjt ñaj na riña sitio web.</li></ul>">
 
 <!ENTITY netOffline.title "Si gida'aj internet">
+<!ENTITY netOffline.longDesc2 "<ul><li>prênsa &quot;Narì' nukuaj ñû&quot; da' natut riña lînia ni ga'ue nayi'nïn pâjina.</li></ul>">
 
 <!ENTITY contentEncodingError.title "Gire' 'ngo chrej nana'uij sa gachrûnt">
 <!ENTITY contentEncodingError.longDesc "<ul>
@@ -88,6 +91,7 @@
 </ul>">
 
 <!ENTITY proxyResolveFailure.title "Na'ue nari'ìj proxy ma">
+<!ENTITY proxyResolveFailure.longDesc "<ul><li>Natsij ni'iaj dàj nahuin Proxy da' gini'înt si hua hue'ê man.</li><li>Ni'iaj sisi 'iaj sun red ngà si aga't aga' sikà' ràa.</li><li> sisi hua sa tna'uej rayi'î si agâ't rû' huaj nin &brandShortName; a'nïn gatut riña web.</li></ul>">
 
 <!ENTITY redirectLoop.title "Nitaj si 'iaj redireksionando hue'ê pajinâ nan">
 <!ENTITY redirectLoop.longDesc "<ul>
@@ -108,20 +112,49 @@
 </ul>">
 
 <!ENTITY certerror.longpagetitle1 "Nitaj si gua hue'e si conexion re'">
+<!ENTITY certerror.longpagetitle2 "Gadadut: Nū 'ngò yi'ì nukuaj">
+<!ENTITY certerror.sts.longpagetitle  "Nu ga'ue gida'aj: Siruaj ni hua ahī ma">
 <!-- Localization note (certerror.introPara, certerror.introPara2) - The text content of the span tag
 will be replaced at runtime with the name of the server to which the user
 was trying to connect. -->
+<!ENTITY certerror.introPara "Sa gu'nàj <span class='hostname'/> ni nu na'nïn hue'ej si sitiôt ma. Da' ga'ue dugumîj nej nuguan' a'min rayi'ît ni, &brandShortName; nu na'nïn riña sitiô naj.">
+<!ENTITY certerror.introPara2 "&brandShortName; Nari'ij 'ngo sa yi'ì hia ni nu gan'an ne' ñaan ngà' <span class='hostname'/>. Si gatut riña sitiô nan ni, nej sa yi'ì dan ga'ue girij da'nga huì hua 'iát, si korreôt, asi si da'nga' si tarjetât sa nu san'anj an.">
+
+<!ENTITY certerror.expiredCert.secondPara "Sa hua a'nan' nan ni huaj dananj dadin' nitaj si nù hue'ê si horât riña aga' sikà' ràa, yi'ì dan na'ue ga'nïn riña&brandShortName; gayi'ì hue'ê man.">
+
+<!ENTITY certerror.sts.introPara "&brandShortName; nari'ij 'ngo sa yi'ì hia ni nu gan'an ne' ñaan ngà'<span class='hostname'/> dadin sitiò nan ni ni'ñan 'ngo koneksiûn tna'uej rayi'ît.">
+
+<!ENTITY certerror.expiredCert.introPara "&brandShortName; nari'ij 'ngo sa yi'ìi ni nu gan'an riña <span class='hostname'/>. Hua a'nan' riña sîtio asi si horât nitaj si nùn hue'ê.">
+<!ENTITY certerror.expiredCert.secondPara2 "Si guruhuaj ni ngà gisîj si diû sertifikâdo, yi'ì dan na'ue ga'nïn riña &brandShortName; guendâ gi'iaj sun hue'ej. Si gatut hiuj nan ruhuât nïn, ga'ue gi'iaj tu nej si nuguan' hua rayi'ît, si da'nga' huìt, si korreôt asi da'nga' araj sunt ngà nakaj nu sà' san'anj an riña.">
+<!ENTITY certerror.expiredCert.sts.secondPara "Si guruhuaj ni ngà gisîj si diû si sertifikadô web, yi'ì dan na'ue ga'nïn riña &brandShortName; gi'iaj konektandoj da' dugumij sò'.">
+
+<!ENTITY certerror.whatCanYouDoAboutItTitle "Nùhuin si ga'ue gi'iát.">
+
+<!ENTITY certerror.unknownIssuer.whatCanYouDoAboutIt "<p>Sitiô web 'iaj danj hua sa hua nan, nitaj nùhuin si ga'ue gi'iát da' nagi'iát man.</p><p>Sisi hua 'ngo antivirus arja sunt, da'uît ga'mint ngà sa nikaj ñu'unj da' ga'ue ruguñun'unj nej si sò'. Ga'ue natà' rayi'î sa hua nan riña duguî' nikaj ñu'unj sitiô nan.</p>">
+
+<!ENTITY certerror.expiredCert.whatCanYouDoAboutIt2 "<p>Si relô si agô' 'iaj sun guendâ <span id='wrongSystemTime_systemDate2'/>. Da'uît natsíj ni'iajt sisi nu hue'ê gui, ni hora riña si aga't, da' ga'ue nagi'iaj nakàt sa nu riñanj <span class='hostname'/>.</p><p>Sisi hua hue'ê diû ngà si relôt ni riña sîtio hua a'nan', ni nitaj nùhuin si gi'iô' da' ga'ue nahuin sa gahui a'nan' nan.</p>">
+
+<!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "<p>Sa hua a'nan' nan ni riña sîtio 'iaj si guruhuaj, ni nitaj nùhuin si ga'ue gi'iô' da nahuin man. Natà' na'anj riña sû' nikaj ñun'unj sitiô dan rayi'î sa hua dan.</p>">
+
+<!ENTITY sharedLongDesc "<ul>
+  <li>Hua chruj riña sitiô nan asi giyichin' man si 'iaj sun man 'ngo diû. narì' nukuaj ñû
+    akuan' nïn.</li>
+  <li>Sisi na'ue nayi'nïn ngà' si 'ngo pâjina, ni'iaj si hua
+    koneksiûn.</li>
+  <li>Sisi hua rán rayi'î si aga't 'iaj proxi, ni'iaj sisi
+    nan &brandShortName; ga'nïn gatut riña Web.</li> </ul>">
+
+<!ENTITY cspBlocked.title "'Ngo narán aga' na riña sitiô na yi'ì sa mà riñaj">
+<!ENTITY cspBlocked.longDesc "<p>&brandShortName; Nu ga'nïn da' nayi'nïn página na dadin' hua sa ma riñaj ni ga'ue si sa yi'ìi huin nej ma.</p>">
+
+<!ENTITY corruptedContentErrorv2.title "Gire'ej dadin' sa nun riñan hua a'nan'">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>Pajinâ ruhuât ni'iajt ni na'ue guruguì'ij dadin' nari'ij 'ngo sa a'ui' riña nej dâto.</p><ul><li>Gi'iaj 'ngo sununj un ni natà' na'anj riña nej duguî' 'nïnj ra'a sitiô nan da' nahui man.</li></ul>">
 
 
+<!ENTITY securityOverride.exceptionButtonLabel "Nitaj ama na'nìn' na ma...">
+<!ENTITY securityOverride.exceptionButton1Label "Garayino' si ahī hua ma nī gun' ne'ñaan">
 
-
-
-
-
-
-
-
-
+<!ENTITY errorReporting.automatic2 "Ga'ninj nugua'an ga'anj riña Mozilla da' gini'in' nej sitio hua yi'ī.">
 <!ENTITY errorReporting.learnMore "Gahuin chrūn doj...">
 
 <!ENTITY remoteXUL.title "XUL nagi'iaj mun'ûn'">
@@ -135,10 +168,24 @@ was trying to connect. -->
 <!-- LOCALIZATION NOTE (certerror.wrongSystemTime2,
                         certerror.wrongSystemTimeWithoutReference) - The <span id='..' />
      tags will be injected with actual values, please leave them unchanged. -->
+<!ENTITY certerror.wrongSystemTime2 "<p> &brandShortName; nu gi'iaj konektando ngà <span id='wrongSystemTime_URL'/> dadin' nitaj si hua hue'ê hora 'na' riña si aga't yi'î dan na'ue ga hue'ê koneksiûn.</p> <p>Si aga't hua yugui guendâ <span id='wrongSystemTime_systemDate'/>, ngà da'ui gaj dàj rû' hua <span id='wrongSystemTime_actualDate'/>. Da' nahuin sa hua a'nan' nan ni nachru hue'ê diû ni hôra riña man.</p>">
+<!ENTITY certerror.wrongSystemTimeWithoutReference "<p>&brandShortName; nu gi'iaj konektando ngà <span id='wrongSystemTimeWithoutReference_URL'/> dadin' nitaj si hua hue'ê hora 'na' riña si aga't yi'î dan na'ue ga hue'ê koneksiûn.</p> <p>Si aga't hua yugui guendâ <span id='wrongSystemTimeWithoutReference_systemDate'/>. Da' nahuin sa hua a'nan' nan ni nachru hue'ê diû ni hôra riña man.</p>">
 
+<!ENTITY certerror.pagetitle1  "Konexiôn nitaj si gua yitinj">
+<!ENTITY certerror.pagetitle2  "Gadadut: Nū 'ngò yi'ì nukuaj">
+<!ENTITY certerror.sts.pagetitle  "Nu ga'ue gida'aj: Siruaj ni hua ahī ma">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation "Sîtio arâj sun HTTP ûta dugumij sa aché nuu (HSTS) guendâ diganj &brandShortName; sisi ga nïn gaché nun' riñanj. sa huaa, si ga'ue gachrun' escepción riña sertifikadô nan.">
+<!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> hua 'ngo sa dugumin ma gu'naj ma HTTP Strict Transport Security (HSTS), sa gata ruaj huin si &brandShortName; man 'nga na gi'iaj sunj. Si ga'ue ahuin si gataj gà gatut riña sitio na.">
+<!ENTITY certerror.copyToClipboard.label "Guyun' nej nuguan'">
 
+<!ENTITY inadequateSecurityError.title "Nitaj si gua hue'e si conexion re'">
 <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
      "NS_ERROR_NET_INADEQUATE_SECURITY". -->
 
+<!ENTITY blockedByPolicy.title "Hua blokeado pagina">
 
+<!ENTITY clockSkewError.title "Nitaj si nū hue'ê hora riña si aga't">
 
+<!ENTITY prefReset.label "Nagi'iaj run' hua nianj">
+
+<!ENTITY networkProtocolError.title "Gire' si protokolo red">

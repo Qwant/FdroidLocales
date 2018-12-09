@@ -84,6 +84,9 @@ extension-controlled-homepage-override = Rozšěrjenje <img data-l10n-name="icon
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Rozšěrjenje <img data-l10n-name="icon"/> { $name } wašu stronu noweho rajtarka wodźi.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Rozšěrjenje, <img data-l10n-name="icon"/> { $name }, tute nastajenje wodźi.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Rozšěrjenje, <img data-l10n-name="icon"/> { $name }, je wašu standardnu pytawu nastajiło.
@@ -138,6 +141,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Předchadne posedźenje wobnowić
     .accesskey = b
+startup-restore-warn-on-quit =
+    .label = Warnować, hdyž so wobhladowak kónči
 disable-extension =
     .label = Rozšěrjenje znjemóžnić
 tabs-group-header = Rajtarki
@@ -150,6 +155,9 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Warnować, hdyž so wjacore rajtarki začinjeja
     .accesskey = W
+warn-on-quit-close-multiple-tabs =
+    .label = Warnować, hdyž so wjacore rajtarki kónča a začinjeja
+    .accesskey = c
 warn-on-open-many-tabs =
     .label = Warnować, hdyž móhło wočinjenje wjacorych rajtarkow { -brand-short-name } spomalić
     .accesskey = o
@@ -291,6 +299,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Pytawy awtomatisce aktualizować
     .accesskey = k
+update-pref-write-failure-title = Pisanski zmylk
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Nastajenje njeda so składować. Njebě móžno, do dataje pisać: { $path }
 
 ## General Section - Performance
 
@@ -330,6 +342,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Při pisanju tekst pytać
     .accesskey = P
+browsing-cfr-recommendations =
+    .label = Rozšěrjenja doporučić, hdyž přehladujeće
+    .accesskey = R
+browsing-cfr-recommendations-learn-more = Dalše informacije
 
 ## General Section - Proxy
 
@@ -530,7 +546,6 @@ privacy-header = Priwatnosć wobhladowaka
 
 ## Privacy Section - Forms
 
-forms-header = Formulary a hesła
 logins-header = Přizjewjenja a hesła
 forms-ask-to-save-logins =
     .label = Prašeć so, hač so maja přizjewjenja a hesła składować
@@ -604,6 +619,9 @@ sitedata-keep-until-expire =
     .label = njespadnu
 sitedata-keep-until-closed =
     .label = { -brand-short-name } so njezačini
+sitedata-delete-on-close =
+    .label = Placki a sydłowe daty zhašeć, hdyž so { -brand-short-name } začinja
+    .accesskey = s
 sitedata-allow-cookies-option =
     .label = Placki a sydłowe daty akceptować
     .accesskey = P
@@ -624,6 +642,14 @@ sitedata-block-all-third-party-option =
     .label = Wšě placki třećich (móže zawinować, zo websydła njefunguja)
 sitedata-block-all-option =
     .label = Wšě placki (budźe zawinować, zo websydła njefunguja)
+sitedata-option-block-trackers =
+    .label = Přesćěhowaki třećich
+sitedata-option-block-unvisited =
+    .label = Placki z njewopytanych websydłow
+sitedata-option-block-all-third-party =
+    .label = Wšě placki třećich (móže zawinować, zo websydła hižo njefunguja)
+sitedata-option-block-all =
+    .label = Wšě placki (móže zawinować, zo websydła hižo njefunguja)
 sitedata-clear =
     .label = Daty zhašeć…
     .accesskey = z
@@ -637,6 +663,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Waše nastajenja blokowanja wobsaha změnam na nastajenjach plackow a sydłowych datow zadźěwa.
+sitedata-cookies-permissions =
+    .label = Prawa rjadować…
+    .accesskey = P
 
 ## Privacy Section - Address Bar
 
@@ -657,6 +686,7 @@ addressbar-suggestions-settings = Nastajenja za namjety pytawy změnić
 
 content-blocking-header = Blokowanje wobsaha
 content-blocking-desc = Blokujće wobsah třećich poskićowarjow kaž wabjenje abo kod, kotryž móže waše přehladowanje spomalić a was přez web přesćěhować. Přiměrće swoje nastajenja za najlěpšu balansu mjez škitom a wukonom.
+content-blocking-description = Blokujće wobsah třećich, kotryž wam po webje slěduje. Kontrolujće, kak husto so waša aktiwita online składuje a mjez websydłami dźěli.
 content-blocking-learn-more = Dalše informacije
 content-blocking-restore-defaults =
     .label = Standard wobnowić
@@ -690,6 +720,37 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = Jenož w priwatnych woknach
     .accesskey = J
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Standard
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = Striktny
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = Swójski
+    .accesskey = S
+content-blocking-standard-description = Blokuje jenož znate přesćěhowaki w priwatnych woknach.
+content-blocking-standard-desc = Wurunany za škit a wukon. Dowoluje někotre přesćěhowaki, zo bychu websydła porjadnje fungowali.
+content-blocking-strict-desc = Blokuje wšě přesćěhowaki, kotrež { -brand-short-name } namaka. Tohodla njemóhli někotre websydła korektnje fungować.
+content-blocking-custom-desc = Wubjerće, štož chceće blokować.
+content-blocking-private-trackers = Znate přeścěhowaki jenož w priwatnych woknach
+content-blocking-third-party-cookies = Slědowace placki třećich
+content-blocking-all-windows-trackers = Znate přesćěhowaki we wšěch woknach
+content-blocking-all-third-party-cookies = Wšě placki třećich
+content-blocking-warning-title = Kedźbu!
+content-blocking-warning-desc = Hdyž placki a přesćěhowaki blokujeće, njemóhli někotre websydła korektnje fungować. Je lochko, blokowanje sydłow, kotrymž dowěrjeće, znjemóžnić.
+content-blocking-learn-how = Zhońće kak
+content-blocking-trackers-label =
+    .label = Přesćěhowaki
+    .accesskey = P
+content-blocking-tracking-protection-option-all-windows =
+    .label = We wšěch woknach
+    .accesskey = W
+content-blocking-option-private =
+    .label = Jenož w priwatnych woknach
+    .accesskey = J
 content-blocking-tracking-protection-change-block-list = Blokowansku lisćinu změnić
 content-blocking-third-party-cookies-label =
     .label = Placki třećich poskićowarjow
@@ -712,6 +773,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Wšě placki třećich (móže zawinować, zo websydła njefunguja)
     .accesskey = t
+content-blocking-cookies-label =
+    .label = Placki
+    .accesskey = P
 
 ## Privacy Section - Tracking
 
@@ -733,6 +797,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = Blokowansku lisćinu změnić…
     .accesskey = z
+tracking-manage-exceptions =
+    .label = Wuwzaća rjadować…
+    .accesskey = u
 
 ## Privacy Section - Permissions
 
@@ -800,6 +867,9 @@ collection-health-report-link = Dalše informacije
 collection-studies =
     .label = { -brand-short-name } dowolić, studije instalować a přewjesć
 collection-studies-link = Studije { -brand-short-name } pokazać
+addon-recommendations =
+    .label = { -brand-short-name } dowolić, personalizowane poručenja za rozšěrjenja dać
+addon-recommendations-link = Dalše informacije
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datowe rozprawjenje je znjemóžnjene za tutu programowu konfiguraciju
@@ -849,3 +919,36 @@ certs-view =
 certs-devices =
     .label = Wěstotne graty…
     .accesskey = t
+space-alert-learn-more-button =
+    .label = Dalše informacije
+    .accesskey = D
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Nastajenja wočinić
+           *[other] Nastajenja wočinić
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] N
+           *[other] N
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } hižo dosć składowanskeho ruma nima. Wobsah websydła so snano korektnje njezwobrazni. Móžeće składowane daty w Nastajenja > Priwatnosć a wěstota > Placki a sydłowe daty zhašeć.
+       *[other] { -brand-short-name } hižo dosć składowanskeho ruma nima. Wobsah websydła so snano korektnje njezwobrazni. Móžeće składowane daty w Nastajenja > Priwatnosć a wěstota > Placki a sydłowe daty zhašeć.
+    }
+space-alert-under-5gb-ok-button =
+    .label = W porjadku, sym zrozumił
+    .accesskey = r
+space-alert-under-5gb-message = { -brand-short-name } hižo dosć składowanskeho ruma nima. Wobsah websydła so snano korektnje njezwobrazni. Móžeće na “Dalše informacije” kliknyć, zo byšće swój składowe wužiće za lěpše přehladowanske dožiwjenje opiměrował.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Desktop
+downloads-folder-name = Sćehnjenja
+choose-download-folder-title = Rjadowak sćehnjenjow wubrać:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Dataje do { $service-name } składować

@@ -84,6 +84,9 @@ extension-controlled-homepage-override = Laajennus, <img data-l10n-name="icon"/>
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee Uusi välilehti -sivua.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee tätä asetusta.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Laajennus, <img data-l10n-name="icon"/> { $name }, on asettanut oletushakukoneen.
@@ -149,6 +152,9 @@ open-new-link-as-tabs =
     .accesskey = A
 warn-on-close-multiple-tabs =
     .label = Varoita, kun olen sulkemassa useita välilehtiä
+    .accesskey = V
+warn-on-quit-close-multiple-tabs =
+    .label = Varoita, kun olen sulkemassa ohjelman tai useita välilehtiä
     .accesskey = V
 warn-on-open-many-tabs =
     .label = Varoita, kun useiden välilehtien avaaminen voi hidastaa { -brand-short-name }ia
@@ -285,6 +291,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Päivitä hakukoneet automaattisesti
     .accesskey = k
+update-pref-write-failure-title = Kirjoittaminen epäonnistui
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Asetuksen tallentaminen epäonnistui. Ei voitu kirjoittaa tiedostoon: { $path }
 
 ## General Section - Performance
 
@@ -324,6 +334,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Ala etsiä tekstistä heti kirjoitettaessa
     .accesskey = A
+browsing-cfr-recommendations =
+    .label = Suosittele laajennuksia selaamisen yhteydessä
+    .accesskey = S
+browsing-cfr-recommendations-learn-more = Lue lisää
 
 ## General Section - Proxy
 
@@ -524,7 +538,6 @@ privacy-header = Selaimen tietosuoja
 
 ## Privacy Section - Forms
 
-forms-header = Lomakkeet ja salasanat
 logins-header = Käyttäjätunnukset ja salasanat
 forms-ask-to-save-logins =
     .label = Ehdota sivustojen käyttäjätunnusten ja salasanojen tallentamista
@@ -598,6 +611,9 @@ sitedata-keep-until-expire =
     .label = kunnes ne vanhenevat
 sitedata-keep-until-closed =
     .label = kunnes { -brand-short-name } suljetaan
+sitedata-delete-on-close =
+    .label = Poista evästeet ja sivustotiedot, kun { -brand-short-name } suljetaan
+    .accesskey = s
 sitedata-allow-cookies-option =
     .label = Hyväksy evästeet ja sivustotiedot
     .accesskey = H
@@ -631,6 +647,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Sisällön eston asetukset estävät muutokset eväste- ja sivustotietoasetuksiin.
+sitedata-cookies-permissions =
+    .label = Hallitse oikeuksia…
+    .accesskey = o
 
 ## Privacy Section - Address Bar
 
@@ -684,6 +703,7 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = Vain yksityisissä ikkunoissa
     .accesskey = y
+content-blocking-warning-title = Huomio!
 content-blocking-tracking-protection-change-block-list = Muuta estolistaa
 content-blocking-third-party-cookies-label =
     .label = Kolmannen osapuolen evästeet
@@ -706,6 +726,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Kaikki kolmannen osapuolen evästeet (voi aiheuttaa sivustojen toimimattomuutta)
     .accesskey = K
+content-blocking-cookies-label =
+    .label = Evästeet
+    .accesskey = E
 
 ## Privacy Section - Tracking
 
@@ -727,6 +750,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = Muuta estolistaa…
     .accesskey = M
+tracking-manage-exceptions =
+    .label = Hallitse poikkeuksia…
+    .accesskey = p
 
 ## Privacy Section - Permissions
 
@@ -843,3 +869,36 @@ certs-view =
 certs-devices =
     .label = Turvallisuuslaitteet…
     .accesskey = T
+space-alert-learn-more-button =
+    .label = Lue lisää
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Avaa asetukset
+           *[other] Avaa asetukset
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] A
+           *[other] A
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name }ilta loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit tyhjentää sivustotiedot avaamalla Asetukset > Tietosuoja ja turvallisuus > Evästeet ja sivustotiedot.
+       *[other] { -brand-short-name }ilta loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit tyhjentää sivustotiedot avaamalla Asetukset > Tietosuoja ja turvallisuus > Evästeet ja sivustotiedot.
+    }
+space-alert-under-5gb-ok-button =
+    .label = OK, selvä
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name }ilta loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit lukea levyn käytön optimoimisesta selaamisen sujuvoittamiseksi painamalla ”Lue lisää”.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Työpöytä
+downloads-folder-name = Lataukset
+choose-download-folder-title = Valitse tallennuskansio
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Tallenna tiedostot palveluun { $service-name }

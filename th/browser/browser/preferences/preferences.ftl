@@ -84,6 +84,9 @@ extension-controlled-homepage-override = ส่วนขยาย <img data-l10n
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = ส่วนขยาย <img data-l10n-name="icon"/> { $name } กำลังควบคุมหน้าแท็บใหม่ของคุณ
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = ส่วนขยาย <img data-l10n-name="icon"/> { $name } กำลังควบคุมการตั้งค่านี้
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = ส่วนขยาย <img data-l10n-name="icon"/> { $name } ได้ตั้งเครื่องมือค้นหาเริ่มต้นของคุณ
@@ -138,6 +141,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = เรียกคืนวาระก่อนหน้า
     .accesskey = ร
+startup-restore-warn-on-quit =
+    .label = เตือนคุณเมื่อออกจากเบราว์เซอร์
 disable-extension =
     .label = ปิดใช้งานส่วนขยาย
 tabs-group-header = แท็บ
@@ -149,6 +154,9 @@ open-new-link-as-tabs =
     .accesskey = ป
 warn-on-close-multiple-tabs =
     .label = เตือนคุณเมื่อกำลังจะปิดหลายแท็บ
+    .accesskey = ต
+warn-on-quit-close-multiple-tabs =
+    .label = เตือนคุณเมื่อออกและปิดหลายแท็บ
     .accesskey = ต
 warn-on-open-many-tabs =
     .label = เตือนคุณเมื่อการเปิดหลายแท็บอาจทำให้ { -brand-short-name } ช้าลง
@@ -197,6 +205,9 @@ choose-button =
     .label = เลือก…
     .accesskey = ล
 choose-browser-language-description = เลือกภาษาที่ใช้แสดงผลเมนู, ข้อความ และการแจ้งเตือนจาก { -brand-short-name }
+manage-browser-languages-button =
+    .label = ตั้งทางเลือก…
+    .accesskey = ต
 confirm-browser-language-change-description = เริ่มการทำงาน { -brand-short-name } ใหม่เพื่อใช้การเปลี่ยนแปลงเหล่านี้
 confirm-browser-language-change-button = นำไปใช้และเริ่มการทำงานใหม่
 translate-web-pages =
@@ -270,6 +281,9 @@ update-application-use-service =
 update-enable-search-update =
     .label = อัปเดตเครื่องมือค้นหาโดยอัตโนมัติ
     .accesskey = อ
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = ไม่สามารถบันทึกค่ากำหนด ไม่สามารถเขียนไปยังไฟล์: { $path }
 
 ## General Section - Performance
 
@@ -309,6 +323,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = ค้นหาข้อความเมื่อคุณเริ่มพิมพ์
     .accesskey = ว
+browsing-cfr-recommendations =
+    .label = แนะนำส่วนขยายขณะที่คุณท่องเว็บ
+    .accesskey = น
+browsing-cfr-recommendations-learn-more = เรียนรู้เพิ่มเติม
 
 ## General Section - Proxy
 
@@ -509,7 +527,6 @@ privacy-header = ความเป็นส่วนตัวเบราว์
 
 ## Privacy Section - Forms
 
-forms-header = แบบฟอร์มและรหัสผ่าน
 logins-header = การเข้าสู่ระบบและรหัสผ่าน
 forms-ask-to-save-logins =
     .label = ถามเพื่อบันทึกการเข้าสู่ระบบและรหัสผ่านสำหรับเว็บไซต์
@@ -583,6 +600,9 @@ sitedata-keep-until-expire =
     .label = คุกกี้หมดอายุ
 sitedata-keep-until-closed =
     .label = { -brand-short-name } ถูกปิด
+sitedata-delete-on-close =
+    .label = ลบคุกกี้และข้อมูลไซต์เมื่อ { -brand-short-name } ถูกปิด
+    .accesskey = บ
 sitedata-allow-cookies-option =
     .label = ยอมรับคุกกี้และข้อมูลไซต์
     .accesskey = ย
@@ -603,6 +623,14 @@ sitedata-block-all-third-party-option =
     .label = คุกกี้จากบุคคลที่สามทั้งหมด (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)
 sitedata-block-all-option =
     .label = คุกกี้ทั้งหมด (จะส่งผลให้เว็บไซต์ไม่สมบูรณ์)
+sitedata-option-block-trackers =
+    .label = ตัวติดตามจากบุคคลที่สาม
+sitedata-option-block-unvisited =
+    .label = คุกกี้จากเว็บไซต์ที่ไม่ได้เยี่ยมชม
+sitedata-option-block-all-third-party =
+    .label = คุกกี้จากบุคคลที่สามทั้งหมด (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)
+sitedata-option-block-all =
+    .label = คุกกี้ทั้งหมด (จะส่งผลให้เว็บไซต์ไม่สมบูรณ์)
 sitedata-clear =
     .label = ล้างข้อมูล…
     .accesskey = ล
@@ -612,6 +640,9 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = ข้อยกเว้น…
     .accesskey = ข
+sitedata-cookies-permissions =
+    .label = จัดการการอนุญาต…
+    .accesskey = ด
 
 ## Privacy Section - Address Bar
 
@@ -631,6 +662,7 @@ addressbar-suggestions-settings = เปลี่ยนค่ากำหนด�
 ## Privacy Section - Content Blocking
 
 content-blocking-header = การปิดกั้นเนื้อหา
+content-blocking-desc = ปิดกั้นเนื้อหาจากบุคคลที่สามอย่างโฆษณาหรือโค้ดที่สามารถทำให้การท่องเว็บของคุณช้าลงและติดตามคุณในเว็บต่าง ๆ ปรับแต่งการตั้งค่าของคุณเพื่อความสมดุลที่ดีที่สุดของการป้องกันและประสิทธิภาพ
 content-blocking-learn-more = เรียนรู้เพิ่มเติม
 content-blocking-restore-defaults =
     .label = เรียกคืนค่าเริ่มต้น
@@ -649,35 +681,70 @@ content-blocking-category-label = เลือกสิ่งที่จะป�
 # have not finished loading after a certain threshold of seconds.
 content-blocking-fastblock-slow-loading-trackers-label =
     .label = ตัวติดตามที่โหลดช้า
-    .accesskey = ต
+    .accesskey = ด
+content-blocking-fastblock-new-description = ปิดกั้นแค่ตัวติดตามที่ทำให้หน้าไม่สามารถโหลดได้อย่างรวดเร็ว
 content-blocking-tracking-protection-trackers-label =
     .label = ตัวติดตาม
-    .accesskey = ว
+    .accesskey = ต
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = ตัวติดตามที่ตรวจพบทั้งหมด
-    .accesskey = ว
+    .accesskey = ต
+content-blocking-tracking-protection-new-description = ปิดกั้นตัวติดตามที่รู้จักทั้งหมด (อาจป้องกันไม่ให้หน้าบางส่วนโหลด)
 content-blocking-tracking-protection-option-always =
     .label = เสมอ
     .accesskey = ส
 content-blocking-tracking-protection-option-private =
     .label = เฉพาะในหน้าต่างส่วนตัว
     .accesskey = พ
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = มาตรฐาน
+    .accesskey = ม
+content-blocking-setting-strict =
+    .label = เข้มงวด
+    .accesskey = ข
+content-blocking-setting-custom =
+    .label = กำหนดเอง
+    .accesskey = ก
+content-blocking-standard-desc = การป้องกันและประสิทธิภาพที่สมดุล อนุญาตตัวติดตามบางส่วนเพื่อให้เว็บไซต์ทำงานได้ถูกต้อง
+content-blocking-strict-desc = ปิดกั้นตัวติดตามทั้งหมดที่ { -brand-short-name } ตรวจพบ อาจส่งผลให้ไซต์บางส่วนไม่สมบูรณ์
+content-blocking-custom-desc = เลือกสิ่งที่จะปิดกั้น
+content-blocking-private-trackers = ตัวติดตามที่รู้จักเฉพาะในหน้าต่างส่วนตัว
+content-blocking-third-party-cookies = คุกกี้ติดตามจากบุคคลที่สาม
+content-blocking-all-windows-trackers = ตัวติดตามที่รู้จักในหน้าต่างทั้งหมด
+content-blocking-all-third-party-cookies = คุกกี้จากบุคคลที่สามทั้งหมด
+content-blocking-warning-title = ระวัง!
+content-blocking-learn-how = เรียนรู้วิธีการ
+content-blocking-trackers-label =
+    .label = ตัวติดตาม
+    .accesskey = ต
+content-blocking-tracking-protection-option-all-windows =
+    .label = ในหน้าต่างทั้งหมด
+    .accesskey = น
+content-blocking-option-private =
+    .label = เฉพาะในหน้าต่างส่วนตัว
+    .accesskey = พ
 content-blocking-tracking-protection-change-block-list = เปลี่ยนรายการปิดกั้น
 content-blocking-third-party-cookies-label =
     .label = คุกกี้จากบุคคลที่สาม
     .accesskey = ค
+content-blocking-reject-trackers-description = ปิดกั้นคุกกี้จากบุคคลที่สามทั้งหมดหรือแค่คุกกี้ที่ถูกตั้งโดยตัวติดตาม
 content-blocking-change-cookie-settings =
     .label = เปลี่ยนการตั้งค่าคุกกี้
     .accesskey = ป
 content-blocking-reject-trackers-block-trackers-option-recommended =
     .label = ตัวติดตาม (แนะนำ)
-    .accesskey = ด
+    .accesskey = ว
 content-blocking-reject-trackers-block-trackers-option =
     .label = ตัวติดตาม
     .accesskey = ต
 content-blocking-reject-trackers-all-third-parties-option =
     .label = คุกกี้จากบุคคลที่สามทั้งหมด (อาจส่งผลให้เว็บไซต์ไม่สมบูรณ์)
     .accesskey = ก
+content-blocking-cookies-label =
+    .label = คุกกี้
+    .accesskey = ค
 
 ## Privacy Section - Tracking
 
@@ -699,6 +766,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = เปลี่ยนรายการปิดกั้น…
     .accesskey = ร
+tracking-manage-exceptions =
+    .label = จัดการข้อยกเว้น…
+    .accesskey = จ
 
 ## Privacy Section - Permissions
 
@@ -750,7 +820,7 @@ permissions-addon-exceptions =
     .label = ข้อยกเว้น…
     .accesskey = ข
 permissions-a11y-privacy-checkbox =
-    .label = ป้องกันบริการการช่วยการเข้าถึงจากการเข้าถึงเบราว์เซอร์ของคุณ
+    .label = ป้องกันไม่ให้บริการการช่วยการเข้าถึงเข้าถึงเบราว์เซอร์ของคุณ
     .accesskey = อ
 permissions-a11y-privacy-link = เรียนรู้เพิ่มเติม
 
@@ -766,6 +836,7 @@ collection-health-report-link = เรียนรู้เพิ่มเติ
 collection-studies =
     .label = อนุญาตให้ { -brand-short-name } ติดตั้งและเรียกใช้การศึกษา
 collection-studies-link = ดูการศึกษาของ { -brand-short-name }
+addon-recommendations-link = เรียนรู้เพิ่มเติม
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = การรายงานข้อมูลถูกปิดใช้งานสำหรับการกำหนดค่าการสร้างนี้
@@ -815,3 +886,36 @@ certs-view =
 certs-devices =
     .label = อุปกรณ์ความปลอดภัย…
     .accesskey = ค
+space-alert-learn-more-button =
+    .label = เรียนรู้เพิ่มเติม
+    .accesskey = ร
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] เปิดตัวเลือก
+           *[other] เปิดค่ากำหนด
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] ป
+           *[other] ป
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] พื้นที่ดิสก์ของ { -brand-short-name } กำลังจะเต็ม เนื้อหาเว็บไซต์อาจแสดงผลไม่ถูกต้อง คุณสามารถล้างข้อมูลที่ถูกจัดเก็บไว้ได้ใน ตัวเลือก > ความเป็นส่วนตัวและความปลอดภัย > คุกกี้และข้อมูลไซต์
+       *[other] พื้นที่ดิสก์ของ { -brand-short-name } กำลังจะเต็ม เนื้อหาเว็บไซต์อาจแสดงผลไม่ถูกต้อง คุณสามารถล้างข้อมูลที่ถูกจัดเก็บไว้ได้ใน ค่ากำหนด > ความเป็นส่วนตัวและความปลอดภัย > คุกกี้และข้อมูลไซต์
+    }
+space-alert-under-5gb-ok-button =
+    .label = ตกลง เข้าใจแล้ว
+    .accesskey = ต
+space-alert-under-5gb-message = พื้นที่ดิสก์ของ { -brand-short-name } กำลังจะเต็ม เนื้อหาเว็บไซต์อาจแสดงผลไม่ถูกต้อง เยี่ยมชม “เรียนรู้เพิ่มเติม” เพื่อเพิ่มประสิทธิภาพการใช้งานดิสก์ของคุณสำหรับประสบการณ์การท่องเว็บที่ดีขึ้น
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = เดสก์ท็อป
+downloads-folder-name = การดาวน์โหลด
+choose-download-folder-title = เลือกโฟลเดอร์การดาวน์โหลด:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = บันทึกไฟล์ไปยัง { $service-name }

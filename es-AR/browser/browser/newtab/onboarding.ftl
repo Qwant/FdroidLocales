@@ -6,6 +6,7 @@
 ## UI strings for the simplified onboarding modal
 
 onboarding-button-label-try-now = Probalo ahora
+onboarding-button-label-get-started = Comenzar
 onboarding-welcome-header = Bienvenido a { -brand-short-name }
 onboarding-start-browsing-button-label = Empiece a navegar
 
@@ -24,3 +25,17 @@ onboarding-addons-title = Complementos
 onboarding-addons-text = Agregue aun más funcionalidades para hacer que { -brand-short-name } trabaje más duro para usted. Compare precios, mire el clima o exprese su personalidad con un tema personalizado.
 onboarding-ghostery-title = Ghostery
 onboarding-ghostery-text = Navegue más rápido, de manera más inteligente o segura con complementos como Ghostery que le permite bloquear los anuncios molestos.
+# Note: "Sync" in this case is a generic verb, as in "to synchronize"
+onboarding-fxa-title = Sincronizar
+onboarding-fxa-text = Regístrese para obtener una { -fxaccount-brand-name } y sincronice sus marcadores, contraseñas y pestañas abiertas donde use { -brand-short-name }.
+
+## Message strings belonging to the Return to AMO flow
+
+return-to-amo-sub-header = Excelente, tienes { -brand-short-name }
+# <icon></icon> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-header = Ahora vamos a conseguirte <icon></icon><b>{ $addon-name }. </b>
+return-to-amo-extension-button = Agregar la extensión
+return-to-amo-get-started-button = Empezá con { -brand-short-name }

@@ -207,7 +207,7 @@
      context means consuming less data, e.g. by not loading images, not
      “storing data”. -->
 <!ENTITY pref_category_advanced_summary3 "Återställ flikar, insticksmoduler, utvecklarverktyg">
-<!ENTITY pref_category_notifications "Notifieringar">
+<!ENTITY pref_category_notifications "Aviseringar">
 <!ENTITY pref_category_notifications_summary2 "Nya funktioner, produkttips">
 <!ENTITY pref_developer_remotedebugging_usb "Fjärrfelsökning via USB">
 <!ENTITY pref_developer_remotedebugging_wifi "Fjärrfelsökning via Wi-Fi">
@@ -248,7 +248,7 @@
 <!ENTITY pref_header_search "Sök">
 <!ENTITY pref_header_privacy_short "Integritet">
 <!ENTITY pref_header_accessibility "Tillgänglighet">
-<!ENTITY pref_header_notifications "Notifieringar">
+<!ENTITY pref_header_notifications "Aviseringar">
 <!ENTITY pref_header_advanced "Avancerat">
 <!ENTITY pref_header_help "Hjälp">
 <!ENTITY pref_header_vendor "&vendorShortName;">
@@ -290,6 +290,18 @@
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Läs mer om att använda &brandShortName; och andra prudukter från &vendorShortName;">
+
+<!-- Localization note (pref_feature_tips_notification_enabling_hint):
+     Describe the action the user should do to enable this preference
+     Will be used in the context "<Turn on> ... to enable this feature" -->
+<!ENTITY pref_feature_tips_notification_enabling_hint "Aktivera">
+
+<!-- Localization note (pref_feature_tips_notification_enabling_path):
+     Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
+<!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
+<!-- Localization note (pref_feature_tips_notification_enabling_hint):
+     Describe the action the user should do to enable this preference. -->
+<!ENTITY pref_feature_tips_notification_enabling_hint2 "(För att aktivera det här alternativet måste &pref_feature_tips_notification_enabling_path; vara aktiverat.)">
 
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
@@ -893,11 +905,17 @@ Picture-in-picture mini window -->
 
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel "&brandShortName;">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel2 "Webbläsare">
 <!ENTITY mls_notification_channel "&vendorShortName; platstjänst">
 <!ENTITY download_notification_channel "Hämtningar">
 <!ENTITY media_notification_channel "Medieuppspelning">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel "&brandShortName; Push-meddelanden">
+<!ENTITY media_notification_channel2 "Ljud och video">
+<!-- These push notifications come without a specific channel and/or name from Leanplum -->
+<!ENTITY leanplum_default_notifications_channel2 "&vendorShortName; tips och tricks">
 <!ENTITY updater_notification_channel "Appuppdateringar">
 <!ENTITY synced_tabs_notification_channel "Synkade flikar">
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by

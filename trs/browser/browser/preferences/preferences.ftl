@@ -6,6 +6,8 @@ do-not-track-description = Ga'nin' 'ngo nuguan'an riña nej sitio “Si naga'naj
 do-not-track-learn-more = Gahuin chrūn doj
 do-not-track-option-default =
     .label = ma 'ngà rajsun' sa duyichin' da' si naga'naj ma
+do-not-track-option-default-content-blocking =
+    .label = Màn nga { -brand-short-name } hua guendâ naran riña nej sa naga'naj nari'ij
 do-not-track-option-always =
     .label = Nigànj chre
 pref-page =
@@ -51,6 +53,7 @@ pane-sync-title = Nej si kuendâ Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = Sa nikaj ñu'ūnj { -brand-short-name }
+addons-button-label = Ekstensiûn ni Têma
 focus-search =
     .key = f
 close-button =
@@ -81,6 +84,9 @@ extension-controlled-homepage-override = 'Ngo extensión, <img data-l10n-name="i
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = 'Ngo extension, <img data-l10n-name="icon"/> { $name }, dugumi guenda girit a'ngò rakïj ñanj.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = 'Ngo ekstensiûn, <img data-l10n-name="icon"/> { $name }, nikaj ñu'unj sa nahuin nan.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = 'Ngo extensión, <img data-l10n-name="icon"/> { $name }, huin sa nana'ui' sa huin ruhuat.
@@ -90,6 +96,9 @@ extension-controlled-privacy-containers = 'Ngo extensión, <img data-l10n-name="
 # This string is shown to notify the user that their tracking protection preferences
 # are being controlled by an extension.
 extension-controlled-websites-tracking-protection-mode = 'Ngo extensión, <img data-l10n-name="icon"/> { $name }, gatuj ma'an 'jaj sa gu'naj rastreo.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = 'Ngo ekstensiûn, <img data-l10n-name="icon"/> { $name }, nikaj ñu'unj sa nahuin nan.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = 'Ngo extensión, <img data-l10n-name="icon"/> { $name }, dugumin { -brand-short-name } se daj gatut riña internet.
@@ -143,6 +152,9 @@ open-new-link-as-tabs =
     .accesskey = w
 warn-on-close-multiple-tabs =
     .label = Gataj ma guní 'ngà narán ga'ì rakïj ñanj
+    .accesskey = m
+warn-on-quit-close-multiple-tabs =
+    .label = Gataj na'an nga gahuit asi naránt riña ga'ì rakïj ñanj
     .accesskey = m
 warn-on-open-many-tabs =
     .label = Gataj guní 'ngà nayi'nin ga'ì rakïj ñanj{ -brand-short-name } { -brand-short-name } dadin' ga'ue gi'iaj sun nananj ma
@@ -203,6 +215,9 @@ choose-button =
     .label = Naguī.
     .accesskey = N
 choose-browser-language-description = Ganahui ahuin nanj garasun't 'ngà { -brand-short-name }
+manage-browser-languages-button =
+    .label = Nachrun a'ngo nej sa ga'ue gi'iô'
+    .accesskey = I
 confirm-browser-language-change-description = Duno'o' ni nachrun ñun' { -brand-short-name } da' naduna ma
 confirm-browser-language-change-button = Garayinat, ni dunâ'ajt ni nayi'ī ñut
 translate-web-pages =
@@ -276,6 +291,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Nagi'aj nakà ma'ān ma nej sa nana'ui'
     .accesskey = e
+update-pref-write-failure-title = Gire' sa âchrun
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Na'ue na'nïnj sà'aj sa ni'hiajt doj. Nu ga'ue gachrunj riña archibô: { $path }
 
 ## General Section - Performance
 
@@ -315,10 +334,14 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Nana'ui' nugua'an 'ngà gayi'i' gachun'
     .accesskey = x
+browsing-cfr-recommendations =
+    .label = Duguane' 'ngo ekstensiûn hìaj aché nunt
+    .accesskey = R
+browsing-cfr-recommendations-learn-more = Gahuin chrūn doj
 
 ## General Section - Proxy
 
-network-proxy-title = Si proxy red
+network-settings-title = Dàj ga Red ruhuât
 network-proxy-connection-description = Nagi'io' { -brand-short-name } gate' riña internet.
 network-proxy-connection-learn-more = Gahuin chrūn doj
 network-proxy-connection-settings =
@@ -516,6 +539,7 @@ privacy-header = Daj da'ui navegador gi'iaj sunj
 ## Privacy Section - Forms
 
 forms-header = Nej da'nga' huìd &
+logins-header = Gayi'ìt gatut ni Da'nga' huìi
 forms-ask-to-save-logins =
     .label = Da'ui nachi' na'ān si na'ninj sa'aj sa gayi'i nī da'nga' huìi guenda nej sitio na
     .accesskey = r
@@ -557,9 +581,6 @@ history-dontremember-description = { -brand-short-name } garusunj ru'ua riña ga
 history-private-browsing-permanent =
     .label = Yitïnj chre garasun' sa aché nu hui'
     .accesskey = p
-history-remember-option =
-    .label = Tanunj ruhuo' riña gaché nu' 'ngà sa naduni'
-    .accesskey = b
 history-remember-browser-option =
     .label = Tanunj ruhuo' riña gaché nu' nī sa naduni'
     .accesskey = b
@@ -585,26 +606,35 @@ sitedata-total-size-calculating = Si riña ma daj yachij nej sa ma riña sitio n
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Si kookies, sa rajsun sitio nī kaché ma sa' ni raj sun ma { $value }{ $unit } riña na'ní sat.
 sitedata-learn-more = Gahuin chrūn doj
-sitedata-accept-cookies-option =
-    .label = Garayino' cookies nī sa rajsun sitio na (dânj da'ui gaj)
-    .accesskey = A
-sitedata-block-cookies-option =
-    .label = Garun' riña kookies nī sa rajsun sitio (ga'ue si gi'iaj sun da'aj sitio)
-    .accesskey = B
 sitedata-keep-until = Hue dan gaj
     .accesskey = u
 sitedata-keep-until-expire =
     .label = 'Ngà gire'j
 sitedata-keep-until-closed =
     .label = { -brand-short-name } 'ngà arán ma
-sitedata-accept-third-party-desc = Gido'o' nej kookie nī sa rajsun sitio
-    .accesskey = y
-sitedata-accept-third-party-always-option =
-    .label = Nigànj chre
-sitedata-accept-third-party-visited-option =
-    .label = Riña gun'
-sitedata-accept-third-party-never-option =
-    .label = Nitaj ama
+sitedata-delete-on-close =
+    .label = Nadure' nej koki ni nej si nuguàn sitiô nga gahuit riña { -brand-short-name }
+    .accesskey = c
+sitedata-allow-cookies-option =
+    .label = Garayina koki ni nej si nuguàn' sîtio
+    .accesskey = A
+sitedata-disallow-cookies-option =
+    .label = Narán riña nej koki ni si nuguàn' nej sîtio
+    .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = Sa naràn riña
+    .accesskey = T
+sitedata-block-trackers-option-recommended =
+    .label = Sa naga'naj guìi (garasun man)
+sitedata-block-trackers-option =
+    .label = Sa naga'naj guìi
+sitedata-block-unvisited-option =
+    .label = Si koki nej sitiô nu gatut ni'iajt
+sitedata-block-all-third-party-option =
+    .label = Daran' si koki duguî' (ga'ue dure'ej da'àj sîtio)
+sitedata-block-all-option =
+    .label = Daran' kôki (ga'ue dure'ej da'aj sîtio)
 sitedata-clear =
     .label = Nadurê' nuguan'an
     .accesskey = N
@@ -614,6 +644,10 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Se yakaj guindo'...
     .accesskey = E
+# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
+# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
+# Cookies and Site Data section.
+sitedata-warning-your-settings-prevent-changes = Sa nagi'iát guendâ naránt riña nej sa huaa nu a'nïnj guendâ nadunat riña nej koki ni nej si datô sîtio.
 
 ## Privacy Section - Address Bar
 
@@ -650,23 +684,64 @@ content-blocking-category-label = Nagui sa ruhuât garánt
 # "Slow" in this instance means "slow to load on the network".
 # FastBlock is a feature that blocks requests to tracking sites if they
 # have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-label = Ûta naj 'maj sun nej sa nana'ui'
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Sa naga'naj sa 'iaj sun naj
     .accesskey = S
-content-blocking-fastblock-description = Garun' riña nej sa huin ran na'nin
-content-blocking-fastblock-option-enabled =
-    .label = Yitïnj chre garun'
-content-blocking-fastblock-option-disabled =
-    .label = Nitaj ama garun'
-content-blocking-tracking-protection-label = Sa nana'ui'
+content-blocking-fastblock-new-description = Narán màn riña nej Sa naga'naj nu a'nïnj gayi'ì hìo 'ngo pâjina.
+content-blocking-tracking-protection-trackers-label =
+    .label = Sa naga'naj
     .accesskey = T
-content-blocking-tracking-protection-description = Garun' riña daran' nej sa nana'ui (Ga'ue dugumit 'ngà na'nit da'aj pagina).
-content-blocking-tracking-protection-option-enabled =
-    .label = Yitinj chre garun'
-content-blocking-tracking-protection-option-pbm =
-    .label = Garun' riña ventana huìi
-content-blocking-tracking-protection-option-disabled =
-    .label = Nitaj ama garun'
-content-blocking-tracking-protection-change-blocklist = Naduno' nej sa gare'...
+content-blocking-tracking-protection-all-detected-trackers-label =
+    .label = Daran' nej sa naga'naj ngà' nani'în'
+    .accesskey = T
+content-blocking-tracking-protection-new-description = Narán riña daran' sa naga'naj ni'înt. (dadin ga'ue gara'ñu'un da' si gi'iaj sun hìo pâjina)
+content-blocking-tracking-protection-option-always =
+    .label = Nigànj chre
+    .accesskey = A
+content-blocking-tracking-protection-option-private =
+    .label = Mà roña Windows huìi
+    .accesskey = p
+content-blocking-setting-strict =
+    .label = Sa ahìi
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = Nagi'iaj
+    .accesskey = C
+content-blocking-learn-how = Gahuin chrūn doj
+content-blocking-trackers-label =
+    .label = Sa naga'naj
+    .accesskey = T
+content-blocking-tracking-protection-option-all-windows =
+    .label = Riña daran' ventana
+    .accesskey = A
+content-blocking-option-private =
+    .label = Ma riña ventana huìi
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Naduna lista sa narán
+content-blocking-third-party-cookies-label =
+    .label = Si kookies a'ngô dugui'
+    .accesskey = C
+content-blocking-reject-trackers-description = Narán riña daran' kôki ânej e asi nej sa na'nïn nej sa naga'naj a.
+# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
+# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
+# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
+# the UI.
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = Sa nagi'iát riña nej Kôki ni riña dej si datî sîtio nu a'nïnj guendâ naduna sa ga riña nej kokî ânej e.
+content-blocking-change-cookie-settings =
+    .label = Naduna sa hua riña Kôki
+    .accesskey = S
+content-blocking-reject-trackers-block-trackers-option-recommended =
+    .label = Nej sa Naga'naj a (dugunàj huaj)
+    .accesskey = k
+content-blocking-reject-trackers-block-trackers-option =
+    .label = Sa naga'naj
+    .accesskey = k
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Daran' nej kokî ânej e (ga'ue gi'iaj sun a'nan' web gi'ia)
+    .accesskey = A
+content-blocking-cookies-label =
+    .label = Kookies
+    .accesskey = K
 
 ## Privacy Section - Tracking
 
@@ -682,16 +757,15 @@ tracking-mode-private =
 tracking-mode-never =
     .label = Nitaj ama
     .accesskey = t
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = Garasun' arrán riña nej sa naga'naj daj garrun' riña nej sa nana'ui'
-    .accesskey = v
 tracking-exceptions =
     .label = Sa taj a
     .accesskey = x
 tracking-change-block-list =
     .label = Naduno' nej sa arrán
     .accesskey = C
+tracking-manage-exceptions =
+    .label = Ganikaj ñu'un' extensiôn...
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -729,6 +803,7 @@ autoplay-option-allow =
     .label = Duguchrá ma'an aga' nan
 autoplay-option-dont =
     .label = Si duguhrá ma'an ma
+permissions-autoplay-link = Gahuin chrūn doj
 permissions-block-popups =
     .label = Garrun riña nej ventana ahui ma'an
     .accesskey = B
@@ -807,3 +882,36 @@ certs-view =
 certs-devices =
     .label = Nej sa dugumi...
     .accesskey = N
+space-alert-learn-more-button =
+    .label = Gahuin chrūn doj
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Na'nïnt sa ga'ue Nagi'át
+           *[other] Na'nï' preferensia
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } da'ui gani'ninj riña disko. Gahuin ni si gurui' hue'e nej sa ma riña sitio web. Ruguñu'unj na'nïn't nej sa ma riña preferensia > sa huìi > cookies ni dato sitio.
+       *[other] { -brand-short-name } da'ui gani'ninj riña disko. Gahuin ni si gurus' hue'e nej sa ma riña sitio web. Ruguñu'unj na'nïn't nej sa ma riña preferensia > sa huìi > cookies ni dato sitio.
+    }
+space-alert-under-5gb-ok-button =
+    .label = Garaj, da'ngà rua aj
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } doj sîna' hua ni'nïnj riña disko. Gahuin ni si gurui' hue'ê sa ma riña sitio na. Huij riña "Gahuin chrūn doj" da' nagi'îat si diskot ni gache nut.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Eskritorio
+downloads-folder-name = Nadunínj
+choose-download-folder-title = Ganahui dane' gima sa' sa naduninjt
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Na'nïnj sà' archîbo riña { $service-name }

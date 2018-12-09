@@ -843,3 +843,32 @@ certs-view =
 certs-devices =
     .label = Aparati de Seguessa…
     .accesskey = S
+space-alert-learn-more-button =
+    .label = Atre informaçioin
+    .accesskey = A
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Arvi inpostaçioin
+           *[other] Arvi preferense
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] A
+           *[other] A
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } o sta pe finî o spaçio in sciô disco. I contegnui do scito no peuan mostrase ben. Ti peu scancelâ i dæti sarvæ di sciti inte Preferense > Privacy e Seguessa > Cookie e Dæti di sciti.
+       *[other] { -brand-short-name } o sta pe finî o spaçio in sciô disco. I contegnui do scito no peuan mostrase ben. Ti peu scancelâ i dæti sarvæ di sciti inte Preferense > Privacy e Seguessa > Cookie e Dæti di sciti.
+    }
+space-alert-under-5gb-ok-button =
+    .label = Va ben, ò capio
+    .accesskey = b
+space-alert-under-5gb-message = { -brand-short-name } o sta pe finî o spaçio in sciô disco. I contegnui do scito no se peuan mostrase ben. Vixita “Atre informaçioin” pe otimizâ l'uzo do disco pe avei 'na megio esperiensa de navegaçion.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Desktop
+downloads-folder-name = Descaregamenti
+choose-download-folder-title = Çerni a cartella de descaregamento:

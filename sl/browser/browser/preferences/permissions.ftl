@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Prepovej
 permissions-capabilities-prompt =
     .label = Vedno vprašaj
+permissions-capabilities-listitem-allow =
+    .value = Dovoli
+permissions-capabilities-listitem-block =
+    .value = Prepovej
+permissions-capabilities-listitem-allow-first-party =
+    .value = Dovoli samo lastne
+permissions-capabilities-listitem-allow-session =
+    .value = Dovoli v tej seji
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Izjeme – Zaščita pred sledenjem
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Na teh spletnih straneh ste onemogočili zaščito pred sledenjem.
+permissions-exceptions-content-blocking-window =
+    .title = Izjeme – Zavračanje vsebine
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Zavračanje vsebine na teh spletnih straneh je onemogočeno.
 
 ## Exceptions - Cookies
 

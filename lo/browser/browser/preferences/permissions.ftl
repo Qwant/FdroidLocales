@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = ບັອກ
 permissions-capabilities-prompt =
     .label = ຖາມທຸກຄັ້ງ
+permissions-capabilities-listitem-allow =
+    .value = ອະນຸຍາດ
+permissions-capabilities-listitem-block =
+    .value = ບັອກ
+permissions-capabilities-listitem-allow-first-party =
+    .value = ອະນຸຍາດຈາກບຸກຄົນທີ່ຫນຶ່ງເທົ່ານັ້ນ
+permissions-capabilities-listitem-allow-session =
+    .value = ອະນຸຍາດສຳລັບເຊສຊັນນີ້
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = ຂໍ້ຍົກເວັ້ນ - ການປ້ອງກັນການຕິດຕາມ
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = ທ່ານໄດ້ປິດໃຊ້ງານການປ້ອງກັນການຕິດຕາມໃນເວັບໄຊເຫຼົ່ານີ້.
+permissions-exceptions-content-blocking-window =
+    .title = ຂໍ້ຍົກເວັ້ນ - ຕົວບັອກເນື້ອຫາ
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = ທ່ານໄດ້ປິດຕົວບັອກເນື້ອຫາໃນເວັບໄຊທເຫລົ່ານີ້
 
 ## Exceptions - Cookies
 
@@ -85,10 +97,6 @@ permissions-exceptions-addons-desc = ທ່ານສາມາດກຳນົດ�
 
 ## Exceptions - Autoplay Media
 
-permissions-exceptions-autoplay-media-window =
-    .title = ອະນຸຍາດເວັບໄຊ - ຫຼິ້ນອັດຕະໂນມັດ
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc = ທ່ານສາມາດລະບຸເວັບໄຊທີ່ອະນູຍາດໃຫ້ຫຼິ້ນອົງປະກອບສື່ໂດຍອັດຕະໂນມັດ. ພິມທີ່ຢູ່ຂອງໄຊທີ່ທ່ານຕ້ອງການອະນຸຍາດແລ້ວຄິກ ອະນຸຍາດ.
 permissions-exceptions-autoplay-media-window2 =
     .title = ຂໍ້ຍົກເວັ້ນ - ຫຼິ້ນແບບອັດຕະໂນມັດ
     .style = { permissions-window.style }

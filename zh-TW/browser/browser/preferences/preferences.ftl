@@ -84,6 +84,9 @@ extension-controlled-homepage-override = 擴充套件「<img data-l10n-name="ico
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = 擴充套件「<img data-l10n-name="icon"/> { $name }」正在控制您的新分頁內容。
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = 有一套擴充套件，<img data-l10n-name="icon"/> { $name } 正在控制此設定。
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = 擴充套件「<img data-l10n-name="icon"/> { $name }」修改了您的預設搜尋引擎。
@@ -138,6 +141,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = 回復先前的瀏覽狀態
     .accesskey = s
+startup-restore-warn-on-quit =
+    .label = 關閉瀏覽器時警告您
 disable-extension =
     .label = 停用擴充套件
 tabs-group-header = 分頁
@@ -149,6 +154,9 @@ open-new-link-as-tabs =
     .accesskey = w
 warn-on-close-multiple-tabs =
     .label = 關閉多個分頁前警告您
+    .accesskey = m
+warn-on-quit-close-multiple-tabs =
+    .label = 在離開或關閉多個分頁前警告您
     .accesskey = m
 warn-on-open-many-tabs =
     .label = 開啟多個分頁時，警告我可能會拖慢 { -brand-short-name }
@@ -273,6 +281,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = 自動更新搜尋引擎
     .accesskey = e
+update-pref-write-failure-title = 寫入失敗
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = 無法儲存偏好設定。無法寫入檔案: { $path }
 
 ## General Section - Performance
 
@@ -312,6 +324,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = 打字時直接搜尋頁面文字（隨打即找）
     .accesskey = x
+browsing-cfr-recommendations =
+    .label = 隨您上網推薦擴充套件
+    .accesskey = R
+browsing-cfr-recommendations-learn-more = 了解更多
 
 ## General Section - Proxy
 
@@ -512,7 +528,6 @@ privacy-header = 瀏覽器隱私權
 
 ## Privacy Section - Forms
 
-forms-header = 表單與密碼
 logins-header = 登入資訊與密碼
 forms-ask-to-save-logins =
     .label = 向您詢問是否要記住網站的登入帳號與密碼
@@ -586,6 +601,9 @@ sitedata-keep-until-expire =
     .label = Cookie 過期
 sitedata-keep-until-closed =
     .label = 關閉 { -brand-short-name }
+sitedata-delete-on-close =
+    .label = 關閉 { -brand-short-name } 時清除 Cookie 與網站資料
+    .accesskey = C
 sitedata-allow-cookies-option =
     .label = 允許網站設定 Cookie 與網站資料
     .accesskey = A
@@ -606,6 +624,14 @@ sitedata-block-all-third-party-option =
     .label = 所有第三方 Cookie（可能會造成某些網站不正常）
 sitedata-block-all-option =
     .label = 所有 Cookie（會造成大部分網站不正常）
+sitedata-option-block-trackers =
+    .label = 第三方追蹤器
+sitedata-option-block-unvisited =
+    .label = 來自未造訪過網站的 Cookie
+sitedata-option-block-all-third-party =
+    .label = 所有第三方 Cookie（可能造成某些網站不正常）
+sitedata-option-block-all =
+    .label = 所有 Cookie（會造成網站不正常）
 sitedata-clear =
     .label = 清除資料…
     .accesskey = l
@@ -619,6 +645,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = 您的內容封鎖設定不允許調整 Cookie 與網站資料設定。
+sitedata-cookies-permissions =
+    .label = 管理權限…
+    .accesskey = P
 
 ## Privacy Section - Address Bar
 
@@ -639,6 +668,7 @@ addressbar-suggestions-settings = 修改搜尋建議偏好設定
 
 content-blocking-header = 內容封鎖
 content-blocking-desc = 封鎖會拖慢您上網速度並追蹤您的廣告或程式碼等第三方網頁內容。可調整相關設定以在保護與效能間取得最佳平衡。
+content-blocking-description = 封鎖會在網路上追蹤您的第三方內容。控制您要讓不同網站儲存並分享多少線上行為。
 content-blocking-learn-more = 了解更多
 content-blocking-restore-defaults =
     .label = 回復為預設值
@@ -672,6 +702,37 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = 僅在隱私瀏覽視窗
     .accesskey = p
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = 標準
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = 嚴格
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = 自訂
+    .accesskey = C
+content-blocking-standard-description = 只在隱私視窗中，封鎖已知的追蹤器。
+content-blocking-standard-desc = 在保護與效能間取得平衡。允許某些追蹤器以確保網站運作正常。
+content-blocking-strict-desc = 封鎖所有 { -brand-short-name } 偵測到的追蹤器。可能造成某些網站故障。
+content-blocking-custom-desc = 選擇要封鎖哪些內容。
+content-blocking-private-trackers = 僅在隱私視窗中封鎖已知的追蹤器
+content-blocking-third-party-cookies = 第三方追蹤 Cookie
+content-blocking-all-windows-trackers = 在所有視窗封鎖已知的追蹤器
+content-blocking-all-third-party-cookies = 所有第三方 Cookie
+content-blocking-warning-title = 注意！
+content-blocking-warning-desc = 封鎖 Cookie 與追蹤器可能會造成某些網站故障。很簡單就能為您信任的網站關閉封鎖。
+content-blocking-learn-how = 了解要怎麼做
+content-blocking-trackers-label =
+    .label = 追蹤器
+    .accesskey = T
+content-blocking-tracking-protection-option-all-windows =
+    .label = 所有視窗
+    .accesskey = A
+content-blocking-option-private =
+    .label = 僅在隱私瀏覽視窗
+    .accesskey = p
 content-blocking-tracking-protection-change-block-list = 變更封鎖清單
 content-blocking-third-party-cookies-label =
     .label = 第三方 Cookie
@@ -694,6 +755,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = 所有第三方 Cookie（可能會造成某些網站不正常）
     .accesskey = A
+content-blocking-cookies-label =
+    .label = Cookie
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -715,6 +779,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = 變更封鎖清單…
     .accesskey = C
+tracking-manage-exceptions =
+    .label = 管理例外網站…
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -782,6 +849,9 @@ collection-health-report-link = 更多資訊
 collection-studies =
     .label = 允許 { -brand-short-name } 安裝並進行研究
 collection-studies-link = 檢視 { -brand-short-name } 所進行的研究
+addon-recommendations =
+    .label = 允許 { -brand-short-name } 提供個人化的擴充套件推薦項目
+addon-recommendations-link = 了解更多
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = 進行編譯設定時，已停用了資料回報功能
@@ -831,3 +901,36 @@ certs-view =
 certs-devices =
     .label = 安全性裝置…
     .accesskey = D
+space-alert-learn-more-button =
+    .label = 了解更多
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] 開啟選項
+           *[other] 開啟偏好設定
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } 的磁碟空間不足，網站內容可能無法正確顯示。您可以到選項 > 隱私權與安全性 > Cookie 與網站資料清除目前已儲存的網站資料。
+       *[other] { -brand-short-name } 的磁碟空間不足，網站內容可能無法正確顯示。您可以到偏好設定 > 隱私權與安全性 > Cookie 與網站資料清除目前已儲存的網站資料。
+    }
+space-alert-under-5gb-ok-button =
+    .label = 好，知道了
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } 的磁碟空間不足，網站內容可能無法正確顯示。請點擊「瞭解更多」清理磁碟空間，讓您有更好的瀏覽體驗。
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = 桌面
+downloads-folder-name = 下載
+choose-download-folder-title = 選取下載目錄:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = 儲存檔案到 { $service-name }

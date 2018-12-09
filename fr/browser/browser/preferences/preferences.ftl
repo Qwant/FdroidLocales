@@ -84,6 +84,9 @@ extension-controlled-homepage-override = Une extension, <img data-l10n-name="ico
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Une extension, <img data-l10n-name="icon"/> { $name }, contrôle la page Nouvel onglet.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Une extension, <img data-l10n-name="icon"/> { $name }, contrôle ce paramètre.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Une extension, <img data-l10n-name="icon"/> { $name }, a défini votre moteur de recherche par défaut.
@@ -150,6 +153,9 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Avertir lors de la fermeture de plusieurs onglets
     .accesskey = A
+warn-on-quit-close-multiple-tabs =
+    .label = Avertir lorsque vous quittez et fermez plusieurs onglets
+    .accesskey = r
 warn-on-open-many-tabs =
     .label = Prévenir lors de l’ouverture de multiples onglets d’un ralentissement possible de { -brand-short-name }
     .accesskey = P
@@ -285,6 +291,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Mettre à jour automatiquement les moteurs de recherche
     .accesskey = r
+update-pref-write-failure-title = Échec d’écriture
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Impossible d’enregistrer les préférences. Impossible d’écrire dans le fichier : { $path }
 
 ## General Section - Performance
 
@@ -324,6 +334,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Lancer la recherche lors de la saisie de texte
     .accesskey = c
+browsing-cfr-recommendations =
+    .label = Recommander des extensions en cours de navigation
+    .accesskey = R
+browsing-cfr-recommendations-learn-more = En savoir plus
 
 ## General Section - Proxy
 
@@ -524,7 +538,6 @@ privacy-header = Vie privée
 
 ## Privacy Section - Forms
 
-forms-header = Formulaires et mots de passe
 logins-header = Identifiants et mots de passe
 forms-ask-to-save-logins =
     .label = Proposer d’enregistrer les identifiants et les mots de passe pour les sites web
@@ -598,6 +611,9 @@ sitedata-keep-until-expire =
     .label = Leur expiration
 sitedata-keep-until-closed =
     .label = La fermeture de { -brand-short-name }
+sitedata-delete-on-close =
+    .label = Supprimer les cookies et les données des sites à la fermeture de { -brand-short-name }
+    .accesskey = S
 sitedata-allow-cookies-option =
     .label = Accepter les cookies et les données de site
     .accesskey = A
@@ -618,6 +634,14 @@ sitedata-block-all-third-party-option =
     .label = Tous les cookies tiers (peut empêcher certains sites de fonctionner)
 sitedata-block-all-option =
     .label = Tous les cookies (empêchera des sites de fonctionner)
+sitedata-option-block-trackers =
+    .label = Traqueurs tiers
+sitedata-option-block-unvisited =
+    .label = Cookies de sites web non visités
+sitedata-option-block-all-third-party =
+    .label = Tous les cookies tiers (peut empêcher certains sites de fonctionner)
+sitedata-option-block-all =
+    .label = Tous les cookies (empêche certains sites de fonctionner)
 sitedata-clear =
     .label = Effacer les données…
     .accesskey = E
@@ -631,6 +655,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Vos paramètres de blocage de contenu empêchent la modification des paramètres sur les cookies et les données de sites.
+sitedata-cookies-permissions =
+    .label = Gérer les permissions…
+    .accesskey = p
 
 ## Privacy Section - Address Bar
 
@@ -651,6 +678,7 @@ addressbar-suggestions-settings = Modifier les préférences pour les suggestion
 
 content-blocking-header = Blocage de contenu
 content-blocking-desc = Bloquez des contenus tiers, tels que du code ou de la publicité, qui peuvent ralentir votre navigation et vous pister sur le Web. Réglez les paramètres à votre gré pour obtenir un équilibre entre protection et performance.
+content-blocking-description = Bloquez les contenus tiers qui vous pistent sur le Web. Contrôlez le niveau d’activité en ligne qui est enregistrée et partagée avec des sites web.
 content-blocking-learn-more = En savoir plus
 content-blocking-restore-defaults =
     .label = Restaurer les valeurs par défaut
@@ -684,6 +712,28 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = Uniquement en navigation privée
     .accesskey = v
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Standard
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = Strict
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = Personnalisé
+    .accesskey = P
+content-blocking-standard-description = Bloque uniquement les traqueurs connus dans les fenêtres de navigation privée.
+content-blocking-standard-desc = Équilibré entre protection et performances. Autorise quelques traqueurs pour que les sites web fonctionnent correctement.
+content-blocking-strict-desc = Bloque tous les traqueurs détectés par { -brand-short-name }. Peut provoquer le dysfonctionnement de certains sites.
+content-blocking-custom-desc = Choisissez ce que vous souhaitez bloquer.
+content-blocking-private-trackers = Les traqueurs connus dans les fenêtres de navigation privée seulement
+content-blocking-third-party-cookies = Les cookies tiers utilisés pour le pistage
+content-blocking-all-windows-trackers = Les traqueurs connus dans toutes les fenêtres
+content-blocking-all-third-party-cookies = Tous les cookies tiers
+content-blocking-warning-title = Attention !
+content-blocking-warning-desc = Bloquer les cookies et les traqueurs peut provoquer le dysfonctionnement de certains sites. Il est facile de désactiver le bocage pour les sites de confiance.
+content-blocking-learn-how = Découvrez comment
 content-blocking-tracking-protection-change-block-list = Changer de liste de blocage
 content-blocking-third-party-cookies-label =
     .label = Cookies tiers
@@ -706,6 +756,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Tous les cookies tiers (peut empêcher certains sites de fonctionner)
     .accesskey = t
+content-blocking-cookies-label =
+    .label = Cookies
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -727,6 +780,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = Modifier les listes de blocage…
     .accesskey = b
+tracking-manage-exceptions =
+    .label = Gérer les exceptions…
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -843,3 +899,36 @@ certs-view =
 certs-devices =
     .label = Périphériques de sécurité…
     .accesskey = P
+space-alert-learn-more-button =
+    .label = En savoir plus
+    .accesskey = E
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Ouvrir les options
+           *[other] Ouvrir les préférences
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } n’a plus assez d’espace disque. Le contenu des sites web pourrait ne pas s’afficher correctement. Vous pouvez effacer les données de sites enregistrées depuis Options > Vie privée et sécurité > Cookies et données de sites.
+       *[other] { -brand-short-name } n’a plus assez d’espace disque. Le contenu des sites web pourrait ne pas s’afficher correctement. Vous pouvez effacer les données de sites enregistrées depuis Préférences > Vie privée et sécurité > Cookies et données de sites.
+    }
+space-alert-under-5gb-ok-button =
+    .label = OK
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } n’a plus assez d’espace disque. Le contenu des sites web pourrait ne pas s’afficher correctement. Cliquez sur « En savoir plus » pour optimiser l’utilisation de votre disque et ainsi améliorer votre navigation.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Bureau
+downloads-folder-name = Téléchargements
+choose-download-folder-title = Choisir le dossier de téléchargement :
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Enregistrer les fichiers dans { $service-name }

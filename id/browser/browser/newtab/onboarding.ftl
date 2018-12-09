@@ -6,6 +6,7 @@
 ## UI strings for the simplified onboarding modal
 
 onboarding-button-label-try-now = Coba Sekarang
+onboarding-button-label-get-started = Bersiap
 onboarding-welcome-header = Selamat datang di { -brand-short-name }
 onboarding-start-browsing-button-label = Mulai Menjelajah
 
@@ -24,3 +25,17 @@ onboarding-addons-title = Pengaya
 onboarding-addons-text = Tambahkan fitur-fitur lain yang membuat { -brand-short-name } bekerja lebih keras untuk Anda. Bandingkan harga, periksa cuaca, atau ungkapkan kepribadian Anda dengan tema yang disesuaikan.
 onboarding-ghostery-title = Ghostery
 onboarding-ghostery-text = Jelajahi lebih cepat, lebih cerdas, atau lebih aman dengan ekstensi seperti Ghostery, yang memungkinkan Anda memblokir iklan-iklan yang menjengkelkan.
+# Note: "Sync" in this case is a generic verb, as in "to synchronize"
+onboarding-fxa-title = Sinkronkan
+onboarding-fxa-text = Daftar { -fxaccount-brand-name } dan sinkronkan markah, kata sandi Anda, dan buka tab di mana pun Anda menggunakan { -brand-short-name }.
+
+## Message strings belonging to the Return to AMO flow
+
+return-to-amo-sub-header = Bagus, Anda mendapat { -brand-short-name }
+# <icon></icon> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-header = Sekarang dapatkan <icon></icon><b>{ $addon-name }.</b>
+return-to-amo-extension-button = Tambahkan Ekstensi
+return-to-amo-get-started-button = Mulai dengan { -brand-short-name }

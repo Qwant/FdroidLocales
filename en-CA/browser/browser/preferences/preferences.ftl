@@ -84,6 +84,9 @@ extension-controlled-homepage-override = An extension, <img data-l10n-name="icon
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = An extension, <img data-l10n-name="icon"/> { $name }, is controlling your New Tab page.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = An extension, <img data-l10n-name="icon"/> { $name }, is controlling this setting.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = An extension, <img data-l10n-name="icon"/> { $name }, has set your default search engine.
@@ -138,6 +141,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Restore previous session
     .accesskey = s
+startup-restore-warn-on-quit =
+    .label = Warn you when quitting the browser
 disable-extension =
     .label = Disable Extension
 tabs-group-header = Tabs
@@ -149,6 +154,9 @@ open-new-link-as-tabs =
     .accesskey = w
 warn-on-close-multiple-tabs =
     .label = Warn you when closing multiple tabs
+    .accesskey = m
+warn-on-quit-close-multiple-tabs =
+    .label = Warn you when quitting and closing multiple tabs
     .accesskey = m
 warn-on-open-many-tabs =
     .label = Warn you when opening multiple tabs might slow down { -brand-short-name }
@@ -285,6 +293,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Automatically update search engines
     .accesskey = e
+update-pref-write-failure-title = Write Failure
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Unable to save preference. Could not write to file: { $path }
 
 ## General Section - Performance
 
@@ -324,12 +336,16 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Search for text when you start typing
     .accesskey = x
+browsing-cfr-recommendations =
+    .label = Recommend extensions as you browse
+    .accesskey = R
+browsing-cfr-recommendations-learn-more = Learn more
 
 ## General Section - Proxy
 
 network-settings-title = Network Settings
 network-proxy-connection-description = Configure how { -brand-short-name } connects to the internet.
-network-proxy-connection-learn-more = Learn More
+network-proxy-connection-learn-more = Learn more
 network-proxy-connection-settings =
     .label = Settings…
     .accesskey = S
@@ -524,7 +540,6 @@ privacy-header = Browser Privacy
 
 ## Privacy Section - Forms
 
-forms-header = Forms & Passwords
 logins-header = Logins & Passwords
 forms-ask-to-save-logins =
     .label = Ask to save logins and passwords for websites
@@ -598,6 +613,9 @@ sitedata-keep-until-expire =
     .label = They expire
 sitedata-keep-until-closed =
     .label = { -brand-short-name } is closed
+sitedata-delete-on-close =
+    .label = Delete cookies and site data when { -brand-short-name } is closed
+    .accesskey = c
 sitedata-allow-cookies-option =
     .label = Accept cookies and site data
     .accesskey = A
@@ -618,6 +636,14 @@ sitedata-block-all-third-party-option =
     .label = All third-party cookies (may cause websites to break)
 sitedata-block-all-option =
     .label = All cookies (will cause websites to break)
+sitedata-option-block-trackers =
+    .label = Third-party trackers
+sitedata-option-block-unvisited =
+    .label = Cookies from unvisited websites
+sitedata-option-block-all-third-party =
+    .label = All third-party cookies (may cause websites to break)
+sitedata-option-block-all =
+    .label = All cookies (will cause websites to break)
 sitedata-clear =
     .label = Clear Data…
     .accesskey = l
@@ -631,6 +657,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Your settings in Content Blocking are preventing changes to Cookies and Site Data settings.
+sitedata-cookies-permissions =
+    .label = Manage Permissions…
+    .accesskey = P
 
 ## Privacy Section - Address Bar
 
@@ -651,6 +680,7 @@ addressbar-suggestions-settings = Change preferences for search engine suggestio
 
 content-blocking-header = Content Blocking
 content-blocking-desc = Block third-party content, like ads or code, that can slow your browsing and track you around the web. Customize your settings for the best balance of protection and performance.
+content-blocking-description = Block third-party content that tracks you around the web. Control how much of your online activity gets stored and shared between websites.
 content-blocking-learn-more = Learn more
 content-blocking-restore-defaults =
     .label = Restore Defaults
@@ -684,6 +714,37 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = Only in private windows
     .accesskey = p
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Standard
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = Strict
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = Custom
+    .accesskey = C
+content-blocking-standard-description = Only blocks known trackers in Private Windows.
+content-blocking-standard-desc = Balanced for protection and performance. Allows some trackers so websites function properly.
+content-blocking-strict-desc = Blocks all trackers { -brand-short-name } detects. May cause some sites to break.
+content-blocking-custom-desc = Choose what to block.
+content-blocking-private-trackers = Known trackers only in Private Windows
+content-blocking-third-party-cookies = Third-party tracking cookies
+content-blocking-all-windows-trackers = Known trackers in all windows
+content-blocking-all-third-party-cookies = All third-party cookies
+content-blocking-warning-title = Heads up!
+content-blocking-warning-desc = Blocking cookies and trackers can cause some websites to break. It’s easy to disable blocking for sites you trust.
+content-blocking-learn-how = Learn how
+content-blocking-trackers-label =
+    .label = Trackers
+    .accesskey = T
+content-blocking-tracking-protection-option-all-windows =
+    .label = In all windows
+    .accesskey = A
+content-blocking-option-private =
+    .label = Only in Private Windows
+    .accesskey = p
 content-blocking-tracking-protection-change-block-list = Change block list
 content-blocking-third-party-cookies-label =
     .label = Third-Party Cookies
@@ -706,6 +767,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = All third-party cookies (may cause websites to break)
     .accesskey = A
+content-blocking-cookies-label =
+    .label = Cookies
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -727,6 +791,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = Change Block List…
     .accesskey = C
+tracking-manage-exceptions =
+    .label = Manage Exceptions…
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -794,6 +861,9 @@ collection-health-report-link = Learn More
 collection-studies =
     .label = Allow { -brand-short-name } to install and run studies
 collection-studies-link = View { -brand-short-name } studies
+addon-recommendations =
+    .label = Allow { -brand-short-name } to make personalized extension recommendations
+addon-recommendations-link = Learn more
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Data reporting is disabled for this build configuration
@@ -843,3 +913,36 @@ certs-view =
 certs-devices =
     .label = Security Devices…
     .accesskey = D
+space-alert-learn-more-button =
+    .label = Learn More
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Open Options
+           *[other] Open Preferences
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } is running out of disk space. Website contents may not display properly. You can clear stored data in Options > Privacy & Security > Cookies and Site Data.
+       *[other] { -brand-short-name } is running out of disk space. Website contents may not display properly. You can clear stored data in Preferences > Privacy & Security > Cookies and Site Data.
+    }
+space-alert-under-5gb-ok-button =
+    .label = OK, Got it
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } is running out of disk space. Website contents may not display properly. Visit “Learn More” to optimize your disk usage for better browsing experience.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Desktop
+downloads-folder-name = Downloads
+choose-download-folder-title = Choose Download Folder:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Save files to { $service-name }

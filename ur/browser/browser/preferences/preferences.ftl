@@ -2,6 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+do-not-track-description = ان ویبسائٹس پر ٹریک نہ کریں سگنل بھیجیں جس سے آپ ٹریک نہ ہو سکے
 do-not-track-learn-more = مزید سیکھیں
 do-not-track-option-default =
     .label = صرف جب سراغ کاری حفاظت استعمال کر رہے ہوں
@@ -76,6 +77,12 @@ extension-controlled-homepage-override = ایک توسیع، <img data-l10n-name
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = ایک توسیع، <img data-l10n-name="icon"/>{ $name }، آپ کے نئے ٹیب کا صفحہ کنٹرول کر رہی ہیں۔
+# This string is shown to notify the user that the default search engine
+# is being controlled by an extension.
+extension-controlled-default-search = ایک ایکسٹینشن، <img data-l10n-name="icon"/> { $name } نے، آپکے پہلے سے طے شدہ سرچ انجن کو سیٹ کیا ہے۔
+# This string is shown to notify the user that Container Tabs
+# are being enabled by an extension.
+extension-controlled-privacy-containers = ایک ایکسٹینشن , <img data-l10n-name="icon"/> { $name }, کو کنٹینر ٹیب کی ضرورت ہے۔
 
 ## Preferences UI Search Results
 
@@ -227,6 +234,10 @@ update-application-manual =
 update-application-use-service =
     .label = تازہ کاریاں تنصیب کرنے کے لیے پس منظر سروس استعمال کریں
     .accesskey = b
+update-enable-search-update =
+    .label = تلاش کے انجن کو خود بخود اپڈیٹ  کریں
+    .accesskey = e
+update-pref-write-failure-title = لکھیں مے ناکام
 
 ## General Section - Performance
 
@@ -235,6 +246,8 @@ performance-settings-learn-more = مزید سیکھیں
 performance-allow-hw-accel =
     .label = جب دستیاب ہو تو ہارڈ ویئر سرعت کاری استعمال کریں
     .accesskey = r
+performance-limit-content-process-option = مواد کی عمل کی حد
+    .accesskey = I
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
@@ -258,6 +271,7 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = میرے ٹائپ کرنے پر متن کے لیے تلاش شروع کریں
     .accesskey = x
+browsing-cfr-recommendations-learn-more = مزید سیکھیں
 
 ## General Section - Proxy
 
@@ -496,6 +510,10 @@ sitedata-allow-cookies-option =
 sitedata-disallow-cookies-option =
     .label = کوکیز اور سائٹ کا ڈیٹا روکیں
     .accesskey = B
+# This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
+# The list items are the strings named sitedata-block-*-option*.
+sitedata-block-desc = بلاک کی ہوئی مواد
+    .accesskey = T
 sitedata-block-trackers-option-recommended =
     .label = تیسری تنظیم کے ٹریکرس (سفارش شدا)
 sitedata-block-trackers-option =
@@ -560,6 +578,17 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = صرف نجی ونڈوں میں
     .accesskey = p
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = معیاری
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = سخت
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = مخصوص
+    .accesskey = C
 content-blocking-third-party-cookies-label =
     .label = تیسری تنظیم کے کوکیز
     .accesskey = C
@@ -682,3 +711,26 @@ certs-view =
 certs-devices =
     .label = سلامتی آلات
     .accesskey = D
+space-alert-learn-more-button =
+    .label = مزید سیکھیں
+    .accesskey = م
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] اختیارات کھولیں
+           *[other] ترجیحات کھولیں
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-under-5gb-ok-button =
+    .label = ٹھیک ہے مجھے سمجھ آگئی ہے
+    .accesskey = K
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = ڈیسک ٹاپ
+downloads-folder-name = ڈاؤن لوڈ
+choose-download-folder-title = ڈاؤن لوڈ پوشہ انتخاب کریں:

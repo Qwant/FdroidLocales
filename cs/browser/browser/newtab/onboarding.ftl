@@ -6,6 +6,7 @@
 ## UI strings for the simplified onboarding modal
 
 onboarding-button-label-try-now = Vyzkoušet
+onboarding-button-label-get-started = Začínáme
 onboarding-welcome-header = Vítá vás { -brand-short-name }
 onboarding-start-browsing-button-label = Začít prohlížet
 
@@ -24,3 +25,17 @@ onboarding-addons-title = Doplňky
 onboarding-addons-text = Přidejte si do aplikace { -brand-short-name } další funkce. Porovnávání cen v e-shopech, předpověď počasí nebo vlastní vzhled prohlížeče.
 onboarding-ghostery-title = Ghostery
 onboarding-ghostery-text = Ještě rychlejší, chytřejší a bezpečnější prohlížení vám umožní např. rozšíření Ghostery, které blokuje otravné reklamy.
+# Note: "Sync" in this case is a generic verb, as in "to synchronize"
+onboarding-fxa-title = Synchronizace
+onboarding-fxa-text = Přihlaste se k účtu Firefoxu a synchronizuje své záložky, hesla a otevřené panely kdekoliv používáte aplikaci { -brand-short-name }.
+
+## Message strings belonging to the Return to AMO flow
+
+return-to-amo-sub-header = Skvěle, nyní máte aplikaci { -brand-short-name }
+# <icon></icon> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-header = Teď zpět k doplňku <icon></icon><b>{ $addon-name }</b>.
+return-to-amo-extension-button = Přidat rozšíření
+return-to-amo-get-started-button = Jak začít s aplikací { -brand-short-name }

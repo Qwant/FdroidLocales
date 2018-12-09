@@ -20,6 +20,7 @@
 <!ENTITY aboutPrivateBrowsing.info.saved.after2          "si:">
 <!ENTITY aboutPrivateBrowsing.info.downloads             "Naduninj">
 <!ENTITY aboutPrivateBrowsing.info.bookmarks             "Sa raj sun doj ">
+<!ENTITY aboutPrivateBrowsing.info.clipboard             "guxun nuguan'an ni nachrunt a'ngo hiuj u">
 <!ENTITY aboutPrivateBrowsing.note.before                "Gachenu hùi'">
 <!ENTITY aboutPrivateBrowsing.note.emphasize             "Nitaj hua huì nunt">
 <!ENTITY aboutPrivateBrowsing.note.after                 "riña internet. Si aga't na ni ni'in riña aché nut">
@@ -29,4 +30,8 @@
 
 <!ENTITY trackingProtection.title                        "Sa arán da' si nari' guìi sò'">
 <!ENTITY trackingProtection.description2                 "Hua da'aj nej pâjina arajsun ni naga'naj nej man suun 'iát riña internêt. Nga sa Arán Yi'ì nikaj Firefox ga'ue garánt riña sun 'iaj nej pajinâ na.">
+
 <!ENTITY trackingProtection.startTour1                   "Ni'iaj dà 'iaj sunj">
+
+<!ENTITY contentBlocking.title                           "Sa arán riña nej sa huaa">
+<!ENTITY contentBlocking.description                     "Hua da'aj nej sîtio ni nikaj man sa naga'naj ga'ue ni'iaj sa 'iát nga aché nunt riña internet. Riña nej bentanâ huìi, sa narán riña nej sa hua nikaj Firefox ni narán man'an man riña nej sa naga'naj nan.">

@@ -6,6 +6,7 @@
 ## UI strings for the simplified onboarding modal
 
 onboarding-button-label-try-now = ลองเลยตอนนี้
+onboarding-button-label-get-started = เริ่มต้นใช้งาน
 onboarding-welcome-header = ยินดีต้อนรับสู่ { -brand-short-name }
 onboarding-start-browsing-button-label = เริ่มการท่องเว็บ
 
@@ -23,3 +24,7 @@ onboarding-screenshots-text = จับ บันทึก และแบ่ง
 onboarding-addons-title = ส่วนเสริม
 onboarding-addons-text = เพิ่มคุณลักษณะเพิ่มเติมที่ทำให้ { -brand-short-name } ทำงานได้มากขึ้นสำหรับคุณ เปรียบเทียบราคา ตรวจสอบสภาพอากาศ หรือแสดงบุคลิกภาพของคุณด้วยชุดตกแต่งที่กำหนดเอง
 onboarding-ghostery-title = Ghostery
+
+## Message strings belonging to the Return to AMO flow
+
+return-to-amo-extension-button = เพิ่มส่วนขยาย

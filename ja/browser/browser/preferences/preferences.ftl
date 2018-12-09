@@ -63,6 +63,8 @@ category-sync =
 
 help-button-label = { -brand-short-name } サポート
 
+addons-button-label = 拡張機能とテーマ
+
 focus-search =
     .key = f
 
@@ -95,6 +97,10 @@ extension-controlled-homepage-override = 拡張機能 <img data-l10n-name="icon"
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = 拡張機能 <img data-l10n-name="icon"/> { $name } により新しいタブページが変更されています。
+
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications= 拡張機能 <img data-l10n-name="icon"/> { $name } により、この設定が変更されています。
 
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
@@ -178,6 +184,10 @@ open-new-link-as-tabs =
 
 warn-on-close-multiple-tabs =
     .label = 同時に複数のタブを閉じるときは確認する
+    .accesskey = m
+
+warn-on-quit-close-multiple-tabs =
+    .label = 同時に複数のタブを閉じて終了するときは確認する
     .accesskey = m
 
 warn-on-open-many-tabs =
@@ -349,6 +359,12 @@ update-enable-search-update =
     .label = 検索エンジンを自動的に更新する
     .accesskey = e
 
+update-pref-write-failure-title = 書き込み失敗
+
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = 設定を保存できません。ファイルに書き込みできません: { $path }
+
 ## General Section - Performance
 
 performance-title = パフォーマンス
@@ -400,9 +416,13 @@ browsing-search-on-start-typing =
     .label = キー入力時に検索を開始する
     .accesskey = x
 
-## General Section - Proxy
+browsing-cfr-recommendations =
+    .label = おすすめの拡張機能を紹介する
+    .accesskey = R
 
-network-proxy-title = ネットワークプロキシ
+browsing-cfr-recommendations-learn-more = 詳細
+
+## General Section - Proxy
 
 network-settings-title = ネットワーク設定
 
@@ -653,6 +673,8 @@ privacy-header = ブラウザープライバシー
 ## Privacy Section - Forms
 
 forms-header = フォームとパスワード
+
+logins-header = ログインとパスワード
 forms-ask-to-save-logins =
     .label = ウェブサイトのログイン情報とパスワードを保存する
     .accesskey = r
@@ -732,14 +754,6 @@ sitedata-total-size = 保存された Cookie とサイトデータとキャッ�
 
 sitedata-learn-more = 詳細情報
 
-sitedata-accept-cookies-option =
-    .label = ウェブサイトから送られてきた Cookie とサイトデータを保存する (推奨)
-    .accesskey = A
-
-sitedata-block-cookies-option =
-    .label = Cookie とサイトデータをブロック (ウェブサイトが動作しない可能性があります)
-    .accesskey = B
-
 sitedata-keep-until = Cookie を保存する期間
     .accesskey = u
 
@@ -748,15 +762,9 @@ sitedata-keep-until-expire =
 sitedata-keep-until-closed =
     .label = { -brand-short-name } を終了するまで
 
-sitedata-accept-third-party-desc = サードパーティの Cookie とサイトデータを保存
-    .accesskey = y
-
-sitedata-accept-third-party-always-option =
-    .label = 常に許可
-sitedata-accept-third-party-visited-option =
-    .label = 訪問したサイトのみ許可
-sitedata-accept-third-party-never-option =
-    .label = 常に拒否
+sitedata-delete-on-close =
+    .label = { -brand-short-name } を閉じたときに Cookie とサイトデータを削除する
+    .accesskey = c
 
 sitedata-allow-cookies-option =
     .label = Cookie とサイトデータを保存する
@@ -799,6 +807,10 @@ sitedata-cookies-exceptions =
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = 現在のコンテンツブロッキングの設定内容は、Cookie とサイトデータの設定の変更を妨げます。
 
+sitedata-cookies-permissions =
+    .label = サイトの設定を管理...
+    .accesskey = P
+
 ## Privacy Section - Address Bar
 
 addressbar-header = アドレスバー
@@ -822,6 +834,8 @@ addressbar-suggestions-settings = 検索エンジンの検索候補の設定を�
 content-blocking-header = コンテンツブロッキング
 
 content-blocking-desc = ブラウザを遅くしたりウェブ上の行動を追跡したりする広告やコードなどのサードパーティコンテンツをブロックします。保護と性能の最適なバランスの設定にカスタマイズできます。
+
+content-blocking-description = ウェブ上の行動を追跡するサードパーティコンテンツをブロックします。ウェブサイト間で蓄積、共有されるあなたのオンラインアクティビティをコントロールします。
 
 content-blocking-learn-more = 詳細
 content-blocking-restore-defaults =
@@ -847,6 +861,33 @@ content-blocking-fastblock-slow-loading-trackers-label =
   .label = 読み込みを遅くするトラッカー
   .accesskey = S
 content-blocking-fastblock-new-description = ページの読み込みを遅くするトラッカーのみブロックします。
+
+content-blocking-setting-standard =
+  .label = 標準
+  .accesskey = d
+content-blocking-setting-strict =
+  .label = 厳格
+  .accesskey = r
+content-blocking-setting-custom =
+  .label = カスタム
+  .accesskey = C
+
+content-blocking-standard-desc = 保護と性能をバランスよく。ウェブサイトが正しく機能するようトラッカーを一部許可します。
+content-blocking-strict-desc = { -brand-short-name } が検出したトラッカーをすべてブロックします。一部のサイトが機能しなくなる可能性があります。
+content-blocking-custom-desc = ブロックする項目を選択します。
+
+content-blocking-private-trackers = 既知のトラッカー (プライベートウィンドウのみ)
+content-blocking-third-party-cookies = サードパーティのトラッカー Cookie
+content-blocking-all-windows-trackers = 既知のトラッカー (すべてのウィンドウ)
+content-blocking-all-third-party-cookies = サードパーティ Cookie すべて
+
+content-blocking-warning-title = 注意！
+content-blocking-warning-desc = Cookie とトラッカーをブロックすると、一部のウェブサイトが機能しなくなる可能性があります。信頼するサイトはブロッキングを無効にできます。
+content-blocking-learn-how = 詳細
+
+content-blocking-tracking-protection-trackers-label =
+  .label = トラッカー
+  .accesskey = T
 content-blocking-tracking-protection-all-detected-trackers-label =
   .label = 検出されたすべてのトラッカー
   .accesskey = T
@@ -867,7 +908,7 @@ content-blocking-reject-trackers-description = すべてのサードパーティ
 # of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
 # or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
 # the UI.
-content-blocking-reject-trackers-warning-your-settings-prevent-changes = 現在のCookie とサイトデータの設定内容は、サードパーティ Cookie の設定の変更を妨げます。
+content-blocking-reject-trackers-warning-your-settings-prevent-changes = 現在の Cookie とサイトデータの設定内容は、サードパーティ Cookie の設定の変更を妨げます。
 content-blocking-change-cookie-settings =
   .label = Cookie の設定を変更
   .accesskey = S
@@ -880,6 +921,10 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
   .label = すべてのサードパーティ Cookie (ウェブサイトが動作しない可能性があります)
   .accesskey = A
+
+content-blocking-cookies-label =
+  .label = Cookie
+  .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -899,11 +944,6 @@ tracking-mode-never =
     .label = ブロックしない
     .accesskey = N
 
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = プライベートブラウジングモードでトラッキング防止を使用して既知のトラッカーをブロックする
-    .accesskey = v
-
 tracking-exceptions =
     .label = 例外...
     .accesskey = x
@@ -911,6 +951,10 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = ブロックリストを変更...
     .accesskey = C
+
+tracking-manage-exceptions =
+    .label = 例外を管理...
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -1059,3 +1103,41 @@ certs-view =
 certs-devices =
     .label = セキュリティデバイス...
     .accesskey = D
+
+space-alert-learn-more-button =
+    .label = 詳細情報
+    .accesskey = L
+
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] オプションを開く
+           *[other] 設定を開く
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } を実行するためのディスク領域が足りません。ウェブサイトが正しく表示されない可能性があります。[オプション] > [プライバシーとセキュリティ] > [Cookie とサイトデータ] から、保存されたデータを削除してください。
+       *[other] { -brand-short-name } を実行するためのディスク領域が足りません。ウェブサイトが正しく表示されない可能性があります。[設定] > [プライバシーとセキュリティ] > [Cookie とサイトデータ] から、保存されたデータを削除してください。
+    }
+
+space-alert-under-5gb-ok-button =
+    .label = OK
+    .accesskey = K
+
+space-alert-under-5gb-message = { -brand-short-name } を実行するためのディスク領域が足りません。ウェブサイトが正しく表示されない可能性があります。快適なブラウジングのために、[詳細情報] のリンク先を読み、ディスク使用量を最適化してください。
+
+## The following strings are used in the Download section of settings
+desktop-folder-name = デスクトップ
+downloads-folder-name = ダウンロード
+choose-download-folder-title = ダウンロードフォルダーを選択:
+
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = { $service-name } にファイルを保存する

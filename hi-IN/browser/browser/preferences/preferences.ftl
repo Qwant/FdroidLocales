@@ -814,3 +814,32 @@ certs-view =
 certs-devices =
     .label = सुरक्षा उपकरण…
     .accesskey = D
+space-alert-learn-more-button =
+    .label = अधिक जानें
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] विकल्प खोलें
+           *[other] वरीयताएँ खोलें
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } डिस्क में जगह कम हो रही है. वेबसाइट सामग्रियाँ संभवतः ढंग से प्रदर्शित ना हो पायें. आप संग्रहित साइट डेटा में विकल्प > गोपनीयता एवं सुरक्षा > कूकीज़ तथा साइट डेटा में से हटा सकते हैं.
+       *[other] { -brand-short-name } डिस्क में जगह कम हो रही है. वेबसाइट सामग्रियाँ संभवतः ढंग से प्रदर्शित ना हो पायें. आप संग्रहित साइट डेटा में वरीयताएँ > गोपनीयता एवं सुरक्षा > कूकीज़ तथा साइट डेटा में से हटा सकते हैं.
+    }
+space-alert-under-5gb-ok-button =
+    .label = अच्छा, समझ गया
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } के लिए डिस्क में जगह कम हो रही है. वेबसाइट सामग्री संभवत: ढंग से प्रदर्शित ना हो पाए. आपके डिस्क उपयोग को बेहतर ब्राउज़िंग अनुभव हेतु अनुकूलित करने के लिए “और जानें” पर जाएं.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = डेस्कटॉप
+downloads-folder-name = डाउनलोड
+choose-download-folder-title = डाउनलोड फोल्डर चुनें:

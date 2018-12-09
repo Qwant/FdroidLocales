@@ -42,7 +42,7 @@ category-general =
 pane-home-title = મુખ્ય
 category-home =
     .tooltiptext = { pane-home-title }
-pane-search-title = શોધો
+pane-search-title = શોધ
 category-search =
     .tooltiptext = { pane-search-title }
 pane-privacy-title = ગોપનીયતા & સુરક્ષા
@@ -84,6 +84,9 @@ extension-controlled-homepage-override = એક એક્સ્ટેન્શ�
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = એક એક્સટેન્શન, <img data-l10n-name="icon"/> { $name }, તમારા નવા ટેબના પૃષ્ઠને નિયંત્રિત કરે છે.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = એક એક્સ્ટેંશન, <img data-l10n-name="icon"/> { $name }, આ સેટિંગને નિયંત્રિત કરી રહ્યું છે.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = એક્સ્ટેંશન, <img data-l10n-name="icon"/> { $name }, એ તમારું મૂળભૂત શોધ એંજીન સેટ કર્યું છે.
@@ -128,16 +131,18 @@ use-firefox-sync = છૂપી સૂચના: આ અલગ પ્રોફ�
 get-started-not-logged-in = સાઇન ઇન કરો { -sync-brand-short-name }…
 get-started-configured = ખોલો કરો { -sync-brand-short-name } પસંદગીઓ
 always-check-default =
-    .label = હંમેશાં તપાસો કે { -brand-short-name } તમારું ડિફૉલ્ટ બ્રાઉઝર છે
+    .label = હંમેશાં તપાસો કે { -brand-short-name } તમારું મૂળભૂત બ્રાઉઝર છે
     .accesskey = y
-is-default = { -brand-short-name } હાલમાં તમારું ડિફૉલ્ટ બ્રાઉઝર છે
-is-not-default = { -brand-short-name } તમારું ડિફૉલ્ટ બ્રાઉઝર નથી
+is-default = { -brand-short-name } હાલમાં તમારું મૂળભૂત બ્રાઉઝર છે
+is-not-default = { -brand-short-name } તમારું મૂળભૂત બ્રાઉઝર નથી
 set-as-my-default-browser =
     .label = ડિફૉલ્ટ બનાવો…
     .accesskey = D
 startup-restore-previous-session =
     .label = પહેલાનાં સત્રને પુન:સંગ્રહો
     .accesskey = s
+startup-restore-warn-on-quit =
+    .label = બ્રાઉઝર છોડતી વખતે તમને ચેતવણી આપે છે.
 disable-extension =
     .label = એક્સ્ટેંશન અક્ષમ કરો
 tabs-group-header = ટૅબ્સ
@@ -150,6 +155,9 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = તમને બહુવિધ ટેબ્સ બંધ કરતી વખતે ચેતવશે
     .accesskey = m
+warn-on-quit-close-multiple-tabs =
+    .label = તમને બહુવિધ ટેબ્સમાંથી બહાર નીકળતી વખતે અને બંધ કરતી વખતે ચેતવશે
+    .accesskey = m
 warn-on-open-many-tabs =
     .label = તમને ચેતવે છે જ્યારે ઘણી ટેબ્સ ખોલવાનું ધીમું થઈ જાય અને { -brand-short-name }
     .accesskey = d
@@ -157,7 +165,7 @@ switch-links-to-new-tabs =
     .label = જ્યારે તમે કોઈ નવી ટેબમાં લિંક ખોલો છો, ત્યારે તેને તરત જ સ્વિચ કરો
     .accesskey = h
 show-tabs-in-taskbar =
-    .label = Windows કાર્યપટ્ટીમાં ટૅબ પૂર્વદર્શનનો બતાવો
+    .label = વિન્ડોઝ કાર્યપટ્ટીમાં ટૅબ પૂર્વદર્શનનો બતાવો
     .accesskey = k
 browser-containers-enabled =
     .label = કન્ટેઈનર ટેબ્સ સક્ષમ કરો
@@ -285,6 +293,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = આપમેળે શોધ એન્જિન અપડેટ કરો
     .accesskey = e
+update-pref-write-failure-title = લખાણ નિષ્ફળ થયું
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = પસંદગી સાચવવામાં અસમર્થ. ફાઇલ પર લખી શકાયુ નહી: { $path }
 
 ## General Section - Performance
 
@@ -324,6 +336,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = જ્યારે તમે ટાઇપ કરવાનું શરૂ કરો ત્યારે ટેક્સ્ટ માટે શોધો
     .accesskey = x
+browsing-cfr-recommendations =
+    .label = તમે બ્રાઉઝ કરો ત્યારે એક્સ્ટેન્શન્સની ભલામણ કરો
+    .accesskey = R
+browsing-cfr-recommendations-learn-more = વધુ શીખો
 
 ## General Section - Proxy
 
@@ -429,7 +445,7 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
-sync-signedout-caption = તમે તમારા વેબ ને લો
+sync-signedout-caption = તમારું વેબ તમારી સાથે રાખો
 sync-signedout-description = તમારા બધા ઉપકરણો પર તમારા બુકમાર્ક્સ, ઇતિહાસ, ટૅબ્સ, પાસવર્ડ્સ, ઍડ-ઑન્સ અને પસંદગીઓને સમન્વયિત કરો.
 sync-signedout-account-title = { -fxaccount-brand-name } સાથે જોડાણ કરો
 sync-signedout-account-create = શું કોઈ ખાતું નથી? શરૂ કરો
@@ -524,7 +540,6 @@ privacy-header = બ્રાઉઝર ગોપનીયતા
 
 ## Privacy Section - Forms
 
-forms-header = ફોર્મ્સ & પાસવર્ડ્સ
 logins-header = લૉગ-ઇન્સ અને પાસવર્ડ્સ
 forms-ask-to-save-logins =
     .label = વેબસાઇટ્સ માટે લૉગિન અને પાસવર્ડ્સ સાચવવા માટે પૂછો
@@ -598,6 +613,9 @@ sitedata-keep-until-expire =
     .label = સમાપ્ત થાયા
 sitedata-keep-until-closed =
     .label = { -brand-short-name } બંધ છે
+sitedata-delete-on-close =
+    .label = { -brand-short-name } બંધ હોય ત્યારે કૂકીઝ અને સાઇટ માહિતી કાઢી નાખો
+    .accesskey = c
 sitedata-allow-cookies-option =
     .label = કૂકીઝ અને સાઇટ ડેટાને સ્વીકારો
     .accesskey = A
@@ -618,6 +636,14 @@ sitedata-block-all-third-party-option =
     .label = બધી તૃતીય-પક્ષ કૂકીઝ (વેબસાઇટ્સને બંધ કરવા કારણ બની શકે છે)
 sitedata-block-all-option =
     .label = બધી કૂકીઝ (વેબસાઇટ્સને બંધ કરવા કારણ બની શકે છે)
+sitedata-option-block-trackers =
+    .label = તૃતીય પક્ષ ટ્રેકર
+sitedata-option-block-unvisited =
+    .label = નાજોયેલી વેબસાઈટની કૂકીઝ
+sitedata-option-block-all-third-party =
+    .label = બધી તૃતીય-પક્ષ કૂકીઝ (વેબસાઇટ્સ ને રોકી શકે છે)
+sitedata-option-block-all =
+    .label = બધી કૂકીઝ (વેબસાઇટ્સને ને રોકી નાખશે)
 sitedata-clear =
     .label = માહિતી સાફ કરો…
     .accesskey = l
@@ -631,6 +657,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = સામગ્રી અવરોધમાંની તમારી સેટિંગ્સ કૂકીઝ અને સાઇટ માહિતી સેટિંગ્સમાં ફેરફારોને અટકાવી રહી છે.
+sitedata-cookies-permissions =
+    .label = પરવાનગીઓ મેનેજ કરો...
+    .accesskey = P
 
 ## Privacy Section - Address Bar
 
@@ -651,6 +680,7 @@ addressbar-suggestions-settings = શોધ એન્જિન સૂચનો �
 
 content-blocking-header = સામગ્રી અવરોધિત
 content-blocking-desc = તૃતીય-પક્ષ વસ્તુઓને અવરોધિત કરો, જેમ કે જાહેરાતો અથવા કોડ, જે તમારી બ્રાઉઝિંગને ધીમુ કરી શકે છે અને વેબ પર તમને ટ્રૅક કરી શકે છે. રક્ષણ અને કાર્યના શ્રેષ્ઠ સંતુલન માટે તમારી સેટિંગ્સને કસ્ટમાઇઝ કરો.
+content-blocking-description = તૃતીય-પક્ષ સામગ્રીને અવરોધિત કરો જે તમને વેબ પર ટ્રૅક કરે છે. વેબસાઇટ્સની વચ્ચે તમારી કેટલી ઑનલાઇન પ્રવૃત્તિ સંગ્રહિત અને શેર કરવામાં આવે તે નિયંત્રિત કરો.
 content-blocking-learn-more = વધુ શીખો
 content-blocking-restore-defaults =
     .label = મૂળભૂતને પુન:સંગ્રહો
@@ -684,6 +714,37 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = ફકત ખાનગી વિંડોઝમાં જ
     .accesskey = P
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = પ્રમાણભૂત
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = સખત
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = વૈવિધ્યપૂર્ણ
+    .accesskey = C
+content-blocking-standard-description = ખાનગી વિન્ડોમાં ફક્ત જાણીતા ટ્રૅકર્સને અવરોધિત કરો.
+content-blocking-standard-desc = સુરક્ષા અને પ્રદર્શન માટે સંતુલિત છે. કેટલાક ટ્રેકર્સને મંજૂરી આપે છે જેથી વેબસાઇટ્સ યોગ્ય રીતે કાર્ય કરે.
+content-blocking-strict-desc = { -brand-short-name } ને મળેલ બધા ટ્રેકર્સને અવરોધ કરે છે. કેટલીક સાઇટ્સ ને રોકી શકે છે.
+content-blocking-custom-desc = શું અવરોધિત છે તે પસંદ કરો
+content-blocking-private-trackers = ખાનગી વિન્ડોઝમાં ફક્ત જાણીતા ટ્રૅકર્સ
+content-blocking-third-party-cookies = તૃતીય પક્ષ ટ્રેકિંગ કૂકીઝ
+content-blocking-all-windows-trackers = બધા વિન્ડોઝમાં જાણીતા ટ્રેકર્સ
+content-blocking-all-third-party-cookies = બધા તૃતીય પક્ષ કૂકીઝ
+content-blocking-warning-title = હેડ્સ અપ!
+content-blocking-warning-desc = કૂકીઝ અને ટ્રેકર્સને અવરોધિત કરવાથી કેટલીક વેબસાઇટ્સ રોકાઈ શકે છે. તમે વિશ્વાસ કરો છો તે સાઇટ્સ માટે અવરોધિત કરવાનું બંધ કરવું સરળ છે.
+content-blocking-learn-how = કેવી રીતે તે જાણો
+content-blocking-trackers-label =
+    .label = ટ્રેકર્સ
+    .accesskey = T
+content-blocking-tracking-protection-option-all-windows =
+    .label = બધા વિન્ડોઝમા માં
+    .accesskey = A
+content-blocking-option-private =
+    .label = ફક્ત ખાનગી વિન્ડોઝમા
+    .accesskey = P
 content-blocking-tracking-protection-change-block-list = અવરોધ સૂચિ બદલો
 content-blocking-third-party-cookies-label =
     .label = તૃતીય-પક્ષ કૂકીઝ
@@ -706,6 +767,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = બધી તૃતીય-પક્ષની કૂકીઝ (વેબસાઇટ્સને તોડી શકે છે)
     .accesskey = A
+content-blocking-cookies-label =
+    .label = કૂકીઝ
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -727,6 +791,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = અવરોધિત સૂચિ બદલો…
     .accesskey = C
+tracking-manage-exceptions =
+    .label = અપવાદોને મેનેજ કરો ...
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -794,6 +861,7 @@ collection-health-report-link = વધુ શીખો
 collection-studies =
     .label = { -brand-short-name } અભ્યાસને ઇન્સ્ટોલ અને ચલાવવાની મંજૂરી આપો
 collection-studies-link = { -brand-short-name } અભ્યાસો જુઓ
+addon-recommendations-link = વધુ શીખો
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = આ તૈચાર કરેલ રૂપરેખાંકન માટે ડેટા અહેવાલ અક્ષમ કરેલું છે
@@ -843,3 +911,36 @@ certs-view =
 certs-devices =
     .label = સુરક્ષા ઉપકરણો…
     .accesskey = D
+space-alert-learn-more-button =
+    .label = વધુ શીખો
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] વિકલ્પો ખોલો
+           *[other] પસંદગીઓને ખોલો
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] O
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } ડિસ્ક જગ્યામાંથી બહાર ચાલી રહ્યું છે. વેબસાઈટની વિષયવસ્તુ કદાચ યોગ્ય રીતે દર્શાશે નહીં. તમે સંગ્રહિત સાઇટ ડેટાને સાફ કરી શકો છો વિકલ્પો > ગોપનીયતા અને સુરક્ષા > કૂકીઝ અને સાઈટ ડેટા.
+       *[other] { -brand-short-name } ડિસ્ક જગ્યામાંથી બહાર ચાલી રહ્યું છે. વેબસાઈટની વિષયવસ્તુ કદાચ યોગ્ય રીતે દર્શાશે નહીં. તમે સંગ્રહિત સાઇટ ડેટાને સાફ કરી શકો છો પસંદગીઓ > ગોપનીયતા અને સુરક્ષા > કૂકીઝ અને સાઈટ ડેટા.
+    }
+space-alert-under-5gb-ok-button =
+    .label = OK, સમજાઇ ગયું
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } ડિસ્ક જગ્યામાંથી બહાર ચાલી રહ્યું છે. વેબસાઈટ વિષયવસ્તુ કદાચ યોગ્ય રીતે દર્શાશે નહીં. સારી બ્રાઉઝિંગ અનુભવ માટે તમારા ડિસ્કનો ઉપયોગ ઑપ્ટિમાઇઝ કરવા &quot;વધુ જાણો&quot; ની મુલાકાત લો.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = ડેસ્કટોપ
+downloads-folder-name = ડાઉનલોડ
+choose-download-folder-title = ડાઉનલોડ ફોલ્ડર પસંદ કરો:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = { $service-name } પર ફાઇલો સાચવો

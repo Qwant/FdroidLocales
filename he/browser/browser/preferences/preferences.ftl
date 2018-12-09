@@ -53,6 +53,7 @@ pane-sync-title = חשבון Firefox
 category-sync =
     .tooltiptext = { pane-sync-title }
 help-button-label = תמיכה ב־{ -brand-short-name }
+addons-button-label = הרחבות וערכות נושא
 focus-search =
     .key = f
 close-button =
@@ -83,6 +84,9 @@ extension-controlled-homepage-override = הרחבה בשם <img data-l10n-name="
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = הרחבה בשם <img data-l10n-name="icon"/> { $name } שולטת על דף הלשונית החדשה שלך.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = הרחבה בשם <img data-l10n-name="icon"/> { $name } שולטת על הגדרה זו.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = הרחבה בשם <img data-l10n-name="icon"/> { $name } הגדירה את מנוע החיפוש ברירת המחדל שלך.
@@ -149,6 +153,9 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = הזהרה בעת סגירת מספר לשוניות
     .accesskey = ז
+warn-on-quit-close-multiple-tabs =
+    .label = הצגת אזהרה בעת יציאה וסגירה של מספר לשוניות
+    .accesskey = ז
 warn-on-open-many-tabs =
     .label = הזהרה בעת פתיחה של מספר לשוניות שעשויה להאט את { -brand-short-name }
     .accesskey = פ
@@ -207,7 +214,7 @@ choose-language-description = בחירת השפה המועדפת עליך להצ
 choose-button =
     .label = בחירה…
     .accesskey = ב
-choose-browser-language-description = נא לבחור את השפות בהן יעשה שימוש להציג תפריטים, הודעות והתרעות מ־{ -brand-short-name }
+choose-browser-language-description = נא לבחור את השפות בהן ייעשה שימוש להצגת תפריטים, הודעות והתרעות מ־{ -brand-short-name }.
 manage-browser-languages-button =
     .label = הגדרת חלופות…
     .accesskey = ח
@@ -247,7 +254,7 @@ download-choose-folder =
 download-always-ask-where =
     .label = לשאול תמיד היכן לשמור קבצים
     .accesskey = ק
-applications-header = ישומים
+applications-header = יישומים
 applications-description = בחירה כיצד { -brand-short-name } יטפל בקבצים שהורדו מהרשת או ביישומים שיהיו בשימוש במהלך הגלישה.
 applications-filter =
     .placeholder = חיפוש סוגי קבצים או יישומים
@@ -284,6 +291,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = עדכון מנועי חיפוש באופן אוטומטי
     .accesskey = ע
+update-pref-write-failure-title = כשל בכתיבה
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = לא ניתן לשמור את ההעדפה. לא ניתן לכתוב לקובץ: { $path }
 
 ## General Section - Performance
 
@@ -298,7 +309,7 @@ performance-allow-hw-accel =
     .accesskey = ה
 performance-limit-content-process-option = הגבלת תהליך תוכן
     .accesskey = ה
-performance-limit-content-process-enabled-desc = תהליכי תוכן נוספים עשויים לשפר את הביצועים בעת שימוש במספר לשוניות, עם זאת יעשה שימוש ביותר זיכרון.
+performance-limit-content-process-enabled-desc = תהליכי תוכן נוספים עשויים לשפר את הביצועים בעת שימוש במספר לשוניות, עם זאת ייעשה שימוש ביותר זיכרון.
 performance-limit-content-process-blocked-desc = שינוי מספר תהליכי תוכן אפשרי רק עם { -brand-short-name } מרובה תהליכים. <a data-l10n-name="learn-more">כיצד לבדוק אם ריבוי תהליכים מופעל</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -323,10 +334,13 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = חיפוש מלל עם תחילת הקלדה
     .accesskey = מ
+browsing-cfr-recommendations =
+    .label = קבלת המלצות על הרחבות תוך כדי גלישה
+    .accesskey = ק
+browsing-cfr-recommendations-learn-more = מידע נוסף
 
 ## General Section - Proxy
 
-network-proxy-title = מתווך רשת
 network-settings-title = הגדרות רשת
 network-proxy-connection-description = הגדרת אופן החיבור של { -brand-short-name } לאינטרנט.
 network-proxy-connection-learn-more = מידע נוסף
@@ -525,6 +539,7 @@ privacy-header = פרטיות דפדפן
 ## Privacy Section - Forms
 
 forms-header = טפסים וססמאות
+logins-header = כניסות וססמאות
 forms-ask-to-save-logins =
     .label = הצגת בקשה לשמירת פרטי כניסה וססמאות לאתרים
     .accesskey = צ
@@ -591,26 +606,15 @@ sitedata-total-size-calculating = חישוב גודל נתוני אתרים ומ
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = העוגיות, נתוני האתרים והמטמון השמורים שלך משתמשים כרגע ב־{ $value } { $unit } משטח הדיסק.
 sitedata-learn-more = מידע נוסף
-sitedata-accept-cookies-option =
-    .label = קבלת עוגיות ונתוני אתרים מאתרי אינטרנט (מומלץ)
-    .accesskey = ק
-sitedata-block-cookies-option =
-    .label = חסימת עוגיות ונתוני אתרים (עשוי לגרום לשיבוש באתרי אינטרנט)
-    .accesskey = ח
 sitedata-keep-until = שמירה עד ש:
     .accesskey = מ
 sitedata-keep-until-expire =
     .label = פג תוקפם
 sitedata-keep-until-closed =
     .label = ‏{ -brand-short-name } ייסגר
-sitedata-accept-third-party-desc = קבלת עוגיות ונתוני אתרים מצד שלישי
-    .accesskey = ש
-sitedata-accept-third-party-always-option =
-    .label = תמיד
-sitedata-accept-third-party-visited-option =
-    .label = מאתרים בהם ביקרנו בעבר
-sitedata-accept-third-party-never-option =
-    .label = לעולם לא
+sitedata-delete-on-close =
+    .label = מחיקת עוגיות ונתוני אתרים עם סגירת { -brand-short-name }
+    .accesskey = ח
 sitedata-allow-cookies-option =
     .label = קבלת עוגיות ונתוני אתרים
     .accesskey = ק
@@ -631,6 +635,8 @@ sitedata-block-all-third-party-option =
     .label = כל העוגיות צד־שלישי (עשוי לשבש פעילות של חלק מהאתרים)
 sitedata-block-all-option =
     .label = כל העוגיות (ישבש פעילות של אתרים)
+sitedata-option-block-trackers =
+    .label = רכיבי מעקב צד־שלישי
 sitedata-clear =
     .label = ניקוי נתונים…
     .accesskey = נ
@@ -644,6 +650,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = ההגדרות שלך בחסימת תוכן מונעות ביצוע שינויים להגדרות העוגיות ונתוני האתרים.
+sitedata-cookies-permissions =
+    .label = ניהול הרשאות…
+    .accesskey = ה
 
 ## Privacy Section - Address Bar
 
@@ -684,6 +693,9 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = רכיבי מעקב שנטענים לאט
     .accesskey = א
 content-blocking-fastblock-new-description = חסימת רק רכיבי המעקב שמונעים טעינה מהירה של דפים.
+content-blocking-tracking-protection-trackers-label =
+    .label = רכיבי מעקב
+    .accesskey = ר
 content-blocking-tracking-protection-all-detected-trackers-label =
     .label = כל רכיבי המעקב המזוהים
     .accesskey = כ
@@ -694,6 +706,33 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = רק בחלונות פרטיים
     .accesskey = ח
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = רגיל
+    .accesskey = ר
+content-blocking-setting-custom =
+    .label = התאמה אישית
+    .accesskey = ה
+content-blocking-standard-description = חסימת רכיבי מעקב ידועים בחלונות פרטיים בלבד
+content-blocking-strict-desc = חסימת כל רכיבי המעקב ש־{ -brand-short-name } מזהה. עשוי לשבש פעילות של אתרים.
+content-blocking-custom-desc = בחירת הפריטים שייחסמו.
+content-blocking-private-trackers = רכיבי מעקב ידועים בחלונות פרטיים בלבד
+content-blocking-third-party-cookies = עוגיות מעקב צד־שלישי
+content-blocking-all-windows-trackers = רכיבי מעקב בכל החלונות
+content-blocking-all-third-party-cookies = כל העוגיות צד־שלישי
+content-blocking-warning-title = לתשומת לבך!
+content-blocking-warning-desc = חסימת עוגיות ורכיבי מעקב עשויה לשבש פעילות של מספר אתרים. קל להשבית חסימה של אתרים המהימנים בעיניך.
+content-blocking-learn-how = מידע נוסף
+content-blocking-trackers-label =
+    .label = רכיבי מעקב
+    .accesskey = ר
+content-blocking-tracking-protection-option-all-windows =
+    .label = בכל החלונות
+    .accesskey = כ
+content-blocking-option-private =
+    .label = רק בחלונות פרטיים
+    .accesskey = פ
 content-blocking-tracking-protection-change-block-list = שינוי רשימת חסימות
 content-blocking-third-party-cookies-label =
     .label = עוגיות צד־שלישי
@@ -716,6 +755,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = כל העוגיות צד־שלישי (עשוי לשבש פעילות של חלק מהאתרים)
     .accesskey = כ
+content-blocking-cookies-label =
+    .label = עוגיות
+    .accesskey = ע
 
 ## Privacy Section - Tracking
 
@@ -731,16 +773,15 @@ tracking-mode-private =
 tracking-mode-never =
     .label = לעולם לא
     .accesskey = ל
-# This string is displayed if privacy.trackingprotection.ui.enabled is set to false.
-# This currently happens on the release and beta channel.
-tracking-pbm-label = שימוש בהגנת מעקב בגלישה פרטית לחסימת רכיבי מעקב ידועים
-    .accesskey = ט
 tracking-exceptions =
     .label = חריגות…
     .accesskey = ח
 tracking-change-block-list =
     .label = שינוי רשימת חסימות…
     .accesskey = ר
+tracking-manage-exceptions =
+    .label = ניהול חריגות…
+    .accesskey = ח
 
 ## Privacy Section - Permissions
 
@@ -802,7 +843,7 @@ collection-header = איסוף המידע של { -brand-short-name }
 collection-description = אנו חותרים לספק לך זכות בחירה ולאסוף רק מה שנדרש לנו כדי לספק ולשפר את { -brand-short-name } לטובת הכלל. אנו תמיד נבקש את רשותך לפני קבלת פרטים אישיים.
 collection-privacy-notice = הצהרת פרטיות
 collection-health-report =
-    .label = האם לאפשר ל־{ -brand-short-name } לשלוח אל { -vendor-short-name } מידע טכני ופעולות שבוצעו בדפדפן
+    .label = לאפשר ל־{ -brand-short-name } לשלוח אל { -vendor-short-name } מידע טכני ופעולות שבוצעו בדפדפן
     .accesskey = ד
 collection-health-report-link = מידע נוסף
 collection-studies =
@@ -812,7 +853,7 @@ collection-studies-link = הצגת המחקרים של { -brand-short-name }
 # or builds with no Telemetry support available.
 collection-health-report-disabled = דיווח נתונים מנוטרל עבור תצורת בנייה זו
 collection-browser-errors =
-    .label = לאפשר ל־{ -brand-short-name } לשלוח דיווחי שגיאות בדפדפן (לרבות הודעות שגיאה) אל { -vendor-short-name }
+    .label = לאפשר ל־{ -brand-short-name } לשלוח אל { -vendor-short-name } דיווחי שגיאות בדפדפן (לרבות הודעות שגיאה)
     .accesskey = ד
 collection-browser-errors-link = מידע נוסף
 collection-backlogged-crash-reports =
@@ -857,3 +898,36 @@ certs-view =
 certs-devices =
     .label = התקני אבטחה…
     .accesskey = א
+space-alert-learn-more-button =
+    .label = מידע נוסף
+    .accesskey = מ
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] פתיחת אפשרויות
+           *[other] פתיחת העדפות
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] א
+           *[other] ה
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] ל־{ -brand-short-name } אוזל שטח הדיסק. יתכן שתכני אתרים לא יוצגו כשורה. ניתן למחוק נתונים שמורים באפשרויות > פרטיות ואבטחה > עוגיות ונתוני אתרים.
+       *[other] ל־{ -brand-short-name } אוזל שטח הדיסק. יתכן שתכני אתרים לא יוצגו כשורה. ניתן למחוק נתונים שמורים בהעדפות > פרטיות ואבטחה > עוגיות ונתוני אתרים.
+    }
+space-alert-under-5gb-ok-button =
+    .label = בסדר, הבנתי
+    .accesskey = ב
+space-alert-under-5gb-message = ל־{ -brand-short-name } אוזל שטח הדיסק. יתכן שנתוני אתרים לא יוצגו כשורה. ניתן לבקר בקישור של “מידע נוסף” כדי לייעל את אופן השימוש בדיסק לחוויית גלישה טובה יותר.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = שולחן עבודה
+downloads-folder-name = הורדות
+choose-download-folder-title = בחירת תיקייה להורדה:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = שמירת קבצים ב־{ $service-name }

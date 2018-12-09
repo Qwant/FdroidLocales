@@ -6,6 +6,7 @@
 ## UI strings for the simplified onboarding modal
 
 onboarding-button-label-try-now = Hemen deneyin
+onboarding-button-label-get-started = Başlayalım
 onboarding-welcome-header = { -brand-short-name } tarayıcısına hoş geldiniz
 onboarding-start-browsing-button-label = Gezinmeye başla
 
@@ -24,3 +25,17 @@ onboarding-addons-title = Eklentiler
 onboarding-addons-text = { -brand-short-name } tarayıcınıza daha da fazla özellik ekleyebilirsiniz. Çeviri yapın, hava durumuna bakın ya da yeni bir temayla kişiliğinizi yansıtın.
 onboarding-ghostery-title = Ghostery
 onboarding-ghostery-text = Sinir bozucu reklamları engellemenize izin veren Ghostery gibi eklentilerle daha hızlı, daha akıllı ve daha güvenli gezinebilirsiniz.
+# Note: "Sync" in this case is a generic verb, as in "to synchronize"
+onboarding-fxa-title = Eşitle
+onboarding-fxa-text = Yer imlerinizi, parolalarınızı ve açık sekmelerinizi { -brand-short-name } kullandığınız tüm cihazlarınızla eşitlemek için { -fxaccount-brand-name } açın.
+
+## Message strings belonging to the Return to AMO flow
+
+return-to-amo-sub-header = Harika! { -brand-short-name } yüklendi
+# <icon></icon> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-header = Şimdi <icon></icon><b>{ $addon-name }</b> eklentisine bir bakalım.
+return-to-amo-extension-button = Eklentiyi ekle
+return-to-amo-get-started-button = { -brand-short-name } tarayıcısını kullanmaya başla

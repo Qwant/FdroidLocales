@@ -24,8 +24,8 @@
 
 <!-- LOCALIZATION NOTE (trySearching.title): A string preceding the message's
      ID. -->
-<!ENTITY trySearching.title "Încercați să căutați articolul:">
+<!ENTITY trySearching.title "Încearcă să cauți articolul:">
 
 <!-- LOCALIZATION NOTE (removeExpiredArticles.title): The label for the button
      to remove all expired articles from the newsgroup. -->
-<!ENTITY removeExpiredArticles.title "Ștergeți toate articolele expirate">
+<!ENTITY removeExpiredArticles.title "Elimină toate articolele expirate">

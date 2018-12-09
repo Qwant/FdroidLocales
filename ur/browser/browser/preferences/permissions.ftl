@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = بلاک کریں
 permissions-capabilities-prompt =
     .label = ہمیشہ پوچھیں
+permissions-capabilities-listitem-allow =
+    .value = ہونے دیں
+permissions-capabilities-listitem-block =
+    .value = بلاک کریں
+permissions-capabilities-listitem-allow-first-party =
+    .value = صرف پہلے فریق کو اجازت دیں
+permissions-capabilities-listitem-allow-session =
+    .value = سیشن کے لیے اجازت دیں
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = استثنیات - سراغ کاری سے حفاظت
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = آپ نے ان ویب سائٹس پر ٹریکنگ کے تحفظ کو غیر فعال کردیا ہے۔
+permissions-exceptions-content-blocking-window =
+    .title = استثنیات - مواد روکنا
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = آپنے مواد روکنا غیر فعال کر دی ہے  ان ویبسیٹس کے لئے۔
 
 ## Exceptions - Cookies
 
@@ -88,33 +100,44 @@ permissions-exceptions-addons-desc = آپ اختصاص کر سکتے ہیں کہ
 permissions-exceptions-autoplay-media-window2 =
     .title = استثنیات - اوٹوپلے
     .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-desc2 = آپ اس بات کی وضاحت کر سکتے ہے کہ کون سے ویب سائٹ کو اواز کے ساتھ میڈیا خودبخد چلانے کی اجازت ہمیشہ یا کبھی بھی نھی ہے۔ آپ جس سائٹ کو منظم کرنا چاہتے ہے اس کا پتہ درج کریں اور پھر روکیں یا اجازت پر کلک کریں۔
 
 ## Site Permissions - Notifications
 
 permissions-site-notification-window =
     .title = ترتیبات - نوٹیفکیشن اجازات
     .style = { permissions-window.style }
+permissions-site-notification-desc = مندرجہ ذیل ویب سائٹ نے آپ کو اطلاعات بھیجنیں کی درخواست کی ہے۔ آپ اس بات کی وظاحت کر سکتے ہے کہ کون سے ویب سائٹ آپکو اطلاعات بھیجنیں کی اجازت رخھتے ہے۔ آپ اطلاعات کی اجازت دینے کا مطالبہ کرتی نئی درخواست کو روک بھی سکتے ہے۔
+permissions-site-notification-disable-label =
+    .label = اطلاعات کی اجازت دینے کا مطالبہ کرتی نئی درخواست کو روکیں۔
+permissions-site-notification-disable-desc = یہ کسی بھی ویب سائٹ کو اطلاعات بھیجنیں کے اجازت کی درخواست کرنے سے روکتا ہے جو اوپر درج نہیں ہے۔ اطلاعات کو روکنے سے ویب سائٹ کی کچھ خوبی وقفہ ہو سکتی ہے۔
 
 ## Site Permissions - Location
 
 permissions-site-location-window =
     .title = ترتیبات- محل وقوع اجازت
     .style = { permissions-window.style }
+permissions-site-location-desc = مندرجہ ذیل ویب سائٹ نے آپکے موجودہ مقام کے رسائی کی درخواست کی ہے۔ آپ اس بات کی وظاحت کر سکتے ہے کہ کون سے ویب سائٹ آپکے موجودہ مقام کے رسائی کی اجازت رخھتے ہے۔ آپ اپنے موجودہ مقام کے رسائی کی اجازت دینے کا مطالبہ کرتی نئی درخواست کو روک بھی سکتے ہے۔
 permissions-site-location-disable-label =
     .label = آپ کے مقام تک رسائی حاصل کرنے سے متعلق نئی درخواستیں بند کریں
+permissions-site-location-disable-desc = یہ کسی بھی ویب سائٹ کو آپکے موجودہ مقام کے رسائی کی اجازت کی درخواست کرنے سے روکتا ہے جو اوپر درج نہیں ہے۔ آپکے موجودہ مقام کے رسائی کو روکنے سے ویب سائٹ کی کچھ خوبی وقفہ ہو سکتی ہے۔
 
 ## Site Permissions - Camera
 
 permissions-site-camera-window =
     .title = ترتیبات- کیمرہ اجازتیں
     .style = { permissions-window.style }
+permissions-site-camera-desc = مندرجہ ذیل ویب سائٹ نے آپکے کیمرے کے رسائی کی درخواست کی ہے۔ آپ اس بات کی وظاحت کر سکتے ہے کہ کون سے ویب سائٹ آپکے کیمرے کے رسائی کی اجازت رخھتے ہے۔ آپ اپنے کیمرے کے رسائی کی اجازت دینے کا مطالبہ کرتی نئی درخواست کو روک بھی سکتے ہے۔
 permissions-site-camera-disable-label =
     .label = اپنے کیمرے تک رسائی حاصل کرنے سے متعلق نئی درخواستیں بند کریں
+permissions-site-camera-disable-desc = یہ کسی بھی ویب سائٹ کو آپکے کیمرے کے رسائی کی اجازت کی درخواست کرنے سے روکتا ہے جو اوپر درج نہیں ہے۔ آپکے کیمرے کے رسائی کو روکنے سے ویب سائٹ کی کچھ خوبی وقفہ ہو سکتی ہے۔
 
 ## Site Permissions - Microphone
 
 permissions-site-microphone-window =
     .title = ترتیبات - مائکروفون کی اجازت
     .style = { permissions-window.style }
+permissions-site-microphone-desc = مندرجہ ذیل ویب سائٹ نے آپکے مائیکروفون کے رسائی کی درخواست کی ہے۔ آپ اس بات کی وظاحت کر سکتے ہے کہ کون سے ویب سائٹ آپکے مائیکروفون کے رسائی کی اجازت رخھتے ہے۔ آپ اپنے مائیکروفون کے رسائی کی اجازت دینے کا مطالبہ کرتی نئی درخواست کو روک بھی سکتے ہے۔
 permissions-site-microphone-disable-label =
     .label = اپنے مائیکروفون تک رسائی حاصل کرنے سے متعلق نئی درخواستیں بند کریں
+permissions-site-microphone-disable-desc = یہ کسی بھی ویب سائٹ کو آپکے مائکروفون کے رسائی کی اجازت کی درخواست کرنے سے روکتا ہے جو اوپر درج نہیں ہے۔ آپکے مائکروفون کے رسائی کو روکنے سے ویب سائٹ کی کچھ خوبی وقفہ ہو سکتی ہے۔

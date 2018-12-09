@@ -42,6 +42,14 @@ permissions-capabilities-block =
     .label = Blochează
 permissions-capabilities-prompt =
     .label = Întreabă întotdeauna
+permissions-capabilities-listitem-allow =
+    .value = Permite
+permissions-capabilities-listitem-block =
+    .value = Blochează
+permissions-capabilities-listitem-allow-first-party =
+    .value = Permite numai prima parte
+permissions-capabilities-listitem-allow-session =
+    .value = Permite pentru sesiune
 
 ## Invalid Hostname Dialog
 
@@ -54,6 +62,10 @@ permissions-exceptions-tracking-protection-window =
     .title = Excepții - Protecție împotriva urmăririi
     .style = { permissions-window.style }
 permissions-exceptions-tracking-protection-desc = Ai dezactivat protecția împotriva urmăririi pe aceste site-uri web.
+permissions-exceptions-content-blocking-window =
+    .title = Excepții - Blocare de conținut
+    .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Ai dezactivat blocarea de conținut pe aceste site-uri web.
 
 ## Exceptions - Cookies
 
@@ -74,7 +86,7 @@ permissions-exceptions-popup-desc = Poți specifica ce site-uri web au permisiun
 permissions-exceptions-saved-logins-window =
     .title = Excepții - Autentificări salvate
     .style = { permissions-window.style }
-permissions-exceptions-saved-logins-desc = Autentificările pentru următoarele site-uri web nu vor fi salvate
+permissions-exceptions-saved-logins-desc = Nu vor fi salvate autentificările pentru următoarele site-uri web
 
 ## Exceptions - Add-ons
 
@@ -107,7 +119,7 @@ permissions-site-location-window =
     .style = { permissions-window.style }
 permissions-site-location-desc = Următoarele site-uri web au solicitat să îți acceseze locația. Poți specifica ce site-uri web au permisiunea de a-ți accesa locația. De asemenea, poți bloca noile solicitări de accesare a locației tale.
 permissions-site-location-disable-label =
-    .label = Blochează noile solicitări de accesare a locației tale
+    .label = Blochează noile solicitări de accesare a locației
 permissions-site-location-disable-desc = Acest lucru va împiedica orice site web care nu este listat mai sus să ceară permisiunea de a-ți accesa locația. Blocarea accesului la locație ar putea interfera cu unele funcții ale site-urilor web.
 
 ## Site Permissions - Camera
@@ -117,7 +129,7 @@ permissions-site-camera-window =
     .style = { permissions-window.style }
 permissions-site-camera-desc = Următoarele site-uri web au solicitat să îți acceseze camera. Poți specifica ce site-uri web au permisiunea de a-ți accesa camera. De asemenea, poți bloca noile solicitări de accesare a camerei tale.
 permissions-site-camera-disable-label =
-    .label = Blochează noile solicitări de accesare a camerei tale
+    .label = Blochează noile solicitări de accesare a camerei
 permissions-site-camera-disable-desc = Acest lucru va împiedica orice site web care nu este listat mai sus să ceară permisiunea de a-ți accesa camera. Blocarea accesului la cameră ar putea interfera cu unele funcții ale site-urilor web.
 
 ## Site Permissions - Microphone
@@ -127,5 +139,5 @@ permissions-site-microphone-window =
     .style = { permissions-window.style }
 permissions-site-microphone-desc = Următoarele site-uri web au solicitat să îți acceseze microfonul. Poți specifica ce site-uri web au permisiunea de a-ți accesa microfonul. De asemenea, poți bloca noile solicitări de accesare a microfonului tău.
 permissions-site-microphone-disable-label =
-    .label = Blochează noile solicitări de accesare a microfonului tău
+    .label = Blochează noile solicitări de accesare a microfonului
 permissions-site-microphone-disable-desc = Acest lucru va împiedica orice site web care nu este listat mai sus să ceară permisiunea de a-ți accesa microfonul. Blocarea accesului la microfon ar putea interfera cu unele funcții ale site-urilor web.

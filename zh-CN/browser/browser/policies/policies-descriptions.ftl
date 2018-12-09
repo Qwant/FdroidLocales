@@ -18,6 +18,7 @@ policy-BlockAboutProfiles = 阻止访问 about:profiles 页面。
 policy-BlockAboutSupport = 阻止访问 about:support 页面。
 policy-Bookmarks = 在书签工具栏，书签菜单或特定文件夹中创建书签。
 policy-Certificates = 是否使用内置的证书。此策略目前仅适用于 Windows。
+policy-CertificatesDescription = 添加证书或使用内置的证书。
 policy-Cookies = 允许或拒绝网站设置 Cookie。
 policy-DisableAppUpdate = 阻止浏览器更新。
 policy-DisableBuiltinPDFViewer = 禁用 { -brand-short-name } 内置的 PDF 阅读器 PDF.js。
@@ -42,7 +43,7 @@ policy-DisableSystemAddonUpdate = 阻止浏览器安装或更新“系统附加�
 policy-DisableTelemetry = 关闭“遥测”组件。
 policy-DisplayBookmarksToolbar = 默认显示书签工具栏。
 policy-DisplayMenuBar = 默认显示菜单栏。
-policy-DNSOverHTTPS = 配置 DNS over HTTPS。
+policy-DNSOverHTTPS = 配置基于 HTTPS 的 DNS。
 policy-DontCheckDefaultBrowser = 禁用启动时的默认浏览器检查。
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = 启用或禁用内容拦截，并可选择锁定该功能。

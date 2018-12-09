@@ -84,6 +84,9 @@ extension-controlled-homepage-override = Ett tillägg, <img data-l10n-name="icon
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Ett tillägg, <img data-l10n-name="icon"/> { $name }, styr din sida för ny flik.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Ett tillägg, <img data-l10n-name="icon"/> { $name }, kontrollerar den här inställningen.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Ett tillägg, <img data-l10n-name="icon"/> { $name }, har ändrat din standardsökmotor.
@@ -138,6 +141,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Återställ föregående session
     .accesskey = s
+startup-restore-warn-on-quit =
+    .label = Varna när du avslutar webbläsaren
 disable-extension =
     .label = Inaktivera tillägg
 tabs-group-header = Flikar
@@ -149,6 +154,9 @@ open-new-link-as-tabs =
     .accesskey = f
 warn-on-close-multiple-tabs =
     .label = Varna när jag stänger flera flikar
+    .accesskey = f
+warn-on-quit-close-multiple-tabs =
+    .label = Varna när du avslutar och stänger flera flikar
     .accesskey = f
 warn-on-open-many-tabs =
     .label = Varna när du öppnar flera flikar kan göra { -brand-short-name } långsam
@@ -285,6 +293,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Uppdatera automatiskt sökmotorer
     .accesskey = m
+update-pref-write-failure-title = Skrivfel
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Det gick inte att spara inställningen. Kunde inte skriva till fil: { $path }
 
 ## General Section - Performance
 
@@ -324,6 +336,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Sök efter text när jag börjar skriva
     .accesskey = x
+browsing-cfr-recommendations =
+    .label = Rekommendera tillägg när du surfar
+    .accesskey = R
+browsing-cfr-recommendations-learn-more = Läs mer
 
 ## General Section - Proxy
 
@@ -524,7 +540,6 @@ privacy-header = Webbläsarintegritet
 
 ## Privacy Section - Forms
 
-forms-header = Formulär & lösenord
 logins-header = Inloggningar & lösenord
 forms-ask-to-save-logins =
     .label = Fråga för att spara inloggningar och lösenord för webbplatser
@@ -598,6 +613,9 @@ sitedata-keep-until-expire =
     .label = De förfaller
 sitedata-keep-until-closed =
     .label = { -brand-short-name } stängs
+sitedata-delete-on-close =
+    .label = Ta bort kakor och webbplatsdata när { -brand-short-name } stängs
+    .accesskey = k
 sitedata-allow-cookies-option =
     .label = Tillåt kakor och webbplatsdata
     .accesskey = T
@@ -618,6 +636,14 @@ sitedata-block-all-third-party-option =
     .label = Alla kakor från tredje part (kan orsaka fel på webbplatser)
 sitedata-block-all-option =
     .label = Alla kakor (kommer att orsaka fel på webbplatser)
+sitedata-option-block-trackers =
+    .label = Tredjeparts trackers
+sitedata-option-block-unvisited =
+    .label = Kakor från obesökta webbplatser
+sitedata-option-block-all-third-party =
+    .label = Alla tredjepartskakor (kan orsaka fel på webbplatser)
+sitedata-option-block-all =
+    .label = Alla kakor (kommer att orsaka fel på webbplatser)
 sitedata-clear =
     .label = Rensa data…
     .accesskey = R
@@ -631,6 +657,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Dina inställningar i innehållsblockering hindrar ändringar i inställningar för kakor och webbplatsdata.
+sitedata-cookies-permissions =
+    .label = Hantera behörigheter...
+    .accesskey = b
 
 ## Privacy Section - Address Bar
 
@@ -651,6 +680,7 @@ addressbar-suggestions-settings = Ändra inställningar för förslag från sök
 
 content-blocking-header = Innehållsblockering
 content-blocking-desc = Blockera innehåll från tredje part, som annonser eller kod, som kan slöa ner din webbläsning och spåra dig på webben. Anpassa dina inställningar för bästa balans mellan skydd och prestanda.
+content-blocking-description = Blockera innehåll från tredje part som spårar dig på webben. Kontrollera hur mycket av din onlineaktivitet som lagras och delas mellan webbplatser.
 content-blocking-learn-more = Läs mer
 content-blocking-restore-defaults =
     .label = Återställ standard
@@ -684,6 +714,37 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = Endast i privata fönster
     .accesskey = p
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Standard
+    .accesskey = S
+content-blocking-setting-strict =
+    .label = Strikt
+    .accesskey = S
+content-blocking-setting-custom =
+    .label = Anpassad
+    .accesskey = A
+content-blocking-standard-description = Blockera endast kända trackers i privata fönster.
+content-blocking-standard-desc = Balanserad för skydd och prestanda. Tillåter vissa trackers så att webbplatser fungerar korrekt.
+content-blocking-strict-desc = Blockerar alla trackers { -brand-short-name } detekterar. Det kan begränsa funktionaliteten hos vissa webbplatser.
+content-blocking-custom-desc = Välj vad du vill blockera.
+content-blocking-private-trackers = Kända trackers endast i privata fönster
+content-blocking-third-party-cookies = Spårningskakor från tredje part
+content-blocking-all-windows-trackers = Kända trackers i alla fönster
+content-blocking-all-third-party-cookies = Alla kakor från tredje part
+content-blocking-warning-title = Se upp!
+content-blocking-warning-desc = Att blockera kakor och trackers kan begränsa funktionaliteten hos vissa webbplatser. Det är enkelt att inaktivera blockering för webbplatser du litar på.
+content-blocking-learn-how = Lär dig hur
+content-blocking-trackers-label =
+    .label = Trackers
+    .accesskey = T
+content-blocking-tracking-protection-option-all-windows =
+    .label = I alla fönster
+    .accesskey = a
+content-blocking-option-private =
+    .label = Endast i privata fönster
+    .accesskey = p
 content-blocking-tracking-protection-change-block-list = Ändra blockeringslista
 content-blocking-third-party-cookies-label =
     .label = Kakor från tredje part
@@ -706,6 +767,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Alla kakor från tredje part (kan orsaka fel på webbplatser)
     .accesskey = A
+content-blocking-cookies-label =
+    .label = Kakor
+    .accesskey = K
 
 ## Privacy Section - Tracking
 
@@ -726,6 +790,9 @@ tracking-exceptions =
     .accesskey = n
 tracking-change-block-list =
     .label = Ändra blockeringslista…
+    .accesskey = n
+tracking-manage-exceptions =
+    .label = Hantera undantag…
     .accesskey = n
 
 ## Privacy Section - Permissions
@@ -794,6 +861,9 @@ collection-health-report-link = Läs mer
 collection-studies =
     .label = Tillåt { -brand-short-name } att installera och köra studier
 collection-studies-link = Visa { -brand-short-name }-studier
+addon-recommendations =
+    .label = Tillåt { -brand-short-name } att göra personliga utökningsrekommendationer
+addon-recommendations-link = Läs mer
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datarapportering är inaktiverad för den här byggkonfigurationen
@@ -843,3 +913,36 @@ certs-view =
 certs-devices =
     .label = Säkerhetsenheter…
     .accesskey = e
+space-alert-learn-more-button =
+    .label = Läs mer
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Öppna inställningar
+           *[other] Öppna inställningar
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] n
+           *[other] n
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } håller på att få slut på diskutrymme. Webbplatsens innehåll kanske inte visas korrekt. Du kan rensa lagrad data i Inställningar > Sekretess & säkerhet > Kakor och webbplatsdata.
+       *[other] { -brand-short-name } håller på att få slut på diskutrymme. Webbplatsens innehåll kanske inte visas korrekt. Du kan rensa lagrad data i Inställningar > Sekretess & säkerhet > Kakor och webbplatsdata.
+    }
+space-alert-under-5gb-ok-button =
+    .label = Ok, jag förstår
+    .accesskey = k
+space-alert-under-5gb-message = { -brand-short-name } håller på att få slut på diskutrymme. Webbplatsens innehåll kanske inte visas korrekt. Besök “Läs mer” för att optimera din diskanvändning för en bättre webbupplevelse.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Skrivbord
+downloads-folder-name = Filhämtningar
+choose-download-folder-title = Välj mapp för hämtade filer:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Spara filer till { $service-name }

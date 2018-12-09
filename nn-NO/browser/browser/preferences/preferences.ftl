@@ -84,6 +84,9 @@ extension-controlled-homepage-override = Ei utviding, <img data-l10n-name="icon"
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Ei utviding, <img data-l10n-name="icon"/> { $name }, styrer Ny fane-sida di.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Eit tillegg, <img data-l10n-name="icon"/> { $name }, kontrollerer denne innstillinga.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Ei utviding, <img data-l10n-name="icon"/> { $name }, har endra standardsøkjemotor.
@@ -138,6 +141,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Bygg oppatt siste programøkt
     .accesskey = B
+startup-restore-warn-on-quit =
+    .label = Åtvar når du avsluttar nettlesaren
 disable-extension =
     .label = Slå av tillegg
 tabs-group-header = Faner
@@ -149,6 +154,9 @@ open-new-link-as-tabs =
     .accesskey = l
 warn-on-close-multiple-tabs =
     .label = Åtvar meg ved attlating av fleire faner
+    .accesskey = Å
+warn-on-quit-close-multiple-tabs =
+    .label = Åtvar ved avslutting og attlating av fleire faner
     .accesskey = Å
 warn-on-open-many-tabs =
     .label = Åtvar meg når opning av mange faner samstundes kan gjere { -brand-short-name } treg
@@ -285,6 +293,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Oppdater søkjemotorar automatisk
     .accesskey = e
+update-pref-write-failure-title = Skrivfeil
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Klarte ikkje å lagre innstillinga. Kunne ikkje skrive til fila: { $path }
 
 ## General Section - Performance
 
@@ -324,6 +336,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Søk etter tekst når eg byrjar å skrive
     .accesskey = k
+browsing-cfr-recommendations =
+    .label = Tilrå tillegg når du surfar
+    .accesskey = T
+browsing-cfr-recommendations-learn-more = Les meir
 
 ## General Section - Proxy
 
@@ -524,7 +540,6 @@ privacy-header = Nettlesarpersonvern
 
 ## Privacy Section - Forms
 
-forms-header = Skjema og passord
 logins-header = Innloggingar og passord
 forms-ask-to-save-logins =
     .label = Spør om å lagre innloggingar og passord for nettsider
@@ -598,6 +613,9 @@ sitedata-keep-until-expire =
     .label = Dei går ut
 sitedata-keep-until-closed =
     .label = { -brand-short-name } er lukka
+sitedata-delete-on-close =
+    .label = Slett infokapslar og nettsidedata når { -brand-short-name } stenger
+    .accesskey = S
 sitedata-allow-cookies-option =
     .label = Tillat infokapslar og nettsidedata
     .accesskey = a
@@ -618,6 +636,14 @@ sitedata-block-all-third-party-option =
     .label = Alle tredjeparts-infokapslar (kan lage feil på nettsider)
 sitedata-block-all-option =
     .label = Alle infokapslar (vil føre til at nettstider sluttar å fungere)
+sitedata-option-block-trackers =
+    .label = Tredjeparts-sporfølgjarar
+sitedata-option-block-unvisited =
+    .label = Infokapslar frå ubesøkte nettsider
+sitedata-option-block-all-third-party =
+    .label = Alle tredjeparts infokapslar (kan føre til feil på nettsider)
+sitedata-option-block-all =
+    .label = Alle infokapslar (vil føre til feil på nettsider)
 sitedata-clear =
     .label = Tøm data…
     .accesskey = T
@@ -631,6 +657,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Innstillingane dine i Innhaldsblokkering hindrar endringar i innstillingar for Infokapslar og nettsidedata.
+sitedata-cookies-permissions =
+    .label = Handter løyve…
+    .accesskey = H
 
 ## Privacy Section - Address Bar
 
@@ -651,6 +680,7 @@ addressbar-suggestions-settings = Endre innstillingar for søkjeforslag
 
 content-blocking-header = Innhaldsblokkering
 content-blocking-desc = Blokker tredjepartsinnhald, som annonsar eller kode, som kan gjere surfinga tregare og som kan spore deg rundt på nettet. Tilpass innstillingane for best mogleg balanse mellom vern og yting.
+content-blocking-description = Blokker tredjepartsinnhald som sporar deg på nettet. Kontroller kor mykje av internett-aktiviteten din som blir lagra og delt mellom nettstadar.
 content-blocking-learn-more = Les meir
 content-blocking-restore-defaults =
     .label = Still tilbake til standard
@@ -684,6 +714,37 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = Berre i private vindauge
     .accesskey = B
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Standard
+    .accesskey = S
+content-blocking-setting-strict =
+    .label = Streng
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = Tilpassa
+    .accesskey = p
+content-blocking-standard-description = Blokker berre kjende sporfølgjarar i private faner.
+content-blocking-standard-desc = Balansert for vern og yting. Tillèt nokre sporfølgjarar slik at nettsider fungerer som dei skal.
+content-blocking-strict-desc = Blokkerer alle sporfølgjarar { -brand-short-name } oppdagar. Dette kan avgrense funksjonaliteten på nokre nettsider, eller gjere at nettsidene ikkje fungerer.
+content-blocking-custom-desc = Vell kva du vil blokkere.
+content-blocking-private-trackers = Kjende sporfølgjarar berre i Private vindauge
+content-blocking-third-party-cookies = Tredjeparts sporingsinfokapslar
+content-blocking-all-windows-trackers = Kjende sporfølgjarar i alle vindauge
+content-blocking-all-third-party-cookies = Alle tredjeparts infokapslar
+content-blocking-warning-title = Sjå opp!
+content-blocking-warning-desc = Blokkering av infokapslar og sporfølgjarar kan føre til at nokre nettsider sluttar å fungere. Det er enkelt å deaktivere blokkering for nettsider du stolar på.
+content-blocking-learn-how = Finn ut korleis
+content-blocking-trackers-label =
+    .label = Sporfølgjarar
+    .accesskey = S
+content-blocking-tracking-protection-option-all-windows =
+    .label = I alle vindauge
+    .accesskey = I
+content-blocking-option-private =
+    .label = Berre i private vindauge
+    .accesskey = B
 content-blocking-tracking-protection-change-block-list = Endre blokkeringsliste
 content-blocking-third-party-cookies-label =
     .label = Infokapslar frå tredjepart
@@ -706,6 +767,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Alle tredjeparts infokapslar (kan føre til at nettsider sluttar å fungere)
     .accesskey = A
+content-blocking-cookies-label =
+    .label = Infokapslar
+    .accesskey = k
 
 ## Privacy Section - Tracking
 
@@ -727,6 +791,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = Endre blokkeringsliste…
     .accesskey = b
+tracking-manage-exceptions =
+    .label = Handter unntak…
+    .accesskey = H
 
 ## Privacy Section - Permissions
 
@@ -794,6 +861,7 @@ collection-health-report-link = Les meir
 collection-studies =
     .label = Tillat { -brand-short-name } å installere og køyre studium
 collection-studies-link = Vis { -brand-short-name }-studium
+addon-recommendations-link = Les meir
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Datarapportering er deaktivert for denne byggekonfigurasjonen
@@ -843,3 +911,36 @@ certs-view =
 certs-devices =
     .label = Tryggingseiningar…
     .accesskey = T
+space-alert-learn-more-button =
+    .label = Les meir
+    .accesskey = L
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Opne innstillingar
+           *[other] Opne innstillingar
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] n
+           *[other] p
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } er i ferd med å gå tom for plass på disken. Det kan hende at innhaldet på nettstaden ikkje vert vist skikkeleg. Du kan tøme lagra data i Innstillingar > Personern og sikkerheit > Infokapslar og nettstedsdata.
+       *[other] { -brand-short-name } er i ferd med å gå tom for plass på disken. Det kan hende at innhaldet på nettstaden ikkje vert vist skikkeleg. Du kan tøme lagra data i Innstillingar > Personern og sikkerheit > Infokapslar og nettstaddata.
+    }
+space-alert-under-5gb-ok-button =
+    .label = OK, eg forstår det
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } er i ferd med å gå tom for diskplass. Det kan vere at nettinnhaldet på sida ikkje vert vist korrekt. Gå til «Les meir» for å optimere diskbruken din for ei betre nettlesaroppleving.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Skrivebord
+downloads-folder-name = Nedlastingar
+choose-download-folder-title = Vel nedlastingsmappe:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Lagre filer til { $service-name }

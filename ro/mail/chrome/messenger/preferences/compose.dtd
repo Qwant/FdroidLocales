@@ -8,9 +8,9 @@
 
 <!ENTITY dialogCompose.title                 "Compunere">
 
-<!ENTITY forwardMsg.label                     "Înaintează mesajele:">
+<!ENTITY forwardMsg.label                     "Redirecționează mesajele:">
 <!ENTITY forwardMsg.accesskey                 "n">
-<!ENTITY inline.label                         "Mesaj inclus">
+<!ENTITY inline.label                         "Inclus">
 <!ENTITY asAttachment.label                   "Ca atașament">
 <!ENTITY addExtension.label                   "adaugă extensia la numele fișierului">
 <!ENTITY addExtension.accesskey               "f">
@@ -20,6 +20,10 @@
 <!ENTITY font.accesskey                       "n">
 <!ENTITY size.label                           "Mărime:">
 <!ENTITY size.accesskey                       "M">
+<!ENTITY fontSize.label                       "Mărime:">
+<!ENTITY fontSize.accesskey                   "z">
+<!ENTITY useReaderDefaults.label              "Folosește culorile implicite ale cititorului">
+<!ENTITY useReaderDefaults.accesskey          "d">
 <!ENTITY fontColor.label                      "Culoare text:">
 <!ENTITY fontColor.accesskey                  "x">
 <!ENTITY bgColor.label                        "Culoare fundal:">
@@ -31,7 +35,7 @@
 
 <!ENTITY spellCheck.label                     "Verifică ortografia înainte de a trimite">
 <!ENTITY spellCheck.accesskey                 "c">
-<!ENTITY spellCheckInline.label               "Activează verificarea ortografiei în timpul tastării">
+<!ENTITY spellCheckInline.label               "Activează corectarea ortografică în timpul scrierii">
 <!ENTITY spellCheckInline1.accesskey          "n">
 <!ENTITY languagePopup.label                  "Limba:">
 <!ENTITY languagePopup.accessKey              "L">
@@ -46,7 +50,7 @@
 <!ENTITY emailCollectionPicker.label           "Adaugă automat adresele de e-mail din mesajele trimise la:">
 <!ENTITY emailCollectionPicker.accesskey       "a">
 <!ENTITY addressingTitle.label                 "Completarea automată a adresei">
-<!ENTITY autocompleteText.label                "Când se scrie destinatarul, caută potriviri în:">
+<!ENTITY autocompleteText.label                "La introducerea adresei destinatarului, caută rezultate corespondente în:">
 <!ENTITY addressingEnable.label                "Agende locale de contacte">
 <!ENTITY addressingEnable.accesskey            "A">
 <!ENTITY directories.label                     "Server de directoare:">

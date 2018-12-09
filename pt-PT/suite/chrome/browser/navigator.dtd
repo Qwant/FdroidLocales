@@ -69,7 +69,7 @@
 
 <!ENTITY bookmarksButton.label        "Marcadores">
 <!ENTITY bookmarksButton.tooltip      "Lista de marcadores">
-<!ENTITY homeButton.label             "Página inicial">
+<!ENTITY homeButton.label             "Início">
 <!ENTITY bookmarksToolbarItem.label   "Itens da barra de ferramentas marcadores">
 <!ENTITY bookmarksToolbarChevron.tooltip "Mostrar mais marcadores">
 
@@ -84,3 +84,6 @@
 <!ENTITY viewCertificate.accesskey   "c">
 <!ENTITY viewCertManager.label       "Abrir gestor de certificados">
 <!ENTITY viewCertManager.accesskey   "g">
+
+<!ENTITY zoomIn.tooltiptext          "Maior">
+<!ENTITY zoomOut.tooltiptext         "Menor">

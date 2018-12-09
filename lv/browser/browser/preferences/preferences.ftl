@@ -84,6 +84,9 @@ extension-controlled-homepage-override = Paplašinājums <img data-l10n-name="ic
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Paplašinājums <img data-l10n-name="icon"/> { $name } kontrolē jūsu jaunas cilnes lapu.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Šo iestatījumu kontrolē paplašinājums <img data-l10n-name = "icon" /> { $name }.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Paplašinājums <img data-l10n-name="icon"/> { $name } ir nomainījis noklusēto meklētāju.
@@ -148,6 +151,9 @@ open-new-link-as-tabs =
     .label = Vērt saites cilnēs nevis jaunos logos
     .accesskey = v
 warn-on-close-multiple-tabs =
+    .label = Brīdināt, pirms aizvērt vairākas cilnes
+    .accesskey = m
+warn-on-quit-close-multiple-tabs =
     .label = Brīdināt, pirms aizvērt vairākas cilnes
     .accesskey = m
 warn-on-open-many-tabs =
@@ -288,6 +294,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Automātiski atjaunināt meklētājus
     .accesskey = e
+update-pref-write-failure-title = Rakstīšanas neveiksme
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Nevar saglabāt preferenci. Nevarēja rakstīt failā: { $path }
 
 ## General Section - Performance
 
@@ -327,6 +337,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Meklēt rakstīto tekstu, kolīdz es sāku rakstīt
     .accesskey = m
+browsing-cfr-recommendations =
+    .label = Ieteikt papildinājumus pārlūkojot
+    .accesskey = r
+browsing-cfr-recommendations-learn-more = Uzzināt vairāk
 
 ## General Section - Proxy
 
@@ -601,6 +615,9 @@ sitedata-keep-until-expire =
     .label = Derīguma termiņš
 sitedata-keep-until-closed =
     .label = { -brand-short-name } ir aizvērta
+sitedata-delete-on-close =
+    .label = Dzēst sīkfailus un vietnes datus, kad { -brand-short-name } ir aizvērts
+    .accesskey = D
 sitedata-allow-cookies-option =
     .label = Pieņemt sīkdatnes un lapu datus
     .accesskey = a
@@ -634,6 +651,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Jūsu satura bloķēšanas iestatījumi liedz veikt sīkdatņu un lapu datu iestatījumu izmainas.
+sitedata-cookies-permissions =
+    .label = Pārvaldīt atļaujas...
+    .accesskey = P
 
 ## Privacy Section - Address Bar
 
@@ -654,6 +674,7 @@ addressbar-suggestions-settings = Izmainiet meklētāju iestatījumus
 
 content-blocking-header = Satura bloķēšana
 content-blocking-desc = Bloķējiet trešo pušu saturu, piemēram reklāmas vai kodu, kas ļauj jūs izsekot internetā. Pielāgojiet iestatījumus vēlamai veiktspējai un privātumam.
+content-blocking-description = Bloķējiet trešās puses saturu, kas izseko jums tīmeklī. Kontrolējiet, cik liela daļa no jūsu tiešsaistes darbībām tiek glabāta un kopīgota starp vietnēm.
 content-blocking-learn-more = Uzzināt vairāk
 content-blocking-restore-defaults =
     .label = Atjaunot sākotnējos
@@ -674,6 +695,25 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = Izsekotājus, kas lādējas lēnu
     .accesskey = s
 content-blocking-fastblock-new-description = Bloķēt tikai sekotājus, kas neļauj lapām ielādēties ātri.
+content-blocking-setting-standard =
+    .label = Standarta
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = Strikts
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = Pielāgots
+    .accesskey = P
+content-blocking-standard-desc = Līdzsvarots aizsardzībai un veiktspējai. Ļauj dažiem izsekotājiem strādāt, lai vietnes darbojas pareizi.
+content-blocking-strict-desc = Bloķē visus izsekotājus, ko { -brand-short-name } atrod. Dažas lapas var nestrādāt.
+content-blocking-custom-desc = Izvēlies, ko bloķēt.
+content-blocking-private-trackers = Pazīstamos izsekotājus tikai privātajā logā
+content-blocking-third-party-cookies = Trešo pušu izsekošanas sīkfailus
+content-blocking-all-windows-trackers = Pazīstamos izsekotājus visos logos
+content-blocking-all-third-party-cookies = Visus trešo personu sīkfailus
+content-blocking-warning-title = Galvas augšu!
+content-blocking-warning-desc = Bloķējot sīkfailus un izsekotājus, dažas lapas var sabojāties. Varat atslēgt bloķēšanu lapās, kurām uzticaties.
+content-blocking-learn-how = Uzziniet kā
 content-blocking-tracking-protection-trackers-label =
     .label = Izsekotāji
     .accesskey = t
@@ -709,6 +749,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Visas trešo pušu sīkdatnes (dažas lapas var saplīst)
     .accesskey = a
+content-blocking-cookies-label =
+    .label = Sīkdatnes
+    .accesskey = S
 
 ## Privacy Section - Tracking
 
@@ -730,6 +773,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = Mainīt bloķēto sarakstu…
     .accesskey = M
+tracking-manage-exceptions =
+    .label = Pārvaldīt izņēmumus ...
+    .accesskey = d
 
 ## Privacy Section - Permissions
 
@@ -846,3 +892,36 @@ certs-view =
 certs-devices =
     .label = Drošības ierīces…
     .accesskey = D
+space-alert-learn-more-button =
+    .label = Uzzināt vairāk
+    .accesskey = U
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Atvērt iestatījumus
+           *[other] Atvērt iestatījumus
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] R
+           *[other] t
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } beidzas brīvā vieta. Mājas lapu dati var neattēloties korekti. Saglabātos datus varat notīrīt Iestatījumi > Privātums un drošība > Sīkdatnes un kešatmiņa.
+       *[other] { -brand-short-name } beidzas brīvā vieta. Mājas lapu dati var neattēloties korekti. Saglabātos datus varat notīrīt Iestatījumi > Privātums un drošība > Sīkdatnes un kešatmiņa.
+    }
+space-alert-under-5gb-ok-button =
+    .label = Labi, sapratu
+    .accesskey = L
+space-alert-under-5gb-message = { -brand-short-name } nepietiek vietas diskā. Lapu saturs var tikt nekorekti attēlots. Apmeklējiet “Uzzināt vairāk”, lai optimizētu diska izmantošanu.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Darbvirsma
+downloads-folder-name = Lejupielādes
+choose-download-folder-title = Izvēlieties lejupielāžu mapi:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Saglabāt failus { $service-name }

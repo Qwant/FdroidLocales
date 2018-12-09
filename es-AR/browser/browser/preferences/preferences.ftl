@@ -84,6 +84,9 @@ extension-controlled-homepage-override = La extensión <img data-l10n-name="icon
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Una extensión, <img data-l10n-name="icon"/> { $name }, controla la página de pestaña nueva.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Una extensión, <img data-l10n-name="icon"/> { $name }, está controlando esta configuración.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Una extensión, <img data-l10n-name="icon"/> { $name }, ha cambiado el buscador predeterminado.
@@ -138,6 +141,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Restaurar sesión previa
     .accesskey = s
+startup-restore-warn-on-quit =
+    .label = Avisarle cuando salgas del navegador.
 disable-extension =
     .label = Deshabilitar extensión
 tabs-group-header = Pestañas
@@ -149,6 +154,9 @@ open-new-link-as-tabs =
     .accesskey = b
 warn-on-close-multiple-tabs =
     .label = Avisarme cuando cierre múltiples pestañas
+    .accesskey = m
+warn-on-quit-close-multiple-tabs =
+    .label = Avisarme cuando salga y cierre múltiples pestañas
     .accesskey = m
 warn-on-open-many-tabs =
     .label = Avisarme cuando abrir múltiples pestañas pueda hacer más lento a { -brand-short-name }
@@ -285,6 +293,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Actualizar automáticamente los buscadores
     .accesskey = e
+update-pref-write-failure-title = Fallo de escritura
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = No se puede guardar la preferencia. No se pudo escribir en el archivo: { $path }
 
 ## General Section - Performance
 
@@ -324,6 +336,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Buscar texto al empezar a escribir
     .accesskey = x
+browsing-cfr-recommendations =
+    .label = Recomendar extensiones mientras se navega
+    .accesskey = R
+browsing-cfr-recommendations-learn-more = Conocer más
 
 ## General Section - Proxy
 
@@ -524,7 +540,6 @@ privacy-header = Privacidad del navegador
 
 ## Privacy Section - Forms
 
-forms-header = Formularios y contraseñas
 logins-header = Inicios de sesión y contraseñas
 forms-ask-to-save-logins =
     .label = Preguntar acerca de guardar inicios de sesión y contraseñas para los sitios web
@@ -598,6 +613,9 @@ sitedata-keep-until-expire =
     .label = Expiran
 sitedata-keep-until-closed =
     .label = { -brand-short-name } está cerrado
+sitedata-delete-on-close =
+    .label = Eliminar cookies y datos del sitio cuando se cierra { -brand-short-name }
+    .accesskey = c
 sitedata-allow-cookies-option =
     .label = Aceptar cookies y datos del sitio
     .accesskey = A
@@ -618,6 +636,14 @@ sitedata-block-all-third-party-option =
     .label = Todas las cookies de terceros (puede causar errores en los sitios web)
 sitedata-block-all-option =
     .label = Todas las cookies (causará errores en los sitios web)
+sitedata-option-block-trackers =
+    .label = Rastreadores de terceros
+sitedata-option-block-unvisited =
+    .label = Cookies de sitios web no visitados
+sitedata-option-block-all-third-party =
+    .label = Todas las cookies de terceros (puede causar fallas en los sitios web)
+sitedata-option-block-all =
+    .label = Todas las cookies (hará que fallen los sitios web)
 sitedata-clear =
     .label = Limpiar datos…
     .accesskey = L
@@ -631,6 +657,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Sus configuraciones en el Bloqueo de contenido están impidiendo el cambio de las configuraciones de las cookies y datos del sitio.
+sitedata-cookies-permissions =
+    .label = Administrar permisos…
+    .accesskey = P
 
 ## Privacy Section - Address Bar
 
@@ -651,6 +680,7 @@ addressbar-suggestions-settings = Cambiar preferencias para sugerencias de busca
 
 content-blocking-header = Bloqueo de contenido
 content-blocking-desc = Bloquear contenido de terceros como publicidades o código que puedan lentificar su navegación y rastrearlo por la web. Personalice su configuración para lograr el mejor equilibrio entre protección y rendimiento.
+content-blocking-description = Bloquea el contenido de terceros que lo rastrea en la web. Controle cuánto de su actividad en línea se almacena y comparte entre sitios web.
 content-blocking-learn-more = Conocer más
 content-blocking-restore-defaults =
     .label = Restaurar predeterminados
@@ -684,6 +714,37 @@ content-blocking-tracking-protection-option-always =
 content-blocking-tracking-protection-option-private =
     .label = Solo en ventanas privadas
     .accesskey = p
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
+content-blocking-setting-standard =
+    .label = Estándar
+    .accesskey = d
+content-blocking-setting-strict =
+    .label = Estricto
+    .accesskey = r
+content-blocking-setting-custom =
+    .label = Personalizado
+    .accesskey = C
+content-blocking-standard-description = Sólo bloquea rastreadores conocidos en pestañas privadas.
+content-blocking-standard-desc = Equilibrado para la protección y el rendimiento. Permite algunos rastreadores para que los sitios web funcionen correctamente.
+content-blocking-strict-desc = Bloquea todos los rastreadores detectados por { -brand-short-name }. Puede causar que algunos sitios fallen.
+content-blocking-custom-desc = Elegir qué bloquear
+content-blocking-private-trackers = Rastreadores conocidos solo en Ventanas privadas
+content-blocking-third-party-cookies = Cookies de rastreo de terceros
+content-blocking-all-windows-trackers = Rastreadores conocidos en todas las ventanas.
+content-blocking-all-third-party-cookies = Todas las cookies de terceros
+content-blocking-warning-title = ¡Atención!
+content-blocking-warning-desc = El bloqueo de cookies y rastreadores puede causar que algunos sitios web fallen. Es fácil deshabilitar el bloqueo para sitios en los que confía.
+content-blocking-learn-how = Aprender como
+content-blocking-trackers-label =
+    .label = Rastreadores
+    .accesskey = T
+content-blocking-tracking-protection-option-all-windows =
+    .label = En todas las ventanas
+    .accesskey = A
+content-blocking-option-private =
+    .label = Solo en ventanas privadas
+    .accesskey = P
 content-blocking-tracking-protection-change-block-list = Cambiar la lista de bloqueo
 content-blocking-third-party-cookies-label =
     .label = Cookies de terceros
@@ -706,6 +767,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Todas las cookies de terceros (puede causar errores en los sitios web)
     .accesskey = A
+content-blocking-cookies-label =
+    .label = Cookies
+    .accesskey = C
 
 ## Privacy Section - Tracking
 
@@ -727,6 +791,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = Cambiar lista de bloqueo…
     .accesskey = C
+tracking-manage-exceptions =
+    .label = Administrar excepciones ...
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -794,6 +861,9 @@ collection-health-report-link = Conocer más
 collection-studies =
     .label = Permitir { -brand-short-name } para instalar y ejecutar estudios
 collection-studies-link = Ver los estudios { -brand-short-name }
+addon-recommendations =
+    .label = Permitir que { -brand-short-name } haga recomendaciones de extensiones personalizadas
+addon-recommendations-link = Conocer más
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = La información de datos está deshabilitado para esta configuración de compilación
@@ -843,3 +913,36 @@ certs-view =
 certs-devices =
     .label = Dispositivos de seguridad…
     .accesskey = D
+space-alert-learn-more-button =
+    .label = Conocer más
+    .accesskey = m
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Abrir opciones
+           *[other] Abrir preferencias
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] O
+           *[other] p
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } se está quedando sin espacio en el disco. Puede que los contenidos de los sitios web no se muestren adecuadamente. Puede eliminar los datos almacenados en Opciones > Privacidad y seguridad > Cookies y Datos del sitio.
+       *[other] { -brand-short-name } se está quedando sin espacio en el disco. Puede que los contenidos de los sitios web no se muestren adecuadamente. Puede eliminar los datos almacenados en Preferencias > Privacidad y seguridad > Cookies y Datos del sitio.
+    }
+space-alert-under-5gb-ok-button =
+    .label = Perfecto, lo entiendo
+    .accesskey = P
+space-alert-under-5gb-message = { -brand-short-name } se está quedando sin espacio en disco. Contenidos del sitio web pueden no mostrarse correctamente. Ver “Conocer más” para optimizar el uso del disco para una mejor experiencia de navegación.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Escritorio
+downloads-folder-name = Descargas
+choose-download-folder-title = Elegir carpeta para descargas:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Guardar archivos en { $service-name }

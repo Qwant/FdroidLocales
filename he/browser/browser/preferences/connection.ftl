@@ -73,3 +73,7 @@ connection-dns-over-https =
 connection-dns-over-https-url = כתובת
     .accesskey = כ
     .tooltiptext = כתובת לפתירת DNS על גבי HTTPS
+connection-dns-over-https-url-custom =
+    .label = התאמה אישית
+    .accesskey = א
+    .tooltiptext = נא להקליד את הכתובת המועדפת עליך לפתרון DNS על גבי HTTPS

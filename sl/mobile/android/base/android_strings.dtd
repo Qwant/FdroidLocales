@@ -291,6 +291,18 @@
      Similar to the already existing "pref_whats_new_notification_summary"-->
 <!ENTITY pref_feature_tips_notification_summary "Več o uporabi &brandShortName;a in drugih izdelkih organizacije &vendorShortName;">
 
+<!-- Localization note (pref_feature_tips_notification_enabling_hint):
+     Describe the action the user should do to enable this preference
+     Will be used in the context "<Turn on> ... to enable this feature" -->
+<!ENTITY pref_feature_tips_notification_enabling_hint "Vklopi">
+
+<!-- Localization note (pref_feature_tips_notification_enabling_path):
+     Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
+<!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
+<!-- Localization note (pref_feature_tips_notification_enabling_hint):
+     Describe the action the user should do to enable this preference. -->
+<!ENTITY pref_feature_tips_notification_enabling_hint2 "(Če želite omogočiti to možnost, mora biti &pref_feature_tips_notification_enabling_path; že omogočen.)">
+
 <!-- Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
      for experimental features. -->
 <!ENTITY pref_category_experimental "Eksperimentalne funkcije">
@@ -396,7 +408,7 @@
 
 <!ENTITY pref_default_browser "Nastavi kot privzeti brskalnik">
 <!ENTITY pref_default_browser_mozilla_support_tablet "Obišičite Mozillino podporo">
-<!ENTITY pref_about_firefox "O &brandShortName;u">
+<!ENTITY pref_about_firefox "O aplikaciji &brandShortName;">
 <!ENTITY pref_vendor_faqs "Pogosta vprašanja">
 <!ENTITY pref_vendor_feedback "Sporočite nam svoje mnenje">
 
@@ -540,7 +552,7 @@
 <!-- Localization note (pref_scroll_title_bar2): Label for setting that controls
      whether or not the dynamic toolbar is enabled. -->
 <!ENTITY pref_scroll_title_bar2 "Celozaslonsko brskanje">
-<!ENTITY pref_scroll_title_bar_summary2 "Med pomikanjem po strani navzdol skrij &brandShortName;ovo orodno vrstico">
+<!ENTITY pref_scroll_title_bar_summary2 "Med pomikanjem po strani navzdol skrij orodno vrstico aplikacije &brandShortName;">
 
 <!ENTITY pref_tab_queue_title3 "Čakalna vrsta zavihkov">
 <!ENTITY pref_tab_queue_summary4 "Shranite povezave, dokler naslednjič odprete &brandShortName;">
@@ -896,11 +908,17 @@ Picture-in-picture mini window -->
 
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel "&brandShortName;">
+
+<!-- Notification channels names -->
+<!ENTITY default_notification_channel2 "Brskalnik">
 <!ENTITY mls_notification_channel "Lokacijske storitve &vendorShortName;">
 <!ENTITY download_notification_channel "Prenosi">
 <!ENTITY media_notification_channel "Predvajanje predstavnosti">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
 <!ENTITY leanplum_default_notifications_channel "Potisna obvestila &brandShortName;a">
+<!ENTITY media_notification_channel2 "Zvok in video">
+<!-- These push notifications come without a specific channel and/or name from Leanplum -->
+<!ENTITY leanplum_default_notifications_channel2 "Nasveti in triki &vendorShortName;a">
 <!ENTITY updater_notification_channel "Posodobitve aplikacije">
 <!ENTITY synced_tabs_notification_channel "Sinhronizirani zavihki">
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by

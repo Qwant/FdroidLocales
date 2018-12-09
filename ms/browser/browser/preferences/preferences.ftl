@@ -84,6 +84,9 @@ extension-controlled-homepage-override = Ekstensi, <img data-l10n-name="icon"/> 
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Ekstensi, <img data-l10n-name="icon"/> { $name }, mengawal halaman Tab Baru anda.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = Ekstensi, <img data-l10n-name="icon"/> { $name } mengawal tetapan ini.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Ekstensi, <img data-l10n-name="icon"/> { $name }, telah menetapkan enjin carian piawai anda.
@@ -95,7 +98,7 @@ extension-controlled-privacy-containers = Ekstensi <img data-l10n-name="icon"/> 
 extension-controlled-websites-tracking-protection-mode = Ekstensi, <img data-l10n-name="icon"/> { $name }, mengawal perlindungan penjejakan.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Ekstensi, <img data-l10n-name="icon"/> { $name }, mengawal tetapan ini.
+extension-controlled-websites-content-blocking-all-trackers = Ekstensi, <img data-l10n-name="icon"/> { $name } mengawal tetapan ini.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Ekstensi, <img data-l10n-name="icon"/> { $name }, mengawal cara { -brand-short-name } menyambung ke internet.
@@ -149,6 +152,9 @@ open-new-link-as-tabs =
     .accesskey = t
 warn-on-close-multiple-tabs =
     .label = Beri amaran apabila menutup berbilang tab
+    .accesskey = B
+warn-on-quit-close-multiple-tabs =
+    .label = Beri amaran apabila keluar dan menutup bebilang tab
     .accesskey = B
 warn-on-open-many-tabs =
     .label = Beri amaran apabila membuka berbilang tab yang mungkin memperlahankan { -brand-short-name }
@@ -273,6 +279,10 @@ update-application-use-service =
 update-enable-search-update =
     .label = Kemaskini enjin carian secara automatik
     .accesskey = e
+update-pref-write-failure-title = Gagal Menulis
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Tidak dapat menyimpan keutamaan. Tidak dapat menulis ke fail: { $path }
 
 ## General Section - Performance
 
@@ -312,6 +322,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Cari teks sebaik sahaja anda mula menaip
     .accesskey = e
+browsing-cfr-recommendations =
+    .label = Cadangkan ekstensi semasa melayar
+    .accesskey = C
+browsing-cfr-recommendations-learn-more = Ketahui Selanjutnya
 
 ## General Section - Proxy
 
@@ -586,6 +600,9 @@ sitedata-keep-until-expire =
     .label = Sudah luput
 sitedata-keep-until-closed =
     .label = { -brand-short-name } ditutup
+sitedata-delete-on-close =
+    .label = Buang kuki dan data laman apabila { -brand-short-name } ditutup
+    .accesskey = k
 sitedata-allow-cookies-option =
     .label = Terima kuki dan data laman
     .accesskey = T
@@ -619,6 +636,9 @@ sitedata-cookies-exceptions =
 # in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
 # Cookies and Site Data section.
 sitedata-warning-your-settings-prevent-changes = Tetapan dalam Sekatan Kandungan menghalang perubahan kepada Tetapan Kuki dan Data Laman.
+sitedata-cookies-permissions =
+    .label = Urus Keizinan
+    .accesskey = U
 
 ## Privacy Section - Address Bar
 
@@ -639,6 +659,7 @@ addressbar-suggestions-settings = Tukar keutamaan bagi cadangan enjin carian
 
 content-blocking-header = Sekatan Kandungan
 content-blocking-desc = Sekat kandungan pihak ketiga seperti iklan atau kod yang boleh melambatkan pelayaran dan menjejaki anda di seluruh web. Sesuaikan tetapan untuk mendapatkan imbangan perlindungan dan prestasi yang terbaik.
+content-blocking-description = Sekat kandungan pihak ketiga yang menjejaki anda di seluruh web. Kawal bilangan aktiviti atas talian anda yang disimpan dan dikongsi di antara laman web.
 content-blocking-learn-more = Ketahui selanjutnya
 content-blocking-restore-defaults =
     .label = Pulih Piawai
@@ -659,6 +680,24 @@ content-blocking-fastblock-slow-loading-trackers-label =
     .label = Penjejak Pemuatan-Lambat
     .accesskey = L
 content-blocking-fastblock-new-description = Cuma sekat penjejak yang membuatkan halaman tidak dimuatkan dengan cepat.
+content-blocking-setting-standard =
+    .label = Piawai
+    .accesskey = i
+content-blocking-setting-strict =
+    .label = Rapi
+    .accesskey = p
+content-blocking-setting-custom =
+    .label = Penyesuaian
+    .accesskey = P
+content-blocking-standard-desc = Seimbang untuk perlindungan dan prestasi. Mengizinkan beberapa penjejak supaya laman web berfungsi dengan betul.
+content-blocking-strict-desc = Sekat semua penjejak yang dikesan { -brand-short-name }. Boleh menyebabkan beberapa laman pecah.
+content-blocking-custom-desc = Pilih apa yang hendak disekat.
+content-blocking-private-trackers = Penjejak yang diketahui sahaja dalam Private Windows
+content-blocking-third-party-cookies = Kuki penjejakan pihak ketiga
+content-blocking-all-windows-trackers = Penjejak yang diketahui dalam semua tetingkap
+content-blocking-all-third-party-cookies = Semua kuki pihak ketiga
+content-blocking-warning-desc = Menyekat kuki dan penjejak boleh menyebabkan sesetengah laman web pecah. Sangat mudah untuk menyahaktifkan sekatan laman yang anda percayai.
+content-blocking-learn-how = Ketahui caranya
 content-blocking-tracking-protection-trackers-label =
     .label = Penjejak
     .accesskey = P
@@ -694,6 +733,9 @@ content-blocking-reject-trackers-block-trackers-option =
 content-blocking-reject-trackers-all-third-parties-option =
     .label = Semua kuki pihak ketiga (boleh menyebabkan laman web pecah)
     .accesskey = S
+content-blocking-cookies-label =
+    .label = Kuki
+    .accesskey = K
 
 ## Privacy Section - Tracking
 
@@ -715,6 +757,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = Tukar Senarai Sekatan…
     .accesskey = T
+tracking-manage-exceptions =
+    .label = Urus Pengecualian ...
+    .accesskey = c
 
 ## Privacy Section - Permissions
 
@@ -831,3 +876,36 @@ certs-view =
 certs-devices =
     .label = Peranti Keselamatan…
     .accesskey = P
+space-alert-learn-more-button =
+    .label = Ketahui Selanjutnya
+    .accesskey = K
+space-alert-over-5gb-pref-button =
+    .label =
+        { PLATFORM() ->
+            [windows] Buka Pilihan
+           *[other] Buka Keutamaan
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] B
+           *[other] B
+        }
+space-alert-over-5gb-message =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } sedang kehabisan ruang cakera. Kandungan laman web mungkin tidak dipaparkan dengan betul. Anda boleh mengosongkan data laman yang disimpan dalam Pilihan > Privasi & Keselamatan > Kuki dan Data Laman.
+       *[other] { -brand-short-name } sedang kehabisan ruang cakera. Kandungan laman web mungkin tidak dipaparkan dengan betul. Anda boleh mengosongkan data laman yang disimpan dalam Keutamaan > Privasi & Keselamatan > Kuki dan Data Laman.
+    }
+space-alert-under-5gb-ok-button =
+    .label = OK, Faham
+    .accesskey = K
+space-alert-under-5gb-message = { -brand-short-name } sedang kehabisan ruang cakera. Kandungan laman web mungkin tidak dipaparkan dengan betul. Lawati "Selanjutnya" untuk mengoptimumkan penggunaan cakera anda untuk pengalaman melayar yang lebih baik.
+
+## The following strings are used in the Download section of settings
+
+desktop-folder-name = Desktop
+downloads-folder-name = Muat turun
+choose-download-folder-title = Pilih Folder Muat turun:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = Simpan fail ke { $service-name }

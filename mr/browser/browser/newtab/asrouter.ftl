@@ -2,12 +2,17 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+cfr-doorhanger-extension-heading = शिफारस केलेले विस्तार
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = मला हे का दिसत आहे
 cfr-doorhanger-extension-cancel-button = आत्ता नाही
     .accesskey = N
 cfr-doorhanger-extension-ok-button = आत्ताच जोडा
     .accesskey = A
+cfr-doorhanger-extension-manage-settings-button = शिफारशी सेटिंग्ज व्यवस्थापित करा
+    .accesskey = M
+cfr-doorhanger-extension-never-show-recommendation = मला ही शिफारस दर्शवू नका
+    .accesskey = S
 cfr-doorhanger-extension-learn-more-link = अधिक जाणा
 # This string is used on a new line below the add-on name
 # Variables:
