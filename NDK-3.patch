@@ -1,0 +1,65 @@
+# HG changeset patch
+# User Matías Zúñiga <matias.nicolas.zc@gmail.com>
+# Date 1548383579 10800
+#      Fri Jan 25 00:00:00 2019 +0000
+# Node ID c82d910e5155a9b344c50ffac24a88425b0fa32f
+# Parent  e97d97b09eae084722aae411fbeafb9e37e1dd73
+Fennec: Fix build with llvm unified toolchain
+
+When setting the new NDK r19  toolchain location with --with-android-toolchain,
+build fails because of missing libraries. Also, the gcc headers dont exist.
+
+diff -r c68511bec12c -r c82d910e5155 build/autoconf/android.m4
+--- a/build/autoconf/android.m4	Fri Jan 25 00:00:00 2019 +0000
++++ b/build/autoconf/android.m4	Fri Jan 25 00:00:00 2019 +0000
+@@ -12,7 +12,8 @@
+ 
+     # clang will do any number of interesting things with host tools unless we tell
+     # it to use the NDK tools.
+-    extra_opts="-gcc-toolchain $(dirname $(dirname $TOOLCHAIN_PREFIX))"
++    toolchain_dir="$(dirname $(dirname $TOOLCHAIN_PREFIX))"
++    extra_opts="-gcc-toolchain $toolchain_dir"
+     CPPFLAGS="$extra_opts -D__ANDROID_API__=$android_version $CPPFLAGS"
+     ASFLAGS="$extra_opts $ASFLAGS"
+     LDFLAGS="$extra_opts $LDFLAGS"
+@@ -22,6 +23,11 @@
+     CXXFLAGS="-fno-short-enums -fno-exceptions $CXXFLAGS $stlport_cppflags"
+     ASFLAGS="$directory_include_args -DANDROID $ASFLAGS"
+ 
++    toolchain_target="$(basename ${TOOLCHAIN_PREFIX%?})"
++    if test -d "$toolchain_dir/sysroot/usr/lib/$toolchain_target"; then
++        LDFLAGS="-L$toolchain_dir/sysroot/usr/lib/$toolchain_target $LDFLAGS"
++    fi
++
+     dnl Add --allow-shlib-undefined, because libGLESv2 links to an
+     dnl undefined symbol (present on the hardware, just not in the
+     dnl NDK.)
+diff -r c68511bec12c -r c82d910e5155 build/moz.configure/android-ndk.configure
+--- a/build/moz.configure/android-ndk.configure	Fri Jan 25 00:00:00 2019 +0000
++++ b/build/moz.configure/android-ndk.configure	Fri Jan 25 00:00:00 2019 +0000
+@@ -353,6 +353,12 @@
+         gcc_include = os.path.join(
+             toolchain, 'lib', 'gcc', toolchain_prefix, '4.9')
+ 
++    if isdir(gcc_include):
++        toolchain_flags += [
++            '-I%s' % os.path.join(gcc_include, 'include'),
++            '-I%s' % os.path.join(gcc_include, 'include-fixed'),
++        ]
++
+     llvm_toolchain_dir = os.path.dirname(os.path.dirname(clang))
+ 
+     clang_include = glob.glob(os.path.join(
+@@ -364,11 +370,7 @@
+     if not clang_include:
+         die("Couldn't find LLVM headers under %s" % llvm_toolchain_dir)
+ 
+-    return toolchain_flags + [
+-        '-I%s' % os.path.join(gcc_include, 'include'),
+-        '-I%s' % os.path.join(gcc_include, 'include-fixed'),
+-        '-I%s' % clang_include[0],
+-    ]
++    return toolchain_flags + ['-I%s' % clang_include[0]]
+ 
+ 
+ @depends('--with-android-googlevr-sdk', target)

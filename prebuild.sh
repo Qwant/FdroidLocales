@@ -105,3 +105,9 @@ echo 'pref("media.gmp-gmpopenh264.enabled", false);' >> mobile/android/app/mobil
 ##Disable Casting (Roku, chromecast)
 sed -i -e '/casting.enabled/d' mobile/android/app/mobile.js
 echo 'pref("browser.casting.enabled", false);' >> mobile/android/app/mobile.js
+
+## Fix build with newer NDKs
+patch -p1 <$REPO/NDK-1.patch
+patch -p1 <$REPO/NDK-2.patch
+patch -p1 <$REPO/NDK-3.patch
+#patch -p1 <$REPO/NDK-4.patch

@@ -1,0 +1,76 @@
+# HG changeset patch
+# User Matías Zúñiga <matias.nicolas.zc@gmail.com>
+# Date 1548381493 10800
+#      Fri Jan 25 00:00:00 2019 +0000
+# Node ID e97d97b09eae084722aae411fbeafb9e37e1dd73
+# Parent  42ce411bd72ef178dfcf9ac80bed1c4195e2602c
+Fennec: Fix stddef.h compile error with NDK higher than r15
+
+diff -r 42ce411bd72e -r e97d97b09eae build/moz.configure/android-ndk.configure
+--- a/build/moz.configure/android-ndk.configure	Fri Jan 25 00:00:00 2019 +0000
++++ b/build/moz.configure/android-ndk.configure	Fri Jan 25 00:00:00 2019 +0000
+@@ -316,25 +316,6 @@
+              reason='--with-android-ndk')
+ 
+ 
+-@depends(extra_toolchain_flags, android_toolchain,
+-         android_toolchain_prefix_base, '--help')
+-@imports(_from='os.path', _import='isdir')
+-def bindgen_cflags_android(toolchain_flags, toolchain, toolchain_prefix, _):
+-    if not toolchain_flags:
+-        return
+-
+-    gcc_include = os.path.join(
+-        toolchain, 'lib', 'gcc', toolchain_prefix, '4.9.x')
+-    if not isdir(gcc_include):
+-        gcc_include = os.path.join(
+-            toolchain, 'lib', 'gcc', toolchain_prefix, '4.9')
+-
+-    return toolchain_flags + [
+-        '-I%s' % os.path.join(gcc_include, 'include'),
+-        '-I%s' % os.path.join(gcc_include, 'include-fixed'),
+-    ]
+-
+-
+ @depends(host, ndk)
+ @imports(_from='os.path', _import='exists')
+ @imports(_from='os.path', _import='isdir')
+@@ -358,6 +339,38 @@
+     return clang
+ 
+ 
++@depends(extra_toolchain_flags, android_toolchain, android_clang_compiler,
++         android_toolchain_prefix_base, '--help')
++@imports(_from='os.path', _import='isdir')
++@imports('glob')
++def bindgen_cflags_android(toolchain_flags, toolchain, clang, toolchain_prefix, _):
++    if not toolchain_flags:
++        return
++
++    gcc_include = os.path.join(
++        toolchain, 'lib', 'gcc', toolchain_prefix, '4.9.x')
++    if not isdir(gcc_include):
++        gcc_include = os.path.join(
++            toolchain, 'lib', 'gcc', toolchain_prefix, '4.9')
++
++    llvm_toolchain_dir = os.path.dirname(os.path.dirname(clang))
++
++    clang_include = glob.glob(os.path.join(
++        llvm_toolchain_dir, 'lib64', 'clang', '*', 'include'))
++    if not clang_include:
++        clang_include = glob.glob(os.path.join(
++            llvm_toolchain_dir, 'lib', 'clang', '*', 'include'))
++
++    if not clang_include:
++        die("Couldn't find LLVM headers under %s" % llvm_toolchain_dir)
++
++    return toolchain_flags + [
++        '-I%s' % os.path.join(gcc_include, 'include'),
++        '-I%s' % os.path.join(gcc_include, 'include-fixed'),
++        '-I%s' % clang_include[0],
++    ]
++
++
+ @depends('--with-android-googlevr-sdk', target)
+ @checking('for GoogleVR SDK', lambda x: x.result)
+ @imports(_from='os.path', _import='exists')

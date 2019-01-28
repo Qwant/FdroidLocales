@@ -1,0 +1,134 @@
+# HG changeset patch
+# User Matías Zúñiga <matias.nicolas.zc@gmail.com>
+# Date 1548387487 10800
+#      Fri Jan 25 00:00:00 2019 +0000
+# Node ID b01231e244dfafd758610afdd117cf459a3545de
+# Parent  c82d910e5155a9b344c50ffac24a88425b0fa32f
+Switch android-toolchain default to llvm
+
+Starting with NDK r19, there is a new unified llvm toolchain, the
+previous toolchain will be removed in the future
+
+diff -r c82d910e5155 -r b01231e244df build/moz.configure/android-ndk.configure
+--- a/build/moz.configure/android-ndk.configure	Fri Jan 25 00:00:00 2019 +0000
++++ b/build/moz.configure/android-ndk.configure	Fri Jan 25 00:00:00 2019 +0000
+@@ -198,41 +198,42 @@
+ add_old_configure_assignment('android_system', android_system)
+ 
+ 
++@depends(host, ndk)
++@imports(_from='os.path', _import='isdir')
++def android_llvm_toolchain(host, ndk):
++    if not ndk:
++        return
++
++    toolchain_format = '%s/toolchains/llvm/prebuilt/%s-%s'
++    llvm_path = toolchain_format % (ndk,
++                                    host.kernel.lower(),
++                                    host.cpu)
++    if not isdir(llvm_path) and host.cpu == 'x86_64':
++        llvm_path = toolchain_format % (ndk, host.kernel.lower(), 'x86')
++
++    if not isdir(llvm_path):
++        die("Couldn't find path to LLVM toolchain at %s" % llvm_path)
++
++    return llvm_path
++
++
+-@depends(target, host, ndk, '--with-android-toolchain', '--help')
++@depends(target, host, android_llvm_toolchain,
++         '--with-android-toolchain', '--help')
+ @checking('for the Android toolchain directory', lambda x: x or 'not found')
+ @imports(_from='os.path', _import='isdir')
+ @imports(_from='mozbuild.shellutil', _import='quote')
+-def android_toolchain(target, host, ndk, toolchain, _):
+-    if not ndk:
+-        return
++def android_toolchain(target, host, llvm_path, toolchain, _):
+     if toolchain:
+         return toolchain[0]
++    if not llvm_path:
++        return
+     else:
+-        if target.cpu == 'arm' and target.endianness == 'little':
+-            target_base = 'arm-linux-androideabi'
+-        elif target.cpu == 'x86':
+-            target_base = 'x86'
+-        elif target.cpu == 'x86_64':
+-            target_base = 'x86_64'
+-        elif target.cpu == 'aarch64' and target.endianness == 'little':
+-            target_base = 'aarch64-linux-android'
++        if (target.cpu in ['x86', 'x86_64'] or
++            target.cpu in ['arm', 'aarch64'] and target.endianness == 'little'):
++            return llvm_path
+         else:
+             die('Target cpu is not supported.')
+ 
+-        toolchain_format = '%s/toolchains/%s-4.9/prebuilt/%s-%s'
+-
+-        toolchain = toolchain_format % (ndk, target_base,
+-                                        host.kernel.lower(), host.cpu)
+-        log.debug('Trying %s' % quote(toolchain))
+-        if not isdir(toolchain) and host.cpu == 'x86_64':
+-            toolchain = toolchain_format % (ndk, target_base, version,
+-                                            host.kernel.lower(), 'x86')
+-            log.debug('Trying %s' % quote(toolchain))
+-        if isdir(toolchain):
+-            return toolchain
+-        die('You have to specify --with-android-toolchain='
+-            '/path/to/ndk/toolchain.')
+-
+ 
+ set_config('ANDROID_TOOLCHAIN', android_toolchain)
+ 
+@@ -316,34 +317,25 @@
+              reason='--with-android-ndk')
+ 
+ 
+-@depends(host, ndk)
++@depends(android_llvm_toolchain)
+ @imports(_from='os.path', _import='exists')
+-@imports(_from='os.path', _import='isdir')
+-def android_clang_compiler(host, ndk):
+-    if not ndk:
++def android_clang_compiler(llvm_path):
++    if not llvm_path:
+         return
+ 
+-    llvm_path = '%s/toolchains/llvm/prebuilt/%s-%s/bin' % (ndk,
+-                                                           host.kernel.lower(),
+-                                                           host.cpu)
+-    if not isdir(llvm_path) and host.cpu == 'x86_64':
+-        llvm_path = toolchain_format % (ndk, host.kernel.lower(), 'x86')
+-
+-    if not isdir(llvm_path):
+-        die("Couldn't find path to LLVM toolchain at %s" % llvm_path)
+-
+-    clang = '%s/clang' % llvm_path
++    clang = '%s/bin/clang' % llvm_path
+     if not exists(clang):
+         die("Couln't find clang in LLVM toolchain at %s" % clang)
+ 
+     return clang
+ 
+ 
+-@depends(extra_toolchain_flags, android_toolchain, android_clang_compiler,
++@depends(extra_toolchain_flags, android_toolchain, android_llvm_toolchain,
+          android_toolchain_prefix_base, '--help')
+ @imports(_from='os.path', _import='isdir')
+ @imports('glob')
+-def bindgen_cflags_android(toolchain_flags, toolchain, clang, toolchain_prefix, _):
++def bindgen_cflags_android(toolchain_flags, toolchain, llvm_toolchain_dir,
++                           toolchain_prefix, _):
+     if not toolchain_flags:
+         return
+ 
+@@ -359,8 +351,6 @@
+             '-I%s' % os.path.join(gcc_include, 'include-fixed'),
+         ]
+ 
+-    llvm_toolchain_dir = os.path.dirname(os.path.dirname(clang))
+-
+     clang_include = glob.glob(os.path.join(
+         llvm_toolchain_dir, 'lib64', 'clang', '*', 'include'))
+     if not clang_include:

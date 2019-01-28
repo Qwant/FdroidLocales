@@ -1,0 +1,27 @@
+# HG changeset patch
+# User Matías Zúñiga <matias.nicolas.zc@gmail.com>
+# Date 1548380984 10800
+#      Fri Jan 25 00:00:00 2019 +0000
+# Node ID 42ce411bd72ef178dfcf9ac80bed1c4195e2602c
+# Parent  896611703c2b8f04f596ebcb09e612b7ab06eea3
+Fix detection of Android NDK clangs on linux
+
+Starting with NDK r15, libclang has a different name.
+
+diff -r 896611703c2b -r 42ce411bd72e build/moz.configure/bindgen.configure
+--- a/build/moz.configure/bindgen.configure	Tue Jan 22 07:34:00 2019 -0500
++++ b/build/moz.configure/bindgen.configure	Fri Jan 25 00:00:00 2019 +0000
+@@ -98,11 +98,8 @@
+             libclang_choices.append('libclang.dll')
+         libclang_choices.append('%sclang%s' % (library_name_info.dll.prefix,
+                                                library_name_info.dll.suffix))
+-        if host.kernel == 'Linux':
+-            libclang_choices.append('libclang.so.1')
+-
+-        if host.os == 'OpenBSD':
+-            libclang_choices = glob.glob(path + '/libclang.so.*.*')
++        if host.kernel == 'Linux' or host.os == 'OpenBSD':
++            libclang_choices = glob.glob(path + '/libclang.so.*')
+ 
+         # At least one of the choices must be found.
+         for choice in libclang_choices:
