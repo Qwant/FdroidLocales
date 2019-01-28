@@ -207,3 +207,17 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Sebded ileqman
     .tooltiptext = Sebded ileqman yellan di tebdart-agi
+
+## Extension shortcut management
+
+shortcuts-manage =
+    .label = Inegzumen n unasiw
+shortcuts-empty-message = Ulac inegzumen i usiɣzef-agi.
+shortcuts-no-addons = Ur ɣur-k ara ula d yiwen n usiɣzef iremden.
+shortcuts-input =
+    .placeholder = Sekcem anegzum
+shortcuts-browserAction = Rmed isiɣzaf
+shortcuts-sidebarAction = Sken/Fer agalis adisan
+shortcuts-modifier-mac = Seddu Ctrl, Alt, neɣ ⌘
+shortcuts-modifier-other = Seddu Ctrl neɣ Alt
+shortcuts-letter = Sekcem asekkil

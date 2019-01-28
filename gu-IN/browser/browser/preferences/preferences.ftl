@@ -8,6 +8,8 @@ do-not-track-option-default =
     .label = માત્ર ટ્રૅકિંગ પ્રોટેક્શનનો ઉપયોગ કરતી વખતે
 do-not-track-option-default-content-blocking =
     .label = જ્યારે { -brand-short-name } તપાસ કરેલા ટ્રેકર્સને અવરોધિત કરવા માટે સેટ કરેલું હોય ત્યારે
+do-not-track-option-default-content-blocking-known =
+    .label = જ્યારે { -brand-short-name } જાણીતા ટ્રૅકર્સને અવરોધિત કરવા માટે સેટ કરવામાં આવે છે ત્યારે જ
 do-not-track-option-always =
     .label = હંમેશા
 pref-page =
@@ -154,9 +156,6 @@ open-new-link-as-tabs =
     .accesskey = w
 warn-on-close-multiple-tabs =
     .label = તમને બહુવિધ ટેબ્સ બંધ કરતી વખતે ચેતવશે
-    .accesskey = m
-warn-on-quit-close-multiple-tabs =
-    .label = તમને બહુવિધ ટેબ્સમાંથી બહાર નીકળતી વખતે અને બંધ કરતી વખતે ચેતવશે
     .accesskey = m
 warn-on-open-many-tabs =
     .label = તમને ચેતવે છે જ્યારે ઘણી ટેબ્સ ખોલવાનું ધીમું થઈ જાય અને { -brand-short-name }
@@ -861,6 +860,8 @@ collection-health-report-link = વધુ શીખો
 collection-studies =
     .label = { -brand-short-name } અભ્યાસને ઇન્સ્ટોલ અને ચલાવવાની મંજૂરી આપો
 collection-studies-link = { -brand-short-name } અભ્યાસો જુઓ
+addon-recommendations =
+    .label = વ્યક્તિગત કરેલી એક્સ્ટેંશન ભલામણોને બનાવવા માટે { -brand-short-name } ને મંજૂરી આપો
 addon-recommendations-link = વધુ શીખો
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.

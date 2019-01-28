@@ -18,6 +18,11 @@
 <!ENTITY rememberPassword.label "Zachowaj hasło">
 <!ENTITY rememberPassword.accesskey "Z">
 
+<!ENTITY usernameEx.label "Nazwa użytkownika:">
+<!ENTITY usernameEx.accesskey "N">
+<!ENTITY usernameEx.placeholder "NAZWA-DOMENY\nazwa-użytkownika">
+<!ENTITY usernameEx.text "Nazwa użytkownika domeny">
+
 <!ENTITY imapLong.label "IMAP (zdalne foldery)">
 <!ENTITY pop3Long.label "POP3 (poczta lokalnie na komputerze)">
 <!ENTITY incoming.label "Serwer poczty przychodzącej:">
@@ -29,11 +34,13 @@
 <!ENTITY auth.label "Uwierzytelnianie">
 <!ENTITY imap.label "IMAP">
 <!ENTITY pop3.label "POP3">
+<!ENTITY exchange.label "Exchange">
 <!ENTITY smtp.label "SMTP">
 <!ENTITY autodetect.label "Wykryj">
 <!ENTITY noEncryption.label "Bez szyfrowania">
 <!ENTITY starttls.label "STARTTLS">
 <!ENTITY sslTls.label "SSL/TLS">
+<!ENTITY exchange-hostname.label "Serwer Exchange:">
 
 <!ENTITY advancedSetup.label "Utwórz konto i edytuj jego ustawienia…">
 <!ENTITY advancedSetup.accesskey "e">

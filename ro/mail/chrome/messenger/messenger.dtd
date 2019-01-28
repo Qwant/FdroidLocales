@@ -440,9 +440,6 @@
 <!ENTITY openMessageWindowCmd.label "Deschide mesajul">
 <!ENTITY openMessageWindowCmd.accesskey "D">
 <!ENTITY openMessageWindowCmd.key "O">
-<!ENTITY openConversationCmd.label "Deschide în conversație">
-<!ENTITY openConversationCmd.accesskey "s">
-<!ENTITY openConversationCmd.key "e">
 <!ENTITY openInConversationCmd.label "Deschide în conversație">
 <!ENTITY openInConversationCmd.accesskey "s">
 <!ENTITY openInConversationCmd.key "o">
@@ -583,7 +580,7 @@
 <!ENTITY newMsgButton.tooltip "Creează un mesaj nou">
 <!ENTITY replyButton.tooltip "Răspunde la acest mesaj">
 <!ENTITY replyAllButton.tooltip "Răspunde expeditorului și tuturor destinatarilor">
-<!ENTITY replyListButton.tooltip "Răspunde listei de discuții">
+<!ENTITY replyListButton.tooltip "Răspunde listei de adrese">
 <!ENTITY forwardButton.tooltip "Redirecționează mesajul selectat">
 <!ENTITY forwardAsInline.tooltip "Redirecționează mesajul selectat ca text integrat">
 <!ENTITY forwardAsAttachment.tooltip "Redirecționează mesajul selectat ca atașament">
@@ -795,6 +792,8 @@
 <!ENTITY contextMoveMsgMenu.accesskey "M">
 <!ENTITY contextMoveCopyMsgRecentMenu.label "Recente">
 <!ENTITY contextMoveCopyMsgRecentMenu.accesskey "R">
+<!ENTITY contextMoveCopyMsgFavoritesMenu.label "Favorite">
+<!ENTITY contextMoveCopyMsgFavoritesMenu.accesskey "F">
 <!ENTITY contextCopyMsgMenu.label "Copiază în">
 <!ENTITY contextCopyMsgMenu.accesskey "C">
 <!ENTITY contextKillThreadMenu.label "Ignoră conversația">

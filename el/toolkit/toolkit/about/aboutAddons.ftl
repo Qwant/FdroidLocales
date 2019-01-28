@@ -4,6 +4,9 @@
 
 addons-window =
     .title = Διαχείριση προσθέτων
+search-header =
+    .placeholder = Αναζήτηση στο addons.mozilla.org
+    .searchbuttonlabel = Αναζήτηση
 search-header-shortcut =
     .key = f
 loading-label =
@@ -21,6 +24,12 @@ list-empty-button =
 install-addon-from-file =
     .label = Εγκατάσταση πρόσθετου από αρχείο…
     .accesskey = γ
+help-button = Υποστήριξη προσθέτων
+preferences =
+    { PLATFORM() ->
+        [windows] Επιλογές { -brand-short-name }
+       *[other] Προτιμήσεις { -brand-short-name }
+    }
 tools-menu =
     .tooltiptext = Εργαλεία για όλα τα πρόσθετα
 show-unsigned-extensions-button =
@@ -203,3 +212,16 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Εγκατάσταση ενημερώσεων
     .tooltiptext = Εγκατάσταση των διαθέσιμων ενημερώσεων σε αυτή τη λίστα
+
+## Extension shortcut management
+
+shortcuts-manage =
+    .label = Συντομεύσεις πληκτρολογίου
+shortcuts-no-addons = Δεν έχετε ενεργοποιήσει καμία επέκταση.
+shortcuts-input =
+    .placeholder = Πληκτρολογήστε μια συντόμευση
+shortcuts-browserAction = Ενεργοποίηση επέκτασης
+shortcuts-modifier-mac = Συμπεριλάβετε Ctrl, Alt, ή ⌘
+shortcuts-modifier-other = Συμπεριλάβετε Ctrl ή Alt
+shortcuts-invalid = Άκυρος συνδυασμός
+shortcuts-letter = Πληκτρολογήστε ένα γράμμα

@@ -21,8 +21,6 @@
 <!-- Tab context menu -->
 <!ENTITY  reloadTab.label                    "טעינת לשונית מחדש">
 <!ENTITY  reloadTab.accesskey                "ט">
-<!ENTITY  reloadAllTabs.label                "טעינת כל הלשוניות מחדש">
-<!ENTITY  reloadAllTabs.accesskey            "ט">
 <!ENTITY  selectAllTabs.label                "בחירת כל הלשוניות">
 <!ENTITY  selectAllTabs.accesskey            "ב">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
@@ -47,9 +45,6 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "סגירת לשוניות אחרות">
 <!ENTITY  closeOtherTabs.accesskey           "ס">
 
-<!ENTITY  closeSelectedTabs.label            "סגירת לשוניות נבחרות">
-<!ENTITY  closeSelectedTabs.accesskey        "נ">
-
 <!ENTITY  closeTabs.label                    "סגירת לשוניות">
 <!ENTITY  closeTabs.accesskey                "ס">
 <!ENTITY  pinSelectedTabs.label              "הצמדת לשוניות">
@@ -62,10 +57,6 @@ same accesskey but will never be visible at the same time. -->
 unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "ב">
-<!-- Reload Tab and Reload Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
-<!ENTITY  reloadSelectedTabs.label           "טעינה מחדש של הלשוניות הנבחרות">
-<!ENTITY  reloadSelectedTabs.accesskey       "ט">
 <!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
 but will never be visible at the same time. -->
 <!ENTITY  reloadTabs.label                   "טעינת לשוניות מחדש">
@@ -90,8 +81,6 @@ same accesskey but will never be visible at the same time. -->
 unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "ב">
-<!ENTITY  sendTabToDevice.label              "שליחת לשונית להתקן">
-<!ENTITY  sendTabToDevice.accesskey          "ה">
 <!ENTITY  sendPageToDevice.label             "שליחת דף להתקן">
 <!ENTITY  sendPageToDevice.accesskey         "ה">
 <!ENTITY  sendLinkToDevice.label             "שליחת קישור להתקן">
@@ -103,15 +92,13 @@ These two items have the same accesskey but will never be visible at the same ti
 <!ENTITY  moveSelectedTabOptions.label       "העברת לשוניות">
 <!ENTITY  moveSelectedTabOptions.accesskey   "ע">
 <!ENTITY  moveToStart.label                  "העברה להתחלה">
-<!ENTITY  moveToStart.accesskey              "ה">
+<!ENTITY  moveToStart.accesskey              "ת">
 <!ENTITY  moveToEnd.label                    "העברה לסוף">
-<!ENTITY  moveToEnd.accesskey                "ף">
+<!ENTITY  moveToEnd.accesskey                "ס">
 <!ENTITY  moveToNewWindow.label              "העברה לחלון חדש">
-<!ENTITY  moveToNewWindow.accesskey          "ה">
+<!ENTITY  moveToNewWindow.accesskey          "ח">
 <!ENTITY  reopenInContainer.label            "פתיחה מחדש במגירה">
 <!ENTITY  reopenInContainer.accesskey        "פ">
-<!ENTITY  bookmarkAllTabs.label              "יצירת סימנייה לכל הלשוניות…">
-<!ENTITY  bookmarkAllTabs.accesskey          "צ">
 <!ENTITY  bookmarkTab.label                  "יצירת סימנייה ללשונית">
 <!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
 These items have the same accesskey but will never be visible at the same time. -->
@@ -123,6 +110,10 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "לשוניות מוסתרות">
 
 <!ENTITY  listAllTabs.label      "רשימת כל הלשוניות">
+
+<!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
+in "Search through tabs". -->
+<!ENTITY  allTabsMenu.searchTabs.label       "חיפוש לשוניות">
 
 <!ENTITY tabCmd.label "לשונית חדשה">
 <!ENTITY tabCmd.accesskey "ש">
@@ -153,11 +144,6 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY personalbarCmd.label "סרגל כלים סימניות">
 <!ENTITY personalbarCmd.accesskey "ס">
 <!ENTITY bookmarksToolbarItem.label "פריטי סרגל כלים סימניות">
-
-<!ENTITY toolbarContextMenu.reloadAllTabs.label "טעינה מחדש של כל הלשוניות">
-<!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "כ">
-<!ENTITY toolbarContextMenu.bookmarkAllTabs.label "יצירת סימנייה לכל הלשוניות…">
-<!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "ס">
 
 <!ENTITY toolbarContextMenu.reloadSelectedTab.label "טעינה מחדש של הלשונית שנבחרה">
 <!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
@@ -263,9 +249,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisPageCmd.label "יצירת סימנייה לדף זה">
 <!ENTITY editThisBookmarkCmd.label "עריכת סימנייה זו">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
-
-<!ENTITY subscribeToPageMenupopup.label "הרשמה לדף זה">
-<!ENTITY subscribeToPageMenuitem.label "הרשמה לדף זה…">
 
 <!ENTITY addCurPagesCmd.label "יצירת סימנייה לכל הלשוניות…">
 <!ENTITY showAllBookmarks2.label "הצגת כל הסימניות">
@@ -382,10 +365,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY webDeveloperMenu.label       "כלי פיתוח">
 <!ENTITY webDeveloperMenu.accesskey   "כ">
-
-<!ENTITY devtoolsRecordExecution.label "הפעלת הקלטה">
-<!ENTITY devtoolsSaveRecording.label "שמירת הקלטה">
-<!ENTITY devtoolsReplayExecution.label "הפעלת נגינה מחדש">
 
 <!ENTITY inspectContextMenu.label     "חקירת רכיב">
 <!ENTITY inspectContextMenu.accesskey "ח">
@@ -516,7 +495,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "א">
 <!ENTITY customizeMenu.manageExtension.label "ניהול הרחבה">
 <!ENTITY customizeMenu.manageExtension.accesskey "ה">
-
 <!ENTITY customizeMenu.removeExtension.label "הסרת הרחבה">
 <!ENTITY customizeMenu.removeExtension.accesskey "ס">
 
@@ -657,6 +635,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "יצירת סימנייה למסגרת זו">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "מ">
 <!ENTITY pageAction.copyLink.label    "העתקת קישור">
+
+<!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
+  "Pocket" is a brand name. -->
+<!ENTITY pocketButton.tooltiptext     "שמירה אל Pocket">
+<!ENTITY saveToPocketCmd.label        "שמירת דף אל Pocket">
+<!ENTITY saveToPocketCmd.accesskey    "ש">
+<!ENTITY saveLinkToPocketCmd.label    "שמירת קישור אל Pocket">
+<!ENTITY saveLinkToPocketCmd.accesskey "מ">
+<!ENTITY pocketMenuitem.label         "הצגת רשימת Pocket">
+
 <!ENTITY emailPageCmd.label           "שליחת קישור בדוא״ל…">
 <!ENTITY emailPageCmd.accesskey       "ד">
 <!ENTITY savePageCmd.label            "שמירת דף בשם…">
@@ -895,6 +883,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsReloadHint "יתכן שיהיה עליך לרענן את העמוד כדי שהשינויים ייכנסו לתוקף.">
 <!ENTITY identity.permissionsPreferences.tooltip "פתיחת העדפות הרשאות">
 
+<!ENTITY identity.contentBlockingPreferences.tooltip "פתיחת העדפות לחסימת תוכן">
+
+
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
 <!ENTITY tabsToolbar.label "לשוניות הדפדפן">
@@ -1011,7 +1002,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      This label signals that this type of content blocking is turned
      ON, so this is a positive thing. It forms the verb in (imaginary) sentence
      "Firefox is blocking Slow-Loading Trackers"-->
-<!ENTITY contentBlocking.fastBlock.blocking.label "חסימה">
+<!ENTITY contentBlocking.fastBlock.blocking.label "חסומים">
 <!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
      This is displayed as a link to preferences, where the user can add
      this specific type of content blocking. When this text is shown
@@ -1021,12 +1012,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection2.label "כל רכיבי המעקב המזוהים">
 
 <!ENTITY contentBlocking.trackingProtection3.label "רכיבי מעקב">
-<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.allowed.label):
-     This label signals that this type of content blocking is turned
-     OFF and is not blocking tracker content, so this is not
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Trackers [are] Allowed"-->
-<!ENTITY contentBlocking.trackingProtection.allowed.label "מאופשרים">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking tracker content, so this is
@@ -1067,6 +1052,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.manageSettings.accesskey "ס">
 
 <!ENTITY contentBlocking.trackersView.label "רכיבי מעקב">
+<!ENTITY contentBlocking.trackersView.strictInfo.label "כדי לחסום את כל רכיבי המעקב, יש להגדיר את חסימת התוכן לרמת “מחמיר”.">
+
+<!ENTITY contentBlocking.cookies.label "עוגיות">
+<!ENTITY contentBlocking.cookiesView.label "עוגיות ונתוני אתרים">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "דיווח על בעיה">
 <!ENTITY contentBlocking.breakageReportView.label "דיווח על בעיות">
@@ -1201,11 +1190,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageActionButton.tooltip "פעולות דף">
 <!ENTITY pageAction.addToUrlbar.label "הוספה לשורת הכתובת">
 <!ENTITY pageAction.removeFromUrlbar.label "הסרה משורת הכתובת">
-<!ENTITY pageAction.allowInUrlbar.label "להציג בשורת הכתובת">
-<!ENTITY pageAction.disallowInUrlbar.label "לא להציג בשורת הכתובת">
 <!ENTITY pageAction.manageExtension.label "ניהול הרחבה…">
-
-<!ENTITY pageAction.sendTabToDevice.label "שליחת לשונית להתקן">
 
 <!ENTITY sendToDevice.syncNotReady.label "סנכרון התקנים…">
 

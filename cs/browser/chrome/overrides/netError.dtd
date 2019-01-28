@@ -11,6 +11,7 @@
 <!ENTITY returnToPreviousPage1.label "Zpátky (doporučeno)">
 <!ENTITY advanced.label "Rozšířené">
 <!ENTITY continue2.label "Více…">
+<!ENTITY advanced2.label "Rozšířené…">
 <!ENTITY moreInformation.label "Více informací">
 <!ENTITY viewCertificate.label "Zobrazit certifikát">
 
@@ -44,7 +45,7 @@
 
 <!ENTITY fileAccessDenied.title "Přístup k souboru byl odepřen">
 <!ENTITY fileAccessDenied.longDesc "<ul>
-  <li>Možná byl smazán, přesunut nebo jeho oprávnění zabraňují přístupu.</li>
+  <li>Možná byl smazán, přesunut nebo jeho oprávnění zabraňují přístupu.</li>
 </ul>">
 
 <!ENTITY generic.title "Nepodařilo se dokončit požadavek">
@@ -130,7 +131,7 @@
 <!ENTITY unknownSocketType.title "Neplatná odpověď serveru">
 <!ENTITY unknownSocketType.longDesc "
 <ul>
-  <li>Zkontrolujte, že má váš systém nainstalován
+  <li>Zkontrolujte, že je ve vašem systému nainstalován
 Personal Security Manager.</li>
   <li>Tato chyba může být také způsobena nestandardní konfigurací serveru.</li>
 </ul>

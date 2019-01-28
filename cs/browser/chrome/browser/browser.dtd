@@ -111,6 +111,10 @@ These items have the same accesskey but will never be visible at the same time. 
 
 <!ENTITY  listAllTabs.label      "Seznam všech panelů">
 
+<!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
+in "Search through tabs". -->
+<!ENTITY  allTabsMenu.searchTabs.label       "Najít panel">
+
 <!ENTITY tabCmd.label "Nový panel">
 <!ENTITY tabCmd.accesskey "p">
 <!ENTITY tabCmd.commandkey "t">
@@ -267,7 +271,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY stopCmd.accesskey            "s">
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "Přejde na adresu v adresním řádku">
-<!ENTITY printButton.label            "Tisk">
+<!ENTITY printButton.label            "Vytisknout">
 <!ENTITY printButton.tooltip          "Vytiskne tuto stránku">
 
 <!ENTITY urlbar.viewSiteInfo.label                      "Zobrazit informace o stránce">
@@ -359,7 +363,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addons.accesskey             "D">
 <!ENTITY addons.commandkey            "A">
 
-<!ENTITY webDeveloperMenu.label       "Vývoj webu">
+<!ENTITY webDeveloperMenu.label       "Nástroje pro vývojáře">
 <!ENTITY webDeveloperMenu.accesskey   "w">
 
 <!ENTITY inspectContextMenu.label     "Prozkoumat prvek">
@@ -631,6 +635,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "Přidat rám do záložek">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "d">
 <!ENTITY pageAction.copyLink.label    "Kopírovat odkaz">
+
+<!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
+  "Pocket" is a brand name. -->
+<!ENTITY pocketButton.tooltiptext     "Uloží do služby Pocket">
+<!ENTITY saveToPocketCmd.label        "Uložit stránku do služby Pocket">
+<!ENTITY saveToPocketCmd.accesskey    "k">
+<!ENTITY saveLinkToPocketCmd.label    "Uložit odkaz do služby Pocket">
+<!ENTITY saveLinkToPocketCmd.accesskey "o">
+<!ENTITY pocketMenuitem.label         "Zobrazit seznam služby Pocket">
+
 <!ENTITY emailPageCmd.label           "Poslat odkaz e-mailem…">
 <!ENTITY emailPageCmd.accesskey       "e">
 <!ENTITY savePageCmd.label            "Uložit stránku jako…">
@@ -869,6 +883,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsReloadHint "Pro provedení změn budete možná muset obnovit stránku.">
 <!ENTITY identity.permissionsPreferences.tooltip "Otevřít nastavení oprávnění">
 
+<!ENTITY identity.contentBlockingPreferences.tooltip "Otevřít nastavení blokování obsahu">
+
+
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
 <!ENTITY tabsToolbar.label "Ouška panelů">
@@ -933,7 +950,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY customizeMode.lwthemes.recommended "Doporučené">
 <!ENTITY customizeMode.lwthemes.menuManage "Správa">
 <!ENTITY customizeMode.lwthemes.menuManage.accessKey "S">
-<!ENTITY customizeMode.lwthemes.menuGetMore "Získat více motivů vzhledu">
+<!ENTITY customizeMode.lwthemes.menuGetMore "Získat další vzhled">
 <!ENTITY customizeMode.lwthemes.menuGetMore.accessKey "Z">
 <!ENTITY customizeMode.overflowList.title2 "Rozšiřující nabídka">
 <!ENTITY customizeMode.overflowList.description "Sem můžete přetáhnout položky, které chcete mít na dosah, ale ne přímo na liště…">

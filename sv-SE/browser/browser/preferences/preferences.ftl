@@ -8,6 +8,8 @@ do-not-track-option-default =
     .label = Bara när du använder spårningsskydd
 do-not-track-option-default-content-blocking =
     .label = Endast när { -brand-short-name } är inställt för att blockera upptäckta trackers
+do-not-track-option-default-content-blocking-known =
+    .label = Endast när { -brand-short-name } är inställt för att blockera kända trackers
 do-not-track-option-always =
     .label = Alltid
 pref-page =
@@ -154,9 +156,6 @@ open-new-link-as-tabs =
     .accesskey = f
 warn-on-close-multiple-tabs =
     .label = Varna när jag stänger flera flikar
-    .accesskey = f
-warn-on-quit-close-multiple-tabs =
-    .label = Varna när du avslutar och stänger flera flikar
     .accesskey = f
 warn-on-open-many-tabs =
     .label = Varna när du öppnar flera flikar kan göra { -brand-short-name } långsam
@@ -445,7 +444,7 @@ containers-remove-button =
 
 ## Sync Section - Signed out
 
-sync-signedout-caption = Ta din webb med dig
+sync-signedout-caption = Ta med dig webben
 sync-signedout-description = Synkronisera dina bokmärken, historik, flikar, lösenord, tillägg och inställningar på alla dina enheter.
 sync-signedout-account-title = Anslut med ett { -fxaccount-brand-name }
 sync-signedout-account-create = Har du inte ett konto? Kom igång
@@ -616,6 +615,7 @@ sitedata-keep-until-closed =
 sitedata-delete-on-close =
     .label = Ta bort kakor och webbplatsdata när { -brand-short-name } stängs
     .accesskey = k
+sitedata-delete-on-close-private-browsing = I permanent privat surfläge raderas alltid kakor och webbplatsdata när { -brand-short-name } är stängd.
 sitedata-allow-cookies-option =
     .label = Tillåt kakor och webbplatsdata
     .accesskey = T

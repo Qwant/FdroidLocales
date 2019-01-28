@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 # Page title
-about-performance-title = Gerenciador de Tarefas
+about-performance-title = Gerenciador de tarefas
 
 ## Column headers
 
@@ -53,7 +53,7 @@ size-GB = { $value } GB
 close-tab =
     .title = Fechar aba
 show-addon =
-    .title = Mostrar no Gerenciador de Extensões
+    .title = Mostrar no Gerenciador de extensões
 # Tooltip when hovering an item of the about:performance table
 # Variables:
 #   $totalDispatches (Number) - how many dispatches occured for this page since it loaded

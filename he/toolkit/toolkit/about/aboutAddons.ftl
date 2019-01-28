@@ -209,3 +209,20 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = התקנת עדכונים
     .tooltiptext = התקנת העדכונים הזמינים ברשימה זו
+
+## Extension shortcut management
+
+shortcuts-manage =
+    .label = קיצורי מקלדת
+shortcuts-empty-message = אין קיצורי דרך עבור הרחבה זו.
+shortcuts-no-addons = אין לך הרחבות מופעלות.
+shortcuts-input =
+    .placeholder = נא להקליד קיצור דרך
+shortcuts-browserAction = הפעלת הרחבה
+shortcuts-pageAction = הפעלת פעולת דף
+shortcuts-sidebarAction = הצגה/הסתרה של סרגל הצד
+shortcuts-modifier-mac = יש לכלול Ctrl, ‏Alt או ⌘
+shortcuts-modifier-other = יש לכלול Ctrl או Alt
+shortcuts-invalid = שילוב לא חוקי
+shortcuts-letter = נא להקליד אות
+shortcuts-system = לא ניתן לדרוס קיצור דרך של { -brand-short-name }

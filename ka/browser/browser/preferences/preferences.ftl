@@ -8,6 +8,8 @@ do-not-track-option-default =
     .label = მხოლოდ, თვალთვალისგან დაცვის დროს
 do-not-track-option-default-content-blocking =
     .label = მხოლოდ მაშინ, როცა { -brand-short-name } ზღუდავს აღმოჩენილ მეთვალყურეებს
+do-not-track-option-default-content-blocking-known =
+    .label = მხოლოდ მაშინ, როცა { -brand-short-name } ზღუდავს ცნობილ მეთვალყურეებს
 do-not-track-option-always =
     .label = ყოველთვის
 pref-page =
@@ -33,8 +35,8 @@ search-input-box =
         }
 policies-notice =
     { PLATFORM() ->
-        [windows] თქვენს ორგანიზაციას შეზღუდული აქვს გარკვეული პარამეტრების შეცვლის შესაძლებლობა.
-       *[other] თქვენს ორგანიზაციას შეზღუდული აქვს გარკვეული პარამეტრების შეცვლის შესაძლებლობა.
+        [windows] თქვენს დაწესებულებას შეზღუდული აქვს გარკვეული პარამეტრების შეცვლის შესაძლებლობა.
+       *[other] თქვენს დაწესებულებას შეზღუდული აქვს გარკვეული პარამეტრების შეცვლის შესაძლებლობა.
     }
 pane-general-title = მთავარი
 category-general =
@@ -63,7 +65,7 @@ close-button =
 
 feature-enable-requires-restart = ამ ფუნქციის ჩასართავად, ხელახლა გაუშვით { -brand-short-name }
 feature-disable-requires-restart = ამ ფუნქციის გამოსართავად, ხელახლა გაუშვით { -brand-short-name }
-should-restart-title = { -brand-short-name }-ის ხელახლა გაშვება
+should-restart-title = ხელახლა გაეშვას { -brand-short-name }
 should-restart-ok = გაუშვით ხელახლა { -brand-short-name } ახლავე
 cancel-no-restart-button = გაუქმება
 restart-later = მოგვიანებით გაშვება
@@ -141,6 +143,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = წინა სეანსის აღდგენა
     .accesskey = წ
+startup-restore-warn-on-quit =
+    .label = გაფრთხილება ბრაუზერის დახურვისას
 disable-extension =
     .label = გაფართოების ამორთვა
 tabs-group-header = ჩანართები
@@ -153,9 +157,6 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = გაფრთხილება რამდენიმე ჩანართის ერთბაშად დახურვისას
     .accesskey = ე
-warn-on-quit-close-multiple-tabs =
-    .label = გაფრთხილება რამდენიმე ჩანართის ერთბაშად დახურვისას
-    .accesskey = ფ
 warn-on-open-many-tabs =
     .label = გაფრთხილება, როცა ბევრი ჩანართის გახსნამ შესაძლოა შეანელოს { -brand-short-name }
     .accesskey = ე
@@ -266,10 +267,10 @@ applications-action-column =
     .accesskey = ქ
 drm-content-header = ციფრული უფლებების მართვის (DRM) შიგთავსი
 play-drm-content =
-    .label = DRM-ით რეგულირებული შიგთავსის გაშვება
+    .label = DRM-ს დაქვემდებარებული შიგთავსის გაშვება
     .accesskey = D
 play-drm-content-learn-more = იხილეთ ვრცლად
-update-application-title = { -brand-short-name }-ის განახლებები
+update-application-title = { -brand-short-name } – განახლებები
 update-application-description = მუდმივად განაახლეთ { -brand-short-name }, რომ შეინარჩუნოთ წარმადობა, მდგრადობა და უსაფრთხოება.
 update-application-version = ვერსია { $version } <a data-l10n-name="learn-more">რა არის ახალი</a>
 update-history =
@@ -538,7 +539,6 @@ privacy-header = ბრაუზერის პირადულობა
 
 ## Privacy Section - Forms
 
-forms-header = ველები და პაროლები
 logins-header = ანგარიშის სახელები და პაროლები
 forms-ask-to-save-logins =
     .label = საიტებზე შესვლის მონაცემების დამახსოვრების მოთხოვნა
@@ -832,8 +832,8 @@ autoplay-option-dont =
     .label = თვითგაშვების გარეშე
 permissions-autoplay-link = იხილეთ ვრცლად
 permissions-block-popups =
-    .label = ამომხტომი ფირნიშების შეზღუდვა
-    .accesskey = დ
+    .label = ამომხტომი ფანჯრების შეზღუდვა
+    .accesskey = ზ
 permissions-block-popups-exceptions =
     .label = გამონაკლისები…
     .accesskey = გ
@@ -860,6 +860,9 @@ collection-health-report-link = იხილეთ ვრცლად
 collection-studies =
     .label = { -brand-short-name }-ისთვის ნების დართვა, კვლევების დაყენებასა და გამართვაზე
 collection-studies-link = იხილეთ { -brand-short-name } კვლევები
+addon-recommendations =
+    .label = { -brand-short-name }-ისთვის ნების დართვა, მორგებული გაფართოებების შემოსათავაზებლად
+addon-recommendations-link = ვრცლად
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = მოხსენებები გამორთულია ანაწყობის ამ კონფიგურაციისთვის

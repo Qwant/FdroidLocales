@@ -249,7 +249,7 @@ cert-with-serial =
 #   $certificate : a string representative of the certificate being viewed.
 cert-viewer-title =
     .title = Certificaatweergave: ‘{ $certName }’
-    
+
 not-present =
     .value = <Geen onderdeel van certificaat>
 
@@ -297,3 +297,12 @@ add-exception-checking-short = Informatie controleren
 add-exception-checking-long = Poging tot identificatie van deze website…
 add-exception-no-cert-short = Geen informatie beschikbaar
 add-exception-no-cert-long = Kan geen identificatiestatus van deze website verkrijgen.
+
+## Certificate export "Save as" and error dialogs
+save-cert-as = Certificaat opslaan als bestand
+cert-format-base64 = X.509-certificaat (PEM)
+cert-format-base64-chain = X.509-certificaat met keten (PEM)
+cert-format-der = X.509-certificaat (DER)
+cert-format-pkcs7 = X.509-certificaat (PKCS#7)
+cert-format-pkcs7-chain = X.509-certificaat met keten (PKCS#7)
+write-file-failure = Bestandsfout

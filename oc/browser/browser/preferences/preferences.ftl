@@ -8,6 +8,8 @@ do-not-track-option-default =
     .label = Sonque en utilizar la proteccion contra lo seguiment
 do-not-track-option-default-content-blocking =
     .label = Solament quand { -brand-short-name } es configurat per blocar los elements de seguiment detectats
+do-not-track-option-default-content-blocking-known =
+    .label = Solament quand { -brand-short-name } es configurat per blocar los traçadors coneguts
 do-not-track-option-always =
     .label = Totjorn
 pref-page =
@@ -141,6 +143,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Restablir la session precedenta
     .accesskey = s
+startup-restore-warn-on-quit =
+    .label = Vos avisar en sortir del navegador
 disable-extension =
     .label = Desactivar l’extension
 tabs-group-header = Onglets
@@ -152,9 +156,6 @@ open-new-link-as-tabs =
     .accesskey = f
 warn-on-close-multiple-tabs =
     .label = Vos avisar en tampar d'onglets multiples
-    .accesskey = m
-warn-on-quit-close-multiple-tabs =
-    .label = Vos avisar en tampar mantun onglets
     .accesskey = m
 warn-on-open-many-tabs =
     .label = Vos avisar quand dobrir d'onglets multiples pòt alentir { -brand-short-name }
@@ -292,6 +293,9 @@ update-enable-search-update =
     .label = Metre a jorn automaticament los motors de recèrca
     .accesskey = m
 update-pref-write-failure-title = Fracàs d’escritura
+# Variables:
+#   $path (String) - Path to the configuration file
+update-pref-write-failure-message = Enregistrament impossible de las preferéncias. Impossible d’escriure dins lo fichièr : { $path }
 
 ## General Section - Performance
 
@@ -532,7 +536,6 @@ privacy-header = Confidencialitat del navegador
 
 ## Privacy Section - Forms
 
-forms-header = Formularis e senhals
 logins-header = Identificants e senhals
 forms-ask-to-save-logins =
     .label = Demandar per salvar los identificants e senhals dels sites
@@ -639,6 +642,9 @@ sitedata-settings =
 sitedata-cookies-exceptions =
     .label = Excepcions…
     .accesskey = E
+sitedata-cookies-permissions =
+    .label = Gerir las autorizacions…
+    .accesskey = a
 
 ## Privacy Section - Address Bar
 
@@ -672,6 +678,12 @@ content-blocking-toggle-label-on = ACTIU
 content-blocking-toggle-label-off = INACTIU
     .accesskey = I
 content-blocking-category-label = Seleccionar lo contengut de blocar
+# "Slow" in this instance means "slow to load on the network".
+# FastBlock is a feature that blocks requests to tracking sites if they
+# have not finished loading after a certain threshold of seconds.
+content-blocking-fastblock-slow-loading-trackers-label =
+    .label = Traçadors lents
+    .accesskey = T
 content-blocking-tracking-protection-trackers-label =
     .label = Traçadors
     .accesskey = T
@@ -689,10 +701,26 @@ content-blocking-setting-standard =
 content-blocking-setting-custom =
     .label = Personalizat
     .accesskey = P
+content-blocking-custom-desc = Causissètz çò que volètz blocar.
+content-blocking-private-trackers = Los traçadors coneguts dins las fenèstras de navegacion privada solament
+content-blocking-third-party-cookies = Cookies de seguiment tèrces
+content-blocking-all-windows-trackers = Traçadors coneguts dins totas las fenèstras
+content-blocking-all-third-party-cookies = Totes los cookies tèrces
+content-blocking-warning-title = Atencion !
 content-blocking-learn-how = Ne saber mai
 content-blocking-trackers-label =
     .label = Traçadors
     .accesskey = T
+content-blocking-tracking-protection-option-all-windows =
+    .label = Dins totas las fenèstras
+    .accesskey = D
+content-blocking-option-private =
+    .label = Soque las fenèstras privadas
+    .accesskey = p
+content-blocking-tracking-protection-change-block-list = Cambiar la lista de blocatge
+content-blocking-third-party-cookies-label =
+    .label = Cookies tèrces
+    .accesskey = C
 content-blocking-change-cookie-settings =
     .label = Cambiar los paramètres de cookies
     .accesskey = C
@@ -702,6 +730,9 @@ content-blocking-reject-trackers-block-trackers-option-recommended =
 content-blocking-reject-trackers-block-trackers-option =
     .label = Traçadors
     .accesskey = d
+content-blocking-reject-trackers-all-third-parties-option =
+    .label = Totes los cookies tèrces (unes sites pòdon quitar de foncionar)
+    .accesskey = T
 content-blocking-cookies-label =
     .label = Cookies
     .accesskey = C
@@ -726,6 +757,9 @@ tracking-exceptions =
 tracking-change-block-list =
     .label = Cambiar la lista de blocatge…
     .accesskey = C
+tracking-manage-exceptions =
+    .label = Gerir las excepcions…
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -793,6 +827,9 @@ collection-health-report-link = Ne saber mai
 collection-studies =
     .label = Autorizar { -brand-short-name } d’installar e lançar d’estudis
 collection-studies-link = Veire los estudis de { -brand-short-name }
+addon-recommendations =
+    .label = Permetre a { -brand-short-name } de realizar de recomandacion d’extensions
+addon-recommendations-link = Ne saber mai
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Lo rapòrt de donadas es desactivat per aquela configuracion de compilacion

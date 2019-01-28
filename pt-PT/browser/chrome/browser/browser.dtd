@@ -111,6 +111,10 @@ These items have the same accesskey but will never be visible at the same time. 
 
 <!ENTITY  listAllTabs.label      "Listar todos os separadores">
 
+<!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
+in "Search through tabs". -->
+<!ENTITY  allTabsMenu.searchTabs.label       "Pesquisar separadores">
+
 <!ENTITY tabCmd.label "Novo separador">
 <!ENTITY tabCmd.accesskey "s">
 <!ENTITY tabCmd.commandkey "t">
@@ -631,6 +635,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "Adicionar este frame aos marcadores">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "m">
 <!ENTITY pageAction.copyLink.label    "Copiar ligação">
+
+<!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
+  "Pocket" is a brand name. -->
+<!ENTITY pocketButton.tooltiptext     "Guardar no Pocket">
+<!ENTITY saveToPocketCmd.label        "Guardar página no Pocket">
+<!ENTITY saveToPocketCmd.accesskey    "k">
+<!ENTITY saveLinkToPocketCmd.label    "Guardar ligação no Pocket">
+<!ENTITY saveLinkToPocketCmd.accesskey "o">
+<!ENTITY pocketMenuitem.label         "Ver lista do Pocket">
+
 <!ENTITY emailPageCmd.label           "Enviar ligação por email…">
 <!ENTITY emailPageCmd.accesskey       "E">
 <!ENTITY savePageCmd.label            "Guardar página como…">
@@ -868,6 +882,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Não concedeu quaisquer permissões especiais a este site.">
 <!ENTITY identity.permissionsReloadHint "Poderá ter de recarregar a página para as alterações se aplicarem.">
 <!ENTITY identity.permissionsPreferences.tooltip "Abrir preferências de permissões">
+
+<!ENTITY identity.contentBlockingPreferences.tooltip "Abrir preferências do bloqueio de conteúdo">
+
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->

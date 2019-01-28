@@ -19,6 +19,13 @@
 <!ENTITY rememberPassword.label          "Parolayı hatırla">
 <!ENTITY rememberPassword.accesskey      "h">
 
+<!ENTITY usernameEx.label                "Kullanıcı adınız:">
+<!ENTITY usernameEx.accesskey            "l">
+<!-- LOCALIZATION NOTE(usernameEx.placeholder): YOURDOMAIN refers to the Windows domain in ActiveDirectory. yourusername refers to the user's account name in Windows. -->
+<!ENTITY usernameEx.placeholder          "ETKİALANI\kullanıcıadınız">
+<!-- LOCALIZATION NOTE(usernameEx.text): Domain refers to the Windows domain in ActiveDirectory. We mean the user's login in Windows at the local corporate network. -->
+<!ENTITY usernameEx.text                 "Etki alanındaki kullanıcı adı">
+
 <!ENTITY imapLong.label                  "IMAP (uzak dizinler)">
 <!ENTITY pop3Long.label                  "POP3 (postalar bilgisayarınızda saklanacak)">
 
@@ -30,7 +37,9 @@
 <!ENTITY ssl.label                       "SSL">
 <!ENTITY auth.label                      "Yetkilendirme">
 <!ENTITY imap.label                      "IMAP">
-<!ENTITY pop3.label                       "POP3">
+<!ENTITY pop3.label                      "POP3">
+<!-- LOCALIZATION NOTE(exchange.label): Do not translate Exchange, it is a product name. -->
+<!ENTITY exchange.label                  "Exchange">
 <!ENTITY smtp.label                      "SMTP">
 <!ENTITY autodetect.label                "Otomatik algıla">
 <!-- LOCALIZATION NOTE(noEncryption.label): Neither SSL/TLS nor STARTTLS.
@@ -38,6 +47,9 @@
 <!ENTITY noEncryption.label              "Hiçbiri">
 <!ENTITY starttls.label                  "STARTTLS">
 <!ENTITY sslTls.label                    "SSL/TLS">
+
+<!-- LOCALIZATION NOTE(exchange-hostname.label): Do not translate Exchange, it is a product name. -->
+<!ENTITY exchange-hostname.label         "Exchange sunucusu:">
 
 <!ENTITY advancedSetup.label             "Gelişmiş yapılandırma">
 <!ENTITY advancedSetup.accesskey         "G">

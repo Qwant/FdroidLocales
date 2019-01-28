@@ -232,3 +232,13 @@ add-exception-checking-short = Se verifică informațiile
 add-exception-checking-long = Se încearcă identificarea acestui site…
 add-exception-no-cert-short = Nicio informație disponibilă
 add-exception-no-cert-long = Nu se poate obține starea de identificare pentru acest site.
+
+## Certificate export "Save as" and error dialogs
+
+save-cert-as = Salvează certificatul într-un fișier
+cert-format-base64 = Certificat X.509 (PEM)
+cert-format-base64-chain = Certificat X.509 cu lanț de certificare (PEM)
+cert-format-der = Certificat X.509 (DER)
+cert-format-pkcs7 = Certificat X.509 (PKCS#7)
+cert-format-pkcs7-chain = Certificat X.509 cu lanț de certificare (PKCS#7)
+write-file-failure = Eroare de fișier

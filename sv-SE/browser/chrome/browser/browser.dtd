@@ -111,6 +111,10 @@ These items have the same accesskey but will never be visible at the same time. 
 
 <!ENTITY  listAllTabs.label      "Visa upp alla flikar">
 
+<!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
+in "Search through tabs". -->
+<!ENTITY  allTabsMenu.searchTabs.label       "Sök flikar">
+
 <!ENTITY tabCmd.label "Ny flik">
 <!ENTITY tabCmd.accesskey "f">
 <!ENTITY tabCmd.commandkey "t">
@@ -328,7 +332,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY hideBookmarksSidebar.label         "Dölj sidofältet Bokmärken">
 <!ENTITY viewBookmarksToolbar.label         "Visa bokmärkesfältet">
 <!ENTITY hideBookmarksToolbar.label         "Dölj bokmärkesfältet">
-<!ENTITY searchBookmarks.label              "Sök i bokmärken">
+<!ENTITY searchBookmarks.label              "Sök bokmärken">
 <!ENTITY bookmarkingTools.label             "Verktyg för bokmärken">
 <!ENTITY addBookmarksMenu.label             "Lägg till bokmärkesmeny till verktygsfältet">
 <!ENTITY removeBookmarksMenu.label          "Ta bort bokmärkesmeny från verktygsfältet">
@@ -631,6 +635,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "Lägg till bokmärke för ram">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "r">
 <!ENTITY pageAction.copyLink.label    "Kopiera länk">
+
+<!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
+  "Pocket" is a brand name. -->
+<!ENTITY pocketButton.tooltiptext     "Spara till Pocket">
+<!ENTITY saveToPocketCmd.label        "Spara sida till Pocket">
+<!ENTITY saveToPocketCmd.accesskey    "k">
+<!ENTITY saveLinkToPocketCmd.label    "Spara länk till Pocket">
+<!ENTITY saveLinkToPocketCmd.accesskey "o">
+<!ENTITY pocketMenuitem.label         "Visa Pocket-lista">
+
 <!ENTITY emailPageCmd.label           "E-posta länk…">
 <!ENTITY emailPageCmd.accesskey       "E">
 <!ENTITY savePageCmd.label            "Spara sida som…">
@@ -868,6 +882,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Du har inte beviljat denna webbplats några särskilda rättigheter.">
 <!ENTITY identity.permissionsReloadHint "Du kan behöva ladda om sidan för att ändringarna ska verkställas.">
 <!ENTITY identity.permissionsPreferences.tooltip "Öppna behörighetsinställningar">
+
+<!ENTITY identity.contentBlockingPreferences.tooltip "Öppna inställningar för innehållsblockering">
+
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->

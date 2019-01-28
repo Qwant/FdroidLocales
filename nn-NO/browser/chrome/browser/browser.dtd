@@ -87,7 +87,7 @@ same accesskey but will never be visible at the same time. -->
 <!ENTITY  sendLinkToDevice.accesskey         "e">
 <!-- LOCALIZATION NOTE (moveTabOptions.label and moveSelectedTabOptions.label):
 These two items have the same accesskey but will never be visible at the same time. -->
-<!ENTITY  moveTabOptions.label               "Flytt fana">
+<!ENTITY  moveTabOptions.label               "Flytt denne fana">
 <!ENTITY  moveTabOptions.accesskey           "t">
 <!ENTITY  moveSelectedTabOptions.label       "Flytt faner">
 <!ENTITY  moveSelectedTabOptions.accesskey   "t">
@@ -110,6 +110,10 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Skjulte faner">
 
 <!ENTITY  listAllTabs.label      "Vis liste over alle faner">
+
+<!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
+in "Search through tabs". -->
+<!ENTITY  allTabsMenu.searchTabs.label       "Søk i faner">
 
 <!ENTITY tabCmd.label "Ny fane">
 <!ENTITY tabCmd.accesskey "f">
@@ -631,6 +635,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "Bokmerk denne ramma">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "B">
 <!ENTITY pageAction.copyLink.label    "Kopier lenke">
+
+<!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
+  "Pocket" is a brand name. -->
+<!ENTITY pocketButton.tooltiptext     "Lagre til Pocket">
+<!ENTITY saveToPocketCmd.label        "Lagre sida til Pocket">
+<!ENTITY saveToPocketCmd.accesskey    "k">
+<!ENTITY saveLinkToPocketCmd.label    "Lagre lenke til Pocket">
+<!ENTITY saveLinkToPocketCmd.accesskey "o">
+<!ENTITY pocketMenuitem.label         "Vis Pocket-liste">
+
 <!ENTITY emailPageCmd.label           "Send lenke på e-post…">
 <!ENTITY emailPageCmd.accesskey       "e">
 <!ENTITY savePageCmd.label            "Lagre sida som…">

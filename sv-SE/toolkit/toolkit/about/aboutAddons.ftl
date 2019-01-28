@@ -207,3 +207,20 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Installera uppdateringar
     .tooltiptext = Installerar tillgängliga uppdateringar från listan
+
+## Extension shortcut management
+
+shortcuts-manage =
+    .label = Tangentbordsgenvägar
+shortcuts-empty-message = Det finns inga genvägar för det här tillägget.
+shortcuts-no-addons = Du har inga tillägg aktiverade.
+shortcuts-input =
+    .placeholder = Skapa en genväg
+shortcuts-browserAction = Aktivera tillägg
+shortcuts-pageAction = Aktivera sidans åtgärd
+shortcuts-sidebarAction = Visa sidofält
+shortcuts-modifier-mac = Inkludera Ctrl, Alt eller ⌘
+shortcuts-modifier-other = Inkludera Ctrl eller Alt
+shortcuts-invalid = Ogiltig kombination
+shortcuts-letter = Skriv en bokstav
+shortcuts-system = Kan inte skriva över en { -brand-short-name } genväg

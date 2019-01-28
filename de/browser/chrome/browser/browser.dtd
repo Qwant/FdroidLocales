@@ -21,8 +21,6 @@
 <!-- Tab context menu -->
 <!ENTITY  reloadTab.label                    "Tab neu laden">
 <!ENTITY  reloadTab.accesskey                "d">
-<!ENTITY  reloadAllTabs.label                "Alle Tabs neu laden">
-<!ENTITY  reloadAllTabs.accesskey            "T">
 <!ENTITY  selectAllTabs.label                "Alle Tabs auswählen">
 <!ENTITY  selectAllTabs.accesskey            "u">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
@@ -35,8 +33,10 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  closeTabOptions.accesskey          "c">
 <!-- LOCALIZATION NOTE (duplicateTabs.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
+<!ENTITY  duplicateTabs.label                "Tabs klonen">
 <!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
 These items have the same accesskey but will never be visible at the same time. -->
+<!ENTITY  duplicateTabs.accesskey            "k">
 <!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
 direction in which tabs are closed, i.e. locales that use RTL mode should say
 left instead of right. -->
@@ -44,9 +44,6 @@ left instead of right. -->
 <!ENTITY  closeTabsToTheEnd.accesskey        "R">
 <!ENTITY  closeOtherTabs.label               "Andere Tabs schließen">
 <!ENTITY  closeOtherTabs.accesskey           "A">
-
-<!ENTITY  closeSelectedTabs.label            "Ausgewählte Tabs schließen">
-<!ENTITY  closeSelectedTabs.accesskey        "s">
 
 <!ENTITY  closeTabs.label                    "Tabs schließen">
 <!ENTITY  closeTabs.accesskey                "c">
@@ -60,10 +57,6 @@ same accesskey but will never be visible at the same time. -->
 unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "b">
-<!-- Reload Tab and Reload Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
-<!ENTITY  reloadSelectedTabs.label           "Ausgewählte Tabs neu laden">
-<!ENTITY  reloadSelectedTabs.accesskey       "d">
 <!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
 but will never be visible at the same time. -->
 <!ENTITY  reloadTabs.label                   "Tabs neu laden">
@@ -88,8 +81,6 @@ same accesskey but will never be visible at the same time. -->
 unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "b">
-<!ENTITY  sendTabToDevice.label              "Tab an Gerät senden">
-<!ENTITY  sendTabToDevice.accesskey          "X">
 <!ENTITY  sendPageToDevice.label             "Seite an Gerät senden">
 <!ENTITY  sendPageToDevice.accesskey         "X">
 <!ENTITY  sendLinkToDevice.label             "Link an Gerät senden">
@@ -108,8 +99,6 @@ These two items have the same accesskey but will never be visible at the same ti
 <!ENTITY  moveToNewWindow.accesskey          "n">
 <!ENTITY  reopenInContainer.label            "In Tab-Umgebung verschieben">
 <!ENTITY  reopenInContainer.accesskey        "U">
-<!ENTITY  bookmarkAllTabs.label              "Lesezeichen für alle Tabs hinzufügen…">
-<!ENTITY  bookmarkAllTabs.accesskey          "L">
 <!ENTITY  bookmarkTab.label                  "Tab als Lesezeichen hinzufügen">
 <!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
 These items have the same accesskey but will never be visible at the same time. -->
@@ -121,6 +110,9 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Ausgeblendete Tabs">
 
 <!ENTITY  listAllTabs.label      "Alle Tabs auflisten">
+
+<!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
+in "Search through tabs". -->
 
 <!ENTITY tabCmd.label "Neuer Tab">
 <!ENTITY tabCmd.accesskey "T">
@@ -152,11 +144,6 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY personalbarCmd.accesskey "L">
 <!ENTITY bookmarksToolbarItem.label "Lesezeichen-Symbole">
 
-<!ENTITY toolbarContextMenu.reloadAllTabs.label "Alle Tabs neu laden">
-<!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "T">
-<!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Lesezeichen für alle Tabs hinzufügen…">
-<!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "h">
-
 <!ENTITY toolbarContextMenu.reloadSelectedTab.label "Ausgewählten Tab neu laden">
 <!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
 toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
@@ -167,12 +154,12 @@ same accesskey but will never be visible at the same time. -->
 toolbarContextMenu.reloadSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
 <!ENTITY toolbarContextMenu.reloadSelectedTabs.accesskey "d">
-<!ENTITY toolbarContextMenu.bookmarkSelectedTab.label "Ausgewählten Tab als Lesezeichen hinzufügen …">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTab.label "Ausgewählten Tab als Lesezeichen hinzufügen…">
 <!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
 toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
 <!ENTITY toolbarContextMenu.bookmarkSelectedTab.accesskey "z">
-<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.label "Ausgewählte Tabs als Lesezeichen hinzufügen …">
+<!ENTITY toolbarContextMenu.bookmarkSelectedTabs.label "Ausgewählte Tabs als Lesezeichen hinzufügen…">
 <!-- LOCALIZATION NOTE (toolbarContextMenu.bookmarkSelectedTab.accesskey,
 toolbarContextMenu.bookmarkSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
@@ -262,9 +249,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY editThisBookmarkCmd.label "Lesezeichen bearbeiten">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
 
-<!ENTITY subscribeToPageMenupopup.label "Diese Seite abonnieren">
-<!ENTITY subscribeToPageMenuitem.label "Diese Seite abonnieren…">
-
 <!ENTITY addCurPagesCmd.label "Lesezeichen für alle Tabs hinzufügen…">
 <!ENTITY showAllBookmarks2.label "Lesezeichen verwalten">
 <!ENTITY recentBookmarks.label "Kürzlich als Lesezeichen gesetzt">
@@ -303,6 +287,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Daten im dauerhaften Speicher speichern">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Browser wird ferngesteuert">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Ansicht für Web-Authentifizierung öffnen">
+
+<!ENTITY urlbar.storageAccessAnchor.tooltip               "Ansicht für während des Surfens berechtigte Aktivitäten öffnen">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Verwalten des Zugriffs auf Ihre Kamera und/oder Ihr Mikrofon durch diese Website">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Verwalten des Zugriffs auf Ihr Mikrofon durch diese Website">
@@ -378,10 +364,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY webDeveloperMenu.label       "Web-Entwickler">
 <!ENTITY webDeveloperMenu.accesskey   "W">
-
-<!ENTITY devtoolsRecordExecution.label "Ausführung aufnehmen">
-<!ENTITY devtoolsSaveRecording.label "Ausführung speichern">
-<!ENTITY devtoolsReplayExecution.label "Ausführung wiedergeben">
 
 <!ENTITY inspectContextMenu.label     "Element untersuchen">
 <!ENTITY inspectContextMenu.accesskey "Q">
@@ -512,7 +494,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "u">
 <!ENTITY customizeMenu.manageExtension.label "Erweiterung verwalten">
 <!ENTITY customizeMenu.manageExtension.accesskey "w">
-
 <!ENTITY customizeMenu.removeExtension.label "Erweiterung entfernen">
 <!ENTITY customizeMenu.removeExtension.accesskey "n">
 
@@ -653,6 +634,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "Lesezeichen für diesen Frame hinzufügen">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "z">
 <!ENTITY pageAction.copyLink.label    "Link-Adresse kopieren">
+
+<!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
+  "Pocket" is a brand name. -->
+
 <!ENTITY emailPageCmd.label           "Link per E-Mail senden…">
 <!ENTITY emailPageCmd.accesskey       "s">
 <!ENTITY savePageCmd.label            "Seite speichern unter…">
@@ -839,7 +824,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      Remove Bookmark buttons. -->
 <!ENTITY editBookmark.panel.width                    "23em">
 <!ENTITY editBookmark.done.label                     "Fertig">
-<!ENTITY editBookmark.showForNewBookmarks.label       "Lesezeichen beim Speichern bearbeiten">
+<!ENTITY editBookmark.showForNewBookmarks.label       "Eigenschaften beim Speichern bearbeiten">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "g">
 
 <!-- LOCALIZATION NOTE (identity.securityView.label)
@@ -1017,12 +1002,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection2.label "Alle erkannten Elemente zur Aktivitätenverfolgung">
 
 <!ENTITY contentBlocking.trackingProtection3.label "Elemente zur Aktivitätenverfolgung">
-<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.allowed.label):
-     This label signals that this type of content blocking is turned
-     OFF and is not blocking tracker content, so this is not
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Trackers [are] Allowed"-->
-<!ENTITY contentBlocking.trackingProtection.allowed.label "Erlaubt">
 <!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking tracker content, so this is
@@ -1060,7 +1039,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.3rdPartyCookies.add.label "Blockieren aktivieren…">
 
 <!ENTITY contentBlocking.manageSettings.label "Blockieren von Seitenelementen verwalten">
+<!ENTITY contentBlocking.manageSettings.accesskey "B">
 
+<!ENTITY contentBlocking.trackersView.label "Elemente zur Aktivitätenverfolgung">
+<!ENTITY contentBlocking.trackersView.strictInfo.label "Um alle Elemente zur Aktivitätenverfolgung zu blockieren, muss die Einstellung &quot;Streng&quot; verwendet werden.">
+
+<!ENTITY contentBlocking.cookies.label "Cookies">
+<!ENTITY contentBlocking.cookiesView.label "Cookies und Website-Daten">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Problem melden">
 <!ENTITY contentBlocking.breakageReportView.label "Probleme melden">
@@ -1091,11 +1076,14 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
 <!ENTITY trackingProtection.unblock5.label "Blockierung für diese Website deaktivieren">
+<!ENTITY trackingProtection.unblock5.accesskey "d">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate6.label, trackingProtection.unblockPrivate6.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
 <!ENTITY trackingProtection.unblockPrivate5.label "Blockieren temporär deaktivieren">
+<!ENTITY trackingProtection.unblockPrivate5.accesskey "t">
 <!ENTITY trackingProtection.block6.label "Blockierung für diese Website aktivieren">
+<!ENTITY trackingProtection.block6.accesskey "a">
 <!ENTITY trackingProtection.reload2.label "Seite neu laden">
 <!ENTITY trackingProtection.reload2.accesskey "n">
 
@@ -1192,11 +1180,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageActionButton.tooltip "Aktionen für Seite">
 <!ENTITY pageAction.addToUrlbar.label "Zu Adressleiste hinzufügen">
 <!ENTITY pageAction.removeFromUrlbar.label "Aus Adressleiste entfernen">
-<!ENTITY pageAction.allowInUrlbar.label "In Adressleiste anzeigen">
-<!ENTITY pageAction.disallowInUrlbar.label "Nicht in Adressleiste anzeigen">
 <!ENTITY pageAction.manageExtension.label "Erweiterung verwalten…">
-
-<!ENTITY pageAction.sendTabToDevice.label "Tab an Gerät senden">
 
 <!ENTITY sendToDevice.syncNotReady.label "Geräte werden synchronisiert…">
 

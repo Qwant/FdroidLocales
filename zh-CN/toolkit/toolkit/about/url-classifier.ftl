@@ -3,8 +3,18 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 url-classifier-title = URL 分类器信息
-url-classifier-provider-title = 供应商
-url-classifier-provider = 供应商
+url-classifier-search-title = 搜索
+url-classifier-search-result-title = 结果
+url-classifier-search-result-uri = URI: { $uri }
+url-classifier-search-result-list = 表格列表: { $list }
+url-classifier-search-input = URL
+url-classifier-search-error-invalid-url = 无效 URL
+url-classifier-search-error-no-features = 未选择功能
+url-classifier-search-btn = 开始搜索
+url-classifier-search-features = 功能
+url-classifier-search-listType = 列表类型
+url-classifier-provider-title = 提供者
+url-classifier-provider = 提供者
 url-classifier-provider-last-update-time = 上次更新时间
 url-classifier-provider-next-update-time = 下次更新时间
 url-classifier-provider-back-off-time = 退避时间
@@ -19,9 +29,9 @@ url-classifier-cache-pcache-entries = 阳性缓存总数量
 url-classifier-cache-show-entries = 显示项目
 url-classifier-cache-entries = 缓存项目
 url-classifier-cache-prefix = 前缀
-url-classifier-cache-ncache-expiry = 阴性缓存期限
+url-classifier-cache-ncache-expiry = 阴性缓存有效期
 url-classifier-cache-fullhash = 完整散列
-url-classifier-cache-pcache-expiry = 阳性缓存期限
+url-classifier-cache-pcache-expiry = 阳性缓存有效期
 url-classifier-debug-title = 调试
 url-classifier-debug-module-btn = 设置日志模块
 url-classifier-debug-file-btn = 设置日志文件

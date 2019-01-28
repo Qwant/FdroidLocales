@@ -111,6 +111,10 @@ These items have the same accesskey but will never be visible at the same time. 
 
 <!ENTITY  listAllTabs.label      "Wšě rajtarki nalistować">
 
+<!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
+in "Search through tabs". -->
+<!ENTITY  allTabsMenu.searchTabs.label       "Rajtarki přepytać">
+
 <!ENTITY tabCmd.label "Nowy rajtark">
 <!ENTITY tabCmd.accesskey "r">
 <!ENTITY tabCmd.commandkey "t">
@@ -631,6 +635,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "Tutón wobłuk jako zapołožku skladować">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "b">
 <!ENTITY pageAction.copyLink.label    "Wotkaz kopěrować">
+
+<!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
+  "Pocket" is a brand name. -->
+<!ENTITY pocketButton.tooltiptext     "Pola Pocket składować">
+<!ENTITY saveToPocketCmd.label        "Stronu pola Pocket składować">
+<!ENTITY saveToPocketCmd.accesskey    "k">
+<!ENTITY saveLinkToPocketCmd.label    "Wotkaz do Pocket składować">
+<!ENTITY saveLinkToPocketCmd.accesskey "o">
+<!ENTITY pocketMenuitem.label         "Lisćinu Pocket pokazać">
+
 <!ENTITY emailPageCmd.label           "Wotkaz e-mejlować…">
 <!ENTITY emailPageCmd.accesskey       "e">
 <!ENTITY savePageCmd.label            "Stronu składować jako…">
@@ -868,6 +882,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Njejsće tutomu sydłu wosebite prawa přizwolił.">
 <!ENTITY identity.permissionsReloadHint "Dyrbiće snano stronu znowa začitać, zo bychu so změny wuskutkowali.">
 <!ENTITY identity.permissionsPreferences.tooltip "Nastajenja prawow wočinić">
+
+<!ENTITY identity.contentBlockingPreferences.tooltip "Nastajenja blokowanja wobsaha wočinić">
+
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->

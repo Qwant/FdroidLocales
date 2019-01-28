@@ -21,8 +21,6 @@
 <!-- Tab context menu -->
 <!ENTITY  reloadTab.label                    "Rejqaxik ruwi' kajtz'ïk">
 <!ENTITY  reloadTab.accesskey                "R">
-<!ENTITY  reloadAllTabs.label                "Kesamajib'ëx chik konojel ri taq ruwi'">
-<!ENTITY  reloadAllTabs.accesskey            "k">
 <!ENTITY  selectAllTabs.label                "Kecha' Ronojel taq Ruwi'">
 <!ENTITY  selectAllTabs.accesskey            "K">
 <!-- LOCALIZATION NOTE (duplicateTab.label): This is a command to duplicate
@@ -31,8 +29,6 @@ a tab (i.e. it is a verb, not adjective). -->
 <!-- LOCALIZATION NOTE (duplicateTab.accesskey, duplicateTabs.accesskey):
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  duplicateTab.accesskey             "T">
-<!ENTITY  closeTabOptions.label              "Kicha'oj richin Nitz'apïx taq Ruwi'">
-<!ENTITY  closeTabOptions.accesskey          "O">
 <!-- LOCALIZATION NOTE (duplicateTabs.label): This is a command to duplicate
 a tab (i.e. it is a verb, not adjective). -->
 <!ENTITY  duplicateTabs.label                "Kekamulüx taq Ruwi'">
@@ -47,9 +43,6 @@ left instead of right. -->
 <!ENTITY  closeOtherTabs.label               "Ketz'apïx ri ch'aqa' chik taq ruwi'">
 <!ENTITY  closeOtherTabs.accesskey           "K">
 
-<!ENTITY  closeSelectedTabs.label            "Ketz'apïx Cha'on taq Ruwi'">
-<!ENTITY  closeSelectedTabs.accesskey        "C">
-
 <!ENTITY  closeTabs.label                    "Ketz'apïx taq Ruwi'">
 <!ENTITY  closeTabs.accesskey                "S">
 <!ENTITY  pinSelectedTabs.label              "Titz'ajb'äx Ruwi'">
@@ -62,10 +55,6 @@ same accesskey but will never be visible at the same time. -->
 unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinSelectedTabs.accesskey        "b">
-<!-- Reload Tab and Reload Selected Tabs have the same accesskey
-but will never be visible at the same time. -->
-<!ENTITY  reloadSelectedTabs.label           "Kesamajib'ëx chik Cha'on taq Ruwi'">
-<!ENTITY  reloadSelectedTabs.accesskey       "R">
 <!-- LOCALIZATION NOTE(reloadTab.label, reloadTabs.label): have the same accesskey
 but will never be visible at the same time. -->
 <!ENTITY  reloadTabs.label                   "Kesamajib'ëx taq Ruwi'">
@@ -90,8 +79,6 @@ same accesskey but will never be visible at the same time. -->
 unpinTab.accesskey, unpinSelectedTabs.accesskey): These share the
 same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "t">
-<!ENTITY  sendTabToDevice.label              "Titaq ri ruwi' pa Okisaxel">
-<!ENTITY  sendTabToDevice.accesskey          "O">
 <!ENTITY  sendPageToDevice.label             "Titaq ruxaq pa Okisaxel">
 <!ENTITY  sendPageToDevice.accesskey         "O">
 <!ENTITY  sendLinkToDevice.label             "Titaq Ximojri'ïl pa Okisaxel">
@@ -110,8 +97,6 @@ These two items have the same accesskey but will never be visible at the same ti
 <!ENTITY  moveToNewWindow.accesskey          "l">
 <!ENTITY  reopenInContainer.label            "Tijaq chik pa K'wayöl">
 <!ENTITY  reopenInContainer.accesskey        "c">
-<!ENTITY  bookmarkAllTabs.label              "Ketz'aqatisäx taq ruwi' pa taq yaketal…">
-<!ENTITY  bookmarkAllTabs.accesskey          "w">
 <!ENTITY  bookmarkTab.label                  "Tiyaketalïx Ruwi'">
 <!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
 These items have the same accesskey but will never be visible at the same time. -->
@@ -123,6 +108,10 @@ These items have the same accesskey but will never be visible at the same time. 
 <!ENTITY  hiddenTabs.label                   "Ewan taq Ruwi'">
 
 <!ENTITY  listAllTabs.label      "Kik'utik konojel ri taq ruwi' kajtz'ïk">
+
+<!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
+in "Search through tabs". -->
+<!ENTITY  allTabsMenu.searchTabs.label       "Kekanöx taq Ruwi'">
 
 <!ENTITY tabCmd.label "K'ak'a' ruwi'">
 <!ENTITY tabCmd.accesskey "r">
@@ -153,11 +142,6 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY personalbarCmd.label "Kicholob'al taq kisamajib'al taq yaketal">
 <!ENTITY personalbarCmd.accesskey "K">
 <!ENTITY bookmarksToolbarItem.label "Ruch'akulal taq kiyaketal cholsamajib'äl">
-
-<!ENTITY toolbarContextMenu.reloadAllTabs.label "Kesamajib'ëx chik konojel ri taq ruwi'">
-<!ENTITY toolbarContextMenu.reloadAllTabs.accesskey "k">
-<!ENTITY toolbarContextMenu.bookmarkAllTabs.label "Ketz'aqatisäx taq ruwi' pa taq yaketal…">
-<!ENTITY toolbarContextMenu.bookmarkAllTabs.accesskey "w">
 
 <!ENTITY toolbarContextMenu.reloadSelectedTab.label "Tisamajib'ëx Cha'on Ruwi'">
 <!-- LOCALIZATION NOTE (toolbarContextMenu.reloadSelectedTab.accesskey,
@@ -264,9 +248,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY editThisBookmarkCmd.label "Tinuk' re yaketal re'">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
 
-<!ENTITY subscribeToPageMenupopup.label "Tatz'ib'aj ab'i' pa re ruxaq re'">
-<!ENTITY subscribeToPageMenuitem.label "Tatz'ib'aj ab'i' pa re ruxaq re'…">
-
 <!ENTITY addCurPagesCmd.label "Ketz'aqatisäx taq ruwi' pa taq yaketal…">
 <!ENTITY showAllBookmarks2.label "Kek'ut konojel ri taq yaketal">
 <!ENTITY recentBookmarks.label "K'a nimakol tiya' ketal">
@@ -305,6 +286,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Keyak taq tzij pa Jutaqil Yakoj">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Ri Okik'amaya'l k'o pa ruq'a' ri näj chajinïk">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Tijaq ri Ajk'amaya'l Juxunem pas">
+<!ENTITY urlbar.storageAccessAnchor.tooltip               "Tijaq ri kipas kiya'oj q'ij taq rusamaj okem pa k'amaya'l">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Tinuk'samajïx ri rukomonik elesäy awachib'äl chuqa' ri q'axäy atzij rik'in ri ruxaq k'amaya'l">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Tinuk'samajïx ri rukomonik q'axäy atzij rik'in ri ruxaq k'amaya'l">
@@ -380,10 +362,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY webDeveloperMenu.label       "Nuk'unel ajk'amaya'l">
 <!ENTITY webDeveloperMenu.accesskey   "a">
-
-<!ENTITY devtoolsRecordExecution.label "Tiyak B'anatajinem">
-<!ENTITY devtoolsSaveRecording.label "Tiyak Yakoj">
-<!ENTITY devtoolsReplayExecution.label "Titzij B'anatajinem">
 
 <!ENTITY inspectContextMenu.label     "Rutz'etik atuxtäq">
 <!ENTITY inspectContextMenu.accesskey "Q">
@@ -514,7 +492,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "R">
 <!ENTITY customizeMenu.manageExtension.label "Tinuk'samajïx K'amal">
 <!ENTITY customizeMenu.manageExtension.accesskey "K">
-
 <!ENTITY customizeMenu.removeExtension.label "Tiyuj K'amal">
 <!ENTITY customizeMenu.removeExtension.accesskey "y">
 
@@ -655,6 +632,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "Titz'aqatisäx re ruchi' kajtz'ik re' pa taq etal">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "e">
 <!ENTITY pageAction.copyLink.label    "Tiwachib'ëx Ximonel">
+
+<!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
+  "Pocket" is a brand name. -->
+<!ENTITY pocketButton.tooltiptext     "Tiyak pa Pocket">
+<!ENTITY saveToPocketCmd.label        "Tiyak Ruxaq pa Pocket">
+<!ENTITY saveToPocketCmd.accesskey    "k">
+<!ENTITY saveLinkToPocketCmd.label    "Tiyak Ximonel pa Pocket">
+<!ENTITY saveLinkToPocketCmd.accesskey "o">
+<!ENTITY pocketMenuitem.label         "Titz'et Rucholb'al Pocket">
+
 <!ENTITY emailPageCmd.label           "Titaq ximonel tzij…">
 <!ENTITY emailPageCmd.accesskey       "T">
 <!ENTITY savePageCmd.label            "Tiyak ruxaq achi'el…">
@@ -893,6 +880,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsReloadHint "Rik'in jub'a' k'o chi yatok chik pa ruxaq richin yesamäj ri taq k'exoj.">
 <!ENTITY identity.permissionsPreferences.tooltip "Kejaq Taq Rajowaxik Ya'oj Q'ij">
 
+<!ENTITY identity.contentBlockingPreferences.tooltip "Tijaq Rajowab'al Ruq'atik Rupam">
+
+
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
 <!ENTITY tabsToolbar.label "Ruwi' kanonel">
@@ -994,78 +984,17 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.title "Ruq'atik Rupam">
 <!ENTITY contentBlocking.detected "Q'atel rupam xilitäj pa re ruxaq k'amaya'l re'.">
 <!ENTITY contentBlocking.notDetected "Man q'atel ta rupam xilitäj pa re ruxaq re'.">
-<!ENTITY contentBlocking.disabled.label "Chupun">
-<!ENTITY contentBlocking.disabled.tooltip "Xachüp ri Ruq'atik Rupam.">
-<!ENTITY contentBlocking.exception.tooltip "Xachüp ri Ruq'atik Rupam re ruxaq k'amaya'l re'.">
-
-<!ENTITY contentBlocking.fastBlock.label "Eqal-yesamajib'ëx ri Ojqanela'">
-<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocked.label):
-     This label signals that this type of content blocking is turned
-     ON and is successfully blocking malicious/slow content, so this is
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Slow-Loading Trackers [are] Blocked"-->
-<!ENTITY contentBlocking.fastBlock.blocked.label "Q'aton">
-<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.blocking.label):
-     This label signals that this type of content blocking is turned
-     ON, so this is a positive thing. It forms the verb in (imaginary) sentence
-     "Firefox is blocking Slow-Loading Trackers"-->
-<!ENTITY contentBlocking.fastBlock.blocking.label "Niq'at">
-<!-- LOCALIZATION NOTE (contentBlocking.fastBlock.add.label):
-     This is displayed as a link to preferences, where the user can add
-     this specific type of content blocking. When this text is shown
-     the type of content blocking is currently not enabled. -->
-<!ENTITY contentBlocking.fastBlock.add.label "Nitz'aqatisäx Q'atoj…">
-
-<!ENTITY contentBlocking.trackingProtection2.label "Ronojel Ojqanela' Xetz'et">
 
 <!ENTITY contentBlocking.trackingProtection3.label "Ojqanela'">
-<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.allowed.label):
-     This label signals that this type of content blocking is turned
-     OFF and is not blocking tracker content, so this is not
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Trackers [are] Allowed"-->
-<!ENTITY contentBlocking.trackingProtection.allowed.label "Ya'on q'ij">
-<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.blocked.label):
-     This label signals that this type of content blocking is turned
-     ON and is successfully blocking tracker content, so this is
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Trackers [are] Blocked"-->
-<!ENTITY contentBlocking.trackingProtection.blocked.label "Q'aton">
-<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
-     This label signals that this type of content blocking is turned
-     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
-     "Firefox is blocking Trackers"-->
-<!ENTITY contentBlocking.trackingProtection.blocking.label "Niq'at">
-<!-- LOCALIZATION NOTE (contentBlocking.trackingProtection.add.label):
-     This is displayed as a link to preferences, where the user can add
-     this specific type of content blocking. When this text is shown
-     the type of content blocking is currently not enabled. -->
-<!ENTITY contentBlocking.trackingProtection.add.label "Nitz'aqatisäx Q'atoj…">
-
-<!ENTITY contentBlocking.3rdPartyCookies.label "Kikaxlanwäy Aj Rox Winäq">
-<!ENTITY contentBlocking.3rdPartyCookies.trackers.label "Rukuki Ojqanem">
-<!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.blocked.label):
-     This label signals that this type of content blocking is turned
-     ON and is successfully blocking third-party cookies, so this is
-     a positive thing. It forms the end of the (imaginary) sentence
-     "Third-Party Cookies [are] Blocked"-->
-<!ENTITY contentBlocking.3rdPartyCookies.blocked.label "Q'aton">
-<!-- LOCALIZATION NOTE (contentBlocking.tranckingProtection.blocking.label):
-     This label signals that this type of content blocking is turned
-     ON, so this is a positive thing. It forms the verb in the (imaginary) sentence
-     "Firefox is blocking Third-Party Cookies"-->
-<!ENTITY contentBlocking.3rdPartyCookies.blocking.label "Niq'at">
-<!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.add.label):
-     This is displayed as a link to preferences, where the user can add
-     this specific type of content blocking. When this text is shown
-     the type of content blocking is currently not enabled. -->
-<!ENTITY contentBlocking.3rdPartyCookies.add.label "Nitz'aqatisäx Q'atoj…">
 
 <!ENTITY contentBlocking.manageSettings.label "Tinuk'samajïx Ruq'atik Rupam">
 <!ENTITY contentBlocking.manageSettings.accesskey "T">
 
 <!ENTITY contentBlocking.trackersView.label "Ojqanela'">
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Richin yeq'at ri ojqanela', tib'an runuk'ulem ruq'atik rupam pa  “Nimaläj”.">
+
+<!ENTITY contentBlocking.cookies.label "Taq kuki">
+<!ENTITY contentBlocking.cookiesView.label "Taq Kuki chuqa' Rutzij Ruxaq">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Tiya' rutzijol jun k'ayewal">
 <!ENTITY contentBlocking.breakageReportView.label "Tiya' Kitzijol K'ayewal">
@@ -1075,22 +1004,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "¿Achike k'ayewal xawïl? (Cha'el)">
 <!ENTITY contentBlocking.breakageReportView.sendReport.label "Titaq Rutzijol">
 <!ENTITY contentBlocking.breakageReportView.cancel.label "Tiq'at">
-
-<!ENTITY trackingProtection.title "Chajinïk chuwäch Ojqanïk">
-<!ENTITY trackingProtection.tooltip "Tijaq taq Rajowaxik Chajinïk chuwäch Ojqanem">
-
-<!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
-     The associated button with this label and accesskey is only shown when opening the control
-     center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock4.label "Tichup Q'atoj Pa Re Ruxaq Re'">
-<!ENTITY trackingProtection.unblock4.accesskey "T">
-<!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
-     The associated button with this label and accesskey is only shown when opening the control
-     center while looking at a site with trackers in PRIVATE browsing mode. -->
-<!ENTITY trackingProtection.unblockPrivate4.label "Tichup Q'atoj Jumej">
-<!ENTITY trackingProtection.unblockPrivate4.accesskey "T">
-<!ENTITY trackingProtection.block5.label "Titzij Q'atoj Pa Re Ruxaq Re'">
-<!ENTITY trackingProtection.block5.accesskey "E">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
@@ -1109,11 +1022,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pluginNotification.showAll.label "Tik'ut pe ronojel">
 <!ENTITY pluginNotification.showAll.accesskey "T">
-
-<!-- LOCALIZATION NOTE (pluginActivateNow.label, pluginActivateAlways.label, pluginBlockNow.label): These should be the same as the matching strings in browser.properties -->
-<!ENTITY pluginActivateNow.label "Tiya' q'ij wakami">
-<!ENTITY pluginActivateAlways.label "Tiya' q'ij chuqa' Tinatäx">
-<!ENTITY pluginBlockNow.label "Tiq'at nak'ab'äl">
 
 <!-- LOCALIZATION NOTE: (pluginNotification.width): This is used to determine the
      width of the plugin popup notification that can appear if a plugin has been
@@ -1200,11 +1108,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageActionButton.tooltip "Taq rub'anoj ruxaq">
 <!ENTITY pageAction.addToUrlbar.label "Titz'aqatisäx ri Kikajtz'ik Ochochib'äl">
 <!ENTITY pageAction.removeFromUrlbar.label "Tiyuj el chupam ri Kikajtz'ik Ochoch">
-<!ENTITY pageAction.allowInUrlbar.label "Tik'ut pe pa Kikajtz'ik Ochochib'äl">
-<!ENTITY pageAction.disallowInUrlbar.label "Man tik'ut pe pa Kikajtz'ik Ochochib'äl">
 <!ENTITY pageAction.manageExtension.label "Tinuk'samajïx K'amal…">
-
-<!ENTITY pageAction.sendTabToDevice.label "Titaq Ruwi' pan Okisaxel">
 
 <!ENTITY sendToDevice.syncNotReady.label "Tajin yexim ri taq Okisaxel…">
 

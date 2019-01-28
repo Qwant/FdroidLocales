@@ -170,7 +170,7 @@ delete-ssl-cert-confirm = 您确定要删除这些服务器例外吗？
 delete-ssl-cert-impact = 如果您删除一个服务器例外，下次您再访问该服务器时会恢复要求该网站使用有效的证书，您可能又会收到服务器证书无效的提示。
 delete-ca-cert-title =
     .title = 删除或不信任 CA 证书
-delete-ca-cert-confirm = 您已请求删除这些 CA 证书。内建的证书将被取消所有信任使操作达到同样的效果。您确认要删除或取消信任吗？
+delete-ca-cert-confirm = 您已请求删除这些 CA 证书。内置的证书将被取消所有信任使操作达到同样的效果。您确认要删除或取消信任吗？
 delete-ca-cert-impact = 如果您删除或不信任证书一个颁发机构（CA）证书，本应用程序将不再信任由该 CA 颁发的任何证书.
 delete-email-cert-title =
     .title = 删除电子邮件证书
@@ -232,3 +232,13 @@ add-exception-checking-short = 正在检查信息
 add-exception-checking-long = 正在尝试识别此站点…
 add-exception-no-cert-short = 无可用信息
 add-exception-no-cert-long = 无法取得指定站点的标识及状态信息。
+
+## Certificate export "Save as" and error dialogs
+
+save-cert-as = 保存证书至文件
+cert-format-base64 = X.509 证书 (PEM)
+cert-format-base64-chain = X.509 含链证书 (PEM)
+cert-format-der = X.509 证书 (DER)
+cert-format-pkcs7 = X.509 证书 (PKCS#7)
+cert-format-pkcs7-chain = X.509 含链证书 (PKCS#7)
+write-file-failure = 文件错误

@@ -16,7 +16,7 @@ list-empty-installed =
 list-empty-available-updates =
     .value = Nicio actualizare găsită
 list-empty-recent-updates =
-    .value = Nu ați actualizat recent niciun supliment
+    .value = Nu ai actualizat recent niciun supliment
 list-empty-find-updates =
     .label = Caută actualizări
 list-empty-button =
@@ -207,3 +207,12 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Instalează actualizările
     .tooltiptext = Instalează actualizările disponibile în această listă
+
+## Extension shortcut management
+
+shortcuts-manage =
+    .label = Comenzi rapide de la tastatură
+shortcuts-empty-message = Nu există comenzi rapide pentru această extensie.
+shortcuts-input =
+    .placeholder = Tastează o comandă rapidă
+shortcuts-letter = Tastează o literă

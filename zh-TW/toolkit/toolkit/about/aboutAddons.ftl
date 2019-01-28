@@ -199,7 +199,7 @@ extensions-updates-reset-updates-to-manual =
 extensions-updates-updating =
     .value = 正在更新附加元件
 extensions-updates-installed =
-    .value = 您的附加元件已被更新。
+    .value = 已更新您的附加元件。
 extensions-updates-downloaded =
     .value = 已下載您的附加元件更新。
 extensions-updates-restart =
@@ -211,3 +211,20 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = 安裝更新
     .tooltiptext = 安裝此清單中可用的更新
+
+## Extension shortcut management
+
+shortcuts-manage =
+    .label = 快速鍵
+shortcuts-empty-message = 此擴充套件沒有用到快速鍵。
+shortcuts-no-addons = 您並未啟用任何擴充套件。
+shortcuts-input =
+    .placeholder = 輸入快速鍵
+shortcuts-browserAction = 啟用快速鍵
+shortcuts-pageAction = 啟用頁面操作
+shortcuts-sidebarAction = 切換側邊欄
+shortcuts-modifier-mac = 包含 Ctrl、Alt 或 ⌘
+shortcuts-modifier-other = 包含 Ctrl 或 Alt
+shortcuts-invalid = 無效的快速鍵
+shortcuts-letter = 按下一個字母
+shortcuts-system = 無法蓋過 { -brand-short-name } 的快速鍵

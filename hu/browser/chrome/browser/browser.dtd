@@ -111,6 +111,10 @@ These items have the same accesskey but will never be visible at the same time. 
 
 <!ENTITY  listAllTabs.label      "Minden lap felsorolása">
 
+<!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
+in "Search through tabs". -->
+<!ENTITY  allTabsMenu.searchTabs.label       "Lapok keresése">
+
 <!ENTITY tabCmd.label "Új lap">
 <!ENTITY tabCmd.accesskey "l">
 <!ENTITY tabCmd.commandkey "t">
@@ -631,6 +635,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "Keret hozzáadása a könyvjelzőkhöz">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "h">
 <!ENTITY pageAction.copyLink.label    "Hivatkozás másolása">
+
+<!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
+  "Pocket" is a brand name. -->
+<!ENTITY pocketButton.tooltiptext     "Mentés a Pocketbe">
+<!ENTITY saveToPocketCmd.label        "Oldal mentése a Pocketbe">
+<!ENTITY saveToPocketCmd.accesskey    "k">
+<!ENTITY saveLinkToPocketCmd.label    "Hivatkozás mentése a Pocketbe">
+<!ENTITY saveLinkToPocketCmd.accesskey "o">
+<!ENTITY pocketMenuitem.label         "Pocket lista megjelenítése">
+
 <!ENTITY emailPageCmd.label           "Hivatkozás küldése e-mailben…">
 <!ENTITY emailPageCmd.accesskey       "d">
 <!ENTITY savePageCmd.label            "Oldal mentése…">
@@ -868,6 +882,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Nem adott speciális jogosultságokat ennek az oldalnak.">
 <!ENTITY identity.permissionsReloadHint "Lehet hogy újra kell töltenie az oldalt a változások érvényesítéséhez.">
 <!ENTITY identity.permissionsPreferences.tooltip "Engedélybeállítások megnyitása">
+
+<!ENTITY identity.contentBlockingPreferences.tooltip "Tartalomblokkolási beállítások megnyitása">
+
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->

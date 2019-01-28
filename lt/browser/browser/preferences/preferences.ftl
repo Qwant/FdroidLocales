@@ -8,6 +8,8 @@ do-not-track-option-default =
     .label = Tik naudojant apsaugą nuo stebėjimo
 do-not-track-option-default-content-blocking =
     .label = Tik kai „{ -brand-short-name }“ nustatyta blokuoti žinomus stebėjimo elementus
+do-not-track-option-default-content-blocking-known =
+    .label = Tik kai „{ -brand-short-name }“ nurodyta blokuoti žinomus stebėjimo elementus
 do-not-track-option-always =
     .label = Visada
 pref-page =
@@ -155,9 +157,6 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Įspėti prieš užveriant daugiau kaip vieną kortelę
     .accesskey = d
-warn-on-quit-close-multiple-tabs =
-    .label = Perspėti prieš išjungiant ir uždarant keletą kortelių
-    .accesskey = t
 warn-on-open-many-tabs =
     .label = Įspėti prieš atveriant daug kortelių, kurios gali sulėtinti „{ -brand-short-name }“ darbą
     .accesskey = s
@@ -866,6 +865,7 @@ collection-studies =
 collection-studies-link = Peržiūrėti „{ -brand-short-name }“ tyrimus
 addon-recommendations =
     .label = Leisti „{ -brand-short-name }“ siūlyti suasmenintas priedų rekomendacijas
+addon-recommendations-link = Sužinoti daugiau
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Duomenų siuntimas šiai darinio sąrankai yra išjungtas

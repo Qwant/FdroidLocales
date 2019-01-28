@@ -4,6 +4,9 @@
 
 addons-window =
     .title = Viðbótastjóri
+search-header =
+    .placeholder = Leita á addons.mozilla.org
+    .searchbuttonlabel = Leita
 search-header-shortcut =
     .key = f
 loading-label =
@@ -21,6 +24,12 @@ list-empty-button =
 install-addon-from-file =
     .label = Setja inn viðbót frá skrá…
     .accesskey = i
+help-button = Viðbótastuðningur
+preferences =
+    { PLATFORM() ->
+        [windows] { -brand-short-name } Valmynd
+       *[other] { -brand-short-name } Valkostir
+    }
 tools-menu =
     .tooltiptext = Verkfæri fyrir allar viðbætur
 show-unsigned-extensions-button =
@@ -198,3 +207,14 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Setja inn uppfærslur
     .tooltiptext = Setja inn allar uppfærslur í þessum lista
+
+## Extension shortcut management
+
+shortcuts-manage =
+    .label = Flýtilyklar
+shortcuts-input =
+    .placeholder = Slá inn flýtilykil
+shortcuts-modifier-mac = Hafa með Ctrl, Alt eða ⌘
+shortcuts-modifier-other = Hafa með Ctrl eða Alt
+shortcuts-invalid = Ógild samsetning
+shortcuts-letter = Slá inn bókstaf

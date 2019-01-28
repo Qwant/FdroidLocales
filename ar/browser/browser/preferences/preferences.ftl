@@ -4,10 +4,8 @@
 
 do-not-track-description = أرسل للمواقع إشارة ”لا تتعقبني“ بأنك لا تريد أن يتعقبوك
 do-not-track-learn-more = اطّلع على المزيد
-do-not-track-option-default =
-    .label = عند استخدام الحماية من التعقب فقط
-do-not-track-option-default-content-blocking =
-    .label = عندما يُضبط { -brand-short-name } على حجب المتعقّبات المكتشفة فقط
+do-not-track-option-default-content-blocking-known =
+    .label = فقط حين يُضبط { -brand-short-name } على حجب المتعقّبات المعروفة
 do-not-track-option-always =
     .label = دائمًا
 pref-page =
@@ -93,9 +91,6 @@ extension-controlled-default-search = ضبط أحد الامتدادات (<img d
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = يتطلب أحد الامتدادات (<img data-l10n-name="icon"/> { $name }) الألسنة الحاوية.
-# This string is shown to notify the user that their tracking protection preferences
-# are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = يتحكم أحد الامتدادات (<img data-l10n-name="icon"/> { $name }) في الحماية من التعقب.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = يتحكم أحد الامتدادات (<img data-l10n-name="icon"/> { $name }) في هذا الإعداد.
@@ -141,6 +136,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = استعد الجلسة السابقة
     .accesskey = س
+startup-restore-warn-on-quit =
+    .label = نبّهني عند إنهاء المتصفح
 disable-extension =
     .label = عطّل الامتداد
 tabs-group-header = الألسنة
@@ -153,9 +150,6 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = نبّهني عند محاولة إغلاق عدّة ألسنة
     .accesskey = ة
-warn-on-quit-close-multiple-tabs =
-    .label = نبّهني عند محاولة الإنهاء وإغلاق عدّة ألسنة
-    .accesskey = ن
 warn-on-open-many-tabs =
     .label = نبّهني عند فتح عدة ألسنة أن هذا قد يبطئ { -brand-short-name }
     .accesskey = ف
@@ -547,7 +541,6 @@ privacy-header = خصوصية المتصفح
 
 ## Privacy Section - Forms
 
-forms-header = النماذج و كلمات السر
 logins-header = جلسات الولوج وكلمات السر
 forms-ask-to-save-logins =
     .label = اطلب مني حفظ كلمات سر و بيانات ولوج مواقع الوِب
@@ -615,15 +608,10 @@ sitedata-total-size-calculating = يحسب حجم بيانات الموقع و 
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = تستخدم الكعكات، و بيانات الموقع، و الخبيئة المحفوظة حاليًا { $value }‏ { $unit } من مساحة القرص.
 sitedata-learn-more = اطّلع على المزيد
-sitedata-keep-until = احتفظ بها حتى
-    .accesskey = ظ
-sitedata-keep-until-expire =
-    .label = تنتهي صلاحيتها
-sitedata-keep-until-closed =
-    .label = إغلاق { -brand-short-name }
 sitedata-delete-on-close =
     .label = احذف الكعكات وبيانات المواقع عندما ينغلق { -brand-short-name }
     .accesskey = ذ
+sitedata-delete-on-close-private-browsing = في وضع التصفح الخاص الدائم، تُمسح الكعكات وبيانات المواقع متى ما أُغلق { -brand-short-name }.
 sitedata-allow-cookies-option =
     .label = اقبل الكعكات و بيانات المواقع
     .accesskey = ق
@@ -634,29 +622,20 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = النوع المحجوب
     .accesskey = ن
-sitedata-block-trackers-option-recommended =
-    .label = متعقّبات الأطراف الثالثة (يُنصح بها)
-sitedata-block-trackers-option =
+sitedata-option-block-trackers =
     .label = متعقّبات الأطراف الثالثة
-sitedata-block-unvisited-option =
+sitedata-option-block-unvisited =
     .label = الكعكات من المواقع غير المُزارة
-sitedata-block-all-third-party-option =
-    .label = كل كعكات الأطراف الثالثة (قد تتسبّب بعطب مواقع الوِب)
-sitedata-block-all-option =
-    .label = كل الكعكات (قد تتسبّب بعطب المواقع)
+sitedata-option-block-all-third-party =
+    .label = كل كعكات الأطراف الثالثة (يمكن أن تعطب المواقع هكذا)
+sitedata-option-block-all =
+    .label = كل الكعكات (يمكن أن تعطب المواقع هكذا)
 sitedata-clear =
     .label = امسح البيانات…
     .accesskey = س
 sitedata-settings =
     .label = أدِر البيانات…
     .accesskey = د
-sitedata-cookies-exceptions =
-    .label = الاستثناءات…
-    .accesskey = س
-# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
-# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
-# Cookies and Site Data section.
-sitedata-warning-your-settings-prevent-changes = إعداداتك في خيارات حجب المحتوى تمنع التغييرات على إعدادات الكعكات وبيانات المواقع.
 sitedata-cookies-permissions =
     .label = أدِر التصاريح
     .accesskey = ص
@@ -679,28 +658,10 @@ addressbar-suggestions-settings = غيّر تفضيلات اقتراحات مح�
 ## Privacy Section - Content Blocking
 
 content-blocking-header = حجب المحتوى
-content-blocking-desc = احجب المحتوى من الأطراف الثالثة (مثل الإعلانات والنصوص البرمجية) التي تُبطئ من التصفح وتتعقّبك وأنت تجوب الوِب. خصّص الإعدادات لتوازن بين الحماية والأداء.
 content-blocking-description = احجب المحتوى من الأطراف الثالثة والذي يتعقّبك في أرجاء الوِب. تحكّم بمقدار نشاطك الشبكي الذي يُخزّن ويُشارك بين المواقع.
 content-blocking-learn-more = اطّلع على المزيد
-content-blocking-restore-defaults =
-    .label = استعد المبدئيات
-    .accesskey = س
-content-blocking-toggle-on =
-    .tooltiptext = عطِّل حجب المحتوى
-content-blocking-toggle-off =
-    .tooltiptext = فعِّل حجب المحتوى
-content-blocking-toggle-label-on = مفعّل
-    .accesskey = ف
-content-blocking-toggle-label-off = معطّل
-    .accesskey = ع
-content-blocking-category-label = اختر ما الذي تريد حجبه
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-trackers-label =
-    .label = المتعقّبات بطيئة التحميل
-    .accesskey = ط
-content-blocking-fastblock-new-description = احجب المتعقّبات التي تمنع تحميل الصفحات بسرعة فحسب.
+# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
+# "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
     .label = قياسي
     .accesskey = ق
@@ -710,6 +671,7 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = مخصّص
     .accesskey = خ
+content-blocking-standard-description = احجب المتعقّبات المعروفة في النوافذ الخاصة فقط.
 content-blocking-standard-desc = الموازنة بين الحماية والأداء. يتيح عمل بعض المتعقّبات لتعمل المواقع كما ينبغي.
 content-blocking-strict-desc = يحجب كل المتعقّبات التي يكتشفها { -brand-short-name }. قد يتسبّب بعطب بعض المواقع.
 content-blocking-custom-desc = اختر ما تريد حجبه.
@@ -720,65 +682,22 @@ content-blocking-all-third-party-cookies = كل الكعكات من الأطرا
 content-blocking-warning-title = كُن على علم!
 content-blocking-warning-desc = حجب الكعكات والمتعقّبات قد يتسبّب بعطب بعض المواقع. من السهل تعطيل الحجب في المواقع التي تثق بها.
 content-blocking-learn-how = اطّلع على الطريقة
-content-blocking-tracking-protection-trackers-label =
+content-blocking-trackers-label =
     .label = المتعقّبات
     .accesskey = ق
-content-blocking-tracking-protection-all-detected-trackers-label =
-    .label = كل المتعقّبات المكتشفة
-    .accesskey = ش
-content-blocking-tracking-protection-new-description = احجب كل المتعقّبات المعروفة. (قد يمنع بعض الصفحات من التحميل.)
-content-blocking-tracking-protection-option-always =
-    .label = دائما
-    .accesskey = د
-content-blocking-tracking-protection-option-private =
+content-blocking-tracking-protection-option-all-windows =
+    .label = في كل النوافذ
+    .accesskey = ك
+content-blocking-option-private =
     .label = في النوافذ الخاصة فقط
     .accesskey = خ
 content-blocking-tracking-protection-change-block-list = غيّر قائمة الحجب
-content-blocking-third-party-cookies-label =
-    .label = كعكات الأطراف الثالثة
-    .accesskey = ث
-content-blocking-reject-trackers-description = احجب كل كعكات الأطراف الثالثة وأيضا تلك التي ضبطتها المتعقّبات.
-# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
-# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
-# the UI.
-content-blocking-reject-trackers-warning-your-settings-prevent-changes = إعداداتك في خيارات الكعكات وبيانات المواقع تمنع التغييرات على إعدادات كعكات الأطراف الثالثة.
-content-blocking-change-cookie-settings =
-    .label = غيّر إعدادات الكعكات
-    .accesskey = ع
-content-blocking-reject-trackers-block-trackers-option-recommended =
-    .label = المتعقّبات (يُنصح به)
-    .accesskey = ق
-content-blocking-reject-trackers-block-trackers-option =
-    .label = المتعقّبات
-    .accesskey = ق
-content-blocking-reject-trackers-all-third-parties-option =
-    .label = كل كعكات الأطراف الثالثة (قد يتسبب بعطب المواقع)
-    .accesskey = ك
 content-blocking-cookies-label =
     .label = الكعكات
     .accesskey = ك
 
 ## Privacy Section - Tracking
 
-tracking-header = الحماية من التعقّب
-tracking-desc = تحجب الحماية من التعقب متعقبات الإنترنت التي تجمع بيانات التصفح عبر أكثر من موقع. <a data-l10n-name="learn-more">تعرّف أكثر على الحماية من التعقب و خصوصيتك</a>
-tracking-mode-label = استخدم الحماية من التعقب لحظر المتعقبات المعروفة
-tracking-mode-always =
-    .label = دائمًا
-    .accesskey = د
-tracking-mode-private =
-    .label = في النوافذ الخاصة فقط
-    .accesskey = ق
-tracking-mode-never =
-    .label = أبدًا
-    .accesskey = ب
-tracking-exceptions =
-    .label = الاستثناءات…
-    .accesskey = س
-tracking-change-block-list =
-    .label = غيّر قائمة الحجب…
-    .accesskey = غ
 tracking-manage-exceptions =
     .label = أدِر الاستثناءات…
     .accesskey = ث
@@ -849,6 +768,9 @@ collection-health-report-link = اطّلع على المزيد
 collection-studies =
     .label = اسمح أن ينصّب { -brand-short-name } ويشغل الدراسات
 collection-studies-link = اعرض دراسات { -brand-short-name }
+addon-recommendations =
+    .label = اسمح بأن يقترح { -brand-short-name } الامتدادات المخصّصة لك
+addon-recommendations-link = اطّلع على المزيد
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = الإبلاغ عن البيانات معطّل في إعدادات البناء

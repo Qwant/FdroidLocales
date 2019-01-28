@@ -19,6 +19,13 @@
 <!ENTITY rememberPassword.label          "Cfu ɣef awal uffir">
 <!ENTITY rememberPassword.accesskey      "C">
 
+<!ENTITY usernameEx.label                "ISem-is n useqdac:">
+<!ENTITY usernameEx.accesskey            "l">
+<!-- LOCALIZATION NOTE(usernameEx.placeholder): YOURDOMAIN refers to the Windows domain in ActiveDirectory. yourusername refers to the user's account name in Windows. -->
+<!ENTITY usernameEx.placeholder          "TAƔULT-IK\isem-ikuseqdac">
+<!-- LOCALIZATION NOTE(usernameEx.text): Domain refers to the Windows domain in ActiveDirectory. We mean the user's login in Windows at the local corporate network. -->
+<!ENTITY usernameEx.text                 "ISem n taɣult">
+
 <!ENTITY imapLong.label                  "IMAP (ikaramen inmeggagen)">
 <!ENTITY pop3Long.label                  "POP3 (ḥrez imaylen ɣef uselkim-inek)">
 
@@ -30,7 +37,9 @@
 <!ENTITY ssl.label                       "SSL">
 <!ENTITY auth.label                      "Asesteb">
 <!ENTITY imap.label                      "IMAP">
-<!ENTITY pop3.label                       "POP3">
+<!ENTITY pop3.label                      "POP3">
+<!-- LOCALIZATION NOTE(exchange.label): Do not translate Exchange, it is a product name. -->
+<!ENTITY exchange.label                  "Exchange">
 <!ENTITY smtp.label                      "SMTP">
 <!ENTITY autodetect.label                "Tifin tawurmant">
 <!-- LOCALIZATION NOTE(noEncryption.label): Neither SSL/TLS nor STARTTLS.
@@ -38,6 +47,9 @@
 <!ENTITY noEncryption.label              "Ula yiwen">
 <!ENTITY starttls.label                  "STARTTLS">
 <!ENTITY sslTls.label                    "SSL/TLS">
+
+<!-- LOCALIZATION NOTE(exchange-hostname.label): Do not translate Exchange, it is a product name. -->
+<!ENTITY exchange-hostname.label         "Aqeddac Exchange:">
 
 <!ENTITY advancedSetup.label             "Tawila leqqayen">
 <!ENTITY advancedSetup.accesskey         "q">

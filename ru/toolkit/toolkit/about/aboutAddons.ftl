@@ -207,3 +207,20 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Установить обновления
     .tooltiptext = Установить доступные обновления из этого списка
+
+## Extension shortcut management
+
+shortcuts-manage =
+    .label = Горячие клавиши
+shortcuts-empty-message = У этого расширения нет горячих клавиш.
+shortcuts-no-addons = У вас не включено ни одного расширения.
+shortcuts-input =
+    .placeholder = Введите горячую клавишу
+shortcuts-browserAction = Активировать расширение
+shortcuts-pageAction = Активировать действие на странице
+shortcuts-sidebarAction = Показать/скрыть боковую панель
+shortcuts-modifier-mac = Добавьте Ctrl, Alt или ⌘
+shortcuts-modifier-other = Добавьте Ctrl или Alt
+shortcuts-invalid = Неверная комбинация
+shortcuts-letter = Введите букву
+shortcuts-system = Нельзя переопределить горячую клавишу { -brand-short-name }

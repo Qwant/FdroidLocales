@@ -111,6 +111,10 @@ These items have the same accesskey but will never be visible at the same time. 
 
 <!ENTITY  listAllTabs.label      "Список всех вкладок">
 
+<!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
+in "Search through tabs". -->
+<!ENTITY  allTabsMenu.searchTabs.label       "Поиск вкладок">
+
 <!ENTITY tabCmd.label "Новая вкладка">
 <!ENTITY tabCmd.accesskey "о">
 <!ENTITY tabCmd.commandkey "t">
@@ -285,6 +289,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Браузер находится под удалённым управлением">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Открыть панель веб-авторизации">
 
+<!ENTITY urlbar.storageAccessAnchor.tooltip               "Открыть панель разрешений при веб-сёрфинге">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Управление доступом сайта к вашей камере и/или микрофону">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Управление доступом сайта к вашему микрофону">
@@ -630,6 +635,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "Добавить фрейм в закладки">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "б">
 <!ENTITY pageAction.copyLink.label    "Копировать ссылку">
+
+<!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
+  "Pocket" is a brand name. -->
+<!ENTITY pocketButton.tooltiptext     "Сохранить в Pocket">
+<!ENTITY saveToPocketCmd.label        "Сохранить страницу в Pocket">
+<!ENTITY saveToPocketCmd.accesskey    "ь">
+<!ENTITY saveLinkToPocketCmd.label    "Сохранить ссылку в Pocket">
+<!ENTITY saveLinkToPocketCmd.accesskey "н">
+<!ENTITY pocketMenuitem.label         "Показать список Pocket">
+
 <!ENTITY emailPageCmd.label           "Отправить ссылку по почте…">
 <!ENTITY emailPageCmd.accesskey       "п">
 <!ENTITY savePageCmd.label            "Сохранить как…">
@@ -867,6 +882,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Вы не давали этому сайту каких-либо специальных разрешений.">
 <!ENTITY identity.permissionsReloadHint "Чтобы изменения возымели действие, вам, возможно, потребуется перезагрузить страницу.">
 <!ENTITY identity.permissionsPreferences.tooltip "Открыть настройки разрешений">
+
+<!ENTITY identity.contentBlockingPreferences.tooltip "Открыть настройки блокировки содержимого">
+
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->

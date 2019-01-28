@@ -111,6 +111,10 @@ These items have the same accesskey but will never be visible at the same time. 
 
 <!ENTITY  listAllTabs.label      "列出所有分頁">
 
+<!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
+in "Search through tabs". -->
+<!ENTITY  allTabsMenu.searchTabs.label       "搜尋分頁">
+
 <!ENTITY tabCmd.label "開新分頁">
 <!ENTITY tabCmd.accesskey "T">
 <!ENTITY tabCmd.commandkey "t">
@@ -631,6 +635,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "將此頁框加入書籤">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "m">
 <!ENTITY pageAction.copyLink.label    "複製鏈結">
+
+<!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
+  "Pocket" is a brand name. -->
+<!ENTITY pocketButton.tooltiptext     "儲存至 Pocket">
+<!ENTITY saveToPocketCmd.label        "將頁面儲存至 Pocket">
+<!ENTITY saveToPocketCmd.accesskey    "k">
+<!ENTITY saveLinkToPocketCmd.label    "將鏈結儲存至 Pocket">
+<!ENTITY saveLinkToPocketCmd.accesskey "o">
+<!ENTITY pocketMenuitem.label         "檢視 Pocket 清單">
+
 <!ENTITY emailPageCmd.label           "郵寄鏈結…">
 <!ENTITY emailPageCmd.accesskey       "E">
 <!ENTITY savePageCmd.label            "另存新檔…">
@@ -855,7 +869,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.enableMixedContentBlocking.accesskey "E">
 <!ENTITY identity.disableMixedContentBlocking.label "暫時停止保護">
 <!ENTITY identity.disableMixedContentBlocking.accesskey "D">
-<!ENTITY identity.learnMore "更多資訊">
+<!ENTITY identity.learnMore "了解更多">
 
 <!ENTITY identity.removeCertException.label "移除例外">
 <!ENTITY identity.removeCertException.accesskey "R">
@@ -868,6 +882,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "您並未授予此網站任何特殊權限。">
 <!ENTITY identity.permissionsReloadHint "您可能需要重新載入頁面才能讓變更生效。">
 <!ENTITY identity.permissionsPreferences.tooltip "開啟權限偏好設定">
+
+<!ENTITY identity.contentBlockingPreferences.tooltip "開啟內容封鎖偏好設定">
+
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -1013,7 +1030,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackingProtection.add.label "新增封鎖項目…">
 
 <!ENTITY contentBlocking.3rdPartyCookies.label "第三方 Cookie">
-<!ENTITY contentBlocking.3rdPartyCookies.trackers.label "追蹤 Cookie">
+<!ENTITY contentBlocking.3rdPartyCookies.trackers.label "追蹤用 Cookie">
 <!-- LOCALIZATION NOTE (contentBlocking.3rdPartyCookies.blocked.label):
      This label signals that this type of content blocking is turned
      ON and is successfully blocking third-party cookies, so this is

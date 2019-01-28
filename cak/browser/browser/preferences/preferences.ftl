@@ -4,10 +4,8 @@
 
 do-not-track-description = Ketaq ri taq ruxaq ajk'amaya'l jun “Mani Tojqäx” raqän kumal chi man nojowäx ta chi tikanöx
 do-not-track-learn-more = Tetamäx ch'aqa' chik
-do-not-track-option-default =
-    .label = Xa xe toq nokisäx Chajinïk chuwäch Ojqanïk
-do-not-track-option-default-content-blocking =
-    .label = Xa xe toq { -brand-short-name } nuk'un richin yeruq'ät ri OJaqnela' Yetz'et
+do-not-track-option-default-content-blocking-known =
+    .label = Xa xe toq { -brand-short-name } b'anon runuk'ulem richin yeruq'ät ojqanela' etaman kiwäch
 do-not-track-option-always =
     .label = Junelïk
 pref-page =
@@ -93,9 +91,6 @@ extension-controlled-default-search = Jun k'amal, <img data-l10n-name="icon"/> {
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = Jun k'amal, <img data-l10n-name="icon"/> { $name }, nik'atzin K'ayöl Tabs chi re.
-# This string is shown to notify the user that their tracking protection preferences
-# are being controlled by an extension.
-extension-controlled-websites-tracking-protection-mode = Jun k'amal, <img data-l10n-name="icon"/> { $name }, tajin nuchajij ri chajinïk chuwäch ojqanem.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Jun k'amal, <img data-l10n-name="icon"/> { $name }, nuchajij re runuk'ulem re'.
@@ -141,6 +136,8 @@ set-as-my-default-browser =
 startup-restore-previous-session =
     .label = Titzolin pa ri molojri'ïl xik'o
     .accesskey = m
+startup-restore-warn-on-quit =
+    .label = Tiya' rutzijol toq yatel pa okik'amaya'l
 disable-extension =
     .label = Tichup ri K'amal
 tabs-group-header = Taq ruwi'
@@ -153,9 +150,6 @@ open-new-link-as-tabs =
 warn-on-close-multiple-tabs =
     .label = Taya' pe rutzijol we xketz'apitäj jalajöj taq ruwi'
     .accesskey = j
-warn-on-quit-close-multiple-tabs =
-    .label = Tiya' rutzijol toq nel o yetz'apïx k'ïy taq ruwi'
-    .accesskey = k
 warn-on-open-many-tabs =
     .label = Taya' pe rutzijol we { -brand-short-name } yalan eqal xtisamäj toq xkerujäq k'ïy taq ruwi'
     .accesskey = e
@@ -538,7 +532,6 @@ privacy-header = Richinanem Okik'amaya'l
 
 ## Privacy Section - Forms
 
-forms-header = Nojwuj & Ewan taq Tzij
 logins-header = Kitikirisanïk Molojri'ïl & Ewan taq Tzij
 forms-ask-to-save-logins =
     .label = Tik'utüx chi rij ri kiyakik kitikirib'al taq molojri'ïl chuqa' ri ewan taq kitzij taq ruxaq ajk'amaya'l
@@ -606,15 +599,10 @@ sitedata-total-size-calculating = Tajin nipaj kinimilem taq rutzij chuqa' rujume
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = Ri yakon taq kaxlanwey, rutzij ruxaq chuqa' ri rutzatzq'or taq jumejyak nikokisaj { $value } { $unit } chi re ri rupam nimayakb'äl.
 sitedata-learn-more = Tetamäx ch'aqa' chik
-sitedata-keep-until = Tik'oje' k'a
-    .accesskey = s
-sitedata-keep-until-expire =
-    .label = Tik'o iq'ij
-sitedata-keep-until-closed =
-    .label = { -brand-short-name } tz'apäl
 sitedata-delete-on-close =
     .label = Keyuj taq kuki chuqa' taq rutzij ruxaq toq nitz'apïx { -brand-short-name }
     .accesskey = k
+sitedata-delete-on-close-private-browsing = Pa rub'eyal junelïk ichinan okem, ri taq kuki chuqa' ri taq rutzij ruxaq k'amaya'l jantape' xkeyuj { -brand-short-name } toq nitz'apïx.
 sitedata-allow-cookies-option =
     .label = Kek'ulutäj taq rukaxlanway chuqa' taq rutzij k'amaya'l
     .accesskey = K
@@ -625,29 +613,20 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Q'aton ruwäch
     .accesskey = r
-sitedata-block-trackers-option-recommended =
-    .label = Aj rox winäq taq ojqanela' (chilab'en)
-sitedata-block-trackers-option =
-    .label = Aj rox winäq taq ojqanela'
-sitedata-block-unvisited-option =
-    .label = Kikaxlanwey ajk'amaya'l taq ruxaq man etz'eton ta
-sitedata-block-all-third-party-option =
-    .label = Ronojel ri taq kikaxlanwäy aj rox winäq (yetikïr nikitikirisaj sachoj pan ajk'amaya'l taq ruxaq)
-sitedata-block-all-option =
-    .label = Ronojel taq kaxlanwäy ( xtikiya' sachoj pan ajk'amaya'l taq ruxaq)
+sitedata-option-block-trackers =
+    .label = Rojqanela' aj rox winäq
+sitedata-option-block-unvisited =
+    .label = Taq kuki man etz'eton ta ajkamaya'l taq ruxaq
+sitedata-option-block-all-third-party =
+    .label = Konojel ri taq kikuki aj rox winäq (yetikïr yetz'ilon pan ajk'amaya'l ruxaq)
+sitedata-option-block-all =
+    .label = Konojel ri taq kuki (xketz'ilon pa ri ajk'amaya'l ruxaq)
 sitedata-clear =
     .label = Tijosq'ïx Tzij…
     .accesskey = j
 sitedata-settings =
     .label = Kenuk'samajïx Tzij…
     .accesskey = K
-sitedata-cookies-exceptions =
-    .label = Taq man relik ta…
-    .accesskey = r
-# This is a warning message shown next to a yellow warning icon when the Cookies and Site Data subsection
-# in Preferences has been disabled due to Content Blocking being disabled. It is displayed next to the
-# Cookies and Site Data section.
-sitedata-warning-your-settings-prevent-changes = Ri taq anuk'ulem pa ri Kiq'atik Rupam yekiq'ät ri taq Kijalik Kinuk'ulem Kaxlanwäy chuqa' Kitzij taq Ruxaq.
 sitedata-cookies-permissions =
     .label = Kenuk'samajïx taq Ya'oj Q'ij...
     .accesskey = Y
@@ -670,41 +649,8 @@ addressbar-suggestions-settings = Kek'ex ri taq kajowab'al ri taq kichilab'enik 
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Ruq'atik Rupam
-content-blocking-desc = Ke'aq'ata' taq rupam ketamab'al aj rox winäq, achi'el taq rutzijol o b'itz'ib', ri nitikïr nuyokob'a' ri okem pa ka'amaya'l chuqa' yerutzeqelb'ej ri taq ruxaq k'amaya'l ye'atz'ët. Tawichinaj ri anuk'ulem richin choj napäj ri chajinïk chuqa' ri rub'eyal nisamäj.
 content-blocking-description = Taq'ata' rupam kichin aj rox winäq yatkojqaj pa ajk'amaya'l. Tachajij jarupe' ri asamaj pa k'amab'ey yeyak chuqa' yekomonïx chi kikojol ajk'amaya'l taq ruxaq.
 content-blocking-learn-more = Tetamäx Ch'aqa' Chik
-content-blocking-restore-defaults =
-    .label = Ketzolij ri taq Wachinel e K'o Wi
-    .accesskey = t
-content-blocking-toggle-on =
-    .tooltiptext = Tichup ri Ruq'atik Rupam
-content-blocking-toggle-off =
-    .tooltiptext = Titzij ri Ruq'atik Rupam
-content-blocking-toggle-label-on = TZIJÏL
-    .accesskey = O
-content-blocking-toggle-label-off = CHUPÜL
-    .accesskey = O
-content-blocking-category-label = Tacha' achike naq'ät
-# "Slow" in this instance means "slow to load on the network".
-# FastBlock is a feature that blocks requests to tracking sites if they
-# have not finished loading after a certain threshold of seconds.
-content-blocking-fastblock-slow-loading-trackers-label =
-    .label = Eqal-Yesamajib'ëx Ojqanela'
-    .accesskey = E
-content-blocking-fastblock-new-description = Xa xe keq'at ri ojqanela' eqal nikib'än richin yesamajib'ëx ri taq ruxaq.
-content-blocking-tracking-protection-trackers-label =
-    .label = Ojqanela'
-    .accesskey = O
-content-blocking-tracking-protection-all-detected-trackers-label =
-    .label = Ronojel taq Ojqanela' Xe'ilitäj
-    .accesskey = O
-content-blocking-tracking-protection-new-description = Keq'at konojel ri ojqanela' etaman kiwäch. (Nitikïr nuq'ät kisamajib'exik jujun taq ruxaq.)
-content-blocking-tracking-protection-option-always =
-    .label = Junelïk
-    .accesskey = J
-content-blocking-tracking-protection-option-private =
-    .label = Xa xe pa ichinan taq tzuwäch
-    .accesskey = i
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
@@ -716,6 +662,7 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Ichinan
     .accesskey = I
+content-blocking-standard-description = Xa xe yeruq'ät ojqanela' etaman kiwäch pa Ichinan taq Ruwi'.
 content-blocking-standard-desc = Pajon richin ri chajinïk chuqa' ri rub'eyal nisamäj. Niya' q'ij chi ke jujun taq ojqanela' richin ütz yesamäj ri ajk'amaya'l ruxaq.
 content-blocking-strict-desc = Yeruq'ät konojel ri ojqanela' yetz'et ruma ri { -brand-short-name }. Rik'in jub'a' nub'än chi jujun ta ruxaq man yesamäj ta ütz.
 content-blocking-custom-desc = Ticha' achike niq'at.
@@ -729,55 +676,19 @@ content-blocking-learn-how = Tetamäx achike rub'eyal
 content-blocking-trackers-label =
     .label = Ojqanela'
     .accesskey = O
+content-blocking-tracking-protection-option-all-windows =
+    .label = Pa ronojel tzuwäch
+    .accesskey = t
 content-blocking-option-private =
     .label = Xa xe pa taq Ichinan tzuwäch
     .accesskey = I
 content-blocking-tracking-protection-change-block-list = Tijaq rucholajem q'atoj
-content-blocking-third-party-cookies-label =
-    .label = Kikaxlanwäy Aj Rox Winäq
-    .accesskey = k
-content-blocking-reject-trackers-description = Keq'at ronojel kikaxlanwäy aj rox winäq o xa xe ri eya'on kuma ri ojqanela'.
-# This is a warning message shown next to a yellow warning icon when the Third-Party Cookies subsection
-# of the Content Blocking UI in Preferences has been disabled due to the either the "All cookies" option
-# or the "Cookies from unvisited websites" option being selected in the Cookies and Site Data section of
-# the UI.
-content-blocking-reject-trackers-warning-your-settings-prevent-changes = Ri taq anuk'ulem pa taq Kaxlanwäy chuqa' Kitzij Ruxaq nikiq'ät ri jaloj nib'an pa Kinuk'ulem Kikaxlanwäy aj Rox Winäq.
-content-blocking-change-cookie-settings =
-    .label = Kek'ëx ri taq Runuk'ulem Kaxlanwäy
-    .accesskey = R
-content-blocking-reject-trackers-block-trackers-option-recommended =
-    .label = Ojqanela' (chilab'en)
-    .accesskey = n
-content-blocking-reject-trackers-block-trackers-option =
-    .label = Ojqanela'
-    .accesskey = n
-content-blocking-reject-trackers-all-third-parties-option =
-    .label = Ronojel kikaxlanwäy aj rox winäq (yetikïr yekib'än sachoj pan ajk'amaya'l ruxaq)
-    .accesskey = R
 content-blocking-cookies-label =
     .label = Taq kuki
     .accesskey = k
 
 ## Privacy Section - Tracking
 
-tracking-header = Chajinïk chuwäch Ojqanïk
-tracking-desc = Ri Chajinïk chuwäch Ojqanem yeruq'ät ri rukanonela' k'amaya'l, ri yemolon taq atzij chi rij ri awokem pa jalajöj taq ruxaq k'amaya'l. <a data-l10n-name="learn-more">Tisik'ïx ch'aqa' chik chi rij ri Chajinïk chuwäch Ojqanem chuqa' chi rij ri richinanem</a>
-tracking-mode-label = Tokisäx ri Chajinïk chuwäch Ojqanïk richin yeq'at ri kanonela' etaman kiwäch
-tracking-mode-always =
-    .label = Junelïk
-    .accesskey = e
-tracking-mode-private =
-    .label = Xa xe pa taq ichinan tzuwäch
-    .accesskey = x
-tracking-mode-never =
-    .label = Majub'ey
-    .accesskey = M
-tracking-exceptions =
-    .label = Taq man relik ta…
-    .accesskey = e
-tracking-change-block-list =
-    .label = Tijal Rucholajem q'atoj…
-    .accesskey = T
 tracking-manage-exceptions =
     .label = Kenuk'samajïx taq Man Relik Ta...
     .accesskey = x
@@ -848,6 +759,9 @@ collection-health-report-link = Tetamäx ch'aqa' chik
 collection-studies =
     .label = Tiya' q'ij chi re ri { -brand-short-name } niyakon chuqa' nusamajij tijonïk
 collection-studies-link = Ketz'et taq rutijonik { -brand-short-name }
+addon-recommendations =
+    .label = Tiya' q'ij chi re { -brand-short-name } ichinan tichilab'en chi kij taq k'amal
+addon-recommendations-link = Tetamäx ch'aqa' chik
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Chupül ri kitzijol taq tzij richin nib'an kinuk'ulem re taq alk'walaxinem re'

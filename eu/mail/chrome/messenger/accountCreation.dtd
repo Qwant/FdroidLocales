@@ -19,6 +19,13 @@
 <!ENTITY rememberPassword.label          "Gogoratu pasahitza">
 <!ENTITY rememberPassword.accesskey      "G">
 
+<!ENTITY usernameEx.label                "Zure saio hasiera:">
+<!ENTITY usernameEx.accesskey            "s">
+<!-- LOCALIZATION NOTE(usernameEx.placeholder): YOURDOMAIN refers to the Windows domain in ActiveDirectory. yourusername refers to the user's account name in Windows. -->
+<!ENTITY usernameEx.placeholder          "ZUREDOMEINUA\zureerabiltzailea">
+<!-- LOCALIZATION NOTE(usernameEx.text): Domain refers to the Windows domain in ActiveDirectory. We mean the user's login in Windows at the local corporate network. -->
+<!ENTITY usernameEx.text                 "Saio domeinua">
+
 <!ENTITY imapLong.label                  "IMAP (urruneko karpetak)">
 <!ENTITY pop3Long.label                  "POP3 (mantendu posta zure ordenagailuan)">
 
@@ -30,7 +37,9 @@
 <!ENTITY ssl.label                       "SSL">
 <!ENTITY auth.label                      "Autentifikazioa">
 <!ENTITY imap.label                      "IMAP">
-<!ENTITY pop3.label                       "POP3">
+<!ENTITY pop3.label                      "POP3">
+<!-- LOCALIZATION NOTE(exchange.label): Do not translate Exchange, it is a product name. -->
+<!ENTITY exchange.label                  "Exchange">
 <!ENTITY smtp.label                      "SMTP">
 <!ENTITY autodetect.label                "Autodetektatu">
 <!-- LOCALIZATION NOTE(noEncryption.label): Neither SSL/TLS nor STARTTLS.
@@ -38,6 +47,9 @@
 <!ENTITY noEncryption.label              "Bat ere ez">
 <!ENTITY starttls.label                  "STARTTLS">
 <!ENTITY sslTls.label                    "SSL/TLS">
+
+<!-- LOCALIZATION NOTE(exchange-hostname.label): Do not translate Exchange, it is a product name. -->
+<!ENTITY exchange-hostname.label         "Exchange serbitzaria:">
 
 <!ENTITY advancedSetup.label             "Konfigurazio aurreratua">
 <!ENTITY advancedSetup.accesskey         "a">

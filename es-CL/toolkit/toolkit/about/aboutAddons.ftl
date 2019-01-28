@@ -129,7 +129,7 @@ plugin-deprecation-description = ¿Te falta algo? Algunos complementos ya no son
 legacy-warning-show-legacy = Mostrar extensiones heredadas
 legacy-extensions =
     .value = Extensiones heredadas
-legacy-extensions-description = Estas extensiones no cumplen con los estándares actuales de { -brand-short-name } por lo que han sido desactivadas. <label data-l10n-name="legacy-learn-more">Aprender más acerca de los cambios a los complementos</label>
+legacy-extensions-description = Estas extensiones no cumplen con los estándares actuales de { -brand-short-name } por lo que han sido desactivadas. <label data-l10n-name="legacy-learn-more">Aprender más sobre los cambios a los complementos</label>
 extensions-view-discover =
     .name = Obtener complementos
     .tooltiptext = { extensions-view-discover.name }
@@ -207,3 +207,20 @@ extensions-updates-manual-updates-found =
 extensions-updates-update-selected =
     .label = Instalar actualizaciones
     .tooltiptext = Instalar actualizaciones disponibles en esta lista
+
+## Extension shortcut management
+
+shortcuts-manage =
+    .label = Atajos del teclado
+shortcuts-empty-message = No hay atajos para esta extensión.
+shortcuts-no-addons = No tienes ninguna extensión habilitada.
+shortcuts-input =
+    .placeholder = Escribe un atajo
+shortcuts-browserAction = Activar extensión
+shortcuts-pageAction = Activar acción de página
+shortcuts-sidebarAction = Barra lateral
+shortcuts-modifier-mac = Incluye Ctrl, Alt o ⌘
+shortcuts-modifier-other = Incluye Ctrl o Alt
+shortcuts-invalid = Combinación inválida
+shortcuts-letter = Escribe una letra
+shortcuts-system = No se puede sobrescribir un atajo de { -brand-short-name }

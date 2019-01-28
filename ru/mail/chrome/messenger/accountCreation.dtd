@@ -19,6 +19,13 @@
 <!ENTITY rememberPassword.label          "Запомнить пароль">
 <!ENTITY rememberPassword.accesskey      "н">
 
+<!ENTITY usernameEx.label                "Ваше имя пользователя:">
+<!ENTITY usernameEx.accesskey            "о">
+<!-- LOCALIZATION NOTE(usernameEx.placeholder): YOURDOMAIN refers to the Windows domain in ActiveDirectory. yourusername refers to the user's account name in Windows. -->
+<!ENTITY usernameEx.placeholder          "ВАШ ДОМЕН\ваше имя пользователя">
+<!-- LOCALIZATION NOTE(usernameEx.text): Domain refers to the Windows domain in ActiveDirectory. We mean the user's login in Windows at the local corporate network. -->
+<!ENTITY usernameEx.text                 "Имя пользователя в домене">
+
 <!ENTITY imapLong.label                  "IMAP (удалённый доступ к папкам)">
 <!ENTITY pop3Long.label                  "POP3 (хранить почту на вашем компьютере)">
 
@@ -30,7 +37,9 @@
 <!ENTITY ssl.label                       "SSL">
 <!ENTITY auth.label                      "Аутентификация">
 <!ENTITY imap.label                      "IMAP">
-<!ENTITY pop3.label                       "POP3">
+<!ENTITY pop3.label                      "POP3">
+<!-- LOCALIZATION NOTE(exchange.label): Do not translate Exchange, it is a product name. -->
+<!ENTITY exchange.label                  "Exchange">
 <!ENTITY smtp.label                      "SMTP">
 <!ENTITY autodetect.label                "Автоопределение">
 <!-- LOCALIZATION NOTE(noEncryption.label): Neither SSL/TLS nor STARTTLS.
@@ -38,6 +47,9 @@
 <!ENTITY noEncryption.label              "Нет">
 <!ENTITY starttls.label                  "STARTTLS">
 <!ENTITY sslTls.label                    "SSL/TLS">
+
+<!-- LOCALIZATION NOTE(exchange-hostname.label): Do not translate Exchange, it is a product name. -->
+<!ENTITY exchange-hostname.label         "Сервер Exchange:">
 
 <!ENTITY advancedSetup.label             "Дополнительная настройка">
 <!ENTITY advancedSetup.accesskey         "л">

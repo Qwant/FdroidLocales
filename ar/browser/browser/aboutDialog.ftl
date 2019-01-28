@@ -22,7 +22,7 @@ update-otherInstanceHandlingUpdates = يجري تحديث { -brand-short-name } 
 update-manual = التحديثات متاحة في <label data-l10n-name="manual-link"/>
 update-unsupported = لا يمكنك إجراء أي تحديثات أخرى على هذا النظام. <label data-l10n-name="unsupported-link">اطّلع على المزيد</label>
 update-restarting = يُعيد التشغيل…
-channel-description = تتلقى التحديثات حاليًا من قناة <label data-l10n-name="current-channel"></label>.{ " " }
+channel-description = تتلقى التحديثات حاليًا من قناة <label data-l10n-name="current-channel"></label>.
 warningDesc-version = { -brand-short-name } تجريبي و قد لا يكون مستقرا.
 community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> هي <label data-l10n-name="community-exp-creditsLink">مجتمعٌ عالميّ</label> يعمل للمحافظة على انفتاح الوب و عموميتها و إتاحتها للجميع.
 community-2 = صمّمَ { -brand-short-name } <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label>، و هي <label data-l10n-name="community-creditsLink">مجتمعٌ عالميّ</label> يعمل للمحافظة على انفتاح الوب و عموميتها و إتاحتها للجميع.
@@ -32,3 +32,14 @@ bottomLinks-rights = حقوق المستخدم
 bottomLinks-privacy = سياسة الخصوصيّة
 aboutDialog-architecture-sixtyFourBit = 64 بتة
 aboutDialog-architecture-thirtyTwoBit = 32 بتة
+# Example of resulting string: 66.0.1 (64-bit)
+# Variables:
+#   $version (String): version of Firefox, e.g. 66.0.1
+#   $bits (Number): bits of the architecture (32 or 64)
+aboutDialog-version = { $version } ‏({ $bits } بتة)
+# Example of resulting string: 66.0a1 (2019-01-16) (64-bit)
+# Variables:
+#   $version (String): version of Firefox for Nightly builds, e.g. 66.0a1
+#   $isodate (String): date in ISO format, e.g. 2019-01-16
+#   $bits (Number): bits of the architecture (32 or 64)
+aboutDialog-version-nightly = { $version } ‏({ $isodate }) ‏({ $bits } بتة)

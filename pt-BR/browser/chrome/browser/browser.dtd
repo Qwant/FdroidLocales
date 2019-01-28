@@ -61,7 +61,7 @@ same accesskey but will never be visible at the same time. -->
 but will never be visible at the same time. -->
 <!ENTITY  reloadTabs.label                   "Recarregar abas">
 <!ENTITY  reloadTabs.accesskey               "R">
-<!ENTITY  bookmarkSelectedTabs.label         "Abas favoritas…">
+<!ENTITY  bookmarkSelectedTabs.label         "Adicionar abas a favoritos…">
 <!-- LOCALIZATION NOTE(bookmarkTab.accesskey, bookmarkSelectedTabs.accesskey):
 These items have the same accesskey but will never be visible at the same time. -->
 <!ENTITY  bookmarkSelectedTabs.accesskey     "f">
@@ -111,6 +111,10 @@ These items have the same accesskey but will never be visible at the same time. 
 
 <!ENTITY  listAllTabs.label      "Listar todas as abas">
 
+<!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
+in "Search through tabs". -->
+<!ENTITY  allTabsMenu.searchTabs.label       "Pesquisar abas">
+
 <!ENTITY tabCmd.label "Nova aba">
 <!ENTITY tabCmd.accesskey "N">
 <!ENTITY tabCmd.commandkey "t">
@@ -129,7 +133,7 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.accesskey "I">
 <!ENTITY printCmd.commandkey "p">
 
-<!ENTITY taskManagerCmd.label "Gerenciador de Tarefas">
+<!ENTITY taskManagerCmd.label "Gerenciador de tarefas">
 
 <!ENTITY goOfflineCmd.label "Trabalhar desconectado">
 <!ENTITY goOfflineCmd.accesskey "o">
@@ -631,6 +635,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisFrameCmd.label      "Adicionar este frame aos favoritos">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "d">
 <!ENTITY pageAction.copyLink.label    "Copiar link">
+
+<!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
+  "Pocket" is a brand name. -->
+<!ENTITY pocketButton.tooltiptext     "Salvar no Pocket">
+<!ENTITY saveToPocketCmd.label        "Salvar página no Pocket">
+<!ENTITY saveToPocketCmd.accesskey    "k">
+<!ENTITY saveLinkToPocketCmd.label    "Salvar link no Pocket">
+<!ENTITY saveLinkToPocketCmd.accesskey "o">
+<!ENTITY pocketMenuitem.label         "Ver lista do Pocket">
+
 <!ENTITY emailPageCmd.label           "Enviar link por e-mail…">
 <!ENTITY emailPageCmd.accesskey       "E">
 <!ENTITY savePageCmd.label            "Salvar página como…">
@@ -760,7 +774,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY fullZoom.accesskey             "Z">
 
 <!ENTITY sidebarCloseButton.tooltip     "Fechar painel">
-<!ENTITY sidebarMenuClose.label         "Fechar Painel">
+<!ENTITY sidebarMenuClose.label         "Fechar painel">
 
 <!ENTITY quitApplicationCmdWin2.label       "Sair">
 <!ENTITY quitApplicationCmdWin2.accesskey   "S">
@@ -800,10 +814,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY bidiSwitchTextDirectionItem.accesskey    "A">
 <!ENTITY bidiSwitchTextDirectionItem.commandkey   "X">
 
-<!ENTITY findOnCmd.label     "Localizar nesta página…">
+<!ENTITY findOnCmd.label     "Procurar nesta página…">
 <!ENTITY findOnCmd.accesskey "n">
 <!ENTITY findOnCmd.commandkey "f">
-<!ENTITY findAgainCmd.label  "Localizar próxima">
+<!ENTITY findAgainCmd.label  "Procurar próxima">
 <!ENTITY findAgainCmd.accesskey "L">
 <!ENTITY findAgainCmd.commandkey "g">
 <!ENTITY findAgainCmd.commandkey2 "VK_F3">
@@ -869,6 +883,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsReloadHint "Pode ser necessário recarregar a página para que as alterações sejam aplicadas.">
 <!ENTITY identity.permissionsPreferences.tooltip "Abrir preferências de permissões">
 
+<!ENTITY identity.contentBlockingPreferences.tooltip "Abrir preferências de bloqueio de conteúdo">
+
+
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
 <!ENTITY tabsToolbar.label "Abas do navegador">
@@ -923,7 +940,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncToolbarButton.label      "Sync">
 
 <!ENTITY customizeMode.menuAndToolbars.header3 "Arraste seus itens favoritos para sua barra de ferramentas ou ao menu.">
-<!ENTITY customizeMode.restoreDefaults "Restaurar padrões">
+<!ENTITY customizeMode.restoreDefaults "Restaurar padrão">
 <!ENTITY customizeMode.done "Concluído">
 <!ENTITY customizeMode.titlebar "Barra de título">
 <!ENTITY customizeMode.extraDragSpace "Borda de janela">
@@ -1038,7 +1055,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Para bloquear todos os rastreadores, defina o bloqueio de conteúdo como “Rigoroso”.">
 
 <!ENTITY contentBlocking.cookies.label "Cookies">
-<!ENTITY contentBlocking.cookiesView.label "Cookies e Dados de sites">
+<!ENTITY contentBlocking.cookiesView.label "Cookies e dados de sites">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Reportar um problema">
 <!ENTITY contentBlocking.breakageReportView.label "Reportar problemas">
@@ -1055,14 +1072,14 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE (trackingProtection.unblock3.label, trackingProtection.unblock3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
-<!ENTITY trackingProtection.unblock4.label "Desativar bloqueio para este site">
+<!ENTITY trackingProtection.unblock4.label "Desativar bloqueio neste site">
 <!ENTITY trackingProtection.unblock4.accesskey "D">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate3.label, trackingProtection.unblockPrivate3.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
 <!ENTITY trackingProtection.unblockPrivate4.label "Desativar bloqueio temporariamente">
 <!ENTITY trackingProtection.unblockPrivate4.accesskey "D">
-<!ENTITY trackingProtection.block5.label "Ativar bloqueio para este site">
+<!ENTITY trackingProtection.block5.label "Ativar bloqueio neste site">
 <!ENTITY trackingProtection.block5.accesskey "E">
 
 <!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):

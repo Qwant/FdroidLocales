@@ -23,7 +23,7 @@ certmgr-detail-pretty-print-tab-title =
     .label = פרטים
     .accesskey = פ
 certmgr-pending-label =
-    .value = בודק אישורים...
+    .value = בודק אישורים…
 certmgr-subject-info-label =
     .value = הונפק עבור
 certmgr-issuer-info-label =
@@ -232,3 +232,13 @@ add-exception-checking-short = בודק מידע
 add-exception-checking-long = מתבצע ניסיון זיהוי של האתר…
 add-exception-no-cert-short = אין מידע זמין
 add-exception-no-cert-long = לא ניתן לקבל את מצב הזיהוי של אתר זה.
+
+## Certificate export "Save as" and error dialogs
+
+save-cert-as = שמירת אישור לקובץ
+cert-format-base64 = אישור X.509 (PEM)
+cert-format-base64-chain = X.509 Certificate with chain (PEM)
+cert-format-der = אישור X.509 (DER)
+cert-format-pkcs7 = אישור X.509 (PKCS#7)
+cert-format-pkcs7-chain = X.509 Certificate with chain (PKCS#7)‎
+write-file-failure = שגיאת קובץ
