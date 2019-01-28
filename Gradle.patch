@@ -1,7 +1,7 @@
-diff -r cb9a0bfe28ea build.gradle
---- a/build.gradle	Tue Dec 26 09:48:25 2017 +0100
-+++ b/build.gradle	Wed Jan 03 00:00:00 2018 +0000
-@@ -28,10 +28,11 @@
+diff -r 666a44dfa6eb build.gradle
+--- a/build.gradle      Thu Jan 17 21:09:04 2019 +0000
++++ b/build.gradle      Mon Jan 21 00:00:00 2019 +0000
+@@ -27,10 +27,11 @@
      }
  
      repositories {
@@ -17,7 +17,7 @@ diff -r cb9a0bfe28ea build.gradle
          }
      }
  }
-@@ -40,14 +41,11 @@
+@@ -39,10 +40,11 @@
  
  buildscript {
      repositories {
@@ -27,11 +27,22 @@ diff -r cb9a0bfe28ea build.gradle
 -            }
 +        maven {
 +            url "https://maven.google.com/"
-         }
--        // For in tree plugins.
-         maven {
--            url "file://${gradle.mozconfig.topsrcdir}/mobile/android/gradle/m2repo"
-+            url "https://jcenter.bintray.com/"
++        }
++        maven {
++            url "https://plugins.gradle.org/m2/"
          }
      }
+ 
+diff -r 666a44dfa6eb mobile/android/geckoview/build.gradle
+--- a/mobile/android/geckoview/build.gradle     Thu Jan 17 21:09:04 2019 +0000
++++ b/mobile/android/geckoview/build.gradle     Mon Jan 21 00:00:00 2019 +0000
+@@ -350,9 +350,6 @@
+         }
+     }
+     repositories {
+-        maven {
+-            url = "${project.buildDir}/maven"
+-        }
+     }
+ }
  

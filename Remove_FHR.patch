@@ -1,8 +1,8 @@
-diff -r 78278c4dc730 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
---- a/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Wed Aug 02 14:04:05 2017 -0400
-+++ b/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Thu Aug 03 00:00:00 2017 -0000
+diff -r 666a44dfa6eb mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
+--- a/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Thu Jan 17 21:09:04 2019 +0000
++++ b/mobile/android/base/java/org/mozilla/gecko/GeckoApp.java	Mon Jan 21 00:00:00 2019 +0000
 @@ -10,9 +10,6 @@
- import org.mozilla.gecko.GeckoProfileDirectories.NoMozillaDirectoryException;
+ import org.mozilla.gecko.GeckoScreenOrientation.ScreenOrientation;
  import org.mozilla.gecko.annotation.RobocopTarget;
  import org.mozilla.gecko.annotation.WrapForJNI;
 -import org.mozilla.gecko.health.HealthRecorder;
@@ -11,17 +11,17 @@ diff -r 78278c4dc730 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
  import org.mozilla.gecko.home.HomeConfig.PanelType;
  import org.mozilla.gecko.menu.GeckoMenu;
  import org.mozilla.gecko.menu.GeckoMenuInflater;
-@@ -362,7 +359,6 @@
- 
-     private String mPrivateBrowsingSession;
+@@ -336,7 +333,6 @@
+     private boolean mPrivateBrowsingSessionOutdated;
+     private static final int MAX_PRIVATE_TABS_UPDATE_WAIT_MSEC = 500;
  
 -    private volatile HealthRecorder mHealthRecorder;
      private volatile Locale mLastLocale;
  
      private boolean mShutdownOnDestroy;
-@@ -708,15 +704,6 @@
+@@ -691,15 +687,6 @@
+         if (event.equals("Gecko:Ready")) {
              mGeckoReadyStartupTimer.stop();
-             geckoConnected();
  
 -            // This method is already running on the background thread, so we
 -            // know that mHealthRecorder will exist. That doesn't stop us being
@@ -32,10 +32,10 @@ diff -r 78278c4dc730 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
 -              rec.recordGeckoStartupTime(mGeckoReadyStartupTimer.getElapsed());
 -            }
 -
-             ((GeckoApplication) getApplicationContext()).onDelayedStartup();
+             getGeckoApplication().onDelayedStartup();
  
              // Reset the crash loop counter if we remain alive for at least half a minute.
-@@ -1523,11 +1510,6 @@
+@@ -1263,11 +1250,6 @@
                  final LocaleManager localeManager = BrowserLocaleManager.getInstance();
                  localeManager.initialize(getApplicationContext());
  
@@ -47,7 +47,7 @@ diff -r 78278c4dc730 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
                  SharedPreferences.Editor editor = prefs.edit();
                  editor.putBoolean(GeckoAppShell.PREFS_OOM_EXCEPTION, false);
  
-@@ -1555,13 +1537,6 @@
+@@ -1295,13 +1277,6 @@
                      appLocaleString = osLocaleString;
                  }
  
@@ -61,7 +61,7 @@ diff -r 78278c4dc730 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
                  final String uiLocale = appLocaleString;
                  ThreadUtils.postToUiThread(new Runnable() {
                      @Override
-@@ -1835,29 +1810,6 @@
+@@ -1594,29 +1569,6 @@
  
          mPromptService = new PromptService(this, getAppEventDispatcher());
  
@@ -91,7 +91,7 @@ diff -r 78278c4dc730 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
          if (mIsRestoringActivity) {
              Tab selectedTab = Tabs.getInstance().getSelectedTab();
              if (selectedTab != null) {
-@@ -2301,36 +2253,6 @@
+@@ -2003,36 +1955,6 @@
          final long now = System.currentTimeMillis();
          final long realTime = android.os.SystemClock.elapsedRealtime();
  
@@ -128,15 +128,15 @@ diff -r 78278c4dc730 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
          Restrictions.update(this);
      }
  
-@@ -2370,7 +2292,6 @@
+@@ -2062,7 +1984,6 @@
  
-         mLastActiveGeckoApp = new WeakReference<GeckoApp>(this);
+         foregrounded = false;
  
 -        final HealthRecorder rec = mHealthRecorder;
          final Context context = this;
  
          // In some way it's sad that Android will trigger StrictMode warnings
-@@ -2382,9 +2303,6 @@
+@@ -2074,9 +1995,6 @@
                  SharedPreferences prefs = GeckoApp.this.getSharedPreferences();
                  SharedPreferences.Editor editor = prefs.edit();
                  editor.putBoolean(GeckoApp.PREFS_WAS_STOPPED, true);
@@ -146,7 +146,7 @@ diff -r 78278c4dc730 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
  
                  // onPause might in fact be called even after a crash, but in that case the
                  // crash reporter will record this fact for us and we'll pick it up in onCreate.
-@@ -2479,18 +2397,6 @@
+@@ -2177,18 +2095,6 @@
              mPromptService = null;
          }
  
@@ -165,7 +165,7 @@ diff -r 78278c4dc730 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
          super.onDestroy();
  
          Tabs.unregisterOnTabsChangedListener(this);
-@@ -2879,15 +2785,6 @@
+@@ -2501,15 +2407,6 @@
          final boolean startNewSession = true;
          final boolean shouldRestart = false;
  
@@ -181,7 +181,7 @@ diff -r 78278c4dc730 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
          final Runnable runnable = new Runnable() {
              @Override
              public void run() {
-@@ -2929,16 +2826,6 @@
+@@ -2551,16 +2448,6 @@
          onLocaleChanged(resultant);
      }
  
@@ -198,11 +198,11 @@ diff -r 78278c4dc730 mobile/android/base/java/org/mozilla/gecko/GeckoApp.java
      protected void recordStartupActionTelemetry(final String passedURL, final String action) {
      }
  
-diff -r 78278c4dc730 mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java
---- a/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Wed Aug 02 14:04:05 2017 -0400
-+++ b/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Thu Aug 03 00:00:00 2017 -0000
-@@ -1199,13 +1199,6 @@
-             UpdateServiceHelper.setAutoDownloadPolicy(this, UpdateService.AutoDownloadPolicy.get((String) newValue));
+diff -r 666a44dfa6eb mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java
+--- a/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Thu Jan 17 21:09:04 2019 +0000
++++ b/mobile/android/base/java/org/mozilla/gecko/preferences/GeckoPreferences.java	Mon Jan 21 00:00:00 2019 +0000
+@@ -1176,13 +1176,6 @@
+             UpdateServiceHelper.setAutoDownloadPolicy(this, AutoDownloadPolicy.get((String) newValue));
          } else if (PREFS_UPDATER_URL.equals(prefName)) {
              UpdateServiceHelper.setUpdateUrl(this, (String) newValue);
 -        } else if (PREFS_HEALTHREPORT_UPLOAD_ENABLED.equals(prefName)) {

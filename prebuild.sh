@@ -23,6 +23,7 @@ rm -R dom/security/test/
 rm -R dom/tests/
 rm -R dom/xhr/tests/
 rm -R dom/webauthn/u2f-hid-rs/fuzz/corpus/
+rm -R gfx/skia/skia/src/compute/hs/cl/intel/gen8/u*/hs_kernels.bin
 rm -R layout/reftests/
 rm -R media/webrtc/trunk/webrtc/test/
 rm -R mobile/android/tests/
@@ -34,12 +35,15 @@ rm -R security/nss/cmd/samples/
 rm -R security/nss/tests/
 rm -R other-licenses/nsis/nsisui.exe
 rm -R other-licenses/7zstub/src/bin
+rm -R testing/raptor/raptor/profiler/dump_syms_mac
 rm -R testing/talos/talos/
 rm -R testing/web-platform/
 rm -R third_party/python/pipenv/pipenv/patched/notpip/_vendor/distlib/*.exe
 rm -R third_party/python/pipenv/pipenv/vendor/pip9/_vendor/distlib/*.exe
 rm -R third_party/rust/sha2/tests/
+sed -i -e 's/,"tests\/[^:]*:"[^"]*"//g' third_party/rust/sha2/.cargo-checksum.json
 rm -R third_party/rust/term/tests/
+sed -i -e 's/,"tests\/[^:]*:"[^"]*"//g' third_party/rust/term/.cargo-checksum.json
 rm -R tools/update-packaging/test/
 rm -R toolkit/components/mediasniffer/test/unit/
 rm -R toolkit/components/reputationservice/test/unit/data/signed_win.exe
