@@ -93,6 +93,9 @@ sed -i -e 's/mozconfig.substs.MOZILLA_OFFICIAL/true/g' mobile/android/app/build.
 ##HOTFIX## (BUG #1324331)
 patch -p1 <$REPO/Bindings.patch
 
+##HOTFIX## (BUG #1516642)
+patch -p1 <$REPO/fix-r15c.patch
+
 mkdir -p fdroid/assets/distribution/extensions
 
 ##Put the extensions .xpi in the required directory
